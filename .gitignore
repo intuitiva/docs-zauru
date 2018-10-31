@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# cache folder generating by build or develop the project
+.cache/
+
+# 
+public
+
+# 
+yarn-error.log

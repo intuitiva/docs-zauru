@@ -1,0 +1,29 @@
+{
+  "name": "zauru-docs",
+  "description": "Zauru documentation project using Gatsby and linked to Contentful",
+  "license": "MIT",
+  "author": "Lester Guerra <lester@zauru.com> (https://www.zauru.com)",
+  "homepage": "https://zauru-docs.netlify.com",
+  "bugs": "",
+  "repository": "github:intuitiva/docs-zauru.git",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "dotenv": "^6.1.0",
+    "gatsby": "^2.0.35",
+    "gatsby-plugin-react-helmet": "^3.0.1",
+    "gatsby-plugin-styled-components": "^3.0.0",
+    "gatsby-source-contentful": "^2.0.9",
+    "gatsby-transformer-remark": "^2.1.11",
+    "moment": "^2.22.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.0.3",
+    "styled-reset": "^1.6.0"
+  }
+}
