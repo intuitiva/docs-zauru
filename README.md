@@ -1,0 +1,2 @@
+# docs-zauru
+Zauru Documentation
