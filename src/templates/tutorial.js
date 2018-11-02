@@ -62,7 +62,7 @@ export const pageQuery = graphql`
         slug
       }
     }
-    allChildTutorial: allContentfulTutorial(filter: {isParent: {eq: false }}){
+    allChildTutorial: allContentfulTutorial(filter: {isParent: {eq: false }}, sort: { fields: [pageId] order: ASC }){
       edges {
         node {
           id
@@ -76,7 +76,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allParentTutorial: allContentfulTutorial(filter: {isParent: {eq: true }}, sort: { fields: [pageId] order: DESC }){
+    allParentTutorial: allContentfulTutorial(filter: {isParent: {eq: true }}, sort: { fields: [pageId] order: ASC }){
       edges {
         node {
           id

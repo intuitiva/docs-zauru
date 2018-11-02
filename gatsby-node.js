@@ -9,7 +9,7 @@ exports.createPages = ({graphql, actions}) => {
         resolve(
             graphql(`
                 {
-                    allContentfulTutorial (limit:100) {
+                    allContentfulTutorial {
                         edges {
                             node {
                                 id
