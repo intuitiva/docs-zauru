@@ -94,7 +94,7 @@ const Footer = styled.footer`
   }
 `;
 
-function Layout({ children }) {
+function Layout({ children, title }) {
 
   return (
     <StaticQuery
@@ -109,7 +109,7 @@ function Layout({ children }) {
       `}
       render={data => (
         <>
-          <Helmet title={data.site.siteMetadata.title}>
+          <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
             <html lang="en" />
           </Helmet>
           <Masthead>{data.site.siteMetadata.title}</Masthead>

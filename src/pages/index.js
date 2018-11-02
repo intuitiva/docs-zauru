@@ -3,42 +3,37 @@ import { StaticQuery, graphql } from 'gatsby';
 import moment from 'moment';
 import Layout from '../components/Layout';
 
-const HomePage = () => (
+const Tutorial = () => (
   <StaticQuery
     query={graphql`
-      query HomePage {
-        contentfulHomePage {
+      query Tutorial {
+        contentfulTutorial {
           title
-          date
-          content {
+          createdAt
+          text {
             childMarkdownRemark {
               html
-            }
-          }
-          image {
-            file {
-              url
             }
           }
         }
       }
     `}
     render={({
-      contentfulHomePage: {
+      contentfulTutorial: {
         title,
-        date,
-        content: {
+        createdAt,
+        text: {
           childMarkdownRemark: { html },
         },
       },
     }) => (
       <Layout>
         <h1>{title}</h1>
-        <small>Created on {moment(date).format('L')}</small>
+        <small>Created on {moment(createdAt).format('L')}</small>
         <article dangerouslySetInnerHTML={{ __html: html }} />
       </Layout>
     )}
   />
 );
 
-export default HomePage;
+export default Tutorial;
