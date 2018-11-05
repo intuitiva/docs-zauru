@@ -13,45 +13,49 @@ export default class TutorialTemplate extends React.Component {
     const childs_tutorial = props.data.allChildTutorial.edges.map(ct => ct.node);
     const parents_tutorial = props.data.allParentTutorial.edges.map(ct => ct.node);
     const current_parent_id = tutorial.isParent ? tutorial.id : (tutorial.parentTutorial ? tutorial.parentTutorial.id : 0);
-    console.log(current_parent_id);
-    console.log(tutorial);
     return (
       <Layout title={tutorial.title}>
-        <div>
-          <div dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }} />
+          <div id="left" className="column">
+            <div className="bottom">
+              <nav className="panel">
+                <p className='panel-heading'>
+                  Zauru Docs
+                </p>
+                {
+                  parents_tutorial.map(( tutorial , key) => (
+                      <div key={key}>
+                        <Link to={ tutorial.slug } className={["panel-block", current_parent_id === tutorial.id ? " is-active" : ""].join('')}>
+                          <span className="panel-icon">
+                            <FaBook />
+                          </span>
+                          {tutorial.title}
 
-          <nav class="panel">
-            <p class='panel-heading'>
-              Zauru Docs
-            </p>
-            {
-              parents_tutorial.map(( tutorial , key) => (
-                  <div>
-                    <Link to={ tutorial.slug } className={["panel-block", current_parent_id === tutorial.id ? " is-active" : ""].join('')}>
-                      <span class="panel-icon">
-                        <FaBook />
-                      </span>
-                      {tutorial.title}
-
-                    </Link>
-                    {
-                        current_parent_id === tutorial.id &&
-                          childs_tutorial.map((tc, key) => (
-                              current_parent_id === tc.parentTutorial.id && 
-                              <Link to={tc.slug} className={["panel-block", slug === tc.slug ? " is-active" : "" ].join('')}>
-                              &nbsp;&nbsp;&nbsp;&nbsp;
-                              <span class="panel-icon">
-                                <FaFileAlt />
-                              </span>
-                                {tc.title}
-                              </Link>
-                          ))
-                      }
-                  </div>
-              ))
-            }
-          </nav>
-        </div>
+                        </Link>
+                        {
+                            current_parent_id === tutorial.id &&
+                              childs_tutorial.map((tc, key) => (
+                                  current_parent_id === tc.parentTutorial.id && 
+                                  <Link key={key} to={tc.slug} className={["panel-block", "child", slug === tc.slug ? "is-active" : "" ].join(' ')}>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <span className="panel-icon">
+                                    <FaFileAlt />
+                                  </span>
+                                    {tc.title}
+                                  </Link>
+                              ))
+                          }
+                      </div>
+                  ))
+                }
+              </nav>
+            </div>
+          </div>
+          <div id="right" className="column">
+            <div className="bottom">
+              <div className="content" dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }} ></div>
+            </div>
+            
+          </div>
       </Layout>
     )
   }

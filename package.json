@@ -23,6 +23,7 @@
     "gatsby-source-contentful": "^2.0.9",
     "gatsby-transformer-remark": "^2.1.11",
     "moment": "^2.22.2",
+    "node-sass": "^4.10.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
