@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Layout from '../components/Layout';
-import { graphql, Link } from 'gatsby'
-import 'bulma/css/bulma.css'
+import { graphql, Link } from 'gatsby';
+import 'bulma/css/bulma.css';
 import { FaBook } from 'react-icons/fa';
 import { FaFileAlt  } from 'react-icons/fa';
 
@@ -14,7 +14,7 @@ export default class TutorialTemplate extends React.Component {
     const parents_tutorial = props.data.allParentTutorial.edges.map(ct => ct.node);
     const current_parent_id = tutorial.isParent ? tutorial.id : (tutorial.parentTutorial ? tutorial.parentTutorial.id : 0);
     return (
-      <Layout title={tutorial.title}>
+      <Layout title={tutorial.title} search={true}>
           <div id="left" className="column">
             <div className="bottom">
               <nav className="panel">

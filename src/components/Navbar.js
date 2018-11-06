@@ -5,12 +5,24 @@ import logo from '../img/logo900_obscuro_transparente.png'
 const Navbar = () => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <Link to="blog" className="navbar-item">
+      <Link to="" className="navbar-item">
         <figure className="image">
           <img src={logo} alt="Zauru" style={{ width: '76px' }} />
         </figure>
-        <div  style={{ color: `white`}}> &nbsp; // Docs</div>
+        <div  style={{ color: `white`}}> &nbsp; // Manual de Usuario</div>
       </Link>
+    </div>
+    <div className="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a className="navbar-item button" href="http://www.zauru.com/home" target="_blank" rel="noopener noreferrer">
+            Conoce m&aacute;s de Zauru
+          </a>
+          <a className="navbar-item button" href="https://app.zauru.com" target="_blank" rel="noopener noreferrer">
+            Ingresar
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 )
