@@ -1,6 +1,11 @@
 html {
   height: 100%;
 }
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0px;
+}
 section.wrapper {
   height: 100%;
   overflow: hidden;
@@ -19,7 +24,7 @@ section.wrapper {
   max-width: 350px;
 }
 #right {
-  background-color: #f3f3f3;
+  background-color: white;
 }
 .top-left {
   flex-shrink: 0;
@@ -30,7 +35,7 @@ section.wrapper {
 .top-right {
   display: inline-flex;
   flex-shrink: 0;
-  background-color: #333;
+  background-color: white;
   color: white;
   padding: 20px;
 }
@@ -41,4 +46,9 @@ section.wrapper {
 }
 a.child {
   border-bottom: 0px !important;
+}
+
+.hero .navbar .buttons a:hover, .button.special{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), linear-gradient(90deg, #ff935c, #fb406c);
+  color: white
 }
