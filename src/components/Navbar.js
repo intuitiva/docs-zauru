@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import logo from '../img/logo900_obscuro_transparente.png'
 import { FaSearch } from 'react-icons/fa';
 
-const Navbar = (search) => (
+const Navbar = props => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <Link to="" className="navbar-item">
@@ -15,7 +15,7 @@ const Navbar = (search) => (
     </div>
     
     <div className="navbar-end">
-      {search ? 
+      {props.search === `y`? 
       <div className="navbar-item field">
         <div className="control has-icons-left" style={{marginBottom: `-0.8rem`}}>
           <input className="input is-rounded" type="text" placeholder="Buscar"/>
