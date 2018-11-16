@@ -49,8 +49,6 @@ function Layout({ children, title, search }) {
                   }
               </div>
             </div>
-            <div className="hero-foot hero-social">
-            </div>
           </section>
           <Section className="wrapper">{children}</Section>
         </>

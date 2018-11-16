@@ -9,7 +9,7 @@ const Navbar = () => (
         <figure className="image">
           <img src={logo} alt="Zauru" style={{ width: '76px' }} />
         </figure>
-        <div  style={{ color: `white`}}> &nbsp; // Manual de Usuario</div>
+        <div style={{ color: `white`}}> &nbsp; // Manual de Usuario</div>
       </Link>
     </div>
     <div className="navbar-end">
