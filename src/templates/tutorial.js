@@ -18,9 +18,6 @@ export default class TutorialTemplate extends React.Component {
           <div id="left" className="column">
             <div className="bottom">
               <nav className="panel">
-                <p className='panel-heading'>
-                  Zauru Docs
-                </p>
                 {
                   parents_tutorial.map(( tutorial , key) => (
                       <div key={key}>

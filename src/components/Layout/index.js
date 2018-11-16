@@ -12,7 +12,7 @@ const Section = styled.section`
     
 `;
 
-function Layout({ children, title, search }) {
+function Layout({ children, title }) {
 
   return (
     <StaticQuery
@@ -33,21 +33,6 @@ function Layout({ children, title, search }) {
           <section className="hero" style={{ backgroundImage: `linear-gradient(180deg, rgba(34, 71, 101, .65), rgba(34, 71, 101, .65)), url(${Background})`, backgroundPosition: `0px 0px, 50% -94px`, backgroundRepeat: `repeat, no-repeat`, backgroundAttachment: `scroll, scroll`, backgroundSize: `auto, cover`}}>
             <div className="hero-head">
               <Navbar />
-            </div>
-            <div className="hero-body">
-              <div className="container has-text-centered">
-                {search ?
-                  <h2 className="subtitle" style={{ color: `white`}}>
-                    <div className="control has-icons-left has-icons-right">
-                      <input className="input is-rounded" type="text" placeholder="Buscar"/>
-                      <span className="icon is-left">
-                        <FaSearch />
-                      </span>
-                    </div>
-                  </h2> :
-                  <h1 className="title" style={{ color: `white`}}>Guías de Usuario, Referencias de API y más</h1>
-                  }
-              </div>
             </div>
           </section>
           <Section className="wrapper">{children}</Section>
