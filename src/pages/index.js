@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component {
         <section className="hero is-fullheight" style={{ backgroundImage: `linear-gradient(180deg, rgba(34, 71, 101, .65), rgba(34, 71, 101, .65)), url(${Background})`, backgroundPosition: `0px 0px, 50% -94px`, backgroundRepeat: `repeat, no-repeat`, backgroundAttachment: `scroll, scroll`, backgroundSize: `auto, cover`}}>
           
           <div className="hero-head">
-            <Navbar search="n" />
+            <Navbar search={false} />
           </div>
 
           <div className="hero-body">

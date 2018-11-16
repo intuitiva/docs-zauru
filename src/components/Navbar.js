@@ -15,7 +15,7 @@ const Navbar = props => (
     </div>
     
     <div className="navbar-end">
-      {props.search === `y`? 
+      {props.search ? 
       <div className="navbar-item field">
         <div className="control has-icons-left" style={{marginBottom: `-0.8rem`}}>
           <input className="input is-rounded" type="text" placeholder="Buscar"/>
