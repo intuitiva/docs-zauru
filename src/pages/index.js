@@ -7,6 +7,7 @@ import Background from '../img/jan-kahanek-184676-unsplash.jpg';
 import tw_icon from '../img/twitter-icon-white.svg'
 import fb_icon from '../img/facebook-icon-white.svg'
 import { graphql, Link } from 'gatsby';
+import '../components/css/all.sass';
 
 export default class IndexPage extends React.Component {
   render() {

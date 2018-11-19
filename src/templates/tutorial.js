@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
-import 'bulma/css/bulma.css';
 import { FaBook } from 'react-icons/fa';
 import { FaFileAlt  } from 'react-icons/fa';
 

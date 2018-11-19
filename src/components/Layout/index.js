@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Navbar from '../Navbar';
 import Background from '../../img/banner.jpeg';
-import { FaSearch } from 'react-icons/fa';
 import '../css/layout.css';
 import '../css/all.sass';
 
