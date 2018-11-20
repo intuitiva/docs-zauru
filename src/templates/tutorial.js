@@ -16,11 +16,6 @@ export default class TutorialTemplate extends React.Component {
     const childs_tutorial_column_2 = childs_tutorial.filter((tc, index) => tc.parentTutorial.id === current_parent_id).filter((tc, index) => index % 3 === 1);
     const childs_tutorial_column_3 = childs_tutorial.filter((tc, index) => tc.parentTutorial.id === current_parent_id).filter((tc, index) => index % 3 === 2);
 
-    console.log(childs_tutorial);
-    console.log(childs_tutorial_column_1);
-    console.log(childs_tutorial_column_2);
-    console.log(childs_tutorial_column_3);
-
     return (
       <Layout title={tutorial.title} search={true}>
           <div id="left" className="column">
