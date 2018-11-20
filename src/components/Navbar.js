@@ -18,7 +18,7 @@ const Navbar = props => (
       {props.search ? 
       <div className="navbar-item field">
         <div className="control has-icons-left" style={{marginBottom: `-0.8rem`}}>
-          <input className="input is-rounded" type="text" placeholder="Buscar"/>
+          <input className="input is-rounded header-search" type="text" placeholder="Buscar" id="header-search" />
           <span className="icon is-left"><FaSearch /></span>
         </div>
       </div> : <span></span>}

@@ -56,30 +56,30 @@ export default class TutorialTemplate extends React.Component {
               
               {
                 tutorial.isParent === true &&
-                  childs_tutorial_column_1.map((tc, key) => (
+                  childs_tutorial_column_1.map((tc, i) => (
                     
-                    <div className="tile is-ancestor">
+                    <div className="tile is-ancestor" key={i}>
                       {
-                        childs_tutorial_column_1[key] &&
+                        childs_tutorial_column_1[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_1[key].slug} className="tile is-child box">
-                            {childs_tutorial_column_1[key].title}
+                          <Link to={childs_tutorial_column_1[i].slug} className="tile is-child box">
+                            {childs_tutorial_column_1[i].title}
                           </Link>
                         </div>
                       }
                       {
-                        childs_tutorial_column_2[key] &&
+                        childs_tutorial_column_2[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_2[key].slug} className="tile is-child box">
-                            {childs_tutorial_column_2[key].title}
+                          <Link to={childs_tutorial_column_2[i].slug} className="tile is-child box">
+                            {childs_tutorial_column_2[i].title}
                           </Link>
                         </div>
                       }
                       {
-                        childs_tutorial_column_3[key] &&
+                        childs_tutorial_column_3[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_3[key].slug} className="tile is-child box">
-                            {childs_tutorial_column_3[key].title}
+                          <Link to={childs_tutorial_column_3[i].slug} className="tile is-child box">
+                            {childs_tutorial_column_3[i].title}
                           </Link>
                         </div>
                       }

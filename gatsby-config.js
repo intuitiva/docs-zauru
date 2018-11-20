@@ -35,6 +35,7 @@ module.exports = {
         icon: `src/img/favicon256.png`
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-contentful',
       options: {
