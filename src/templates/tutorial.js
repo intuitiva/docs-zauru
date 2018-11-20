@@ -67,31 +67,25 @@ export default class TutorialTemplate extends React.Component {
                       {
                         childs_tutorial_column_1[key] &&
                         <div className="tile is-parent is-4">
-                          <article className="tile is-child box">
-                            <Link to={childs_tutorial_column_1[key].slug}>
-                              {childs_tutorial_column_1[key].title}
-                            </Link>
-                          </article>
+                          <Link to={childs_tutorial_column_1[key].slug} className="tile is-child box">
+                            {childs_tutorial_column_1[key].title}
+                          </Link>
                         </div>
                       }
                       {
                         childs_tutorial_column_2[key] &&
                         <div className="tile is-parent is-4">
-                          <article className="tile is-child box">
-                            <Link to={childs_tutorial_column_2[key].slug}>
-                              {childs_tutorial_column_2[key].title}
-                            </Link>
-                          </article>
+                          <Link to={childs_tutorial_column_2[key].slug} className="tile is-child box">
+                            {childs_tutorial_column_2[key].title}
+                          </Link>
                         </div>
                       }
                       {
                         childs_tutorial_column_3[key] &&
                         <div className="tile is-parent is-4">
-                          <article className="tile is-child box">
-                            <Link to={childs_tutorial_column_3[key].slug}>
-                              {childs_tutorial_column_3[key].title}
-                            </Link>
-                          </article>
+                          <Link to={childs_tutorial_column_3[key].slug} className="tile is-child box">
+                            {childs_tutorial_column_3[key].title}
+                          </Link>
                         </div>
                       }
                     </div>
