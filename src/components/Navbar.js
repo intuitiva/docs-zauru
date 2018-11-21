@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo900_obscuro_transparente.png'
-import { FaSearch } from 'react-icons/fa';
+import SearchBox from './SearchBox';
 
 const Navbar = props => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -17,10 +17,7 @@ const Navbar = props => (
     <div className="navbar-end">
       {props.search ? 
       <div className="navbar-item field">
-        <div className="control has-icons-left" style={{marginBottom: `-0.8rem`}}>
-          <input className="input is-rounded header-search" type="text" placeholder="Buscar" id="header-search" />
-          <span className="icon is-left"><FaSearch /></span>
-        </div>
+          <SearchBox />
       </div> : <span></span>}
       <div className="navbar-item">
         <div className="buttons">

@@ -1,13 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Navbar from '../components/Navbar';
-import { FaSearch } from 'react-icons/fa';
 import { FaHeart } from 'react-icons/fa';
 import Background from '../img/jan-kahanek-184676-unsplash.jpg';
 import tw_icon from '../img/twitter-icon-white.svg'
 import fb_icon from '../img/facebook-icon-white.svg'
 import { graphql, Link } from 'gatsby';
 import '../components/css/all.sass';
+import SearchBox from '../components/SearchBox';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -17,6 +17,8 @@ export default class IndexPage extends React.Component {
       <>
         <Helmet title="Documentación de Zauru ERP/CRM">
           <html lang="es" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+          <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
         </Helmet>
         <section className="hero is-fullheight" style={{ backgroundImage: `linear-gradient(180deg, rgba(34, 71, 101, .65), rgba(34, 71, 101, .65)), url(${Background})`, backgroundPosition: `0px 0px, 50% -94px`, backgroundRepeat: `repeat, no-repeat`, backgroundAttachment: `scroll, scroll`, backgroundSize: `auto, cover`}}>
           
@@ -29,10 +31,7 @@ export default class IndexPage extends React.Component {
               <h1 className="title has-text-white">Documentación de Zauru ERP/CRM</h1>
               <h2 className="subtitle has-text-white">Creamos una herramienta asombrosa que apoya a las empresas a ordenarse para tomar decisiones informadas</h2>
               <div className="section">
-                <div className="control has-icons-left">
-                  <input className="input is-medium is-rounded" type="text" placeholder="Buscar"/>
-                  <span className="icon is-left"><FaSearch /></span>
-                </div>
+                <SearchBox />
               </div>
               <div className="buttons is-centered">
                 {
