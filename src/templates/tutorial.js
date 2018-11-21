@@ -24,7 +24,7 @@ export default class TutorialTemplate extends React.Component {
                 {
                   parents_tutorial.map(( tutorial , key) => (
                       <div key={key}>
-                        <Link to={ tutorial.slug } className={["panel-block", current_parent_id === tutorial.id ? " is-active" : ""].join('')}>
+                        <Link to={ tutorial.slug } className={["panel-block", " lvl0", current_parent_id === tutorial.id ? " is-active" : ""].join('')}>
                           <span className="panel-icon">
                             <FaBook />
                           </span>
@@ -35,7 +35,7 @@ export default class TutorialTemplate extends React.Component {
                             current_parent_id === tutorial.id &&
                               childs_tutorial.map((tc, key) => (
                                   current_parent_id === tc.parentTutorial.id && 
-                                  <Link key={key} to={tc.slug} className={["panel-block", "child", slug === tc.slug ? "is-active" : "" ].join(' ')}>
+                                  <Link key={key} to={tc.slug} className={["panel-block", "lvl1", "child", slug === tc.slug ? "is-active" : "" ].join(' ')}>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <span className="panel-icon">
                                       <FaFileAlt />
@@ -52,7 +52,7 @@ export default class TutorialTemplate extends React.Component {
           </div>
           <div id="right" className="column">
             <div className="bottom">
-              <div className="content" dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }} ></div>
+              <div className="content docSearch-content" dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }} ></div>
               
               {
                 tutorial.isParent === true &&
@@ -62,7 +62,7 @@ export default class TutorialTemplate extends React.Component {
                       {
                         childs_tutorial_column_1[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_1[i].slug} className="tile is-child box">
+                          <Link to={childs_tutorial_column_1[i].slug} className="tile is-child box lvl1">
                             {childs_tutorial_column_1[i].title}
                           </Link>
                         </div>
@@ -70,7 +70,7 @@ export default class TutorialTemplate extends React.Component {
                       {
                         childs_tutorial_column_2[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_2[i].slug} className="tile is-child box">
+                          <Link to={childs_tutorial_column_2[i].slug} className="tile is-child box lvl1">
                             {childs_tutorial_column_2[i].title}
                           </Link>
                         </div>
@@ -78,7 +78,7 @@ export default class TutorialTemplate extends React.Component {
                       {
                         childs_tutorial_column_3[i] &&
                         <div className="tile is-parent is-4">
-                          <Link to={childs_tutorial_column_3[i].slug} className="tile is-child box">
+                          <Link to={childs_tutorial_column_3[i].slug} className="tile is-child box lvl1">
                             {childs_tutorial_column_3[i].title}
                           </Link>
                         </div>
