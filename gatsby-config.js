@@ -11,6 +11,7 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: 'Manual de Usuario Zauru',
+    siteUrl: 'https://docs.zauru.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
