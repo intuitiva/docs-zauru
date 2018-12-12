@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 class SearchBox extends React.Component {
 
-    componentDidMount(){
+  componentDidMount(){
 
     if(window.docsearch){
       window.docsearch({ 
