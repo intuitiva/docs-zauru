@@ -19,7 +19,7 @@ class SearchBox extends React.Component {
 
   render() {
     return (
-        <div className="control has-icons-left" style={{marginBottom: `-0.8rem`}}>
+        <div className="control has-icons-left">
             <input className="input is-rounded docs-nav-search-input" type="text" placeholder="Buscar" id="nav-search" autoComplete="off" style={{ width: `100% !important`}} />
             <span className="icon is-left"><FaSearch /></span>
         </div>
