@@ -65,7 +65,7 @@ export default class IndexPage extends React.Component {
                 <p>Creado con <span className="has-text-danger"><FaHeart /></span> por <a href="https://www.intuitiva.solutions" target="_blank" rel="noopener noreferrer" className="has-text-white">Intuitiva</a></p>
               </div>
               <div className="column has-text-right has-text-white">
-                <p>© Intuitiva, S.A. 2010 - 2019. Derechos reservados</p>
+                <p>© Intuitiva, S.A. 2010 - 2020. Derechos reservados</p>
               </div>
             </div>
           </div>
