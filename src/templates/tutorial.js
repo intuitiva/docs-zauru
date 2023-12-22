@@ -94,7 +94,11 @@ const TutorialTemplate = (props) => {
                   {childs_tutorial_column_1[i] && (
                     <div className="tile is-parent is-4">
                       <Link
-                        to={childs_tutorial_column_1[i].slug}
+                        to={`${
+                          childs_tutorial_column_1[i].slug.startsWith("/")
+                            ? childs_tutorial_column_1[i].slug
+                            : "/" + childs_tutorial_column_1[i].slug
+                        }`}
                         className="tile is-child box lvl1"
                       >
                         {childs_tutorial_column_1[i].title}
@@ -104,7 +108,11 @@ const TutorialTemplate = (props) => {
                   {childs_tutorial_column_2[i] && (
                     <div className="tile is-parent is-4">
                       <Link
-                        to={childs_tutorial_column_2[i].slug}
+                        to={`${
+                          childs_tutorial_column_2[i].slug.startsWith("/")
+                            ? childs_tutorial_column_2[i].slug
+                            : "/" + childs_tutorial_column_2[i].slug
+                        }`}
                         className="tile is-child box lvl1"
                       >
                         {childs_tutorial_column_2[i].title}
@@ -114,7 +122,11 @@ const TutorialTemplate = (props) => {
                   {childs_tutorial_column_3[i] && (
                     <div className="tile is-parent is-4">
                       <Link
-                        to={childs_tutorial_column_3[i].slug}
+                        to={`${
+                          childs_tutorial_column_3[i].slug.startsWith("/")
+                            ? childs_tutorial_column_3[i].slug
+                            : "/" + childs_tutorial_column_3[i].slug
+                        }`}
                         className="tile is-child box lvl1"
                       >
                         {childs_tutorial_column_3[i].title}
@@ -133,7 +145,11 @@ const TutorialTemplate = (props) => {
               {parents_tutorial.map((tutorial, key) => (
                 <div key={key}>
                   <Link
-                    to={tutorial.slug}
+                    to={`${
+                      tutorial.slug.startsWith("/")
+                        ? tutorial.slug
+                        : "/" + tutorial.slug
+                    }`}
                     className={[
                       "panel-block",
                       " lvl0",
@@ -151,7 +167,9 @@ const TutorialTemplate = (props) => {
                         current_parent_id === tc.parentTutorial.id && (
                           <Link
                             key={key}
-                            to={tc.slug}
+                            to={`${
+                              tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
+                            }`}
                             className={[
                               "panel-block",
                               "lvl1",

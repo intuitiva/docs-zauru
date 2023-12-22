@@ -16,7 +16,7 @@ const Navbar = (props) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to="" className="navbar-item">
+        <Link to="/" className="navbar-item">
           <figure className="image">
             <img src={logo} alt="Zauru" style={{ width: "76px" }} />
           </figure>

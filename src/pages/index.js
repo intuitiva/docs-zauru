@@ -66,15 +66,21 @@ const IndexPage = (props) => {
               <SearchBox />
             </div>
             <div className="buttons is-centered">
-              {parents_tutorial.map((tutorial, key) => (
-                <Link
-                  to={tutorial.slug}
-                  className="button is-light is-outlined"
-                  key={tutorial.slug}
-                >
-                  {tutorial.title}
-                </Link>
-              ))}
+              {parents_tutorial.map((tutorial, key) => {
+                return (
+                  <Link
+                    to={`${
+                      tutorial.slug.startsWith("/")
+                        ? tutorial.slug
+                        : "/" + tutorial.slug
+                    }`}
+                    className="button is-light is-outlined"
+                    key={tutorial.slug}
+                  >
+                    {tutorial.title}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
