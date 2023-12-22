@@ -1,8 +1,8 @@
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 const path = require("path");
 const _ = require("lodash");
 
-if (process.env.ENVIRONMENT !== 'production') {
+if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
 
@@ -10,23 +10,21 @@ const { spaceId, accessToken } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: 'Manual de Usuario Zauru',
-    siteUrl: 'https://docs.zauru.com',
+    title: "Manual de Usuario Zauru",
+    siteUrl: "https://docs.zauru.com",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-image`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-autolink-headers`,
-          `gatsby-remark-prismjs`,
-        ],
+        plugins: [`gatsby-remark-autolink-headers`, `gatsby-remark-prismjs`],
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -42,12 +40,12 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/img/favicon256.png`
+        icon: `src/img/favicon256.png`,
       },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: "gatsby-source-contentful",
       options: {
         spaceId,
         accessToken,
