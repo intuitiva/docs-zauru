@@ -32,6 +32,8 @@ class Navbar extends React.Component {
             aria-expanded="false"
             style={{ color: "#FFF" }}
             onClick={this.toggleMenu}
+            onKeyUp={this.toggleMenu}
+            tabIndex="0"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

@@ -92,7 +92,7 @@ const IndexPage = (props) => {
                     rel="noopener noreferrer"
                     className="social-link"
                   >
-                    <img src={tw_icon} alt="" />
+                    <img src={tw_icon} alt="Twitter de Zauru" />
                   </a>
                   <a
                     href="https://facebook.com/zauruerp"
@@ -100,7 +100,7 @@ const IndexPage = (props) => {
                     rel="noopener noreferrer"
                     className="social-link"
                   >
-                    <img src={fb_icon} alt="" />
+                    <img src={fb_icon} alt="Facebook de Zauru" />
                   </a>
                 </div>
               </div>
