@@ -123,7 +123,10 @@ const IndexPage = (props) => {
               </p>
             </div>
             <div className="column has-text-right has-text-white">
-              <p>© Intuitiva, S.A. 2010 - 2020. Derechos reservados</p>
+              <p>
+                © Intuitiva, S.A. 2010 - {new Date().getFullYear()}. Derechos
+                reservados
+              </p>
             </div>
           </div>
         </div>
