@@ -83,6 +83,58 @@ const TutorialTemplate = (props) => {
       <div className="columns">
         <div id="right" className="column">
           <div className="bottom">
+            <nav className="panel">
+              <p className="panel-heading">Tutoriales</p>
+              {parents_tutorial.map((tutorial, key) => (
+                <div key={key}>
+                  <Link
+                    to={`${
+                      tutorial.slug.startsWith("/")
+                        ? tutorial.slug
+                        : "/" + tutorial.slug
+                    }`}
+                    className={[
+                      "panel-block",
+                      " lvl0",
+                      current_parent_id === tutorial.id ? " is-active" : "",
+                    ].join("")}
+                  >
+                    <span className="panel-icon">
+                      <FaBook />
+                    </span>
+                    {tutorial.title}
+                  </Link>
+                  {current_parent_id === tutorial.id &&
+                    childs_tutorial.map(
+                      (tc, key) =>
+                        current_parent_id === tc.parentTutorial.id && (
+                          <Link
+                            key={key}
+                            to={`${
+                              tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
+                            }`}
+                            className={[
+                              "panel-block",
+                              "lvl1",
+                              "child",
+                              slug === tc.slug ? "is-active" : "",
+                            ].join(" ")}
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span className="panel-icon">
+                              <FaFileAlt />
+                            </span>
+                            {tc.title}
+                          </Link>
+                        )
+                    )}
+                </div>
+              ))}
+            </nav>
+          </div>
+        </div>
+        <div id="left" className="column is-narrow">
+          <div className="bottom">
             <div
               className="content docSearch-content"
               dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }}
@@ -135,59 +187,6 @@ const TutorialTemplate = (props) => {
                   )}
                 </div>
               ))}
-          </div>
-        </div>
-
-        <div id="left" className="column is-narrow">
-          <div className="bottom">
-            <nav className="panel">
-              <p className="panel-heading">Tutoriales</p>
-              {parents_tutorial.map((tutorial, key) => (
-                <div key={key}>
-                  <Link
-                    to={`${
-                      tutorial.slug.startsWith("/")
-                        ? tutorial.slug
-                        : "/" + tutorial.slug
-                    }`}
-                    className={[
-                      "panel-block",
-                      " lvl0",
-                      current_parent_id === tutorial.id ? " is-active" : "",
-                    ].join("")}
-                  >
-                    <span className="panel-icon">
-                      <FaBook />
-                    </span>
-                    {tutorial.title}
-                  </Link>
-                  {current_parent_id === tutorial.id &&
-                    childs_tutorial.map(
-                      (tc, key) =>
-                        current_parent_id === tc.parentTutorial.id && (
-                          <Link
-                            key={key}
-                            to={`${
-                              tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
-                            }`}
-                            className={[
-                              "panel-block",
-                              "lvl1",
-                              "child",
-                              slug === tc.slug ? "is-active" : "",
-                            ].join(" ")}
-                          >
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="panel-icon">
-                              <FaFileAlt />
-                            </span>
-                            {tc.title}
-                          </Link>
-                        )
-                    )}
-                </div>
-              ))}
-            </nav>
           </div>
         </div>
       </div>
