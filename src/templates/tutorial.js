@@ -81,7 +81,7 @@ const TutorialTemplate = (props) => {
   return (
     <Layout title={tutorial.title} search={true}>
       <div className="columns">
-        <div id="right" className="column">
+        <div id="left" className="column is-narrow">
           <div className="bottom">
             <nav className="panel">
               <p className="panel-heading">Tutoriales</p>
@@ -133,7 +133,7 @@ const TutorialTemplate = (props) => {
             </nav>
           </div>
         </div>
-        <div id="left" className="column is-narrow">
+        <div id="right" className="column">
           <div className="bottom">
             <div
               className="content docSearch-content"
