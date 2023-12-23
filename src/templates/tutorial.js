@@ -84,7 +84,12 @@ const TutorialTemplate = (props) => {
         <div id="left" className="column is-narrow">
           <div className="bottom">
             <nav className="panel">
-              <p className="panel-heading">Tutoriales</p>
+              <p
+                className="panel-heading"
+                style={{ backgroundColor: "grey", color: "white" }}
+              >
+                Tutoriales
+              </p>
               {parents_tutorial.map((tutorial, key) => (
                 <div key={key}>
                   <Link
@@ -93,11 +98,17 @@ const TutorialTemplate = (props) => {
                         ? tutorial.slug
                         : "/" + tutorial.slug
                     }`}
-                    className={[
-                      "panel-block",
-                      " lvl0",
-                      current_parent_id === tutorial.id ? " is-active" : "",
-                    ].join("")}
+                    className={`panel-block lvl0 ${
+                      current_parent_id === tutorial.id ? "is-active" : ""
+                    }`}
+                    style={{
+                      backgroundColor:
+                        current_parent_id === tutorial.id
+                          ? "lightgrey"
+                          : "transparent",
+                      color:
+                        current_parent_id === tutorial.id ? "black" : "inherit",
+                    }}
                   >
                     <span className="panel-icon">
                       <FaBook />
@@ -113,12 +124,14 @@ const TutorialTemplate = (props) => {
                             to={`${
                               tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
                             }`}
-                            className={[
-                              "panel-block",
-                              "lvl1",
-                              "child",
-                              slug === tc.slug ? "is-active" : "",
-                            ].join(" ")}
+                            className={`panel-block lvl child ${
+                              slug === tc.slug ? "is-active" : ""
+                            }`}
+                            style={{
+                              backgroundColor:
+                                slug === tc.slug ? "lightgrey" : "transparent",
+                              color: slug === tc.slug ? "black" : "inherit",
+                            }}
                           >
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <span className="panel-icon">
