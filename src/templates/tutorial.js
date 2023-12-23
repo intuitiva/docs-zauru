@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { FaBook } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export const pageQuery = graphql`
   query ($slug: String!) {
@@ -57,6 +58,9 @@ export const pageQuery = graphql`
 const TutorialTemplate = (props) => {
   const { slug } = props.pageContext;
   const tutorial = props.data.tutorialBySlug;
+
+  const dimension = useWindowDimensions();
+
   const childs_tutorial = props.data.allChildTutorial.edges.map(
     (ct) => ct.node
   );
@@ -78,130 +82,147 @@ const TutorialTemplate = (props) => {
     .filter((tc, index) => tc.parentTutorial.id === current_parent_id)
     .filter((tc, index) => index % 3 === 2);
 
+  const menuTutoriales = (
+    <div id="left" className="column is-narrow">
+      <div className="bottom">
+        <nav className="panel">
+          <p
+            className="panel-heading"
+            style={{ backgroundColor: "grey", color: "white" }}
+          >
+            Tutoriales
+          </p>
+          {parents_tutorial.map((tutorial, key) => (
+            <div key={key}>
+              <Link
+                to={`${
+                  tutorial.slug.startsWith("/")
+                    ? tutorial.slug
+                    : "/" + tutorial.slug
+                }`}
+                className={`panel-block lvl0 ${
+                  current_parent_id === tutorial.id ? "is-active" : ""
+                }`}
+                style={{
+                  backgroundColor:
+                    current_parent_id === tutorial.id
+                      ? "lightgrey"
+                      : "transparent",
+                  color:
+                    current_parent_id === tutorial.id ? "black" : "inherit",
+                }}
+              >
+                <span className="panel-icon">
+                  <FaBook />
+                </span>
+                {tutorial.title}
+              </Link>
+              {current_parent_id === tutorial.id &&
+                childs_tutorial.map(
+                  (tc, key) =>
+                    current_parent_id === tc.parentTutorial.id && (
+                      <Link
+                        key={key}
+                        to={`${
+                          tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
+                        }`}
+                        className={`panel-block lvl child ${
+                          slug === tc.slug ? "is-active" : ""
+                        }`}
+                        style={{
+                          backgroundColor:
+                            slug === tc.slug ? "lightgrey" : "transparent",
+                          color: slug === tc.slug ? "black" : "inherit",
+                        }}
+                      >
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span className="panel-icon">
+                          <FaFileAlt />
+                        </span>
+                        {tc.title}
+                      </Link>
+                    )
+                )}
+            </div>
+          ))}
+        </nav>
+      </div>
+    </div>
+  );
+
+  const linksTutoriales = (
+    <div id="right" className="column">
+      <div className="bottom">
+        <div
+          className="content docSearch-content"
+          dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }}
+        ></div>
+
+        {tutorial.isParent === true &&
+          childs_tutorial_column_1.map((tc, i) => (
+            <div className="tile is-ancestor" key={i}>
+              {childs_tutorial_column_1[i] && (
+                <div className="tile is-parent is-4">
+                  <Link
+                    to={`${
+                      childs_tutorial_column_1[i].slug.startsWith("/")
+                        ? childs_tutorial_column_1[i].slug
+                        : "/" + childs_tutorial_column_1[i].slug
+                    }`}
+                    className="tile is-child box lvl1"
+                  >
+                    {childs_tutorial_column_1[i].title}
+                  </Link>
+                </div>
+              )}
+              {childs_tutorial_column_2[i] && (
+                <div className="tile is-parent is-4">
+                  <Link
+                    to={`${
+                      childs_tutorial_column_2[i].slug.startsWith("/")
+                        ? childs_tutorial_column_2[i].slug
+                        : "/" + childs_tutorial_column_2[i].slug
+                    }`}
+                    className="tile is-child box lvl1"
+                  >
+                    {childs_tutorial_column_2[i].title}
+                  </Link>
+                </div>
+              )}
+              {childs_tutorial_column_3[i] && (
+                <div className="tile is-parent is-4">
+                  <Link
+                    to={`${
+                      childs_tutorial_column_3[i].slug.startsWith("/")
+                        ? childs_tutorial_column_3[i].slug
+                        : "/" + childs_tutorial_column_3[i].slug
+                    }`}
+                    className="tile is-child box lvl1"
+                  >
+                    {childs_tutorial_column_3[i].title}
+                  </Link>
+                </div>
+              )}
+            </div>
+          ))}
+      </div>
+    </div>
+  );
+
   return (
     <Layout title={tutorial.title} search={true}>
       <div className="columns">
-        <div id="left" className="column is-narrow">
-          <div className="bottom">
-            <nav className="panel">
-              <p
-                className="panel-heading"
-                style={{ backgroundColor: "grey", color: "white" }}
-              >
-                Tutoriales
-              </p>
-              {parents_tutorial.map((tutorial, key) => (
-                <div key={key}>
-                  <Link
-                    to={`${
-                      tutorial.slug.startsWith("/")
-                        ? tutorial.slug
-                        : "/" + tutorial.slug
-                    }`}
-                    className={`panel-block lvl0 ${
-                      current_parent_id === tutorial.id ? "is-active" : ""
-                    }`}
-                    style={{
-                      backgroundColor:
-                        current_parent_id === tutorial.id
-                          ? "lightgrey"
-                          : "transparent",
-                      color:
-                        current_parent_id === tutorial.id ? "black" : "inherit",
-                    }}
-                  >
-                    <span className="panel-icon">
-                      <FaBook />
-                    </span>
-                    {tutorial.title}
-                  </Link>
-                  {current_parent_id === tutorial.id &&
-                    childs_tutorial.map(
-                      (tc, key) =>
-                        current_parent_id === tc.parentTutorial.id && (
-                          <Link
-                            key={key}
-                            to={`${
-                              tc.slug.startsWith("/") ? tc.slug : "/" + tc.slug
-                            }`}
-                            className={`panel-block lvl child ${
-                              slug === tc.slug ? "is-active" : ""
-                            }`}
-                            style={{
-                              backgroundColor:
-                                slug === tc.slug ? "lightgrey" : "transparent",
-                              color: slug === tc.slug ? "black" : "inherit",
-                            }}
-                          >
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span className="panel-icon">
-                              <FaFileAlt />
-                            </span>
-                            {tc.title}
-                          </Link>
-                        )
-                    )}
-                </div>
-              ))}
-            </nav>
-          </div>
-        </div>
-        <div id="right" className="column">
-          <div className="bottom">
-            <div
-              className="content docSearch-content"
-              dangerouslySetInnerHTML={{ __html: tutorial.text.format.html }}
-            ></div>
-
-            {tutorial.isParent === true &&
-              childs_tutorial_column_1.map((tc, i) => (
-                <div className="tile is-ancestor" key={i}>
-                  {childs_tutorial_column_1[i] && (
-                    <div className="tile is-parent is-4">
-                      <Link
-                        to={`${
-                          childs_tutorial_column_1[i].slug.startsWith("/")
-                            ? childs_tutorial_column_1[i].slug
-                            : "/" + childs_tutorial_column_1[i].slug
-                        }`}
-                        className="tile is-child box lvl1"
-                      >
-                        {childs_tutorial_column_1[i].title}
-                      </Link>
-                    </div>
-                  )}
-                  {childs_tutorial_column_2[i] && (
-                    <div className="tile is-parent is-4">
-                      <Link
-                        to={`${
-                          childs_tutorial_column_2[i].slug.startsWith("/")
-                            ? childs_tutorial_column_2[i].slug
-                            : "/" + childs_tutorial_column_2[i].slug
-                        }`}
-                        className="tile is-child box lvl1"
-                      >
-                        {childs_tutorial_column_2[i].title}
-                      </Link>
-                    </div>
-                  )}
-                  {childs_tutorial_column_3[i] && (
-                    <div className="tile is-parent is-4">
-                      <Link
-                        to={`${
-                          childs_tutorial_column_3[i].slug.startsWith("/")
-                            ? childs_tutorial_column_3[i].slug
-                            : "/" + childs_tutorial_column_3[i].slug
-                        }`}
-                        className="tile is-child box lvl1"
-                      >
-                        {childs_tutorial_column_3[i].title}
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              ))}
-          </div>
-        </div>
+        {dimension > 768 ? (
+          <>
+            {menuTutoriales}
+            {linksTutoriales}
+          </>
+        ) : (
+          <>
+            {linksTutoriales}
+            {menuTutoriales}
+          </>
+        )}
       </div>
     </Layout>
   );
