@@ -1,6 +1,4 @@
 const dotenv = require("dotenv");
-const path = require("path");
-const _ = require("lodash");
 
 if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();

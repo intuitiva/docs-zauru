@@ -1,0 +1,80 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/apps/webapp_tables.json":
+    post:
+      summary: Creates a WebApp Table
+      tags:
+      - WebAppTables
+      security:
+      - user_email: []
+        user_token: []
+      parameters: []
+      responses:
+        '201':
+          description: webapp table created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                webapp_table:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    rows_structure:
+                      type: array
+                      items:
+                        type: string
+                    rows_type:
+                      type: array
+                      items:
+                        type: string
+                  required:
+                  - name
+                  - rows_structure
+                  - rows_type
+  "/apps/webapp_tables/{id}.json":
+    delete:
+      summary: Deletes a WebApp Table
+      tags:
+      - WebAppTables
+      security:
+      - user_email: []
+        user_token: []
+      parameters:
+      - name: id
+        in: path
+        description: ID of the WebApp Table
+        required: true
+        schema:
+          type: integer
+      responses:
+        '204':
+          description: webapp table deleted
+        '404':
+          description: webapp table not found
+components:
+  securitySchemes:
+    user_email:
+      type: apiKey
+      name: X-User-Email
+      in: header
+    user_token:
+      type: apiKey
+      name: X-User-Token
+      in: header
+servers:
+- url: http://localhost:3000/
+  description: Entorno local
+- url: https://zauru.herokuapp.com/
+  description: Staging
+- url: http://app.zauru.com/
+  description: Producción
