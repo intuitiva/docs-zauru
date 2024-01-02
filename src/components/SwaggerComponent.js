@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import loadable from "@loadable/component";
 
-const SwaggerComponent = () => {
-  const [isBrowser, setIsBrowser] = useState(false);
-  let SwaggerUI;
+const SwaggerUI = loadable(() => import("swagger-ui-react"), {
+  fallback: <div>Loading...</div>,
+});
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      SwaggerUI = require("swagger-ui-react");
-      setIsBrowser(true);
-    }
-  }, []);
-
-  if (!isBrowser) {
-    return null;
-  }
-
-  return <SwaggerUI.default url="/swagger.yaml" />;
-};
+const SwaggerComponent = () => <SwaggerUI url="/swagger.yaml" />;
 
 export default SwaggerComponent;
