@@ -1,0 +1,19 @@
+.swagger-ui .scheme-container {
+  background-color: transparent;
+}
+
+.swagger-ui,
+.swagger-ui .servers-title,
+.swagger-ui a.nostyle,
+.swagger-ui .opblock .opblock-section-header h4,
+.swagger-ui .opblock-external-docs-wrapper p,
+.swagger-ui .opblock-title_normal p,
+.swagger-ui .opblock-description-wrapper p,
+.swagger-ui .opblock-external-docs-wrapper p,
+.swagger-ui .opblock-title_normal p,
+.swagger-ui .tab li button.tablinks,
+.swagger-ui .response-col_status,
+.swagger-ui table thead tr td,
+.swagger-ui table thead tr th {
+  color: black;
+}
