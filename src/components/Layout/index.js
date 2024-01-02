@@ -9,7 +9,7 @@ import "../css/all.sass";
 
 const Section = styled.section``;
 
-function Layout({ children, title }) {
+function Layout({ children, title, noWrap }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,7 +43,7 @@ function Layout({ children, title }) {
           <Navbar search={true} />
         </div>
       </section>
-      <Section className="wrapper">{children}</Section>
+      <Section className={!noWrap}>{children}</Section>
     </>
   );
 }

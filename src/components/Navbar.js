@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo900_obscuro_transparente.png";
 import SearchBox from "./SearchBox";
 
 const Navbar = (props) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [host, setHost] = useState("");
+
+  useEffect(() => {
+    // Verificar si window está disponible (navegador) y obtener el host
+    if (typeof window !== "undefined") {
+      setHost(window.location.origin);
+    }
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -49,12 +57,20 @@ const Navbar = (props) => {
         <div className="navbar-end">
           <a
             className="navbar-item button"
-            href="http://www.zauru.com/home"
+            href="https://www.zauru.com/home"
             target="_blank"
             rel="noopener noreferrer"
             style={{ margin: "10px" }}
           >
             Conoce m&aacute;s de Zauru
+          </a>
+          <a
+            className="navbar-item button"
+            href={`${host}/api-docs`}
+            rel="noopener noreferrer"
+            style={{ margin: "10px" }}
+          >
+            Documentación API
           </a>
           <a
             className="navbar-item button"
