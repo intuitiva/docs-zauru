@@ -1,0 +1,32 @@
+# Netlify build configuration for the Zauru docs site (Docusaurus).
+#
+# The site source lives at the repository root. Netlify runs
+# `npm install` automatically before `command`, then publishes the
+# generated `build/` directory as static assets.
+#
+# See DEPLOY.md for the full step-by-step deployment guide.
+
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # Docusaurus 3.x requires Node 18+. The repo pins Node 22 via .nvmrc;
+  # Netlify reads .nvmrc automatically, but we set NODE_VERSION for clarity.
+  NODE_VERSION = "22"
+  # Keep npm quiet in CI logs.
+  NPM_FLAGS = "--no-audit --no-fund"
+
+# Docusaurus emits clean, extension-less URLs (e.g. /webapps instead of
+# /webapps.html), so we let Netlify serve the static files as-is and
+# fall back to the pretty URL when no extension is given.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Long-cache the hashed build assets.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

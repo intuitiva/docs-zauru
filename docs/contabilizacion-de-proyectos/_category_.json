@@ -1,0 +1,10 @@
+{
+  "position": 4,
+  "label": "Contabilización de Proyectos",
+  "link": {
+    "type": "doc",
+    "id": "contabilizacion-de-proyectos/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

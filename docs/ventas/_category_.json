@@ -1,0 +1,10 @@
+{
+  "position": 6,
+  "label": "Ventas",
+  "link": {
+    "type": "doc",
+    "id": "ventas/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

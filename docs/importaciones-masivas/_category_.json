@@ -1,0 +1,10 @@
+{
+  "position": 22,
+  "label": "Importaciones masivas de datos históricos",
+  "link": {
+    "type": "doc",
+    "id": "importaciones-masivas/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

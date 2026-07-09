@@ -1,0 +1,10 @@
+{
+  "position": 3,
+  "label": "Contabilidad",
+  "link": {
+    "type": "doc",
+    "id": "contabilidad/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

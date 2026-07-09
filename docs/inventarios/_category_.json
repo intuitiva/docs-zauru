@@ -1,0 +1,10 @@
+{
+  "position": 5,
+  "label": "Inventarios",
+  "link": {
+    "type": "doc",
+    "id": "inventarios/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

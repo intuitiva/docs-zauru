@@ -1,0 +1,10 @@
+{
+  "position": 8,
+  "label": "Casos de Soporte",
+  "link": {
+    "type": "doc",
+    "id": "casos-de-soporte/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

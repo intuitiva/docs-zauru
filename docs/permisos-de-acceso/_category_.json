@@ -1,0 +1,10 @@
+{
+  "position": 2,
+  "label": "Permisos de Acceso",
+  "link": {
+    "type": "doc",
+    "id": "permisos-de-acceso/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

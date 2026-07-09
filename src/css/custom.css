@@ -1,0 +1,15 @@
+/* Place any custom CSS overrides here. Kept intentionally minimal. */
+:root {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2978c8;
+  --ifm-color-primary-darker: #1e6ab0;
+  --ifm-color-primary-darkest: #174a85;
+  --ifm-color-primary-light: #5a9ef7;
+  --ifm-color-primary-lighter: #7eb0f8;
+  --ifm-color-primary-lightest: #a3c3fa;
+}
+
+.markdown img {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+}

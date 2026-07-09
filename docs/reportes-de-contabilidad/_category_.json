@@ -1,0 +1,10 @@
+{
+  "position": 14,
+  "label": "Reportes de Contabilidad",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-contabilidad/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

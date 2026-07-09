@@ -1,0 +1,10 @@
+{
+  "position": 16,
+  "label": "Reportes de Ventas",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-ventas/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

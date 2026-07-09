@@ -1,0 +1,10 @@
+{
+  "position": 20,
+  "label": "Reportes de Contratos",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-contratos/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

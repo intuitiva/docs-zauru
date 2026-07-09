@@ -1,0 +1,10 @@
+{
+  "position": 15,
+  "label": "Reportes de Inventarios",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-inventarios/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

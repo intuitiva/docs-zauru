@@ -1,0 +1,10 @@
+{
+  "position": 12,
+  "label": "CRM",
+  "link": {
+    "type": "doc",
+    "id": "crm/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

@@ -1,0 +1,10 @@
+{
+  "position": 21,
+  "label": "Reportes de CRM",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-crm/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

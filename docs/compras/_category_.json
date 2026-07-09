@@ -1,0 +1,10 @@
+{
+  "position": 7,
+  "label": "Compras",
+  "link": {
+    "type": "doc",
+    "id": "compras/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

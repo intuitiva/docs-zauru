@@ -1,0 +1,10 @@
+{
+  "position": 10,
+  "label": "Contratos",
+  "link": {
+    "type": "doc",
+    "id": "contratos/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

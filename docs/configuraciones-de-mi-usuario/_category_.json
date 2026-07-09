@@ -1,0 +1,10 @@
+{
+  "position": 0,
+  "label": "Configuraciones de mi usuario",
+  "link": {
+    "type": "doc",
+    "id": "configuraciones-de-mi-usuario/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

@@ -1,0 +1,10 @@
+{
+  "position": 1,
+  "label": "Primeros Pasos",
+  "link": {
+    "type": "doc",
+    "id": "primeros-pasos/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

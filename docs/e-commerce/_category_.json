@@ -1,0 +1,10 @@
+{
+  "position": 11,
+  "label": "E-commerce",
+  "link": {
+    "type": "doc",
+    "id": "e-commerce/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

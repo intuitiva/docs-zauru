@@ -1,0 +1,10 @@
+{
+  "position": 9,
+  "label": "Punto de Venta",
+  "link": {
+    "type": "doc",
+    "id": "punto-de-venta/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

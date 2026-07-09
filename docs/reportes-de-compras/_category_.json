@@ -1,0 +1,10 @@
+{
+  "position": 17,
+  "label": "Reportes de Compras",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-compras/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

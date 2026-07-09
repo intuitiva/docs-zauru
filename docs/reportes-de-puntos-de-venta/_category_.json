@@ -1,0 +1,10 @@
+{
+  "position": 19,
+  "label": "Reportes de Puntos de Venta",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-puntos-de-venta/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}
