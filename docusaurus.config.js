@@ -10,7 +10,7 @@ const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Documentación de Zauru",
-  tagline: "Manual de usuario de Zauru ERP/CRM",
+  tagline: "Manual de usuario de Zauru ERP",
   url: "https://docs.zauru.com",
   baseUrl: "/",
   trailingSlash: false,
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub Pages / Netlify: this assumes the repo is hosted at the org root.
   // Set this to your real repo if you want the "Edit this page" links wired up.
-  projectName: "manual-de-usuario-zauru",
-  organizationName: "zauru",
+  projectName: "docs-zauru",
+  organizationName: "intuitiva",
 
   onBrokenLinks: "throw",
   markdown: {
@@ -70,7 +70,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "Documentación de Zauru",
+        title: "Documentación del ERP",
         logo: {
           alt: "Zauru",
           src: "img/logo.png",
