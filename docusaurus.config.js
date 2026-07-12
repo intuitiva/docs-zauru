@@ -102,6 +102,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        // Public Algolia DocSearch credentials — safe to commit (search-only key).
+        // Manage your index at https://crawler.algolia.com
+        appId: "ZVDKPO68BR",
+        apiKey: "25e0c307fb5498760948b937c7534337",
+        indexName: "prod_DOCS_ZAURU",
+        contextualSearch: true,
+      },
     }),
 };
 
