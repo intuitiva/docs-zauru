@@ -35,6 +35,17 @@ const config = {
     { tagName: "meta", attributes: { name: "twitter:card", content: "summary" } },
   ],
 
+  // Plausible Analytics — self-hosted at plausible.intuitiva.cloud.
+  // script.js (modern) auto-tracks SPA route changes via the History API,
+  // so Docusaurus client-side navigations are counted without extra code.
+  scripts: [
+    {
+      src: "https://plausible.intuitiva.cloud/js/script.js",
+      defer: true,
+      "data-domain": "docs.zauru.com",
+    },
+  ],
+
   // GitHub Pages / Netlify: this assumes the repo is hosted at the org root.
   // Set this to your real repo if you want the "Edit this page" links wired up.
   projectName: "docs-zauru",
