@@ -1,15 +1,930 @@
-/* Place any custom CSS overrides here. Kept intentionally minimal. */
+/**
+ * Zauru Docs — Custom theme
+ * ---------------------------------
+ * Brand palette: deep teal primary + aureola gold (#FDCA34) accent.
+ * Typography: Sora (headings) + Inter (body), self-hosted via @fontsource.
+ * Warm neutrals for a closer-to-LATAM business audience.
+ */
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/sora/400.css";
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+@import "@fontsource/sora/800.css";
+
+/* ============================================================
+   1. DESIGN TOKENS — LIGHT MODE
+   ============================================================ */
 :root {
-  --ifm-color-primary: #3b82f6;
-  --ifm-color-primary-dark: #2978c8;
-  --ifm-color-primary-darker: #1e6ab0;
-  --ifm-color-primary-darkest: #174a85;
-  --ifm-color-primary-light: #5a9ef7;
-  --ifm-color-primary-lighter: #7eb0f8;
-  --ifm-color-primary-lightest: #a3c3fa;
+  /* Brand — primary (teal) scale */
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0d6860;
+  --ifm-color-primary-darker: #0b5a54;
+  --ifm-color-primary-darkest: #083f3a;
+  --ifm-color-primary-light: #1a8d83;
+  --ifm-color-primary-lighter: #2ba298;
+  --ifm-color-primary-lightest: #57bdb5;
+
+  /* Brand — accent (aureola gold) */
+  --zauru-gold: #fdca34;
+  --zauru-gold-soft: #ffe27a;
+  --zauru-gold-deep: #e0a800;
+  --zauru-gold-tint: rgba(253, 202, 52, 0.14);
+
+  /* Warm neutrals */
+  --zauru-ink: #1f2937;
+  --zauru-ink-soft: #374151;
+  --zauru-paper: #faf9f6;
+  --zauru-paper-2: #f4f2ec;
+  --zauru-line: #e7e3d8;
+
+  /* Typography */
+  --ifm-font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-heading: "Sora", "Inter", system-ui, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-heading);
+  --ifm-font-family-monospace: "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* Headings */
+  --ifm-h1-font-size: 2.2rem;
+  --ifm-h2-font-size: 1.65rem;
+  --ifm-h3-font-size: 1.3rem;
+  --ifm-heading-letter-spacing: -0.01em;
+  --ifm-heading-weight: 700;
+
+  /* Surfaces */
+  --ifm-background-color: var(--zauru-paper);
+  --ifm-background-surface-color: #ffffff;
+  --zauru-card-bg: #ffffff;
+  --zauru-card-bg-hover: #fffdf7;
+  --zauru-card-border: var(--zauru-line);
+  --ifm-card-background: var(--zauru-card-bg);
+
+  /* Text */
+  --ifm-heading-color: var(--zauru-ink);
+  --ifm-font-color-base: var(--zauru-ink-soft);
+  --ifm-color-emphasis-600: #4b5563;
+  --ifm-color-emphasis-700: var(--zauru-ink);
+  --ifm-color-emphasis-800: #111827;
+
+  /* Borders / radius */
+  --ifm-global-radius: 10px;
+  --ifm-code-border-radius: 6px;
+  --zauru-radius-sm: 6px;
+  --zauru-radius-md: 10px;
+  --zauru-radius-lg: 16px;
+
+  /* Shadows */
+  --ifm-global-shadow-l1: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --ifm-global-shadow-l2: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --zauru-shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --zauru-shadow-card-hover: 0 8px 24px rgba(15, 118, 110, 0.12), 0 2px 6px rgba(15, 23, 42, 0.06);
+  --zauru-halo-glow: 0 0 60px 12px rgba(253, 202, 52, 0.35);
+
+  /* Sidebar */
+  --ifm-menu-link-sublist-icon-filter: invert(38%) sepia(18%) saturate(1400%) hue-rotate(155deg);
+
+  /* Code blocks */
+  --ifm-code-background: var(--zauru-paper-2);
+  --ifm-code-color: var(--zauru-ink);
+
+  /* Hero */
+  --zauru-hero-bg-start: #0b5a54;
+  --zauru-hero-bg-end: #083f3a;
+  --zauru-hero-text: #ffffff;
+  --zauru-hero-text-soft: rgba(255, 255, 255, 0.82);
 }
 
+/* ============================================================
+   2. DESIGN TOKENS — DARK MODE
+   ============================================================ */
+[data-theme="dark"] {
+  --ifm-color-primary: #2ba298;
+  --ifm-color-primary-dark: #1f8a82;
+  --ifm-color-primary-darker: #1a7570;
+  --ifm-color-primary-darkest: #114b48;
+  --ifm-color-primary-light: #4dbab2;
+  --ifm-color-primary-lighter: #6fcec7;
+  --ifm-color-primary-lightest: #9ee0db;
+
+  --zauru-gold: #fdca34;
+  --zauru-gold-soft: #ffe27a;
+  --zauru-gold-deep: #e0a800;
+  --zauru-gold-tint: rgba(253, 202, 52, 0.12);
+
+  --zauru-ink: #f3f1ea;
+  --zauru-ink-soft: #d6d3c8;
+  --zauru-paper: #15181a;
+  --zauru-paper-2: #1c2024;
+  --zauru-line: #2c3236;
+
+  --ifm-background-color: var(--zauru-paper);
+  --ifm-background-surface-color: var(--zauru-paper-2);
+  --zauru-card-bg: #1c2024;
+  --zauru-card-bg-hover: #222730;
+  --zauru-card-border: var(--zauru-line);
+  --ifm-card-background: var(--zauru-card-bg);
+
+  --ifm-heading-color: var(--zauru-ink);
+  --ifm-font-color-base: var(--zauru-ink-soft);
+  --ifm-color-emphasis-600: #a8a89f;
+  --ifm-color-emphasis-700: var(--zauru-ink);
+  --ifm-color-emphasis-800: #ffffff;
+  --ifm-color-emphasis-300: #3a4045;
+  --ifm-color-emphasis-200: #2f3439;
+  --ifm-color-emphasis-100: #262b30;
+
+  --ifm-code-background: #262b30;
+  --ifm-code-color: var(--zauru-ink);
+
+  --zauru-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --zauru-shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--zauru-gold-tint);
+  --zauru-halo-glow: 0 0 70px 18px rgba(253, 202, 52, 0.28);
+
+  --zauru-hero-bg-start: #114b48;
+  --zauru-hero-bg-end: #082a28;
+  --zauru-hero-text: #ffffff;
+  --zauru-hero-text-soft: rgba(255, 255, 255, 0.78);
+}
+
+/* ============================================================
+   3. BASE TYPOGRAPHY
+   ============================================================ */
+html {
+  font-size: var(--ifm-font-size-base);
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+  color: var(--ifm-font-color-base);
+  background-color: var(--ifm-background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-font-family-heading);
+  letter-spacing: var(--ifm-heading-letter-spacing);
+  color: var(--ifm-heading-color);
+}
+
+h1 { font-weight: 700; }
+h2 { font-weight: 700; }
+h3, h4 { font-weight: 600; }
+
+/* Links */
+a {
+  color: var(--ifm-color-primary);
+  transition: color 120ms ease, background-color 120ms ease;
+}
+a:hover {
+  color: var(--ifm-color-primary-darker);
+}
+.theme-doc-sidebar-item-link a:hover,
+.theme-doc-sidebar-item-category .menu__link:hover {
+  background-color: var(--zauru-gold-tint);
+  color: var(--ifm-color-primary-darkest);
+}
+
+/* ============================================================
+   4. NAVBAR
+   ============================================================ */
+.navbar {
+  background-color: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--zauru-line);
+  box-shadow: none;
+  backdrop-filter: saturate(140%) blur(8px);
+}
+.navbar__title {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.navbar__logo {
+  margin-right: 10px;
+}
+.navbar__link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: var(--zauru-radius-sm);
+  padding: 0.45rem 0.75rem;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.navbar__link:hover {
+  background-color: var(--zauru-gold-tint);
+  color: var(--ifm-color-primary-darkest);
+}
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+/* The "Ingresar" CTA — last right item */
+.navbar .navbar__item:last-child .navbar__link,
+.navbar__inner .navbar__items--right .navbar__link:last-of-type {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+.navbar .navbar__item:last-child .navbar__link:hover,
+.navbar__inner .navbar__items--right .navbar__link:last-of-type:hover {
+  background-color: var(--ifm-color-primary-darker);
+  color: #fff;
+}
+
+/* Color mode toggle */
+[class^="toggleButton"] {
+  border-radius: 999px;
+}
+
+/* ============================================================
+   5. SIDEBAR
+   ============================================================ */
+.theme-doc-sidebar {
+  border-right: 1px solid var(--zauru-line);
+}
+.menu__list {
+  font-size: 0.94rem;
+}
+.menu__link {
+  border-radius: var(--zauru-radius-sm);
+  font-weight: 500;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(15, 118, 110, 0.1);
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 600;
+}
+.menu__link--active:not(.menu__link--sublist)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  border-radius: 2px;
+  background-color: var(--zauru-gold);
+}
+/* Category icon alignment */
+.zauru-sidebar-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+  flex-shrink: 0;
+  color: var(--ifm-color-emphasis-600);
+  transition: color 120ms ease;
+}
+.menu__link--active .zauru-sidebar-icon,
+.menu__link:hover .zauru-sidebar-icon {
+  color: var(--zauru-gold-deep);
+}
+
+/* ============================================================
+   6. CARDS / SECTION GRID
+   ============================================================ */
+.zauru-card {
+  display: block;
+  height: 100%;
+  padding: 18px 20px;
+  border-radius: var(--zauru-radius-md);
+  border: 1px solid var(--zauru-card-border);
+  background: var(--zauru-card-bg);
+  box-shadow: var(--zauru-shadow-card);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+.zauru-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--zauru-shadow-card-hover);
+  border-color: var(--zauru-gold);
+  background: var(--zauru-card-bg-hover);
+  color: inherit;
+  text-decoration: none;
+}
+.zauru-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--zauru-gold-tint);
+  color: var(--zauru-gold-deep);
+  margin-bottom: 12px;
+}
+.zauru-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+.zauru-card__title {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--ifm-heading-color);
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+.zauru-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+}
+
+/* ============================================================
+   7. HERO (homepage)
+   ============================================================ */
+.zauru-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--zauru-hero-bg-start), var(--zauru-hero-bg-end));
+  color: var(--zauru-hero-text);
+  padding: 64px 24px 72px;
+  text-align: center;
+  border-bottom: 3px solid var(--zauru-gold);
+}
+.zauru-hero::before {
+  /* Aureola halo glow */
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 202, 52, 0.55) 0%, rgba(253, 202, 52, 0) 70%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+.zauru-hero__title {
+  position: relative;
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+  color: #fff;
+}
+.zauru-hero__title span {
+  color: var(--zauru-gold);
+}
+.zauru-hero__subtitle {
+  position: relative;
+  font-size: 1.15rem;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  color: var(--zauru-hero-text-soft);
+  line-height: 1.55;
+}
+.zauru-hero__search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(253, 202, 52, 0.5);
+  border-radius: 999px;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.zauru-hero__search:hover {
+  background: rgba(253, 202, 52, 0.18);
+  border-color: var(--zauru-gold);
+  text-decoration: none;
+  color: #fff;
+}
+.zauru-hero__search svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Role-based entry pills */
+.zauru-roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+.zauru-role-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--zauru-card-bg);
+  border: 1px solid var(--zauru-card-border);
+  color: var(--zauru-ink);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+.zauru-role-pill:hover {
+  transform: translateY(-1px);
+  border-color: var(--zauru-gold);
+  background: var(--zauru-card-bg-hover);
+  color: var(--zauru-ink);
+  text-decoration: none;
+}
+.zauru-role-pill svg {
+  width: 15px;
+  height: 15px;
+  color: var(--ifm-color-primary);
+}
+
+/* Section grouping */
+.zauru-section-group {
+  margin-bottom: 44px;
+}
+.zauru-section-group__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.zauru-section-group__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  flex-shrink: 0;
+}
+.zauru-section-group__icon svg {
+  width: 18px;
+  height: 18px;
+}
+.zauru-section-group__title {
+  font-family: var(--ifm-font-family-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+  margin: 0;
+}
+.zauru-section-group__count {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--zauru-paper-2);
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--zauru-line);
+}
+.zauru-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* ============================================================
+   8. MARKDOWN — DOC PAGES
+   ============================================================ */
+.markdown {
+  line-height: var(--ifm-line-height-base);
+}
+.markdown h1 {
+  font-size: var(--ifm-h1-font-size);
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--zauru-gold);
+  display: inline-block;
+  margin-bottom: 0.6em;
+}
+.markdown h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-top: 2.2em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--zauru-line);
+}
+.markdown h3 {
+  font-size: var(--ifm-h3-font-size);
+  margin-top: 1.8em;
+}
+.markdown p,
+.markdown li {
+  color: var(--ifm-font-color-base);
+}
+.markdown a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 118, 110, 0.3);
+}
+.markdown a:hover {
+  border-bottom-color: var(--ifm-color-primary);
+}
+
+/* Screenshot frames */
 .markdown img {
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 6px;
+  border: 1px solid var(--zauru-line);
+  border-radius: var(--zauru-radius-md);
+  box-shadow: var(--zauru-shadow-card);
+  display: block;
+  margin: 1.2em auto;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+[data-theme="dark"] .markdown img {
+  background: #fff;
+}
+
+/* Inline code */
+.markdown code:not([class*="language-"]) {
+  background: var(--ifm-code-background);
+  color: var(--ifm-color-primary-darkest);
+  padding: 0.15em 0.4em;
+  border-radius: var(--ifm-code-border-radius);
+  font-size: 0.88em;
+  font-weight: 600;
+  border: 1px solid var(--zauru-line);
+}
+[data-theme="dark"] .markdown code:not([class*="language-"]) {
+  color: var(--zauru-gold-soft);
+}
+
+/* Code blocks */
+.theme-code-block {
+  border-radius: var(--zauru-radius-md);
+  border: 1px solid var(--zauru-line);
+}
+
+/* Tables */
+.markdown table {
+  border-radius: var(--zauru-radius-md);
+  overflow: hidden;
+  box-shadow: var(--zauru-shadow-card);
+}
+.markdown table th {
+  background: var(--zauru-paper-2);
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 600;
+}
+
+/* ============================================================
+   9. ADMONITIONS
+   ============================================================ */
+.admonition {
+  border-radius: var(--zauru-radius-md);
+  border-left: 4px solid var(--ifm-color-primary);
+  box-shadow: var(--zauru-shadow-card);
+  background: var(--ifm-background-surface-color);
+  padding: 12px 16px;
+  margin: 1.4em 0;
+}
+.admonition .admonition-heading {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.admonition .admonition-icon {
+  vertical-align: middle;
+}
+
+.admonition-note {
+  border-left-color: var(--ifm-color-primary);
+  background: rgba(15, 118, 110, 0.06);
+}
+.admonition-tip {
+  border-left-color: var(--zauru-gold-deep);
+  background: var(--zauru-gold-tint);
+}
+.admonition-tip .admonition-heading {
+  color: var(--zauru-gold-deep);
+}
+.admonition-info {
+  border-left-color: #2563eb;
+  background: rgba(37, 99, 235, 0.07);
+}
+.admonition-warning {
+  border-left-color: #d97706;
+  background: rgba(217, 119, 6, 0.09);
+}
+.admonition-danger {
+  border-left-color: #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+}
+[data-theme="dark"] .admonition-note { background: rgba(43, 162, 152, 0.12); }
+[data-theme="dark"] .admonition-tip { background: var(--zauru-gold-tint); }
+[data-theme="dark"] .admonition-info { background: rgba(37, 99, 235, 0.14); }
+[data-theme="dark"] .admonition-warning { background: rgba(217, 119, 6, 0.14); }
+[data-theme="dark"] .admonition-danger { background: rgba(220, 38, 38, 0.14); }
+
+/* ============================================================
+   10. DOC BADGES / RELATED / FEEDBACK
+   ============================================================ */
+.zauru-doc-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 1.4em;
+  list-style: none;
+  padding: 0;
+}
+.zauru-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 11px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: var(--zauru-paper-2);
+  border: 1px solid var(--zauru-line);
+  color: var(--ifm-color-emphasis-700);
+}
+.zauru-badge svg {
+  width: 13px;
+  height: 13px;
+}
+.zauru-badge--rol {
+  background: rgba(15, 118, 110, 0.1);
+  border-color: rgba(15, 118, 110, 0.25);
+  color: var(--ifm-color-primary-darkest);
+}
+.zauru-badge--tiempo {
+  background: var(--zauru-gold-tint);
+  border-color: rgba(253, 202, 52, 0.4);
+  color: var(--zauru-gold-deep);
+}
+
+.zauru-related {
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--zauru-line);
+}
+.zauru-related__title {
+  font-family: var(--ifm-font-family-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--ifm-heading-color);
+}
+.zauru-related__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.zauru-related__card {
+  display: block;
+  padding: 14px 16px;
+  border-radius: var(--zauru-radius-sm);
+  border: 1px solid var(--zauru-card-border);
+  background: var(--zauru-card-bg);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.92rem;
+  transition: border-color 120ms ease, transform 120ms ease, background-color 120ms ease;
+}
+.zauru-related__card:hover {
+  border-color: var(--zauru-gold);
+  transform: translateX(2px);
+  background: var(--zauru-card-bg-hover);
+  text-decoration: none;
+}
+.zauru-related__card svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  color: var(--ifm-color-primary);
+  vertical-align: middle;
+}
+
+.zauru-feedback {
+  margin-top: 2.5em;
+  padding: 18px 20px;
+  border-radius: var(--zauru-radius-md);
+  background: var(--zauru-paper-2);
+  border: 1px solid var(--zauru-line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+.zauru-feedback__question {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ifm-heading-color);
+  margin: 0;
+}
+.zauru-feedback__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--zauru-card-border);
+  background: var(--zauru-card-bg);
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color 120ms ease, background-color 120ms ease, transform 120ms ease;
+}
+.zauru-feedback__btn:hover {
+  border-color: var(--zauru-gold);
+  transform: translateY(-1px);
+}
+.zauru-feedback__btn.is-selected {
+  background: var(--zauru-gold-tint);
+  border-color: var(--zauru-gold);
+  color: var(--zauru-gold-deep);
+}
+.zauru-feedback__btn svg {
+  width: 15px;
+  height: 15px;
+}
+.zauru-feedback__thanks {
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-left: auto;
+}
+
+/* ============================================================
+   11. FOOTER
+   ============================================================ */
+.footer {
+  background: var(--zauru-paper-2);
+  border-top: 1px solid var(--zauru-line);
+  padding: 40px 24px 24px;
+}
+.footer__copyright {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+}
+.footer__link-item {
+  font-weight: 500;
+}
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* ============================================================
+   12. PAGINATION (prev/next at doc bottom)
+   ============================================================ */
+.pagination-nav__link {
+  border-radius: var(--zauru-radius-md);
+  border-color: var(--zauru-card-border);
+  transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+.pagination-nav__link:hover {
+  border-color: var(--zauru-gold);
+  transform: translateY(-1px);
+  box-shadow: var(--zauru-shadow-card);
+}
+
+/* ============================================================
+   13. TOC (right sidebar)
+   ============================================================ */
+.table-of-contents__link {
+  border-radius: var(--zauru-radius-sm);
+  padding-left: 8px;
+  transition: color 120ms ease, background-color 120ms ease;
+}
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary);
+}
+.table-of-contents__link--active {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  border-left: 2px solid var(--zauru-gold);
+}
+
+/* ============================================================
+   14. SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--zauru-line);
+  border-radius: 999px;
+  border: 2px solid var(--ifm-background-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-600);
+}
+
+/* ============================================================
+   15. 404 PAGE
+   ============================================================ */
+.zauru-404 {
+  text-align: center;
+  padding: 80px 24px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.zauru-404__code {
+  font-family: var(--ifm-font-family-heading);
+  font-size: clamp(4rem, 12vw, 7rem);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 8px;
+  color: var(--zauru-gold);
+  text-shadow: 0 0 40px rgba(253, 202, 52, 0.4);
+}
+.zauru-404__title {
+  font-family: var(--ifm-font-family-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.zauru-404__text {
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 28px;
+}
+.zauru-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.zauru-404__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+.zauru-404__btn--primary {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border: 1px solid var(--ifm-color-primary);
+}
+.zauru-404__btn--primary:hover {
+  background: var(--ifm-color-primary-darker);
+  color: #fff;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.zauru-404__btn--ghost {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--zauru-line);
+}
+.zauru-404__btn--ghost:hover {
+  border-color: var(--zauru-gold);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* ============================================================
+   16. SEARCH (Algolia)
+   ============================================================ */
+.DocSearch-Button {
+  border-radius: 999px;
+  border: 1px solid var(--zauru-line);
+  background: var(--zauru-paper-2);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+.DocSearch-Button:hover {
+  border-color: var(--zauru-gold);
+  box-shadow: 0 0 0 3px var(--zauru-gold-tint);
+}
+.DocSearch-Button-Key {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* ============================================================
+   17. RESPONSIVE
+   ============================================================ */
+@media (max-width: 996px) {
+  .zauru-hero {
+    padding: 48px 20px 56px;
+  }
+  .zauru-hero::before {
+    width: 380px;
+    height: 240px;
+  }
+}
+@media (max-width: 600px) {
+  .zauru-grid {
+    grid-template-columns: 1fr;
+  }
+  .zauru-related__grid {
+    grid-template-columns: 1fr;
+  }
 }

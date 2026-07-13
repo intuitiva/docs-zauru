@@ -104,10 +104,10 @@ curl -v \
   }' \
   https://app.zauru.com/support/cases/datatables.json
 ```
-```length``` es cuantos casos desea mostrar
-```order["0"]["column"]``` es por que columna quiero ordenar
-```order["0"]["dir"]``` es la dirección del orden en la columna seleccionada
-```search["value"]``` es el filtro que vamos a usar en los resultados
+`length` es cuantos casos desea mostrar
+`order["0"]["column"]` es por que columna quiero ordenar
+`order["0"]["dir"]` es la dirección del orden en la columna seleccionada
+`search["value"]` es el filtro que vamos a usar en los resultados
 
 esto devolvería un JSON similar a este:
 ```json

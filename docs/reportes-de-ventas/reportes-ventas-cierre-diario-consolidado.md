@@ -1,7 +1,7 @@
 ---
 title: "Cierre Diario Consolidado"
 sidebar_label: "Cierre Diario Consolidado"
-sidebar_position: 505
+sidebar_position: 10
 ---
 
 Muchos contadores necesitan que se les entregue la información de los movimientos en una empresa. Se les tiene que entregar un resumen de estos movimientos con información de los documentos como las facturas de las ventas, la cantidad vendida y la cantidad de pagos que se recibieron durante el mes. Para esto, Zauru ha creado el Cierre Diario Consolidado.

@@ -70,7 +70,7 @@ curl -v \
   https://app.zauru.com/purchases/purchase_orders/1/receptions.json
 ```
 
-Este endpoint devolverá el detalle de la orden de compra, mas no el detalle 
+Este endpoint devolverá el detalle de la orden de compra, mas no el detalle
 ### Devolver la recepción
 ```bash
 curl -v \

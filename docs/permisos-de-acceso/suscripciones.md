@@ -1,7 +1,7 @@
 ---
 title: "Suscripciones"
 sidebar_label: "Suscripciones"
-sidebar_position: 405
+sidebar_position: 8
 ---
 
 Las suscripciones son lo que une el ([Rol](https://docs.zauru.com/permisos-de-acceso/roles) con la [Invitación aceptada](https://docs.zauru.com/permisos-de-acceso/invitaciones). De esta manera podemos asignarle los mismos permisos (mismo rol) a varias personas para agilizar la administración de [Permisos Personalizados](https://docs.zauru.com/permisos-de-acceso/permisos).

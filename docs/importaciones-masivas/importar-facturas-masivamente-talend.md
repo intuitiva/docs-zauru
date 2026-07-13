@@ -1,7 +1,7 @@
 ---
 title: "Importar facturas masivamente (Talend)"
 sidebar_label: "Importar facturas masivamente (Talend)"
-sidebar_position: 102
+sidebar_position: 2
 ---
 
 En este caso vamos a utilizar [Talend](https://www.talend.com/products/data-integration/data-integration-open-studio/ "Talend Open Studio for Data Integration") para formatear el JSON que se va a enviar por el [API de Zauru](https://docs.zauru.com/compras/ordenes-de-compra#crear-nueva-orden-de-compra-de-gastos "API de Zauru") y enviarlo al correr el trabajo.
@@ -17,11 +17,10 @@ Estos son los Exceles que el cliente debe de llenar:
 
 ### a. Plantilla para importar cabecera de facturas de venta
 
-En este excel se encuentran los datos de la cabecera de la factura de cada beneficiario. En este archivo podemos encontrar datos como "`invoice_number`", `"payee_name"`, `"payee_code"` y `"total"`. 
+En este excel se encuentran los datos de la cabecera de la factura de cada beneficiario. En este archivo podemos encontrar datos como "`invoice_number`", `"payee_name"`, `"payee_code"` y `"total"`.
 
 <div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "height": "auto", "textAlign": "center" }}>
   <a href="https://assets.ctfassets.net/29uzlfbx33dq/5PlWOPEhpXxECGsrKwcDgi/68638a6769ee324b8e78def4d3fc5458/plantilla-factura-venta-cabecera.xls">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
     <br />
     Plantilla para importar cabecera de facturas de venta
   </a>
@@ -29,45 +28,21 @@ En este excel se encuentran los datos de la cabecera de la factura de cada benef
 
 <br />
 
-### b. Plantilla para importar cuerpo de facturas de venta 
+### b. Plantilla para importar cuerpo de facturas de venta
 
-En este excel se encuentran los datos del cuerpo de la factura de cada beneficiario. En este archivo podemos encontrar datos como `"invoice_number"`, `"item_bundle_name"`, `"quantity"` y `"price"`. 
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "height": "auto", "textAlign": "center" }}>
-  <a href="/files/f0e5a3de26ab5a2e26783df6a459ab8c/plantilla-factura-venta-cuerpo.xls">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
-    <br />
-    Plantilla para importar cuerpo de facturas de venta
-  </a>
-</div>
+En este excel se encuentran los datos del cuerpo de la factura de cada beneficiario. En este archivo podemos encontrar datos como `"invoice_number"`, `"item_bundle_name"`, `"quantity"` y `"price"`.
 
 <br />
 
 ### c. Plantilla para importar id de clientes
 
-En este excel se encuentran los datos del beneficiario de la factura. En este archivo podemos encontrar datos como `"payee_id"`, `"payee_code"` y `"payment_term_name"`. 
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "height": "auto", "textAlign": "center" }}>
-  <a href="/files/5034757328611f58216772c3a5195640/plantilla-payee-id.xls">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
-    <br />
-    Plantilla para importar id de clientes
-  </a>
-</div>
+En este excel se encuentran los datos del beneficiario de la factura. En este archivo podemos encontrar datos como `"payee_id"`, `"payee_code"` y `"payment_term_name"`.
 
 <br />
 
 ### d. Plantilla para importar id de terminos de pago
 
 En este excel se encuentran los datos del termino de pago de la factura. En este archivo podemos encontrar datos como `"payment_term_name"` y `"payment_term_id"`.
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "height": "auto", "textAlign": "center" }}>
-  <a href="/files/6c6bffd09d65652731a66a5581480843/plantilla-payment-terms-id.xls">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
-    <br />
-    Plantilla para importar id de términos de pago
-  </a>
-</div>
 
 <br />
 
@@ -96,7 +71,7 @@ Al enlazar el componente de tMap con el siguiente componente de tWriteJSONfield_
 
 > Nótese cómo tomamos las 4 tablas que contienen los datos de la factura separados y lo expresamos en una sola linea simplemente haciendo "Drag and Drop" del valor izquierdo hacia la expresión del lado derecho.
 
-Con las diferentes tablas de Excel enlazadas ahora debemos convertir este resultado en el formato JSON que utilizamos para enviar información a Zauru por el tRESTclient_1. 
+Con las diferentes tablas de Excel enlazadas ahora debemos convertir este resultado en el formato JSON que utilizamos para enviar información a Zauru por el tRESTclient_1.
 
 Aprenderemos más en el siguiente paso.
 
@@ -121,14 +96,14 @@ Este componente nos permite unir dos valores de diferentes tablas de datos en un
 ![t-denormalize-factura-venta](/img/importaciones-masivas/importar-facturas-masivamente-talend-7.jpg)
 
 ### tMap_3
-Tomamos el string de texto que nos dio de resultado la denormalización del paso anterior y fusionamos el campo "Serie" con "Numero de Factura" porque Zauru solo permite guardar un campo con los dos datos. 
+Tomamos el string de texto que nos dio de resultado la denormalización del paso anterior y fusionamos el campo "Serie" con "Numero de Factura" porque Zauru solo permite guardar un campo con los dos datos.
 
 > Nótese que usamos corchetes corchetes para  `"details_json"` porque ya lo habíamos fusionado anteriormente en el tDenormalize_1.
 
 ![t-map-3-factura-venta](/img/importaciones-masivas/importar-facturas-masivamente-talend-8.png)
 
 ### tWriteJSONField_2
-Colocamos el resultado de la expresión anterior ("tMap_3") dentro del siguiente tWriteJSONField para convertirlo en un JSON  que lo pueda entender el API de Zauru. 
+Colocamos el resultado de la expresión anterior ("tMap_3") dentro del siguiente tWriteJSONField para convertirlo en un JSON  que lo pueda entender el API de Zauru.
 
 ![t-write-json-field-2-factura-venta](/img/importaciones-masivas/importar-facturas-masivamente-talend-9.png)
 
@@ -136,7 +111,7 @@ Colocamos el resultado de la expresión anterior ("tMap_3") dentro del siguiente
 
 ### tMap_4
 
-Cuando Talend encuentra una o más celdas vacias dentro de un JSON las remplaza con el valor de "[]" en lugar de "null". 
+Cuando Talend encuentra una o más celdas vacias dentro de un JSON las remplaza con el valor de "[]" en lugar de "null".
 
 Es por eso que realizamos este paso, para quitar la celda completa del resultado de la expresión anterior (JSON) en el caso de que esta esté vacia con la excepción de que el campo vacio sea "order_number".
 
@@ -166,14 +141,5 @@ Este componente sirver para mostrar el esquema con los datos que genera cada com
 
 1. Utilizar LogRow en cada componente, antes de agregar el siguiente componente para ver si lo que procesó el componente está correcto
 2. Enviar los datos a nuestro servidor de pruebas https://zauru.herokuapp.com para ver como ingresaron los datos.
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "textAlign": "center" }}>
-  <a href="/files/041739b89017643512ab5cdbbbdaa2a1/IMPORTAR_FACTURAS_CONTENTFUL.zip" download="plantilla">
-
-    <img src="/files/c251f012c12cf758225cdefd1a4c93d7/TalendIcon.png" alt="talend_file" width="38" height="38" />
-    <br />
-    Job de Talend completo
-  </a>
-</div>
 
 > Adjunto el archivo de Talend para que puedan jugar con todo lo que se discutió en este manual

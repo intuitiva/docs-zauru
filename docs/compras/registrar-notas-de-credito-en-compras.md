@@ -1,7 +1,7 @@
 ---
 title: "Registrar Notas de Crédito Compras"
 sidebar_label: "Registrar Notas de Crédito Compras"
-sidebar_position: 1305
+sidebar_position: 16
 ---
 
 Este tutorial esta enfocado en la creación de notas de crédito sobre una orden de compra.

@@ -1,7 +1,7 @@
 ---
 title: "[Transacciones] Manejo de Cajas Chicas"
 sidebar_label: "[Transacciones] Manejo de Cajas Chicas"
-sidebar_position: 315
+sidebar_position: 25
 ---
 
 Este tutorial esta enfocado en registrar los gastos de la empresa hecho por los empleados. Hay dos formas de registrar estos gastos:

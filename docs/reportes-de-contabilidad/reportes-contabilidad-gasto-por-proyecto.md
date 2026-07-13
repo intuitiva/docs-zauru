@@ -1,7 +1,7 @@
 ---
 title: "Gasto por Proyecto"
 sidebar_label: "Gasto por Proyecto"
-sidebar_position: 717
+sidebar_position: 21
 ---
 
 En muchas ocasiones es necesario llevar control de un gasto en específico en un proyecto. El control puede ser necesario porque hay que realizar un pago a algun proveedor o el gasto es un material costoso o difícil de conseguir. Para ayudar a llevar este control pueden ingresar al reporte de Gasto por Proyecto. El reporte enlista el monto total del gasto en un proyecto en específico.

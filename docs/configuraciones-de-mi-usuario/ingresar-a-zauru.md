@@ -12,7 +12,7 @@ Para accesar a Zauru escribimos en el URL de nuestro navegador (firefox, chrome,
 El sistema __va a cambiar__ el URL para redirigirlos a nuestro autorizador de oAuth que está en id.zauru.com.
 
 > Es necesario que se ingrese a app.zauru.com y no a id.zauru.com porque el autorizador no va a saber a donde redirigir cuando los autorice.
- 
+
 > Si se desea agregar como sitio favorito del nevegador a Zauru, entrar al perfil (app.zauru.com) y hasta ese momento guardar el favorito
 
 ![ingresar id zauru com](/img/configuraciones-de-mi-usuario/ingresar-a-zauru-2.png)

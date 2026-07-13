@@ -57,7 +57,7 @@ Los datos que hay que ingresar son los siguientes:
 
 Para el envío de pedidos de Zauru a WooCommerce utilizamos un software adicional que recibe los pedidos en "lenguaje WooCommerce" y los traduce a "lenguaje Zauru" para que queden registrados correctamente. Este software necesita los siguientes parámetros:
 1. __woocommerce URL:__ el URL del sitio
-2. __woocommerce webhook secret:__ el parámetro "Secreto" que llenamos al crear el webhook y que le colocamos "tienda_en_linea_zauru" 
+2. __woocommerce webhook secret:__ el parámetro "Secreto" que llenamos al crear el webhook y que le colocamos "tienda_en_linea_zauru"
 3. __woocommerce valid topic:__ el parámetro "Tema" que llenamos al crear el webhook y que le colocamos "Crear Pedido"
 4. __zauru user email:__ el correo del usuario que utilizaremos para comunicarnos entre Zauru y WooCommerce
 5. __zauru user token:__ el token del usuario que utilizaremos para comunicarnos entre Zauru y WooCommerce

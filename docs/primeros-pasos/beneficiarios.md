@@ -81,7 +81,7 @@ A continuación encontrara un listado con los campos permitidos para importar un
 1. Nombre (Name).
 2. Moneda(Currency_id).
 3. limite de crédito (credit_limit).
-  
+
 
 Las entradas de texto permitidas para cada campo están especificadas en la imagen de abajo y son las siguientes:
 
@@ -99,7 +99,7 @@ Las entradas de texto permitidas para cada campo están especificadas en la imag
 
 ![imagen 5](/img/primeros-pasos/beneficiarios-5.png)
 
- 
+
 
 ## Categorizar Beneficiarios
 Puede que tus clientes o proveedores tengan alguna categoría, por ejemplo, cantidad de días de crédito, cliente mayorista o proveedor mayorista, etc. Y puede que esta categoría este vinculada con un termino de pago. Los pasos para categorizar un beneficiario en Zauru son los siguientes:

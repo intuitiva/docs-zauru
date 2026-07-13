@@ -20,7 +20,7 @@ Hay varias configuraciones que el contrato toma para generar las recurrencias (c
 > Fecha de proxima cuota = Fecha inicio + ((Cuota actual - Cuotas adelantadas) * tiempo entra cada cuota)
 
 1. __Fecha de inicio__: Es la fecha donde se va a generar la primera recurrencia (cuota). Si se quisiera cambiar la fecha de una cuota futura, solo se cambia esta fecha para que coincida con la fecha que queremos cambiar la generación de la cuota.
-2. __Tiempo entre cada cuota__: Establece la cantidad de tiempo entre cada cuota siendo el tiempo mínimo 1 día. 
+2. __Tiempo entre cada cuota__: Establece la cantidad de tiempo entre cada cuota siendo el tiempo mínimo 1 día.
 3. __Fecha final indefinida__: Establece que para siempre se van a seguir generando cuotas sin fin. Todos los contratos activos se pueden cerrar en cualquier momento para no generar nuevas cuotas de todos modos.
 4. __Cantidad de cuotas__: Si la fecha final NO es indefinida, se coloca la cantidad de cuotas (recurrencias) a generar, luego de generar la última recurrencia (cuota), el sistema cerrará automáticamente el contrato activo.
 5. __Cuotas iniciales extrañas__: Son cuotas que no se toman en cuenta en la generación y sirven exclusivamente de referencia y para calcular algunas fórmulas en el detalle de los contratos o las transacciones asociadas. El cambiar este número no va a cambiar nada en la forma como se calcula que número de cuota que toca. Es ideal para registrar contratos ya empezados donde no queremos sincronizarlos con la realidad sino que quede claro que ANTES se registraron cuotas pero no están en el sistema.

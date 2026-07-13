@@ -13,14 +13,6 @@ Primero y más importante es el excel de donde vamos a obtener los datos. Este e
 
 Este es el Excel que el cliente debe de llenar:
 
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "textAlign": "center" }}>
-  <a href="/files/6b4a15a4352f998fb3caba2aa6aa69ef/plantilla_para_importar_ordenes_de_compra_masivamente.xlsx" download="plantilla">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
-    <br />
-    Plantilla para importar ordenes de compra masivamente
-  </a>
-</div>
-
 ## 2. Limpiar los datos y cambiar de nombres a IDs (Implementador)
 
 Antes de utilizar Talend, hay que limpiar los datos obtenidos y cambiar algunos nombres que se ingresaron en el excel para cambiarlos a IDs. Esto incluye cambiar las columnas para que se asemeje al nombre de los campos en el API:
@@ -35,14 +27,6 @@ Antes de utilizar Talend, hay que limpiar los datos obtenidos y cambiar algunos 
 Además se debe de cambiar el nombre de todas las columnas para que coincida con los nombres del API. Ver el [API de Zauru](https://docs.zauru.com/compras/ordenes-de-compra?no-cache=1#crear-nueva-orden-de-compra-de-gastos "API de Zauru") para referencia.
 
 Esto nos dejará con un excel (xlx y no xlxs) similar a este:
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "textAlign": "center" }}>
-  <a href="/files/c21cac74febfe41dbf57aa54a5b9274f/plantilla_de_compras_con_una_sola_cuenta_llena.xls" download="plantilla">
-    <img src="/files/8f0c2f420f0a094da90200f0c2457d78/xlsx_icon.png" alt="excel_file" width="38" height="43" />
-    <br />
-    Plantilla de compras con una sola cuenta llena
-  </a>
-</div>
 
 ## 3. Utilizar talend para mandar por el API de Zauru cada compra (Implementador)
 
@@ -73,7 +57,7 @@ Este componente convierte los datos del schema del Excel y los convierte en un J
 ![talend cusc WriteJsonField mapping](/img/importaciones-masivas/importar-compras-con-una-sola-cuenta-4.png)
 
 > Nótese que hay que seleccionar al menos 1 elemento de "loop element" en la columna de Node Status
- 
+
 ### Map
 Al enlazar el componente de Map y con el siguiente componente de RESTClient automáticamente genera un schema de salida requerido para mandar los argumentos al RESTClient y nosotros tenemos que transformar el schema de entrada (que viene del WriteJSONField) a este formato requerido.
 ![talend cusc Map](/img/importaciones-masivas/importar-compras-con-una-sola-cuenta-5.png)
@@ -104,13 +88,5 @@ Este componente sirver para mostrar el esquema con los datos que genera cada com
 
 1. Utilizar LogRow en cada componente, antes de agregar el siguiente componente para ver si lo que procesó el componente está correcto
 2. Enviar los datos a nuestro servidor de pruebas https://zauru.herokuapp.com para ver como ingresaron los datos.
-
-<div style={{ "backgroundColor": "Gainsboro", "border": "1px solid dimgray", "padding": "3px", "fontSize": "small", "width": "100px", "textAlign": "center" }}>
-  <a href="/files/8d1a1f6f2d7d582b5ccc7f0681a18b1d/subir_compras_con_una_sola_cuenta.zip" download="plantilla">
-    <img src="/files/c251f012c12cf758225cdefd1a4c93d7/TalendIcon.png" alt="talend_file" width="38" height="38" />
-    <br />
-    Job de Talend completo
-  </a>
-</div>
 
 > Adjunto el archivo de Talend para que puedan jugar con todo lo que se discutió en este manual

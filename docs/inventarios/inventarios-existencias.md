@@ -51,7 +51,7 @@ curl -v \
   https://app.zauru.com/inventories/stocks.json?warehouse=1
 ```
 Esto devolverá un JSON similar a este:
-```JSON
+```json
 [
    {
 	"item_id":1,
@@ -89,3 +89,4 @@ Esto devolverá un JSON similar a este:
   "2":{"agency_id":2,"available":33},
   "3":{"agency_id":3,"available":34}
 }
+```

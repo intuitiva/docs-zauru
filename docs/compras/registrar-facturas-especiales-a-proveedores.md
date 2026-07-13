@@ -14,7 +14,7 @@ A continuación, se detallan los pasos a seguir para la configuración y generac
 
 ### Término de pago (obligatorio)
 
-A continuación, se detallan los pasos a seguir para configurar el término de pago: 
+A continuación, se detallan los pasos a seguir para configurar el término de pago:
 
 1.       Seleccionar Compras.
 

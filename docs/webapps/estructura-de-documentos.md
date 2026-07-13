@@ -1,7 +1,7 @@
 ---
 title: "Estructura de Documentos"
 sidebar_label: "Estructura de Documentos"
-sidebar_position: 999
+sidebar_position: 3
 ---
 
 Estas páginas solo son una referencia para los campos que tiene cada tipo de documento para poder hacer webapps que sepan los nombres de los campos, el tipo de dato que es, el valor predeterminado y si es un campo obligatorio o no.

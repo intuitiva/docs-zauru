@@ -12,4 +12,4 @@ Se encuentra localizado en:
   - Reportes
   - Libro de Ventas Diario
 
-![Libro de ventas diario](/img/reportes-de-contabilidad/libro-de-ventas-diario-1.PNG)
+![Libro de ventas diario](/img/reportes-de-contabilidad/libro-de-ventas-diario-1.png)

@@ -27,7 +27,7 @@ e. Si usted le emitió un recibo al cliente coloque el numero de recibo.
 
 f. Coloque la cantidad de la nota de crédito.
 
-g. Por ultimo presione crear pago. 
+g. Por ultimo presione crear pago.
 
 
 Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado exitosamente.

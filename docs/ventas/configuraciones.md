@@ -1,7 +1,7 @@
 ---
 title: "Configuraciones de Ventas"
 sidebar_label: "Configuraciones de Ventas"
-sidebar_position: 999
+sidebar_position: 19
 ---
 
 En el módulo de ventas se pueden configurar varias opciones que le permitirán llevar un mejor control contable de sus ventas, las opciones configurables son las siguientes:

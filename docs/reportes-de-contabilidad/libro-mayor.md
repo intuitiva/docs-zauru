@@ -1,7 +1,7 @@
 ---
 title: "Libro Mayor"
 sidebar_label: "Libro Mayor"
-sidebar_position: 105
+sidebar_position: 19
 ---
 
 El libro mayor es un libro que clasifica las operaciones por cuentas de manera que se puede ver el detalle de los movimientos y el saldo total de cada cuenta.

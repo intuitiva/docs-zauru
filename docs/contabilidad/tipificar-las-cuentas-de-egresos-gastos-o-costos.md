@@ -27,15 +27,7 @@ Es por eso que es importante que se tipifique correctamente la cuenta para que e
 
 ## Revisar que la cuenta esté correctamente tipificada
 Se requiere entrar a cada cuenta
-![gastos o costos 1][1]
 
 Ya dentro de la cuenta se puede revisar si está correcta la tipificación de la cuenta.
-![gastos o costos 2][2]
 
 Si está incorrecto, editar la cuenta y cambiarla
-![Captura de pantalla 2019-01-07 a la s 15 01 17][3]
-
-
-[1]: /files/5f958e30200a0088bb2f853ae202d753/Captura_de_pantalla_2019-01-07_a_la_s__14_48_15.png)
-[2]: /files/e5c25456a464f344127dd48245390db3/Captura_de_pantalla_2019-01-07_a_la_s__14_55_23.png)
-[3]: /files/be7c0b17bc086395a2cbb7075dbc7e3e/Captura_de_pantalla_2019-01-07_a_la_s__15_01_17.png)

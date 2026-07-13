@@ -6,5 +6,8 @@
     "id": "reportes-de-contabilidad/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "chart-line"
+  }
 }

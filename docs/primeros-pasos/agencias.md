@@ -71,7 +71,7 @@ Le deberán aparecer las opciones para crear una nueva categoría de agencias, l
 
 2. Puede colocar una descripción de la Categoría.
 
-3. Presionar el botón de __Crear categoría de agencia__. 
+3. Presionar el botón de __Crear categoría de agencia__.
 
 ![Nueva categoría de ítems](/img/primeros-pasos/agencias-6.png)
 
@@ -87,7 +87,7 @@ curl -v \
   https://app.zauru.com/settings/agencies.json
 ```
 Esto generará un JSON similar a este:
-```JSON
+```json
 [
   {
     "active":true,

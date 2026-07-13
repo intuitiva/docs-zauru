@@ -14,6 +14,6 @@ Para visualizar el reporte de Existencias de ítems de un proveedor debemos de:
 - Sección de Existencias
 - Seleccionar Existencias de ítems de un proveedor.
 
-![Existencias de items](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-1.PNG)
+![Existencias de items](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-1.png)
 
-![Existencias de iems](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-2.PNG)
+![Existencias de iems](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-2.png)

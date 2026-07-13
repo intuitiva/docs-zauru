@@ -1,7 +1,7 @@
 ---
 title: "Proveedores"
 sidebar_label: "Proveedores"
-sidebar_position: 999
+sidebar_position: 15
 ---
 
 ## Proveedores
@@ -26,13 +26,13 @@ Un proveedor puede tener muchas características como por ejemplo si es un prove
     Latitud.
     Longitud.
     Segmento de Comunicación (Campos opcionales para guardar información información de la empresa).
-    Segmento de Contacto (Campos opcionales para guardar información información de contacto con el proveedor). 
+    Segmento de Contacto (Campos opcionales para guardar información información de contacto con el proveedor).
 
 ## Listar Proveedores:
 
 Para consultar la lista de proveedores seleccione el menú Compras >> selecciones Proveedores y se desplegaran los proveedores previamente creados en Zauru. Las opciones son las siguientes:
 
-a. Ver 
+a. Ver
 b. Editar
 
 Al entrar a ver el detalle de un proveedor nos mostrará información general del proveedor y nos mostrará el histórico de compras y el estatus de cada factura de compra (Facturas pagadas y facturas con saldos pendientes de pago).

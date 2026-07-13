@@ -23,7 +23,7 @@ Luego que se haya aceptado la invitación y creado el rol, podemos unirlos por m
 Este usuario debe tener TODOS los permisos disponibles del módulo de e-commerce. Ver el manual de [permisos personalizados](https://docs.zauru.com/permisos-de-acceso/permisos "permisos").
 
 ## Habilitar e-commerce en los Items
-Para que los items se puedan sincronizar desde el módulo de [e-commerce](https://docs.zauru.com/e-commerce/solicitar-los-items-disponibles-con-el-API "solicitar items") es habilitar en cada item que se quiera mostrar en la tienda en linea.
+Para que los items se puedan sincronizar desde el módulo de [e-commerce](https://docs.zauru.com/e-commerce/solicitar-los-items-disponibles-con-el-api "solicitar items") es habilitar en cada item que se quiera mostrar en la tienda en linea.
 
 ## Agregar la responsabilidad de e-commerce en las agencias de donde se va a obtener producto para la tienda en linea
 

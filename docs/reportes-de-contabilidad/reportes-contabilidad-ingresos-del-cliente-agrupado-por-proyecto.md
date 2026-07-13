@@ -1,7 +1,7 @@
 ---
 title: "Ingresos del Cliente Agrupado por Proyecto Ingresos del Cliente Agrupado por Proyecto"
 sidebar_label: "Ingresos del Cliente Agrupado por Proyecto Ingresos del Cliente Agrupado por Proyecto"
-sidebar_position: 106
+sidebar_position: 20
 ---
 
 ¿Qué pasa cuando un cliente tiene varios proyectos con la empresa, y el cliente quiere saber cuando dinero le ha desembolsado en todos los proyectos?

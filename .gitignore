@@ -17,3 +17,4 @@ npm-cache/
 
 # Local Netlify
 .netlify/
+.gstack/

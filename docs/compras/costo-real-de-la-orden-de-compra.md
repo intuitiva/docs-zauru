@@ -1,7 +1,7 @@
 ---
 title: "Costo real de la orden de compra"
 sidebar_label: "Costo real de la orden de compra"
-sidebar_position: 610
+sidebar_position: 14
 ---
 
 Este tutorial esta enfocado en la verificación del costo real de sus productos en una orden de compra, ya con todos los cargos incluidos y promediados ponderadamente.

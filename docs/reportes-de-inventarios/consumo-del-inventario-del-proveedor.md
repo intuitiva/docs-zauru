@@ -13,4 +13,4 @@ Para ver el reporte de consumo del inventario del proveedor debemos de:
 - Sección de Existencias
 - Seleccionar Consumo del Inventario
 
-![Consumo del Inventario del Proveedor](/img/reportes-de-inventarios/consumo-del-inventario-del-proveedor-1.PNG)
+![Consumo del Inventario del Proveedor](/img/reportes-de-inventarios/consumo-del-inventario-del-proveedor-1.png)

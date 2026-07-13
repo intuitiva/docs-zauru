@@ -1,7 +1,7 @@
 ---
 title: "Cobros sin confirmar (pagos provisionales)"
 sidebar_label: "Cobros sin confirmar (pagos provisionales)"
-sidebar_position: 814
+sidebar_position: 18
 ---
 
 Este tutorial esta enfocado en la creación de pagos provisionales para dar recibos provisionales. Este caso se da únicamente con las empresas que tienen facturas cambiarias y tienen que reportar a la SAT la factura junto con su recibo de caja.

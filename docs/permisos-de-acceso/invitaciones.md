@@ -18,7 +18,7 @@ A continuación deberá colocar el correo del nuevo usuario y dar click en el bo
 
 ![imagen2](/img/permisos-de-acceso/invitaciones-2.jpg)
 
-Le deberá aparecer un mensaje notificándole que la invitación fue creada exitosamente. 
+Le deberá aparecer un mensaje notificándole que la invitación fue creada exitosamente.
 
 ![imagen3](/img/permisos-de-acceso/invitaciones-3.jpg)
 

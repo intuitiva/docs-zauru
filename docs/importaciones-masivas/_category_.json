@@ -6,5 +6,8 @@
     "id": "importaciones-masivas/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "file-import"
+  }
 }

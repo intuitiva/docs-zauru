@@ -19,7 +19,7 @@ Y esto me va a devolver un JSON con las siguientes características:
 
 ```json
 {
-item_category_name(<string>): 
+item_category_name(<string>):
   {
     item_id(<integer>) | b-bundle_id(<string>):
       {

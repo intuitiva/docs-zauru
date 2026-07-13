@@ -1,7 +1,7 @@
 ---
 title: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
 sidebar_label: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
-sidebar_position: 318
+sidebar_position: 28
 ---
 
 Este tutorial esta enfocado en pagar y cobrarle a un beneficiario en la misma transacción.

@@ -39,7 +39,7 @@ En el punto de re orden por bodega se especifica la cantidad mínima que deberí
 1. Ir a “Inventarios”.
 2. Seleccionar “Existencias”.
 3. Seleccione la pestaña de “Todas las Bodegas”.
-4. Haga click sobre la cantidad en la bodega que quiere especificar el punto de re orden. En el ejemplo vamos modificar el punto de re orden 
+4. Haga click sobre la cantidad en la bodega que quiere especificar el punto de re orden. En el ejemplo vamos modificar el punto de re orden
 para el producto 7 en la bodega de Zona 8.
 
 ![imagen2](/img/inventarios/inventarios-punto-de-re-orden-2.png)

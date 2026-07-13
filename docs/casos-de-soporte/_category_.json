@@ -6,5 +6,8 @@
     "id": "casos-de-soporte/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "kit-medical"
+  }
 }

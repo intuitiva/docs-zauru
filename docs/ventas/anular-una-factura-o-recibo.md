@@ -58,7 +58,7 @@ Aca puede consultar el historial de las facturas anuladas, siempre y cuando no s
 3. Seleccionar "Facturas anuladas"
 
 ## Pagos Anulados
-Aca puede consultar el historial de los pagos anulados, pueden sucitar por colocar mal el método de pago, cantidad que están pagando, etc. 
+Aca puede consultar el historial de los pagos anulados, pueden sucitar por colocar mal el método de pago, cantidad que están pagando, etc.
 
 1. Seleccionar "ventas"
 2. Seleccionar "pagos"

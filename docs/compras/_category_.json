@@ -6,5 +6,8 @@
     "id": "compras/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "cart-shopping"
+  }
 }

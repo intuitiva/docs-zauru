@@ -6,5 +6,8 @@
     "id": "contratos/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "arrows-rotate"
+  }
 }

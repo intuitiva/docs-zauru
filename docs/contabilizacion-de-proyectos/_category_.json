@@ -6,5 +6,8 @@
     "id": "contabilizacion-de-proyectos/index"
   },
   "collapsible": true,
-  "collapsed": true
+  "collapsed": true,
+  "customProps": {
+    "icon": "tags"
+  }
 }
