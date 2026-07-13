@@ -8,40 +8,40 @@ const GROUPS = [
     key: "empezar",
     label: "Empezar",
     sections: [
-      { href: "/primeros-pasos", title: "Primeros Pasos" },
-      { href: "/configuraciones-de-mi-usuario", title: "Configuraciones de mi usuario" },
-      { href: "/permisos-de-acceso", title: "Permisos de Acceso" },
+      { href: "/primeros-pasos", title: "Primeros Pasos", icon: "flag" },
+      { href: "/configuraciones-de-mi-usuario", title: "Configuraciones de mi usuario", icon: "user-gear" },
+      { href: "/permisos-de-acceso", title: "Permisos de Acceso", icon: "lock" },
     ],
   },
   {
     key: "modulos",
     label: "Módulos",
     sections: [
-      { href: "/contabilidad", title: "Contabilidad" },
-      { href: "/contabilizacion-de-proyectos", title: "Contabilización de Proyectos" },
-      { href: "/inventarios", title: "Inventarios" },
-      { href: "/ventas", title: "Ventas" },
-      { href: "/compras", title: "Compras" },
-      { href: "/casos-de-soporte", title: "Casos de Soporte" },
-      { href: "/punto-de-venta", title: "Punto de Venta" },
-      { href: "/contratos", title: "Contratos" },
-      { href: "/e-commerce", title: "E-commerce" },
-      { href: "/crm", title: "CRM" },
-      { href: "/webapps", title: "Webapps" },
+      { href: "/contabilidad", title: "Contabilidad", icon: "calculator" },
+      { href: "/contabilizacion-de-proyectos", title: "Contabilización de Proyectos", icon: "diagram-project" },
+      { href: "/inventarios", title: "Inventarios", icon: "boxes-stacked" },
+      { href: "/ventas", title: "Ventas", icon: "sack-dollar" },
+      { href: "/compras", title: "Compras", icon: "cart-shopping" },
+      { href: "/casos-de-soporte", title: "Casos de Soporte", icon: "headset" },
+      { href: "/punto-de-venta", title: "Punto de Venta", icon: "cash-register" },
+      { href: "/contratos", title: "Contratos", icon: "file-contract" },
+      { href: "/e-commerce", title: "E-commerce", icon: "globe" },
+      { href: "/crm", title: "CRM", icon: "handshake" },
+      { href: "/webapps", title: "Webapps", icon: "code" },
     ],
   },
   {
     key: "reportes",
     label: "Reportes",
     sections: [
-      { href: "/reportes-de-contabilidad", title: "Reportes de Contabilidad" },
-      { href: "/reportes-de-inventarios", title: "Reportes de Inventarios" },
-      { href: "/reportes-de-ventas", title: "Reportes de Ventas" },
-      { href: "/reportes-de-compras", title: "Reportes de Compras" },
-      { href: "/reportes-de-casos-de-soporte", title: "Reportes de Casos de Soporte" },
-      { href: "/reportes-de-puntos-de-venta", title: "Reportes de Puntos de Venta" },
-      { href: "/reportes-de-contratos", title: "Reportes de Contratos" },
-      { href: "/reportes-de-crm", title: "Reportes de CRM" },
+      { href: "/reportes-de-contabilidad", title: "Reportes de Contabilidad", icon: "chart-column" },
+      { href: "/reportes-de-inventarios", title: "Reportes de Inventarios", icon: "chart-pie" },
+      { href: "/reportes-de-ventas", title: "Reportes de Ventas", icon: "chart-line" },
+      { href: "/reportes-de-compras", title: "Reportes de Compras", icon: "tags" },
+      { href: "/reportes-de-casos-de-soporte", title: "Reportes de Casos de Soporte", icon: "headset" },
+      { href: "/reportes-de-puntos-de-venta", title: "Reportes de Puntos de Venta", icon: "cash-register" },
+      { href: "/reportes-de-contratos", title: "Reportes de Contratos", icon: "file-contract" },
+      { href: "/reportes-de-crm", title: "Reportes de CRM", icon: "people-group" },
     ],
   },
   {
@@ -51,6 +51,7 @@ const GROUPS = [
       {
         href: "/importaciones-masivas",
         title: "Importaciones masivas de datos históricos",
+        icon: "file-import",
       },
     ],
   },
@@ -64,12 +65,15 @@ function SectionGroup({ group }) {
           {group.label}
         </h2>
       </header>
-      <ul className="zauru-row-list">
+      <ul className="zauru-card-grid">
         {group.sections.map((s) => (
           <li key={s.href}>
-            <a href={s.href} className="zauru-row">
-              <span>{s.title}</span>
-              <span className="zauru-row__arrow" aria-hidden="true">
+            <a href={s.href} className="zauru-card" aria-label={s.title}>
+              <span className="zauru-card__icon">
+                <Icon name={s.icon} />
+              </span>
+              <span className="zauru-card__title">{s.title}</span>
+              <span className="zauru-card__arrow" aria-hidden="true">
                 →
               </span>
             </a>
