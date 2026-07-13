@@ -78,5 +78,19 @@ Si su plantilla de impresión esta correcta, le aparecerá un mensaje de éxito 
 
 ### crear costos unitarios iniciales
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"computed_cost":{"item_id":"1", "quantity":"1", "computed_cost":"10.0", "date":"2018-10-17"}}' https://app.zauru.com/purchases/computed_costs.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "computed_cost": {
+      "item_id": "1",
+      "quantity": "1",
+      "computed_cost": "10.0",
+      "date": "2018-10-17"
+    }
+  }' \
+  https://app.zauru.com/purchases/computed_costs.json
 ```

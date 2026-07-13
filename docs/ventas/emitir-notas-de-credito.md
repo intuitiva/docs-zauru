@@ -131,7 +131,12 @@ Le aparecerá un mensaje de éxito en la pantalla. En la parte inferior podrá v
 
 ### Listar las notas de crédito abiertas (no redimidas)
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS"  https://app.zauru.com/sales/sales_notes/credit_notes.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes.json
 ```
 
 esto retornará algo similar a esto:
@@ -164,20 +169,65 @@ esto retornará algo similar a esto:
 ```
 ### Listar las notas de crédito anuladas
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS"  https://app.zauru.com/sales/sales_notes/credit_notes.json?scope=voided
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes.json?scope=voided
 ```
 
 ### Detalles de una nota de crédito
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS"  https://app.zauru.com/sales/sales_notes/credit_notes/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes/1.json
 ```
 
 ### Crear Nota de Crédito de anulación total
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"credit_note":{"invoice_id":"1", "reference":"prueba de nota de credito de anulacion", "date":"2020-12-22", "concept": "null", "agency_id": "1", "employee_id": "1", "memo":"generado desde el API"}}' https://app.zauru.com/sales/sales_notes/credit_notes.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "credit_note": {
+      "invoice_id": "1",
+      "reference": "prueba de nota de credito de anulacion",
+      "date": "2020-12-22",
+      "concept": "null",
+      "agency_id": "1",
+      "employee_id": "1",
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/sales/sales_notes/credit_notes.json
 ```
 
 ### Crear Nota de Crédito de descuento
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"credit_note":{"invoice_id":"1", "reference":"prueba de nota de credito por descuento", "date":"2020-12-22", "concept": "discount", "discount": "10.00", "agency_id": "1", "employee_id": "1", "memo":"generado desde el API"}}' https://app.zauru.com/sales/sales_notes/credit_notes.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "credit_note": {
+      "invoice_id": "1",
+      "reference": "prueba de nota de credito por descuento",
+      "date": "2020-12-22",
+      "concept": "discount",
+      "discount": "10.00",
+      "agency_id": "1",
+      "employee_id": "1",
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/sales/sales_notes/credit_notes.json
 ```

@@ -130,7 +130,13 @@ Le aparecerá un mensaje notificándole que se autorizo la orden de compra. Para
 
 ### Obtener datos para una orden de compra nueva
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X GET https://app.zauru.com/purchases/purchase_orders/new.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/new.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -182,7 +188,37 @@ Esta llamada devolverá un JSON similar a este:
 
 ### Crear nueva orden de compra de items
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"purchase_order":{"issue_date":"2018-10-27", "shipping_date":"2018-10-27", "purchaser_id":"1", "currency_id":"1","agency_id": "1","taxable":"1","payee_id":"1","charge_term_id":"1","purchase_order_details_attributes":{"0":{"item_id":"1", "booked_quantity":"2", "unit_cost":"100"}, "1":{"item_id":"2", "booked_quantity":"10", "unit_cost":"200"}}}}' https://app.zauru.com/purchases/purchase_orders.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "purchase_order": {
+      "issue_date": "2018-10-27",
+      "shipping_date": "2018-10-27",
+      "purchaser_id": "1",
+      "currency_id": "1",
+      "agency_id": "1",
+      "taxable": "1",
+      "payee_id": "1",
+      "charge_term_id": "1",
+      "purchase_order_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "booked_quantity": "2",
+          "unit_cost": "100"
+        },
+        "1": {
+          "item_id": "2",
+          "booked_quantity": "10",
+          "unit_cost": "200"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/purchase_orders.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -212,7 +248,36 @@ Esta llamada devolverá un JSON similar a este:
 
 ### Crear nueva orden de compra de gastos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"purchase_order":{"issue_date":"2018-10-27", "shipping_date":"2018-10-27", "purchaser_id":"1", "currency_id":"1","agency_id": "1","taxable":"1","payee_id":"1","charge_term_id":"1","purchase_order_account_details_attributes":{"0":{"account_id":"1", "cost":"100", "reference": "gasto recurrente"}, "1":{"account_id":"2", "cost":"200"}}}}' https://app.zauru.com/purchases/purchase_orders.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "purchase_order": {
+      "issue_date": "2018-10-27",
+      "shipping_date": "2018-10-27",
+      "purchaser_id": "1",
+      "currency_id": "1",
+      "agency_id": "1",
+      "taxable": "1",
+      "payee_id": "1",
+      "charge_term_id": "1",
+      "purchase_order_account_details_attributes": {
+        "0": {
+          "account_id": "1",
+          "cost": "100",
+          "reference": "gasto recurrente"
+        },
+        "1": {
+          "account_id": "2",
+          "cost": "200"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/purchase_orders.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -242,7 +307,13 @@ Esta llamada devolverá un JSON similar a este:
 ### Ver detalles de una Orden de Compra
 El 1 al final de la URL es el ID de la orden de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X GET https://app.zauru.com/purchases/purchase_orders/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/1.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -297,7 +368,13 @@ Esta llamada devolverá un JSON similar a este:
 
 ### Obtener datos para editar una orden de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X GET https://app.zauru.com/purchases/purchase_orders/1/edit.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/1/edit.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -351,7 +428,37 @@ Esta llamada devolverá un JSON similar a este:
 
 ### Actualizar la orden de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"purchase_order":{"issue_date":"2018-10-27", "shipping_date":"2018-10-27", "purchaser_id":"1", "currency_id":"1","agency_id": "1","taxable":"1","payee_id":"1","charge_term_id":"1","purchase_order_details_attributes":{"0":{"item_id":"1", "booked_quantity":"2", "unit_cost":"100"}, "1":{"item_id":"2", "booked_quantity":"10", "unit_cost":"200"}}}}' https://app.zauru.com/purchases/purchase_orders/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "purchase_order": {
+      "issue_date": "2018-10-27",
+      "shipping_date": "2018-10-27",
+      "purchaser_id": "1",
+      "currency_id": "1",
+      "agency_id": "1",
+      "taxable": "1",
+      "payee_id": "1",
+      "charge_term_id": "1",
+      "purchase_order_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "booked_quantity": "2",
+          "unit_cost": "100"
+        },
+        "1": {
+          "item_id": "2",
+          "booked_quantity": "10",
+          "unit_cost": "200"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/purchase_orders/1.json
 ```
 Esta llamada devolverá un JSON similar a este:
 ```json
@@ -381,5 +488,11 @@ Esta llamada devolverá un JSON similar a este:
 
 ### eliminar ordenes de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE http://zauru.herokuapp.com/purchases/purchase_orders/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  http://zauru.herokuapp.com/purchases/purchase_orders/1.json
 ```

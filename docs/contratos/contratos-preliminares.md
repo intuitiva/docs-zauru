@@ -104,15 +104,84 @@ Los documentos que se pueden asociar:
 
 ### Crear Contrato
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"contract":{"document_type":"1", "reference":"prueba", "taxable":"1", "payment_term_id":"1", "payee_id":"1", "responsible_id":"1", "start_date":"2018-09-02", "periodicity":"1", "periodicity_measure":"3", "infinite":"0", "fees":"20", "initial_foreign_fees":"0", "advanced_fees":"0", "upfront_payment":"0.0", "total_amount":"1000", "interest_rate_periodicity_measure":"4", "arrears_active":"1", "arrears_detailed":"0", "arrears_starts_in_days":"30", "arrears_periodicity":"1", "arrears_periodicity_measure":"1", "arrears_amount":"10", "arrears_interest_rate_periodicity_measure":"4", "contract_details_attributes":{"0":{"avoid_on_advance_generate":"0", "item_id":"1", "quantity":"1", "unit_price_cost":"50", "contract_formula_id":"", "reference":""}}, "memo":"generado desde el API"}}' https://app.zauru.com/contracts/draft_contracts.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "contract": {
+      "document_type": "1",
+      "reference": "prueba",
+      "taxable": "1",
+      "payment_term_id": "1",
+      "payee_id": "1",
+      "responsible_id": "1",
+      "start_date": "2018-09-02",
+      "periodicity": "1",
+      "periodicity_measure": "3",
+      "infinite": "0",
+      "fees": "20",
+      "initial_foreign_fees": "0",
+      "advanced_fees": "0",
+      "upfront_payment": "0.0",
+      "total_amount": "1000",
+      "interest_rate_periodicity_measure": "4",
+      "arrears_active": "1",
+      "arrears_detailed": "0",
+      "arrears_starts_in_days": "30",
+      "arrears_periodicity": "1",
+      "arrears_periodicity_measure": "1",
+      "arrears_amount": "10",
+      "arrears_interest_rate_periodicity_measure": "4",
+      "contract_details_attributes": {
+        "0": {
+          "avoid_on_advance_generate": "0",
+          "item_id": "1",
+          "quantity": "1",
+          "unit_price_cost": "50",
+          "contract_formula_id": "",
+          "reference": ""
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/contracts/draft_contracts.json
 ```
 
 ### Actualizar Contrato
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"contract":{"id":"1", "reference":"prueba editada", "contract_details_attributes":{"0":{"id":"1", "quantity":"2", "reference":"editado"}}, "memo":"editado desde el API"}}' https://app.zauru.com/contracts/draft_contracts/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "contract": {
+      "id": "1",
+      "reference": "prueba editada",
+      "contract_details_attributes": {
+        "0": {
+          "id": "1",
+          "quantity": "2",
+          "reference": "editado"
+        }
+      },
+      "memo": "editado desde el API"
+    }
+  }' \
+  https://app.zauru.com/contracts/draft_contracts/1.json
 ```
 
 ### Activar Contratos Preliminares
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS"  https://app.zauru.com/contracts/draft_contracts/1/activate.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/contracts/draft_contracts/1/activate.json
 ```

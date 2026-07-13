@@ -124,27 +124,101 @@ Para emitir la factura presione “Crear Factura”.
 
 ### Consultar vendedores activos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/sales/orders/active_sellers.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/active_sellers.json
 ```
 
 ### Obtener detalle de la factura
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/sales/unpaid_invoice/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoice/1.json
 ```
 
 ### editar orden de venta
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"invoice":{"id":"1", "reference":"Segunda prueba de Orden de Venta", "invoice_details_attributes":{"0":{"id":"1", "_destroy":"true"}, "1":{"item_id":"2", "quantity":"1", "unit_price":"650", "reference":"reemplazo"}, "2":{"id":"3", "reference":"editado", "quantity":"4"}}, "memo":"generado desde el API 2"}}' https://app.zauru.com/sales/orders/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "invoice": {
+      "id": "1",
+      "reference": "Segunda prueba de Orden de Venta",
+      "invoice_details_attributes": {
+        "0": {
+          "id": "1",
+          "_destroy": "true"
+        },
+        "1": {
+          "item_id": "2",
+          "quantity": "1",
+          "unit_price": "650",
+          "reference": "reemplazo"
+        },
+        "2": {
+          "id": "3",
+          "reference": "editado",
+          "quantity": "4"
+        }
+      },
+      "memo": "generado desde el API 2"
+    }
+  }' \
+  https://app.zauru.com/sales/orders/1.json
 ```
 
 ### eliminar ordenes de venta
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE https://app.zauru.com/sales/orders/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/orders/1.json
 ```
 
 ### crear factura
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"invoice":{"reference":"Prueba de Factura", "date":"2018-12-14","taxable":"1", "agency_id":"1", "payment_term_id":"1", "payee_info":"8005046-8 | Intuitiva, S.A. # 6646-4658", "seller_id":"1", "invoice_details_attributes":{"0":{"item_id":"1", "quantity":"10"}, "1":{"item_id":"2", "quantity":"20"}}, "memo":"generado desde el API"}}' https://app.zauru.com/sales/unpaid_invoices.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "invoice": {
+      "reference": "Prueba de Factura",
+      "date": "2018-12-14",
+      "taxable": "1",
+      "agency_id": "1",
+      "payment_term_id": "1",
+      "payee_info": "8005046-8 | Intuitiva, S.A. # 6646-4658",
+      "seller_id": "1",
+      "invoice_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "quantity": "10"
+        },
+        "1": {
+          "item_id": "2",
+          "quantity": "20"
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/sales/unpaid_invoices.json
 ```
 Esto devolverá un JSON similar a este
 ```json

@@ -23,5 +23,10 @@ Le aparecerá un mensaje de éxito en la pantalla, y ahora el caso lo podrá enc
 
 ### cerrar caso
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/pos/cases/1/close.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/cases/1/close.json
 ```

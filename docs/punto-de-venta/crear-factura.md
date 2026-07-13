@@ -53,5 +53,29 @@ d. Presione para cobrar la factura.
 ### Crear factura asociada a usuario (vendedor)
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"invoice":{"reference":"prueba", "taxable":"1", "payment_term_id":"1", "payee_id":"1", "seller_id":"1", "invoice_details_attributes":{"0":{"item_id":"1", "quantity":"1", "unit_price_cost":"650", "reference":""}}, "memo":"generado desde el API"}}' https://app.zauru.com/pos/invoices.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "invoice": {
+      "reference": "prueba",
+      "taxable": "1",
+      "payment_term_id": "1",
+      "payee_id": "1",
+      "seller_id": "1",
+      "invoice_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "quantity": "1",
+          "unit_price_cost": "650",
+          "reference": ""
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/pos/invoices.json
 ```

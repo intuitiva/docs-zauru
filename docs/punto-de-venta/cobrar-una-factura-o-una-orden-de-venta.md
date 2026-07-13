@@ -38,5 +38,24 @@ Le aparecerá un mensaje de éxito notificándole que se creo el cobro, ahora el
 
 ### Registrar un pago asociado a una factura
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"payment":{"payment_method_id":"1", "reference":"prueba", "payment_details_attributes":{"0":{"invoice_id":"1", "amount":"32.0"}}, "memo":"generado desde el API"}}' https://app.zauru.com/pos/charges.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payment": {
+      "payment_method_id": "1",
+      "reference": "prueba",
+      "payment_details_attributes": {
+        "0": {
+          "invoice_id": "1",
+          "amount": "32.0"
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/pos/charges.json
 ```

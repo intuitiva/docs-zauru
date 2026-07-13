@@ -29,6 +29,20 @@ Para ver el registro de los números de serie atendidos deberá seleccionar “N
 
 ### Crear un número de serie para un caso (en bodega destino Cliente)
 ```bash
-curl -v "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"serial":{"name":"serie654321", "item_id":"1", "description":"Producto especial y único ya vendido", "payee_id":"1"}}' https://app.zauru.com/support/serials_attended.json
+curl -v \
+  "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "serial": {
+      "name": "serie654321",
+      "item_id": "1",
+      "description": "Producto especial y único ya vendido",
+      "payee_id": "1"
+    }
+  }' \
+  https://app.zauru.com/support/serials_attended.json
 ```
 

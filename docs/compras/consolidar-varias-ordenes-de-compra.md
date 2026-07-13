@@ -46,10 +46,37 @@ En los detalles del Consolidado podrá encontrar las ordenes de compra que se co
 
 ### Obtener listado de ordenes de compra consolidables
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/purchases/consolidates/new.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/purchases/consolidates/new.json
 ```
 
 ### Crear nuevo consolidado de ordenes de compras
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"consolidate":{"name":"consolidado de prueba", "description":"descripcion del consolidado", "purchase_orders_attributes": {"0":{"consolidated":"1", "id":"1"}, "1":{"consolidated":"1", "id":"2"}}}}' https://app.zauru.com/purchases/consolidates.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "consolidate": {
+      "name": "consolidado de prueba",
+      "description": "descripcion del consolidado",
+      "purchase_orders_attributes": {
+        "0": {
+          "consolidated": "1",
+          "id": "1"
+        },
+        "1": {
+          "consolidated": "1",
+          "id": "2"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/consolidates.json
 ```

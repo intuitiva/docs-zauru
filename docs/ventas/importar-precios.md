@@ -57,7 +57,23 @@ Al terminar de llenar el archivo de Excel con todos los precios de sus productos
 
 ### crear precios sugeridos flexibles
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: pruebas@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"suggested_price":{"price_list_id":"", "item_id":"165750", "currency_id":"1", "flexible_price":"1", "amount": "0", "notes":"creado desde el API"}}' https://app.zauru.com/sales/suggested_prices.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: pruebas@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "suggested_price": {
+      "price_list_id": "",
+      "item_id": "165750",
+      "currency_id": "1",
+      "flexible_price": "1",
+      "amount": "0",
+      "notes": "creado desde el API"
+    }
+  }' \
+  https://app.zauru.com/sales/suggested_prices.json
 ```
 
 

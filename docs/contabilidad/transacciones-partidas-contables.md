@@ -31,15 +31,73 @@ Si se quiere anular una transacción pero que no se elimine de la contabilidad, 
 
 ### Crear transacción SIN imagen
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"entry":{"contract_id":"", "payee_id":"1", "reference":"prueba sin imagen", "invoice":"# de factura(texto)", "invoice_date":"2018-09-29", "date":"2018-09-28", "account_id":"1", "amount":"100", "splits_attributes":{"0":{"reference":"primer split", "account_id":"2", "amount":"90.0"}, "1":{"reference":"segundo split", "account_id":"3", "amount":"10"}}, "memo":"memo"}"' https://app.zauru.com/accounting/entries.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "contract_id": "",
+      "payee_id": "1",
+      "reference": "prueba sin imagen",
+      "invoice": "# de factura(texto)",
+      "invoice_date": "2018-09-29",
+      "date": "2018-09-28",
+      "account_id": "1",
+      "amount": "100",
+      "splits_attributes": {
+        "0": {
+          "reference": "primer split",
+          "account_id": "2",
+          "amount": "90.0"
+        },
+        "1": {
+          "reference": "segundo split",
+          "account_id": "3",
+          "amount": "10"
+        }
+      },
+      "memo": "memo"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
 ```
 
 ### Crear transacción CON imagen
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "Content-Type: multipart/form-data" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -F "entry[payee_id]=1" -F "entry[reference]=prueba con imagen" -F "entry[invoice]=# de factura (texto)" -F "entry[date]='2018-09-28'" -F "entry[date]='2018-09-28'" -F "entry[account_id]=1" -F "entry[amount]=100" -F "entry[image]=@Desktop/imagen-en-desktop.png" -F "entry[splits_attributes][0][reference]=primer split" -F "entry[splits_attributes][0][account_id]=2" -F "entry[splits_attributes][0][amount]=90" -F "entry[splits_attributes][1][reference]=segundo split" -F "entry[splits_attributes][1][account_id]=3" -F "entry[splits_attributes][1][amount]=10" -F "entry[memo]=memo" https://app.zauru.com/accounting/entries.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "Content-Type: multipart/form-data" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -F "entry[payee_id]=1" \
+  -F "entry[reference]=prueba con imagen" \
+  -F "entry[invoice]=# de factura (texto)" \
+  -F "entry[date]='2018-09-28'" \
+  -F "entry[date]='2018-09-28'" \
+  -F "entry[account_id]=1" \
+  -F "entry[amount]=100" \
+  -F "entry[image]=@Desktop/imagen-en-desktop.png" \
+  -F "entry[splits_attributes][0][reference]=primer split" \
+  -F "entry[splits_attributes][0][account_id]=2" \
+  -F "entry[splits_attributes][0][amount]=90" \
+  -F "entry[splits_attributes][1][reference]=segundo split" \
+  -F "entry[splits_attributes][1][account_id]=3" \
+  -F "entry[splits_attributes][1][amount]=10" \
+  -F "entry[memo]=memo" \
+  https://app.zauru.com/accounting/entries.json
 ```
 
 ### Borrar una transacción
 ```bash
-url -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE https://app.zauru.com/accounting/entries/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/entries/1.json
 ```

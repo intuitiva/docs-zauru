@@ -70,14 +70,39 @@ Le deberán aparecer las opciones para crear una nueva categoría de empleado, l
 
 #### Obtener listado del empleado
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/employees.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employees.json
 ```
 
 #### Obtener detalles del empleado
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/employees/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employees/1.json
 ```
 #### Crear empleado
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"employee":{"name":"Empleado Vendedor", "updater_id":"1", "seller":"1", "email":"vendedor@zauru.com", "phone":"32223323"}}' https://app.zauru.com/settings/employees.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "employee": {
+      "name": "Empleado Vendedor",
+      "updater_id": "1",
+      "seller": "1",
+      "email": "vendedor@zauru.com",
+      "phone": "32223323"
+    }
+  }' \
+  https://app.zauru.com/settings/employees.json
 ```

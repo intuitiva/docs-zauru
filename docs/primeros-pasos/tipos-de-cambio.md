@@ -35,7 +35,12 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificándole que el ti
 
 ### Listado de los tipos de cambio activos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/exchange_rates.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/exchange_rates.json
 ```
 Y esto me va a devolver un JSON con las siguientes características:
 

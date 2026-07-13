@@ -93,10 +93,37 @@ Le aparecerá un mensaje en la pantalla notificándole que se creo el pago exito
 
 ### pagar una orden de compra o cargo
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"discharge":{"payee_id":"1", "date":"2018-12-21", "reference":"Referencia del pago", "receipt":"Recibo del pago", "discharge_method_id":"1", "discharge_details_attributes":{"0":{"purchase_order_id":"1", "amount":"120"}}}}' https://app.zauru.com/purchases/discharges.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "discharge": {
+      "payee_id": "1",
+      "date": "2018-12-21",
+      "reference": "Referencia del pago",
+      "receipt": "Recibo del pago",
+      "discharge_method_id": "1",
+      "discharge_details_attributes": {
+        "0": {
+          "purchase_order_id": "1",
+          "amount": "120"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/discharges.json
 ```
 
 ### eliminar pagos de OC o cargos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" DELETE https://app.zauru.com/purchases/discharges/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/discharges/1.json
 ```

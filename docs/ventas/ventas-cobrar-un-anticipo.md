@@ -48,7 +48,13 @@ Le aparecerá un mensaje en la pantalla notificándole que el pago se creo exito
 
 ### Obtener el listado de ordenes que no se han pagado de un cliente
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X GET  https://app.zauru.com/sales/payments/new_advance.json?client=1
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/sales/payments/new_advance.json?client=1
 ```
 Y esto me va a devolver un JSON con las siguientes características:
 
@@ -84,5 +90,37 @@ Y esto me va a devolver un JSON con las siguientes características:
 ```
 ### Pagar parcialmente o totalmente una o varias ordenes
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"payment": {"draft":"0", "payee_id":"1", "date":"2019-01-15", "agency_id":"1", "payment_method_id":"1", "reference":"referencia del pago", "receipt":"recibo", "exchange_rate":"1.0", "payment_details_attributes":{"0":{"invoice_id":"1", "reference":"referencia de la orden 1 en el pago", "amount":"100"}, "1":{"invoice_id":"2", "reference": "referencia de la orden 2 el pago", "amount": "100"}}, "memo":""}' -X POST https://app.zauru.com/sales/payments.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payment": {
+      "draft": "0",
+      "payee_id": "1",
+      "date": "2019-01-15",
+      "agency_id": "1",
+      "payment_method_id": "1",
+      "reference": "referencia del pago",
+      "receipt": "recibo",
+      "exchange_rate": "1.0",
+      "payment_details_attributes": {
+        "0": {
+          "invoice_id": "1",
+          "reference": "referencia de la orden 1 en el pago",
+          "amount": "100"
+        },
+        "1": {
+          "invoice_id": "2",
+          "reference": "referencia de la orden 2 el pago",
+          "amount": "100"
+        }
+      },
+      "memo": ""
+    }
+  }' \
+  -X POST \
+  https://app.zauru.com/sales/payments.json
 ```

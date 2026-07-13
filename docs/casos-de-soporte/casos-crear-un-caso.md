@@ -86,7 +86,27 @@ Le aparecerá un mensaje de éxito en la pantalla notificándole que el caso fue
 
 ### solicitar listado de casos abiertos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"order": {"0": {"column": "3", "dir":"desc"}}, "start": "0", "length": "40", "search":{"value":"", "regex": "false"}}' https://app.zauru.com/support/cases/datatables.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/support/cases/datatables.json
 ```
 ```length``` es cuantos casos desea mostrar
 ```order["0"]["column"]``` es por que columna quiero ordenar
@@ -120,7 +140,12 @@ esto devolvería un JSON similar a este:
 
 ### solicitar items disponibles con precios para caso nuevo y #s de serie asignables un nuevo caso
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/support/cases/new.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/cases/new.json
 ```
 
 esto devolvería un JSON similar a este:
@@ -250,18 +275,69 @@ esto devolvería un JSON similar a este:
 
 ### crear caso nuevo
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"case": {"taxable": "1", "payee_info": "Cliente que necesita soporte pagado, S.A.", "responsible_id": "55", "agency_id": "44", "courtesy": "false", "payment_term_id": "22", "contact_method_id": "33", "date": "2018-12-24T16:23:46.620891Z", "closing_expected_at": "2018-12-24T16:24:02.000006914Z", "symptom": "el síntoma por el cual se abrió el caso originalmente", "case_supplies_attributes": {"1": {"item_id": "243", "_destroy": "false", "quantity": "2", "reference": "referencia de porque se necesita este insumo para resolver el caso"}}}}' https://app.zauru.com/support/cases.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "case": {
+      "taxable": "1",
+      "payee_info": "Cliente que necesita soporte pagado, S.A.",
+      "responsible_id": "55",
+      "agency_id": "44",
+      "courtesy": "false",
+      "payment_term_id": "22",
+      "contact_method_id": "33",
+      "date": "2018-12-24T16:23:46.620891Z",
+      "closing_expected_at": "2018-12-24T16:24:02.000006914Z",
+      "symptom": "el síntoma por el cual se abrió el caso originalmente",
+      "case_supplies_attributes": {
+        "1": {
+          "item_id": "243",
+          "_destroy": "false",
+          "quantity": "2",
+          "reference": "referencia de porque se necesita este insumo para resolver el caso"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/support/cases.json
 ```
 
 ### obtener detalles de un caso
 
 Este API nos permitiría obtener la información del caso y además las facturas asociadas y las ordenes de compra asociadas
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X GET https://app.zauru.com/support/cases/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/support/cases/1.json
 ```
 
 ### editar un caso
 En este caso estamos agregando un suministro al caso, pero se puede editar cualquier parte del caso
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"case":{"case_supplies_attributes":{"1396979779308":{"_destroy":"false", "item_id":"2", "quantity":"3"}}}}' https://app.zauru.com/pos/cases/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "case": {
+      "case_supplies_attributes": {
+        "1396979779308": {
+          "_destroy": "false",
+          "item_id": "2",
+          "quantity": "3"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/cases/1.json
 ```

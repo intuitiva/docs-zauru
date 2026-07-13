@@ -57,7 +57,13 @@ Aparecerán los distintos campos que se pueden llenar para editar al cliente.
 
 ### Listado de clientes (pocos campos)
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS"  -X get https://app.zauru.com/sales/clients.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X get \
+  https://app.zauru.com/sales/clients.json
 ```
 
 esto me retornará un JSON como el siguiente:
@@ -85,7 +91,22 @@ En donde el primer campo es el ID único de Zauru, el 2do es el NIT (opcional), 
 
 ### Crear cliente
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"payee":{"name":"Cliente Prueba", "tin":"12345678-9", "reference":"alguna referencia", "address_line_1":"1 calle 1-11", "currency_id": "1"}}' https://app.zauru.com/sales/clients.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee": {
+      "name": "Cliente Prueba",
+      "tin": "12345678-9",
+      "reference": "alguna referencia",
+      "address_line_1": "1 calle 1-11",
+      "currency_id": "1"
+    }
+  }' \
+  https://app.zauru.com/sales/clients.json
 ```
 esto me retornará un JSON como el siguiente:
 
@@ -148,7 +169,23 @@ esto me retornará un JSON como el siguiente:
 ```
 ### Editar cliente
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"payee":{"id":"1", "name":"Cliente Prueba 2", "tin":"12345678-9", "reference":"referencia actualizada", "address_line_1":"1 calle 2-22", "currency_id": "1"}}' https://app.zauru.com/sales/client/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payee": {
+      "id": "1",
+      "name": "Cliente Prueba 2",
+      "tin": "12345678-9",
+      "reference": "referencia actualizada",
+      "address_line_1": "1 calle 2-22",
+      "currency_id": "1"
+    }
+  }' \
+  https://app.zauru.com/sales/client/1.json
 ```
 esto me retornará un JSON como el siguiente:
 
@@ -211,7 +248,13 @@ esto me retornará un JSON como el siguiente:
 ```
 ### Obtener detalles del cliente
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X get https://app.zauru.com/sales/client/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X get \
+  https://app.zauru.com/sales/client/1.json
 ```
 
 esto retornará un JSON como el siguiente:

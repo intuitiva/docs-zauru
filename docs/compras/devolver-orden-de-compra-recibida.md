@@ -42,5 +42,10 @@ Puede repetir los pasos 1 al 5 para anular todas las recepciones que tenga la Or
 
 ### Devolver ordenes de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/purchases/purchase_orders/1/rebound.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/purchases/purchase_orders/1/rebound.json
 ```

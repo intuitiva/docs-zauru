@@ -27,5 +27,20 @@ Aparecerán todos los productos que están en el inventario de la empresa. A un 
 
 ### Obtener costos promedio ponderado por agencia
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"start":"0", "length":"40", "search":{"value":"", "regex":"false"}, "point_of_sale":"null"}' https://app.zauru.com/purchases/reports/datatables_inventory_cost_by_agency.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    },
+    "point_of_sale": "null"
+  }' \
+  https://app.zauru.com/purchases/reports/datatables_inventory_cost_by_agency.json
 ```

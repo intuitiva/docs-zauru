@@ -62,6 +62,15 @@ Para asociar un documento solo hay que entrar al detalle del contrato e ingresar
 
 ### Generar cuota manualmente
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"documents":1} https://app.zauru.com/contracts/active_contracts/1/generate_documents_action.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "documents": 1
+  }' \
+  https://app.zauru.com/contracts/active_contracts/1/generate_documents_action.json
 ```
 Si hay error devolverá un JSON con el error como un objeto llamado "error" y el objeto del contrato en "contract", sino hay error solo devolverá el contrato.

@@ -147,20 +147,65 @@ Después de crear la categoría de beneficiario deberá colocársela a el client
 
 ### Crear beneficiario
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"payee":{"name":"Cliente Prueba", "tin":"12345678-9", "reference":"alguna referencia", "address_line_1":"1 calle 1-11", "currency_id": "1", "vendor": false, "buyer": true}}' https://app.zauru.com/settings/payees.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee": {
+      "name": "Cliente Prueba",
+      "tin": "12345678-9",
+      "reference": "alguna referencia",
+      "address_line_1": "1 calle 1-11",
+      "currency_id": "1",
+      "vendor": false,
+      "buyer": true
+    }
+  }' \
+  https://app.zauru.com/settings/payees.json
 ```
 
 ### Editar beneficiario
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"payee":{"id":"1", "name":"Cliente Prueba 2", "tin":"12345678-9", "reference":"referencia actualizada", "address_line_1":"1 calle 2-22", "currency_id": "1"}}' https://app.zauru.com/settings/payees/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payee": {
+      "id": "1",
+      "name": "Cliente Prueba 2",
+      "tin": "12345678-9",
+      "reference": "referencia actualizada",
+      "address_line_1": "1 calle 2-22",
+      "currency_id": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/payees/1.json
 ```
 
 ### Obtener detalles del beneficiario
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X get https://app.zauru.com/settings/payees/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X get \
+  https://app.zauru.com/settings/payees/1.json
 ```
 
 ### Obtener listado de categorías de beneficiarios
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X get https://app.zauru.com/settings/payees/payee_categories.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X get \
+  https://app.zauru.com/settings/payees/payee_categories.json
 ```

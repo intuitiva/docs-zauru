@@ -14,7 +14,12 @@ Estas páginas solo son una referencia para los campos que tiene cada tipo de do
 
 ### Contratos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/contract.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/contract.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -41,7 +46,12 @@ Esto devolverá un JSON similar a este:
 ```
 ### Ordenes de Compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/purchase_order.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/purchase_order.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -64,7 +74,12 @@ Esto devolverá un JSON similar a este:
 ```
 ### Facturas
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/invoice.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/invoice.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -87,7 +102,12 @@ Esto devolverá un JSON similar a este:
 ```
 ### Envíos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/shipment.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/shipment.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -106,7 +126,12 @@ Esto devolverá un JSON similar a este:
 ```
 ### Transacciones
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/entry.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/entry.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -125,7 +150,12 @@ Esto devolverá un JSON similar a este:
 ```
 ### Casos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/documents_structures/case.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/documents_structures/case.json
 ```
 
 Esto devolverá un JSON similar a este:

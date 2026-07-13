@@ -81,7 +81,12 @@ Le deberán aparecer las opciones para crear una nueva categoría de agencias, l
 
 #### Obtener listado de la agencias
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/agencies.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/agencies.json
 ```
 Esto generará un JSON similar a este:
 ```JSON
@@ -117,9 +122,31 @@ Esto generará un JSON similar a este:
 ```
 #### Obtener detalles de la agencia
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/agencies/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/agencies/1.json
 ```
 #### Crear agencia
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"agency":{"name":"Tienda", "active":"1", "address_line_1":"direccion obligatoria", "notes":"", "warehouse":"1", "point_of_sale":"1", "workshop":"1"}}' https://app.zauru.com/settings/agencies.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "agency": {
+      "name": "Tienda",
+      "active": "1",
+      "address_line_1": "direccion obligatoria",
+      "notes": "",
+      "warehouse": "1",
+      "point_of_sale": "1",
+      "workshop": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/agencies.json
 ```

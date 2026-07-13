@@ -10,7 +10,12 @@ format: md
 Para obtener un detalle en tiempo real de los items disponibles para la venta necesitamos hacer una consulta por el API de Zauru con las siguientes características:
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: 45ERGDSFSLIU2332" https://app.zauru.com/ecommerce/ecommerce_requests/get_items_for_ecommerce.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: 45ERGDSFSLIU2332" \
+  https://app.zauru.com/ecommerce/ecommerce_requests/get_items_for_ecommerce.json
 ```
 
 Y esto me va a devolver un JSON con las siguientes características:

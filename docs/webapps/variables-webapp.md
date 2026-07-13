@@ -33,7 +33,12 @@ El detalle me muestra el valor y todos los campos adicionales de la webapp.
 ### Solicitar listado de variables
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/webapp_vars.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_vars.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -69,7 +74,12 @@ Esto devolverá un JSON similar a este:
 ### Ver el detalle de una variable
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/apps/webapp_vars/2.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_vars/2.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -91,7 +101,21 @@ Esto devolverá un JSON similar a este:
 ### Crear una nueva variable
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"variable": {"name": "tercera_variable", "kind": "Entero", "value": "12233", "description": "otra prueba mas"}}' https://app.zauru.com/apps/webapp_vars.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "variable": {
+      "name": "tercera_variable",
+      "kind": "Entero",
+      "value": "12233",
+      "description": "otra prueba mas"
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_vars.json
 ```
 
 Esto devolverá un JSON similar a este:
@@ -112,14 +136,34 @@ Esto devolverá un JSON similar a este:
 
 ### Editar una variable
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"variable": {"name": "tercera_variable_v2", "kind": "Entero", "value": "122334", "description": "otra prueba mas"}}' https://app.zauru.com/apps/webapp_vars/3.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "variable": {
+      "name": "tercera_variable_v2",
+      "kind": "Entero",
+      "value": "122334",
+      "description": "otra prueba mas"
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_vars/3.json
 ```
 
 Esta llamada no devolverá nada
 
 ### Borrar una variable
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE https://app.zauru.com/apps/webapp_vars/3.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/apps/webapp_vars/3.json
 ```
 
 Esta llamada no devolverá nada

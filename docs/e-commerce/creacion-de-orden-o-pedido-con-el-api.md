@@ -52,7 +52,18 @@ Nótese que solo hay 2 campos que no están dentro de dobles comillas (“) y so
 Este JSON debe ir como una cadena de caracteres dentro de la llamada al API, de tal modo que este JSON en un cURL quedaría así:
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"ecommerce_request":{"raw_params":"{ \"client\": { \"name\":\"Cliente Prueba\", \"tin\":\"12345678-9\", \"address_line_1\":\"17 calle 2-80 zona 11\", \"delivery_address\":\"17 calle 2-80 zona 11\", \"phone\":\"2329-3992\", \"email\":\"alto@bajo.com\", \"reference\":\"colegio campo real\", \"notes\":\"cualquier info extra\" }, \"order\": { \"date\":\"2018-05-14\", \"invoice_details_attributes\": [ { \"item_id\":140924, \"quantity\":1 }, { \"item_id\":140867, \"quantity\":2, \"unit_price\":12.99 } ], \"reference\":\"prueba\", \"memo\":\"cualquier informacion extra\" }, \"payment\": { \"reference\":\"autorizacion tarjeta\", \"receipt\":\"recibo\", \"memo\":\"cualquier informacion extra\" } }"}}' https://app.zauru.com/ecommerce/ecommerce_requests.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "ecommerce_request": {
+      "raw_params": "{ \"client\": { \"name\":\"Cliente Prueba\", \"tin\":\"12345678-9\", \"address_line_1\":\"17 calle 2-80 zona 11\", \"delivery_address\":\"17 calle 2-80 zona 11\", \"phone\":\"2329-3992\", \"email\":\"alto@bajo.com\", \"reference\":\"colegio campo real\", \"notes\":\"cualquier info extra\" }, \"order\": { \"date\":\"2018-05-14\", \"invoice_details_attributes\": [ { \"item_id\":140924, \"quantity\":1 }, { \"item_id\":140867, \"quantity\":2, \"unit_price\":12.99 } ], \"reference\":\"prueba\", \"memo\":\"cualquier informacion extra\" }, \"payment\": { \"reference\":\"autorizacion tarjeta\", \"receipt\":\"recibo\", \"memo\":\"cualquier informacion extra\" } }"
+    }
+  }' \
+  https://app.zauru.com/ecommerce/ecommerce_requests.json
 ```
 
 Al llamar esta función nos va a responder un JSON similar a este:

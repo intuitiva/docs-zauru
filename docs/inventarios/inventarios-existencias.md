@@ -46,7 +46,12 @@ Aquí podrá ver el listado de existencias de cada producto por bodega.
 
 #### Obtener todas las existencias en una bodega
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/inventories/stocks.json?warehouse=1
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks.json?warehouse=1
 ```
 Esto devolverá un JSON similar a este:
 ```JSON
@@ -70,7 +75,12 @@ Esto devolverá un JSON similar a este:
 
 #### Obtener las existencias de todas las bodegas de un producto
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/inventories/stocks/1/item.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1/item.json
 ```
 Esto devolverá un JSON similar a este:
 ```json

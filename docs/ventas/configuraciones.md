@@ -220,15 +220,42 @@ Estas variables sirven para automatizar el envío automático de las facturas po
 
 ### Lista de términos de pagos activos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/sales/settings/payment_terms/actives.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_terms/actives.json
 ```
 
 ### Lista de métodos de pagos
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/sales/settings/payment_methods.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_methods.json
 ```
 
 ### Crear nuevo método de pago
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"payment_method":{"name":"Método de pago Prueba", "printable_entry":"1", "avoid_overpay_showing_change":"1", "account_id":"1", "account2_id":"2", "account2_rate":"0.01", "account2_fixed_amount":"1.45"}}' https://app.zauru.com/settings/payment_methods.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payment_method": {
+      "name": "Método de pago Prueba",
+      "printable_entry": "1",
+      "avoid_overpay_showing_change": "1",
+      "account_id": "1",
+      "account2_id": "2",
+      "account2_rate": "0.01",
+      "account2_fixed_amount": "1.45"
+    }
+  }' \
+  https://app.zauru.com/settings/payment_methods.json
 ```

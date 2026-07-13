@@ -41,11 +41,46 @@ Le aparecerá un mensaje notificándole que se recibió la orden de compra exito
 
 ### Crear Recepción de la orden de compra
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"reception": {"received_at": "2024-01-19", "entity_id": "1", "memo": "prueba", "needs_transit": "0", "reception_details_attributes": {"0": {"item_id": 1, "quantity": 1, "purchase_order_detail_id": 1}, "1": {"item_id": 2, "quantity": 1, "purchase_order_detail_id": 3}},"agency_id": 1, "purchaser_order_id": 418168, "invoice_number": "fafafafa"}}' https://app.zauru.com/purchases/purchase_orders/1/receptions.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "reception": {
+      "received_at": "2024-01-19",
+      "entity_id": "1",
+      "memo": "prueba",
+      "needs_transit": "0",
+      "reception_details_attributes": {
+        "0": {
+          "item_id": 1,
+          "quantity": 1,
+          "purchase_order_detail_id": 1
+        },
+        "1": {
+          "item_id": 2,
+          "quantity": 1,
+          "purchase_order_detail_id": 3
+        }
+      },
+      "agency_id": 1,
+      "purchaser_order_id": 418168,
+      "invoice_number": "fafafafa"
+    }
+  }' \
+  https://app.zauru.com/purchases/purchase_orders/1/receptions.json
 ```
 
 Este endpoint devolverá el detalle de la orden de compra, mas no el detalle 
 ### Devolver la recepción
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE https://app.zauru.com/purchases/receptions/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/receptions/1.json
 ```

@@ -39,15 +39,38 @@ Le aparecerá un mensaje de éxito en la pantalla. Ahora que creo el proyecto po
 
 ### obtener proyecto disponibles
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/tags.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/tags.json
 ```
 
 ### obtener detalles de un proyecto
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/settings/tags/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/tags/1.json
 ```
 
 ### crear proyecto nuevo
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"item":{"name":"Proyecto prueba", "description":"Descripción larga del proyecto", "tag_category_id":43}}' https://app.zauru.com/settings/tags.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "item": {
+      "name": "Proyecto prueba",
+      "description": "Descripción larga del proyecto",
+      "tag_category_id": 43
+    }
+  }' \
+  https://app.zauru.com/settings/tags.json
 ```

@@ -110,7 +110,36 @@ Le aparecerá una mensaje notificando que se entrego la reservación. Ahora tend
 
 ### Crear una envío preliminar (reservación)
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X POST -d '{"shipment":{"reference":"Referencia para poder encontrar este envío en un futuro", "booker_id":"1", "transporter_id":"", "needs_transport":"0", "planned_shipping":"", "planned_delivery":"2018-08-10", "agency_from_id":"2", "agency_to_id":"1", "movements_attributes":{"0":{"item_code":"xyz", "item_id":"2", "booked_quantity":"100"}}, "tag_ids":[""], "memo":"Alguna anotación"}"' https://app.zauru.com/inventories/bookings.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "shipment": {
+      "reference": "Referencia para poder encontrar este envío en un futuro",
+      "booker_id": "1",
+      "transporter_id": "",
+      "needs_transport": "0",
+      "planned_shipping": "",
+      "planned_delivery": "2018-08-10",
+      "agency_from_id": "2",
+      "agency_to_id": "1",
+      "movements_attributes": {
+        "0": {
+          "item_code": "xyz",
+          "item_id": "2",
+          "booked_quantity": "100"
+        }
+      },
+      "tag_ids": [
+        ""
+      ],
+      "memo": "Alguna anotación"
+    }
+  }' \
+  https://app.zauru.com/inventories/bookings.json
 ```
 
 ### Entregar una envío preliminar (reservación)
@@ -119,26 +148,63 @@ Este caso funciona para convertir una __reservación SIN transporte__ a un __env
 Notar que lo que se reservó en el envío es lo que se va a entregar, no se puede escoger cuanto realmente se entregó.
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/inventories/bookings/1/deliver.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bookings/1/deliver.json
 ```
 
 ### Despachar un envío preliminar (reservación) CON transporte
 Este caso SOLO funciona para convertir una __reservación CON transporte__ a un __envío en tránsito__
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" https://app.zauru.com/inventories/bookings/1/ship.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bookings/1/ship.json
 ```
 
 ### Entregar un envío (tránsito)
 Este caso SOLO funciona para convertir un __envío en tránsito__ en una __envío entregado__
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X PUT -d '{"shipment":{"movements_attributes":{"0":{"delivered_quantity":99, "id":"1"}}, "tag_ids":[""], "memo": "parece que no vinieron los 100 productos solicitados", "transporter_id":1}"' https://app.zauru.com/inventories/transits/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "shipment": {
+      "movements_attributes": {
+        "0": {
+          "delivered_quantity": 99,
+          "id": "1"
+        }
+      },
+      "tag_ids": [
+        ""
+      ],
+      "memo": "parece que no vinieron los 100 productos solicitados",
+      "transporter_id": 1
+    }
+  }' \
+  https://app.zauru.com/inventories/transits/1.json
 ```
 
 ### Devolver una entrega (envío entregado)
 Convertirá el envío en un envío devuelto y regresará las existencias a donde estaban originalmente (la agencia origen).
 
 ```bash
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -H "X-User-Email: prueba@zauru.com" -H "X-User-Token: XSDFKK09238487DLFS" -X DELETE https://app.zauru.com/inventories/deliveries/1.json
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/deliveries/1.json
 ```
