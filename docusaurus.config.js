@@ -107,7 +107,7 @@ const config = {
         // Manage your index at https://crawler.algolia.com
         appId: "ZVDKPO68BR",
         apiKey: "25e0c307fb5498760948b937c7534337",
-        indexName: "prod_DOCS_ZAURU",
+        indexName: "docs_zauru_com_zvdkpo68br_pages",
         contextualSearch: true,
       },
     }),
