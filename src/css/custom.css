@@ -864,8 +864,3 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
-
-/* Hide agent-internal docs from sidebar */
-.zauru-internal-docs {
-  display: none !important;
-}
