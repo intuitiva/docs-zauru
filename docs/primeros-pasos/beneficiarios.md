@@ -2,11 +2,7 @@
 title: "Crear Clientes y/o Proveedores (Beneficiarios)"
 sidebar_label: "Crear Clientes y/o Proveedores (Beneficiarios)"
 sidebar_position: 6
-format: md
 ---
-
-# Crear Clientes y/o Proveedores (Beneficiarios)
-
 
 Los beneficiarios son clientes o proveedores de productos o servicios. Pueden ser categorizados de varias maneras, de acuerdo a la necesidad de su empresa. A continuación veremos como se manejan en Zauru.
 

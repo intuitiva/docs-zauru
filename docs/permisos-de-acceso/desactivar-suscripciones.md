@@ -2,10 +2,8 @@
 title: "Desactivar suscripciones"
 sidebar_label: "Desactivar suscripciones"
 sidebar_position: 7
-format: md
 ---
 
-# Desactivar suscripciones
 Las suscripciones en Zauru se crean para dar accesos a un usuario para ingresar al sistema por medio de un correo electrónico.
 
 Una vez creada la suscripción en el sistema Zauru, es posible que necesite desactivarlos.

@@ -2,10 +2,7 @@
 title: "Crear Proyecto"
 sidebar_label: "Crear Proyecto"
 sidebar_position: 1
-format: md
 ---
-
-# Crear Proyecto
 
 Este tutorial esta enfocado en la creación de un proyecto. Cuando usted crea un proyecto esta creando un “Folder” en donde podrá adjuntar muchos “Archivos”, por archivos nos referimos a las transacciones contables, facturas emitida, ordenes de compra emitidas, casos, envíos y/o cotizaciones que usted realice.
 También se pueden entender como __centros de costos__ para agrupar transacciones de gastos.

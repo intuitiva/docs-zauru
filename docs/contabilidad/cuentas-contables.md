@@ -2,10 +2,7 @@
 title: "Cuentas Contables"
 sidebar_label: "Cuentas Contables"
 sidebar_position: 2
-format: md
 ---
-
-# Cuentas Contables
 
 El Módulo de Contabilidad almacena la nomenclatura de cuentas que usted desee, comprendemos que la contabilidad puede ser muy variable en cada empresa, y le permitimos a usted manejarla de la forma que usted prefiera. Zauru mantiene un  registro de todas las transacciones contables de compra, venta y pagos de productos y servicios. Al igual que un registro de las cuentas bancarias de la empresa.
 

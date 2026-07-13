@@ -2,10 +2,7 @@
 title: "[Transacciones] Pagar Salarios (incluyendo prestaciones)"
 sidebar_label: "[Transacciones] Pagar Salarios (incluyendo prestaciones)"
 sidebar_position: 316
-format: md
 ---
-
-# Pagar Salarios (Incluyendo Prestaciones)
 
 Este tutorial esta enfocado en el pago de salarios y prestaciones a los empleados.
 

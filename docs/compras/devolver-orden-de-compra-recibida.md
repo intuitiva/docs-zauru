@@ -2,10 +2,7 @@
 title: "Anular recepciones de una orden de compra"
 sidebar_label: "Anular recepciones de una orden de compra"
 sidebar_position: 4
-format: md
 ---
-
-# Anular una recepción de una orden de compra
 
 Este tutorial esta enfocado en devolver los productos de una orden de compra después de una recepción.
 

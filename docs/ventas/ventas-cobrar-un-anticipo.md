@@ -2,11 +2,7 @@
 title: "Cobrar un anticipo (Cobrar antes de facturar)"
 sidebar_label: "Cobrar un anticipo (Cobrar antes de facturar)"
 sidebar_position: 9
-format: md
 ---
-
-# Cobrar un anticipo (Cobrar antes de facturar)
-
 
 Este tutorial esta enfocado en cobrar anticipos. Un anticipo es un cobro que se la hace al cliente antes de facturar para comenzar la relación de trabajo. Los pasos para cobrar un anticipo a una orden de venta son los siguientes:
 

@@ -2,10 +2,7 @@
 title: "Precios sugeridos"
 sidebar_label: "Precios sugeridos"
 sidebar_position: 2
-format: md
 ---
-
-# Precios de los ítems o paquetes
 
 Antes de comenzar a vender sus productos tiene que ponerle precios sugeridos de venta. Si algún item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta.
 
@@ -75,5 +72,3 @@ curl -v \
   }' \
   https://app.zauru.com/sales/suggested_prices.json
 ```
-
-

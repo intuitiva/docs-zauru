@@ -2,10 +2,8 @@
 title: "Invitaciones"
 sidebar_label: "Invitaciones"
 sidebar_position: 3
-format: md
 ---
 
-# Invitaciones
 Zauru utiliza el sistema de invitaciones porque necesita asegurarse de que el usuario tenga un correo electrónico válido para poder comunicarnos con el usuario en caso de que olvide la contraseña o que se bloquee su cuenta por más de 5 intentos fallidos en el ingreso del sistema.
 
 Para crear un nuevo usuario deberá enviar una invitación al correo electrónico del nuevo usuario, luego tendrá que suscribirlo para asignarle un rol (con permisos existentes) o crear un nuevo rol (con nuevos permisos). Los pasos para enviar una nueva invitación al sistema son los siguientes:

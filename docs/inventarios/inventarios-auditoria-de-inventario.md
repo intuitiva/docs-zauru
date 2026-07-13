@@ -2,10 +2,7 @@
 title: "Auditoria de Inventario"
 sidebar_label: "Auditoria de Inventario"
 sidebar_position: 7
-format: md
 ---
-
-# Auditoria de Inventario
 
 Este tutorial esta basado en la creación de auditorías de inventario. Los pasos para crear una auditoria de inventario son los siguientes:
 
@@ -46,5 +43,3 @@ Encontrara los detalles de la auditoría
 
 
 ![imagen5](/img/inventarios/inventarios-auditoria-de-inventario-5.png)
-
-

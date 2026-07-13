@@ -2,10 +2,7 @@
 title: "Subir existencias iniciales"
 sidebar_label: "Subir existencias iniciales"
 sidebar_position: 1
-format: md
 ---
-
-# Subir existencias iniciales
 
 Zauru le permite importar existencias de sus productos por medio de una plantilla de Excel predefinida. Antes de poder importar existencias tuvo que haber creado los ítems de sus productos.
 
@@ -51,6 +48,3 @@ Después de haber hecho su plantilla de importación de Excel, los pasos para co
 7.Presione “Importar Existencias” para importar.
 
 ![imagen4](/img/inventarios/inventarios-existencia-4.png)
-
-
-

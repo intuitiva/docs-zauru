@@ -2,11 +2,7 @@
 title: "Gastos del Proveedor Agrupado por Proyecto"
 sidebar_label: "Gastos del Proveedor Agrupado por Proyecto"
 sidebar_position: 2
-format: md
 ---
-
-# Gastos del Proveedor Agrupado por Proyecto
-
 
 ¿Qué pasa cuando usted quiere saber cuánto le ha desembolsado a un proveedor por proyecto?
 
@@ -24,6 +20,3 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Es necesario seleccionar el proveedor para ver enlistada la informacion. Una vez se haya seleccionado, aparecerá lo siguiente la información de las transacciones al proveedor.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-del-proveedor-agrupado-por-proyecto-2.png)
-
-
-

@@ -2,10 +2,7 @@
 title: "Cobrar una factura o una orden de venta"
 sidebar_label: "Cobrar una factura o una orden de venta"
 sidebar_position: 4
-format: md
 ---
-
-# Cobrar una factura o una orden de venta
 
 Este tutorial esta enfocado en cobrar las facturas u ordenes de venta desde el punto de venta. Los pasos para cobrar una factura son los siguientes:
 

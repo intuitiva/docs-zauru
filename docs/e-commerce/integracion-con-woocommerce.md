@@ -2,10 +2,8 @@
 title: "Integración con WooCommerce"
 sidebar_label: "Integración con WooCommerce"
 sidebar_position: 5
-format: md
 ---
 
-# Integración con WooCommerce
 WooCommerce es el software para tienda en linea más usado en el mundo y se puede adaptar para muchísimos casos distintos.
 ![logo woo commerce](/img/e-commerce/integracion-con-woocommerce-1.png)
 

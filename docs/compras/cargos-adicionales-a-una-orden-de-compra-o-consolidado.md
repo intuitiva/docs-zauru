@@ -2,10 +2,7 @@
 title: "Cargos adicionales a una orden de compra o consolidado"
 sidebar_label: "Cargos adicionales a una orden de compra o consolidado"
 sidebar_position: 7
-format: md
 ---
-
-# Cargos adicionales a una orden de compra
 
 Este tutorial esta enfocado en registrar cargos adicionales a una orden de compra. Es probable que cuando usted haga una orden de compra local le cobren flete y seguridad por su mercadería. O puede ser que usted importe y le cobren cargos adicionales a su mercadería como impuestos o GPS.
 
@@ -102,6 +99,3 @@ Haga click sobre “Detalles” (El ojo) para ver los detalles de la orden de co
 Le aparecerán los detalles de la orden de compra, en la parte inferior de la página podrá encontrar los cargos asociados que se crearon. Estos cargos se distribuyen ponderadamente en el costo de cada producto.
 
 ![imagen7](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-7.jpg)
-
-
-

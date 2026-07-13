@@ -2,10 +2,8 @@
 title: "Webapps"
 sidebar_label: "Webapps"
 sidebar_position: 0
-format: md
 ---
 
-# Webapps (desarrollo a la medida)
 Este módulo potencializa la creación de aplicaciones a la medida integradas con Zauru para que se sientan como aplicaciones nativas de Zauru.
 
 ## Historia de las Webapps

@@ -2,11 +2,7 @@
 title: "Movimientos de los productos"
 sidebar_label: "Movimientos de los productos"
 sidebar_position: 5
-format: md
 ---
-
-# Movimientos de los productos
-
 
 Este tutorial este enfocado en ver los movimientos de los productos para saber donde están sus productos y por donde pasaron.
 
@@ -58,6 +54,3 @@ Lo forma de ver los movimientos de un producto en todas las bodegas es la siguie
 Le aparecerán los detalles de las existencias, y en la parte inferior podrá ver todos los movimientos que hubieron de este producto en todas las bodegas.
 
 ![imagen5](/img/inventarios/inventarios-movimientos-de-los-productos-5.jpg)
-
-
-

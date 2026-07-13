@@ -2,11 +2,7 @@
 title: "Crear un Caso"
 sidebar_label: "Crear un Caso"
 sidebar_position: 1
-format: md
 ---
-
-# Crear un caso
-
 
 Este tutorial esta enfocado en la creación de un caso en el modulo de Soporte.
 

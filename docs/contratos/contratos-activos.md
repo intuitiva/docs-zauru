@@ -2,10 +2,8 @@
 title: "Contratos Activos"
 sidebar_label: "Contratos Activos"
 sidebar_position: 2
-format: md
 ---
 
-# Contratos Activos
 Al momento de activar el contrato preliminar se convierte en un contrato activo; lo que significa que va a generar documentos recurrentemente con la periodicidad estipulada, indefinidamente o una cantidad específica de recurrencias.
 ![listado de contratos activos](/img/contratos/contratos-activos-1.png)
 

@@ -2,10 +2,7 @@
 title: "Presupuestos mensuales por proyecto"
 sidebar_label: "Presupuestos mensuales por proyecto"
 sidebar_position: 4
-format: md
 ---
-
-# Presupuestos mensuales por proyecto
 
 Los pasos para crear un presupuesto mensual por proyecto son los siguientes:
 
@@ -39,6 +36,3 @@ Cuando termine de especificar los gastos presupuestados para el proyecto presion
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se creo el presupuesto exitosamente. Podrá ver los detalles de su proyecto en el botón de “Ver” (ojo).
 
 ![imagen4](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-4.jpg)
-
-
-

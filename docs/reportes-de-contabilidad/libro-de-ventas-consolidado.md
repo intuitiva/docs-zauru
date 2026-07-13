@@ -2,10 +2,7 @@
 title: "Libro de Ventas Consolidado"
 sidebar_label: "Libro de Ventas Consolidado"
 sidebar_position: 10
-format: md
 ---
-
-# Libro de Ventas Consolidado
 
 El libro de ventas consolidado es por día, respalda la venta de bienes y servicios que efectúa una empresa.
 

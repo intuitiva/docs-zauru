@@ -2,10 +2,7 @@
 title: "Manejo de impuestos indirectos o IVA"
 sidebar_label: "Manejo de impuestos indirectos o IVA"
 sidebar_position: 4
-format: md
 ---
-
-# Manejo de impuestos indirectos o IVA
 
 Este tutorial esta enfocado en el manejo de impuestos indirecto. Antes de ver este tutorial asegúrese de haber visto el tutorial de “Configuraciones” en donde se establecen las cuentas de IVA.
 

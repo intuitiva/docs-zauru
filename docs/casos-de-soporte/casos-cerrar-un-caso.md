@@ -2,10 +2,7 @@
 title: "Cerrar un Caso"
 sidebar_label: "Cerrar un Caso"
 sidebar_position: 2
-format: md
 ---
-
-# Cerrar un Caso
 
 Este tutorial esta enfocado en cerrar un caso. Luego de que el caso haya sido atendido y debidamente registrado, se deberá cerrar el caso. Los pasos para cerrar un caso son los siguientes:
 

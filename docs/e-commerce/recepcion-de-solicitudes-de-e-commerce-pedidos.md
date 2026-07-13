@@ -2,10 +2,7 @@
 title: "Recepción de solicitudes de e-commerce (pedidos)"
 sidebar_label: "Recepción de solicitudes de e-commerce (pedidos)"
 sidebar_position: 2
-format: md
 ---
-
-# Recepción de solicitudes de e-commerce en Zauru (pedidos)
 
 Cuando un sistema de e-commerce (tienda en linea) le manda a Zauru un pedido entra a travez del módulo de e-commerce en la sección de solicitudes de e-commerce.
 

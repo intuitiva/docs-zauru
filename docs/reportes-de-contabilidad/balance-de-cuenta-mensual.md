@@ -2,10 +2,7 @@
 title: "Balance de Cuenta Mensual"
 sidebar_label: "Balance de Cuenta Mensual"
 sidebar_position: 7
-format: md
 ---
-
-# Balance de Cuenta Mensual
 
 El balance de cuenta mensual nos muestra los movimientos de la cuenta que estamos consultando, se puede consultar hasta un máximo de seis meses.
 

@@ -2,10 +2,7 @@
 title: "Impresión Notas de Crédito"
 sidebar_label: "Impresión Notas de Crédito"
 sidebar_position: 15
-format: md
 ---
-
-# Impresión Notas de Crédito
 
 Este tutorial fue realizado para mostrar los pasos a seguir, para la impresión de Notas de Crédito
 
@@ -40,4 +37,3 @@ Acontinuación presione las teclas “CTRL + P”  para enviar  a la impresora p
 Verifique en Nombre que la impresora es la correcta, en Número de copias la cantidad de hojas a imprimir y luego click en aceptar normal.
 
 ![imagen5](/img/ventas/ventas-impresion-notas-de-credito-5.png)
-

@@ -2,10 +2,7 @@
 title: "Solicitar los items disponibles con su foto, precios y existencias con el API"
 sidebar_label: "Solicitar los items disponibles con su foto, precios y existencias con el API"
 sidebar_position: 3
-format: md
 ---
-
-# Solicitar los items disponibles con sus fotos, precios y existencias con el API
 
 Para obtener un detalle en tiempo real de los items disponibles para la venta necesitamos hacer una consulta por el API de Zauru con las siguientes características:
 

@@ -2,10 +2,7 @@
 title: "Numeros de Serie"
 sidebar_label: "Numeros de Serie"
 sidebar_position: 9
-format: md
 ---
-
-# Numeros de Serie
 
 Este tutorial esta basado en la creación y manejo de números de serie.
 
@@ -76,6 +73,3 @@ A continuación le aparecerá el segundo paso para crear la reservación, aquí 
 Le aparecerá un mensaje notificándole que la reservación fue creada exitosamente, podrá ver los detalles de la reservación o entregarla en la parte inferior.
 
 ![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
-
-
-

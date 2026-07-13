@@ -2,11 +2,7 @@
 title: "Costo Inventario Actual"
 sidebar_label: "Costo Inventario Actual"
 sidebar_position: 2
-format: md
 ---
-
-# Costo Inventario Actual
-
 
 En el momento de poner un precio, es importante tomar en cuenta el margen de ganancia que necesita la empresa. Para realizar el cálculo de margen de ganancia es importante tener el costo del producto al momento de ingresar a la empresa. Para esto, Zauru ofrece el servicio de poder observar el costo unitario del inventario.
 

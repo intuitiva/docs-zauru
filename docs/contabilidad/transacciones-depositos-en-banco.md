@@ -2,10 +2,7 @@
 title: "[Transacciones] Depósitos en banco"
 sidebar_label: "[Transacciones] Depósitos en banco"
 sidebar_position: 313
-format: md
 ---
-
-# Depósitos en banco
 
 Este tutorial muestra como registrar un depósito hecho por un beneficiario a la cuenta monetaria. Puede ser que le hayan depositado por algún préstamo o alguna deuda. O puede ser que al final del día cada uno de sus puntos de venta deposita el efectivo a su cuenta monetaria.
 
@@ -35,6 +32,3 @@ f. Coloque la cuenta en la que se hizo el depósito.
 Para crear el depósito seleccione “Crear nueva transacción” en la parte de abajo.
 
 ![imagen2](/img/contabilidad/transacciones-depositos-en-banco-2.jpg)
-
-
-

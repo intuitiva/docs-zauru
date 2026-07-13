@@ -2,11 +2,7 @@
 title: "Ingresos del Cliente Agrupado por Proyecto Ingresos del Cliente Agrupado por Proyecto"
 sidebar_label: "Ingresos del Cliente Agrupado por Proyecto Ingresos del Cliente Agrupado por Proyecto"
 sidebar_position: 106
-format: md
 ---
-
-# Ingresos del Cliente Agrupado por Proyecto
-
 
 ¿Qué pasa cuando un cliente tiene varios proyectos con la empresa, y el cliente quiere saber cuando dinero le ha desembolsado en todos los proyectos?
 
@@ -24,6 +20,3 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Al seleccionar al beneficiario, se enlistara la información de las transacciones que ha realizado agrupado por proyecto y totalizado.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-ingresos-del-cliente-agrupado-por-proyecto-2.png)
-
-
-

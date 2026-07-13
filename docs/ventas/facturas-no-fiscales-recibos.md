@@ -2,10 +2,7 @@
 title: "Crear una factura que no registre impuestos (recibos)"
 sidebar_label: "Crear una factura que no registre impuestos (recibos)"
 sidebar_position: 410
-format: md
 ---
-
-# Crear una factura que no registre impuestos (recibos)
 
 Este tutorial esta enfocado en crear una factura que no registre impuestos, o lo que comúnmente se le conoce como recibo.
 

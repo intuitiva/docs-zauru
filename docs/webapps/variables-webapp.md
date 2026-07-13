@@ -2,10 +2,8 @@
 title: "Variables Webapp"
 sidebar_label: "Variables Webapp"
 sidebar_position: 2
-format: md
 ---
 
-# Variables para webapps
 Estas variables se utilizan usualmente para guardar configuraciones de nuestras webapps.
 
 Son totalmente accesibles desde el API por lo que cualquier aplicación externa hecha a la medida puede consultarla, editarla o destruirla (si tienen suficientes permisos).

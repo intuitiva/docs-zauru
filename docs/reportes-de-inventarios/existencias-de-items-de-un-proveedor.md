@@ -2,10 +2,7 @@
 title: "Existencias de Items de un Proveedor"
 sidebar_label: "Existencias de Items de un Proveedor"
 sidebar_position: 5
-format: md
 ---
-
-# Existencias de Items de un Proveedor
 
 Crea un listado exhaustivo de todos los ítems proporcionados por el proveedor.
 Nos servirá como una herramienta valiosa para la gestión eficiente y efectiva de las existencias de ítems de un proveedor, asegurando coherencia en los procedimientos y calidad en el manejo del los inventarios.

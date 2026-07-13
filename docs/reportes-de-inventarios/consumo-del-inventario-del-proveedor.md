@@ -2,10 +2,7 @@
 title: "Consumo del Inventario del Proveedor"
 sidebar_label: "Consumo del Inventario del Proveedor"
 sidebar_position: 4
-format: md
 ---
-
-# Consumo del Inventario del Proveedor
 
 Acá podemos ver el consumo por todos los proveedores o por proveedor con los que cuenta la empresa, opción para consultar hasta un máximo de doce meses.
 

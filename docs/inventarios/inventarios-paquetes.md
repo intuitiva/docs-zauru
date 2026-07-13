@@ -2,10 +2,7 @@
 title: "Paquetes"
 sidebar_label: "Paquetes"
 sidebar_position: 6
-format: md
 ---
-
-# Paquetes
 
 Este tutorial esta basado en la creación de paquetes de productos para la venta.
 
@@ -38,4 +35,3 @@ Cuando termine de agregar todos los productos que desea que lleve el paquete, pr
 
 
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se creo el paquete exitosamente. Ahora podrá seleccionar este paquete al momento de hacer una reservación en el inventario. Para poder vender el paquete hay que ponerle un precio sugerido, este tutorial lo podrá en encontrar en “Ventas”.
-

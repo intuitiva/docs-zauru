@@ -2,10 +2,7 @@
 title: "Clientes"
 sidebar_label: "Clientes"
 sidebar_position: 1
-format: md
 ---
-
-# Clientes
 
 Este tutorial está enfocado en como crear, editar, y borrar clientes.  Estos nos sirven para los siguientes tipos de documentos:
 1. Ordenes de ventas (ventas o POS)

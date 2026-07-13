@@ -2,11 +2,7 @@
 title: "Costos totales consolidados (Costo Promedio Ponderado)"
 sidebar_label: "Costos totales consolidados (Costo Promedio Ponderado)"
 sidebar_position: 11
-format: md
 ---
-
-# Costos totales consolidados (Costo Promedio Ponderado)
-
 
 Este tutorial esta enfocado en la verificación del costo promedio ponderado de su producto.
 
@@ -26,6 +22,3 @@ Le aparecerán los detalles del costo total, en donde podrá encontrar el regist
 En la parte inferior del reporte podrá encontrar el Promedio que es el costo promedio ponderado según las compras que ha hecho de este producto.
 
 ![imagen2](/img/compras/costos-totales-consolidados-costo-promedio-ponderado-2.jpg)
-
-
-

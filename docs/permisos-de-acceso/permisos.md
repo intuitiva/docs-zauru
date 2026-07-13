@@ -2,10 +2,8 @@
 title: "Permisos personalizados"
 sidebar_label: "Permisos personalizados"
 sidebar_position: 2
-format: md
 ---
 
-# Permisos Personalizados
 Zauru le permite asignar permisos por rol para controlar el acceso de sus usuarios. 
 
 Existen más de 600 permisos distintos para personalizar cualquier proceso y limitar o permitir cualquier restricción de visualizar o crear información que se necesite.

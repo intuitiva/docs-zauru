@@ -2,10 +2,7 @@
 title: "[Transacciones] Gastos de insumos sin control de inventario"
 sidebar_label: "[Transacciones] Gastos de insumos sin control de inventario"
 sidebar_position: 314
-format: md
 ---
-
-# Gastos de insumos sin control de inventario
 
 Este tutorial esta enfocado en realizar transacciones contables de compra de insumos para la oficina que no registran inventario, como por ejemplo, papel higiénico, hojas de papel, clips, folders, etc. Los pasos para registrar este tipo de gastos son los siguientes:
 

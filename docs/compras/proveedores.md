@@ -2,7 +2,6 @@
 title: "Proveedores"
 sidebar_label: "Proveedores"
 sidebar_position: 999
-format: md
 ---
 
 ## Proveedores

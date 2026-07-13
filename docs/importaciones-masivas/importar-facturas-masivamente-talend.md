@@ -2,10 +2,7 @@
 title: "Importar facturas masivamente (Talend)"
 sidebar_label: "Importar facturas masivamente (Talend)"
 sidebar_position: 102
-format: md
 ---
-
-# Importar facturas masivamente
 
 En este caso vamos a utilizar [Talend](https://www.talend.com/products/data-integration/data-integration-open-studio/ "Talend Open Studio for Data Integration") para formatear el JSON que se va a enviar por el [API de Zauru](https://docs.zauru.com/compras/ordenes-de-compra#crear-nueva-orden-de-compra-de-gastos "API de Zauru") y enviarlo al correr el trabajo.
 

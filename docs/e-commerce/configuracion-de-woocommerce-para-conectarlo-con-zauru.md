@@ -2,10 +2,7 @@
 title: "Configuración de WooCommerce para conectarlo con Zauru"
 sidebar_label: "Configuración de WooCommerce para conectarlo con Zauru"
 sidebar_position: 6
-format: md
 ---
-
-# Configuración de WooCommerce para conectarlo con Zauru
 
 Para tener una tienda en linea la plataforma de preferencia en el mundo para el 2020 es [woocommerce](https://woocommerce.com) (un plugin de Wordpress).
 
@@ -60,4 +57,3 @@ Este plugin NO es para la integración con Zauru, pero es para que los clientes 
 ![WP Mail SMPT](/img/e-commerce/configuracion-de-woocommerce-para-conectarlo-con-zauru-5.png)
 
 [https://wpmailsmtp.com](https://wpmailsmtp.com "WP Mail SMTP")
-

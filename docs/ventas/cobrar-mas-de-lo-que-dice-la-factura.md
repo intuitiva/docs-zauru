@@ -2,10 +2,7 @@
 title: "Cobrar más de lo que dice la factura (sobre-cobrar)"
 sidebar_label: "Cobrar más de lo que dice la factura (sobre-cobrar)"
 sidebar_position: 11
-format: md
 ---
-
-# Cobrar mas de lo que dice la factura (sobre-cobrar)
 
 Este tutorial esta enfocado en cobrar mas de lo que dice la factura. Pueden haber casos en donde el cliente por error le deposite más de lo que le tenia que pagar, en el siguiente ejemplo mostraremos como registrar estos pagos mayores a la factura y como registrar la devolución del dinero extra.
 

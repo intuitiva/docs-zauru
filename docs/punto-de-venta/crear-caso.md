@@ -2,11 +2,7 @@
 title: "Crear caso"
 sidebar_label: "Crear caso"
 sidebar_position: 5
-format: md
 ---
-
-# Crear un caso
-
 
 Este tutorial esta enfocado en crear casos desde el punto de venta.
 
@@ -39,6 +35,3 @@ Presione “Guardar” para crear el caso.
 Le aparecerá un mensaje de éxito en la pantalla notificándole que el caso fue creado exitosamente.  Podrá verificar los detalles del caso, editarlo, cerrarlo o cobrarlo en los iconos que aparecen al lado derecho.
 
 ![imagen2](/img/punto-de-venta/crear-caso-2.jpg)
-
-
-

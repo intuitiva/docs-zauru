@@ -2,10 +2,8 @@
 title: "Agencias"
 sidebar_label: "Agencias"
 sidebar_position: 3
-format: md
 ---
 
-# Agencias
 Zauru le permite llevar control de todas sus agencias (bodegas, puntos de venta, talleres y fabricas) Puede llevar control de existencias, reservaciones de ingreso y de salida de la agencia y ventas desde esa agencia.  La forma de crear una nueva agencia es la siguiente:
 
 1. Ir a “Configuraciones”.
@@ -57,7 +55,7 @@ Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la agen
 
 ![imagen7](/img/primeros-pasos/agencias-4.jpg)
 
-# Categoría de Agencias
+## Categoría de Agencias
 Zauru le permite llevar control de todas sus agencias organizándolas por Categorías.  La forma de crear una nueva Categoría de agencia es la siguiente:
 
 1. Ir a “Configuraciones”.

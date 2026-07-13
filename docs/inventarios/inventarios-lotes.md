@@ -2,10 +2,7 @@
 title: "Lotes"
 sidebar_label: "Lotes"
 sidebar_position: 8
-format: md
 ---
-
-# Lotes
 
 Este tutorial esta enfocado en la creación y el manejo de lotes de inventario.
 
@@ -64,6 +61,3 @@ Por ultimo presione “Crear envío”.
 Le aparecerá un mensaje en la pantalla notificándole que la reservación fue creada exitosamente. En la parte inferior de la pagina podrá encontrar los detalles de la reservación y la podrá entregar.
 
 ![imagen6](/img/inventarios/inventarios-lotes-6.jpg)
-
-
-

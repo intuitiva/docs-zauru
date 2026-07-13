@@ -2,10 +2,7 @@
 title: "Números de Serie Atendidos"
 sidebar_label: "Números de Serie Atendidos"
 sidebar_position: 4
-format: md
 ---
-
-# Números de Serie Atendidos
 
 Este tutorial esta enfocado en la creación de casos con números de serie y su verificación.
 
@@ -45,4 +42,3 @@ curl -v \
   }' \
   https://app.zauru.com/support/serials_attended.json
 ```
-

@@ -2,11 +2,7 @@
 title: "Configuración"
 sidebar_label: "Configuración"
 sidebar_position: 1
-format: md
 ---
-
-# Configuración del módulo de Compras
-
 
 Zauru le permite configurar términos de pago, tipos de cargos y métodos de pago de sus compras.
 

@@ -2,10 +2,8 @@
 title: "Cambiar mi contraseña"
 sidebar_label: "Cambiar mi contraseña"
 sidebar_position: 4
-format: md
 ---
 
-# Cambiar mi contraseña
 Para cambio de contraseña podemos realizarlo desde nuestro perfil con los siguientes pasos:
 
 

@@ -2,11 +2,7 @@
 title: "Cobrar caso"
 sidebar_label: "Cobrar caso"
 sidebar_position: 6
-format: md
 ---
-
-# Cobrar un caso
-
 
 Este tutorial esta enfocado en cobrar un caso creado desde el punto de venta. Los pasos para cobrar un caso son los siguientes:
 

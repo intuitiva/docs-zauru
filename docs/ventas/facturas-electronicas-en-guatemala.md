@@ -2,10 +2,7 @@
 title: "Facturas Electrónicas en Guatemala"
 sidebar_label: "Facturas Electrónicas en Guatemala"
 sidebar_position: 7
-format: md
 ---
-
-# Facturas Electrónicas en Guatemala
 
 ## Historia de FACE
 A partir del 2007 en Guatemala se empezó a implementar la factura electrónica FACE, este esquema involucraba a obligatoriamente a terceros (generadores de facturas electrónicas - __GFACE__) a ser intermediarios entre la Superintendencia de Administración Tributaria __SAT__ y el contribuyente emisor de facturas.

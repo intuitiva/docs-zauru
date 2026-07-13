@@ -2,10 +2,8 @@
 title: "Ingresar a Zauru"
 sidebar_label: "Ingresar a Zauru"
 sidebar_position: 1
-format: md
 ---
 
-# Ingresar a Zauru
 Para accesar a Zauru escribimos en el URL de nuestro navegador (firefox, chrome, safari, edge, opera):
 > [app.zauru.com](https://app.zauru.com)
 

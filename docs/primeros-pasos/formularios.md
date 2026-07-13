@@ -2,10 +2,8 @@
 title: "Formularios"
 sidebar_label: "Formularios"
 sidebar_position: 8
-format: md
 ---
 
-# Formulario
 Los formularios han sido diseñados en Zauru, con el propósito de generar formatos personalizados que abarcan una amplia gama de aplicaciones, tales como fichas clínicas para pacientes, formularios para el seguimiento de garantías, así como instrumentos de control, entre otros.
 
 ## Nuevo Formulario

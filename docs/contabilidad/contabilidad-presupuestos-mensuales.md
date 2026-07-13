@@ -2,14 +2,11 @@
 title: "Presupuestos mensuales"
 sidebar_label: "Presupuestos mensuales"
 sidebar_position: 13
-format: md
 ---
-
-# Presupuestos mensuales
 
 Este tutorial esta enfocado en la creación de un presupuesto mensual y un presupuesto mensual por proyecto. Cuando usted hace un presupuesto, detalla la cantidad que debería gastar por cada rubro contable, si usted pasa su presupuesto, le aparecerá en rojo el rubro en los detalles del presupuesto.
 
-### Presupuesto mensual normal
+## Presupuesto mensual normal
 Los pasos para crear un presupuesto mensual son los siguientes:
 
 1. Ir a “Contabilidad”.
@@ -42,4 +39,3 @@ Especifique la cantidad presupuestada por rubro de gasto o ingreso, y al finaliz
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se creo el presupuesto, para ver los detalles de su presupuesto seleccione el icono de “ver” (El ojo).
 
 ![imagen4](/img/contabilidad/contabilidad-presupuestos-mensuales-4.jpg)
-

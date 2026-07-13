@@ -2,10 +2,7 @@
 title: "Verificar partidas contables, para que ya no se puedan editar ni borrar"
 sidebar_label: "Verificar partidas contables, para que ya no se puedan editar ni borrar"
 sidebar_position: 12
-format: md
 ---
-
-# Verificar partidas contables para que ya no se puedan editar ni borrar
 
 Este tutorial explica como verificar sus partidas para que no se puedan volver a editar ni borrar.
 

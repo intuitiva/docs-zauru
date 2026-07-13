@@ -2,10 +2,7 @@
 title: "Transacciones (partidas contables)"
 sidebar_label: "Transacciones (partidas contables)"
 sidebar_position: 208
-format: md
 ---
-
-# Transacciones (partidas contables)
 
 Este tutorial trata del único documento que sirve para mover los saldos entre cuentas.
 

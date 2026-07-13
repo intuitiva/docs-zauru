@@ -2,10 +2,7 @@
 title: "Existencias"
 sidebar_label: "Existencias"
 sidebar_position: 2
-format: md
 ---
-
-# Existencias
 
 Este tutorial esta enfocado en ver las existencias de sus productos. Existen dos formas de ver las existencias:
 

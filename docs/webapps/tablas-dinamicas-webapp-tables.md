@@ -2,10 +2,7 @@
 title: "Tablas dinámicas (WebApp Tables)"
 sidebar_label: "Tablas dinámicas (WebApp Tables)"
 sidebar_position: 99904
-format: md
 ---
-
-# Tablas dinámicas (WebApp Tables)
 
 Las tablas dinámicas en zauru nos permiten ampliar cualquier tipo de funcionalidad que necesitemos y que no tengamos directamente, como por ejemplo: Catálogos específicos, historial de registros, versiones de registros, listado de opciones específicas.
 

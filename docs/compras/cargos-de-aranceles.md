@@ -2,11 +2,7 @@
 title: "Cargos de Aranceles"
 sidebar_label: "Cargos de Aranceles"
 sidebar_position: 8
-format: md
 ---
-
-# Aranceles
-
 
 Este tutorial esta enfocado en agregar cargos de aranceles por productos a una orden de compra.
 
@@ -46,6 +42,3 @@ i. Presione “Crear cargo” para crear el cargo de arancel a su orden de compr
 Le aparecerá un mensaje de éxito notificándole que el cargo de arancel fue creado exitosamente.
 
 ![imagen3](/img/compras/cargos-de-aranceles-3.jpg)
-
-
-

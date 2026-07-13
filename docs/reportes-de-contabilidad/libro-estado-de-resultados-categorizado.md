@@ -2,10 +2,7 @@
 title: "Estado de Resultados Categorizado"
 sidebar_label: "Estado de Resultados Categorizado"
 sidebar_position: 104
-format: md
 ---
-
-# Estado de Resultados Categorizado
 
 El estado de resultados categorizado está agrupado por categorías de gastos e ingresos detalladas en cada rubro y muestran su resultado en un periodo de tiempo.
 

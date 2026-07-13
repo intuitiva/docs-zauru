@@ -2,10 +2,8 @@
 title: "Contabilidad"
 sidebar_label: "Contabilidad"
 sidebar_position: 0
-format: md
 ---
 
-# Contabilidad
 Este módulo sirve para el control de dinero, esto incluye: 
 
 1. Cuentas por cobrar.

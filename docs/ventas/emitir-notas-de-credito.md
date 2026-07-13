@@ -2,10 +2,8 @@
 title: "Emitir una nota de crédito (descuento, anulación o devolución)"
 sidebar_label: "Emitir una nota de crédito (descuento, anulación o devolución)"
 sidebar_position: 13
-format: md
 ---
 
-# Emitir una nota de crédito (descuento, anulación o devolución)
 ## Notas de Crédito
 
 Este tutorial esta enfocado en la creación de notas de crédito sobre una factura.

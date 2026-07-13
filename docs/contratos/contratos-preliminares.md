@@ -2,10 +2,8 @@
 title: "Contratos Preliminares"
 sidebar_label: "Contratos Preliminares"
 sidebar_position: 1
-format: md
 ---
 
-# Contratos Preliminares
 Los Contratos preliminares son la primera fase de los contratos, acá se crean, se editan y se borran los contratos pero no van a generar documentos automáticamente.
 
 ## Conceptos de los contratos

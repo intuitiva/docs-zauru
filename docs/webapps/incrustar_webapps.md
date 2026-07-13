@@ -2,10 +2,7 @@
 title: "Incrustar Webapps dentro de Zauru"
 sidebar_label: "Incrustar Webapps dentro de Zauru"
 sidebar_position: 1
-format: md
 ---
-
-# Incrustar una webapp en Zauru
 
 Al tener desarrollada una aplicación web (independientemente de la tecnología utilizada), necesitamos un URL público por donde se pueda accesar esa aplicación y ya estamos listos para poder incrustar esta aplicación dentro de Zauru como una webapp.
 

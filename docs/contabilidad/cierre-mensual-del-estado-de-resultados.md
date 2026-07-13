@@ -2,10 +2,7 @@
 title: "Cierre mensual del Estado de Resultados"
 sidebar_label: "Cierre mensual del Estado de Resultados"
 sidebar_position: 17
-format: md
 ---
-
-# Cierre mensual del Estado de Resultados
 
 Para registrar las ganancias del período (mensual) de la forma correcta, necesitamos calcular la utilidad del mes (ingresos - costos - gastos) y ese saldo lo necesitamos trasladar los saldos de todas nuestras cuentas de ingresos y gastos al capital (utilidades del mes).
 

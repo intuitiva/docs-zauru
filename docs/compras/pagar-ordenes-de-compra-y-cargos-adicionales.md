@@ -2,11 +2,7 @@
 title: "Pagar ordenes de compra y cargos adicionales"
 sidebar_label: "Pagar ordenes de compra y cargos adicionales"
 sidebar_position: 9
-format: md
 ---
-
-# Pagar ordenes de compra y cargos adicionales
-
 
 Este tutorial esta enfocado en pagar ordenes de compra y sus cargos adicionales.
 

@@ -2,10 +2,7 @@
 title: "Balance de Bodega Mensual por Categoría de Producto"
 sidebar_label: "Balance de Bodega Mensual por Categoría de Producto"
 sidebar_position: 3
-format: md
 ---
-
-# Balance de Bodega Mensual por Categoría de Producto
 
 Define como se registran las entradas y salidas de cada categoría de productos en la bodega. Antes que nada debemos identificar todas las categorías de los productos que maneja la empresa (para esto podemos consultar el tutorial de ítems, categorizar ítems) por ejemplo: alimentos, bebidas, productos de limpieza, productos electrónicos, etc.
 

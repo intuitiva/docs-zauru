@@ -2,10 +2,8 @@
 title: "Conciliación Bancaria"
 sidebar_label: "Conciliación Bancaria"
 sidebar_position: 18
-format: md
 ---
 
-# Conciliación bancaria
 La conciliación en el sistema sirve para asegurarnos que la información del estado de cuenta del banco coincide con la información registrada en Zauru de una forma rápida y con el valor añadido que nos muestra los cheques en circulación (transacciones que no están en el estado de cuenta del banco pero si en Zauru o viceversa).
 
 Como datos iniciales necesitamos el estado de cuenta del banco para poder generar la conciliación, algo similar a esto:

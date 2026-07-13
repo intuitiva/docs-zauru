@@ -2,11 +2,7 @@
 title: "Gastos Mensuales por Proyecto"
 sidebar_label: "Gastos Mensuales por Proyecto"
 sidebar_position: 8
-format: md
 ---
-
-# Gastos Mensuales por Proyecto
-
 
 El reporte de Gastos Mensuales por Proyecto aparecen listadas todas las transacciones que se han realizado en un proyecto en específico, en un mes en específico. Este reporte es útil para tener conocimiento a tiempo real cual a sido la cantidad de dinero que se ha utilizado.
 
@@ -26,4 +22,3 @@ Una vez se haya ingresado al reporte, aparecerá varias casillas para selecciona
 
 
 Se enlistara el nombre del gasto, la cantidad de ese gasto, el monto total del gasto, la suma total de todos los montos.
-

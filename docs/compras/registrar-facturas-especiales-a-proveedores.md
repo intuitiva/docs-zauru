@@ -2,11 +2,7 @@
 title: "Emitir Facturas de compras a Proveedores"
 sidebar_label: "Emitir Facturas de compras a Proveedores"
 sidebar_position: 13
-format: md
 ---
-
-
-  # Emitir Facturas de compras a Proveedores
 
 El proceso de emisión de facturas de compras a proveedores tiene como objetivo registrar las adquisiciones a proveedores que operan en la economía informal o que, por diversas razones, no pueden proporcionar un documento contable convencional. En Guatemala, este procedimiento se denomina "__Facturas Especiales__", mientras que en El Salvador, el documento generado se conoce como "__Facturas de Sujeto Excluido__", y en Costa Rica se hace referencia a ellas como "__Facturas de Compras__".
 

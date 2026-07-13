@@ -2,10 +2,8 @@
 title: "Tipos de Cambio de Referencia"
 sidebar_label: "Tipos de Cambio de Referencia"
 sidebar_position: 1
-format: md
 ---
 
-# Tipos de cambio de referencia
 Es probable que en ciertas ocasiones en su negocio facture y cobre en una moneda extranjera.
 
 Zauru le permite establecer todos los tipos de cambio de la moneda que su proceso requiera. La forma de hacerlo es la siguiente:

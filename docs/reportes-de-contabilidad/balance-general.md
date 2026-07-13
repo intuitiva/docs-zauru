@@ -2,10 +2,7 @@
 title: "Balance General"
 sidebar_label: "Balance General"
 sidebar_position: 1
-format: md
 ---
-
-# Balance General
 
 El balance general es un documento financiero que representa la situación de una empresa en un momento determinado. Nos proporciona una descripción general de los activos, pasivos y capital contable.
 

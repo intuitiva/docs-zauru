@@ -2,11 +2,7 @@
 title: "Cobrar facturas (total, parcial o consolidado)"
 sidebar_label: "Cobrar facturas (total, parcial o consolidado)"
 sidebar_position: 8
-format: md
 ---
-
-# Cobrar facturas (total, parcial o consolidado)
-
 
 Este tutorial esta enfocado en el cobro de facturas no pagadas. Existen cuatro formas de cobrar una factura:
 

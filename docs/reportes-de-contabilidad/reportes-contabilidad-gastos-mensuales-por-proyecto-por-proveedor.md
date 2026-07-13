@@ -2,11 +2,7 @@
 title: "Gastos Mensuales por Proyecto por Proveedor"
 sidebar_label: "Gastos Mensuales por Proyecto por Proveedor"
 sidebar_position: 4
-format: md
 ---
-
-# Gastos Mensuales por Proyecto por Proveedor
-
 
 ¿En su empresa existe control mensual de gastos de los proveedores en un proyecto?
 
@@ -24,6 +20,3 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 A continuación se selecciona el mes y el año que se desee consultar y proyecto. Después aparecerá en un cuadro la información que de los proveedores con los montos gastados.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-mensuales-por-proyecto-por-proveedor-2.png)
-
-
-

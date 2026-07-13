@@ -2,10 +2,7 @@
 title: "[Transacciones] Controlar viáticos (anticipados y vencidos)"
 sidebar_label: "[Transacciones] Controlar viáticos (anticipados y vencidos)"
 sidebar_position: 312
-format: md
 ---
-
-# Controlar viáticos (anticipados y vencidos)
 
 > Registrar compras de bienes o servicios por parte del empleado se puede realizar desde el módulo de compras con una orden de compra.
 > Hay empresas que prefieren separar este proceso de las compras de mercadería y es por eso que existe este tutorial.

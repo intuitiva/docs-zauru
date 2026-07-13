@@ -2,10 +2,8 @@
 title: "Roles"
 sidebar_label: "Roles"
 sidebar_position: 1
-format: md
 ---
 
-# Roles
 Los roles en Zauru se crean para asignarles ciertos permisos y asignárselo a *__uno o varios usuarios__* cuando se suscriben.
 
 Esto nos facilita el proceso de reemplazo de usuarios (en caso de renuncia o despido de empleados) o en el crecimiento de los negocios donde aumentan sucursales, vendedores o personal operativo.

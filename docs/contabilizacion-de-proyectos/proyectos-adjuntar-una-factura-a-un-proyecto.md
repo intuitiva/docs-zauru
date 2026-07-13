@@ -2,10 +2,7 @@
 title: "Adjuntar una factura a un proyecto"
 sidebar_label: "Adjuntar una factura a un proyecto"
 sidebar_position: 3
-format: md
 ---
-
-# Adjuntar una factura a un proyecto
 
 Este tutorial esta enfocado en adjuntar una venta, o factura a un proyecto.
 
@@ -27,6 +24,3 @@ Le aparecerán las opciones para crear una nueva factura. Luego de llenar los ca
 Luego de crear la factura, le parecerá un mensaje de éxito en la pantalla y se mostraran los detalles de la factura. Podrá encontrar los proyectos asociados a la factura, esta transacción de venta se vera reflejada en el balance del proyecto.
 
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-adjuntar-una-factura-a-un-proyecto-3.jpg)
-
-
-

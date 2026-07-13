@@ -2,10 +2,7 @@
 title: "Creación de una orden o pedido con el API"
 sidebar_label: "Creación de una orden o pedido con el API"
 sidebar_position: 4
-format: md
 ---
-
-# Creación de una orden o pedido con el API
 
 Para crear una orden/pedido por el API de e-commerce, se deben enviar 3 campos principales, el cliente (__obligatorio__), la orden (__obligatorio__) y el pago (__opcional__).
 

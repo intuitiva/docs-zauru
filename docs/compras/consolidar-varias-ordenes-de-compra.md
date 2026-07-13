@@ -2,10 +2,7 @@
 title: "Consolidar varias orden de compra"
 sidebar_label: "Consolidar varias orden de compra"
 sidebar_position: 6
-format: md
 ---
-
-# Consolidar varias orden de compra
 
 Este tutorial esta enfocado en consolidar dos o mas ordenes de compra. Esta función beneficia a los importadores que generen dos compras en el mismo país pero a distinto proveedor, y luego reciba las dos ordenes de compra en puerto origen y las importe juntas en un solo contenedor.
 

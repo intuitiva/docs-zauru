@@ -2,10 +2,7 @@
 title: "Facturas electrónicas en contingencia en Guatemala"
 sidebar_label: "Facturas electrónicas en contingencia en Guatemala"
 sidebar_position: 30
-format: md
 ---
-
-# Facturas Electrónicas en Contingencia Guatemala
 
 Las facturas electrónicas en contingencia se utilizan en situaciones en las que no es posible emitir una factura electrónica estándar debido a problemas técnicos o de conectividad con el certificador. Estas facturas permiten a los contribuyentes continuar con sus operaciones comerciales sin interrupciones mientras se resuelven los problemas técnicos.
 

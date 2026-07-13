@@ -2,10 +2,8 @@
 title: "Tareas del implementador para conectar WooCommerce y Zauru"
 sidebar_label: "Tareas del implementador para conectar WooCommerce y Zauru"
 sidebar_position: 7
-format: md
 ---
 
-# Tareas del implementador para conectar WooCommerce y Zauru
 Hay varias tareas que hace el implementador para conectar woo commerce con Zauru
 
 ## Sincronizador de items

@@ -2,10 +2,7 @@
 title: "Balance de Bodega Mensual por Proveedor"
 sidebar_label: "Balance de Bodega Mensual por Proveedor"
 sidebar_position: 2
-format: md
 ---
-
-# Balance de Bodega Mensual por Proveedor
 
 El balance de bodega mensual por proveedor nos muestra un detalle de los ítems que tiene su proveedor predefinido.
 

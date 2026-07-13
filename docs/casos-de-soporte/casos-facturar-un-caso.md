@@ -2,11 +2,7 @@
 title: "Facturar un Caso"
 sidebar_label: "Facturar un Caso"
 sidebar_position: 3
-format: md
 ---
-
-# Facturar un Caso
-
 
 Este tutorial esta enfocado en la facturación de un caso para cobrarle al cliente por el servicio prestado.
 
@@ -36,6 +32,3 @@ Luego de crear el caso usted puede verificar la factura asociada haciendo click 
 Le aparecerán los detalles del caso, en la parte inferior de la pagina podrá encontrar las facturas asociadas, en donde podrá ver la factura que se creo automáticamente luego de crear el caso. La factura saldrá por la cantidad que usted coloque en los detalles del caso.
 
 ![imagen4](/img/casos-de-soporte/casos-facturar-un-caso-4.jpg)
-
-
-

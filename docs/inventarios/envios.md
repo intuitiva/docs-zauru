@@ -2,10 +2,7 @@
 title: "Envíos"
 sidebar_label: "Envíos"
 sidebar_position: 3
-format: md
 ---
-
-# Envíos
 
 Este tutorial esta basado en crear envíos y el flujo de trabajo que se requiere para despacharlos (opcional), entregarlos y devolverlos (opcional).
 

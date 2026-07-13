@@ -2,10 +2,8 @@
 title: "Items"
 sidebar_label: "Items"
 sidebar_position: 7
-format: md
 ---
 
-# Items
 Los ítems son artículos de los que queremos llevar el control. Hay varias formas de categorizarlas y hay varios tipos, a continuación veremos  como funcionan en Zauru.
 
 ## Nuevo Ítem (producto o servicio)

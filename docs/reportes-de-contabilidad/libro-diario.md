@@ -2,10 +2,7 @@
 title: "Libro Diario"
 sidebar_label: "Libro Diario"
 sidebar_position: 15
-format: md
 ---
-
-# Libro Diario
 
 El libro diario es un libro donde se anotan todas las transacciones por día y orden cronológico.
 

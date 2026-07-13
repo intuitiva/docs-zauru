@@ -2,10 +2,7 @@
 title: "Importar compras con una sola cuenta (Talend)"
 sidebar_label: "Importar compras con una sola cuenta (Talend)"
 sidebar_position: 1
-format: md
 ---
-
-# Importar compras con una sola cuenta
 
 En este caso vamos a utilizar [Talend](https://www.talend.com/products/data-integration/data-integration-open-studio/ "Talend Open Studio for Data Integration") para formatear el JSON que se va a enviar por el [API de Zauru](https://docs.zauru.com/compras/ordenes-de-compra#crear-nueva-orden-de-compra-de-gastos "API de Zauru") y enviarlo al correr el trabajo.
 

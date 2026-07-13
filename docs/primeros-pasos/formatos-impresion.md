@@ -2,10 +2,7 @@
 title: "Formatos de Impresión (Plantillas)"
 sidebar_label: "Formatos de Impresión (Plantillas)"
 sidebar_position: 5
-format: md
 ---
-
-# Formatos de impresión
 
 Zauru le permite crear plantillas de impresión para cualquier documentos que usted necesite, entre ellos:
 

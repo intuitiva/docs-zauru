@@ -2,10 +2,7 @@
 title: "Numeración Automática de Documentos (Plantillas)"
 sidebar_label: "Numeración Automática de Documentos (Plantillas)"
 sidebar_position: 4
-format: md
 ---
-
-# Numeración automática de documentos (Plantillas)
 
 Zauru le permite colocar números automáticos de documento a:
 

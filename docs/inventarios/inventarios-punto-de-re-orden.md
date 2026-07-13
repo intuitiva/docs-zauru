@@ -2,11 +2,7 @@
 title: "Punto de re orden"
 sidebar_label: "Punto de re orden"
 sidebar_position: 4
-format: md
 ---
-
-# Punto de re orden
-
 
 Este tutorial esta basado en la creación y verificación de puntos de re orden de sus productos.
 
@@ -79,6 +75,3 @@ Los pasos para ver las notificaciones de re orden por bodega son los siguientes:
 Si hay algún producto que alcanzo el punto de re orden le aparecerá en rojo. En este ejemplo se muestra que del producto 7 ya solo quedan 25 unidades, y el punto de orden que establecimos era al alcanzar 30, por eso aparece el producto en rojo.
 
 ![imagen5](/img/inventarios/inventarios-punto-de-re-orden-5.jpg)
-
-
-

@@ -2,10 +2,7 @@
 title: "Estado de Resultados"
 sidebar_label: "Estado de Resultados"
 sidebar_position: 102
-format: md
 ---
-
-# Estado de Resultados
 
 El estado de resultados desglosa las distintas categorías de los gastos e ingresos y muestran su resultado en un periodo de tiempo.
 

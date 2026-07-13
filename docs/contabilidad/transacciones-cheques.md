@@ -2,10 +2,7 @@
 title: "[Transacciones] Cheques emitidos (normales y post-fechados)"
 sidebar_label: "[Transacciones] Cheques emitidos (normales y post-fechados)"
 sidebar_position: 310
-format: md
 ---
-
-# Cheques emitidos (normales y post-fechados)
 
 Este tutorial esta enfocado en la emisión de cheques. Cuando usted emite un cheque a un proveedor de productos o servicios, puede que el cheque se emita para cobrar el mismo día, o el cheque sea post-fechado, ambos casos se mostraran en los siguientes ejemplos.
 

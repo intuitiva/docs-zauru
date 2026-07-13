@@ -2,10 +2,7 @@
 title: "Configuraciones"
 sidebar_label: "Configuraciones"
 sidebar_position: 1
-format: md
 ---
-
-# Configuraciones del módulo contable
 
 Este tutorial esta enfocado en configurar el modulo de Contabilidad para establecer las transacciones contables que se generan automáticamente.  Zauru le permite a usted especificar a que cuenta deberán ir las transacciones contables que se generan automáticamente de:
 

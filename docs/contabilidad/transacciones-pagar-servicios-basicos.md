@@ -2,10 +2,7 @@
 title: "[Transacciones] Pagar servicios básicos"
 sidebar_label: "[Transacciones] Pagar servicios básicos"
 sidebar_position: 317
-format: md
 ---
-
-# Pagar servicios básicos
 
 > Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compra)
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
@@ -108,4 +105,3 @@ Le aparecerán las opciones para crear una nueva transacción, los pasos para cr
 Le deberá aparecer un mensaje de éxito notificándole que se creo la transacción exitosamente. Para imprimir el cheque presione el botón de “Imprimir como cheque”.
 
 ![imagen9](/img/contabilidad/transacciones-pagar-servicios-basicos-9.jpg)
-

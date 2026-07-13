@@ -2,11 +2,7 @@
 title: "Configuraciones"
 sidebar_label: "Configuraciones"
 sidebar_position: 1
-format: md
 ---
-
-# Configuraciones del Punto de Venta
-
 
 Este tutorial esta enfocado en las configuraciones del punto de venta para poder emitir facturas y crear nuevos casos, las configuraciones que se pueden hacer son para predeterminar ciertos valores que usted desea que siempre se generen en un nuevo caso o en una nueva factura, como por ejemplo, si usted desea que cada factura que se emita genere impuestos de una forma predeterminada, o no.
 
@@ -48,4 +44,3 @@ Por ultimo, para guardar sus configuraciones presione “Actualizar Configuracio
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se actualizaron los datos.
 
 ![imagen2](/img/punto-de-venta/configuraciones-2.png)
-

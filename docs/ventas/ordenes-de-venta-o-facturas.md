@@ -2,10 +2,7 @@
 title: "Ordenes de Venta y Facturas"
 sidebar_label: "Ordenes de Venta y Facturas"
 sidebar_position: 3
-format: md
 ---
-
-# Ordenes de Venta y Facturas
 
 Este tutorial esta enfocado en explicar las diferencias entre una orden de venta y una factura; y entender cuando usar cada una de ellas.
 

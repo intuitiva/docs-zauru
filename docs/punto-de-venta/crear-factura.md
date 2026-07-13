@@ -2,10 +2,7 @@
 title: "Crear factura"
 sidebar_label: "Crear factura"
 sidebar_position: 3
-format: md
 ---
-
-# Crear una Factura
 
 Este tutorial esta enfocado en la creación de facturas desde el punto de venta.
 

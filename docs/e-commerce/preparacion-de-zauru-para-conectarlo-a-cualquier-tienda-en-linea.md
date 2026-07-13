@@ -2,10 +2,8 @@
 title: "Preparación de Zauru para conectarlo a cualquier software de tienda en linea"
 sidebar_label: "Preparación de Zauru para conectarlo a cualquier software de tienda en linea"
 sidebar_position: 1
-format: md
 ---
 
-# Preparación de Zauru para conectarlo a cualquier software de tienda en linea
 Para que Zauru se pueda conectar a cualquier e-commerce debemos configurar algunas cosas para que la comunicación fluya sin problemas entre los 2 sistemas.
 ## Habilitar el módulo de e-commerce
 Este paso es solicitarlo a su distribuidor de Zauru porque puede incurrir en costos adicionales.

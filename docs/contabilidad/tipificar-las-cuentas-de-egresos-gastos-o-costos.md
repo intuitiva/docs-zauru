@@ -2,10 +2,8 @@
 title: "Tipificar las cuentas de egresos (Gastos o Costos)"
 sidebar_label: "Tipificar las cuentas de egresos (Gastos o Costos)"
 sidebar_position: 3
-format: md
 ---
 
-# Tipificar las cuentas de egresos (gastos o costos)
 Este tutorial está enfocado a diferenciar las cuentas para que aparezcan en el lugar correcto en el estado de resultados.
 
 El estado de resultados muestra el siguiente orden principal (tipo de cuenta):

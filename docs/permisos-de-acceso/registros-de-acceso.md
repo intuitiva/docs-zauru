@@ -2,10 +2,8 @@
 title: "Registros de Acceso"
 sidebar_label: "Registros de Acceso"
 sidebar_position: 4
-format: md
 ---
 
-# Registros de Acceso
 Cada click que un usuario hace en el sistema queda resgistrado para que usted pueda comprobar si un usuario en verdad hizo o no hizo algun movimiento o transaccion.
 
 Nuestro registro histórico de acceso tiene una duración de 48 horas, luego de eso la información se borra.

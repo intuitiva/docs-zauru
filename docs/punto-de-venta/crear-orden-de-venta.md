@@ -2,10 +2,7 @@
 title: "Crear orden de venta"
 sidebar_label: "Crear orden de venta"
 sidebar_position: 2
-format: md
 ---
-
-# Crear Orden de Venta
 
 Los pasos para crear una nueva orden de venta desde el Punto de Venta son los siguientes:
 

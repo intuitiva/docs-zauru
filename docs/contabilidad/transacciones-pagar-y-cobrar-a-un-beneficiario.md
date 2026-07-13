@@ -2,11 +2,7 @@
 title: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
 sidebar_label: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
 sidebar_position: 318
-format: md
 ---
-
-# Pagar y cobrar a un beneficiario en una sola transacción
-
 
 Este tutorial esta enfocado en pagar y cobrarle a un beneficiario en la misma transacción.
 Puede suceder el caso en el que usted le haya hecho un préstamo al empleado, y se lo vaya descontando mes a mes de su salario. No hay necesidad de hacer dos transacciones para registrar este movimiento. Se mostrara en el siguiente ejemplo como hacerlo en un movimiento.
