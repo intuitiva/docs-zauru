@@ -101,6 +101,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["bash"],
       },
       algolia: {
         // Public Algolia DocSearch credentials — safe to commit (search-only key).
