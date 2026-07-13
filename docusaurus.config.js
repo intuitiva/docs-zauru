@@ -107,11 +107,7 @@ const config = {
         // Manage your index at https://crawler.algolia.com
         appId: "ZVDKPO68BR",
         apiKey: "25e0c307fb5498760948b937c7534337",
-        indexName: "docs_zauru_com_zvdkpo68br_pages",
-        // Disabled until the Algolia index has the Docusaurus facets configured
-        // (docusaurus_tag, language, lang, version, type). See DEPLOY.md /
-        // Docusaurus v3 crawler template. With it on, queries return 0 results.
-        contextualSearch: false,
+        indexName: "Docusaurus"
       },
     }),
 };
