@@ -115,7 +115,113 @@ Para emitir la factura presione “Crear Factura”.
 
 ![imagen6](/img/ventas/ordenes-de-venta-o-facturas-6.jpg)
 
+## Listar Facturas no Pagadas
 
+Si se dirige a Ventas, Facturas no Pagadas, podrá encontrar las facturas previamente emitidas que aún tienen saldo pendiente. Las facturas pueden filtrarse por:
+
+a. **Alcance (Scope)**: Contado, Crédito o Todas.
+
+b. **Etiquetas (Tags)**: Filtre las facturas por etiquetas.
+
+c. **Rango de fechas**: Desde y Hasta.
+
+En el listado se muestra el número de factura, cliente, total, saldo pendiente, vendedor, punto de venta, fecha y notas de crédito asociadas.
+
+También puede exportar las facturas no pagadas a formato XLS usando la opción de exportación.
+
+### Emitir Factura desde una Orden de Venta
+
+Para convertir una orden de venta en factura:
+
+1. Ir a **"Ventas"** > **"Órdenes"**.
+2. Localizar la orden que desea facturar.
+3. Hacer click sobre **"Emitir Factura"**.
+
+También puede usar la opción **"Emisión Rápida"** desde los detalles de la orden para emitir la factura inmediatamente con la fecha del día actual.
+
+### Editar Metadata de una Factura (Edición Superficial)
+
+Zauru permite realizar una edición superficial (shallow edit) de ciertos campos de una factura ya emitida sin afectar las transacciones contables. Los campos editables son:
+
+- Número de factura.
+- Referencia.
+- Fecha.
+- Vendedor.
+- Notas/Memo.
+- Etiquetas (tags).
+
+Para realizar esta edición:
+
+1. Ir a **"Ventas"** > **"Facturas no Pagadas"** (o **"Facturas Pagadas"**).
+2. Hacer click sobre **"Editar"** (El lápiz) en la factura.
+3. Realizar los cambios necesarios.
+4. Presionar **"Actualizar Factura"**.
+
+### Impresión de Facturas
+
+Para imprimir una factura:
+
+1. En la página de detalles de la factura, seleccione una **plantilla de impresión**.
+2. Haga click sobre **"Imprimir"** para ver la vista previa.
+3. Presione **CTRL + P** para enviar a la impresora.
+
+También puede **descargar como PDF** desde la opción disponible en la misma sección.
+
+### Impresión Masiva de Facturas
+
+Zauru permite imprimir todas las facturas no pagadas en lote dentro de un rango de fechas:
+
+1. Ir a **"Ventas"** > **"Facturas no Pagadas"**.
+2. Seleccionar **"Imprimir Todas"**.
+3. Seleccione la plantilla de impresión deseada.
+4. Coloque el rango de fechas (Desde y Hasta).
+5. Presione **"Generar Impresión"**.
+
+El sistema procesará las facturas en segundo plano y podrá monitorear el progreso. Al finalizar, se generará un archivo PDF con todas las facturas.
+
+### Reenviar Factura por Correo
+
+Si una factura fue emitida con almacenamiento externo (FEL), puede reenviar el correo electrónico al cliente desde la página de detalles de la factura usando la opción **"Reenviar Correo"**. Esta opción solo está disponible una vez por factura.
+
+### Consultar Facturas Anuladas
+
+Para consultar el historial de facturas anuladas:
+
+1. Ir a **"Ventas"** > **"Facturas no Pagadas"**.
+2. Seleccionar **"Facturas Anuladas"**.
+
+Puede filtrar por rango de fechas para acotar la búsqueda.
+
+## Gestión Avanzada de Órdenes de Venta
+
+### Editar Metadata de Creación de una Orden
+
+Zauru permite modificar el número de orden y la fecha de creación de una orden de venta existente sin afectar otros datos:
+
+1. Ir a **"Ventas"** > **"Órdenes"**.
+2. Hacer click sobre **"Editar Creación"** en la orden.
+3. Modificar el número de orden y/o la fecha de creación.
+4. Presionar **"Actualizar Orden"**.
+
+### Marcar una Orden como Regalo
+
+Para marcar una orden de venta como regalo:
+
+1. Ir a **"Ventas"** > **"Órdenes"**.
+2. Hacer click sobre **"Regalar"** en la orden.
+
+Esto marcará la orden como regalo y se reflejará en la factura resultante.
+
+### Exportar Órdenes de Venta
+
+Puede exportar todas las órdenes de venta abiertas a formato XLS desde el listado de órdenes usando la opción de exportación.
+
+### Consultar Órdenes Anuladas
+
+Para consultar el historial de órdenes anuladas:
+
+1. Ir a **"Ventas"** > **"Órdenes"**.
+2. Seleccionar **"Órdenes Anuladas"**.
 
 ## API (llamadas desde sistemas externos)
 

@@ -66,6 +66,52 @@ Al cobrar el total de la factura la factura pasa a ser una factura pagada. Los p
 ## Cobro Consolidado de Facturas
 El cobro consolidado de facturas permite pagar dos o mas facturas del mismo cliente con un solo pago.
 
+## Listar y Gestionar Pagos
+
+Para consultar la lista de pagos realizados:
+
+1. Ir a **"Ventas"**.
+2. Seleccionar **"Pagos"**.
+
+En el listado podrá ver todos los pagos no anulados y no provisionales. Los pagos pueden filtrarse por **etiquetas (tags)**. Para cada pago se muestra el cliente, monto, fecha, método de pago, punto de venta y referencia.
+
+### Editar un Pago (Edición Superficial)
+
+Zauru permite editar ciertos campos de un pago existente sin afectar las transacciones contables:
+
+1. Ir a **"Ventas"** > **"Pagos"**.
+2. Hacer click sobre **"Editar"** (El lápiz) en el pago.
+3. Modificar los campos permitidos: número de recibo, referencia, fecha, memo, cobrador y etiquetas.
+4. Presionar **"Actualizar Pago"**.
+
+También puede adjuntar imágenes al pago (ej. comprobante de transferencia) las cuales se almacenan en Cloudinary.
+
+### Imprimir un Recibo de Pago
+
+Para imprimir un recibo de pago:
+
+1. En la página de detalles del pago, seleccione la plantilla de impresión.
+2. Haga click sobre **"Imprimir"** para ver la vista previa.
+3. Presione **CTRL + P** para enviar a la impresora.
+
+También puede **descargar como PDF** desde la opción disponible.
+
+### Anular un Pago
+
+Para anular un pago:
+
+1. Ir a **"Ventas"** > **"Pagos"** (o desde los detalles de la factura).
+2. Hacer click sobre **"Destruirlo"** en el pago que desea anular.
+
+Al anular un pago, la factura asociada volverá a aparecer como no pagada.
+
+### Consultar Pagos Anulados
+
+Para consultar el historial de pagos anulados:
+
+1. Ir a **"Ventas"**.
+2. Seleccionar **"Pagos"**.
+3. Seleccionar **"Pagos Anulados"**.
 
 ## API (llamadas desde sistemas externos)
 

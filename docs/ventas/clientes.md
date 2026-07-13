@@ -50,6 +50,23 @@ Los pasos para crear un nuevo clientes son sencillos.
 
 Aparecerán los distintos campos que se pueden llenar para editar al cliente.
 
+## Tarjetas de Crédito del Cliente
+
+Zauru permite asociar tarjetas de crédito a los clientes para procesar pagos a través de pasarelas de pago. Para más detalles, consulte el tutorial completo de **"Tarjetas de Crédito de Clientes"**.
+
+Para agregar una tarjeta de crédito:
+
+1. Ir a **"Ventas"** > **"Clientes"**.
+2. Seleccionar el cliente y hacer click sobre **"Verificar"** (El ojo).
+3. En la página de detalles del cliente, busque la sección de **"Tarjetas de Crédito"**.
+4. Presione **"Nueva Tarjeta de Crédito"**.
+
+Los datos de la tarjeta (PAN, CVV) son enviados al gateway para tokenización y nunca se almacenan en Zauru. Solo se guardan los últimos 4 dígitos y la marca de la tarjeta.
+
+## Exportar Clientes
+
+Zauru permite exportar la lista de clientes a formato CSV o XLS desde la vista de listado de clientes.
+
 ## API (llamadas desde sistemas externos)
 
 ### Listado de clientes (pocos campos)
