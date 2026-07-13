@@ -20,7 +20,7 @@ const config = {
 
   // Open Graph / social preview metadata (Docusaurus headTags)
   headTags: [
-    { tagName: "meta", attributes: { name: "theme-color", content: "#0f766e" } },
+    { tagName: "meta", attributes: { name: "theme-color", content: "#0c0c0c" } },
     { tagName: "meta", attributes: { property: "og:type", content: "website" } },
     { tagName: "meta", attributes: { property: "og:site_name", content: "Documentación de Zauru" } },
     { tagName: "meta", attributes: { property: "og:title", content: "Documentación de Zauru ERP" } },

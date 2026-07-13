@@ -1,15 +1,11 @@
 /**
  * Zauru Docs — Custom theme
  * ---------------------------------
- * Brand palette: deep teal primary + aureola gold (#FDCA34) accent.
- * Typography: Sora (headings) + Inter (body), self-hosted via @fontsource.
+ * Brand palette: Ink + Gold (#FDCA34).
+ * Typography: Sora (headings) + system UI (body).
  * Warm neutrals for a closer-to-LATAM business audience.
  */
 
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/inter/700.css";
 @import "@fontsource/sora/400.css";
 @import "@fontsource/sora/600.css";
 @import "@fontsource/sora/700.css";
@@ -19,113 +15,102 @@
    1. DESIGN TOKENS — LIGHT MODE
    ============================================================ */
 :root {
-  /* Brand — primary (teal) scale */
-  --ifm-color-primary: #0f766e;
-  --ifm-color-primary-dark: #0d6860;
-  --ifm-color-primary-darker: #0b5a54;
-  --ifm-color-primary-darkest: #083f3a;
-  --ifm-color-primary-light: #1a8d83;
-  --ifm-color-primary-lighter: #2ba298;
-  --ifm-color-primary-lightest: #57bdb5;
+  /* Brand — primary maps to ink (links / strong UI) */
+  --ifm-color-primary: #0c0c0c;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #333333;
+  --ifm-color-primary-lighter: #444444;
+  --ifm-color-primary-lightest: #666666;
 
-  /* Brand — accent (aureola gold) */
   --zauru-gold: #fdca34;
   --zauru-gold-soft: #ffe27a;
   --zauru-gold-deep: #e0a800;
   --zauru-gold-tint: rgba(253, 202, 52, 0.14);
 
-  /* Warm neutrals */
-  --zauru-ink: #1f2937;
-  --zauru-ink-soft: #374151;
-  --zauru-paper: #faf9f6;
-  --zauru-paper-2: #f4f2ec;
-  --zauru-line: #e7e3d8;
+  --zauru-ink: #0c0c0c;
+  --zauru-ink-soft: #333333;
+  --zauru-paper: #f6f5f1;
+  --zauru-paper-2: #eeede8;
+  --zauru-line: #d8d5cc;
 
-  /* Typography */
-  --ifm-font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --ifm-font-family-heading: "Sora", "Inter", system-ui, sans-serif;
+  --ifm-font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-heading: "Sora", system-ui, sans-serif;
   --ifm-heading-font-family: var(--ifm-font-family-heading);
   --ifm-font-family-monospace: "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.65;
 
-  /* Headings */
   --ifm-h1-font-size: 2.2rem;
   --ifm-h2-font-size: 1.65rem;
   --ifm-h3-font-size: 1.3rem;
   --ifm-heading-letter-spacing: -0.01em;
   --ifm-heading-weight: 700;
 
-  /* Surfaces */
   --ifm-background-color: var(--zauru-paper);
   --ifm-background-surface-color: #ffffff;
   --zauru-card-bg: #ffffff;
-  --zauru-card-bg-hover: #fffdf7;
+  --zauru-card-bg-hover: #fffcf3;
   --zauru-card-border: var(--zauru-line);
   --ifm-card-background: var(--zauru-card-bg);
 
-  /* Text */
   --ifm-heading-color: var(--zauru-ink);
   --ifm-font-color-base: var(--zauru-ink-soft);
-  --ifm-color-emphasis-600: #4b5563;
+  --ifm-color-emphasis-600: #555555;
   --ifm-color-emphasis-700: var(--zauru-ink);
-  --ifm-color-emphasis-800: #111827;
+  --ifm-color-emphasis-800: #000000;
 
-  /* Borders / radius */
-  --ifm-global-radius: 10px;
-  --ifm-code-border-radius: 6px;
-  --zauru-radius-sm: 6px;
-  --zauru-radius-md: 10px;
-  --zauru-radius-lg: 16px;
+  --ifm-global-radius: 4px;
+  --ifm-code-border-radius: 4px;
+  --zauru-radius-sm: 4px;
+  --zauru-radius-md: 6px;
+  --zauru-radius-lg: 8px;
 
-  /* Shadows */
-  --ifm-global-shadow-l1: 0 1px 3px rgba(15, 23, 42, 0.06);
-  --ifm-global-shadow-l2: 0 4px 12px rgba(15, 23, 42, 0.08);
-  --zauru-shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --zauru-shadow-card-hover: 0 8px 24px rgba(15, 118, 110, 0.12), 0 2px 6px rgba(15, 23, 42, 0.06);
-  --zauru-halo-glow: 0 0 60px 12px rgba(253, 202, 52, 0.35);
+  --ifm-global-shadow-l1: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --ifm-global-shadow-l2: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --zauru-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --zauru-shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --zauru-halo-glow: none;
 
-  /* Sidebar */
-  --ifm-menu-link-sublist-icon-filter: invert(38%) sepia(18%) saturate(1400%) hue-rotate(155deg);
+  --ifm-menu-link-sublist-icon-filter: invert(0%);
 
-  /* Code blocks */
   --ifm-code-background: var(--zauru-paper-2);
   --ifm-code-color: var(--zauru-ink);
 
-  /* Hero */
-  --zauru-hero-bg-start: #0b5a54;
-  --zauru-hero-bg-end: #083f3a;
-  --zauru-hero-text: #ffffff;
-  --zauru-hero-text-soft: rgba(255, 255, 255, 0.82);
+  /* Homepage hero — light: paper field, ink type */
+  --zauru-hero-bg: var(--zauru-paper);
+  --zauru-hero-text: var(--zauru-ink);
+  --zauru-hero-text-soft: var(--zauru-ink-soft);
 }
 
 /* ============================================================
    2. DESIGN TOKENS — DARK MODE
    ============================================================ */
 [data-theme="dark"] {
-  --ifm-color-primary: #2ba298;
-  --ifm-color-primary-dark: #1f8a82;
-  --ifm-color-primary-darker: #1a7570;
-  --ifm-color-primary-darkest: #114b48;
-  --ifm-color-primary-light: #4dbab2;
-  --ifm-color-primary-lighter: #6fcec7;
-  --ifm-color-primary-lightest: #9ee0db;
+  --ifm-color-primary: #fdca34;
+  --ifm-color-primary-dark: #e0a800;
+  --ifm-color-primary-darker: #c99600;
+  --ifm-color-primary-darkest: #a67c00;
+  --ifm-color-primary-light: #ffe27a;
+  --ifm-color-primary-lighter: #ffeba0;
+  --ifm-color-primary-lightest: #fff3c4;
 
   --zauru-gold: #fdca34;
   --zauru-gold-soft: #ffe27a;
   --zauru-gold-deep: #e0a800;
   --zauru-gold-tint: rgba(253, 202, 52, 0.12);
 
-  --zauru-ink: #f3f1ea;
-  --zauru-ink-soft: #d6d3c8;
-  --zauru-paper: #15181a;
-  --zauru-paper-2: #1c2024;
-  --zauru-line: #2c3236;
+  --zauru-ink: #f2f2ee;
+  --zauru-ink-soft: #b0b0a8;
+  --zauru-paper: #0c0c0c;
+  --zauru-paper-2: #161616;
+  --zauru-line: #2a2a2a;
 
   --ifm-background-color: var(--zauru-paper);
   --ifm-background-surface-color: var(--zauru-paper-2);
-  --zauru-card-bg: #1c2024;
-  --zauru-card-bg-hover: #222730;
+  --zauru-card-bg: #161616;
+  --zauru-card-bg-hover: #1c1c1c;
   --zauru-card-border: var(--zauru-line);
   --ifm-card-background: var(--zauru-card-bg);
 
@@ -134,21 +119,20 @@
   --ifm-color-emphasis-600: #a8a89f;
   --ifm-color-emphasis-700: var(--zauru-ink);
   --ifm-color-emphasis-800: #ffffff;
-  --ifm-color-emphasis-300: #3a4045;
-  --ifm-color-emphasis-200: #2f3439;
-  --ifm-color-emphasis-100: #262b30;
+  --ifm-color-emphasis-300: #3a3a3a;
+  --ifm-color-emphasis-200: #2a2a2a;
+  --ifm-color-emphasis-100: #1c1c1c;
 
-  --ifm-code-background: #262b30;
+  --ifm-code-background: #1c1c1c;
   --ifm-code-color: var(--zauru-ink);
 
-  --zauru-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --zauru-shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--zauru-gold-tint);
-  --zauru-halo-glow: 0 0 70px 18px rgba(253, 202, 52, 0.28);
+  --zauru-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --zauru-shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--zauru-gold-tint);
+  --zauru-halo-glow: none;
 
-  --zauru-hero-bg-start: #114b48;
-  --zauru-hero-bg-end: #082a28;
-  --zauru-hero-text: #ffffff;
-  --zauru-hero-text-soft: rgba(255, 255, 255, 0.78);
+  --zauru-hero-bg: #0c0c0c;
+  --zauru-hero-text: #f2f2ee;
+  --zauru-hero-text-soft: #b0b0a8;
 }
 
 /* ============================================================
@@ -187,7 +171,7 @@ a:hover {
 .theme-doc-sidebar-item-link a:hover,
 .theme-doc-sidebar-item-category .menu__link:hover {
   background-color: var(--zauru-gold-tint);
-  color: var(--ifm-color-primary-darkest);
+  color: var(--zauru-ink);
 }
 
 /* ============================================================
@@ -216,22 +200,21 @@ a:hover {
 }
 .navbar__link:hover {
   background-color: var(--zauru-gold-tint);
-  color: var(--ifm-color-primary-darkest);
+  color: var(--zauru-ink);
 }
 .navbar__link--active {
   color: var(--ifm-color-primary);
 }
 /* The "Ingresar" CTA — last right item */
-.navbar .navbar__item:last-child .navbar__link,
 .navbar__inner .navbar__items--right .navbar__link:last-of-type {
-  background-color: var(--ifm-color-primary);
-  color: #fff;
-  font-weight: 600;
+  background-color: var(--zauru-gold);
+  color: #0c0c0c;
+  font-weight: 700;
+  transition: background-color 120ms ease, color 120ms ease;
 }
-.navbar .navbar__item:last-child .navbar__link:hover,
 .navbar__inner .navbar__items--right .navbar__link:last-of-type:hover {
-  background-color: var(--ifm-color-primary-darker);
-  color: #fff;
+  background-color: var(--zauru-gold-soft);
+  color: #0c0c0c;
 }
 
 /* Color mode toggle */
@@ -254,8 +237,8 @@ a:hover {
   transition: background-color 120ms ease, color 120ms ease;
 }
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: rgba(15, 118, 110, 0.1);
-  color: var(--ifm-color-primary-darkest);
+  background-color: var(--zauru-gold-tint);
+  color: var(--zauru-ink);
   font-weight: 600;
 }
 .menu__link--active:not(.menu__link--sublist)::before {
@@ -279,218 +262,169 @@ a:hover {
 }
 .menu__link--active .zauru-sidebar-icon,
 .menu__link:hover .zauru-sidebar-icon {
+  color: var(--zauru-ink);
+}
+[data-theme="dark"] .menu__link--active .zauru-sidebar-icon,
+[data-theme="dark"] .menu__link:hover .zauru-sidebar-icon {
   color: var(--zauru-gold-deep);
 }
 
 /* ============================================================
-   6. CARDS / SECTION GRID
-   ============================================================ */
-.zauru-card {
-  display: block;
-  height: 100%;
-  padding: 18px 20px;
-  border-radius: var(--zauru-radius-md);
-  border: 1px solid var(--zauru-card-border);
-  background: var(--zauru-card-bg);
-  box-shadow: var(--zauru-shadow-card);
-  color: inherit;
-  text-decoration: none;
-  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease;
-}
-.zauru-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--zauru-shadow-card-hover);
-  border-color: var(--zauru-gold);
-  background: var(--zauru-card-bg-hover);
-  color: inherit;
-  text-decoration: none;
-}
-.zauru-card__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: var(--zauru-gold-tint);
-  color: var(--zauru-gold-deep);
-  margin-bottom: 12px;
-}
-.zauru-card__icon svg {
-  width: 20px;
-  height: 20px;
-}
-.zauru-card__title {
-  font-family: var(--ifm-font-family-heading);
-  font-weight: 600;
-  font-size: 1.02rem;
-  color: var(--ifm-heading-color);
-  margin: 0 0 6px;
-  line-height: 1.3;
-}
-.zauru-card__desc {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--ifm-color-emphasis-600);
-  margin: 0;
-}
-
-/* ============================================================
-   7. HERO (homepage)
+   7. HOMEPAGE — search-first hero + dense rows
    ============================================================ */
 .zauru-hero {
   position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--zauru-hero-bg-start), var(--zauru-hero-bg-end));
+  background: var(--zauru-hero-bg);
   color: var(--zauru-hero-text);
-  padding: 64px 24px 72px;
-  text-align: center;
-  border-bottom: 3px solid var(--zauru-gold);
+  padding: 56px 24px 40px;
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
 }
-.zauru-hero::before {
-  /* Aureola halo glow */
-  content: "";
-  position: absolute;
-  top: -120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 520px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(253, 202, 52, 0.55) 0%, rgba(253, 202, 52, 0) 70%);
-  filter: blur(8px);
-  pointer-events: none;
-}
-.zauru-hero__title {
-  position: relative;
-  font-family: var(--ifm-font-family-heading);
-  font-weight: 800;
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+.zauru-hero__eyebrow {
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--zauru-hero-text);
   margin: 0 0 12px;
-  color: #fff;
 }
-.zauru-hero__title span {
+[data-theme="dark"] .zauru-hero__eyebrow {
   color: var(--zauru-gold);
 }
+.zauru-hero__title {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 800;
+  font-size: clamp(2.6rem, 8vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin: 0 0 12px;
+  color: var(--zauru-hero-text);
+}
 .zauru-hero__subtitle {
-  position: relative;
-  font-size: 1.15rem;
-  max-width: 620px;
-  margin: 0 auto 28px;
+  font-size: 1.05rem;
+  max-width: 36rem;
+  margin: 0 0 28px;
   color: var(--zauru-hero-text-soft);
-  line-height: 1.55;
+  line-height: 1.5;
 }
 .zauru-hero__search {
-  position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 22px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(253, 202, 52, 0.5);
-  border-radius: 999px;
-  color: #fff;
+  width: 100%;
+  max-width: 640px;
+  padding: 14px 18px;
+  background: var(--zauru-card-bg);
+  border: 2px solid var(--zauru-ink);
+  border-radius: var(--zauru-radius-sm);
+  color: var(--zauru-ink-soft);
   font: inherit;
   font-weight: 500;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  transition: background-color 150ms ease, border-color 150ms ease;
+  box-shadow: 4px 4px 0 var(--zauru-gold);
+  transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+[data-theme="dark"] .zauru-hero__search {
+  border-color: var(--zauru-gold);
+  box-shadow: none;
+  color: var(--zauru-ink-soft);
 }
 .zauru-hero__search:hover {
-  background: rgba(253, 202, 52, 0.18);
-  border-color: var(--zauru-gold);
-  text-decoration: none;
-  color: #fff;
+  background: var(--zauru-card-bg-hover);
+  box-shadow: 6px 6px 0 var(--zauru-gold);
+}
+[data-theme="dark"] .zauru-hero__search:hover {
+  box-shadow: 0 0 0 3px var(--zauru-gold-tint);
+}
+.zauru-hero__search:focus-visible {
+  outline: 2px solid var(--zauru-gold);
+  outline-offset: 3px;
+}
+.zauru-hero__search-kbd {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+  border: 1px solid var(--zauru-line);
+  border-radius: 3px;
+  padding: 2px 6px;
 }
 .zauru-hero__search svg {
   width: 18px;
   height: 18px;
-}
-
-/* Role-based entry pills */
-.zauru-roles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 720px;
-  margin: 0 auto 36px;
-}
-.zauru-role-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: var(--zauru-card-bg);
-  border: 1px solid var(--zauru-card-border);
-  color: var(--zauru-ink);
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: transform 150ms ease, border-color 150ms ease, background-color 150ms ease;
-}
-.zauru-role-pill:hover {
-  transform: translateY(-1px);
-  border-color: var(--zauru-gold);
-  background: var(--zauru-card-bg-hover);
-  color: var(--zauru-ink);
-  text-decoration: none;
-}
-.zauru-role-pill svg {
-  width: 15px;
-  height: 15px;
-  color: var(--ifm-color-primary);
-}
-
-/* Section grouping */
-.zauru-section-group {
-  margin-bottom: 44px;
-}
-.zauru-section-group__header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0 0 18px;
-}
-.zauru-section-group__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: var(--ifm-color-primary);
-  color: #fff;
   flex-shrink: 0;
 }
-.zauru-section-group__icon svg {
-  width: 18px;
-  height: 18px;
+.zauru-hero__rule {
+  height: 3px;
+  background: var(--zauru-gold);
+  border: 0;
+  margin: 40px 0 0;
+}
+
+.zauru-home {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8px 24px 64px;
+}
+
+.zauru-section-group {
+  margin-bottom: 36px;
+}
+.zauru-section-group__header {
+  margin: 0 0 8px;
 }
 .zauru-section-group__title {
-  font-family: var(--ifm-font-family-heading);
-  font-size: 1.35rem;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.75rem;
   font-weight: 700;
-  color: var(--ifm-heading-color);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--zauru-ink);
   margin: 0;
 }
-.zauru-section-group__count {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--ifm-color-emphasis-600);
-  background: var(--zauru-paper-2);
-  padding: 2px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--zauru-line);
+[data-theme="dark"] .zauru-section-group__title {
+  color: var(--zauru-gold);
 }
-.zauru-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
+
+.zauru-row-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--zauru-line);
+}
+.zauru-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0 12px 8px;
+  margin: 0;
+  border-bottom: 1px solid var(--zauru-line);
+  border-left: 3px solid transparent;
+  color: var(--zauru-ink);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: border-color 120ms ease, transform 120ms ease, background-color 120ms ease;
+}
+.zauru-row:hover {
+  border-left-color: var(--zauru-gold);
+  transform: translateX(2px);
+  color: var(--zauru-ink);
+  text-decoration: none;
+  background: transparent;
+}
+.zauru-row:focus-visible {
+  outline: 2px solid var(--zauru-gold);
+  outline-offset: 2px;
+}
+.zauru-row__arrow {
+  color: var(--ifm-color-emphasis-600);
+  flex-shrink: 0;
 }
 
 /* ============================================================
@@ -522,7 +456,10 @@ a:hover {
 }
 .markdown a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(15, 118, 110, 0.3);
+  border-bottom: 1px solid rgba(12, 12, 12, 0.25);
+}
+[data-theme="dark"] .markdown a {
+  border-bottom-color: rgba(253, 202, 52, 0.35);
 }
 .markdown a:hover {
   border-bottom-color: var(--ifm-color-primary);
@@ -596,15 +533,15 @@ a:hover {
 }
 
 .admonition-note {
-  border-left-color: var(--ifm-color-primary);
-  background: rgba(15, 118, 110, 0.06);
+  border-left-color: var(--zauru-ink);
+  background: rgba(12, 12, 12, 0.04);
 }
 .admonition-tip {
-  border-left-color: var(--zauru-gold-deep);
+  border-left-color: var(--zauru-gold);
   background: var(--zauru-gold-tint);
 }
 .admonition-tip .admonition-heading {
-  color: var(--zauru-gold-deep);
+  color: var(--zauru-ink);
 }
 .admonition-info {
   border-left-color: #2563eb;
@@ -618,7 +555,10 @@ a:hover {
   border-left-color: #dc2626;
   background: rgba(220, 38, 38, 0.08);
 }
-[data-theme="dark"] .admonition-note { background: rgba(43, 162, 152, 0.12); }
+[data-theme="dark"] .admonition-note {
+  border-left-color: var(--zauru-gold);
+  background: var(--zauru-gold-tint);
+}
 [data-theme="dark"] .admonition-tip { background: var(--zauru-gold-tint); }
 [data-theme="dark"] .admonition-info { background: rgba(37, 99, 235, 0.14); }
 [data-theme="dark"] .admonition-warning { background: rgba(217, 119, 6, 0.14); }
@@ -652,14 +592,14 @@ a:hover {
   height: 13px;
 }
 .zauru-badge--rol {
-  background: rgba(15, 118, 110, 0.1);
-  border-color: rgba(15, 118, 110, 0.25);
-  color: var(--ifm-color-primary-darkest);
+  background: var(--zauru-gold-tint);
+  border-color: rgba(253, 202, 52, 0.4);
+  color: var(--zauru-ink);
 }
 .zauru-badge--tiempo {
   background: var(--zauru-gold-tint);
   border-color: rgba(253, 202, 52, 0.4);
-  color: var(--zauru-gold-deep);
+  color: var(--zauru-ink);
 }
 
 .zauru-related {
@@ -743,6 +683,9 @@ a:hover {
 .zauru-feedback__btn.is-selected {
   background: var(--zauru-gold-tint);
   border-color: var(--zauru-gold);
+  color: var(--zauru-ink);
+}
+[data-theme="dark"] .zauru-feedback__btn.is-selected {
   color: var(--zauru-gold-deep);
 }
 .zauru-feedback__btn svg {
@@ -870,13 +813,13 @@ a:hover {
   transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
 }
 .zauru-404__btn--primary {
-  background: var(--ifm-color-primary);
-  color: #fff;
-  border: 1px solid var(--ifm-color-primary);
+  background: var(--zauru-gold);
+  color: #0c0c0c;
+  border: 1px solid var(--zauru-gold);
 }
 .zauru-404__btn--primary:hover {
-  background: var(--ifm-color-primary-darker);
-  color: #fff;
+  background: var(--zauru-gold-soft);
+  color: #0c0c0c;
   transform: translateY(-1px);
   text-decoration: none;
 }
@@ -913,18 +856,16 @@ a:hover {
    ============================================================ */
 @media (max-width: 996px) {
   .zauru-hero {
-    padding: 48px 20px 56px;
-  }
-  .zauru-hero::before {
-    width: 380px;
-    height: 240px;
+    padding: 48px 20px 36px;
   }
 }
 @media (max-width: 600px) {
-  .zauru-grid {
-    grid-template-columns: 1fr;
-  }
   .zauru-related__grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Hide agent-internal docs from sidebar */
+.zauru-internal-docs {
+  display: none !important;
 }

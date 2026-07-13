@@ -1,0 +1,12 @@
+{
+  "label": "Internal",
+  "position": 999,
+  "collapsed": true,
+  "className": "zauru-internal-docs",
+  "link": {
+    "type": "generated-index",
+    "title": "Internal",
+    "description": "Agent specs and plans — not part of the user manual.",
+    "slug": "/superpowers"
+  }
+}
