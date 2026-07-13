@@ -47,6 +47,22 @@ j. En este campo debe seleccionar las responsabilidades o el uso de esta agencia
 - Taller: Una agencia donde usted da algún tipo de soporte o garantía de sus productos.
 - Fábrica: Una agencia donde produce su producto.
 
+k. Marque esta opción si la agencia se utilizará para emitir cotizaciones (Quote).
+
+l. Marque esta opción si la agencia estará disponible en el módulo de E-commerce.
+
+m. Puede asignar una categoría de agencia previamente creada para organizar sus agencias.
+
+n. Seleccione la ciudad a la que pertenece esta agencia.
+
+o. Seleccione el distrito o zona de la ciudad.
+
+p. Puede seleccionar un centro de costo al que se asociará esta agencia.
+
+q. En este campo puede colocar el nombre del barrio o colonia de la agencia.
+
+r. Si su entidad utiliza servicios de facturación electrónica, puede especificar el nombre del servicio de almacenamiento externo para esta agencia.
+
 Para guardar los cambios presione “Crear Agencia”.
 
 ![imagen6](/img/primeros-pasos/agencias-3.jpg)
@@ -54,6 +70,20 @@ Para guardar los cambios presione “Crear Agencia”.
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la agencia se creo exitosamente. Ahora podrá usar esta agencia para hacer sus movimientos de productos.
 
 ![imagen7](/img/primeros-pasos/agencias-4.jpg)
+
+## Formularios Asociados a la Agencia
+
+Al visualizar los detalles de una agencia, Zauru le mostrará los formularios personalizados que tenga asociados. Si ha creado formularios para el tipo de documento "Agencia", estos aparecerán en la vista de detalle para que pueda llenarlos con información adicional de cada agencia.
+
+## Exportar Agencias
+
+Zauru le permite exportar su listado de agencias en formato CSV o XLS. Para exportar:
+
+1. Ir a “Configuraciones”.
+2. Seleccionar “Agencias”.
+3. Seleccionar el formato de exportación deseado (CSV o XLS).
+
+Los datos exportados incluyen: nombre, estado activo, tipo virtual, tipo de bodega, responsabilidades (bodega, punto de venta, taller, fábrica), contacto, ciudad, dirección, teléfono, notas, usuario que actualizó y fecha de creación.
 
 ## Categoría de Agencias
 Zauru le permite llevar control de todas sus agencias organizándolas por Categorías.  La forma de crear una nueva Categoría de agencia es la siguiente:
@@ -147,4 +177,44 @@ curl -v \
     }
   }' \
   https://app.zauru.com/settings/agencies.json
+```
+
+### API de Categorías de Agencias
+
+#### Obtener listado de categorías de agencias
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/agency_categories.json
+```
+
+#### Crear categoría de agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "agency_category": {
+      "name": "Categoría Principal",
+      "notes": "Descripción de la categoría"
+    }
+  }' \
+  https://app.zauru.com/settings/agency_categories.json
+```
+
+### Exportar Agencias vía API
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/agencies/export.csv
 ```

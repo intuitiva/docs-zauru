@@ -144,3 +144,72 @@ Ahora agregaremos una restricción para que solo salga la impresión de document
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la impresión de documento se creo exitosamente.
 
 ![imagen14](/img/primeros-pasos/formatos-impresion-14.jpg)
+
+
+---
+
+## Vista Previa en PDF
+
+Zauru le permite generar una vista previa en PDF de su plantilla de impresión para verificar cómo se verá el documento final antes de imprimirlo. Para generar la vista previa:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. Seleccionar la pestaña "Plantillas de Impresión".
+4. En el listado, hacer click en el icono de "Vista Previa PDF" en la plantilla deseada.
+
+El sistema generará un archivo PDF con datos de ejemplo para que pueda verificar el diseño, la disposición de los campos y las medidas configuradas.
+
+## Grupos en Plantillas de Impresión para Formularios
+
+Zauru permite asociar grupos de formularios a plantillas de impresión. Esto es útil cuando un formulario tiene grupos dinámicos y usted desea que la plantilla de impresión muestre correctamente los datos agrupados. Al crear o editar una plantilla de impresión, puede seleccionar los grupos de formulario que se utilizarán para estructurar la salida impresa.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de plantillas de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/print_templates.json
+```
+
+### Obtener detalle de una plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/print_templates/1.json
+```
+
+### Obtener listado de impresiones de documentos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/document_prints.json
+```
+
+### Crear impresión de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "document_print": {
+      "active": true,
+      "operation_id": "1",
+      "print_template_id": "1",
+      "notes": "Impresión para facturas"
+    }
+  }' \
+  https://app.zauru.com/settings/document_prints.json
+```

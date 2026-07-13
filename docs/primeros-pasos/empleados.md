@@ -104,3 +104,80 @@ curl -v \
   }' \
   https://app.zauru.com/settings/employees.json
 ```
+
+
+---
+
+## Filtrar Empleados por Agencia
+
+Zauru le permite filtrar el listado de empleados por agencia. En la vista de listado de empleados, puede seleccionar una agencia específica para ver únicamente los empleados asignados a esa agencia. También puede filtrar por estado: Activos, Inactivos o Todos.
+
+## Importar Empleados
+
+Es probable que cuando comience a usar Zauru tenga una lista de empleados que sea más eficiente importar que ingresar manualmente. Zauru le permite importar empleados por medio de plantillas predefinidas de Excel.
+
+Los pasos para importar empleados son:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Empleados".
+3. Click en "Importar".
+
+![imagen12](/img/primeros-pasos/empleados-7.jpg)
+
+A continuación deberá seleccionar el archivo de Excel con los datos de sus empleados y presionar el botón de importación. El sistema procesará el archivo y creará los registros de empleados.
+
+También puede realizar importaciones masivas de empleados utilizando el sistema de Importaciones de Datos (ver la sección de [Importaciones de Datos](importaciones-de-datos.md)) seleccionando el tipo de documento "Crear Empleados" o "Crear Empleados y Contratos de Trabajo".
+
+## Exportar Empleados
+
+Zauru le permite exportar su listado de empleados en formato CSV o XLS, con la opción de filtrar por agencia. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Empleados".
+3. Si lo desea, seleccione una agencia para filtrar.
+4. Seleccione el formato de exportación deseado (CSV o XLS).
+
+Los datos exportados incluyen: numero de identificación, nombre, identificación, nacionalidad, correo, puesto, dirección, teléfono, cumpleaños, estado civil, ocupación, fecha de inicio, salario, seguro social, NIT, notas, banco, cuenta bancaria, agencia, tarifas por hora y usuario que actualizó.
+
+## Formularios Asociados al Empleado
+
+Al visualizar los detalles de un empleado, Zauru le mostrará los formularios personalizados que tenga asociados para el tipo de documento "Empleado". Estos formularios permiten capturar información adicional específica de cada empleado.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de categorías de empleados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employee_categories.json
+```
+
+### Crear categoría de empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "employee_category": {
+      "name": "Administrativo",
+      "notes": "Personal administrativo"
+    }
+  }' \
+  https://app.zauru.com/settings/employee_categories.json
+```
+
+### Exportar empleados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employees/export.csv
+```

@@ -78,3 +78,37 @@ Y esto me va a devolver un JSON con las siguientes características:
     }
 ]
 ```
+
+
+
+## Exportar Tipos de Cambio
+
+Zauru le permite exportar su historial de tipos de cambio en formato CSV o XLS. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Tipos de Cambio".
+3. Seleccionar el formato de exportación deseado (CSV o XLS).
+
+Los datos exportados incluyen: fecha, moneda de origen, tipo de cambio, moneda de destino, fuente, usuario que creó y fecha de creación.
+
+### Exportar vía API
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/exchange_rates/export.csv
+```
+
+### Obtener detalle de un tipo de cambio con historial
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/exchange_rates/1.json
+```

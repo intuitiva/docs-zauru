@@ -215,3 +215,124 @@ curl -v \
   }' \
   https://app.zauru.com/settings/items/item_categories.json
 ```
+
+
+---
+
+## Variaciones de Ítems
+
+Zauru le permite manejar variaciones de un mismo producto (por ejemplo: diferentes colores, tallas o materiales de un mismo artículo). Las variaciones se manejan a través de un sistema de Ítem Maestro e Ítems Hijos.
+
+### Configurar Variaciones
+
+Para gestionar las variaciones de un ítem:
+
+1. Vaya al detalle del ítem que será el maestro.
+2. Seleccione la opción "Editar Variaciones".
+
+En esta vista podrá:
+
+- Ver todos los ítems hijos (variaciones) del ítem maestro.
+- Agregar nuevos ítems como variaciones seleccionándolos de una lista de ítems similares.
+- Crear nuevos ítems hijos directamente con sus atributos de variación (ej. Color: Rojo, Talla: M).
+- Editar los atributos de cada variación (clave, valor y color).
+- Desvincular un ítem hijo del maestro.
+
+Cada ítem hijo hereda automáticamente los atributos del ítem maestro cuando este se actualiza, manteniendo la consistencia entre todas las variaciones.
+
+### Atributos de Ítem
+
+Los atributos son pares clave-valor que permiten definir las características de las variaciones. Por ejemplo:
+- **Clave:** Color, **Valor:** Rojo
+- **Clave:** Talla, **Valor:** M
+- **Clave:** Material, **Valor:** Algodón
+
+Cada atributo puede tener un color asociado (útil para el módulo de Punto de Venta).
+
+## Importar Ítems con Precios de Venta
+
+Además de la importación básica de ítems, Zauru le permite importar ítems junto con sus precios de venta sugeridos. Para ello:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Ítems".
+3. Seleccionar "Importar Ítems con Precios de Venta".
+
+Esta funcionalidad le permite especificar, además de los datos del ítem, el precio de venta, la moneda del precio y si es un precio flexible, creando automáticamente el precio sugerido al importar.
+
+## Verificación de Ítems Faltantes en Importación
+
+Cuando realiza una importación de ítems, Zauru le permite verificar si existen ítems que no se importaron correctamente. Esta funcionalidad es útil para auditorías de importación:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Ítems".
+3. Seleccionar "Verificar Ítems Faltantes".
+
+El sistema comparará los datos del archivo de importación con los ítems existentes y le mostrará cuáles no se encuentran en el sistema, permitiéndole crear los ítems faltantes directamente.
+
+## Filtrar Ítems por Etiquetas
+
+En el listado de ítems, Zauru le muestra una nube de etiquetas (Tag Cloud) que le permite filtrar rápidamente los productos por las etiquetas que tengan asignadas. Simplemente haga click en una etiqueta de la nube para filtrar los ítems que la tengan.
+
+## Exportar Ítems
+
+Zauru le permite exportar su listado de ítems en formato CSV, XLS o JSON. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Ítems".
+3. Seleccionar el formato de exportación deseado (CSV, XLS o JSON).
+
+Los datos exportados incluyen: código, nombre, categoría, marca, etiquetas, estado activo, tipo de producto, precios y demás características.
+
+## Formularios Asociados al Ítem
+
+Al visualizar los detalles de un ítem, Zauru le mostrará los formularios personalizados que tenga asociados para el tipo de documento "Ítem". También podrá ver el historial de formularios enviados (submissions) relacionados con ese ítem.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de marcas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/brands.json
+```
+
+### Crear marca
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "brand": {
+      "name": "Marca Ejemplo",
+      "notes": "Descripción de la marca",
+      "color": "#FF0000"
+    }
+  }' \
+  https://app.zauru.com/settings/brands.json
+```
+
+### Exportar ítems
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/export.csv
+```
+
+### Obtener ítems en JSON con todas las asociaciones
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/export.json
+```

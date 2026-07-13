@@ -62,3 +62,49 @@ Para guardar los cambios presione el botón de “Crear numero automático del d
 Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo el numero automático de documento.
 
 ![imagen6](/img/primeros-pasos/numeracion-automatica-6.jpg)
+
+
+
+---
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de numeraciones automáticas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/document_automatic_numbers.json
+```
+
+### Obtener detalle de una numeración automática
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/document_automatic_numbers/1.json
+```
+
+### Crear numeración automática de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "document_automatic_number": {
+      "document_type": "payments",
+      "method_name": "id_number",
+      "prefix": "PAGO-",
+      "initial": "1",
+      "num_digits": "6"
+    }
+  }' \
+  https://app.zauru.com/settings/document_automatic_numbers.json
+```

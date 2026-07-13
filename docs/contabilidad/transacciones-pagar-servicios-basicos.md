@@ -1,7 +1,7 @@
 ---
 title: "[Transacciones] Pagar servicios básicos"
 sidebar_label: "[Transacciones] Pagar servicios básicos"
-sidebar_position: 27
+sidebar_position: 19
 ---
 
 > Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compra)

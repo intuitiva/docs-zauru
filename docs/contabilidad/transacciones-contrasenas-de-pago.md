@@ -1,7 +1,7 @@
 ---
 title: "[Transacciones] Contraseñas de pago a proveedores"
 sidebar_label: "[Transacciones] Contraseñas de pago a proveedores"
-sidebar_position: 21
+sidebar_position: 13
 ---
 
 Este tutorial esta enfocado en la creación de contraseñas de pago para los proveedores. Las contraseñas de pago se dan cuando un proveedor nos da una factura al crédito y tenemos que darle un detalle de la fecha en que se va pagar la factura que nos emitieron.

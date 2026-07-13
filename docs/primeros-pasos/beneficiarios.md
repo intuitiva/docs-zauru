@@ -205,3 +205,94 @@ curl -v \
   -X get \
   https://app.zauru.com/settings/payees/payee_categories.json
 ```
+
+
+---
+
+## Filtrar Beneficiarios por Etiquetas
+
+Zauru le permite filtrar sus beneficiarios utilizando etiquetas (Tags). En el listado de beneficiarios aparecerá una nube de etiquetas donde podrá seleccionar una para filtrar rápidamente los beneficiarios que tengan esa etiqueta asignada.
+
+Puede filtrar por tipo de beneficiario:
+- **Todos:** Muestra todos los beneficiarios sin distinción.
+- **Clientes:** Muestra solo los beneficiarios marcados como clientes.
+- **Proveedores:** Muestra solo los beneficiarios marcados como proveedores.
+- **Clientes y Proveedores:** Muestra los beneficiarios que son tanto clientes como proveedores.
+
+## Sincronizar Beneficiario con CRM
+
+Si su entidad tiene activo el módulo de CRM, Zauru le permite sincronizar un beneficiario con el CRM. En la vista de detalle del beneficiario, seleccione la opción "Sincronizar con CRM" para crear o actualizar el contacto correspondiente en el módulo de CRM.
+
+## Búsqueda de Beneficiarios por NIT o CUI
+
+Zauru le permite buscar beneficiarios por su NIT (Número de Identificación Tributaria) o CUI (Código Único de Identificación) desde servicios externos configurados para su entidad. Esta funcionalidad es útil para validar la información tributaria de sus clientes o proveedores al momento de crearlos.
+
+## Campos Adicionales del Beneficiario
+
+Además de los campos básicos, un beneficiario puede tener las siguientes características adicionales:
+
+- **Actividad económica:** Seleccione la actividad económica del beneficiario (payee_activity_id).
+- **Tipo de contribuyente:** Puede marcar si el beneficiario es Pequeño Contribuyente, Gran Contribuyente, o Exento.
+- **Agente de retención:** Marque esta opción si el beneficiario es agente de retención de impuestos.
+- **Sujeto a retención de impuestos:** Marque si este beneficiario está sujeto a retenciones.
+- **Cliente para exportación:** Marque si este beneficiario es un cliente para operaciones de exportación.
+- **País:** Seleccione el país del beneficiario (útil para beneficiarios extranjeros).
+- **Extranjero:** Marque esta opción si el beneficiario es del extranjero.
+- **Ciudad y Distrito:** Seleccione la ciudad y distrito donde se ubica el beneficiario.
+- **Término de pago por defecto:** Puede asignar un término de pago predeterminado para este beneficiario.
+- **Latitud y Longitud:** Coordenadas geográficas para ubicación en mapa.
+- **Número de identificación personal (CUI):** Para personas individuales.
+
+## Exportar Beneficiarios
+
+Zauru le permite exportar su listado de beneficiarios en formato CSV, XLS o JSON. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Beneficiarios".
+3. Seleccionar el formato de exportación deseado (CSV, XLS o JSON).
+
+Si tiene un filtro de etiquetas activo, la exportación incluirá solamente los beneficiarios de esa etiqueta.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de beneficiarios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees.json
+```
+
+### Búsqueda de beneficiario por NIT
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"tin": "12345678-9"}' \
+  https://app.zauru.com/settings/payees/search_payee.json
+```
+
+### Autocompletar beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/autocomplete.json?term=cliente
+```
+
+### Exportar beneficiarios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/export.csv
+```
