@@ -3,15 +3,18 @@ import Icon from "./Icon";
 
 /**
  * FeedbackWidget — "¿Te fue útil esta guía?" with 👍/👎 buttons.
- * Stateless for now (logs to console); can be wired to an endpoint later.
+ * Sends a "Feedback" custom event to Plausible (goal: "Feedback")
+ * with a `useful` prop ("yes" / "no") for up/down breakdown.
  */
 export default function FeedbackWidget() {
   const [vote, setVote] = useState(null);
 
   const handle = (choice) => {
     setVote(choice);
-    if (typeof window !== "undefined" && window.console) {
-      window.console.log("[zauru-feedback]", {useful: choice === "up", path: window.location.pathname});
+    if (typeof window !== "undefined" && typeof window.plausible === "function") {
+      window.plausible("Feedback", {
+        props: { useful: choice === "up" ? "yes" : "no" },
+      });
     }
   };
 
