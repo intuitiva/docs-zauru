@@ -1,7 +1,7 @@
 ---
 title: "Operaciones de Gateway - Bitácora"
 sidebar_label: "Operaciones de Gateway"
-sidebar_position: 23
+sidebar_position: 24
 ---
 
 Este tutorial está enfocado en como consultar el historial de operaciones realizadas a través de las pasarelas de pago (gateways) configuradas en Zauru. Estas operaciones incluyen tokenización de tarjetas, cobros, reembolsos y cualquier otra interacción con el gateway.

@@ -1,7 +1,7 @@
 ---
 title: "Emitir una nota de crédito (descuento, anulación o devolución)"
 sidebar_label: "Emitir una nota de crédito (descuento, anulación o devolución)"
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 ## Notas de Crédito

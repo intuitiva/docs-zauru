@@ -1,7 +1,7 @@
 ---
 title: "Facturas Pagadas"
 sidebar_label: "Facturas Pagadas"
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 Este tutorial está enfocado en como consultar, imprimir y gestionar las facturas que ya han sido pagadas total o parcialmente.

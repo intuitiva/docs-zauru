@@ -1,7 +1,7 @@
 ---
 title: "Configuraciones de Gateway / Pasarela de Pago"
 sidebar_label: "Configuraciones de Gateway"
-sidebar_position: 22
+sidebar_position: 23
 ---
 
 Este tutorial está enfocado en como crear, editar y gestionar las configuraciones de las pasarelas de pago (gateways) en Zauru. Las configuraciones de gateway permiten integrar Zauru con procesadores de pago para tokenizar tarjetas de crédito, procesar pagos recurrentes y manejar reembolsos.

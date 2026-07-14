@@ -1,7 +1,7 @@
 ---
 title: "Facturas Electrónicas en Guatemala"
 sidebar_label: "Facturas Electrónicas en Guatemala"
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ## Historia de FACE

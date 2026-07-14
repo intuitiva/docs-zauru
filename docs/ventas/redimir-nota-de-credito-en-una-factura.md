@@ -1,7 +1,7 @@
 ---
 title: "Redimir una nota de crédito emitida a una factura"
 sidebar_label: "Redimir una nota de crédito emitida a una factura"
-sidebar_position: 14
+sidebar_position: 15
 ---
 
 Este tutorial esta basado en como aplicar una nota de crédito a una factura no pagada.

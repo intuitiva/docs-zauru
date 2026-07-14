@@ -1,7 +1,7 @@
 ---
 title: "Configuraciones de Ventas"
 sidebar_label: "Configuraciones de Ventas"
-sidebar_position: 19
+sidebar_position: 20
 ---
 
 En el módulo de ventas se pueden configurar varias opciones que le permitirán llevar un mejor control contable de sus ventas, las opciones configurables son las siguientes:
@@ -19,16 +19,33 @@ La forma de configurar estas opciones es la siguiente:
 ---
 
 ## Términos de Pago
-Los términos de pago nsirven para especificar la cantidad de tiempo que le daremos a nuestro cliente para efectuar el pago de un producto o servicio brindado por su empresa. El termino de pago puede especificar lo siguiente:
+Los términos de pago sirven para especificar la cantidad de tiempo que le daremos a nuestro cliente para efectuar el pago de un producto o servicio brindado por su empresa. El termino de pago puede especificar lo siguiente:
 
 - Desde que cuenta hasta que cuenta se afectara cuando se haga una venta.
 - La categoría de clientes que aplican al termino de pago.
 - Los descuentos permitidos al termino de pago
+- Opciones de anticipos y asientos extra
+
+### Listar Términos de Pago
+
+Para consultar la lista de términos de pago:
+
+1. Ir a **"Ventas"** > **"Configuraciones"**.
+2. Seleccionar la pestaña de **"Términos de Pago"**.
+
+Los términos de pago pueden filtrarse por estado:
+- **Activos**: Muestra solo los términos de pago activos.
+- **Inactivos**: Muestra solo los inactivos.
+- **Todos**: Muestra todos sin filtrar.
+
+En la lista se muestra el nombre, días de crédito, porcentaje de crédito y los descuentos permitidos asociados. Al seleccionar un término de pago de la lista, se muestran sus detalles incluyendo las categorías de clientes vinculadas y los descuentos asociados.
+
+### Crear un Nuevo Término de Pago
 
 Los pasos para crear un nuevo término de pago son los siguientes:
 
 1. Ir a términos de pago en las configuraciones de ventas.
-2. Seleccionar “Nuevo Término de Pago”.
+2. Seleccionar "Nuevo Término de Pago".
 
 ![imagen2](/img/ventas/configuraciones-2.jpg)
 
@@ -36,15 +53,38 @@ Entrara a los detalles del Nuevo Término de Pago, las opciones para crearlo son
 
 1. Si selecciona el cuadro de Activo quiere decir que el termino de pago se podrá usar.
 2. Coloque el Nombre del Nuevo Término de Pago.
-3. Especifique desde que cuenta saldrá la venta.
-4. Especifique a que cuenta de activo se ira.
+3. Especifique desde que cuenta saldrá la venta (Cuenta Desde / Account From).
+4. Especifique a que cuenta de activo se ira (Cuenta Hacia / Account To).
 5. Coloque el porcentaje de crédito que se dará con este termino de pago.
 6. Coloque la cantidad de días de crédito que tiene el cliente para pagar.
-7. Para guardar los cambios presione “Crear término de pago”.
+7. Para guardar los cambios presione "Crear término de pago".
 
 ![imagen3](/img/ventas/configuraciones-3.jpg)
 
-Después de crear el término de pago deberá especificar que categoría de clientes aplica para usar este termino de pago, la categoría de clientes debió ser creada previamente, refiérase a “Crear Clientes y/o Proveedores” en el manual del usuario para crear una categoría de clientes.
+### Opciones Avanzadas de Términos de Pago
+
+Al crear o editar un término de pago, dispone de opciones contables avanzadas:
+
+- **Usar cuentas de productos y servicios en lugar de cuenta desde**: Si esta activado, el sistema utilizara las cuentas configuradas en las variables `product_sales_account` y `service_sales_account` en lugar de la cuenta "desde" del término de pago.
+- **Cuenta de costo**: Cuenta contable para registrar el costo de la mercadería vendida.
+- **Cuenta de activo de inventario**: Cuenta de activo para movimientos de inventario.
+- **Cuenta de productos**: Cuenta contable específica para venta de productos.
+- **Cuenta de servicios**: Cuenta contable específica para venta de servicios.
+- **Centro de costo**: Centro de costo asociado a las ventas bajo este término de pago.
+- **Cuenta de anticipo hacia**: Cuenta donde se registran los pagos de anticipos cuando se usa este término de pago.
+
+#### Asientos Extra
+
+Los términos de pago permiten configurar asientos contables adicionales que se generaran automáticamente al emitir una factura:
+
+- **Asientos extra (extra_entries)**: Definición de asientos contables adicionales en formato JSON.
+- **Valores flexibles de asientos (flexible_entries_values)**: Permite que los valores de los asientos extra sean editables al momento de facturar.
+- **Etiquetas de asientos flexibles (flexible_entries_tags)**: Etiquetas asociadas a los asientos flexibles.
+- **Memo**: Nota o memo asociado al término de pago.
+
+### Especificar Categorías de Clientes
+
+Después de crear el término de pago deberá especificar que categoría de clientes aplica para usar este termino de pago, la categoría de clientes debió ser creada previamente, refiérase a "Crear Clientes y/o Proveedores" en el manual del usuario para crear una categoría de clientes.
 
 Los pasos para especificar las categorías aplicables al termino de pago son los siguientes:
 
@@ -57,7 +97,7 @@ Ahora le aparecerán las opciones de edición del término de pago, deberá segu
 
 1. Seleccione si este término de pago es aplicable a clientes que no tienen categoría, quiere decir que cualquier cliente nuevo aplicara a este termino de pago.
 2. Seleccione la categoría de clientes que creo previamente para que este termino de pago sea aplicable a esa categoría.
-3. Para guardar sus cambios presione “Actualizar término de pago”.
+3. Para guardar sus cambios presione "Actualizar término de pago".
 
 ![imagen5](/img/ventas/configuraciones-5.jpg)
 
@@ -65,78 +105,160 @@ Le deberá aparecer un mensaje de éxito en la pantalla después de actualizar e
 
 ![imagen6](/img/ventas/configuraciones-6.jpg)
 
+### Ver Detalles de un Término de Pago
+
+Al hacer click sobre un término de pago en la lista, podrá ver:
+- Datos generales (nombre, días de crédito, porcentaje de crédito, estado).
+- Categorías de clientes asociadas.
+- Descuentos permitidos.
+- Cuentas contables configuradas (desde, hacia, costo, inventario, productos, servicios).
+- Información de anticipos y asientos extra.
+
+### Eliminar un Término de Pago
+
+Para eliminar un término de pago:
+
+1. En la lista de términos de pago, localice el que desea eliminar.
+2. Haga click sobre **"Destruirlo"**.
+
 ---
 
 ## Descuentos
-Zauru le permite crear descuentos aplicables al termino de pago o a algún cliente en especifico. La manera de hacerlo es la siguiente:
 
-1. Ir a “Ventas”.
-2. Seleccionar “Configuraciones”.
-3. Seleccionar la pestaña de “Descuentos”.
-4. Presionar “Nuevo Descuento”.
+Zauru le permite crear descuentos aplicables al termino de pago, a ítems específicos, a paquetes o a categorías de clientes. Los descuentos pueden ser de monto fijo o porcentual.
+
+### Listar Descuentos
+
+Para consultar la lista de descuentos configurados:
+
+1. Ir a **"Ventas"** > **"Configuraciones"**.
+2. Seleccionar la pestaña de **"Descuentos"**.
+
+Los descuentos pueden filtrarse por estado:
+- **Activos**: Muestra solo los descuentos activos.
+- **Inactivos**: Muestra solo los inactivos.
+- **Todos**: Muestra todos sin filtrar.
+
+Al seleccionar un descuento de la lista se muestran sus detalles completos.
+
+### Crear un Nuevo Descuento
+
+Los pasos para crear un nuevo descuento son los siguientes:
+
+1. Ir a **"Ventas"** > **"Configuraciones"** > **"Descuentos"**.
+2. Presionar **"Nuevo Descuento"**.
 
 ![imagen7](/img/ventas/configuraciones-7.jpg)
 
 Ahora le aparecerán las opciones para crear un nuevo Descuento:
 
-1. Si coloca el cheque de Activo quiere decir que el descuento se podrá usar en el sistema.
-2. Coloque el nombre del descuento.
-3. Seleccione si el descuento es aplicable a un ítem (Producto).
-4. Seleccione si el descuento es aplicable a un termino de pago, cualquier venta que se haga con ese termino de pago podrá aplicar al descuento.
-5. Seleccione la moneda del descuento.
-6. Si el descuento es de una cantidad fija, especifique la cantidad.
-7. Si el descuento es de un porcentaje de la cantidad total, coloque el porciento de descuento. Para colocar 10% de descuento coloque 0.10.
-8. Si selecciona el cheque de descartar decimales, se removerán los decimales en la cantidad del descuento.
-9. Coloque una nota para describir el descuento.
-10. Para guardar los cambios presione “Crear descuento”.
+1. Si coloca el cheque de **Activo** quiere decir que el descuento se podrá usar en el sistema.
+2. Coloque el **nombre** del descuento.
+3. Seleccione si el descuento es aplicable a un **ítem** (Producto), a un **término de pago**, o a ambos.
+4. Seleccione la **moneda** del descuento.
+5. Si el descuento es de una **cantidad fija**, especifique la cantidad.
+6. Si el descuento es de un **porcentaje** de la cantidad total, coloque el porciento de descuento. Para colocar 10% de descuento coloque 0.10.
+7. Si selecciona el cheque de **descartar decimales**, se removerán los decimales en la cantidad del descuento.
+8. Especifique un **umbral mínimo de cantidad** (`min_quantity_threshold`) para que el descuento aplique solo cuando se alcanza una cantidad mínima de ítems.
+9. Especifique un **umbral máximo de cantidad** (`max_quantity_threshold`) para limitar el descuento hasta cierta cantidad de ítems.
+10. Marque **Forzar asignación** (`force_assignation`) si desea que el descuento se aplique automáticamente sin intervención del usuario.
+11. Seleccione si el descuento **aplica a detalles de factura o a la factura completa** (`invoice_details_or_invoices`).
+12. Coloque una **nota** para describir el descuento.
+13. Para guardar los cambios presione **"Crear descuento"**.
 
 ![imagen8](/img/ventas/configuraciones-8.jpg)
 
-Después de crear el descuento deberá editarlo para especificar que termino de pago o que ítem es aplicable, dependiendo que selecciono al crearlo. Los pasos para especificar esto son los siguientes:
+### Filtrar por Categoría de Cliente
 
-1. Le deberá de aparecer un mensaje de éxito después de crear el termino de pago.
-2. Presione el botón de editar en el termino de pago.
+Al crear o editar un descuento, puede activar el **filtro por categoría de beneficiario** (`payee_category_filter_active`). Esto permite:
+
+- Seleccionar una categoría de clientes específica para la cual aplica el descuento.
+- Si el filtro está desactivado, el descuento aplica para todas las categorías de clientes.
+- Si el filtro está activado y no se selecciona una categoría, el descuento no aplica a ninguna.
+
+### Asignar Ítems, Paquetes y Términos de Pago al Descuento
+
+Después de crear el descuento deberá editarlo para especificar que términos de pago, ítems o paquetes son aplicables:
+
+1. Le deberá de aparecer un mensaje de éxito después de crear el descuento.
+2. Presione el botón de **"Editar"** en el descuento.
 
 ![imagen9](/img/ventas/configuraciones-9.jpg)
 
 Le aparecerán las opciones de edición:
 
-3.Seleccione el termino de pago que aplica para el descuento.
-
-4.Para guardar los cambios presione “Actualizar Descuento”.
+3. Seleccione los **términos de pago** que aplican para el descuento (puede seleccionar múltiples).
+4. Seleccione los **ítems** específicos a los que aplica el descuento (puede seleccionar múltiples).
+5. Seleccione los **paquetes** (bundles) a los que aplica el descuento (puede seleccionar múltiples).
+6. Para guardar los cambios presione **"Actualizar Descuento"**.
 
 ![imagen10](/img/ventas/configuraciones-10.jpg)
 
-Le aparecerá un mensaje de éxito y ahora el descuento será aplicable al término de pago que especifico.
+Le aparecerá un mensaje de éxito y ahora el descuento será aplicable a los términos de pago, ítems y paquetes que especifico.
 
 ![imagen11](/img/ventas/configuraciones-11.jpg)
 
+**Nota**: Al actualizar un descuento, todas las asignaciones existentes de términos de pago, ítems y paquetes se eliminan y se recrean con las nuevas selecciones. Esto evita inconsistencias en las reglas de descuento.
+
+### Verificar Descuentos Asignados
+
 Para verificar que el termino de pago que especifico tenga el descuento que creo siga los siguientes pasos:
 
-1. Diríjase a  la pestaña de Términos de pago en las configuraciones de ventas.
-2. Verifique que en la columna de “Descuentos Permitidos” aparezca el descuento que coloco al termino de pago.
+1. Diríjase a la pestaña de **"Términos de pago"** en las configuraciones de ventas.
+2. Verifique que en la columna de **"Descuentos Permitidos"** aparezca el descuento que coloco al termino de pago.
 
 ![imagen12](/img/ventas/configuraciones-12.jpg)
+
+También puede ver los descuentos desde la vista de detalle de cada término de pago.
+
+### Eliminar un Descuento
+
+Para eliminar un descuento permanentemente:
+
+1. En la lista de descuentos, localice el que desea eliminar.
+2. Haga click sobre **"Destruirlo"**.
+
+A diferencia de otros elementos en Zauru, los descuentos se eliminan físicamente de la base de datos (hard delete).
 
 ---
 
 ## Métodos de Pago
 Los métodos de pago especifican de que forma pagara el cliente, en efectivo, con tarjeta o si se le dará crédito por ejemplo. Se especifica también que cuenta contable será afectada al momento del cobro de una orden o factura.
 
+### Listar Métodos de Pago
+
+Para consultar la lista de métodos de pago:
+
+1. Ir a **"Ventas"** > **"Configuraciones"**.
+2. Seleccionar la pestaña de **"Métodos de Pago"**.
+
+Los métodos de pago pueden filtrarse por estado:
+- **Activos**: Muestra solo los métodos de pago activos.
+- **Inactivos**: Muestra solo los inactivos.
+- **Todos**: Muestra todos sin filtrar.
+
+Al seleccionar un método de pago de la lista, se muestran sus detalles completos.
+
+### Crear un Nuevo Método de Pago
+
 La forma de configurar los métodos de pago es la siguiente:
 
 1. Ir a Métodos de pago en las configuraciones de ventas.
-2. Seleccionar “Nuevo Método de Pago”.
+2. Seleccionar "Nuevo Método de Pago".
 
 ![imagen13](/img/ventas/configuraciones-13.jpg)
 
 Le aparecerán las opciones para crear un nuevo Método de Pago, las opciones son las siguientes:
 
-1. Coloque el nombre del método de pago.
-2. Coloque hacía que cuenta se transferirá el pago cuando se cobre una factura con este método de pago.
-3. Seleccione otra cuenta a la que también se afectara cuando se cobre.
-4. Seleccione que porcentaje del pago se transferirá a esta segunda cuenta. Para 6.11% coloque 0.0611.
-5. Para guardar los cambios presione “Crear método de pago”.
+1. Coloque el **nombre** del método de pago.
+2. Coloque hacía que **cuenta principal** se transferirá el pago cuando se cobre una factura con este método de pago.
+3. Seleccione una **segunda cuenta** a la que también se afectara cuando se cobre (opcional).
+4. Seleccione que **porcentaje del pago** se transferirá a esta segunda cuenta (`account2_rate`). Para 6.11% coloque 0.0611.
+5. Coloque un **monto fijo** que se transferirá a la segunda cuenta (`account2_fixed_amount`) independientemente del porcentaje.
+6. Marque **Asiento contable imprimible** (`printable_entry`) si desea que la transacción contable del pago sea visible en los reportes de impresión.
+7. Marque **Evitar mostrar cambio en sobrepagos** (`avoid_overpay_showing_change`) para que cuando un cliente pague de más no se muestre el cambio en la interfaz.
+8. Marque **Comercio electrónico** (`ecommerce`) si este método de pago estará disponible para pagos en línea.
+9. Para guardar los cambios presione **"Crear método de pago"**.
 
 ![imagen14](/img/ventas/configuraciones-14.jpg)
 
@@ -144,47 +266,99 @@ Le deberá aparecer un mensaje de éxito en la pantalla y una columna en color v
 
 ![imagne15](/img/ventas/configuraciones-15.jpg)
 
+### Editar un Método de Pago
+
+Para editar un método de pago existente:
+
+1. En la lista de métodos de pago, localice el que desea modificar.
+2. Haga click sobre **"Editar"**.
+3. Realice los cambios necesarios.
+4. Presione **"Actualizar método de pago"**.
+
+### Eliminar un Método de Pago
+
+Para eliminar un método de pago:
+
+1. En la lista de métodos de pago, localice el que desea eliminar.
+2. Haga click sobre **"Destruirlo"**.
+
 ---
 
 ## Listados de Precios
-El listado de precios permite colocar precios de venta distintos para ciertas categorías. Por ejemplo, puede crear un listado de precios de distribuidor para que cuando se le facture a un distribuidor el precio sea mas bajo que el precio sugerido de venta.
+El listado de precios permite colocar precios de venta distintos para ciertas categorías de clientes o puntos de venta. Por ejemplo, puede crear un listado de precios de distribuidor para que cuando se le facture a un distribuidor el precio sea mas bajo que el precio sugerido de venta.
+
+### Listar Listados de Precios
+
+Para consultar la lista de listados de precios:
+
+1. Ir a **"Ventas"** > **"Configuraciones"**.
+2. Seleccionar la pestaña de **"Listado de Precios"**.
+
+Los listados de precios pueden filtrarse por estado:
+- **Activos**: Muestra solo los listados activos.
+- **Inactivos**: Muestra solo los inactivos.
+- **Todos**: Muestra todos sin filtrar.
+
+Al seleccionar un listado de precios de la lista, se muestran sus detalles.
+
+### Crear un Nuevo Listado de Precios
 
 Los pasos para crear un listado de precios son los siguientes:
 
-1. Ir a “ventas”.
-2. Seleccionar “Configuraciones”.
-3. Seleccionar la pestaña de “Listado de Precios”.
-4. Seleccionar “Nuevo Listado de Precio”.
+1. Ir a **"ventas"**.
+2. Seleccionar **"Configuraciones"**.
+3. Seleccionar la pestaña de **"Listado de Precios"**.
+4. Seleccionar **"Nuevo Listado de Precio"**.
 
 ![iamgen16](/img/ventas/configuraciones-16.jpg)
 
 Le aparecerá las opciones para crear un nuevo listado de precios, las opciones son las siguientes:
 
-1. Si selecciona la caja de “Activa”. el listado de precios estará disponible para usar en el sistema.
-2. Coloque el nombre del listado de precios.
-3. Coloque una descripción del listado de precios.
-4. Seleccione si el listado de precios es aplicable a una categoría de clientes en especifico.
-5. Seleccione si el listado de precios es aplicable a una agencia en especifico.
-6. Para guardar los cambios presione “Crear lista de precio”.
+1. Si selecciona la caja de **"Activa"**, el listado de precios estará disponible para usar en el sistema.
+2. Coloque el **nombre** del listado de precios.
+3. Coloque una **descripción** del listado de precios.
+4. Marque **Exclusivo para cliente** (`client_exclusive`) si este listado de precios aplica únicamente a categorías de clientes específicas (no a agencias).
+5. Marque **Comercio electrónico** (`ecommerce`) si este listado de precios estará disponible para ventas en línea.
+6. Para guardar los cambios presione **"Crear lista de precio"**.
 
 ![imagen17](/img/ventas/configuraciones-17.png)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo el listado de precios, ahora deberá editarlo para seleccionar la categoría que aplicara al listado de precios, refiérase al paso 1 de la imagen.
+Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo el listado de precios.
+
+### Editar un Listado de Precios
+
+Ahora deberá editar el listado de precios para seleccionar las categorías de clientes y las agencias que aplicaran. Los pasos para hacerlo son los siguientes:
+
+1. Presione el botón de **"Editar"** en el listado de precios que creo.
 
 ![imagen18](/img/ventas/configuraciones-18.jpg)
 
-Ahora deberá seleccionar que categoría de clientes aplicara a este listado de precios, los pasos para hacerlo son los siguientes:
+En la vista de edición podrá:
 
-1. Seleccione que categoría aplicara a este listado de precios.
-2. Para aplicar los cambios presione “Actualizar lista de precio”.
+1. Seleccionar que **categorías de clientes** aplicaran a este listado de precios. Se muestran dos listas:
+   - **Categorías seleccionadas**: Las que ya están asignadas a este listado.
+   - **Categorías libres**: Categorías de clientes que no están asignadas a ningún listado de precios.
+
+2. Seleccionar que **agencias/puntos de venta** aplicaran a este listado de precios. Se muestran dos listas:
+   - **Agencias seleccionadas**: Las que ya están asignadas a este listado.
+   - **Agencias libres**: Agencias activas no virtuales que no están asignadas a ningún listado de precios.
+
+3. Para aplicar los cambios presione **"Actualizar lista de precio"**.
 
 ![imagen19](/img/ventas/configuraciones-19.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla mostrándole la categoría agregada al listado de precios. Cada vez que se seleccione a un cliente que pertenezca a la categoría seleccionado, el precio será el que se coloque en el listado de precios.
+Le deberá aparecer un mensaje de éxito en la pantalla mostrándole la categoría y agencia agregadas al listado de precios. Cada vez que se seleccione a un cliente que pertenezca a la categoría asignada o se facture desde la agencia asignada, el precio será el que se coloque en el listado de precios.
 
 ![imagen20](/img/ventas/configuraciones-20.jpg)
 
-Ahora deberá colocar el precio a sus ítems en este listado de precios, los pasos para hacerlo se especificaran en la operación de Zauru.
+Ahora deberá colocar el precio a sus ítems en este listado de precios, los pasos para hacerlo se especifican en el tutorial de **"Precios Sugeridos"**.
+
+### Eliminar un Listado de Precios
+
+Para eliminar un listado de precios:
+
+1. En la lista de listados de precios, localice el que desea eliminar.
+2. Haga click sobre **"Destruirlo"**.
 
 ---
 
@@ -360,7 +534,9 @@ Las variables configurables incluyen:
 
 ## API (llamadas desde sistemas externos)
 
-### Lista de términos de pagos activos
+### Términos de Pago
+
+#### Lista de términos de pago activos
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -370,7 +546,52 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_terms/actives.json
 ```
 
-### Lista de métodos de pagos
+#### Ver detalle de un término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_terms/1.json
+```
+
+#### Crear nuevo término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payment_term": {
+      "name": "NET 30",
+      "active": "1",
+      "credit_days": "30",
+      "credit_percent": "100",
+      "account_from_id": "1",
+      "account_to_id": "2",
+      "applicable_to_uncategorized_payees": "1"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/payment_terms.json
+```
+
+#### Eliminar término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/settings/payment_terms/1.json
+```
+
+### Métodos de Pago
+
+#### Lista de métodos de pago
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -380,7 +601,17 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods.json
 ```
 
-### Crear nuevo método de pago
+#### Ver detalle de un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_methods/1.json
+```
+
+#### Crear nuevo método de pago
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -391,13 +622,127 @@ curl -v \
   -d '{
     "payment_method": {
       "name": "Método de pago Prueba",
+      "active": "1",
       "printable_entry": "1",
       "avoid_overpay_showing_change": "1",
+      "ecommerce": "0",
       "account_id": "1",
       "account2_id": "2",
       "account2_rate": "0.01",
       "account2_fixed_amount": "1.45"
     }
   }' \
-  https://app.zauru.com/settings/payment_methods.json
+  https://app.zauru.com/sales/settings/payment_methods.json
+```
+
+#### Eliminar método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/settings/payment_methods/1.json
+```
+
+### Listados de Precios
+
+#### Lista de listados de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/price_lists.json
+```
+
+#### Ver detalle de un listado de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/price_lists/1.json
+```
+
+#### Crear nuevo listado de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "price_list": {
+      "name": "Lista Distribuidor",
+      "active": "1",
+      "description": "Precios especiales para distribuidores",
+      "client_exclusive": "1",
+      "ecommerce": "0",
+      "payee_category_ids": ["1", "2"],
+      "agency_ids": ["1"]
+    }
+  }' \
+  https://app.zauru.com/sales/settings/price_lists.json
+```
+
+#### Eliminar listado de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/settings/price_lists/1.json
+```
+
+### Descuentos
+
+#### Lista de descuentos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/discounts.json
+```
+
+#### Crear nuevo descuento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "discount": {
+      "name": "Descuento 10%",
+      "active": "1",
+      "percent": "0.10",
+      "currency_id": "1",
+      "remove_decimals": "1",
+      "notes": "Descuento de temporada",
+      "payment_term_ids": ["1", "2"],
+      "item_ids": ["5", "10"]
+    }
+  }' \
+  https://app.zauru.com/sales/settings/discounts.json
+```
+
+#### Eliminar descuento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/settings/discounts/1.json
 ```

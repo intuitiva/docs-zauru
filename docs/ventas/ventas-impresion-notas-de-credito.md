@@ -1,7 +1,7 @@
 ---
 title: "Impresión Notas de Crédito"
 sidebar_label: "Impresión Notas de Crédito"
-sidebar_position: 15
+sidebar_position: 16
 ---
 
 Este tutorial fue realizado para mostrar los pasos a seguir, para la impresión de Notas de Crédito

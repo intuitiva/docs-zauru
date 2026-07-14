@@ -1,7 +1,7 @@
 ---
 title: "Reportes de Ventas"
 sidebar_label: "Reportes de Ventas"
-sidebar_position: 20
+sidebar_position: 21
 ---
 
 Este tutorial describe todos los reportes disponibles en el módulo de ventas de Zauru. Los reportes están organizados por categoría para facilitar su consulta.
@@ -385,6 +385,50 @@ Detecta facturas con números de factura duplicados.
 ### Facturas Mensuales por Ítem
 
 Reporte de facturas mensuales agrupadas por ítem.
+
+---
+
+## Reportes de Mis Clientes y Mis Facturas
+
+### Mis Clientes
+
+Reporte que muestra los clientes asignados al vendedor actual (usuario logueado), con información de ventas, facturación y estado de cuenta.
+
+### Ítem por Cliente con Alcance de Factura
+
+Similar al reporte "Ítem por Cliente" pero con un filtro adicional de alcance de factura (`invoice_scope`) que permite limitar la búsqueda a facturas de contado, crédito o todas.
+
+---
+
+## Reportes de Cheques
+
+### Reporte de Cheques
+
+Reporte operativo para la gestión y seguimiento de cheques recibidos como método de pago. Muestra los cheques pendientes de cobro y su estado.
+
+---
+
+## Reportes Detallados de Aging
+
+### Buckets de Aging Detallado
+
+Reporte de antigüedad de saldos que desglosa los montos pendientes en buckets de tiempo configurables. Permite filtrar por:
+- Punto de venta (agency).
+- Vendedor (seller).
+- Categoría de cliente.
+- Etiquetas de cliente.
+
+### Montos de Facturas en Aging Detallado
+
+Reporte complementario al bucket de aging que muestra los montos totales de facturas pendientes segmentados por antigüedad.
+
+### Subtotales en Aging Detallado
+
+Reporte de subtotales para el balance detallado de cuentas por cobrar, mostrando los totales agrupados por bucket de tiempo con subtotales por categoría.
+
+### Balance Detallado de Cuentas por Cobrar
+
+Hoja de balance detallada de cuentas por cobrar que puede exportarse a Excel con formato de balance. Incluye todas las facturas pendientes con sus respectivos montos, fechas de vencimiento y buckets de antigüedad.
 
 ---
 

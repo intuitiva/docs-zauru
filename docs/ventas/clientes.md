@@ -65,7 +65,24 @@ Los datos de la tarjeta (PAN, CVV) son enviados al gateway para tokenización y 
 
 ## Exportar Clientes
 
-Zauru permite exportar la lista de clientes a formato CSV o XLS desde la vista de listado de clientes.
+Zauru permite exportar la lista de clientes a formato CSV o XLS desde la vista de listado de clientes. La exportación incluye todos los campos relevantes del cliente y respeta los filtros de búsqueda y etiquetas aplicados en el momento de la exportación.
+
+## Filtrar Clientes por Etiquetas
+
+El listado de clientes incluye una nube de etiquetas (tag cloud) en la barra lateral que permite filtrar a los clientes por sus etiquetas asignadas. Al hacer click en una etiqueta, el listado se filtra para mostrar solo los clientes que tienen esa etiqueta. La opción "Sin categorizar" muestra los clientes que no tienen ninguna etiqueta asignada.
+
+## Ver Facturas de un Cliente
+
+En la página de detalles de un cliente puede consultar el historial completo de facturas asociadas.
+
+1. Ir a **"Ventas"** > **"Clientes"**.
+2. Hacer click sobre **"Verificar"** (El ojo) en el cliente deseado.
+
+En la página de detalles se muestra:
+
+- **Totales**: Monto total facturado, monto total ordenado y monto total pagado.
+- **Facturas**: Un listado paginado con todas las facturas del cliente, incluyendo número de factura, fecha, total, saldo pendiente y estado. El listado soporta búsqueda y ordenamiento por columnas.
+- **Formularios y envíos**: Información sobre formularios y envíos asociados al cliente.
 
 ## API (llamadas desde sistemas externos)
 
@@ -328,4 +345,23 @@ esto retornará un JSON como el siguiente:
     "web": null,
     "zid": 306
 }
+```
+### Exportar clientes a CSV
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/export.csv
+```
+
+### Exportar clientes a XLS
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/export.xls
 ```

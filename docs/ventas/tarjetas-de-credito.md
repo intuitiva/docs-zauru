@@ -1,7 +1,7 @@
 ---
 title: "Tarjetas de Crédito de Clientes"
 sidebar_label: "Tarjetas de Crédito"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Este tutorial está enfocado en como agregar, consultar y desactivar tarjetas de crédito para los clientes. Las tarjetas de crédito permiten a los clientes realizar pagos a través de una pasarela de pago configurada previamente.

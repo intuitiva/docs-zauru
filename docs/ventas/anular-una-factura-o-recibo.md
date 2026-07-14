@@ -1,7 +1,7 @@
 ---
 title: "Anular una factura o recibo (incluyendo el pago)"
 sidebar_label: "Anular una factura o recibo (incluyendo el pago)"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Este tutorial esta enfocado en la anulación de una factura y sus repercusiones. Solo se puede anular una factura no pagada, si la factura tiene un pago, __primero hay que anular el pago__, después anular la factura y esto hará que se revierta lo siguiente:

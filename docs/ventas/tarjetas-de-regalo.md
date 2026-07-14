@@ -1,7 +1,7 @@
 ---
 title: "Tarjetas de Regalo (Gift Cards)"
 sidebar_label: "Tarjetas de Regalo"
-sidebar_position: 12
+sidebar_position: 13
 ---
 
 Este tutorial está enfocado en la gestión de tarjetas de regalo (gift cards) en Zauru, incluyendo la configuración de tipos de tarjeta de regalo y la administración de las tarjetas emitidas.

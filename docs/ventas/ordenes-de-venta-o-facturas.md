@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de Venta y Facturas"
 sidebar_label: "Ordenes de Venta y Facturas"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Este tutorial esta enfocado en explicar las diferencias entre una orden de venta y una factura; y entender cuando usar cada una de ellas.
@@ -216,12 +216,49 @@ Esto marcará la orden como regalo y se reflejará en la factura resultante.
 
 Puede exportar todas las órdenes de venta abiertas a formato XLS desde el listado de órdenes usando la opción de exportación.
 
+### Exportación Consolidada de Órdenes
+
+Además de la exportación estándar, Zauru permite generar una exportación consolidada de órdenes de venta en formato XLS desde la vista de órdenes. Esta exportación agrupa las órdenes por criterios específicos y es útil para análisis y reportes operativos.
+
 ### Consultar Órdenes Anuladas
 
 Para consultar el historial de órdenes anuladas:
 
 1. Ir a **"Ventas"** > **"Órdenes"**.
 2. Seleccionar **"Órdenes Anuladas"**.
+
+## Gestión Avanzada de Facturas
+
+### Importar Facturas no Pagadas
+
+Zauru permite importar facturas no pagadas desde un archivo externo (CSV, XLS o XLSX) hacia el sistema. Esta funcionalidad es útil para migraciones de datos desde otros sistemas. Para más detalles, consulte el tutorial de **"Importar Facturas no Pagadas"**.
+
+Para acceder a la importación:
+
+1. Ir a **"Ventas"** > **"Facturas no Pagadas"**.
+2. Seleccionar **"Importar"**.
+
+### Emisión Rápida de Factura
+
+Desde una orden de venta, puede emitir la factura rápidamente usando la opción **"Emisión Rápida"** (`issue_fast`). Esta opción genera la factura inmediatamente utilizando la fecha del día actual, sin necesidad de pasar por el formulario de creación de factura.
+
+### Consultar Respuesta Certificada de Almacenamiento Externo (FEL)
+
+Para facturas electrónicas emitidas con almacenamiento externo (FEL), Zauru permite consultar la respuesta certificada del servicio de almacenamiento:
+
+1. Ir a la página de detalles de la factura.
+2. Seleccionar la opción de **"Respuesta Certificada"** (`external_storage_certified_response`).
+
+La respuesta se mostrará en formato XML o JSON dependiendo del país de configuración. En Guatemala se utiliza el formato XML estándar de la SAT.
+
+### Consultar Respuesta Certificada para Anulación
+
+De manera similar, para facturas electrónicas anuladas, puede consultar la respuesta certificada de anulación:
+
+1. Ir a la página de detalles de la factura anulada.
+2. Seleccionar la opción de **"Respuesta Certificada de Anulación"** (`external_storage_certified_response_for_voiding`).
+
+Esta funcionalidad también está disponible para notas de crédito electrónicas, tanto para su emisión como para su anulación.
 
 ## API (llamadas desde sistemas externos)
 
@@ -349,4 +386,75 @@ Esto devolverá un JSON similar a este
     }
   ]
 }
+```
+### editar metadata de una factura (shallow update)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "invoice": {
+      "id": "1",
+      "invoice_number": "SERIE A - 456",
+      "reference": "Referencia actualizada",
+      "date": "2024-01-15",
+      "seller_id": "1",
+      "memo": "Nota actualizada desde API"
+    }
+  }' \
+  https://app.zauru.com/sales/unpaid_invoice/1/shallow_update.json
+```
+
+### Emitir factura desde orden (fast issue)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1/issue_fast.json
+```
+
+### Exportar órdenes de venta a Excel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/export.xls
+```
+
+### Exportar facturas no pagadas a Excel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/export.xls
+```
+
+### Consultar respuesta certificada de almacenamiento externo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/external_storage_certified_response/1.json
+```
+
+### Anular factura no pagada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/unpaid_invoices/1.json
 ```
