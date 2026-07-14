@@ -30,3 +30,24 @@ Presione “Crear pago”.
 Le aparecerá un mensaje notificando que el cobro fue creado exitosamente. Este cobro pasara a un listado de cobros sin confirmar, la factura seguirá siendo una factura no pagada hasta que usted confirme el pago.
 
 ![imagen3](/img/punto-de-venta/cobrar-caso-3.jpg)
+
+## Confirmar el pago de un caso
+
+Para que el pago se registre definitivamente y la factura del caso se marque como pagada:
+
+1. Ir a "P.D.V."
+2. Seleccionar "Cobros".
+3. Localizar el cobro del caso en el listado de cobros sin confirmar.
+4. Presionar el boton de "Confirmar".
+
+El pago se confirmara y la factura asociada al caso se marcara como pagada.
+
+## Anular un cobro de caso
+
+Si necesita anular un cobro de caso no confirmado:
+
+1. En el listado de cobros, localice el cobro del caso.
+2. Presione el boton de "Anular".
+3. Confirme la anulacion.
+
+El cobro sera anulado y la factura del caso volvera a aparecer como no pagada.

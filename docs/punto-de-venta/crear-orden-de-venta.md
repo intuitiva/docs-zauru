@@ -38,6 +38,73 @@ Es importante mencionar que al crear la orden aun nos va a permitir editarla par
 
 ![imagen3](/img/punto-de-venta/crear-orden-de-venta-3.png)
 
+## Listado de ordenes de venta
+
+Para ver todas las ordenes de venta pendientes:
+
+1. Ir a "P.D.V."
+2. Seleccionar "Ordenes".
+
+Le aparecera un listado con todas las ordenes de venta que cumplen las siguientes condiciones:
+- No han sido emitidas como factura
+- No estan pagadas
+- No estan anuladas
+- Pertenecen a la agencia del usuario
+
+Puede filtrar por:
+
+a. **Etiquetas (Tags)**: Filtre las ordenes por etiquetas asignadas.
+
+Desde el listado usted podra:
+
+a. **Ver detalle**: Haga click sobre una orden para ver sus productos, precios y otros detalles.
+
+b. **Editar**: Modifique la orden para agregar o quitar productos. Vea la seccion "Editar una orden de venta".
+
+c. **Emitir factura**: Convierta la orden en una factura. Vea el tutorial "Crear factura".
+
+d. **Imprimir**: Imprima la orden utilizando las plantillas configuradas.
+
+e. **Anular**: Anule la orden si ya no es necesaria.
+
+f. **Cobrar**: Si la orden ya fue emitida como factura, podra registrarel cobro.
+
+## Editar una orden de venta
+
+Para modificar una orden existente que aun no ha sido emitida como factura:
+
+1. En el listado de ordenes, localice la orden que desea modificar.
+2. Seleccione el icono de "Editar".
+3. Podra modificar los siguientes campos:
+
+a. **Referencia**: Actualice la referencia de la orden.
+
+b. **Cliente**: Cambie el cliente asociado a la orden.
+
+c. **Vendedor**: Cambie el vendedor asignado.
+
+d. **Productos**: Agregue o quite productos, modifique cantidades y precios.
+
+e. **Sujeto a impuestos**: Cambie si la orden genera factura o recibo.
+
+f. **Descuento**: Aplique un descuento global a la orden.
+
+g. **Etiquetas**: Asigne o modifique etiquetas.
+
+4. Presione "Guardar" para actualizar la orden.
+
+**Nota**: Si la orden ya fue emitida como factura, no podra ser editada.
+
+## Anular una orden de venta
+
+Para anular una orden:
+
+1. En el listado de ordenes, localice la orden a anular.
+2. Presione el boton de "Anular".
+3. Confirme la anulacion.
+
+**Importante**: No podra anular una orden que tenga envios en transito asociados. La orden sera anulada y los productos reservados seran devueltos al inventario.
+
 ## API (llamadas desde sistemas externos)
 
 ### Solicitar items con existencias y precios y paquetes con existencias y precios en la bodega asignada al usuario

@@ -5,6 +5,7 @@ sidebar_position: 1
 ---
 
 Para que Zauru se pueda conectar a cualquier e-commerce debemos configurar algunas cosas para que la comunicación fluya sin problemas entre los 2 sistemas.
+
 ## Habilitar el módulo de e-commerce
 Este paso es solicitarlo a su distribuidor de Zauru porque puede incurrir en costos adicionales.
 
@@ -32,5 +33,19 @@ Usualmente las tiendas en linea mantienen un registro de existencias, para eso d
 Además de mostrar de donde se obtendrá el producto para la tienda en linea, al momento de colocar un pedido de la tienda en linea, se obtendrán los productos de todas esas tiendas para consolidarlo y poder crear la factura.
 
 ## Configuraciones del módulo e-commerce
-La configuración del módulo e-commerce es muy sencilla y ayuda a la automatización del módulo. Prácticamente hay que llenar estos campos que estan muy bien descritos:
+
+La configuración del módulo e-commerce permite automatizar el procesamiento de los pedidos entrantes. Para una explicación detallada de cada campo de configuración, consultar el manual de [configuración avanzada del módulo de e-commerce](/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce).
+
 ![configuración e-commerce](/img/e-commerce/preparacion-de-zauru-para-conectarlo-a-cualquier-tienda-en-linea-1.png)
+
+Los campos principales que se configuran en esta sección son:
+
+1. **Método de pago predeterminado** — El método de pago que se asignará automáticamente a los pagos generados desde pedidos de e-commerce.
+2. **Plazo de pago predeterminado** — El plazo de pago que se asignará a las órdenes de venta generadas.
+3. **Bodega de despacho predeterminada** — La bodega desde donde se consolidarán y despacharán los pedidos.
+4. **Vendedor predeterminado** — El vendedor asignado a las órdenes de venta generadas.
+5. **Forzar que los pedidos requieran envío** — Si se activa, todos los pedidos requerirán envío entre bodegas.
+6. **Permitir pagos sin confirmar** — Si se activa, se registrarán pagos aunque no estén confirmados.
+7. **Usuario de e-commerce** — El usuario asignado para procesar las solicitudes de e-commerce.
+8. **URL de producción** — La URL de la tienda en línea en producción.
+9. **URL de pruebas** — La URL de la tienda en línea en pruebas.

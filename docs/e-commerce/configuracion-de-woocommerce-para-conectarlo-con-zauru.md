@@ -1,7 +1,7 @@
 ---
 title: "Configuración de WooCommerce para conectarlo con Zauru"
 sidebar_label: "Configuración de WooCommerce para conectarlo con Zauru"
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 Para tener una tienda en linea la plataforma de preferencia en el mundo para el 2020 es [woocommerce](https://woocommerce.com) (un plugin de Wordpress).

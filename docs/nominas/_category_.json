@@ -1,0 +1,13 @@
+{
+  "position": 11,
+  "label": "Nominas",
+  "link": {
+    "type": "doc",
+    "id": "nominas/index"
+  },
+  "collapsible": true,
+  "collapsed": true,
+  "customProps": {
+    "icon": "users"
+  }
+}
