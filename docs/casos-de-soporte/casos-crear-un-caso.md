@@ -1,80 +1,105 @@
 ---
 title: "Crear un Caso"
 sidebar_label: "Crear un Caso"
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-Este tutorial esta enfocado en la creación de un caso en el modulo de Soporte.
+Este tutorial esta enfocado en la creacion y edicion de un caso en el modulo de Soporte.
 
 Los pasos para crear un nuevo caso son los siguientes:
 
-1. Ir a “Soporte”.
-2. Seleccionar “Casos Abiertos”.
-3. Seleccionar “Nuevo Caso”.
+1. Ir a **"Soporte"**.
+2. Seleccionar **"Casos Abiertos"**.
+3. Seleccionar **"Nuevo Caso"**.
 
 ![imagen1](/img/casos-de-soporte/casos-crear-un-caso-1.jpg)
 
 
-Le aparecerán las opciones para crear un nuevo caso, los campos que debe llenar son los siguientes:
+Le apareceran las opciones para crear un nuevo caso, los campos que debe llenar son los siguientes:
 
-a. Coloque una breve referencia sobre el caso que esta creando.
+a. Coloque una breve **referencia** sobre el caso que esta creando.
 
-b. Si necesita registrar un numero de serie, colóquelo aquí.
+b. Si necesita registrar un **numero de serie**, coloquelo aqui. Para que le aparezcan los numeros de serie disponibles, primero debe seleccionar el cliente y luego **refrescar** la pantalla.
 
-c. Coloque si el caso es por garantía o por cortesía. La diferencia entre Garantía y Cortesía es que.
+c. Coloque si el caso es por **garantia** o por **cortesia**. La diferencia entre Garantia y Cortesia es que la garantia cubre los costos de reparacion o reemplazo por defectos de fabrica, mientras que la cortesia es una atencion gratuita por decision comercial. Si el caso no es ni garantia ni cortesia, se generara una **factura automatica** al crear el caso.
 
-d. Coloque la fecha en que se emite el caso.
+d. Si el caso es **critico**, marque la casilla correspondiente para priorizarlo en el listado.
 
-e. Coloque la fecha esperada de cierre.
+e. Coloque la **fecha** en que se emite el caso.
 
-f. Coloque el método de contacto al cliente.
+f. Coloque la **fecha esperada de cierre**.
 
-g. Coloque el nombre del cliente existente o agregue uno nuevo.
+g. Coloque el **metodo de contacto** al cliente (telefono, correo, presencial, etc.).
 
-h. Seleccione el término de pago acordado con el cliente.
+h. Coloque el nombre del **cliente** existente o agregue uno nuevo.
 
-i. Coloque el síntoma por el cual se esta creando el caso.
+i. Seleccione el **termino de pago** acordado con el cliente. Los terminos disponibles dependen de la categoria del cliente seleccionado.
 
-j. Coloque la prioridad del caso, esto solo servirá de referencia.
+j. Coloque el **sintoma** por el cual se esta creando el caso.
 
-k. Coloque al responsable por atender el caso.
+k. Coloque la **prioridad** del caso, esto solo servira de referencia.
 
-l. Coloque quien vendió el producto o servicio.
+l. Coloque al **responsable** por atender el caso. Solo apareceran empleados marcados como agentes de soporte.
 
-m. Coloque el punto de soporte en donde será atendido el caso.
+m. Coloque **quien vendio** el producto o servicio.
 
-n. En este campo debe colocar el producto que ingresara para ser atendido o el servicio que se dará al cliente.
+n. Coloque el **punto de soporte** (agencia/taller) en donde sera atendido el caso.
 
-o. Seleccione “Crear Caso”.
+o. Si el caso esta relacionado a un **contrato**, seleccionelo del listado.
+
+p. **Etiquetas (Tags)**: Puede asignar una o varias etiquetas al caso para categorizarlo y facilitar su busqueda posterior.
+
+q. **Contrato**: Si el cliente tiene un contrato activo, puede asociar el caso a dicho contrato.
+
+r. En los **Detalles** del caso debe colocar el producto o servicio que se dara al cliente, la cantidad y el precio unitario. Para agregar otra linea presione "+". Tambien puede:
+   - Agregar paquetes (bundles) seleccionando un item cuyo codigo empiece con "b".
+   - Asignar un numero de serie o lote especifico al suministro.
+   - Colocar una referencia por linea de suministro.
+
+s. **Descuentos**: Puede aplicar un descuento general a toda la factura del caso y/o descuentos por linea de suministro. Los descuentos disponibles dependen de la categoria del cliente.
+
+t. **Horas de Agentes de Soporte**: Puede registrar las horas estimadas de trabajo para cada agente de soporte en tres categorias:
+   - Horas ordinarias
+   - Horas extraordinarias diurnas
+   - Horas extraordinarias nocturnas
+
+u. Seleccione **"Crear Caso"**.
 
 ![imagen2](/img/casos-de-soporte/casos-crear-un-caso-2.png)
 
 
 
-Le aparecerá un mensaje de éxito en la pantalla. Aun puede actualizar el caso antes de cerrarlo.
+Le aparecera un mensaje de exito en la pantalla. Aun puede actualizar el caso antes de cerrarlo.
 
-Presione “Editar” (Lapiz) para colocar mas información sobre el caso atendido.
+Presione **"Editar"** (Lapiz) para colocar mas informacion sobre el caso atendido.
 
 ![imagen3](/img/casos-de-soporte/casos-crear-un-caso-3.jpg)
 
 
 
-Le aparecerán las opciones para editar el caso con nuevos campos para llenar. Los campos que puede llenar son:
+Le apareceran las opciones para editar el caso con nuevos campos para llenar. Los campos que puede llenar son:
 
-a. Coloque el diagnóstico referente al caso que se recibió.
+a. Coloque el **diagnostico** referente al caso que se recibio.
 
-b. Coloque la solución que se le dio al caso.
+b. Coloque la **solucion** que se le dio al caso.
 
-c. Coloque si se deberá dar un reembolso o reemplazo de la mercadería.
+c. Coloque si se debera dar un **reembolso** o **reemplazo** de la mercaderia.
 
+d. Puede agregar o quitar **suministros**, modificar cantidades, precios y referencias.
 
-Por ultimo presione “Actualizar Caso”.
+e. Actualice las **horas de agentes** realmente trabajadas.
+
+f. Agregue o modifique **etiquetas**.
+
+g. Puede agregar una **imagen** relacionada al caso.
+
+Por ultimo presione **"Actualizar Caso"**.
 
 ![imagen4](/img/casos-de-soporte/casos-crear-un-caso-4.png)
 
 
 
-Le aparecerá un mensaje de éxito en la pantalla notificándole que el caso fue actualizado exitosamente.
+Le aparecera un mensaje de exito en la pantalla notificandole que el caso fue actualizado exitosamente.
 
 ![imagen5](/img/casos-de-soporte/casos-crear-un-caso-5.jpg)
 
@@ -106,10 +131,10 @@ curl -v \
 ```
 `length` es cuantos casos desea mostrar
 `order["0"]["column"]` es por que columna quiero ordenar
-`order["0"]["dir"]` es la dirección del orden en la columna seleccionada
+`order["0"]["dir"]` es la direccion del orden en la columna seleccionada
 `search["value"]` es el filtro que vamos a usar en los resultados
 
-esto devolvería un JSON similar a este:
+esto devolveria un JSON similar a este:
 ```json
 {
   "draw":0,
@@ -122,10 +147,10 @@ esto devolvería un JSON similar a este:
       "ref":"referencia",
       "dte":"07 de ene de 2019",
       "srl":"# de serie",
-      "sym":"síntoma observado",
+      "sym":"sintoma observado",
       "res":"responsable@zauru.com",
       "cli":"<a href=\"/sales/clients/1\">Cliente con Queja</a>",
-      "ra":"<a href=\"/support/cases/1\" title=\"Detalles\"><i class=\"fa fa-eye\"></i></a><a href=\"/support/cases/1/edit\" title=\"Editar\"><i class=\"fa fa-edit\"></i></a><a href=\"/support/cases/1?destroy=true\" data-confirm=\"\u00bfEst\u00e1 seguro de destruirlo?\" data-method=\"delete\" rel=\"nofollow\" title=\"Destruirlo\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra":"<a href=\"/support/cases/1\" title=\"Detalles\"><i class=\"fa fa-eye\"></i></a><a href=\"/support/cases/1/edit\" title=\"Editar\"><i class=\"fa fa-edit\"></i></a><a href=\"/support/cases/1?destroy=true\" data-confirm=\"\u00bfEsta seguro de destruirlo?\" data-method=\"delete\" rel=\"nofollow\" title=\"Destruirlo\"><i class=\"fa fa-trash-o\"></i></a>",
       "ra2":"<a href=\"/support/cases/1/close\" title=\"Cerrar Caso\"><i class=\"fa fa-check-square-o\"></i></a>",
       "DT_RowId":"support-case-1"
     },
@@ -144,7 +169,7 @@ curl -v \
   https://app.zauru.com/support/cases/new.json
 ```
 
-esto devolvería un JSON similar a este:
+esto devolveria un JSON similar a este:
 
 ```json
 {
@@ -288,7 +313,7 @@ curl -v \
       "contact_method_id": "33",
       "date": "2018-12-24T16:23:46.620891Z",
       "closing_expected_at": "2018-12-24T16:24:02.000006914Z",
-      "symptom": "el síntoma por el cual se abrió el caso originalmente",
+      "symptom": "el sintoma por el cual se abrio el caso originalmente",
       "case_supplies_attributes": {
         "1": {
           "item_id": "243",
@@ -296,7 +321,17 @@ curl -v \
           "quantity": "2",
           "reference": "referencia de porque se necesita este insumo para resolver el caso"
         }
-      }
+      },
+      "case_support_agents_hours_attributes": {
+        "1": {
+          "employee_id": "5",
+          "ordinary_hours": "2",
+          "daytime_extraordinary_hours": "0",
+          "nighttime_extraordinary_hours": "0",
+          "reference": "Horas estimadas de trabajo"
+        }
+      },
+      "tag_ids": ["1", "3"]
     }
   }' \
   https://app.zauru.com/support/cases.json
@@ -304,7 +339,7 @@ curl -v \
 
 ### obtener detalles de un caso
 
-Este API nos permitiría obtener la información del caso y además las facturas asociadas y las ordenes de compra asociadas
+Este API nos permitiria obtener la informacion del caso y ademas las facturas asociadas y las ordenes de compra asociadas
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -335,5 +370,24 @@ curl -v \
       }
     }
   }' \
-  https://app.zauru.com/pos/cases/1.json
+  https://app.zauru.com/support/cases/1.json
+```
+
+### editar un caso (agregando diagnostico, solucion y reembolso)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "case": {
+      "diagnosis": "El producto presentaba una falla en la fuente de poder",
+      "solution": "Se reemplazo la fuente de poder por una nueva",
+      "refund": "false",
+      "replace": "false"
+    }
+  }' \
+  https://app.zauru.com/support/cases/1.json
 ```

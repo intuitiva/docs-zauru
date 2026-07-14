@@ -85,6 +85,19 @@ Cada vez que haga una compra podrá seleccionar este nuevo método de pago.
 
 ![imagen9](/img/compras/configuracion-9.jpg)
 
+## Variables de Configuración del Módulo
+
+Ademas de los terminos de pago, tipos de cargos y metodos de pago, Zauru tambien le permite configurar variables avanzadas que controlan el comportamiento del modulo de Compras a nivel de entidad. Estas variables incluyen:
+
+- Cuentas contables para impuestos adicionales en las compras.
+- Configuracion de webhooks para notificaciones de ordenes de compra.
+- Controles de visibilidad en los formularios (etiquetas, centros de costo, agencias).
+- Flujo de autorizacion de pagos.
+- Separacion del numero de factura en serie y correlativo.
+- Comportamiento de las recepciones y partidas contables.
+
+Para ver la lista completa de variables y su configuracion, consulte el tutorial de "Configuracion de Variables del Modulo de Compras".
+
 ## API (llamadas desde sistemas externos)
 
 ### listado de métodos de pago

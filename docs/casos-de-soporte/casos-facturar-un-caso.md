@@ -1,7 +1,7 @@
 ---
 title: "Facturar un Caso"
 sidebar_label: "Facturar un Caso"
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 Este tutorial esta enfocado en la facturación de un caso para cobrarle al cliente por el servicio prestado.

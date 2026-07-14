@@ -4,4 +4,4 @@ sidebar_label: "Compras"
 sidebar_position: 0
 ---
 
-En el módulo de ordenes de compra (importaciones o local) con cálculo automático de costos. Pagos a proveedores y cuentas por pagar.
+En el modulo de compras puede gestionar todo el ciclo de adquisiciones: desde requisiciones de compra, ordenes de compra (locales e importaciones), consolidados, recepciones, cargos adicionales, aranceles, pagos a proveedores, calculo automatico de costos, facturas especiales, notas de credito y reportes detallados de inventario y cuentas por pagar.
