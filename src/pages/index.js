@@ -26,7 +26,7 @@ const GROUPS = [
       { href: "/punto-de-venta", title: "Punto de Venta", icon: "bullseye" },
       { href: "/contratos", title: "Contratos", icon: "arrows-rotate" },
       { href: "/nominas", title: "Nominas", icon: "users" },
-      { href: "/produccion", title: "Produccion", icon: "industry" },
+      { href: "/produccion", title: "Produccion", icon: "gears" },
       { href: "/e-commerce", title: "E-commerce", icon: "credit-card" },
       { href: "/crm", title: "CRM", icon: "trophy" },
       { href: "/webapps", title: "Webapps", icon: "code" },

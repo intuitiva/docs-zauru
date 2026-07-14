@@ -103,3 +103,69 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/bill_of_materials/new.json
 ```
+
+### Crear una lista de materiales
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "production_bill_of_material": {
+      "item_id": 1,
+      "default_agency_id": 1,
+      "description": "Lista de materiales para producto X",
+      "expected_duration_in_seconds": 3600,
+      "bill_of_material_details_attributes": [
+        {
+          "item_id": 2,
+          "quantity": 3,
+          "description": "Materia prima A"
+        },
+        {
+          "item_id": 3,
+          "quantity": 1.5,
+          "description": "Materia prima B"
+        }
+      ],
+      "bill_of_material_subproducts_attributes": [
+        {
+          "item_id": 4,
+          "expected_quantity": 0.5,
+          "reference": "Subproducto Y"
+        }
+      ]
+    }
+  }' \
+  https://app.zauru.com/production/bill_of_materials.json
+```
+
+Los campos disponibles para crear una lista de materiales son:
+
+| Campo | Tipo | Descripción |
+| --- | --- | --- |
+| `item_id` | entero | ID del item manufacturable que se va a fabricar. |
+| `default_agency_id` | entero | ID de la bodega donde se recibira el producto terminado. |
+| `description` | texto | Descripcion de la lista de materiales. |
+| `expected_duration_in_seconds` | entero | Duracion estimada del proceso de produccion en segundos. |
+| `active` | booleano | Indica si la lista de materiales esta activa. |
+
+Para las materias primas (`bill_of_material_details_attributes`):
+
+| Campo | Tipo | Descripción |
+| --- | --- | --- |
+| `item_id` | entero | ID del item de inventario que se consumira como materia prima. |
+| `quantity` | decimal | Cantidad requerida por unidad de producto terminado. |
+| `description` | texto | Descripcion del detalle. |
+| `_destroy` | booleano | Marcar como `true` para eliminar el detalle (solo al editar). |
+
+Para los subproductos (`bill_of_material_subproducts_attributes`):
+
+| Campo | Tipo | Descripción |
+| --- | --- | --- |
+| `item_id` | entero | ID del item que se generara como subproducto. |
+| `expected_quantity` | decimal | Cantidad esperada por unidad de producto terminado. |
+| `reference` | texto | Referencia del subproducto. |
+| `_destroy` | booleano | Marcar como `true` para eliminar el subproducto (solo al editar). |
