@@ -84,7 +84,7 @@ El sistema le pedira confirmacion. Una vez cerrado, el caso no podra ser editado
 
 ### Crear caso
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
