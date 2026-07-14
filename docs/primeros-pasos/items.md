@@ -187,6 +187,7 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/items/1.json
 ```
+
 Nota: Solo se puede eliminar el item si no tiene # de serie, lotes, aparece a un envío, aparece a un paquete, aparece a una factura, aparece en una orden de compra o está seleccionado en algún descuentos de items.
 
 ### listado de categorías de items

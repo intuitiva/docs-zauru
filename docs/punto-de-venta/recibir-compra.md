@@ -59,7 +59,7 @@ Si no se recibe la cantidad total comprada, la orden de compra permanecera como 
 
 ### Listar ordenes de compra pendientes de recepcion
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

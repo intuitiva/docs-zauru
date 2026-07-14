@@ -22,25 +22,30 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "taxable":{
-    "type":"boolean",
-    "required":true,
-    "default":true},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
-  "infinite":{
-    "type":"boolean",
-    "required":true,
-    "default":false},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "taxable": {
+    "type": "boolean",
+    "required": true,
+    "default": true
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
+  "infinite": {
+    "type": "boolean",
+    "required": true,
+    "default": false
+  },
   ...
 }
 ```
+
 ### Ordenes de Compra
 ```bash
 curl -v \
@@ -54,21 +59,25 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "taxable":{
-    "type":"boolean",
-    "required":true,
-    "default":true},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "taxable": {
+    "type": "boolean",
+    "required": true,
+    "default": true
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
   ...
 }
 ```
+
 ### Facturas
 ```bash
 curl -v \
@@ -82,21 +91,25 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "taxable":{
-    "type":"boolean",
-    "required":true,
-    "default":true},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "taxable": {
+    "type": "boolean",
+    "required": true,
+    "default": true
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
   ...
 }
 ```
+
 ### Envíos
 ```bash
 curl -v \
@@ -110,17 +123,20 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
   ...
 }
 ```
+
 ### Transacciones
 ```bash
 curl -v \
@@ -134,17 +150,20 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
   ...
 }
 ```
+
 ### Casos
 ```bash
 curl -v \
@@ -158,14 +177,16 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "reference":{
-    "type":"string",
-    "required":false,
-    "default":null},
-  "payee_id":{
-    "type":"integer",
-    "required":true,
-    "default":null},
+  "reference": {
+    "type": "string",
+    "required": false,
+    "default": null
+  },
+  "payee_id": {
+    "type": "integer",
+    "required": true,
+    "default": null
+  },
   ...
 }
 ```

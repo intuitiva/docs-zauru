@@ -118,6 +118,7 @@ esto me retornará un JSON como el siguiente:
     ...
   ]
 ```
+
 En donde el primer campo es el ID único de Zauru, el 2do es el NIT (opcional), el tercero es el nombre, el cuarto la dirección y el quinto el correo.
 
 ### Crear cliente
@@ -139,6 +140,7 @@ curl -v \
   }' \
   https://app.zauru.com/sales/clients.json
 ```
+
 esto me retornará un JSON como el siguiente:
 
 ```json
@@ -198,6 +200,7 @@ esto me retornará un JSON como el siguiente:
     "zid": 1
 }
 ```
+
 ### Editar cliente
 ```bash
 curl -v \
@@ -218,6 +221,7 @@ curl -v \
   }' \
   https://app.zauru.com/sales/client/1.json
 ```
+
 esto me retornará un JSON como el siguiente:
 
 ```json
@@ -277,6 +281,7 @@ esto me retornará un JSON como el siguiente:
     "zid": 1
 }
 ```
+
 ### Obtener detalles del cliente
 ```bash
 curl -v \
@@ -346,6 +351,7 @@ esto retornará un JSON como el siguiente:
     "zid": 306
 }
 ```
+
 ### Exportar clientes a CSV
 ```bash
 curl -v \

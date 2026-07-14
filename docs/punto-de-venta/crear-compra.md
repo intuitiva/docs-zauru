@@ -81,7 +81,7 @@ Para registrar el pago a un proveedor:
 
 ### Listar ordenes de compra pendientes de pago
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

@@ -82,7 +82,7 @@ Cuando el envio llega a su destino, debe ser entregado para que los productos in
 
 ### Listar reservas
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

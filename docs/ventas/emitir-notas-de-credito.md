@@ -165,6 +165,7 @@ esto retornará algo similar a esto:
     }
 ]
 ```
+
 ### Listar las notas de crédito anuladas
 ```bash
 curl -v \

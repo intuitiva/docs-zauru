@@ -116,6 +116,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/agencies.json
 ```
+
 Esto generará un JSON similar a este:
 ```json
 [
@@ -148,6 +149,7 @@ Esto generará un JSON similar a este:
   ...
 ]
 ```
+
 #### Obtener detalles de la agencia
 ```bash
 curl -v \
@@ -157,6 +159,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/agencies/1.json
 ```
+
 #### Crear agencia
 ```bash
 curl -v \

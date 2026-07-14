@@ -129,6 +129,7 @@ curl -v \
   }' \
   https://app.zauru.com/support/cases/datatables.json
 ```
+
 `length` es cuantos casos desea mostrar
 `order["0"]["column"]` es por que columna quiero ordenar
 `order["0"]["dir"]` es la direccion del orden en la columna seleccionada

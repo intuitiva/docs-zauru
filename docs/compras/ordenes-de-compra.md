@@ -135,6 +135,7 @@ curl -v \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/new.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {
@@ -217,6 +218,7 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/purchase_orders.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {
@@ -276,6 +278,7 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/purchase_orders.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {
@@ -312,6 +315,7 @@ curl -v \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/1.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {
@@ -373,6 +377,7 @@ curl -v \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/1/edit.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {
@@ -457,6 +462,7 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/purchase_orders/1.json
 ```
+
 Esta llamada devolverá un JSON similar a este:
 ```json
 {

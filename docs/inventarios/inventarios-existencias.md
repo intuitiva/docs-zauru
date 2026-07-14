@@ -50,6 +50,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/stocks.json?warehouse=1
 ```
+
 Esto devolverá un JSON similar a este:
 ```json
 [
@@ -79,6 +80,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/stocks/1/item.json
 ```
+
 Esto devolverá un JSON similar a este:
 ```json
 {

@@ -68,7 +68,7 @@ d. **Imprimir**: Acceso a las plantillas de impresion configuradas para ese esta
 
 ### Listar envios en transito
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

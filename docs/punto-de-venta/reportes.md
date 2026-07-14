@@ -117,7 +117,7 @@ Reporte que muestra cuantos productos se vendieron, a que precio promedio y el t
 
 ### Cierre diario
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
@@ -128,7 +128,7 @@ curl -v \
 
 ### Mis facturas del mes
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
@@ -139,7 +139,7 @@ curl -v \
 
 ### Ventas mensuales por vendedor y categoria de cliente
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

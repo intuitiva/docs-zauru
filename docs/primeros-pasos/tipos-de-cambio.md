@@ -40,6 +40,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/exchange_rates.json
 ```
+
 Y esto me va a devolver un JSON con las siguientes características:
 
 ```json

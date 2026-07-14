@@ -73,7 +73,7 @@ Para modificar una solicitud existente:
 
 ### Listar solicitudes de traslado
 
-**bash**
+```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \

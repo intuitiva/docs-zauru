@@ -52,6 +52,7 @@ curl -v \
   -X GET \
   https://app.zauru.com/sales/payments/new_advance.json?client=1
 ```
+
 Y esto me va a devolver un JSON con las siguientes características:
 
 ```json
@@ -84,6 +85,7 @@ Y esto me va a devolver un JSON con las siguientes características:
   ]
 }
 ```
+
 ### Pagar parcialmente o totalmente una o varias ordenes
 ```bash
 curl -v \

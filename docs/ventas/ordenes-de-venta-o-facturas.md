@@ -360,6 +360,7 @@ curl -v \
   }' \
   https://app.zauru.com/sales/unpaid_invoices.json
 ```
+
 Esto devolverá un JSON similar a este
 ```json
 {
@@ -387,6 +388,7 @@ Esto devolverá un JSON similar a este
   ]
 }
 ```
+
 ### editar metadata de una factura (shallow update)
 ```bash
 curl -v \

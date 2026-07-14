@@ -200,6 +200,7 @@ curl -v \
   }' \
   https://app.zauru.com/contracts/active_contracts/1/generate_documents_action.json
 ```
+
 Si hay error devolverá un JSON con el error como un objeto llamado "error" y el objeto del contrato en "contract", sino hay error solo devolverá el contrato.
 
 ### Ver Contrato Activo
