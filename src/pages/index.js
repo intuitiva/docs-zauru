@@ -1,6 +1,8 @@
 import React from "react";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import ThemedImage from "@theme/ThemedImage";
 import Icon from "../components/Icon";
 
 const GROUPS = [
@@ -106,6 +108,8 @@ function searchShortcutLabel() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const logoLight = useBaseUrl("/img/logo.png");
+  const logoDark = useBaseUrl("/img/logo-dark.png");
   const [kbd, setKbd] = React.useState("Ctrl K");
   React.useEffect(() => {
     setKbd(searchShortcutLabel());
@@ -115,7 +119,16 @@ export default function Home() {
     <Layout title={siteConfig.title} description="Manual de usuario de Zauru ERP/CRM">
       <section className="zauru-hero">
         <p className="zauru-hero__eyebrow">Documentación</p>
-        <h1 className="zauru-hero__title">ZAURU</h1>
+        <h1 className="zauru-hero__title">
+          <ThemedImage
+            className="zauru-hero__logo"
+            alt="Zauru"
+            sources={{
+              light: logoLight,
+              dark: logoDark,
+            }}
+          />
+        </h1>
         <p className="zauru-hero__subtitle">
           Encuentra procesos, módulos y reportes del ERP.
         </p>
