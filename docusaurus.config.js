@@ -112,14 +112,9 @@ const config = {
             position: "left",
           },
           {
-            href: "https://docs.zauru.com/api-docs",
-            label: "Documentación API",
-            position: "left",
-          },
-          {
             href: "https://app.zauru.com",
             label: "Ingresar",
-            position: "right",
+            position: "left",
           },
         ],
       },
@@ -140,10 +135,6 @@ const config = {
             items: [
               { label: "Primeros Pasos", to: "/primeros-pasos" },
               { label: "Permisos de Acceso", to: "/permisos-de-acceso" },
-              {
-                label: "Documentación API",
-                href: "https://docs.zauru.com/api-docs",
-              },
               {
                 label: "Conoce más de Zauru",
                 href: "https://www.zauru.com/home",
