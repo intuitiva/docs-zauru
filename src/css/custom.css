@@ -78,8 +78,8 @@
   --ifm-code-background: var(--zauru-paper-2);
   --ifm-code-color: var(--zauru-ink);
 
-  /* Homepage hero — light: paper field, ink type */
-  --zauru-hero-bg: var(--zauru-paper);
+  /* Homepage hero — inherit page background (no separate band) */
+  --zauru-hero-bg: transparent;
   --zauru-hero-text: var(--zauru-ink);
   --zauru-hero-text-soft: var(--zauru-ink-soft);
 }
@@ -130,7 +130,7 @@
   --zauru-shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--zauru-gold-tint);
   --zauru-halo-glow: none;
 
-  --zauru-hero-bg: #0c0c0c;
+  --zauru-hero-bg: transparent;
   --zauru-hero-text: #f2f2ee;
   --zauru-hero-text-soft: #b0b0a8;
 }
@@ -294,13 +294,13 @@ a:hover {
   color: var(--zauru-gold);
 }
 .zauru-hero__title {
-  font-family: var(--ifm-font-family-heading);
-  font-weight: 800;
-  font-size: clamp(2.6rem, 8vw, 4rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  margin: 0 0 12px;
-  color: var(--zauru-hero-text);
+  margin: 0 0 16px;
+  line-height: 0;
+}
+.zauru-hero__logo {
+  display: block;
+  width: clamp(180px, 36vw, 280px);
+  height: auto;
 }
 .zauru-hero__subtitle {
   font-size: 1.05rem;
