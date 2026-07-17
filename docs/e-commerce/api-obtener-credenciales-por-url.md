@@ -14,7 +14,7 @@ Cuando un sistema externo necesita conectarse a Zauru pero no conoce qué usuari
 
 Este endpoint no utiliza la autenticación estándar por `X-User-Email` y `X-User-Token`. En su lugar, requiere un token de autorización único que debe enviarse como parámetro `auth_token`.
 
-El valor del token se configura en la variable de entorno `ECOMMERCE_AUTH_TOKEN` del servidor Zauru. Si no está configurada, el valor predeterminado es `jHr2PZ75sJHxpb2HGAo7`.
+El valor del token se configura en la variable de entorno `ECOMMERCE_AUTH_TOKEN` del servidor Zauru. Solicítalo a tu implementador para poder utilizar el endpoint.
 
 ## Parámetros
 
