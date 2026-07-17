@@ -89,4 +89,92 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/bookings.json
-```
+  ```
+
+### Ver reserva
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/bookings/1.json
+  ```
+
+### Nueva reserva (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/bookings/new.json
+  ```
+
+### Crear reserva
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "shipment": {
+      "agency_from_id": "1",
+      "agency_to_id": "2",
+      "planned_delivery": "2024-01-15",
+      "reference": "prueba",
+      "shipment_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "booked_quantity": "5"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/bookings.json
+  ```
+
+### Actualizar reserva
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "shipment": {
+      "reference": "prueba editada"
+    }
+  }' \
+  https://app.zauru.com/pos/bookings/1.json
+  ```
+
+### Eliminar reserva
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/pos/bookings/1.json
+  ```
+
+### Enviar reserva (convertir en envío)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/bookings/1/ship.json
+  ```

@@ -123,3 +123,78 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/discharges/1.json
 ```
+
+### Ver detalles de un pago
+El 1 al final de la URL es el ID del pago (descargo)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/discharges/1.json
+```
+
+### Obtener datos para un pago nuevo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/discharges/new.json
+```
+
+### Obtener datos para editar un pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/discharges/1/edit.json
+```
+
+### Actualizar un pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "discharge": {
+      "reference": "Referencia actualizada",
+      "receipt": "Recibo actualizado",
+      "memo": "Notas del pago"
+    }
+  }' \
+  https://app.zauru.com/purchases/discharges/1.json
+```
+
+### Autorizar un pago
+Aplica cuando la variable `authorize_discharge` esta activada y el pago fue creado como borrador.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/discharges/1/authorize.json
+```
+
+### Listado de pagos anulados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/discharges/voided.json
+```

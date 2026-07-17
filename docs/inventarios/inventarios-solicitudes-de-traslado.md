@@ -161,3 +161,111 @@ Con base en esto, la solicitud se clasifica como:
 - **Abierta**: Ningún producto ha sido reservado aún.
 - **En proceso**: Algunos productos han sido reservados pero no todos.
 - **Cerrada**: Todas las cantidades solicitadas han sido reservadas.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener las solicitudes de traslado abiertas
+Devuelve la lista de solicitudes de traslado que no están cerradas ni anuladas. Puede filtrar por alcance (`scope`): `new`, `in_progress` o `all`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/open_transfer_requests.json?scope=new
+```
+
+### Obtener el detalle de una solicitud de traslado abierta
+Devuelve los datos de la solicitud, sus detalles (productos y cantidades) y los envíos asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/open_transfer_requests/1.json
+```
+
+### Crear una solicitud de traslado
+Crea una nueva solicitud de traslado con los productos y cantidades solicitadas.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "inventories_transfer_request": {
+      "agency_from_id": "2",
+      "agency_to_id": "1",
+      "requestor_id": "1",
+      "planned_delivery": "2018-08-10",
+      "reference": "Solicitud de traslado",
+      "transfer_request_details_attributes": {
+        "0": {
+          "item_id": "2",
+          "requested_quantity": "100"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/open_transfer_requests.json
+```
+
+### Actualizar una solicitud de traslado
+Actualiza los datos de una solicitud de traslado mientras esté abierta o en proceso.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "inventories_transfer_request": {
+      "reference": "Solicitud actualizada",
+      "transfer_request_details_attributes": {
+        "0": {
+          "id": "1",
+          "requested_quantity": "120"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/open_transfer_requests/1.json
+```
+
+### Anular una solicitud de traslado
+Anula (void) una solicitud de traslado. Solo se puede anular mientras esté en estado abierta.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/open_transfer_requests/1.json
+```
+
+### Obtener las solicitudes de traslado cerradas
+Devuelve la lista de solicitudes de traslado que ya fueron completamente satisfechas.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/closed_transfer_requests.json
+```
+
+### Obtener el detalle de una solicitud de traslado cerrada
+Devuelve los datos de una solicitud de traslado que ya fue cerrada.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/closed_transfer_requests/1.json
+```

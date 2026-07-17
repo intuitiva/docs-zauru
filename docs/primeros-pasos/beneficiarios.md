@@ -296,3 +296,141 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/export.csv
 ```
+
+### Eliminar beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/payees/1.json
+```
+
+### Sincronizar beneficiario con CRM
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/1/sync_payee_to_crm.json
+```
+
+### Buscar beneficiario por NIT o CUI (devuelve nombre)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"tin": "12345678-9"}' \
+  https://app.zauru.com/settings/payees/search_payee_name.json
+```
+
+### Obtener beneficiario por NIT o CUI
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/get_payee.json?payee=12345678-9&pin=0
+```
+
+### Autocompletar beneficiario por CUI
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/autocomplete_pin.json?term=123456789
+```
+
+### Autocompletar beneficiario extranjero
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/autocomplete_foreign_payee.json?term=cliente
+```
+
+### API de Categorías de Beneficiarios
+
+#### Obtener detalle de una categoría de beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/payee_categories/1.json
+```
+
+#### Crear categoría de beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee_category": {
+      "name": "Mayorista",
+      "vendor": false,
+      "notes": "Clientes mayoristas"
+    }
+  }' \
+  https://app.zauru.com/settings/payees/payee_categories.json
+```
+
+#### Actualizar categoría de beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payee_category": {
+      "name": "Mayorista Premium"
+    }
+  }' \
+  https://app.zauru.com/settings/payees/payee_categories/1.json
+```
+
+#### Eliminar categoría de beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/payees/payee_categories/1.json
+```
+
+### API de Importación de Beneficiarios
+
+#### Crear importación de beneficiarios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee_import": {
+      "file": "archivo_excel.xlsx"
+    }
+  }' \
+  https://app.zauru.com/settings/payees/payee_imports.json
+```

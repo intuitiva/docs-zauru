@@ -54,3 +54,57 @@ Esto desvinculara las transacciones sin eliminar las transacciones en si, dejand
 ## Liquidaciones
 
 Para casos donde necesita pagar o cobrar multiples partidas a la vez en una sola operacion, vea el tutorial de [Liquidaciones](liquidaciones).
+
+## API (llamadas desde sistemas externos)
+
+### Obtener detalle de una reconciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/reconciliations/1.json
+```
+
+### Obtener el formulario de nueva reconciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/accounting/accounts/reconciliations/new.json?a=1&e=2"
+```
+
+### Crear una reconciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "reconciliation": {
+      "account_id": 1,
+      "e": 2,
+      "entries_attributes": {
+        "0": { "id": 2, "reconciled": "1" },
+        "1": { "id": 3, "reconciled": "1" }
+      }
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts/reconciliations.json
+```
+
+### Borrar una reconciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/accounts/reconciliations/1.json
+```

@@ -97,3 +97,103 @@ En el listado de beneficiarios puede buscar por:
 - Categoria de beneficiario
 
 La busqueda utiliza coincidencias parciales con soporte para busqueda por similitud (trigram).
+
+## API (llamadas desde sistemas externos)
+
+### Consultar listado de beneficiarios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/payees.json
+```
+
+### Listado de beneficiarios (datatables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "scope": "all"
+  }' \
+  https://app.zauru.com/accounting/payees/datatables.json
+```
+
+### Obtener detalle de un beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/payees/1.json
+```
+
+### Obtener el formulario de nuevo beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/payees/new.json
+```
+
+### Obtener el formulario de edicion de un beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/payees/1/edit.json
+```
+
+### Crear un beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee": {
+      "vendor": true,
+      "buyer": false,
+      "name": "Proveedor Prueba, S.A.",
+      "tin": "1234567-8",
+      "payee_category_id": 1,
+      "currency_id": 1,
+      "address_line_1": "Ciudad",
+      "country_id": 1,
+      "phone": "2222-2222",
+      "email": "proveedor@ejemplo.com"
+    }
+  }' \
+  https://app.zauru.com/accounting/payees.json
+```
+
+### Actualizar un beneficiario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payee": {
+      "name": "Proveedor Prueba Actualizado, S.A.",
+      "email": "nuevo@ejemplo.com"
+    }
+  }' \
+  https://app.zauru.com/accounting/payees/1.json
+```

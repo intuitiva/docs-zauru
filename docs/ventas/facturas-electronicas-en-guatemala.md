@@ -55,3 +55,46 @@ Este es el documento que se le va a enviar al cliente, ya sea una factura, una f
 7. Enviar la representación gráfica PDF de los documentos tributarios electrónicos a emitir al GFACE (para su verificación) y a Zauru para su implementación.
 8. Revisar las pruebas generadas por Zauru en el portal del GFACE y los PDFs generados
 9. Aprobar implementión del GFACE y de Intuitiva.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar respuesta certificada de una factura electrónica
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response.json
+```
+
+### Consultar respuesta certificada de anulación de una factura electrónica
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response_for_voiding.json
+```
+
+### Reenviar factura electrónica por correo electrónico
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/unpaid_invoices/1/resend_mail.json
+```
+
+### Exportar respuestas certificadas de facturas y notas de crédito
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/export_certified_responses.json?date=2024-01-01&end_date=2024-01-31&include_credit_notes=1"
+```

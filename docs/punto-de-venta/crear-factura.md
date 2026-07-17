@@ -143,4 +143,139 @@ curl -v \
     }
   }' \
   https://app.zauru.com/pos/invoices.json
-```
+  ```
+
+### Listar facturas (datatables)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/pos/invoices/datatables.json
+  ```
+
+### Ver factura
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/invoices/1.json
+  ```
+
+### Actualizar factura
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "invoice": {
+      "reference": "prueba editada",
+      "invoice_details_attributes": {
+        "0": {
+          "id": "1",
+          "quantity": "2"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/invoices/1.json
+  ```
+
+### Emisión rápida de factura (convertir orden en factura)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/invoices/1/issue_fast.json
+  ```
+
+### Ver datos superficiales de factura
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/invoices/1/shallow_edit.json
+  ```
+
+### Actualizar datos superficiales de factura
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "invoice": {
+      "reference": "prueba editada",
+      "memo": "editado desde el API"
+    }
+  }' \
+  https://app.zauru.com/pos/invoices/1/shallow_update.json
+  ```
+
+### Anular factura
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/pos/invoices/1.json
+  ```
+
+### Anular factura sin pagos asociados
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/pos/invoices/1/no_payments_void.json
+  ```
+
+### Obtener categorías, items, paquetes, precios, existencias e imágenes
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/invoices/get_categories_items_bundles_prices_stocks_images.json
+  ```

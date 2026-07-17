@@ -182,6 +182,34 @@ curl -v \
   https://app.zauru.com/settings/agencies.json
 ```
 
+#### Actualizar agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "agency": {
+      "name": "Tienda Central",
+      "address_line_1": "nueva direccion"
+    }
+  }' \
+  https://app.zauru.com/settings/agencies/1.json
+```
+
+#### Eliminar agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/agencies/1.json
+```
+
 ### API de Categorías de Agencias
 
 #### Obtener listado de categorías de agencias
@@ -191,7 +219,17 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/agency_categories.json
+  https://app.zauru.com/settings/agencies/agency_categories.json
+```
+
+#### Obtener detalle de una categoría de agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/agencies/agency_categories/1.json
 ```
 
 #### Crear categoría de agencia
@@ -208,7 +246,35 @@ curl -v \
       "notes": "Descripción de la categoría"
     }
   }' \
-  https://app.zauru.com/settings/agency_categories.json
+  https://app.zauru.com/settings/agencies/agency_categories.json
+```
+
+#### Actualizar categoría de agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "agency_category": {
+      "name": "Categoría Actualizada",
+      "notes": "Nueva descripción"
+    }
+  }' \
+  https://app.zauru.com/settings/agencies/agency_categories/1.json
+```
+
+#### Eliminar categoría de agencia
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/agencies/agency_categories/1.json
 ```
 
 ### Exportar Agencias vía API

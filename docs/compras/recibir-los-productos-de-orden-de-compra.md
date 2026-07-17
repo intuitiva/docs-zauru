@@ -81,3 +81,39 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/receptions/1.json
 ```
+
+### Obtener datos para una recepción nueva
+El 1 en la URL es el ID de la orden de compra que se va a recibir
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/1/receptions/new.json
+```
+
+### Ver detalles de una recepción
+El 1 al final de la URL es el ID de la recepción
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/receptions/1.json
+```
+
+### Devolver una recepción específica
+Reemplaza el `purchase_order_id` por el ID de la orden de compra y el `1` por el ID de la recepción que desea devolver.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/receptions/1/rebound.json?purchase_order_id=1"
+```

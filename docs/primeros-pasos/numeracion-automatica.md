@@ -76,7 +76,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/document_automatic_numbers.json
+  https://app.zauru.com/settings/templates/document_automatic_numbers.json
 ```
 
 ### Obtener detalle de una numeración automática
@@ -86,7 +86,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/document_automatic_numbers/1.json
+  https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
 ```
 
 ### Crear numeración automática de documento
@@ -106,5 +106,33 @@ curl -v \
       "num_digits": "6"
     }
   }' \
-  https://app.zauru.com/settings/document_automatic_numbers.json
+  https://app.zauru.com/settings/templates/document_automatic_numbers.json
+```
+
+### Actualizar numeración automática de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "document_automatic_number": {
+      "variable_doc_number": "100",
+      "active": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
+```
+
+### Eliminar numeración automática de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
 ```

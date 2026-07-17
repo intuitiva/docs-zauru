@@ -160,3 +160,126 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/open_work_orders/new.json
 ```
+
+### Crear una orden de trabajo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "production_work_order": {
+      "id_number": "OT-001",
+      "order_date": "2024-07-01",
+      "reference": "Consumo interno de materiales",
+      "agency_id": 1,
+      "responsible_id": 1,
+      "needs_delivery": false,
+      "work_order_details_attributes": {
+        "0": {
+          "item_id": 2,
+          "booked_quantity": 5
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/open_work_orders.json
+```
+
+### Actualizar una orden de trabajo abierta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "production_work_order": {
+      "reference": "Consumo interno actualizado",
+      "work_order_details_attributes": {
+        "0": {
+          "id": "10",
+          "booked_quantity": 8
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/open_work_orders/1.json
+```
+
+### Cerrar una orden de trabajo
+
+Confirma las cantidades entregadas de cada detalle y genera los movimientos de inventario y asientos contables correspondientes.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "production_work_order": {
+      "work_order_details_attributes": {
+        "0": {
+          "id": "10",
+          "delivered_quantity": 5
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/open_work_orders/1/update_close.json
+```
+
+### Anular una orden de trabajo abierta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/production/open_work_orders/1.json
+```
+
+### Obtener listado de ordenes de trabajo abiertas en formato DataTables
+
+Endpoint optimizado para la libreria DataTables con paginacion, ordenamiento y busqueda.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/production/open_work_orders/datatables.json
+```
+
+### Obtener listado de ordenes de trabajo anuladas en formato DataTables
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/production/open_work_orders/datatables_voided.json
+```

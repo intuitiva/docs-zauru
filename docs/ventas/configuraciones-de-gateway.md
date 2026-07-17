@@ -102,7 +102,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/settings/gateway_configs.json
+  https://app.zauru.com/sales/gateway_configs.json
 ```
 
 ### Crear una configuración de gateway
@@ -130,5 +130,56 @@ curl -v \
       "recurring": "0"
     }
   }' \
-  https://app.zauru.com/sales/settings/gateway_configs.json
+  https://app.zauru.com/sales/gateway_configs.json
+```
+
+### Ver detalle de una configuración de gateway
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/gateway_configs/1.json
+```
+
+### Obtener plantilla para crear una configuración de gateway
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/gateway_configs/new.json
+```
+
+### Actualizar una configuración de gateway
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "sales_gateway_config": {
+      "test_mode": "0",
+      "active": "1",
+      "is_default": "1",
+      "tokenization": "1",
+      "refunds": "1"
+    }
+  }' \
+  https://app.zauru.com/sales/gateway_configs/1.json
+```
+
+### Eliminar una configuración de gateway
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/gateway_configs/1.json
 ```

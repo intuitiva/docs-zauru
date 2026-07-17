@@ -91,3 +91,102 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/computed_costs.json
 ```
+
+### Obtener datos para un costo inicial nuevo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/computed_costs/new.json
+```
+
+### Ver el historial de costos de un producto
+El 1 al final de la URL es el ID del producto (item) del que se quieren ver los costos.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/computed_costs/1.json
+```
+
+### Ver el cálculo de costo promedio de un producto
+Devuelve el kardex de costos con el cálculo del costo promedio ponderado del producto.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/computed_costs/1/average_calculation.json
+```
+
+### Actualizar un costo inicial
+El 1 al final de la URL es el ID del registro de costo (computed_cost).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "computed_cost": {
+      "computed_cost": "12.0",
+      "quantity": "2",
+      "date": "2018-10-17"
+    }
+  }' \
+  https://app.zauru.com/purchases/computed_costs/1.json
+```
+
+### Eliminar un costo inicial
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/computed_costs/1.json
+```
+
+### Exportar costos computados
+Devuelve un JSON con los costos computados por producto, incluyendo el ultimo costo, el costo promedio ponderado y el costo promedio del kardex.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/computed_costs/export.json
+```
+
+### Importar costos iniciales desde Excel
+Primero obtenga la estructura para la importación:
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/computed_costs/initial_cost_imports/new.json
+```
+
+Luego envie el archivo con los costos a importar:
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -F "initial_cost_import[file]=@/ruta/al/archivo.xlsx" \
+  https://app.zauru.com/purchases/computed_costs/initial_cost_imports.json
+```

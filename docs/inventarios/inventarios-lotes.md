@@ -160,3 +160,111 @@ Si necesita eliminar todas las existencias de lotes en una bodega (por ejemplo, 
 3. Seleccionar la opción "Vaciar existencias de lote".
 
 Esta acción eliminará todas las existencias de lotes y se ejecuta de forma asíncrona en segundo plano. Utilice esta función con precaución ya que los datos no se pueden recuperar.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener todos los lotes de una bodega
+Devuelve la lista de lotes activos con sus existencias en la bodega especificada.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lots.json?warehouse=1
+```
+
+### Obtener los lotes de todas las bodegas
+Devuelve todos los lotes activos con el producto asociado.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lots/all_warehouses.json
+```
+
+### Obtener el detalle de un lote
+Devuelve los datos del lote y las existencias desglosadas por bodega.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lots/1.json
+```
+
+### Obtener los lotes de un producto
+Devuelve todos los lotes asociados a un producto específico.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lots/1/item.json
+```
+
+### Crear un lote
+Crea un nuevo lote para un ítem perecedero.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "lot": {
+      "item_id": "3",
+      "name": "Lote A",
+      "description": "Descripción opcional",
+      "expires": "2019-12-31"
+    }
+  }' \
+  https://app.zauru.com/inventories/lots.json
+```
+
+### Actualizar un lote
+Actualiza los datos de un lote existente (nombre, descripción y fecha de expiración).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "lot": {
+      "name": "Lote A actualizado",
+      "expires": "2020-01-31"
+    }
+  }' \
+  https://app.zauru.com/inventories/lots/1.json
+```
+
+### Eliminar un lote
+Elimina un lote. Solo es posible si no tiene movimientos asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/lots/1.json
+```
+
+### Vaciar existencias de lotes de una bodega
+Elimina todas las existencias de lotes de una bodega. La operación se ejecuta de forma asíncrona en segundo plano. El `id` en la URL corresponde al identificador de la bodega (agency).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/lots/1/empty_lot_stock.json
+```

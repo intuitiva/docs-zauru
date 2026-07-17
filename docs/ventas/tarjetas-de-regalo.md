@@ -143,6 +143,26 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types.json
 ```
 
+### Ver detalle de un tipo de tarjeta de regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/gift_card_types/1.json
+```
+
+### Obtener plantilla para crear un tipo de tarjeta de regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/gift_card_types/new.json
+```
+
 ### Crear tipo de tarjeta de regalo
 ```bash
 curl -v \
@@ -164,6 +184,35 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types.json
 ```
 
+### Actualizar un tipo de tarjeta de regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "sales_gift_card_type": {
+      "name": "Gift Card Navideña Actualizada",
+      "fixed_value": "150",
+      "active": "1"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/gift_card_types/1.json
+```
+
+### Eliminar un tipo de tarjeta de regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/settings/gift_card_types/1.json
+```
+
 ### Listar tarjetas de regalo activas
 ```bash
 curl -v \
@@ -182,4 +231,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/gift_cards/lookup.json?id_number=GC-12345
+```
+
+### Ver detalle de una tarjeta de regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/gift_cards/1.json
 ```

@@ -91,3 +91,23 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/closed_work_orders.json
 ```
+
+### Obtener listado de ordenes de trabajo cerradas en formato DataTables
+
+Endpoint optimizado para la libreria DataTables con paginacion, ordenamiento, busqueda y filtrado por etiqueta.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/production/closed_work_orders/datatables.json
+```

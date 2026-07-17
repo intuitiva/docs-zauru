@@ -91,16 +91,6 @@ Las facturas pagadas que no tienen detalles de pago y tienen saldo pendiente en 
 
 ## API (llamadas desde sistemas externos)
 
-### Listar facturas pagadas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/paid_invoices.json
-```
-
 ### Ver detalle de una factura pagada
 ```bash
 curl -v \
@@ -108,7 +98,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/paid_invoice/1.json
+  https://app.zauru.com/sales/paid_invoices/1.json
 ```
 
 ### Editar metadata de una factura pagada
@@ -118,7 +108,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
+  -X PATCH \
   -d '{
     "invoice": {
       "id": "1",
@@ -129,5 +119,27 @@ curl -v \
       "memo": "Nota actualizada"
     }
   }' \
-  https://app.zauru.com/sales/paid_invoice/1/shallow_update.json
+  https://app.zauru.com/sales/paid_invoices/1/shallow_update.json
+```
+
+### Eliminar una factura pagada anulada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/paid_invoices/1.json
+```
+
+### Anular una factura pagada sin pagos asociados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/paid_invoices/1/no_payments_void.json
 ```

@@ -73,3 +73,31 @@ Para consultar lotes que han sido anulados:
 3. Seleccionar la pestana **"Anulados"**.
 
 En esta vista podra ver todos los lotes que fueron anulados, incluyendo informacion sobre quien los anulo y cuando.
+
+## API (llamadas desde sistemas externos)
+
+### Listar lotes de produccion abiertos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/production_batches.json
+```
+
+### Ver un lote de produccion
+
+Devuelve el lote con su orden raiz y todas las ordenes de produccion que lo componen, junto con el progreso individual y consolidado.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/production_batches/1.json
+```

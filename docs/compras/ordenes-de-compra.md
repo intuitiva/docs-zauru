@@ -499,3 +499,39 @@ curl -v \
   -X DELETE \
   http://zauru.herokuapp.com/purchases/purchase_orders/1.json
 ```
+
+### Autorizar una orden de compra
+El 1 al final de la URL es el ID de la orden de compra que se desea autorizar.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/1/authorize.json
+```
+
+### Exportar ordenes de compra
+Devuelve las ordenes de compra no pagadas y no recibidas con sus detalles, aplicando filtros opcionales por fecha, item y proveedor.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/purchase_orders/export.json?fechaInicio=2024-01-01&fechaFin=2024-01-31"
+```
+
+### Obtener plantillas de impresión de una orden de compra
+Devuelve las plantillas de impresión disponibles para la orden de compra.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_orders/1/print_templates.json
+```

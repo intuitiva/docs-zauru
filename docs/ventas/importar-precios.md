@@ -196,6 +196,46 @@ curl -v \
   https://app.zauru.com/sales/suggested_prices.json
 ```
 
+### Obtener plantilla para crear un precio sugerido
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/suggested_prices/new.json
+```
+
+### Listar precios de ítems
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/prices.json
+```
+
+### Listar precios de paquetes (bundles)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/prices/bundles.json
+```
+
+### Ver detalle de un precio
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/prices/1.json
+```
+
 ### Crear precios sugeridos (item)
 ```bash
 curl -v \
@@ -287,4 +327,36 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/suggested_prices/bundles_export.xls
+```
+
+### Exportar precios sugeridos de paquetes a JSON
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/suggested_prices/bundles_export.json
+```
+
+### Obtener plantilla para importar precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/suggested_prices/price_imports/new.json
+```
+
+### Importar precios desde un archivo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -F "price_import[file]=@/ruta/al/archivo.xlsx" \
+  https://app.zauru.com/sales/suggested_prices/price_imports.json
 ```

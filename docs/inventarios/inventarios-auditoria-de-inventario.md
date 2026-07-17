@@ -161,3 +161,133 @@ Puede eliminar una auditoría solo si no tiene envíos generados:
 2. Seleccionar "Auditorías".
 3. Buscar la auditoría que desea eliminar.
 4. Seleccionar "Eliminar".
+
+## API (llamadas desde sistemas externos)
+
+### Obtener todas las auditorías de inventario
+Devuelve la lista de auditorías de inventario de la entidad.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/inventory_audits.json
+```
+
+### Obtener el detalle de una auditoría
+Devuelve los datos de la auditoría, sus detalles (productos con cantidades observadas y del sistema) y los envíos generados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/inventory_audits/1.json
+```
+
+### Crear una auditoría de inventario
+Crea una nueva auditoría con los productos y cantidades observadas.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "inventory_audit": {
+      "agency_id": "1",
+      "date": "2018-08-10",
+      "reference": "Auditoría anual",
+      "use_available_stock": "0",
+      "inventory_audit_details_attributes": {
+        "0": { "item_id": "2", "observed_quantity": "98" },
+        "1": { "item_id": "3", "observed_quantity": "50" }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/inventory_audits.json
+```
+
+### Actualizar una auditoría de inventario
+Actualiza los productos y cantidades observadas de una auditoría existente mientras no tenga envíos generados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "inventory_audit": {
+      "inventory_audit_details_attributes": {
+        "0": { "id": "1", "observed_quantity": "99" }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/inventory_audits/1.json
+```
+
+### Eliminar una auditoría de inventario
+Elimina una auditoría. Solo es posible si no tiene envíos generados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/inventory_audits/1.json
+```
+
+### Actualizar las cantidades del sistema de una auditoría
+Refresca las cantidades del sistema de los productos auditados para reflejar el estado actual del inventario.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  https://app.zauru.com/inventories/inventory_audits/1/update_system_quantities.json
+```
+
+### Generar envíos de ajuste desde una auditoría
+Genera automáticamente los envíos de entrada (para sobrantes) y de salida (para faltantes) necesarios para ajustar el inventario según las diferencias encontradas en la auditoría.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/inventory_audits/1/generate_shipment.json
+```
+
+### Desasociar envíos devueltos de una auditoría
+Desasocia de la auditoría los envíos generados que hayan sido devueltos o anulados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/inventory_audits/1/disassociate_returned_shipments.json
+```
+
+### Reemplazar auditoría con Excel
+Reemplaza los detalles de una auditoría con los datos de un archivo Excel.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "inventory_audit": {
+      "file": "auditoria.xlsx"
+    }
+  }' \
+  https://app.zauru.com/inventories/inventory_audits/1/replace_inventary_audits_with_excel_action.json
+```

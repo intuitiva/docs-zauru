@@ -115,3 +115,54 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/consolidates.json
 ```
+
+### Ver detalles de un consolidado
+El 1 al final de la URL es el ID del consolidado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/consolidates/1.json
+```
+
+### Obtener datos para editar un consolidado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/consolidates/1/edit.json
+```
+
+### Actualizar un consolidado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "consolidate": {
+      "name": "consolidado actualizado",
+      "description": "descripcion actualizada"
+    }
+  }' \
+  https://app.zauru.com/purchases/consolidates/1.json
+```
+
+### Eliminar un consolidado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/consolidates/1.json
+```

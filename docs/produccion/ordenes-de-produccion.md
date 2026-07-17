@@ -132,3 +132,84 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/production_orders/new.json
 ```
+
+### Crear una orden de produccion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "production_production_order": {
+      "id_number": "OP-001",
+      "bill_of_material_id": 1,
+      "target_quantity": 100,
+      "reference": "Produccion de lote A",
+      "finished_goods_agency_id": 1,
+      "order_date": "2024-07-01",
+      "planned_start_time": "2024-07-02T08:00:00",
+      "responsible_id": 1,
+      "create_as_batch": false,
+      "production_order_details_attributes": {
+        "0": {
+          "item_id": 2,
+          "agency_id": 1,
+          "booked_quantity": 200,
+          "reference": "Materia prima A"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/production_orders.json
+```
+
+### Actualizar una orden de produccion planificada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "production_production_order": {
+      "target_quantity": 120,
+      "reference": "Produccion de lote A actualizada",
+      "production_order_details_attributes": {
+        "0": {
+          "id": "10",
+          "booked_quantity": 240
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/production_orders/1.json
+```
+
+### Iniciar la produccion de una orden planificada
+
+Mueve la orden de estado planificada a en ejecucion, valida el stock de materias primas y genera los movimientos de inventario correspondientes.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/production_orders/1/start_production.json
+```
+
+### Anular una orden de produccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/production/production_orders/1.json
+```

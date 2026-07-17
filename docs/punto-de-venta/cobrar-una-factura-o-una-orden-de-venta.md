@@ -122,4 +122,115 @@ curl -v \
     }
   }' \
   https://app.zauru.com/pos/charges.json
-```
+  ```
+
+### Listar cobros sin confirmar (datatables)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/pos/charges/datatables.json
+  ```
+
+### Ver cobro
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/charges/1.json
+  ```
+
+### Nuevo cobro (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/charges/new.json
+  ```
+
+### Editar cobro
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/charges/1/edit.json
+  ```
+
+### Actualizar cobro
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payment": {
+      "reference": "prueba editada",
+      "memo": "editado desde el API"
+    }
+  }' \
+  https://app.zauru.com/pos/charges/1.json
+  ```
+
+### Anular cobro
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/pos/charges/1.json
+  ```
+
+### Confirmar un cobro individual
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/charges/1/confirm.json
+  ```
+
+### Confirmar todos los cobros de un método de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/charges/1/confirm_payment_method.json
+  ```

@@ -34,3 +34,15 @@ Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado ex
 
 
 Regresamos a facturas no pagadas, si el cliente cancelo se aplica el pago normal de lo contrario seguira en faturas no pagadas hasta que cancele la cantidad pendiente.
+
+## API (llamadas desde sistemas externos)
+
+### Redimir una nota de crédito en su factura asociada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes/1/redeem_with_associated_invoice.json
+```

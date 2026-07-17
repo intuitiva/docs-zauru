@@ -66,3 +66,90 @@ Le deberán aparecer las siguientes opciones para crear un nuevo proveedor:
 11. Segmento de Comunicación (Campos opcionales para guardar información información de la empresa).
 12. Segmento de Contacto (Campos opcionales para guardar información información de contacto con el proveedor).
 13. Seleccionar "Crear beneficiario" para completar el proceso de crear el proveedor.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener el listado de proveedores
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/vendors.json
+```
+
+### Ver detalles de un proveedor
+El 1 al final de la URL es el ID del proveedor
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/vendors/1.json
+```
+
+### Obtener datos para un proveedor nuevo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/vendors/new.json
+```
+
+### Obtener datos para editar un proveedor
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/vendors/1/edit.json
+```
+
+### Crear nuevo proveedor
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payee": {
+      "name": "Proveedor Prueba, S.A.",
+      "reference": "Proveedor prueba",
+      "tin": "1234567-8",
+      "service_provider": "0",
+      "address_line_1": "1 calle 1-11 zona 1",
+      "phone": "22222222",
+      "email": "proveedor@prueba.com",
+      "contact": "Contacto de prueba"
+    }
+  }' \
+  https://app.zauru.com/purchases/vendors.json
+```
+
+### Actualizar un proveedor
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payee": {
+      "name": "Proveedor Prueba Actualizado, S.A.",
+      "phone": "33333333"
+    }
+  }' \
+  https://app.zauru.com/purchases/vendors/1.json
+```

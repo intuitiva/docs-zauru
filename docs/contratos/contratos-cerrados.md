@@ -57,6 +57,32 @@ Para asociar un nuevo documento solo hay que ingresar al detalle del contrato e 
 
 ## API (llamadas desde sistemas externos)
 
+### Listar contratos cerrados (datatables)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/contracts/closed_contracts/datatables.json
+```
+
 ### Ver Contrato Cerrado
 
 ```bash
@@ -67,16 +93,4 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/contracts/closed_contracts/1.json
-```
-
-### Re-abrir Contrato Cerrado
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X GET \
-  https://app.zauru.com/contracts/closed_contracts/1/unclose.json
 ```

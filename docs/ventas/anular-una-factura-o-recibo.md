@@ -77,3 +77,25 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/payments/1.json
 ```
+
+### Anular una factura pagada sin pagos asociados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/paid_invoices/1/no_payments_void.json
+```
+
+### Eliminar una factura pagada anulada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/paid_invoices/1.json
+```

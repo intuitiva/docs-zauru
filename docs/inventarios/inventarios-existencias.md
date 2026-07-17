@@ -92,3 +92,55 @@ Esto devolverá un JSON similar a este:
   "3":{"agency_id":3,"available":34}
 }
 ```
+
+#### Obtener las existencias de todas las bodegas
+Devuelve un hash con las existencias disponibles de cada producto por bodega, donde la llave es `[agency_id, item_id]`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/all_warehouses.json
+```
+
+#### Obtener el detalle de una existencia
+Devuelve el registro de existencia (stock) de un producto en una bodega específica.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1.json
+```
+
+#### Actualizar el punto de re orden de una existencia
+Actualiza el punto de re orden y la cantidad económica de orden de una existencia específica.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "stock": {
+      "reorder_point": 30,
+      "economic_order_quantity": 50
+    }
+  }' \
+  https://app.zauru.com/inventories/stocks/1.json
+```
+
+#### Vaciar las existencias de una bodega
+Elimina todas las existencias de una bodega. La operación se ejecuta de forma asíncrona en segundo plano. El `id` en la URL corresponde al identificador de la bodega (agency).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/stocks/1.json
+```

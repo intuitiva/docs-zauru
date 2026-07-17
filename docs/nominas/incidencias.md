@@ -140,3 +140,75 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/incidents/1.json
 ```
+
+### Obtener estructura para crear una incidencia
+
+Devuelve la incidencia vacia junto con los empleados y tipos de incidencia disponibles.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/incidents/new.json
+```
+
+### Obtener estructura para editar una incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/incidents/1/edit.json
+```
+
+### Actualizar una incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "incident": {
+      "employee_id": "1",
+      "incident_type_id": "1",
+      "date": "2024-06-15",
+      "notes": "Llego 45 minutos tarde"
+    }
+  }' \
+  https://app.zauru.com/payroll/incidents/1.json
+```
+
+### Importar incidencias (obtener estructura)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/incident_imports/new.json
+```
+
+### Importar incidencias (cargar archivo)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "incident_import": {
+      "file": "incidencias.csv"
+    }
+  }' \
+  https://app.zauru.com/payroll/incident_imports.json
+```

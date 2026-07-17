@@ -57,7 +57,7 @@ Si no se recibe la cantidad total comprada, la orden de compra permanecera como 
 
 ## API (llamadas desde sistemas externos)
 
-### Listar ordenes de compra pendientes de recepcion
+### Listar ordenes de compra pendientes de recepcion (datatables)
 
 ```bash
 curl -v \
@@ -65,5 +65,20 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/pos/receptions.json
-```
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/pos/receptions/datatables.json
+  ```

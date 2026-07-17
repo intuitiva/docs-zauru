@@ -24,3 +24,25 @@ La forma de ver los registros de acceso de los usuarios es la siguiente:
 Se desplegaran todos los movimientos y transacciones que ha realizado este usuario en la fecha que se especifico.
 
 ![imagen14](/img/permisos-de-acceso/registros-de-acceso-2.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de registros de acceso
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/access_logs.json
+```
+
+### Obtener detalle de un registro de acceso
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/access_logs/1.json
+```

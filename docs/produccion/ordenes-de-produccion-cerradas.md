@@ -92,3 +92,17 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/closed_production_orders/datatables.json
 ```
+
+### Devolver una orden cerrada a en ejecucion
+
+Reabre una orden de produccion ya cerrada: elimina los subproductos registrados, revierte los movimientos de inventario de entrega, re-crea los movimientos de materias primas, elimina los asientos contables generados y restaura el estado a en ejecucion.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/closed_production_orders/1/return_to_running.json
+```

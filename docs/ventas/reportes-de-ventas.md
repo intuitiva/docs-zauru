@@ -434,16 +434,6 @@ Hoja de balance detallada de cuentas por cobrar que puede exportarse a Excel con
 
 ## API (llamadas desde sistemas externos)
 
-### Cierre diario
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/reports/daily_close
-```
-
 ### Clientes con pagos vencidos
 ```bash
 curl -v \
@@ -452,4 +442,130 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/reports/clients_with_overdue_payments.json
+```
+
+### Ítems por cliente
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/items_by_client.json?payee_id=1&date=2024-01-01&end_date=2024-01-31"
+```
+
+### Ventas mensuales por punto de venta y categoría de cliente
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/monthly_sales_by_point_of_sale_and_client_category.json?year=2024&month=1&include_vat=1&include_credit_notes=1"
+```
+
+### Ventas mensuales de ítems
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/monthly_items.json?date=2024-01-01&end_date=2024-01-31"
+```
+
+### Ítems activos vendidos con clientes
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/sold_active_items_with_clients.json?date_from=2024-01-01&date_to=2024-01-31&point_of_sale_id=1"
+```
+
+### Exportar respuestas certificadas de almacenamiento externo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/export_certified_responses.json?date=2024-01-01&end_date=2024-01-31&include_credit_notes=1"
+```
+
+### Generar reporte de facturas sin envío
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_invoices_without_shipment.json
+```
+
+### Generar reporte de facturas con envíos anulados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_invoices_with_voided_shipment.json
+```
+
+### Generar reporte de facturas sin asiento contable de ventas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_invoices_without_sales_entry.json
+```
+
+### Corregir facturas pagadas sin fecha de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_fix_paid_without_paid_at_invoices.json
+```
+
+### Corregir facturas no pagadas con saldo cero
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_fix_unpaid_invoices_due_zero.json
+```
+
+### Sincronizar saldo pendiente con pagos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/reports/gen_sync_invoice_due_with_payments.json
+```
+
+### Consultar el progreso de un reporte generado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/sales/reports/check_report.json?zid=123456&report=fix_unpaid_invoices_due_zero"
 ```

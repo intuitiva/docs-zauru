@@ -23,3 +23,52 @@ Le deberá aparecer un mensaje notificándole que la invitación fue creada exit
 ![imagen3](/img/permisos-de-acceso/invitaciones-3.jpg)
 
 El nuevo usuario recibirá un correo de Zauru donde deberá dar click a Suscribirse y llenar sus datos. Luego de que el nuevo usuario acepte la invitación, un correo de notificación le llegará al remitente de la invitación, diciendo de que la invitación de tal correo fue aceptada.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de invitaciones
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/invitations.json
+```
+
+### Obtener detalle de una invitación
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/invitations/1.json
+```
+
+### Crear invitación
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "invitation": {
+      "recipient_email": "nuevo_usuario@empresa.com"
+    }
+  }' \
+  https://app.zauru.com/access_control/invitations.json
+```
+
+### Eliminar invitación
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/access_control/invitations/1.json
+```

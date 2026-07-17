@@ -219,7 +219,7 @@ curl -v \
       "currency_id": "1"
     }
   }' \
-  https://app.zauru.com/sales/client/1.json
+  https://app.zauru.com/sales/clients/1.json
 ```
 
 esto me retornará un JSON como el siguiente:
@@ -290,7 +290,7 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X get \
-  https://app.zauru.com/sales/client/1.json
+  https://app.zauru.com/sales/clients/1.json
 ```
 
 esto retornará un JSON como el siguiente:
@@ -350,6 +350,26 @@ esto retornará un JSON como el siguiente:
     "web": null,
     "zid": 306
 }
+```
+
+### Obtener plantilla para crear un cliente
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/new.json
+```
+
+### Obtener plantilla para editar un cliente
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/1/edit.json
 ```
 
 ### Exportar clientes a CSV

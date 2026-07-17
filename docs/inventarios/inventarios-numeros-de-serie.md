@@ -170,3 +170,110 @@ A continuación le aparecerá el segundo paso para crear la reservación, aquí 
 Le aparecerá un mensaje notificándole que la reservación fue creada exitosamente, podrá ver los detalles de la reservación o entregarla en la parte inferior.
 
 ![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Obtener todos los números de serie de una bodega
+Devuelve la lista de números de serie de la bodega especificada.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/serials.json?warehouse=1
+```
+
+### Obtener los números de serie de todas las bodegas
+Devuelve todos los números de serie sin filtrar por bodega.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/serials/all_warehouses.json
+```
+
+### Obtener el detalle de un número de serie
+Devuelve los datos del número de serie, su producto asociado y el historial de envíos donde ha participado.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/serials/1.json
+```
+
+### Obtener los números de serie de un producto
+Devuelve todos los números de serie asociados a un producto específico.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/serials/1/item.json
+```
+
+### Crear un número de serie
+Crea un nuevo número de serie para un ítem identificable.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "serial": {
+      "name": "SN-001",
+      "item_id": "2",
+      "description": "Descripción opcional"
+    }
+  }' \
+  https://app.zauru.com/inventories/serials.json
+```
+
+### Actualizar un número de serie
+Actualiza los datos de un número de serie existente.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "serial": {
+      "name": "SN-001-actualizado",
+      "item_id": "2",
+      "description": "Descripción actualizada"
+    }
+  }' \
+  https://app.zauru.com/inventories/serials/1.json
+```
+
+### Eliminar un número de serie
+Elimina un número de serie. Solo es posible si no tiene movimientos asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/serials/1.json
+```
+
+### Autocompletar números de serie
+Endpoint de autocompletado para buscar números de serie por término. Útil para integraciones con formularios personalizados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/serials/autocomplete.json?term=SN-00
+```

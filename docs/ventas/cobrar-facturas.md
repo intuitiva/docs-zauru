@@ -162,3 +162,52 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/payments.json
 ```
+
+### Listar pagos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/payments.json
+```
+
+### Ver detalle de un pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/payments/1.json
+```
+
+### Editar un pago (edición superficial)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payment": {
+      "reference": "referencia actualizada",
+      "date": "2024-01-15",
+      "memo": "memo actualizado",
+      "charger_id": "2"
+    }
+  }' \
+  https://app.zauru.com/sales/payments/1.json
+```
+
+### Listar pagos anulados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/payments/voided.json
+```

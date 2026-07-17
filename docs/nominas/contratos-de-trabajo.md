@@ -203,3 +203,92 @@ curl -v \
   }' \
   https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations.json
 ```
+
+### Ver una terminacion de contrato
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/work_contract_terminations/1.json
+```
+
+### Obtener estructura para una nueva terminacion de contrato
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations/new.json
+```
+
+### Eliminar una terminacion de contrato
+
+Revierta la terminacion y devuelve el contrato a estado activo.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/work_contract_terminations/1.json
+```
+
+### Obtener estructura para crear un contrato
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/work_contracts/new.json
+```
+
+### Obtener estructura para editar un contrato
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/work_contracts/1/edit.json
+```
+
+### Actualizar un contrato de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "work_contract": {
+      "reference": "Contrato actualizado",
+      "hourly_salary_ordinary": "55.0",
+      "monthly_mandatory_bonus": "250.0"
+    }
+  }' \
+  https://app.zauru.com/payroll/work_contracts/1.json
+```
+
+### Borrar un contrato de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/work_contracts/1.json
+```

@@ -57,3 +57,97 @@ Luego de que se confirme que el pago que hizo el cliente se pudo cobrar deberá 
 Le aparecerá un mensaje notificándole que se creo el pago, para imprimir el recibo de caja presione “Imprimir como Recibo”.
 
 ![imagen5](/img/ventas/cobros-sin-confirmar-5.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Listar cobros sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/draft_payments.json
+```
+
+### Ver detalle de un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/draft_payments/1.json
+```
+
+### Obtener plantilla para crear un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/payments/new_unconfirmed.json
+```
+
+### Crear un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payment": {
+      "draft": "1",
+      "payee_id": "1",
+      "date": "2024-01-15",
+      "agency_id": "1",
+      "payment_method_id": "1",
+      "reference": "referencia del cobro provisional",
+      "amount": "100",
+      "memo": "cobro sin confirmar"
+    }
+  }' \
+  https://app.zauru.com/sales/payments/create_unconfirmed.json
+```
+
+### Editar un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payment": {
+      "reference": "referencia actualizada",
+      "date": "2024-01-15",
+      "memo": "memo actualizado"
+    }
+  }' \
+  https://app.zauru.com/sales/draft_payments/1.json
+```
+
+### Confirmar un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/draft_payments/1/confirm.json
+```
+
+### Anular un cobro sin confirmar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/draft_payments/1.json
+```

@@ -56,3 +56,68 @@ El archivo CSV debe contener las siguientes columnas:
 - `currency_id`: ID de la moneda
 
 La primera fila del archivo se considera encabezado y se omite durante la importacion.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener el formulario de importacion de grupos de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_group_imports/new.json
+```
+
+### Importar grupos de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-Type: multipart/form-data" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -F "account_group_import[file]=@Desktop/grupos-de-cuentas.csv" \
+  https://app.zauru.com/accounting/accounts/account_group_imports.json
+```
+
+### Obtener el formulario de importacion de cuentas contables
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_imports/new.json
+```
+
+### Importar cuentas contables
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-Type: multipart/form-data" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -F "account_import[file]=@Desktop/cuentas-contables.csv" \
+  https://app.zauru.com/accounting/accounts/account_imports.json
+```
+
+### Obtener el formulario de importacion de transacciones
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/entries/entries_import/new.json
+```
+
+### Importar transacciones (partidas contables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-Type: multipart/form-data" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -F "entries_import[file]=@Desktop/transacciones.csv" \
+  https://app.zauru.com/accounting/entries/entries_import.json
+```

@@ -46,3 +46,15 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/purchases/purchase_orders/1/rebound.json
 ```
+
+### Devolver una recepción específica
+Cuando una orden de compra tiene varias recepciones, puede devolver una recepción en particular. Reemplaze el `purchase_order_id` por el ID de la orden de compra y el `1` por el ID de la recepción que desea devolver.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/receptions/1/rebound.json?purchase_order_id=1"
+```

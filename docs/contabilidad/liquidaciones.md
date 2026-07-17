@@ -82,3 +82,27 @@ Ventajas de usar liquidaciones sobre crear transacciones manuales:
 - Las partidas quedan automaticamente reconciliadas.
 - Se mantiene la trazabilidad de que partidas se pagaron juntas.
 - Es mas rapido que crear una transaccion y luego reconciliar manualmente.
+
+## API (llamadas desde sistemas externos)
+
+### Crear una liquidacion (settlement)
+
+Crea una transaccion que salda las partidas seleccionadas de una cuenta reconciliable. El `:id` en la URL es el ID de la cuenta reconciliable que se esta liquidando. El monto se calcula automaticamente como la suma de las partidas seleccionadas en `entries_ids`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "reference": "Liquidacion de gastos",
+      "date": "2018-09-28",
+      "account_id": "1"
+    },
+    "entries_ids": ["1", "2", "3"]
+  }' \
+  https://app.zauru.com/accounting/entries/1/settlement_action.json
+```

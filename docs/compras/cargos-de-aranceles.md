@@ -42,3 +42,95 @@ i. Presione “Crear cargo” para crear el cargo de arancel a su orden de compr
 Le aparecerá un mensaje de éxito notificándole que el cargo de arancel fue creado exitosamente.
 
 ![imagen3](/img/compras/cargos-de-aranceles-3.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Ver detalles de un cargo de arancel
+El 1 al final de la URL es el ID del cargo de arancel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/charges/tariffs_charges/1.json
+```
+
+### Obtener datos para un cargo de arancel nuevo
+El parámetro `po` es el ID de la orden de compra a la que se le agregaran los aranceles
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/charges/tariffs_charges/new.json?po=1"
+```
+
+### Obtener datos para editar un cargo de arancel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/charges/tariffs_charges/1/edit.json
+```
+
+### Crear nuevo cargo de arancel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "charge": {
+      "reference": "Arancel IVA",
+      "taxable": "0",
+      "issue_date": "2018-10-27",
+      "charge_term_id": "1",
+      "payee_info": "<V1> 1 | Proveedor de aranceles, S.A.",
+      "purchase_order_id": "1",
+      "tariffs_exchange_amount": "0",
+      "tariffs_attributes": {
+        "0": {
+          "purchase_order_detail_id": "1",
+          "amount": "50"
+        },
+        "1": {
+          "purchase_order_detail_id": "2",
+          "amount": "75"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/charges/tariffs_charges.json
+```
+
+### Actualizar un cargo de arancel
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "charge": {
+      "reference": "Arancel IVA actualizado",
+      "tariffs_attributes": {
+        "0": {
+          "id": "1",
+          "purchase_order_detail_id": "1",
+          "amount": "60"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/charges/tariffs_charges/1.json
+```

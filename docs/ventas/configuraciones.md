@@ -556,6 +556,16 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_terms/1.json
 ```
 
+#### Obtener plantilla para crear un término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_terms/new.json
+```
+
 #### Crear nuevo término de pago
 ```bash
 curl -v \
@@ -576,6 +586,25 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/settings/payment_terms.json
+```
+
+#### Actualizar un término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "payment_term": {
+      "name": "NET 30 Actualizado",
+      "active": "1",
+      "credit_days": "45",
+      "credit_percent": "100"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/payment_terms/1.json
 ```
 
 #### Eliminar término de pago
@@ -611,6 +640,16 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods/1.json
 ```
 
+#### Obtener plantilla para crear un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/payment_methods/new.json
+```
+
 #### Crear nuevo método de pago
 ```bash
 curl -v \
@@ -633,6 +672,24 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/settings/payment_methods.json
+```
+
+#### Actualizar un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payment_method": {
+      "name": "Método de pago Actualizado",
+      "active": "1",
+      "account_id": "3"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/payment_methods/1.json
 ```
 
 #### Eliminar método de pago
@@ -668,6 +725,16 @@ curl -v \
   https://app.zauru.com/sales/settings/price_lists/1.json
 ```
 
+#### Obtener plantilla para crear un listado de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/price_lists/new.json
+```
+
 #### Crear nuevo listado de precios
 ```bash
 curl -v \
@@ -688,6 +755,24 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/settings/price_lists.json
+```
+
+#### Actualizar un listado de precios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "price_list": {
+      "name": "Lista Distribuidor Actualizada",
+      "active": "1",
+      "description": "Precios actualizados para distribuidores"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/price_lists/1.json
 ```
 
 #### Eliminar listado de precios
@@ -713,6 +798,26 @@ curl -v \
   https://app.zauru.com/sales/settings/discounts.json
 ```
 
+#### Ver detalle de un descuento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/discounts/1.json
+```
+
+#### Obtener plantilla para crear un descuento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/settings/discounts/new.json
+```
+
 #### Crear nuevo descuento
 ```bash
 curl -v \
@@ -734,6 +839,24 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/settings/discounts.json
+```
+
+#### Actualizar un descuento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "discount": {
+      "name": "Descuento 15%",
+      "active": "1",
+      "percent": "0.15"
+    }
+  }' \
+  https://app.zauru.com/sales/settings/discounts/1.json
 ```
 
 #### Eliminar descuento

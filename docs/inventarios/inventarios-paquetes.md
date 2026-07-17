@@ -158,3 +158,132 @@ Al hacer clic sobre un paquete en la vista de existencias, podrá ver:
 3. Seleccionar "Exportar".
 
 Esto descargará un archivo XLS con las existencias de todos los paquetes por bodega.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener todos los paquetes
+Devuelve la lista de paquetes (bundles). Puede filtrar por etiqueta usando el parámetro `tag`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundles.json
+```
+
+### Obtener el detalle de un paquete
+Devuelve los datos del paquete, sus componentes (bundle_details) y los formularios asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundles/1.json
+```
+
+### Crear un paquete
+Crea un nuevo paquete con sus componentes y cantidades.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "bundle": {
+      "code": "COMBO-1",
+      "name": "Combo Oficina",
+      "description": "Paquete de útiles",
+      "bundle_details_attributes": {
+        "0": { "item_id": "2", "quantity": "2" },
+        "1": { "item_id": "3", "quantity": "1" }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/bundles.json
+```
+
+### Actualizar un paquete
+Actualiza los datos y componentes de un paquete existente.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "bundle": {
+      "name": "Combo Oficina actualizado",
+      "bundle_details_attributes": {
+        "0": { "id": "1", "quantity": "3" }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/bundles/1.json
+```
+
+### Eliminar un paquete
+Elimina un paquete. Solo es posible si no tiene movimientos asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/bundles/1.json
+```
+
+### Consultar ítems dinámicos con stock de un paquete
+Para paquetes dinámicos (por categoría), devuelve los ítems de la categoría que tienen stock disponible en una bodega específica.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundles/get_dynamic_items_with_stock.json?agency_id=1&bundle_id=2
+```
+
+### Obtener el detalle de existencias de un paquete
+Devuelve los datos del paquete junto con las métricas de existencias (disponible, entrante, saliente) calculadas para la bodega indicada.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundle_stocks/1.json?warehouse=1
+```
+
+### Obtener las existencias de un paquete en todas las bodegas
+Devuelve un hash con las existencias disponibles del paquete desglosadas por bodega.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundle_stocks/all_warehouses.json
+```
+
+### Importar paquetes
+Importa paquetes desde un archivo. El cuerpo de la petición debe incluir el archivo a importar.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "bundle_import": {
+      "file": "archivo_de_importacion.xlsx"
+    }
+  }' \
+  https://app.zauru.com/inventories/bundles/bundle_imports.json
+```

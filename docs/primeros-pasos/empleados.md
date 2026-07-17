@@ -106,6 +106,57 @@ curl -v \
   https://app.zauru.com/settings/employees.json
 ```
 
+#### Actualizar empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "employee": {
+      "name": "Empleado Vendedor Senior",
+      "seller": "1",
+      "active": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/employees/1.json
+```
+
+#### Eliminar empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/employees/1.json
+```
+
+#### Obtener listado de empleados filtrado por estado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employees.json?scope=all
+```
+
+#### Datatables de empleados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"start": "0", "length": "25", "scope": "active"}' \
+  https://app.zauru.com/settings/employees/datatables.json
+```
+
 
 ---
 
@@ -153,7 +204,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/employee_categories.json
+  https://app.zauru.com/settings/employees/employee_categories.json
 ```
 
 ### Crear categoría de empleado
@@ -170,7 +221,44 @@ curl -v \
       "notes": "Personal administrativo"
     }
   }' \
-  https://app.zauru.com/settings/employee_categories.json
+  https://app.zauru.com/settings/employees/employee_categories.json
+```
+
+### Obtener detalle de una categoría de empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/employees/employee_categories/1.json
+```
+
+### Actualizar categoría de empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "employee_category": {
+      "name": "Administrativo y Finanzas"
+    }
+  }' \
+  https://app.zauru.com/settings/employees/employee_categories/1.json
+```
+
+### Eliminar categoría de empleado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/employees/employee_categories/1.json
 ```
 
 ### Exportar empleados
@@ -181,4 +269,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/employees/export.csv
+```
+
+### API de Importación de Empleados
+
+#### Crear importación de empleados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "employee_import": {
+      "file": "archivo_excel.xlsx"
+    }
+  }' \
+  https://app.zauru.com/settings/employees/employee_imports.json
 ```

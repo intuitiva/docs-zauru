@@ -203,3 +203,301 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/unpaid_pieceworks/1.json
 ```
+
+### Obtener estructura para crear un destajo
+
+Devuelve el destajo vacio junto con el listado de empleados disponibles.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_pieceworks/new.json
+```
+
+### Obtener estructura para editar un destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_pieceworks/1/edit.json
+```
+
+### Actualizar un destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "piecework": {
+      "date": "2024-06-15",
+      "supervisor_id": "1",
+      "notes": "Corte de cafe parcela norte actualizado",
+      "piecework_details_attributes": {
+        "0": {
+          "id": "10",
+          "employee_id": "1",
+          "piecework_type_id": "1",
+          "quantity": "6.0",
+          "reference": "Lote A"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/payroll/unpaid_pieceworks/1.json
+```
+
+### Listar destajos pagados
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/paid_pieceworks.json
+```
+
+### Ver un destajo pagado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/paid_pieceworks/1.json
+```
+
+### Obtener estructura para un destajo de feriado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/piecework_holidays/new.json
+```
+
+### Crear un destajo de feriado
+
+Genera automaticamente los detalles de destajo para todos los empleados de la agencia con contrato activo de tipo destajo, aplicando el recargo de horas extra.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "piecework_holiday": {
+      "holiday": "2024-12-25",
+      "holiday_hours": "8",
+      "agency_id": "1",
+      "piecework_type_id": "1"
+    }
+  }' \
+  https://app.zauru.com/payroll/piecework_holidays.json
+```
+
+### Listar tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types.json
+```
+
+### Ver un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+### Obtener estructura para crear un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/new.json
+```
+
+### Obtener estructura para editar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/1/edit.json
+```
+
+### Crear un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "piecework_type": {
+      "active": true,
+      "name": "Corte de cafe",
+      "id_number": "CC-001",
+      "value": "25.00",
+      "unit_of_measurement": "quintal",
+      "account_id": "1",
+      "includes_bonus": false,
+      "overtime": false
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_types.json
+```
+
+### Actualizar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "piecework_type": {
+      "name": "Corte de cafe actualizado",
+      "value": "28.00"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+### Borrar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+### Listar grupos de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_type_groups.json
+```
+
+### Ver un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
+```
+
+### Obtener estructura para crear un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_type_groups/new.json
+```
+
+### Obtener estructura para editar un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_type_groups/1/edit.json
+```
+
+### Crear un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "piecework_type_group": {
+      "name": "Cosecha",
+      "id_number": "CS-001",
+      "description": "Tipos de destajo relacionados con cosecha"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_type_groups.json
+```
+
+### Actualizar un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "piecework_type_group": {
+      "name": "Cosecha actualizada",
+      "description": "Tipos de destajo de cosecha"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
+```
+
+### Borrar un grupo de tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
+```

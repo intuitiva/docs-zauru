@@ -89,3 +89,46 @@ Para actualizar los permisos presione “Actualizar”.
 Debera aparecer en la pantalla un mensaje de exito notificandole que los permisos se actualizaron exitosamente. Debe esperar el tiempo especificado para que los cambios de permisos tengan efecto. En este caso se debe esperar 2 minutos para que se actualizen los permisos.
 
 ![imagen12](/img/permisos-de-acceso/permisos-6.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Obtener permisos por rol de una aplicación
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/permissions.json
+```
+
+Para obtener los permisos de una aplicación específica, agregue el id de la aplicación:
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/permissions/1.json
+```
+
+### Actualizar permisos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "permissions": {
+      "1,2": "1",
+      "2,2": "1",
+      "3,2": "1"
+    }
+  }' \
+  https://app.zauru.com/access_control/permissions.json
+```
+
+Donde la clave es `"operation_id,role_id"` y el valor es `"1"` para asignar el permiso.

@@ -79,7 +79,7 @@ Para registrar el pago a un proveedor:
 
 ## API (llamadas desde sistemas externos)
 
-### Listar ordenes de compra pendientes de pago
+### Listar ordenes de compra (datatables)
 
 ```bash
 curl -v \
@@ -87,5 +87,111 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/pos/purchases/datatables.json
+  ```
+
+### Ver orden de compra
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/purchases/1.json
+  ```
+
+### Nueva orden de compra (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/purchases/new.json
+  ```
+
+### Nueva compra de gastos (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/purchases/new_expense_purchase.json
+  ```
+
+### Crear orden de compra
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "purchase_order": {
+      "reference": "prueba",
+      "payee_id": "1",
+      "charge_term_id": "1",
+      "purchaser_id": "1",
+      "taxable": "1",
+      "purchase_order_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "booked_quantity": "5",
+          "unit_cost": "100"
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
   https://app.zauru.com/pos/purchases.json
-```
+  ```
+
+### Nueva descargo (pago al proveedor)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/purchases/1/new_discharge.json
+  ```
+
+### Crear descargo (pago al proveedor)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "discharge": {
+      "payment_method_id": "1",
+      "reference": "pago prueba"
+    }
+  }' \
+  https://app.zauru.com/pos/purchases/create_discharge.json
+  ```

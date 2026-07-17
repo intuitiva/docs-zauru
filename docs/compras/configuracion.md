@@ -110,3 +110,175 @@ curl -v \
   -X GET \
   https://app.zauru.com/purchases/settings/discharge_methods.json
 ```
+
+### Ver detalles de un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/settings/discharge_methods/1.json
+```
+
+### Crear nuevo método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "discharge_method": {
+      "active": "1",
+      "name": "Efectivo",
+      "account_id": "1"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/discharge_methods.json
+```
+
+### Actualizar un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "discharge_method": {
+      "name": "Cheque"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/discharge_methods/1.json
+```
+
+### Eliminar un método de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/settings/discharge_methods/1.json
+```
+
+### Listado de términos de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/settings/charge_terms.json
+```
+
+### Crear nuevo término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "charge_term": {
+      "active": "1",
+      "name": "Crédito 30 días",
+      "account_from_id": "1",
+      "account_to_id": "2",
+      "credit_percent": "1",
+      "credit_days": "30"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/charge_terms.json
+```
+
+### Actualizar un término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "charge_term": {
+      "name": "Crédito 45 días",
+      "credit_days": "45"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/charge_terms/1.json
+```
+
+### Eliminar un término de pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/settings/charge_terms/1.json
+```
+
+### Listado de tipos de cargos
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/settings/charge_types.json
+```
+
+### Crear nuevo tipo de cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "charge_type": {
+      "name": "Flete terrestre",
+      "account_id": "1",
+      "included_in_item_cost": "1"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/charge_types.json
+```
+
+### Actualizar un tipo de cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "charge_type": {
+      "name": "Flete marítimo"
+    }
+  }' \
+  https://app.zauru.com/purchases/settings/charge_types/1.json
+```
+
+### Eliminar un tipo de cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/settings/charge_types/1.json
+```

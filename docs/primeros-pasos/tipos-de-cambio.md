@@ -80,6 +80,26 @@ Y esto me va a devolver un JSON con las siguientes características:
 ]
 ```
 
+### Crear tipo de cambio
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "exchange_rate": {
+      "date": "2024-05-01",
+      "currency_id": "2",
+      "currency_exchange_id": "1",
+      "exchange": "7.80",
+      "source": "Banco Central"
+    }
+  }' \
+  https://app.zauru.com/settings/exchange_rates.json
+```
+
 
 
 ## Exportar Tipos de Cambio

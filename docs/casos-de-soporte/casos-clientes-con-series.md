@@ -54,17 +54,6 @@ Desde el detalle del cliente, puede:
 
 ## API (llamadas desde sistemas externos)
 
-### listado de clientes con numeros de serie
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/support/clients_with_serials.json
-```
-
 ### detalle de un cliente con sus numeros de serie
 
 ```bash

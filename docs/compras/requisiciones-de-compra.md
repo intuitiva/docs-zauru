@@ -213,3 +213,76 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/purchase_requisitions/1.json
 ```
+
+### Listar requisiciones de compra
+Puede filtrar por alcance con el parámetro `scope` (`pending`, `approved` o `all`) y por agencia con el parámetro `agency`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/purchase_requisitions.json?scope=pending"
+```
+
+### Listar requisiciones anuladas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_requisitions/voided.json
+```
+
+### Ver detalles de una requisicion de compra
+El 1 al final de la URL es el ID de la requisicion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_requisitions/1.json
+```
+
+### Obtener datos para editar una requisicion de compra
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/purchase_requisitions/1/edit.json
+```
+
+### Obtener el formulario de aprobación en lote
+Recibe el listado de IDs de requisiciones a aprobar y devuelve las requisiciones con sus detalles para preparar la aprobación en lote.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "purchase_requisition_ids": ["1", "2"]
+  }' \
+  https://app.zauru.com/purchases/purchase_requisitions/bulk_approve_form.json
+```
+
+### Ver el resultado de una aprobación
+Devuelve las ordenes de compra que se generaron a partir de la requisición aprobada. Cuando se aprueban varias requisiciones a la vez, puede indicar los IDs adicionales con el parámetro `other_ids` separados por guiones.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/purchase_requisitions/1/approval_result.json?other_ids=2-3"
+```

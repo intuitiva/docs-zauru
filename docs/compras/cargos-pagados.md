@@ -101,3 +101,24 @@ curl -v \
   -X GET \
   https://app.zauru.com/purchases/paid_charges/1.json
 ```
+
+### Actualizar informacion de un cargo pagado
+Permite editar campos informativos limitados (numero, factura, referencia, fecha, memo y etiquetas) sin disparar los callbacks contables.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "charge": {
+      "id_number": "CARGO-00001",
+      "invoice": "F-001",
+      "reference": "Referencia actualizada",
+      "issue_date": "2018-10-27",
+      "memo": "Notas del cargo"
+    }
+  }' \
+  https://app.zauru.com/purchases/paid_charges/1/shallow_update.json
+```

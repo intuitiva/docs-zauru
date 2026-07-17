@@ -273,3 +273,113 @@ Algunos reportes (como los de reparación y "Últimos movimientos por bodega") s
 4. Una vez completado, el reporte se muestra en pantalla o se descarga.
 
 Si un reporte falla, puede volver a intentarlo. Si un reporte en caché está desactualizado, puede refrescarlo para generar una nueva versión.
+
+## API (llamadas desde sistemas externos)
+
+Los reportes de reparación y "Últimos movimientos por bodega" se ejecutan de forma asíncrona. Desde un sistema externo puede iniciar la generación de un reporte y luego consultar su estado hasta que termine.
+
+### Consultar el estado de un reporte
+Devuelve el estado, porcentaje y mensaje de un reporte asíncrono en ejecución. El parámetro `zid` es el identificador retornado al iniciar la generación y `report` es el nombre del reporte.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/reports/check_report.json?zid=123&report=fix_unmatched_stock
+```
+
+### Corregir existencias desincronizadas
+Inicia en segundo plano la corrección de las cantidades de existencias a partir del historial de envíos.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_fix_unmatched_stock.json
+```
+
+### Corregir lotes desincronizados
+Inicia en segundo plano la corrección de las cantidades de existencias de lotes a partir del historial de envíos.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_fix_unmatched_lot.json
+```
+
+### Corregir ubicaciones de números de serie
+Inicia en segundo plano la corrección de la ubicación actual de cada número de serie.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_fix_serials_locations.json
+```
+
+### Corregir entregas no registradas
+Inicia en segundo plano la asignación de cantidades reservadas como entregadas en los envíos entregados sin cantidades entregadas.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_fix_undelivered_deliveries.json
+```
+
+### Generar reporte de números de serie sin stock suficiente
+Inicia en segundo plano la generación del reporte que identifica ítems donde la cantidad de números de serie es mayor que la existencia disponible.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_list_unmatched_serials_with_stocks.json
+```
+
+### Generar reporte de números de serie y stock diferentes
+Inicia en segundo plano la generación del reporte que identifica ítems donde la cantidad de números de serie difiere de la existencia.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_list_unmatched_serials_and_stocks.json
+```
+
+### Generar reporte de lotes con stock inconsistente
+Inicia en segundo plano la generación del reporte que identifica ítems donde las cantidades de lotes no coinciden con las existencias.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/reports/gen_list_unmatched_lots_with_stocks.json
+```
+
+### Consultar el estado del reporte de últimos movimientos por bodega
+Devuelve el estado, porcentaje y, cuando está listo, la URL de redirección para visualizar el reporte de últimos movimientos por bodega.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/reports/check_last_movements_per_agency.json?zid=123
+```

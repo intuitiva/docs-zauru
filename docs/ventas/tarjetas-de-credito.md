@@ -110,14 +110,3 @@ curl -v \
   }' \
   https://app.zauru.com/sales/clients/1/credit_cards.json
 ```
-
-### Desactivar tarjeta de crédito
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X DELETE \
-  https://app.zauru.com/sales/credit_cards/1.json
-```

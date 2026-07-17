@@ -172,7 +172,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/print_templates.json
+  https://app.zauru.com/settings/templates/print_templates.json
 ```
 
 ### Obtener detalle de una plantilla de impresión
@@ -182,7 +182,65 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/print_templates/1.json
+  https://app.zauru.com/settings/templates/print_templates/1.json
+```
+
+### Crear plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "print_template": {
+      "name": "Plantilla de Factura",
+      "operation_id": "1",
+      "active": true,
+      "width": "21",
+      "height": "29.7",
+      "pixels_per_cm": "37.8"
+    }
+  }' \
+  https://app.zauru.com/settings/templates/print_templates.json
+```
+
+### Actualizar plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "print_template": {
+      "name": "Plantilla de Factura Actualizada"
+    }
+  }' \
+  https://app.zauru.com/settings/templates/print_templates/1.json
+```
+
+### Eliminar plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/templates/print_templates/1.json
+```
+
+### Duplicar plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/templates/print_templates/1/duplicate.json
 ```
 
 ### Obtener listado de impresiones de documentos
@@ -192,7 +250,17 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/document_prints.json
+  https://app.zauru.com/settings/templates/document_prints.json
+```
+
+### Obtener detalle de una impresión de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/templates/document_prints/1.json
 ```
 
 ### Crear impresión de documento
@@ -211,5 +279,33 @@ curl -v \
       "notes": "Impresión para facturas"
     }
   }' \
-  https://app.zauru.com/settings/document_prints.json
+  https://app.zauru.com/settings/templates/document_prints.json
+```
+
+### Actualizar impresión de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "document_print": {
+      "active": true,
+      "print_template_id": "2"
+    }
+  }' \
+  https://app.zauru.com/settings/templates/document_prints/1.json
+```
+
+### Eliminar impresión de documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/templates/document_prints/1.json
 ```

@@ -114,6 +114,47 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports.json
 ```
 
+### Actualizar reporte entregable
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "deliverable_report": {
+      "subject": "Reporte mensual de ventas",
+      "repeat_monthly_day": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/deliverable_reports/1.json
+```
+
+### Eliminar reporte entregable
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/deliverable_reports/1.json
+```
+
+### Enviar reporte de prueba por correo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/deliverable_reports/1/send_email.json
+```
+
 ### Envío inmediato a usted mismo
 
 ```bash

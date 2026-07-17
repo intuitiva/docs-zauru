@@ -221,6 +221,6 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X GET \
+  -X DELETE \
   https://app.zauru.com/contracts/active_contracts/1/close.json
 ```

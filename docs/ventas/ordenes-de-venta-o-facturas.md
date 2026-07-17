@@ -272,6 +272,26 @@ curl -v \
   https://app.zauru.com/sales/orders/active_sellers.json
 ```
 
+### Listar órdenes de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders.json
+```
+
+### Obtener detalle de la orden de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1.json
+```
+
 ### Obtener detalle de la factura
 ```bash
 curl -v \
@@ -279,7 +299,35 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/unpaid_invoice/1.json
+  https://app.zauru.com/sales/unpaid_invoices/1.json
+```
+
+### Crear orden de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "invoice": {
+      "reference": "Prueba de Orden de Venta",
+      "date": "2024-01-15",
+      "agency_id": "1",
+      "payment_term_id": "1",
+      "payee_id": "1",
+      "seller_id": "1",
+      "invoice_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "quantity": "10"
+        }
+      },
+      "memo": "orden generada desde el API"
+    }
+  }' \
+  https://app.zauru.com/sales/orders.json
 ```
 
 ### editar orden de venta
@@ -396,7 +444,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
+  -X PATCH \
   -d '{
     "invoice": {
       "id": "1",
@@ -407,7 +455,7 @@ curl -v \
       "memo": "Nota actualizada desde API"
     }
   }' \
-  https://app.zauru.com/sales/unpaid_invoice/1/shallow_update.json
+  https://app.zauru.com/sales/unpaid_invoices/1/shallow_update.json
 ```
 
 ### Emitir factura desde orden (fast issue)
@@ -417,7 +465,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/orders/1/issue_fast.json
+  https://app.zauru.com/sales/unpaid_invoices/1/issue_fast.json
 ```
 
 ### Exportar órdenes de venta a Excel
@@ -447,7 +495,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/unpaid_invoices/external_storage_certified_response/1.json
+  https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response.json
 ```
 
 ### Anular factura no pagada
@@ -459,4 +507,159 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/sales/unpaid_invoices/1.json
+```
+
+### Listar facturas no pagadas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices.json
+```
+
+### Obtener plantilla para crear una orden de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/new.json
+```
+
+### Obtener plantilla para crear una factura
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/new.json
+```
+
+### Editar una orden de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1/edit.json
+```
+
+### Editar metadata de creación de una orden
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1/edit_creation.json
+```
+
+### Actualizar metadata de creación de una orden
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "invoice": {
+      "order_number": "ORD-456",
+      "created_at": "2024-01-15"
+    }
+  }' \
+  https://app.zauru.com/sales/orders/1/update_creation.json
+```
+
+### Anular una orden de venta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1/void.json
+```
+
+### Marcar una orden de venta como regalo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/orders/1/gift.json
+```
+
+### Actualizar una factura no pagada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "invoice": {
+      "reference": "Referencia actualizada",
+      "invoice_details_attributes": {
+        "0": {
+          "id": "1",
+          "quantity": "5"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/sales/unpaid_invoices/1.json
+```
+
+### Consultar respuesta certificada de anulación de almacenamiento externo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response_for_voiding.json
+```
+
+### Reenviar factura por correo electrónico
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/unpaid_invoices/1/resend_mail.json
+```
+
+### Generar impresión masiva de facturas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "from": "2024-01-01",
+    "to": "2024-01-31"
+  }' \
+  https://app.zauru.com/sales/unpaid_invoices/gen_print_all.json
+```
+
+### Consultar el progreso de la impresión masiva
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/check_print_all.json?zid=123456
 ```

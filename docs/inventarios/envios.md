@@ -313,6 +313,28 @@ Le aparecerá una mensaje notificando que se entrego la reservación. Ahora tend
 
 ## API (llamadas desde sistemas externos)
 
+### Obtener todas las reservaciones
+Devuelve la lista de envíos que están en estado de reservación (no despachados, no entregados, no anulados, no devueltos). Puede filtrar por alcance (`scope`), etiqueta (`tag`) y rango de fechas.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bookings.json?scope=all
+```
+
+### Obtener el detalle de una reservación
+Devuelve los datos del envío, sus movimientos, bodegas origen y destino, y los formularios asociados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bookings/1.json
+```
+
 ### Crear un envío preliminar (reservación)
 ```bash
 curl -v \
@@ -412,4 +434,97 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/inventories/deliveries/1.json
+```
+
+### Actualizar una reservación
+Actualiza los datos de un envío mientras esté en estado de reservación (Booked). Una vez despachado o entregado, el envío ya no se puede editar.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "shipment": {
+      "reference": "Referencia actualizada",
+      "planned_delivery": "2018-08-15",
+      "movements_attributes": {
+        "0": {
+          "item_id": "2",
+          "booked_quantity": "120",
+          "id": "1"
+        }
+      },
+      "tag_ids": [""],
+      "memo": "Nota actualizada"
+    }
+  }' \
+  https://app.zauru.com/inventories/bookings/1.json
+```
+
+### Anular una reservación
+Anula (void) una reservación, liberando todas las reservas de productos. Solo se puede anular mientras el envío esté en estado de reservación.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/inventories/bookings/1.json
+```
+
+### Obtener el detalle de un envío en tránsito
+Devuelve los datos de un envío que está en tránsito (despachado pero no entregado).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/transits/1.json
+```
+
+### Obtener el detalle de una entrega
+Devuelve los datos de un envío que ya fue entregado.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/deliveries/1.json
+```
+
+### Actualizar una entrega
+Actualiza los campos editables de una entrega: referencia, transportista, notas (memo), etiquetas, fecha de entrega e imagen del envío.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "shipment": {
+      "reference": "Referencia de la entrega",
+      "transporter_id": "1",
+      "delivered_at": "2018-08-10",
+      "memo": "Notas de la entrega",
+      "tag_ids": [""]
+    }
+  }' \
+  https://app.zauru.com/inventories/deliveries/1.json
+```
+
+### Emitir documento electrónico externo de una entrega
+Emite el documento fiscal electrónico (FEL/DGII) asociado a una entrega en los países que lo soportan.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/deliveries/1/issue_external_document.json
 ```

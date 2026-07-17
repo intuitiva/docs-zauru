@@ -40,3 +40,23 @@ curl -v \
   }' \
   https://app.zauru.com/purchases/reports/datatables_inventory_cost_by_agency.json
 ```
+
+### Obtener costos promedio ponderado de todas las agencias
+Devuelve el costo del inventario disponible sumando todas las agencias, paginado al estilo DataTables.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/purchases/reports/datatables_inventory_cost.json
+```

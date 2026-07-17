@@ -169,3 +169,53 @@ Para los subproductos (`bill_of_material_subproducts_attributes`):
 | `expected_quantity` | decimal | Cantidad esperada por unidad de producto terminado. |
 | `reference` | texto | Referencia del subproducto. |
 | `_destroy` | booleano | Marcar como `true` para eliminar el subproducto (solo al editar). |
+
+### Ver una lista de materiales
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/bill_of_materials/1.json
+```
+
+### Actualizar una lista de materiales
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "production_bill_of_material": {
+      "description": "Lista de materiales actualizada",
+      "expected_duration_in_seconds": 4200,
+      "bill_of_material_details_attributes": {
+        "0": {
+          "id": "10",
+          "item_id": 2,
+          "quantity": 4,
+          "description": "Materia prima A actualizada"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/production/bill_of_materials/1.json
+```
+
+### Eliminar una lista de materiales
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/production/bill_of_materials/1.json
+```

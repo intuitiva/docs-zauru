@@ -99,3 +99,99 @@ Haga click sobre “Detalles” (El ojo) para ver los detalles de la orden de co
 Le aparecerán los detalles de la orden de compra, en la parte inferior de la página podrá encontrar los cargos asociados que se crearon. Estos cargos se distribuyen ponderadamente en el costo de cada producto.
 
 ![imagen7](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-7.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Ver detalles de un cargo
+El 1 al final de la URL es el ID del cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/charges/1.json
+```
+
+### Obtener datos para un cargo nuevo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/charges/new.json
+```
+
+### Obtener datos para editar un cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/charges/1/edit.json
+```
+
+### Crear nuevo cargo adicional
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "charge": {
+      "reference": "Flete terrestre",
+      "issue_date": "2018-10-27",
+      "charge_term_id": "1",
+      "payee_info": "<V1> 1 | Proveedor de flete, S.A.",
+      "purchase_order_id": "1",
+      "charge_details_attributes": {
+        "0": {
+          "charge_type_id": "1",
+          "amount": "100"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/charges.json
+```
+
+### Actualizar un cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "charge": {
+      "reference": "Flete terrestre actualizado",
+      "charge_details_attributes": {
+        "0": {
+          "id": "1",
+          "charge_type_id": "1",
+          "amount": "150"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/charges/1.json
+```
+
+### Anular un cargo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/purchases/charges/1.json
+```

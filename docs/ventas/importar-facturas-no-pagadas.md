@@ -34,6 +34,16 @@ El sistema procesará el archivo y creará las facturas no pagadas según los da
 
 ## API (llamadas desde sistemas externos)
 
+### Obtener plantilla para importar facturas no pagadas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/unpaid_invoices/unpaid_invoice_imports/new.json
+```
+
 ### Importar facturas no pagadas
 ```bash
 curl -v \

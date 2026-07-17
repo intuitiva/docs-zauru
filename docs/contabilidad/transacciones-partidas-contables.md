@@ -191,3 +191,154 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/entries/1.json
 ```
+
+### Obtener detalle de una transaccion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/entries/1.json
+```
+
+### Obtener el formulario de nueva transaccion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/entries/new.json
+```
+
+### Obtener el formulario de edicion de una transaccion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/entries/1/edit.json
+```
+
+### Actualizar una transaccion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "reference": "prueba actualizada",
+      "date": "2018-09-28",
+      "account_id": "1",
+      "amount": "150",
+      "splits_attributes": {
+        "0": {
+          "reference": "primer split",
+          "account_id": "2",
+          "amount": "140.0"
+        },
+        "1": {
+          "reference": "segundo split",
+          "account_id": "3",
+          "amount": "10"
+        }
+      },
+      "memo": "memo actualizado"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries/1.json
+```
+
+### Listado de transacciones (datatables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "scope": "all"
+  }' \
+  https://app.zauru.com/accounting/entries/datatables.json
+```
+
+## API de tipos de documento fuente mensual (llamadas desde sistemas externos)
+
+### Consultar listado de tipos de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types.json
+```
+
+### Obtener detalle de un tipo de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types/1.json
+```
+
+### Consultar las transacciones de un tipo de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types/1/show_entries.json
+```
+
+### Obtener el formulario de nuevo tipo de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types/new.json
+```
+
+### Crear un tipo de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "monthly_entry_source_doc_type": {
+      "source_doc_type": 0,
+      "reference": "Correlativo de ventas",
+      "month": 9,
+      "year": 2018
+    }
+  }' \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types.json
+```
+
+### Borrar un tipo de documento fuente mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/monthly_entry_source_doc_types/1.json
+```

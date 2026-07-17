@@ -174,4 +174,26 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/force_sync.json
-```
+  ```
+
+### Nueva sincronización (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/ecommerce/woocommerce_items_syncs/new.json
+  ```
+
+### Editar sincronización
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/edit.json
+  ```

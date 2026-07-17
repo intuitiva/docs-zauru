@@ -41,16 +41,217 @@ La ruta utilizada para acceder a la API es la siguiente:
 
     https://app.zauru.com/apps/webapp_tables
 
-De esa ruta ya pueden salir todas las variantes
+### Obtener listado de webapp tables
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables.json
+```
 
-    POST
-    https://app.zauru.com/apps/webapp_tables
+### Obtener detalle de una webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1.json
+```
 
-    GET
-    https://app.zauru.com/apps/webapp_tables
+### Crear webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "webapp_table": {
+      "name": "Tipos de monedas",
+      "rows_structure": ["nombre", "estado"],
+      "rows_type": ["string", "boolean"]
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_tables.json
+```
 
-    UPDATE
-    https://app.zauru.com/apps/webapp_tables/1
+### Actualizar webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "webapp_table": {
+      "name": "Tipos de monedas actualizado"
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_tables/1.json
+```
 
-    DELETE
-    https://app.zauru.com/apps/webapp_tables
+### Eliminar webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/apps/webapp_tables/1.json
+```
+
+### Obtener filas asociables (rowables) de una webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/rowables.json
+```
+
+### Asociar filas a documentos (create_rowables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "webapp_table": {
+      "rowables_id": ["1", "2"],
+      "rowables_type": ["Invoice", "Shipment"],
+      "rowables_doc_id": ["10", "20"]
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_tables/1/create_rowables.json
+```
+
+## API de Filas (Webapp Rows)
+
+Las filas de una webapp table se gestionan a través de rutas anidadas.
+
+### Obtener listado de filas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json
+```
+
+### Obtener listado de filas con paginación
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json?page=1&per_page=25
+```
+
+### Obtener detalle de una fila
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
+```
+
+### Crear fila
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "webapp_row": {
+      "data": {
+        "nombre": "Quetzal",
+        "estado": true
+      }
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json
+```
+
+### Actualizar fila
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "webapp_row": {
+      "data": {
+        "nombre": "Dolar",
+        "estado": true
+      }
+    }
+  }' \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
+```
+
+### Eliminar fila
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
+```
+
+### Asociar una fila a un documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "temp_invoice_id": "10"
+  }' \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/associate.json
+```
+
+### Desasociar una fila de un documento
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  -d '{"temp_invoice_id": "10"}' \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/dissociate.json
+```
+
+Para desasociar todas las relaciones de una fila, use `"all": true`:
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  -d '{"all": true}' \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/dissociate.json
+```

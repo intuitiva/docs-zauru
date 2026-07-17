@@ -94,6 +94,19 @@ Esto permite que el numero de serie quede disponible para ser seleccionado al cr
 
 ## API (llamadas desde sistemas externos)
 
+### listado de numeros de serie atendidos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/serials_attended.json
+```
+
+Retorna todos los numeros de serie que se encuentran en la bodega virtual del cliente, sin paginar.
+
 ### listado de numeros de serie atendidos (datatables)
 
 ```bash
@@ -132,6 +145,19 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/support/serials_attended/1.json
 ```
+
+### obtener formulario de nuevo numero de serie
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/serials_attended/new.json
+```
+
+Retorna un objeto vacio de numero de serie con un `id_number` autogenerado, que puede usar como base para crear uno nuevo.
 
 ### Crear un numero de serie para un caso (en bodega destino Cliente)
 

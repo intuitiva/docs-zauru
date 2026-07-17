@@ -29,3 +29,70 @@ Le aparecerá un mensaje de éxito en la pantalla notificándole que el rol fue 
 ![imagen6](/img/permisos-de-acceso/roles-3.jpg)
 
 El siguiente paso es asignarle permisos a este rol creado para después suscribir a un usuario con este rol.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener listado de roles
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/roles.json
+```
+
+### Obtener detalle de un rol
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/roles/1.json
+```
+
+### Crear rol
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "role": {
+      "name": "Contabilidad",
+      "description": "Rol para el departamento de contabilidad"
+    }
+  }' \
+  https://app.zauru.com/access_control/roles.json
+```
+
+### Actualizar rol
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "role": {
+      "name": "Contabilidad Senior",
+      "description": "Rol actualizado"
+    }
+  }' \
+  https://app.zauru.com/access_control/roles/1.json
+```
+
+### Eliminar rol
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/access_control/roles/1.json
+```

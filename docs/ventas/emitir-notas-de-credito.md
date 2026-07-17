@@ -137,6 +137,16 @@ curl -v \
   https://app.zauru.com/sales/sales_notes/credit_notes.json
 ```
 
+### Listar las notas de crédito redimidas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes.json?scope=redeemed
+```
+
 esto retornará algo similar a esto:
 
 ```json
@@ -229,4 +239,36 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/sales_notes/credit_notes.json
+```
+
+### Obtener plantilla para crear una nota de crédito
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_notes/credit_notes/new.json?invoice=1
+```
+
+### Anular una nota de crédito
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/sales_notes/credit_notes/1.json
+```
+
+### Reenviar nota de crédito por correo electrónico
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/sales/sales_notes/credit_notes/1/resend_mail.json
 ```

@@ -92,3 +92,38 @@ Cuando se genera un envío de ajuste desde una auditoría:
 - Se acredita a la cuenta de inventario del producto (o la cuenta destino configurada).
 
 **Nota**: Si un producto no tiene un costo promedio mayor a cero, no se genera asiento contable para ese movimiento, ya que el monto sería cero.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener la configuración de inventarios
+Devuelve el valor actual de la opción `allow_item_type_modification` (si se permite modificar el tipo de producto de los ítems).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/inventories_settings/new.json
+```
+
+### Guardar la configuración de inventarios
+Guarda las opciones de configuración del módulo de Inventarios. Todos los parámetros son opcionales; solo se actualizaron los que se envíen.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "allow_item_type_modification": "0",
+    "hide_inactive_items": "1",
+    "recommend_needs_transport_for_approved_transfer_requests": "0",
+    "inventory_audit_entries_enabled": "1",
+    "inventory_audit_incoming_shipment_entry_account_from_id": "10",
+    "inventory_audit_incoming_shipment_entry_account_to_id": "11",
+    "inventory_audit_outgoing_shipment_entry_account_from_id": "11",
+    "inventory_audit_outgoing_shipment_entry_account_to_id": "12"
+  }' \
+  https://app.zauru.com/inventories/inventories_settings.json
+```

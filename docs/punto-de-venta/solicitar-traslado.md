@@ -80,4 +80,86 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/transfer_requests.json
-```
+  ```
+
+### Ver solicitud de traslado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/transfer_requests/1.json
+  ```
+
+### Nueva solicitud de traslado (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/transfer_requests/new.json
+  ```
+
+### Editar solicitud de traslado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/transfer_requests/1/edit.json
+  ```
+
+### Crear solicitud de traslado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "inventories_transfer_request": {
+      "agency_from_id": "1",
+      "agency_to_id": "2",
+      "reference": "prueba",
+      "planned_delivery": "2024-01-15",
+      "transfer_request_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "requested_quantity": "5"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/transfer_requests.json
+  ```
+
+### Actualizar solicitud de traslado
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "inventories_transfer_request": {
+      "reference": "prueba editada",
+      "transfer_request_details_attributes": {
+        "0": {
+          "id": "1",
+          "requested_quantity": "10"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/transfer_requests/1.json
+  ```

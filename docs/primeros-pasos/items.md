@@ -177,6 +177,47 @@ curl -v \
   https://app.zauru.com/settings/items.json
 ```
 
+### actualizar item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "item": {
+      "name": "Producto prueba actualizado",
+      "sellable": "1",
+      "purchasable": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/items/1.json
+```
+
+### actualizar variaciones de item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "id": "1",
+    "items": [
+      {
+        "id": "2",
+        "master_item_id": "1",
+        "item_attributes_attributes": [
+          {"key": "Color", "value": "Rojo", "color": "#FF0000"}
+        ]
+      }
+    ]
+  }' \
+  https://app.zauru.com/settings/items/1/update_item_variations.json
+```
+
 ### destruir item
 ```bash
 curl -v \
@@ -215,6 +256,43 @@ curl -v \
     }
   }' \
   https://app.zauru.com/settings/items/item_categories.json
+```
+
+### obtener detalle de categoría de item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/item_categories/1.json
+```
+
+### actualizar categoría de item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "item_category": {
+      "name": "categoria actualizada"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_categories/1.json
+```
+
+### eliminar categoría de item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/items/item_categories/1.json
 ```
 
 
@@ -297,7 +375,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/brands.json
+  https://app.zauru.com/settings/items/brands.json
 ```
 
 ### Crear marca
@@ -315,7 +393,7 @@ curl -v \
       "color": "#FF0000"
     }
   }' \
-  https://app.zauru.com/settings/brands.json
+  https://app.zauru.com/settings/items/brands.json
 ```
 
 ### Exportar ítems
@@ -336,4 +414,170 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/export.json
+```
+
+### API de Súper Categorías de Ítems
+
+#### Obtener listado de súper categorías
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/item_super_categories.json
+```
+
+#### Crear súper categoría de ítem
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "item_super_category": {
+      "name": "Electrónica",
+      "description": "Productos electrónicos",
+      "color": "#0000FF"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_super_categories.json
+```
+
+#### Actualizar súper categoría de ítem
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "item_super_category": {
+      "name": "Electrónica y Accesorios"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_super_categories/1.json
+```
+
+#### Eliminar súper categoría de ítem
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/items/item_super_categories/1.json
+```
+
+### API de Marcas de Ítems
+
+#### Obtener detalle de una marca
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/brands/1.json
+```
+
+#### Actualizar marca
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "brand": {
+      "name": "Marca Ejemplo Actualizada"
+    }
+  }' \
+  https://app.zauru.com/settings/items/brands/1.json
+```
+
+#### Eliminar marca
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/items/brands/1.json
+```
+
+### API de Importación de Ítems
+
+#### Crear importación de ítems
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "item_import": {
+      "file": "archivo_excel.xlsx"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_imports.json
+```
+
+#### Crear importación de ítems con precios y existencias
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "item_stock_price_import": {
+      "file": "archivo_excel.xlsx",
+      "agency_id": "1"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_stock_price_imports.json
+```
+
+### API de Verificación de Ítems Faltantes
+
+#### Crear verificación de ítems faltantes
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "item_import_check": {
+      "file": "archivo_excel.xlsx"
+    }
+  }' \
+  https://app.zauru.com/settings/items/item_import_checks.json
+```
+
+#### Crear ítems faltantes detectados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "items": [
+      {"ean13": "7501000001", "name": "Producto faltante 1"}
+    ],
+    "items_product_types": {"1": "0"}
+  }' \
+  https://app.zauru.com/settings/items/item_import_checks/create_missing_items.json
 ```

@@ -124,3 +124,48 @@ curl -v \
   -X GET \
   https://app.zauru.com/production/running_production_orders.json
 ```
+
+### Pausar una orden en ejecucion
+
+Detiene temporalmente la acumulacion de tiempo de ejecucion de la orden. Se pueden enviar notas opcionales con el motivo de la pausa.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "notes": "Pausa por cambio de turno"
+  }' \
+  https://app.zauru.com/production/running_production_orders/1/pause.json
+```
+
+### Reanudar una orden pausada
+
+Reanuda la acumulacion de tiempo de ejecucion de una orden que fue pausada previamente.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/running_production_orders/1/resume.json
+```
+
+### Devolver una orden a planificada
+
+Revierte una orden en ejecucion a estado planificada, liberando las reservas de lotes y anulando los movimientos de inventario no entregados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/running_production_orders/1/return_to_planned.json
+```

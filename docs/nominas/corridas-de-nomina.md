@@ -415,3 +415,353 @@ curl -v \
   }' \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls.json
 ```
+
+### Ver una corrida no pagada
+
+Devuelve la corrida con sus nominas, partidas contables y formularios asociados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
+```
+
+### Obtener estructura para crear una corrida
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/new.json
+```
+
+### Obtener estructura para editar una corrida
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1/edit.json
+```
+
+### Actualizar una corrida no pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payroll_run": {
+      "name": "Nomina julio 2024 actualizada",
+      "start_date": "2024-07-01",
+      "end_date": "2024-07-31",
+      "payment_frequency": "monthly"
+    }
+  }' \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
+```
+
+### Borrar una corrida no pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
+```
+
+### Desaprobar una corrida
+
+Revierte la aprobacion de una corrida que aun no ha sido pagada.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1/disapprove.json
+```
+
+### Pagar una corrida
+
+Ejecuta el pago de una corrida previamente aprobada.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1/pay.json
+```
+
+### Ver formulario de beneficios flexibles
+
+Devuelve la corrida con los beneficios y deducciones flexibles que se deben llenar manualmente.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions.json
+```
+
+### Actualizar beneficios flexibles
+
+Inicia el procesamiento asincrono de los montos flexibles de beneficios y deducciones de la corrida.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "payroll_run": {
+      "payrolls_attributes": {
+        "0": {
+          "id": "1",
+          "salary": "5000.00",
+          "payroll_details_attributes": {
+            "0": { "id": "10", "employee_amount": "150.00" }
+          }
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions_action.json
+```
+
+### Generar PDF de todas las nominas
+
+Inicia la generacion asincrona de PDF individuales para todas las nominas de una corrida. Devuelve el ZID del trabajo asincrono para consultar el progreso.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "elements": "1,2,3",
+    "print_template": "1"
+  }' \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/gen_print_all.json
+```
+
+### Verificar progreso de generacion de PDF
+
+Consulta el estado del trabajo asincrono de generacion de PDF iniciado con `gen_print_all`.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/unpaid_payroll_runs/check_print_all.json?zid=123"
+```
+
+### Generar PDF de las nominas de mi agencia
+
+Inicia la generacion asincrona de PDF solo para las nominas de empleados de la misma agencia del usuario.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "elements": "1,2,3",
+    "print_template": "1"
+  }' \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/gen_print_all_from_my_agency.json
+```
+
+### Verificar progreso de generacion de PDF de mi agencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/unpaid_payroll_runs/check_print_all_from_my_agency.json?zid=123"
+```
+
+### Listar corridas pagadas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/paid_payroll_runs.json
+```
+
+### Ver una corrida pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/paid_payroll_runs/1.json
+```
+
+### Revertir pago de una corrida
+
+Devuelve una corrida pagada a estado aprobado para poder editarla nuevamente.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/paid_payroll_runs/1/unpay.json
+```
+
+### Generar PDF de todas las nominas de una corrida pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "elements": "1,2,3",
+    "print_template": "1"
+  }' \
+  https://app.zauru.com/payroll/paid_payroll_runs/gen_print_all.json
+```
+
+### Verificar progreso de generacion de PDF de una corrida pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/paid_payroll_runs/check_print_all.json?zid=123"
+```
+
+### Generar PDF de las nominas de mi agencia en una corrida pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "elements": "1,2,3",
+    "print_template": "1"
+  }' \
+  https://app.zauru.com/payroll/paid_payroll_runs/gen_print_all_from_my_agency.json
+```
+
+### Verificar progreso de generacion de PDF de mi agencia en una corrida pagada
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/paid_payroll_runs/check_print_all_from_my_agency.json?zid=123"
+```
+
+### Ver una nomina individual
+
+Devuelve la nomina con todos sus detalles, beneficios/deducciones, destajos asociados, partidas contables y tiempo personal.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
+```
+
+### Obtener estructura para crear una nomina individual
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/new.json?payroll_run=1"
+```
+
+### Obtener estructura para editar una nomina individual
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1/edit.json
+```
+
+### Actualizar una nomina individual
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payroll": {
+      "overtime_hours": "8",
+      "overtime_reference": "Horas extra fin de mes",
+      "payroll_details_attributes": {
+        "0": { "id": "10", "employee_amount": "200.00" }
+      }
+    }
+  }' \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
+```
+
+### Borrar una nomina individual
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
+```

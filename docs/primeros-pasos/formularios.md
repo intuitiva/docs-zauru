@@ -163,3 +163,116 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/forms/1/versions.json
 ```
+
+### Duplicar formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/settings/forms/1/duplicate.json
+```
+
+### Restaurar versión de un formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/settings/forms/1/make_it_current_version.json
+```
+
+### Eliminar formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/forms/1.json
+```
+
+### API de Envíos de Formularios (Form Submissions)
+
+#### Obtener listado de envíos de un formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/forms/form_submissions.json?f=1
+```
+
+#### Obtener detalle de un envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/forms/form_submissions/1.json
+```
+
+#### Crear envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "settings_form_submission": {
+      "form_id": "1",
+      "document_type": "payee",
+      "document_id": "1",
+      "form_submission_values_attributes": [
+        {
+          "form_field_id": "1",
+          "value": "valor del campo",
+          "groups_path": "[1]"
+        }
+      ]
+    }
+  }' \
+  https://app.zauru.com/settings/forms/form_submissions.json
+```
+
+#### Anular envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/forms/form_submissions/1.json
+```
+
+#### Duplicar envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/settings/forms/form_submissions/1/duplicate.json
+```
+
+#### Restaurar versión de un envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/settings/forms/form_submissions/1/make_it_current_version.json
+```

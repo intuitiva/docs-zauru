@@ -75,4 +75,48 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/shipments.json
-```
+  ```
+
+### Ver envio
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/shipments/1.json
+  ```
+
+### Editar envio (formulario de entrega)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/shipments/1/edit.json
+  ```
+
+### Actualizar envio (registrar entrega)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "shipment": {
+      "shipment_details_attributes": {
+        "0": {
+          "id": "1",
+          "delivered_quantity": "5"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/shipments/1.json
+  ```

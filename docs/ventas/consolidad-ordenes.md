@@ -108,3 +108,42 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/sales_consolidates/1.json
 ```
+
+### Obtener plantilla para crear una consolidacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/sales_consolidates/new.json
+```
+
+### Crear una consolidacion de ordenes
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "sales_consolidate": {
+      "reference": "Consolidacion de prueba",
+      "consolidate_details": "1",
+      "invoices_id": ["1,2,3"]
+    }
+  }' \
+  https://app.zauru.com/sales/sales_consolidates.json
+```
+
+### Desconsolidar ordenes
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/sales_consolidates/1.json
+```

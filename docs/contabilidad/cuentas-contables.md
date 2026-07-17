@@ -213,3 +213,392 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/categories.json
 ```
+
+### Crear una cuenta contable
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "account": {
+      "active": true,
+      "code": "1.1.1",
+      "name": "Cuenta Bancaria BAC",
+      "account_type_id": 1,
+      "account_group_id": 1,
+      "currency_id": 1,
+      "liquid": true,
+      "reconciliable": false
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts.json
+```
+
+### Actualizar una cuenta contable
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "account": {
+      "name": "Cuenta Bancaria BAC Actualizada",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts/1.json
+```
+
+### Borrar una cuenta contable
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/accounts/1.json
+```
+
+### Consultar el balance de una cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/1/balance.json
+```
+
+### Obtener el formulario de nueva cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/new.json
+```
+
+### Obtener el formulario de edicion de una cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/1/edit.json
+```
+
+### Listado de transacciones de una cuenta (datatables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "scope": "all"
+  }' \
+  https://app.zauru.com/accounting/accounts/1/datatables_show.json
+```
+
+### Balance corrido de una cuenta (datatables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40
+  }' \
+  https://app.zauru.com/accounting/accounts/1/datatables_balance.json
+```
+
+### Formulario de cierre mensual automatico del estado de resultados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/automatic_monthly_close.json
+```
+
+### Formulario de cierre anual automatico del estado de resultados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/automatic_annual_close.json
+```
+
+## API de grupos de cuentas (llamadas desde sistemas externos)
+
+### Consultar listado de grupos de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_groups.json
+```
+
+### Obtener detalle de un grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_groups/1.json
+```
+
+### Obtener el formulario de nuevo grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_groups/new.json
+```
+
+### Crear un grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "account_group": {
+      "code": "1.1",
+      "name": "Activos Corrientes",
+      "account_type_id": 1,
+      "currency_id": 1
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts/account_groups.json
+```
+
+### Actualizar un grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "account_group": {
+      "name": "Activos Corrientes Actualizado"
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts/account_groups/1.json
+```
+
+### Borrar un grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/accounts/account_groups/1.json
+```
+
+## API de tipos de cuenta (llamadas desde sistemas externos)
+
+Los tipos de cuenta son administrados a nivel de sistema y requieren permisos de administrador.
+
+### Consultar listado de tipos de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/account_types.json
+```
+
+### Obtener detalle de un tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/account_types/1.json
+```
+
+### Obtener el formulario de nuevo tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/account_types/new.json
+```
+
+### Obtener el formulario de edicion de un tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/account_types/1/edit.json
+```
+
+### Crear un tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "account_type": {
+      "name": "Nuevo Tipo",
+      "category": false,
+      "debit": true
+    }
+  }' \
+  https://app.zauru.com/accounting/account_types.json
+```
+
+### Actualizar un tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "account_type": {
+      "name": "Nuevo Tipo Actualizado"
+    }
+  }' \
+  https://app.zauru.com/accounting/account_types/1.json
+```
+
+### Borrar un tipo de cuenta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/account_types/1.json
+```
+
+## API de cuentas sugeridas (llamadas desde sistemas externos)
+
+Las cuentas sugeridas son administradas a nivel de sistema y requieren permisos de administrador.
+
+### Consultar listado de cuentas sugeridas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/suggested_accounts.json
+```
+
+### Obtener detalle de una cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/suggested_accounts/1.json
+```
+
+### Obtener el formulario de nueva cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/suggested_accounts/new.json
+```
+
+### Obtener el formulario de edicion de una cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/suggested_accounts/1/edit.json
+```
+
+### Crear una cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "suggested_account": {
+      "name": "Caja",
+      "group_name": "Activos",
+      "account_type_id": 1,
+      "entity_type_id": 1
+    }
+  }' \
+  https://app.zauru.com/accounting/suggested_accounts.json
+```
+
+### Actualizar una cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "suggested_account": {
+      "name": "Caja General"
+    }
+  }' \
+  https://app.zauru.com/accounting/suggested_accounts/1.json
+```
+
+### Borrar una cuenta sugerida
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/suggested_accounts/1.json
+```

@@ -210,3 +210,126 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances.json
 ```
+
+### Ver una solicitud de tiempo personal
+
+Devuelve la solicitud con el empleado, tipo de tiempo personal y formularios asociados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
+```
+
+### Obtener estructura para crear una solicitud
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/new.json
+```
+
+### Obtener estructura para editar una solicitud
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/edit.json
+```
+
+### Actualizar una solicitud de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "personal_time_off_request": {
+      "start_datetime": "2024-07-01T08:00:00",
+      "end_datetime": "2024-07-05T17:00:00",
+      "days": "5",
+      "notes": "Vacaciones de verano actualizadas"
+    }
+  }' \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
+```
+
+### Borrar una solicitud de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
+```
+
+### Desaprobar una solicitud
+
+Revierte la aprobacion de una solicitud aprobada que aun no ha sido gozada.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/disapprove.json
+```
+
+### Rechazar una solicitud
+
+Marca la solicitud como rechazada indicando la razon del rechazo.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "reject_reason": "No hay suficientes dias disponibles"
+  }' \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/reject.json
+```
+
+### Revertir un rechazo
+
+Revierte el rechazo de una solicitud para que vuelva a estado en proceso.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/disreject.json
+```
+
+### Ver el saldo de tiempo personal de un empleado
+
+Devuelve el saldo con el historial completo de movimientos (solicitudes, incidencias y nominas que afectan el saldo).
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances/1.json
+```

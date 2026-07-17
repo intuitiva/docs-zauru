@@ -57,35 +57,3 @@ Para ver los detalles completos de una operación de gateway:
 ![imagen3](/img/ventas/operaciones-de-gateway-3.png)
 
 Esta información es especialmente útil cuando se necesita diagnosticar por qué un pago fue rechazado o por qué la tokenización de una tarjeta falló.
-
-## API (llamadas desde sistemas externos)
-
-### Listar operaciones de gateway
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/settings/gateway_operation_intents.json
-```
-
-### Filtrar operaciones con errores
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/settings/gateway_operation_intents.json?scope=error
-```
-
-### Ver detalle de una operación
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/settings/gateway_operation_intents/1.json
-```

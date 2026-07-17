@@ -343,3 +343,42 @@ Muestra para una cuenta especifica, las transacciones creadas en un mes y si fue
 ## Corregir cuentas con valores incorrectos
 
 Herramienta de mantenimiento que recalcula los saldos de todas las cuentas basandose en las transacciones existentes. Se ejecuta en segundo plano y se utiliza cuando se detecta que alguna cuenta no refleja su valor real.
+
+## API (llamadas desde sistemas externos)
+
+### Verificar disponibilidad del modulo de reportes
+
+Comprueba que el endpoint de reportes este disponible. Responde sin contenido (HTTP 204) si el acceso es correcto.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/reports.json
+```
+
+### Consultar el estado de un reporte en proceso
+
+Endpoint generico para monitorear cualquier reporte que se genere en segundo plano. Recibe el `zid` del proceso y el nombre del `report` (ej. `daily_ledger`) y devuelve el estado, porcentaje y mensaje.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/accounting/reports/check_report.json?zid=XXXX&report=daily_ledger"
+```
+
+### Iniciar la correccion de cuentas con valores incorrectos
+
+Dispara el recalculo de los saldos de todas las cuentas en segundo plano. Devuelve el `zid` del proceso para monitorear su avance con `check_report`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/accounting/reports/gen_fix_accounts_with_wrong_value.json
+```

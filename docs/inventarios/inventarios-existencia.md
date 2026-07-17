@@ -48,3 +48,23 @@ Después de haber hecho su plantilla de importación de Excel, los pasos para co
 7.Presione “Importar Existencias” para importar.
 
 ![imagen4](/img/inventarios/inventarios-existencia-4.png)
+
+## API (llamadas desde sistemas externos)
+
+### Importar existencias iniciales
+Importa existencias de productos a una bodega desde un archivo de Excel predefinido.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "stock_import": {
+      "file": "existencias.xlsx",
+      "agency_id": "1"
+    }
+  }' \
+  https://app.zauru.com/inventories/stocks/stock_imports.json
+```

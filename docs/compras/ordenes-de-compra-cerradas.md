@@ -134,3 +134,24 @@ curl -v \
   -X POST \
   https://app.zauru.com/purchases/closed_purchase_orders/1/rebound.json
 ```
+
+### Actualizar informacion de una orden de compra cerrada
+Permite editar campos informativos limitados (numero, factura, referencia, fechas, comprador, memo, imagen, PDF y etiquetas) sin afectar los productos, recepciones ni pagos.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "purchase_order": {
+      "id_number": "OC-00001",
+      "invoice": "F-001",
+      "reference": "Referencia actualizada",
+      "issue_date": "2018-10-27",
+      "memo": "Notas de la orden"
+    }
+  }' \
+  https://app.zauru.com/purchases/closed_purchase_orders/1/shallow_update.json
+```

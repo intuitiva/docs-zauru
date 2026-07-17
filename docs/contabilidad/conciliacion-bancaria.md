@@ -90,3 +90,148 @@ El reporte de conciliacion muestra:
 Este reporte ya se puede imprimir para presentarlo.
 
 ![reporte de conciliacion](/img/contabilidad/conciliacion-bancaria-8.png)
+
+## API (llamadas desde sistemas externos)
+
+### Consultar listado de conciliaciones
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations.json
+```
+
+### Obtener detalle de una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1.json
+```
+
+### Obtener el formulario de nueva conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/new.json
+```
+
+### Obtener el formulario de edicion de una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1/edit.json
+```
+
+### Crear una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "conciliation": {
+      "account_id": 1,
+      "month": 9,
+      "year": 2018,
+      "start_balance": "1000.0",
+      "end_balance": "1500.0",
+      "memo": "Conciliacion de septiembre"
+    }
+  }' \
+  https://app.zauru.com/accounting/conciliations.json
+```
+
+### Actualizar una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "conciliation": {
+      "end_balance": "1600.0",
+      "memo": "Conciliacion actualizada"
+    }
+  }' \
+  https://app.zauru.com/accounting/conciliations/1.json
+```
+
+### Borrar una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/conciliations/1.json
+```
+
+### Obtener las partidas para conciliar
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1/conciliate.json
+```
+
+### Guardar las marcas de conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "entries_id": "1,2,3"
+  }' \
+  https://app.zauru.com/accounting/conciliations/1/conciliate_action.json
+```
+
+### Cerrar una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1/close.json
+```
+
+### Des-cerrar una conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1/unclose.json
+```
+
+### Generar el reporte de conciliacion
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/conciliations/1/report.json
+```

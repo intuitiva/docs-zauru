@@ -85,3 +85,44 @@ Notar que la transacción hacia cuentas por pagar queda con valor de Q.100.00.
 Notar que la Factura Especial da el total de Q.117.89.
 
 ![Muestra de Factura Especial](/img/compras/registrar-facturas-especiales-a-proveedores-9.png)
+
+## API (llamadas desde sistemas externos)
+
+### Obtener ordenes de compra para un consolidado de factura especial
+Devuelve las ordenes de compra que ya fueron recibidas pero que aun no han sido pagadas, disponibles para consolidar en una factura especial.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/consolidates/new_for_special_invoice.json
+```
+
+### Crear consolidado de factura especial
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "consolidate": {
+      "name": "Factura especial de agosto",
+      "description": "Consolidado para factura especial",
+      "purchase_orders_attributes": {
+        "0": {
+          "consolidated": "1",
+          "id": "1"
+        },
+        "1": {
+          "consolidated": "1",
+          "id": "2"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/consolidates/create_for_special_invoice.json
+```

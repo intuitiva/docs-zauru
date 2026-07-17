@@ -130,3 +130,245 @@ Este grafico permite visualizar rapidamente que areas estan dentro o fuera de pr
 
 - **Ejecutado**: muestra la ejecucion por cada etiqueta y subcategoria.
 - **Otros**: etiquetas con movimientos que no fueron incluidas en el presupuesto.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar listado de presupuestos mensuales
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets.json
+```
+
+### Obtener detalle de un presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/1.json
+```
+
+### Ver el presupuesto mensual agrupado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/1/show_grouped.json
+```
+
+### Ver los gastos no presupuestados (otros)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/1/show_others.json
+```
+
+### Obtener el formulario de nuevo presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/new.json
+```
+
+### Obtener el formulario de edicion de un presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/1/edit.json
+```
+
+### Crear un presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "budget": {
+      "income": false,
+      "month": 9,
+      "year": 2018,
+      "reference": "Presupuesto de gastos",
+      "extras": "100.0",
+      "budget_details_attributes": {
+        "0": {
+          "account_id": 3,
+          "amount": "500.0"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/accounting/budgets.json
+```
+
+### Actualizar un presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "budget": {
+      "reference": "Presupuesto actualizado",
+      "extras": "200.0"
+    }
+  }' \
+  https://app.zauru.com/accounting/budgets/1.json
+```
+
+### Borrar un presupuesto mensual
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/budgets/1.json
+```
+
+## API de presupuestos por etiqueta (llamadas desde sistemas externos)
+
+### Consultar listado de presupuestos por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets.json
+```
+
+### Obtener detalle de un presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
+```
+
+### Ver el presupuesto por etiqueta agrupado
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1/show_grouped.json
+```
+
+### Ver los gastos no presupuestados por etiqueta (otros)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1/show_others.json
+```
+
+### Obtener el formulario de nuevo presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/new.json
+```
+
+### Obtener el formulario de edicion de un presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1/edit.json
+```
+
+### Crear un presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "tagged_budget": {
+      "income": false,
+      "reference": "Presupuesto Proyecto Alfa",
+      "extras": "0.0",
+      "tag_id": 1,
+      "tag_budget_details_attributes": {
+        "0": {
+          "account_id": 3,
+          "amount": "500.0"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/accounting/budgets/tagged_budgets.json
+```
+
+### Actualizar un presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "tagged_budget": {
+      "reference": "Presupuesto actualizado"
+    }
+  }' \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
+```
+
+### Borrar un presupuesto por etiqueta
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
+```
+
+## API de presupuestos por categoria de etiqueta (llamadas desde sistemas externos)
+
+### Obtener los datos del grafico jerarquico de un presupuesto por categoria
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/budgets/tag_category_budgets/1/get_graph_data.json
+```

@@ -180,3 +180,55 @@ curl -v \
   -X GET \
   "https://app.zauru.com/purchases/reports/purchased_items_between_dates?s_date=2024-01-01&e_date=2024-01-31"
 ```
+
+### Costo de inventario actual (DataTables)
+Devuelve el costo del inventario disponible en todas las agencias paginado al estilo DataTables.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/purchases/reports/datatables_inventory_cost.json
+```
+
+### Ordenes de compra sin recibir (DataTables)
+Devuelve las ordenes de compra autorizadas que aun no han sido recibidas, paginado al estilo DataTables.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/purchases/reports/datatables_unreceived_purchase_orders.json
+```
+
+### Verificar el estado de un reporte
+Verifica el estado de generación de un reporte asíncrono a partir de su identificador `zid`.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/purchases/reports/check_report.json?zid=1234"
+```

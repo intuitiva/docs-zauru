@@ -154,4 +154,62 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
-```
+  ```
+
+### Nueva solicitud (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/ecommerce/ecommerce_requests/new.json
+  ```
+
+### Editar solicitud
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/ecommerce/ecommerce_requests/44312/edit.json
+  ```
+
+### Crear solicitud
+
+El campo `original_request` debe llevar un JSON (como texto) con el pedido, incluyendo un identificador unico `id` para evitar duplicados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "ecommerce_request": {
+      "original_request": "{\"id\":\"ORD-001\",\"customer\":\"Juan Perez\",\"items\":[]}"
+    }
+  }' \
+  https://app.zauru.com/ecommerce/ecommerce_requests.json
+  ```
+
+### Actualizar solicitud
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "ecommerce_request": {
+      "error_message": "corregido desde el API"
+    }
+  }' \
+  https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
+  ```

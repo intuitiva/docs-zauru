@@ -56,6 +56,19 @@ curl -v \
   https://app.zauru.com/support/contact_methods.json
 ```
 
+### obtener formulario de nuevo metodo de contacto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/contact_methods/new.json
+```
+
+Retorna un objeto vacio de metodo de contacto que puede usar como base para crear uno nuevo.
+
 ### crear metodo de contacto
 
 ```bash

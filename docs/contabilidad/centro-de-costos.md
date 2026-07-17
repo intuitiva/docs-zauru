@@ -65,3 +65,159 @@ Tanto las categorias como los centros de costo pueden buscarse por:
 - Nombre
 - Descripcion
 - Categoria (en el caso de centros de costo)
+
+## API (llamadas desde sistemas externos)
+
+### Consultar listado de centros de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_centers.json
+```
+
+### Obtener detalle de un centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_centers/1.json
+```
+
+### Obtener el formulario de nuevo centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_centers/new.json
+```
+
+### Crear un centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "accounting_cost_center": {
+      "code": "PROY-A",
+      "name": "Proyecto A",
+      "cost_center_category_id": 1,
+      "description": "Centro de costo del Proyecto A",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/accounting/cost_centers.json
+```
+
+### Actualizar un centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "accounting_cost_center": {
+      "name": "Proyecto A Actualizado",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/accounting/cost_centers/1.json
+```
+
+### Borrar un centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/cost_centers/1.json
+```
+
+### Consultar listado de categorias de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_center_categories.json
+```
+
+### Obtener detalle de una categoria de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_center_categories/1.json
+```
+
+### Obtener el formulario de nueva categoria de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/cost_center_categories/new.json
+```
+
+### Crear una categoria de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "accounting_cost_center_category": {
+      "code": "PROY",
+      "name": "Proyectos",
+      "description": "Categoria para proyectos",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/accounting/cost_center_categories.json
+```
+
+### Actualizar una categoria de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "accounting_cost_center_category": {
+      "name": "Proyectos Actualizado"
+    }
+  }' \
+  https://app.zauru.com/accounting/cost_center_categories/1.json
+```
+
+### Borrar una categoria de centro de costo
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/accounting/cost_center_categories/1.json
+```

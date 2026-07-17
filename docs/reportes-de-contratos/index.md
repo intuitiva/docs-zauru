@@ -62,3 +62,23 @@ Por cada contrato muestra:
 **Cómo funciona:** Identifica contratos donde la cuota actual (`current_fee`) es mayor o igual al total de cuotas configuradas (`fees`) y cuya fecha de próxima cuota ya pasó.
 
 **Filtro disponible:** Tipo de Documento.
+
+## API (llamadas desde sistemas externos)
+
+### Estado consolidado de contratos activos
+
+Devuelve el resumen del estado de todos los contratos activos, con cuotas no generadas, montos por estado de flujo de trabajo y totales.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/contracts/reports/consolidated_active_contract_status.json?doc_type=1&include_closed=0"
+```
+
+Parametros:
+
+- `doc_type`: tipo de documento del contrato (`1` = Orden, `2` = Factura no Pagada, `3` = Caso, `4` = Orden de Compra). Por defecto `1`.
+- `include_closed`: `1` para incluir contratos cerrados, `0` para excluirlos. Por defecto `0`.

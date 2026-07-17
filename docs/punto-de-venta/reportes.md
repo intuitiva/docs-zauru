@@ -115,7 +115,9 @@ Reporte que muestra cuantos productos se vendieron, a que precio promedio y el t
 
 ## API (llamadas desde sistemas externos)
 
-### Cierre diario
+### Productos comprados entre fechas
+
+Devuelve los items y cuentas compradas en un rango de fechas, con cantidades, costos y costos sin IVA.
 
 ```bash
 curl -v \
@@ -123,27 +125,15 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/pos/reports/daily_close?date=2024-01-15"
+  "https://app.zauru.com/pos/reports/purchased_items_between_dates.json?date=2024-01-01&days=31&used_date=created_at&include_items=1&include_accounts=1"
 ```
 
-### Mis facturas del mes
+Parametros:
 
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/pos/reports/my_invoices?year=2024&month=1"
-```
-
-### Ventas mensuales por vendedor y categoria de cliente
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/pos/reports/monthly_sales_by_seller_and_client_category?year=2024&month=1"
-```
+- `date`: fecha inicial del reporte (formato `YYYY-MM-DD` o `DD/MM/YYYY`).
+- `days`: cantidad de dias a consultar a partir de la fecha inicial (1 a 31, por defecto 7).
+- `used_date`: campo de fecha usado para filtrar (`created_at`, `issue_date`, `shipping_date`, `delivery_date` o `received_at`).
+- `include_items`: `1` para incluir items, `0` para excluirlos.
+- `include_accounts`: `1` para incluir cuentas contables, `0` para excluirlas.
+- `include_authorized_not_received`: `1` para incluir ordenes autorizadas no recibidas.
+- `include_not_authorized`: `1` para incluir ordenes no autorizadas.

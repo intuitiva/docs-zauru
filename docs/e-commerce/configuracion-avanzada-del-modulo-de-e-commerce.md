@@ -73,36 +73,4 @@ Todas las configuraciones se almacenan como variables de la entidad (`Variable`)
 
 ## API (llamadas desde sistemas externos)
 
-### Obtener la configuración actual
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/ecommerce/ecommerce_settings/new.json
-```
-
-### Actualizar la configuración
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d "ecommerce_payment_method_id=5" \
-  -d "ecommerce_payment_term_id=3" \
-  -d "ecommerce_agency_id=12" \
-  -d "ecommerce_seller_id=8" \
-  -d "ecommerce_force_needs_delivery=1" \
-  -d "ecommerce_requests_unconfirmed_payments=0" \
-  -d "ecommerce_requests_user_id=42" \
-  -d "ecommerce_production_url=https://mitienda.com" \
-  -d "ecommerce_tests_url=https://staging.mitienda.com" \
-  https://app.zauru.com/ecommerce/ecommerce_settings.json
-```
-
-La respuesta a una actualización exitosa redirige de vuelta al formulario con un mensaje de confirmación.
+La configuración del módulo de e-commerce no expone endpoints JSON: los parámetros se gestionan únicamente desde la pantalla de configuración web (`/ecommerce/ecommerce_settings/new`). Como los valores se persisten como variables de la entidad (`Variable`), pueden consultarse y modificarse a través del API de variables de entidad.

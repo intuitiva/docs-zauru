@@ -135,3 +135,126 @@ curl -v \
   }' \
   https://app.zauru.com/settings/data_imports.json
 ```
+
+### Actualizar importación de datos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "data_import": {
+      "memo": "Importación actualizada"
+    }
+  }' \
+  https://app.zauru.com/settings/data_imports/1.json
+```
+
+### Eliminar importación de datos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/data_imports/1.json
+```
+
+### Obtener datos mapeados de una importación
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/data_imports/1/edit_data.json
+```
+
+### Actualizar mapeo de columnas y datos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "data_import": {
+      "column_mappings_json": "{\"0\":\"name\",\"1\":\"tin\"}",
+      "data_changes": {}
+    }
+  }' \
+  https://app.zauru.com/settings/data_imports/1/update_data.json
+```
+
+### Validar una fila
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"row_id": "1"}' \
+  https://app.zauru.com/settings/data_imports/1/validate_row.json
+```
+
+### Eliminar una fila
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"row_id": "1"}' \
+  https://app.zauru.com/settings/data_imports/1/destroy_row.json
+```
+
+### Importar una fila
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"row_id": "1"}' \
+  https://app.zauru.com/settings/data_imports/1/import_row.json
+```
+
+### Eliminar una columna
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"column_id": "0"}' \
+  https://app.zauru.com/settings/data_imports/1/destroy_column.json
+```
+
+### Datatables de importaciones de datos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"start": "0", "length": "25"}' \
+  https://app.zauru.com/settings/data_imports/datatables.json
+```

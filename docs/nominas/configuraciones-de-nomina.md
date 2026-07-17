@@ -319,3 +319,485 @@ Para gestionar grupos:
 - **Descripcion**: descripcion opcional.
 
 3. Hacer clic en **"Guardar"**.
+
+## API (llamadas desde sistemas externos)
+
+### Listar puestos de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/job_positions.json
+```
+
+### Ver un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/job_positions/1.json
+```
+
+### Obtener estructura para crear un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/job_positions/new.json
+```
+
+### Obtener estructura para editar un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/job_positions/1/edit.json
+```
+
+### Crear un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "job_position": {
+      "active": true,
+      "name": "Operario de produccion",
+      "description": "Operario de linea de produccion",
+      "salary_account_id": "1",
+      "payment_frequency": "weekly",
+      "payroll_type": "piecework",
+      "working_hours": "8",
+      "job_position_deductions_attributes": {
+        "0": { "payroll_benefits_deduction_id": "1" }
+      }
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/job_positions.json
+```
+
+### Actualizar un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "job_position": {
+      "name": "Operario de produccion senior",
+      "working_hours": "8"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/job_positions/1.json
+```
+
+### Borrar un puesto de trabajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/job_positions/1.json
+```
+
+### Listar beneficios y deducciones
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions.json
+```
+
+### Ver un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
+```
+
+### Obtener estructura para crear un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions/new.json
+```
+
+### Obtener estructura para editar un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1/edit.json
+```
+
+### Crear un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payroll_benefits_deduction": {
+      "active": true,
+      "applies_to": "on_cycle",
+      "name": "IGSS laboral",
+      "employee_percent": "4.83",
+      "entity_percent": "10.67",
+      "employee_account_id": "1",
+      "entity_account_from_id": "2",
+      "entity_account_to_id": "3"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions.json
+```
+
+### Actualizar un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payroll_benefits_deduction": {
+      "name": "IGSS laboral actualizado",
+      "employee_percent": "4.83"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
+```
+
+### Borrar un beneficio o deduccion
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
+```
+
+### Listar metodos de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods.json
+```
+
+### Ver un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
+```
+
+### Obtener estructura para crear un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods/new.json
+```
+
+### Obtener estructura para editar un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods/1/edit.json
+```
+
+### Crear un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "payroll_payment_method": {
+      "active": true,
+      "name": "Deposito bancario",
+      "payroll_account_id": "1",
+      "payroll_run_account_id": "2"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods.json
+```
+
+### Actualizar un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "payroll_payment_method": {
+      "name": "Deposito bancario actualizado"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
+```
+
+### Borrar un metodo de pago
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
+```
+
+### Listar tipos de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/incident_types.json
+```
+
+### Ver un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/incident_types/1.json
+```
+
+### Obtener estructura para crear un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/incident_types/new.json
+```
+
+### Obtener estructura para editar un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/incident_types/1/edit.json
+```
+
+### Crear un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "incident_type": {
+      "active": true,
+      "name": "Llegada tarde",
+      "category": "Puntualidad",
+      "deduction_amount": "25.00",
+      "account_for_amount_id": "1"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/incident_types.json
+```
+
+### Actualizar un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "incident_type": {
+      "name": "Llegada tarde actualizado",
+      "deduction_amount": "30.00"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/incident_types/1.json
+```
+
+### Borrar un tipo de incidencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/incident_types/1.json
+```
+
+### Listar tipos de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/personal_time_off_types.json
+```
+
+### Ver un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
+```
+
+### Obtener estructura para crear un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/personal_time_off_types/new.json
+```
+
+### Obtener estructura para editar un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/personal_time_off_types/1/edit.json
+```
+
+### Crear un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "personal_time_off_type": {
+      "active": true,
+      "name": "Vacaciones",
+      "description": "Dias de vacaciones anuales",
+      "general_type": "vacation"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/personal_time_off_types.json
+```
+
+### Actualizar un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "personal_time_off_type": {
+      "name": "Vacaciones actualizado",
+      "description": "Dias de vacaciones anuales"
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
+```
+
+### Borrar un tipo de tiempo personal
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
+```

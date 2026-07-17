@@ -115,4 +115,138 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/sale_orders/new.json
-```
+  ```
+
+### Listar ordenes de venta (datatables)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "order": {
+      "0": {
+        "column": "3",
+        "dir": "desc"
+      }
+    },
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/pos/sale_orders/datatables.json
+  ```
+
+### Ver orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/sale_orders/1.json
+  ```
+
+### Crear orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "invoice": {
+      "reference": "prueba",
+      "taxable": "1",
+      "payment_term_id": "1",
+      "payee_id": "1",
+      "seller_id": "1",
+      "invoice_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "quantity": "1",
+          "unit_price": "650"
+        }
+      },
+      "memo": "generado desde el API"
+    }
+  }' \
+  https://app.zauru.com/pos/sale_orders.json
+  ```
+
+### Editar orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/sale_orders/1/edit.json
+  ```
+
+### Actualizar orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "invoice": {
+      "reference": "prueba editada",
+      "invoice_details_attributes": {
+        "0": {
+          "id": "1",
+          "quantity": "2"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/sale_orders/1.json
+  ```
+
+### Anular orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/sale_orders/1/void.json
+  ```
+
+### Eliminar orden de venta
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/pos/sale_orders/1.json
+  ```
+
+### Obtener categorías, items, paquetes, precios, existencias e imágenes
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/sale_orders/get_categories_items_bundles_prices_stocks_images.json
+  ```
