@@ -54,7 +54,7 @@ Para imprimir una factura pagada:
 2. Haga click sobre **"Imprimir"** para ver la vista previa de impresión.
 3. Presione **CTRL + P** para enviar a la impresora.
 
-![imagen3](/img/ventas/facturas-pagadas-3.png)
+![imagen3](/img/ventas/facturas-pagadas-2.png)
 
 ### Descargar como PDF
 
@@ -81,7 +81,7 @@ Para realizar esta edición:
 3. Realizar los cambios necesarios.
 4. Presionar **"Actualizar Factura"**.
 
-![imagen4](/img/ventas/facturas-pagadas-4.png)
+![imagen4](/img/ventas/facturas-pagadas-2.png)
 
 ## Anular una Factura Pagada
 

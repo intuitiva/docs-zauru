@@ -83,7 +83,7 @@ Primero vamos a registrar el gasto de la empresa que hizo el empleado.
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
-![imagen5](/img/contabilidad/transacciones-manejo-de-cajas-chicas-5.jpg)
+![imagen5](/img/contabilidad/transacciones-manejo-de-cajas-chicas-1.jpg)
 
 Los campos que debe llenar para registrar la transaccion de gastos del empleado son los siguientes:
 

@@ -44,7 +44,7 @@ i. **Asunto del correo:** Especifique el asunto que llevará el correo electrón
 
 Para guardar los cambios presione "Crear Reporte entregable".
 
-![imagen2](/img/primeros-pasos/reportes-entregables-2.png)
+![imagen2](/img/primeros-pasos/reportes-entregables-1.png)
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que el reporte entregable se creó exitosamente.
 

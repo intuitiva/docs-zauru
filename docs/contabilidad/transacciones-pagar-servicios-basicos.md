@@ -82,7 +82,7 @@ Cuando llegue el momento de hacer el pago al proveedor, deberá emitir un cheque
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
-![imagen7](/img/contabilidad/transacciones-pagar-servicios-basicos-7.jpg)
+![imagen7](/img/contabilidad/transacciones-pagar-servicios-basicos-5.jpg)
 
 
 

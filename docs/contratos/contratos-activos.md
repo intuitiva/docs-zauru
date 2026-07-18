@@ -93,7 +93,7 @@ En el detalle del contrato activo, el botón "Estado del Contrato" muestra una v
 - **Tabla de cuotas**: Una fila por cada cuota mostrando la fecha esperada, el estado del documento generado (o "No Generado") y los montos por cada item o cuenta del contrato.
 - **Enviar por correo**: Se puede enviar el estado del contrato al beneficiario o a uno mismo por correo electrónico.
 
-![estado del contrato](/img/contratos/contratos-activos-7.png)
+![estado del contrato](/img/contratos/contratos-activos-6.png)
 
 Esta vista es ideal para dar seguimiento al avance del contrato y compartir el estado con el cliente.
 
@@ -101,7 +101,7 @@ Esta vista es ideal para dar seguimiento al avance del contrato y compartir el e
 
 Disponible solo para contratos de tipo **Factura no Pagada**. Esta vista muestra el detalle de las partidas contables (debe y haber) que se generan por cada cuota del contrato.
 
-![detalle de partidas por cuota](/img/contratos/contratos-activos-8.png)
+![detalle de partidas por cuota](/img/contratos/contratos-activos-6.png)
 
 La tabla muestra por cada cuota:
 - Número de cuota y fecha
@@ -127,7 +127,7 @@ En el detalle del contrato activo, si el contrato tiene moras activas, el botón
   - Monto de un período de mora
   - Total de mora acumulada
 
-![moras actuales](/img/contratos/contratos-activos-9.png)
+![moras actuales](/img/contratos/contratos-activos-6.png)
 
 ### Generar Documento de Mora
 

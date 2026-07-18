@@ -51,7 +51,7 @@ l. **Detalles**: Agregue los items o paquetes que conforman la orden de trabajo.
 
    Si desea utilizar un paquete y necesita visualizar o editar sus componentes, utilice la funcion **"Explotar"** que expande el paquete en sus componentes individuales.
 
-![imagen2](/img/produccion/ordenes-de-trabajo-2.png)
+![imagen2](/img/produccion/ordenes-de-trabajo-1.png)
 
 Cuando haya completado todos los campos, presione **"Crear Orden de Trabajo"**.
 
@@ -66,7 +66,7 @@ Al crear o editar una orden de trabajo, si selecciona un paquete (bundle), puede
 1. En el formulario de creacion o edicion, seleccione el paquete en el campo de detalle.
 2. Seleccione la accion **"Explotar"** en el pie del formulario.
 
-![imagen4](/img/produccion/ordenes-de-trabajo-4.png)
+![imagen4](/img/produccion/ordenes-de-trabajo-1.png)
 
 El sistema expandira el paquete en sus componentes. Para items identificables (con numero de serie), se crearan lineas individuales de cantidad 1 por cada numero de serie. Para items perecederos (con lote), se mostraran los lotes disponibles.
 

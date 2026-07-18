@@ -19,7 +19,7 @@ Los pasos para crear una nueva categoría de etiqueta son:
 
 3. Seleccionar la pestaña "Categoría de Etiquetas".
 
-![Pestaña de categorías de etiquetas y botón nueva categoría](/img/primeros-pasos/etiquetas-2.png)
+![Pestaña de categorías de etiquetas y botón nueva categoría](/img/primeros-pasos/etiquetas-1.png)
 
 4. Seleccionar "Nueva Categoría de Etiqueta".
 

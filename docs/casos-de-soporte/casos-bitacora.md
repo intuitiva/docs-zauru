@@ -26,7 +26,7 @@ Los pasos para registrar una entrada en la bitacora son:
 
 6. Presione **"Crear Bitacora"**.
 
-![imagen2](/img/casos-de-soporte/casos-bitacora-2.png)
+![imagen2](/img/casos-de-soporte/casos-bitacora-1.png)
 
 Las entradas de la bitacora se mostraran en orden cronologico en la pagina de detalles del caso. Cada entrada muestra la fecha y el texto registrado, asi como las imagenes y PDFs adjuntos.
 

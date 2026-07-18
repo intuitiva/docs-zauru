@@ -58,7 +58,7 @@ k. **Predeterminado**: Marque esta opción si desea que esta sea la configuraci�
 
 Para guardar presione **"Crear Configuración de Gateway"**.
 
-![imagen3](/img/ventas/configuraciones-de-gateway-3.png)
+![imagen3](/img/ventas/configuraciones-de-gateway-2.png)
 
 ### Opciones Avanzadas del Gateway
 

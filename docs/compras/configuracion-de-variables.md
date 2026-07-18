@@ -102,6 +102,6 @@ Para guardar los cambios en las variables de configuracion:
 1. Ajuste las variables segun sus necesidades.
 2. Al final del formulario, presione "Guardar Configuracion".
 
-![imagen2](/img/compras/configuracion-de-variables-2.png)
+![imagen2](/img/compras/configuracion-de-variables-1.png)
 
 Le aparecera un mensaje de exito notificandole que la configuracion se guardo exitosamente.

@@ -23,7 +23,7 @@ Le aparecera un listado de clientes que tienen numeros de serie en su poder (es 
 
 1. Haga click sobre **"Verificar"** (ojo) en el cliente deseado.
 
-![imagen2](/img/casos-de-soporte/casos-clientes-con-series-2.png)
+![imagen2](/img/casos-de-soporte/casos-clientes-con-series-1.png)
 
 En la pagina de detalle encontrara:
 

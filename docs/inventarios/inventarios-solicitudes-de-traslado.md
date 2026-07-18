@@ -130,7 +130,7 @@ Cuando una solicitud de traslado tiene productos sin stock suficiente en la bode
 
 1. Abra los detalles de la solicitud de traslado.
 
-![Detalle de solicitud de traslado con opción de crear requisición de compra](/img/inventarios/inventarios-solicitudes-de-traslado-6.png)
+![Detalle de solicitud de traslado con opción de crear requisición de compra](/img/inventarios/inventarios-solicitudes-de-traslado-2.png)
 
 2. Seleccione "Crear requisición de compra".
 
@@ -152,7 +152,7 @@ Para satisfacer una solicitud de traslado, debe crear envíos (reservaciones) de
 
 1. Abra los detalles de la solicitud.
 
-![Sección de envíos en detalle de solicitud con botón de nuevo envío](/img/inventarios/inventarios-solicitudes-de-traslado-7.png)
+![Sección de envíos en detalle de solicitud con botón de nuevo envío](/img/inventarios/inventarios-solicitudes-de-traslado-2.png)
 
 2. En la sección de envíos, seleccione "Nuevo envío".
 

@@ -28,7 +28,7 @@ Para descargar un caso en formato PDF:
 2. En lugar de hacer click en **"Imprimir"**, seleccione la opcion **"Descargar PDF"**.
 3. El sistema generara el archivo PDF y lo descargara automaticamente.
 
-![imagen2](/img/casos-de-soporte/casos-imprimir-y-descargar-2.png)
+![imagen2](/img/casos-de-soporte/casos-imprimir-y-descargar-1.png)
 
 ## Plantillas de Impresion
 

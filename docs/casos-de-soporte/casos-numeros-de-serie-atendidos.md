@@ -76,7 +76,7 @@ Puede crear un nuevo numero de serie directamente desde el modulo de soporte. Es
 2. Seleccionar **"Numeros de Serie Atendidos"**.
 3. Seleccionar **"Nuevo Numero de Serie"**.
 
-![imagen6](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-6.png)
+![imagen6](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-5.png)
 
 Complete los campos:
 - **Nombre** del numero de serie

@@ -33,11 +33,11 @@ f. Puede adjuntar un archivo PDF a la categoría.
 
 Para guardar los cambios presione "Crear Categoría de proyecto".
 
-![imagen2](/img/primeros-pasos/proyectos-2.png)
+![imagen2](/img/primeros-pasos/proyectos-1.png)
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la categoría de proyecto se creó exitosamente.
 
-![imagen3](/img/primeros-pasos/proyectos-3.png)
+![imagen3](/img/primeros-pasos/proyectos-1.png)
 
 ### Duplicar una Categoría de proyecto
 
@@ -48,7 +48,7 @@ Zauru le permite duplicar una categoría de proyecto existente, incluyendo todas
 3. Seleccionar la pestaña "Categorías de proyectos".
 4. Hacer click en "Duplicar" sobre la categoría que desea duplicar.
 
-![imagen4](/img/primeros-pasos/proyectos-4.png)
+![imagen4](/img/primeros-pasos/proyectos-1.png)
 
 Zauru creará una copia de la categoría con el sufijo "copia" y todas sus subcategorías hijas serán duplicadas también.
 
@@ -61,7 +61,7 @@ Zauru le permite visualizar la jerarquía completa de sus categorías de proyect
 3. Seleccionar la pestaña "Categorías de Proyectos".
 4. Hacer click en "Gráfico" sobre la categoría raíz que desea visualizar.
 
-![imagen5](/img/primeros-pasos/proyectos-5.png)
+![imagen5](/img/primeros-pasos/proyectos-1.png)
 
 El gráfico mostrará la estructura jerárquica completa: categorías padre, subcategorías y las proyectos contenidas en cada categoría.
 
@@ -74,7 +74,7 @@ Las proyectos son marcadores que puede asignar a sus productos y beneficiarios p
 3. Seleccionar la pestaña "Proyectos".
 4. Seleccionar "Nueva Proyecto".
 
-![imagen6](/img/primeros-pasos/proyectos-6.png)
+![imagen6](/img/primeros-pasos/proyectos-1.png)
 
 Le deberán aparecer las opciones para crear una nueva proyecto:
 
@@ -92,11 +92,11 @@ f. Puede adjuntar un archivo PDF al proyecto.
 
 Para guardar los cambios presione "Crear Proyecto".
 
-![imagen7](/img/primeros-pasos/proyectos-7.png)
+![imagen7](/img/primeros-pasos/proyectos-1.png)
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proyecto se creó exitosamente.
 
-![imagen8](/img/primeros-pasos/proyectos-8.png)
+![imagen8](/img/primeros-pasos/proyectos-1.png)
 
 ### Filtrar por proyectos
 
