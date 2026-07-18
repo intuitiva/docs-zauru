@@ -1,0 +1,4160 @@
+{
+  "generatedBy": "opencode-session",
+  "generatedAt": "2026-07-18",
+  "zauruBaseUrl": "https://zauru.herokuapp.com",
+  "imageFormat": "png",
+  "docs": [
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-abiertos",
+      "docPath": "docs/casos-de-soporte/casos-abiertos.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "- **Cliente**",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- **Cliente**"
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-bitacora",
+      "docPath": "docs/casos-de-soporte/casos-bitacora.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. En la pagina de detalles, ubique la seccion de **Bitacora del Caso**.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la pagina de detalles, ubique la seccion de **Bitacora del Caso**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "6. Presione **\"Crear Bitacora\"**.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "6. Presione **\"Crear Bitacora\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-casos-cerrados",
+      "docPath": "docs/casos-de-soporte/casos-casos-cerrados.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "- **Cliente**",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- **Cliente**"
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-clientes-con-series",
+      "docPath": "docs/casos-de-soporte/casos-clientes-con-series.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Clientes con #s de Serie\"** (o acceder a `/support/clients_with_serials`).",
+          "zauruPath": "/support/clients_with_serials",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Clientes con #s de Serie\"** (o acceder a `/support/clients_with_serials`)."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "1. Haga click sobre **\"Verificar\"** (ojo) en el cliente deseado.",
+          "zauruPath": "/support/clients_with_serials",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "1. Haga click sobre **\"Verificar\"** (ojo) en el cliente deseado."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-configuraciones",
+      "docPath": "docs/casos-de-soporte/casos-configuraciones.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Configuraciones\"** (o acceder a `/support/support_settings/new`).",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Configuraciones\"** (o acceder a `/support/support_settings/new`)."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-detalles-del-caso",
+      "docPath": "docs/casos-de-soporte/casos-detalles-del-caso.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. O bien, hacer click sobre el **ID** del caso.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. O bien, hacer click sobre el **ID** del caso."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-eliminar-un-caso",
+      "docPath": "docs/casos-de-soporte/casos-eliminar-un-caso.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. Hacer click sobre el icono de **\"Eliminar\"** (basurero).",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Hacer click sobre el icono de **\"Eliminar\"** (basurero)."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-enviar-por-correo",
+      "docPath": "docs/casos-de-soporte/casos-enviar-por-correo.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. En la pagina de detalles, seleccione la opcion **\"Enviar Correo\"**.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la pagina de detalles, seleccione la opcion **\"Enviar Correo\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-imprimir-y-descargar",
+      "docPath": "docs/casos-de-soporte/casos-imprimir-y-descargar.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. En la pagina de detalles, seleccione una **plantilla de impresion** del listado desplegable.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la pagina de detalles, seleccione una **plantilla de impresion** del listado desplegable."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. El sistema generara el archivo PDF y lo descargara automaticamente.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. El sistema generara el archivo PDF y lo descargara automaticamente."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-metodos-de-contacto",
+      "docPath": "docs/casos-de-soporte/casos-metodos-de-contacto.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Metodos de Contacto\"** (o acceder a `/support/contact_methods`).",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Metodos de Contacto\"** (o acceder a `/support/contact_methods`)."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "1. En el listado de metodos de contacto, seleccione **\"Nuevo Metodo de Contacto\"**.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "1. En el listado de metodos de contacto, seleccione **\"Nuevo Metodo de Contacto\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-numeros-de-serie-atendidos",
+      "docPath": "docs/casos-de-soporte/casos-numeros-de-serie-atendidos.md",
+      "existingImageCount": 6,
+      "shots": [
+        {
+          "stepNumber": 5,
+          "caption": "3. Hacer click sobre **\"Verificar\"** (ojo) en el numero de serie deseado.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Hacer click sobre **\"Verificar\"** (ojo) en el numero de serie deseado."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "3. Seleccionar **\"Nuevo Numero de Serie\"**.",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar **\"Nuevo Numero de Serie\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "casos-de-soporte",
+      "slug": "casos-rentabilidad",
+      "docPath": "docs/casos-de-soporte/casos-rentabilidad.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. En la pagina de detalles, seleccione la opcion **\"Rentabilidad\"** (o acceda directamente a la URL `/support/cases/1/p",
+          "zauruPath": "/support/cases",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la pagina de detalles, seleccione la opcion **\"Rentabilidad\"** (o acceda directamente a la URL `/support/cases/1/profit`)."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "cargos-pagados",
+      "docPath": "docs/compras/cargos-pagados.md",
+      "existingImageCount": 5,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar la pestana \"Cargos Pagados\".",
+          "zauruPath": "/purchases/paid_charges",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar la pestana \"Cargos Pagados\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "4. Seleccionar \"Detalles\" (El Ojo) en el cargo que desea consultar.",
+          "zauruPath": "/purchases/paid_charges",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Detalles\" (El Ojo) en el cargo que desea consultar."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "i. Documentos electronicos asociados.",
+          "zauruPath": "/purchases/paid_charges",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "i. Documentos electronicos asociados."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "5. Seleccionar \"Editar\".",
+          "zauruPath": "/purchases/paid_charges",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "5. Seleccionar \"Editar\"."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "f. Etiquetas (tags).",
+          "zauruPath": "/purchases/paid_charges",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "f. Etiquetas (tags)."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "configuracion-de-variables",
+      "docPath": "docs/compras/configuracion-de-variables.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar la pestana \"Variables\" o \"Configuracion de Compras\".",
+          "zauruPath": "/purchases/index",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar la pestana \"Variables\" o \"Configuracion de Compras\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "2. Al final del formulario, presione \"Guardar Configuracion\".",
+          "zauruPath": "/purchases/index",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Al final del formulario, presione \"Guardar Configuracion\"."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "consolidar-varias-ordenes-de-compra",
+      "docPath": "docs/compras/consolidar-varias-ordenes-de-compra.md",
+      "existingImageCount": 6,
+      "shots": [
+        {
+          "stepNumber": 5,
+          "caption": "3. Seleccionar \"Nuevo Consolidado para Factura Especial\".",
+          "zauruPath": "/purchases/consolidates/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar \"Nuevo Consolidado para Factura Especial\"."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "d. Presione \"Crear Consolidado\".",
+          "zauruPath": "/purchases/consolidates/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "d. Presione \"Crear Consolidado\"."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "ordenes-de-compra-cerradas",
+      "docPath": "docs/compras/ordenes-de-compra-cerradas.md",
+      "existingImageCount": 6,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar \"Ordenes de Compra Cerradas\".",
+          "zauruPath": "/purchases/closed_purchase_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar \"Ordenes de Compra Cerradas\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. Seleccionar \"Detalles\" (El Ojo) en la orden que desea consultar.",
+          "zauruPath": "/purchases/closed_purchase_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar \"Detalles\" (El Ojo) en la orden que desea consultar.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 3,
+          "caption": "i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).",
+          "zauruPath": "/purchases/closed_purchase_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Seleccionar \"Editar\".",
+          "zauruPath": "/purchases/closed_purchase_orders/1/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Editar\".",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 5,
+          "caption": "k. Etiquetas (tags).",
+          "zauruPath": "/purchases/closed_purchase_orders/1/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "k. Etiquetas (tags).",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 6,
+          "caption": "4. Seleccionar \"Reabrir Orden de Compra\".",
+          "zauruPath": "/purchases/closed_purchase_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Reabrir Orden de Compra\".",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "reportes-de-compras",
+      "docPath": "docs/compras/reportes-de-compras.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar \"Reportes\".",
+          "zauruPath": "/purchases/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar \"Reportes\"."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "compras",
+      "slug": "requisiciones-de-compra",
+      "docPath": "docs/compras/requisiciones-de-compra.md",
+      "existingImageCount": 7,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar \"Nueva Requisicion de Compra\".",
+          "zauruPath": "/purchases/purchase_requisitions/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar \"Nueva Requisicion de Compra\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "h. Presione \"Crear requisicion de compra\" para guardar los cambios.",
+          "zauruPath": "/purchases/purchase_requisitions/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "h. Presione \"Crear requisicion de compra\" para guardar los cambios."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente.",
+          "zauruPath": "/purchases/purchase_requisitions",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Seleccionar \"Aprobar\".",
+          "zauruPath": "/purchases/purchase_requisitions/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Aprobar\".",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Seleccionar \"Aprobar en Lote\".",
+          "zauruPath": "/purchases/purchase_requisitions",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Aprobar en Lote\"."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "d. Presione \"Aprobar y Crear Ordenes de Compra\".",
+          "zauruPath": "/purchases/purchase_requisitions/bulk_approve_form",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "d. Presione \"Aprobar y Crear Ordenes de Compra\"."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "El sistema creara automaticamente las ordenes de compra agrupadas por proveedor. Le aparecera un resumen de las ordenes ",
+          "zauruPath": "/purchases/purchase_requisitions/1/approval_result",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "El sistema creara automaticamente las ordenes de compra agrupadas por proveedor. Le aparecera un resumen de las ordenes de compra creadas.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "contabilidad",
+      "slug": "beneficiarios",
+      "docPath": "docs/contabilidad/beneficiarios.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de beneficiarios con filtros Todos, Clientes, Proveedores y Clientes y Proveedores",
+          "zauruPath": "/accounting/payees",
+          "waitForSelector": [
+            "table",
+            ".payees",
+            "#payees-index",
+            ".dataTables_wrapper"
+          ],
+          "insertAfterText": "Tambien se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nuevo beneficiario",
+          "zauruPath": "/accounting/payees/new",
+          "waitForSelector": [
+            "form#new_payee",
+            "form.payee-form",
+            "#payee_form",
+            "form[action*='payees']"
+          ],
+          "insertAfterText": "3. Hacer clic en \"Nuevo Beneficiario\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Vista de detalle del beneficiario con transacciones asociadas",
+          "zauruPath": "/accounting/payees/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".payee-details",
+            ".show-payee",
+            "dl",
+            ".profile-header"
+          ],
+          "insertAfterText": "- Los formularios personalizados enviados para este beneficiario."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "centro-de-costos",
+      "docPath": "docs/contabilidad/centro-de-costos.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Categorías de centro de costos",
+          "zauruPath": "/accounting/cost_center_categories",
+          "waitForSelector": [
+            "table",
+            ".cost-center-categories",
+            ".dataTables_wrapper"
+          ],
+          "insertAfterText": "Las categorias de centro de costos agrupan centros de costo similares. Por ejemplo, puede tener categorias como \"Proyectos\", \"Departamentos\", \"Sucursales\", \"Vehiculos\", etc."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nueva categoría de centro de costos",
+          "zauruPath": "/accounting/cost_center_categories/new",
+          "waitForSelector": [
+            "form#new_accounting_cost_center_category",
+            "form",
+            "form[action*='cost_center_categories']"
+          ],
+          "insertAfterText": "4. Hacer clic en \"Nueva Categoria\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Listado de centros de costo",
+          "zauruPath": "/accounting/cost_centers",
+          "waitForSelector": [
+            "table",
+            ".cost-centers",
+            ".dataTables_wrapper"
+          ],
+          "insertAfterText": "Los centros de costo son las unidades especificas a las que se asignan las transacciones."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de nuevo centro de costo",
+          "zauruPath": "/accounting/cost_centers/new",
+          "waitForSelector": [
+            "form#new_accounting_cost_center",
+            "form",
+            "form[action*='cost_centers']"
+          ],
+          "insertAfterText": "3. Hacer clic en \"Nuevo Centro de Costo\"."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "contabilidad-presupuestos-mensuales",
+      "docPath": "docs/contabilidad/contabilidad-presupuestos-mensuales.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de presupuestos mensuales en Zauru",
+          "zauruPath": "/accounting/budgets",
+          "waitForSelector": [
+            "table",
+            ".budgets-table",
+            ".list-table",
+            "#budgets_list"
+          ],
+          "insertAfterText": "2. Seleccionar \"Presupuestos\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nuevo presupuesto mensual",
+          "zauruPath": "/accounting/budgets/new",
+          "waitForSelector": [
+            "form",
+            "#new_budget",
+            ".budget-form",
+            "input[name='budget[reference]']"
+          ],
+          "insertAfterText": "4. Seleccionar \"Nuevo Presupuesto\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de un presupuesto mensual con ejecutado vs presupuestado",
+          "zauruPath": "/accounting/budgets/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".budget-detail",
+            "table",
+            "#budget_show",
+            ".budget-executed"
+          ],
+          "insertAfterText": "Al ver el detalle de un presupuesto, el sistema muestra:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Vista agrupada del presupuesto mensual",
+          "zauruPath": "/accounting/budgets/1/show_grouped",
+          "resolveId": true,
+          "waitForSelector": [
+            ".grouped-view",
+            "table",
+            "#show_grouped",
+            ".budget-grouped"
+          ],
+          "insertAfterText": "La vista \"Agrupado\" muestra el presupuesto consolidado por grupo de cuenta, comparando ejecutado vs. presupuestado a nivel de grupo."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Vista no agrupada de otros gastos del presupuesto",
+          "zauruPath": "/accounting/budgets/1/show_others",
+          "resolveId": true,
+          "waitForSelector": [
+            ".others-view",
+            "table",
+            "#show_others",
+            ".budget-others"
+          ],
+          "insertAfterText": "La vista \"Otros\" muestra unicamente los gastos o ingresos que ocurrieron en el mes pero que no fueron incluidos en ninguna linea del presupuesto."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Formulario de nuevo presupuesto por etiqueta",
+          "zauruPath": "/accounting/budgets/tagged_budgets/new",
+          "waitForSelector": [
+            "form",
+            "#new_tagged_budget",
+            ".tagged-budget-form",
+            "select[name='tagged_budget[tag_id]']"
+          ],
+          "insertAfterText": "4. Hacer clic en \"Nuevo Presupuesto por Etiqueta\"."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Formulario de nuevo presupuesto por categoria de etiqueta",
+          "zauruPath": "/accounting/budgets/tag_category_budgets/new",
+          "waitForSelector": [
+            "form",
+            "#new_tag_category_budget",
+            ".tag-category-budget-form",
+            "select[name='tag_category_budget[tag_category_id]']"
+          ],
+          "insertAfterText": "4. Hacer clic en \"Nuevo Presupuesto por Categoria\"."
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Grafico de arbol jerarquico del presupuesto por categoria",
+          "zauruPath": "/accounting/budgets/tag_category_budgets/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".tree-chart",
+            "#graph_data",
+            ".hierarchy-graph",
+            "svg"
+          ],
+          "insertAfterText": "La vista de detalle del presupuesto por categoria incluye un grafico de arbol interactivo que muestra:"
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "importaciones",
+      "docPath": "docs/contabilidad/importaciones.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de cuentas contables en el módulo de Contabilidad",
+          "zauruPath": "/accounting/accounts",
+          "waitForSelector": [
+            "table",
+            "#accounts-table",
+            ".account-list",
+            ".list-container"
+          ],
+          "insertAfterText": "2. Seleccionar \"Cuentas\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de importación de cuentas contables",
+          "zauruPath": "/accounting/accounts/account_imports/new",
+          "waitForSelector": [
+            "form",
+            "#new_account_import",
+            ".import-form",
+            ".upload-form"
+          ],
+          "insertAfterText": "3. Hacer clic en \"Importar Cuentas\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Listado de transacciones contables en el módulo de Contabilidad",
+          "zauruPath": "/accounting/entries",
+          "waitForSelector": [
+            "table",
+            "#entries-table",
+            ".entry-list",
+            ".list-container"
+          ],
+          "insertAfterText": "2. Seleccionar \"Transacciones\"."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de importación de transacciones contables",
+          "zauruPath": "/accounting/entries/entries_import/new",
+          "waitForSelector": [
+            "form",
+            "#new_entries_import",
+            ".import-form",
+            ".upload-form"
+          ],
+          "insertAfterText": "3. Hacer clic en \"Importar Transacciones\"."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Pestaña de grupos de cuentas en el listado de cuentas",
+          "zauruPath": "/accounting/accounts",
+          "waitForSelector": [
+            "table",
+            "#accounts-table",
+            ".tabs",
+            ".account-group-tab"
+          ],
+          "insertAfterText": "2. Seleccionar \"Cuentas\", luego la pestana \"Grupo de Cuentas\"."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Formulario de importación de grupos de cuentas",
+          "zauruPath": "/accounting/accounts/account_group_imports/new",
+          "waitForSelector": [
+            "form",
+            "#new_account_group_import",
+            ".import-form",
+            ".upload-form"
+          ],
+          "insertAfterText": "3. Hacer clic en \"Importar\"."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "liquidaciones",
+      "docPath": "docs/contabilidad/liquidaciones.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de cuentas contables en Zauru",
+          "zauruPath": "/accounting/accounts",
+          "waitForSelector": [
+            "table",
+            "#accounts-table",
+            ".account-list",
+            ".table-responsive"
+          ],
+          "insertAfterText": "2. Seleccionar \"Cuentas\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Detalle de cuenta reconciliable con boton liquidar",
+          "zauruPath": "/accounting/accounts/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".account-detail",
+            ".show-account",
+            ".btn-liquidar",
+            "table"
+          ],
+          "insertAfterText": "4. Hacer clic en el boton \"Liquidar\" que aparece en el detalle de la cuenta."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Pantalla de liquidacion con partidas y formulario",
+          "zauruPath": "/accounting/entries/1/settlement_action",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#settlement-form",
+            ".entries-list"
+          ],
+          "insertAfterText": "En la pantalla de liquidacion vera:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de transacciones contables",
+          "zauruPath": "/accounting/entries",
+          "waitForSelector": [
+            "table",
+            ".entries-table",
+            ".table-responsive",
+            ".entry-row"
+          ],
+          "insertAfterText": "- Puede ver la transaccion creada desde \"Transacciones\"."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "reportes",
+      "docPath": "docs/contabilidad/reportes.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Página de reportes contables de Zauru",
+          "zauruPath": "/accounting/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".reports-index",
+            ".card"
+          ],
+          "insertAfterText": "Este tutorial describe los reportes contables disponibles en Zauru. Los reportes se acceden desde \"Contabilidad\" > \"Reportes\" y cubren todos los libros fiscales y reportes gerenciales necesarios para la administracion financiera."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "tipificar-las-cuentas-de-egresos-gastos-o-costos",
+      "docPath": "docs/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de cuentas contables en Zauru",
+          "zauruPath": "/accounting/accounts",
+          "waitForSelector": [
+            "table",
+            ".accounts-list",
+            ".table-responsive",
+            "#accounts_table"
+          ],
+          "insertAfterText": "Se requiere entrar a cada cuenta. Ya dentro de la cuenta se puede revisar si esta correcta la tipificacion de la cuenta."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Vista de detalle de una cuenta contable mostrando la tipificación de costo",
+          "zauruPath": "/accounting/accounts/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".account-detail",
+            "form",
+            ".edit-account",
+            ".card"
+          ],
+          "insertAfterText": "Ya dentro de la cuenta se puede revisar si esta correcta la tipificacion de la cuenta."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Formulario de edición de cuenta contable con la casilla Es costo",
+          "zauruPath": "/accounting/accounts/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#account_cost",
+            ".edit_account",
+            ".field-cost"
+          ],
+          "insertAfterText": "Si esta incorrecto, editar la cuenta y cambiarla."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de presupuestos contables en Zauru",
+          "zauruPath": "/accounting/budgets",
+          "waitForSelector": [
+            "table",
+            ".budgets-list",
+            ".table-responsive",
+            "#budgets_table"
+          ],
+          "insertAfterText": "La clasificacion de costo vs. gasto tambien afecta los reportes de presupuestos. Al crear un presupuesto de egresos, puede elegir cuentas de gastos o de costos segun lo que necesite presupuestar. Los presupuestos usan el tipo de cuenta 3 (Gastos) y filtran segun el atributo `cost`."
+        }
+      ]
+    },
+    {
+      "section": "contabilidad",
+      "slug": "transacciones-partidas-contables",
+      "docPath": "docs/contabilidad/transacciones-partidas-contables.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de transacciones contables con filtros y nube de etiquetas",
+          "zauruPath": "/accounting/entries",
+          "waitForSelector": [
+            "table",
+            ".entries-list",
+            ".datatable",
+            "#entries_table"
+          ],
+          "insertAfterText": "El listado de transacciones permite:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de creación de nueva transacción con campos y splits",
+          "zauruPath": "/accounting/entries/new",
+          "waitForSelector": [
+            "form",
+            "#new_entry",
+            ".entry-form",
+            "input[name='entry[reference]']"
+          ],
+          "insertAfterText": "Para crear una transaccion se puede ingresar desde \"Transacciones\" o desde \"Cuentas\" y acreditar o debitar de una cuenta."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de una transacción con sección de historial y botones de acción",
+          "zauruPath": "/accounting/entries/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".entry-detail",
+            ".show-entry",
+            "table",
+            "#entry_history"
+          ],
+          "insertAfterText": "Al editar una transaccion se genera una bitacora del historial de la misma en el detalle de la transaccion. Esto con el fin de no perder trazabilidad de los cambios que se han hecho en la transaccion. En el detalle de la transaccion, en la seccion \"Historial\" puede ver:"
+        }
+      ]
+    },
+    {
+      "section": "contabilizacion-de-proyectos",
+      "slug": "proyectos-subproyectos",
+      "docPath": "docs/contabilizacion-de-proyectos/proyectos-subproyectos.md",
+      "existingImageCount": 0,
+      "shots": []
+    },
+    {
+      "section": "contratos",
+      "slug": "configuracion-de-contratos",
+      "docPath": "docs/contratos/configuracion-de-contratos.md",
+      "existingImageCount": 0,
+      "shots": []
+    },
+    {
+      "section": "contratos",
+      "slug": "contratos-activos",
+      "docPath": "docs/contratos/contratos-activos.md",
+      "existingImageCount": 9,
+      "shots": [
+        {
+          "stepNumber": 6,
+          "caption": "resumen de estado",
+          "zauruPath": "/contracts/active_contracts/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- Cantidad y monto de documentos en cada estado del flujo de trabajo (borrador, ordenado, autorizado, pagado, etc.)",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 7,
+          "caption": "estado del contrato",
+          "zauruPath": "/contracts/active_contracts/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- **Enviar por correo**: Se puede enviar el estado del contrato al beneficiario o a uno mismo por correo electrónico.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 8,
+          "caption": "detalle de partidas por cuota",
+          "zauruPath": "/contracts/active_contracts/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Disponible solo para contratos de tipo **Factura no Pagada**. Esta vista muestra el detalle de las partidas contables (debe y haber) que se generan por cada cuota del contrato.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 9,
+          "caption": "moras actuales",
+          "zauruPath": "/contracts/active_contracts/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- Total de mora acumulada",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "contratos",
+      "slug": "contratos-cerrados",
+      "docPath": "docs/contratos/contratos-cerrados.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "listado de contratos cerrados",
+          "zauruPath": "/contracts/closed_contracts",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Al ingresar a la sección de Contratos Cerrados se muestra una tabla con todos los contratos que han sido cerrados (ya sea automática o manualmente). Se puede filtrar por tipo de documento."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "reabrir contrato cerrado",
+          "zauruPath": "/contracts/closed_contracts/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Si por alguna razón se necesita que un contrato cerrado vuelva a generar cuotas, se puede re-abrir. Al re-abrir un contrato cerrado, este regresa al estado de **Contrato Preliminar**, lo que significa que no empezará a generar cuotas automáticamente hasta que sea activado nuevamente.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "e-commerce",
+      "slug": "configuracion-avanzada-del-modulo-de-e-commerce",
+      "docPath": "docs/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Pantalla de configuración avanzada del módulo de e-commerce con parámetros y campos",
+          "zauruPath": "/ecommerce/ecommerce_settings/new",
+          "waitForSelector": [
+            "form",
+            "input",
+            "select",
+            "div.form-group"
+          ],
+          "insertAfterText": "La pantalla de configuración del módulo de e-commerce (`/ecommerce/ecommerce_settings/new`) contiene todos los parámetros necesarios para automatizar el procesamiento de los pedidos que ingresan desde una tienda en línea. A continuación se detalla cada campo."
+        }
+      ]
+    },
+    {
+      "section": "e-commerce",
+      "slug": "gestion-de-sincronizaciones-woocommerce",
+      "docPath": "docs/e-commerce/gestion-de-sincronizaciones-woocommerce.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de sincronizaciones WooCommerce con estado, frecuencia y URL",
+          "zauruPath": "/ecommerce/woocommerce_items_syncs",
+          "waitForSelector": [
+            "table",
+            ".table",
+            "#sync-list",
+            ".woocommerce-syncs-index"
+          ],
+          "insertAfterText": "La vista principal muestra todas las configuraciones de sincronización de la entidad, permitiendo ver de un vistazo:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario para crear nueva sincronización WooCommerce",
+          "zauruPath": "/ecommerce/woocommerce_items_syncs/new",
+          "waitForSelector": [
+            "form",
+            "#new_woocommerce_items_sync",
+            ".form-sync",
+            "input[name='woocommerce_items_sync[site_url]']"
+          ],
+          "insertAfterText": "3. Llenar el formulario con los parámetros de conexión"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Vista de detalle de una sincronización WooCommerce existente",
+          "zauruPath": "/ecommerce/woocommerce_items_syncs/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".sync-detail",
+            "table",
+            "#woocommerce_items_sync",
+            ".show-sync"
+          ],
+          "insertAfterText": "Se puede modificar cualquier parámetro de una sincronización existente, incluyendo:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de edición de sincronización WooCommerce",
+          "zauruPath": "/ecommerce/woocommerce_items_syncs/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#edit_woocommerce_items_sync",
+            "input[name='woocommerce_items_sync[active]']",
+            ".form-sync"
+          ],
+          "insertAfterText": "Al editar, se actualiza el campo `updater_id` con el usuario que realizó el cambio."
+        }
+      ]
+    },
+    {
+      "section": "inventarios",
+      "slug": "inventarios-configuracion",
+      "docPath": "docs/inventarios/inventarios-configuracion.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Formulario de configuración del módulo de Inventarios",
+          "zauruPath": "/inventories/inventories_settings/new",
+          "waitForSelector": [
+            "form#new_inventories_setting",
+            "form",
+            "form[action*='inventories_settings']"
+          ],
+          "insertAfterText": "Si es la primera vez que accede, verá el formulario para crear la configuración inicial. Si ya existe una configuración, podrá editarla."
+        }
+      ]
+    },
+    {
+      "section": "inventarios",
+      "slug": "inventarios-reportes",
+      "docPath": "docs/inventarios/inventarios-reportes.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de reportes de inventario organizados por categoría",
+          "zauruPath": "/inventories/reports",
+          "waitForSelector": [
+            ".reports-list",
+            "table",
+            "#reports_container",
+            ".report-categories"
+          ],
+          "insertAfterText": "Encontrará el listado completo de reportes disponibles organizados por categoría."
+        }
+      ]
+    },
+    {
+      "section": "inventarios",
+      "slug": "inventarios-solicitudes-de-traslado",
+      "docPath": "docs/inventarios/inventarios-solicitudes-de-traslado.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Formulario de nueva solicitud de traslado con campos de bodega origen, destino, solicitante y productos",
+          "zauruPath": "/inventories/open_transfer_requests/new",
+          "waitForSelector": [
+            "form",
+            "#new_transfer_request",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "Le aparecerán los campos para crear la solicitud, los cuales debe llenar de la siguiente manera:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Detalle de solicitud de traslado mostrando disponibilidad de stock en bodega origen",
+          "zauruPath": "/inventories/open_transfer_requests/1",
+          "resolveId": true,
+          "waitForSelector": [
+            "table",
+            "#transfer_request_details",
+            ".stock-availability",
+            ".card"
+          ],
+          "insertAfterText": "En los detalles de una solicitud de traslado, puede ver la disponibilidad de stock de cada producto solicitado en la bodega origen. Esto le permite saber si hay suficiente inventario para satisfacer la solicitud:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Listado de solicitudes de traslado abiertas con filtros por estado",
+          "zauruPath": "/inventories/open_transfer_requests",
+          "waitForSelector": [
+            "table",
+            "#transfer_requests_list",
+            ".filters",
+            ".card"
+          ],
+          "insertAfterText": "La vista principal muestra las solicitudes abiertas. Puede filtrar por:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de solicitudes de traslado cerradas con historial completado",
+          "zauruPath": "/inventories/closed_transfer_requests",
+          "waitForSelector": [
+            "table",
+            "#closed_transfer_requests",
+            ".card"
+          ],
+          "insertAfterText": "Aquí podrá ver el historial de solicitudes que ya fueron completadas. También puede ver sus detalles y los envíos asociados."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Formulario de edición de solicitud de traslado con datos cargados",
+          "zauruPath": "/inventories/open_transfer_requests/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#edit_transfer_request",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "Podrá modificar:"
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Detalle de solicitud de traslado con opción de crear requisición de compra",
+          "zauruPath": "/inventories/open_transfer_requests/1",
+          "resolveId": true,
+          "waitForSelector": [
+            "table",
+            "#transfer_request_details",
+            ".actions",
+            ".card"
+          ],
+          "insertAfterText": "1. Abra los detalles de la solicitud de traslado."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Sección de envíos en detalle de solicitud con botón de nuevo envío",
+          "zauruPath": "/inventories/open_transfer_requests/1",
+          "resolveId": true,
+          "waitForSelector": [
+            "#shipments",
+            "table",
+            ".shipments-section",
+            ".card"
+          ],
+          "insertAfterText": "1. Abra los detalles de la solicitud."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "configuraciones-de-nomina",
+      "docPath": "docs/nominas/configuraciones-de-nomina.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Formulario de configuraciones generales de nomina",
+          "zauruPath": "/payroll/settings/configurations/edit",
+          "waitForSelector": [
+            "form",
+            "#payroll_configuration",
+            "input",
+            "button"
+          ],
+          "insertAfterText": "2. En el submenu de **\"Settings\"**, seleccionar **\"Configuraciones\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Listado de puestos de trabajo",
+          "zauruPath": "/payroll/settings/job_positions",
+          "waitForSelector": [
+            "table",
+            "#job_positions",
+            "tr",
+            "a"
+          ],
+          "insertAfterText": "2. En **\"Settings\"**, seleccionar **\"Puestos de trabajo\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Formulario de nuevo puesto de trabajo",
+          "zauruPath": "/payroll/settings/job_positions/new",
+          "waitForSelector": [
+            "form",
+            "#new_job_position",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de beneficios y deducciones",
+          "zauruPath": "/payroll/settings/payroll_benefits_deductions",
+          "waitForSelector": [
+            "table",
+            "#payroll_benefits_deductions",
+            "tr",
+            "a"
+          ],
+          "insertAfterText": "2. En **\"Settings\"**, seleccionar **\"Beneficios y deducciones\"**."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Formulario de nuevo beneficio o deduccion",
+          "zauruPath": "/payroll/settings/payroll_benefits_deductions/new",
+          "waitForSelector": [
+            "form",
+            "#new_payroll_benefits_deduction",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Formulario de nuevo metodo de pago",
+          "zauruPath": "/payroll/settings/payroll_payment_methods/new",
+          "waitForSelector": [
+            "form",
+            "#new_payroll_payment_method",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Formulario de nuevo tipo de incidencia",
+          "zauruPath": "/payroll/settings/incident_types/new",
+          "waitForSelector": [
+            "form",
+            "#new_incident_type",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Formulario de nuevo tipo de tiempo personal",
+          "zauruPath": "/payroll/settings/personal_time_off_types/new",
+          "waitForSelector": [
+            "form",
+            "#new_personal_time_off_type",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 9,
+          "caption": "Formulario de nuevo tipo de destajo",
+          "zauruPath": "/payroll/settings/piecework_types/new",
+          "waitForSelector": [
+            "form",
+            "#new_piecework_type",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 10,
+          "caption": "Formulario de nuevo grupo de tipos de destajo",
+          "zauruPath": "/payroll/settings/piecework_type_groups/new",
+          "waitForSelector": [
+            "form",
+            "#new_piecework_type_group",
+            "input",
+            "select"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "contratos-de-trabajo",
+      "docPath": "docs/nominas/contratos-de-trabajo.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de contratos de trabajo con filtros por agencia y estado",
+          "zauruPath": "/payroll/work_contracts",
+          "waitForSelector": [
+            "table",
+            ".work_contracts_list",
+            ".list_table",
+            "#work_contracts"
+          ],
+          "insertAfterText": "El listado muestra todos los contratos con su estado (activo, terminado) y permite filtrar por:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nuevo contrato de trabajo con datos básicos, pago y tiempo personal",
+          "zauruPath": "/payroll/work_contracts/new",
+          "waitForSelector": [
+            "form",
+            "#new_work_contract",
+            ".work_contract_form",
+            "input[name='work_contract[reference]']"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de un contrato de trabajo con información y beneficios del puesto",
+          "zauruPath": "/payroll/work_contracts/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".work_contract_detail",
+            "table",
+            "#work_contract_show",
+            ".contract_info"
+          ],
+          "insertAfterText": "En el listado de contratos, hacer clic en el numero de contrato o en el nombre del empleado para ver el detalle completo:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de edición de contrato de trabajo",
+          "zauruPath": "/payroll/work_contracts/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#edit_work_contract",
+            ".work_contract_form",
+            "input[name='work_contract[reference]']"
+          ],
+          "insertAfterText": "2. El formulario muestra los mismos campos que al crear, con los valores actuales."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Formulario de terminación de contrato de trabajo",
+          "zauruPath": "/payroll/work_contracts/1/work_contract_terminations/new",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#new_work_contract_termination",
+            ".termination_form",
+            "input[name='work_contract_termination[termination_date]']"
+          ],
+          "insertAfterText": "2. Completar los campos de terminacion:"
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "corridas-de-nomina",
+      "docPath": "docs/nominas/corridas-de-nomina.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de corridas de nomina no pagadas",
+          "zauruPath": "/payroll/unpaid_payroll_runs",
+          "waitForSelector": [
+            "table",
+            ".payroll-runs-table",
+            ".list-table",
+            "#payroll-runs"
+          ],
+          "insertAfterText": "El listado muestra todas las corridas pendientes en formato de tabla con las siguientes columnas:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nueva corrida de nomina",
+          "zauruPath": "/payroll/unpaid_payroll_runs/new",
+          "waitForSelector": [
+            "form",
+            "#new_payroll_run",
+            ".payroll-run-form",
+            "input[name='payroll_run[name]']"
+          ],
+          "insertAfterText": "3. Hacer clic en **\"Guardar\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de una corrida de nomina no pagada",
+          "zauruPath": "/payroll/unpaid_payroll_runs/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".payroll-run-detail",
+            "table",
+            "#payroll-run-info",
+            ".show-payroll-run"
+          ],
+          "insertAfterText": "- **Formularios asociados**: plantillas de impresion vinculadas."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Tabla de llenado de beneficios flexibles",
+          "zauruPath": "/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions",
+          "resolveId": true,
+          "waitForSelector": [
+            "table",
+            ".flexible-benefits-table",
+            "form",
+            "#fill_flexible"
+          ],
+          "insertAfterText": "3. Ingresar los montos correspondientes para cada empleado."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Detalle de nomina individual",
+          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".payroll-detail",
+            "table",
+            "#payroll-info",
+            ".show-payroll"
+          ],
+          "insertAfterText": "- Creador y fecha de creacion."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Formulario de nueva nomina individual",
+          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/new",
+          "waitForSelector": [
+            "form",
+            "#new_payroll",
+            ".payroll-form",
+            "select[name='payroll[work_contract_id]']"
+          ],
+          "insertAfterText": "3. Hacer clic en **\"Guardar\"**."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Listado de corridas de nomina pagadas",
+          "zauruPath": "/payroll/paid_payroll_runs",
+          "waitForSelector": [
+            "table",
+            ".paid-payroll-runs-table",
+            ".list-table",
+            "#paid-payroll-runs"
+          ],
+          "insertAfterText": "Muestra todas las corridas pagadas con el mismo formato que las no pagadas. Incluye busqueda y filtros."
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Detalle de una corrida pagada",
+          "zauruPath": "/payroll/paid_payroll_runs/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".payroll-run-detail",
+            "table",
+            "#paid-payroll-run-info",
+            ".show-paid-payroll-run"
+          ],
+          "insertAfterText": "Igual que las no pagadas, pero sin opciones de edicion ni aprobacion. Muestra todas las nominas, destajos y partidas contables asociadas."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "destajos",
+      "docPath": "docs/nominas/destajos.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de destajos no pagados en Zauru",
+          "zauruPath": "/payroll/unpaid_pieceworks",
+          "waitForSelector": [
+            "table",
+            ".datatable",
+            ".table",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Destajos no pagados**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de creación de un nuevo destajo",
+          "zauruPath": "/payroll/unpaid_pieceworks/new",
+          "waitForSelector": [
+            "form",
+            "#new_unpaid_piecework",
+            ".piecework-form",
+            "#content"
+          ],
+          "insertAfterText": "1. En el listado de destajos no pagados, hacer clic en **\"Nuevo**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de un destajo no pagado",
+          "zauruPath": "/payroll/unpaid_pieceworks/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".piecework-detail",
+            "table",
+            "#content",
+            ".show-page"
+          ],
+          "insertAfterText": "En el listado, hacer clic en el ID del destajo. El detalle muestra:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de destajos pagados en Zauru",
+          "zauruPath": "/payroll/paid_pieceworks",
+          "waitForSelector": [
+            "table",
+            ".datatable",
+            "#content",
+            ".table"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Destajos pagados**."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Formulario de creación de destajo de feriado",
+          "zauruPath": "/payroll/piecework_holidays/new",
+          "waitForSelector": [
+            "form",
+            "#new_piecework_holiday",
+            "#content",
+            ".holiday-form"
+          ],
+          "insertAfterText": "1. Hacer clic en **\"Nuevo**."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "incidencias",
+      "docPath": "docs/nominas/incidencias.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de incidencias de empleados con opciones de búsqueda y filtros",
+          "zauruPath": "/payroll/incidents",
+          "waitForSelector": [
+            "table",
+            "#incidents-table",
+            ".incident-list",
+            ".list-table"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Incidencias**\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario para crear una nueva incidencia de empleado",
+          "zauruPath": "/payroll/incidents/new",
+          "waitForSelector": [
+            "form",
+            "#new_incident",
+            ".incident-form",
+            ".form-container"
+          ],
+          "insertAfterText": "1. En el listado de incidencias, hacer clic en **\"Nuevo**\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de una incidencia con datos y descuento calculado",
+          "zauruPath": "/payroll/incidents/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".incident-detail",
+            ".show-incident",
+            "#incident-info",
+            ".detail-container"
+          ],
+          "insertAfterText": "En el listado, hacer clic en la incidencia. El detalle muestra:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de importación masiva de incidencias",
+          "zauruPath": "/payroll/incident_imports/new",
+          "waitForSelector": [
+            "form",
+            "#new_incident_import",
+            ".import-form",
+            ".form-container"
+          ],
+          "insertAfterText": "2. En el submenu de incidencias, seleccionar **\"Importar incidencias**\"."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "reportes-de-nomina",
+      "docPath": "docs/nominas/reportes-de-nomina.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Pantalla de reportes del módulo de nóminas en Zauru",
+          "zauruPath": "/payroll/reports",
+          "waitForSelector": [
+            "table",
+            "#reports-list",
+            ".report-categories",
+            ".card"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Reportes\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Reporte de valores semanales de destajo por empleado",
+          "zauruPath": "/payroll/reports/weekly_piecework_values_by_employees",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas (semana)."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Reporte de costos semanales de destajos",
+          "zauruPath": "/payroll/reports/weekly_piecework_costs",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Reporte de tareas por empleado por fecha",
+          "zauruPath": "/payroll/reports/tasks_by_employee_by_date",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Empleado.\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Reporte de tareas por empleado consolidadas por tipo de destajo",
+          "zauruPath": "/payroll/reports/tasks_by_employee_consolidated_by_type",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Empleado.\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Reporte de empleados por tarea por fecha",
+          "zauruPath": "/payroll/reports/employees_by_task_by_date",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Tipo de destajo.\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Reporte de destajos empleados por fecha",
+          "zauruPath": "/payroll/reports/piecework_employees_by_date",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Reporte de cantidades diarias de destajo por empleado",
+          "zauruPath": "/payroll/reports/daily_piecework_quantities_by_employee",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 9,
+          "caption": "Reporte de costos de destajos en corrida de nomina",
+          "zauruPath": "/payroll/reports/piecework_costs_in_payroll_run",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Corrida de nomina."
+        },
+        {
+          "stepNumber": 10,
+          "caption": "Reporte de grupos de cuentas y cuentas por corrida de nomina",
+          "zauruPath": "/payroll/reports/account_groups_and_accounts_by_payroll_run",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Corrida de nomina."
+        },
+        {
+          "stepNumber": 11,
+          "caption": "Reporte de nominas por corrida de nomina",
+          "zauruPath": "/payroll/reports/payroll_run_payrolls",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Corrida de nomina."
+        },
+        {
+          "stepNumber": 12,
+          "caption": "Reporte de nominas diarias por corrida de nomina",
+          "zauruPath": "/payroll/reports/daily_payrolls_by_payroll_run",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Corrida de nomina."
+        },
+        {
+          "stepNumber": 13,
+          "caption": "Historial de nominas de empleado consolidado",
+          "zauruPath": "/payroll/reports/employee_payroll_history_consolidated",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Empleado.\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 14,
+          "caption": "Historial de nominas de empleado detallado",
+          "zauruPath": "/payroll/reports/employee_payroll_history_detailed",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Empleado.\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 15,
+          "caption": "Reporte de totales de beneficios y deducciones por agencia",
+          "zauruPath": "/payroll/reports/benefits_deductions_totals_by_agency",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 16,
+          "caption": "Reporte de destajos sin partida contable",
+          "zauruPath": "/payroll/reports/pieceworks_without_accounting_entry",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output",
+            ".btn-corregir"
+          ],
+          "insertAfterText": "**Opcion de correccion**: el boton **\"Corregir\"** genera las partidas contables faltantes para todos los destajos listados."
+        },
+        {
+          "stepNumber": 17,
+          "caption": "Reporte de nominas sin partida contable",
+          "zauruPath": "/payroll/reports/payrolls_without_accounting_entry",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "Identifica nominas individuales que no tienen partidas contables asociadas."
+        },
+        {
+          "stepNumber": 18,
+          "caption": "Reporte de total de pago sin conciliar",
+          "zauruPath": "/payroll/reports/unreconciled_total_payment",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output",
+            ".btn-corregir"
+          ],
+          "insertAfterText": "**Opcion de correccion**: el boton **\"Corregir\"** ajusta las partidas contables para que coincidan con el total de pago real."
+        },
+        {
+          "stepNumber": 19,
+          "caption": "Reporte de total de costo sin conciliar",
+          "zauruPath": "/payroll/reports/unreconciled_total_cost",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output",
+            ".btn-corregir"
+          ],
+          "insertAfterText": "**Opcion de correccion**: el boton **\"Corregir\"** ajusta las partidas contables para que coincidan con el costo total real."
+        },
+        {
+          "stepNumber": 20,
+          "caption": "Reporte de partidas faltantes en destajos",
+          "zauruPath": "/payroll/reports/missing_entries_in_pieceworks",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output",
+            ".btn-corregir"
+          ],
+          "insertAfterText": "**Opcion de correccion**: el boton **\"Corregir\"** genera las partidas faltantes."
+        },
+        {
+          "stepNumber": 21,
+          "caption": "Reporte de incidencias no descontadas correctamente",
+          "zauruPath": "/payroll/reports/incidents_not_correctly_discounted",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output",
+            ".btn-corregir"
+          ],
+          "insertAfterText": "**Opcion de correccion**: el boton **\"Corregir\"** sincroniza el estado de descuento de las incidencias con las nominas."
+        },
+        {
+          "stepNumber": 22,
+          "caption": "Reporte de incidencias por tipo entre fechas",
+          "zauruPath": "/payroll/reports/incidents_by_type_between_dates",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Rango de fechas."
+        },
+        {
+          "stepNumber": 23,
+          "caption": "Reporte de libro de salarios entre fechas",
+          "zauruPath": "/payroll/reports/wage_ledger_between_dates",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#report-params",
+            ".report-output"
+          ],
+          "insertAfterText": "**Parametros**:\n- Empleado.\n- Rango de fechas."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "tiempo-personal",
+      "docPath": "docs/nominas/tiempo-personal.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de solicitudes de tiempo personal con estados",
+          "zauruPath": "/payroll/personal_time_off/personal_time_off_requests",
+          "waitForSelector": [
+            "table",
+            ".table",
+            "#personal_time_off_requests_list",
+            ".list-container"
+          ],
+          "insertAfterText": "El listado muestra todas las solicitudes con su estado:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario para crear una solicitud de tiempo personal",
+          "zauruPath": "/payroll/personal_time_off/personal_time_off_requests/new",
+          "waitForSelector": [
+            "form",
+            "#new_personal_time_off_request",
+            ".form-container",
+            "input"
+          ],
+          "insertAfterText": "2. Completar los campos:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de una solicitud de tiempo personal",
+          "zauruPath": "/payroll/personal_time_off/personal_time_off_requests/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".personal_time_off_request_detail",
+            "table",
+            "#request_info",
+            ".detail-container"
+          ],
+          "insertAfterText": "En el listado, hacer clic en la solicitud para ver el detalle completo:"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Listado de saldos de tiempo personal por empleado",
+          "zauruPath": "/payroll/personal_time_off/personal_time_off_balances",
+          "waitForSelector": [
+            "table",
+            ".table",
+            "#balances_list",
+            ".list-container"
+          ],
+          "insertAfterText": "El listado muestra todos los empleados con su saldo de tiempo personal. Se puede filtrar por:"
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Detalle del saldo de tiempo personal con historial",
+          "zauruPath": "/payroll/personal_time_off/personal_time_off_balances/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".balance_detail",
+            "table",
+            "#balance_history",
+            ".detail-container"
+          ],
+          "insertAfterText": "En el listado, hacer clic en el empleado para ver el historial completo:"
+        }
+      ]
+    },
+    {
+      "section": "permisos-de-acceso",
+      "slug": "contratos",
+      "docPath": "docs/permisos-de-acceso/contratos.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de contratos de la entidad en Zauru",
+          "zauruPath": "/contracts/index",
+          "waitForSelector": [
+            "table",
+            "#contracts-table",
+            ".contracts-list",
+            ".list-container"
+          ],
+          "insertAfterText": "2. Seleccionar \"Contratos\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nuevo contrato con selección de plan",
+          "zauruPath": "/contracts/new",
+          "waitForSelector": [
+            "form",
+            "#new_contract",
+            "input[type=submit]",
+            ".form-container"
+          ],
+          "insertAfterText": "3. Seleccionar \"Nuevo Contrato\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Opciones de exportación de contratos en CSV o XLS",
+          "zauruPath": "/contracts/index",
+          "waitForSelector": [
+            "table",
+            ".export-links",
+            "a[href*='export']",
+            ".list-container"
+          ],
+          "insertAfterText": "3. Seleccionar el formato de exportación deseado (CSV o XLS)."
+        }
+      ]
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "configuraciones-entidad",
+      "docPath": "docs/primeros-pasos/configuraciones-entidad.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar \"Configuraciones de Entidad\".",
+          "zauruPath": "/company/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar \"Configuraciones de Entidad\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Después de realizar los cambios deseados, presione \"Actualizar Variable\" para guardar la configuración. Le aparecerá un ",
+          "zauruPath": "/company/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Después de realizar los cambios deseados, presione \"Actualizar Variable\" para guardar la configuración. Le aparecerá un mensaje de éxito confirmando que las variables se actualizaron correctamente."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "empleados",
+      "docPath": "docs/primeros-pasos/empleados.md",
+      "existingImageCount": 7,
+      "shots": [
+        {
+          "stepNumber": 7,
+          "caption": "3. Click en \"Importar\".",
+          "zauruPath": "/settings/employees",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Click en \"Importar\"."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "etiquetas",
+      "docPath": "docs/primeros-pasos/etiquetas.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de etiquetas y categorías en Configuraciones > Etiquetas",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "#tags-table",
+            ".tag-list",
+            "main"
+          ],
+          "insertAfterText": "2. Seleccionar \"Etiquetas\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Pestaña de categorías de etiquetas y botón nueva categoría",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            ".tabs",
+            ".nav-tabs",
+            "#tag-categories-tab",
+            "table"
+          ],
+          "insertAfterText": "3. Seleccionar la pestaña \"Categoría de Etiquetas\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Formulario de nueva categoría de etiqueta",
+          "zauruPath": "/settings/tags/tag_categories/new",
+          "waitForSelector": [
+            "form",
+            "#new_tag_category",
+            "input[name='tag_category[name]']",
+            ".form-group"
+          ],
+          "insertAfterText": "4. Seleccionar \"Nueva Categoría de Etiqueta\"."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de nueva etiqueta",
+          "zauruPath": "/settings/tags/new",
+          "waitForSelector": [
+            "form",
+            "#new_tag",
+            "input[name='tag[name]']",
+            ".form-group"
+          ],
+          "insertAfterText": "3. Seleccionar \"Nueva Etiqueta\"."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Grafo interactivo de categorías de etiquetas",
+          "zauruPath": "/settings/tags/tag_categories/1/get_graph_data",
+          "resolveId": true,
+          "waitForSelector": [
+            "#graph",
+            "svg",
+            "canvas",
+            ".graph-container"
+          ],
+          "insertAfterText": "Zauru le permite visualizar la estructura jerárquica de sus categorías de etiquetas y las etiquetas contenidas en ellas por medio de un grafo interactivo. Este grafo le muestra de forma visual cómo se organizan sus etiquetas y categorías."
+        }
+      ]
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "formularios",
+      "docPath": "docs/primeros-pasos/formularios.md",
+      "existingImageCount": 3,
+      "shots": [
+        {
+          "stepNumber": 3,
+          "caption": "Versiones de formulario",
+          "zauruPath": "/settings/forms",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. En el listado, seleccionar \"Versiones\" en el formulario deseado."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "importaciones-de-datos",
+      "docPath": "docs/primeros-pasos/importaciones-de-datos.md",
+      "existingImageCount": 0,
+      "shots": [],
+      "source": "broken-refs"
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "proyectos",
+      "docPath": "docs/primeros-pasos/proyectos.md",
+      "existingImageCount": 8,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. Seleccionar \"Nueva Categoría de proyecto\".",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Nueva Categoría de proyecto\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Para guardar los cambios presione \"Crear Categoría de proyecto\".",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar los cambios presione \"Crear Categoría de proyecto\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la categoría de proyecto se creó exitosamente.",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la categoría de proyecto se creó exitosamente."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Hacer click en \"Duplicar\" sobre la categoría que desea duplicar.",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Hacer click en \"Duplicar\" sobre la categoría que desea duplicar."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Hacer click en \"Gráfico\" sobre la categoría raíz que desea visualizar.",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Hacer click en \"Gráfico\" sobre la categoría raíz que desea visualizar."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "4. Seleccionar \"Nueva Proyecto\".",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Seleccionar \"Nueva Proyecto\"."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Para guardar los cambios presione \"Crear Proyecto\".",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar los cambios presione \"Crear Proyecto\"."
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proyecto se creó exitosamente.",
+          "zauruPath": "/settings/tags",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proyecto se creó exitosamente."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "primeros-pasos",
+      "slug": "reportes-entregables",
+      "docPath": "docs/primeros-pasos/reportes-entregables.md",
+      "existingImageCount": 3,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar \"Nuevo Reporte Entregable\".",
+          "zauruPath": "/settings/deliverable_reports/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar \"Nuevo Reporte Entregable\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Para guardar los cambios presione \"Crear Reporte entregable\".",
+          "zauruPath": "/settings/deliverable_reports/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar los cambios presione \"Crear Reporte entregable\"."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que el reporte entregable se creó exitosamente.",
+          "zauruPath": "/settings/deliverable_reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le deberá aparecer un mensaje de éxito en la pantalla indicándole que el reporte entregable se creó exitosamente."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "configuraciones-de-produccion",
+      "docPath": "docs/produccion/configuraciones-de-produccion.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Configuraciones\"**.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Configuraciones\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "- **Ordenes**: Basado en la proporcion de ordenes cerradas dentro del lote.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- **Ordenes**: Basado en la proporcion de ordenes cerradas dentro del lote."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "listas-de-materiales",
+      "docPath": "docs/produccion/listas-de-materiales.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar **\"Nueva Lista de Materiales\"**.",
+          "zauruPath": "/production/bill_of_materials/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar **\"Nueva Lista de Materiales\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Al igual que con las materias primas, use los botones **\"+\"**, **\"+2\"** o **\"+5\"** para agregar filas de subproductos.",
+          "zauruPath": "/production/bill_of_materials/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Al igual que con las materias primas, use los botones **\"+\"**, **\"+2\"** o **\"+5\"** para agregar filas de subproductos."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le aparecera un mensaje de exito notificandole que la lista de materiales fue creada exitosamente.",
+          "zauruPath": "/production/bill_of_materials",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la lista de materiales fue creada exitosamente."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione el boton **\"Editar\"**.",
+          "zauruPath": "/production/bill_of_materials/1/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Editar\"**.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "lotes-de-produccion-cerrados",
+      "docPath": "docs/produccion/lotes-de-produccion-cerrados.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Lotes Cerrados\"**.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Lotes Cerrados\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. Seleccione el lote que desea consultar.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccione el lote que desea consultar."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "lotes-de-produccion",
+      "docPath": "docs/produccion/lotes-de-produccion.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Lotes de Produccion\"**.",
+          "zauruPath": "/production/production_batches",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Lotes de Produccion\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. Seleccione el lote que desea consultar.",
+          "zauruPath": "/production/production_batches/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccione el lote que desea consultar.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 3,
+          "caption": "4. En la orden deseada, seleccione **\"Mover a Lote\"** y elija el lote de destino de la lista de lotes abiertos disponibl",
+          "zauruPath": "/production/production_batches/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la orden deseada, seleccione **\"Mover a Lote\"** y elija el lote de destino de la lista de lotes abiertos disponibles.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione el boton **\"Eliminar\"**.",
+          "zauruPath": "/production/production_batches/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Eliminar\"**.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "ordenes-de-produccion-cerradas",
+      "docPath": "docs/produccion/ordenes-de-produccion-cerradas.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Ordenes Cerradas\"**.",
+          "zauruPath": "/production/closed_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Ordenes Cerradas\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. Seleccione la orden que desea consultar.",
+          "zauruPath": "/production/closed_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccione la orden que desea consultar."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "4. Presione el boton **\"Devolver a Ejecucion\"**.",
+          "zauruPath": "/production/closed_production_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Devolver a Ejecucion\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione el boton **\"Imprimir\"**.",
+          "zauruPath": "/production/closed_production_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Imprimir\"**.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "ordenes-de-produccion-en-ejecucion",
+      "docPath": "docs/produccion/ordenes-de-produccion-en-ejecucion.md",
+      "existingImageCount": 7,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Ordenes en Ejecucion\"**.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Ordenes en Ejecucion\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "4. Presione el boton **\"Pausar\"**.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Pausar\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "4. Presione el boton **\"Reanudar\"**.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Reanudar\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "5. Ingrese la cantidad de unidades producidas hasta el momento.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "5. Ingrese la cantidad de unidades producidas hasta el momento."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Presione el boton **\"Cerrar\"**.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Cerrar\"**."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "e. **Notas**: Puede agregar notas sobre el cierre de la orden.",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "e. **Notas**: Puede agregar notas sobre el cierre de la orden."
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Le aparecera un mensaje de exito notificandole que la orden fue cerrada exitosamente. La orden pasara a la seccion de or",
+          "zauruPath": "/production/running_production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la orden fue cerrada exitosamente. La orden pasara a la seccion de ordenes cerradas."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "ordenes-de-produccion",
+      "docPath": "docs/produccion/ordenes-de-produccion.md",
+      "existingImageCount": 6,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar **\"Nueva Orden de Produccion\"**.",
+          "zauruPath": "/production/production_orders/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar **\"Nueva Orden de Produccion\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Para agregar lineas de detalle adicionales, use los botones **\"+\"**, **\"+2\"** o **\"+5\"**.",
+          "zauruPath": "/production/production_orders/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para agregar lineas de detalle adicionales, use los botones **\"+\"**, **\"+2\"** o **\"+5\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le aparecera un mensaje de exito notificandole que la orden de produccion fue creada exitosamente. La orden quedara en e",
+          "zauruPath": "/production/production_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la orden de produccion fue creada exitosamente. La orden quedara en estado planificada hasta que la inicie."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione el boton **\"Editar\"**.",
+          "zauruPath": "/production/production_orders/1/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Editar\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Presione el boton **\"Iniciar Produccion\"**.",
+          "zauruPath": "/production/production_orders/1/start_production",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Iniciar Produccion\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 6,
+          "caption": "4. En la seccion de lote, seleccione **\"Mover a Lote\"** y elija el lote de destino.",
+          "zauruPath": "/production/production_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la seccion de lote, seleccione **\"Mover a Lote\"** y elija el lote de destino.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "ordenes-de-trabajo-cerradas",
+      "docPath": "docs/produccion/ordenes-de-trabajo-cerradas.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Ordenes de Trabajo Cerradas\"**.",
+          "zauruPath": "/production/closed_work_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Ordenes de Trabajo Cerradas\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "3. Seleccione la orden que desea consultar.",
+          "zauruPath": "/production/closed_work_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccione la orden que desea consultar."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "4. Presione el boton **\"Reabrir\"**.",
+          "zauruPath": "/production/closed_work_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Reabrir\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione el boton **\"Imprimir\"**.",
+          "zauruPath": "/production/closed_work_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Imprimir\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "ordenes-de-trabajo",
+      "docPath": "docs/produccion/ordenes-de-trabajo.md",
+      "existingImageCount": 7,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar **\"Nueva Orden de Trabajo\"**.",
+          "zauruPath": "/production/open_work_orders/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar **\"Nueva Orden de Trabajo\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Si desea utilizar un paquete y necesita visualizar o editar sus componentes, utilice la funcion **\"Explotar\"** que expan",
+          "zauruPath": "/production/open_work_orders/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Si desea utilizar un paquete y necesita visualizar o editar sus componentes, utilice la funcion **\"Explotar\"** que expande el paquete en sus componentes individuales."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Le aparecera un mensaje de exito notificandole que la orden de trabajo fue creada exitosamente. La orden quedara en esta",
+          "zauruPath": "/production/open_work_orders",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la orden de trabajo fue creada exitosamente. La orden quedara en estado abierta."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "2. Seleccione la accion **\"Explotar\"** en el pie del formulario.",
+          "zauruPath": "/production/open_work_orders/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccione la accion **\"Explotar\"** en el pie del formulario."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Presione el boton **\"Editar\"**.",
+          "zauruPath": "/production/open_work_orders/1/edit",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Editar\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 6,
+          "caption": "4. Presione el boton **\"Cerrar\"**.",
+          "zauruPath": "/production/open_work_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione el boton **\"Cerrar\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cerrada exitosamente.",
+          "zauruPath": "/production/open_work_orders/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cerrada exitosamente.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "produccion",
+      "slug": "reportes-de-produccion",
+      "docPath": "docs/produccion/reportes-de-produccion.md",
+      "existingImageCount": 6,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Reportes\"**.",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Reportes\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Este reporte muestra un consolidado de todas las materias primas requeridas por las ordenes de produccion planificadas (",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Este reporte muestra un consolidado de todas las materias primas requeridas por las ordenes de produccion planificadas (no iniciadas, no cerradas y no anuladas)."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "4. Presione **\"Generar Reporte\"**.",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione **\"Generar Reporte\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presione **\"Generar Reporte\"**.",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione **\"Generar Reporte\"**."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "4. Presione **\"Generar Reporte\"**.",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione **\"Generar Reporte\"**."
+        },
+        {
+          "stepNumber": 6,
+          "caption": "4. Presione **\"Generar Reporte\"**.",
+          "zauruPath": "/production/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presione **\"Generar Reporte\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "punto-de-venta",
+      "slug": "crear-reserva",
+      "docPath": "docs/punto-de-venta/crear-reserva.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de reservas de inventario en el punto de venta",
+          "zauruPath": "/pos/bookings",
+          "waitForSelector": [
+            "table",
+            "#bookings-table",
+            ".bookings-list",
+            ".list-table"
+          ],
+          "insertAfterText": "Le aparecera un listado con todas las reservas que no han sido enviadas, entregadas, anuladas ni devueltas, filtradas por la agencia del usuario actual."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario para crear una nueva reserva de inventario",
+          "zauruPath": "/pos/bookings/new",
+          "waitForSelector": [
+            "form",
+            "#new_booking",
+            "#new_shipment",
+            ".booking-form"
+          ],
+          "insertAfterText": "Le apareceran las opciones para crear una nueva reserva. Los campos que debe llenar son:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de una reserva existente en el punto de venta",
+          "zauruPath": "/pos/bookings/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".booking-detail",
+            "#booking-show",
+            ".shipment-detail",
+            "table"
+          ],
+          "insertAfterText": "a. **Ver detalle**: Haga click sobre una reserva para ver sus detalles."
+        }
+      ]
+    },
+    {
+      "section": "punto-de-venta",
+      "slug": "gestionar-envios",
+      "docPath": "docs/punto-de-venta/gestionar-envios.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de envíos en tránsito en el punto de venta",
+          "zauruPath": "/pos/shipments",
+          "waitForSelector": [
+            "table",
+            "#shipments-table",
+            ".shipments-list",
+            ".list-table"
+          ],
+          "insertAfterText": "Le aparecera un listado con todos los envios que estan en estado \"transito\" (enviados pero no entregados, no anulados y no devueltos). Puede filtrar por:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de entrega de un envío en tránsito",
+          "zauruPath": "/pos/shipments/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#edit_shipment",
+            "#shipment-form",
+            ".edit-form"
+          ],
+          "insertAfterText": "Le aparecera el formulario de entrega con los productos del envio. Para cada producto:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Detalle de un envío con productos y estado",
+          "zauruPath": "/pos/shipments/1",
+          "resolveId": true,
+          "waitForSelector": [
+            "#shipment-detail",
+            ".shipment-show",
+            "table",
+            ".detail-container"
+          ],
+          "insertAfterText": "Al hacer click sobre un envio en el listado, usted podra ver:"
+        }
+      ]
+    },
+    {
+      "section": "punto-de-venta",
+      "slug": "recibir-compra",
+      "docPath": "docs/punto-de-venta/recibir-compra.md",
+      "existingImageCount": 1,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Se mostraran los productos de la orden de compra con las cantidades compradas.",
+          "zauruPath": "/pos/receptions",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Se mostraran los productos de la orden de compra con las cantidades compradas."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "punto-de-venta",
+      "slug": "reportes",
+      "docPath": "docs/punto-de-venta/reportes.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Menu de reportes del punto de venta con opciones disponibles",
+          "zauruPath": "/pos/reports",
+          "waitForSelector": [
+            ".reports-menu",
+            ".report-list",
+            "table",
+            "ul.nav"
+          ],
+          "insertAfterText": "Le aparecera un menu con los siguientes reportes disponibles:"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Reporte Mis Facturas con listado de facturas del mes",
+          "zauruPath": "/pos/reports/my_invoices",
+          "waitForSelector": [
+            "table",
+            "form",
+            "#month_year",
+            "#report-result"
+          ],
+          "insertAfterText": "## Mis Facturas"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Reporte Cierre Diario con resumen de operacion del dia",
+          "zauruPath": "/pos/reports/daily_closing",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#date",
+            "#seller"
+          ],
+          "insertAfterText": "## Cierre Diario"
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Reporte Cierre Diario de Productos con desglose de productos",
+          "zauruPath": "/pos/reports/daily_closing_products",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#date",
+            "#seller"
+          ],
+          "insertAfterText": "## Cierre Diario de Productos"
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Reporte Cierre Diario Resumido con totales",
+          "zauruPath": "/pos/reports/daily_closing_summary",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#date",
+            "#seller"
+          ],
+          "insertAfterText": "## Cierre Diario Resumido"
+        },
+        {
+          "stepNumber": 6,
+          "caption": "Reporte Cierre Diario Consolidado mensual",
+          "zauruPath": "/pos/reports/daily_closing_consolidated",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#month_year",
+            "#seller"
+          ],
+          "insertAfterText": "## Cierre Diario Consolidado"
+        },
+        {
+          "stepNumber": 7,
+          "caption": "Reporte Ventas Mensuales por Vendedor y Categoria de Cliente",
+          "zauruPath": "/pos/reports/monthly_sales_by_seller_and_client_category",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#month_year",
+            "#include_iva"
+          ],
+          "insertAfterText": "## Ventas Mensuales por Vendedor y Categoria de Cliente"
+        },
+        {
+          "stepNumber": 8,
+          "caption": "Reporte Productos Vendidos en el Dia",
+          "zauruPath": "/pos/reports/products_sold_in_day",
+          "waitForSelector": [
+            "form",
+            "table",
+            "#date",
+            "#seller"
+          ],
+          "insertAfterText": "## Productos Vendidos en el Dia"
+        }
+      ]
+    },
+    {
+      "section": "punto-de-venta",
+      "slug": "solicitar-traslado",
+      "docPath": "docs/punto-de-venta/solicitar-traslado.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de solicitudes de traslado filtradas por agencia",
+          "zauruPath": "/pos/transfer_requests",
+          "waitForSelector": [
+            "table",
+            ".transfer-requests-list",
+            ".list-table",
+            "#transfer-requests"
+          ],
+          "insertAfterText": "Le aparecera un listado con todas las solicitudes de traslado que no estan anuladas, filtradas por la agencia del usuario actual (como origen o destino)."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario para crear nueva solicitud de traslado",
+          "zauruPath": "/pos/transfer_requests/new",
+          "waitForSelector": [
+            "form",
+            "#new_transfer_request",
+            "#transfer-request-form",
+            ".form-container"
+          ],
+          "insertAfterText": "Le apareceran las opciones para crear una nueva solicitud. Los campos que debe llenar son:"
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Vista de detalle de una solicitud de traslado",
+          "zauruPath": "/pos/transfer_requests/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".transfer-request-detail",
+            "table",
+            ".detail-container",
+            "#transfer-request"
+          ],
+          "insertAfterText": "a. **Ver detalle**: Haga click sobre una solicitud para ver sus detalles, productos solicitados y cantidades disponibles en la agencia de origen."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "Formulario de edición de solicitud de traslado",
+          "zauruPath": "/pos/transfer_requests/1/edit",
+          "resolveId": true,
+          "waitForSelector": [
+            "form",
+            "#edit_transfer_request",
+            ".edit-form",
+            "#transfer-request-form"
+          ],
+          "insertAfterText": "3. Realice los cambios necesarios en productos, cantidades o datos generales."
+        }
+      ]
+    },
+    {
+      "section": "reportes-de-ventas",
+      "slug": "clientes-mensuales-por-vendedor",
+      "docPath": "docs/reportes-de-ventas/clientes-mensuales-por-vendedor.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de reportes de ventas en Zauru",
+          "zauruPath": "/sales/reports",
+          "waitForSelector": [
+            "table",
+            "#reports-list",
+            ".report-options",
+            ".sales-reports"
+          ],
+          "insertAfterText": "2. Seleccionar Reportes"
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Reporte de Clientes Mensuales del Vendedor con filtros de mes, año y vendedor",
+          "zauruPath": "/sales/reports",
+          "waitForSelector": [
+            ".monthly-clients-by-seller",
+            "form",
+            "table",
+            "select"
+          ],
+          "insertAfterText": "3. A la izquierda seleccione Clientes Mensuales del Vendedor"
+        }
+      ]
+    },
+    {
+      "section": "ventas",
+      "slug": "configuraciones-de-gateway",
+      "docPath": "docs/ventas/configuraciones-de-gateway.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar la pestaña de **\"Configuraciones de Gateway\"**.",
+          "zauruPath": "/sales/gateway_configs",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar la pestaña de **\"Configuraciones de Gateway\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "4. Presionar **\"Nueva Configuración de Gateway\"**.",
+          "zauruPath": "/sales/gateway_configs/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presionar **\"Nueva Configuración de Gateway\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Para guardar presione **\"Crear Configuración de Gateway\"**.",
+          "zauruPath": "/sales/gateway_configs/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar presione **\"Crear Configuración de Gateway\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presionar **\"Actualizar Configuración de Gateway\"**.",
+          "zauruPath": "/sales/gateway_configs/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presionar **\"Actualizar Configuración de Gateway\"**.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "consolidad-ordenes",
+      "docPath": "docs/ventas/consolidad-ordenes.md",
+      "existingImageCount": 5,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Presionar **\"Nueva Consolidacion\"**.",
+          "zauruPath": "/sales/sales_consolidates/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Presionar **\"Nueva Consolidacion\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "d. **Referencia**: Coloque una breve referencia para identificar la consolidacion.",
+          "zauruPath": "/sales/sales_consolidates/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "d. **Referencia**: Coloque una breve referencia para identificar la consolidacion."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Para crear la consolidacion presione **\"Consolidar Ordenes\"**.",
+          "zauruPath": "/sales/sales_consolidates",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para crear la consolidacion presione **\"Consolidar Ordenes\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "3. En el listado de consolidaciones, hacer click sobre **\"Verificar\"** (El ojo) en la consolidacion que desea consultar.",
+          "zauruPath": "/sales/sales_consolidates/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. En el listado de consolidaciones, hacer click sobre **\"Verificar\"** (El ojo) en la consolidacion que desea consultar.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 5,
+          "caption": "Al desconsolidar, las ordenes volveran a su estado original (abiertas) y la factura consolidada sera eliminada.",
+          "zauruPath": "/sales/sales_consolidates/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Al desconsolidar, las ordenes volveran a su estado original (abiertas) y la factura consolidada sera eliminada.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "facturas-pagadas",
+      "docPath": "docs/ventas/facturas-pagadas.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "2. Seleccionar **\"Facturas Pagadas\"**.",
+          "zauruPath": "/sales/paid_invoices",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Facturas Pagadas\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "2. Hacer click sobre **\"Verificar\"** (El ojo) en la factura que desea consultar.",
+          "zauruPath": "/sales/paid_invoices/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Hacer click sobre **\"Verificar\"** (El ojo) en la factura que desea consultar.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 3,
+          "caption": "3. Presione **CTRL + P** para enviar a la impresora.",
+          "zauruPath": "/sales/paid_invoices/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Presione **CTRL + P** para enviar a la impresora.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 4,
+          "caption": "4. Presionar **\"Actualizar Factura\"**.",
+          "zauruPath": "/sales/paid_invoices/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. Presionar **\"Actualizar Factura\"**.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "importar-facturas-no-pagadas",
+      "docPath": "docs/ventas/importar-facturas-no-pagadas.md",
+      "existingImageCount": 2,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar **\"Importar\"**.",
+          "zauruPath": "/sales/unpaid_invoices",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar **\"Importar\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "b. Presionar **\"Importar Facturas\"**.",
+          "zauruPath": "/sales/unpaid_invoices/unpaid_invoice_imports/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "b. Presionar **\"Importar Facturas\"**."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "importar-precios",
+      "docPath": "docs/ventas/importar-precios.md",
+      "existingImageCount": 5,
+      "shots": [
+        {
+          "stepNumber": 0,
+          "caption": "3. Seleccione la pestana de **\"Items\"** o **\"Paquetes\"** segun corresponda.",
+          "zauruPath": "/sales/suggested_prices",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccione la pestana de **\"Items\"** o **\"Paquetes\"** segun corresponda."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "operaciones-de-gateway",
+      "docPath": "docs/ventas/operaciones-de-gateway.md",
+      "existingImageCount": 3,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar la pestaña de **\"Operaciones de Gateway\"**.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar la pestaña de **\"Operaciones de Gateway\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "- **Hasta**: Fecha de fin del rango de búsqueda.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- **Hasta**: Fecha de fin del rango de búsqueda."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "- Cualquier metadata adicional de la operación.",
+          "zauruPath": "",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- Cualquier metadata adicional de la operación."
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "redimir-nota-de-credito-en-una-factura",
+      "docPath": "docs/ventas/redimir-nota-de-credito-en-una-factura.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Listado de facturas no pagadas en el módulo de ventas",
+          "zauruPath": "/sales/unpaid_invoices",
+          "waitForSelector": [
+            "table",
+            "#unpaid_invoices",
+            ".invoices-table",
+            ".list-table"
+          ],
+          "insertAfterText": "2. Seleccionar \"Facturas no Pagadas\"."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Vista con botón Cobrar de una factura no pagada",
+          "zauruPath": "/sales/unpaid_invoices",
+          "waitForSelector": [
+            ".charge-card",
+            "button.charge",
+            "a.cobrar",
+            ".invoice-actions"
+          ],
+          "insertAfterText": "3. Click sobre \"Cobrar\" (La tarjeta)."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Formulario de nuevo pago con redención de nota de crédito",
+          "zauruPath": "/sales/payments/new",
+          "waitForSelector": [
+            "form",
+            "#new_payment",
+            ".payment-form",
+            ".fields"
+          ],
+          "insertAfterText": "Le aparecerán las opciones para crear un nuevo pago, los campos que debe llenar son los siguientes:"
+        }
+      ]
+    },
+    {
+      "section": "ventas",
+      "slug": "reportes-de-ventas",
+      "docPath": "docs/ventas/reportes-de-ventas.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Pantalla de reportes del módulo de ventas de Zauru",
+          "zauruPath": "/sales/reports",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".reports-list",
+            ".card"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Reportes**\"."
+        }
+      ]
+    },
+    {
+      "section": "ventas",
+      "slug": "tarjetas-de-credito",
+      "docPath": "docs/ventas/tarjetas-de-credito.md",
+      "existingImageCount": 4,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "4. En la página de detalles del cliente, busque la sección de **\"Tarjetas de Crédito\"** y presione **\"Nueva Tarjeta de C",
+          "zauruPath": "/sales/clients/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "4. En la página de detalles del cliente, busque la sección de **\"Tarjetas de Crédito\"** y presione **\"Nueva Tarjeta de Crédito\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Para guardar presione **\"Crear Tarjeta de Crédito\"**.",
+          "zauruPath": "/sales/clients/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar presione **\"Crear Tarjeta de Crédito\"**.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 3,
+          "caption": "- El historial de **intenciones de operación** del gateway asociadas a esta tarjeta.",
+          "zauruPath": "/sales/clients/1/credit_cards/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- El historial de **intenciones de operación** del gateway asociadas a esta tarjeta.",
+          "resolveId": true
+        },
+        {
+          "stepNumber": 4,
+          "caption": "La tarjeta será desactivada (soft-delete) y ya no estará disponible para realizar pagos.",
+          "zauruPath": "/sales/clients/1/credit_cards/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "La tarjeta será desactivada (soft-delete) y ya no estará disponible para realizar pagos.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    },
+    {
+      "section": "ventas",
+      "slug": "tarjetas-de-regalo",
+      "docPath": "docs/ventas/tarjetas-de-regalo.md",
+      "existingImageCount": 5,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "3. Seleccionar la pestaña de **\"Tipos de Tarjeta de Regalo\"**.",
+          "zauruPath": "/sales/settings/gift_card_types",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "3. Seleccionar la pestaña de **\"Tipos de Tarjeta de Regalo\"**."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "2. Presionar **\"Nuevo Tipo de Tarjeta de Regalo\"**.",
+          "zauruPath": "/sales/settings/gift_card_types/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Presionar **\"Nuevo Tipo de Tarjeta de Regalo\"**."
+        },
+        {
+          "stepNumber": 3,
+          "caption": "Para guardar presione **\"Crear Tipo de Tarjeta de Regalo\"**.",
+          "zauruPath": "/sales/settings/gift_card_types/new",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "Para guardar presione **\"Crear Tipo de Tarjeta de Regalo\"**."
+        },
+        {
+          "stepNumber": 4,
+          "caption": "2. Seleccionar **\"Tarjetas de Regalo\"**.",
+          "zauruPath": "/sales/gift_cards",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "2. Seleccionar **\"Tarjetas de Regalo\"**."
+        },
+        {
+          "stepNumber": 5,
+          "caption": "- El historial de redenciones.",
+          "zauruPath": "/sales/gift_cards/1",
+          "waitForSelector": [
+            "table",
+            "form",
+            ".dataTables_wrapper",
+            "main",
+            "#content"
+          ],
+          "insertAfterText": "- El historial de redenciones.",
+          "resolveId": true
+        }
+      ],
+      "source": "broken-refs"
+    }
+  ]
+}

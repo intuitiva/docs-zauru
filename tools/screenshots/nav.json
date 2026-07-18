@@ -1,0 +1,214 @@
+[
+  {
+    "label": "Permisos",
+    "path": "/access_control/permissions"
+  },
+  {
+    "label": "Cuentas",
+    "path": "/accounting/accounts"
+  },
+  {
+    "label": "Presupuestos",
+    "path": "/accounting/budgets"
+  },
+  {
+    "label": "Categorías",
+    "path": "/accounting/categories"
+  },
+  {
+    "label": "Conciliaciones",
+    "path": "/accounting/conciliations"
+  },
+  {
+    "label": "Transacciones",
+    "path": "/accounting/entries"
+  },
+  {
+    "label": "Contabilidad",
+    "path": "/accounting/index"
+  },
+  {
+    "label": "Beneficiarios",
+    "path": "/accounting/payees"
+  },
+  {
+    "label": "Reportes",
+    "path": "/accounting/reports"
+  },
+  {
+    "label": "DEMO MEGAMART (123456-7)",
+    "path": "/company"
+  },
+  {
+    "label": "Cambiar Entidad",
+    "path": "/company/edit"
+  },
+  {
+    "label": "Contratos Activos",
+    "path": "/contracts/active_contracts"
+  },
+  {
+    "label": "Contratos Cerrados",
+    "path": "/contracts/closed_contracts"
+  },
+  {
+    "label": "Contratos Preliminares",
+    "path": "/contracts/draft_contracts"
+  },
+  {
+    "label": "Contratos",
+    "path": "/contracts/index"
+  },
+  {
+    "label": "Reportes",
+    "path": "/contracts/reports"
+  },
+  {
+    "label": "Notificaciones",
+    "path": "/notifications"
+  },
+  {
+    "label": "Compras",
+    "path": "/pos/purchases"
+  },
+  {
+    "label": "sartip@zauru.com",
+    "path": "/profile"
+  },
+  {
+    "label": "Editar Perfil",
+    "path": "/profile/edit"
+  },
+  {
+    "label": "Cargos",
+    "path": "/purchases/charges"
+  },
+  {
+    "label": "Ordenes de Compra Cerradas",
+    "path": "/purchases/closed_purchase_orders"
+  },
+  {
+    "label": "Costos Totales",
+    "path": "/purchases/computed_costs"
+  },
+  {
+    "label": "Consolidados",
+    "path": "/purchases/consolidates"
+  },
+  {
+    "label": "Pagos",
+    "path": "/purchases/discharges"
+  },
+  {
+    "label": "Compras",
+    "path": "/purchases/index"
+  },
+  {
+    "label": "Cargos Pagados",
+    "path": "/purchases/paid_charges"
+  },
+  {
+    "label": "Ordenes de Compra",
+    "path": "/purchases/purchase_orders"
+  },
+  {
+    "label": "Reportes",
+    "path": "/purchases/reports"
+  },
+  {
+    "label": "Proveedores",
+    "path": "/purchases/vendors"
+  },
+  {
+    "label": "Clientes",
+    "path": "/sales/clients"
+  },
+  {
+    "label": "Pagos sin Confirmar",
+    "path": "/sales/draft_payments"
+  },
+  {
+    "label": "Ventas",
+    "path": "/sales/index"
+  },
+  {
+    "label": "Ordenes",
+    "path": "/sales/orders"
+  },
+  {
+    "label": "Facturas Pagadas",
+    "path": "/sales/paid_invoices"
+  },
+  {
+    "label": "Pagos",
+    "path": "/sales/payments"
+  },
+  {
+    "label": "Reportes",
+    "path": "/sales/reports"
+  },
+  {
+    "label": "Notas de Venta",
+    "path": "/sales/sales_notes/credit_notes"
+  },
+  {
+    "label": "Precios Sugeridos",
+    "path": "/sales/suggested_prices"
+  },
+  {
+    "label": "Facturas no Pagadas",
+    "path": "/sales/unpaid_invoices"
+  },
+  {
+    "label": "Agencias",
+    "path": "/settings/agencies"
+  },
+  {
+    "label": "Importaciones de Datos",
+    "path": "/settings/data_imports"
+  },
+  {
+    "label": "Empleados",
+    "path": "/settings/employees"
+  },
+  {
+    "label": "Tipos de Cambio",
+    "path": "/settings/exchange_rates"
+  },
+  {
+    "label": "Items",
+    "path": "/settings/items"
+  },
+  {
+    "label": "Enlazar Documentos",
+    "path": "/settings/link_docs/new"
+  },
+  {
+    "label": "Beneficiarios",
+    "path": "/settings/payees"
+  },
+  {
+    "label": "Proyectos",
+    "path": "/settings/tags"
+  },
+  {
+    "label": "Plantillas",
+    "path": "/settings/templates/document_automatic_numbers"
+  },
+  {
+    "label": "Salir",
+    "path": "/sign_out"
+  },
+  {
+    "label": "Casos Abiertos",
+    "path": "/support/cases"
+  },
+  {
+    "label": "Soporte",
+    "path": "/support/index"
+  },
+  {
+    "label": "Tareas",
+    "path": "/tasks"
+  }
+]

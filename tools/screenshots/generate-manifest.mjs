@@ -159,38 +159,56 @@ ${meta.content.slice(0, 12000)}
 ---`;
 }
 
-async function openRouterChat(system, user) {
-  const apiKey = requireEnv('OPENROUTER_API_KEY');
-  const model = process.env.MANIFEST_MODEL || 'tencent/hy3:free';
-
-  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://docs.zauru.com',
-      'X-Title': 'docs-zauru screenshot manifest',
-    },
-    body: JSON.stringify({
-      model,
-      temperature: 0.2,
-      messages: [
-        { role: 'system', content: system },
-        { role: 'user', content: user },
-      ],
-    }),
-  });
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`OpenRouter HTTP ${res.status}: ${body.slice(0, 300)}`);
-  }
-  const data = await res.json();
-  const text = data.choices?.[0]?.message?.content || '';
+function parseJsonPayload(text) {
   const start = text.indexOf('{');
   const end = text.lastIndexOf('}');
   if (start === -1 || end === -1) throw new Error(`Respuesta sin JSON: ${text.slice(0, 200)}`);
   return JSON.parse(text.slice(start, end + 1));
+}
+
+async function openRouterChat(system, user, { retries = 1 } = {}) {
+  const apiKey = requireEnv('OPENROUTER_API_KEY');
+  const model = process.env.MANIFEST_MODEL || 'tencent/hy3:free';
+  let lastErr;
+
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+        'HTTP-Referer': 'https://docs.zauru.com',
+        'X-Title': 'docs-zauru screenshot manifest',
+      },
+      body: JSON.stringify({
+        model,
+        temperature: attempt === 0 ? 0.2 : 0.1,
+        messages: [
+          { role: 'system', content: system },
+          {
+            role: 'user',
+            content:
+              attempt === 0
+                ? user
+                : `${user}\n\nIMPORTANTE: la respuesta anterior no era JSON válido. Responde SOLO con un objeto JSON válido, sin markdown.`,
+          },
+        ],
+      }),
+    });
+
+    if (!res.ok) {
+      const body = await res.text().catch(() => '');
+      throw new Error(`OpenRouter HTTP ${res.status}: ${body.slice(0, 300)}`);
+    }
+    const data = await res.json();
+    const text = data.choices?.[0]?.message?.content || '';
+    try {
+      return parseJsonPayload(text);
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr;
 }
 
 async function callOpenRouter(meta, nav) {
