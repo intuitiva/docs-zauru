@@ -63,7 +63,7 @@ c. El sistema utilizara automaticamente el item configurado en las variables de 
 
 d. Presione "Crear Consolidado".
 
-![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-5.png)
+![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-6.png)
 
 Le aparecera un mensaje de exito notificandole que el consolidado de factura especial fue creado. A partir de este consolidado podra emitir la factura especial correspondiente.
 

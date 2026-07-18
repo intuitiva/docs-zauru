@@ -25,7 +25,7 @@ Para ver la informacion completa de una orden cerrada:
 2. Seleccionar **"Ordenes Cerradas"**.
 3. Seleccione la orden que desea consultar.
 
-![imagen2](/img/produccion/ordenes-de-produccion-cerradas-1.png)
+![imagen2](/img/produccion/ordenes-de-produccion-cerradas-2.png)
 
 En la vista de detalle podra ver:
 - Datos generales de la orden (referencia, fecha, responsable, lote).
@@ -65,7 +65,7 @@ Para imprimir una orden de produccion cerrada:
 3. Seleccione la orden que desea imprimir.
 4. Presione el boton **"Imprimir"**.
 
-![imagen4](/img/produccion/ordenes-de-produccion-cerradas-3.png)
+![imagen4](/img/produccion/ordenes-de-produccion-cerradas-4.png)
 
 Seleccione la plantilla de impresion que desea utilizar y presione **"Imprimir"**. Tambien puede descargar la orden en formato PDF utilizando el boton **"Descargar PDF"**.
 

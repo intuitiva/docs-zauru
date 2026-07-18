@@ -55,7 +55,7 @@ Permite cargar masivamente grupos de cuentas desde un archivo CSV.
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas", luego la pestana "Grupo de Cuentas".
 
-![Pestaña de grupos de cuentas en el listado de cuentas](/img/contabilidad/importaciones-1.png)
+![Pestaña de grupos de cuentas en el listado de cuentas](/img/contabilidad/importaciones-5.png)
 
 3. Hacer clic en "Importar".
 

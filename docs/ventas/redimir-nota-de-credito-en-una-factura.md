@@ -14,7 +14,7 @@ Este tutorial esta basado en como aplicar una nota de crédito a una factura no 
 
 3. Click sobre "Cobrar" (La tarjeta).
 
-![Vista con botón Cobrar de una factura no pagada](/img/ventas/redimir-nota-de-credito-en-una-factura-1.png)
+![Vista con botón Cobrar de una factura no pagada](/img/ventas/redimir-nota-de-credito-en-una-factura-2.png)
 
 
 

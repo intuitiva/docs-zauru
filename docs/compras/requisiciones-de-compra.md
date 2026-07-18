@@ -38,7 +38,7 @@ g. Si selecciono "Detalle de cuentas", seleccione las cuentas contables, el cost
 
 h. Presione "Crear requisicion de compra" para guardar los cambios.
 
-![imagen2](/img/compras/requisiciones-de-compra-1.png)
+![imagen2](/img/compras/requisiciones-de-compra-2.png)
 
 Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente.
 
@@ -75,7 +75,7 @@ Los pasos para aprobar en lote son los siguientes:
 3. Seleccionar las requisiciones que desea aprobar marcando las casillas correspondientes.
 4. Seleccionar "Aprobar en Lote".
 
-![imagen5](/img/compras/requisiciones-de-compra-3.png)
+![imagen5](/img/compras/requisiciones-de-compra-5.png)
 
 Le aparecera el formulario de aprobacion en lote, los campos que debe llenar son los siguientes:
 

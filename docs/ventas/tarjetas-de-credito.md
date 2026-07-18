@@ -46,7 +46,7 @@ h. **Predeterminada**: Marque esta opción si desea que esta tarjeta sea la pred
 
 Para guardar presione **"Crear Tarjeta de Crédito"**.
 
-![imagen2](/img/ventas/tarjetas-de-credito-1.png)
+![imagen2](/img/ventas/tarjetas-de-credito-2.png)
 
 Al crear la tarjeta, Zauru enviará los datos al gateway configurado para **tokenizar** la tarjeta. Esto significa que los datos sensibles (número de tarjeta y CVV) no se almacenan en Zauru, sino que se obtiene un token del gateway que representa la tarjeta de forma segura.
 

@@ -39,7 +39,7 @@ Zauru le permite exportar su historial de contratos en formato CSV o XLS. Para e
 2. Seleccionar "Contratos".
 3. Seleccionar el formato de exportación deseado (CSV o XLS).
 
-![Opciones de exportación de contratos en CSV o XLS](/img/permisos-de-acceso/contratos-1.png)
+![Opciones de exportación de contratos en CSV o XLS](/img/permisos-de-acceso/contratos-3.png)
 
 ## API (llamadas desde sistemas externos)
 

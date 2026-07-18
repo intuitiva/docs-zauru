@@ -37,10 +37,10 @@ Para que esta nota de crédito aparezca en el libro de compras, la transaccion d
 
 ### Generar partida contable (Para OC de Mercadería)
 Lo primero que hay que revisar es la partida existente, porque nos tenemos que basar en eso para generar la partida de la Nota de Crédito, __OJO:__ para este caso en lugar de la cuenta: __Gasto X__, la transacción iría a la cuenta de __Activo de Inventario (Mercadería por ejemplo)__.
-![transaccion existente en OC](/img/compras/registrar-notas-de-credito-en-compras-1.png)
+![transaccion existente en OC](/img/compras/registrar-notas-de-credito-en-compras-3.png)
 
 Ahora vamos a crear una nueva partida de la Nota de crédito asociada a la Orden de Compra (Para este caso debe de existir una cuenta de Activo Ej: Nota de crédito recibida).
-![boton asociar transaccion a la OC](/img/compras/registrar-notas-de-credito-en-compras-2.png)
+![boton asociar transaccion a la OC](/img/compras/registrar-notas-de-credito-en-compras-4.png)
 
 Para Nota de Crédito por anulación completa, la transacción debería de ser:
 Mercaderia Q312.50 => Nota de crédito recibida Q350

@@ -39,7 +39,7 @@ c. **Etiquetas (Tags)**: Filtre las ordenes por etiquetas si es necesario.
 
 d. **Referencia**: Coloque una breve referencia para identificar la consolidacion.
 
-![imagen2](/img/ventas/consolidad-ordenes-1.png)
+![imagen2](/img/ventas/consolidad-ordenes-2.png)
 
 A continuacion se mostrara un listado de las ordenes disponibles para consolidar. Seleccione las ordenes que desea incluir en la consolidacion marcando las casillas correspondientes.
 

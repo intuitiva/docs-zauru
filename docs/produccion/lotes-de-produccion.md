@@ -43,7 +43,7 @@ Para reagrupar ordenes de produccion entre lotes abiertos:
 3. Seleccione el lote que contiene la orden que desea mover.
 4. En la orden deseada, seleccione **"Mover a Lote"** y elija el lote de destino de la lista de lotes abiertos disponibles.
 
-![imagen3](/img/produccion/lotes-de-produccion-2.png)
+![imagen3](/img/produccion/lotes-de-produccion-3.png)
 
 Tambien puede remover una orden de su lote actual sin asignarla a otro lote.
 
@@ -58,7 +58,7 @@ Solo puede anular un lote de produccion que este en estado abierto y cuyas orden
 3. Seleccione el lote que desea anular.
 4. Presione el boton **"Eliminar"**.
 
-![imagen4](/img/produccion/lotes-de-produccion-2.png)
+![imagen4](/img/produccion/lotes-de-produccion-4.png)
 
 Al anular el lote, todas las ordenes de produccion que contiene tambien seran anuladas y sus movimientos de inventario revertidos.
 

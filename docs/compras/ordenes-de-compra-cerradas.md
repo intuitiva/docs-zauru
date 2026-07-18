@@ -53,7 +53,7 @@ h. Impresion de la orden de compra utilizando las plantillas disponibles.
 
 i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).
 
-![imagen3](/img/compras/ordenes-de-compra-cerradas-2.png)
+![imagen3](/img/compras/ordenes-de-compra-cerradas-3.png)
 
 ## Editar informacion de una orden de compra cerrada
 
@@ -107,7 +107,7 @@ Los pasos para reabrir una orden de compra cerrada son:
 3. Seleccionar "Detalles" en la orden que desea reabrir.
 4. Seleccionar "Reabrir Orden de Compra".
 
-![imagen6](/img/compras/ordenes-de-compra-cerradas-2.png)
+![imagen6](/img/compras/ordenes-de-compra-cerradas-6.png)
 
 Le aparecera un mensaje de exito notificandole que la orden de compra fue reabierta exitosamente. La orden de compra volvera a aparecer en el listado de ordenes de compra activas.
 

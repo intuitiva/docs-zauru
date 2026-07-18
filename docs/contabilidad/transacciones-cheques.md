@@ -49,7 +49,7 @@ Los pasos para emitir un cheque Post Fechado son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”
 
-![imagen3](/img/contabilidad/transacciones-cheques-1.jpg)
+![imagen3](/img/contabilidad/transacciones-cheques-3.jpg)
 
 
 Le aparecerán las opciones para crear un nueva transacción, los pasos para emitir el cheque post fechado son los mismo que un cheque normal, la diferencia es que en la fecha, debe colocar la fecha en la que se puede cobrar el cheque.

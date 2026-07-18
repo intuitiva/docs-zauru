@@ -57,7 +57,7 @@ f. **Valor fijo**: Si la tarjeta de regalo tiene un valor predefinido (ej. Q100,
 
 Para guardar presione **"Crear Tipo de Tarjeta de Regalo"**.
 
-![imagen3](/img/ventas/tarjetas-de-regalo-2.png)
+![imagen3](/img/ventas/tarjetas-de-regalo-3.png)
 
 ### Editar y Eliminar Tipos de Tarjeta de Regalo
 

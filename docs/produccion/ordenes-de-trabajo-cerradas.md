@@ -25,7 +25,7 @@ Para ver la informacion completa de una orden de trabajo cerrada:
 2. Seleccionar **"Ordenes de Trabajo Cerradas"**.
 3. Seleccione la orden que desea consultar.
 
-![imagen2](/img/produccion/ordenes-de-trabajo-cerradas-1.png)
+![imagen2](/img/produccion/ordenes-de-trabajo-cerradas-2.png)
 
 En la vista de detalle podra ver:
 - Datos generales de la orden (referencia, fecha, responsable, agencia de origen y destino).
@@ -45,7 +45,7 @@ Si necesita revertir el cierre de una orden de trabajo:
 3. Seleccione la orden que desea reabrir.
 4. Presione el boton **"Reabrir"**.
 
-![imagen3](/img/produccion/ordenes-de-trabajo-cerradas-1.png)
+![imagen3](/img/produccion/ordenes-de-trabajo-cerradas-3.png)
 
 El sistema realizara las siguientes operaciones:
 - Revertira los movimientos de inventario de salida.
@@ -64,7 +64,7 @@ Para imprimir una orden de trabajo:
 3. Seleccione la orden que desea imprimir.
 4. Presione el boton **"Imprimir"**.
 
-![imagen4](/img/produccion/ordenes-de-trabajo-cerradas-1.png)
+![imagen4](/img/produccion/ordenes-de-trabajo-cerradas-4.png)
 
 Seleccione la plantilla de impresion que desea utilizar y presione **"Imprimir"**. Tambien puede descargar la orden en formato PDF utilizando el boton **"Descargar PDF"**.
 

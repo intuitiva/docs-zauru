@@ -36,7 +36,7 @@ d. **Subproductos**: Si su proceso de manufactura genera subproductos, puede def
 
    Al igual que con las materias primas, use los botones **"+"**, **"+2"** o **"+5"** para agregar filas de subproductos.
 
-![imagen2](/img/produccion/listas-de-materiales-1.png)
+![imagen2](/img/produccion/listas-de-materiales-2.png)
 
 Cuando haya completado todos los campos, presione **"Crear Lista de Materiales"**.
 

@@ -52,7 +52,7 @@ Los pasos para registrar los gastos de viaticos hechos por el empleado son los s
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
-![imagen3](/img/contabilidad/transacciones-control-de-viaticos-1.jpg)
+![imagen3](/img/contabilidad/transacciones-control-de-viaticos-3.jpg)
 
 Hay dos maneras de registrar los gastos:
 
@@ -89,7 +89,7 @@ Cuando se pagan viaticos vencidos, primero se registra el gasto que tuvo el empl
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
-![imagen5](/img/contabilidad/transacciones-control-de-viaticos-1.jpg)
+![imagen5](/img/contabilidad/transacciones-control-de-viaticos-5.jpg)
 
 En el siguiente ejemplo se muestra como registrar los gastos por factura. Las opciones a colocar para registrar los gastos de viaticos son las siguientes:
 
@@ -119,7 +119,7 @@ El siguiente paso es crear el pago de los viaticos al empleado. Los pasos para c
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
-![imagen7](/img/contabilidad/transacciones-control-de-viaticos-1.jpg)
+![imagen7](/img/contabilidad/transacciones-control-de-viaticos-7.jpg)
 
 En el siguiente ejemplo se registra un cheque a un empleado desde "cuenta monetaria" hacia "cuentas por pagar a empleados" para saldar la deuda de viaticos vencidos. Los campos a llenar son los siguientes:
 

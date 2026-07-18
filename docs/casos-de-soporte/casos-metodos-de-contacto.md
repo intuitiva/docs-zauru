@@ -23,7 +23,7 @@ Le aparecera el listado de metodos de contacto configurados en su entidad. Para 
 
 1. En el listado de metodos de contacto, seleccione **"Nuevo Metodo de Contacto"**.
 
-![imagen2](/img/casos-de-soporte/casos-metodos-de-contacto-1.png)
+![imagen2](/img/casos-de-soporte/casos-metodos-de-contacto-2.png)
 
 2. Complete los campos:
    - **Nombre**: Nombre descriptivo del metodo (Ej: "WhatsApp", "Chat en Vivo", "Visita Tecnica").
