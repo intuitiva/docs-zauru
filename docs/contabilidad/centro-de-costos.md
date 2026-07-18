@@ -10,12 +10,16 @@ Este tutorial explica como gestionar el centro de costos en Zauru. Los centros d
 
 Las categorias de centro de costos agrupan centros de costo similares. Por ejemplo, puede tener categorias como "Proyectos", "Departamentos", "Sucursales", "Vehiculos", etc.
 
+![Categorías de centro de costos](/img/contabilidad/centro-de-costos-1.png)
+
 ### Crear una categoria de centro de costos
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Centro de Costos".
 3. Ir a la pestana "Categorias".
 4. Hacer clic en "Nueva Categoria".
+
+![Formulario de nueva categoría de centro de costos](/img/contabilidad/centro-de-costos-2.png)
 
 Los campos a completar son:
 
@@ -32,11 +36,15 @@ Desde el listado de categorias puede editar o eliminar cualquier categoria exist
 
 Los centros de costo son las unidades especificas a las que se asignan las transacciones.
 
+![Listado de centros de costo](/img/contabilidad/centro-de-costos-3.png)
+
 ### Crear un centro de costo
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Centro de Costos".
 3. Hacer clic en "Nuevo Centro de Costo".
+
+![Formulario de nuevo centro de costo](/img/contabilidad/centro-de-costos-4.png)
 
 Los campos a completar son:
 

@@ -20,3 +20,7 @@ npm-cache/
 .gstack/
 .superpowers/
 .worktrees/
+
+# Herramienta de screenshots (secretos y sesión local)
+tools/screenshots/.env
+tools/screenshots/storageState.json

@@ -14,7 +14,7 @@ Los pasos para crear una orden de produccion son los siguientes:
 2. Seleccionar **"Ordenes de Produccion"**.
 3. Seleccionar **"Nueva Orden de Produccion"**.
 
-![imagen1](/img/produccion/ordenes-de-produccion-1.jpg)
+![imagen1](/img/produccion/ordenes-de-produccion-1.png)
 
 Le aparecera el formulario para crear una nueva orden de produccion. Los campos que debe llenar son los siguientes:
 
@@ -47,13 +47,13 @@ k. **Detalles (Materias Primas)**: Los detalles se cargan automaticamente desde 
 
    Para agregar lineas de detalle adicionales, use los botones **"+"**, **"+2"** o **"+5"**.
 
-![imagen2](/img/produccion/ordenes-de-produccion-2.jpg)
+![imagen2](/img/produccion/ordenes-de-produccion-2.png)
 
 Cuando haya completado todos los campos, presione **"Crear Orden de Produccion"**.
 
 Le aparecera un mensaje de exito notificandole que la orden de produccion fue creada exitosamente. La orden quedara en estado planificada hasta que la inicie.
 
-![imagen3](/img/produccion/ordenes-de-produccion-3.jpg)
+![imagen3](/img/produccion/ordenes-de-produccion-3.png)
 
 ## Editar una orden de produccion
 
@@ -64,7 +64,7 @@ Para editar una orden de produccion planificada:
 3. Seleccione la orden que desea editar.
 4. Presione el boton **"Editar"**.
 
-![imagen4](/img/produccion/ordenes-de-produccion-4.jpg)
+![imagen4](/img/produccion/ordenes-de-produccion-4.png)
 
 Puede modificar la referencia, cantidad objetivo, responsable, fecha de inicio planificada, bodega de producto terminado y los detalles de materias primas. Si cambia la lista de materiales, los detalles se actualizaran automaticamente.
 
@@ -79,7 +79,7 @@ Para mover una orden de planificada a en ejecucion:
 3. Seleccione la orden que desea iniciar.
 4. Presione el boton **"Iniciar Produccion"**.
 
-![imagen5](/img/produccion/ordenes-de-produccion-5.jpg)
+![imagen5](/img/produccion/ordenes-de-produccion-5.png)
 
 El sistema validara que todos los items perecederos tengan un lote asignado y que haya suficiente stock de materias primas. Luego creara los movimientos de inventario para el consumo de materias primas y cambiara el estado de la orden a en ejecucion.
 
@@ -94,7 +94,7 @@ Para reagrupar una orden de produccion en un lote diferente:
 3. Seleccione la orden que desea mover.
 4. En la seccion de lote, seleccione **"Mover a Lote"** y elija el lote de destino.
 
-![imagen6](/img/produccion/ordenes-de-produccion-6.jpg)
+![imagen6](/img/produccion/ordenes-de-produccion-6.png)
 
 Tambien puede remover la orden de su lote actual con la opcion **"Remover del Lote"**.
 

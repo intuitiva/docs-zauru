@@ -9,6 +9,9 @@ Zauru permite administrar las configuraciones de sincronización con WooCommerce
 ## Listado de sincronizaciones
 
 La vista principal muestra todas las configuraciones de sincronización de la entidad, permitiendo ver de un vistazo:
+
+![Listado de sincronizaciones WooCommerce con estado, frecuencia y URL](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-1.png)
+
 - El estado de cada configuración (activa o inactiva)
 - La frecuencia de sincronización programada
 - El URL del sitio WooCommerce asociado
@@ -20,6 +23,8 @@ Para crear una nueva configuración de sincronización:
 1. Ir a la vista de sincronizaciones
 2. Seleccionar "Nueva sincronización"
 3. Llenar el formulario con los parámetros de conexión
+
+![Formulario para crear nueva sincronización WooCommerce](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-2.png)
 
 Al crear la sincronización, se registran automáticamente:
 - `creator_id`: el usuario que creó la configuración

@@ -9,11 +9,18 @@ Este tutorial esta basado en como aplicar una nota de crédito a una factura no 
 
 1. Ir a "Ventas".
 2. Seleccionar "Facturas no Pagadas".
+
+![Listado de facturas no pagadas en el módulo de ventas](/img/ventas/redimir-nota-de-credito-en-una-factura-1.png)
+
 3. Click sobre "Cobrar" (La tarjeta).
+
+![Vista con botón Cobrar de una factura no pagada](/img/ventas/redimir-nota-de-credito-en-una-factura-2.png)
 
 
 
 Le aparecerán las opciones para crear un nuevo pago, los campos que debe llenar son los siguientes:
+
+![Formulario de nuevo pago con redención de nota de crédito](/img/ventas/redimir-nota-de-credito-en-una-factura-3.png)
 
 a. Coloque la fecha en que se esta haciendo el cobro.
 

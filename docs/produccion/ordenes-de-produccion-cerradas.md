@@ -13,7 +13,7 @@ Los pasos para ver las ordenes de produccion cerradas son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Ordenes Cerradas"**.
 
-![imagen1](/img/produccion/ordenes-de-produccion-cerradas-1.jpg)
+![imagen1](/img/produccion/ordenes-de-produccion-cerradas-1.png)
 
 En esta pantalla vera un listado de todas las ordenes de produccion que han sido cerradas. Puede filtrar por lote de produccion utilizando el selector en la parte superior. Para cada orden se muestra informacion como: referencia, item fabricado, cantidad objetivo, cantidad completada, responsable, fecha de cierre y tiempo acumulado de ejecucion.
 
@@ -25,7 +25,7 @@ Para ver la informacion completa de una orden cerrada:
 2. Seleccionar **"Ordenes Cerradas"**.
 3. Seleccione la orden que desea consultar.
 
-![imagen2](/img/produccion/ordenes-de-produccion-cerradas-2.jpg)
+![imagen2](/img/produccion/ordenes-de-produccion-cerradas-2.png)
 
 En la vista de detalle podra ver:
 - Datos generales de la orden (referencia, fecha, responsable, lote).
@@ -45,7 +45,7 @@ Si necesita reabrir una orden de produccion ya cerrada:
 3. Seleccione la orden que desea devolver.
 4. Presione el boton **"Devolver a Ejecucion"**.
 
-![imagen3](/img/produccion/ordenes-de-produccion-cerradas-3.jpg)
+![imagen3](/img/produccion/ordenes-de-produccion-cerradas-3.png)
 
 El sistema realizara las siguientes operaciones:
 - Eliminara los subproductos registrados.
@@ -65,7 +65,7 @@ Para imprimir una orden de produccion cerrada:
 3. Seleccione la orden que desea imprimir.
 4. Presione el boton **"Imprimir"**.
 
-![imagen4](/img/produccion/ordenes-de-produccion-cerradas-4.jpg)
+![imagen4](/img/produccion/ordenes-de-produccion-cerradas-4.png)
 
 Seleccione la plantilla de impresion que desea utilizar y presione **"Imprimir"**. Tambien puede descargar la orden en formato PDF utilizando el boton **"Descargar PDF"**.
 

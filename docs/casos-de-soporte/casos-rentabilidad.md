@@ -13,7 +13,7 @@ Este tutorial esta enfocado en el analisis de rentabilidad de un caso de soporte
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, seleccione la opcion **"Rentabilidad"** (o acceda directamente a la URL `/support/cases/1/profit`).
 
-![imagen1](/img/casos-de-soporte/casos-rentabilidad-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-rentabilidad-1.png)
 
 ## Componentes del Analisis
 

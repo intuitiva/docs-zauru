@@ -11,7 +11,7 @@ Este tutorial esta enfocado en la administracion de los metodos de contacto util
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Metodos de Contacto"** (o acceder a `/support/contact_methods`).
 
-![imagen1](/img/casos-de-soporte/casos-metodos-de-contacto-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-metodos-de-contacto-1.png)
 
 Le aparecera el listado de metodos de contacto configurados en su entidad. Para cada metodo se muestra:
 
@@ -23,7 +23,7 @@ Le aparecera el listado de metodos de contacto configurados en su entidad. Para 
 
 1. En el listado de metodos de contacto, seleccione **"Nuevo Metodo de Contacto"**.
 
-![imagen2](/img/casos-de-soporte/casos-metodos-de-contacto-2.jpg)
+![imagen2](/img/casos-de-soporte/casos-metodos-de-contacto-2.png)
 
 2. Complete los campos:
    - **Nombre**: Nombre descriptivo del metodo (Ej: "WhatsApp", "Chat en Vivo", "Visita Tecnica").

@@ -15,7 +15,7 @@ Los pasos para ver las ordenes de compra cerradas son los siguientes:
 1. Ir a "Compras".
 2. Seleccionar "Ordenes de Compra Cerradas".
 
-![imagen1](/img/compras/ordenes-de-compra-cerradas-1.jpg)
+![imagen1](/img/compras/ordenes-de-compra-cerradas-1.png)
 
 Le aparecera un listado con todas las ordenes de compra que han sido recibidas y pagadas. En este listado puede:
 
@@ -31,7 +31,7 @@ Los pasos para ver los detalles de una orden de compra cerrada son:
 2. Seleccionar "Ordenes de Compra Cerradas".
 3. Seleccionar "Detalles" (El Ojo) en la orden que desea consultar.
 
-![imagen2](/img/compras/ordenes-de-compra-cerradas-2.jpg)
+![imagen2](/img/compras/ordenes-de-compra-cerradas-2.png)
 
 En la vista de detalles de una orden de compra cerrada podra encontrar:
 
@@ -53,7 +53,7 @@ h. Impresion de la orden de compra utilizando las plantillas disponibles.
 
 i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).
 
-![imagen3](/img/compras/ordenes-de-compra-cerradas-3.jpg)
+![imagen3](/img/compras/ordenes-de-compra-cerradas-3.png)
 
 ## Editar informacion de una orden de compra cerrada
 
@@ -66,7 +66,7 @@ Los pasos para editar una orden de compra cerrada son:
 3. Seleccionar "Detalles" en la orden que desea editar.
 4. Seleccionar "Editar".
 
-![imagen4](/img/compras/ordenes-de-compra-cerradas-4.jpg)
+![imagen4](/img/compras/ordenes-de-compra-cerradas-4.png)
 
 Los campos que puede editar en una orden de compra cerrada son:
 
@@ -92,7 +92,7 @@ j. Archivo PDF asociado a la orden.
 
 k. Etiquetas (tags).
 
-![imagen5](/img/compras/ordenes-de-compra-cerradas-5.jpg)
+![imagen5](/img/compras/ordenes-de-compra-cerradas-5.png)
 
 Al terminar de editar, presione "Actualizar" para guardar los cambios.
 
@@ -107,7 +107,7 @@ Los pasos para reabrir una orden de compra cerrada son:
 3. Seleccionar "Detalles" en la orden que desea reabrir.
 4. Seleccionar "Reabrir Orden de Compra".
 
-![imagen6](/img/compras/ordenes-de-compra-cerradas-6.jpg)
+![imagen6](/img/compras/ordenes-de-compra-cerradas-6.png)
 
 Le aparecera un mensaje de exito notificandole que la orden de compra fue reabierta exitosamente. La orden de compra volvera a aparecer en el listado de ordenes de compra activas.
 

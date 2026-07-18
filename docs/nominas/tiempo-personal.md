@@ -19,6 +19,8 @@ Para acceder a las solicitudes:
 
 El listado muestra todas las solicitudes con su estado:
 
+![Listado de solicitudes de tiempo personal con estados](/img/nominas/tiempo-personal-1.png)
+
 - **En proceso** (icono azul): solicitud pendiente de aprobacion.
 - **Aprobado** (icono verde con una verificacion): solicitud aprobada pero aun no gozada.
 - **Rechazado** (icono rojo): solicitud rechazada.
@@ -30,6 +32,8 @@ Cada fila muestra: ID, empleado, tipo de tiempo personal, fecha de inicio, fecha
 
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
+
+![Formulario para crear una solicitud de tiempo personal](/img/nominas/tiempo-personal-2.png)
 
 - **Empleado**: seleccionar el empleado solicitante.
 - **Tipo de tiempo personal**: seleccionar el tipo (vacaciones, enfermedad, permiso personal, etc.).
@@ -46,6 +50,8 @@ La solicitud queda en estado **"En proceso"**.
 ### Ver detalle de una solicitud
 
 En el listado, hacer clic en la solicitud para ver el detalle completo:
+
+![Detalle de una solicitud de tiempo personal](/img/nominas/tiempo-personal-3.png)
 
 #### Informacion general
 
@@ -137,6 +143,8 @@ Para acceder a los saldos:
 
 El listado muestra todos los empleados con su saldo de tiempo personal. Se puede filtrar por:
 
+![Listado de saldos de tiempo personal por empleado](/img/nominas/tiempo-personal-4.png)
+
 - **Activos**: empleados con contrato activo.
 - **Terminados**: empleados con contrato terminado.
 - **Todos**: ambos estados.
@@ -146,6 +154,8 @@ Cada fila muestra: empleado, dias disponibles, dias gozados, dias pendientes.
 ### Ver detalle del saldo
 
 En el listado, hacer clic en el empleado para ver el historial completo:
+
+![Detalle del saldo de tiempo personal con historial](/img/nominas/tiempo-personal-5.png)
 
 - **Saldo actual**: dias disponibles.
 - **Historial de movimientos**: tabla con cada movimiento que afecta el saldo:

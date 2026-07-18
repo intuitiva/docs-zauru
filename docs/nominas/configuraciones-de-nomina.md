@@ -71,6 +71,8 @@ Los puestos de trabajo definen el tipo de contratacion, frecuencia de pago y cue
 1. Ir a **"Nominas"**.
 2. En **"Settings"**, seleccionar **"Puestos de trabajo"**.
 
+![Listado de puestos de trabajo](/img/nominas/configuraciones-de-nomina-2.png)
+
 ### Listado de puestos
 
 El listado muestra todos los puestos de trabajo con su nombre, tipo de pago, frecuencia de pago y estado (activo/inactivo).
@@ -79,6 +81,20 @@ El listado muestra todos los puestos de trabajo con su nombre, tipo de pago, fre
 
 1. Hacer clic en **"Nuevo Puesto"**.
 2. Completar los campos:
+
+![Formulario de nuevo grupo de tipos de destajo](/img/nominas/configuraciones-de-nomina-10.png)
+
+![Formulario de nuevo tipo de destajo](/img/nominas/configuraciones-de-nomina-9.png)
+
+![Formulario de nuevo tipo de tiempo personal](/img/nominas/configuraciones-de-nomina-8.png)
+
+![Formulario de nuevo tipo de incidencia](/img/nominas/configuraciones-de-nomina-7.png)
+
+![Formulario de nuevo metodo de pago](/img/nominas/configuraciones-de-nomina-6.png)
+
+![Formulario de nuevo beneficio o deduccion](/img/nominas/configuraciones-de-nomina-5.png)
+
+![Formulario de nuevo puesto de trabajo](/img/nominas/configuraciones-de-nomina-3.png)
 
 - **Activo**: marcar para que el puesto este disponible.
 - **Nombre**: nombre del puesto (ej. "Administrador", "Operario de produccion").
@@ -121,6 +137,8 @@ Para gestionar beneficios y deducciones:
 
 1. Ir a **"Nominas"**.
 2. En **"Settings"**, seleccionar **"Beneficios y deducciones"**.
+
+![Listado de beneficios y deducciones](/img/nominas/configuraciones-de-nomina-4.png)
 
 ### Filtros del listado
 

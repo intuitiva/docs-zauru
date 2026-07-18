@@ -9,6 +9,9 @@ Este tutorial trata del unico documento que sirve para mover los saldos entre cu
 ## Listado de transacciones
 
 El listado de transacciones permite:
+
+![Listado de transacciones contables con filtros y nube de etiquetas](/img/contabilidad/transacciones-partidas-contables-1.png)
+
 - Filtrar por tipo: **Ingresos**, **Egresos**, **Transferencias** o **Todos**.
 - Filtrar por etiqueta (tag) usando la nube de etiquetas.
 - Filtrar por rango de fechas (fecha de transaccion o fecha de creacion).
@@ -17,6 +20,8 @@ El listado de transacciones permite:
 ## Crear una transaccion
 
 Para crear una transaccion se puede ingresar desde "Transacciones" o desde "Cuentas" y acreditar o debitar de una cuenta.
+
+![Formulario de creación de nueva transacción con campos y splits](/img/contabilidad/transacciones-partidas-contables-2.png)
 
 ### Campos de la transaccion
 
@@ -60,6 +65,8 @@ Antes de crear la transaccion, puede hacer clic en "Previsualizar" para verifica
 ### Historial de cambios (bitacora)
 
 Al editar una transaccion se genera una bitacora del historial de la misma en el detalle de la transaccion. Esto con el fin de no perder trazabilidad de los cambios que se han hecho en la transaccion. En el detalle de la transaccion, en la seccion "Historial" puede ver:
+
+![Detalle de una transacción con sección de historial y botones de acción](/img/contabilidad/transacciones-partidas-contables-3.png)
 
 - El numero de revision.
 - El tipo de operacion (creacion, edicion, verificacion, auditoria).

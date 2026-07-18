@@ -23,7 +23,7 @@ Antes de eliminar un caso, tome en cuenta lo siguiente:
 3. Localizar el caso que desea eliminar.
 4. Hacer click sobre el icono de **"Eliminar"** (basurero).
 
-![imagen1](/img/casos-de-soporte/casos-eliminar-un-caso-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-eliminar-un-caso-1.png)
 
 5. El sistema le mostrara un mensaje de confirmacion: **"Esta seguro de destruirlo?"**
 6. Confirme la eliminacion.

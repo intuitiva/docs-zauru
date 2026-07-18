@@ -15,6 +15,8 @@ Para ver los envios que estan en transito:
 
 Le aparecera un listado con todos los envios que estan en estado "transito" (enviados pero no entregados, no anulados y no devueltos). Puede filtrar por:
 
+![Listado de envíos en tránsito en el punto de venta](/img/punto-de-venta/gestionar-envios-1.png)
+
 a. **Todos**: Muestra todos los envios donde la agencia del usuario es origen o destino.
 
 b. **Salidas (Outcomes)**: Muestra solo los envios donde la agencia del usuario es el origen.
@@ -55,6 +57,8 @@ Presione "Guardar" para registrar la entrega. Al guardar:
 ## Ver detalles de un envio
 
 Al hacer click sobre un envio en el listado, usted podra ver:
+
+![Detalle de un envío con productos y estado](/img/punto-de-venta/gestionar-envios-3.png)
 
 a. **Datos generales**: Agencia origen, agencia destino, fecha de creacion, fecha planificada de entrega.
 

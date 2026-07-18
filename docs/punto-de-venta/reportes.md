@@ -13,7 +13,11 @@ Para acceder a los reportes:
 
 Le aparecera un menu con los siguientes reportes disponibles:
 
+![Menu de reportes del punto de venta con opciones disponibles](/img/punto-de-venta/reportes-1.png)
+
 ## Mis Facturas
+
+![Reporte Mis Facturas con listado de facturas del mes](/img/punto-de-venta/reportes-2.png)
 
 Este reporte muestra las facturas emitidas por el vendedor actual en un mes especifico.
 
@@ -80,6 +84,8 @@ Reporte mensual que consolida la operacion de todo un mes, mostrando totales por
 - Correlatividad de numeros de factura por dia (para facturas no electronicas).
 
 ## Ventas Mensuales por Vendedor y Categoria de Cliente
+
+![Reporte Ventas Mensuales por Vendedor y Categoria de Cliente](/img/punto-de-venta/reportes-7.png)
 
 Reporte que desglosa las ventas mensuales por vendedor y por categoria de cliente.
 

@@ -13,6 +13,8 @@ Zauru incluye un conjunto completo de reportes de inventario que le permiten ana
 
 Encontrará el listado completo de reportes disponibles organizados por categoría.
 
+![Listado de reportes de inventario organizados por categoría](/img/inventarios/inventarios-reportes-1.png)
+
 ---
 
 ## Reportes de Reparación

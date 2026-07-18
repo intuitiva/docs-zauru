@@ -26,7 +26,7 @@ Las configuraciones disponibles incluyen:
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, seleccione la opcion **"Enviar Correo"**.
 
-![imagen1](/img/casos-de-soporte/casos-enviar-por-correo-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-enviar-por-correo-1.png)
 
 El sistema enviara automaticamente un correo electronico al cliente con la informacion del caso, utilizando la plantilla de correo configurada.
 

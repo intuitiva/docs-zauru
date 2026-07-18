@@ -73,6 +73,14 @@ Se referencian en markdown como `/img/<sección>/<documento>-<N>.<ext>`.
 Para agregar una imagen nueva: coloca el archivo en `static/img/<sección>/<documento>-<N>.jpg`
 y referéncialo como `/img/<sección>/<documento>-<N>.jpg`.
 
+### Captura automática de screenshots
+
+Existe una herramienta en [`tools/screenshots/`](tools/screenshots/README.md) que
+inicia sesión en Zauru con Playwright, captura pantallas del área de contenido
+como PNG siguiendo esta misma convención e inserta las referencias en los `.md`.
+Ver su README para el flujo completo (`discover-nav` → `generate-manifest` →
+`run-screenshots` → `insert-image-refs`).
+
 ## Despliegue
 
 Ver [`DEPLOY.md`](DEPLOY.md) para instrucciones completas de despliegue en Netlify.

@@ -15,6 +15,8 @@ Para ver las solicitudes de traslado existentes:
 
 Le aparecera un listado con todas las solicitudes de traslado que no estan anuladas, filtradas por la agencia del usuario actual (como origen o destino).
 
+![Listado de solicitudes de traslado filtradas por agencia](/img/punto-de-venta/solicitar-traslado-1.png)
+
 Desde el listado usted podra:
 
 a. **Ver detalle**: Haga click sobre una solicitud para ver sus detalles, productos solicitados y cantidades disponibles en la agencia de origen.
@@ -33,6 +35,8 @@ Los pasos para crear una solicitud de traslado son:
 **Importante**: Si el usuario no tiene una agencia asignada, no podra crear solicitudes de traslado. Debe tener una agencia configurada en su perfil de empleado.
 
 Le apareceran las opciones para crear una nueva solicitud. Los campos que debe llenar son:
+
+![Formulario para crear nueva solicitud de traslado](/img/punto-de-venta/solicitar-traslado-2.png)
 
 a. **Agencia destino**: La agencia que recibira los productos (su punto de venta). Se asigna automaticamente segun la agencia del usuario.
 

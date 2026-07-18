@@ -50,6 +50,8 @@ El sistema automaticamente:
 
 En el listado, hacer clic en la incidencia. El detalle muestra:
 
+![Detalle de una incidencia con datos y descuento calculado](/img/nominas/incidencias-3.png)
+
 - ID de la incidencia.
 - Empleado.
 - Tipo de incidencia con su categoria.

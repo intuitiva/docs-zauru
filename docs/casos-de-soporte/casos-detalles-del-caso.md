@@ -13,7 +13,7 @@ Para ver los detalles de un caso:
 3. Hacer click sobre **"Verificar"** (icono de ojo) en el caso deseado.
 4. O bien, hacer click sobre el **ID** del caso.
 
-![imagen1](/img/casos-de-soporte/casos-detalles-del-caso-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-detalles-del-caso-1.png)
 
 ## Informacion Mostrada en los Detalles
 

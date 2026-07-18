@@ -11,7 +11,7 @@ Para acceder a los reportes de compras:
 1. Ir a "Compras".
 2. Seleccionar "Reportes".
 
-![imagen1](/img/compras/reportes-de-compras-1.jpg)
+![imagen1](/img/compras/reportes-de-compras-1.png)
 
 ---
 

@@ -42,7 +42,7 @@ Para ver el detalle de un numero de serie atendido:
 2. Seleccionar **"Numeros de Serie Atendidos"**.
 3. Hacer click sobre **"Verificar"** (ojo) en el numero de serie deseado.
 
-![imagen5](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-5.jpg)
+![imagen5](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-5.png)
 
 En la pagina de detalle podra ver:
 
@@ -76,7 +76,7 @@ Puede crear un nuevo numero de serie directamente desde el modulo de soporte. Es
 2. Seleccionar **"Numeros de Serie Atendidos"**.
 3. Seleccionar **"Nuevo Numero de Serie"**.
 
-![imagen6](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-6.jpg)
+![imagen6](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-6.png)
 
 Complete los campos:
 - **Nombre** del numero de serie

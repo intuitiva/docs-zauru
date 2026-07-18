@@ -24,8 +24,13 @@ Los pasos para crear un presupuesto mensual son los siguientes:
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Presupuestos".
+
+![Listado de presupuestos mensuales en Zauru](/img/contabilidad/contabilidad-presupuestos-mensuales-1.png)
+
 3. Seleccionar la pestana "Mensuales".
 4. Seleccionar "Nuevo Presupuesto".
+
+![Formulario de nuevo presupuesto mensual](/img/contabilidad/contabilidad-presupuestos-mensuales-2.png)
 
 ### Campos del presupuesto
 
@@ -47,6 +52,8 @@ Use los botones "+" para agregar un rubro adicional, "+2" para agregar dos rubro
 ### Ver el presupuesto ejecutado
 
 Al ver el detalle de un presupuesto, el sistema muestra:
+
+![Detalle de un presupuesto mensual con ejecutado vs presupuestado](/img/contabilidad/contabilidad-presupuestos-mensuales-3.png)
 
 - **Agrupado**: cuentas que estan en el presupuesto, comparando el monto presupuestado vs. el monto ejecutado (gastos reales del mes).
 - **No agrupado**: gastos o ingresos del mes en cuentas que no estan incluidas en el presupuesto.
@@ -84,6 +91,8 @@ Los presupuestos por etiqueta permiten controlar gastos o ingresos asociados a u
 3. Seleccionar la pestana "Por Etiqueta".
 4. Hacer clic en "Nuevo Presupuesto por Etiqueta".
 
+![Formulario de nuevo presupuesto por etiqueta](/img/contabilidad/contabilidad-presupuestos-mensuales-6.png)
+
 Los campos son similares al presupuesto mensual normal, pero en lugar de mes y ano, debe seleccionar:
 - **Etiqueta**: el tag cuyas transacciones se presupuestan (cada etiqueta solo puede tener un presupuesto).
 
@@ -107,6 +116,8 @@ Por ejemplo, si tiene una categoria "Proyectos" con etiquetas "Proyecto A", "Pro
 2. Seleccionar "Presupuestos".
 3. Seleccionar la pestana "Por Categoria de Etiqueta".
 4. Hacer clic en "Nuevo Presupuesto por Categoria".
+
+![Formulario de nuevo presupuesto por categoria de etiqueta](/img/contabilidad/contabilidad-presupuestos-mensuales-7.png)
 
 ### Campos
 

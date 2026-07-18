@@ -11,7 +11,7 @@ Este tutorial esta enfocado en como consultar los clientes que poseen numeros de
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Clientes con #s de Serie"** (o acceder a `/support/clients_with_serials`).
 
-![imagen1](/img/casos-de-soporte/casos-clientes-con-series-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-clientes-con-series-1.png)
 
 Le aparecera un listado de clientes que tienen numeros de serie en su poder (es decir, productos con numero de serie que les fueron entregados). Para cada cliente se muestra:
 
@@ -23,7 +23,7 @@ Le aparecera un listado de clientes que tienen numeros de serie en su poder (es 
 
 1. Haga click sobre **"Verificar"** (ojo) en el cliente deseado.
 
-![imagen2](/img/casos-de-soporte/casos-clientes-con-series-2.jpg)
+![imagen2](/img/casos-de-soporte/casos-clientes-con-series-2.png)
 
 En la pagina de detalle encontrara:
 

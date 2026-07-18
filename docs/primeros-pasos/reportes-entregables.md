@@ -14,7 +14,7 @@ Los pasos para crear un nuevo reporte entregable son:
 2. Seleccionar "Reportes Entregables".
 3. Seleccionar "Nuevo Reporte Entregable".
 
-![imagen1](/img/primeros-pasos/reportes-entregables-1.jpg)
+![imagen1](/img/primeros-pasos/reportes-entregables-1.png)
 
 Le deberán aparecer las opciones para crear un nuevo reporte entregable:
 
@@ -44,11 +44,11 @@ i. **Asunto del correo:** Especifique el asunto que llevará el correo electrón
 
 Para guardar los cambios presione "Crear Reporte entregable".
 
-![imagen2](/img/primeros-pasos/reportes-entregables-2.jpg)
+![imagen2](/img/primeros-pasos/reportes-entregables-2.png)
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que el reporte entregable se creó exitosamente.
 
-![imagen3](/img/primeros-pasos/reportes-entregables-3.jpg)
+![imagen3](/img/primeros-pasos/reportes-entregables-3.png)
 
 ## Enviar Reporte de Prueba
 

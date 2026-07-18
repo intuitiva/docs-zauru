@@ -6,6 +6,8 @@ sidebar_position: 2
 
 La pantalla de configuración del módulo de e-commerce (`/ecommerce/ecommerce_settings/new`) contiene todos los parámetros necesarios para automatizar el procesamiento de los pedidos que ingresan desde una tienda en línea. A continuación se detalla cada campo.
 
+![Pantalla de configuración avanzada del módulo de e-commerce con parámetros y campos](/img/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce-1.png)
+
 ## Parámetros de configuración
 
 ### Método de pago predeterminado

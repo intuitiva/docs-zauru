@@ -6,6 +6,8 @@ sidebar_position: 24
 
 Este tutorial describe los reportes contables disponibles en Zauru. Los reportes se acceden desde "Contabilidad" > "Reportes" y cubren todos los libros fiscales y reportes gerenciales necesarios para la administracion financiera.
 
+![Página de reportes contables de Zauru](/img/contabilidad/reportes-1.png)
+
 ## Reportes fiscales principales
 
 ### Balance General

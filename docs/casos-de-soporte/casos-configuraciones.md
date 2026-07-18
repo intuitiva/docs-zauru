@@ -11,7 +11,7 @@ Para acceder a las configuraciones:
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Configuraciones"** (o acceder a `/support/support_settings/new`).
 
-![imagen1](/img/casos-de-soporte/casos-configuraciones-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-configuraciones-1.png)
 
 ## Configuracion de Webhooks
 

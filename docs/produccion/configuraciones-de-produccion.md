@@ -9,7 +9,7 @@ Antes de comenzar a utilizar el modulo de produccion, es necesario configurar lo
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Configuraciones"**.
 
-![imagen1](/img/produccion/configuraciones-de-produccion-1.jpg)
+![imagen1](/img/produccion/configuraciones-de-produccion-1.png)
 
 Le aparecera un formulario con los siguientes campos:
 
@@ -46,7 +46,7 @@ l. **Metrica de Progreso para Lotes de Produccion**: Seleccione como se medira e
    - **Conteo Parcial**: Basado en los conteos parciales de las ordenes del lote.
    - **Ordenes**: Basado en la proporcion de ordenes cerradas dentro del lote.
 
-![imagen2](/img/produccion/configuraciones-de-produccion-2.jpg)
+![imagen2](/img/produccion/configuraciones-de-produccion-2.png)
 
 Una vez que haya completado todos los campos, presione **"Guardar Configuraciones"**.
 

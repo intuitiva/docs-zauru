@@ -12,7 +12,7 @@ Para acceder a la configuracion de variables:
 2. Seleccionar el icono de configuraciones.
 3. Seleccionar la pestana "Variables" o "Configuracion de Compras".
 
-![imagen1](/img/compras/configuracion-de-variables-1.jpg)
+![imagen1](/img/compras/configuracion-de-variables-1.png)
 
 ---
 
@@ -102,6 +102,6 @@ Para guardar los cambios en las variables de configuracion:
 1. Ajuste las variables segun sus necesidades.
 2. Al final del formulario, presione "Guardar Configuracion".
 
-![imagen2](/img/compras/configuracion-de-variables-2.jpg)
+![imagen2](/img/compras/configuracion-de-variables-2.png)
 
 Le aparecera un mensaje de exito notificandole que la configuracion se guardo exitosamente.

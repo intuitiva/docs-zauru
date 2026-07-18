@@ -174,7 +174,7 @@ Los pasos para importar empleados son:
 2. Seleccionar "Empleados".
 3. Click en "Importar".
 
-![imagen12](/img/primeros-pasos/empleados-7.jpg)
+![imagen12](/img/primeros-pasos/empleados-7.png)
 
 A continuación deberá seleccionar el archivo de Excel con los datos de sus empleados y presionar el botón de importación. El sistema procesará el archivo y creará los registros de empleados.
 

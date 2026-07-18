@@ -14,7 +14,13 @@ Permite cargar masivamente cuentas contables desde un archivo CSV. Util para cua
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas".
+
+![Listado de cuentas contables en el módulo de Contabilidad](/img/contabilidad/importaciones-1.png)
+
 3. Hacer clic en "Importar Cuentas".
+
+![Formulario de importación de cuentas contables](/img/contabilidad/importaciones-2.png)
+
 4. Seleccionar el archivo CSV con el formato requerido.
 5. Hacer clic en "Importar".
 
@@ -28,7 +34,13 @@ Permite cargar masivamente transacciones contables desde un archivo CSV. Util pa
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Transacciones".
+
+![Listado de transacciones contables en el módulo de Contabilidad](/img/contabilidad/importaciones-3.png)
+
 3. Hacer clic en "Importar Transacciones".
+
+![Formulario de importación de transacciones contables](/img/contabilidad/importaciones-4.png)
+
 4. Seleccionar el archivo CSV con el formato requerido.
 5. Hacer clic en "Importar".
 
@@ -42,7 +54,13 @@ Permite cargar masivamente grupos de cuentas desde un archivo CSV.
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas", luego la pestana "Grupo de Cuentas".
+
+![Pestaña de grupos de cuentas en el listado de cuentas](/img/contabilidad/importaciones-5.png)
+
 3. Hacer clic en "Importar".
+
+![Formulario de importación de grupos de cuentas](/img/contabilidad/importaciones-6.png)
+
 4. Seleccionar el archivo CSV.
 5. Hacer clic en "Importar".
 

@@ -13,6 +13,8 @@ Este tutorial explica las opciones de configuración disponibles para el módulo
 
 Si es la primera vez que accede, verá el formulario para crear la configuración inicial. Si ya existe una configuración, podrá editarla.
 
+![Formulario de configuración del módulo de Inventarios](/img/inventarios/inventarios-configuracion-1.png)
+
 ## Opciones de configuración
 
 ### Permitir modificar tipo de producto (allow_item_type_modification)

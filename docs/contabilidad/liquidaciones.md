@@ -21,8 +21,13 @@ Cuando usted tiene varias partidas abiertas en una cuenta reconciliable (como "C
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas".
+
+![Listado de cuentas contables en Zauru](/img/contabilidad/liquidaciones-1.png)
+
 3. Buscar la cuenta reconciliable que desea liquidar (ej. "Cuentas por Pagar a Empleados").
 4. Hacer clic en el boton "Liquidar" que aparece en el detalle de la cuenta.
+
+![Detalle de cuenta reconciliable con boton liquidar](/img/contabilidad/liquidaciones-2.png)
 
 > Nota: Solo las cuentas marcadas como "Reconciliable" en su configuracion mostraran la opcion de liquidar.
 
@@ -72,6 +77,9 @@ Se genera una transaccion desde "Banco" hacia "Cuentas por Pagar a Empleados" po
 
 Despues de crear la liquidacion:
 - Puede ver la transaccion creada desde "Transacciones".
+
+![Listado de transacciones contables](/img/contabilidad/liquidaciones-4.png)
+
 - En el detalle de la cuenta reconciliable, las partidas liquidadas mostraran un numero de reconciliacion.
 - Haciendo clic en el numero de reconciliacion puede ver todas las partidas enlazadas.
 

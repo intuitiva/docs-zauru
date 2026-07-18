@@ -14,8 +14,16 @@ Los pasos para crear una nueva categoría de etiqueta son:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Etiquetas".
+
+![Listado de etiquetas y categorías en Configuraciones > Etiquetas](/img/primeros-pasos/etiquetas-1.png)
+
 3. Seleccionar la pestaña "Categoría de Etiquetas".
+
+![Pestaña de categorías de etiquetas y botón nueva categoría](/img/primeros-pasos/etiquetas-2.png)
+
 4. Seleccionar "Nueva Categoría de Etiqueta".
+
+![Formulario de nueva categoría de etiqueta](/img/primeros-pasos/etiquetas-3.png)
 
 ## Nueva Etiqueta
 
@@ -24,6 +32,9 @@ Los pasos para crear una nueva etiqueta son:
 1. Ir a "Configuraciones".
 2. Seleccionar "Etiquetas".
 3. Seleccionar "Nueva Etiqueta".
+
+![Formulario de nueva etiqueta](/img/primeros-pasos/etiquetas-4.png)
+
 4. Colocar el nombre de la etiqueta.
 5. Seleccionar la categoría a la que pertenece (opcional).
 6. Presionar "Crear Etiqueta".

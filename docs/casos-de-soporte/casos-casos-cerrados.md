@@ -24,7 +24,7 @@ Le aparecera el listado de todos los casos que ya fueron cerrados. El listado mu
 - **Responsable** asignado
 - **Cliente**
 
-![imagen1](/img/casos-de-soporte/casos-casos-cerrados-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-casos-cerrados-1.png)
 
 ## Filtros Disponibles
 

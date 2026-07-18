@@ -15,6 +15,8 @@ Para acceder al listado de contratos:
 
 El listado muestra todos los contratos con su estado (activo, terminado) y permite filtrar por:
 
+![Listado de contratos de trabajo con filtros por agencia y estado](/img/nominas/contratos-de-trabajo-1.png)
+
 - **Agencia**: filtrar contratos por agencia del empleado.
 - **Estado**: filtrar por contratos activos, terminados o todos.
 
@@ -24,6 +26,8 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 
 1. En el listado de contratos, hacer clic en **"Nuevo"**.
 2. Completar los campos:
+
+![Formulario de nuevo contrato de trabajo con datos básicos, pago y tiempo personal](/img/nominas/contratos-de-trabajo-2.png)
 
 ### Datos basicos
 
@@ -62,6 +66,8 @@ Al guardar el contrato, el sistema automaticamente:
 ## Ver detalle de un contrato
 
 En el listado de contratos, hacer clic en el numero de contrato o en el nombre del empleado para ver el detalle completo:
+
+![Detalle de un contrato de trabajo con información y beneficios del puesto](/img/nominas/contratos-de-trabajo-3.png)
 
 ### Informacion basica
 

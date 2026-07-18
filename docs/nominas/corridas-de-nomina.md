@@ -19,6 +19,8 @@ Para acceder:
 
 El listado muestra todas las corridas pendientes en formato de tabla con las siguientes columnas:
 
+![Listado de corridas de nomina no pagadas](/img/nominas/corridas-de-nomina-1.png)
+
 - ID (zid): identificador unico de la corrida.
 - Nombre: nombre descriptivo de la corrida.
 - Fecha de inicio y fecha de fin: rango de fechas que cubre la corrida.
@@ -77,6 +79,8 @@ Para cada tipo de corrida fuera de ciclo, se muestra un boton con los empleados 
 
 3. Hacer clic en **"Guardar"**.
 
+![Formulario de nueva corrida de nomina](/img/nominas/corridas-de-nomina-2.png)
+
 ### Ver detalle de una corrida
 
 En el listado, hacer clic en el nombre o ID de la corrida. El detalle muestra:
@@ -86,6 +90,8 @@ En el listado, hacer clic en el nombre o ID de la corrida. El detalle muestra:
 - **Conteo de detalles de destajos**: cantidad de destajos incluidos en la corrida.
 - **Partidas contables asociadas**: enlace a las transacciones contables generadas por la corrida.
 - **Formularios asociados**: plantillas de impresion vinculadas.
+
+![Detalle de una corrida de nomina no pagada](/img/nominas/corridas-de-nomina-3.png)
 
 ### Aprobar una corrida
 
@@ -322,9 +328,13 @@ Para acceder:
 
 Muestra todas las corridas pagadas con el mismo formato que las no pagadas. Incluye busqueda y filtros.
 
+![Listado de corridas de nomina pagadas](/img/nominas/corridas-de-nomina-7.png)
+
 ### Ver detalle de una corrida pagada
 
 Igual que las no pagadas, pero sin opciones de edicion ni aprobacion. Muestra todas las nominas, destajos y partidas contables asociadas.
+
+![Detalle de una corrida pagada](/img/nominas/corridas-de-nomina-8.png)
 
 ### Revertir pago de una corrida
 

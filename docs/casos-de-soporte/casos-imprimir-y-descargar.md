@@ -15,7 +15,7 @@ Para imprimir un caso:
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, seleccione una **plantilla de impresion** del listado desplegable.
 
-![imagen1](/img/casos-de-soporte/casos-imprimir-y-descargar-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-imprimir-y-descargar-1.png)
 
 5. Haga click sobre **"Imprimir"** para ver la vista previa.
 6. Presione **CTRL + P** para enviar a la impresora.
@@ -28,7 +28,7 @@ Para descargar un caso en formato PDF:
 2. En lugar de hacer click en **"Imprimir"**, seleccione la opcion **"Descargar PDF"**.
 3. El sistema generara el archivo PDF y lo descargara automaticamente.
 
-![imagen2](/img/casos-de-soporte/casos-imprimir-y-descargar-2.jpg)
+![imagen2](/img/casos-de-soporte/casos-imprimir-y-descargar-2.png)
 
 ## Plantillas de Impresion
 

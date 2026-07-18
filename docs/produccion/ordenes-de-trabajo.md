@@ -14,7 +14,7 @@ Los pasos para crear una orden de trabajo son los siguientes:
 2. Seleccionar **"Ordenes de Trabajo"**.
 3. Seleccionar **"Nueva Orden de Trabajo"**.
 
-![imagen1](/img/produccion/ordenes-de-trabajo-1.jpg)
+![imagen1](/img/produccion/ordenes-de-trabajo-1.png)
 
 Le aparecera el formulario para crear una nueva orden de trabajo. Los campos que debe llenar son los siguientes:
 
@@ -51,13 +51,13 @@ l. **Detalles**: Agregue los items o paquetes que conforman la orden de trabajo.
 
    Si desea utilizar un paquete y necesita visualizar o editar sus componentes, utilice la funcion **"Explotar"** que expande el paquete en sus componentes individuales.
 
-![imagen2](/img/produccion/ordenes-de-trabajo-2.jpg)
+![imagen2](/img/produccion/ordenes-de-trabajo-2.png)
 
 Cuando haya completado todos los campos, presione **"Crear Orden de Trabajo"**.
 
 Le aparecera un mensaje de exito notificandole que la orden de trabajo fue creada exitosamente. La orden quedara en estado abierta.
 
-![imagen3](/img/produccion/ordenes-de-trabajo-3.jpg)
+![imagen3](/img/produccion/ordenes-de-trabajo-3.png)
 
 ## Explotar un paquete en sus componentes
 
@@ -66,7 +66,7 @@ Al crear o editar una orden de trabajo, si selecciona un paquete (bundle), puede
 1. En el formulario de creacion o edicion, seleccione el paquete en el campo de detalle.
 2. Seleccione la accion **"Explotar"** en el pie del formulario.
 
-![imagen4](/img/produccion/ordenes-de-trabajo-4.jpg)
+![imagen4](/img/produccion/ordenes-de-trabajo-4.png)
 
 El sistema expandira el paquete en sus componentes. Para items identificables (con numero de serie), se crearan lineas individuales de cantidad 1 por cada numero de serie. Para items perecederos (con lote), se mostraran los lotes disponibles.
 
@@ -79,7 +79,7 @@ Para editar una orden de trabajo abierta:
 3. Seleccione la orden que desea editar.
 4. Presione el boton **"Editar"**.
 
-![imagen5](/img/produccion/ordenes-de-trabajo-5.jpg)
+![imagen5](/img/produccion/ordenes-de-trabajo-5.png)
 
 Puede modificar los campos de la orden y las lineas de detalle. Para refrescar las cantidades disponibles de inventario sin guardar, utilice el boton **"Refrescar"**.
 
@@ -94,7 +94,7 @@ El cierre de una orden de trabajo genera los movimientos de inventario y asiento
 3. Seleccione la orden que desea cerrar.
 4. Presione el boton **"Cerrar"**.
 
-![imagen6](/img/produccion/ordenes-de-trabajo-6.jpg)
+![imagen6](/img/produccion/ordenes-de-trabajo-6.png)
 
 Le aparecera el formulario de cierre donde debera confirmar o ajustar las cantidades entregadas de cada linea de detalle:
 
@@ -111,7 +111,7 @@ Al presionar **"Cerrar Orden de Trabajo"**, el sistema realizara las siguientes 
 
 Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cerrada exitosamente.
 
-![imagen7](/img/produccion/ordenes-de-trabajo-7.jpg)
+![imagen7](/img/produccion/ordenes-de-trabajo-7.png)
 
 ## Eliminar (Anular) una orden de trabajo
 

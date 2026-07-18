@@ -16,7 +16,7 @@ Los pasos para crear una requisicion de compra son los siguientes:
 2. Seleccionar "Requisiciones de Compra".
 3. Seleccionar "Nueva Requisicion de Compra".
 
-![imagen1](/img/compras/requisiciones-de-compra-1.jpg)
+![imagen1](/img/compras/requisiciones-de-compra-1.png)
 
 Le apareceran las opciones para crear una nueva requisicion de compra, los campos que debe llenar son los siguientes:
 
@@ -38,11 +38,11 @@ g. Si selecciono "Detalle de cuentas", seleccione las cuentas contables, el cost
 
 h. Presione "Crear requisicion de compra" para guardar los cambios.
 
-![imagen2](/img/compras/requisiciones-de-compra-2.jpg)
+![imagen2](/img/compras/requisiciones-de-compra-2.png)
 
 Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente.
 
-![imagen3](/img/compras/requisiciones-de-compra-3.jpg)
+![imagen3](/img/compras/requisiciones-de-compra-3.png)
 
 ## Aprobar requisiciones de compra
 
@@ -60,7 +60,7 @@ Los pasos para aprobar una requisicion individual son los siguientes:
 3. Seleccionar "Detalles" (El Ojo) en la requisicion que desea aprobar.
 4. Seleccionar "Aprobar".
 
-![imagen4](/img/compras/requisiciones-de-compra-4.jpg)
+![imagen4](/img/compras/requisiciones-de-compra-4.png)
 
 Al aprobar la requisicion, esta cambiara su estado a "Aprobada" y ya no podra ser editada.
 
@@ -75,7 +75,7 @@ Los pasos para aprobar en lote son los siguientes:
 3. Seleccionar las requisiciones que desea aprobar marcando las casillas correspondientes.
 4. Seleccionar "Aprobar en Lote".
 
-![imagen5](/img/compras/requisiciones-de-compra-5.jpg)
+![imagen5](/img/compras/requisiciones-de-compra-5.png)
 
 Le aparecera el formulario de aprobacion en lote, los campos que debe llenar son los siguientes:
 
@@ -87,11 +87,11 @@ c. Verifique o ajuste el costo unitario de cada producto. El sistema le sugerira
 
 d. Presione "Aprobar y Crear Ordenes de Compra".
 
-![imagen6](/img/compras/requisiciones-de-compra-6.jpg)
+![imagen6](/img/compras/requisiciones-de-compra-6.png)
 
 El sistema creara automaticamente las ordenes de compra agrupadas por proveedor. Le aparecera un resumen de las ordenes de compra creadas.
 
-![imagen7](/img/compras/requisiciones-de-compra-7.jpg)
+![imagen7](/img/compras/requisiciones-de-compra-7.png)
 
 ## Ver el resultado de la aprobacion
 

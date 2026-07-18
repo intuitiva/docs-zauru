@@ -11,6 +11,8 @@ Para acceder a los reportes:
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.
 
+![Pantalla de reportes del módulo de nóminas en Zauru](/img/nominas/reportes-de-nomina-1.png)
+
 ## Reportes de destajos
 
 ### Valores semanales de destajo por empleado

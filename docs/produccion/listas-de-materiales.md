@@ -14,7 +14,7 @@ Los pasos para crear una lista de materiales son los siguientes:
 2. Seleccionar **"Listas de Materiales"**.
 3. Seleccionar **"Nueva Lista de Materiales"**.
 
-![imagen1](/img/produccion/listas-de-materiales-1.jpg)
+![imagen1](/img/produccion/listas-de-materiales-1.png)
 
 Le aparecera el formulario para crear una nueva lista de materiales. Los campos que debe llenar son los siguientes:
 
@@ -36,13 +36,13 @@ d. **Subproductos**: Si su proceso de manufactura genera subproductos, puede def
 
    Al igual que con las materias primas, use los botones **"+"**, **"+2"** o **"+5"** para agregar filas de subproductos.
 
-![imagen2](/img/produccion/listas-de-materiales-2.jpg)
+![imagen2](/img/produccion/listas-de-materiales-2.png)
 
 Cuando haya completado todos los campos, presione **"Crear Lista de Materiales"**.
 
 Le aparecera un mensaje de exito notificandole que la lista de materiales fue creada exitosamente.
 
-![imagen3](/img/produccion/listas-de-materiales-3.jpg)
+![imagen3](/img/produccion/listas-de-materiales-3.png)
 
 ## Editar una lista de materiales
 
@@ -53,7 +53,7 @@ Para editar una lista de materiales existente:
 3. Seleccione la lista de materiales que desea editar de la lista.
 4. Presione el boton **"Editar"**.
 
-![imagen4](/img/produccion/listas-de-materiales-4.jpg)
+![imagen4](/img/produccion/listas-de-materiales-4.png)
 
 Realice los cambios necesarios en los campos y lineas de detalle. Puede:
 - Modificar las cantidades de las materias primas existentes.

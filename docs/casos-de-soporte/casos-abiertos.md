@@ -21,7 +21,7 @@ Le aparecera el listado de todos los casos que aun no han sido cerrados. En este
 - **Responsable** asignado
 - **Cliente**
 
-![imagen1](/img/casos-de-soporte/casos-abiertos-1.jpg)
+![imagen1](/img/casos-de-soporte/casos-abiertos-1.png)
 
 ## Filtros Disponibles
 

@@ -68,7 +68,7 @@ Para ver el historial de versiones de un formulario:
 2. Seleccionar "Formularios".
 3. En el listado, seleccionar "Versiones" en el formulario deseado.
 
-![Versiones de formulario](/img/primeros-pasos/formularios-3.jpg)
+![Versiones de formulario](/img/primeros-pasos/formularios-3.png)
 
 Aparecerá un listado con todas las versiones del formulario, mostrando el número de versión, la fecha de creación y el usuario que la creó. Desde aquí usted puede:
 

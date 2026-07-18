@@ -15,6 +15,8 @@ Para ver las reservas existentes:
 
 Le aparecera un listado con todas las reservas que no han sido enviadas, entregadas, anuladas ni devueltas, filtradas por la agencia del usuario actual.
 
+![Listado de reservas de inventario en el punto de venta](/img/punto-de-venta/crear-reserva-1.png)
+
 Desde el listado usted podra:
 
 a. **Ver detalle**: Haga click sobre una reserva para ver sus detalles.
@@ -35,6 +37,8 @@ Los pasos para crear una nueva reserva son:
 2. Seleccionar "Nueva Reserva".
 
 Le apareceran las opciones para crear una nueva reserva. Los campos que debe llenar son:
+
+![Formulario para crear una nueva reserva de inventario](/img/punto-de-venta/crear-reserva-2.png)
 
 a. **Agencia origen**: La bodega desde donde se reservaran los productos. Se asigna automaticamente segun la agencia del usuario.
 

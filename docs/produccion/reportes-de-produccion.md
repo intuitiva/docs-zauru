@@ -13,13 +13,13 @@ Los pasos para acceder a los reportes de produccion son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Reportes"**.
 
-![imagen1](/img/produccion/reportes-de-produccion-1.jpg)
+![imagen1](/img/produccion/reportes-de-produccion-1.png)
 
 ## Reporte Consolidado de Materias Primas para Ordenes Planificadas
 
 Este reporte muestra un consolidado de todas las materias primas requeridas por las ordenes de produccion planificadas (no iniciadas, no cerradas y no anuladas).
 
-![imagen2](/img/produccion/reportes-de-produccion-2.jpg)
+![imagen2](/img/produccion/reportes-de-produccion-2.png)
 
 Para cada materia prima el reporte muestra:
 - Codigo y nombre del item.
@@ -40,7 +40,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas (fecha inicial y fecha final).
 4. Presione **"Generar Reporte"**.
 
-![imagen3](/img/produccion/reportes-de-produccion-3.jpg)
+![imagen3](/img/produccion/reportes-de-produccion-3.png)
 
 El reporte muestra:
 - Empleado responsable.
@@ -61,7 +61,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas (fecha inicial y fecha final).
 4. Presione **"Generar Reporte"**.
 
-![imagen4](/img/produccion/reportes-de-produccion-4.jpg)
+![imagen4](/img/produccion/reportes-de-produccion-4.png)
 
 Para cada orden se muestra:
 - Referencia de la orden.
@@ -84,7 +84,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
-![imagen5](/img/produccion/reportes-de-produccion-5.jpg)
+![imagen5](/img/produccion/reportes-de-produccion-5.png)
 
 El reporte muestra:
 - Orden de produccion y referencia.
@@ -107,7 +107,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
-![imagen6](/img/produccion/reportes-de-produccion-6.jpg)
+![imagen6](/img/produccion/reportes-de-produccion-6.png)
 
 El reporte muestra por cada etiqueta:
 - Items o paquetes consumidos con cantidades entregadas y requeridas.

@@ -16,7 +16,7 @@ Los pasos para ver los cargos pagados son los siguientes:
 2. Seleccionar "Cargos".
 3. Seleccionar la pestana "Cargos Pagados".
 
-![imagen1](/img/compras/cargos-pagados-1.jpg)
+![imagen1](/img/compras/cargos-pagados-1.png)
 
 Le aparecera un listado con todos los cargos que han sido pagados. En este listado puede:
 
@@ -33,7 +33,7 @@ Los pasos para ver los detalles de un cargo pagado son:
 3. Seleccionar "Cargos Pagados".
 4. Seleccionar "Detalles" (El Ojo) en el cargo que desea consultar.
 
-![imagen2](/img/compras/cargos-pagados-2.jpg)
+![imagen2](/img/compras/cargos-pagados-2.png)
 
 En la vista de detalles de un cargo pagado podra encontrar:
 
@@ -55,7 +55,7 @@ h. Partidas contables generadas.
 
 i. Documentos electronicos asociados.
 
-![imagen3](/img/compras/cargos-pagados-3.jpg)
+![imagen3](/img/compras/cargos-pagados-3.png)
 
 ## Editar informacion de un cargo pagado
 
@@ -69,7 +69,7 @@ Los pasos para editar un cargo pagado son:
 4. Seleccionar "Detalles" en el cargo que desea editar.
 5. Seleccionar "Editar".
 
-![imagen4](/img/compras/cargos-pagados-4.jpg)
+![imagen4](/img/compras/cargos-pagados-4.png)
 
 Los campos que puede editar en un cargo pagado son:
 
@@ -85,7 +85,7 @@ e. Memo o notas.
 
 f. Etiquetas (tags).
 
-![imagen5](/img/compras/cargos-pagados-5.jpg)
+![imagen5](/img/compras/cargos-pagados-5.png)
 
 Al terminar de editar, presione "Actualizar" para guardar los cambios.
 

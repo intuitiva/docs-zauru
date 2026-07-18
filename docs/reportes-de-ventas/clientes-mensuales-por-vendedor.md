@@ -10,7 +10,12 @@ Para ingresar al reporte es necesario realizar lo siguiente:
 
 1. Hacer click en Ventas
 2. Seleccionar Reportes
+
+![Listado de reportes de ventas en Zauru](/img/reportes-de-ventas/clientes-mensuales-por-vendedor-1.png)
+
 3. A la izquierda seleccione Clientes Mensuales del Vendedor
+
+![Reporte de Clientes Mensuales del Vendedor con filtros de mes, año y vendedor](/img/reportes-de-ventas/clientes-mensuales-por-vendedor-2.png)
 
 
 Luego hay que elegir el mes, año y de que vendedor se quiere ver la información. Aparecerán las facturas y la cantidad de las facturas que se han pagado y cuales no se han pagado aun.

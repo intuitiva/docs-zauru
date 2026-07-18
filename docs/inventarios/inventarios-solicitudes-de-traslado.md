@@ -33,6 +33,8 @@ Los pasos para crear una nueva solicitud de traslado son los siguientes:
 
 Le aparecerán los campos para crear la solicitud, los cuales debe llenar de la siguiente manera:
 
+![Formulario de nueva solicitud de traslado con campos de bodega origen, destino, solicitante y productos](/img/inventarios/inventarios-solicitudes-de-traslado-1.png)
+
 a. **Bodega origen**: Seleccione la bodega desde donde se solicita el traslado de los productos. Solo se muestran bodegas activas, no virtuales y que sean almacén.
 
 b. **Bodega destino**: Seleccione la bodega hacia donde se desea trasladar los productos. Por defecto se preselecciona la primera bodega disponible o la bodega asignada al empleado que está creando la solicitud.
@@ -60,6 +62,8 @@ Al igual que en las reservaciones, puede seleccionar paquetes (bundles) en las s
 
 En los detalles de una solicitud de traslado, puede ver la disponibilidad de stock de cada producto solicitado en la bodega origen. Esto le permite saber si hay suficiente inventario para satisfacer la solicitud:
 
+![Detalle de solicitud de traslado mostrando disponibilidad de stock en bodega origen](/img/inventarios/inventarios-solicitudes-de-traslado-2.png)
+
 - **Productos con stock disponible**: Se muestran con la cantidad disponible en verde.
 - **Productos sin stock disponible**: Se muestran con disponibilidad en cero o insuficiente.
 
@@ -76,6 +80,8 @@ Para ver las solicitudes que están activas:
 
 La vista principal muestra las solicitudes abiertas. Puede filtrar por:
 
+![Listado de solicitudes de traslado abiertas con filtros por estado](/img/inventarios/inventarios-solicitudes-de-traslado-3.png)
+
 - **Nuevas (Open)**: Solicitudes recién creadas sin envíos generados.
 - **En proceso (In Progress)**: Solicitudes con al menos un envío parcial generado.
 - **Todas**: Todas las solicitudes activas (abiertas y en proceso).
@@ -88,6 +94,8 @@ Cuando una solicitud ha sido completamente satisfecha (todas las cantidades fuer
 2. Seleccionar "Solicitudes de Traslado Cerradas".
 
 Aquí podrá ver el historial de solicitudes que ya fueron completadas. También puede ver sus detalles y los envíos asociados.
+
+![Listado de solicitudes de traslado cerradas con historial completado](/img/inventarios/inventarios-solicitudes-de-traslado-4.png)
 
 ## Editar una solicitud de traslado
 
@@ -121,6 +129,9 @@ La solicitud será marcada como anulada (voided) y ya no aparecerá en las lista
 Cuando una solicitud de traslado tiene productos sin stock suficiente en la bodega origen, puede generar automáticamente una requisición de compra para esos productos:
 
 1. Abra los detalles de la solicitud de traslado.
+
+![Detalle de solicitud de traslado con opción de crear requisición de compra](/img/inventarios/inventarios-solicitudes-de-traslado-6.png)
+
 2. Seleccione "Crear requisición de compra".
 
 Esto generará una requisición de compra en el módulo de Compras con:
@@ -140,6 +151,9 @@ Esto generará una requisición de compra en el módulo de Compras con:
 Para satisfacer una solicitud de traslado, debe crear envíos (reservaciones) desde ella:
 
 1. Abra los detalles de la solicitud.
+
+![Sección de envíos en detalle de solicitud con botón de nuevo envío](/img/inventarios/inventarios-solicitudes-de-traslado-7.png)
+
 2. En la sección de envíos, seleccione "Nuevo envío".
 
 Esto abrirá el formulario de reservación con los datos precargados desde la solicitud:

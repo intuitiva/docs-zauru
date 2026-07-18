@@ -58,11 +58,17 @@ Por ejemplo:
 
 Se requiere entrar a cada cuenta. Ya dentro de la cuenta se puede revisar si esta correcta la tipificacion de la cuenta.
 
+![Vista de detalle de una cuenta contable mostrando la tipificación de costo](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-2.png)
+
+![Listado de cuentas contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-1.png)
+
 Si esta incorrecto, editar la cuenta y cambiarla.
 
 ## Tipificacion en presupuestos
 
 La clasificacion de costo vs. gasto tambien afecta los reportes de presupuestos. Al crear un presupuesto de egresos, puede elegir cuentas de gastos o de costos segun lo que necesite presupuestar. Los presupuestos usan el tipo de cuenta 3 (Gastos) y filtran segun el atributo `cost`.
+
+![Listado de presupuestos contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-4.png)
 
 ## Exportacion de nomenclatura
 

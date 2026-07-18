@@ -51,7 +51,7 @@ Los pasos para crear un consolidado de factura especial son:
 2. Seleccionar "Consolidados".
 3. Seleccionar "Nuevo Consolidado para Factura Especial".
 
-![imagen5](/img/compras/consolidar-varias-ordenes-de-compra-5.jpg)
+![imagen5](/img/compras/consolidar-varias-ordenes-de-compra-5.png)
 
 Le apareceran las opciones para crear el consolidado de factura especial, los campos que debe llenar son los siguientes:
 
@@ -63,7 +63,7 @@ c. El sistema utilizara automaticamente el item configurado en las variables de 
 
 d. Presione "Crear Consolidado".
 
-![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-6.jpg)
+![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-6.png)
 
 Le aparecera un mensaje de exito notificandole que el consolidado de factura especial fue creado. A partir de este consolidado podra emitir la factura especial correspondiente.
 

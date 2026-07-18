@@ -16,6 +16,8 @@ El listado de beneficiarios permite filtrar por:
 
 Tambien se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas.
 
+![Listado de beneficiarios con filtros Todos, Clientes, Proveedores y Clientes y Proveedores](/img/contabilidad/beneficiarios-1.png)
+
 ## Crear un nuevo beneficiario
 
 Los pasos para crear un nuevo beneficiario son:
@@ -23,6 +25,8 @@ Los pasos para crear un nuevo beneficiario son:
 1. Ir a "Contabilidad".
 2. Seleccionar "Beneficiarios".
 3. Hacer clic en "Nuevo Beneficiario".
+
+![Formulario de nuevo beneficiario](/img/contabilidad/beneficiarios-2.png)
 
 ### Campos del beneficiario
 
@@ -76,6 +80,8 @@ Al ver el detalle de un beneficiario se muestra:
 - Toda la informacion registrada del beneficiario.
 - El listado de transacciones contables asociadas a este beneficiario.
 - Los formularios personalizados enviados para este beneficiario.
+
+![Vista de detalle del beneficiario con transacciones asociadas](/img/contabilidad/beneficiarios-3.png)
 
 ## Editar un beneficiario
 
