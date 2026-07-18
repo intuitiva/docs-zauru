@@ -1,0 +1,17 @@
+{
+  "name": "zauru-docs-screenshots",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Captura automática de screenshots de Zauru para la documentación (Playwright + manifiesto)",
+  "scripts": {
+    "discover-nav": "node discover-nav.mjs",
+    "generate-manifest": "node generate-manifest.mjs",
+    "gaps": "node generate-manifest.mjs --gaps",
+    "run": "node run-screenshots.mjs",
+    "insert-refs": "node insert-image-refs.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
