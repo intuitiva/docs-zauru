@@ -130,17 +130,19 @@ export default function Home() {
               }}
             />
           </h1>
-          <button
-            type="button"
-            className="zauru-hero__search"
-            onClick={openDocSearch}
-            aria-label="Buscar en la documentación">
-            <Icon name="magnifying-glass" />
-            <span className="zauru-hero__search-label">
-              Buscar en la documentación…
-            </span>
-            <span className="zauru-hero__search-kbd">{kbd}</span>
-          </button>
+          <div className="zauru-hero__search-wrap">
+            <button
+              type="button"
+              className="zauru-hero__search"
+              onClick={openDocSearch}
+              aria-label="Buscar en la documentación">
+              <Icon name="magnifying-glass" />
+              <span className="zauru-hero__search-label">
+                Buscar en la documentación…
+              </span>
+              <span className="zauru-hero__search-kbd">{kbd}</span>
+            </button>
+          </div>
         </div>
         <p className="zauru-hero__subtitle">
           Encuentra procesos, módulos y reportes del ERP.

@@ -353,14 +353,18 @@ a:hover {
 }
 
 /* Searchbox: pulled up over the logo's lower edge so it owns the hero */
+.zauru-hero__search-wrap {
+  width: min(680px, 100%);
+  margin: clamp(-3.2rem, -4vw, -2rem) auto 0;
+}
+
 .zauru-hero__search {
   position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
   gap: 12px;
-  width: min(680px, 100%);
-  margin: clamp(-3.2rem, -4vw, -2rem) auto 0;
+  width: 100%;
   padding: 17px 22px;
   background: var(--zauru-card-bg);
   border: 2px solid var(--zauru-ink);
@@ -1259,5 +1263,68 @@ html[data-theme="dark"] .DocSearch-Logo svg .cls-2 {
   }
   .zauru-related__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   18. HOMEPAGE SCROLL-DRIVEN SEARCH SWAP
+   Desktop + modern browsers only. The hero search fades out as
+   the navbar DocSearch button fades in. Firefox/mobile/reduced-
+   motion fall back to both buttons visible.
+   ============================================================ */
+
+/* Swap the dark/light toggle and the search button on the homepage.
+   Default order is toggle-left, search-right; this makes it search-left,
+   toggle-right so the search button is adjacent to the rest of the nav items. */
+body:has(.zauru-hero) .navbar__items--right {
+  display: flex;
+}
+body:has(.zauru-hero) .navbar__items--right [class*="navbarSearchContainer"] {
+  order: 1;
+}
+body:has(.zauru-hero) .navbar__items--right [class*="colorModeToggle"] {
+  order: 2;
+}
+
+/* Scroll-driven cross-fade */
+@supports (animation-timeline: scroll()) {
+  @media (min-width: 997px) and (prefers-reduced-motion: no-preference) {
+    body:has(.zauru-hero) .zauru-hero__search-wrap {
+      animation: zauru-hero-search-fade linear both;
+      animation-timeline: scroll();
+      animation-range: 0px 220px;
+    }
+
+    body:has(.zauru-hero) .navbar__items--right .DocSearch-Button {
+      animation: zauru-nav-search-fade linear both;
+      animation-timeline: scroll();
+      animation-range: 0px 220px;
+    }
+  }
+}
+
+@keyframes zauru-hero-search-fade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  75%, 100% {
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
+  }
+}
+
+@keyframes zauru-nav-search-fade {
+  0%, 25% {
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 }
