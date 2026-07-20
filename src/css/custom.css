@@ -172,8 +172,7 @@ a {
 a:hover {
   color: var(--ifm-color-primary-darker);
 }
-.theme-doc-sidebar-item-link a:hover,
-.theme-doc-sidebar-item-category .menu__link:hover {
+.theme-doc-sidebar-item-link a:hover {
   background-color: var(--zauru-gold-tint);
   color: var(--zauru-ink);
 }
@@ -230,6 +229,11 @@ a:hover {
 
 /* ============================================================
    5. SIDEBAR
+   Strong parent/child contrast: categories render as solid
+   "section-header" bars (heading font, bold, gold accent + icon
+   + chevron), while leaves stay light, smaller, and nested
+   under a dotted tree line. Open vs. collapsed parents are
+   signaled by background intensity, not just caret rotation.
    ============================================================ */
 .theme-doc-sidebar {
   border-right: 1px solid var(--zauru-line);
@@ -239,9 +243,111 @@ a:hover {
 }
 .menu__link {
   border-radius: var(--zauru-radius-sm);
-  font-weight: 500;
-  transition: background-color 120ms ease, color 120ms ease;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
 }
+
+/* --- 5.1 PARENT (category) items — section-header look --- */
+
+/* The collapsible wrapper holds the link + caret as one bar */
+.menu__list-item-collapsible {
+  position: relative;
+  border-radius: var(--zauru-radius-sm);
+  background: var(--zauru-paper-2);
+  transition: background-color 120ms ease;
+}
+/* Always-visible gold left accent — subtle when collapsed, full when open */
+.menu__list-item-collapsible::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  background: var(--zauru-gold);
+  opacity: 0.55;
+  transition: opacity 120ms ease, top 120ms ease, bottom 120ms ease;
+}
+/* Category link: heading font, bold, slightly larger, full ink */
+.menu__link--sublist {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  color: var(--zauru-ink);
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+/* Caret button: match the link's taller padding so the bar is even */
+.menu__caret {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+/* Gold chevron — replaces infima's gray default for a stronger brand cue */
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23e0a800' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-size: 1.05rem 1.05rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  filter: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  min-width: 1.4rem;
+}
+[data-theme="dark"] .menu__caret:before,
+[data-theme="dark"] .menu__link--sublist-caret:after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23fdca34' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+}
+
+/* Open (expanded) / hover / current-page parent:
+   stronger gold-tint background + full-height gold bar + ink icon.
+   This is the key cue — an expanded menu reads as "active section"
+   at a glance, instead of relying only on the caret rotation. */
+.menu__list-item-collapsible:hover,
+.menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible,
+.menu__list-item-collapsible--active {
+  background: var(--zauru-gold-tint);
+}
+.menu__list-item-collapsible:hover::before,
+.menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible::before,
+.menu__list-item-collapsible--active::before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+.menu__list-item-collapsible:hover .menu__link--sublist,
+.menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible .menu__link--sublist,
+.menu__list-item-collapsible--active .menu__link--sublist {
+  color: var(--zauru-ink);
+}
+
+/* --- 5.2 LEAF (child) items — light, nested entries --- */
+
+/* Dotted tree line on the children container: visually connects
+   all leaves to the parent above, reinforcing the hierarchy. */
+.menu__list .menu__list {
+  border-left: 1px dotted var(--zauru-line);
+  margin-left: 0.55rem;
+  padding-left: 0.35rem;
+}
+[data-theme="dark"] .menu__list .menu__list {
+  border-left-color: var(--ifm-color-emphasis-200);
+}
+/* Leaf link: body font, lighter weight, smaller, muted color */
+.menu__link:not(.menu__link--sublist) {
+  font-weight: 400;
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-600);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.menu__link:not(.menu__link--sublist):hover {
+  background: var(--zauru-gold-tint);
+  color: var(--zauru-ink);
+}
+/* Active leaf: gold-tint + bold + solid gold left bar */
 .menu__link--active:not(.menu__link--sublist) {
   background-color: var(--zauru-gold-tint);
   color: var(--zauru-ink);
@@ -251,13 +357,14 @@ a:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 6px;
-  bottom: 6px;
+  top: 4px;
+  bottom: 4px;
   width: 3px;
-  border-radius: 2px;
+  border-radius: 0 2px 2px 0;
   background-color: var(--zauru-gold);
 }
-/* Category icon alignment */
+
+/* --- 5.3 Sidebar icon (shared) base alignment + color --- */
 .zauru-sidebar-icon {
   width: 16px;
   height: 16px;
@@ -266,12 +373,31 @@ a:hover {
   color: var(--ifm-color-emphasis-600);
   transition: color 120ms ease;
 }
-.menu__link--active .zauru-sidebar-icon,
-.menu__link:hover .zauru-sidebar-icon {
+/* Category icon: gold-deep by default for a stronger brand cue */
+.menu__link--sublist .zauru-sidebar-icon {
+  color: var(--zauru-gold-deep);
+}
+[data-theme="dark"] .menu__link--sublist .zauru-sidebar-icon {
+  color: var(--zauru-gold);
+}
+/* Hover/open/active parent → ink icon (light) / gold icon (dark) */
+.menu__list-item-collapsible:hover .zauru-sidebar-icon,
+.menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible .zauru-sidebar-icon,
+.menu__list-item-collapsible--active .zauru-sidebar-icon {
   color: var(--zauru-ink);
 }
-[data-theme="dark"] .menu__link--active .zauru-sidebar-icon,
-[data-theme="dark"] .menu__link:hover .zauru-sidebar-icon {
+[data-theme="dark"] .menu__list-item-collapsible:hover .zauru-sidebar-icon,
+[data-theme="dark"] .menu__list-item:not(.menu__list-item--collapsed) > .menu__list-item-collapsible .zauru-sidebar-icon,
+[data-theme="dark"] .menu__list-item-collapsible--active .zauru-sidebar-icon {
+  color: var(--zauru-gold);
+}
+/* Leaf icon (rare): ink on hover/active, same as before */
+.menu__link--active:not(.menu__link--sublist) .zauru-sidebar-icon,
+.menu__link:not(.menu__link--sublist):hover .zauru-sidebar-icon {
+  color: var(--zauru-ink);
+}
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) .zauru-sidebar-icon,
+[data-theme="dark"] .menu__link:not(.menu__link--sublist):hover .zauru-sidebar-icon {
   color: var(--zauru-gold-deep);
 }
 
