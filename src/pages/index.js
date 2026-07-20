@@ -119,28 +119,32 @@ export default function Home() {
     <Layout title={siteConfig.title} description="Manual de usuario de Zauru ERP/CRM">
       <section className="zauru-hero">
         <p className="zauru-hero__eyebrow">Documentación</p>
-        <h1 className="zauru-hero__title">
-          <ThemedImage
-            className="zauru-hero__logo"
-            alt="Zauru"
-            sources={{
-              light: logoLight,
-              dark: logoDark,
-            }}
-          />
-        </h1>
+        <div className="zauru-hero__stage">
+          <h1 className="zauru-hero__title">
+            <ThemedImage
+              className="zauru-hero__logo"
+              alt="Zauru"
+              sources={{
+                light: logoLight,
+                dark: logoDark,
+              }}
+            />
+          </h1>
+          <button
+            type="button"
+            className="zauru-hero__search"
+            onClick={openDocSearch}
+            aria-label="Buscar en la documentación">
+            <Icon name="magnifying-glass" />
+            <span className="zauru-hero__search-label">
+              Buscar en la documentación…
+            </span>
+            <span className="zauru-hero__search-kbd">{kbd}</span>
+          </button>
+        </div>
         <p className="zauru-hero__subtitle">
           Encuentra procesos, módulos y reportes del ERP.
         </p>
-        <button
-          type="button"
-          className="zauru-hero__search"
-          onClick={openDocSearch}
-          aria-label="Buscar en la documentación">
-          <Icon name="magnifying-glass" />
-          Buscar en la documentación…
-          <span className="zauru-hero__search-kbd">{kbd}</span>
-        </button>
         <hr className="zauru-hero__rule" />
       </section>
 

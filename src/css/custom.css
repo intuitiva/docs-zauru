@@ -185,7 +185,9 @@ a:hover {
   background-color: var(--ifm-background-surface-color);
   border-bottom: 1px solid var(--zauru-line);
   box-shadow: none;
-  backdrop-filter: saturate(140%) blur(8px);
+  /* No backdrop-filter here: it makes the navbar the containing block
+     for the fixed-position mobile sidebar, collapsing it to 59px.
+     The background is opaque anyway, so a blur would be invisible. */
 }
 .navbar__title {
   font-family: var(--ifm-font-family-heading);
@@ -274,84 +276,136 @@ a:hover {
 }
 
 /* ============================================================
-   7. HOMEPAGE — search-first hero + dense rows
+   7. HOMEPAGE — bold search-first hero
+   Big logo backdrop with the searchbox overlapping it,
+   in the same ink + hard-gold-shadow language as the cards.
    ============================================================ */
 .zauru-hero {
   position: relative;
   background: var(--zauru-hero-bg);
   color: var(--zauru-hero-text);
-  padding: 56px 24px 40px;
-  text-align: left;
+  padding: clamp(44px, 7vh, 80px) 24px 48px;
+  text-align: center;
   max-width: 960px;
   margin: 0 auto;
 }
 .zauru-hero__eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   font-family: var(--ifm-font-family-base);
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--zauru-hero-text);
-  margin: 0 0 12px;
+  margin: 0 0 20px;
+}
+.zauru-hero__eyebrow::before,
+.zauru-hero__eyebrow::after {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background: var(--zauru-gold);
 }
 [data-theme="dark"] .zauru-hero__eyebrow {
   color: var(--zauru-gold);
 }
+
+/* Stage: stacking context for the glow + overlap composition */
+.zauru-hero__stage {
+  position: relative;
+  z-index: 0;
+}
 .zauru-hero__title {
-  margin: 0 0 16px;
+  position: relative;
+  margin: 0;
   line-height: 0;
+}
+/* Warm aura behind the wordmark — echoes the halo.
+   No horizontal outset: an absolutely positioned glow wider than
+   the hero would create horizontal page scroll on small screens. */
+.zauru-hero__title::before {
+  content: "";
+  position: absolute;
+  inset: -14% 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 62% 60% at 50% 42%,
+    var(--zauru-gold-tint),
+    transparent 72%
+  );
+}
+[data-theme="dark"] .zauru-hero__title::before {
+  background: radial-gradient(
+    ellipse 62% 60% at 50% 42%,
+    rgba(253, 202, 52, 0.17),
+    transparent 72%
+  );
 }
 .zauru-hero__logo {
   display: block;
-  width: clamp(180px, 36vw, 280px);
+  width: clamp(280px, 58vw, 560px);
   height: auto;
+  margin: 0 auto;
 }
-.zauru-hero__subtitle {
-  font-size: 1.05rem;
-  max-width: 36rem;
-  margin: 0 0 28px;
-  color: var(--zauru-hero-text-soft);
-  line-height: 1.5;
-}
+
+/* Searchbox: pulled up over the logo's lower edge so it owns the hero */
 .zauru-hero__search {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: 100%;
-  max-width: 640px;
-  padding: 14px 18px;
+  gap: 12px;
+  width: min(680px, 100%);
+  margin: clamp(-3.2rem, -4vw, -2rem) auto 0;
+  padding: 17px 22px;
   background: var(--zauru-card-bg);
   border: 2px solid var(--zauru-ink);
-  border-radius: var(--zauru-radius-sm);
+  border-radius: var(--zauru-radius-md);
   color: var(--zauru-ink-soft);
   font: inherit;
-  font-weight: 500;
+  font-size: 1.06rem;
+  font-weight: 600;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  box-shadow: 4px 4px 0 var(--zauru-gold);
-  transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+  box-shadow: 6px 6px 0 var(--zauru-gold);
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease, border-color 150ms ease;
 }
 [data-theme="dark"] .zauru-hero__search {
   border-color: var(--zauru-gold);
-  box-shadow: none;
   color: var(--zauru-ink-soft);
 }
 .zauru-hero__search:hover {
   background: var(--zauru-card-bg-hover);
-  box-shadow: 6px 6px 0 var(--zauru-gold);
+  transform: translate(-1px, -1px);
+  box-shadow: 8px 8px 0 var(--zauru-gold);
+}
+.zauru-hero__search:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--zauru-gold);
 }
 [data-theme="dark"] .zauru-hero__search:hover {
   box-shadow:
-    6px 6px 0 var(--zauru-gold),
-    0 0 20px rgba(253, 202, 52, 0.12);
+    8px 8px 0 var(--zauru-gold),
+    0 0 24px rgba(253, 202, 52, 0.16);
 }
 .zauru-hero__search:focus-visible {
   outline: 2px solid var(--zauru-gold);
   outline-offset: 3px;
 }
+.zauru-hero__search-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
 .zauru-hero__search-kbd {
   margin-left: auto;
+  flex-shrink: 0;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--ifm-color-emphasis-600);
@@ -360,15 +414,101 @@ a:hover {
   padding: 2px 6px;
 }
 .zauru-hero__search svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
+  color: var(--zauru-gold-deep);
+}
+[data-theme="dark"] .zauru-hero__search svg {
+  color: var(--zauru-gold);
+}
+.zauru-hero__subtitle {
+  font-size: 1rem;
+  max-width: 34rem;
+  margin: 24px auto 0;
+  color: var(--zauru-hero-text-soft);
+  line-height: 1.5;
+  text-wrap: balance;
 }
 .zauru-hero__rule {
+  width: min(460px, 72%);
   height: 3px;
-  background: var(--zauru-gold);
   border: 0;
-  margin: 40px 0 0;
+  margin: 44px auto 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--zauru-gold) 25%,
+    var(--zauru-gold) 75%,
+    transparent
+  );
+}
+
+/* --- Hero motion: staggered entrance on load --- */
+@media (prefers-reduced-motion: no-preference) {
+  .zauru-hero__eyebrow {
+    animation: zauru-hero-rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) 40ms both;
+  }
+  .zauru-hero__title {
+    animation: zauru-hero-rise 620ms cubic-bezier(0.2, 0.7, 0.2, 1) 140ms both;
+  }
+  .zauru-hero__search {
+    animation: zauru-hero-rise 620ms cubic-bezier(0.2, 0.7, 0.2, 1) 260ms both;
+  }
+  .zauru-hero__subtitle,
+  .zauru-hero__rule {
+    animation: zauru-hero-fade 640ms ease 380ms both;
+  }
+}
+@keyframes zauru-hero-rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zauru-hero-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Scroll-driven motion (progressive enhancement).
+   Browsers without animation-timeline simply skip these;
+   content stays fully visible. --- */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    /* Hero sinks and dissolves as you scroll past it */
+    .zauru-hero__stage {
+      animation: zauru-hero-recede linear both;
+      animation-timeline: scroll();
+      animation-range: 0px 400px;
+    }
+    .zauru-hero__eyebrow,
+    .zauru-hero__subtitle,
+    .zauru-hero__rule {
+      animation: zauru-hero-dissolve linear both;
+      animation-timeline: scroll();
+      animation-range: 0px 260px;
+    }
+    /* Section headers + cards rise into view */
+    .zauru-section-group__header {
+      animation: zauru-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+    .zauru-card-grid > li {
+      animation: zauru-reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+@keyframes zauru-hero-recede {
+  to { transform: translateY(56px) scale(0.95); opacity: 0.15; }
+}
+@keyframes zauru-hero-dissolve {
+  to { opacity: 0; }
+}
+@keyframes zauru-reveal {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .zauru-home {
@@ -922,7 +1062,9 @@ a:hover {
 }
 
 /* ============================================================
-   16. SEARCH (Algolia)
+   16. SEARCH (Algolia DocSearch) — ink + gold theming
+   Maps DocSearch's blue/purple palette onto the brand tokens
+   so the modal feels like part of the site.
    ============================================================ */
 .DocSearch-Button {
   border-radius: 999px;
@@ -938,15 +1080,183 @@ a:hover {
   font-family: var(--ifm-font-family-base);
 }
 
+/* --- DocSearch modal — light ---
+   html[data-theme] beats @docsearch/css's plain :root in the cascade,
+   regardless of bundle order. */
+html[data-theme="light"] {
+  --docsearch-primary-color: var(--zauru-gold-deep);
+  --docsearch-highlight-color: var(--zauru-gold-deep);
+  --docsearch-hit-highlight-color: var(--zauru-gold-tint);
+  --docsearch-focus-color: var(--zauru-gold-deep);
+  --docsearch-text-color: var(--zauru-ink-soft);
+  --docsearch-secondary-text-color: var(--ifm-color-emphasis-600);
+  --docsearch-muted-color: #6d6d64;
+  --docsearch-muted-color-darker: rgba(12, 12, 12, 0.2);
+  --docsearch-icon-color: var(--zauru-ink-soft);
+  --docsearch-logo-color: var(--zauru-gold-deep);
+  --docsearch-subtle-color: var(--zauru-line);
+  --docsearch-container-background: rgba(12, 12, 12, 0.55);
+  --docsearch-modal-background: #ffffff;
+  --docsearch-background-color: var(--zauru-paper-2);
+  --docsearch-modal-shadow:
+    6px 6px 0 rgba(253, 202, 52, 0.9),
+    0 24px 60px rgba(0, 0, 0, 0.25);
+  --docsearch-border-radius: var(--zauru-radius-md);
+  --docsearch-searchbox-background: var(--zauru-paper-2);
+  --docsearch-searchbox-focus-background: #ffffff;
+  --docsearch-hit-background: #ffffff;
+  --docsearch-hit-color: var(--zauru-ink-soft);
+  --docsearch-key-background: var(--zauru-paper-2);
+  --docsearch-key-color: var(--zauru-ink-soft);
+  --docsearch-key-pressed-shadow: inset 0 2px 4px rgba(12, 12, 12, 0.15);
+  --docsearch-footer-background: #ffffff;
+  --docsearch-footer-shadow: 0 -1px 0 var(--zauru-line);
+}
+
+/* --- DocSearch modal — dark ---
+   :root suffix breaks the specificity tie against @docsearch/css's
+   own html[data-theme=dark] block, which lands later in the bundle. */
+html[data-theme="dark"]:root {
+  --docsearch-primary-color: var(--zauru-gold);
+  --docsearch-highlight-color: var(--zauru-gold);
+  --docsearch-hit-highlight-color: rgba(253, 202, 52, 0.16);
+  --docsearch-focus-color: var(--zauru-gold);
+  --docsearch-text-color: var(--zauru-ink);
+  --docsearch-secondary-text-color: var(--zauru-ink-soft);
+  --docsearch-muted-color: #8a8a80;
+  --docsearch-muted-color-darker: rgba(253, 202, 52, 0.25);
+  --docsearch-icon-color: var(--zauru-ink-soft);
+  --docsearch-logo-color: var(--zauru-gold);
+  --docsearch-subtle-color: var(--zauru-line);
+  --docsearch-container-background: rgba(0, 0, 0, 0.72);
+  --docsearch-modal-background: #161616;
+  --docsearch-background-color: #1c1c1c;
+  --docsearch-modal-shadow:
+    6px 6px 0 rgba(253, 202, 52, 0.85),
+    0 24px 60px rgba(0, 0, 0, 0.6);
+  --docsearch-searchbox-background: #1c1c1c;
+  --docsearch-searchbox-focus-background: #161616;
+  --docsearch-hit-background: #161616;
+  --docsearch-hit-color: var(--zauru-ink-soft);
+  --docsearch-key-background: #2a2a2a;
+  --docsearch-key-color: var(--zauru-ink);
+  --docsearch-key-pressed-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  --docsearch-footer-background: #161616;
+  --docsearch-footer-shadow: 0 -1px 0 var(--zauru-line);
+}
+
+/* Fine-tuning beyond what the variables expose */
+.DocSearch-Modal {
+  border: 1px solid var(--zauru-line);
+  font-family: var(--ifm-font-family-base);
+}
+.DocSearch-Input {
+  font-family: var(--ifm-font-family-base);
+  color: var(--zauru-ink);
+  caret-color: var(--zauru-gold-deep);
+}
+html[data-theme="dark"] .DocSearch-Input {
+  caret-color: var(--zauru-gold);
+}
+/* Group headers match the homepage section titles */
+.DocSearch-Hit-source {
+  font-family: var(--ifm-font-family-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--zauru-gold-deep);
+}
+html[data-theme="dark"] .DocSearch-Hit-source {
+  color: var(--zauru-gold);
+}
+/* Matched terms: gold underline instead of blue */
+.DocSearch-Hit mark {
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--zauru-gold);
+}
+.DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-title {
+  color: var(--zauru-ink);
+}
+html[data-theme="dark"] .DocSearch-Hit[aria-selected="true"] .DocSearch-Hit-title {
+  color: var(--zauru-gold);
+}
+.DocSearch-Commands-Key {
+  border: 1px solid var(--zauru-line);
+}
+.DocSearch-NoResults .DocSearch-Title {
+  color: var(--zauru-ink);
+}
+/* The "algolia" badge hardcodes blue fills inside its SVG — recolor to brand */
+.DocSearch-Logo svg .cls-1,
+.DocSearch-Logo svg .cls-2 {
+  fill: var(--zauru-gold-deep);
+}
+html[data-theme="dark"] .DocSearch-Logo svg .cls-1,
+html[data-theme="dark"] .DocSearch-Logo svg .cls-2 {
+  fill: var(--zauru-gold);
+}
+
 /* ============================================================
    17. RESPONSIVE
    ============================================================ */
 @media (max-width: 996px) {
   .zauru-hero {
-    padding: 48px 20px 36px;
+    padding: 44px 20px 40px;
   }
 }
-@media (max-width: 600px) {
+
+/* The ⌘K hint is meaningless without a physical keyboard */
+@media (hover: none), (max-width: 640px) {
+  .zauru-hero__search-kbd {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* The wordmark already says "Zauru" — the long title only
+     truncates on narrow screens, so drop it. */
+  .navbar__title {
+    display: none;
+  }
+  .navbar__brand {
+    margin-right: 0;
+  }
+  .zauru-hero {
+    padding: 36px 18px 36px;
+  }
+  .zauru-hero__eyebrow {
+    letter-spacing: 0.16em;
+  }
+  .zauru-hero__search {
+    padding: 14px 16px;
+    font-size: 0.98rem;
+    gap: 10px;
+    box-shadow: 5px 5px 0 var(--zauru-gold);
+  }
+  .zauru-hero__search:hover {
+    box-shadow: 6px 6px 0 var(--zauru-gold);
+  }
+  .zauru-hero__subtitle {
+    font-size: 0.94rem;
+    margin-top: 20px;
+  }
+  .zauru-hero__rule {
+    margin-top: 36px;
+  }
+  .zauru-home {
+    padding: 4px 18px 48px;
+  }
+  .zauru-card-grid {
+    gap: 12px;
+  }
+  .zauru-card {
+    padding: 14px;
+  }
+  .zauru-section-group {
+    margin-bottom: 32px;
+  }
   .zauru-related__grid {
     grid-template-columns: 1fr;
   }
