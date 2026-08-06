@@ -64,6 +64,13 @@ curl -v \
   "https://app.zauru.com/ecommerce/ecommerce_requests/credentials_based_on_url.json?auth_token=jHr2PZ75sJHxpb2HGAo7&prod_ecommerce_url=https://mitienda.com"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": "User not found"
+}
+```
+
 O usando la URL de pruebas:
 
 ```bash
@@ -71,6 +78,13 @@ curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
   "https://app.zauru.com/ecommerce/ecommerce_requests/credentials_based_on_url.json?auth_token=jHr2PZ75sJHxpb2HGAo7&tests_ecommerce_url=https://staging.mitienda.com"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": "User not found"
+}
 ```
 
 ## Caso de uso

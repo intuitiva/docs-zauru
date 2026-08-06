@@ -105,6 +105,11 @@ curl -v \
   https://app.zauru.com/support/serials_attended.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 Retorna todos los numeros de serie que se encuentran en la bodega virtual del cliente, sin paginar.
 
 ### listado de numeros de serie atendidos (datatables)
@@ -146,6 +151,11 @@ curl -v \
   https://app.zauru.com/support/serials_attended/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### obtener formulario de nuevo numero de serie
 
 ```bash
@@ -155,6 +165,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/support/serials_attended/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "id_number": "",
+  "name": null,
+  "description": null,
+  "item_id": null,
+  "entity_id": 1,
+  "agency_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "agency_future_id": null
+}
 ```
 
 Retorna un objeto vacio de numero de serie con un `id_number` autogenerado, que puede usar como base para crear uno nuevo.
@@ -179,6 +205,15 @@ curl -v \
   https://app.zauru.com/support/serials_attended.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 Tambien puede crear un numero de serie y ser redirigido a la pagina de creacion de caso o a otra pagina de destino:
 
 ```bash
@@ -199,4 +234,13 @@ curl -v \
     "dest_action": "new"
   }' \
   https://app.zauru.com/support/serials_attended.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
 ```

@@ -30,6 +30,13 @@ curl -v \
   "https://app.zauru.com/accounting/reports/check_general_ledger.json?zid=XXXX"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "not_found"
+}
+```
+
 ### Consultar el estado de generacion del libro mayor diario
 
 Version diaria del libro mayor, tambien generada de forma asincrona. Recibe el `zid` del reporte en proceso.
@@ -40,4 +47,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/accounting/reports/check_daily_general_ledger.json?zid=XXXX"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "not_found"
+}
 ```

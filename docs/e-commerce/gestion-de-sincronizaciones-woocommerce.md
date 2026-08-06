@@ -115,6 +115,45 @@ curl -v \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "12",
+    "zid": "1",
+    "active": true,
+    "site_url": "https://tecnipesa.net/",
+    "api_user_id": "1872",
+    "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+    "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+    "publish_schedule": "HOURLY",
+    "images_to_publish": "1",
+    "agency_id": "4787",
+    "zcategories_notes_as_wc_parent_categories": true,
+    "existing_wc_parent_category_for_zauru_categories": null,
+    "existing_wc_parent_category_for_zauru_vendors": null,
+    "existing_wc_parent_category_for_zauru_tags": null,
+    "attribute_separator_in_item_code_to_identify_product_variations": null,
+    "product_attributes_for_items_with_code_with_attribute_separator": null,
+    "category_updates_per_api_call": "100",
+    "product_updates_per_api_call": "100",
+    "entity_id": "759",
+    "creator_id": "143",
+    "updater_id": "942",
+    "last_started_sync": "2026-07-08 08:01:18.592147",
+    "last_sync_request": "2026-07-08 08:01:18.378846",
+    "last_syncer_id": null,
+    "created_at": "2021-06-16 13:08:04.227511",
+    "updated_at": "2021-11-11 19:49:49.607121",
+    "hd_images": true,
+    "tag_id": null,
+    "webhook_url_when_voiding": null,
+    "price_list_id": null,
+    "use_vendor_code_instead_of_item_code": false
+  }
+]
+```
+
 ### Ver detalle de una sincronización
 
 ```bash
@@ -124,6 +163,43 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "12",
+  "zid": "1",
+  "active": true,
+  "site_url": "https://tecnipesa.net/",
+  "api_user_id": "1872",
+  "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+  "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+  "publish_schedule": "HOURLY",
+  "images_to_publish": "1",
+  "agency_id": "4787",
+  "zcategories_notes_as_wc_parent_categories": true,
+  "existing_wc_parent_category_for_zauru_categories": null,
+  "existing_wc_parent_category_for_zauru_vendors": null,
+  "existing_wc_parent_category_for_zauru_tags": null,
+  "attribute_separator_in_item_code_to_identify_product_variations": null,
+  "product_attributes_for_items_with_code_with_attribute_separator": null,
+  "category_updates_per_api_call": "100",
+  "product_updates_per_api_call": "100",
+  "entity_id": "759",
+  "creator_id": "143",
+  "updater_id": "942",
+  "last_started_sync": "2026-07-08 08:01:18.592147",
+  "last_sync_request": "2026-07-08 08:01:18.378846",
+  "last_syncer_id": null,
+  "created_at": "2021-06-16 13:08:04.227511",
+  "updated_at": "2021-11-11 19:49:49.607121",
+  "hd_images": true,
+  "tag_id": null,
+  "webhook_url_when_voiding": null,
+  "price_list_id": null,
+  "use_vendor_code_instead_of_item_code": false
+}
 ```
 
 ### Crear una sincronización
@@ -145,6 +221,43 @@ curl -v \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "12",
+  "zid": "1",
+  "active": true,
+  "site_url": "https://tecnipesa.net/",
+  "api_user_id": "1872",
+  "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+  "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+  "publish_schedule": "HOURLY",
+  "images_to_publish": "1",
+  "agency_id": "4787",
+  "zcategories_notes_as_wc_parent_categories": true,
+  "existing_wc_parent_category_for_zauru_categories": null,
+  "existing_wc_parent_category_for_zauru_vendors": null,
+  "existing_wc_parent_category_for_zauru_tags": null,
+  "attribute_separator_in_item_code_to_identify_product_variations": null,
+  "product_attributes_for_items_with_code_with_attribute_separator": null,
+  "category_updates_per_api_call": "100",
+  "product_updates_per_api_call": "100",
+  "entity_id": "759",
+  "creator_id": "143",
+  "updater_id": "942",
+  "last_started_sync": "2026-07-08 08:01:18.592147",
+  "last_sync_request": "2026-07-08 08:01:18.378846",
+  "last_syncer_id": null,
+  "created_at": "2021-06-16 13:08:04.227511",
+  "updated_at": "2021-11-11 19:49:49.607121",
+  "hd_images": true,
+  "tag_id": null,
+  "webhook_url_when_voiding": null,
+  "price_list_id": null,
+  "use_vendor_code_instead_of_item_code": false
+}
+```
+
 ### Actualizar una sincronización
 
 ```bash
@@ -156,6 +269,43 @@ curl -v \
   -X PUT \
   -d "woocommerce_items_sync[active]=0" \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "12",
+  "zid": "1",
+  "active": true,
+  "site_url": "https://tecnipesa.net/",
+  "api_user_id": "1872",
+  "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+  "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+  "publish_schedule": "HOURLY",
+  "images_to_publish": "1",
+  "agency_id": "4787",
+  "zcategories_notes_as_wc_parent_categories": true,
+  "existing_wc_parent_category_for_zauru_categories": null,
+  "existing_wc_parent_category_for_zauru_vendors": null,
+  "existing_wc_parent_category_for_zauru_tags": null,
+  "attribute_separator_in_item_code_to_identify_product_variations": null,
+  "product_attributes_for_items_with_code_with_attribute_separator": null,
+  "category_updates_per_api_call": "100",
+  "product_updates_per_api_call": "100",
+  "entity_id": "759",
+  "creator_id": "143",
+  "updater_id": "942",
+  "last_started_sync": "2026-07-08 08:01:18.592147",
+  "last_sync_request": "2026-07-08 08:01:18.378846",
+  "last_syncer_id": null,
+  "created_at": "2021-06-16 13:08:04.227511",
+  "updated_at": "2021-11-11 19:49:49.607121",
+  "hd_images": true,
+  "tag_id": null,
+  "webhook_url_when_voiding": null,
+  "price_list_id": null,
+  "use_vendor_code_instead_of_item_code": false
+}
 ```
 
 ### Eliminar una sincronización
@@ -170,6 +320,8 @@ curl -v \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Forzar sincronización
 
 ```bash
@@ -180,6 +332,13 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/force_sync.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
 
 ### Nueva sincronización (prellenado)
 
@@ -192,6 +351,43 @@ curl -v \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/new.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "12",
+  "zid": "1",
+  "active": true,
+  "site_url": "https://tecnipesa.net/",
+  "api_user_id": "1872",
+  "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+  "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+  "publish_schedule": "HOURLY",
+  "images_to_publish": "1",
+  "agency_id": "4787",
+  "zcategories_notes_as_wc_parent_categories": true,
+  "existing_wc_parent_category_for_zauru_categories": null,
+  "existing_wc_parent_category_for_zauru_vendors": null,
+  "existing_wc_parent_category_for_zauru_tags": null,
+  "attribute_separator_in_item_code_to_identify_product_variations": null,
+  "product_attributes_for_items_with_code_with_attribute_separator": null,
+  "category_updates_per_api_call": "100",
+  "product_updates_per_api_call": "100",
+  "entity_id": "759",
+  "creator_id": "143",
+  "updater_id": "942",
+  "last_started_sync": "2026-07-08 08:01:18.592147",
+  "last_sync_request": "2026-07-08 08:01:18.378846",
+  "last_syncer_id": null,
+  "created_at": "2021-06-16 13:08:04.227511",
+  "updated_at": "2021-11-11 19:49:49.607121",
+  "hd_images": true,
+  "tag_id": null,
+  "webhook_url_when_voiding": null,
+  "price_list_id": null,
+  "use_vendor_code_instead_of_item_code": false
+}
+```
+
 ### Editar sincronización
 
 ```bash
@@ -202,3 +398,40 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/edit.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "12",
+  "zid": "1",
+  "active": true,
+  "site_url": "https://tecnipesa.net/",
+  "api_user_id": "1872",
+  "rest_api_secret": "cs_64accf51b3fd9db7eef70cf43948005c72d4bf96",
+  "rest_api_key": "ck_0d9a588367b863d1dc494b270b6650278933214f",
+  "publish_schedule": "HOURLY",
+  "images_to_publish": "1",
+  "agency_id": "4787",
+  "zcategories_notes_as_wc_parent_categories": true,
+  "existing_wc_parent_category_for_zauru_categories": null,
+  "existing_wc_parent_category_for_zauru_vendors": null,
+  "existing_wc_parent_category_for_zauru_tags": null,
+  "attribute_separator_in_item_code_to_identify_product_variations": null,
+  "product_attributes_for_items_with_code_with_attribute_separator": null,
+  "category_updates_per_api_call": "100",
+  "product_updates_per_api_call": "100",
+  "entity_id": "759",
+  "creator_id": "143",
+  "updater_id": "942",
+  "last_started_sync": "2026-07-08 08:01:18.592147",
+  "last_sync_request": "2026-07-08 08:01:18.378846",
+  "last_syncer_id": null,
+  "created_at": "2021-06-16 13:08:04.227511",
+  "updated_at": "2021-11-11 19:49:49.607121",
+  "hd_images": true,
+  "tag_id": null,
+  "webhook_url_when_voiding": null,
+  "price_list_id": null,
+  "use_vendor_code_instead_of_item_code": false
+}
+```

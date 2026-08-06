@@ -116,6 +116,11 @@ curl -v \
   https://app.zauru.com/settings/forms.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Obtener detalle de un formulario
 ```bash
 curl -v \
@@ -124,6 +129,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/forms/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear formulario
@@ -154,6 +164,13 @@ curl -v \
   https://app.zauru.com/settings/forms.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": "[\"Form fields print var name no puede estar en blanco\"]"
+}
+```
+
 ### Ver versiones de un formulario
 ```bash
 curl -v \
@@ -175,6 +192,13 @@ curl -v \
   https://app.zauru.com/settings/forms/1/duplicate.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
+```
+
 ### Restaurar versión de un formulario
 ```bash
 curl -v \
@@ -184,6 +208,13 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   https://app.zauru.com/settings/forms/1/make_it_current_version.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
 ```
 
 ### Eliminar formulario
@@ -197,6 +228,8 @@ curl -v \
   https://app.zauru.com/settings/forms/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### API de Envíos de Formularios (Form Submissions)
 
 #### Obtener listado de envíos de un formulario
@@ -209,6 +242,13 @@ curl -v \
   https://app.zauru.com/settings/forms/form_submissions.json?f=1
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 #### Obtener detalle de un envío de formulario
 ```bash
 curl -v \
@@ -217,6 +257,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/forms/form_submissions/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 #### Crear envío de formulario
@@ -244,6 +289,11 @@ curl -v \
   https://app.zauru.com/settings/forms/form_submissions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 #### Anular envío de formulario
 ```bash
 curl -v \
@@ -254,6 +304,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/forms/form_submissions/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 #### Duplicar envío de formulario
 ```bash
@@ -266,6 +318,13 @@ curl -v \
   https://app.zauru.com/settings/forms/form_submissions/1/duplicate.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
+```
+
 #### Restaurar versión de un envío de formulario
 ```bash
 curl -v \
@@ -275,6 +334,13 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   https://app.zauru.com/settings/forms/form_submissions/1/make_it_current_version.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
 ```
 
 #### Ver versiones de un envío de formulario

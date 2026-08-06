@@ -58,3 +58,10 @@ curl -v \
   -X GET \
   "https://app.zauru.com/purchases/receptions/1/rebound.json?purchase_order_id=1"
 ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": "No se encontró órden de compra"
+}
+```

@@ -351,6 +351,58 @@ curl -v \
   https://app.zauru.com/payroll/settings/job_positions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "zid": 1,
+    "name": "Devops",
+    "parent_job_position_id": 2,
+    "payment_frequency": 4,
+    "payroll_type": false,
+    "working_hours": "La jornada de trabajo es discontinua, de lunes a sábado así: iniciando a las 8:30 a las 12:30, luego desde las 13:30 a las 17:30 horas de lunes a viernes, y el sábado de 8:00 a las 12:00 horas.",
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2021-05-01T00:00:22.063Z",
+    "updated_at": "2024-07-17T21:12:45.159Z",
+    "job_position_deductions_count": 10,
+    "salary_account_id": 4,
+    "overtime_salary_account_id": 5,
+    "enable_sales_commissions": false,
+    "sales_commissions_account_id": null,
+    "description": "",
+    "mandatory_bonus_account_id": null,
+    "enable_mandatory_bonus": false
+  },
+  {
+    "id": 6,
+    "active": true,
+    "zid": 7,
+    "name": "Front-end developer",
+    "parent_job_position_id": 2,
+    "payment_frequency": 4,
+    "payroll_type": false,
+    "working_hours": "de lunes a jueves así: iniciando a las 7:00 A.M. concluyendo a las 13:30 P.M., para regresar a las 14:30 P.M. finalizando a las 17:00 P.M. de lunes a jueves, y el viernes de 7:00 A.M. concluyendo a las 13:30 P.M., para regresar a las 14:30 P.M. finalizand",
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2023-01-06T18:01:54.635Z",
+    "updated_at": "2023-01-06T20:09:53.866Z",
+    "job_position_deductions_count": 10,
+    "salary_account_id": 4,
+    "overtime_salary_account_id": 5,
+    "enable_sales_commissions": false,
+    "sales_commissions_account_id": null,
+    "description": "",
+    "mandatory_bonus_account_id": null,
+    "enable_mandatory_bonus": false
+  }
+]
+```
+
 ### Ver un puesto de trabajo
 
 ```bash
@@ -360,6 +412,33 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/job_positions/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "338",
+  "active": true,
+  "zid": "1",
+  "name": "Supervisor",
+  "parent_job_position_id": null,
+  "payment_frequency": "1",
+  "payroll_type": false,
+  "working_hours": null,
+  "creator_id": "214",
+  "updater_id": null,
+  "entity_id": "1033",
+  "created_at": "2023-07-28 20:25:39.066328",
+  "updated_at": "2023-07-28 20:25:39.066328",
+  "job_position_deductions_count": null,
+  "salary_account_id": "66819",
+  "overtime_salary_account_id": null,
+  "enable_sales_commissions": false,
+  "sales_commissions_account_id": null,
+  "description": null,
+  "mandatory_bonus_account_id": null,
+  "enable_mandatory_bonus": false
+}
 ```
 
 ### Obtener estructura para crear un puesto de trabajo
@@ -373,6 +452,33 @@ curl -v \
   https://app.zauru.com/payroll/settings/job_positions/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "zid": null,
+  "name": null,
+  "parent_job_position_id": null,
+  "payment_frequency": 1,
+  "payroll_type": true,
+  "working_hours": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "job_position_deductions_count": null,
+  "salary_account_id": 2,
+  "overtime_salary_account_id": null,
+  "enable_sales_commissions": false,
+  "sales_commissions_account_id": null,
+  "description": null,
+  "mandatory_bonus_account_id": null,
+  "enable_mandatory_bonus": false
+}
+```
+
 ### Obtener estructura para editar un puesto de trabajo
 
 ```bash
@@ -382,6 +488,33 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/job_positions/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "338",
+  "active": true,
+  "zid": "1",
+  "name": "Supervisor",
+  "parent_job_position_id": null,
+  "payment_frequency": "1",
+  "payroll_type": false,
+  "working_hours": null,
+  "creator_id": "214",
+  "updater_id": null,
+  "entity_id": "1033",
+  "created_at": "2023-07-28 20:25:39.066328",
+  "updated_at": "2023-07-28 20:25:39.066328",
+  "job_position_deductions_count": null,
+  "salary_account_id": "66819",
+  "overtime_salary_account_id": null,
+  "enable_sales_commissions": false,
+  "sales_commissions_account_id": null,
+  "description": null,
+  "mandatory_bonus_account_id": null,
+  "enable_mandatory_bonus": false
+}
 ```
 
 ### Crear un puesto de trabajo
@@ -410,6 +543,33 @@ curl -v \
   https://app.zauru.com/payroll/settings/job_positions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "338",
+  "active": true,
+  "zid": "1",
+  "name": "Supervisor",
+  "parent_job_position_id": null,
+  "payment_frequency": "1",
+  "payroll_type": false,
+  "working_hours": null,
+  "creator_id": "214",
+  "updater_id": null,
+  "entity_id": "1033",
+  "created_at": "2023-07-28 20:25:39.066328",
+  "updated_at": "2023-07-28 20:25:39.066328",
+  "job_position_deductions_count": null,
+  "salary_account_id": "66819",
+  "overtime_salary_account_id": null,
+  "enable_sales_commissions": false,
+  "sales_commissions_account_id": null,
+  "description": null,
+  "mandatory_bonus_account_id": null,
+  "enable_mandatory_bonus": false
+}
+```
+
 ### Actualizar un puesto de trabajo
 
 ```bash
@@ -428,6 +588,33 @@ curl -v \
   https://app.zauru.com/payroll/settings/job_positions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "338",
+  "active": true,
+  "zid": "1",
+  "name": "Supervisor",
+  "parent_job_position_id": null,
+  "payment_frequency": "1",
+  "payroll_type": false,
+  "working_hours": null,
+  "creator_id": "214",
+  "updater_id": null,
+  "entity_id": "1033",
+  "created_at": "2023-07-28 20:25:39.066328",
+  "updated_at": "2023-07-28 20:25:39.066328",
+  "job_position_deductions_count": null,
+  "salary_account_id": "66819",
+  "overtime_salary_account_id": null,
+  "enable_sales_commissions": false,
+  "sales_commissions_account_id": null,
+  "description": null,
+  "mandatory_bonus_account_id": null,
+  "enable_mandatory_bonus": false
+}
+```
+
 ### Borrar un puesto de trabajo
 
 ```bash
@@ -440,6 +627,8 @@ curl -v \
   https://app.zauru.com/payroll/settings/job_positions/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar beneficios y deducciones
 
 ```bash
@@ -449,6 +638,74 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "name": "adelanto de bono 14 gerencia",
+    "employee_percent": 8.33333,
+    "employee_amount": null,
+    "creator_id": 3,
+    "updater_id": null,
+    "entity_id": 3,
+    "created_at": "2023-08-15T13:34:13.593Z",
+    "updated_at": "2023-08-15T13:34:13.593Z",
+    "employee_flexible_amount": false,
+    "entity_percent": null,
+    "entity_amount": null,
+    "employee_account_id": 4,
+    "entity_account_from_id": null,
+    "apply_on_salary_greater_or_equal_than": null,
+    "employee_benefits_deductions_incidents_formula_id": null,
+    "entity_benefits_deductions_incidents_formula_id": null,
+    "entity_account_to_id": null,
+    "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+    "include_overtime_in_calculation": false,
+    "year_cycle_month_starts": null,
+    "semester_cycle_month_starts": null,
+    "quarter_cycle_month_starts": null,
+    "bimester_cycle_month_starts": null,
+    "include_sales_commissions_in_calculation": false,
+    "applies_to": "on-cycle",
+    "active": true,
+    "applies_to_contract_terminations": false
+  },
+  {
+    "id": 5,
+    "zid": 6,
+    "name": "IRTRA",
+    "employee_percent": null,
+    "employee_amount": null,
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2021-07-30T20:48:59.008Z",
+    "updated_at": "2022-09-01T12:05:25.334Z",
+    "employee_flexible_amount": false,
+    "entity_percent": 1.0,
+    "entity_amount": null,
+    "employee_account_id": null,
+    "entity_account_from_id": 7,
+    "apply_on_salary_greater_or_equal_than": null,
+    "employee_benefits_deductions_incidents_formula_id": null,
+    "entity_benefits_deductions_incidents_formula_id": null,
+    "entity_account_to_id": 8,
+    "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+    "include_overtime_in_calculation": false,
+    "year_cycle_month_starts": null,
+    "semester_cycle_month_starts": null,
+    "quarter_cycle_month_starts": null,
+    "bimester_cycle_month_starts": null,
+    "include_sales_commissions_in_calculation": false,
+    "applies_to": "on-cycle",
+    "active": true,
+    "applies_to_contract_terminations": false
+  }
+]
 ```
 
 ### Ver un beneficio o deduccion
@@ -462,6 +719,41 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "zid": "11",
+  "name": "IGSS (cosecha)",
+  "employee_percent": null,
+  "employee_amount": null,
+  "creator_id": "1",
+  "updater_id": "1",
+  "entity_id": "733",
+  "created_at": "2021-04-21 04:37:08.277786",
+  "updated_at": "2021-07-29 22:49:50.479777",
+  "employee_flexible_amount": false,
+  "entity_percent": null,
+  "entity_amount": null,
+  "employee_account_id": "49814",
+  "entity_account_from_id": "49815",
+  "apply_on_salary_greater_or_equal_than": null,
+  "employee_benefits_deductions_incidents_formula_id": "3",
+  "entity_benefits_deductions_incidents_formula_id": "4",
+  "entity_account_to_id": "49830",
+  "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+  "include_overtime_in_calculation": false,
+  "year_cycle_month_starts": null,
+  "semester_cycle_month_starts": null,
+  "quarter_cycle_month_starts": null,
+  "bimester_cycle_month_starts": null,
+  "include_sales_commissions_in_calculation": false,
+  "applies_to": "on-cycle",
+  "active": true,
+  "applies_to_contract_terminations": false
+}
+```
+
 ### Obtener estructura para crear un beneficio o deduccion
 
 ```bash
@@ -473,6 +765,41 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "zid": "11",
+  "name": "IGSS (cosecha)",
+  "employee_percent": null,
+  "employee_amount": null,
+  "creator_id": "1",
+  "updater_id": "1",
+  "entity_id": "733",
+  "created_at": "2021-04-21 04:37:08.277786",
+  "updated_at": "2021-07-29 22:49:50.479777",
+  "employee_flexible_amount": false,
+  "entity_percent": null,
+  "entity_amount": null,
+  "employee_account_id": "49814",
+  "entity_account_from_id": "49815",
+  "apply_on_salary_greater_or_equal_than": null,
+  "employee_benefits_deductions_incidents_formula_id": "3",
+  "entity_benefits_deductions_incidents_formula_id": "4",
+  "entity_account_to_id": "49830",
+  "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+  "include_overtime_in_calculation": false,
+  "year_cycle_month_starts": null,
+  "semester_cycle_month_starts": null,
+  "quarter_cycle_month_starts": null,
+  "bimester_cycle_month_starts": null,
+  "include_sales_commissions_in_calculation": false,
+  "applies_to": "on-cycle",
+  "active": true,
+  "applies_to_contract_terminations": false
+}
+```
+
 ### Obtener estructura para editar un beneficio o deduccion
 
 ```bash
@@ -482,6 +809,41 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "zid": "11",
+  "name": "IGSS (cosecha)",
+  "employee_percent": null,
+  "employee_amount": null,
+  "creator_id": "1",
+  "updater_id": "1",
+  "entity_id": "733",
+  "created_at": "2021-04-21 04:37:08.277786",
+  "updated_at": "2021-07-29 22:49:50.479777",
+  "employee_flexible_amount": false,
+  "entity_percent": null,
+  "entity_amount": null,
+  "employee_account_id": "49814",
+  "entity_account_from_id": "49815",
+  "apply_on_salary_greater_or_equal_than": null,
+  "employee_benefits_deductions_incidents_formula_id": "3",
+  "entity_benefits_deductions_incidents_formula_id": "4",
+  "entity_account_to_id": "49830",
+  "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+  "include_overtime_in_calculation": false,
+  "year_cycle_month_starts": null,
+  "semester_cycle_month_starts": null,
+  "quarter_cycle_month_starts": null,
+  "bimester_cycle_month_starts": null,
+  "include_sales_commissions_in_calculation": false,
+  "applies_to": "on-cycle",
+  "active": true,
+  "applies_to_contract_terminations": false
+}
 ```
 
 ### Crear un beneficio o deduccion
@@ -508,6 +870,41 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "zid": "11",
+  "name": "IGSS (cosecha)",
+  "employee_percent": null,
+  "employee_amount": null,
+  "creator_id": "1",
+  "updater_id": "1",
+  "entity_id": "733",
+  "created_at": "2021-04-21 04:37:08.277786",
+  "updated_at": "2021-07-29 22:49:50.479777",
+  "employee_flexible_amount": false,
+  "entity_percent": null,
+  "entity_amount": null,
+  "employee_account_id": "49814",
+  "entity_account_from_id": "49815",
+  "apply_on_salary_greater_or_equal_than": null,
+  "employee_benefits_deductions_incidents_formula_id": "3",
+  "entity_benefits_deductions_incidents_formula_id": "4",
+  "entity_account_to_id": "49830",
+  "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+  "include_overtime_in_calculation": false,
+  "year_cycle_month_starts": null,
+  "semester_cycle_month_starts": null,
+  "quarter_cycle_month_starts": null,
+  "bimester_cycle_month_starts": null,
+  "include_sales_commissions_in_calculation": false,
+  "applies_to": "on-cycle",
+  "active": true,
+  "applies_to_contract_terminations": false
+}
+```
+
 ### Actualizar un beneficio o deduccion
 
 ```bash
@@ -526,6 +923,41 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "zid": "11",
+  "name": "IGSS (cosecha)",
+  "employee_percent": null,
+  "employee_amount": null,
+  "creator_id": "1",
+  "updater_id": "1",
+  "entity_id": "733",
+  "created_at": "2021-04-21 04:37:08.277786",
+  "updated_at": "2021-07-29 22:49:50.479777",
+  "employee_flexible_amount": false,
+  "entity_percent": null,
+  "entity_amount": null,
+  "employee_account_id": "49814",
+  "entity_account_from_id": "49815",
+  "apply_on_salary_greater_or_equal_than": null,
+  "employee_benefits_deductions_incidents_formula_id": "3",
+  "entity_benefits_deductions_incidents_formula_id": "4",
+  "entity_account_to_id": "49830",
+  "apply_on_days_per_week_count_with_bonused_piecework_is": null,
+  "include_overtime_in_calculation": false,
+  "year_cycle_month_starts": null,
+  "semester_cycle_month_starts": null,
+  "quarter_cycle_month_starts": null,
+  "bimester_cycle_month_starts": null,
+  "include_sales_commissions_in_calculation": false,
+  "applies_to": "on-cycle",
+  "active": true,
+  "applies_to_contract_terminations": false
+}
+```
+
 ### Borrar un beneficio o deduccion
 
 ```bash
@@ -538,6 +970,8 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_benefits_deductions/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar metodos de pago
 
 ```bash
@@ -547,6 +981,38 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/payroll_payment_methods.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 2,
+    "zid": 1,
+    "active": true,
+    "name": "transferencia G&T",
+    "payroll_account_id": 1,
+    "creator_id": 2,
+    "updater_id": null,
+    "entity_id": 2,
+    "created_at": "2021-05-01T00:18:28.405Z",
+    "updated_at": "2021-05-01T00:18:28.405Z",
+    "payroll_run_account_id": null
+  },
+  {
+    "id": 3,
+    "zid": 2,
+    "active": true,
+    "name": "transferencia ACH",
+    "payroll_account_id": 1,
+    "creator_id": 2,
+    "updater_id": null,
+    "entity_id": 2,
+    "created_at": "2021-08-31T21:21:03.141Z",
+    "updated_at": "2021-08-31T21:21:03.141Z",
+    "payroll_run_account_id": null
+  }
+]
 ```
 
 ### Ver un metodo de pago
@@ -560,6 +1026,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2",
+  "zid": "1",
+  "active": true,
+  "name": "transferencia G&T",
+  "payroll_account_id": "13701",
+  "creator_id": "2",
+  "updater_id": null,
+  "entity_id": "2",
+  "created_at": "2021-05-01 00:18:28.405869",
+  "updated_at": "2021-05-01 00:18:28.405869",
+  "payroll_run_account_id": null
+}
+```
+
 ### Obtener estructura para crear un metodo de pago
 
 ```bash
@@ -571,6 +1054,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_payment_methods/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "name": null,
+  "payroll_account_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "payroll_run_account_id": null
+}
+```
+
 ### Obtener estructura para editar un metodo de pago
 
 ```bash
@@ -580,6 +1080,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/payroll_payment_methods/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2",
+  "zid": "1",
+  "active": true,
+  "name": "transferencia G&T",
+  "payroll_account_id": "13701",
+  "creator_id": "2",
+  "updater_id": null,
+  "entity_id": "2",
+  "created_at": "2021-05-01 00:18:28.405869",
+  "updated_at": "2021-05-01 00:18:28.405869",
+  "payroll_run_account_id": null
+}
 ```
 
 ### Crear un metodo de pago
@@ -602,6 +1119,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_payment_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2",
+  "zid": "1",
+  "active": true,
+  "name": "transferencia G&T",
+  "payroll_account_id": "13701",
+  "creator_id": "2",
+  "updater_id": null,
+  "entity_id": "2",
+  "created_at": "2021-05-01 00:18:28.405869",
+  "updated_at": "2021-05-01 00:18:28.405869",
+  "payroll_run_account_id": null
+}
+```
+
 ### Actualizar un metodo de pago
 
 ```bash
@@ -619,6 +1153,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2",
+  "zid": "1",
+  "active": true,
+  "name": "transferencia G&T",
+  "payroll_account_id": "13701",
+  "creator_id": "2",
+  "updater_id": null,
+  "entity_id": "2",
+  "created_at": "2021-05-01 00:18:28.405869",
+  "updated_at": "2021-05-01 00:18:28.405869",
+  "payroll_run_account_id": null
+}
+```
+
 ### Borrar un metodo de pago
 
 ```bash
@@ -631,6 +1182,8 @@ curl -v \
   https://app.zauru.com/payroll/settings/payroll_payment_methods/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar tipos de incidencia
 
 ```bash
@@ -640,6 +1193,54 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/incident_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "zid": 1,
+    "code": "",
+    "name": "adelanto de salario",
+    "category": "",
+    "deduction_as_pto_days": null,
+    "deduction_amount": "-1000.0",
+    "deduction_percent": null,
+    "flexible_deduction_per_incident": true,
+    "description": "",
+    "account_for_percent_id": null,
+    "creator_id": 2,
+    "updater_id": null,
+    "entity_id": 2,
+    "created_at": "2021-07-31T16:36:22.528Z",
+    "updated_at": "2021-07-31T16:36:22.528Z",
+    "benefits_deductions_incidents_formula_id": null,
+    "account_for_amount_id": 3
+  },
+  {
+    "id": 4,
+    "active": true,
+    "zid": 2,
+    "code": "",
+    "name": "cobro por adelanto de salario",
+    "category": "",
+    "deduction_as_pto_days": null,
+    "deduction_amount": "-425.0",
+    "deduction_percent": null,
+    "flexible_deduction_per_incident": true,
+    "description": "",
+    "account_for_percent_id": null,
+    "creator_id": 5,
+    "updater_id": null,
+    "entity_id": 2,
+    "created_at": "2021-12-22T20:29:34.398Z",
+    "updated_at": "2021-12-22T20:29:34.398Z",
+    "benefits_deductions_incidents_formula_id": null,
+    "account_for_amount_id": 3
+  }
+]
 ```
 
 ### Ver un tipo de incidencia
@@ -653,6 +1254,31 @@ curl -v \
   https://app.zauru.com/payroll/settings/incident_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "34",
+  "active": true,
+  "zid": "9",
+  "code": null,
+  "name": "PAGO UNIFORMES ADMON.",
+  "category": null,
+  "deduction_as_pto_days": null,
+  "deduction_amount": null,
+  "deduction_percent": null,
+  "flexible_deduction_per_incident": true,
+  "description": null,
+  "account_for_percent_id": null,
+  "creator_id": "239",
+  "updater_id": null,
+  "entity_id": "4",
+  "created_at": "2022-06-16 15:28:59.740629",
+  "updated_at": "2022-06-16 15:28:59.740629",
+  "benefits_deductions_incidents_formula_id": null,
+  "account_for_amount_id": "21120"
+}
+```
+
 ### Obtener estructura para crear un tipo de incidencia
 
 ```bash
@@ -664,6 +1290,31 @@ curl -v \
   https://app.zauru.com/payroll/settings/incident_types/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "zid": null,
+  "code": null,
+  "name": null,
+  "category": null,
+  "deduction_as_pto_days": null,
+  "deduction_amount": null,
+  "deduction_percent": null,
+  "flexible_deduction_per_incident": false,
+  "description": null,
+  "account_for_percent_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "benefits_deductions_incidents_formula_id": null,
+  "account_for_amount_id": null
+}
+```
+
 ### Obtener estructura para editar un tipo de incidencia
 
 ```bash
@@ -673,6 +1324,31 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/incident_types/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "34",
+  "active": true,
+  "zid": "9",
+  "code": null,
+  "name": "PAGO UNIFORMES ADMON.",
+  "category": null,
+  "deduction_as_pto_days": null,
+  "deduction_amount": null,
+  "deduction_percent": null,
+  "flexible_deduction_per_incident": true,
+  "description": null,
+  "account_for_percent_id": null,
+  "creator_id": "239",
+  "updater_id": null,
+  "entity_id": "4",
+  "created_at": "2022-06-16 15:28:59.740629",
+  "updated_at": "2022-06-16 15:28:59.740629",
+  "benefits_deductions_incidents_formula_id": null,
+  "account_for_amount_id": "21120"
+}
 ```
 
 ### Crear un tipo de incidencia
@@ -696,6 +1372,31 @@ curl -v \
   https://app.zauru.com/payroll/settings/incident_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "34",
+  "active": true,
+  "zid": "9",
+  "code": null,
+  "name": "PAGO UNIFORMES ADMON.",
+  "category": null,
+  "deduction_as_pto_days": null,
+  "deduction_amount": null,
+  "deduction_percent": null,
+  "flexible_deduction_per_incident": true,
+  "description": null,
+  "account_for_percent_id": null,
+  "creator_id": "239",
+  "updater_id": null,
+  "entity_id": "4",
+  "created_at": "2022-06-16 15:28:59.740629",
+  "updated_at": "2022-06-16 15:28:59.740629",
+  "benefits_deductions_incidents_formula_id": null,
+  "account_for_amount_id": "21120"
+}
+```
+
 ### Actualizar un tipo de incidencia
 
 ```bash
@@ -714,6 +1415,31 @@ curl -v \
   https://app.zauru.com/payroll/settings/incident_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "34",
+  "active": true,
+  "zid": "9",
+  "code": null,
+  "name": "PAGO UNIFORMES ADMON.",
+  "category": null,
+  "deduction_as_pto_days": null,
+  "deduction_amount": null,
+  "deduction_percent": null,
+  "flexible_deduction_per_incident": true,
+  "description": null,
+  "account_for_percent_id": null,
+  "creator_id": "239",
+  "updater_id": null,
+  "entity_id": "4",
+  "created_at": "2022-06-16 15:28:59.740629",
+  "updated_at": "2022-06-16 15:28:59.740629",
+  "benefits_deductions_incidents_formula_id": null,
+  "account_for_amount_id": "21120"
+}
+```
+
 ### Borrar un tipo de incidencia
 
 ```bash
@@ -726,6 +1452,8 @@ curl -v \
   https://app.zauru.com/payroll/settings/incident_types/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar tipos de tiempo personal
 
 ```bash
@@ -735,6 +1463,38 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/personal_time_off_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "active": true,
+    "name": "Vacaciones pagadas",
+    "description": "",
+    "general_type": "",
+    "created_at": "2022-06-29T00:09:29.275Z",
+    "updated_at": "2022-06-29T00:09:29.275Z",
+    "entity_id": 2,
+    "creator_id": 2,
+    "updater_id": 2
+  },
+  {
+    "id": 3,
+    "zid": 2,
+    "active": true,
+    "name": "Vacaciones",
+    "description": "Dias de vacaciones anuales",
+    "general_type": "vacation",
+    "created_at": "2026-08-06T04:14:33.102Z",
+    "updated_at": "2026-08-06T04:14:33.102Z",
+    "entity_id": 2,
+    "creator_id": 4,
+    "updater_id": 4
+  }
+]
 ```
 
 ### Ver un tipo de tiempo personal
@@ -748,6 +1508,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "Vacaciones",
+  "description": null,
+  "general_type": null,
+  "created_at": "2022-01-06 16:52:05.233084",
+  "updated_at": "2022-01-06 16:52:05.233084",
+  "entity_id": "4",
+  "creator_id": "1692",
+  "updater_id": "1692"
+}
+```
+
 ### Obtener estructura para crear un tipo de tiempo personal
 
 ```bash
@@ -759,6 +1536,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/personal_time_off_types/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "name": null,
+  "description": null,
+  "general_type": null,
+  "created_at": null,
+  "updated_at": null,
+  "entity_id": 1,
+  "creator_id": null,
+  "updater_id": null
+}
+```
+
 ### Obtener estructura para editar un tipo de tiempo personal
 
 ```bash
@@ -768,6 +1562,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/personal_time_off_types/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "Vacaciones",
+  "description": null,
+  "general_type": null,
+  "created_at": "2022-01-06 16:52:05.233084",
+  "updated_at": "2022-01-06 16:52:05.233084",
+  "entity_id": "4",
+  "creator_id": "1692",
+  "updater_id": "1692"
+}
 ```
 
 ### Crear un tipo de tiempo personal
@@ -790,6 +1601,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/personal_time_off_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "Vacaciones",
+  "description": null,
+  "general_type": null,
+  "created_at": "2022-01-06 16:52:05.233084",
+  "updated_at": "2022-01-06 16:52:05.233084",
+  "entity_id": "4",
+  "creator_id": "1692",
+  "updater_id": "1692"
+}
+```
+
 ### Actualizar un tipo de tiempo personal
 
 ```bash
@@ -808,6 +1636,23 @@ curl -v \
   https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "Vacaciones",
+  "description": null,
+  "general_type": null,
+  "created_at": "2022-01-06 16:52:05.233084",
+  "updated_at": "2022-01-06 16:52:05.233084",
+  "entity_id": "4",
+  "creator_id": "1692",
+  "updater_id": "1692"
+}
+```
+
 ### Borrar un tipo de tiempo personal
 
 ```bash
@@ -819,3 +1664,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/settings/personal_time_off_types/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

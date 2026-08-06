@@ -162,6 +162,15 @@ curl -v \
   https://app.zauru.com/accounting/entries.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### Crear transaccion CON imagen
 ```bash
 curl -v \
@@ -188,6 +197,51 @@ curl -v \
   https://app.zauru.com/accounting/entries.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "54445565",
+    "zid": "270",
+    "printable": false,
+    "invoice": null,
+    "id_number": null,
+    "reference": "INGRESO INVENTARIO 19.05.2026",
+    "date": "2026-05-19",
+    "income": null,
+    "memo": null,
+    "image": null,
+    "verified": false,
+    "audited": false,
+    "payee_id": "1997430",
+    "entity_id": "1303",
+    "reconciliation_id": null,
+    "updater_id": "1274",
+    "account_id": "77704",
+    "amount": "750.00",
+    "created_at": "2026-05-19 11:31:08.795876",
+    "updated_at": "2026-05-19 11:31:08.836408",
+    "splits_count": "1",
+    "invoice_date": "2026-05-19",
+    "pdf": null,
+    "contract_id": null,
+    "verified_at": null,
+    "audited_at": null,
+    "conciliation_id": null,
+    "split_conciliation_id": null,
+    "endorsement_restriction": false,
+    "exempt": false,
+    "small_taxpayer": false,
+    "external_image_url": null,
+    "reception_id": "552832",
+    "inventory_audit_id": null,
+    "source_doc_type_id": "4",
+    "monthly_entry_source_doc_type_id": "225289",
+    "cost_center_id": null
+  }
+]
+```
+
 ### Borrar una transaccion
 ```bash
 curl -v \
@@ -197,6 +251,15 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/accounting/entries/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "base": [
+    "Translation missing: es-GT.NotDestroyable"
+  ]
+}
 ```
 
 ### Obtener detalle de una transaccion
@@ -209,6 +272,84 @@ curl -v \
   https://app.zauru.com/accounting/entries/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": false,
+  "invoice": "A-1050",
+  "id_number": null,
+  "reference": "",
+  "date": "2010-04-07",
+  "income": false,
+  "memo": "",
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 2,
+  "amount": "300.0",
+  "created_at": "2010-04-08T05:22:31.000Z",
+  "updated_at": "2010-04-08T05:22:31.000Z",
+  "splits_count": 1,
+  "invoice_date": null,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null,
+  "account": {
+    "id": 2,
+    "zid": 2,
+    "name": "efectivo",
+    "description": ""
+  },
+  "splits": [
+    {
+      "id": 1,
+      "entry_id": 4,
+      "amount": "300.0",
+      "account_id": 5,
+      "exchange_amount": null,
+      "created_at": "2010-04-08T05:22:31.000Z",
+      "updated_at": "2010-04-08T05:22:31.000Z",
+      "reference": null,
+      "verified": false,
+      "verified_at": null,
+      "audited": false,
+      "audited_at": null,
+      "cost_center_id": null,
+      "entity_id": 1
+    }
+  ],
+  "submissions": []
+}
+```
+
 ### Obtener el formulario de nueva transaccion
 ```bash
 curl -v \
@@ -219,6 +360,49 @@ curl -v \
   https://app.zauru.com/accounting/entries/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "54445565",
+  "zid": "270",
+  "printable": false,
+  "invoice": null,
+  "id_number": null,
+  "reference": "INGRESO INVENTARIO 19.05.2026",
+  "date": "2026-05-19",
+  "income": null,
+  "memo": null,
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": "1997430",
+  "entity_id": "1303",
+  "reconciliation_id": null,
+  "updater_id": "1274",
+  "account_id": "77704",
+  "amount": "750.00",
+  "created_at": "2026-05-19 11:31:08.795876",
+  "updated_at": "2026-05-19 11:31:08.836408",
+  "splits_count": "1",
+  "invoice_date": "2026-05-19",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": "552832",
+  "inventory_audit_id": null,
+  "source_doc_type_id": "4",
+  "monthly_entry_source_doc_type_id": "225289",
+  "cost_center_id": null
+}
+```
+
 ### Obtener el formulario de edicion de una transaccion
 ```bash
 curl -v \
@@ -227,6 +411,59 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/entries/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": false,
+  "invoice": "A-1050",
+  "id_number": null,
+  "reference": "",
+  "date": "2010-04-07",
+  "income": false,
+  "memo": "",
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 2,
+  "amount": "300.0",
+  "created_at": "2010-04-08T05:22:31.000Z",
+  "updated_at": "2010-04-08T05:22:31.000Z",
+  "splits_count": 1,
+  "invoice_date": null,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
 ```
 
 ### Actualizar una transaccion
@@ -262,6 +499,18 @@ curl -v \
   https://app.zauru.com/accounting/entries/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "amount": [
+    "No coinciden los montos"
+  ],
+  "date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### Listado de transacciones (datatables)
 ```bash
 curl -v \
@@ -290,6 +539,38 @@ curl -v \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "entity_id": 2,
+    "user_id": 3,
+    "source_doc_type": 8,
+    "reference": null,
+    "month": 8,
+    "year": 2015,
+    "entries_count": 0,
+    "created_at": "2023-01-17T02:48:04.404Z",
+    "updated_at": "2023-01-17T02:48:04.404Z"
+  },
+  {
+    "id": 4,
+    "zid": 4,
+    "entity_id": 2,
+    "user_id": 3,
+    "source_doc_type": 9,
+    "reference": null,
+    "month": 8,
+    "year": 2015,
+    "entries_count": 0,
+    "created_at": "2023-01-17T02:48:04.408Z",
+    "updated_at": "2023-01-17T02:48:04.408Z"
+  }
+]
+```
+
 ### Obtener detalle de un tipo de documento fuente mensual
 ```bash
 curl -v \
@@ -298,6 +579,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "228408",
+  "zid": "40",
+  "entity_id": "1303",
+  "user_id": "1",
+  "source_doc_type": "3",
+  "reference": null,
+  "month": "6",
+  "year": "2026",
+  "entries_count": "4",
+  "created_at": "2026-05-29 03:00:44.112386",
+  "updated_at": "2026-05-29 03:00:44.112386"
+}
 ```
 
 ### Consultar las transacciones de un tipo de documento fuente mensual
@@ -310,6 +608,23 @@ curl -v \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types/1/show_entries.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "228408",
+  "zid": "40",
+  "entity_id": "1303",
+  "user_id": "1",
+  "source_doc_type": "3",
+  "reference": null,
+  "month": "6",
+  "year": "2026",
+  "entries_count": "4",
+  "created_at": "2026-05-29 03:00:44.112386",
+  "updated_at": "2026-05-29 03:00:44.112386"
+}
+```
+
 ### Obtener el formulario de nuevo tipo de documento fuente mensual
 ```bash
 curl -v \
@@ -318,6 +633,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "entity_id": 1,
+  "user_id": null,
+  "source_doc_type": 0,
+  "reference": null,
+  "month": 8,
+  "year": 2026,
+  "entries_count": 0,
+  "created_at": null,
+  "updated_at": null
+}
 ```
 
 ### Crear un tipo de documento fuente mensual
@@ -339,6 +671,23 @@ curl -v \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "228408",
+  "zid": "40",
+  "entity_id": "1303",
+  "user_id": "1",
+  "source_doc_type": "3",
+  "reference": null,
+  "month": "6",
+  "year": "2026",
+  "entries_count": "4",
+  "created_at": "2026-05-29 03:00:44.112386",
+  "updated_at": "2026-05-29 03:00:44.112386"
+}
+```
+
 ### Borrar un tipo de documento fuente mensual
 ```bash
 curl -v \
@@ -349,3 +698,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/monthly_entry_source_doc_types/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

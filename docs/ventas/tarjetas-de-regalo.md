@@ -143,6 +143,26 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 2,
+    "active": true,
+    "zid": 1,
+    "name": "Gift Card Navideña",
+    "currency_id": 1,
+    "fixed_value": "100.0",
+    "entity_id": 2,
+    "updater_id": 3,
+    "item_id": 4,
+    "created_at": "2026-08-06T04:14:02.710Z",
+    "updated_at": "2026-08-06T04:14:02.710Z",
+    "code": "GC-NAV"
+  }
+]
+```
+
 ### Ver detalle de un tipo de tarjeta de regalo
 ```bash
 curl -v \
@@ -153,6 +173,11 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener plantilla para crear un tipo de tarjeta de regalo
 ```bash
 curl -v \
@@ -161,6 +186,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/settings/gift_card_types/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "zid": null,
+  "name": null,
+  "currency_id": null,
+  "fixed_value": null,
+  "entity_id": 1,
+  "updater_id": null,
+  "item_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "code": null
+}
 ```
 
 ### Crear tipo de tarjeta de regalo
@@ -184,6 +227,24 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 3,
+  "active": true,
+  "zid": 2,
+  "name": "Gift Card Navideña",
+  "currency_id": 1,
+  "fixed_value": "100.0",
+  "entity_id": 2,
+  "updater_id": 3,
+  "item_id": 4,
+  "created_at": "2026-08-06T04:16:42.684Z",
+  "updated_at": "2026-08-06T04:16:42.684Z",
+  "code": "GC-NAV"
+}
+```
+
 ### Actualizar un tipo de tarjeta de regalo
 ```bash
 curl -v \
@@ -202,6 +263,11 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Eliminar un tipo de tarjeta de regalo
 ```bash
 curl -v \
@@ -213,6 +279,8 @@ curl -v \
   https://app.zauru.com/sales/settings/gift_card_types/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar tarjetas de regalo activas
 ```bash
 curl -v \
@@ -221,6 +289,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/gift_cards.json?scope=active
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[]
 ```
 
 ### Consultar saldo de una tarjeta de regalo
@@ -233,6 +306,14 @@ curl -v \
   https://app.zauru.com/sales/gift_cards/lookup.json?id_number=GC-12345
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "success": false,
+  "message": "Tarjeta no encontrada"
+}
+```
+
 ### Ver detalle de una tarjeta de regalo
 ```bash
 curl -v \
@@ -241,4 +322,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/gift_cards/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

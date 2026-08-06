@@ -159,6 +159,65 @@ curl -v \
   https://app.zauru.com/settings/items/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "933677",
+  "zid": "97",
+  "active": false,
+  "stockable": true,
+  "sellable": true,
+  "manufacturable": false,
+  "purchasable": true,
+  "code": "TOP-COC-NEG ESTELAR-SHEILA",
+  "ean13": null,
+  "name": "TOP BLANCO ESTELAR COCINA SHEILA",
+  "image": null,
+  "item_category_id": null,
+  "measurement_unit": null,
+  "weight": null,
+  "volume": null,
+  "description": null,
+  "reorder_point": null,
+  "economic_order_quantity": null,
+  "months_warranty": null,
+  "entity_id": "1303",
+  "updater_id": "1274",
+  "created_at": "2026-03-18 13:33:43.545197",
+  "updated_at": "2026-06-21 05:05:55.796403",
+  "pays_vat": true,
+  "tariff_rate": "0",
+  "pdf": null,
+  "product_type": "1",
+  "payee_id": null,
+  "average_cost": null,
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "extra_tax_1": "0",
+  "extra_tax_2": "0",
+  "quotable": true,
+  "ecommerce": false,
+  "image2": null,
+  "image3": null,
+  "image4": null,
+  "image5": null,
+  "msrp": null,
+  "tax1_use_msrp": false,
+  "tax2_use_msrp": false,
+  "vendor_code": null,
+  "stocks_only_integer": false,
+  "brand_id": null,
+  "color": "#cccccc",
+  "item_country_code_id": null,
+  "youtube_video_url": null,
+  "inventory_account_id": null,
+  "master_item_id": null,
+  "gemma_q4f16_embedding": null,
+  "force_as_good_for_document_external_storage_service": false,
+  "extra_description": null
+}
+```
+
 ### datatables de items
 ```bash
 curl -v \
@@ -169,6 +228,47 @@ curl -v \
   -X POST \
   -d '{"start": "0", "length": "25"}' \
   https://app.zauru.com/settings/items/datatables.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 190,
+  "recordsFiltered": 190,
+  "data": [
+    {
+      "zid": "<a href=\"/settings/items/1\">149</a>",
+      "cod": "<a href=\"/settings/items/1\"></a>",
+      "act": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span>",
+      "name": "<a href=\"/settings/items/1\">Cambio de monitor reacondicionado por monitor nuevo Dell 19 pulgadas</a>",
+      "stck": "<span style=\"color: red;\"><i class=\"fa fa-times\" alt=\"times\"></i></span> ",
+      "sell": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span> CRM",
+      "purch": "<span style=\"color: red;\"><i class=\"fa fa-times\" alt=\"times\"></i></span>",
+      "cat": "Hardware",
+      "cat_note": "",
+      "vat": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span>",
+      "warr": "",
+      "ra": "<a title=\"Detalles\" href=\"/settings/items/1\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/settings/items/1/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/settings/items/1?destroy=true\"><i class=\"fa fa-trash-o\"></i></a><a title=\"Editar imágenes\" href=\"/settings/items/1/edit_images\"><i class=\"fa fa-file-image-o\"></i></a>",
+      "DT_RowId": "settings-item-351218"
+    },
+    {
+      "zid": "<a href=\"/settings/items/2\">133</a>",
+      "cod": "<a href=\"/settings/items/2\"></a>",
+      "act": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span>",
+      "name": "<a href=\"/settings/items/2\">Gaveta de dinero APTUS con puerto RJ12 de impresora de tickets, 5 secciones de billetes, 8 secciones de monedas, ranuras frontales, color negro</a>",
+      "stck": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span> N ",
+      "sell": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span> CRM",
+      "purch": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span>",
+      "cat": "Hardware",
+      "cat_note": "",
+      "vat": "<span style=\"color: green;\"><i class=\"fa fa-check\" alt=\"check\"></i></span>",
+      "warr": "",
+      "ra": "<a title=\"Detalles\" href=\"/settings/items/2\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/settings/items/2/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Editar imágenes\" href=\"/settings/items/2/edit_images\"><i class=\"fa fa-file-image-o\"></i></a>",
+      "DT_RowId": "settings-item-344478"
+    }
+  ]
+}
 ```
 
 ### obtener nube de etiquetas de items
@@ -199,6 +299,95 @@ curl -v \
   https://app.zauru.com/settings/items.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "active": true,
+  "stockable": false,
+  "sellable": true,
+  "manufacturable": false,
+  "purchasable": false,
+  "code": null,
+  "ean13": null,
+  "name": "Producto prueba",
+  "image": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "item_category_id": null,
+  "measurement_unit": null,
+  "weight": null,
+  "volume": null,
+  "description": null,
+  "reorder_point": null,
+  "economic_order_quantity": null,
+  "months_warranty": null,
+  "entity_id": 3,
+  "updater_id": 4,
+  "created_at": "2026-08-06T04:16:54.540Z",
+  "updated_at": "2026-08-06T04:16:54.540Z",
+  "pays_vat": true,
+  "tariff_rate": 0.0,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "product_type": 1,
+  "payee_id": null,
+  "average_cost": null,
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "extra_tax_1": 0.0,
+  "extra_tax_2": 0.0,
+  "quotable": true,
+  "ecommerce": false,
+  "image2": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "image3": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "image4": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "image5": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "msrp": null,
+  "tax1_use_msrp": false,
+  "tax2_use_msrp": false,
+  "vendor_code": null,
+  "stocks_only_integer": true,
+  "brand_id": null,
+  "color": "#CCCCCC",
+  "item_country_code_id": null,
+  "youtube_video_url": null,
+  "inventory_account_id": null,
+  "master_item_id": null,
+  "gemma_q4f16_embedding": null,
+  "force_as_good_for_document_external_storage_service": false,
+  "extra_description": null
+}
+```
+
 ### actualizar item
 ```bash
 curl -v \
@@ -215,6 +404,65 @@ curl -v \
     }
   }' \
   https://app.zauru.com/settings/items/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "933677",
+  "zid": "97",
+  "active": false,
+  "stockable": true,
+  "sellable": true,
+  "manufacturable": false,
+  "purchasable": true,
+  "code": "TOP-COC-NEG ESTELAR-SHEILA",
+  "ean13": null,
+  "name": "TOP BLANCO ESTELAR COCINA SHEILA",
+  "image": null,
+  "item_category_id": null,
+  "measurement_unit": null,
+  "weight": null,
+  "volume": null,
+  "description": null,
+  "reorder_point": null,
+  "economic_order_quantity": null,
+  "months_warranty": null,
+  "entity_id": "1303",
+  "updater_id": "1274",
+  "created_at": "2026-03-18 13:33:43.545197",
+  "updated_at": "2026-06-21 05:05:55.796403",
+  "pays_vat": true,
+  "tariff_rate": "0",
+  "pdf": null,
+  "product_type": "1",
+  "payee_id": null,
+  "average_cost": null,
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "extra_tax_1": "0",
+  "extra_tax_2": "0",
+  "quotable": true,
+  "ecommerce": false,
+  "image2": null,
+  "image3": null,
+  "image4": null,
+  "image5": null,
+  "msrp": null,
+  "tax1_use_msrp": false,
+  "tax2_use_msrp": false,
+  "vendor_code": null,
+  "stocks_only_integer": false,
+  "brand_id": null,
+  "color": "#cccccc",
+  "item_country_code_id": null,
+  "youtube_video_url": null,
+  "inventory_account_id": null,
+  "master_item_id": null,
+  "gemma_q4f16_embedding": null,
+  "force_as_good_for_document_external_storage_service": false,
+  "extra_description": null
+}
 ```
 
 ### actualizar variaciones de item
@@ -240,6 +488,13 @@ curl -v \
   https://app.zauru.com/settings/items/1/update_item_variations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### destruir item
 ```bash
 curl -v \
@@ -250,6 +505,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/items/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### actualizar imágenes del item
 ```bash
@@ -268,6 +525,13 @@ curl -v \
   https://app.zauru.com/settings/items/1/update_images.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
+```
+
 Nota: Solo se puede eliminar el item si no tiene # de serie, lotes, aparece a un envío, aparece a un paquete, aparece a una factura, aparece en una orden de compra o está seleccionado en algún descuentos de items.
 
 ### listado de categorías de items
@@ -278,6 +542,52 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/item_categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "name": "cuotas distribuidor",
+    "notes": "super categoría",
+    "updater_id": 2,
+    "entity_id": 3,
+    "created_at": "2014-03-19T21:34:47.179Z",
+    "updated_at": "2020-06-10T21:09:56.741Z",
+    "items_count": 13,
+    "bundles_count": 1,
+    "item_super_category_id": null,
+    "color": "#ff0000",
+    "image": {
+      "url": null,
+      "thumbnail_fill": {
+        "url": null
+      }
+    },
+    "zid": 2
+  },
+  {
+    "id": 4,
+    "name": "Usuarios",
+    "notes": "",
+    "updater_id": 2,
+    "entity_id": 3,
+    "created_at": "2023-12-11T04:35:01.981Z",
+    "updated_at": "2023-12-11T04:35:01.981Z",
+    "items_count": 7,
+    "bundles_count": 0,
+    "item_super_category_id": null,
+    "color": "#ff0000",
+    "image": {
+      "url": null,
+      "thumbnail_fill": {
+        "url": null
+      }
+    },
+    "zid": 5
+  }
+]
 ```
 
 ### crear categoría de item
@@ -297,6 +607,18 @@ curl -v \
   https://app.zauru.com/settings/items/item_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ],
+  "entity": [
+    "es inválido"
+  ]
+}
+```
+
 ### obtener detalle de categoría de item
 ```bash
 curl -v \
@@ -305,6 +627,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/item_categories/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "10913",
+  "name": "FRITURAS",
+  "notes": null,
+  "updater_id": "2282",
+  "entity_id": "909",
+  "created_at": "2023-06-27 22:21:37.821581",
+  "updated_at": "2023-06-27 22:21:37.821581",
+  "items_count": "12",
+  "bundles_count": "0",
+  "item_super_category_id": null,
+  "color": "#ff0000",
+  "image": null,
+  "zid": "23"
+}
 ```
 
 ### actualizar categoría de item
@@ -323,6 +664,25 @@ curl -v \
   https://app.zauru.com/settings/items/item_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "10913",
+  "name": "FRITURAS",
+  "notes": null,
+  "updater_id": "2282",
+  "entity_id": "909",
+  "created_at": "2023-06-27 22:21:37.821581",
+  "updated_at": "2023-06-27 22:21:37.821581",
+  "items_count": "12",
+  "bundles_count": "0",
+  "item_super_category_id": null,
+  "color": "#ff0000",
+  "image": null,
+  "zid": "23"
+}
+```
+
 ### eliminar categoría de item
 ```bash
 curl -v \
@@ -333,6 +693,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/items/item_categories/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 
 ---
@@ -417,6 +779,31 @@ curl -v \
   https://app.zauru.com/settings/items/brands.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "name": "Marca Ejemplo",
+    "description": "Descripción de la marca",
+    "color": "#FF0000",
+    "image": {
+      "url": null,
+      "thumbnail_fill": {
+        "url": null
+      }
+    },
+    "entity_id": 2,
+    "creator_id": 3,
+    "updater_id": null,
+    "created_at": "2026-08-06T04:14:15.933Z",
+    "updated_at": "2026-08-06T04:14:15.933Z",
+    "items_count": null
+  }
+]
+```
+
 ### Crear marca
 ```bash
 curl -v \
@@ -435,6 +822,29 @@ curl -v \
   https://app.zauru.com/settings/items/brands.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "name": "Marca Ejemplo",
+  "description": "Descripción de la marca",
+  "color": "#FF0000",
+  "image": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "entity_id": 2,
+  "creator_id": 3,
+  "updater_id": null,
+  "created_at": "2026-08-06T04:16:54.858Z",
+  "updated_at": "2026-08-06T04:16:54.858Z",
+  "items_count": null
+}
+```
+
 ### Exportar ítems
 ```bash
 curl -v \
@@ -443,6 +853,65 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/export.csv
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "933677",
+  "zid": "97",
+  "active": false,
+  "stockable": true,
+  "sellable": true,
+  "manufacturable": false,
+  "purchasable": true,
+  "code": "TOP-COC-NEG ESTELAR-SHEILA",
+  "ean13": null,
+  "name": "TOP BLANCO ESTELAR COCINA SHEILA",
+  "image": null,
+  "item_category_id": null,
+  "measurement_unit": null,
+  "weight": null,
+  "volume": null,
+  "description": null,
+  "reorder_point": null,
+  "economic_order_quantity": null,
+  "months_warranty": null,
+  "entity_id": "1303",
+  "updater_id": "1274",
+  "created_at": "2026-03-18 13:33:43.545197",
+  "updated_at": "2026-06-21 05:05:55.796403",
+  "pays_vat": true,
+  "tariff_rate": "0",
+  "pdf": null,
+  "product_type": "1",
+  "payee_id": null,
+  "average_cost": null,
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "extra_tax_1": "0",
+  "extra_tax_2": "0",
+  "quotable": true,
+  "ecommerce": false,
+  "image2": null,
+  "image3": null,
+  "image4": null,
+  "image5": null,
+  "msrp": null,
+  "tax1_use_msrp": false,
+  "tax2_use_msrp": false,
+  "vendor_code": null,
+  "stocks_only_integer": false,
+  "brand_id": null,
+  "color": "#cccccc",
+  "item_country_code_id": null,
+  "youtube_video_url": null,
+  "inventory_account_id": null,
+  "master_item_id": null,
+  "gemma_q4f16_embedding": null,
+  "force_as_good_for_document_external_storage_service": false,
+  "extra_description": null
+}
 ```
 
 ### Obtener ítems en JSON con todas las asociaciones
@@ -455,6 +924,114 @@ curl -v \
   https://app.zauru.com/settings/items/export.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "active": true,
+    "stockable": false,
+    "sellable": true,
+    "manufacturable": false,
+    "purchasable": false,
+    "code": "R-DZC-50-64",
+    "ean13": "",
+    "name": "Reportes a la medida (50 a 64)",
+    "item_category_id": 3,
+    "measurement_unit": "",
+    "weight": null,
+    "volume": null,
+    "description": "",
+    "reorder_point": null,
+    "economic_order_quantity": null,
+    "months_warranty": null,
+    "entity_id": 4,
+    "updater_id": 4,
+    "pays_vat": true,
+    "tariff_rate": 0.0,
+    "product_type": 1,
+    "payee_id": null,
+    "average_cost": null,
+    "fifo_cost": null,
+    "lifo_cost": null,
+    "extra_tax_1": 0.0,
+    "extra_tax_2": 0.0,
+    "quotable": true,
+    "ecommerce": false,
+    "msrp": null,
+    "tax1_use_msrp": false,
+    "tax2_use_msrp": false,
+    "vendor_code": "",
+    "stocks_only_integer": true,
+    "brand_id": null,
+    "color": "#cccccc",
+    "item_country_code_id": null,
+    "youtube_video_url": null,
+    "inventory_account_id": null,
+    "master_item_id": null,
+    "force_as_good_for_document_external_storage_service": false,
+    "extra_description": null,
+    "tags": [],
+    "item_category": {
+      "id": 3,
+      "name": "cuotas mensuales"
+    }
+  },
+  {
+    "id": 5,
+    "zid": 6,
+    "active": true,
+    "stockable": false,
+    "sellable": true,
+    "manufacturable": false,
+    "purchasable": false,
+    "code": "R-DZC-65-79",
+    "ean13": "",
+    "name": "Reportes a la medida (65 a 79)",
+    "item_category_id": 3,
+    "measurement_unit": "",
+    "weight": null,
+    "volume": null,
+    "description": "",
+    "reorder_point": null,
+    "economic_order_quantity": null,
+    "months_warranty": null,
+    "entity_id": 4,
+    "updater_id": 4,
+    "pays_vat": true,
+    "tariff_rate": 0.0,
+    "product_type": 1,
+    "payee_id": null,
+    "average_cost": null,
+    "fifo_cost": null,
+    "lifo_cost": null,
+    "extra_tax_1": 0.0,
+    "extra_tax_2": 0.0,
+    "quotable": true,
+    "ecommerce": false,
+    "msrp": null,
+    "tax1_use_msrp": false,
+    "tax2_use_msrp": false,
+    "vendor_code": "",
+    "stocks_only_integer": true,
+    "brand_id": null,
+    "color": "#cccccc",
+    "item_country_code_id": null,
+    "youtube_video_url": null,
+    "inventory_account_id": null,
+    "master_item_id": null,
+    "force_as_good_for_document_external_storage_service": false,
+    "extra_description": null,
+    "tags": [],
+    "item_category": {
+      "id": 3,
+      "name": "cuotas mensuales"
+    }
+  }
+]
+```
+
 ### API de Súper Categorías de Ítems
 
 #### Obtener listado de súper categorías
@@ -465,6 +1042,31 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/item_super_categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "name": "Electrónica",
+    "description": "Productos electrónicos",
+    "color": "#0000FF",
+    "image": {
+      "url": null,
+      "thumbnail_fill": {
+        "url": null
+      }
+    },
+    "entity_id": 2,
+    "creator_id": 3,
+    "updater_id": null,
+    "created_at": "2026-08-06T04:14:16.230Z",
+    "updated_at": "2026-08-06T04:14:16.230Z",
+    "item_categories_count": null
+  }
+]
 ```
 
 #### Crear súper categoría de ítem
@@ -485,6 +1087,29 @@ curl -v \
   https://app.zauru.com/settings/items/item_super_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "name": "Electrónica",
+  "description": "Productos electrónicos",
+  "color": "#0000FF",
+  "image": {
+    "url": null,
+    "thumbnail_fill": {
+      "url": null
+    }
+  },
+  "entity_id": 2,
+  "creator_id": 3,
+  "updater_id": null,
+  "created_at": "2026-08-06T04:16:55.160Z",
+  "updated_at": "2026-08-06T04:16:55.160Z",
+  "item_categories_count": null
+}
+```
+
 #### Actualizar súper categoría de ítem
 ```bash
 curl -v \
@@ -501,6 +1126,24 @@ curl -v \
   https://app.zauru.com/settings/items/item_super_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "800",
+  "zid": "1",
+  "name": "ANTIBIOTICO",
+  "description": null,
+  "color": "#f9b935",
+  "image": null,
+  "entity_id": "1173",
+  "creator_id": "942",
+  "updater_id": null,
+  "created_at": "2025-06-16 19:53:52.011749",
+  "updated_at": "2025-06-16 19:53:52.011749",
+  "item_categories_count": "3"
+}
+```
+
 #### Eliminar súper categoría de ítem
 ```bash
 curl -v \
@@ -512,6 +1155,8 @@ curl -v \
   https://app.zauru.com/settings/items/item_super_categories/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### API de Marcas de Ítems
 
 #### Obtener detalle de una marca
@@ -522,6 +1167,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/items/brands/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "198",
+  "zid": "75",
+  "name": "DOMICILIOS ",
+  "description": null,
+  "color": "#ffff00",
+  "image": null,
+  "entity_id": "1019",
+  "creator_id": "2596",
+  "updater_id": null,
+  "created_at": "2023-04-19 14:57:11.616538",
+  "updated_at": "2023-04-19 14:57:11.616538",
+  "items_count": "5"
+}
 ```
 
 #### Actualizar marca
@@ -540,6 +1203,24 @@ curl -v \
   https://app.zauru.com/settings/items/brands/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "198",
+  "zid": "75",
+  "name": "DOMICILIOS ",
+  "description": null,
+  "color": "#ffff00",
+  "image": null,
+  "entity_id": "1019",
+  "creator_id": "2596",
+  "updater_id": null,
+  "created_at": "2023-04-19 14:57:11.616538",
+  "updated_at": "2023-04-19 14:57:11.616538",
+  "items_count": "5"
+}
+```
+
 #### Eliminar marca
 ```bash
 curl -v \
@@ -550,6 +1231,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/items/brands/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### API de Importación de Ítems
 
@@ -569,6 +1252,11 @@ curl -v \
   https://app.zauru.com/settings/items/item_imports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 #### Crear importación de ítems con precios y existencias
 ```bash
 curl -v \
@@ -584,6 +1272,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/settings/items/item_stock_price_imports.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### API de Verificación de Ítems Faltantes
@@ -604,6 +1297,11 @@ curl -v \
   https://app.zauru.com/settings/items/item_import_checks.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 #### Crear ítems faltantes detectados
 ```bash
 curl -v \
@@ -619,4 +1317,11 @@ curl -v \
     "items_product_types": {"1": "0"}
   }' \
   https://app.zauru.com/settings/items/item_import_checks/create_missing_items.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
 ```

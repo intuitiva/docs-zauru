@@ -92,6 +92,13 @@ curl -v \
   https://app.zauru.com/production/closed_work_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener listado de ordenes de trabajo cerradas en formato DataTables
 
 Endpoint optimizado para la libreria DataTables con paginacion, ordenamiento, busqueda y filtrado por etiqueta.

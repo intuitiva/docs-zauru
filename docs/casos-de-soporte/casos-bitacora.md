@@ -55,6 +55,13 @@ curl -v \
   https://app.zauru.com/support/cases/1/create_log.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
+```
+
 ### crear una entrada de bitacora con delegados
 
 ```bash
@@ -72,4 +79,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/support/cases/1/create_log.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "errors": []
+}
 ```

@@ -82,6 +82,43 @@ curl -v \
   https://app.zauru.com/support/cases/datatables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 96,
+  "recordsFiltered": 96,
+  "data": [
+    {
+      "zid": "<a href=\"/support/cases/144690\">3537</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "06 de ago de 2026",
+      "srl": "",
+      "sym": "Pantalla rota",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"992929-0\" href=\"/sales/clients/1\">LUIS CASTILLO</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/144690\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/144690/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/144690?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/144690/close\"><i class=\"fa fa-check-square-o\"></i></a>",
+      "DT_RowId": "support-case-144690"
+    },
+    {
+      "zid": "<a href=\"/support/cases/65086\">3536</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "09 de jun de 2021",
+      "srl": "",
+      "sym": "quieren el equipo para hacer una limpieza extrema",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"\" href=\"/sales/clients/2\">ABS Bombas</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/65086\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/65086/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/65086?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/65086/close\"><i class=\"fa fa-check-square-o\"></i></a><a title=\"Cobrar\" href=\"/sales/payments/new_advance?client=647707\"><i class=\"fa fa-credit-card\"></i></a>",
+      "DT_RowId": "support-case-65086"
+    }
+  ]
+}
+```
+
 `length` es cuantos casos desea mostrar
 `order["0"]["column"]` es por que columna quiero ordenar
 `order["0"]["dir"]` es la direccion del orden en la columna seleccionada
@@ -117,6 +154,43 @@ curl -v \
   https://app.zauru.com/support/cases/datatables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 96,
+  "recordsFiltered": 96,
+  "data": [
+    {
+      "zid": "<a href=\"/support/cases/144690\">3537</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "06 de ago de 2026",
+      "srl": "",
+      "sym": "Pantalla rota",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"992929-0\" href=\"/sales/clients/1\">LUIS CASTILLO</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/144690\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/144690/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/144690?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/144690/close\"><i class=\"fa fa-check-square-o\"></i></a>",
+      "DT_RowId": "support-case-144690"
+    },
+    {
+      "zid": "<a href=\"/support/cases/65086\">3536</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "09 de jun de 2021",
+      "srl": "",
+      "sym": "quieren el equipo para hacer una limpieza extrema",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"\" href=\"/sales/clients/2\">ABS Bombas</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/65086\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/65086/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/65086?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/65086/close\"><i class=\"fa fa-check-square-o\"></i></a><a title=\"Cobrar\" href=\"/sales/payments/new_advance?client=647707\"><i class=\"fa fa-credit-card\"></i></a>",
+      "DT_RowId": "support-case-65086"
+    }
+  ]
+}
+```
+
 ### Filtrar por responsable
 
 Agregue el parametro `res` con el ID del empleado responsable:
@@ -144,6 +218,43 @@ curl -v \
     "res": "5"
   }' \
   https://app.zauru.com/support/cases/datatables.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 96,
+  "recordsFiltered": 96,
+  "data": [
+    {
+      "zid": "<a href=\"/support/cases/144690\">3537</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "06 de ago de 2026",
+      "srl": "",
+      "sym": "Pantalla rota",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"992929-0\" href=\"/sales/clients/1\">LUIS CASTILLO</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/144690\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/144690/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/144690?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/144690/close\"><i class=\"fa fa-check-square-o\"></i></a>",
+      "DT_RowId": "support-case-144690"
+    },
+    {
+      "zid": "<a href=\"/support/cases/65086\">3536</a>",
+      "cn": "",
+      "ref": "",
+      "dte": "09 de jun de 2021",
+      "srl": "",
+      "sym": "quieren el equipo para hacer una limpieza extrema",
+      "res": "vendedor@ejemplo.com",
+      "cli": "<a title=\"\" href=\"/sales/clients/2\">ABS Bombas</a>",
+      "ra": "<a title=\"Detalles\" href=\"/support/cases/65086\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/support/cases/65086/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/support/cases/65086?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "ra2": "<a title=\"Cerrar Caso\" href=\"/support/cases/65086/close\"><i class=\"fa fa-check-square-o\"></i></a><a title=\"Cobrar\" href=\"/sales/payments/new_advance?client=647707\"><i class=\"fa fa-credit-card\"></i></a>",
+      "DT_RowId": "support-case-65086"
+    }
+  ]
+}
 ```
 
 ### Filtrar por etiqueta (tag)
@@ -190,7 +301,7 @@ esto devolveria un JSON similar a este:
       "dte":"07 de ene de 2019",
       "srl":"# de serie",
       "sym":"sintoma observado",
-      "res":"responsable@zauru.com",
+      "res":"responsable@ejemplo.com",
       "cli":"<a href=\"/sales/clients/1\">Cliente con Queja</a>",
       "ra":"<a href=\"/support/cases/1\" title=\"Detalles\"><i class=\"fa fa-eye\"></i></a><a href=\"/support/cases/1/edit\" title=\"Editar\"><i class=\"fa fa-edit\"></i></a><a href=\"/support/cases/1?destroy=true\" data-confirm=\"\u00bfEsta seguro de destruirlo?\" data-method=\"delete\" rel=\"nofollow\" title=\"Destruirlo\"><i class=\"fa fa-trash-o\"></i></a>",
       "ra2":"<a href=\"/support/cases/1/close\" title=\"Cerrar Caso\"><i class=\"fa fa-check-square-o\"></i></a>",

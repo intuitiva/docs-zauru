@@ -46,7 +46,7 @@ Esto devolverá un JSON similar a este:
     "created_at":"2019-07-16T19:08:53Z",
     "creator":"Programador Estrella",
     "description":"prueba",
-    "entity_id":1,
+    "entity_id": 1,
     "id":1,
     "kind":"Entero",
     "name":"primera_variable",
@@ -58,7 +58,7 @@ Esto devolverá un JSON similar a este:
     "created_at":"2019-07-16T20:05:49Z",
     "creator":"Programador Estrella",
     "description":"segunda prueba",
-    "entity_id":1,
+    "entity_id": 1,
     "id":2,
     "kind":"Cadena",
     "name":"segunda_variable",
@@ -86,7 +86,7 @@ Esto devolverá un JSON similar a este:
   "created_at":"2019-07-16T20:05:49Z",
   "creator":"Programador Estrella",
   "description":"segunda prueba",
-  "entity_id":1,
+  "entity_id": 1,
   "id":2,
   "kind":"Cadena",
   "name":"segunda_variable",
@@ -122,7 +122,7 @@ Esto devolverá un JSON similar a este:
   "created_at":"2019-07-16T20:05:49Z",
   "creator":"Programador Estrella",
   "description":"segunda prueba",
-  "entity_id":1,
+  "entity_id": 1,
   "id":3,
   "kind":"Entero",
   "name":"tercera_variable",
@@ -176,6 +176,22 @@ curl -v \
   https://app.zauru.com/apps/webapp_vars/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "name": null,
+  "value": null,
+  "kind": null,
+  "user_id": null,
+  "entity_id": 1,
+  "description": null,
+  "creator": null,
+  "created_at": null,
+  "updated_at": null
+}
+```
+
 ### Editar variable
 ```bash
 curl -v \
@@ -184,4 +200,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/webapp_vars/3/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

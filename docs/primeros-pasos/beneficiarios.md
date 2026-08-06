@@ -163,6 +163,79 @@ curl -v \
   https://app.zauru.com/settings/payees.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "id_number": null,
+  "active": true,
+  "name": "Cliente Prueba",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": "alguna referencia",
+  "address_line_1": "1 calle 1-11",
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": 3,
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": 4,
+  "updater_id": 5,
+  "created_at": "2026-08-06T04:16:49.555Z",
+  "updated_at": "2026-08-06T04:16:49.555Z",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    },
+    "thumbnail": {
+      "url": null
+    },
+    "pos": {
+      "url": null
+    }
+  },
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Editar beneficiario
 ```bash
 curl -v \
@@ -183,6 +256,63 @@ curl -v \
   https://app.zauru.com/settings/payees/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Obtener detalles del beneficiario
 ```bash
 curl -v \
@@ -193,6 +323,63 @@ curl -v \
   https://app.zauru.com/settings/payees/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Obtener listado de categorías de beneficiarios
 ```bash
 curl -v \
@@ -201,6 +388,36 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/payee_categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "vendor": false,
+    "name": "4 a 6",
+    "notes": "",
+    "updater_id": 2,
+    "entity_id": 2,
+    "created_at": "2016-04-13T20:43:05.677Z",
+    "updated_at": "2016-04-29T23:53:50.077Z",
+    "price_list_id": 3,
+    "payees_count": 4
+  },
+  {
+    "id": 4,
+    "vendor": false,
+    "name": "Cliente Ejemplo, SRL",
+    "notes": "",
+    "updater_id": 5,
+    "entity_id": 2,
+    "created_at": "2026-05-21T01:44:53.134Z",
+    "updated_at": "2026-05-21T01:44:53.134Z",
+    "price_list_id": null,
+    "payees_count": 3
+  }
+]
 ```
 
 
@@ -262,6 +479,150 @@ curl -v \
   https://app.zauru.com/settings/payees.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": null,
+    "active": true,
+    "name": "Proveedor Ejemplo A, S.A.",
+    "vendor": true,
+    "buyer": false,
+    "tin": "1111111-1",
+    "reference": "Referencia Ejemplo",
+    "address_line_1": "9 Avenida 34-00, zona 11 Guatemala, Guatemala",
+    "address_line_2": null,
+    "delivery_address": null,
+    "currency_id": 3,
+    "credit_limit": "0.0",
+    "payee_category_id": null,
+    "web": null,
+    "phone": "",
+    "email": "",
+    "contact": "",
+    "contact_phone": null,
+    "contact_email": null,
+    "contact2": null,
+    "contact2_phone": null,
+    "contact2_email": null,
+    "notes": "",
+    "entity_id": 4,
+    "updater_id": 5,
+    "created_at": "2016-06-17T20:54:25.123Z",
+    "updated_at": "2016-06-17T20:54:25.123Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": null,
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 6
+  },
+  {
+    "id": 7,
+    "zid": 8,
+    "id_number": null,
+    "active": true,
+    "name": "Proveedor Ejemplo B, S.A.",
+    "vendor": true,
+    "buyer": false,
+    "tin": "2222222-0",
+    "reference": "",
+    "address_line_1": "21 Avenida 5-67, zona 11 Colonia El Mirador 1, Guatemala, Guatemala",
+    "address_line_2": null,
+    "delivery_address": null,
+    "currency_id": 3,
+    "credit_limit": "0.0",
+    "payee_category_id": null,
+    "web": null,
+    "phone": "5555-0005",
+    "email": "www.ejemplo.com",
+    "contact": "",
+    "contact_phone": null,
+    "contact_email": null,
+    "contact2": null,
+    "contact2_phone": null,
+    "contact2_email": null,
+    "notes": "",
+    "entity_id": 4,
+    "updater_id": 5,
+    "created_at": "2016-11-08T16:53:48.880Z",
+    "updated_at": "2016-11-08T16:53:48.880Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": null,
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 6
+  }
+]
+```
+
 ### Obtener listado de beneficiarios por tipo (datatables)
 ```bash
 curl -v \
@@ -272,6 +633,45 @@ curl -v \
   -X POST \
   -d '{"start": "0", "length": "25", "scope": "clients"}' \
   https://app.zauru.com/settings/payees/datatables.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 569,
+  "recordsFiltered": 569,
+  "data": [
+    {
+      "zid": "<a href=\"/settings/payees/109202\">521</a>",
+      "id_number": "<a href=\"/settings/payees/109202\"></a>",
+      "reference": "<a href=\"/settings/payees/109202\">RzM corp</a>",
+      "active": "<span style=\"color: red;\"><i class=\"fa fa-times\" alt=\"times\"></i></span>",
+      "name": "<a href=\"/settings/payees/109202\">Transemsa, S.A.</a>",
+      "tin": "3333333-3",
+      "address": "5 Avenida Ejemplo 19-96, Zona 14",
+      "payee_category": "4 a 6",
+      "phone": "5555-0006",
+      "email": "contabilidad@ejemplo.com",
+      "record_actions": "<a title=\"Detalles\" href=\"/settings/payees/109202\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/settings/payees/109202/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/settings/payees/109202?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "DT_RowId": "settings-payee-109202"
+    },
+    {
+      "zid": "<a href=\"/settings/payees/258696\">725</a>",
+      "id_number": "<a href=\"/settings/payees/258696\"></a>",
+      "reference": "<a href=\"/settings/payees/258696\">Romar</a>",
+      "active": "<span style=\"color: red;\"><i class=\"fa fa-times\" alt=\"times\"></i></span>",
+      "name": "<a href=\"/settings/payees/258696\">Servicios Empresariales Mercantiles, S.A. </a>",
+      "tin": "4444444-4",
+      "address": "Ciudad ",
+      "payee_category": "",
+      "phone": "5555-0007",
+      "email": "info@ejemplo.com",
+      "record_actions": "<a title=\"Detalles\" href=\"/settings/payees/258696\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/settings/payees/258696/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/settings/payees/258696?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "DT_RowId": "settings-payee-258696"
+    }
+  ]
+}
 ```
 
 ### Obtener nube de etiquetas de beneficiarios
@@ -296,6 +696,19 @@ curl -v \
   https://app.zauru.com/settings/payees/search_payee.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": null,
+  "id": null,
+  "address": "Ciudad",
+  "tin": "12345678-9",
+  "err": "No se pudo conectar con certificador",
+  "phone": null,
+  "pin": null
+}
+```
+
 ### Autocompletar beneficiario
 ```bash
 curl -v \
@@ -304,6 +717,13 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/autocomplete.json?term=cliente
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  "Buscar NIT cliente en Infile FEL"
+]
 ```
 
 ### Exportar beneficiarios
@@ -316,6 +736,63 @@ curl -v \
   https://app.zauru.com/settings/payees/export.csv
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Eliminar beneficiario
 ```bash
 curl -v \
@@ -326,6 +803,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/payees/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Sincronizar beneficiario con CRM
 ```bash
@@ -349,6 +828,14 @@ curl -v \
   https://app.zauru.com/settings/payees/search_payee_name.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": "",
+  "error": "no encontrado"
+}
+```
+
 ### Obtener beneficiario por NIT o CUI
 ```bash
 curl -v \
@@ -357,6 +844,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/get_payee.json?payee=12345678-9&pin=0
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": null,
+  "id": null,
+  "address": null,
+  "tin": null,
+  "email": null,
+  "phone": null,
+  "pin": null,
+  "foreign": false,
+  "client_for_export": false,
+  "country_code": null
+}
 ```
 
 ### Autocompletar beneficiario por CUI
@@ -369,6 +872,11 @@ curl -v \
   https://app.zauru.com/settings/payees/autocomplete_pin.json?term=123456789
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Autocompletar beneficiario extranjero
 ```bash
 curl -v \
@@ -377,6 +885,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/autocomplete_foreign_payee.json?term=cliente
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[]
 ```
 
 ### API de Categorías de Beneficiarios
@@ -389,6 +902,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees/payee_categories/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5999",
+  "vendor": false,
+  "name": "VIP",
+  "notes": null,
+  "updater_id": "1",
+  "entity_id": "1303",
+  "created_at": "2026-07-01 16:54:50.167055",
+  "updated_at": "2026-07-01 16:55:13.539278",
+  "price_list_id": "3936",
+  "payees_count": "1"
+}
 ```
 
 #### Crear categoría de beneficiario
@@ -409,6 +938,18 @@ curl -v \
   https://app.zauru.com/settings/payees/payee_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ],
+  "entity": [
+    "es inválido"
+  ]
+}
+```
+
 #### Actualizar categoría de beneficiario
 ```bash
 curl -v \
@@ -425,6 +966,22 @@ curl -v \
   https://app.zauru.com/settings/payees/payee_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5999",
+  "vendor": false,
+  "name": "VIP",
+  "notes": null,
+  "updater_id": "1",
+  "entity_id": "1303",
+  "created_at": "2026-07-01 16:54:50.167055",
+  "updated_at": "2026-07-01 16:55:13.539278",
+  "price_list_id": "3936",
+  "payees_count": "1"
+}
+```
+
 #### Eliminar categoría de beneficiario
 ```bash
 curl -v \
@@ -435,6 +992,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/payees/payee_categories/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### API de Importación de Beneficiarios
 
@@ -452,4 +1011,9 @@ curl -v \
     }
   }' \
   https://app.zauru.com/settings/payees/payee_imports.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

@@ -55,10 +55,10 @@ Esto devolverá un JSON similar a este:
 ```json
 [
    {
-	"item_id":1,
+	"item_id": 1,
 	"item_name":"Producto",
 	"item_code":"P1",
-	"stock_id":1,
+	"stock_id": 1,
 	"stock_available":100,
 	"stock_incoming":10,
 	"stock_outgoing":1,
@@ -87,9 +87,9 @@ Esto devolverá un JSON similar a este:
   "available":100,
   "outgoing":0,
   "incoming":0,
-  "1":{"agency_id":1,"available":33},
-  "2":{"agency_id":2,"available":33},
-  "3":{"agency_id":3,"available":34}
+  "1":{"agency_id": 1,"available":33},
+  "2":{"agency_id": 2,"available":33},
+  "3":{"agency_id": 3,"available":34}
 }
 ```
 
@@ -104,6 +104,20 @@ curl -v \
   https://app.zauru.com/inventories/stocks/all_warehouses.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "[25, 157]": {
+    "available": "0.0",
+    "id": 1
+  },
+  "[25, 308438]": {
+    "available": "1.0",
+    "id": 2
+  }
+}
+```
+
 #### Obtener el detalle de una existencia
 Devuelve el registro de existencia (stock) de un producto en una bodega específica.
 ```bash
@@ -113,6 +127,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/stocks/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5222027",
+  "entity_id": "1303",
+  "item_id": "938505",
+  "agency_id": "8248",
+  "available": "-18.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "reorder_point": "0.000000",
+  "economic_order_quantity": "0.000000",
+  "created_at": "2026-04-10 13:56:54.755088",
+  "updated_at": "2026-06-25 15:13:09.943073"
+}
 ```
 
 #### Actualizar el punto de re orden de una existencia
@@ -133,6 +164,23 @@ curl -v \
   https://app.zauru.com/inventories/stocks/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5222027",
+  "entity_id": "1303",
+  "item_id": "938505",
+  "agency_id": "8248",
+  "available": "-18.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "reorder_point": "0.000000",
+  "economic_order_quantity": "0.000000",
+  "created_at": "2026-04-10 13:56:54.755088",
+  "updated_at": "2026-06-25 15:13:09.943073"
+}
+```
+
 #### Vaciar las existencias de una bodega
 Elimina todas las existencias de una bodega. La operación se ejecuta de forma asíncrona en segundo plano. El `id` en la URL corresponde al identificador de la bodega (agency).
 ```bash
@@ -144,3 +192,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/stocks/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

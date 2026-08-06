@@ -174,6 +174,36 @@ curl -v \
   https://app.zauru.com/inventories/lots.json?warehouse=1
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "name": "Lote A",
+    "description": "Descripción opcional",
+    "entity_id": 2,
+    "created_at": "2026-08-06T04:13:44.112Z",
+    "updated_at": "2026-08-06T04:13:44.112Z",
+    "item_id": 3,
+    "expires": "2019-12-31",
+    "id_number": null
+  },
+  {
+    "id": 4,
+    "active": true,
+    "name": "123456",
+    "description": "",
+    "entity_id": 2,
+    "created_at": "2021-06-01T02:19:46.710Z",
+    "updated_at": "2021-06-01T02:28:36.490Z",
+    "item_id": 5,
+    "expires": null,
+    "id_number": null
+  }
+]
+```
+
 ### Obtener los lotes de todas las bodegas
 Devuelve todos los lotes activos con el producto asociado.
 ```bash
@@ -183,6 +213,36 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/lots/all_warehouses.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "name": "Lote A",
+    "description": "Descripción opcional",
+    "item_id": 2,
+    "expires": "2019-12-31",
+    "id_number": null,
+    "item": {
+      "name": "PERF-ENCUADERNADORA MODELO VERSABIND M"
+    }
+  },
+  {
+    "id": 3,
+    "active": true,
+    "name": "123456",
+    "description": "",
+    "item_id": 4,
+    "expires": null,
+    "id_number": null,
+    "item": {
+      "name": "membresía inicial 2 a 9 usuarios"
+    }
+  }
+]
 ```
 
 ### Obtener el detalle de un lote
@@ -196,6 +256,22 @@ curl -v \
   https://app.zauru.com/inventories/lots/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "46",
+  "active": true,
+  "name": "1113",
+  "description": null,
+  "entity_id": "43",
+  "created_at": "2014-02-14 14:33:12.748258",
+  "updated_at": "2014-02-14 14:33:12.748258",
+  "item_id": "13914",
+  "expires": "2016-08-01",
+  "id_number": null
+}
+```
+
 ### Obtener el detalle de existencias de un lote en una bodega
 Devuelve los datos de existencias del lote en una bodega específica (LotStock), incluyendo las cantidades disponible, entrante y saliente, junto con el historial de envíos que movieron el lote en esa bodega.
 ```bash
@@ -207,6 +283,21 @@ curl -v \
   https://app.zauru.com/inventories/lot_stocks/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "4",
+  "lot_id": "155",
+  "entity_id": "43",
+  "agency_id": "301",
+  "available": "0.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "created_at": "2014-02-18 12:51:54.60561",
+  "updated_at": "2014-03-29 17:02:10.115522"
+}
+```
+
 ### Obtener los lotes de un producto
 Devuelve todos los lotes asociados a un producto específico.
 ```bash
@@ -216,6 +307,13 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/lots/1/item.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Crear un lote
@@ -238,6 +336,22 @@ curl -v \
   https://app.zauru.com/inventories/lots.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "active": true,
+  "name": "Lote A",
+  "description": "Descripción opcional",
+  "entity_id": 2,
+  "created_at": "2026-08-06T04:16:24.996Z",
+  "updated_at": "2026-08-06T04:16:24.996Z",
+  "item_id": 3,
+  "expires": "2019-12-31",
+  "id_number": null
+}
+```
+
 ### Actualizar un lote
 Actualiza los datos de un lote existente (nombre, descripción y fecha de expiración).
 ```bash
@@ -256,6 +370,22 @@ curl -v \
   https://app.zauru.com/inventories/lots/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "46",
+  "active": true,
+  "name": "1113",
+  "description": null,
+  "entity_id": "43",
+  "created_at": "2014-02-14 14:33:12.748258",
+  "updated_at": "2014-02-14 14:33:12.748258",
+  "item_id": "13914",
+  "expires": "2016-08-01",
+  "id_number": null
+}
+```
+
 ### Eliminar un lote
 Elimina un lote. Solo es posible si no tiene movimientos asociados.
 ```bash
@@ -267,6 +397,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/lots/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Vaciar existencias de lotes de una bodega
 Elimina todas las existencias de lotes de una bodega. La operación se ejecuta de forma asíncrona en segundo plano. El `id` en la URL corresponde al identificador de la bodega (agency).

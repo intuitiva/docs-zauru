@@ -360,6 +360,13 @@ curl -v \
   https://app.zauru.com/accounting/reports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Consultar el estado de un reporte en proceso
 
 Endpoint generico para monitorear cualquier reporte que se genere en segundo plano. Recibe el `zid` del proceso y el nombre del `report` (ej. `daily_ledger`) y devuelve el estado, porcentaje y mensaje.
@@ -370,6 +377,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/accounting/reports/check_report.json?zid=XXXX&report=daily_ledger"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```
 
 ### Iniciar la correccion de cuentas con valores incorrectos
@@ -383,4 +398,12 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   https://app.zauru.com/accounting/reports/gen_fix_accounts_with_wrong_value.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 1,
+  "zid": 1
+}
 ```

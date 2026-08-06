@@ -133,6 +133,16 @@ curl -v \
   "https://app.zauru.com/production/reports/consolidated_raw_materials_from_planned_production_orders.json?start_date=01/01/2026&end_date=31/12/2026"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "dates": [],
+  "rows": [],
+  "stocks": {},
+  "items": []
+}
+```
+
 ### Reporte de Productos Terminados por Responsable
 ```bash
 curl -v \

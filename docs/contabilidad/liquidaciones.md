@@ -114,3 +114,46 @@ curl -v \
   }' \
   https://app.zauru.com/accounting/entries/1/settlement_action.json
 ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "54445565",
+  "zid": "270",
+  "printable": false,
+  "invoice": null,
+  "id_number": null,
+  "reference": "INGRESO INVENTARIO 19.05.2026",
+  "date": "2026-05-19",
+  "income": null,
+  "memo": null,
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": "1997430",
+  "entity_id": "1303",
+  "reconciliation_id": null,
+  "updater_id": "1274",
+  "account_id": "77704",
+  "amount": "750.00",
+  "created_at": "2026-05-19 11:31:08.795876",
+  "updated_at": "2026-05-19 11:31:08.836408",
+  "splits_count": "1",
+  "invoice_date": "2026-05-19",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": "552832",
+  "inventory_audit_id": null,
+  "source_doc_type_id": "4",
+  "monthly_entry_source_doc_type_id": "225289",
+  "cost_center_id": null
+}
+```

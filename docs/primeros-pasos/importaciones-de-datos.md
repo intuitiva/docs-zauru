@@ -107,6 +107,42 @@ curl -v \
   https://app.zauru.com/settings/data_imports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 2,
+    "zid": 1,
+    "file_type": "items",
+    "memo": "PRUEBA PROD",
+    "entity_id": 1,
+    "user_id": 2,
+    "created_at": "2024-01-15T20:21:36.824Z",
+    "updated_at": "2024-01-15T20:24:26.764Z",
+    "column_mappings": "{\"0\":\"active\",\"1\":\"stockable\",\"2\":\"sellable\",\"3\":\"purchasable\",\"4\":\"code\",\"5\":\"vendor_code\",\"6\":\"ean13\",\"7\":\"name\",\"8\":\"item_category_id\",\"9\":\"measurement_unit\",\"10\":\"weight\",\"11\":\"volume\",\"12\":\"description\",\"13\":\"reorder_point\",\"14\":\"economic_order_quantity\",\"15\":\"months_warranty\",\"16\":\"pays_vat\",\"17\":\"tariff_rate\",\"18\":\"quotable\",\"19\":\"ecommerce\"}",
+    "data_import_rows_count": 0,
+    "imported_rows": 0,
+    "validated_not_imported_rows": 0,
+    "parent_object_id": null
+  },
+  {
+    "id": 3,
+    "zid": 4,
+    "file_type": "expenses",
+    "memo": "",
+    "entity_id": 1,
+    "user_id": 5,
+    "created_at": "2026-05-06T01:55:42.446Z",
+    "updated_at": "2026-05-06T02:05:01.615Z",
+    "column_mappings": "{\"0\":\"issue_date\",\"1\":\"\",\"2\":\"\",\"3\":\"invoice_serial\",\"4\":\"invoice_number\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"payee_tin\",\"9\":\"payee_name\",\"10\":\"reference\",\"11\":\"account_name\",\"12\":\"charge_term_name\",\"13\":\"\",\"14\":\"\",\"15\":\"\",\"16\":\"\",\"17\":\"\",\"18\":\"\",\"19\":\"\",\"20\":\"\",\"21\":\"\",\"22\":\"cost\",\"23\":\"\",\"24\":\"\",\"25\":\"\",\"26\":\"tax2\",\"27\":\"\",\"28\":\"\",\"29\":\"\",\"30\":\"\",\"31\":\"\",\"32\":\"\",\"33\":\"\",\"34\":\"\",\"35\":\"\",\"36\":\"\"}",
+    "data_import_rows_count": 85,
+    "imported_rows": 85,
+    "validated_not_imported_rows": 87,
+    "parent_object_id": null
+  }
+]
+```
+
 ### Obtener detalles de una importación de datos
 
 ```bash
@@ -116,6 +152,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/data_imports/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15671",
+  "zid": "1",
+  "file_type": "items_with_prices",
+  "memo": null,
+  "entity_id": "1303",
+  "user_id": "214",
+  "created_at": "2026-02-11 14:17:27.9346",
+  "updated_at": "2026-02-11 14:21:11.127072",
+  "column_mappings": "{\"0\":\"code\",\"1\":\"name\",\"2\":\"\",\"3\":\"payee_id\",\"4\":\"average_cost\",\"5\":\"stockable\",\"6\":\"sellable\",\"7\":\"manufacturable\",\"8\":...",
+  "data_import_rows_count": "47",
+  "imported_rows": "47",
+  "validated_not_imported_rows": "0",
+  "parent_object_id": null
+}
 ```
 
 ### Crear importación de datos
@@ -136,6 +191,25 @@ curl -v \
   https://app.zauru.com/settings/data_imports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "file_type": "payees_create",
+  "memo": "Importación de clientes mayo 2024",
+  "entity_id": 3,
+  "user_id": 4,
+  "created_at": "2026-08-06T04:16:52.966Z",
+  "updated_at": "2026-08-06T04:16:52.966Z",
+  "column_mappings": null,
+  "data_import_rows_count": 0,
+  "imported_rows": 0,
+  "validated_not_imported_rows": 0,
+  "parent_object_id": null
+}
+```
+
 ### Actualizar importación de datos
 
 ```bash
@@ -153,6 +227,25 @@ curl -v \
   https://app.zauru.com/settings/data_imports/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15671",
+  "zid": "1",
+  "file_type": "items_with_prices",
+  "memo": null,
+  "entity_id": "1303",
+  "user_id": "214",
+  "created_at": "2026-02-11 14:17:27.9346",
+  "updated_at": "2026-02-11 14:21:11.127072",
+  "column_mappings": "{\"0\":\"code\",\"1\":\"name\",\"2\":\"\",\"3\":\"payee_id\",\"4\":\"average_cost\",\"5\":\"stockable\",\"6\":\"sellable\",\"7\":\"manufacturable\",\"8\":...",
+  "data_import_rows_count": "47",
+  "imported_rows": "47",
+  "validated_not_imported_rows": "0",
+  "parent_object_id": null
+}
+```
+
 ### Eliminar importación de datos
 
 ```bash
@@ -165,6 +258,8 @@ curl -v \
   https://app.zauru.com/settings/data_imports/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener datos mapeados de una importación
 
 ```bash
@@ -174,6 +269,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/data_imports/1/edit_data.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15671",
+  "zid": "1",
+  "file_type": "items_with_prices",
+  "memo": null,
+  "entity_id": "1303",
+  "user_id": "214",
+  "created_at": "2026-02-11 14:17:27.9346",
+  "updated_at": "2026-02-11 14:21:11.127072",
+  "column_mappings": "{\"0\":\"code\",\"1\":\"name\",\"2\":\"\",\"3\":\"payee_id\",\"4\":\"average_cost\",\"5\":\"stockable\",\"6\":\"sellable\",\"7\":\"manufacturable\",\"8\":...",
+  "data_import_rows_count": "47",
+  "imported_rows": "47",
+  "validated_not_imported_rows": "0",
+  "parent_object_id": null
+}
 ```
 
 ### Actualizar mapeo de columnas y datos
@@ -194,6 +308,13 @@ curl -v \
   https://app.zauru.com/settings/data_imports/1/update_data.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Validar una fila
 
 ```bash
@@ -205,6 +326,13 @@ curl -v \
   -X POST \
   -d '{"row_id": "1"}' \
   https://app.zauru.com/settings/data_imports/1/validate_row.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Eliminar una fila
@@ -220,6 +348,13 @@ curl -v \
   https://app.zauru.com/settings/data_imports/1/destroy_row.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Importar una fila
 
 ```bash
@@ -231,6 +366,13 @@ curl -v \
   -X POST \
   -d '{"row_id": "1"}' \
   https://app.zauru.com/settings/data_imports/1/import_row.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Eliminar una columna
@@ -246,6 +388,13 @@ curl -v \
   https://app.zauru.com/settings/data_imports/1/destroy_column.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Datatables de importaciones de datos
 
 ```bash
@@ -257,6 +406,41 @@ curl -v \
   -X POST \
   -d '{"start": "0", "length": "25"}' \
   https://app.zauru.com/settings/data_imports/datatables.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 13,
+  "recordsFiltered": 13,
+  "data": [
+    {
+      "DT_RowId": "settings-data-import-19378",
+      "zid": 1,
+      "file": "No file",
+      "document_type": "Crear beneficiarios",
+      "created_at": "06/08/2026",
+      "rows": 0,
+      "validated_rows": 0,
+      "imported_rows": 0,
+      "memo": "Importación de clientes mayo 2024",
+      "record_actions": "<a title=\"<span class=&quot;translation_missing&quot; title=&quot;translation missing: es-GT.Download&quot;>Download</span>\" href=\"/settings/data_imports/19378/download_attached_file\"><i class=\"fa fa-download\"></i></a><a title=\"Editar Datos\" href=\"/settings/data_imports/19378/edit_data\"><i class=\"fa fa-table\"></i></a><a title=\"Editar\" href=\"/settings/data_imports/19378/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/settings/data_imports/19378?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>"
+    },
+    {
+      "DT_RowId": "settings-data-import-19377",
+      "zid": 2,
+      "file": "No file",
+      "document_type": "Crear beneficiarios",
+      "created_at": "06/08/2026",
+      "rows": 0,
+      "validated_rows": 0,
+      "imported_rows": 0,
+      "memo": "Importación de clientes mayo 2024",
+      "record_actions": "<a title=\"<span class=&quot;translation_missing&quot; title=&quot;translation missing: es-GT.Download&quot;>Download</span>\" href=\"/settings/data_imports/19377/download_attached_file\"><i class=\"fa fa-download\"></i></a><a title=\"Editar Datos\" href=\"/settings/data_imports/19377/edit_data\"><i class=\"fa fa-table\"></i></a><a title=\"Editar\" href=\"/settings/data_imports/19377/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Destruirlo\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/settings/data_imports/19377?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>"
+    }
+  ]
+}
 ```
 
 ### Descargar archivo adjunto de una importación

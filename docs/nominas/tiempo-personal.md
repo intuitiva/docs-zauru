@@ -177,6 +177,96 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "start_datetime": "2022-12-26T14:00:00.000Z",
+    "end_datetime": "2023-01-02T23:00:00.000Z",
+    "notes": "navidad -> año nuevo + 1 día post año nuevo ",
+    "approved": true,
+    "approved_at": "2022-12-19T18:30:48.596Z",
+    "rejected": false,
+    "rejected_at": null,
+    "created_at": "2022-12-12T15:46:50.345Z",
+    "updated_at": "2022-12-19T18:30:48.651Z",
+    "entity_id": 3,
+    "employee_id": 4,
+    "approver_id": 3,
+    "rejector_id": null,
+    "creator_id": 3,
+    "updater_id": 3,
+    "personal_time_off_type_id": 5,
+    "days": 6.5,
+    "pdf1": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "pdf2": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "piecework_payment_last_payrolls_total": "0.0",
+    "piecework_payment_last_payrolls_days": "0.0",
+    "piecework_payment_subtotal": null,
+    "piecework_payment_total": null,
+    "paid": false,
+    "paid_at": null,
+    "rejected_reason": null,
+    "enjoyed": true,
+    "enjoyed_at": "2023-01-30T16:36:19.676Z"
+  },
+  {
+    "id": 6,
+    "zid": 7,
+    "start_datetime": "2022-05-04T14:00:00.000Z",
+    "end_datetime": "2022-05-04T23:00:00.000Z",
+    "notes": "post boda",
+    "approved": true,
+    "approved_at": "2022-12-19T18:24:00.126Z",
+    "rejected": false,
+    "rejected_at": null,
+    "created_at": "2022-06-29T00:40:15.152Z",
+    "updated_at": "2022-12-19T18:24:00.246Z",
+    "entity_id": 3,
+    "employee_id": 4,
+    "approver_id": 3,
+    "rejector_id": null,
+    "creator_id": 3,
+    "updater_id": 3,
+    "personal_time_off_type_id": 5,
+    "days": 1.0,
+    "pdf1": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "pdf2": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "piecework_payment_last_payrolls_total": "0.0",
+    "piecework_payment_last_payrolls_days": "0.0",
+    "piecework_payment_subtotal": null,
+    "piecework_payment_total": null,
+    "paid": false,
+    "paid_at": null,
+    "rejected_reason": null,
+    "enjoyed": true,
+    "enjoyed_at": "2023-05-18T23:47:05.957Z"
+  }
+]
+```
+
 ### Crear una solicitud de tiempo personal
 
 ```bash
@@ -197,6 +287,42 @@ curl -v \
     }
   }' \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "469",
+  "zid": "268",
+  "start_datetime": "2023-11-06 12:00:00",
+  "end_datetime": "2023-11-24 22:00:00",
+  "notes": "GRUPO 10-2023 Vacaciones La Vereda",
+  "approved": true,
+  "approved_at": "2023-11-02 18:25:33.722838",
+  "rejected": false,
+  "rejected_at": null,
+  "created_at": "2023-11-02 18:19:16.794448",
+  "updated_at": "2023-11-02 18:25:33.792208",
+  "entity_id": "733",
+  "employee_id": "10031",
+  "approver_id": "2135",
+  "rejector_id": null,
+  "creator_id": "2135",
+  "updater_id": "2135",
+  "personal_time_off_type_id": "7",
+  "days": "15",
+  "pdf1": null,
+  "pdf2": null,
+  "piecework_payment_last_payrolls_total": "10431.230000",
+  "piecework_payment_last_payrolls_days": "84.000000",
+  "piecework_payment_subtotal": "1862.719643",
+  "piecework_payment_total": "1897.750284",
+  "paid": false,
+  "paid_at": null,
+  "rejected_reason": null,
+  "enjoyed": true,
+  "enjoyed_at": "2023-12-05 14:59:40.568445"
+}
 ```
 
 ### Aprobar una solicitud
@@ -221,6 +347,23 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "9126",
+    "available_days": "0",
+    "created_at": "2024-04-29 14:58:22.014126",
+    "updated_at": "2024-04-29 14:58:22.014126",
+    "entity_id": "733",
+    "employee_id": "16000",
+    "work_contract_id": "6417",
+    "personal_time_off_logs_count": "0",
+    "zid": "622"
+  }
+]
+```
+
 ### Ver una solicitud de tiempo personal
 
 Devuelve la solicitud con el empleado, tipo de tiempo personal y formularios asociados.
@@ -234,6 +377,42 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "469",
+  "zid": "268",
+  "start_datetime": "2023-11-06 12:00:00",
+  "end_datetime": "2023-11-24 22:00:00",
+  "notes": "GRUPO 10-2023 Vacaciones La Vereda",
+  "approved": true,
+  "approved_at": "2023-11-02 18:25:33.722838",
+  "rejected": false,
+  "rejected_at": null,
+  "created_at": "2023-11-02 18:19:16.794448",
+  "updated_at": "2023-11-02 18:25:33.792208",
+  "entity_id": "733",
+  "employee_id": "10031",
+  "approver_id": "2135",
+  "rejector_id": null,
+  "creator_id": "2135",
+  "updater_id": "2135",
+  "personal_time_off_type_id": "7",
+  "days": "15",
+  "pdf1": null,
+  "pdf2": null,
+  "piecework_payment_last_payrolls_total": "10431.230000",
+  "piecework_payment_last_payrolls_days": "84.000000",
+  "piecework_payment_subtotal": "1862.719643",
+  "piecework_payment_total": "1897.750284",
+  "paid": false,
+  "paid_at": null,
+  "rejected_reason": null,
+  "enjoyed": true,
+  "enjoyed_at": "2023-12-05 14:59:40.568445"
+}
+```
+
 ### Obtener estructura para crear una solicitud
 
 ```bash
@@ -245,6 +424,52 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "start_datetime": null,
+  "end_datetime": null,
+  "notes": null,
+  "approved": false,
+  "approved_at": null,
+  "rejected": false,
+  "rejected_at": null,
+  "created_at": null,
+  "updated_at": null,
+  "entity_id": 1,
+  "employee_id": null,
+  "approver_id": null,
+  "rejector_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "personal_time_off_type_id": null,
+  "days": null,
+  "pdf1": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "pdf2": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "piecework_payment_last_payrolls_total": "0.0",
+  "piecework_payment_last_payrolls_days": "0.0",
+  "piecework_payment_subtotal": "0.0",
+  "piecework_payment_total": "0.0",
+  "paid": false,
+  "paid_at": null,
+  "rejected_reason": null,
+  "enjoyed": false,
+  "enjoyed_at": null
+}
+```
+
 ### Obtener estructura para editar una solicitud
 
 ```bash
@@ -254,6 +479,42 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "469",
+  "zid": "268",
+  "start_datetime": "2023-11-06 12:00:00",
+  "end_datetime": "2023-11-24 22:00:00",
+  "notes": "GRUPO 10-2023 Vacaciones La Vereda",
+  "approved": true,
+  "approved_at": "2023-11-02 18:25:33.722838",
+  "rejected": false,
+  "rejected_at": null,
+  "created_at": "2023-11-02 18:19:16.794448",
+  "updated_at": "2023-11-02 18:25:33.792208",
+  "entity_id": "733",
+  "employee_id": "10031",
+  "approver_id": "2135",
+  "rejector_id": null,
+  "creator_id": "2135",
+  "updater_id": "2135",
+  "personal_time_off_type_id": "7",
+  "days": "15",
+  "pdf1": null,
+  "pdf2": null,
+  "piecework_payment_last_payrolls_total": "10431.230000",
+  "piecework_payment_last_payrolls_days": "84.000000",
+  "piecework_payment_subtotal": "1862.719643",
+  "piecework_payment_total": "1897.750284",
+  "paid": false,
+  "paid_at": null,
+  "rejected_reason": null,
+  "enjoyed": true,
+  "enjoyed_at": "2023-12-05 14:59:40.568445"
+}
 ```
 
 ### Actualizar una solicitud de tiempo personal
@@ -276,6 +537,42 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "469",
+  "zid": "268",
+  "start_datetime": "2023-11-06 12:00:00",
+  "end_datetime": "2023-11-24 22:00:00",
+  "notes": "GRUPO 10-2023 Vacaciones La Vereda",
+  "approved": true,
+  "approved_at": "2023-11-02 18:25:33.722838",
+  "rejected": false,
+  "rejected_at": null,
+  "created_at": "2023-11-02 18:19:16.794448",
+  "updated_at": "2023-11-02 18:25:33.792208",
+  "entity_id": "733",
+  "employee_id": "10031",
+  "approver_id": "2135",
+  "rejector_id": null,
+  "creator_id": "2135",
+  "updater_id": "2135",
+  "personal_time_off_type_id": "7",
+  "days": "15",
+  "pdf1": null,
+  "pdf2": null,
+  "piecework_payment_last_payrolls_total": "10431.230000",
+  "piecework_payment_last_payrolls_days": "84.000000",
+  "piecework_payment_subtotal": "1862.719643",
+  "piecework_payment_total": "1897.750284",
+  "paid": false,
+  "paid_at": null,
+  "rejected_reason": null,
+  "enjoyed": true,
+  "enjoyed_at": "2023-12-05 14:59:40.568445"
+}
+```
+
 ### Borrar una solicitud de tiempo personal
 
 ```bash
@@ -287,6 +584,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Desaprobar una solicitud
 
@@ -342,4 +641,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "9126",
+  "available_days": "0",
+  "created_at": "2024-04-29 14:58:22.014126",
+  "updated_at": "2024-04-29 14:58:22.014126",
+  "entity_id": "733",
+  "employee_id": "16000",
+  "work_contract_id": "6417",
+  "personal_time_off_logs_count": "0",
+  "zid": "622"
+}
 ```

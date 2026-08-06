@@ -115,6 +115,70 @@ curl -v \
   https://app.zauru.com/settings/tags.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "name": "implementaciones zauru",
+    "description": "",
+    "entity_id": 2,
+    "updater_id": 2,
+    "created_at": "2014-02-17T14:52:49.744Z",
+    "updated_at": "2014-03-07T01:37:38.889Z",
+    "tagging_entries_count": 119,
+    "tagging_shipments_count": 0,
+    "tagging_invoices_count": 36,
+    "tagging_payments_count": 4,
+    "taggings_count": 0,
+    "active": true,
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "tag_category_id": null,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    }
+  },
+  {
+    "id": 3,
+    "zid": 4,
+    "name": "ingreso de póliza(s)",
+    "description": "",
+    "entity_id": 2,
+    "updater_id": 5,
+    "created_at": "2017-07-14T17:00:46.727Z",
+    "updated_at": "2017-07-14T17:00:46.727Z",
+    "tagging_entries_count": 0,
+    "tagging_shipments_count": 0,
+    "tagging_invoices_count": 0,
+    "tagging_payments_count": 0,
+    "taggings_count": 0,
+    "active": true,
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "tag_category_id": null,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    }
+  }
+]
+```
+
 ### Obtener listado de categorías de proyectos
 
 ```bash
@@ -124,6 +188,60 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/tags/tag_categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "parent_tag_category_id": null,
+    "name": "Categoría de prueba",
+    "description": "Descripción de la categoría",
+    "updater_id": 2,
+    "entity_id": 3,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "created_at": "2026-08-06T04:14:18.201Z",
+    "updated_at": "2026-08-06T04:14:18.201Z",
+    "active": true
+  },
+  {
+    "id": 4,
+    "zid": 2,
+    "parent_tag_category_id": null,
+    "name": "Categoría de Clientes",
+    "description": "Etiquetas para clasificar clientes",
+    "updater_id": 2,
+    "entity_id": 3,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "created_at": "2026-08-06T04:14:18.968Z",
+    "updated_at": "2026-08-06T04:14:18.968Z",
+    "active": true
+  }
+]
 ```
 
 ### Obtener detalles de un proyecto
@@ -137,6 +255,29 @@ curl -v \
   https://app.zauru.com/settings/tags/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "13545",
+  "zid": "268",
+  "name": "PUERTA Y AEREOS",
+  "description": null,
+  "entity_id": "1303",
+  "updater_id": "1274",
+  "created_at": "2026-05-19 11:27:06.679021",
+  "updated_at": "2026-05-19 11:27:06.679021",
+  "tagging_entries_count": "5",
+  "tagging_shipments_count": "5",
+  "tagging_invoices_count": "1",
+  "tagging_payments_count": "0",
+  "taggings_count": "0",
+  "active": true,
+  "image": null,
+  "tag_category_id": "3257",
+  "pdf": null
+}
+```
+
 ### Obtener detalles de una categoría de proyecto
 
 ```bash
@@ -146,6 +287,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/tags/tag_categories/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3106",
+  "zid": "8",
+  "parent_tag_category_id": "3100",
+  "name": "CONDADO SANTA ELENA",
+  "description": "CSE",
+  "updater_id": "1273",
+  "entity_id": "1303",
+  "pdf": null,
+  "image": null,
+  "created_at": "2026-02-11 18:40:27.735405",
+  "updated_at": "2026-02-11 18:41:05.575377",
+  "active": true
+}
 ```
 
 ### Crear proyecto
@@ -168,6 +327,18 @@ curl -v \
   https://app.zauru.com/settings/tags.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ],
+  "entity": [
+    "es inválido"
+  ]
+}
+```
+
 ### Crear categoría de proyecto
 
 ```bash
@@ -188,6 +359,15 @@ curl -v \
   https://app.zauru.com/settings/tags/tag_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Actualizar proyecto
 
 ```bash
@@ -206,6 +386,29 @@ curl -v \
   https://app.zauru.com/settings/tags/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "13545",
+  "zid": "268",
+  "name": "PUERTA Y AEREOS",
+  "description": null,
+  "entity_id": "1303",
+  "updater_id": "1274",
+  "created_at": "2026-05-19 11:27:06.679021",
+  "updated_at": "2026-05-19 11:27:06.679021",
+  "tagging_entries_count": "5",
+  "tagging_shipments_count": "5",
+  "tagging_invoices_count": "1",
+  "tagging_payments_count": "0",
+  "taggings_count": "0",
+  "active": true,
+  "image": null,
+  "tag_category_id": "3257",
+  "pdf": null
+}
+```
+
 ### Eliminar proyecto
 
 ```bash
@@ -217,6 +420,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/tags/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Actualizar categoría de proyecto
 
@@ -236,6 +441,24 @@ curl -v \
   https://app.zauru.com/settings/tags/tag_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3106",
+  "zid": "8",
+  "parent_tag_category_id": "3100",
+  "name": "CONDADO SANTA ELENA",
+  "description": "CSE",
+  "updater_id": "1273",
+  "entity_id": "1303",
+  "pdf": null,
+  "image": null,
+  "created_at": "2026-02-11 18:40:27.735405",
+  "updated_at": "2026-02-11 18:41:05.575377",
+  "active": true
+}
+```
+
 ### Eliminar categoría de proyecto
 
 ```bash
@@ -247,3 +470,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/tags/tag_categories/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

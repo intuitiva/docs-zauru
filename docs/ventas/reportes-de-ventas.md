@@ -444,6 +444,28 @@ curl -v \
   https://app.zauru.com/sales/reports/clients_with_overdue_payments.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "info": "5641085-9 | Accema ~ Accesorios para Montacargas del Amo, S.A. # 2479-2079",
+    "cat": null,
+    "default_seller": "1",
+    "due": "428.0",
+    "currency": "GTQ"
+  },
+  {
+    "id": 2,
+    "info": "5944175-5 | Actualiza, S.A. # 2381-0860",
+    "cat": null,
+    "default_seller": null,
+    "due": "-30.0",
+    "currency": "GTQ"
+  }
+]
+```
+
 ### Ítems por cliente
 ```bash
 curl -v \
@@ -452,6 +474,16 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/sales/reports/items_by_client.json?payee_id=1&date=2024-01-01&end_date=2024-01-31"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "items": {},
+  "items_data": [],
+  "bundles": {},
+  "bundles_data": []
+}
 ```
 
 ### Ventas mensuales por punto de venta y categoría de cliente
@@ -464,6 +496,163 @@ curl -v \
   "https://app.zauru.com/sales/reports/monthly_sales_by_point_of_sale_and_client_category.json?year=2024&month=1&include_vat=1&include_credit_notes=1"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "total_invoiced": "160096.93",
+  "total_credit_notes": 0.0,
+  "total_real_sales_without_payee_category": "107519.15",
+  "total_real_sales_by_payee_category": {
+    "377": "824.4",
+    "453": "344.25"
+  },
+  "real_sales": {
+    "[25, 377]": "824.4",
+    "[25, 453]": "344.25",
+    "[25, 604]": "27902.3",
+    "[25, 2239]": "19633.78",
+    "[25, 4512]": "3873.05",
+    "[25, 5931]": 0.0,
+    "[25, 687]": 0.0,
+    "[25, 2566]": 0.0,
+    "[25, 6001]": 0.0,
+    "[25, 95]": 0.0,
+    "[25, 7]": 0.0,
+    "[25, 15]": 0.0,
+    "[25, 20]": 0.0,
+    "[25, 452]": 0.0,
+    "[25, 492]": 0.0,
+    "[8580, 453]": 0.0,
+    "[8580, 5931]": 0.0,
+    "[8580, 687]": 0.0,
+    "[8580, 2566]": 0.0,
+    "[8580, 6001]": 0.0,
+    "[8580, 4512]": 0.0,
+    "[8580, 604]": 0.0,
+    "[8580, 95]": 0.0,
+    "[8580, 7]": 0.0,
+    "[8580, 15]": 0.0,
+    "[8580, 20]": 0.0,
+    "[8580, 2239]": 0.0,
+    "[8580, 377]": 0.0,
+    "[8580, 452]": 0.0,
+    "[8580, 492]": 0.0
+  },
+  "real_sales_without_payee_category": {
+    "25": "107519.15",
+    "8580": 0
+  },
+  "payee_categories": [
+    {
+      "id": 1,
+      "vendor": false,
+      "name": "4 a 6",
+      "notes": "",
+      "updater_id": 2,
+      "entity_id": 2,
+      "created_at": "2016-04-13T20:43:05.677Z",
+      "updated_at": "2016-04-29T23:53:50.077Z",
+      "price_list_id": 3,
+      "payees_count": 4
+    },
+    {
+      "id": 4,
+      "vendor": false,
+      "name": "Cliente Ejemplo, SRL",
+      "notes": "",
+      "updater_id": 5,
+      "entity_id": 2,
+      "created_at": "2026-05-21T01:44:53.134Z",
+      "updated_at": "2026-05-21T01:44:53.134Z",
+      "price_list_id": null,
+      "payees_count": 3
+    }
+  ],
+  "points_of_sale": [
+    {
+      "id": 6,
+      "zid": 1,
+      "active": true,
+      "ean13": "1",
+      "name": "central",
+      "employee_id": null,
+      "updater_id": 7,
+      "entity_id": 2,
+      "virtual": false,
+      "virtual_type": null,
+      "warehouse": true,
+      "point_of_sale": true,
+      "workshop": true,
+      "factory": false,
+      "contact": "",
+      "city_name": "FRAIJANES,",
+      "address_line_1": "Calle Ejemplo 123, Zona 10",
+      "address_line_2": "GUATEMALA",
+      "phone": "",
+      "notes": "",
+      "created_at": "2012-02-14T06:11:39.000Z",
+      "updated_at": "2026-04-07T20:55:02.820Z",
+      "price_list_id": null,
+      "quote": true,
+      "ecommerce": true,
+      "external_storage_service_name": "EMPRESA_EJEMPLO",
+      "agency_category_id": null,
+      "city_id": null,
+      "agency_type": [
+        "Warehouse",
+        "PointOfSale",
+        "Workshop",
+        "Ecommerce",
+        "Quotable"
+      ],
+      "district_id": null,
+      "neighborhood_id": null,
+      "cost_center_id": null
+    },
+    {
+      "id": 8,
+      "zid": 9,
+      "active": true,
+      "ean13": null,
+      "name": "Tienda",
+      "employee_id": null,
+      "updater_id": 10,
+      "entity_id": 2,
+      "virtual": false,
+      "virtual_type": null,
+      "warehouse": true,
+      "point_of_sale": true,
+      "workshop": true,
+      "factory": false,
+      "contact": null,
+      "city_name": null,
+      "address_line_1": "direccion obligatoria",
+      "address_line_2": null,
+      "phone": null,
+      "notes": "",
+      "created_at": "2026-08-06T04:14:18.426Z",
+      "updated_at": "2026-08-06T04:14:18.426Z",
+      "price_list_id": null,
+      "quote": true,
+      "ecommerce": true,
+      "external_storage_service_name": null,
+      "agency_category_id": null,
+      "city_id": null,
+      "agency_type": [
+        "Warehouse",
+        "PointOfSale",
+        "Workshop",
+        "Ecommerce",
+        "Quotable"
+      ],
+      "district_id": null,
+      "neighborhood_id": null,
+      "cost_center_id": null
+    }
+  ]
+}
+```
+
 ### Ventas mensuales de ítems
 ```bash
 curl -v \
@@ -472,6 +661,64 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/sales/reports/monthly_items.json?date=2024-01-01&end_date=2024-01-31"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "filters": {
+    "start_date": "2024-01-01",
+    "end_date": "2024-01-31",
+    "agency": null,
+    "seller": null,
+    "document_type": "Invoices",
+    "credit_notes_included": true
+  },
+  "summary": {
+    "total_sales": 142943.69,
+    "total_costs": "42208.0",
+    "gross_profit": "100735.69",
+    "gross_profit_pct": "70.472290005810854711580040916462295685"
+  },
+  "rows": [
+    {
+      "item_super_category": null,
+      "category": "Usuarios",
+      "code": "u4-6",
+      "name": "Usuarios de Zauru con 4-6 módulos",
+      "vendor": null,
+      "measurement_unit": "",
+      "quantity": 468,
+      "volume": 0.0,
+      "average_unit_price": 127.39,
+      "average_unit_cost": "0.0",
+      "total_cost": "0.0",
+      "average_margin_pct": "100.0",
+      "total_sales": 59618.19,
+      "contribution_pct": 41.70746409724049,
+      "is_bundle": false,
+      "id": 1
+    },
+    {
+      "item_super_category": null,
+      "category": "Usuarios",
+      "code": "u7-9",
+      "name": "Usuarios de Zauru con 7-9 módulos",
+      "vendor": null,
+      "measurement_unit": "",
+      "quantity": 254,
+      "volume": 0.0,
+      "average_unit_price": 109.63,
+      "average_unit_cost": "0.0",
+      "total_cost": "0.0",
+      "average_margin_pct": "100.0",
+      "total_sales": 27846.38,
+      "contribution_pct": 19.48066778927648,
+      "is_bundle": false,
+      "id": 2
+    }
+  ]
+}
 ```
 
 ### Ítems activos vendidos con clientes
@@ -494,6 +741,166 @@ curl -v \
   "https://app.zauru.com/sales/reports/export_certified_responses.json?date=2024-01-01&end_date=2024-01-31&include_credit_notes=1"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "8F7F85CF-50349735": null,
+  "38D1CED1-1283935951": null,
+  "33BCDA9E-1799441048": null,
+  "F6003291-2221228856": null,
+  "A1028DD3-4078388238": null,
+  "8771CB00-296896111": null,
+  "FF29F083-2640595144": null,
+  "DD50BD74-1823952351": null,
+  "11C113A6-1643662908": null,
+  "C123A3D0-2471775689": null,
+  "D2C36517-1068780954": null,
+  "191ED6B0-2756594692": null,
+  "913987E4-2350598816": null,
+  "55CA3D24-890128044": null,
+  "4883B539-1601129534": null,
+  "FC19EC88-862341981": null,
+  "04DCEB87-2423801729": null,
+  "50224A08-745557496": null,
+  "FAE27F25-3591848524": null,
+  "65EA3806-3610264789": null,
+  "21A4EF5F-3392228777": null,
+  "A27B4640-415779188": null,
+  "2CC0B307-2883340970": null,
+  "5DF782A2-3905766720": null,
+  "E4EE520F-2790605769": null,
+  "ABBD4A12-2748859813": null,
+  "A6594197-41961409": null,
+  "D1D0722B-1259751196": null,
+  "09B1A565-2934391573": null,
+  "FE913563-2096645996": null,
+  "9C4466E5-717508120": null,
+  "17B3B068-2827833081": null,
+  "DD114C48-1293503996": null,
+  "612C87C8-2074692415": null,
+  "C76BEF3C-1241203436": null,
+  "9AC55700-3772731071": null,
+  "64C4C033-1649626332": null,
+  "3D92B84D-3757199218": null,
+  "704DEEFE-2057651672": null,
+  "05316157-673466502": null,
+  "3E3B3584-322587973": null,
+  "533A97AF-3650440093": null,
+  "CB44D559-1377913216": null,
+  "4D5348AB-2621721249": null,
+  "A4CACE52-4277292565": null,
+  "D9B89B79-3317582976": null,
+  "F9075923-2346863377": null,
+  "439750AD-4232725020": null,
+  "2FE1289F-1117538767": null,
+  "031C63D5-2055818038": null,
+  "C5DC65CC-2148811546": null,
+  "FE5D79C2-1808812709": null,
+  "43B146AC-2194620937": null,
+  "E77943EB-1920090806": null,
+  "1F2B535C-76890793": null,
+  "8A001FFB-2903130336": null,
+  "0192631B-1145323944": null,
+  "B3CB1A98-597641148": null,
+  "59BAC0A4-3618458881": null,
+  "CF99FFC3-3248836438": null,
+  "F53CEF59-135546220": null,
+  "1F833B1A-1411403232": null,
+  "A12E5EC0-1030638617": null,
+  "12566A9F-2283619699": null,
+  "34D48C86-1732005585": null,
+  "79F81502-1966623430": null,
+  "31ECEA09-2370194099": null,
+  "642767F8-1095651262": null,
+  "4F352DF6-206523737": null,
+  "03926B39-3270526668": null,
+  "A480CF6D-3354609284": null,
+  "541678F3-2421050133": null,
+  "63A81F35-4213984865": null,
+  "DAE1205C-1548108008": null,
+  "1435D386-693060559": null,
+  "C620254E-3831975376": null,
+  "A3EB8007-251937621": null,
+  "F3A1AF58-3371910205": null,
+  "7D45507E-3521004734": null,
+  "C7A76207-3273476300": null,
+  "C2B8A615-1457473352": null,
+  "5440116D-1800683754": null,
+  "A3E5C680-2024490199": null,
+  "EE635736-1863794931": null,
+  "A0BEC7C6-1973046782": null,
+  "985FBB58-3954265393": null,
+  "19C88578-2519420026": null,
+  "B5D28FF2-3499967217": null,
+  "00762A0E-424297239": null,
+  "36BDB5FB-1146112454": null,
+  "BE402D47-1866613442": null,
+  "850BDA75-494226353": null,
+  "FFFFB429-3429843532": null,
+  "B4F97E9C-4018291549": null,
+  "D6342FA4-142035786": null,
+  "C9EF16D0-2832353360": null,
+  "1600F7B2-2815052261": null,
+  "D43879A2-30952532": null,
+  "37747545-3368830366": null,
+  "A055BB35-3933226475": null,
+  "14413A26-2814594364": null,
+  "A909B9C8-3627106541": null,
+  "8DEF3DCA-3555083455": null,
+  "DEDEFAEE-184565838": null,
+  "15BB5874-3720300153": null,
+  "3A8A8707-2084914538": null,
+  "BB0F42D7-3852289655": null,
+  "2EACC93D-1147487097": null,
+  "E97711F8-2539670288": null,
+  "B71C36FE-1525956961": null,
+  "D51EBEAB-2465221956": null,
+  "30554928-1413172867": null,
+  "7D3893EE-300960288": null,
+  "99FD63C7-4066920274": null,
+  "ED7A6D2D-4115153932": null,
+  "960B2195-471614979": null,
+  "F09EC544-1963738393": null,
+  "83522171-466373226": null,
+  "4A147B2F-4233186004": null,
+  "3612111E-3365552898": null,
+  "2AAD5EBB-4023337523": null,
+  "72403ADC-3646177473": null,
+  "5E1C56D5-602884437": null,
+  "53F9967B-3799139281": null,
+  "BCFCB0A5-928402582": null,
+  "5AF80443-2204779052": null,
+  "9768C861-3429388222": null,
+  "0F1AFB6A-3478408200": null,
+  "3E0610A8-3569828108": null,
+  "1A8154CA-2700232229": null,
+  "2DBCD4CB-3450946238": null,
+  "DE98C5D5-2826129374": null,
+  "13FD39CF-1030243601": null,
+  "0525C39D-1237336508": null,
+  "789E3AAF-1686784356": null,
+  "50D2E212-3673442089": null,
+  "DDEFA3A6-2320780018": null,
+  "59781A65-327829198": null,
+  "86ED082C-3326623957": null,
+  "853C1AB6-602622400": null,
+  "0373652C-1828211960": null,
+  "87239437-59198413": null,
+  "B45D6C01-1032408400": null,
+  "01E1E8B6-4191375293": null,
+  "540F7DD0-765742547": null,
+  "FFD76A43-85344314": null,
+  "5565CFE2-289621979": null,
+  "40BE3AFA-158810853": null,
+  "F9552F3F-922699199": null,
+  "C39D1F79-3615506469": null,
+  "E17B4160-2571716195": null,
+  "3AB5412D-1010057249": null,
+  "BE5E2A26-4004399349": null,
+  "95ED919A-2225095462": null
+}
+```
+
 ### Generar reporte de facturas sin envío
 ```bash
 curl -v \
@@ -503,6 +910,14 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   https://app.zauru.com/sales/reports/gen_invoices_without_shipment.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 1,
+  "zid": 1
+}
 ```
 
 ### Generar reporte de facturas con envíos anulados
@@ -515,7 +930,6 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/reports/gen_invoices_with_voided_shipment.json
 ```
-
 ### Generar reporte de facturas sin asiento contable de ventas
 ```bash
 curl -v \
@@ -526,7 +940,6 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/reports/gen_invoices_without_sales_entry.json
 ```
-
 ### Corregir facturas pagadas sin fecha de pago
 ```bash
 curl -v \
@@ -537,7 +950,6 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/reports/gen_fix_paid_without_paid_at_invoices.json
 ```
-
 ### Corregir facturas no pagadas con saldo cero
 ```bash
 curl -v \
@@ -548,7 +960,6 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/reports/gen_fix_unpaid_invoices_due_zero.json
 ```
-
 ### Sincronizar saldo pendiente con pagos
 ```bash
 curl -v \
@@ -559,7 +970,6 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/reports/gen_sync_invoice_due_with_payments.json
 ```
-
 ### Consultar el progreso de un reporte generado
 ```bash
 curl -v \
@@ -568,4 +978,12 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/sales/reports/check_report.json?zid=123456&report=fix_unpaid_invoices_due_zero"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```

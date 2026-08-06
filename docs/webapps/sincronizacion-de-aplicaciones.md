@@ -48,6 +48,11 @@ curl -v \
   https://app.zauru.com/apps/app_syncs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar sincronización
 ```bash
 curl -v \
@@ -65,6 +70,11 @@ curl -v \
   https://app.zauru.com/apps/app_syncs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Eliminar sincronización
 ```bash
 curl -v \
@@ -76,6 +86,8 @@ curl -v \
   https://app.zauru.com/apps/app_syncs/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener columnas de un modelo
 ```bash
 curl -v \
@@ -84,6 +96,63 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/app_syncs/get_columns.json?model=payees
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "integer",
+  "zid": "integer",
+  "id_number": "string",
+  "active": "boolean",
+  "name": "string",
+  "vendor": "boolean",
+  "buyer": "boolean",
+  "tin": "string",
+  "reference": "string",
+  "address_line_1": "text",
+  "address_line_2": "text",
+  "delivery_address": "string",
+  "currency_id": "integer",
+  "credit_limit": "decimal",
+  "payee_category_id": "integer",
+  "web": "string",
+  "phone": "string",
+  "email": "string",
+  "contact": "string",
+  "contact_phone": "string",
+  "contact_email": "string",
+  "contact2": "string",
+  "contact2_phone": "string",
+  "contact2_email": "string",
+  "notes": "text",
+  "entity_id": "integer",
+  "updater_id": "integer",
+  "created_at": "datetime",
+  "updated_at": "datetime",
+  "employee_id": "integer",
+  "service_provider": "boolean",
+  "invoices_in_credit_limit": "integer",
+  "payment_delay_in_credit_limit": "boolean",
+  "pdf": "string",
+  "image": "string",
+  "excempt": "boolean",
+  "small_taxpayer": "boolean",
+  "foreign": "boolean",
+  "latitude": "float",
+  "longitude": "float",
+  "great_contributor": "boolean",
+  "tax_withholding_agent": "boolean",
+  "subject_to_withholding_taxes": "boolean",
+  "personal_identification_number": "string",
+  "client_for_export": "boolean",
+  "payee_activity_id": "integer",
+  "city_id": "integer",
+  "taxpayer_registry": "string",
+  "district_id": "integer",
+  "default_payment_term_id": "integer",
+  "country_id": "integer"
+}
 ```
 
 ### Iniciar refresco completo
@@ -118,6 +187,11 @@ curl -v \
   https://app.zauru.com/apps/app_sync_ids_to_syncs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Ver detalle de un ID pendiente
 ```bash
 curl -v \
@@ -126,6 +200,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/app_sync_ids_to_syncs/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Eliminar un ID pendiente
@@ -138,6 +217,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/apps/app_sync_ids_to_syncs/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Sincronizar IDs pendientes ahora
 ```bash

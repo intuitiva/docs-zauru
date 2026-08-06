@@ -81,6 +81,67 @@ curl -v \
   https://app.zauru.com/pos/shipments.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "16421816",
+    "zid": "599",
+    "id_number": "INGRESO-177",
+    "reference": "INGRESO INVENTARIO 29.04.2026",
+    "needs_transport": false,
+    "entity_id": "1303",
+    "payee_id": "1957271",
+    "income": true,
+    "booking_image": null,
+    "booker_id": "1274",
+    "planned_shipping": "2026-04-29",
+    "shipped": false,
+    "shipped_at": null,
+    "shipping_image": null,
+    "shipper_id": null,
+    "planned_delivery": "2026-04-29",
+    "delivered": true,
+    "delivered_at": "2026-04-29 16:38:14",
+    "delivery_image": null,
+    "deliverer_id": "1274",
+    "voided": false,
+    "voided_at": null,
+    "voider_id": null,
+    "returned": false,
+    "returned_at": null,
+    "returner_id": null,
+    "creator_id": "1274",
+    "updater_id": "1274",
+    "memo": null,
+    "agency_from_id": "8248",
+    "address_from": "DORIS SALAZAR  ",
+    "agency_to_id": "8246",
+    "address_to": "Ciudad ",
+    "created_at": "2026-04-29 16:38:14.135016",
+    "updated_at": "2026-04-29 16:38:14.171228",
+    "movements_count": "1",
+    "transporter_id": null,
+    "contract_id": null,
+    "inventory_audit_id": null,
+    "ecommerce_request_id": null,
+    "external_image_url": null,
+    "reception_id": "535683",
+    "pos": false,
+    "issue_external_document": false,
+    "authorized_serial": null,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "uuid": null,
+    "document_external_storage_certified_response": null,
+    "document_external_storage_certified_response_for_voiding": null,
+    "transfer_request_id": null,
+    "stock_corrections": null,
+    "lock_version": "0"
+  }
+]
+```
+
 ### Ver envio
 
 ```bash
@@ -92,6 +153,65 @@ curl -v \
   https://app.zauru.com/pos/shipments/1.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "16421816",
+  "zid": "599",
+  "id_number": "INGRESO-177",
+  "reference": "INGRESO INVENTARIO 29.04.2026",
+  "needs_transport": false,
+  "entity_id": "1303",
+  "payee_id": "1957271",
+  "income": true,
+  "booking_image": null,
+  "booker_id": "1274",
+  "planned_shipping": "2026-04-29",
+  "shipped": false,
+  "shipped_at": null,
+  "shipping_image": null,
+  "shipper_id": null,
+  "planned_delivery": "2026-04-29",
+  "delivered": true,
+  "delivered_at": "2026-04-29 16:38:14",
+  "delivery_image": null,
+  "deliverer_id": "1274",
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "returned": false,
+  "returned_at": null,
+  "returner_id": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "memo": null,
+  "agency_from_id": "8248",
+  "address_from": "DORIS SALAZAR  ",
+  "agency_to_id": "8246",
+  "address_to": "Ciudad ",
+  "created_at": "2026-04-29 16:38:14.135016",
+  "updated_at": "2026-04-29 16:38:14.171228",
+  "movements_count": "1",
+  "transporter_id": null,
+  "contract_id": null,
+  "inventory_audit_id": null,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "reception_id": "535683",
+  "pos": false,
+  "issue_external_document": false,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": null,
+  "document_external_storage_certified_response": null,
+  "document_external_storage_certified_response_for_voiding": null,
+  "transfer_request_id": null,
+  "stock_corrections": null,
+  "lock_version": "0"
+}
+```
+
 ### Editar envio (formulario de entrega)
 
 ```bash
@@ -102,6 +222,65 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/shipments/1/edit.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "16421816",
+  "zid": "599",
+  "id_number": "INGRESO-177",
+  "reference": "INGRESO INVENTARIO 29.04.2026",
+  "needs_transport": false,
+  "entity_id": "1303",
+  "payee_id": "1957271",
+  "income": true,
+  "booking_image": null,
+  "booker_id": "1274",
+  "planned_shipping": "2026-04-29",
+  "shipped": false,
+  "shipped_at": null,
+  "shipping_image": null,
+  "shipper_id": null,
+  "planned_delivery": "2026-04-29",
+  "delivered": true,
+  "delivered_at": "2026-04-29 16:38:14",
+  "delivery_image": null,
+  "deliverer_id": "1274",
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "returned": false,
+  "returned_at": null,
+  "returner_id": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "memo": null,
+  "agency_from_id": "8248",
+  "address_from": "DORIS SALAZAR  ",
+  "agency_to_id": "8246",
+  "address_to": "Ciudad ",
+  "created_at": "2026-04-29 16:38:14.135016",
+  "updated_at": "2026-04-29 16:38:14.171228",
+  "movements_count": "1",
+  "transporter_id": null,
+  "contract_id": null,
+  "inventory_audit_id": null,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "reception_id": "535683",
+  "pos": false,
+  "issue_external_document": false,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": null,
+  "document_external_storage_certified_response": null,
+  "document_external_storage_certified_response_for_voiding": null,
+  "transfer_request_id": null,
+  "stock_corrections": null,
+  "lock_version": "0"
+}
+```
 
 ### Actualizar envio (registrar entrega)
 
@@ -124,3 +303,62 @@ curl -v \
   }' \
   https://app.zauru.com/pos/shipments/1.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "16421816",
+  "zid": "599",
+  "id_number": "INGRESO-177",
+  "reference": "INGRESO INVENTARIO 29.04.2026",
+  "needs_transport": false,
+  "entity_id": "1303",
+  "payee_id": "1957271",
+  "income": true,
+  "booking_image": null,
+  "booker_id": "1274",
+  "planned_shipping": "2026-04-29",
+  "shipped": false,
+  "shipped_at": null,
+  "shipping_image": null,
+  "shipper_id": null,
+  "planned_delivery": "2026-04-29",
+  "delivered": true,
+  "delivered_at": "2026-04-29 16:38:14",
+  "delivery_image": null,
+  "deliverer_id": "1274",
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "returned": false,
+  "returned_at": null,
+  "returner_id": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "memo": null,
+  "agency_from_id": "8248",
+  "address_from": "DORIS SALAZAR  ",
+  "agency_to_id": "8246",
+  "address_to": "Ciudad ",
+  "created_at": "2026-04-29 16:38:14.135016",
+  "updated_at": "2026-04-29 16:38:14.171228",
+  "movements_count": "1",
+  "transporter_id": null,
+  "contract_id": null,
+  "inventory_audit_id": null,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "reception_id": "535683",
+  "pos": false,
+  "issue_external_document": false,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": null,
+  "document_external_storage_certified_response": null,
+  "document_external_storage_certified_response_for_voiding": null,
+  "transfer_request_id": null,
+  "stock_corrections": null,
+  "lock_version": "0"
+}
+```

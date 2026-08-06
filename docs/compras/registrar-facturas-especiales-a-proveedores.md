@@ -100,6 +100,192 @@ curl -v \
   https://app.zauru.com/purchases/consolidates/new_for_special_invoice.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": null,
+    "reference": "Tridosha Junio 2026",
+    "charge_term_id": 3,
+    "authorized": true,
+    "issue_date": "2026-06-01",
+    "shipping_date": "2026-06-01",
+    "delivery_date": "2026-06-01",
+    "subtotal": "45.0",
+    "discount": "0.0",
+    "tax1": null,
+    "tax2": null,
+    "shipping": null,
+    "total": "45.0",
+    "due": "45.0",
+    "purchaser_id": 4,
+    "payee_id": 5,
+    "entity_id": 6,
+    "receiver_id": 7,
+    "received": true,
+    "received_at": "2026-06-25T14:32:54.339Z",
+    "voider_id": null,
+    "voided": false,
+    "voided_at": null,
+    "creator_id": 7,
+    "updater_id": 7,
+    "payment_expected_at": "2026-06-01",
+    "paid": false,
+    "paid_at": null,
+    "memo": "Tridosha",
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "consolidate_id": null,
+    "agency_id": 8,
+    "import": false,
+    "incoterm_destination": "",
+    "origin": "",
+    "transport_type": "Marítimo",
+    "forwarder": "",
+    "incoterm_id": 4,
+    "created_at": "2026-06-01T11:04:27.581Z",
+    "updated_at": "2026-06-25T14:32:54.357Z",
+    "purchase_order_details_count": 1,
+    "currency_id": 4,
+    "exchange_rate": 1.0,
+    "other_charges": null,
+    "image_reception": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "invoice": "3E136F56 398214902",
+    "discharge_details_count": 0,
+    "charges_count": 0,
+    "taxable": true,
+    "pdf": {
+      "url": "http://res.cloudinary.com/hurynnu8i/image/upload/v1782397959/EMPRESAEJEMPLO/purchase_order/purchase_order_5152_kjoiv6jpdvvnm4vuyepw.pdf",
+      "thumbnail": {
+        "url": "http://res.cloudinary.com/hurynnu8i/image/upload/c_fit,h_100,w_100/v1782397959/EMPRESAEJEMPLO/purchase_order/purchase_order_5152_kjoiv6jpdvvnm4vuyepw.jpg"
+      }
+    },
+    "contract_id": null,
+    "authorizer_id": 7,
+    "authorized_at": "2026-06-01T11:04:27.590Z",
+    "not_included_vat": "0.0",
+    "exempt": false,
+    "small_taxpayer": false,
+    "external_image_url": null,
+    "tax3": null,
+    "tax4": null,
+    "resolution": null,
+    "resolution_date": null,
+    "authorized_serial": null,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "uuid": "e728e241-affc-42bd-b757-1746e7b43bae",
+    "document_external_storage_certified_response": null,
+    "pos": false,
+    "income_taxes_withheld": "0.0",
+    "vat_withheld": "0.0",
+    "document_external_storage_certified_response_for_voiding": null,
+    "shipment_reference": null
+  },
+  {
+    "id": 9,
+    "zid": 10,
+    "id_number": null,
+    "reference": "parqueo LVL 01-07-25",
+    "charge_term_id": 11,
+    "authorized": true,
+    "issue_date": "2025-07-01",
+    "shipping_date": "2025-07-01",
+    "delivery_date": "2025-07-01",
+    "subtotal": "50.0",
+    "discount": "0.0",
+    "tax1": null,
+    "tax2": null,
+    "shipping": null,
+    "total": "50.0",
+    "due": "50.0",
+    "purchaser_id": 4,
+    "payee_id": 12,
+    "entity_id": 6,
+    "receiver_id": 7,
+    "received": true,
+    "received_at": "2025-08-27T00:17:37.491Z",
+    "voider_id": null,
+    "voided": false,
+    "voided_at": null,
+    "creator_id": 7,
+    "updater_id": 7,
+    "payment_expected_at": "2025-07-01",
+    "paid": false,
+    "paid_at": null,
+    "memo": "",
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "consolidate_id": null,
+    "agency_id": 8,
+    "import": false,
+    "incoterm_destination": "",
+    "origin": "",
+    "transport_type": "Marítimo",
+    "forwarder": "",
+    "incoterm_id": 4,
+    "created_at": "2025-08-27T00:17:36.836Z",
+    "updated_at": "2025-08-27T00:17:37.517Z",
+    "purchase_order_details_count": 0,
+    "currency_id": 4,
+    "exchange_rate": null,
+    "other_charges": null,
+    "image_reception": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "invoice": "2485AA18 55003328",
+    "discharge_details_count": 0,
+    "charges_count": 0,
+    "taxable": true,
+    "pdf": {
+      "url": "http://res.cloudinary.com/hurynnu8i/image/upload/v1756253856/EMPRESAEJEMPLO/purchase_order/purchase_order_3661_owjc2orzc8acztwww0ms.pdf",
+      "thumbnail": {
+        "url": "http://res.cloudinary.com/hurynnu8i/image/upload/c_fit,h_100,w_100/v1756253856/EMPRESAEJEMPLO/purchase_order/purchase_order_3661_owjc2orzc8acztwww0ms.jpg"
+      }
+    },
+    "contract_id": null,
+    "authorizer_id": 7,
+    "authorized_at": "2025-08-27T00:17:36.856Z",
+    "not_included_vat": "0.0",
+    "exempt": false,
+    "small_taxpayer": false,
+    "external_image_url": null,
+    "tax3": null,
+    "tax4": null,
+    "resolution": null,
+    "resolution_date": null,
+    "authorized_serial": null,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "uuid": "a85fbb08-c883-4c0f-98d2-cf42fd99c136",
+    "document_external_storage_certified_response": null,
+    "pos": false,
+    "income_taxes_withheld": "0.0",
+    "vat_withheld": "0.0",
+    "document_external_storage_certified_response_for_voiding": null,
+    "shipment_reference": null
+  }
+]
+```
+
 ### Crear consolidado de factura especial
 ```bash
 curl -v \
@@ -125,4 +311,28 @@ curl -v \
     }
   }' \
   https://app.zauru.com/purchases/consolidates/create_for_special_invoice.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2586",
+  "zid": "1",
+  "name": "consolidado de prueba",
+  "description": "descripcion del consolidado",
+  "entity_id": "1303",
+  "user_id": "23",
+  "created_at": "2026-08-06 04:13:36.115488",
+  "updated_at": "2026-08-06 04:13:36.115488",
+  "item_id": null,
+  "issued_at": null,
+  "document_external_storage_certified_response": null,
+  "authorized_serial": null,
+  "electronic_tax_document": null,
+  "id_number": null,
+  "resolution": null,
+  "resolution_date": null,
+  "electronic_authorization_supporting_document": null,
+  "charge_term_id": null
+}
 ```

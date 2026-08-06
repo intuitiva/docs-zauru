@@ -86,6 +86,11 @@ curl -v \
   https://app.zauru.com/pos/transfer_requests.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Ver solicitud de traslado
 
 ```bash
@@ -96,6 +101,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/transfer_requests/1.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
 
 ### Nueva solicitud de traslado (prellenado)
 
@@ -108,6 +118,11 @@ curl -v \
   https://app.zauru.com/pos/transfer_requests/new.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Editar solicitud de traslado
 
 ```bash
@@ -118,6 +133,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/transfer_requests/1/edit.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
 
 ### Crear solicitud de traslado
 
@@ -145,6 +165,11 @@ curl -v \
   https://app.zauru.com/pos/transfer_requests.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar solicitud de traslado
 
 ```bash
@@ -167,3 +192,8 @@ curl -v \
   }' \
   https://app.zauru.com/pos/transfer_requests/1.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
+```

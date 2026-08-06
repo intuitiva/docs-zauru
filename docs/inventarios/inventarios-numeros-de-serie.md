@@ -184,6 +184,36 @@ curl -v \
   https://app.zauru.com/inventories/serials.json?warehouse=1
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "id_number": null,
+    "name": "marzo",
+    "description": null,
+    "item_id": 2,
+    "entity_id": 3,
+    "agency_id": null,
+    "created_at": "2011-02-11T23:20:43.000Z",
+    "updated_at": "2014-04-03T15:03:44.508Z",
+    "agency_future_id": null
+  },
+  {
+    "id": 4,
+    "id_number": null,
+    "name": "abril y mayo",
+    "description": null,
+    "item_id": 2,
+    "entity_id": 3,
+    "agency_id": null,
+    "created_at": "2011-05-19T22:56:30.000Z",
+    "updated_at": "2014-04-03T15:03:44.508Z",
+    "agency_future_id": null
+  }
+]
+```
+
 ### Obtener los números de serie de todas las bodegas
 Devuelve todos los números de serie sin filtrar por bodega.
 ```bash
@@ -193,6 +223,36 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/serials/all_warehouses.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "id_number": null,
+    "name": "marzo",
+    "description": null,
+    "item_id": 2,
+    "entity_id": 3,
+    "agency_id": null,
+    "created_at": "2011-02-11T23:20:43.000Z",
+    "updated_at": "2014-04-03T15:03:44.508Z",
+    "agency_future_id": null
+  },
+  {
+    "id": 4,
+    "id_number": null,
+    "name": "abril y mayo",
+    "description": null,
+    "item_id": 2,
+    "entity_id": 3,
+    "agency_id": null,
+    "created_at": "2011-05-19T22:56:30.000Z",
+    "updated_at": "2014-04-03T15:03:44.508Z",
+    "agency_future_id": null
+  }
+]
 ```
 
 ### Obtener el detalle de un número de serie
@@ -206,6 +266,22 @@ curl -v \
   https://app.zauru.com/inventories/serials/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "73986",
+  "id_number": null,
+  "name": "serie654321",
+  "description": "Producto especial y unico ya vendido",
+  "item_id": "1",
+  "entity_id": "1303",
+  "agency_id": null,
+  "created_at": "2026-08-06 04:13:41.313293",
+  "updated_at": "2026-08-06 04:13:41.313293",
+  "agency_future_id": null
+}
+```
+
 ### Obtener los números de serie de un producto
 Devuelve todos los números de serie asociados a un producto específico.
 ```bash
@@ -215,6 +291,13 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/serials/1/item.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Crear un número de serie
@@ -236,6 +319,15 @@ curl -v \
   https://app.zauru.com/inventories/serials.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Actualizar un número de serie
 Actualiza los datos de un número de serie existente.
 ```bash
@@ -255,6 +347,22 @@ curl -v \
   https://app.zauru.com/inventories/serials/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "73986",
+  "id_number": null,
+  "name": "serie654321",
+  "description": "Producto especial y unico ya vendido",
+  "item_id": "1",
+  "entity_id": "1303",
+  "agency_id": null,
+  "created_at": "2026-08-06 04:13:41.313293",
+  "updated_at": "2026-08-06 04:13:41.313293",
+  "agency_future_id": null
+}
+```
+
 ### Eliminar un número de serie
 Elimina un número de serie. Solo es posible si no tiene movimientos asociados.
 ```bash
@@ -266,6 +374,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/serials/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Crear múltiples números de serie
 Crea varios números de serie simultáneamente para un ítem identificable.
@@ -292,6 +402,22 @@ curl -v \
   https://app.zauru.com/inventories/serials/create_multiple.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "73986",
+  "id_number": null,
+  "name": "serie654321",
+  "description": "Producto especial y unico ya vendido",
+  "item_id": "1",
+  "entity_id": "1303",
+  "agency_id": null,
+  "created_at": "2026-08-06 04:13:41.313293",
+  "updated_at": "2026-08-06 04:13:41.313293",
+  "agency_future_id": null
+}
+```
+
 ### Autocompletar números de serie
 Endpoint de autocompletado para buscar números de serie por término. Útil para integraciones con formularios personalizados.
 ```bash
@@ -301,4 +427,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/serials/autocomplete.json?term=SN-00
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[]
 ```

@@ -134,6 +134,13 @@ curl -v \
   "https://app.zauru.com/pos/reports/purchased_items_between_dates.json?date=2024-01-01&days=31&used_date=created_at&include_items=1&include_accounts=1"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 Parametros:
 
 - `date`: fecha inicial del reporte (formato `YYYY-MM-DD` o `DD/MM/YYYY`).

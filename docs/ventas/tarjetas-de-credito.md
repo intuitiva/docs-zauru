@@ -111,6 +111,11 @@ curl -v \
   https://app.zauru.com/sales/clients/1/credit_cards.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Ver detalle de una tarjeta de crédito
 ```bash
 curl -v \
@@ -121,6 +126,11 @@ curl -v \
   https://app.zauru.com/sales/clients/1/credit_cards/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Establecer una tarjeta como predeterminada
 ```bash
 curl -v \
@@ -129,4 +139,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/clients/1/credit_cards/1/set_default.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

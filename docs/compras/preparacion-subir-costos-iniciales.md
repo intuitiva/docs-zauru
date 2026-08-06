@@ -92,6 +92,28 @@ curl -v \
   https://app.zauru.com/purchases/computed_costs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "purchase_order_detail_id": null,
+  "item_id": 2,
+  "computed_cost": "10.0",
+  "quantity": "1.0",
+  "date": "2018-10-17",
+  "entity_id": 3,
+  "created_at": "2026-08-06T04:16:19.599Z",
+  "updated_at": "2026-08-06T04:16:19.599Z",
+  "average_cost": "10.0",
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": 0,
+  "reception_detail_id": null,
+  "production_order_id": null
+}
+```
+
 ### Obtener datos para un costo inicial nuevo
 ```bash
 curl -v \
@@ -101,6 +123,28 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/computed_costs/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "purchase_order_detail_id": null,
+  "item_id": null,
+  "computed_cost": "0.0",
+  "quantity": null,
+  "date": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "average_cost": null,
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": 0,
+  "reception_detail_id": null,
+  "production_order_id": null
+}
 ```
 
 ### Ver el historial de costos de un producto
@@ -115,6 +159,28 @@ curl -v \
   https://app.zauru.com/purchases/computed_costs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3441397",
+  "purchase_order_detail_id": "2496204",
+  "item_id": "927247",
+  "computed_cost": "4.68750",
+  "quantity": "72.000000",
+  "date": "2026-03-03",
+  "entity_id": "1303",
+  "created_at": "2026-03-03 19:49:54.515739",
+  "updated_at": "2026-03-03 19:49:54.515739",
+  "average_cost": "4.69000",
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": "100",
+  "reception_detail_id": "1093339",
+  "production_order_id": null
+}
+```
+
 ### Ver el cálculo de costo promedio de un producto
 Devuelve el kardex de costos con el cálculo del costo promedio ponderado del producto.
 ```bash
@@ -125,6 +191,28 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/computed_costs/1/average_calculation.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3441397",
+  "purchase_order_detail_id": "2496204",
+  "item_id": "927247",
+  "computed_cost": "4.68750",
+  "quantity": "72.000000",
+  "date": "2026-03-03",
+  "entity_id": "1303",
+  "created_at": "2026-03-03 19:49:54.515739",
+  "updated_at": "2026-03-03 19:49:54.515739",
+  "average_cost": "4.69000",
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": "100",
+  "reception_detail_id": "1093339",
+  "production_order_id": null
+}
 ```
 
 ### Actualizar un costo inicial
@@ -146,6 +234,28 @@ curl -v \
   https://app.zauru.com/purchases/computed_costs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3441397",
+  "purchase_order_detail_id": "2496204",
+  "item_id": "927247",
+  "computed_cost": "4.68750",
+  "quantity": "72.000000",
+  "date": "2026-03-03",
+  "entity_id": "1303",
+  "created_at": "2026-03-03 19:49:54.515739",
+  "updated_at": "2026-03-03 19:49:54.515739",
+  "average_cost": "4.69000",
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": "100",
+  "reception_detail_id": "1093339",
+  "production_order_id": null
+}
+```
+
 ### Eliminar un costo inicial
 ```bash
 curl -v \
@@ -157,6 +267,8 @@ curl -v \
   https://app.zauru.com/purchases/computed_costs/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Exportar costos computados
 Devuelve un JSON con los costos computados por producto, incluyendo el ultimo costo, el costo promedio ponderado y el costo promedio del kardex.
 ```bash
@@ -167,6 +279,36 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/computed_costs/export.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "308438": {
+    "ID": 124,
+    "Código": "INTEGRACION-FEL",
+    "Nombre": "Integración de Zauru con FEL",
+    "Ingresos": 74,
+    "Ultimo Costo": {
+      "cost": "535.71429",
+      "date": "2025-04-21"
+    },
+    "Costo Promedio Ponderado": "961.590193108108108108108108108108108108",
+    "Ultimo Costo Promedio Ponderado Kardex": "535.71"
+  },
+  "301851": {
+    "ID": 107,
+    "Código": "FEL-1",
+    "Nombre": "De 101 a 250 DTE's mensuales FEL",
+    "Ingresos": 1049,
+    "Ultimo Costo": {
+      "cost": "80.35714",
+      "date": "2026-06-01"
+    },
+    "Costo Promedio Ponderado": "80.852948941849380362249761677788369876",
+    "Ultimo Costo Promedio Ponderado Kardex": "80.35714"
+  }
+}
 ```
 
 ### Importar costos iniciales desde Excel
@@ -181,6 +323,11 @@ curl -v \
   https://app.zauru.com/purchases/computed_costs/initial_cost_imports/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 Luego envie el archivo con los costos a importar:
 ```bash
 curl -v \
@@ -189,4 +336,26 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -F "initial_cost_import[file]=@/ruta/al/archivo.xlsx" \
   https://app.zauru.com/purchases/computed_costs/initial_cost_imports.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3441397",
+  "purchase_order_detail_id": "2496204",
+  "item_id": "927247",
+  "computed_cost": "4.68750",
+  "quantity": "72.000000",
+  "date": "2026-03-03",
+  "entity_id": "1303",
+  "created_at": "2026-03-03 19:49:54.515739",
+  "updated_at": "2026-03-03 19:49:54.515739",
+  "average_cost": "4.69000",
+  "fifo_cost": null,
+  "lifo_cost": null,
+  "movement_id": null,
+  "stock_after_purchase": "100",
+  "reception_detail_id": "1093339",
+  "production_order_id": null
+}
 ```

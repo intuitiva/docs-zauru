@@ -41,6 +41,41 @@ curl -v \
   https://app.zauru.com/purchases/reports/datatables_inventory_cost_by_agency.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 3,
+  "recordsFiltered": 3,
+  "data": [
+    {
+      "id": 1,
+      "code": "ASDF-3021*AM",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación azul,mediana",
+      "mu": "KM",
+      "stock": 11,
+      "phystock": 11,
+      "unitcost": "8.93",
+      "total": "98.23"
+    },
+    {
+      "id": 2,
+      "code": "ASDF-3021*BS",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación beige,pequeña",
+      "mu": "unidad",
+      "stock": 10,
+      "phystock": 10,
+      "unitcost": "0.00",
+      "total": "0.00"
+    }
+  ]
+}
+```
+
 ### Obtener costos promedio ponderado de todas las agencias
 Devuelve el costo del inventario disponible sumando todas las agencias, paginado al estilo DataTables.
 ```bash
@@ -59,4 +94,39 @@ curl -v \
     }
   }' \
   https://app.zauru.com/purchases/reports/datatables_inventory_cost.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 3,
+  "recordsFiltered": 3,
+  "data": [
+    {
+      "id": 1,
+      "code": "ASDF-3021*AM",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación azul,mediana",
+      "mu": "KM",
+      "stock": 11,
+      "phystock": 11,
+      "unitcost": "8.93",
+      "total": "98.23"
+    },
+    {
+      "id": 2,
+      "code": "ASDF-3021*BS",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación beige,pequeña",
+      "mu": "unidad",
+      "stock": 10,
+      "phystock": 10,
+      "unitcost": "0.00",
+      "total": "0.00"
+    }
+  ]
+}
 ```

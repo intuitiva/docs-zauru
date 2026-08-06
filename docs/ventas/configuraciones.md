@@ -556,6 +556,37 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_terms/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3300",
+  "zid": "1",
+  "active": true,
+  "name": "Contado",
+  "credit_percent": "0",
+  "credit_days": "0",
+  "credit": false,
+  "applicable_to_uncategorized_payees": true,
+  "account_from_id": "77710",
+  "account_to_id": "77714",
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-02-11 14:40:17.970023",
+  "updated_at": "2026-02-11 14:40:17.970023",
+  "extra_entries": "0",
+  "flexible_entries_values": false,
+  "cost_account_id": "77721",
+  "inventory_asset_account_id": "77718",
+  "flexible_entries_tags": false,
+  "products_and_services_instead_of_account_from": false,
+  "memo": null,
+  "advance_payment_account_to_id": null,
+  "product_account_id": null,
+  "service_account_id": null,
+  "cost_center_id": null
+}
+```
+
 #### Obtener plantilla para crear un término de pago
 ```bash
 curl -v \
@@ -564,6 +595,37 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/settings/payment_terms/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "name": null,
+  "credit_percent": 0.0,
+  "credit_days": 0,
+  "credit": false,
+  "applicable_to_uncategorized_payees": true,
+  "account_from_id": null,
+  "account_to_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "extra_entries": 0,
+  "flexible_entries_values": false,
+  "cost_account_id": null,
+  "inventory_asset_account_id": null,
+  "flexible_entries_tags": false,
+  "products_and_services_instead_of_account_from": false,
+  "memo": null,
+  "advance_payment_account_to_id": null,
+  "product_account_id": null,
+  "service_account_id": null,
+  "cost_center_id": null
+}
 ```
 
 #### Crear nuevo término de pago
@@ -588,6 +650,18 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_terms.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "credit_percent": [
+    "debe ser menor o igual que 1"
+  ],
+  "entity": [
+    "es inválido"
+  ]
+}
+```
+
 #### Actualizar un término de pago
 ```bash
 curl -v \
@@ -607,6 +681,37 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_terms/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3300",
+  "zid": "1",
+  "active": true,
+  "name": "Contado",
+  "credit_percent": "0",
+  "credit_days": "0",
+  "credit": false,
+  "applicable_to_uncategorized_payees": true,
+  "account_from_id": "77710",
+  "account_to_id": "77714",
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-02-11 14:40:17.970023",
+  "updated_at": "2026-02-11 14:40:17.970023",
+  "extra_entries": "0",
+  "flexible_entries_values": false,
+  "cost_account_id": "77721",
+  "inventory_asset_account_id": "77718",
+  "flexible_entries_tags": false,
+  "products_and_services_instead_of_account_from": false,
+  "memo": null,
+  "advance_payment_account_to_id": null,
+  "product_account_id": null,
+  "service_account_id": null,
+  "cost_center_id": null
+}
+```
+
 #### Eliminar término de pago
 ```bash
 curl -v \
@@ -617,6 +722,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/settings/payment_terms/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Métodos de Pago
 
@@ -630,6 +737,48 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 3,
+    "name": "depósito G&T ",
+    "account_id": 2,
+    "account2_id": null,
+    "account2_rate": null,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2013-03-01T17:15:40.263Z",
+    "updated_at": "2015-01-28T22:53:53.391Z",
+    "account2_fixed_amount": null,
+    "printable_entry": true,
+    "avoid_overpay_showing_change": false,
+    "active": true,
+    "ecommerce": false,
+    "gateway_config_id": null
+  },
+  {
+    "id": 4,
+    "zid": 5,
+    "name": "cheques en dólares",
+    "account_id": 6,
+    "account2_id": null,
+    "account2_rate": null,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2015-01-28T22:53:38.228Z",
+    "updated_at": "2015-01-28T22:53:38.228Z",
+    "account2_fixed_amount": null,
+    "printable_entry": true,
+    "avoid_overpay_showing_change": false,
+    "active": true,
+    "ecommerce": false,
+    "gateway_config_id": null
+  }
+]
+```
+
 #### Ver detalle de un método de pago
 ```bash
 curl -v \
@@ -640,6 +789,28 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "name": "Método de pago Actualizado",
+  "account_id": 1,
+  "account2_id": null,
+  "account2_rate": null,
+  "updater_id": 2,
+  "entity_id": 3,
+  "created_at": "2010-05-31T18:41:30.000Z",
+  "updated_at": "2026-08-06T04:13:49.797Z",
+  "account2_fixed_amount": null,
+  "printable_entry": true,
+  "avoid_overpay_showing_change": true,
+  "active": true,
+  "ecommerce": false,
+  "gateway_config_id": null
+}
+```
+
 #### Obtener plantilla para crear un método de pago
 ```bash
 curl -v \
@@ -648,6 +819,28 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/settings/payment_methods/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "name": null,
+  "account_id": null,
+  "account2_id": null,
+  "account2_rate": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "account2_fixed_amount": null,
+  "printable_entry": true,
+  "avoid_overpay_showing_change": false,
+  "active": true,
+  "ecommerce": false,
+  "gateway_config_id": null
+}
 ```
 
 #### Crear nuevo método de pago
@@ -674,6 +867,28 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "name": "Método de pago Prueba",
+  "account_id": 3,
+  "account2_id": 2,
+  "account2_rate": 0.01,
+  "updater_id": 4,
+  "entity_id": 5,
+  "created_at": "2026-08-06T04:16:29.593Z",
+  "updated_at": "2026-08-06T04:16:29.593Z",
+  "account2_fixed_amount": "1.45",
+  "printable_entry": true,
+  "avoid_overpay_showing_change": true,
+  "active": true,
+  "ecommerce": false,
+  "gateway_config_id": null
+}
+```
+
 #### Actualizar un método de pago
 ```bash
 curl -v \
@@ -692,6 +907,28 @@ curl -v \
   https://app.zauru.com/sales/settings/payment_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "4489",
+  "zid": "1",
+  "name": "Efectivo",
+  "account_id": "77702",
+  "account2_id": null,
+  "account2_rate": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-02-11 14:40:36.659574",
+  "updated_at": "2026-02-11 14:40:36.659574",
+  "account2_fixed_amount": null,
+  "printable_entry": true,
+  "avoid_overpay_showing_change": false,
+  "active": true,
+  "ecommerce": false,
+  "gateway_config_id": null
+}
+```
+
 #### Eliminar método de pago
 ```bash
 curl -v \
@@ -702,6 +939,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/settings/payment_methods/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Listados de Precios
 
@@ -715,6 +954,36 @@ curl -v \
   https://app.zauru.com/sales/settings/price_lists.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "name": "16 a 20",
+    "description": "",
+    "entity_id": 2,
+    "created_at": "2014-03-19T22:16:26.763Z",
+    "updated_at": "2014-03-19T23:28:04.548Z",
+    "payee_categories_count": 1,
+    "client_exclusive": true,
+    "ecommerce": false
+  },
+  {
+    "id": 3,
+    "active": true,
+    "name": "6 a 10",
+    "description": "",
+    "entity_id": 2,
+    "created_at": "2013-03-01T05:33:51.610Z",
+    "updated_at": "2014-03-19T22:15:50.623Z",
+    "payee_categories_count": 1,
+    "client_exclusive": true,
+    "ecommerce": false
+  }
+]
+```
+
 #### Ver detalle de un listado de precios
 ```bash
 curl -v \
@@ -725,6 +994,22 @@ curl -v \
   https://app.zauru.com/sales/settings/price_lists/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3936",
+  "active": true,
+  "name": "VIP",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-07-01 16:53:13.179084",
+  "updated_at": "2026-07-01 16:53:13.179084",
+  "payee_categories_count": "1",
+  "client_exclusive": true,
+  "ecommerce": false
+}
+```
+
 #### Obtener plantilla para crear un listado de precios
 ```bash
 curl -v \
@@ -733,6 +1018,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/settings/price_lists/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "name": null,
+  "description": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "payee_categories_count": 0,
+  "client_exclusive": true,
+  "ecommerce": false
+}
 ```
 
 #### Crear nuevo listado de precios
@@ -757,6 +1058,22 @@ curl -v \
   https://app.zauru.com/sales/settings/price_lists.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3936",
+  "active": true,
+  "name": "VIP",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-07-01 16:53:13.179084",
+  "updated_at": "2026-07-01 16:53:13.179084",
+  "payee_categories_count": "1",
+  "client_exclusive": true,
+  "ecommerce": false
+}
+```
+
 #### Actualizar un listado de precios
 ```bash
 curl -v \
@@ -775,6 +1092,22 @@ curl -v \
   https://app.zauru.com/sales/settings/price_lists/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3936",
+  "active": true,
+  "name": "VIP",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-07-01 16:53:13.179084",
+  "updated_at": "2026-07-01 16:53:13.179084",
+  "payee_categories_count": "1",
+  "client_exclusive": true,
+  "ecommerce": false
+}
+```
+
 #### Eliminar listado de precios
 ```bash
 curl -v \
@@ -785,6 +1118,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/settings/price_lists/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Descuentos
 
@@ -798,6 +1133,60 @@ curl -v \
   https://app.zauru.com/sales/settings/discounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "active": true,
+    "name": "Mensajero",
+    "amount": "380.0",
+    "percent": null,
+    "notes": "",
+    "currency_id": 2,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2015-05-19T14:40:07.248Z",
+    "updated_at": "2015-05-19T14:41:35.788Z",
+    "invoice_details_or_invoices": false,
+    "remove_decimals": false,
+    "min_quantity_threshold": 1,
+    "max_quantity_threshold": null,
+    "force_assignation": false,
+    "payee_category_id": null,
+    "payee_category_filter_active": false,
+    "agency_ids": [
+      25
+    ]
+  },
+  {
+    "id": 4,
+    "zid": 3,
+    "active": true,
+    "name": "Tarjeta de Crédito",
+    "amount": null,
+    "percent": 0.045,
+    "notes": "",
+    "currency_id": 2,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2016-09-01T22:16:31.996Z",
+    "updated_at": "2016-09-01T22:16:31.996Z",
+    "invoice_details_or_invoices": false,
+    "remove_decimals": false,
+    "min_quantity_threshold": 1,
+    "max_quantity_threshold": null,
+    "force_assignation": false,
+    "payee_category_id": null,
+    "payee_category_filter_active": false,
+    "agency_ids": [
+      25
+    ]
+  }
+]
+```
+
 #### Ver detalle de un descuento
 ```bash
 curl -v \
@@ -808,6 +1197,32 @@ curl -v \
   https://app.zauru.com/sales/settings/discounts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "cash 5%",
+  "amount": null,
+  "percent": "0.05",
+  "notes": null,
+  "currency_id": null,
+  "updater_id": "1",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:03.86517",
+  "updated_at": "2013-02-11 06:40:03.86517",
+  "invoice_details_or_invoices": false,
+  "remove_decimals": false,
+  "min_quantity_threshold": "1",
+  "max_quantity_threshold": null,
+  "force_assignation": false,
+  "payee_category_id": null,
+  "payee_category_filter_active": false,
+  "agency_ids": "{16,17,55}"
+}
+```
+
 #### Obtener plantilla para crear un descuento
 ```bash
 curl -v \
@@ -816,6 +1231,32 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/settings/discounts/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "name": null,
+  "amount": null,
+  "percent": null,
+  "notes": null,
+  "currency_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "invoice_details_or_invoices": false,
+  "remove_decimals": false,
+  "min_quantity_threshold": 1,
+  "max_quantity_threshold": null,
+  "force_assignation": false,
+  "payee_category_id": null,
+  "payee_category_filter_active": false,
+  "agency_ids": []
+}
 ```
 
 #### Crear nuevo descuento
@@ -841,6 +1282,32 @@ curl -v \
   https://app.zauru.com/sales/settings/discounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "cash 5%",
+  "amount": null,
+  "percent": "0.05",
+  "notes": null,
+  "currency_id": null,
+  "updater_id": "1",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:03.86517",
+  "updated_at": "2013-02-11 06:40:03.86517",
+  "invoice_details_or_invoices": false,
+  "remove_decimals": false,
+  "min_quantity_threshold": "1",
+  "max_quantity_threshold": null,
+  "force_assignation": false,
+  "payee_category_id": null,
+  "payee_category_filter_active": false,
+  "agency_ids": "{16,17,55}"
+}
+```
+
 #### Actualizar un descuento
 ```bash
 curl -v \
@@ -859,6 +1326,32 @@ curl -v \
   https://app.zauru.com/sales/settings/discounts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "active": true,
+  "name": "cash 5%",
+  "amount": null,
+  "percent": "0.05",
+  "notes": null,
+  "currency_id": null,
+  "updater_id": "1",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:03.86517",
+  "updated_at": "2013-02-11 06:40:03.86517",
+  "invoice_details_or_invoices": false,
+  "remove_decimals": false,
+  "min_quantity_threshold": "1",
+  "max_quantity_threshold": null,
+  "force_assignation": false,
+  "payee_category_id": null,
+  "payee_category_filter_active": false,
+  "agency_ids": "{16,17,55}"
+}
+```
+
 #### Eliminar descuento
 ```bash
 curl -v \
@@ -869,3 +1362,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/settings/discounts/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

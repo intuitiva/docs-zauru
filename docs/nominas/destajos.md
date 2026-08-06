@@ -148,6 +148,37 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_pieceworks.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "pieceworks": [
+    {
+      "id": 1,
+      "zid": 1,
+      "date": "2024-06-15",
+      "piecework_details_count": 2,
+      "value": "15.912",
+      "paid": false,
+      "paid_at": null,
+      "notes": "Corte de cafe parcela norte",
+      "creator_id": 2,
+      "updater_id": 2,
+      "entity_id": 3,
+      "created_at": "2026-08-06T04:14:35.291Z",
+      "updated_at": "2026-08-06T04:14:35.291Z",
+      "supervisor_id": 4,
+      "agency_id": 5
+    }
+  ],
+  "distinct_employees_per_piecework": {
+    "199093": 2
+  },
+  "max_employee_details_per_piecework": {
+    "199093": 1
+  }
+}
+```
+
 ### Crear un destajo
 
 ```bash
@@ -181,6 +212,65 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_pieceworks.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "date": "2024-06-15",
+  "piecework_details_count": 2,
+  "value": "15.912",
+  "paid": false,
+  "paid_at": null,
+  "notes": "Corte de cafe parcela norte",
+  "creator_id": 2,
+  "updater_id": 2,
+  "entity_id": 3,
+  "created_at": "2026-08-06T04:17:32.341Z",
+  "updated_at": "2026-08-06T04:17:32.341Z",
+  "supervisor_id": 4,
+  "agency_id": 5,
+  "piecework_details": [
+    {
+      "id": 6,
+      "piecework_id": 1,
+      "employee_id": 4,
+      "piecework_type_id": 4,
+      "piecework_type_name": "Armar cajas vacías (Pegar, colocar cajas, color plástico)",
+      "piecework_type_measurement_unit": "Caja/Ord",
+      "quantity": 5.5,
+      "value": "10.296",
+      "reference": "Lote A",
+      "created_at": "2026-08-06T04:17:32.345Z",
+      "updated_at": "2026-08-06T04:17:32.345Z",
+      "includes_bonus": true,
+      "payroll_id": null,
+      "overtime": false,
+      "force_whole_week_bonuses_with_other_bonused_piecework_types": false,
+      "entity_id": 3
+    },
+    {
+      "id": 7,
+      "piecework_id": 1,
+      "employee_id": 3,
+      "piecework_type_id": 4,
+      "piecework_type_name": "Armar cajas vacías (Pegar, colocar cajas, color plástico)",
+      "piecework_type_measurement_unit": "Caja/Ord",
+      "quantity": 3.0,
+      "value": "5.616",
+      "reference": "Lote A",
+      "created_at": "2026-08-06T04:17:32.365Z",
+      "updated_at": "2026-08-06T04:17:32.365Z",
+      "includes_bonus": true,
+      "payroll_id": null,
+      "overtime": false,
+      "force_whole_week_bonuses_with_other_bonused_piecework_types": false,
+      "entity_id": 3
+    }
+  ]
+}
+```
+
 ### Ver un destajo
 
 ```bash
@@ -190,6 +280,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_pieceworks/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Borrar un destajo
@@ -204,6 +299,8 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_pieceworks/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener estructura para crear un destajo
 
 Devuelve el destajo vacio junto con el listado de empleados disponibles.
@@ -217,6 +314,30 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_pieceworks/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "piecework": {
+    "id": null,
+    "zid": null,
+    "date": null,
+    "piecework_details_count": null,
+    "value": null,
+    "paid": false,
+    "paid_at": null,
+    "notes": null,
+    "creator_id": null,
+    "updater_id": null,
+    "entity_id": 1,
+    "created_at": null,
+    "updated_at": null,
+    "supervisor_id": null,
+    "agency_id": null
+  },
+  "employees": []
+}
+```
+
 ### Obtener estructura para editar un destajo
 
 ```bash
@@ -226,6 +347,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_pieceworks/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Actualizar un destajo
@@ -256,6 +382,11 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_pieceworks/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Listar destajos pagados
 
 ```bash
@@ -265,6 +396,15 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/paid_pieceworks.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "pieceworks": [],
+  "distinct_employees_per_piecework": {},
+  "max_employee_details_per_piecework": {}
+}
 ```
 
 ### Ver un destajo pagado
@@ -278,6 +418,11 @@ curl -v \
   https://app.zauru.com/payroll/paid_pieceworks/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener estructura para un destajo de feriado
 
 ```bash
@@ -287,6 +432,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/piecework_holidays/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "holiday": null,
+  "holiday_hours": null,
+  "piecework_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "agency_id": 1,
+  "entity_id": 2,
+  "creator_id": 3,
+  "piecework_type_id": 4
+}
 ```
 
 ### Crear un destajo de feriado
@@ -311,6 +472,22 @@ curl -v \
   https://app.zauru.com/payroll/piecework_holidays.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "144",
+  "holiday": "2023-10-20",
+  "holiday_hours": "8",
+  "piecework_id": "72261",
+  "created_at": "2023-10-25 19:31:36.46228",
+  "updated_at": "2023-10-25 19:31:36.46228",
+  "agency_id": "4492",
+  "entity_id": "733",
+  "creator_id": "1913",
+  "piecework_type_id": "82"
+}
+```
+
 ### Listar tipos de destajo
 
 ```bash
@@ -320,6 +497,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/piecework_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[]
 ```
 
 ### Ver un tipo de destajo
@@ -333,6 +515,30 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "264",
+  "active": true,
+  "zid": "253",
+  "piecework_type_group_id": "47",
+  "id_number": "453",
+  "name": "Ajuste de salario ACP",
+  "unit_of_measurement": null,
+  "value": "1.000000",
+  "description": null,
+  "account_id": "49826",
+  "creator_id": "259",
+  "updater_id": "2082",
+  "entity_id": "733",
+  "created_at": "2021-01-22 05:03:02.189046",
+  "updated_at": "2022-03-10 17:51:41.201703",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
 ### Obtener estructura para crear un tipo de destajo
 
 ```bash
@@ -344,6 +550,30 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_types/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "zid": null,
+  "piecework_type_group_id": null,
+  "id_number": null,
+  "name": null,
+  "unit_of_measurement": null,
+  "value": null,
+  "description": null,
+  "account_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
 ### Obtener estructura para editar un tipo de destajo
 
 ```bash
@@ -353,6 +583,30 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/piecework_types/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "264",
+  "active": true,
+  "zid": "253",
+  "piecework_type_group_id": "47",
+  "id_number": "453",
+  "name": "Ajuste de salario ACP",
+  "unit_of_measurement": null,
+  "value": "1.000000",
+  "description": null,
+  "account_id": "49826",
+  "creator_id": "259",
+  "updater_id": "2082",
+  "entity_id": "733",
+  "created_at": "2021-01-22 05:03:02.189046",
+  "updated_at": "2022-03-10 17:51:41.201703",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
 ```
 
 ### Crear un tipo de destajo
@@ -379,6 +633,15 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "piecework_type_group": [
+    "no puede estar en blanco"
+  ]
+}
+```
+
 ### Actualizar un tipo de destajo
 
 ```bash
@@ -397,6 +660,30 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "264",
+  "active": true,
+  "zid": "253",
+  "piecework_type_group_id": "47",
+  "id_number": "453",
+  "name": "Ajuste de salario ACP",
+  "unit_of_measurement": null,
+  "value": "1.000000",
+  "description": null,
+  "account_id": "49826",
+  "creator_id": "259",
+  "updater_id": "2082",
+  "entity_id": "733",
+  "created_at": "2021-01-22 05:03:02.189046",
+  "updated_at": "2022-03-10 17:51:41.201703",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
 ### Borrar un tipo de destajo
 
 ```bash
@@ -409,6 +696,8 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_types/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listar grupos de tipos de destajo
 
 ```bash
@@ -418,6 +707,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/piecework_type_groups.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "id_number": "CS-001",
+    "name": "Cosecha",
+    "description": "Tipos de destajo relacionados con cosecha",
+    "creator_id": 2,
+    "updater_id": null,
+    "entity_id": 3,
+    "created_at": "2026-08-06T04:14:36.266Z",
+    "updated_at": "2026-08-06T04:14:36.266Z"
+  }
+]
 ```
 
 ### Ver un grupo de tipos de destajo
@@ -431,6 +738,22 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "id_number": null,
+  "name": "RECIBIR Y ARMAR CAJAS",
+  "description": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2021-01-20 17:22:06.619913",
+  "updated_at": "2021-01-20 17:22:06.619913"
+}
+```
+
 ### Obtener estructura para crear un grupo de tipos de destajo
 
 ```bash
@@ -442,6 +765,22 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_type_groups/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "id_number": null,
+  "name": null,
+  "description": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null
+}
+```
+
 ### Obtener estructura para editar un grupo de tipos de destajo
 
 ```bash
@@ -451,6 +790,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/settings/piecework_type_groups/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "id_number": null,
+  "name": "RECIBIR Y ARMAR CAJAS",
+  "description": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2021-01-20 17:22:06.619913",
+  "updated_at": "2021-01-20 17:22:06.619913"
+}
 ```
 
 ### Crear un grupo de tipos de destajo
@@ -472,6 +827,22 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_type_groups.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "id_number": null,
+  "name": "RECIBIR Y ARMAR CAJAS",
+  "description": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2021-01-20 17:22:06.619913",
+  "updated_at": "2021-01-20 17:22:06.619913"
+}
+```
+
 ### Actualizar un grupo de tipos de destajo
 
 ```bash
@@ -490,6 +861,22 @@ curl -v \
   https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "id_number": null,
+  "name": "RECIBIR Y ARMAR CAJAS",
+  "description": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2021-01-20 17:22:06.619913",
+  "updated_at": "2021-01-20 17:22:06.619913"
+}
+```
+
 ### Borrar un grupo de tipos de destajo
 
 ```bash
@@ -501,3 +888,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/settings/piecework_type_groups/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

@@ -29,3 +29,10 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/accounting/reports/check_balance_sheet_in_local_currency.json?zid=XXXX"
 ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "not_found"
+}
+```

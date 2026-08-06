@@ -116,6 +116,65 @@ curl -v \
   https://app.zauru.com/accounting/payees.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "2080191",
+    "zid": "87",
+    "id_number": null,
+    "active": true,
+    "name": "Cliente CRM",
+    "vendor": false,
+    "buyer": true,
+    "tin": "12345678-9",
+    "reference": null,
+    "address_line_1": null,
+    "address_line_2": null,
+    "delivery_address": null,
+    "currency_id": "1",
+    "credit_limit": "0.0",
+    "payee_category_id": null,
+    "web": null,
+    "phone": null,
+    "email": null,
+    "contact": null,
+    "contact_phone": null,
+    "contact_email": null,
+    "contact2": null,
+    "contact2_phone": null,
+    "contact2_email": null,
+    "notes": null,
+    "entity_id": "1303",
+    "updater_id": "23",
+    "created_at": "2026-08-06 04:12:08.19016",
+    "updated_at": "2026-08-06 04:12:08.19016",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": null,
+    "image": null,
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": null,
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": null
+  }
+]
+```
+
 ### Listado de beneficiarios (datatables)
 ```bash
 curl -v \
@@ -142,6 +201,63 @@ curl -v \
   https://app.zauru.com/accounting/payees/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Obtener el formulario de nuevo beneficiario
 ```bash
 curl -v \
@@ -152,6 +268,63 @@ curl -v \
   https://app.zauru.com/accounting/payees/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Obtener el formulario de edicion de un beneficiario
 ```bash
 curl -v \
@@ -160,6 +333,63 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/payees/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
 ```
 
 ### Crear un beneficiario
@@ -187,6 +417,63 @@ curl -v \
   https://app.zauru.com/accounting/payees.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
+```
+
 ### Actualizar un beneficiario
 ```bash
 curl -v \
@@ -202,4 +489,61 @@ curl -v \
     }
   }' \
   https://app.zauru.com/accounting/payees/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2080191",
+  "zid": "87",
+  "id_number": null,
+  "active": true,
+  "name": "Cliente CRM",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": "1",
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:12:08.19016",
+  "updated_at": "2026-08-06 04:12:08.19016",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": null,
+  "image": null,
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
 ```

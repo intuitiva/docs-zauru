@@ -102,6 +102,19 @@ curl -v \
   https://app.zauru.com/access_control/permissions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1",
+    "role_id": "1",
+    "operation_id": "1",
+    "created_at": "2013-01-08 16:54:54.328057",
+    "updated_at": "2013-01-08 16:54:54.328057"
+  }
+]
+```
+
 Para obtener los permisos de una aplicación específica, agregue el id de la aplicación:
 
 ```bash
@@ -111,6 +124,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/permissions.json?id=1
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1",
+    "role_id": "1",
+    "operation_id": "1",
+    "created_at": "2013-01-08 16:54:54.328057",
+    "updated_at": "2013-01-08 16:54:54.328057"
+  }
+]
 ```
 
 ### Actualizar permisos
@@ -129,6 +155,17 @@ curl -v \
     }
   }' \
   https://app.zauru.com/access_control/permissions/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "role_id": "1",
+  "operation_id": "1",
+  "created_at": "2013-01-08 16:54:54.328057",
+  "updated_at": "2013-01-08 16:54:54.328057"
+}
 ```
 
 Donde la clave es `"operation_id,role_id"` y el valor es `"1"` para asignar el permiso.

@@ -95,6 +95,11 @@ curl -v \
   https://app.zauru.com/contracts/closed_contracts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Listar Contratos Cerrados
 
 ```bash
@@ -104,4 +109,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/contracts/closed_contracts.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
 ```

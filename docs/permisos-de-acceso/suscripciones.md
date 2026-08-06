@@ -30,6 +30,42 @@ curl -v \
   https://app.zauru.com/access_control/subscriptions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "active": true,
+    "read_only": false,
+    "user_id": 1,
+    "role_id": 1,
+    "invitation_id": 2,
+    "entity_id": 1,
+    "updater_id": 2,
+    "notes": null,
+    "created_at": "2013-01-08T16:54:52.987Z",
+    "updated_at": "2013-01-08T16:54:52.987Z",
+    "name": "Usuario Ejemplo Uno"
+  },
+  {
+    "id": 3,
+    "zid": 2,
+    "active": true,
+    "read_only": false,
+    "user_id": 4,
+    "role_id": 5,
+    "invitation_id": 6,
+    "entity_id": 1,
+    "updater_id": 1,
+    "notes": "",
+    "created_at": "2013-03-01T02:25:59.854Z",
+    "updated_at": "2013-03-01T02:25:59.854Z",
+    "name": "Carlos"
+  }
+]
+```
+
 ### Obtener listado filtrado por estado
 ```bash
 curl -v \
@@ -40,6 +76,42 @@ curl -v \
   https://app.zauru.com/access_control/subscriptions.json?scope=inactives
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "active": true,
+    "read_only": false,
+    "user_id": 1,
+    "role_id": 1,
+    "invitation_id": 2,
+    "entity_id": 1,
+    "updater_id": 2,
+    "notes": null,
+    "created_at": "2013-01-08T16:54:52.987Z",
+    "updated_at": "2013-01-08T16:54:52.987Z",
+    "name": "Usuario Ejemplo Uno"
+  },
+  {
+    "id": 3,
+    "zid": 2,
+    "active": true,
+    "read_only": false,
+    "user_id": 4,
+    "role_id": 5,
+    "invitation_id": 6,
+    "entity_id": 1,
+    "updater_id": 1,
+    "notes": "",
+    "created_at": "2013-03-01T02:25:59.854Z",
+    "updated_at": "2013-03-01T02:25:59.854Z",
+    "name": "Carlos"
+  }
+]
+```
+
 ### Obtener detalle de una suscripción
 ```bash
 curl -v \
@@ -48,6 +120,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/subscriptions/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "active": true,
+  "read_only": false,
+  "user_id": 1,
+  "role_id": 1,
+  "invitation_id": 2,
+  "entity_id": 1,
+  "updater_id": 2,
+  "notes": null,
+  "created_at": "2013-01-08T16:54:52.987Z",
+  "updated_at": "2013-01-08T16:54:52.987Z"
+}
 ```
 
 ### Crear suscripción
@@ -68,6 +158,24 @@ curl -v \
   https://app.zauru.com/access_control/subscriptions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5671",
+  "zid": "1",
+  "active": true,
+  "read_only": false,
+  "user_id": "1273",
+  "role_id": "2576",
+  "invitation_id": "14064",
+  "entity_id": "1303",
+  "updater_id": "214",
+  "notes": null,
+  "created_at": "2026-02-11 18:22:27.769553",
+  "updated_at": "2026-02-11 18:22:27.769553"
+}
+```
+
 ### Actualizar suscripción
 ```bash
 curl -v \
@@ -85,6 +193,24 @@ curl -v \
   https://app.zauru.com/access_control/subscriptions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5671",
+  "zid": "1",
+  "active": true,
+  "read_only": false,
+  "user_id": "1273",
+  "role_id": "2576",
+  "invitation_id": "14064",
+  "entity_id": "1303",
+  "updater_id": "214",
+  "notes": null,
+  "created_at": "2026-02-11 18:22:27.769553",
+  "updated_at": "2026-02-11 18:22:27.769553"
+}
+```
+
 ### Eliminar suscripción
 ```bash
 curl -v \
@@ -95,6 +221,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/access_control/subscriptions/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Exportar suscripciones
 ```bash

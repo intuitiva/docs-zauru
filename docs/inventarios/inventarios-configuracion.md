@@ -108,6 +108,11 @@ curl -v \
   https://app.zauru.com/inventories/inventories_settings/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Guardar la configuración de inventarios
 Guarda las opciones de configuración del módulo de Inventarios. Todos los parámetros son opcionales; solo se actualizaron los que se envíen.
 ```bash
@@ -128,4 +133,9 @@ curl -v \
     "inventory_audit_outgoing_shipment_entry_account_to_id": "12"
   }' \
   https://app.zauru.com/inventories/inventories_settings.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

@@ -362,6 +362,68 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "name": "Bono14 Año 2022",
+    "start_date": "2021-06-01",
+    "end_date": "2022-05-31",
+    "calculated_at": null,
+    "total_pay": "29665.55",
+    "total_cost": "29665.55",
+    "approved": true,
+    "approver_id": 3,
+    "approved_at": "2023-05-18T23:30:00.814Z",
+    "paid": false,
+    "payer_id": null,
+    "paid_at": null,
+    "creator_id": 4,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2023-05-18T22:39:35.109Z",
+    "updated_at": "2023-05-18T23:30:00.832Z",
+    "payment_frequency": 0,
+    "off_cycle_temporality": "1",
+    "off_cycle_payroll_benefits_deduction_id": 5,
+    "paid_days": 0,
+    "theorical_paid_days": 0,
+    "async_message": null,
+    "contract_term_type_id": 6
+  },
+  {
+    "id": 7,
+    "zid": 8,
+    "name": "Aguinaldo Año 2022",
+    "start_date": "2021-12-01",
+    "end_date": "2022-11-30",
+    "calculated_at": null,
+    "total_pay": "35012.2",
+    "total_cost": "35012.2",
+    "approved": true,
+    "approver_id": 3,
+    "approved_at": "2023-05-18T23:47:20.160Z",
+    "paid": false,
+    "payer_id": null,
+    "paid_at": null,
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 3,
+    "created_at": "2023-05-18T23:40:57.009Z",
+    "updated_at": "2023-05-18T23:47:20.168Z",
+    "payment_frequency": 0,
+    "off_cycle_temporality": "1",
+    "off_cycle_payroll_benefits_deduction_id": 9,
+    "paid_days": 0,
+    "theorical_paid_days": 0,
+    "async_message": null,
+    "contract_term_type_id": 6
+  }
+]
+```
+
 ### Crear una corrida de nomina
 
 ```bash
@@ -380,6 +442,38 @@ curl -v \
     }
   }' \
   https://app.zauru.com/payroll/unpaid_payroll_runs.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "name": "Nomina julio 2024",
+  "start_date": "2024-07-01",
+  "end_date": "2024-07-31",
+  "calculated_at": null,
+  "total_pay": null,
+  "total_cost": null,
+  "approved": false,
+  "approver_id": null,
+  "approved_at": null,
+  "paid": false,
+  "payer_id": null,
+  "paid_at": null,
+  "creator_id": 3,
+  "updater_id": null,
+  "entity_id": 4,
+  "created_at": "2026-08-06T04:17:31.589Z",
+  "updated_at": "2026-08-06T04:17:31.589Z",
+  "payment_frequency": 4,
+  "off_cycle_temporality": null,
+  "off_cycle_payroll_benefits_deduction_id": null,
+  "paid_days": 0,
+  "theorical_paid_days": 0,
+  "async_message": null,
+  "contract_term_type_id": 5
+}
 ```
 
 ### Generar corrida automatica desde fechas
@@ -404,6 +498,11 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/approve.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Crear una nomina individual
 
 ```bash
@@ -426,6 +525,73 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5552",
+  "zid": "18",
+  "employee_id": "1378",
+  "salary": "2825.100000",
+  "total_pay": "3559.499812",
+  "total_cost": "3917.439812",
+  "payroll_run_id": "67",
+  "work_contract_id": "86",
+  "payroll_payment_method_id": "4",
+  "calculated_at": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "2",
+  "payroll_details_count": "8",
+  "created_at": "2021-09-30 03:19:59.689146",
+  "updated_at": "2021-09-30 03:19:59.689146",
+  "overtime_salary": "0.000000",
+  "off_cycle": false,
+  "current_work_contract_starts": "2021-04-01",
+  "non_off_cycle_last_month_salary": null,
+  "non_off_cycle_last_month_overtime_salary": null,
+  "weekly_salary": "{706.275,706.275,706.275,706.275}",
+  "weekly_overtime_salary": "{0.0,0.0,0.0,0.0}",
+  "week_days_count_with_bonused_piecework": "{5,5,5,5}",
+  "week_days_count_with_forced_bonused_piecework": "{0,0,0,0}",
+  "overtime_reference": null,
+  "overtime_hours": null,
+  "sales_commissions_reference": null,
+  "sales_commissions": "0.000000",
+  "memo": null,
+  "non_off_cycle_salary": null,
+  "non_off_cycle_overtime_salary": null,
+  "non_off_cycle_sales_commissions": null,
+  "non_off_cycle_benefits_deductions_name_first_word": null,
+  "non_off_cycle_benefits_deductions_total_employee_amount": null,
+  "non_off_cycle_benefits_deductions_total_entity_amount": null,
+  "non_off_cycle_time_off_payments": null,
+  "current_month_previous_salary": null,
+  "current_month_previous_overtime_salary": null,
+  "current_month_previous_sales_commissions": null,
+  "current_month_previous_benefits_deductions_name_first_word": null,
+  "current_month_previous_benefits_deductions_employee_amount": null,
+  "current_month_previous_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_sales_commissions": null,
+  "non_off_cycle_last_month_benefits_deductions_name_first_word": null,
+  "non_off_cycle_last_month_benefits_deductions_employee_amount": null,
+  "non_off_cycle_last_month_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_time_off_payments": null,
+  "personal_time_off_amount": null,
+  "personal_time_off_days": null,
+  "applicable_days": "30",
+  "night_shift_salary": "0.000000",
+  "night_shift_reference": null,
+  "night_shift_hours": null,
+  "weekly_night_shift_salary": null,
+  "non_off_cycle_night_shift_salary": null,
+  "non_off_cycle_last_month_night_shift_salary": null,
+  "current_month_previous_night_shift_salary": null,
+  "theorical_applicable_days": "0",
+  "theorical_salary": "0.000000",
+  "mandatory_bonus": null
+}
+```
+
 ### Ver una corrida no pagada
 
 Devuelve la corrida con sus nominas, partidas contables y formularios asociados.
@@ -439,6 +605,11 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener estructura para crear una corrida
 
 ```bash
@@ -450,6 +621,38 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "name": null,
+  "start_date": null,
+  "end_date": null,
+  "calculated_at": null,
+  "total_pay": null,
+  "total_cost": null,
+  "approved": false,
+  "approver_id": null,
+  "approved_at": null,
+  "paid": false,
+  "payer_id": null,
+  "paid_at": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "payment_frequency": 4,
+  "off_cycle_temporality": null,
+  "off_cycle_payroll_benefits_deduction_id": null,
+  "paid_days": 0,
+  "theorical_paid_days": 0,
+  "async_message": null,
+  "contract_term_type_id": 2
+}
+```
+
 ### Obtener estructura para editar una corrida
 
 ```bash
@@ -459,6 +662,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Actualizar una corrida no pagada
@@ -481,6 +689,11 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Borrar una corrida no pagada
 
 ```bash
@@ -493,6 +706,8 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Desaprobar una corrida
 
 Revierte la aprobacion de una corrida que aun no ha sido pagada.
@@ -504,6 +719,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/disapprove.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Pagar una corrida
@@ -519,6 +739,11 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/pay.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Ver formulario de beneficios flexibles
 
 Devuelve la corrida con los beneficios y deducciones flexibles que se deben llenar manualmente.
@@ -530,6 +755,38 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "440",
+  "zid": "26",
+  "name": "Semanas 48 y 49 2022",
+  "start_date": "2022-11-28",
+  "end_date": "2022-12-11",
+  "calculated_at": null,
+  "total_pay": "390498.752169",
+  "total_cost": "439026.758578",
+  "approved": true,
+  "approver_id": "2135",
+  "approved_at": "2022-12-22 17:31:30.700295",
+  "paid": true,
+  "payer_id": "2135",
+  "paid_at": "2022-12-22 17:31:35.752863",
+  "creator_id": "2135",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2022-12-12 23:43:41.405432",
+  "updated_at": "2022-12-22 17:31:35.754144",
+  "payment_frequency": "2",
+  "off_cycle_temporality": null,
+  "off_cycle_payroll_benefits_deduction_id": null,
+  "paid_days": "14",
+  "theorical_paid_days": "0",
+  "async_message": null,
+  "contract_term_type_id": "1"
+}
 ```
 
 ### Actualizar beneficios flexibles
@@ -559,6 +816,13 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions_action.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Generar PDF de todas las nominas
 
 Inicia la generacion asincrona de PDF individuales para todas las nominas de una corrida. Devuelve el ZID del trabajo asincrono para consultar el progreso.
@@ -577,6 +841,14 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/gen_print_all.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 1,
+  "zid": 1
+}
+```
+
 ### Verificar progreso de generacion de PDF
 
 Consulta el estado del trabajo asincrono de generacion de PDF iniciado con `gen_print_all`.
@@ -588,6 +860,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/payroll/unpaid_payroll_runs/check_print_all.json?zid=123"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```
 
 ### Generar PDF de las nominas de mi agencia
@@ -607,7 +887,6 @@ curl -v \
   }' \
   https://app.zauru.com/payroll/unpaid_payroll_runs/gen_print_all_from_my_agency.json
 ```
-
 ### Verificar progreso de generacion de PDF de mi agencia
 
 ```bash
@@ -617,6 +896,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/payroll/unpaid_payroll_runs/check_print_all_from_my_agency.json?zid=123"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```
 
 ### Listar corridas pagadas
@@ -630,6 +917,68 @@ curl -v \
   https://app.zauru.com/payroll/paid_payroll_runs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "name": "febrero 2023",
+    "start_date": "2023-02-01",
+    "end_date": "2023-02-28",
+    "calculated_at": null,
+    "total_pay": "75437.348916",
+    "total_cost": "78657.505515",
+    "approved": true,
+    "approver_id": 3,
+    "approved_at": "2023-02-28T22:42:27.310Z",
+    "paid": true,
+    "payer_id": 3,
+    "paid_at": "2023-02-28T22:45:19.969Z",
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 4,
+    "created_at": "2023-02-28T22:18:11.481Z",
+    "updated_at": "2023-04-19T16:00:58.133Z",
+    "payment_frequency": 4,
+    "off_cycle_temporality": null,
+    "off_cycle_payroll_benefits_deduction_id": null,
+    "paid_days": 28,
+    "theorical_paid_days": 0,
+    "async_message": null,
+    "contract_term_type_id": 5
+  },
+  {
+    "id": 6,
+    "zid": 7,
+    "name": "Aguinaldo 2021",
+    "start_date": "2021-04-01",
+    "end_date": "2022-11-30",
+    "calculated_at": null,
+    "total_pay": "4206.27",
+    "total_cost": "4206.27",
+    "approved": true,
+    "approver_id": 4,
+    "approved_at": "2022-01-15T16:05:35.688Z",
+    "paid": true,
+    "payer_id": 4,
+    "paid_at": "2022-01-15T16:05:39.047Z",
+    "creator_id": 4,
+    "updater_id": null,
+    "entity_id": 4,
+    "created_at": "2022-01-15T02:46:53.152Z",
+    "updated_at": "2022-01-15T16:05:39.049Z",
+    "payment_frequency": 0,
+    "off_cycle_temporality": null,
+    "off_cycle_payroll_benefits_deduction_id": null,
+    "paid_days": 609,
+    "theorical_paid_days": 0,
+    "async_message": null,
+    "contract_term_type_id": 5
+  }
+]
+```
+
 ### Ver una corrida pagada
 
 ```bash
@@ -639,6 +988,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/paid_payroll_runs/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Revertir pago de una corrida
@@ -652,6 +1006,38 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/paid_payroll_runs/1/unpay.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "440",
+  "zid": "26",
+  "name": "Semanas 48 y 49 2022",
+  "start_date": "2022-11-28",
+  "end_date": "2022-12-11",
+  "calculated_at": null,
+  "total_pay": "390498.752169",
+  "total_cost": "439026.758578",
+  "approved": true,
+  "approver_id": "2135",
+  "approved_at": "2022-12-22 17:31:30.700295",
+  "paid": true,
+  "payer_id": "2135",
+  "paid_at": "2022-12-22 17:31:35.752863",
+  "creator_id": "2135",
+  "updater_id": null,
+  "entity_id": "733",
+  "created_at": "2022-12-12 23:43:41.405432",
+  "updated_at": "2022-12-22 17:31:35.754144",
+  "payment_frequency": "2",
+  "off_cycle_temporality": null,
+  "off_cycle_payroll_benefits_deduction_id": null,
+  "paid_days": "14",
+  "theorical_paid_days": "0",
+  "async_message": null,
+  "contract_term_type_id": "1"
+}
 ```
 
 ### Generar PDF de todas las nominas de una corrida pagada
@@ -670,6 +1056,14 @@ curl -v \
   https://app.zauru.com/payroll/paid_payroll_runs/gen_print_all.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 1,
+  "zid": 1
+}
+```
+
 ### Verificar progreso de generacion de PDF de una corrida pagada
 
 ```bash
@@ -679,6 +1073,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/payroll/paid_payroll_runs/check_print_all.json?zid=123"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```
 
 ### Generar PDF de las nominas de mi agencia en una corrida pagada
@@ -696,7 +1098,6 @@ curl -v \
   }' \
   https://app.zauru.com/payroll/paid_payroll_runs/gen_print_all_from_my_agency.json
 ```
-
 ### Verificar progreso de generacion de PDF de mi agencia en una corrida pagada
 
 ```bash
@@ -706,6 +1107,14 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/payroll/paid_payroll_runs/check_print_all_from_my_agency.json?zid=123"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```
 
 ### Ver una nomina individual
@@ -721,6 +1130,73 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5552",
+  "zid": "18",
+  "employee_id": "1378",
+  "salary": "2825.100000",
+  "total_pay": "3559.499812",
+  "total_cost": "3917.439812",
+  "payroll_run_id": "67",
+  "work_contract_id": "86",
+  "payroll_payment_method_id": "4",
+  "calculated_at": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "2",
+  "payroll_details_count": "8",
+  "created_at": "2021-09-30 03:19:59.689146",
+  "updated_at": "2021-09-30 03:19:59.689146",
+  "overtime_salary": "0.000000",
+  "off_cycle": false,
+  "current_work_contract_starts": "2021-04-01",
+  "non_off_cycle_last_month_salary": null,
+  "non_off_cycle_last_month_overtime_salary": null,
+  "weekly_salary": "{706.275,706.275,706.275,706.275}",
+  "weekly_overtime_salary": "{0.0,0.0,0.0,0.0}",
+  "week_days_count_with_bonused_piecework": "{5,5,5,5}",
+  "week_days_count_with_forced_bonused_piecework": "{0,0,0,0}",
+  "overtime_reference": null,
+  "overtime_hours": null,
+  "sales_commissions_reference": null,
+  "sales_commissions": "0.000000",
+  "memo": null,
+  "non_off_cycle_salary": null,
+  "non_off_cycle_overtime_salary": null,
+  "non_off_cycle_sales_commissions": null,
+  "non_off_cycle_benefits_deductions_name_first_word": null,
+  "non_off_cycle_benefits_deductions_total_employee_amount": null,
+  "non_off_cycle_benefits_deductions_total_entity_amount": null,
+  "non_off_cycle_time_off_payments": null,
+  "current_month_previous_salary": null,
+  "current_month_previous_overtime_salary": null,
+  "current_month_previous_sales_commissions": null,
+  "current_month_previous_benefits_deductions_name_first_word": null,
+  "current_month_previous_benefits_deductions_employee_amount": null,
+  "current_month_previous_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_sales_commissions": null,
+  "non_off_cycle_last_month_benefits_deductions_name_first_word": null,
+  "non_off_cycle_last_month_benefits_deductions_employee_amount": null,
+  "non_off_cycle_last_month_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_time_off_payments": null,
+  "personal_time_off_amount": null,
+  "personal_time_off_days": null,
+  "applicable_days": "30",
+  "night_shift_salary": "0.000000",
+  "night_shift_reference": null,
+  "night_shift_hours": null,
+  "weekly_night_shift_salary": null,
+  "non_off_cycle_night_shift_salary": null,
+  "non_off_cycle_last_month_night_shift_salary": null,
+  "current_month_previous_night_shift_salary": null,
+  "theorical_applicable_days": "0",
+  "theorical_salary": "0.000000",
+  "mandatory_bonus": null
+}
+```
+
 ### Obtener estructura para crear una nomina individual
 
 ```bash
@@ -732,6 +1208,73 @@ curl -v \
   "https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/new.json?payroll_run=1"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5552",
+  "zid": "18",
+  "employee_id": "1378",
+  "salary": "2825.100000",
+  "total_pay": "3559.499812",
+  "total_cost": "3917.439812",
+  "payroll_run_id": "67",
+  "work_contract_id": "86",
+  "payroll_payment_method_id": "4",
+  "calculated_at": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "2",
+  "payroll_details_count": "8",
+  "created_at": "2021-09-30 03:19:59.689146",
+  "updated_at": "2021-09-30 03:19:59.689146",
+  "overtime_salary": "0.000000",
+  "off_cycle": false,
+  "current_work_contract_starts": "2021-04-01",
+  "non_off_cycle_last_month_salary": null,
+  "non_off_cycle_last_month_overtime_salary": null,
+  "weekly_salary": "{706.275,706.275,706.275,706.275}",
+  "weekly_overtime_salary": "{0.0,0.0,0.0,0.0}",
+  "week_days_count_with_bonused_piecework": "{5,5,5,5}",
+  "week_days_count_with_forced_bonused_piecework": "{0,0,0,0}",
+  "overtime_reference": null,
+  "overtime_hours": null,
+  "sales_commissions_reference": null,
+  "sales_commissions": "0.000000",
+  "memo": null,
+  "non_off_cycle_salary": null,
+  "non_off_cycle_overtime_salary": null,
+  "non_off_cycle_sales_commissions": null,
+  "non_off_cycle_benefits_deductions_name_first_word": null,
+  "non_off_cycle_benefits_deductions_total_employee_amount": null,
+  "non_off_cycle_benefits_deductions_total_entity_amount": null,
+  "non_off_cycle_time_off_payments": null,
+  "current_month_previous_salary": null,
+  "current_month_previous_overtime_salary": null,
+  "current_month_previous_sales_commissions": null,
+  "current_month_previous_benefits_deductions_name_first_word": null,
+  "current_month_previous_benefits_deductions_employee_amount": null,
+  "current_month_previous_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_sales_commissions": null,
+  "non_off_cycle_last_month_benefits_deductions_name_first_word": null,
+  "non_off_cycle_last_month_benefits_deductions_employee_amount": null,
+  "non_off_cycle_last_month_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_time_off_payments": null,
+  "personal_time_off_amount": null,
+  "personal_time_off_days": null,
+  "applicable_days": "30",
+  "night_shift_salary": "0.000000",
+  "night_shift_reference": null,
+  "night_shift_hours": null,
+  "weekly_night_shift_salary": null,
+  "non_off_cycle_night_shift_salary": null,
+  "non_off_cycle_last_month_night_shift_salary": null,
+  "current_month_previous_night_shift_salary": null,
+  "theorical_applicable_days": "0",
+  "theorical_salary": "0.000000",
+  "mandatory_bonus": null
+}
+```
+
 ### Obtener estructura para editar una nomina individual
 
 ```bash
@@ -741,6 +1284,73 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5552",
+  "zid": "18",
+  "employee_id": "1378",
+  "salary": "2825.100000",
+  "total_pay": "3559.499812",
+  "total_cost": "3917.439812",
+  "payroll_run_id": "67",
+  "work_contract_id": "86",
+  "payroll_payment_method_id": "4",
+  "calculated_at": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "2",
+  "payroll_details_count": "8",
+  "created_at": "2021-09-30 03:19:59.689146",
+  "updated_at": "2021-09-30 03:19:59.689146",
+  "overtime_salary": "0.000000",
+  "off_cycle": false,
+  "current_work_contract_starts": "2021-04-01",
+  "non_off_cycle_last_month_salary": null,
+  "non_off_cycle_last_month_overtime_salary": null,
+  "weekly_salary": "{706.275,706.275,706.275,706.275}",
+  "weekly_overtime_salary": "{0.0,0.0,0.0,0.0}",
+  "week_days_count_with_bonused_piecework": "{5,5,5,5}",
+  "week_days_count_with_forced_bonused_piecework": "{0,0,0,0}",
+  "overtime_reference": null,
+  "overtime_hours": null,
+  "sales_commissions_reference": null,
+  "sales_commissions": "0.000000",
+  "memo": null,
+  "non_off_cycle_salary": null,
+  "non_off_cycle_overtime_salary": null,
+  "non_off_cycle_sales_commissions": null,
+  "non_off_cycle_benefits_deductions_name_first_word": null,
+  "non_off_cycle_benefits_deductions_total_employee_amount": null,
+  "non_off_cycle_benefits_deductions_total_entity_amount": null,
+  "non_off_cycle_time_off_payments": null,
+  "current_month_previous_salary": null,
+  "current_month_previous_overtime_salary": null,
+  "current_month_previous_sales_commissions": null,
+  "current_month_previous_benefits_deductions_name_first_word": null,
+  "current_month_previous_benefits_deductions_employee_amount": null,
+  "current_month_previous_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_sales_commissions": null,
+  "non_off_cycle_last_month_benefits_deductions_name_first_word": null,
+  "non_off_cycle_last_month_benefits_deductions_employee_amount": null,
+  "non_off_cycle_last_month_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_time_off_payments": null,
+  "personal_time_off_amount": null,
+  "personal_time_off_days": null,
+  "applicable_days": "30",
+  "night_shift_salary": "0.000000",
+  "night_shift_reference": null,
+  "night_shift_hours": null,
+  "weekly_night_shift_salary": null,
+  "non_off_cycle_night_shift_salary": null,
+  "non_off_cycle_last_month_night_shift_salary": null,
+  "current_month_previous_night_shift_salary": null,
+  "theorical_applicable_days": "0",
+  "theorical_salary": "0.000000",
+  "mandatory_bonus": null
+}
 ```
 
 ### Actualizar una nomina individual
@@ -764,6 +1374,73 @@ curl -v \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5552",
+  "zid": "18",
+  "employee_id": "1378",
+  "salary": "2825.100000",
+  "total_pay": "3559.499812",
+  "total_cost": "3917.439812",
+  "payroll_run_id": "67",
+  "work_contract_id": "86",
+  "payroll_payment_method_id": "4",
+  "calculated_at": null,
+  "creator_id": "1",
+  "updater_id": null,
+  "entity_id": "2",
+  "payroll_details_count": "8",
+  "created_at": "2021-09-30 03:19:59.689146",
+  "updated_at": "2021-09-30 03:19:59.689146",
+  "overtime_salary": "0.000000",
+  "off_cycle": false,
+  "current_work_contract_starts": "2021-04-01",
+  "non_off_cycle_last_month_salary": null,
+  "non_off_cycle_last_month_overtime_salary": null,
+  "weekly_salary": "{706.275,706.275,706.275,706.275}",
+  "weekly_overtime_salary": "{0.0,0.0,0.0,0.0}",
+  "week_days_count_with_bonused_piecework": "{5,5,5,5}",
+  "week_days_count_with_forced_bonused_piecework": "{0,0,0,0}",
+  "overtime_reference": null,
+  "overtime_hours": null,
+  "sales_commissions_reference": null,
+  "sales_commissions": "0.000000",
+  "memo": null,
+  "non_off_cycle_salary": null,
+  "non_off_cycle_overtime_salary": null,
+  "non_off_cycle_sales_commissions": null,
+  "non_off_cycle_benefits_deductions_name_first_word": null,
+  "non_off_cycle_benefits_deductions_total_employee_amount": null,
+  "non_off_cycle_benefits_deductions_total_entity_amount": null,
+  "non_off_cycle_time_off_payments": null,
+  "current_month_previous_salary": null,
+  "current_month_previous_overtime_salary": null,
+  "current_month_previous_sales_commissions": null,
+  "current_month_previous_benefits_deductions_name_first_word": null,
+  "current_month_previous_benefits_deductions_employee_amount": null,
+  "current_month_previous_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_sales_commissions": null,
+  "non_off_cycle_last_month_benefits_deductions_name_first_word": null,
+  "non_off_cycle_last_month_benefits_deductions_employee_amount": null,
+  "non_off_cycle_last_month_benefits_deductions_entity_amount": null,
+  "non_off_cycle_last_month_time_off_payments": null,
+  "personal_time_off_amount": null,
+  "personal_time_off_days": null,
+  "applicable_days": "30",
+  "night_shift_salary": "0.000000",
+  "night_shift_reference": null,
+  "night_shift_hours": null,
+  "weekly_night_shift_salary": null,
+  "non_off_cycle_night_shift_salary": null,
+  "non_off_cycle_last_month_night_shift_salary": null,
+  "current_month_previous_night_shift_salary": null,
+  "theorical_applicable_days": "0",
+  "theorical_salary": "0.000000",
+  "mandatory_bonus": null
+}
+```
+
 ### Borrar una nomina individual
 
 ```bash
@@ -775,3 +1452,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/unpaid_payroll_runs/payrolls/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

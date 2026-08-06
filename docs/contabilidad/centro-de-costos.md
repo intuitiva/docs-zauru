@@ -86,6 +86,13 @@ curl -v \
   https://app.zauru.com/accounting/cost_centers.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener detalle de un centro de costo
 ```bash
 curl -v \
@@ -96,6 +103,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_centers/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener el formulario de nuevo centro de costo
 ```bash
 curl -v \
@@ -104,6 +116,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/cost_centers/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear un centro de costo
@@ -126,6 +143,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_centers.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar un centro de costo
 ```bash
 curl -v \
@@ -143,6 +165,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_centers/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Borrar un centro de costo
 ```bash
 curl -v \
@@ -154,6 +181,8 @@ curl -v \
   https://app.zauru.com/accounting/cost_centers/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Consultar listado de categorias de centro de costo
 ```bash
 curl -v \
@@ -162,6 +191,13 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/cost_center_categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
 ```
 
 ### Obtener detalle de una categoria de centro de costo
@@ -174,6 +210,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_center_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener el formulario de nueva categoria de centro de costo
 ```bash
 curl -v \
@@ -182,6 +223,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/cost_center_categories/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear una categoria de centro de costo
@@ -203,6 +249,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_center_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar una categoria de centro de costo
 ```bash
 curl -v \
@@ -219,6 +270,11 @@ curl -v \
   https://app.zauru.com/accounting/cost_center_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Borrar una categoria de centro de costo
 ```bash
 curl -v \
@@ -229,3 +285,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/cost_center_categories/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

@@ -122,6 +122,13 @@ curl -v \
   https://app.zauru.com/production/production_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener datos para una nueva orden de produccion
 ```bash
 curl -v \
@@ -131,6 +138,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/production_orders/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear una orden de produccion
@@ -165,6 +177,11 @@ curl -v \
   https://app.zauru.com/production/production_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar una orden de produccion planificada
 ```bash
 curl -v \
@@ -186,6 +203,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/production/production_orders/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Iniciar la produccion de una orden planificada
@@ -213,3 +235,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/production/production_orders/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

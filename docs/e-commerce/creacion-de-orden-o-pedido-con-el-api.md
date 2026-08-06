@@ -10,36 +10,31 @@ En general se debe enviar un JSON con esta estructura:
 ```json
 {
   "client": {
-    "name":"Cliente Prueba",
-    "tin":"12345678-9",
-    "address_line_1":"17 calle 2-80 zona 11",
-    "delivery_address":"17 calle 2-80 zona 11",
-    "phone":"2329-3992",
-    "email":"alto@bajo.com",
-    "reference":"cualquier referencia",
-    "notes":"cualquier info extra"
+    "name": "Cliente Prueba",
+    "tin": "12345678-9",
+    "address_line_1": "17 calle 2-80 zona 11",
+    "delivery_address": "17 calle 2-80 zona 11",
+    "phone": "5555-0010",
+    "email": "cliente@ejemplo.com",
+    "reference": "cualquier referencia",
+    "notes": "cualquier info extra"
   },
   "order": {
-    "date":"2018-05-14",
+    "date": "2018-05-14",
     "invoice_details_attributes": [
       {
-        "item_id":185609,
-        "quantity":1
+        "item_id": 1,
+        "quantity": 1
       },
       {
-        "item_id":185609,
-        "quantity":2,
-        "unit_price":12.99
+        "item_id": 1,
+        "quantity": 2,
+        "unit_price": 12.99
       }
     ],
-    "reference":"prueba",
-    "memo":"cualquier informacion extra",
-    "extra_discount":10.00
-  },
-  "payment": {
-    "reference":"autorizacion tarjeta",
-    "receipt":"recibo",
-    "memo":"cualquier informacion extra"
+    "reference": "prueba",
+    "memo": "cualquier informacion extra",
+    "extra_discount": 10.0
   }
 }
 ```
@@ -63,6 +58,30 @@ curl -v \
     }
   }' \
   https://app.zauru.com/ecommerce/ecommerce_requests.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
 ```
 
 ## Envío de la solicitud original
@@ -95,17 +114,17 @@ Al llamar esta función nos va a responder un JSON similar a este:
   "completed":false,
   "completed_at":null,
   "created_at":"2018-07-18T00:17:12Z",
-  "entity_id":22801,
-  "id":44312,
+  "entity_id": 1,
+  "id": 2,
   "invoices_count":0,
   "raw_errors":null,
-  "raw_params":"{ \"client\": { \"name\":\"Cliente Prueba\", \"tin\":\"12345678-9\", \"address_line_1\":\"17 calle 2-80 zona 11\", \"delivery_address\":\"17 calle 2-80 zona 11\", \"phone\":\"2329-3992\", \"email\":\"alto@bajo.com\", \"reference\":\"colegio campo real\", \"notes\":\"cualquier info extra\" }, \"order\": { \"date\":\"2018-05-14\", \"invoice_details_attributes\": [ { \"item_id\":140924, \"quantity\":1 }, { \"item_id\":140867, \"quantity\":2 } ], \"reference\":\"prueba\", \"memo\":\"cualquier informacion extra\" }, \"payment\": { \"reference\":\"autorizacion tarjeta\", \"receipt\":\"recibo\", \"memo\":\"generado desde el API\" } }",
+  "raw_params":"{ \"client\": { \"name\":\"Cliente Prueba\", \"tin\":\"12345678-9\", \"address_line_1\":\"17 calle 2-80 zona 11\", \"delivery_address\":\"17 calle 2-80 zona 11\", \"phone\":\"5555-0010\", \"email\":\"cliente@ejemplo.com\", \"reference\":\"colegio campo real\", \"notes\":\"cualquier info extra\" }, \"order\": { \"date\":\"2018-05-14\", \"invoice_details_attributes\": [ { \"item_id\":140924, \"quantity\":1 }, { \"item_id\":140867, \"quantity\":2 } ], \"reference\":\"prueba\", \"memo\":\"cualquier informacion extra\" }, \"payment\": { \"reference\":\"autorizacion tarjeta\", \"receipt\":\"recibo\", \"memo\":\"generado desde el API\" } }",
   "shipments_count":0,
   "updated_at":"2018-07-18T00:17:12Z",
-  "user_id":11232,
+  "user_id": 3,
   "original_request_id": null,
   "original_request": null,
-  "zid":41
+  "zid": 4
 }
 ```
 
@@ -157,4 +176,28 @@ curl -v \
     }
   }' \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
 ```

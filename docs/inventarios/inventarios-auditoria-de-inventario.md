@@ -175,6 +175,29 @@ curl -v \
   https://app.zauru.com/inventories/inventory_audits.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "21968",
+    "agency_id": "8246",
+    "date": "2026-06-19",
+    "creator_id": "3778",
+    "updater_id": "3778",
+    "entity_id": "1303",
+    "created_at": "2026-06-19 22:48:47.052458",
+    "updated_at": "2026-06-19 22:48:48.332455",
+    "inventory_audit_details_count": "175",
+    "reference": null,
+    "shipments_count": "2",
+    "item_category_id": null,
+    "entries_count": "0",
+    "item_super_category_id": null,
+    "use_available_stock": false
+  }
+]
+```
+
 ### Obtener el detalle de una auditoría
 Devuelve los datos de la auditoría, sus detalles (productos con cantidades observadas y del sistema) y los envíos generados.
 ```bash
@@ -184,6 +207,27 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/inventory_audits/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "21968",
+  "agency_id": "8246",
+  "date": "2026-06-19",
+  "creator_id": "3778",
+  "updater_id": "3778",
+  "entity_id": "1303",
+  "created_at": "2026-06-19 22:48:47.052458",
+  "updated_at": "2026-06-19 22:48:48.332455",
+  "inventory_audit_details_count": "175",
+  "reference": null,
+  "shipments_count": "2",
+  "item_category_id": null,
+  "entries_count": "0",
+  "item_super_category_id": null,
+  "use_available_stock": false
+}
 ```
 
 ### Crear una auditoría de inventario
@@ -210,6 +254,27 @@ curl -v \
   https://app.zauru.com/inventories/inventory_audits.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "21968",
+  "agency_id": "8246",
+  "date": "2026-06-19",
+  "creator_id": "3778",
+  "updater_id": "3778",
+  "entity_id": "1303",
+  "created_at": "2026-06-19 22:48:47.052458",
+  "updated_at": "2026-06-19 22:48:48.332455",
+  "inventory_audit_details_count": "175",
+  "reference": null,
+  "shipments_count": "2",
+  "item_category_id": null,
+  "entries_count": "0",
+  "item_super_category_id": null,
+  "use_available_stock": false
+}
+```
+
 ### Actualizar una auditoría de inventario
 Actualiza los productos y cantidades observadas de una auditoría existente mientras no tenga envíos generados.
 ```bash
@@ -229,6 +294,27 @@ curl -v \
   https://app.zauru.com/inventories/inventory_audits/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "21968",
+  "agency_id": "8246",
+  "date": "2026-06-19",
+  "creator_id": "3778",
+  "updater_id": "3778",
+  "entity_id": "1303",
+  "created_at": "2026-06-19 22:48:47.052458",
+  "updated_at": "2026-06-19 22:48:48.332455",
+  "inventory_audit_details_count": "175",
+  "reference": null,
+  "shipments_count": "2",
+  "item_category_id": null,
+  "entries_count": "0",
+  "item_super_category_id": null,
+  "use_available_stock": false
+}
+```
+
 ### Eliminar una auditoría de inventario
 Elimina una auditoría. Solo es posible si no tiene envíos generados.
 ```bash
@@ -240,6 +326,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/inventory_audits/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Actualizar las cantidades del sistema de una auditoría
 Refresca las cantidades del sistema de los productos auditados para reflejar el estado actual del inventario.
@@ -262,6 +350,27 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/inventory_audits/1/generate_shipment.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "21968",
+  "agency_id": "8246",
+  "date": "2026-06-19",
+  "creator_id": "3778",
+  "updater_id": "3778",
+  "entity_id": "1303",
+  "created_at": "2026-06-19 22:48:47.052458",
+  "updated_at": "2026-06-19 22:48:48.332455",
+  "inventory_audit_details_count": "175",
+  "reference": null,
+  "shipments_count": "2",
+  "item_category_id": null,
+  "entries_count": "0",
+  "item_super_category_id": null,
+  "use_available_stock": false
+}
 ```
 
 ### Desasociar envíos devueltos de una auditoría

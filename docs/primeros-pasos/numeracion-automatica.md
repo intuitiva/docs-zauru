@@ -79,6 +79,54 @@ curl -v \
   https://app.zauru.com/settings/templates/document_automatic_numbers.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 3,
+    "active": false,
+    "model_for_doc_number": "credit_notes",
+    "field_for_doc_number": "id_number",
+    "fixed_doc_number": "A-",
+    "variable_doc_number": 1,
+    "variable_doc_number_digits": 3,
+    "fixed_doc_number_left": true,
+    "notes": "",
+    "updater_id": 2,
+    "entity_id": 2,
+    "created_at": "2017-04-17T21:59:47.740Z",
+    "updated_at": "2017-10-03T19:40:29.261Z",
+    "document_constraints_count": 0,
+    "resolution": "",
+    "resolution_date": null,
+    "document_external_storage_service_id": null,
+    "doc_type": null
+  },
+  {
+    "id": 3,
+    "zid": 2,
+    "active": false,
+    "model_for_doc_number": "invoices",
+    "field_for_doc_number": "invoice_number",
+    "fixed_doc_number": "",
+    "variable_doc_number": 3,
+    "variable_doc_number_digits": 4,
+    "fixed_doc_number_left": true,
+    "notes": "",
+    "updater_id": 4,
+    "entity_id": 2,
+    "created_at": "2016-04-29T16:53:18.896Z",
+    "updated_at": "2016-05-02T18:20:29.579Z",
+    "document_constraints_count": 1,
+    "resolution": null,
+    "resolution_date": null,
+    "document_external_storage_service_id": null,
+    "doc_type": null
+  }
+]
+```
+
 ### Obtener detalle de una numeración automática
 ```bash
 curl -v \
@@ -87,6 +135,31 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3680",
+  "zid": "5",
+  "active": false,
+  "model_for_doc_number": "invoices",
+  "field_for_doc_number": "invoice_number",
+  "fixed_doc_number": "FEL",
+  "variable_doc_number": null,
+  "variable_doc_number_digits": null,
+  "fixed_doc_number_left": true,
+  "notes": null,
+  "updater_id": "1",
+  "entity_id": "1303",
+  "created_at": "2026-06-09 15:59:26.268225",
+  "updated_at": "2026-06-12 22:35:10.279484",
+  "document_constraints_count": "1",
+  "resolution": null,
+  "resolution_date": null,
+  "document_external_storage_service_id": "40",
+  "doc_type": "FACT"
+}
 ```
 
 ### Crear numeración automática de documento
@@ -109,6 +182,31 @@ curl -v \
   https://app.zauru.com/settings/templates/document_automatic_numbers.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3680",
+  "zid": "5",
+  "active": false,
+  "model_for_doc_number": "invoices",
+  "field_for_doc_number": "invoice_number",
+  "fixed_doc_number": "FEL",
+  "variable_doc_number": null,
+  "variable_doc_number_digits": null,
+  "fixed_doc_number_left": true,
+  "notes": null,
+  "updater_id": "1",
+  "entity_id": "1303",
+  "created_at": "2026-06-09 15:59:26.268225",
+  "updated_at": "2026-06-12 22:35:10.279484",
+  "document_constraints_count": "1",
+  "resolution": null,
+  "resolution_date": null,
+  "document_external_storage_service_id": "40",
+  "doc_type": "FACT"
+}
+```
+
 ### Actualizar numeración automática de documento
 ```bash
 curl -v \
@@ -126,6 +224,31 @@ curl -v \
   https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3680",
+  "zid": "5",
+  "active": false,
+  "model_for_doc_number": "invoices",
+  "field_for_doc_number": "invoice_number",
+  "fixed_doc_number": "FEL",
+  "variable_doc_number": null,
+  "variable_doc_number_digits": null,
+  "fixed_doc_number_left": true,
+  "notes": null,
+  "updater_id": "1",
+  "entity_id": "1303",
+  "created_at": "2026-06-09 15:59:26.268225",
+  "updated_at": "2026-06-12 22:35:10.279484",
+  "document_constraints_count": "1",
+  "resolution": null,
+  "resolution_date": null,
+  "document_external_storage_service_id": "40",
+  "doc_type": "FACT"
+}
+```
+
 ### Eliminar numeración automática de documento
 ```bash
 curl -v \
@@ -136,3 +259,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/templates/document_automatic_numbers/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

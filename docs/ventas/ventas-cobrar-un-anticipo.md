@@ -122,3 +122,12 @@ curl -v \
   -X POST \
   https://app.zauru.com/sales/payments.json
 ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```

@@ -52,7 +52,7 @@ Y esto me va a devolver un JSON con las siguientes características:
         "date": "2020-08-21",
         "entity_id": 2,
         "exchange": 7.70132,
-        "id": 5557,
+        "id": 3,
         "source": "Banguat SOAP",
         "updated_at": "2020-08-21T10:00:48Z",
         "user_id": 1,
@@ -100,6 +100,22 @@ curl -v \
   https://app.zauru.com/settings/exchange_rates.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "date": "2011-09-26",
+  "user_id": "2",
+  "entity_id": "2",
+  "currency_id": "2",
+  "currency_exchange_id": "1",
+  "exchange": "7.91",
+  "source": "seeds.rb",
+  "created_at": "2013-01-08 16:54:55.991648",
+  "updated_at": "2013-01-08 16:54:55.991648"
+}
+```
+
 
 
 ## Exportar Tipos de Cambio
@@ -132,4 +148,20 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/exchange_rates/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "date": "2011-09-26",
+  "user_id": 1,
+  "entity_id": 1,
+  "currency_id": 1,
+  "currency_exchange_id": 2,
+  "exchange": 7.91,
+  "source": "seeds.rb",
+  "created_at": "2013-01-08T16:54:55.991Z",
+  "updated_at": "2013-01-08T16:54:55.991Z"
+}
 ```

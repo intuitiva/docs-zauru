@@ -103,6 +103,34 @@ curl -v \
   https://app.zauru.com/accounting/conciliations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "entity_id": 2,
+    "account_id": 3,
+    "month": 9,
+    "year": 2018,
+    "start_balance": "1000.0",
+    "end_balance": "1500.0",
+    "concilied_income": "0.0",
+    "concilied_outcome": "0.0",
+    "documents_income": 0,
+    "documents_outcome": 0,
+    "creator_id": 4,
+    "updater_id": 4,
+    "closed": false,
+    "closer_id": null,
+    "closed_at": null,
+    "memo": "Conciliacion de septiembre",
+    "created_at": "2026-08-06T04:14:41.099Z",
+    "updated_at": "2026-08-06T04:14:41.099Z"
+  }
+]
+```
+
 ### Obtener detalle de una conciliacion
 ```bash
 curl -v \
@@ -111,6 +139,32 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/conciliations/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "716",
+  "zid": "39",
+  "entity_id": "180",
+  "account_id": "12324",
+  "month": "12",
+  "year": "2019",
+  "start_balance": "5000.0",
+  "end_balance": "20000.0",
+  "concilied_income": "0.0",
+  "concilied_outcome": "0.0",
+  "documents_income": "0",
+  "documents_outcome": "0",
+  "creator_id": "326",
+  "updater_id": "326",
+  "closed": false,
+  "closer_id": null,
+  "closed_at": null,
+  "memo": null,
+  "created_at": "2019-12-12 18:16:25.249128",
+  "updated_at": "2019-12-12 18:16:25.249128"
+}
 ```
 
 ### Obtener el formulario de nueva conciliacion
@@ -123,6 +177,32 @@ curl -v \
   https://app.zauru.com/accounting/conciliations/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "entity_id": 1,
+  "account_id": null,
+  "month": 8,
+  "year": 2026,
+  "start_balance": null,
+  "end_balance": null,
+  "concilied_income": "0.0",
+  "concilied_outcome": "0.0",
+  "documents_income": 0,
+  "documents_outcome": 0,
+  "creator_id": null,
+  "updater_id": null,
+  "closed": false,
+  "closer_id": null,
+  "closed_at": null,
+  "memo": null,
+  "created_at": null,
+  "updated_at": null
+}
+```
+
 ### Obtener el formulario de edicion de una conciliacion
 ```bash
 curl -v \
@@ -131,6 +211,32 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/conciliations/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "716",
+  "zid": "39",
+  "entity_id": "180",
+  "account_id": "12324",
+  "month": "12",
+  "year": "2019",
+  "start_balance": "5000.0",
+  "end_balance": "20000.0",
+  "concilied_income": "0.0",
+  "concilied_outcome": "0.0",
+  "documents_income": "0",
+  "documents_outcome": "0",
+  "creator_id": "326",
+  "updater_id": "326",
+  "closed": false,
+  "closer_id": null,
+  "closed_at": null,
+  "memo": null,
+  "created_at": "2019-12-12 18:16:25.249128",
+  "updated_at": "2019-12-12 18:16:25.249128"
+}
 ```
 
 ### Crear una conciliacion
@@ -154,6 +260,15 @@ curl -v \
   https://app.zauru.com/accounting/conciliations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "month": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Actualizar una conciliacion
 ```bash
 curl -v \
@@ -171,6 +286,32 @@ curl -v \
   https://app.zauru.com/accounting/conciliations/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "716",
+  "zid": "39",
+  "entity_id": "180",
+  "account_id": "12324",
+  "month": "12",
+  "year": "2019",
+  "start_balance": "5000.0",
+  "end_balance": "20000.0",
+  "concilied_income": "0.0",
+  "concilied_outcome": "0.0",
+  "documents_income": "0",
+  "documents_outcome": "0",
+  "creator_id": "326",
+  "updater_id": "326",
+  "closed": false,
+  "closer_id": null,
+  "closed_at": null,
+  "memo": null,
+  "created_at": "2019-12-12 18:16:25.249128",
+  "updated_at": "2019-12-12 18:16:25.249128"
+}
+```
+
 ### Borrar una conciliacion
 ```bash
 curl -v \
@@ -182,6 +323,8 @@ curl -v \
   https://app.zauru.com/accounting/conciliations/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener las partidas para conciliar
 ```bash
 curl -v \
@@ -190,6 +333,32 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/conciliations/1/conciliate.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "716",
+  "zid": "39",
+  "entity_id": "180",
+  "account_id": "12324",
+  "month": "12",
+  "year": "2019",
+  "start_balance": "5000.0",
+  "end_balance": "20000.0",
+  "concilied_income": "0.0",
+  "concilied_outcome": "0.0",
+  "documents_income": "0",
+  "documents_outcome": "0",
+  "creator_id": "326",
+  "updater_id": "326",
+  "closed": false,
+  "closer_id": null,
+  "closed_at": null,
+  "memo": null,
+  "created_at": "2019-12-12 18:16:25.249128",
+  "updated_at": "2019-12-12 18:16:25.249128"
+}
 ```
 
 ### Guardar las marcas de conciliacion
@@ -216,6 +385,19 @@ curl -v \
   https://app.zauru.com/accounting/conciliations/1/close.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8",
+  "zid": "1",
+  "account_id": "15",
+  "entity_id": "2",
+  "updater_id": "2",
+  "created_at": "2013-03-28 14:35:29.383035",
+  "updated_at": "2013-03-28 14:35:29.383035"
+}
+```
+
 ### Des-cerrar una conciliacion
 ```bash
 curl -v \
@@ -226,6 +408,19 @@ curl -v \
   https://app.zauru.com/accounting/conciliations/1/unclose.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8",
+  "zid": "1",
+  "account_id": "15",
+  "entity_id": "2",
+  "updater_id": "2",
+  "created_at": "2013-03-28 14:35:29.383035",
+  "updated_at": "2013-03-28 14:35:29.383035"
+}
+```
+
 ### Generar el reporte de conciliacion
 ```bash
 curl -v \
@@ -234,4 +429,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/conciliations/1/report.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```

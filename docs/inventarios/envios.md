@@ -324,6 +324,87 @@ curl -v \
   https://app.zauru.com/inventories/bookings.json?scope=all
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": null,
+    "reference": "PRUEBA NOTIFICACION",
+    "needs_transport": false,
+    "entity_id": 3,
+    "payee_id": null,
+    "income": null,
+    "booking_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "booker_id": 4,
+    "planned_shipping": null,
+    "shipped": false,
+    "shipped_at": null,
+    "shipping_image": null,
+    "shipper_id": null,
+    "planned_delivery": "2023-11-13",
+    "delivered": false,
+    "delivered_at": null,
+    "delivery_image": null,
+    "deliverer_id": null,
+    "voided": false,
+    "voided_at": null,
+    "voider_id": null,
+    "returned": false,
+    "returned_at": null,
+    "returner_id": null,
+    "creator_id": 5,
+    "updater_id": 5,
+    "memo": "",
+    "agency_from_id": 6,
+    "address_from": "Calle Ejemplo 123, Zona 10",
+    "agency_to_id": 6,
+    "address_to": "Calle Ejemplo 123, Zona 10",
+    "created_at": "2023-11-13T16:33:05.349Z",
+    "updated_at": "2023-11-13T16:33:05.362Z",
+    "movements_count": 1,
+    "transporter_id": null,
+    "contract_id": null,
+    "inventory_audit_id": null,
+    "ecommerce_request_id": null,
+    "external_image_url": null,
+    "reception_id": null,
+    "pos": false,
+    "issue_external_document": false,
+    "authorized_serial": null,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "uuid": null,
+    "document_external_storage_certified_response": null,
+    "document_external_storage_certified_response_for_voiding": null,
+    "transfer_request_id": null,
+    "stock_corrections": null,
+    "lock_version": 0,
+    "movements": [
+      {
+        "id": 7,
+        "serial_id": null,
+        "item_id": 8,
+        "shipment_id": 1,
+        "booked_quantity": "1.0",
+        "delivered_quantity": null,
+        "created_at": "2023-11-13T16:33:05.359Z",
+        "updated_at": "2023-11-13T16:33:05.359Z",
+        "reference": "",
+        "lot_id": null,
+        "entity_id": 3
+      }
+    ]
+  }
+]
+```
+
 ### Obtener el detalle de una reservación
 Devuelve los datos del envío, sus movimientos, bodegas origen y destino, y los formularios asociados.
 ```bash
@@ -333,6 +414,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/bookings/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear un envío preliminar (reservación)
@@ -369,6 +455,15 @@ curl -v \
   https://app.zauru.com/inventories/bookings.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "planned_delivery": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### Entregar un envío preliminar (reservación)
 Este caso funciona para convertir una __reservación SIN transporte__ a un __envío entregado__. No funciona para convertir un __envío en tránsito (con transporte)__ a un __envío entregado__ ni para convertir una __reservación CON transporte__ a un __envío entregado__. Y tampoco funciona para convertir una __reservación CON transporte__ a un __envío en tránsito__
 
@@ -383,6 +478,65 @@ curl -v \
   https://app.zauru.com/inventories/bookings/1/deliver.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "16421816",
+  "zid": "599",
+  "id_number": "INGRESO-177",
+  "reference": "INGRESO INVENTARIO 29.04.2026",
+  "needs_transport": false,
+  "entity_id": "1303",
+  "payee_id": "1957271",
+  "income": true,
+  "booking_image": null,
+  "booker_id": "1274",
+  "planned_shipping": "2026-04-29",
+  "shipped": false,
+  "shipped_at": null,
+  "shipping_image": null,
+  "shipper_id": null,
+  "planned_delivery": "2026-04-29",
+  "delivered": true,
+  "delivered_at": "2026-04-29 16:38:14",
+  "delivery_image": null,
+  "deliverer_id": "1274",
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "returned": false,
+  "returned_at": null,
+  "returner_id": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "memo": null,
+  "agency_from_id": "8248",
+  "address_from": "DORIS SALAZAR  ",
+  "agency_to_id": "8246",
+  "address_to": "Ciudad ",
+  "created_at": "2026-04-29 16:38:14.135016",
+  "updated_at": "2026-04-29 16:38:14.171228",
+  "movements_count": "1",
+  "transporter_id": null,
+  "contract_id": null,
+  "inventory_audit_id": null,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "reception_id": "535683",
+  "pos": false,
+  "issue_external_document": false,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": null,
+  "document_external_storage_certified_response": null,
+  "document_external_storage_certified_response_for_voiding": null,
+  "transfer_request_id": null,
+  "stock_corrections": null,
+  "lock_version": "0"
+}
+```
+
 ### Despachar un envío preliminar (reservación) CON transporte
 Este caso SOLO funciona para convertir una __reservación CON transporte__ a un __envío en tránsito__
 
@@ -393,6 +547,65 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/bookings/1/ship.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "16421816",
+  "zid": "599",
+  "id_number": "INGRESO-177",
+  "reference": "INGRESO INVENTARIO 29.04.2026",
+  "needs_transport": false,
+  "entity_id": "1303",
+  "payee_id": "1957271",
+  "income": true,
+  "booking_image": null,
+  "booker_id": "1274",
+  "planned_shipping": "2026-04-29",
+  "shipped": false,
+  "shipped_at": null,
+  "shipping_image": null,
+  "shipper_id": null,
+  "planned_delivery": "2026-04-29",
+  "delivered": true,
+  "delivered_at": "2026-04-29 16:38:14",
+  "delivery_image": null,
+  "deliverer_id": "1274",
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "returned": false,
+  "returned_at": null,
+  "returner_id": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "memo": null,
+  "agency_from_id": "8248",
+  "address_from": "DORIS SALAZAR  ",
+  "agency_to_id": "8246",
+  "address_to": "Ciudad ",
+  "created_at": "2026-04-29 16:38:14.135016",
+  "updated_at": "2026-04-29 16:38:14.171228",
+  "movements_count": "1",
+  "transporter_id": null,
+  "contract_id": null,
+  "inventory_audit_id": null,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "reception_id": "535683",
+  "pos": false,
+  "issue_external_document": false,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": null,
+  "document_external_storage_certified_response": null,
+  "document_external_storage_certified_response_for_voiding": null,
+  "transfer_request_id": null,
+  "stock_corrections": null,
+  "lock_version": "0"
+}
 ```
 
 ### Entregar un envío (tránsito)
@@ -423,6 +636,11 @@ curl -v \
   https://app.zauru.com/inventories/transits/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Devolver una entrega (envío entregado)
 Convertirá el envío en un envío devuelto y regresará las existencias a donde estaban originalmente (la agencia origen).
 
@@ -435,6 +653,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/deliveries/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Actualizar una reservación
 Actualiza los datos de un envío mientras esté en estado de reservación (Booked). Una vez despachado o entregado, el envío ya no se puede editar.
@@ -463,6 +683,11 @@ curl -v \
   https://app.zauru.com/inventories/bookings/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Anular una reservación
 Anula (void) una reservación, liberando todas las reservas de productos. Solo se puede anular mientras el envío esté en estado de reservación.
 ```bash
@@ -475,6 +700,8 @@ curl -v \
   https://app.zauru.com/inventories/bookings/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener el detalle de un envío en tránsito
 Devuelve los datos de un envío que está en tránsito (despachado pero no entregado).
 ```bash
@@ -486,6 +713,11 @@ curl -v \
   https://app.zauru.com/inventories/transits/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener el detalle de una entrega
 Devuelve los datos de un envío que ya fue entregado.
 ```bash
@@ -495,6 +727,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/deliveries/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Actualizar una entrega
@@ -516,6 +753,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/inventories/deliveries/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Emitir documento electrónico externo de una entrega
@@ -549,4 +791,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/deliveries/1/external_storage_certified_response_for_voiding.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

@@ -82,6 +82,13 @@ curl -v \
   https://app.zauru.com/production/closed_production_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener listado de ordenes cerradas en formato DataTables
 
 Endpoint optimizado para la libreria DataTables con paginacion, ordenamiento y busqueda.
@@ -102,6 +109,16 @@ curl -v \
   https://app.zauru.com/production/closed_production_orders/datatables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 0,
+  "recordsFiltered": 0,
+  "data": []
+}
+```
+
 ### Devolver una orden cerrada a en ejecucion
 
 Reabre una orden de produccion ya cerrada: elimina los subproductos registrados, revierte los movimientos de inventario de entrega, re-crea los movimientos de materias primas, elimina los asientos contables generados y restaura el estado a en ejecucion.
@@ -114,4 +131,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/closed_production_orders/1/return_to_running.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```

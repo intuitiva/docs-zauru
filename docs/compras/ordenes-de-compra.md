@@ -225,19 +225,19 @@ Esta llamada devolverá un JSON similar a este:
   "id":1,
   "authorized":false,
   "id_number":"OC-00001",
-  "agency_id":1,
+  "agency_id": 1,
   "total":"210.0",
   "zid":1,
   "purchase_order_details": [
     {
-      "id":100,
-      "item_id":1,
+      "id": 2,
+      "item_id": 1,
       "unit_cost":"100.0",
       "booked_quantity":2
     },
     {
-      "id":101,
-      "item_id":2,
+      "id": 3,
+      "item_id": 4,
       "unit_cost":"200.0",
       "booked_quantity":10
     }
@@ -285,19 +285,19 @@ Esta llamada devolverá un JSON similar a este:
   "id":1,
   "authorized":false,
   "id_number":"OC-00002",
-  "agency_id":1,
+  "agency_id": 1,
   "total":"300.0",
   "zid":2,
   "purchase_order_account_details": [
     {
-      "id":100,
-      "account_id":1,
+      "id": 2,
+      "account_id": 1,
       "cost":"100.0",
       "referece":"gasto recurrente"
     },
     {
-      "id":101,
-      "account_id":2,
+      "id": 3,
+      "account_id": 4,
       "cost":"200.0"
     }
   ]
@@ -322,7 +322,7 @@ Esta llamada devolverá un JSON similar a este:
   "id":1,
   "authorized":false,
   "id_number":"OC-00001",
-  "agency_id":1,
+  "agency_id": 1,
   "charge_term_id": 1,
   "payee_id": 1,
   "total":"210.0",
@@ -342,8 +342,8 @@ Esta llamada devolverá un JSON similar a este:
   },
   "purchase_order_details": [
     {
-      "id":100,
-      "item_id":1,
+      "id": 2,
+      "item_id": 1,
       "unit_cost":"100.0",
       "booked_quantity":2,
       "item": {
@@ -353,8 +353,8 @@ Esta llamada devolverá un JSON similar a este:
       }
     },
     {
-      "id":101,
-      "item_id":2,
+      "id": 3,
+      "item_id": 4,
       "unit_cost":"200.0",
       "booked_quantity":10,
       "item": {
@@ -469,19 +469,19 @@ Esta llamada devolverá un JSON similar a este:
   "id":1,
   "authorized":false,
   "id_number":"OC-00001",
-  "agency_id":1,
+  "agency_id": 1,
   "total":"210.0",
   "zid":1,
   "purchase_order_details": [
     {
-      "id":100,
-      "item_id":1,
+      "id": 2,
+      "item_id": 1,
       "unit_cost":"100.0",
       "booked_quantity":2
     },
     {
-      "id":101,
-      "item_id":2,
+      "id": 3,
+      "item_id": 4,
       "unit_cost":"200.0",
       "booked_quantity":10
     }
@@ -500,6 +500,8 @@ curl -v \
   https://app.zauru.com/purchases/purchase_orders/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Autorizar una orden de compra
 El 1 al final de la URL es el ID de la orden de compra que se desea autorizar.
 ```bash
@@ -510,6 +512,85 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/1/authorize.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "993727",
+  "zid": "293",
+  "id_number": "OC-290",
+  "reference": "BETO GIL MUEBLE DE TV",
+  "charge_term_id": "2231",
+  "authorized": true,
+  "issue_date": "2026-06-30",
+  "shipping_date": "2026-06-30",
+  "delivery_date": "2026-06-30",
+  "subtotal": "195.00",
+  "discount": "0.00",
+  "tax1": null,
+  "tax2": null,
+  "shipping": null,
+  "total": "195.00",
+  "due": "195.00",
+  "purchaser_id": "30142",
+  "payee_id": "2074705",
+  "entity_id": "1303",
+  "receiver_id": "1274",
+  "received": true,
+  "received_at": "2026-06-30 06:51:43.206854",
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "payment_expected_at": "2026-06-30",
+  "paid": false,
+  "paid_at": null,
+  "memo": null,
+  "image": null,
+  "consolidate_id": null,
+  "agency_id": "8246",
+  "import": false,
+  "incoterm_destination": null,
+  "origin": null,
+  "transport_type": "Marítimo",
+  "forwarder": null,
+  "incoterm_id": "1",
+  "created_at": "2026-06-30 06:51:43.083662",
+  "updated_at": "2026-06-30 06:51:43.233073",
+  "purchase_order_details_count": "0",
+  "currency_id": "1",
+  "exchange_rate": null,
+  "other_charges": null,
+  "image_reception": null,
+  "invoice": "21A56ABB 178276263",
+  "discharge_details_count": "0",
+  "charges_count": "0",
+  "taxable": true,
+  "pdf": null,
+  "contract_id": null,
+  "authorizer_id": "1274",
+  "authorized_at": "2026-06-30 06:51:43.106739",
+  "not_included_vat": "0.00",
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "tax3": null,
+  "tax4": null,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": "b6f16894-8f42-4a35-940d-c3ac03c8cd79",
+  "document_external_storage_certified_response": null,
+  "pos": false,
+  "income_taxes_withheld": "0.00",
+  "vat_withheld": "0.00",
+  "document_external_storage_certified_response_for_voiding": null,
+  "shipment_reference": null
+}
 ```
 
 ### Exportar ordenes de compra
@@ -524,6 +605,11 @@ curl -v \
   "https://app.zauru.com/purchases/purchase_orders/export.json?fechaInicio=2024-01-01&fechaFin=2024-01-31"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Obtener plantillas de impresión de una orden de compra
 Devuelve las plantillas de impresión disponibles para la orden de compra.
 ```bash
@@ -534,4 +620,83 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/1/print_templates.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "993727",
+  "zid": "293",
+  "id_number": "OC-290",
+  "reference": "BETO GIL MUEBLE DE TV",
+  "charge_term_id": "2231",
+  "authorized": true,
+  "issue_date": "2026-06-30",
+  "shipping_date": "2026-06-30",
+  "delivery_date": "2026-06-30",
+  "subtotal": "195.00",
+  "discount": "0.00",
+  "tax1": null,
+  "tax2": null,
+  "shipping": null,
+  "total": "195.00",
+  "due": "195.00",
+  "purchaser_id": "30142",
+  "payee_id": "2074705",
+  "entity_id": "1303",
+  "receiver_id": "1274",
+  "received": true,
+  "received_at": "2026-06-30 06:51:43.206854",
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "creator_id": "1274",
+  "updater_id": "1274",
+  "payment_expected_at": "2026-06-30",
+  "paid": false,
+  "paid_at": null,
+  "memo": null,
+  "image": null,
+  "consolidate_id": null,
+  "agency_id": "8246",
+  "import": false,
+  "incoterm_destination": null,
+  "origin": null,
+  "transport_type": "Marítimo",
+  "forwarder": null,
+  "incoterm_id": "1",
+  "created_at": "2026-06-30 06:51:43.083662",
+  "updated_at": "2026-06-30 06:51:43.233073",
+  "purchase_order_details_count": "0",
+  "currency_id": "1",
+  "exchange_rate": null,
+  "other_charges": null,
+  "image_reception": null,
+  "invoice": "21A56ABB 178276263",
+  "discharge_details_count": "0",
+  "charges_count": "0",
+  "taxable": true,
+  "pdf": null,
+  "contract_id": null,
+  "authorizer_id": "1274",
+  "authorized_at": "2026-06-30 06:51:43.106739",
+  "not_included_vat": "0.00",
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "tax3": null,
+  "tax4": null,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "uuid": "b6f16894-8f42-4a35-940d-c3ac03c8cd79",
+  "document_external_storage_certified_response": null,
+  "pos": false,
+  "income_taxes_withheld": "0.00",
+  "vat_withheld": "0.00",
+  "document_external_storage_certified_response_for_voiding": null,
+  "shipment_reference": null
+}
 ```

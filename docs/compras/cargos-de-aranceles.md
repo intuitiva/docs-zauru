@@ -57,6 +57,11 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener datos para un cargo de arancel nuevo
 El parámetro `po` es el ID de la orden de compra a la que se le agregaran los aranceles
 ```bash
@@ -69,6 +74,11 @@ curl -v \
   "https://app.zauru.com/purchases/charges/tariffs_charges/new.json?po=1"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener datos para editar un cargo de arancel
 ```bash
 curl -v \
@@ -78,6 +88,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/charges/tariffs_charges/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear nuevo cargo de arancel
@@ -112,6 +127,18 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "payee_info": [
+    "no puede estar en blanco"
+  ],
+  "issue_date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### Actualizar un cargo de arancel
 ```bash
 curl -v \
@@ -133,4 +160,9 @@ curl -v \
     }
   }' \
   https://app.zauru.com/purchases/charges/tariffs_charges/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

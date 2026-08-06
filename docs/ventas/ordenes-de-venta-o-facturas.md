@@ -272,6 +272,14 @@ curl -v \
   https://app.zauru.com/sales/orders/active_sellers.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "1": "Empleado Vendedor Senior",
+  "93": "Brian"
+}
+```
+
 ### Listar órdenes de venta
 ```bash
 curl -v \
@@ -280,6 +288,214 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/orders.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "order_number": null,
+    "invoice_number": null,
+    "reference": "compras detalladas",
+    "date": "2018-12-14",
+    "subtotal": "1200.0",
+    "discount_id": null,
+    "extra_discount": "0.0",
+    "total": "1200.0",
+    "due": "1200.0",
+    "needs_delivery": false,
+    "delivery_date": null,
+    "delivery_address": "",
+    "seller_id": 3,
+    "creator_id": 4,
+    "updater_id": 4,
+    "taxable": true,
+    "issuer_id": null,
+    "issued": false,
+    "issued_at": null,
+    "paid": false,
+    "paid_at": null,
+    "voider_id": null,
+    "voided": false,
+    "voided_at": null,
+    "entity_id": 4,
+    "memo": "",
+    "order_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "invoice_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "payee_id": 5,
+    "payment_expected_at": "2018-12-14",
+    "agency_id": 6,
+    "payment_term_id": 7,
+    "created_at": "2018-12-14T21:08:56.569Z",
+    "updated_at": "2018-12-14T21:08:56.569Z",
+    "invoice_details_count": 1,
+    "shipper_id": null,
+    "pos": false,
+    "order_pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "contract_id": 8,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "crm_url": null,
+    "zid_by_agency_and_creator": 1853,
+    "not_included_vat": null,
+    "exchange_rate": 1.0,
+    "excempt": false,
+    "currency_id": 3,
+    "resolution": null,
+    "resolution_date": null,
+    "authorized_serial": null,
+    "foreign": false,
+    "ecommerce_request_id": null,
+    "external_image_url": null,
+    "uuid": null,
+    "id_number": null,
+    "great_contributor": null,
+    "sales_consolidate_id": null,
+    "email": null,
+    "resolution_notes": null,
+    "client_identification_type_when_issuing_invoices": 0,
+    "export": false,
+    "export_references": null,
+    "sv_ccf": false,
+    "contingency": 0,
+    "withheld_vat": null,
+    "withheld_income_tax": null,
+    "contingency_number": null,
+    "cr_ticket": false,
+    "mail_resent_at": null,
+    "donation": false,
+    "gift_card_1_id": null,
+    "gift_card_1_id_number": null,
+    "gift_card_1_discount": "0.0",
+    "gift_card_2_id": null,
+    "gift_card_2_id_number": null,
+    "gift_card_2_discount": "0.0",
+    "export_consignee_name": null,
+    "export_consignee_address": null,
+    "export_consignee_country": null,
+    "export_reference": null,
+    "export_electronic_tax_document": null,
+    "export_declaration": null
+  },
+  {
+    "id": 9,
+    "zid": 10,
+    "order_number": null,
+    "invoice_number": null,
+    "reference": "Implementación 2/2",
+    "date": "2020-07-16",
+    "subtotal": "2200.0",
+    "discount_id": null,
+    "extra_discount": "0.0",
+    "total": "2200.0",
+    "due": "2200.0",
+    "needs_delivery": false,
+    "delivery_date": null,
+    "delivery_address": "",
+    "seller_id": 3,
+    "creator_id": 11,
+    "updater_id": 11,
+    "taxable": true,
+    "issuer_id": null,
+    "issued": false,
+    "issued_at": null,
+    "paid": false,
+    "paid_at": null,
+    "voider_id": null,
+    "voided": false,
+    "voided_at": null,
+    "entity_id": 4,
+    "memo": "",
+    "order_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "invoice_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "payee_id": 12,
+    "payment_expected_at": "2020-07-16",
+    "agency_id": 6,
+    "payment_term_id": 13,
+    "created_at": "2020-07-16T22:39:21.519Z",
+    "updated_at": "2020-09-01T14:42:13.772Z",
+    "invoice_details_count": 1,
+    "shipper_id": null,
+    "pos": false,
+    "order_pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "contract_id": 14,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "crm_url": null,
+    "zid_by_agency_and_creator": 5042,
+    "not_included_vat": null,
+    "exchange_rate": 1.0,
+    "excempt": false,
+    "currency_id": 3,
+    "resolution": null,
+    "resolution_date": null,
+    "authorized_serial": null,
+    "foreign": false,
+    "ecommerce_request_id": null,
+    "external_image_url": null,
+    "uuid": "2d229d23-f261-4499-5dfb-e6d124ccd3fb",
+    "id_number": null,
+    "great_contributor": null,
+    "sales_consolidate_id": null,
+    "email": null,
+    "resolution_notes": null,
+    "client_identification_type_when_issuing_invoices": 0,
+    "export": false,
+    "export_references": null,
+    "sv_ccf": false,
+    "contingency": 0,
+    "withheld_vat": null,
+    "withheld_income_tax": null,
+    "contingency_number": null,
+    "cr_ticket": false,
+    "mail_resent_at": null,
+    "donation": false,
+    "gift_card_1_id": null,
+    "gift_card_1_id_number": null,
+    "gift_card_1_discount": "0.0",
+    "gift_card_2_id": null,
+    "gift_card_2_id_number": null,
+    "gift_card_2_discount": "0.0",
+    "export_consignee_name": null,
+    "export_consignee_address": null,
+    "export_consignee_country": null,
+    "export_reference": null,
+    "export_electronic_tax_document": null,
+    "export_declaration": null
+  }
+]
 ```
 
 ### Obtener detalle de la orden de venta
@@ -292,6 +508,414 @@ curl -v \
   https://app.zauru.com/sales/orders/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 123",
+  "reference": "Referencia actualizada",
+  "date": "2024-01-15",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:32.224Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "d91900cc-4e73-49c5-8ddd-cb018ea6ba1c",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null,
+  "payee": {
+    "id": 4,
+    "zid": 7,
+    "id_number": "",
+    "active": false,
+    "name": "Cliente Ejemplo, S.A.",
+    "vendor": false,
+    "buyer": true,
+    "tin": "1234567-K",
+    "reference": "",
+    "address_line_1": "Ciudad",
+    "address_line_2": "",
+    "delivery_address": "utatlán 2",
+    "currency_id": 1,
+    "credit_limit": "1000.0",
+    "payee_category_id": null,
+    "web": "",
+    "phone": "5555-0004",
+    "email": "contacto@ejemplo.com",
+    "contact": "Juan Carlos Paz (4391-3001)",
+    "contact_phone": "",
+    "contact_email": "",
+    "contact2": "",
+    "contact2_phone": "",
+    "contact2_email": "",
+    "notes": "",
+    "entity_id": 2,
+    "updater_id": 8,
+    "created_at": "2010-05-27T17:26:03.000Z",
+    "updated_at": "2024-03-19T00:40:38.280Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": "",
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 9
+  },
+  "invoice_details": [
+    {
+      "id": 1,
+      "bundle_id": null,
+      "item_id": 10,
+      "serial_id": null,
+      "reference": "",
+      "unit_price": "250.0",
+      "unit_exchange_price": null,
+      "quantity": "2.0",
+      "price": "750.0",
+      "invoice_id": 1,
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2026-08-06T04:14:25.611Z",
+      "item_bundle_name": "servicio hosting",
+      "item_bundle_description": "Servicio de hosting y mantenimiento de página web y correos electrónicos.",
+      "lot_id": null,
+      "discount_id": null,
+      "extra_tax_1": "0.0",
+      "extra_tax_2": "0.0",
+      "average_cost": "0.0",
+      "tag_id": null,
+      "dynamic_bundle_id": null,
+      "entity_id": 2,
+      "gift_card_id": null,
+      "gift_card_type_id": null,
+      "item": {
+        "zid": 11,
+        "code": "O5",
+        "ean13": null,
+        "name": "servicio hosting",
+        "item_category_id": null
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": 12,
+      "zid": 13,
+      "printable": false,
+      "invoice": "",
+      "id_number": null,
+      "reference": "",
+      "date": "2010-02-08",
+      "income": true,
+      "memo": "create invoice",
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        }
+      },
+      "verified": false,
+      "audited": false,
+      "payee_id": 4,
+      "entity_id": 2,
+      "reconciliation_id": null,
+      "updater_id": 2,
+      "account_id": 14,
+      "amount": "750.0",
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2010-05-31T18:39:45.000Z",
+      "splits_count": 1,
+      "invoice_date": null,
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "contract_id": null,
+      "verified_at": null,
+      "audited_at": null,
+      "conciliation_id": null,
+      "split_conciliation_id": null,
+      "endorsement_restriction": false,
+      "exempt": false,
+      "small_taxpayer": false,
+      "external_image_url": null,
+      "reception_id": null,
+      "inventory_audit_id": null,
+      "source_doc_type_id": 1,
+      "monthly_entry_source_doc_type_id": null,
+      "cost_center_id": null,
+      "account": {
+        "code": "",
+        "name": "ventas viejas",
+        "currency_id": 1
+      },
+      "splits": [
+        {
+          "id": 12,
+          "entry_id": 12,
+          "amount": "750.0",
+          "account_id": 7,
+          "exchange_amount": null,
+          "created_at": "2010-05-31T18:39:45.000Z",
+          "updated_at": "2010-05-31T18:39:45.000Z",
+          "reference": null,
+          "verified": false,
+          "verified_at": null,
+          "audited": false,
+          "audited_at": null,
+          "cost_center_id": null,
+          "entity_id": 2,
+          "account": {
+            "code": "",
+            "name": "cuentas por cobrar clientes extranjeros",
+            "currency_id": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "zid": 16,
+      "printable": false,
+      "invoice": "",
+      "id_number": null,
+      "reference": "",
+      "date": "2010-02-08",
+      "income": null,
+      "memo": "create payment",
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        }
+      },
+      "verified": false,
+      "audited": false,
+      "payee_id": 4,
+      "entity_id": 2,
+      "reconciliation_id": null,
+      "updater_id": 2,
+      "account_id": 7,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:42:58.000Z",
+      "updated_at": "2010-12-03T18:58:00.000Z",
+      "splits_count": 1,
+      "invoice_date": null,
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "contract_id": null,
+      "verified_at": null,
+      "audited_at": null,
+      "conciliation_id": null,
+      "split_conciliation_id": null,
+      "endorsement_restriction": false,
+      "exempt": false,
+      "small_taxpayer": false,
+      "external_image_url": null,
+      "reception_id": null,
+      "inventory_audit_id": null,
+      "source_doc_type_id": 17,
+      "monthly_entry_source_doc_type_id": null,
+      "cost_center_id": null,
+      "account": {
+        "code": "",
+        "name": "cuentas por cobrar clientes extranjeros",
+        "currency_id": 1
+      },
+      "splits": [
+        {
+          "id": 15,
+          "entry_id": 15,
+          "amount": "250.0",
+          "account_id": 18,
+          "exchange_amount": null,
+          "created_at": "2010-05-31T18:42:58.000Z",
+          "updated_at": "2010-05-31T18:42:58.000Z",
+          "reference": null,
+          "verified": false,
+          "verified_at": null,
+          "audited": false,
+          "audited_at": null,
+          "cost_center_id": null,
+          "entity_id": 2,
+          "account": {
+            "code": "",
+            "name": "efectivo",
+            "currency_id": 1
+          }
+        }
+      ]
+    }
+  ],
+  "payment_details": [
+    {
+      "id": 1,
+      "invoice_id": 1,
+      "payment_id": 1,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:42:58.000Z",
+      "updated_at": "2010-05-31T18:42:58.000Z",
+      "reference": null,
+      "credit_note_id": null,
+      "entity_id": 2,
+      "contract_id": null,
+      "contract_recurrence": 0,
+      "payment": {
+        "zid": 1,
+        "reference": "referencia actualizada",
+        "date": "2024-01-15",
+        "agency_id": 5,
+        "amount": "250.0"
+      }
+    },
+    {
+      "id": 2,
+      "invoice_id": 1,
+      "payment_id": 2,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:44:34.000Z",
+      "updated_at": "2010-05-31T18:44:34.000Z",
+      "reference": null,
+      "credit_note_id": null,
+      "entity_id": 2,
+      "contract_id": null,
+      "contract_recurrence": 0,
+      "payment": {
+        "zid": 2,
+        "reference": "",
+        "date": "2010-03-23",
+        "agency_id": 5,
+        "amount": "250.0"
+      }
+    }
+  ],
+  "submissions": []
+}
+```
+
 ### Obtener detalle de la factura
 ```bash
 curl -v \
@@ -300,6 +924,414 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/unpaid_invoices/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 123",
+  "reference": "Referencia actualizada",
+  "date": "2024-01-15",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:32.224Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "d91900cc-4e73-49c5-8ddd-cb018ea6ba1c",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null,
+  "payee": {
+    "id": 4,
+    "zid": 7,
+    "id_number": "",
+    "active": false,
+    "name": "Cliente Ejemplo, S.A.",
+    "vendor": false,
+    "buyer": true,
+    "tin": "1234567-K",
+    "reference": "",
+    "address_line_1": "Ciudad",
+    "address_line_2": "",
+    "delivery_address": "utatlán 2",
+    "currency_id": 1,
+    "credit_limit": "1000.0",
+    "payee_category_id": null,
+    "web": "",
+    "phone": "5555-0004",
+    "email": "contacto@ejemplo.com",
+    "contact": "Juan Carlos Paz (4391-3001)",
+    "contact_phone": "",
+    "contact_email": "",
+    "contact2": "",
+    "contact2_phone": "",
+    "contact2_email": "",
+    "notes": "",
+    "entity_id": 2,
+    "updater_id": 8,
+    "created_at": "2010-05-27T17:26:03.000Z",
+    "updated_at": "2024-03-19T00:40:38.280Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": "",
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 9
+  },
+  "invoice_details": [
+    {
+      "id": 1,
+      "bundle_id": null,
+      "item_id": 10,
+      "serial_id": null,
+      "reference": "",
+      "unit_price": "250.0",
+      "unit_exchange_price": null,
+      "quantity": "2.0",
+      "price": "750.0",
+      "invoice_id": 1,
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2026-08-06T04:14:25.611Z",
+      "item_bundle_name": "servicio hosting",
+      "item_bundle_description": "Servicio de hosting y mantenimiento de página web y correos electrónicos.",
+      "lot_id": null,
+      "discount_id": null,
+      "extra_tax_1": "0.0",
+      "extra_tax_2": "0.0",
+      "average_cost": "0.0",
+      "tag_id": null,
+      "dynamic_bundle_id": null,
+      "entity_id": 2,
+      "gift_card_id": null,
+      "gift_card_type_id": null,
+      "item": {
+        "zid": 11,
+        "code": "O5",
+        "ean13": null,
+        "name": "servicio hosting",
+        "item_category_id": null
+      }
+    }
+  ],
+  "entries": [
+    {
+      "id": 12,
+      "zid": 13,
+      "printable": false,
+      "invoice": "",
+      "id_number": null,
+      "reference": "",
+      "date": "2010-02-08",
+      "income": true,
+      "memo": "create invoice",
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        }
+      },
+      "verified": false,
+      "audited": false,
+      "payee_id": 4,
+      "entity_id": 2,
+      "reconciliation_id": null,
+      "updater_id": 2,
+      "account_id": 14,
+      "amount": "750.0",
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2010-05-31T18:39:45.000Z",
+      "splits_count": 1,
+      "invoice_date": null,
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "contract_id": null,
+      "verified_at": null,
+      "audited_at": null,
+      "conciliation_id": null,
+      "split_conciliation_id": null,
+      "endorsement_restriction": false,
+      "exempt": false,
+      "small_taxpayer": false,
+      "external_image_url": null,
+      "reception_id": null,
+      "inventory_audit_id": null,
+      "source_doc_type_id": 1,
+      "monthly_entry_source_doc_type_id": null,
+      "cost_center_id": null,
+      "account": {
+        "code": "",
+        "name": "ventas viejas",
+        "currency_id": 1
+      },
+      "splits": [
+        {
+          "id": 12,
+          "entry_id": 12,
+          "amount": "750.0",
+          "account_id": 7,
+          "exchange_amount": null,
+          "created_at": "2010-05-31T18:39:45.000Z",
+          "updated_at": "2010-05-31T18:39:45.000Z",
+          "reference": null,
+          "verified": false,
+          "verified_at": null,
+          "audited": false,
+          "audited_at": null,
+          "cost_center_id": null,
+          "entity_id": 2,
+          "account": {
+            "code": "",
+            "name": "cuentas por cobrar clientes extranjeros",
+            "currency_id": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "zid": 16,
+      "printable": false,
+      "invoice": "",
+      "id_number": null,
+      "reference": "",
+      "date": "2010-02-08",
+      "income": null,
+      "memo": "create payment",
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        }
+      },
+      "verified": false,
+      "audited": false,
+      "payee_id": 4,
+      "entity_id": 2,
+      "reconciliation_id": null,
+      "updater_id": 2,
+      "account_id": 7,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:42:58.000Z",
+      "updated_at": "2010-12-03T18:58:00.000Z",
+      "splits_count": 1,
+      "invoice_date": null,
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "contract_id": null,
+      "verified_at": null,
+      "audited_at": null,
+      "conciliation_id": null,
+      "split_conciliation_id": null,
+      "endorsement_restriction": false,
+      "exempt": false,
+      "small_taxpayer": false,
+      "external_image_url": null,
+      "reception_id": null,
+      "inventory_audit_id": null,
+      "source_doc_type_id": 17,
+      "monthly_entry_source_doc_type_id": null,
+      "cost_center_id": null,
+      "account": {
+        "code": "",
+        "name": "cuentas por cobrar clientes extranjeros",
+        "currency_id": 1
+      },
+      "splits": [
+        {
+          "id": 15,
+          "entry_id": 15,
+          "amount": "250.0",
+          "account_id": 18,
+          "exchange_amount": null,
+          "created_at": "2010-05-31T18:42:58.000Z",
+          "updated_at": "2010-05-31T18:42:58.000Z",
+          "reference": null,
+          "verified": false,
+          "verified_at": null,
+          "audited": false,
+          "audited_at": null,
+          "cost_center_id": null,
+          "entity_id": 2,
+          "account": {
+            "code": "",
+            "name": "efectivo",
+            "currency_id": 1
+          }
+        }
+      ]
+    }
+  ],
+  "payment_details": [
+    {
+      "id": 1,
+      "invoice_id": 1,
+      "payment_id": 1,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:42:58.000Z",
+      "updated_at": "2010-05-31T18:42:58.000Z",
+      "reference": null,
+      "credit_note_id": null,
+      "entity_id": 2,
+      "contract_id": null,
+      "contract_recurrence": 0,
+      "payment": {
+        "zid": 1,
+        "reference": "referencia actualizada",
+        "date": "2024-01-15",
+        "agency_id": 5,
+        "amount": "250.0"
+      }
+    },
+    {
+      "id": 2,
+      "invoice_id": 1,
+      "payment_id": 2,
+      "amount": "250.0",
+      "created_at": "2010-05-31T18:44:34.000Z",
+      "updated_at": "2010-05-31T18:44:34.000Z",
+      "reference": null,
+      "credit_note_id": null,
+      "entity_id": 2,
+      "contract_id": null,
+      "contract_recurrence": 0,
+      "payment": {
+        "zid": 2,
+        "reference": "",
+        "date": "2010-03-23",
+        "agency_id": 5,
+        "amount": "250.0"
+      }
+    }
+  ],
+  "submissions": []
+}
 ```
 
 ### Crear orden de venta
@@ -328,6 +1360,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/orders.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### editar orden de venta
@@ -365,6 +1402,11 @@ curl -v \
   https://app.zauru.com/sales/orders/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### eliminar ordenes de venta
 ```bash
 curl -v \
@@ -375,6 +1417,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/orders/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### crear factura
 ```bash
@@ -391,7 +1435,7 @@ curl -v \
       "taxable": "1",
       "agency_id": "1",
       "payment_term_id": "1",
-      "payee_info": "8005046-8 | Intuitiva, S.A. # 6646-4658",
+      "payee_info": "1234567-8 | Empresa Ejemplo, S.A. # 5555-0000",
       "seller_id": "1",
       "invoice_details_attributes": {
         "0": {
@@ -420,16 +1464,16 @@ Esto devolverá un JSON similar a este
   "zid":1,
   "invoice_details":[
     {
-      "id":100,
+      "id": 1,
       "item_bundle_name":"PRODUCTO 1",
-      "item_id":1,
+      "item_id": 2,
       "quantity":10,
       "unit_price":"10.0"
     },
     {
-      "id":101,
+      "id": 3,
       "item_bundle_name":"SERVICIO 1",
-      "item_id":2,
+      "item_id": 4,
       "quantity":20,
       "unit_price":"1.0"
     }
@@ -458,6 +1502,139 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/1/shallow_update.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Referencia actualizada",
+  "date": "2024-01-15",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada desde API",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:32.951Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "d91900cc-4e73-49c5-8ddd-cb018ea6ba1c",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null,
+  "invoice_details": [
+    {
+      "id": 1,
+      "bundle_id": null,
+      "item_id": 7,
+      "serial_id": null,
+      "reference": "",
+      "unit_price": "250.0",
+      "unit_exchange_price": null,
+      "quantity": "2.0",
+      "price": "750.0",
+      "invoice_id": 1,
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2026-08-06T04:14:25.611Z",
+      "item_bundle_name": "servicio hosting",
+      "item_bundle_description": "Servicio de hosting y mantenimiento de página web y correos electrónicos.",
+      "lot_id": null,
+      "discount_id": null,
+      "extra_tax_1": "0.0",
+      "extra_tax_2": "0.0",
+      "average_cost": "0.0",
+      "tag_id": null,
+      "dynamic_bundle_id": null,
+      "entity_id": 2,
+      "gift_card_id": null,
+      "gift_card_type_id": null
+    }
+  ]
+}
+```
+
 ### Emitir factura desde orden (fast issue)
 ```bash
 curl -v \
@@ -466,6 +1643,139 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/unpaid_invoices/1/issue_fast.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Referencia actualizada",
+  "date": "2026-08-06",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada desde API",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:33.770Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "1be9e8a2-3570-4f46-a67c-0e3538f92c19",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null,
+  "invoice_details": [
+    {
+      "id": 1,
+      "bundle_id": null,
+      "item_id": 7,
+      "serial_id": null,
+      "reference": "",
+      "unit_price": "250.0",
+      "unit_exchange_price": null,
+      "quantity": "2.0",
+      "price": "750.0",
+      "invoice_id": 1,
+      "created_at": "2010-05-31T18:39:45.000Z",
+      "updated_at": "2026-08-06T04:14:25.611Z",
+      "item_bundle_name": "servicio hosting",
+      "item_bundle_description": "Servicio de hosting y mantenimiento de página web y correos electrónicos.",
+      "lot_id": null,
+      "discount_id": null,
+      "extra_tax_1": "0.0",
+      "extra_tax_2": "0.0",
+      "average_cost": "0.0",
+      "tag_id": null,
+      "dynamic_bundle_id": null,
+      "entity_id": 2,
+      "gift_card_id": null,
+      "gift_card_type_id": null
+    }
+  ]
+}
 ```
 
 ### Exportar órdenes de venta a Excel
@@ -498,6 +1808,11 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Anular factura no pagada
 ```bash
 curl -v \
@@ -507,6 +1822,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/sales/unpaid_invoices/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Listar facturas no pagadas
@@ -519,6 +1839,13 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener plantilla para crear una orden de venta
 ```bash
 curl -v \
@@ -527,6 +1854,111 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/orders/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "order_number": null,
+  "invoice_number": null,
+  "reference": null,
+  "date": "2026-08-06",
+  "subtotal": null,
+  "discount_id": null,
+  "extra_discount": null,
+  "total": null,
+  "due": null,
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": null,
+  "updater_id": null,
+  "taxable": true,
+  "issuer_id": null,
+  "issued": false,
+  "issued_at": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": 2,
+  "memo": null,
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": null,
+  "payment_expected_at": null,
+  "agency_id": 3,
+  "payment_term_id": 4,
+  "created_at": null,
+  "updated_at": null,
+  "invoice_details_count": 0,
+  "shipper_id": null,
+  "pos": false,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 0,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": null,
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": null,
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null
+}
 ```
 
 ### Obtener plantilla para crear una factura
@@ -539,6 +1971,472 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "invoice": {
+    "id": null,
+    "zid": null,
+    "order_number": null,
+    "invoice_number": "FEL",
+    "reference": null,
+    "date": "2026-08-06",
+    "subtotal": null,
+    "discount_id": null,
+    "extra_discount": null,
+    "total": null,
+    "due": null,
+    "needs_delivery": false,
+    "delivery_date": null,
+    "delivery_address": null,
+    "seller_id": 1,
+    "creator_id": null,
+    "updater_id": null,
+    "taxable": true,
+    "issuer_id": null,
+    "issued": false,
+    "issued_at": null,
+    "paid": false,
+    "paid_at": null,
+    "voider_id": null,
+    "voided": false,
+    "voided_at": null,
+    "entity_id": 2,
+    "memo": null,
+    "order_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "invoice_image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "payee_id": null,
+    "payment_expected_at": null,
+    "agency_id": 3,
+    "payment_term_id": 4,
+    "created_at": null,
+    "updated_at": null,
+    "invoice_details_count": 0,
+    "shipper_id": null,
+    "pos": false,
+    "order_pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "contract_id": null,
+    "electronic_authorization_supporting_document": null,
+    "electronic_tax_document": null,
+    "crm_url": null,
+    "zid_by_agency_and_creator": 0,
+    "not_included_vat": null,
+    "exchange_rate": 1.0,
+    "excempt": false,
+    "currency_id": 1,
+    "resolution": null,
+    "resolution_date": null,
+    "authorized_serial": null,
+    "foreign": false,
+    "ecommerce_request_id": null,
+    "external_image_url": null,
+    "uuid": null,
+    "id_number": "",
+    "great_contributor": null,
+    "sales_consolidate_id": null,
+    "email": null,
+    "resolution_notes": null,
+    "client_identification_type_when_issuing_invoices": 0,
+    "export": false,
+    "export_references": null,
+    "sv_ccf": false,
+    "contingency": 0,
+    "withheld_vat": null,
+    "withheld_income_tax": null,
+    "contingency_number": null,
+    "cr_ticket": false,
+    "mail_resent_at": null,
+    "donation": true,
+    "gift_card_1_id": null,
+    "gift_card_1_id_number": null,
+    "gift_card_1_discount": "0.0",
+    "gift_card_2_id": null,
+    "gift_card_2_id_number": null,
+    "gift_card_2_discount": "0.0",
+    "export_consignee_name": null,
+    "export_consignee_address": null,
+    "export_consignee_country": null,
+    "export_reference": null,
+    "export_electronic_tax_document": null,
+    "export_declaration": null
+  },
+  "items": {
+    "cuotas mensuales": [
+      [
+        "10 usuarios - CM62",
+        101018
+      ],
+      [
+        "11 usuarios - CM63",
+        101019
+      ]
+    ],
+    "cuotas distribuidor": [
+      [
+        "1 usuario - CM103",
+        341285
+      ],
+      [
+        "módulo distribuidor análisis - CD39",
+        40476
+      ]
+    ]
+  },
+  "bundles": {
+    "Paquetes": [
+      [
+        "+Modulo Base - base",
+        "b2655"
+      ],
+      [
+        "+Modulo Distribuidor Base - distribuidor",
+        "b2656"
+      ]
+    ]
+  },
+  "payment_terms": [
+    {
+      "id": 4,
+      "zid": 5,
+      "active": true,
+      "name": "implementaciones ejemplo",
+      "credit_percent": 0.0,
+      "credit_days": 0,
+      "credit": false,
+      "applicable_to_uncategorized_payees": true,
+      "account_from_id": 6,
+      "account_to_id": 7,
+      "updater_id": 8,
+      "entity_id": 2,
+      "created_at": "2026-05-21T02:09:19.859Z",
+      "updated_at": "2026-05-21T02:09:19.859Z",
+      "extra_entries": 0,
+      "flexible_entries_values": false,
+      "cost_account_id": null,
+      "inventory_asset_account_id": null,
+      "flexible_entries_tags": false,
+      "products_and_services_instead_of_account_from": false,
+      "memo": "",
+      "advance_payment_account_to_id": null,
+      "product_account_id": null,
+      "service_account_id": null,
+      "cost_center_id": null
+    },
+    {
+      "id": 9,
+      "zid": 10,
+      "active": true,
+      "name": "mensualidades ejemplo",
+      "credit_percent": 1.0,
+      "credit_days": 7,
+      "credit": true,
+      "applicable_to_uncategorized_payees": true,
+      "account_from_id": 11,
+      "account_to_id": 7,
+      "updater_id": 8,
+      "entity_id": 2,
+      "created_at": "2026-05-21T02:00:08.541Z",
+      "updated_at": "2026-05-21T02:00:08.541Z",
+      "extra_entries": 0,
+      "flexible_entries_values": false,
+      "cost_account_id": null,
+      "inventory_asset_account_id": null,
+      "flexible_entries_tags": false,
+      "products_and_services_instead_of_account_from": false,
+      "memo": "",
+      "advance_payment_account_to_id": null,
+      "product_account_id": null,
+      "service_account_id": null,
+      "cost_center_id": null
+    }
+  ],
+  "invoice_discounts": [],
+  "employees": [
+    {
+      "id": 1,
+      "zid": 1,
+      "id_number": "000",
+      "active": true,
+      "accountant": true,
+      "inventory_controller": true,
+      "seller": true,
+      "buyer": true,
+      "support_agent": true,
+      "name": "Empleado Vendedor Senior",
+      "identification": "1234567890101",
+      "email": "vendedor@ejemplo.com",
+      "position": "Gerente General",
+      "address": "Calle Ejemplo 123, Zona 10",
+      "phone": "5555-0001",
+      "birthday": "1990-01-01",
+      "started": "2008-01-01",
+      "salary": "19533.62",
+      "ssn": "123456789012",
+      "tin": "12345678",
+      "user_id": 2,
+      "updater_id": 12,
+      "entity_id": 2,
+      "agency_id": 3,
+      "notes": "",
+      "created_at": "2013-01-08T16:54:53.222Z",
+      "updated_at": "2026-08-06T04:14:17.486Z",
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        },
+        "thumbnail": {
+          "url": null
+        },
+        "pos": {
+          "url": null
+        }
+      },
+      "ordinary_hourly_rate": 80.27515,
+      "daytime_extraordinary_hourly_rate": 80.27515,
+      "nighttime_extraordinary_hourly_rate": 120.412726,
+      "gender": true,
+      "bank_account": "000-0000000-0",
+      "bank": "G&T",
+      "marital_status": "casado",
+      "occupation": "Ingeniero en sistemas",
+      "nationality": "Guatemalteco",
+      "supervisor_id": null,
+      "employee_category_id": null,
+      "cost_center_id": null,
+      "spouse_name": "",
+      "dependents": "",
+      "emergency_contact_name": "",
+      "emergency_contact_phone": "",
+      "education_level": "",
+      "driver_license_number": "",
+      "additional_worker_id": "1000000001 -1000002- RL1000000003 -1000004-"
+    },
+    {
+      "id": 13,
+      "zid": 2,
+      "id_number": "",
+      "active": true,
+      "accountant": true,
+      "inventory_controller": false,
+      "seller": true,
+      "buyer": false,
+      "support_agent": false,
+      "name": "Carlos",
+      "identification": "",
+      "email": "invitado@ejemplo.com",
+      "position": "",
+      "address": "",
+      "phone": "",
+      "birthday": "1913-01-01",
+      "started": null,
+      "salary": null,
+      "ssn": "",
+      "tin": "",
+      "user_id": 14,
+      "updater_id": 8,
+      "entity_id": 2,
+      "agency_id": 3,
+      "notes": "",
+      "created_at": "2013-03-01T02:26:00.219Z",
+      "updated_at": "2026-03-19T14:49:36.337Z",
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        },
+        "thumbnail": {
+          "url": null
+        },
+        "pos": {
+          "url": null
+        }
+      },
+      "ordinary_hourly_rate": null,
+      "daytime_extraordinary_hourly_rate": null,
+      "nighttime_extraordinary_hourly_rate": null,
+      "gender": true,
+      "bank_account": "",
+      "bank": "",
+      "marital_status": "",
+      "occupation": "",
+      "nationality": "",
+      "supervisor_id": null,
+      "employee_category_id": null,
+      "cost_center_id": null,
+      "spouse_name": "",
+      "dependents": "",
+      "emergency_contact_name": "",
+      "emergency_contact_phone": "",
+      "education_level": "",
+      "driver_license_number": "",
+      "additional_worker_id": ""
+    }
+  ],
+  "shippers": [
+    {
+      "id": 15,
+      "zid": 16,
+      "id_number": "002",
+      "active": true,
+      "accountant": true,
+      "inventory_controller": true,
+      "seller": true,
+      "buyer": false,
+      "support_agent": true,
+      "name": "Empleado Ejemplo Dos",
+      "identification": "2345 67890 0101",
+      "email": "empleado@ejemplo.com",
+      "position": "Implementador",
+      "address": "Avenida Ejemplo 456, Zona 15",
+      "phone": "5555-0002",
+      "birthday": "1980-08-19",
+      "started": "2021-04-01",
+      "salary": null,
+      "ssn": "987654321",
+      "tin": "87654321",
+      "user_id": 17,
+      "updater_id": 8,
+      "entity_id": 2,
+      "agency_id": 3,
+      "notes": "",
+      "created_at": "2014-10-06T16:21:54.296Z",
+      "updated_at": "2026-01-15T18:51:30.924Z",
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        },
+        "thumbnail": {
+          "url": null
+        },
+        "pos": {
+          "url": null
+        }
+      },
+      "ordinary_hourly_rate": null,
+      "daytime_extraordinary_hourly_rate": null,
+      "nighttime_extraordinary_hourly_rate": null,
+      "gender": true,
+      "bank_account": "",
+      "bank": "",
+      "marital_status": "",
+      "occupation": "",
+      "nationality": "",
+      "supervisor_id": null,
+      "employee_category_id": null,
+      "cost_center_id": null,
+      "spouse_name": "",
+      "dependents": "",
+      "emergency_contact_name": "",
+      "emergency_contact_phone": "",
+      "education_level": "",
+      "driver_license_number": "",
+      "additional_worker_id": "1000000001 -1000002-"
+    },
+    {
+      "id": 1,
+      "zid": 1,
+      "id_number": "000",
+      "active": true,
+      "accountant": true,
+      "inventory_controller": true,
+      "seller": true,
+      "buyer": true,
+      "support_agent": true,
+      "name": "Empleado Vendedor Senior",
+      "identification": "1234567890101",
+      "email": "vendedor@ejemplo.com",
+      "position": "Gerente General",
+      "address": "Calle Ejemplo 123, Zona 10",
+      "phone": "5555-0001",
+      "birthday": "1990-01-01",
+      "started": "2008-01-01",
+      "salary": "19533.62",
+      "ssn": "123456789012",
+      "tin": "12345678",
+      "user_id": 2,
+      "updater_id": 12,
+      "entity_id": 2,
+      "agency_id": 3,
+      "notes": "",
+      "created_at": "2013-01-08T16:54:53.222Z",
+      "updated_at": "2026-08-06T04:14:17.486Z",
+      "pdf": {
+        "url": null,
+        "thumbnail": {
+          "url": null
+        }
+      },
+      "image": {
+        "url": null,
+        "standard": {
+          "url": null
+        },
+        "thumbnail": {
+          "url": null
+        },
+        "pos": {
+          "url": null
+        }
+      },
+      "ordinary_hourly_rate": 80.27515,
+      "daytime_extraordinary_hourly_rate": 80.27515,
+      "nighttime_extraordinary_hourly_rate": 120.412726,
+      "gender": true,
+      "bank_account": "000-0000000-0",
+      "bank": "G&T",
+      "marital_status": "casado",
+      "occupation": "Ingeniero en sistemas",
+      "nationality": "Guatemalteco",
+      "supervisor_id": null,
+      "employee_category_id": null,
+      "cost_center_id": null,
+      "spouse_name": "",
+      "dependents": "",
+      "emergency_contact_name": "",
+      "emergency_contact_phone": "",
+      "education_level": "",
+      "driver_license_number": "",
+      "additional_worker_id": "1000000001 -1000002- RL1000000003 -1000004-"
+    }
+  ]
+}
+```
+
 ### Editar una orden de venta
 ```bash
 curl -v \
@@ -549,6 +2447,111 @@ curl -v \
   https://app.zauru.com/sales/orders/1/edit.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Referencia actualizada",
+  "date": "2026-08-06",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada desde API",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:33.770Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "1be9e8a2-3570-4f46-a67c-0e3538f92c19",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null
+}
+```
+
 ### Editar metadata de creación de una orden
 ```bash
 curl -v \
@@ -557,6 +2560,111 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/orders/1/edit_creation.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Referencia actualizada",
+  "date": "2026-08-06",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada desde API",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-16T00:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:33.770Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "1be9e8a2-3570-4f46-a67c-0e3538f92c19",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null
+}
 ```
 
 ### Actualizar metadata de creación de una orden
@@ -576,6 +2684,111 @@ curl -v \
   https://app.zauru.com/sales/orders/1/update_creation.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Referencia actualizada",
+  "date": "2026-08-06",
+  "subtotal": "750.0",
+  "discount_id": null,
+  "extra_discount": "0.0",
+  "total": "750.0",
+  "due": "218.0",
+  "needs_delivery": false,
+  "delivery_date": null,
+  "delivery_address": null,
+  "seller_id": 1,
+  "creator_id": 2,
+  "updater_id": 3,
+  "taxable": true,
+  "issuer_id": 2,
+  "issued": true,
+  "issued_at": "2010-05-31T18:39:45.000Z",
+  "paid": false,
+  "paid_at": null,
+  "voider_id": 3,
+  "voided": true,
+  "voided_at": "2026-08-06T04:14:21.145Z",
+  "entity_id": 2,
+  "memo": "Nota actualizada desde API",
+  "order_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "invoice_image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "payee_id": 4,
+  "payment_expected_at": "2026-08-06",
+  "agency_id": 5,
+  "payment_term_id": 6,
+  "created_at": "2024-01-15T06:39:00.000Z",
+  "updated_at": "2026-08-06T04:16:34.928Z",
+  "invoice_details_count": 1,
+  "shipper_id": 1,
+  "pos": true,
+  "order_pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "contract_id": null,
+  "electronic_authorization_supporting_document": null,
+  "electronic_tax_document": null,
+  "crm_url": null,
+  "zid_by_agency_and_creator": 1,
+  "not_included_vat": null,
+  "exchange_rate": 1.0,
+  "excempt": false,
+  "currency_id": 1,
+  "resolution": null,
+  "resolution_date": null,
+  "authorized_serial": null,
+  "foreign": false,
+  "ecommerce_request_id": null,
+  "external_image_url": null,
+  "uuid": "1be9e8a2-3570-4f46-a67c-0e3538f92c19",
+  "id_number": null,
+  "great_contributor": null,
+  "sales_consolidate_id": null,
+  "email": null,
+  "resolution_notes": null,
+  "client_identification_type_when_issuing_invoices": 0,
+  "export": false,
+  "export_references": null,
+  "sv_ccf": false,
+  "contingency": 0,
+  "withheld_vat": null,
+  "withheld_income_tax": null,
+  "contingency_number": null,
+  "cr_ticket": false,
+  "mail_resent_at": "2026-08-06T04:13:55.700Z",
+  "donation": false,
+  "gift_card_1_id": null,
+  "gift_card_1_id_number": null,
+  "gift_card_1_discount": "0.0",
+  "gift_card_2_id": null,
+  "gift_card_2_id_number": null,
+  "gift_card_2_discount": "0.0",
+  "export_consignee_name": null,
+  "export_consignee_address": null,
+  "export_consignee_country": null,
+  "export_reference": null,
+  "export_electronic_tax_document": null,
+  "export_declaration": null
+}
+```
+
 ### Anular una orden de venta
 ```bash
 curl -v \
@@ -584,6 +2797,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/orders/1/void.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Marcar una orden de venta como regalo
@@ -628,6 +2846,11 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/1/external_storage_certified_response_for_voiding.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Reenviar factura por correo electrónico
 ```bash
 curl -v \
@@ -637,6 +2860,15 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   https://app.zauru.com/sales/unpaid_invoices/1/resend_mail.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "error",
+  "message": "Correo ya reenviado",
+  "result": "0"
+}
 ```
 
 ### Generar impresión masiva de facturas
@@ -654,6 +2886,14 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/gen_print_all.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 1,
+  "zid": 1
+}
+```
+
 ### Consultar el progreso de la impresión masiva
 ```bash
 curl -v \
@@ -662,4 +2902,12 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/unpaid_invoices/check_print_all.json?zid=123456
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```

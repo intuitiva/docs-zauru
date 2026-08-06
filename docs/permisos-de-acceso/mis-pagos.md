@@ -18,6 +18,13 @@ curl -v \
   https://app.zauru.com/access_control/billings.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener detalle de una facturación
 ```bash
 curl -v \
@@ -26,6 +33,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/billings/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear facturación
@@ -40,6 +52,11 @@ curl -v \
     "notes": "Pago correspondiente a mayo 2024"
   }' \
   https://app.zauru.com/access_control/billings.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Exportar facturaciones

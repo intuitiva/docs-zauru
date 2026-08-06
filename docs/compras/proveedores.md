@@ -80,6 +80,150 @@ curl -v \
   https://app.zauru.com/purchases/vendors.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": null,
+    "active": true,
+    "name": "Proveedor Ejemplo A, S.A.",
+    "vendor": true,
+    "buyer": false,
+    "tin": "1111111-1",
+    "reference": "Referencia Ejemplo",
+    "address_line_1": "9 Avenida 34-00, zona 11 Guatemala, Guatemala",
+    "address_line_2": null,
+    "delivery_address": null,
+    "currency_id": 3,
+    "credit_limit": "0.0",
+    "payee_category_id": null,
+    "web": null,
+    "phone": "",
+    "email": "",
+    "contact": "",
+    "contact_phone": null,
+    "contact_email": null,
+    "contact2": null,
+    "contact2_phone": null,
+    "contact2_email": null,
+    "notes": "",
+    "entity_id": 4,
+    "updater_id": 5,
+    "created_at": "2016-06-17T20:54:25.123Z",
+    "updated_at": "2016-06-17T20:54:25.123Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": null,
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 6
+  },
+  {
+    "id": 7,
+    "zid": 8,
+    "id_number": null,
+    "active": true,
+    "name": "Proveedor Ejemplo B, S.A.",
+    "vendor": true,
+    "buyer": false,
+    "tin": "2222222-0",
+    "reference": "",
+    "address_line_1": "21 Avenida 5-67, zona 11 Colonia El Mirador 1, Guatemala, Guatemala",
+    "address_line_2": null,
+    "delivery_address": null,
+    "currency_id": 3,
+    "credit_limit": "0.0",
+    "payee_category_id": null,
+    "web": null,
+    "phone": "5555-0005",
+    "email": "www.ejemplo.com",
+    "contact": "",
+    "contact_phone": null,
+    "contact_email": null,
+    "contact2": null,
+    "contact2_phone": null,
+    "contact2_email": null,
+    "notes": "",
+    "entity_id": 4,
+    "updater_id": 5,
+    "created_at": "2016-11-08T16:53:48.880Z",
+    "updated_at": "2016-11-08T16:53:48.880Z",
+    "employee_id": null,
+    "service_provider": true,
+    "invoices_in_credit_limit": null,
+    "payment_delay_in_credit_limit": false,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      },
+      "thumbnail": {
+        "url": null
+      },
+      "pos": {
+        "url": null
+      }
+    },
+    "excempt": false,
+    "small_taxpayer": false,
+    "foreign": false,
+    "latitude": null,
+    "longitude": null,
+    "great_contributor": null,
+    "tax_withholding_agent": false,
+    "subject_to_withholding_taxes": false,
+    "personal_identification_number": null,
+    "client_for_export": false,
+    "payee_activity_id": null,
+    "city_id": null,
+    "taxpayer_registry": null,
+    "district_id": null,
+    "default_payment_term_id": null,
+    "country_id": 6
+  }
+]
+```
+
 ### Ver detalles de un proveedor
 El 1 al final de la URL es el ID del proveedor
 ```bash
@@ -90,6 +234,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/vendors/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Obtener datos para un proveedor nuevo
@@ -103,6 +252,79 @@ curl -v \
   https://app.zauru.com/purchases/vendors/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "id_number": "",
+  "active": true,
+  "name": null,
+  "vendor": false,
+  "buyer": true,
+  "tin": null,
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": null,
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": 1,
+  "updater_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    },
+    "thumbnail": {
+      "url": null
+    },
+    "pos": {
+      "url": null
+    }
+  },
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": 2
+}
+```
+
 ### Obtener datos para editar un proveedor
 ```bash
 curl -v \
@@ -112,6 +334,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/vendors/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear nuevo proveedor
@@ -137,6 +364,11 @@ curl -v \
   https://app.zauru.com/purchases/vendors.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar un proveedor
 ```bash
 curl -v \
@@ -152,4 +384,9 @@ curl -v \
     }
   }' \
   https://app.zauru.com/purchases/vendors/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

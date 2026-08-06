@@ -114,6 +114,48 @@ curl -v \
   https://app.zauru.com/purchases/charges/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
+```
+
 ### Obtener datos para un cargo nuevo
 ```bash
 curl -v \
@@ -125,6 +167,48 @@ curl -v \
   https://app.zauru.com/purchases/charges/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
+```
+
 ### Obtener datos para editar un cargo
 ```bash
 curl -v \
@@ -134,6 +218,48 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/charges/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
 ```
 
 ### Crear nuevo cargo adicional
@@ -162,6 +288,18 @@ curl -v \
   https://app.zauru.com/purchases/charges.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "payee_info": [
+    "no puede estar en blanco"
+  ],
+  "issue_date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### Actualizar un cargo
 ```bash
 curl -v \
@@ -185,6 +323,48 @@ curl -v \
   https://app.zauru.com/purchases/charges/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
+```
+
 ### Anular un cargo
 ```bash
 curl -v \
@@ -195,3 +375,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/charges/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

@@ -111,6 +111,38 @@ curl -v \
   https://app.zauru.com/purchases/settings/discharge_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "name": "cheque G&T corporativa",
+    "account_id": 2,
+    "entity_id": 3,
+    "updater_id": 4,
+    "created_at": "2015-02-19T21:22:19.166Z",
+    "updated_at": "2020-11-20T03:37:59.894Z",
+    "printable_entry": true,
+    "endorsement_restriction": false,
+    "active": true
+  },
+  {
+    "id": 5,
+    "zid": 2,
+    "name": "Transferencia G&T",
+    "account_id": 6,
+    "entity_id": 3,
+    "updater_id": 4,
+    "created_at": "2020-03-11T23:59:14.535Z",
+    "updated_at": "2020-03-11T23:59:14.535Z",
+    "printable_entry": false,
+    "endorsement_restriction": false,
+    "active": true
+  }
+]
+```
+
 ### Ver detalles de un método de pago
 ```bash
 curl -v \
@@ -120,6 +152,23 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/settings/discharge_methods/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3282",
+  "zid": "4",
+  "name": "Efectivo",
+  "account_id": "1",
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:13:34.00872",
+  "updated_at": "2026-08-06 04:13:34.00872",
+  "printable_entry": true,
+  "endorsement_restriction": false,
+  "active": true
+}
 ```
 
 ### Crear nuevo método de pago
@@ -140,6 +189,23 @@ curl -v \
   https://app.zauru.com/purchases/settings/discharge_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3282",
+  "zid": "4",
+  "name": "Efectivo",
+  "account_id": "1",
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:13:34.00872",
+  "updated_at": "2026-08-06 04:13:34.00872",
+  "printable_entry": true,
+  "endorsement_restriction": false,
+  "active": true
+}
+```
+
 ### Actualizar un método de pago
 ```bash
 curl -v \
@@ -156,6 +222,23 @@ curl -v \
   https://app.zauru.com/purchases/settings/discharge_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3282",
+  "zid": "4",
+  "name": "Efectivo",
+  "account_id": "1",
+  "entity_id": "1303",
+  "updater_id": "23",
+  "created_at": "2026-08-06 04:13:34.00872",
+  "updated_at": "2026-08-06 04:13:34.00872",
+  "printable_entry": true,
+  "endorsement_restriction": false,
+  "active": true
+}
+```
+
 ### Eliminar un método de pago
 ```bash
 curl -v \
@@ -167,6 +250,8 @@ curl -v \
   https://app.zauru.com/purchases/settings/discharge_methods/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listado de términos de pago
 ```bash
 curl -v \
@@ -176,6 +261,62 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/settings/charge_terms.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "active": true,
+    "name": "tableau",
+    "entity_id": 2,
+    "credit_percent": 0.0,
+    "credit_days": 0,
+    "credit": true,
+    "account_from_id": 3,
+    "account_to_id": 4,
+    "updater_id": 2,
+    "created_at": "2015-02-19T21:20:24.635Z",
+    "updated_at": "2020-11-20T00:08:54.615Z",
+    "force_price_without_taxes": false,
+    "account_from_vat_withheld_id": null,
+    "account_from_income_taxes_withheld_id": null,
+    "account_to_income_taxes_id": null,
+    "issue_purchase_invoice": false,
+    "purchase_invoice_services_import_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_services_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_products_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_products_vat_withheld_percent": 0.0,
+    "cost_center_id": null
+  },
+  {
+    "id": 5,
+    "zid": 2,
+    "active": true,
+    "name": "mensualidad DTEs cofidi",
+    "entity_id": 2,
+    "credit_percent": 0.0,
+    "credit_days": 0,
+    "credit": true,
+    "account_from_id": 6,
+    "account_to_id": 7,
+    "updater_id": 8,
+    "created_at": "2020-03-11T16:13:48.099Z",
+    "updated_at": "2020-11-20T00:16:40.680Z",
+    "force_price_without_taxes": false,
+    "account_from_vat_withheld_id": null,
+    "account_from_income_taxes_withheld_id": null,
+    "account_to_income_taxes_id": null,
+    "issue_purchase_invoice": false,
+    "purchase_invoice_services_import_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_services_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_products_income_taxes_withheld_percent": 0.0,
+    "purchase_invoice_products_vat_withheld_percent": 0.0,
+    "cost_center_id": null
+  }
+]
 ```
 
 ### Crear nuevo término de pago
@@ -199,6 +340,35 @@ curl -v \
   https://app.zauru.com/purchases/settings/charge_terms.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2231",
+  "zid": "1",
+  "active": true,
+  "name": "Contado",
+  "entity_id": "1303",
+  "credit_percent": "0",
+  "credit_days": "0",
+  "credit": true,
+  "account_from_id": "77704",
+  "account_to_id": "77718",
+  "updater_id": "214",
+  "created_at": "2026-02-11 14:41:39.165691",
+  "updated_at": "2026-02-11 14:42:41.662229",
+  "force_price_without_taxes": false,
+  "account_from_vat_withheld_id": null,
+  "account_from_income_taxes_withheld_id": null,
+  "account_to_income_taxes_id": null,
+  "issue_purchase_invoice": false,
+  "purchase_invoice_services_import_income_taxes_withheld_percent": "0",
+  "purchase_invoice_services_income_taxes_withheld_percent": "0",
+  "purchase_invoice_products_income_taxes_withheld_percent": "0",
+  "purchase_invoice_products_vat_withheld_percent": "0",
+  "cost_center_id": null
+}
+```
+
 ### Actualizar un término de pago
 ```bash
 curl -v \
@@ -216,6 +386,35 @@ curl -v \
   https://app.zauru.com/purchases/settings/charge_terms/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2231",
+  "zid": "1",
+  "active": true,
+  "name": "Contado",
+  "entity_id": "1303",
+  "credit_percent": "0",
+  "credit_days": "0",
+  "credit": true,
+  "account_from_id": "77704",
+  "account_to_id": "77718",
+  "updater_id": "214",
+  "created_at": "2026-02-11 14:41:39.165691",
+  "updated_at": "2026-02-11 14:42:41.662229",
+  "force_price_without_taxes": false,
+  "account_from_vat_withheld_id": null,
+  "account_from_income_taxes_withheld_id": null,
+  "account_to_income_taxes_id": null,
+  "issue_purchase_invoice": false,
+  "purchase_invoice_services_import_income_taxes_withheld_percent": "0",
+  "purchase_invoice_services_income_taxes_withheld_percent": "0",
+  "purchase_invoice_products_income_taxes_withheld_percent": "0",
+  "purchase_invoice_products_vat_withheld_percent": "0",
+  "cost_center_id": null
+}
+```
+
 ### Eliminar un término de pago
 ```bash
 curl -v \
@@ -227,6 +426,8 @@ curl -v \
   https://app.zauru.com/purchases/settings/charge_terms/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Listado de tipos de cargos
 ```bash
 curl -v \
@@ -236,6 +437,22 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/settings/charge_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1731",
+    "zid": "1",
+    "name": "IVA",
+    "entity_id": "1303",
+    "account_id": "77716",
+    "created_at": "2026-02-06 18:10:10.149155",
+    "updated_at": "2026-02-06 18:10:10.149155",
+    "included_in_item_cost": false
+  }
+]
 ```
 
 ### Crear nuevo tipo de cargo
@@ -256,6 +473,20 @@ curl -v \
   https://app.zauru.com/purchases/settings/charge_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1731",
+  "zid": "1",
+  "name": "IVA",
+  "entity_id": "1303",
+  "account_id": "77716",
+  "created_at": "2026-02-06 18:10:10.149155",
+  "updated_at": "2026-02-06 18:10:10.149155",
+  "included_in_item_cost": false
+}
+```
+
 ### Actualizar un tipo de cargo
 ```bash
 curl -v \
@@ -272,6 +503,20 @@ curl -v \
   https://app.zauru.com/purchases/settings/charge_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1731",
+  "zid": "1",
+  "name": "IVA",
+  "entity_id": "1303",
+  "account_id": "77716",
+  "created_at": "2026-02-06 18:10:10.149155",
+  "updated_at": "2026-02-06 18:10:10.149155",
+  "included_in_item_cost": false
+}
+```
+
 ### Eliminar un tipo de cargo
 ```bash
 curl -v \
@@ -282,3 +527,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/settings/charge_types/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

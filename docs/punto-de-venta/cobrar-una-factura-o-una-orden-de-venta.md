@@ -124,6 +124,60 @@ curl -v \
   https://app.zauru.com/pos/charges.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "id_number": null,
+  "reference": "prueba",
+  "date": "2026-08-06",
+  "payee_id": 3,
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "agency_id": 4,
+  "payment_method_id": 5,
+  "amount": "32.0",
+  "voided": false,
+  "voided_at": null,
+  "creator_id": 6,
+  "entity_id": 7,
+  "memo": "generado desde el API",
+  "created_at": "2026-08-06T04:16:57.622Z",
+  "updated_at": "2026-08-06T04:16:57.622Z",
+  "receipt": null,
+  "payment_details_count": 1,
+  "draft": true,
+  "confirmed_at": null,
+  "confirmer_id": null,
+  "pos": true,
+  "draft_number": null,
+  "voider_id": null,
+  "exchange_rate": 1.0,
+  "currency_id": 5,
+  "external_image_url": null,
+  "image1": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "charger_id": null,
+  "credit_card_authorization_code": null,
+  "credit_card_transaction_id": null
+}
+```
+
 ### Listar cobros sin confirmar (datatables)
 
 ```bash
@@ -150,6 +204,30 @@ curl -v \
   https://app.zauru.com/pos/charges/datatables.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 1,
+  "recordsFiltered": 1,
+  "data": [
+    {
+      "iz": "<a href=\"/pos/invoices/1\">1</a>",
+      "i": "<a href=\"/pos/invoices/1\">SERIE A - 456</a>",
+      "dn": "",
+      "rec": null,
+      "ref": "<a href=\"/pos/charges/15410768\">prueba</a>",
+      "crea": "jueves, 06 de agosto de 2026 a las 04:16 AM",
+      "pm": "Método de pago Actualizado",
+      "py": "Cliente Ejemplo, S.A.",
+      "amo": "Q32.00",
+      "r": "<a title=\"Detalles\" href=\"/pos/charges/15410768\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/pos/charges/15410768/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Anular\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/pos/charges/15410768?destroy=true\"><i class=\"fa fa-trash-o\"></i></a><a title=\"Confirmar\" href=\"/pos/charges/15410768/confirm\"><i class=\"fa fa-thumbs-up\"></i></a><a title=\"Imprimir\" data-turbolinks=\"false\" href=\"/pos/charges/15410768/print?print_template=918\"><i class=\"fa fa-print\"></i></a>",
+      "DT_RowId": "pos-charge-15410768"
+    }
+  ]
+}
+```
+
 ### Ver cobro
 
 ```bash
@@ -160,6 +238,60 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/charges/1.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "id_number": null,
+  "reference": "referencia actualizada",
+  "date": "2024-01-15",
+  "payee_id": 1,
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "agency_id": 2,
+  "payment_method_id": 3,
+  "amount": "250.0",
+  "voided": false,
+  "voided_at": null,
+  "creator_id": 4,
+  "entity_id": 4,
+  "memo": "memo actualizado",
+  "created_at": "2010-05-31T18:42:58.000Z",
+  "updated_at": "2026-08-06T04:16:43.277Z",
+  "receipt": null,
+  "payment_details_count": 1,
+  "draft": false,
+  "confirmed_at": "2026-08-06T04:16:43.268Z",
+  "confirmer_id": 5,
+  "pos": false,
+  "draft_number": null,
+  "voider_id": null,
+  "exchange_rate": 1.0,
+  "currency_id": 3,
+  "external_image_url": null,
+  "image1": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "charger_id": 4,
+  "credit_card_authorization_code": null,
+  "credit_card_transaction_id": null
+}
+```
 
 ### Nuevo cobro (prellenado)
 
@@ -172,6 +304,48 @@ curl -v \
   https://app.zauru.com/pos/charges/new.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
+```
+
 ### Editar cobro
 
 ```bash
@@ -182,6 +356,60 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/charges/1/edit.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "id_number": null,
+  "reference": "referencia actualizada",
+  "date": "2024-01-15",
+  "payee_id": 1,
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "agency_id": 2,
+  "payment_method_id": 3,
+  "amount": "250.0",
+  "voided": false,
+  "voided_at": null,
+  "creator_id": 4,
+  "entity_id": 4,
+  "memo": "memo actualizado",
+  "created_at": "2010-05-31T18:42:58.000Z",
+  "updated_at": "2026-08-06T04:16:43.277Z",
+  "receipt": null,
+  "payment_details_count": 1,
+  "draft": false,
+  "confirmed_at": "2026-08-06T04:16:43.268Z",
+  "confirmer_id": 5,
+  "pos": false,
+  "draft_number": null,
+  "voider_id": null,
+  "exchange_rate": 1.0,
+  "currency_id": 3,
+  "external_image_url": null,
+  "image1": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "charger_id": 4,
+  "credit_card_authorization_code": null,
+  "credit_card_transaction_id": null
+}
+```
 
 ### Actualizar cobro
 
@@ -201,6 +429,48 @@ curl -v \
   https://app.zauru.com/pos/charges/1.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "19422",
+  "zid": "3771",
+  "id_number": null,
+  "reference": "LICENCIA MAGA",
+  "purchase_order_id": "255935",
+  "consolidate_id": null,
+  "issue_date": "2022-01-10",
+  "expected_payment": "2022-01-10",
+  "charge_term_id": "300",
+  "amount": "240.97",
+  "due": "240.97",
+  "payee_id": "97109",
+  "memo": null,
+  "image": null,
+  "paid": false,
+  "paid_at": null,
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "entity_id": "184",
+  "creator_id": "357",
+  "updater_id": "357",
+  "created_at": "2022-02-01 15:28:12.241454",
+  "updated_at": "2022-02-01 15:28:12.241454",
+  "charge_details_count": "1",
+  "tariffs_count": "0",
+  "cost_amount": "240.97",
+  "invoice": "16291229",
+  "discharge_details_count": "0",
+  "taxable": false,
+  "external_image_url": null,
+  "local_exchange_amount": "240.97",
+  "local_exchange_cost_amount": "240.97",
+  "not_included_vat": null,
+  "pdf": null,
+  "reception_id": null
+}
+```
+
 ### Anular cobro
 
 ```bash
@@ -212,6 +482,15 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/pos/charges/1.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "entries": [
+    "es inválido"
+  ]
+}
+```
 
 ### Confirmar un cobro individual
 

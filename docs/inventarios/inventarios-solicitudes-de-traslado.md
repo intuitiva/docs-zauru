@@ -189,6 +189,64 @@ curl -v \
   https://app.zauru.com/inventories/open_transfer_requests.json?scope=new
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": null,
+    "agency_from_id": 2,
+    "agency_to_id": 3,
+    "reference": "prueba",
+    "shipment_id": null,
+    "voided": false,
+    "voided_at": null,
+    "voider_id": null,
+    "entity_id": 3,
+    "transporter_id": null,
+    "transfer_request_details_count": 1,
+    "planned_delivery": "2024-01-15",
+    "requestor_id": null,
+    "creator_id": 4,
+    "updater_id": 4,
+    "created_at": "2026-08-06T04:14:27.144Z",
+    "updated_at": "2026-08-06T04:14:27.144Z",
+    "pos": true,
+    "purchase_requisition_id": null,
+    "shipments_count": 0,
+    "total_requested_quantity": "5.0",
+    "total_booked_quantity": "0.0"
+  },
+  {
+    "id": 5,
+    "zid": 1,
+    "id_number": null,
+    "agency_from_id": 3,
+    "agency_to_id": 2,
+    "reference": "Solicitud de traslado",
+    "shipment_id": null,
+    "voided": false,
+    "voided_at": null,
+    "voider_id": null,
+    "entity_id": 3,
+    "transporter_id": null,
+    "transfer_request_details_count": 1,
+    "planned_delivery": "2018-08-10",
+    "requestor_id": 2,
+    "creator_id": 4,
+    "updater_id": 4,
+    "created_at": "2026-08-06T04:13:43.362Z",
+    "updated_at": "2026-08-06T04:13:43.362Z",
+    "pos": false,
+    "purchase_requisition_id": null,
+    "shipments_count": 0,
+    "total_requested_quantity": "100.0",
+    "total_booked_quantity": "0.0"
+  }
+]
+```
+
 ### Obtener el detalle de una solicitud de traslado abierta
 Devuelve los datos de la solicitud, sus detalles (productos y cantidades) y los envíos asociados.
 ```bash
@@ -198,6 +256,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/open_transfer_requests/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear una solicitud de traslado
@@ -227,6 +290,33 @@ curl -v \
   https://app.zauru.com/inventories/open_transfer_requests.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 3,
+  "id_number": null,
+  "agency_from_id": 2,
+  "agency_to_id": 3,
+  "reference": "Solicitud de traslado",
+  "purchase_requisition_id": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "entity_id": 2,
+  "transporter_id": null,
+  "transfer_request_details_count": null,
+  "planned_delivery": "2018-08-10",
+  "requestor_id": 3,
+  "creator_id": 4,
+  "updater_id": 4,
+  "created_at": "2026-08-06T04:16:24.448Z",
+  "updated_at": "2026-08-06T04:16:24.448Z",
+  "workflow_state": "open",
+  "url": "http://localhost:3000/inventories/open_transfer_requests/2370.json"
+}
+```
+
 ### Actualizar una solicitud de traslado
 Actualiza los datos de una solicitud de traslado mientras esté abierta o en proceso.
 ```bash
@@ -250,6 +340,11 @@ curl -v \
   https://app.zauru.com/inventories/open_transfer_requests/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Anular una solicitud de traslado
 Anula (void) una solicitud de traslado. Solo se puede anular mientras esté en estado abierta.
 ```bash
@@ -261,6 +356,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/inventories/open_transfer_requests/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Generar requisición de compra desde una solicitud de traslado
 Genera automáticamente una requisición de compra con los productos que tienen cantidades pendientes (solicitado menos reservado) y stock insuficiente en la bodega origen. No se puede generar más de una requisición por solicitud.
@@ -285,6 +382,11 @@ curl -v \
   https://app.zauru.com/inventories/closed_transfer_requests.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Obtener el detalle de una solicitud de traslado cerrada
 Devuelve los datos de una solicitud de traslado que ya fue cerrada.
 ```bash
@@ -294,4 +396,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/closed_transfer_requests/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

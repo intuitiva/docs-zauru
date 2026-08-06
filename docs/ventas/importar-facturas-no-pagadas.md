@@ -44,6 +44,11 @@ curl -v \
   https://app.zauru.com/sales/unpaid_invoices/unpaid_invoice_imports/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Importar facturas no pagadas
 ```bash
 curl -v \
@@ -54,4 +59,9 @@ curl -v \
   -X POST \
   -F "unpaid_invoice_import[file]=@/ruta/al/archivo.xlsx" \
   https://app.zauru.com/sales/unpaid_invoices/unpaid_invoice_imports.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

@@ -97,6 +97,30 @@ curl -v \
   https://app.zauru.com/sales/clients.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  [
+    109202,
+    "3333333-3",
+    "",
+    "Transemsa, S.A.",
+    "5 Avenida 19-96, zona 14",
+    "contabilidad@ejemplo.com",
+    "5555-0006"
+  ],
+  [
+    258696,
+    "4444444-4",
+    "",
+    "Servicios Empresariales Mercantiles, S.A. ",
+    "Ciudad",
+    "info@ejemplo.com",
+    "5555-0007"
+  ]
+]
+```
+
 esto me retornará un JSON como el siguiente:
 
 ```json
@@ -139,6 +163,79 @@ curl -v \
     }
   }' \
   https://app.zauru.com/sales/clients.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "id_number": null,
+  "active": true,
+  "name": "Cliente Prueba",
+  "vendor": false,
+  "buyer": true,
+  "tin": "12345678-9",
+  "reference": "alguna referencia",
+  "address_line_1": "1 calle 1-11",
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": 3,
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": 4,
+  "updater_id": 5,
+  "created_at": "2026-08-06T04:16:26.386Z",
+  "updated_at": "2026-08-06T04:16:26.386Z",
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    },
+    "thumbnail": {
+      "url": null
+    },
+    "pos": {
+      "url": null
+    }
+  },
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": false,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": null
+}
 ```
 
 esto me retornará un JSON como el siguiente:
@@ -222,6 +319,11 @@ curl -v \
   https://app.zauru.com/sales/clients/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 esto me retornará un JSON como el siguiente:
 
 ```json
@@ -293,6 +395,11 @@ curl -v \
   https://app.zauru.com/sales/clients/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 esto retornará un JSON como el siguiente:
 ```json
 {
@@ -312,10 +419,10 @@ esto retornará un JSON como el siguiente:
     "delivery_address": null,
     "email": null,
     "employee_id": null,
-    "entity_id": 561,
+    "entity_id": 2,
     "excempt": false,
     "foreign": false,
-    "id": 543737,
+    "id": 3,
     "id_number": null,
     "image": {
         "url": null,
@@ -348,7 +455,7 @@ esto retornará un JSON como el siguiente:
     "updater_id": 1,
     "vendor": false,
     "web": null,
-    "zid": 306
+    "zid": 4
 }
 ```
 
@@ -362,6 +469,79 @@ curl -v \
   https://app.zauru.com/sales/clients/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "id_number": "",
+  "active": true,
+  "name": null,
+  "vendor": false,
+  "buyer": true,
+  "tin": null,
+  "reference": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "delivery_address": null,
+  "currency_id": null,
+  "credit_limit": "0.0",
+  "payee_category_id": null,
+  "web": null,
+  "phone": null,
+  "email": null,
+  "contact": null,
+  "contact_phone": null,
+  "contact_email": null,
+  "contact2": null,
+  "contact2_phone": null,
+  "contact2_email": null,
+  "notes": null,
+  "entity_id": 1,
+  "updater_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "employee_id": null,
+  "service_provider": true,
+  "invoices_in_credit_limit": null,
+  "payment_delay_in_credit_limit": false,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    },
+    "thumbnail": {
+      "url": null
+    },
+    "pos": {
+      "url": null
+    }
+  },
+  "excempt": false,
+  "small_taxpayer": false,
+  "foreign": null,
+  "latitude": null,
+  "longitude": null,
+  "great_contributor": null,
+  "tax_withholding_agent": false,
+  "subject_to_withholding_taxes": false,
+  "personal_identification_number": null,
+  "client_for_export": false,
+  "payee_activity_id": null,
+  "city_id": null,
+  "taxpayer_registry": null,
+  "district_id": null,
+  "default_payment_term_id": null,
+  "country_id": 2
+}
+```
+
 ### Obtener plantilla para editar un cliente
 ```bash
 curl -v \
@@ -370,6 +550,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/clients/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Exportar clientes a CSV

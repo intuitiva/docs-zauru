@@ -194,6 +194,33 @@ curl -v \
   https://app.zauru.com/accounting/accounts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
+```
+
 ### Consultar listado de cuentas patrimoniales
 ```bash
 curl -v \
@@ -204,6 +231,159 @@ curl -v \
   https://app.zauru.com/accounting/accounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  null,
+  [
+    {
+      "id": 1,
+      "zid": 2,
+      "active": true,
+      "code": "",
+      "name": "bolsón tarjeta de crédito",
+      "description": "",
+      "value": "237.08",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 3,
+      "account_type_id": 3,
+      "entity_id": 4,
+      "updater_id": 5,
+      "created_at": "2019-04-05T18:01:57.190Z",
+      "updated_at": "2026-07-06T16:23:48.787Z",
+      "splits_count": 268,
+      "entries_count": 284,
+      "cost": false,
+      "color": "#CCCCCC"
+    },
+    {
+      "id": 6,
+      "zid": 7,
+      "active": true,
+      "code": "",
+      "name": "cuentas por cobrar a tecno soluciones",
+      "description": "",
+      "value": "-170.0",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 4,
+      "account_type_id": 3,
+      "entity_id": 4,
+      "updater_id": 4,
+      "created_at": "2023-08-11T17:49:20.792Z",
+      "updated_at": "2026-02-01T01:53:15.265Z",
+      "splits_count": 1,
+      "entries_count": 2,
+      "cost": false,
+      "color": "#CCCCCC"
+    }
+  ],
+  [
+    {
+      "id": 8,
+      "zid": 9,
+      "active": true,
+      "code": "",
+      "name": "cuentas por pagar tecno soluciones $",
+      "description": "",
+      "value": "257.64",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 4,
+      "account_type_id": 4,
+      "entity_id": 4,
+      "updater_id": 5,
+      "created_at": "2025-05-27T23:14:17.875Z",
+      "updated_at": "2025-06-02T16:07:26.687Z",
+      "splits_count": 0,
+      "entries_count": 1,
+      "cost": false,
+      "color": "#CCCCCC"
+    },
+    {
+      "id": 10,
+      "zid": 11,
+      "active": true,
+      "code": "",
+      "name": "tarjeta de credito AMEX $",
+      "description": "",
+      "value": "-4.65",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 4,
+      "account_type_id": 4,
+      "entity_id": 4,
+      "updater_id": 5,
+      "created_at": "2024-05-23T21:11:12.179Z",
+      "updated_at": "2026-06-24T14:52:44.339Z",
+      "splits_count": 31,
+      "entries_count": 105,
+      "cost": false,
+      "color": "#CCCCCC"
+    }
+  ],
+  null,
+  null,
+  [
+    {
+      "id": 12,
+      "zid": 13,
+      "active": true,
+      "code": "",
+      "name": "capital",
+      "description": "",
+      "value": "45000.0",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": 14,
+      "currency_id": 3,
+      "account_type_id": 15,
+      "entity_id": 4,
+      "updater_id": 4,
+      "created_at": "2013-01-03T01:50:31.000Z",
+      "updated_at": "2016-09-04T16:15:06.784Z",
+      "splits_count": 0,
+      "entries_count": 11,
+      "cost": false,
+      "color": "#CCCCCC"
+    },
+    {
+      "id": 16,
+      "zid": 17,
+      "active": true,
+      "code": "",
+      "name": "cuenta cuadradora de IVA (facturas regaladas)",
+      "description": "",
+      "value": "53132.88",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": 14,
+      "currency_id": 3,
+      "account_type_id": 15,
+      "entity_id": 4,
+      "updater_id": 4,
+      "created_at": "2014-02-27T15:43:28.137Z",
+      "updated_at": "2023-01-14T13:08:13.594Z",
+      "splits_count": 44,
+      "entries_count": 68,
+      "cost": false,
+      "color": "#CCCCCC"
+    }
+  ]
+]
+```
+
 ### consultar listado de cuentas de gestion
 ```bash
 curl -v \
@@ -212,6 +392,111 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/categories.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  null,
+  null,
+  null,
+  [
+    {
+      "id": 1,
+      "zid": 2,
+      "active": true,
+      "code": "",
+      "name": "costos implementaciones Infile",
+      "description": "",
+      "value": "0.0",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 3,
+      "account_type_id": 4,
+      "entity_id": 5,
+      "updater_id": 6,
+      "created_at": "2026-05-21T02:04:05.073Z",
+      "updated_at": "2026-05-21T02:04:05.073Z",
+      "splits_count": 0,
+      "entries_count": 0,
+      "cost": false,
+      "color": "#cccccc"
+    },
+    {
+      "id": 7,
+      "zid": 8,
+      "active": true,
+      "code": "",
+      "name": "desarrollo freelance importado",
+      "description": "",
+      "value": "0.0",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 5,
+      "account_type_id": 4,
+      "entity_id": 5,
+      "updater_id": 5,
+      "created_at": "2011-08-03T21:05:56.000Z",
+      "updated_at": "2021-09-28T01:16:43.053Z",
+      "splits_count": 13,
+      "entries_count": 0,
+      "cost": true,
+      "color": "#CCCCCC"
+    }
+  ],
+  [
+    {
+      "id": 9,
+      "zid": 10,
+      "active": true,
+      "code": "",
+      "name": "capitalización de intereses",
+      "description": "",
+      "value": "22.47",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 3,
+      "account_type_id": 11,
+      "entity_id": 5,
+      "updater_id": 5,
+      "created_at": "2012-12-08T19:44:43.000Z",
+      "updated_at": "2026-07-01T19:00:47.349Z",
+      "splits_count": 225,
+      "entries_count": 151,
+      "cost": false,
+      "color": "#CCCCCC"
+    },
+    {
+      "id": 12,
+      "zid": 13,
+      "active": true,
+      "code": "",
+      "name": "Otros Ingresos",
+      "description": "",
+      "value": "0.01",
+      "credit_limit": null,
+      "liquid": false,
+      "reconciliable": false,
+      "account_group_id": null,
+      "currency_id": 3,
+      "account_type_id": 11,
+      "entity_id": 5,
+      "updater_id": 5,
+      "created_at": "2014-02-21T15:09:55.813Z",
+      "updated_at": "2025-03-17T22:16:59.822Z",
+      "splits_count": 34,
+      "entries_count": 35,
+      "cost": false,
+      "color": "#CCCCCC"
+    }
+  ]
+]
 ```
 
 ### Crear una cuenta contable
@@ -237,6 +522,15 @@ curl -v \
   https://app.zauru.com/accounting/accounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Actualizar una cuenta contable
 ```bash
 curl -v \
@@ -254,6 +548,33 @@ curl -v \
   https://app.zauru.com/accounting/accounts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
+```
+
 ### Borrar una cuenta contable
 ```bash
 curl -v \
@@ -265,6 +586,8 @@ curl -v \
   https://app.zauru.com/accounting/accounts/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Consultar el balance de una cuenta
 ```bash
 curl -v \
@@ -273,6 +596,33 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/1/balance.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
 ```
 
 ### Obtener el formulario de nueva cuenta
@@ -285,6 +635,33 @@ curl -v \
   https://app.zauru.com/accounting/accounts/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "code": null,
+  "name": null,
+  "description": null,
+  "value": "0.0",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": 1,
+  "account_type_id": 2,
+  "entity_id": 3,
+  "updater_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "splits_count": 0,
+  "entries_count": 0,
+  "cost": false,
+  "color": "#CCCCCC"
+}
+```
+
 ### Obtener el formulario de edicion de una cuenta
 ```bash
 curl -v \
@@ -293,6 +670,33 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
 ```
 
 ### Listado de transacciones de una cuenta (datatables)
@@ -358,6 +762,27 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_groups.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "7854",
+    "zid": "16",
+    "name": "OTRAS CUENTAS POR PAGAR",
+    "description": null,
+    "account_type_id": "2",
+    "updater_id": "1106",
+    "entity_id": "351",
+    "currency_id": "1",
+    "created_at": "2019-08-10 15:36:49.896725",
+    "updated_at": "2020-02-25 15:27:47.552578",
+    "code": "213",
+    "accounts_count": "11",
+    "color": "#FF0000"
+  }
+]
+```
+
 ### Obtener detalle de un grupo de cuentas
 ```bash
 curl -v \
@@ -366,6 +791,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/account_groups/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "7854",
+  "zid": "16",
+  "name": "OTRAS CUENTAS POR PAGAR",
+  "description": null,
+  "account_type_id": "2",
+  "updater_id": "1106",
+  "entity_id": "351",
+  "currency_id": "1",
+  "created_at": "2019-08-10 15:36:49.896725",
+  "updated_at": "2020-02-25 15:27:47.552578",
+  "code": "213",
+  "accounts_count": "11",
+  "color": "#FF0000"
+}
 ```
 
 ### Obtener el formulario de nuevo grupo de cuentas
@@ -378,6 +822,25 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_groups/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "7854",
+  "zid": "16",
+  "name": "OTRAS CUENTAS POR PAGAR",
+  "description": null,
+  "account_type_id": "2",
+  "updater_id": "1106",
+  "entity_id": "351",
+  "currency_id": "1",
+  "created_at": "2019-08-10 15:36:49.896725",
+  "updated_at": "2020-02-25 15:27:47.552578",
+  "code": "213",
+  "accounts_count": "11",
+  "color": "#FF0000"
+}
+```
+
 ### Obtener el formulario de edicion de un grupo de cuentas
 ```bash
 curl -v \
@@ -386,6 +849,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/account_groups/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "7854",
+  "zid": "16",
+  "name": "OTRAS CUENTAS POR PAGAR",
+  "description": null,
+  "account_type_id": "2",
+  "updater_id": "1106",
+  "entity_id": "351",
+  "currency_id": "1",
+  "created_at": "2019-08-10 15:36:49.896725",
+  "updated_at": "2020-02-25 15:27:47.552578",
+  "code": "213",
+  "accounts_count": "11",
+  "color": "#FF0000"
+}
 ```
 
 ### Crear un grupo de cuentas
@@ -407,6 +889,25 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_groups.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "7854",
+  "zid": "16",
+  "name": "OTRAS CUENTAS POR PAGAR",
+  "description": null,
+  "account_type_id": "2",
+  "updater_id": "1106",
+  "entity_id": "351",
+  "currency_id": "1",
+  "created_at": "2019-08-10 15:36:49.896725",
+  "updated_at": "2020-02-25 15:27:47.552578",
+  "code": "213",
+  "accounts_count": "11",
+  "color": "#FF0000"
+}
+```
+
 ### Actualizar un grupo de cuentas
 ```bash
 curl -v \
@@ -423,6 +924,25 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_groups/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "7854",
+  "zid": "16",
+  "name": "OTRAS CUENTAS POR PAGAR",
+  "description": null,
+  "account_type_id": "2",
+  "updater_id": "1106",
+  "entity_id": "351",
+  "currency_id": "1",
+  "created_at": "2019-08-10 15:36:49.896725",
+  "updated_at": "2020-02-25 15:27:47.552578",
+  "code": "213",
+  "accounts_count": "11",
+  "color": "#FF0000"
+}
+```
+
 ### Borrar un grupo de cuentas
 ```bash
 curl -v \
@@ -433,6 +953,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/accounts/account_groups/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ## API de tipos de cuenta (llamadas desde sistemas externos)
 
@@ -448,6 +970,20 @@ curl -v \
   https://app.zauru.com/accounting/account_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1",
+    "name": "Assets",
+    "debit": true,
+    "category": false,
+    "created_at": "2013-02-11 06:39:57.216807",
+    "updated_at": "2013-02-11 06:39:57.216807"
+  }
+]
+```
+
 ### Obtener detalle de un tipo de cuenta
 ```bash
 curl -v \
@@ -456,6 +992,18 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/account_types/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "Assets",
+  "debit": true,
+  "category": false,
+  "created_at": "2013-02-11 06:39:57.216807",
+  "updated_at": "2013-02-11 06:39:57.216807"
+}
 ```
 
 ### Obtener el formulario de nuevo tipo de cuenta
@@ -468,6 +1016,18 @@ curl -v \
   https://app.zauru.com/accounting/account_types/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "Assets",
+  "debit": true,
+  "category": false,
+  "created_at": "2013-02-11 06:39:57.216807",
+  "updated_at": "2013-02-11 06:39:57.216807"
+}
+```
+
 ### Obtener el formulario de edicion de un tipo de cuenta
 ```bash
 curl -v \
@@ -476,6 +1036,18 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/account_types/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "Assets",
+  "debit": true,
+  "category": false,
+  "created_at": "2013-02-11 06:39:57.216807",
+  "updated_at": "2013-02-11 06:39:57.216807"
+}
 ```
 
 ### Crear un tipo de cuenta
@@ -496,6 +1068,18 @@ curl -v \
   https://app.zauru.com/accounting/account_types.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "Assets",
+  "debit": true,
+  "category": false,
+  "created_at": "2013-02-11 06:39:57.216807",
+  "updated_at": "2013-02-11 06:39:57.216807"
+}
+```
+
 ### Actualizar un tipo de cuenta
 ```bash
 curl -v \
@@ -512,6 +1096,18 @@ curl -v \
   https://app.zauru.com/accounting/account_types/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "Assets",
+  "debit": true,
+  "category": false,
+  "created_at": "2013-02-11 06:39:57.216807",
+  "updated_at": "2013-02-11 06:39:57.216807"
+}
+```
+
 ### Borrar un tipo de cuenta
 ```bash
 curl -v \
@@ -522,6 +1118,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/account_types/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ## API de cuentas sugeridas (llamadas desde sistemas externos)
 
@@ -537,6 +1135,21 @@ curl -v \
   https://app.zauru.com/accounting/suggested_accounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1",
+    "name": "efectivo",
+    "group_name": null,
+    "account_type_id": "1",
+    "entity_type_id": "1",
+    "created_at": "2013-02-11 06:39:57.380434",
+    "updated_at": "2013-02-11 06:39:57.380434"
+  }
+]
+```
+
 ### Obtener detalle de una cuenta sugerida
 ```bash
 curl -v \
@@ -545,6 +1158,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/suggested_accounts/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "efectivo",
+  "group_name": null,
+  "account_type_id": "1",
+  "entity_type_id": "1",
+  "created_at": "2013-02-11 06:39:57.380434",
+  "updated_at": "2013-02-11 06:39:57.380434"
+}
 ```
 
 ### Obtener el formulario de nueva cuenta sugerida
@@ -557,6 +1183,19 @@ curl -v \
   https://app.zauru.com/accounting/suggested_accounts/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "efectivo",
+  "group_name": null,
+  "account_type_id": "1",
+  "entity_type_id": "1",
+  "created_at": "2013-02-11 06:39:57.380434",
+  "updated_at": "2013-02-11 06:39:57.380434"
+}
+```
+
 ### Obtener el formulario de edicion de una cuenta sugerida
 ```bash
 curl -v \
@@ -565,6 +1204,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/suggested_accounts/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "efectivo",
+  "group_name": null,
+  "account_type_id": "1",
+  "entity_type_id": "1",
+  "created_at": "2013-02-11 06:39:57.380434",
+  "updated_at": "2013-02-11 06:39:57.380434"
+}
 ```
 
 ### Crear una cuenta sugerida
@@ -586,6 +1238,19 @@ curl -v \
   https://app.zauru.com/accounting/suggested_accounts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "efectivo",
+  "group_name": null,
+  "account_type_id": "1",
+  "entity_type_id": "1",
+  "created_at": "2013-02-11 06:39:57.380434",
+  "updated_at": "2013-02-11 06:39:57.380434"
+}
+```
+
 ### Actualizar una cuenta sugerida
 ```bash
 curl -v \
@@ -602,6 +1267,19 @@ curl -v \
   https://app.zauru.com/accounting/suggested_accounts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "efectivo",
+  "group_name": null,
+  "account_type_id": "1",
+  "entity_type_id": "1",
+  "created_at": "2013-02-11 06:39:57.380434",
+  "updated_at": "2013-02-11 06:39:57.380434"
+}
+```
+
 ### Borrar una cuenta sugerida
 ```bash
 curl -v \
@@ -612,3 +1290,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/suggested_accounts/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

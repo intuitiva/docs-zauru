@@ -91,6 +91,11 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Crear reporte entregable
 
 ```bash
@@ -114,6 +119,20 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "orientation": [
+    "no está incluido en la lista",
+    "no está incluido en la lista"
+  ],
+  "page_size": [
+    "no está incluido en la lista",
+    "no está incluido en la lista"
+  ]
+}
+```
+
 ### Actualizar reporte entregable
 
 ```bash
@@ -132,6 +151,28 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "27",
+  "operation_id": "548",
+  "arguments": null,
+  "repeat_daily_hour": null,
+  "repeat_weekly_day": null,
+  "repeat_monthly_day": null,
+  "entity_id": "926",
+  "user_id": "2374",
+  "created_at": "2024-09-06 21:40:52.542419",
+  "updated_at": "2024-09-06 21:40:52.542419",
+  "zoom": "100",
+  "orientation": "Landscape",
+  "page_size": "Letter",
+  "subject": null,
+  "zid": "1",
+  "active": true
+}
+```
+
 ### Eliminar reporte entregable
 
 ```bash
@@ -144,6 +185,8 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Enviar reporte de prueba por correo
 
 ```bash
@@ -153,6 +196,13 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/deliverable_reports/1/send_email.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Envío inmediato a usted mismo
@@ -173,6 +223,13 @@ curl -v \
   https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_me.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "notice": "SuccessfullySent"
+}
+```
+
 ### Envío inmediato a un beneficiario
 
 ```bash
@@ -190,4 +247,11 @@ curl -v \
     "r_name": "Sus facturas de Enero 2024"
   }' \
   https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_payee.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "alert": "Error"
+}
 ```

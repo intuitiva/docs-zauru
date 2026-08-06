@@ -149,7 +149,7 @@ esto devolveria un JSON similar a este:
       "dte":"07 de ene de 2019",
       "srl":"# de serie",
       "sym":"sintoma observado",
-      "res":"responsable@zauru.com",
+      "res":"responsable@ejemplo.com",
       "cli":"<a href=\"/sales/clients/1\">Cliente con Queja</a>",
       "ra":"<a href=\"/support/cases/1\" title=\"Detalles\"><i class=\"fa fa-eye\"></i></a><a href=\"/support/cases/1/edit\" title=\"Editar\"><i class=\"fa fa-edit\"></i></a><a href=\"/support/cases/1?destroy=true\" data-confirm=\"\u00bfEsta seguro de destruirlo?\" data-method=\"delete\" rel=\"nofollow\" title=\"Destruirlo\"><i class=\"fa fa-trash-o\"></i></a>",
       "ra2":"<a href=\"/support/cases/1/close\" title=\"Cerrar Caso\"><i class=\"fa fa-check-square-o\"></i></a>",
@@ -174,14 +174,14 @@ esto devolveria un JSON similar a este:
 
 ```json
 {
-	"agency_id":1,
+	"agency_id": 1,
 	"case_supplies_count":0,
-	"client_id":1,
+	"client_id": 1,
 	"closed":false,
 	"closed_at":null,
 	"closer_id":null,
 	"closing_expected_at":null,
-	"contact_method_id":1,
+	"contact_method_id": 1,
 	"contract_id":null,
 	"courtesy":false,
 	"created_at":null,
@@ -191,7 +191,7 @@ esto devolveria un JSON similar a este:
 	"date":"2018-12-15",
 	"diagnosis":null,
 	"discount_id":null,
-	"entity_id":1,
+	"entity_id": 1,
 	"external_image_url":null,
 	"extra_discount":null,
 	"id":null,
@@ -202,12 +202,12 @@ esto devolveria un JSON similar a este:
 	},
 	"memo":null,
 	"not_included_vat":null,
-	"payment_term_id":91,
+	"payment_term_id": 2,
 	"pos":false,
 	"reference":null,
 	"refund":false,
 	"replace":false,
-	"responsible_id":1,
+	"responsible_id": 1,
 	"seller_id":null,
 	"serial_id":null,
 	"solution":null,
@@ -265,6 +265,57 @@ curl -v \
   https://app.zauru.com/support/cases.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3848",
+  "zid": "2745",
+  "id_number": "OS-02743",
+  "reference": "F13-0788 // FAC. 1381",
+  "date": "2013-10-28",
+  "closing_expected_at": "2013-10-29",
+  "contact_method_id": "10",
+  "symptom": "NO LE FUNCIONA BIEN",
+  "diagnosis": "SOLENOIDE DAÑADA",
+  "solution": "SE CAMBIO SOLENOIDE SE LLENO Y PROBO CICLO",
+  "critical": false,
+  "image": null,
+  "memo": "LAVADORA ROPER\n13/10/2013\nMETRONORTE",
+  "warranty": false,
+  "courtesy": false,
+  "refund": false,
+  "replace": false,
+  "closed": true,
+  "closed_at": "2013-11-09 22:03:53",
+  "entity_id": "14",
+  "responsible_id": "82",
+  "serial_id": "6951",
+  "client_id": "12607",
+  "agency_id": "19",
+  "creator_id": "37",
+  "updater_id": "37",
+  "closer_id": "37",
+  "subtotal": "0.00",
+  "discount_id": null,
+  "extra_discount": "0.00",
+  "total": "0.00",
+  "created_at": "2013-10-28 22:50:42.545528",
+  "updated_at": "2013-11-09 22:03:53.932239",
+  "payment_term_id": "12",
+  "case_supplies_count": "1",
+  "pos": false,
+  "taxable": true,
+  "seller_id": null,
+  "contract_id": null,
+  "crm_url": null,
+  "not_included_vat": null,
+  "external_image_url": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null
+}
+```
+
 ### obtener detalles de un caso
 
 Este API nos permitiria obtener la informacion del caso y ademas las facturas asociadas y las ordenes de compra asociadas
@@ -276,6 +327,57 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/support/cases/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3848",
+  "zid": "2745",
+  "id_number": "OS-02743",
+  "reference": "F13-0788 // FAC. 1381",
+  "date": "2013-10-28",
+  "closing_expected_at": "2013-10-29",
+  "contact_method_id": "10",
+  "symptom": "NO LE FUNCIONA BIEN",
+  "diagnosis": "SOLENOIDE DAÑADA",
+  "solution": "SE CAMBIO SOLENOIDE SE LLENO Y PROBO CICLO",
+  "critical": false,
+  "image": null,
+  "memo": "LAVADORA ROPER\n13/10/2013\nMETRONORTE",
+  "warranty": false,
+  "courtesy": false,
+  "refund": false,
+  "replace": false,
+  "closed": true,
+  "closed_at": "2013-11-09 22:03:53",
+  "entity_id": "14",
+  "responsible_id": "82",
+  "serial_id": "6951",
+  "client_id": "12607",
+  "agency_id": "19",
+  "creator_id": "37",
+  "updater_id": "37",
+  "closer_id": "37",
+  "subtotal": "0.00",
+  "discount_id": null,
+  "extra_discount": "0.00",
+  "total": "0.00",
+  "created_at": "2013-10-28 22:50:42.545528",
+  "updated_at": "2013-11-09 22:03:53.932239",
+  "payment_term_id": "12",
+  "case_supplies_count": "1",
+  "pos": false,
+  "taxable": true,
+  "seller_id": null,
+  "contract_id": null,
+  "crm_url": null,
+  "not_included_vat": null,
+  "external_image_url": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null
+}
 ```
 
 ### editar un caso
@@ -301,6 +403,57 @@ curl -v \
   https://app.zauru.com/support/cases/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3848",
+  "zid": "2745",
+  "id_number": "OS-02743",
+  "reference": "F13-0788 // FAC. 1381",
+  "date": "2013-10-28",
+  "closing_expected_at": "2013-10-29",
+  "contact_method_id": "10",
+  "symptom": "NO LE FUNCIONA BIEN",
+  "diagnosis": "SOLENOIDE DAÑADA",
+  "solution": "SE CAMBIO SOLENOIDE SE LLENO Y PROBO CICLO",
+  "critical": false,
+  "image": null,
+  "memo": "LAVADORA ROPER\n13/10/2013\nMETRONORTE",
+  "warranty": false,
+  "courtesy": false,
+  "refund": false,
+  "replace": false,
+  "closed": true,
+  "closed_at": "2013-11-09 22:03:53",
+  "entity_id": "14",
+  "responsible_id": "82",
+  "serial_id": "6951",
+  "client_id": "12607",
+  "agency_id": "19",
+  "creator_id": "37",
+  "updater_id": "37",
+  "closer_id": "37",
+  "subtotal": "0.00",
+  "discount_id": null,
+  "extra_discount": "0.00",
+  "total": "0.00",
+  "created_at": "2013-10-28 22:50:42.545528",
+  "updated_at": "2013-11-09 22:03:53.932239",
+  "payment_term_id": "12",
+  "case_supplies_count": "1",
+  "pos": false,
+  "taxable": true,
+  "seller_id": null,
+  "contract_id": null,
+  "crm_url": null,
+  "not_included_vat": null,
+  "external_image_url": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null
+}
+```
+
 ### editar un caso (agregando diagnostico, solucion y reembolso)
 ```bash
 curl -v \
@@ -318,4 +471,55 @@ curl -v \
     }
   }' \
   https://app.zauru.com/support/cases/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3848",
+  "zid": "2745",
+  "id_number": "OS-02743",
+  "reference": "F13-0788 // FAC. 1381",
+  "date": "2013-10-28",
+  "closing_expected_at": "2013-10-29",
+  "contact_method_id": "10",
+  "symptom": "NO LE FUNCIONA BIEN",
+  "diagnosis": "SOLENOIDE DAÑADA",
+  "solution": "SE CAMBIO SOLENOIDE SE LLENO Y PROBO CICLO",
+  "critical": false,
+  "image": null,
+  "memo": "LAVADORA ROPER\n13/10/2013\nMETRONORTE",
+  "warranty": false,
+  "courtesy": false,
+  "refund": false,
+  "replace": false,
+  "closed": true,
+  "closed_at": "2013-11-09 22:03:53",
+  "entity_id": "14",
+  "responsible_id": "82",
+  "serial_id": "6951",
+  "client_id": "12607",
+  "agency_id": "19",
+  "creator_id": "37",
+  "updater_id": "37",
+  "closer_id": "37",
+  "subtotal": "0.00",
+  "discount_id": null,
+  "extra_discount": "0.00",
+  "total": "0.00",
+  "created_at": "2013-10-28 22:50:42.545528",
+  "updated_at": "2013-11-09 22:03:53.932239",
+  "payment_term_id": "12",
+  "case_supplies_count": "1",
+  "pos": false,
+  "taxable": true,
+  "seller_id": null,
+  "contract_id": null,
+  "crm_url": null,
+  "not_included_vat": null,
+  "external_image_url": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null
+}
 ```

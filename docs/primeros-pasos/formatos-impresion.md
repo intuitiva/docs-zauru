@@ -175,6 +175,160 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "operation_id": 2,
+    "updater_id": 3,
+    "zid": 4,
+    "active": true,
+    "name": "facturas oficina para distribuidor con descuento (Imprime solo Descuento Extra)",
+    "font_family": "Helvetica, Arial, sans-serif",
+    "font_size": "12",
+    "width": 21.6,
+    "height": 8.8,
+    "top_margin": 2.6,
+    "left_margin": 1.3,
+    "pixels_per_cm": 43,
+    "title": false,
+    "title_string": null,
+    "entity_id": 5,
+    "subtitle": false,
+    "subtitle_string": null,
+    "logo": false,
+    "logo_width": 100,
+    "logo_height": 100,
+    "logo_left": 12.5,
+    "logo_top": 3.5,
+    "logo2": false,
+    "logo2_width": 200,
+    "logo2_height": 200,
+    "logo2_left": 3.5,
+    "logo2_top": 20.5,
+    "image": {
+      "url": null
+    },
+    "image_width": 300,
+    "image_height": 300,
+    "image_left": 1.5,
+    "image_top": 1.5,
+    "header": true,
+    "header_border": 0,
+    "header_title": false,
+    "header_title_string": null,
+    "header_row_titles": false,
+    "header_rows": 4,
+    "header_column_titles": false,
+    "header_columns": 4,
+    "header_body_gap": 1.1,
+    "body_border": 0,
+    "body_title": false,
+    "body_title_string": null,
+    "body_column_titles": false,
+    "body_columns": 3,
+    "body_footer": true,
+    "footer_body_gap": 0.8,
+    "footer": true,
+    "footer_border": 0,
+    "footer_title": false,
+    "footer_title_string": null,
+    "footer_row_titles": false,
+    "footer_rows": 1,
+    "footer_column_titles": false,
+    "footer_columns": 4,
+    "page_footer": false,
+    "page_footer_string": null,
+    "prints_per_page": 3,
+    "prints_gap": 0.6,
+    "notes": "",
+    "created_at": "2017-04-18T16:49:30.449Z",
+    "updated_at": "2017-04-18T16:50:13.297Z",
+    "body_special_reconciliations_over_splits": false,
+    "variable_height_body": false,
+    "image_half_size_double_dpi": false,
+    "form_id": null,
+    "form_version": 0,
+    "body_special_pieceworks_over_payroll_details": false
+  },
+  {
+    "id": 6,
+    "operation_id": 2,
+    "updater_id": 7,
+    "zid": 8,
+    "active": true,
+    "name": "facturas oficina para distribuidor",
+    "font_family": "Helvetica, Arial, sans-serif",
+    "font_size": "12",
+    "width": 21.6,
+    "height": 8.8,
+    "top_margin": 2.6,
+    "left_margin": 1.3,
+    "pixels_per_cm": 43,
+    "title": false,
+    "title_string": null,
+    "entity_id": 5,
+    "subtitle": false,
+    "subtitle_string": null,
+    "logo": false,
+    "logo_width": 100,
+    "logo_height": 100,
+    "logo_left": 12.5,
+    "logo_top": 3.5,
+    "logo2": false,
+    "logo2_width": 200,
+    "logo2_height": 200,
+    "logo2_left": 3.5,
+    "logo2_top": 20.5,
+    "image": {
+      "url": null
+    },
+    "image_width": 300,
+    "image_height": 300,
+    "image_left": 1.5,
+    "image_top": 1.5,
+    "header": true,
+    "header_border": 0,
+    "header_title": false,
+    "header_title_string": null,
+    "header_row_titles": false,
+    "header_rows": 4,
+    "header_column_titles": false,
+    "header_columns": 4,
+    "header_body_gap": 1.1,
+    "body_border": 0,
+    "body_title": false,
+    "body_title_string": null,
+    "body_column_titles": false,
+    "body_columns": 3,
+    "body_footer": false,
+    "footer_body_gap": 0.8,
+    "footer": true,
+    "footer_border": 0,
+    "footer_title": false,
+    "footer_title_string": null,
+    "footer_row_titles": false,
+    "footer_rows": 1,
+    "footer_column_titles": false,
+    "footer_columns": 4,
+    "page_footer": false,
+    "page_footer_string": null,
+    "prints_per_page": 3,
+    "prints_gap": 0.6,
+    "notes": "",
+    "created_at": "2014-03-20T15:11:38.191Z",
+    "updated_at": "2017-04-03T18:34:23.927Z",
+    "body_special_reconciliations_over_splits": false,
+    "variable_height_body": false,
+    "image_half_size_double_dpi": false,
+    "form_id": null,
+    "form_version": 0,
+    "body_special_pieceworks_over_payroll_details": false
+  }
+]
+```
+
 ### Obtener detalle de una plantilla de impresión
 ```bash
 curl -v \
@@ -183,6 +337,82 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/templates/print_templates/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5002",
+  "operation_id": "1577",
+  "updater_id": "214",
+  "zid": "6",
+  "active": true,
+  "name": "Envio OT",
+  "font_family": "Helvetica, Arial, sans-serif",
+  "font_size": "14",
+  "width": "21.59",
+  "height": "27.94",
+  "top_margin": "0",
+  "left_margin": "0.8",
+  "pixels_per_cm": "42",
+  "title": false,
+  "title_string": null,
+  "entity_id": "1303",
+  "subtitle": false,
+  "subtitle_string": null,
+  "logo": false,
+  "logo_width": "100",
+  "logo_height": "100",
+  "logo_left": "12.5",
+  "logo_top": "3.5",
+  "logo2": false,
+  "logo2_width": "200",
+  "logo2_height": "200",
+  "logo2_left": "3.5",
+  "logo2_top": "20.5",
+  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
+  "image_width": "2119",
+  "image_height": "2718",
+  "image_left": "0",
+  "image_top": "0",
+  "header": true,
+  "header_border": "0",
+  "header_title": false,
+  "header_title_string": null,
+  "header_row_titles": false,
+  "header_rows": "7",
+  "header_column_titles": false,
+  "header_columns": "3",
+  "header_body_gap": "0",
+  "body_border": "0",
+  "body_title": false,
+  "body_title_string": null,
+  "body_column_titles": true,
+  "body_columns": "3",
+  "body_footer": true,
+  "footer_body_gap": "0",
+  "footer": true,
+  "footer_border": "0",
+  "footer_title": false,
+  "footer_title_string": null,
+  "footer_row_titles": false,
+  "footer_rows": "7",
+  "footer_column_titles": false,
+  "footer_columns": "8",
+  "page_footer": false,
+  "page_footer_string": null,
+  "prints_per_page": "1",
+  "prints_gap": "0",
+  "notes": null,
+  "created_at": "2026-06-23 14:53:13.710213",
+  "updated_at": "2026-06-23 14:54:13.877052",
+  "body_special_reconciliations_over_splits": false,
+  "variable_height_body": false,
+  "image_half_size_double_dpi": true,
+  "form_id": null,
+  "form_version": "0",
+  "body_special_pieceworks_over_payroll_details": false
+}
 ```
 
 ### Crear plantilla de impresión
@@ -206,6 +436,82 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5002",
+  "operation_id": "1577",
+  "updater_id": "214",
+  "zid": "6",
+  "active": true,
+  "name": "Envio OT",
+  "font_family": "Helvetica, Arial, sans-serif",
+  "font_size": "14",
+  "width": "21.59",
+  "height": "27.94",
+  "top_margin": "0",
+  "left_margin": "0.8",
+  "pixels_per_cm": "42",
+  "title": false,
+  "title_string": null,
+  "entity_id": "1303",
+  "subtitle": false,
+  "subtitle_string": null,
+  "logo": false,
+  "logo_width": "100",
+  "logo_height": "100",
+  "logo_left": "12.5",
+  "logo_top": "3.5",
+  "logo2": false,
+  "logo2_width": "200",
+  "logo2_height": "200",
+  "logo2_left": "3.5",
+  "logo2_top": "20.5",
+  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
+  "image_width": "2119",
+  "image_height": "2718",
+  "image_left": "0",
+  "image_top": "0",
+  "header": true,
+  "header_border": "0",
+  "header_title": false,
+  "header_title_string": null,
+  "header_row_titles": false,
+  "header_rows": "7",
+  "header_column_titles": false,
+  "header_columns": "3",
+  "header_body_gap": "0",
+  "body_border": "0",
+  "body_title": false,
+  "body_title_string": null,
+  "body_column_titles": true,
+  "body_columns": "3",
+  "body_footer": true,
+  "footer_body_gap": "0",
+  "footer": true,
+  "footer_border": "0",
+  "footer_title": false,
+  "footer_title_string": null,
+  "footer_row_titles": false,
+  "footer_rows": "7",
+  "footer_column_titles": false,
+  "footer_columns": "8",
+  "page_footer": false,
+  "page_footer_string": null,
+  "prints_per_page": "1",
+  "prints_gap": "0",
+  "notes": null,
+  "created_at": "2026-06-23 14:53:13.710213",
+  "updated_at": "2026-06-23 14:54:13.877052",
+  "body_special_reconciliations_over_splits": false,
+  "variable_height_body": false,
+  "image_half_size_double_dpi": true,
+  "form_id": null,
+  "form_version": "0",
+  "body_special_pieceworks_over_payroll_details": false
+}
+```
+
 ### Actualizar plantilla de impresión
 ```bash
 curl -v \
@@ -222,6 +528,82 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5002",
+  "operation_id": "1577",
+  "updater_id": "214",
+  "zid": "6",
+  "active": true,
+  "name": "Envio OT",
+  "font_family": "Helvetica, Arial, sans-serif",
+  "font_size": "14",
+  "width": "21.59",
+  "height": "27.94",
+  "top_margin": "0",
+  "left_margin": "0.8",
+  "pixels_per_cm": "42",
+  "title": false,
+  "title_string": null,
+  "entity_id": "1303",
+  "subtitle": false,
+  "subtitle_string": null,
+  "logo": false,
+  "logo_width": "100",
+  "logo_height": "100",
+  "logo_left": "12.5",
+  "logo_top": "3.5",
+  "logo2": false,
+  "logo2_width": "200",
+  "logo2_height": "200",
+  "logo2_left": "3.5",
+  "logo2_top": "20.5",
+  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
+  "image_width": "2119",
+  "image_height": "2718",
+  "image_left": "0",
+  "image_top": "0",
+  "header": true,
+  "header_border": "0",
+  "header_title": false,
+  "header_title_string": null,
+  "header_row_titles": false,
+  "header_rows": "7",
+  "header_column_titles": false,
+  "header_columns": "3",
+  "header_body_gap": "0",
+  "body_border": "0",
+  "body_title": false,
+  "body_title_string": null,
+  "body_column_titles": true,
+  "body_columns": "3",
+  "body_footer": true,
+  "footer_body_gap": "0",
+  "footer": true,
+  "footer_border": "0",
+  "footer_title": false,
+  "footer_title_string": null,
+  "footer_row_titles": false,
+  "footer_rows": "7",
+  "footer_column_titles": false,
+  "footer_columns": "8",
+  "page_footer": false,
+  "page_footer_string": null,
+  "prints_per_page": "1",
+  "prints_gap": "0",
+  "notes": null,
+  "created_at": "2026-06-23 14:53:13.710213",
+  "updated_at": "2026-06-23 14:54:13.877052",
+  "body_special_reconciliations_over_splits": false,
+  "variable_height_body": false,
+  "image_half_size_double_dpi": true,
+  "form_id": null,
+  "form_version": "0",
+  "body_special_pieceworks_over_payroll_details": false
+}
+```
+
 ### Eliminar plantilla de impresión
 ```bash
 curl -v \
@@ -233,6 +615,8 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Duplicar plantilla de impresión
 ```bash
 curl -v \
@@ -243,6 +627,13 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates/1/duplicate.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Obtener datos para editar una plantilla de impresión
 ```bash
 curl -v \
@@ -251,6 +642,82 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/templates/print_templates/1/edit_data.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "5002",
+  "operation_id": "1577",
+  "updater_id": "214",
+  "zid": "6",
+  "active": true,
+  "name": "Envio OT",
+  "font_family": "Helvetica, Arial, sans-serif",
+  "font_size": "14",
+  "width": "21.59",
+  "height": "27.94",
+  "top_margin": "0",
+  "left_margin": "0.8",
+  "pixels_per_cm": "42",
+  "title": false,
+  "title_string": null,
+  "entity_id": "1303",
+  "subtitle": false,
+  "subtitle_string": null,
+  "logo": false,
+  "logo_width": "100",
+  "logo_height": "100",
+  "logo_left": "12.5",
+  "logo_top": "3.5",
+  "logo2": false,
+  "logo2_width": "200",
+  "logo2_height": "200",
+  "logo2_left": "3.5",
+  "logo2_top": "20.5",
+  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
+  "image_width": "2119",
+  "image_height": "2718",
+  "image_left": "0",
+  "image_top": "0",
+  "header": true,
+  "header_border": "0",
+  "header_title": false,
+  "header_title_string": null,
+  "header_row_titles": false,
+  "header_rows": "7",
+  "header_column_titles": false,
+  "header_columns": "3",
+  "header_body_gap": "0",
+  "body_border": "0",
+  "body_title": false,
+  "body_title_string": null,
+  "body_column_titles": true,
+  "body_columns": "3",
+  "body_footer": true,
+  "footer_body_gap": "0",
+  "footer": true,
+  "footer_border": "0",
+  "footer_title": false,
+  "footer_title_string": null,
+  "footer_row_titles": false,
+  "footer_rows": "7",
+  "footer_column_titles": false,
+  "footer_columns": "8",
+  "page_footer": false,
+  "page_footer_string": null,
+  "prints_per_page": "1",
+  "prints_gap": "0",
+  "notes": null,
+  "created_at": "2026-06-23 14:53:13.710213",
+  "updated_at": "2026-06-23 14:54:13.877052",
+  "body_special_reconciliations_over_splits": false,
+  "variable_height_body": false,
+  "image_half_size_double_dpi": true,
+  "form_id": null,
+  "form_version": "0",
+  "body_special_pieceworks_over_payroll_details": false
+}
 ```
 
 ### Actualizar datos de una plantilla de impresión
@@ -284,6 +751,25 @@ curl -v \
   https://app.zauru.com/settings/templates/document_prints.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "4119",
+    "zid": "2",
+    "active": true,
+    "operation_id": "436",
+    "print_template_id": "4857",
+    "notes": null,
+    "updater_id": "214",
+    "entity_id": "1303",
+    "created_at": "2026-03-05 17:35:47.490994",
+    "updated_at": "2026-03-05 17:35:47.490994",
+    "document_constraints_count": "0"
+  }
+]
+```
+
 ### Obtener detalle de una impresión de documento
 ```bash
 curl -v \
@@ -292,6 +778,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/templates/document_prints/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "4119",
+  "zid": "2",
+  "active": true,
+  "operation_id": "436",
+  "print_template_id": "4857",
+  "notes": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-03-05 17:35:47.490994",
+  "updated_at": "2026-03-05 17:35:47.490994",
+  "document_constraints_count": "0"
+}
 ```
 
 ### Crear impresión de documento
@@ -313,6 +816,23 @@ curl -v \
   https://app.zauru.com/settings/templates/document_prints.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "4119",
+  "zid": "2",
+  "active": true,
+  "operation_id": "436",
+  "print_template_id": "4857",
+  "notes": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-03-05 17:35:47.490994",
+  "updated_at": "2026-03-05 17:35:47.490994",
+  "document_constraints_count": "0"
+}
+```
+
 ### Actualizar impresión de documento
 ```bash
 curl -v \
@@ -330,6 +850,23 @@ curl -v \
   https://app.zauru.com/settings/templates/document_prints/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "4119",
+  "zid": "2",
+  "active": true,
+  "operation_id": "436",
+  "print_template_id": "4857",
+  "notes": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "created_at": "2026-03-05 17:35:47.490994",
+  "updated_at": "2026-03-05 17:35:47.490994",
+  "document_constraints_count": "0"
+}
+```
+
 ### Eliminar impresión de documento
 ```bash
 curl -v \
@@ -340,3 +877,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/templates/document_prints/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

@@ -68,3 +68,8 @@ curl -v \
   }' \
   https://app.zauru.com/inventories/stocks/stock_imports.json
 ```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
+```

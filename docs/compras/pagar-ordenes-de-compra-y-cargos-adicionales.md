@@ -113,6 +113,15 @@ curl -v \
   https://app.zauru.com/purchases/discharges.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "date": [
+    "Fecha mínima 2020-12-31"
+  ]
+}
+```
+
 ### eliminar pagos de OC o cargos
 ```bash
 curl -v \
@@ -123,6 +132,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/discharges/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Ver detalles de un pago
 El 1 al final de la URL es el ID del pago (descargo)
@@ -136,6 +147,35 @@ curl -v \
   https://app.zauru.com/purchases/discharges/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "369566",
+  "zid": "9",
+  "id_number": null,
+  "date": "2026-03-09",
+  "reference": "TRANSF. 307112394",
+  "receipt": null,
+  "amount": "3538.83",
+  "memo": null,
+  "voided": false,
+  "voided_at": null,
+  "payee_id": "1957270",
+  "entity_id": "1303",
+  "creator_id": "1274",
+  "voider_id": null,
+  "discharge_method_id": "2979",
+  "created_at": "2026-03-09 20:18:26.671889",
+  "updated_at": "2026-03-09 20:18:26.671889",
+  "discharge_details_count": "2",
+  "image": null,
+  "draft": false,
+  "authorizer_id": null,
+  "authorized_at": null,
+  "external_image_url": null
+}
+```
+
 ### Obtener datos para un pago nuevo
 ```bash
 curl -v \
@@ -147,6 +187,40 @@ curl -v \
   https://app.zauru.com/purchases/discharges/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "id_number": "",
+  "date": "2026-08-06",
+  "reference": null,
+  "receipt": null,
+  "amount": "58204.0",
+  "memo": null,
+  "voided": false,
+  "voided_at": null,
+  "payee_id": 1,
+  "entity_id": 2,
+  "creator_id": null,
+  "voider_id": null,
+  "discharge_method_id": 3,
+  "created_at": null,
+  "updated_at": null,
+  "discharge_details_count": 0,
+  "image": {
+    "url": null,
+    "standard": {
+      "url": null
+    }
+  },
+  "draft": false,
+  "authorizer_id": null,
+  "authorized_at": null,
+  "external_image_url": null
+}
+```
+
 ### Obtener datos para editar un pago
 ```bash
 curl -v \
@@ -156,6 +230,35 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/discharges/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "369566",
+  "zid": "9",
+  "id_number": null,
+  "date": "2026-03-09",
+  "reference": "TRANSF. 307112394",
+  "receipt": null,
+  "amount": "3538.83",
+  "memo": null,
+  "voided": false,
+  "voided_at": null,
+  "payee_id": "1957270",
+  "entity_id": "1303",
+  "creator_id": "1274",
+  "voider_id": null,
+  "discharge_method_id": "2979",
+  "created_at": "2026-03-09 20:18:26.671889",
+  "updated_at": "2026-03-09 20:18:26.671889",
+  "discharge_details_count": "2",
+  "image": null,
+  "draft": false,
+  "authorizer_id": null,
+  "authorized_at": null,
+  "external_image_url": null
+}
 ```
 
 ### Actualizar un pago
@@ -176,6 +279,35 @@ curl -v \
   https://app.zauru.com/purchases/discharges/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "369566",
+  "zid": "9",
+  "id_number": null,
+  "date": "2026-03-09",
+  "reference": "TRANSF. 307112394",
+  "receipt": null,
+  "amount": "3538.83",
+  "memo": null,
+  "voided": false,
+  "voided_at": null,
+  "payee_id": "1957270",
+  "entity_id": "1303",
+  "creator_id": "1274",
+  "voider_id": null,
+  "discharge_method_id": "2979",
+  "created_at": "2026-03-09 20:18:26.671889",
+  "updated_at": "2026-03-09 20:18:26.671889",
+  "discharge_details_count": "2",
+  "image": null,
+  "draft": false,
+  "authorizer_id": null,
+  "authorized_at": null,
+  "external_image_url": null
+}
+```
+
 ### Autorizar un pago
 Aplica cuando la variable `authorize_discharge` esta activada y el pago fue creado como borrador.
 ```bash
@@ -188,6 +320,35 @@ curl -v \
   https://app.zauru.com/purchases/discharges/1/authorize.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "369566",
+  "zid": "9",
+  "id_number": null,
+  "date": "2026-03-09",
+  "reference": "TRANSF. 307112394",
+  "receipt": null,
+  "amount": "3538.83",
+  "memo": null,
+  "voided": false,
+  "voided_at": null,
+  "payee_id": "1957270",
+  "entity_id": "1303",
+  "creator_id": "1274",
+  "voider_id": null,
+  "discharge_method_id": "2979",
+  "created_at": "2026-03-09 20:18:26.671889",
+  "updated_at": "2026-03-09 20:18:26.671889",
+  "discharge_details_count": "2",
+  "image": null,
+  "draft": false,
+  "authorizer_id": null,
+  "authorized_at": null,
+  "external_image_url": null
+}
+```
+
 ### Listado de pagos anulados
 ```bash
 curl -v \
@@ -197,4 +358,70 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/discharges/voided.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "id_number": "",
+    "date": "2022-10-12",
+    "reference": "PTE-32",
+    "receipt": "",
+    "amount": "8500.32",
+    "memo": "923999 N.D.Pago Banca Elec y/o Agente ",
+    "voided": true,
+    "voided_at": "2022-10-13T06:00:00.000Z",
+    "payee_id": 3,
+    "entity_id": 4,
+    "creator_id": 5,
+    "voider_id": 5,
+    "discharge_method_id": 6,
+    "created_at": "2022-10-12T23:58:44.389Z",
+    "updated_at": "2022-10-13T00:04:16.162Z",
+    "discharge_details_count": 1,
+    "image": {
+      "url": "http://res.cloudinary.com/hurynnu8i/image/upload/v1665619124/EMPRESAEJEMPLO/discharge/discharge_305_lykdhwqyrt59afdkldne.png",
+      "standard": {
+        "url": "http://res.cloudinary.com/hurynnu8i/image/upload/c_fit,h_200,w_400/v1665619124/EMPRESAEJEMPLO/discharge/discharge_305_lykdhwqyrt59afdkldne.png"
+      }
+    },
+    "draft": false,
+    "authorizer_id": null,
+    "authorized_at": null,
+    "external_image_url": null
+  },
+  {
+    "id": 7,
+    "zid": 8,
+    "id_number": "",
+    "date": "2023-01-01",
+    "reference": "",
+    "receipt": "",
+    "amount": "28.0",
+    "memo": "",
+    "voided": true,
+    "voided_at": "2023-04-04T06:00:00.000Z",
+    "payee_id": 9,
+    "entity_id": 4,
+    "creator_id": 5,
+    "voider_id": 5,
+    "discharge_method_id": 10,
+    "created_at": "2023-03-15T15:49:49.760Z",
+    "updated_at": "2023-04-04T17:23:14.270Z",
+    "discharge_details_count": 1,
+    "image": {
+      "url": null,
+      "standard": {
+        "url": null
+      }
+    },
+    "draft": false,
+    "authorizer_id": null,
+    "authorized_at": null,
+    "external_image_url": null
+  }
+]
 ```

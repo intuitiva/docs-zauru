@@ -129,7 +129,7 @@ Esto generará un JSON similar a este:
     "created_at":"2019-01-31T15:51:01-06:00",
     "ean13":null,
     "employee_id":null,
-    "entity_id":1,
+    "entity_id": 1,
     "factory":false,
     "id":1,
     "name":"Production",
@@ -138,7 +138,7 @@ Esto generará un JSON similar a este:
     "point_of_sale":false,
     "price_list_id":null,
     "updated_at":"2018-01-31T15:51:01-06:00",
-    "updater_id":1,
+    "updater_id": 1,
     "virtual":true,
     "virtual_type":1,
     "warehouse":false,
@@ -158,6 +158,44 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/agencies/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8247",
+  "zid": "2",
+  "active": true,
+  "ean13": null,
+  "name": "Producción",
+  "employee_id": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "virtual": true,
+  "virtual_type": "1",
+  "warehouse": false,
+  "point_of_sale": false,
+  "workshop": false,
+  "factory": false,
+  "contact": null,
+  "city_name": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "phone": null,
+  "notes": null,
+  "created_at": "2026-02-06 18:10:09.384287",
+  "updated_at": "2026-02-11 14:27:37.503734",
+  "price_list_id": null,
+  "quote": true,
+  "ecommerce": true,
+  "external_storage_service_name": null,
+  "agency_category_id": null,
+  "city_id": null,
+  "agency_type": null,
+  "district_id": null,
+  "neighborhood_id": null,
+  "cost_center_id": null
+}
 ```
 
 #### Crear agencia
@@ -182,6 +220,15 @@ curl -v \
   https://app.zauru.com/settings/agencies.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 #### Actualizar agencia
 ```bash
 curl -v \
@@ -199,6 +246,44 @@ curl -v \
   https://app.zauru.com/settings/agencies/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8247",
+  "zid": "2",
+  "active": true,
+  "ean13": null,
+  "name": "Producción",
+  "employee_id": null,
+  "updater_id": "214",
+  "entity_id": "1303",
+  "virtual": true,
+  "virtual_type": "1",
+  "warehouse": false,
+  "point_of_sale": false,
+  "workshop": false,
+  "factory": false,
+  "contact": null,
+  "city_name": null,
+  "address_line_1": null,
+  "address_line_2": null,
+  "phone": null,
+  "notes": null,
+  "created_at": "2026-02-06 18:10:09.384287",
+  "updated_at": "2026-02-11 14:27:37.503734",
+  "price_list_id": null,
+  "quote": true,
+  "ecommerce": true,
+  "external_storage_service_name": null,
+  "agency_category_id": null,
+  "city_id": null,
+  "agency_type": null,
+  "district_id": null,
+  "neighborhood_id": null,
+  "cost_center_id": null
+}
+```
+
 #### Eliminar agencia
 ```bash
 curl -v \
@@ -209,6 +294,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/agencies/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### API de Categorías de Agencias
 
@@ -222,6 +309,25 @@ curl -v \
   https://app.zauru.com/settings/agencies/agency_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 1,
+    "agencies_count": 0,
+    "name": "Categoría Principal",
+    "notes": "Descripción de la categoría",
+    "entity_id": 2,
+    "creator_id": 3,
+    "updater_id": 3,
+    "created_at": "2026-08-06T04:14:18.605Z",
+    "updated_at": "2026-08-06T04:14:18.605Z",
+    "employee_id": null
+  }
+]
+```
+
 #### Obtener detalle de una categoría de agencia
 ```bash
 curl -v \
@@ -230,6 +336,23 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/agencies/agency_categories/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "agencies_count": "2",
+  "name": "Abastecimientos",
+  "notes": "Agencias disponibles en la selección de destinos para abastecimientos.",
+  "entity_id": "802",
+  "creator_id": "2512",
+  "updater_id": "2512",
+  "created_at": "2023-04-10 05:21:37.709095",
+  "updated_at": "2023-04-10 05:21:37.709095",
+  "employee_id": null
+}
 ```
 
 #### Crear categoría de agencia
@@ -249,6 +372,18 @@ curl -v \
   https://app.zauru.com/settings/agencies/agency_categories.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": [
+    "ya ha sido tomado"
+  ],
+  "entity": [
+    "es inválido"
+  ]
+}
+```
+
 #### Actualizar categoría de agencia
 ```bash
 curl -v \
@@ -266,6 +401,23 @@ curl -v \
   https://app.zauru.com/settings/agencies/agency_categories/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "agencies_count": "2",
+  "name": "Abastecimientos",
+  "notes": "Agencias disponibles en la selección de destinos para abastecimientos.",
+  "entity_id": "802",
+  "creator_id": "2512",
+  "updater_id": "2512",
+  "created_at": "2023-04-10 05:21:37.709095",
+  "updated_at": "2023-04-10 05:21:37.709095",
+  "employee_id": null
+}
+```
+
 #### Eliminar categoría de agencia
 ```bash
 curl -v \
@@ -276,6 +428,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/settings/agencies/agency_categories/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Exportar Agencias vía API
 

@@ -51,6 +51,11 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Obtener detalle de una webapp table
 ```bash
 curl -v \
@@ -59,6 +64,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/webapp_tables/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "153",
+  "zid": "2",
+  "entity_id": "1303",
+  "name": "Actualizaciones Ordenes de Trabajo",
+  "structure": "{\"image_s3_urls\": \"jsonb_urls\", \"observaciones\": \"string\", \"production_work_order_id\": \"int\"}",
+  "creator_id": "2512",
+  "updater_id": "2512",
+  "created_at": "2026-06-22 21:45:41.980008",
+  "updated_at": "2026-07-07 19:39:37.3826",
+  "hidden_in_show_columns": "[]",
+  "show_column_titles": "{}",
+  "load_in_rowable_show": false
+}
 ```
 
 ### Crear webapp table
@@ -79,6 +102,27 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "entity_id": 2,
+  "name": "Tipos de monedas",
+  "structure": {
+    "nombre": "string",
+    "estado": "boolean"
+  },
+  "creator_id": 3,
+  "updater_id": null,
+  "created_at": "2026-08-06T04:16:14.949Z",
+  "updated_at": "2026-08-06T04:16:14.949Z",
+  "hidden_in_show_columns": [],
+  "show_column_titles": {},
+  "load_in_rowable_show": false
+}
+```
+
 ### Actualizar webapp table
 ```bash
 curl -v \
@@ -95,6 +139,24 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "153",
+  "zid": "2",
+  "entity_id": "1303",
+  "name": "Actualizaciones Ordenes de Trabajo",
+  "structure": "{\"image_s3_urls\": \"jsonb_urls\", \"observaciones\": \"string\", \"production_work_order_id\": \"int\"}",
+  "creator_id": "2512",
+  "updater_id": "2512",
+  "created_at": "2026-06-22 21:45:41.980008",
+  "updated_at": "2026-07-07 19:39:37.3826",
+  "hidden_in_show_columns": "[]",
+  "show_column_titles": "{}",
+  "load_in_rowable_show": false
+}
+```
+
 ### Eliminar webapp table
 ```bash
 curl -v \
@@ -106,6 +168,8 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Nueva webapp table (prellenado)
 ```bash
 curl -v \
@@ -116,6 +180,36 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "webapp_table": {
+    "id": null,
+    "zid": null,
+    "entity_id": 1,
+    "name": null,
+    "structure": null,
+    "creator_id": null,
+    "updater_id": null,
+    "created_at": null,
+    "updated_at": null,
+    "hidden_in_show_columns": [],
+    "show_column_titles": {},
+    "load_in_rowable_show": false
+  },
+  "types": [
+    [
+      "Numero",
+      "int"
+    ],
+    [
+      "Texto",
+      "string"
+    ]
+  ]
+}
+```
+
 ### Editar webapp table
 ```bash
 curl -v \
@@ -124,6 +218,24 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/webapp_tables/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "153",
+  "zid": "2",
+  "entity_id": "1303",
+  "name": "Actualizaciones Ordenes de Trabajo",
+  "structure": "{\"image_s3_urls\": \"jsonb_urls\", \"observaciones\": \"string\", \"production_work_order_id\": \"int\"}",
+  "creator_id": "2512",
+  "updater_id": "2512",
+  "created_at": "2026-06-22 21:45:41.980008",
+  "updated_at": "2026-07-07 19:39:37.3826",
+  "hidden_in_show_columns": "[]",
+  "show_column_titles": "{}",
+  "load_in_rowable_show": false
+}
 ```
 
 ### Obtener filas asociables (rowables) de una webapp table
@@ -168,6 +280,21 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "15171",
+    "webapp_table_id": "6",
+    "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+    "creator_id": "2472",
+    "updater_id": null,
+    "created_at": "2023-10-04 23:47:39.990827",
+    "updated_at": "2023-10-04 23:47:39.990827"
+  }
+]
+```
+
 ### Obtener listado de filas con paginación
 ```bash
 curl -v \
@@ -178,6 +305,21 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json?page=1&per_page=25
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "15171",
+    "webapp_table_id": "6",
+    "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+    "creator_id": "2472",
+    "updater_id": null,
+    "created_at": "2023-10-04 23:47:39.990827",
+    "updated_at": "2023-10-04 23:47:39.990827"
+  }
+]
+```
+
 ### Obtener detalle de una fila
 ```bash
 curl -v \
@@ -186,6 +328,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15171",
+  "webapp_table_id": "6",
+  "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+  "creator_id": "2472",
+  "updater_id": null,
+  "created_at": "2023-10-04 23:47:39.990827",
+  "updated_at": "2023-10-04 23:47:39.990827"
+}
 ```
 
 ### Crear fila
@@ -207,6 +362,19 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15171",
+  "webapp_table_id": "6",
+  "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+  "creator_id": "2472",
+  "updater_id": null,
+  "created_at": "2023-10-04 23:47:39.990827",
+  "updated_at": "2023-10-04 23:47:39.990827"
+}
+```
+
 ### Actualizar fila
 ```bash
 curl -v \
@@ -226,6 +394,19 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15171",
+  "webapp_table_id": "6",
+  "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+  "creator_id": "2472",
+  "updater_id": null,
+  "created_at": "2023-10-04 23:47:39.990827",
+  "updated_at": "2023-10-04 23:47:39.990827"
+}
+```
+
 ### Eliminar fila
 ```bash
 curl -v \
@@ -237,6 +418,8 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Nueva fila (prellenado)
 ```bash
 curl -v \
@@ -247,6 +430,19 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15171",
+  "webapp_table_id": "6",
+  "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+  "creator_id": "2472",
+  "updater_id": null,
+  "created_at": "2023-10-04 23:47:39.990827",
+  "updated_at": "2023-10-04 23:47:39.990827"
+}
+```
+
 ### Editar fila
 ```bash
 curl -v \
@@ -255,6 +451,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "15171",
+  "webapp_table_id": "6",
+  "data": "{\"Otras_razones\": \"\", \"Razon_primaria\": \"Mancha Café\", \"Razon_terciaria\": \"\", \"Razon_secundaria\": \"\"}",
+  "creator_id": "2472",
+  "updater_id": null,
+  "created_at": "2023-10-04 23:47:39.990827",
+  "updated_at": "2023-10-04 23:47:39.990827"
+}
 ```
 
 ### Asociar una fila a un documento
@@ -271,6 +480,13 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/associate.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
+```
+
 ### Desasociar una fila de un documento
 ```bash
 curl -v \
@@ -281,6 +497,13 @@ curl -v \
   -X DELETE \
   -d '{"temp_invoice_id": "10"}' \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/dissociate.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```
 
 Para desasociar todas las relaciones de una fila, use `"all": true`:
@@ -294,4 +517,11 @@ curl -v \
   -X DELETE \
   -d '{"all": true}' \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/dissociate.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```

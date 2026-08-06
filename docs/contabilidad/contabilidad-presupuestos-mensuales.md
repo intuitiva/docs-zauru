@@ -154,6 +154,42 @@ curl -v \
   https://app.zauru.com/accounting/budgets.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "month": 7,
+    "year": 2013,
+    "income": false,
+    "amount": "14100.0",
+    "executed": "14132.03",
+    "entity_id": 2,
+    "updater_id": 2,
+    "created_at": "2013-07-02T17:53:32.368Z",
+    "updated_at": "2013-08-15T13:11:59.220Z",
+    "budget_details_count": 10,
+    "reference": "",
+    "extras": "0.0"
+  },
+  {
+    "id": 3,
+    "month": 6,
+    "year": 2013,
+    "income": false,
+    "amount": "13000.0",
+    "executed": "12725.967999999999",
+    "entity_id": 2,
+    "updater_id": 2,
+    "created_at": "2013-06-16T16:31:39.013Z",
+    "updated_at": "2013-06-16T16:31:39.013Z",
+    "budget_details_count": 10,
+    "reference": "",
+    "extras": "0.0"
+  }
+]
+```
+
 ### Obtener detalle de un presupuesto mensual
 ```bash
 curl -v \
@@ -162,6 +198,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "month": "9",
+  "year": "2012",
+  "income": false,
+  "amount": "10000.0",
+  "executed": "0.0",
+  "entity_id": "1",
+  "updater_id": "1",
+  "created_at": "2013-02-11 06:39:59.334144",
+  "updated_at": "2013-02-11 06:39:59.334144",
+  "budget_details_count": "7",
+  "reference": null,
+  "extras": "0.000000"
+}
 ```
 
 ### Ver el presupuesto mensual agrupado
@@ -174,6 +229,25 @@ curl -v \
   https://app.zauru.com/accounting/budgets/1/show_grouped.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "month": "9",
+  "year": "2012",
+  "income": false,
+  "amount": "10000.0",
+  "executed": "0.0",
+  "entity_id": "1",
+  "updater_id": "1",
+  "created_at": "2013-02-11 06:39:59.334144",
+  "updated_at": "2013-02-11 06:39:59.334144",
+  "budget_details_count": "7",
+  "reference": null,
+  "extras": "0.000000"
+}
+```
+
 ### Ver los gastos no presupuestados (otros)
 ```bash
 curl -v \
@@ -182,6 +256,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/1/show_others.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "month": "9",
+  "year": "2012",
+  "income": false,
+  "amount": "10000.0",
+  "executed": "0.0",
+  "entity_id": "1",
+  "updater_id": "1",
+  "created_at": "2013-02-11 06:39:59.334144",
+  "updated_at": "2013-02-11 06:39:59.334144",
+  "budget_details_count": "7",
+  "reference": null,
+  "extras": "0.000000"
+}
 ```
 
 ### Obtener el formulario de nuevo presupuesto mensual
@@ -194,6 +287,25 @@ curl -v \
   https://app.zauru.com/accounting/budgets/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "month": 8,
+  "year": 2026,
+  "income": false,
+  "amount": "0.0",
+  "executed": "0.0",
+  "entity_id": 1,
+  "updater_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "budget_details_count": 0,
+  "reference": "",
+  "extras": "0.0"
+}
+```
+
 ### Obtener el formulario de edicion de un presupuesto mensual
 ```bash
 curl -v \
@@ -202,6 +314,25 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "month": "9",
+  "year": "2012",
+  "income": false,
+  "amount": "10000.0",
+  "executed": "0.0",
+  "entity_id": "1",
+  "updater_id": "1",
+  "created_at": "2013-02-11 06:39:59.334144",
+  "updated_at": "2013-02-11 06:39:59.334144",
+  "budget_details_count": "7",
+  "reference": null,
+  "extras": "0.000000"
+}
 ```
 
 ### Crear un presupuesto mensual
@@ -230,6 +361,15 @@ curl -v \
   https://app.zauru.com/accounting/budgets.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "month": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Actualizar un presupuesto mensual
 ```bash
 curl -v \
@@ -247,6 +387,25 @@ curl -v \
   https://app.zauru.com/accounting/budgets/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "month": "9",
+  "year": "2012",
+  "income": false,
+  "amount": "10000.0",
+  "executed": "0.0",
+  "entity_id": "1",
+  "updater_id": "1",
+  "created_at": "2013-02-11 06:39:59.334144",
+  "updated_at": "2013-02-11 06:39:59.334144",
+  "budget_details_count": "7",
+  "reference": null,
+  "extras": "0.000000"
+}
+```
+
 ### Borrar un presupuesto mensual
 ```bash
 curl -v \
@@ -257,6 +416,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/budgets/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ## API de presupuestos por etiqueta (llamadas desde sistemas externos)
 
@@ -270,6 +431,24 @@ curl -v \
   https://app.zauru.com/accounting/budgets/tagged_budgets.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "14",
+    "entity_id": "124",
+    "updater_id": "143",
+    "tag_id": "176",
+    "income": true,
+    "amount": "301400.00",
+    "executed": "309958.36",
+    "budget_details_count": "1",
+    "created_at": "2015-05-27 21:57:01.356368",
+    "updated_at": "2015-05-27 21:57:01.356368"
+  }
+]
+```
+
 ### Obtener detalle de un presupuesto por etiqueta
 ```bash
 curl -v \
@@ -278,6 +457,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
 ```
 
 ### Ver el presupuesto por etiqueta agrupado
@@ -290,6 +485,22 @@ curl -v \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1/show_grouped.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
+```
+
 ### Ver los gastos no presupuestados por etiqueta (otros)
 ```bash
 curl -v \
@@ -298,6 +509,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1/show_others.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
 ```
 
 ### Obtener el formulario de nuevo presupuesto por etiqueta
@@ -310,6 +537,22 @@ curl -v \
   https://app.zauru.com/accounting/budgets/tagged_budgets/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
+```
+
 ### Obtener el formulario de edicion de un presupuesto por etiqueta
 ```bash
 curl -v \
@@ -318,6 +561,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
 ```
 
 ### Crear un presupuesto por etiqueta
@@ -344,6 +603,22 @@ curl -v \
   https://app.zauru.com/accounting/budgets/tagged_budgets.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
+```
+
 ### Actualizar un presupuesto por etiqueta
 ```bash
 curl -v \
@@ -360,6 +635,22 @@ curl -v \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "14",
+  "entity_id": "124",
+  "updater_id": "143",
+  "tag_id": "176",
+  "income": true,
+  "amount": "301400.00",
+  "executed": "309958.36",
+  "budget_details_count": "1",
+  "created_at": "2015-05-27 21:57:01.356368",
+  "updated_at": "2015-05-27 21:57:01.356368"
+}
+```
+
 ### Borrar un presupuesto por etiqueta
 ```bash
 curl -v \
@@ -370,6 +661,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ## API de presupuestos por categoria de etiqueta (llamadas desde sistemas externos)
 

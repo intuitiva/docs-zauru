@@ -99,6 +99,42 @@ curl -v \
   https://app.zauru.com/sales/sales_consolidates.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 3,
+    "reference": "",
+    "entity_id": 2,
+    "order_id": 3,
+    "creator_id": 4,
+    "invoices_id": [
+      "5444472",
+      "5448142"
+    ],
+    "created_at": "2022-08-02T17:06:54.957Z",
+    "updated_at": "2022-08-02T17:06:54.957Z",
+    "item_id": null
+  },
+  {
+    "id": 5,
+    "zid": 6,
+    "reference": "",
+    "entity_id": 2,
+    "order_id": 7,
+    "creator_id": 4,
+    "invoices_id": [
+      "5444486",
+      "5448258"
+    ],
+    "created_at": "2022-08-02T17:19:27.930Z",
+    "updated_at": "2022-08-02T17:19:27.930Z",
+    "item_id": null
+  }
+]
+```
+
 ### Ver detalle de una consolidacion
 ```bash
 curl -v \
@@ -109,6 +145,22 @@ curl -v \
   https://app.zauru.com/sales/sales_consolidates/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "3122",
+  "zid": "1",
+  "reference": null,
+  "entity_id": "1303",
+  "order_id": "16042551",
+  "creator_id": "1",
+  "invoices_id": "{16009780,16009785,16038350}",
+  "created_at": "2026-05-26 15:04:06.577763",
+  "updated_at": "2026-05-26 15:04:06.577763",
+  "item_id": null
+}
+```
+
 ### Obtener plantilla para crear una consolidacion
 ```bash
 curl -v \
@@ -117,6 +169,22 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/sales_consolidates/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "reference": null,
+  "entity_id": 1,
+  "order_id": null,
+  "creator_id": null,
+  "invoices_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "item_id": null
+}
 ```
 
 ### Crear una consolidacion de ordenes
@@ -137,6 +205,13 @@ curl -v \
   https://app.zauru.com/sales/sales_consolidates.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": null
+}
+```
+
 ### Desconsolidar ordenes
 ```bash
 curl -v \
@@ -147,3 +222,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/sales_consolidates/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

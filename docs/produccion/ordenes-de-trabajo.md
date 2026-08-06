@@ -150,6 +150,13 @@ curl -v \
   https://app.zauru.com/production/open_work_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener datos para una nueva orden de trabajo
 ```bash
 curl -v \
@@ -159,6 +166,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/open_work_orders/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Crear una orden de trabajo
@@ -188,6 +200,37 @@ curl -v \
   https://app.zauru.com/production/open_work_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 3,
+  "id_number": "OT-001",
+  "agency_id": 2,
+  "reference": "Consumo interno de materiales",
+  "order_date": "2024-07-01",
+  "needs_delivery": false,
+  "closed": false,
+  "closed_at": null,
+  "closer_id": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "assigned_invoice_id": null,
+  "assigned_agency_id": null,
+  "assigned_lot_id": null,
+  "assigned_serial_id": null,
+  "entity_id": 3,
+  "creator_id": 4,
+  "updater_id": 4,
+  "responsible_id": 2,
+  "created_at": "2026-08-06T04:17:35.337Z",
+  "updated_at": "2026-08-06T04:17:35.337Z",
+  "tag_id": null,
+  "memo": null
+}
+```
+
 ### Ver una orden de trabajo
 
 Devuelve la orden de trabajo abierta con todos sus datos.
@@ -200,6 +243,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/open_work_orders/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Actualizar una orden de trabajo abierta
@@ -222,6 +270,11 @@ curl -v \
     }
   }' \
   https://app.zauru.com/production/open_work_orders/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Cerrar una orden de trabajo
@@ -248,6 +301,11 @@ curl -v \
   https://app.zauru.com/production/open_work_orders/1/update_close.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Anular una orden de trabajo abierta
 
 ```bash
@@ -259,6 +317,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/production/open_work_orders/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Obtener listado de ordenes de trabajo abiertas en formato DataTables
 
@@ -280,6 +340,41 @@ curl -v \
   https://app.zauru.com/production/open_work_orders/datatables.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 3,
+  "recordsFiltered": 3,
+  "data": [
+    {
+      "zid": "<a href=\"/production/open_work_orders/428\">3</a>",
+      "num": "OT-001",
+      "odt": "01 de jul de 2024",
+      "ag": "15 CALLE",
+      "asg": "",
+      "rsp": "Empleado Vendedor Senior",
+      "tg": "",
+      "lns": 1,
+      "act": "<a title=\"Detalles\" href=\"/production/open_work_orders/428\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/production/open_work_orders/428/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Cerrar\" href=\"/production/open_work_orders/428/close\"><i class=\"fa fa-check\"></i></a><a title=\"Anular\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/production/open_work_orders/428?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "DT_RowId": "production-open-work-order-428"
+    },
+    {
+      "zid": "<a href=\"/production/open_work_orders/427\">2</a>",
+      "num": "OT-001",
+      "odt": "01 de jul de 2024",
+      "ag": "15 CALLE",
+      "asg": "",
+      "rsp": "Empleado Vendedor Senior",
+      "tg": "",
+      "lns": 1,
+      "act": "<a title=\"Detalles\" href=\"/production/open_work_orders/427\"><i class=\"fa fa-eye\"></i></a><a title=\"Editar\" href=\"/production/open_work_orders/427/edit\"><i class=\"fa fa-edit\"></i></a><a title=\"Cerrar\" href=\"/production/open_work_orders/427/close\"><i class=\"fa fa-check\"></i></a><a title=\"Anular\" data-confirm=\"¿Está seguro de destruirlo?\" rel=\"nofollow\" data-method=\"delete\" href=\"/production/open_work_orders/427?destroy=true\"><i class=\"fa fa-trash-o\"></i></a>",
+      "DT_RowId": "production-open-work-order-427"
+    }
+  ]
+}
+```
+
 ### Obtener listado de ordenes de trabajo anuladas en formato DataTables
 
 ```bash
@@ -296,4 +391,14 @@ curl -v \
     "order": { "0": { "column": 0, "dir": "desc" } }
   }' \
   https://app.zauru.com/production/open_work_orders/datatables_voided.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 0,
+  "recordsFiltered": 0,
+  "data": []
+}
 ```

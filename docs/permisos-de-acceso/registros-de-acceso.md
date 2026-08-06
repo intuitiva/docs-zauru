@@ -37,6 +37,13 @@ curl -v \
   https://app.zauru.com/access_control/access_logs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Obtener detalle de un registro de acceso
 ```bash
 curl -v \
@@ -45,4 +52,9 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/access_logs/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

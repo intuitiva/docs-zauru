@@ -82,3 +82,13 @@ curl -v \
   }' \
   https://app.zauru.com/pos/receptions/datatables.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 0,
+  "recordsFiltered": 0,
+  "data": []
+}
+```

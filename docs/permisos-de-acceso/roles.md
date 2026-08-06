@@ -42,6 +42,23 @@ curl -v \
   https://app.zauru.com/access_control/roles.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "2576",
+    "name": "admin",
+    "description": null,
+    "entity_id": "1303",
+    "created_at": "2026-02-06 18:09:56.966671",
+    "updated_at": "2026-02-06 18:09:56.966671",
+    "crm_user": false,
+    "crm_admin": false,
+    "crm_supervisor": false
+  }
+]
+```
+
 ### Obtener detalle de un rol
 ```bash
 curl -v \
@@ -50,6 +67,21 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/roles/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2576",
+  "name": "admin",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-02-06 18:09:56.966671",
+  "updated_at": "2026-02-06 18:09:56.966671",
+  "crm_user": false,
+  "crm_admin": false,
+  "crm_supervisor": false
+}
 ```
 
 ### Crear rol
@@ -69,6 +101,21 @@ curl -v \
   https://app.zauru.com/access_control/roles.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2576",
+  "name": "admin",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-02-06 18:09:56.966671",
+  "updated_at": "2026-02-06 18:09:56.966671",
+  "crm_user": false,
+  "crm_admin": false,
+  "crm_supervisor": false
+}
+```
+
 ### Actualizar rol
 ```bash
 curl -v \
@@ -86,6 +133,21 @@ curl -v \
   https://app.zauru.com/access_control/roles/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2576",
+  "name": "admin",
+  "description": null,
+  "entity_id": "1303",
+  "created_at": "2026-02-06 18:09:56.966671",
+  "updated_at": "2026-02-06 18:09:56.966671",
+  "crm_user": false,
+  "crm_admin": false,
+  "crm_supervisor": false
+}
+```
+
 ### Eliminar rol
 ```bash
 curl -v \
@@ -96,3 +158,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/access_control/roles/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

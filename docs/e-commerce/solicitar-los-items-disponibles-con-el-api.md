@@ -123,76 +123,68 @@ Como ejemplo, la respuesta del servidor sería similar a esta:
 
 ```json
 {
-  "":
-    {
-      "14832531":
-        {
-          "name":"CAMISA X",
-          "code":"XUWOX",
-          "ean13":"1234567890123",
-          "description":"Camisa con diagonales verdes sobre fondo blanco",
-          "price":"129.0",
-          "price_note":"99.0",
-          "stock":3,
-          "photo": { "url": "https://..." },
-          "photo2": "",
-          "photo3": "",
-          "photo4": "",
-          "photo5": "",
-          "pdf": {"pdf":{"url": null}},
-          "months_warranty":0.5,
-          "measurement_unit":"UNIDAD",
-          "weight":8,
-          "vendor":"",
-          "tags": ["etiqueta1", "etiqueta2"]
+  "": {
+    "14832531": {
+      "name": "CAMISA X",
+      "code": "XUWOX",
+      "ean13": "1234567890123",
+      "description": "Camisa con diagonales verdes sobre fondo blanco",
+      "price": "129.0",
+      "price_note": "99.0",
+      "stock": 3,
+      "photo": {
+        "url": "https://..."
+      },
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "pdf": {
+        "pdf": {
+          "url": null
         }
-    },
-  "CATEGORIA1":
-    {
-      "18564662":
-        {
-          "name":"PANTALON Y",
-          "code":"YXSOW",
-          "ean13":"9876543210987",
-          "description":"Pantalón de Lona blanca con detalles grices",
-          "price":"225.0",
-          "stock":10,
-          "photo": { "url": "https://..." },
-          "photo2": { "url": "https://..." },
-          "photo3": { "url": "https://..." },
-          "photo4": "",
-          "photo5": "",
-          "pdf": {"pdf":{"url": null}},
-          "months_warranty":1,
-          "measurement_unit":"UNIDAD",
-          "weight":17,
-          "vendor":"proveedor1",
-          "tags": []
-        }
-    },
-  "CATEGORIA2 ** Nota de categoria":
-    {
-      "b-4821":
-        {
-          "name":"OFERTA1",
-          "code":"YXSOW",
-          "ean13":"",
-          "description":"Pantalón de Lona blanca con detalles grices y camisa con diagonales verdes sobre fondo blanco",
-          "price":"300.0",
-          "stock":3,
-          "photo": { "url": "https://..." },
-          "photo2": "",
-          "photo3": "",
-          "photo4": "",
-          "photo5": "",
-          "pdf": {"pdf":{"url": null}},
-          "months_warranty":0.5,
-          "measurement_unit":"paquete",
-          "weight":25,
-          "vendor":"proveedor1",
-          "tags": ["etiqueta1"]
-        }
+      },
+      "months_warranty": 0.5,
+      "measurement_unit": "UNIDAD",
+      "weight": 8,
+      "vendor": "",
+      "tags": [
+        "etiqueta1",
+        "etiqueta2"
+      ]
     }
+  },
+  "CATEGORIA1": {
+    "18564662": {
+      "name": "PANTALON Y",
+      "code": "YXSOW",
+      "ean13": "9876543210987",
+      "description": "Pantalón de Lona blanca con detalles grices",
+      "price": "225.0",
+      "stock": 10,
+      "photo": {
+        "url": "https://..."
+      },
+      "photo2": {
+        "url": "https://..."
+      },
+      "photo3": {
+        "url": "https://..."
+      },
+      "photo4": "",
+      "photo5": "",
+      "pdf": {
+        "pdf": {
+          "url": null
+        }
+      },
+      "months_warranty": 1,
+      "measurement_unit": "UNIDAD",
+      "weight": 17,
+      "vendor": "proveedor1",
+      "tags": []
+    }
+  }
 }
 ```
 

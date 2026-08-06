@@ -36,6 +36,32 @@ curl -v \
   https://app.zauru.com/access_control/invitations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "token": "4af16c34cff21f8c4fab884e157093043c618beb",
+    "recipient_email": "usuario@ejemplo.com",
+    "creator_id": 1,
+    "entity_id": 2,
+    "sent_at": null,
+    "created_at": "2013-01-08T16:54:52.446Z",
+    "updated_at": "2013-01-08T16:54:52.446Z"
+  },
+  {
+    "id": 3,
+    "token": "523fa4ec286d457d4cb0306ee478dd5f1b0fb221",
+    "recipient_email": "invitado@ejemplo.com",
+    "creator_id": 2,
+    "entity_id": 2,
+    "sent_at": null,
+    "created_at": "2013-02-27T19:50:35.228Z",
+    "updated_at": "2013-02-27T19:50:35.228Z"
+  }
+]
+```
+
 ### Obtener detalle de una invitación
 ```bash
 curl -v \
@@ -44,6 +70,20 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/access_control/invitations/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "token": "4af16c34cff21f8c4fab884e157093043c618beb",
+  "recipient_email": "usuario@ejemplo.com",
+  "creator_id": 1,
+  "entity_id": 2,
+  "sent_at": null,
+  "created_at": "2013-01-08T16:54:52.446Z",
+  "updated_at": "2013-01-08T16:54:52.446Z"
+}
 ```
 
 ### Crear invitación
@@ -62,6 +102,15 @@ curl -v \
   https://app.zauru.com/access_control/invitations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "recipient_email": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Eliminar invitación
 ```bash
 curl -v \
@@ -72,3 +121,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/access_control/invitations/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

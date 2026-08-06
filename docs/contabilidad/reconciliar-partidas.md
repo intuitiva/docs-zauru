@@ -67,6 +67,19 @@ curl -v \
   https://app.zauru.com/accounting/accounts/reconciliations/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8",
+  "zid": "1",
+  "account_id": "15",
+  "entity_id": "2",
+  "updater_id": "2",
+  "created_at": "2013-03-28 14:35:29.383035",
+  "updated_at": "2013-03-28 14:35:29.383035"
+}
+```
+
 ### Obtener el formulario de nueva reconciliacion
 ```bash
 curl -v \
@@ -75,6 +88,19 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/accounting/accounts/reconciliations/new.json?a=1&e=2"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8",
+  "zid": "1",
+  "account_id": "15",
+  "entity_id": "2",
+  "updater_id": "2",
+  "created_at": "2013-03-28 14:35:29.383035",
+  "updated_at": "2013-03-28 14:35:29.383035"
+}
 ```
 
 ### Crear una reconciliacion
@@ -98,6 +124,19 @@ curl -v \
   https://app.zauru.com/accounting/accounts/reconciliations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "8",
+  "zid": "1",
+  "account_id": "15",
+  "entity_id": "2",
+  "updater_id": "2",
+  "created_at": "2013-03-28 14:35:29.383035",
+  "updated_at": "2013-03-28 14:35:29.383035"
+}
+```
+
 ### Borrar una reconciliacion
 ```bash
 curl -v \
@@ -108,3 +147,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/accounting/accounts/reconciliations/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

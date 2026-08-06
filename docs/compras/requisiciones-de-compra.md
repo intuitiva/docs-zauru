@@ -129,6 +129,33 @@ curl -v \
   https://app.zauru.com/purchases/purchase_requisitions/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "id_number": null,
+  "reference": null,
+  "approved": false,
+  "approved_at": null,
+  "approver_id": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "entity_id": 1,
+  "purchase_requisition_details_count": 0,
+  "purchase_requisition_account_details_count": 0,
+  "expected_at": "2026-08-05",
+  "requestor_id": 2,
+  "creator_id": 3,
+  "updater_id": 3,
+  "created_at": null,
+  "updated_at": null,
+  "transfer_request_id": null,
+  "agency_id": 4
+}
+```
+
 ### Crear una nueva requisicion de compra de items
 ```bash
 curl -v \
@@ -160,6 +187,15 @@ curl -v \
   https://app.zauru.com/purchases/purchase_requisitions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "agency_id": [
+    "es inválido"
+  ]
+}
+```
+
 ### Crear una nueva requisicion de compra de cuentas
 ```bash
 curl -v \
@@ -186,6 +222,15 @@ curl -v \
   https://app.zauru.com/purchases/purchase_requisitions.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "agency_id": [
+    "es inválido"
+  ]
+}
+```
+
 ### Aprobar una requisicion de compra
 ```bash
 curl -v \
@@ -203,6 +248,11 @@ curl -v \
   https://app.zauru.com/purchases/purchase_requisitions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Anular una requisicion de compra
 ```bash
 curl -v \
@@ -213,6 +263,8 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/purchases/purchase_requisitions/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ### Listar requisiciones de compra
 Puede filtrar por alcance con el parámetro `scope` (`pending`, `approved` o `all`) y por agencia con el parámetro `agency`.
@@ -226,6 +278,11 @@ curl -v \
   "https://app.zauru.com/purchases/purchase_requisitions.json?scope=pending"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Listar requisiciones anuladas
 ```bash
 curl -v \
@@ -235,6 +292,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/purchase_requisitions/voided.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[]
 ```
 
 ### Ver detalles de una requisicion de compra
@@ -249,6 +311,11 @@ curl -v \
   https://app.zauru.com/purchases/purchase_requisitions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener datos para editar una requisicion de compra
 ```bash
 curl -v \
@@ -258,6 +325,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/purchase_requisitions/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Obtener el formulario de aprobación en lote
@@ -273,6 +345,11 @@ curl -v \
     "purchase_requisition_ids": ["1", "2"]
   }' \
   https://app.zauru.com/purchases/purchase_requisitions/bulk_approve_form.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Aprobar requisiciones de compra en lote
@@ -318,4 +395,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   "https://app.zauru.com/purchases/purchase_requisitions/1/approval_result.json?other_ids=2-3"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": "ok"
+}
 ```

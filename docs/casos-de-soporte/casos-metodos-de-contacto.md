@@ -56,6 +56,20 @@ curl -v \
   https://app.zauru.com/support/contact_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": "1",
+    "name": "phone income",
+    "description": "llamadas entrantes",
+    "entity_id": "1",
+    "created_at": "2013-02-11 06:40:08.778433",
+    "updated_at": "2013-02-11 06:40:08.778433"
+  }
+]
+```
+
 ### obtener formulario de nuevo metodo de contacto
 
 ```bash
@@ -65,6 +79,18 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/support/contact_methods/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "phone income",
+  "description": "llamadas entrantes",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:08.778433",
+  "updated_at": "2013-02-11 06:40:08.778433"
+}
 ```
 
 Retorna un objeto vacio de metodo de contacto que puede usar como base para crear uno nuevo.
@@ -87,6 +113,18 @@ curl -v \
   https://app.zauru.com/support/contact_methods.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "phone income",
+  "description": "llamadas entrantes",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:08.778433",
+  "updated_at": "2013-02-11 06:40:08.778433"
+}
+```
+
 ### ver detalle de un metodo de contacto
 
 ```bash
@@ -98,6 +136,18 @@ curl -v \
   https://app.zauru.com/support/contact_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "phone income",
+  "description": "llamadas entrantes",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:08.778433",
+  "updated_at": "2013-02-11 06:40:08.778433"
+}
+```
+
 ### obtener formulario de edicion de un metodo de contacto
 
 ```bash
@@ -107,6 +157,18 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/support/contact_methods/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "phone income",
+  "description": "llamadas entrantes",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:08.778433",
+  "updated_at": "2013-02-11 06:40:08.778433"
+}
 ```
 
 Retorna el metodo de contacto con sus datos actuales, que puede usar como base para editarlo.
@@ -129,6 +191,18 @@ curl -v \
   https://app.zauru.com/support/contact_methods/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "name": "phone income",
+  "description": "llamadas entrantes",
+  "entity_id": "1",
+  "created_at": "2013-02-11 06:40:08.778433",
+  "updated_at": "2013-02-11 06:40:08.778433"
+}
+```
+
 ### eliminar metodo de contacto
 
 ```bash
@@ -140,3 +214,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/support/contact_methods/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

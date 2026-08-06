@@ -125,6 +125,13 @@ curl -v \
   https://app.zauru.com/production/running_production_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Pausar una orden en ejecucion
 
 Detiene temporalmente la acumulacion de tiempo de ejecucion de la orden. Se pueden enviar notas opcionales con el motivo de la pausa.

@@ -83,6 +83,11 @@ curl -v \
   https://app.zauru.com/ecommerce/ecommerce_requests.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Listar solicitudes filtradas por estado
 
 ```bash
@@ -111,6 +116,11 @@ curl -v \
   "https://app.zauru.com/ecommerce/ecommerce_requests.json?scope=all"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[]
+```
+
 ### Ver solicitudes anuladas
 
 ```bash
@@ -122,6 +132,52 @@ curl -v \
   https://app.zauru.com/ecommerce/ecommerce_requests/voided.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "entity_id": 3,
+    "user_id": 4,
+    "raw_params": "",
+    "completed": false,
+    "raw_errors": null,
+    "completed_at": null,
+    "invoices_count": 0,
+    "shipments_count": 0,
+    "created_at": "2023-11-08T23:06:11.778Z",
+    "updated_at": "2023-11-10T20:19:28.571Z",
+    "original_request": "{\"z_email\":\"api@ejemplo.com\",\"z_token\":\"TOKEN_EJEMPLO_123\",\"originalRequest\":{\"id\":8,\"parent_id\":0,\"status\":\"on-hold\",\"currency\":\"GTQ\",\"version\":\"7.9.0\",\"prices_include_tax\":false,\"date_created\":\"2023-11-08T17:04:54\",\"date_modified\":\"2023-11-08T17:04:55\",\"discount_total\":\"0.00\",\"discount_tax\":\"0.00\",\"shipping_total\":\"15.00\",\"shipping_tax\":\"0.00\",\"cart_tax\":\"0.00\",\"total\":\"115.00\",\"total_tax\":\"0.00\",\"customer_id\":2,\"order_key\":\"wc_order_EJEMPLO001\",\"billing\":{\"first_name\":\"Juan\",\"last_name\":\"Perez\",\"company\":\"\",\"address_1\":\"Calle Ficticia 10\",\"address_2\":\"\",\"city\":\"Guatemala\",\"state\":\"GT-GU\",\"postcode\":\"01001\",\"country\":\"GT\",\"email\":\"cliente@ejemplo.com\",\"phone\":\"5555-0003\"},\"shipping\":{\"first_name\":\"Juan\",\"last_name\":\"Perez\",\"company\":\"\",\"address_1\":\"Calle Ficticia 10\",\"address_2\":\"\",\"city\":\"Guatemala\",\"state\":\"GT-GU\",\"postcode\":\"01001\",\"country\":\"GT\",\"phone\":\"\"},\"payment_method\":\"bacs\",\"payment_method_title\":\"Transferencia bancaria directa\",\"transaction_id\":\"\",\"customer_ip_address\":\"192.168.1.1\",\"customer_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15\",\"created_via\":\"checkout\",\"customer_note\":\"\",\"date_completed\":null,\"date_paid\":null,\"cart_hash\":\"c884c8ccbc4b51b10f3ed0978ffad092\",\"number\":\"1\",\"meta_data\":[{\"id\":10,\"key\":\"_billing_nit\",\"value\":\"\"},{\"id\":11,\"key\":\"_billing_cui\",\"value\":\"1234567890101\"},{\"id\":12,\"key\":\"is_vat_exempt\",\"value\":\"no\"}],\"line_items\":[{\"id\":13,\"name\":\"De 101 a 250 DTE's mensuales COFIDI\",\"product_id\":23,\"variation_id\":0,\"quantity\":1,\"tax_class\":\"\",\"subtotal\":\"100.00\",\"subtotal_tax\":\"0.00\",\"total\":\"100.00\",\"total_tax\":\"0.00\",\"taxes\":[],\"meta_data\":[],\"sku\":\"Cofidi-1\",\"price\":100,\"image\":{\"id\":\"3\",\"src\":\"https://plain1.zauru.shop/wp-content/uploads/2023/06/item301851_gegi1uzknszohy7m4epm-1.png\"},\"parent_name\":null}],\"tax_lines\":[],\"shipping_lines\":[{\"id\":14,\"method_title\":\"Flat rate\",\"method_id\":\"flat_rate\",\"instance_id\":\"1\",\"total\":\"15.00\",\"total_tax\":\"0.00\",\"taxes\":[],\"meta_data\":[{\"id\":15,\"key\":\"Artículos\",\"value\":\"De 101 a 250 DTE's mensuales COFIDI &times; 1\",\"display_key\":\"Artículos\",\"display_value\":\"De 101 a 250 DTE's mensuales COFIDI &times; 1\"}]}],\"fee_lines\":[],\"coupon_lines\":[],\"refunds\":[],\"payment_url\":\"https://plain1.zauru.shop/checkout/order-pay/1/?pay_for_order=true&key=wc_order_EJEMPLO001\",\"is_editable\":true,\"needs_payment\":false,\"needs_processing\":true,\"date_created_gmt\":\"2023-11-08T23:04:54\",\"date_modified_gmt\":\"2023-11-08T23:04:55\",\"date_completed_gmt\":null,\"date_paid_gmt\":null,\"currency_symbol\":\"Q\",\"_links\":{\"self\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/orders/8\"}],\"collection\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/orders\"}],\"customer\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/customers/2\"}]}}}",
+    "error_message": "\"The state should be processing only, found: on-hold\"",
+    "voided": true,
+    "voided_at": "2023-11-10T20:19:28.569Z",
+    "voider_id": 5,
+    "original_request_id": null
+  },
+  {
+    "id": 6,
+    "zid": 7,
+    "entity_id": 3,
+    "user_id": 4,
+    "raw_params": "",
+    "completed": false,
+    "raw_errors": null,
+    "completed_at": null,
+    "invoices_count": 0,
+    "shipments_count": 0,
+    "created_at": "2023-11-08T22:59:12.053Z",
+    "updated_at": "2023-11-10T20:26:05.864Z",
+    "original_request": "{\"z_email\":\"api@ejemplo.com\",\"z_token\":\"TOKEN_EJEMPLO_123\",\"originalRequest\":{\"id\":9,\"parent_id\":0,\"status\":\"on-hold\",\"currency\":\"GTQ\",\"version\":\"7.9.0\",\"prices_include_tax\":false,\"date_created\":\"2023-11-08T16:55:36\",\"date_modified\":\"2023-11-08T16:55:37\",\"discount_total\":\"0.00\",\"discount_tax\":\"0.00\",\"shipping_total\":\"15.00\",\"shipping_tax\":\"0.00\",\"cart_tax\":\"0.00\",\"total\":\"115.00\",\"total_tax\":\"0.00\",\"customer_id\":2,\"order_key\":\"wc_order_EJEMPLO002\",\"billing\":{\"first_name\":\"Juan\",\"last_name\":\"Perez\",\"company\":\"\",\"address_1\":\"Calle Ficticia 10\",\"address_2\":\"\",\"city\":\"Guatemala\",\"state\":\"GT-GU\",\"postcode\":\"01001\",\"country\":\"GT\",\"email\":\"cliente@ejemplo.com\",\"phone\":\"5555-0003\"},\"shipping\":{\"first_name\":\"Juan\",\"last_name\":\"Perez\",\"company\":\"\",\"address_1\":\"Calle Ficticia 10\",\"address_2\":\"\",\"city\":\"Guatemala\",\"state\":\"GT-GU\",\"postcode\":\"01001\",\"country\":\"GT\",\"phone\":\"\"},\"payment_method\":\"bacs\",\"payment_method_title\":\"Transferencia bancaria directa\",\"transaction_id\":\"\",\"customer_ip_address\":\"192.168.1.1\",\"customer_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15\",\"created_via\":\"checkout\",\"customer_note\":\"\",\"date_completed\":null,\"date_paid\":null,\"cart_hash\":\"c884c8ccbc4b51b10f3ed0978ffad092\",\"number\":\"2\",\"meta_data\":[{\"id\":16,\"key\":\"_billing_nit\",\"value\":\"\"},{\"id\":17,\"key\":\"_billing_cui\",\"value\":\"1234567890101\"},{\"id\":18,\"key\":\"is_vat_exempt\",\"value\":\"no\"}],\"line_items\":[{\"id\":19,\"name\":\"De 101 a 250 DTE's mensuales COFIDI\",\"product_id\":23,\"variation_id\":0,\"quantity\":1,\"tax_class\":\"\",\"subtotal\":\"100.00\",\"subtotal_tax\":\"0.00\",\"total\":\"100.00\",\"total_tax\":\"0.00\",\"taxes\":[],\"meta_data\":[],\"sku\":\"Cofidi-1\",\"price\":100,\"image\":{\"id\":\"3\",\"src\":\"https://plain1.zauru.shop/wp-content/uploads/2023/06/item301851_gegi1uzknszohy7m4epm-1.png\"},\"parent_name\":null}],\"tax_lines\":[],\"shipping_lines\":[{\"id\":20,\"method_title\":\"Flat rate\",\"method_id\":\"flat_rate\",\"instance_id\":\"1\",\"total\":\"15.00\",\"total_tax\":\"0.00\",\"taxes\":[],\"meta_data\":[{\"id\":21,\"key\":\"Artículos\",\"value\":\"De 101 a 250 DTE's mensuales COFIDI &times; 1\",\"display_key\":\"Artículos\",\"display_value\":\"De 101 a 250 DTE's mensuales COFIDI &times; 1\"}]}],\"fee_lines\":[],\"coupon_lines\":[],\"refunds\":[],\"payment_url\":\"https://plain1.zauru.shop/checkout/order-pay/2/?pay_for_order=true&key=wc_order_EJEMPLO002\",\"is_editable\":true,\"needs_payment\":false,\"needs_processing\":true,\"date_created_gmt\":\"2023-11-08T22:55:36\",\"date_modified_gmt\":\"2023-11-08T22:55:37\",\"date_completed_gmt\":null,\"date_paid_gmt\":null,\"currency_symbol\":\"Q\",\"_links\":{\"self\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/orders/9\"}],\"collection\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/orders\"}],\"customer\":[{\"href\":\"https://plain1.zauru.shop/wp-json/wc/v3/customers/2\"}]}}}",
+    "error_message": "\"The state should be processing only, found: on-hold\"",
+    "voided": true,
+    "voided_at": "2023-11-10T20:26:05.861Z",
+    "voider_id": 5,
+    "original_request_id": null
+  }
+]
+```
+
 ### Ver detalle de una solicitud
 
 ```bash
@@ -131,6 +187,30 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
 ```
 
 ### Procesar una solicitud manualmente
@@ -156,6 +236,8 @@ curl -v \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
   ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Nueva solicitud (prellenado)
 
 ```bash
@@ -167,6 +249,30 @@ curl -v \
   https://app.zauru.com/ecommerce/ecommerce_requests/new.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "entity_id": 1,
+  "user_id": null,
+  "raw_params": null,
+  "completed": false,
+  "raw_errors": null,
+  "completed_at": null,
+  "invoices_count": 0,
+  "shipments_count": 0,
+  "created_at": null,
+  "updated_at": null,
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
+```
+
 ### Editar solicitud
 
 ```bash
@@ -177,6 +283,30 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312/edit.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
+```
 
 ### Crear solicitud
 
@@ -197,6 +327,30 @@ curl -v \
   https://app.zauru.com/ecommerce/ecommerce_requests.json
   ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
+```
+
 ### Actualizar solicitud
 
 ```bash
@@ -213,3 +367,27 @@ curl -v \
   }' \
   https://app.zauru.com/ecommerce/ecommerce_requests/44312.json
   ```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "827",
+  "zid": "36",
+  "entity_id": "670",
+  "user_id": "1514",
+  "raw_params": "\"{\\\"client\\\":{\\\"name\\\":\\\"Las Antorchas SA \\\",\\\"tin\\\":\\\"1251433-0\\\",\\\"address_line_1\\\":\\\"3ra Avenida Sur N 1 Antigua Anti...",
+  "completed": true,
+  "raw_errors": null,
+  "completed_at": "2020-11-20 20:47:36.544391",
+  "invoices_count": "1",
+  "shipments_count": "0",
+  "created_at": "2020-11-20 20:47:33.716787",
+  "updated_at": "2020-11-23 17:06:19.629972",
+  "original_request": null,
+  "error_message": null,
+  "voided": false,
+  "voided_at": null,
+  "voider_id": null,
+  "original_request_id": null
+}
+```

@@ -152,6 +152,84 @@ curl -v \
   https://app.zauru.com/payroll/work_contracts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "active": true,
+    "reference": "",
+    "job_position_id": 3,
+    "contract_payment_type_id": 4,
+    "hourly_salary_ordinary": 41.0958904,
+    "hourly_salary_extraordinary": 41.0958904,
+    "hourly_salary_night_shift": 61.6438356,
+    "start_date": "2023-01-01",
+    "close_date": null,
+    "closer_id": null,
+    "closed_at": null,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "employee_id": 5,
+    "creator_id": 4,
+    "updater_id": 6,
+    "entity_id": 4,
+    "created_at": "2023-01-06T20:08:19.929Z",
+    "updated_at": "2026-04-30T15:08:15.702Z",
+    "default_payroll_payment_method_id": 7,
+    "contract_term_type_id": 5,
+    "personal_time_off_days_per_year": 15,
+    "personal_time_off_add_year_balance_on_year_due": true,
+    "id_number": null,
+    "monthly_mandatory_bonus": "0.0",
+    "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+    "closed": false,
+    "termination_date": null
+  },
+  {
+    "id": 8,
+    "zid": 9,
+    "active": false,
+    "reference": "",
+    "job_position_id": 10,
+    "contract_payment_type_id": 4,
+    "hourly_salary_ordinary": 25.68493,
+    "hourly_salary_extraordinary": 38.5274,
+    "hourly_salary_night_shift": null,
+    "start_date": "2021-12-01",
+    "close_date": "2023-05-18",
+    "closer_id": null,
+    "closed_at": null,
+    "pdf": {
+      "url": null,
+      "thumbnail": {
+        "url": null
+      }
+    },
+    "employee_id": 11,
+    "creator_id": 5,
+    "updater_id": 4,
+    "entity_id": 4,
+    "created_at": "2021-12-15T12:48:45.865Z",
+    "updated_at": "2022-12-19T17:26:00.578Z",
+    "default_payroll_payment_method_id": 9,
+    "contract_term_type_id": 5,
+    "personal_time_off_days_per_year": 15,
+    "personal_time_off_add_year_balance_on_year_due": true,
+    "id_number": null,
+    "monthly_mandatory_bonus": "0.0",
+    "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+    "closed": true,
+    "termination_date": null
+  }
+]
+```
+
 ### Crear un contrato de trabajo
 
 ```bash
@@ -180,6 +258,18 @@ curl -v \
   https://app.zauru.com/payroll/work_contracts.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "job_position": [
+    "no puede estar en blanco"
+  ],
+  "active": [
+    "ya ha sido tomado"
+  ]
+}
+```
+
 ### Ver un contrato de trabajo
 
 ```bash
@@ -189,6 +279,41 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/work_contracts/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2617",
+  "zid": "1040",
+  "active": false,
+  "reference": null,
+  "job_position_id": "22",
+  "contract_payment_type_id": "1",
+  "hourly_salary_ordinary": "0",
+  "hourly_salary_extraordinary": null,
+  "hourly_salary_night_shift": null,
+  "start_date": "2021-09-29",
+  "close_date": null,
+  "closer_id": null,
+  "closed_at": null,
+  "pdf": null,
+  "employee_id": "9576",
+  "creator_id": "2013",
+  "updater_id": "2013",
+  "entity_id": "802",
+  "created_at": "2021-10-07 21:59:19.753293",
+  "updated_at": "2022-05-04 18:42:25.926959",
+  "default_payroll_payment_method_id": "3",
+  "contract_term_type_id": "1",
+  "personal_time_off_days_per_year": "15",
+  "personal_time_off_add_year_balance_on_year_due": true,
+  "id_number": null,
+  "monthly_mandatory_bonus": "0.00",
+  "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+  "closed": false,
+  "termination_date": null
+}
 ```
 
 ### Terminar un contrato de trabajo
@@ -210,6 +335,42 @@ curl -v \
   https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "entity_id": "381",
+  "termination_date": "2022-07-31",
+  "notification_date": null,
+  "reason": null,
+  "termination_type": "1",
+  "pdf": null,
+  "work_contract_id": "2933",
+  "terminator_id": "2082",
+  "approver_id": null,
+  "approved": false,
+  "years_worked": "3.22",
+  "base_monthly_salary": "4000.000000",
+  "salary_pay": "12880.000000",
+  "base_monthly_overtime_salary": "52.420000",
+  "overtime_salary_pay": "168.790000",
+  "base_monthly_sales_commissions": "0.000000",
+  "sales_commissions_pay": "0.000000",
+  "base_monthly_applicable_on_cycle_benefits_deductions_amounts": "{}",
+  "base_monthly_applicable_on_cycle_benefits_deductions_ids": "{}",
+  "applicable_on_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_ids": "{}",
+  "pending_personal_time_off_days": "0",
+  "pending_personal_time_off_amount_pay": "0",
+  "pending_personal_time_off_bonus_amount_pay": "0",
+  "total_severance_pay": "0",
+  "created_at": "2023-03-30 20:06:26.410759",
+  "updated_at": "2023-03-30 20:06:26.410759"
+}
+```
+
 ### Ver una terminacion de contrato
 
 ```bash
@@ -221,6 +382,42 @@ curl -v \
   https://app.zauru.com/payroll/work_contract_terminations/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "entity_id": "381",
+  "termination_date": "2022-07-31",
+  "notification_date": null,
+  "reason": null,
+  "termination_type": "1",
+  "pdf": null,
+  "work_contract_id": "2933",
+  "terminator_id": "2082",
+  "approver_id": null,
+  "approved": false,
+  "years_worked": "3.22",
+  "base_monthly_salary": "4000.000000",
+  "salary_pay": "12880.000000",
+  "base_monthly_overtime_salary": "52.420000",
+  "overtime_salary_pay": "168.790000",
+  "base_monthly_sales_commissions": "0.000000",
+  "sales_commissions_pay": "0.000000",
+  "base_monthly_applicable_on_cycle_benefits_deductions_amounts": "{}",
+  "base_monthly_applicable_on_cycle_benefits_deductions_ids": "{}",
+  "applicable_on_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_ids": "{}",
+  "pending_personal_time_off_days": "0",
+  "pending_personal_time_off_amount_pay": "0",
+  "pending_personal_time_off_bonus_amount_pay": "0",
+  "total_severance_pay": "0",
+  "created_at": "2023-03-30 20:06:26.410759",
+  "updated_at": "2023-03-30 20:06:26.410759"
+}
+```
+
 ### Obtener estructura para una nueva terminacion de contrato
 
 ```bash
@@ -230,6 +427,42 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "1",
+  "zid": "1",
+  "entity_id": "381",
+  "termination_date": "2022-07-31",
+  "notification_date": null,
+  "reason": null,
+  "termination_type": "1",
+  "pdf": null,
+  "work_contract_id": "2933",
+  "terminator_id": "2082",
+  "approver_id": null,
+  "approved": false,
+  "years_worked": "3.22",
+  "base_monthly_salary": "4000.000000",
+  "salary_pay": "12880.000000",
+  "base_monthly_overtime_salary": "52.420000",
+  "overtime_salary_pay": "168.790000",
+  "base_monthly_sales_commissions": "0.000000",
+  "sales_commissions_pay": "0.000000",
+  "base_monthly_applicable_on_cycle_benefits_deductions_amounts": "{}",
+  "base_monthly_applicable_on_cycle_benefits_deductions_ids": "{}",
+  "applicable_on_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_amounts_pay": "{}",
+  "off_cycle_benefits_deductions_ids": "{}",
+  "pending_personal_time_off_days": "0",
+  "pending_personal_time_off_amount_pay": "0",
+  "pending_personal_time_off_bonus_amount_pay": "0",
+  "total_severance_pay": "0",
+  "created_at": "2023-03-30 20:06:26.410759",
+  "updated_at": "2023-03-30 20:06:26.410759"
+}
 ```
 
 ### Eliminar una terminacion de contrato
@@ -246,6 +479,8 @@ curl -v \
   https://app.zauru.com/payroll/work_contract_terminations/1.json
 ```
 
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
 ### Obtener estructura para crear un contrato
 
 ```bash
@@ -257,6 +492,46 @@ curl -v \
   https://app.zauru.com/payroll/work_contracts/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "reference": null,
+  "job_position_id": null,
+  "contract_payment_type_id": 1,
+  "hourly_salary_ordinary": null,
+  "hourly_salary_extraordinary": null,
+  "hourly_salary_night_shift": null,
+  "start_date": null,
+  "close_date": null,
+  "closer_id": null,
+  "closed_at": null,
+  "pdf": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "employee_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 2,
+  "created_at": null,
+  "updated_at": null,
+  "default_payroll_payment_method_id": null,
+  "contract_term_type_id": 1,
+  "personal_time_off_days_per_year": 15,
+  "personal_time_off_add_year_balance_on_year_due": true,
+  "id_number": null,
+  "monthly_mandatory_bonus": "0.0",
+  "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+  "closed": false,
+  "termination_date": null
+}
+```
+
 ### Obtener estructura para editar un contrato
 
 ```bash
@@ -266,6 +541,41 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/payroll/work_contracts/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2617",
+  "zid": "1040",
+  "active": false,
+  "reference": null,
+  "job_position_id": "22",
+  "contract_payment_type_id": "1",
+  "hourly_salary_ordinary": "0",
+  "hourly_salary_extraordinary": null,
+  "hourly_salary_night_shift": null,
+  "start_date": "2021-09-29",
+  "close_date": null,
+  "closer_id": null,
+  "closed_at": null,
+  "pdf": null,
+  "employee_id": "9576",
+  "creator_id": "2013",
+  "updater_id": "2013",
+  "entity_id": "802",
+  "created_at": "2021-10-07 21:59:19.753293",
+  "updated_at": "2022-05-04 18:42:25.926959",
+  "default_payroll_payment_method_id": "3",
+  "contract_term_type_id": "1",
+  "personal_time_off_days_per_year": "15",
+  "personal_time_off_add_year_balance_on_year_due": true,
+  "id_number": null,
+  "monthly_mandatory_bonus": "0.00",
+  "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+  "closed": false,
+  "termination_date": null
+}
 ```
 
 ### Actualizar un contrato de trabajo
@@ -287,6 +597,41 @@ curl -v \
   https://app.zauru.com/payroll/work_contracts/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "2617",
+  "zid": "1040",
+  "active": false,
+  "reference": null,
+  "job_position_id": "22",
+  "contract_payment_type_id": "1",
+  "hourly_salary_ordinary": "0",
+  "hourly_salary_extraordinary": null,
+  "hourly_salary_night_shift": null,
+  "start_date": "2021-09-29",
+  "close_date": null,
+  "closer_id": null,
+  "closed_at": null,
+  "pdf": null,
+  "employee_id": "9576",
+  "creator_id": "2013",
+  "updater_id": "2013",
+  "entity_id": "802",
+  "created_at": "2021-10-07 21:59:19.753293",
+  "updated_at": "2022-05-04 18:42:25.926959",
+  "default_payroll_payment_method_id": "3",
+  "contract_term_type_id": "1",
+  "personal_time_off_days_per_year": "15",
+  "personal_time_off_add_year_balance_on_year_due": true,
+  "id_number": null,
+  "monthly_mandatory_bonus": "0.00",
+  "exclude_personal_time_off_in_mandatory_bonus_calculation": true,
+  "closed": false,
+  "termination_date": null
+}
+```
+
 ### Borrar un contrato de trabajo
 
 ```bash
@@ -298,3 +643,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/payroll/work_contracts/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

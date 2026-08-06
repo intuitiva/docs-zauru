@@ -82,6 +82,13 @@ curl -v \
   https://app.zauru.com/purchases/receptions/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": "No se encontró órden de compra"
+}
+```
+
 ### Obtener datos para una recepción nueva
 El 1 en la URL es el ID de la orden de compra que se va a recibir
 ```bash
@@ -92,6 +99,29 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/purchases/purchase_orders/1/receptions/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "583992",
+  "purchase_order_id": "993694",
+  "invoice_number": null,
+  "receiver_id": "1274",
+  "received": true,
+  "received_at": "2026-06-29 06:00:00",
+  "voider_id": null,
+  "voided": false,
+  "voided_at": null,
+  "created_at": "2026-06-30 05:29:47.567457",
+  "updated_at": "2026-06-30 05:29:47.833339",
+  "image": null,
+  "memo": null,
+  "agency_id": "8246",
+  "entity_id": "1303",
+  "needs_transit": null,
+  "async_message": null
+}
 ```
 
 ### Ver detalles de una recepción
@@ -116,4 +146,11 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   "https://app.zauru.com/purchases/receptions/1/rebound.json?purchase_order_id=1"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "error": "No se encontró órden de compra"
+}
 ```

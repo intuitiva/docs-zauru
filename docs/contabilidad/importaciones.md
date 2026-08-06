@@ -87,6 +87,11 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_group_imports/new.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Importar grupos de cuentas
 ```bash
 curl -v \
@@ -98,6 +103,33 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_group_imports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
+```
+
 ### Obtener el formulario de importacion de cuentas contables
 ```bash
 curl -v \
@@ -106,6 +138,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/account_imports/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Importar cuentas contables
@@ -119,6 +156,33 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_imports.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "77705",
+  "zid": "4",
+  "active": true,
+  "code": null,
+  "name": "cuentas por pagar credito",
+  "description": null,
+  "value": "0.00",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": null,
+  "currency_id": "1",
+  "account_type_id": "2",
+  "entity_id": "1303",
+  "updater_id": "1",
+  "created_at": "2026-02-06 18:10:09.707434",
+  "updated_at": "2026-02-06 18:10:09.707434",
+  "splits_count": "0",
+  "entries_count": "0",
+  "cost": false,
+  "color": "#CCCCCC"
+}
+```
+
 ### Obtener el formulario de importacion de transacciones
 ```bash
 curl -v \
@@ -127,6 +191,11 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/entries/entries_import/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```
 
 ### Importar transacciones (partidas contables)
@@ -138,4 +207,47 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -F "entries_import[file]=@Desktop/transacciones.csv" \
   https://app.zauru.com/accounting/entries/entries_import.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": "54445565",
+  "zid": "270",
+  "printable": false,
+  "invoice": null,
+  "id_number": null,
+  "reference": "INGRESO INVENTARIO 19.05.2026",
+  "date": "2026-05-19",
+  "income": null,
+  "memo": null,
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": "1997430",
+  "entity_id": "1303",
+  "reconciliation_id": null,
+  "updater_id": "1274",
+  "account_id": "77704",
+  "amount": "750.00",
+  "created_at": "2026-05-19 11:31:08.795876",
+  "updated_at": "2026-05-19 11:31:08.836408",
+  "splits_count": "1",
+  "invoice_date": "2026-05-19",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": "552832",
+  "inventory_audit_id": null,
+  "source_doc_type_id": "4",
+  "monthly_entry_source_doc_type_id": "225289",
+  "cost_center_id": null
+}
 ```

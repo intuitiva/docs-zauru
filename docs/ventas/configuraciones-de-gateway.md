@@ -105,6 +105,42 @@ curl -v \
   https://app.zauru.com/sales/gateway_configs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 2,
+    "gateway_id": 1,
+    "entity_id": 2,
+    "test_mode": false,
+    "user": "api_user",
+    "password": "api_password",
+    "secret": "api_secret",
+    "public_key": "public_key",
+    "terminal_id": "terminal_001",
+    "acquirer_id": "acquirer_001",
+    "installments": false,
+    "installments_config": null,
+    "refunds": true,
+    "refunds_config": null,
+    "three_ds": false,
+    "three_ds_config": null,
+    "recurring": false,
+    "recurring_config": null,
+    "tokenization": true,
+    "tokenization_config": null,
+    "is_default": true,
+    "active": true,
+    "last_used_at": null,
+    "creator_id": 3,
+    "updater_id": null,
+    "created_at": "2026-08-06T04:13:53.208Z",
+    "updated_at": "2026-08-06T04:13:53.208Z",
+    "require_cvv": false
+  }
+]
+```
+
 ### Crear una configuración de gateway
 ```bash
 curl -v \
@@ -133,6 +169,15 @@ curl -v \
   https://app.zauru.com/sales/gateway_configs.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "gateway_id": [
+    "already configured for this entity"
+  ]
+}
+```
+
 ### Ver detalle de una configuración de gateway
 ```bash
 curl -v \
@@ -143,6 +188,11 @@ curl -v \
   https://app.zauru.com/sales/gateway_configs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Obtener plantilla para crear una configuración de gateway
 ```bash
 curl -v \
@@ -151,6 +201,40 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/gateway_configs/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "gateway_id": 1,
+  "entity_id": 2,
+  "test_mode": false,
+  "user": null,
+  "password": null,
+  "secret": null,
+  "public_key": null,
+  "terminal_id": null,
+  "acquirer_id": null,
+  "installments": false,
+  "installments_config": null,
+  "refunds": false,
+  "refunds_config": null,
+  "three_ds": false,
+  "three_ds_config": null,
+  "recurring": false,
+  "recurring_config": null,
+  "tokenization": false,
+  "tokenization_config": null,
+  "is_default": false,
+  "active": true,
+  "last_used_at": null,
+  "creator_id": null,
+  "updater_id": null,
+  "created_at": null,
+  "updated_at": null,
+  "require_cvv": false
+}
 ```
 
 ### Actualizar una configuración de gateway
@@ -173,6 +257,11 @@ curl -v \
   https://app.zauru.com/sales/gateway_configs/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Eliminar una configuración de gateway
 ```bash
 curl -v \
@@ -183,3 +272,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/sales/gateway_configs/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

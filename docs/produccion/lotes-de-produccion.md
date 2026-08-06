@@ -88,6 +88,13 @@ curl -v \
   https://app.zauru.com/production/production_batches.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {}
+]
+```
+
 ### Ver un lote de produccion
 
 Devuelve el lote con su orden raiz y todas las ordenes de produccion que lo componen, junto con el progreso individual y consolidado.
@@ -100,4 +107,9 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/production_batches/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{}
 ```

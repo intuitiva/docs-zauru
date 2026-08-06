@@ -181,6 +181,30 @@ curl -v \
   "https://app.zauru.com/purchases/reports/purchased_items_between_dates.json?date=2024-01-01&days=30"
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "items": {
+    "301851": {
+      "cat": "cuotas mensuales",
+      "name": "De 101 a 250 DTE's mensuales FEL - FEL-1",
+      "inventory_account": "",
+      "volume": null
+    },
+    "301852": {
+      "cat": "cuotas mensuales",
+      "name": "De 251 a 500 DTE's mensuales FEL - FEL-2",
+      "inventory_account": "",
+      "volume": null
+    }
+  },
+  "items_purchases_quantity": {
+    "301851": "17.0",
+    "301852": "6.0"
+  }
+}
+```
+
 ### Costo de inventario actual (DataTables)
 Devuelve el costo del inventario disponible en todas las agencias paginado al estilo DataTables.
 ```bash
@@ -199,6 +223,41 @@ curl -v \
     }
   }' \
   https://app.zauru.com/purchases/reports/datatables_inventory_cost.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 3,
+  "recordsFiltered": 3,
+  "data": [
+    {
+      "id": 1,
+      "code": "ASDF-3021*AM",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación azul,mediana",
+      "mu": "KM",
+      "stock": 11,
+      "phystock": 11,
+      "unitcost": "8.93",
+      "total": "98.23"
+    },
+    {
+      "id": 2,
+      "code": "ASDF-3021*BS",
+      "e": "",
+      "p": "",
+      "item": "Producto con variación beige,pequeña",
+      "mu": "unidad",
+      "stock": 10,
+      "phystock": 10,
+      "unitcost": "0.00",
+      "total": "0.00"
+    }
+  ]
+}
 ```
 
 ### Ordenes de compra sin recibir (DataTables)
@@ -221,6 +280,39 @@ curl -v \
   https://app.zauru.com/purchases/reports/datatables_unreceived_purchase_orders.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 66,
+  "recordsFiltered": 66,
+  "data": [
+    {
+      "z": "<a title=\"\" href=\"/purchases/purchase_orders/993227\">5164</a>",
+      "i": "",
+      "ref": "<a href=\"/purchases/purchase_orders/993227\">Cuota de servicios red eléctrica of. 519 may-2026</a>",
+      "dte": "27 de jun de 2026",
+      "o": "",
+      "ven": "<a title=\"12345678\" href=\"/purchases/vendors/1\">Usuario Ejemplo Uno</a>",
+      "ct": "Honorarios",
+      "itms": 0,
+      "r": "<a title=\"Consolidar\" href=\"/purchases/consolidates/new?id=993227\"><i class=\"fa fa-compress\"></i></a><a title=\"Recibir Parcialmente\" href=\"/purchases/purchase_orders/993227/partial_receive\"><i class=\"fa fa-dropbox\"></i></a><a title=\"Recibir\" href=\"/purchases/purchase_orders/993227/receive\"><i class=\"fa fa-dropbox\"></i></a>"
+    },
+    {
+      "z": "<a title=\"\" href=\"/purchases/purchase_orders/993229\">5166</a>",
+      "i": "",
+      "ref": "<a href=\"/purchases/purchase_orders/993229\">Cuota de servicios mantenimiento of. 519 jun-26</a>",
+      "dte": "27 de jun de 2026",
+      "o": "",
+      "ven": "<a title=\"12345678\" href=\"/purchases/vendors/1\">Usuario Ejemplo Uno</a>",
+      "ct": "Honorarios",
+      "itms": 0,
+      "r": "<a title=\"Consolidar\" href=\"/purchases/consolidates/new?id=993229\"><i class=\"fa fa-compress\"></i></a><a title=\"Recibir Parcialmente\" href=\"/purchases/purchase_orders/993229/partial_receive\"><i class=\"fa fa-dropbox\"></i></a><a title=\"Recibir\" href=\"/purchases/purchase_orders/993229/receive\"><i class=\"fa fa-dropbox\"></i></a>"
+    }
+  ]
+}
+```
+
 ### Verificar el estado de un reporte
 Verifica el estado de generación de un reporte asíncrono a partir de su identificador `zid`.
 ```bash
@@ -231,4 +323,12 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   "https://app.zauru.com/purchases/reports/check_report.json?zid=1234"
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "status": 3,
+  "message": "not_found"
+}
 ```

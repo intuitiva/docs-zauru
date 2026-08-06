@@ -93,6 +93,41 @@ curl -v \
   https://app.zauru.com/production/bill_of_materials.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 3,
+    "zid": 1,
+    "active": true,
+    "item_id": 1,
+    "description": "3123",
+    "entity_id": 2,
+    "updater_id": 2,
+    "bill_of_material_details_count": 1,
+    "default_production_size": 1.0,
+    "expected_duration_in_seconds": null,
+    "default_agency_id": null,
+    "created_at": "2024-10-25T18:17:18.771Z",
+    "updated_at": "2024-10-25T18:17:18.771Z",
+    "bill_of_material_details": [
+      {
+        "id": 3,
+        "item_id": 4,
+        "entity_id": 2,
+        "bill_of_material_id": 5,
+        "description": "",
+        "quantity": "12.0",
+        "created_at": "2024-10-25T18:17:18.776Z",
+        "updated_at": "2024-10-25T18:17:18.776Z"
+      }
+    ],
+    "bill_of_material_subproducts": [],
+    "url": "http://localhost:3000/production/bill_of_materials/3.json"
+  }
+]
+```
+
 ### Obtener datos para una nueva lista de materiales
 ```bash
 curl -v \
@@ -102,6 +137,25 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
   https://app.zauru.com/production/bill_of_materials/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "zid": null,
+  "active": true,
+  "item_id": 1,
+  "description": null,
+  "entity_id": 2,
+  "updater_id": null,
+  "bill_of_material_details_count": 0,
+  "created_at": null,
+  "updated_at": null,
+  "default_production_size": 1.0,
+  "expected_duration_in_seconds": null,
+  "default_agency_id": null
+}
 ```
 
 ### Crear una lista de materiales
@@ -140,6 +194,15 @@ curl -v \
     }
   }' \
   https://app.zauru.com/production/bill_of_materials.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "bill_of_material_details.quantity": [
+    "Debe ser entero"
+  ]
+}
 ```
 
 Los campos disponibles para crear una lista de materiales son:
@@ -182,6 +245,11 @@ curl -v \
   https://app.zauru.com/production/bill_of_materials/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Actualizar una lista de materiales
 
 ```bash
@@ -208,6 +276,11 @@ curl -v \
   https://app.zauru.com/production/bill_of_materials/1.json
 ```
 
+Esto devolverá un JSON similar a este:
+```json
+{}
+```
+
 ### Eliminar una lista de materiales
 
 ```bash
@@ -219,3 +292,5 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/production/bill_of_materials/1.json
 ```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
