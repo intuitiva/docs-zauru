@@ -1,7 +1,7 @@
 ---
 title: "Reportes de nomina"
 sidebar_label: "Reportes de nomina"
-sidebar_position: 7
+sidebar_position: 14
 ---
 
 Este tutorial describe todos los reportes disponibles en el modulo de nominas, organizados por categoria: reportes de destajos, reportes de nomina, reportes de conciliacion contable y otros reportes.

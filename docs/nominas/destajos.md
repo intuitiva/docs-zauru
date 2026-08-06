@@ -1,7 +1,7 @@
 ---
 title: "Destajos"
 sidebar_label: "Destajos"
-sidebar_position: 3
+sidebar_position: 10
 ---
 
 Este tutorial trata sobre la gestion de destajos, que son las tareas pagadas por unidad de trabajo realizada (no por salario fijo). Los destajos permiten registrar el trabajo diario de empleados contratados bajo la modalidad de pago por tarea.

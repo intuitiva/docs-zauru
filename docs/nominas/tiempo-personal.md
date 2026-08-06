@@ -1,7 +1,7 @@
 ---
 title: "Tiempo personal"
 sidebar_label: "Tiempo personal"
-sidebar_position: 5
+sidebar_position: 12
 ---
 
 Este tutorial trata sobre la gestion de tiempo personal (vacaciones, enfermedad, permisos) de los empleados, incluyendo solicitudes, aprobaciones y consulta de saldos.

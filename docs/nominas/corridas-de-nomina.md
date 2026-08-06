@@ -1,7 +1,7 @@
 ---
 title: "Corridas de nomina"
 sidebar_label: "Corridas de nomina"
-sidebar_position: 6
+sidebar_position: 13
 ---
 
 Este tutorial trata sobre la gestion completa de corridas de nomina, desde la generacion automatica segun calendarios, pasando por la aprobacion y pago, hasta la consulta de nominas individuales y corridas pagadas.

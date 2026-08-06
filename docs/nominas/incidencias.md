@@ -1,7 +1,7 @@
 ---
 title: "Incidencias"
 sidebar_label: "Incidencias"
-sidebar_position: 4
+sidebar_position: 11
 ---
 
 Este tutorial trata sobre el registro y gestion de incidencias de empleados, como llegadas tarde, ausencias, faltas y otras situaciones que generan descuentos en la nomina.

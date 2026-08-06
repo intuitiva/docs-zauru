@@ -60,6 +60,6 @@ Si la nota de Crédito implica una devolución de mercadería, tendremos que cre
 Recordar que en este envío nuevo; el origen y el destino debería de estar al revés de lo que está el envío creado automáticamente en la orden de compras
 
 ## Redimir la nota de crédito de compras
-para poder redimir la nota de crédito primero necesitamos crear un método de pago en compras (Ej. Notas de crédito) con la configuración necesaria para que la cuenta de notas de crédito recibidas se salde (Ver manual de Métodos de pagos https://docs.zauru.com/compras/configuracion, la cuenta a seleccionar en el paso 2 del manual debe ser la cuenta de Activo de las Notas de crédito recibidas).
+para poder redimir la nota de crédito primero necesitamos crear un método de pago en compras (Ej. Notas de crédito) con la configuración necesaria para que la cuenta de notas de crédito recibidas se salde (Ver manual de Métodos de pagos https://docs.zauru.com/compras/metodos-de-pago, la cuenta a seleccionar en el paso 2 del manual debe ser la cuenta de Activo de las Notas de crédito recibidas).
 
 Para concluir el proceso de redimir la nota de crédito es pagar la orden de compra, se debe realizar un pago (o varios si fuera el caso) utilizando la forma de pago con la que se realizo el o los pagos de la orden de compra y un último pago utilizando el método de pago creado anteriormente (Ej. Notas de crédito).

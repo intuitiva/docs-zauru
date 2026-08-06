@@ -1,7 +1,7 @@
 ---
 title: "Contratos de trabajo"
 sidebar_label: "Contratos de trabajo"
-sidebar_position: 2
+sidebar_position: 9
 ---
 
 Este tutorial trata sobre la gestion de contratos de trabajo, que vinculan empleados a puestos de trabajo y definen las condiciones salariales, metodo de pago, tiempo personal y terminos de contratacion.

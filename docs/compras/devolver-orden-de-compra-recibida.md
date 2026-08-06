@@ -1,7 +1,7 @@
 ---
 title: "Anular recepciones de una orden de compra"
 sidebar_label: "Anular recepciones de una orden de compra"
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Este tutorial esta enfocado en devolver los productos de una orden de compra después de una recepción.

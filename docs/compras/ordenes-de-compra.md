@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de compra"
 sidebar_label: "Ordenes de compra"
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 Este tutorial esta basado en hacer una orden de compra de mercadería. Existen dos tipos de ordenes de compra:

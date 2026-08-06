@@ -1,7 +1,7 @@
 ---
 title: "Crear recepciones para recibir ordenes de compra"
 sidebar_label: "Crear recepciones para recibir ordenes de compra"
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 Este tutorial esta enfocado en recibir las ordenes de compra.

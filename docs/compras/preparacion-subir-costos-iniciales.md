@@ -1,7 +1,7 @@
 ---
 title: "Costos unitarios iniciales"
 sidebar_label: "Costos unitarios iniciales"
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 Este tutorial está enfocado en cómo crear o importar los costos iniciales de sus productos, para que al momento de la venta, usted pueda saber cuanto le costo y a cuanto vendio el producto (Margen de ganancia).

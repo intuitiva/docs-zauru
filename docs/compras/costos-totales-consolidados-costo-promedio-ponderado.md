@@ -1,7 +1,7 @@
 ---
 title: "Costos totales consolidados (Costo Promedio Ponderado)"
 sidebar_label: "Costos totales consolidados (Costo Promedio Ponderado)"
-sidebar_position: 11
+sidebar_position: 12
 ---
 
 Este tutorial esta enfocado en la verificación del costo promedio ponderado de su producto.

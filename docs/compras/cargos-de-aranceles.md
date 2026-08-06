@@ -1,7 +1,7 @@
 ---
 title: "Cargos de Aranceles"
 sidebar_label: "Cargos de Aranceles"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 Este tutorial esta enfocado en agregar cargos de aranceles por productos a una orden de compra.
