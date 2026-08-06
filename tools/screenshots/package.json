@@ -9,9 +9,11 @@
     "generate-manifest": "node generate-manifest.mjs",
     "gaps": "node generate-manifest.mjs --gaps",
     "run": "node run-screenshots.mjs",
-    "insert-refs": "node insert-image-refs.mjs"
+    "insert-refs": "node insert-image-refs.mjs",
+    "report": "node report-missing.mjs"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "playwright": "^1.49.0"
   }
 }

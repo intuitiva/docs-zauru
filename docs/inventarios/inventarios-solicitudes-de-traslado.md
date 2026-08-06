@@ -262,6 +262,18 @@ curl -v \
   https://app.zauru.com/inventories/open_transfer_requests/1.json
 ```
 
+### Generar requisición de compra desde una solicitud de traslado
+Genera automáticamente una requisición de compra con los productos que tienen cantidades pendientes (solicitado menos reservado) y stock insuficiente en la bodega origen. No se puede generar más de una requisición por solicitud.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/inventories/open_transfer_requests/1/create_purchase_requisition.json
+```
+
 ### Obtener las solicitudes de traslado cerradas
 Devuelve la lista de solicitudes de traslado que ya fueron completamente satisfechas.
 ```bash

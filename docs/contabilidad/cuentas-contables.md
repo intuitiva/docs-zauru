@@ -378,6 +378,16 @@ curl -v \
   https://app.zauru.com/accounting/accounts/account_groups/new.json
 ```
 
+### Obtener el formulario de edicion de un grupo de cuentas
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/account_groups/1/edit.json
+```
+
 ### Crear un grupo de cuentas
 ```bash
 curl -v \

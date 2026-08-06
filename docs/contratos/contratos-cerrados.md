@@ -94,3 +94,14 @@ curl -v \
   -X GET \
   https://app.zauru.com/contracts/closed_contracts/1.json
 ```
+
+### Listar Contratos Cerrados
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/contracts/closed_contracts.json
+```

@@ -99,11 +99,11 @@ curl -v \
   -X POST \
   -d '{
     "document_automatic_number": {
-      "document_type": "payments",
-      "method_name": "id_number",
-      "prefix": "PAGO-",
-      "initial": "1",
-      "num_digits": "6"
+      "model_for_doc_number": "payments",
+      "field_for_doc_number": "id_number",
+      "fixed_doc_number": "PAGO-",
+      "variable_doc_number": "1",
+      "variable_doc_number_digits": "6"
     }
   }' \
   https://app.zauru.com/settings/templates/document_automatic_numbers.json

@@ -93,7 +93,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X get \
+  -X GET \
   https://app.zauru.com/sales/clients.json
 ```
 
@@ -289,7 +289,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X get \
+  -X GET \
   https://app.zauru.com/sales/clients/1.json
 ```
 

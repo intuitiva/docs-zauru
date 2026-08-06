@@ -11,7 +11,7 @@ curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: 45ERGDSFSLIU2332" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/ecommerce/ecommerce_requests/get_items_for_ecommerce.json
 ```
 
@@ -33,7 +33,7 @@ curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: 45ERGDSFSLIU2332" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/ecommerce/ecommerce_requests/get_items_for_ecommerce.json?force_agency=5&force_tag=3&force_price_list=2&force_vendor_code=1"
 ```
 

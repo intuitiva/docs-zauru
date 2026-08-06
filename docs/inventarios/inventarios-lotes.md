@@ -196,6 +196,17 @@ curl -v \
   https://app.zauru.com/inventories/lots/1.json
 ```
 
+### Obtener el detalle de existencias de un lote en una bodega
+Devuelve los datos de existencias del lote en una bodega específica (LotStock), incluyendo las cantidades disponible, entrante y saliente, junto con el historial de envíos que movieron el lote en esa bodega.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lot_stocks/1.json
+```
+
 ### Obtener los lotes de un producto
 Devuelve todos los lotes asociados a un producto específico.
 ```bash

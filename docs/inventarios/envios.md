@@ -528,3 +528,25 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/inventories/deliveries/1/issue_external_document.json
 ```
+
+### Consultar la respuesta certificada de una entrega
+Devuelve la respuesta certificada del sistema de facturación electrónica para la entrega. La respuesta se devuelve en formato JSON (El Salvador) o XML (resto de países).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/deliveries/1/external_storage_certified_response.json
+```
+
+### Consultar la respuesta certificada para anulación de una entrega
+Devuelve la respuesta certificada del sistema de facturación electrónica para anular el documento emitido de una entrega. La respuesta se devuelve en formato JSON (El Salvador) o XML (resto de países).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/deliveries/1/external_storage_certified_response_for_voiding.json
+```

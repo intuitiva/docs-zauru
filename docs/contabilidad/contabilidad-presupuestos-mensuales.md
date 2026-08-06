@@ -331,10 +331,9 @@ curl -v \
   -d '{
     "tagged_budget": {
       "income": false,
-      "reference": "Presupuesto Proyecto Alfa",
       "extras": "0.0",
       "tag_id": 1,
-      "tag_budget_details_attributes": {
+      "budget_details_attributes": {
         "0": {
           "account_id": 3,
           "amount": "500.0"
@@ -355,7 +354,7 @@ curl -v \
   -X PUT \
   -d '{
     "tagged_budget": {
-      "reference": "Presupuesto actualizado"
+      "extras": "200.0"
     }
   }' \
   https://app.zauru.com/accounting/budgets/tagged_budgets/1.json

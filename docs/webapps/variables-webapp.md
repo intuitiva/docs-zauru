@@ -165,3 +165,23 @@ curl -v \
 ```
 
 Esta llamada no devolverá nada
+
+### Nueva variable (prellenado)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_vars/new.json
+```
+
+### Editar variable
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_vars/3/edit.json
+```

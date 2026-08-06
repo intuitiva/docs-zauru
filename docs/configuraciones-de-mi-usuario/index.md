@@ -52,7 +52,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
+  -X PATCH \
   -d '{
     "user": {
       "name": "Usuario Prueba Actualizado",
@@ -62,4 +62,28 @@ curl -v \
     }
   }' \
   https://app.zauru.com/profile.json
+```
+
+### Obtener datos de la empresa
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/company.json
+```
+
+### Cambiar entidad seleccionada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "selected_entity_id": "2"
+  }' \
+  https://app.zauru.com/company.json
 ```

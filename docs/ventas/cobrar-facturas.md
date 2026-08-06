@@ -211,3 +211,14 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/sales/payments/voided.json
 ```
+
+### Anular un pago
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/sales/payments/1.json
+```

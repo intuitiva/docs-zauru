@@ -258,3 +258,14 @@ curl -v \
   -d '{"start": "0", "length": "25"}' \
   https://app.zauru.com/settings/data_imports/datatables.json
 ```
+
+### Descargar archivo adjunto de una importación
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/data_imports/1/download_attached_file.json
+```

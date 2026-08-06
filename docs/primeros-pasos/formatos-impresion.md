@@ -243,6 +243,37 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates/1/duplicate.json
 ```
 
+### Obtener datos para editar una plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/templates/print_templates/1/edit_data.json
+```
+
+### Actualizar datos de una plantilla de impresión
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "print_template": {
+      "print_template_rows_attributes": [
+        {"title": "Encabezado", "size": "3"}
+      ],
+      "print_template_cells_attributes": [
+        {"title": "Nombre", "value": "$payee_name"}
+      ]
+    }
+  }' \
+  https://app.zauru.com/settings/templates/print_templates/1/update_data.json
+```
+
 ### Obtener listado de impresiones de documentos
 ```bash
 curl -v \

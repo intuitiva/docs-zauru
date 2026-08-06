@@ -42,6 +42,19 @@ Si no tiene plantillas configuradas, contacte a su administrador del sistema par
 
 ## API (llamadas desde sistemas externos)
 
+### imprimir un caso
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/cases/1/print
+```
+
+Esta llamada retorna la vista previa de impresion del caso en formato HTML, usando la plantilla de impresion indicada por el parametro `print_template`.
+
 ### descargar PDF de un caso
 
 ```bash

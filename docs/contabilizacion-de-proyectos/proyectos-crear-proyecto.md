@@ -63,11 +63,39 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{
-    "item": {
+    "tag": {
       "name": "Proyecto prueba",
       "description": "Descripción larga del proyecto",
       "tag_category_id": 43
     }
   }' \
   https://app.zauru.com/settings/tags.json
+```
+
+### actualizar proyecto
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "tag": {
+      "name": "Proyecto prueba editado",
+      "description": "Descripción actualizada del proyecto"
+    }
+  }' \
+  https://app.zauru.com/settings/tags/1.json
+```
+
+### eliminar proyecto
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/tags/1.json
 ```

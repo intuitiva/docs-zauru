@@ -267,6 +267,31 @@ curl -v \
   https://app.zauru.com/inventories/serials/1.json
 ```
 
+### Crear múltiples números de serie
+Crea varios números de serie simultáneamente para un ítem identificable.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "serials": [
+      {
+        "name": "SN-001",
+        "item_id": "2"
+      },
+      {
+        "name": "SN-002",
+        "item_id": "2",
+        "description": "Descripción opcional"
+      }
+    ]
+  }' \
+  https://app.zauru.com/inventories/serials/create_multiple.json
+```
+
 ### Autocompletar números de serie
 Endpoint de autocompletado para buscar números de serie por término. Útil para integraciones con formularios personalizados.
 ```bash

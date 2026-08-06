@@ -110,3 +110,23 @@ curl -v \
   }' \
   https://app.zauru.com/sales/clients/1/credit_cards.json
 ```
+
+### Ver detalle de una tarjeta de crédito
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/1/credit_cards/1.json
+```
+
+### Establecer una tarjeta como predeterminada
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/clients/1/credit_cards/1/set_default.json
+```

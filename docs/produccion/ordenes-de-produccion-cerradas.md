@@ -83,13 +83,22 @@ curl -v \
 ```
 
 ### Obtener listado de ordenes cerradas en formato DataTables
+
+Endpoint optimizado para la libreria DataTables con paginacion, ordenamiento y busqueda.
+
 ```bash
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X GET \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
   https://app.zauru.com/production/closed_production_orders/datatables.json
 ```
 

@@ -188,6 +188,20 @@ curl -v \
   https://app.zauru.com/production/open_work_orders.json
 ```
 
+### Ver una orden de trabajo
+
+Devuelve la orden de trabajo abierta con todos sus datos.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/production/open_work_orders/1.json
+```
+
 ### Actualizar una orden de trabajo abierta
 ```bash
 curl -v \

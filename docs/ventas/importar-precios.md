@@ -241,7 +241,7 @@ curl -v \
 curl -v \
   -H "Accept: application/json" \
   -H "Content-type: application/json" \
-  -H "X-User-Email: pruebas@zauru.com" \
+  -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{

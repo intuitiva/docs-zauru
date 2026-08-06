@@ -374,7 +374,7 @@ curl -v \
   -d '{
     "payroll_run": {
       "name": "Nomina julio 2024",
-      "payment_frequency": "monthly",
+      "payment_frequency": 4,
       "start_date": "2024-07-01",
       "end_date": "2024-07-31"
     }
@@ -390,7 +390,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/payroll/unpaid_payroll_runs/generate_from_dates?start_date=2024-07-01&end_date=2024-07-31&payment_frequency=monthly"
+  "https://app.zauru.com/payroll/unpaid_payroll_runs/generate_from_dates?start=2024-07-01&end=2024-07-31&pay_schedule=4&contract_term_type_id=1"
 ```
 
 ### Aprobar una corrida
@@ -475,7 +475,7 @@ curl -v \
       "name": "Nomina julio 2024 actualizada",
       "start_date": "2024-07-01",
       "end_date": "2024-07-31",
-      "payment_frequency": "monthly"
+      "payment_frequency": 4
     }
   }' \
   https://app.zauru.com/payroll/unpaid_payroll_runs/1.json

@@ -497,7 +497,7 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
-  http://zauru.herokuapp.com/purchases/purchase_orders/1.json
+  https://app.zauru.com/purchases/purchase_orders/1.json
 ```
 
 ### Autorizar una orden de compra

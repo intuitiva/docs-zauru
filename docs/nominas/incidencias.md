@@ -112,8 +112,6 @@ curl -v \
       "employee_id": "1",
       "incident_type_id": "1",
       "date": "2024-06-15",
-      "quantity": "1",
-      "reference": "Llegada tarde",
       "notes": "Llego 30 minutos tarde"
     }
   }' \
@@ -185,32 +183,4 @@ curl -v \
     }
   }' \
   https://app.zauru.com/payroll/incidents/1.json
-```
-
-### Importar incidencias (obtener estructura)
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/payroll/incident_imports/new.json
-```
-
-### Importar incidencias (cargar archivo)
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "incident_import": {
-      "file": "incidencias.csv"
-    }
-  }' \
-  https://app.zauru.com/payroll/incident_imports.json
 ```

@@ -113,6 +113,26 @@ Le aparecera un mensaje de exito notificandole que la orden de compra fue reabie
 
 ## API (llamadas desde sistemas externos)
 
+### Listar ordenes de compra cerradas
+Devuelve las ordenes de compra pagadas y recibidas paginado al estilo DataTables.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {
+      "value": "",
+      "regex": "false"
+    }
+  }' \
+  https://app.zauru.com/purchases/closed_purchase_orders/datatables.json
+```
+
 ### Ver detalles de una orden de compra cerrada
 ```bash
 curl -v \
@@ -131,7 +151,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
+  -X GET \
   https://app.zauru.com/purchases/closed_purchase_orders/1/rebound.json
 ```
 

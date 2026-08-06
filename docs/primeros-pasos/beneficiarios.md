@@ -173,7 +173,6 @@ curl -v \
   -X PUT \
   -d '{
     "payee": {
-      "id": "1",
       "name": "Cliente Prueba 2",
       "tin": "12345678-9",
       "reference": "referencia actualizada",
@@ -191,7 +190,6 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X get \
   https://app.zauru.com/settings/payees/1.json
 ```
 
@@ -202,7 +200,6 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X get \
   https://app.zauru.com/settings/payees/payee_categories.json
 ```
 
@@ -263,6 +260,28 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/settings/payees.json
+```
+
+### Obtener listado de beneficiarios por tipo (datatables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"start": "0", "length": "25", "scope": "clients"}' \
+  https://app.zauru.com/settings/payees/datatables.json
+```
+
+### Obtener nube de etiquetas de beneficiarios
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/payees/tag_cloud.json
 ```
 
 ### Búsqueda de beneficiario por NIT

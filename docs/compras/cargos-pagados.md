@@ -91,6 +91,17 @@ Al terminar de editar, presione "Actualizar" para guardar los cambios.
 
 ## API (llamadas desde sistemas externos)
 
+### Listar cargos pagados
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  https://app.zauru.com/purchases/paid_charges.json
+```
+
 ### Ver detalles de un cargo pagado
 ```bash
 curl -v \

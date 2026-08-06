@@ -135,9 +135,9 @@ En donde lo más importante es el campo `id` que tiene el identificador de la or
 Si se intenta crear una solicitud con un `original_request_id` que ya existe, la respuesta será:
 
 ```json
-{
+[
   "Request with ID 12345 already exists"
-}
+]
 ```
 
 Con un código de estado HTTP `422 Unprocessable Entity`.

@@ -203,7 +203,7 @@ curl -v \
   -d '{
     "work_contract_termination": {
       "termination_date": "2024-12-31",
-      "termination_type": "dismissal",
+      "termination_type": 1,
       "reason": "Reestructuracion de personal"
     }
   }' \

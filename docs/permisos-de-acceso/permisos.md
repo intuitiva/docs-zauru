@@ -110,7 +110,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/access_control/permissions/1.json
+  https://app.zauru.com/access_control/permissions.json?id=1
 ```
 
 ### Actualizar permisos
@@ -120,7 +120,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
+  -X PATCH \
   -d '{
     "permissions": {
       "1,2": "1",
@@ -128,7 +128,7 @@ curl -v \
       "3,2": "1"
     }
   }' \
-  https://app.zauru.com/access_control/permissions.json
+  https://app.zauru.com/access_control/permissions/1.json
 ```
 
 Donde la clave es `"operation_id,role_id"` y el valor es `"1"` para asignar el permiso.

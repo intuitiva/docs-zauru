@@ -118,6 +118,16 @@ curl -v \
   https://app.zauru.com/apps/app_sync_ids_to_syncs.json
 ```
 
+### Ver detalle de un ID pendiente
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/app_sync_ids_to_syncs/1.json
+```
+
 ### Eliminar un ID pendiente
 ```bash
 curl -v \
@@ -128,3 +138,16 @@ curl -v \
   -X DELETE \
   https://app.zauru.com/apps/app_sync_ids_to_syncs/1.json
 ```
+
+### Sincronizar IDs pendientes ahora
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  https://app.zauru.com/apps/app_sync_ids_to_syncs/sync_now.json
+```
+
+Esta acción no devuelve JSON; el servidor responde con una redirección (HTTP 302) una vez iniciada la sincronización.

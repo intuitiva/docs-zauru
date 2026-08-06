@@ -117,6 +117,17 @@ curl -v \
   https://app.zauru.com/pos/bookings/new.json
   ```
 
+### Editar reserva
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/bookings/1/edit.json
+  ```
+
 ### Crear reserva
 
 ```bash
@@ -132,7 +143,7 @@ curl -v \
       "agency_to_id": "2",
       "planned_delivery": "2024-01-15",
       "reference": "prueba",
-      "shipment_details_attributes": {
+      "movements_attributes": {
         "0": {
           "item_id": "1",
           "booked_quantity": "5"
@@ -181,4 +192,15 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/bookings/1/ship.json
+  ```
+
+### Entregar reserva (registrar entrega)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/bookings/1/deliver.json
   ```

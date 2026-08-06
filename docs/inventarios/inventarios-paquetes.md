@@ -271,6 +271,17 @@ curl -v \
   https://app.zauru.com/inventories/bundle_stocks/all_warehouses.json
 ```
 
+### Obtener las existencias de un paquete en todas las bodegas con totales
+Devuelve las existencias del paquete (disponible, entrante y saliente) desglosadas por bodega, junto con los totales sumados.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bundle_stocks/1/item.json
+```
+
 ### Importar paquetes
 Importa paquetes desde un archivo. El cuerpo de la petición debe incluir el archivo a importar.
 ```bash

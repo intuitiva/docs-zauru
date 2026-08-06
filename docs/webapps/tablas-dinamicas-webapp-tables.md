@@ -106,6 +106,26 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1.json
 ```
 
+### Nueva webapp table (prellenado)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/new.json
+```
+
+### Editar webapp table
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/edit.json
+```
+
 ### Obtener filas asociables (rowables) de una webapp table
 ```bash
 curl -v \
@@ -215,6 +235,26 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1.json
+```
+
+### Nueva fila (prellenado)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/new.json
+```
+
+### Editar fila
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/apps/webapp_tables/1/webapp_rows/1/edit.json
 ```
 
 ### Asociar una fila a un documento

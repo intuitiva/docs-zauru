@@ -98,6 +98,19 @@ curl -v \
   https://app.zauru.com/support/contact_methods/1.json
 ```
 
+### obtener formulario de edicion de un metodo de contacto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/support/contact_methods/1/edit.json
+```
+
+Retorna el metodo de contacto con sus datos actuales, que puede usar como base para editarlo.
+
 ### editar metodo de contacto
 
 ```bash

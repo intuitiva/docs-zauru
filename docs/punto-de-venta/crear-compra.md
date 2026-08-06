@@ -150,7 +150,6 @@ curl -v \
   -d '{
     "purchase_order": {
       "reference": "prueba",
-      "payee_id": "1",
       "charge_term_id": "1",
       "purchaser_id": "1",
       "taxable": "1",
@@ -160,8 +159,7 @@ curl -v \
           "booked_quantity": "5",
           "unit_cost": "100"
         }
-      },
-      "memo": "generado desde el API"
+      }
     }
   }' \
   https://app.zauru.com/pos/purchases.json

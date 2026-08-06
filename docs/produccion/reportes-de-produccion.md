@@ -144,6 +144,17 @@ curl -v \
   "https://app.zauru.com/production/reports/finished_products_by_responsible.json?start_date=01/01/2026&end_date=31/12/2026"
 ```
 
+### Reporte de Ordenes de Produccion Terminadas por Responsable
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X GET \
+  "https://app.zauru.com/production/reports/finished_production_orders_by_responsible.json?start_date=01/01/2026&end_date=31/12/2026"
+```
+
 ### Reporte de Eficiencia de Ordenes de Produccion
 ```bash
 curl -v \

@@ -76,7 +76,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
+  -X PATCH \
   -d '{
     "role": {
       "name": "Contabilidad Senior",

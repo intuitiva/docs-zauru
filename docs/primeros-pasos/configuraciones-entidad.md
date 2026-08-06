@@ -89,8 +89,8 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{
-    "date_format": "DD/MM/AAAA",
-    "boolean_format": "SI / NO",
+    "date_format": "DD/MM/YYYY",
+    "boolean_format": "S/N",
     "show_empty_fields": "1"
   }' \
   https://app.zauru.com/settings/settings_settings.json

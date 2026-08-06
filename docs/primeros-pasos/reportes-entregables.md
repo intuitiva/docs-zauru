@@ -170,7 +170,7 @@ curl -v \
     "r_name": "Facturas de Enero 2024",
     "r_body": "Adjunto el reporte de facturas del mes de enero."
   }' \
-  https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_me
+  https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_me.json
 ```
 
 ### Envío inmediato a un beneficiario
@@ -189,5 +189,5 @@ curl -v \
     "r_to": "cliente@ejemplo.com",
     "r_name": "Sus facturas de Enero 2024"
   }' \
-  https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_payee
+  https://app.zauru.com/settings/deliverable_reports/immediate_delivery_to_payee.json
 ```

@@ -222,7 +222,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/payroll/reports/weekly_piecework_values_by_employees?start_date=2024-07-01&end_date=2024-07-07"
+  "https://app.zauru.com/payroll/reports/weekly_piecework_values_by_employees?date=2024-07-01"
 ```
 
 ### Reporte de nominas por corrida
@@ -256,4 +256,279 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   "https://app.zauru.com/payroll/reports/incidents_by_type_between_dates?start_date=2024-01-01&end_date=2024-12-31"
+```
+
+### Reporte de costos semanales de destajos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/weekly_pieceworks_costs?date=2024-07-01"
+```
+
+### Reporte de tareas por empleado por fecha
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employee_tasks_per_date?employee_id=1&start_date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de tareas por empleado consolidadas por tipo de destajo por fecha
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employee_tasks_consolidated_by_piecework_per_date?employee_id=1&start_date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de empleados por tarea por fecha
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employees_per_task_per_date?piecework_type_id=1&start_date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de destajos por empleado por fecha
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/pieceworks_employees_per_date?start_date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de cantidades diarias de destajo por empleado entre fechas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/daily_pieceworks_employees_quantities_between_dates?start_date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de costos de destajos en corrida de nomina
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/payroll_run_pieceworks_costs?payroll_run_id=1"
+```
+
+### Reporte de grupos de cuentas y cuentas por corrida de nomina
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/payroll_run_account_groups_and_accounts_names?payroll_run_id=1"
+```
+
+### Reporte de nominas diarias por corrida de nomina
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/daily_payroll_run_payrolls?payroll_run_id=1"
+```
+
+### Reporte de historial de nominas de empleado entre fechas (consolidado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employee_payroll_runs_payrolls_between_dates?employee_id=1&start_date=2024-01-01&end_date=2024-12-31"
+```
+
+### Reporte de historial de nominas de empleado entre fechas (detallado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employee_payroll_runs_detailed_payrolls_between_dates?employee_id=1&start_date=2024-01-01&end_date=2024-12-31"
+```
+
+### Reporte de beneficios y deducciones por agencia entre fechas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/benefit_deduction_type_in_agency_between_dates?date=2024-07-01&end_date=2024-07-31"
+```
+
+### Reporte de destajos sin partida contable
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/unmatched_piecework_vs_entry
+```
+
+### Corregir destajos sin partida contable
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/fix_unmatched_pieceworks_entry
+```
+
+### Reporte de nominas sin partida contable
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/unmatched_payroll_vs_entry
+```
+
+### Reporte de total de pago sin conciliar
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/unmatched_payroll_total_pay
+```
+
+### Corregir total de pago sin conciliar
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/fix_unmatched_payroll_total_pay
+```
+
+### Reporte de total de costo sin conciliar
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/unmatched_payroll_total_cost
+```
+
+### Corregir total de costo sin conciliar
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/fix_unmatched_payroll_total_cost
+```
+
+### Reporte de partidas faltantes en destajos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks
+```
+
+### Corregir partidas faltantes en destajos
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/fix_missing_entry_in_pieceworks
+```
+
+### Corregir incidencias no descontadas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/reports/fix_deducted_incidents
+```
+
+### Reporte de contratos por vencer
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/work_contracts_expiring_soon?days=30"
+```
+
+### Reporte de altas y bajas de empleados por rango de fechas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/employees_hires_and_terminations_by_date_range?start_date=2024-01-01&end_date=2024-12-31"
+```
+
+### Reporte de incidencias con estado por empleado entre fechas
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/payroll/reports/incidents_with_status_by_employee_between_dates?employee_id=1&start_date=2024-01-01&end_date=2024-12-31"
 ```

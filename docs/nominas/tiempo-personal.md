@@ -190,8 +190,8 @@ curl -v \
     "personal_time_off_request": {
       "employee_id": "1",
       "personal_time_off_type_id": "1",
-      "start_date": "2024-07-01",
-      "end_date": "2024-07-05",
+      "start_datetime": "2024-07-01T08:00:00",
+      "end_datetime": "2024-07-05T17:00:00",
       "days": "5",
       "notes": "Vacaciones de verano"
     }

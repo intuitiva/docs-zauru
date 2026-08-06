@@ -318,3 +318,13 @@ curl -v \
   -X GET \
   https://app.zauru.com/contracts/draft_contracts/1/activate.json
 ```
+
+### Listar Contratos Preliminares
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/contracts/draft_contracts.json
+```

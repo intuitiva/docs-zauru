@@ -114,7 +114,7 @@ curl -v \
   -X PUT \
   -d '{
     "shipment": {
-      "shipment_details_attributes": {
+      "movements_attributes": {
         "0": {
           "id": "1",
           "delivered_quantity": "5"

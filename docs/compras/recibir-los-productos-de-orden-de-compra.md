@@ -63,7 +63,7 @@ curl -v \
         }
       },
       "agency_id": 1,
-      "purchaser_order_id": 418168,
+      "purchase_order_id": 418168,
       "invoice_number": "fafafafa"
     }
   }' \

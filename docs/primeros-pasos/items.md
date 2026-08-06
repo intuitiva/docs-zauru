@@ -159,6 +159,28 @@ curl -v \
   https://app.zauru.com/settings/items/1.json
 ```
 
+### datatables de items
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{"start": "0", "length": "25"}' \
+  https://app.zauru.com/settings/items/datatables.json
+```
+
+### obtener nube de etiquetas de items
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/items/tag_cloud.json
+```
+
 ### crear item
 ```bash
 curl -v \
@@ -227,6 +249,23 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X DELETE \
   https://app.zauru.com/settings/items/1.json
+```
+
+### actualizar imágenes del item
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PATCH \
+  -d '{
+    "item": {
+      "image": "imagen.jpg",
+      "image2": "imagen2.jpg"
+    }
+  }' \
+  https://app.zauru.com/settings/items/1/update_images.json
 ```
 
 Nota: Solo se puede eliminar el item si no tiene # de serie, lotes, aparece a un envío, aparece a un paquete, aparece a una factura, aparece en una orden de compra o está seleccionado en algún descuentos de items.
@@ -389,7 +428,7 @@ curl -v \
   -d '{
     "brand": {
       "name": "Marca Ejemplo",
-      "notes": "Descripción de la marca",
+      "description": "Descripción de la marca",
       "color": "#FF0000"
     }
   }' \

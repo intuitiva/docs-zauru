@@ -181,7 +181,7 @@ curl -v \
     "taxable": "1",
     "contact_tin": "C/F",
     "contact_name": "CONSUMIDOR FINAL",
-    "date": "2024-05-01",
+    "date_raw": "2024-05-01",
     "subtotal": "100.00",
     "total": "100.00",
     "payment_term_id": "2",
@@ -415,9 +415,9 @@ curl -v \
     "contract": {
       "payee_id": "1",
       "taxable": "1",
-      "date": "2024-05-01",
+      "start_date": "2024-05-01",
       "contract_details_attributes": [
-        {"item_id": "1", "quantity": "2", "unit_price": "100.00"}
+        {"item_id": "1", "quantity": "2", "unit_price_cost": "100.00"}
       ]
     }
   }' \

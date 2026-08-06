@@ -399,8 +399,8 @@ curl -v \
       "name": "Operario de produccion",
       "description": "Operario de linea de produccion",
       "salary_account_id": "1",
-      "payment_frequency": "weekly",
-      "payroll_type": "piecework",
+      "payment_frequency": 3,
+      "payroll_type": true,
       "working_hours": "8",
       "job_position_deductions_attributes": {
         "0": { "payroll_benefits_deduction_id": "1" }
@@ -496,7 +496,7 @@ curl -v \
   -d '{
     "payroll_benefits_deduction": {
       "active": true,
-      "applies_to": "on_cycle",
+      "applies_to": "on-cycle",
       "name": "IGSS laboral",
       "employee_percent": "4.83",
       "entity_percent": "10.67",

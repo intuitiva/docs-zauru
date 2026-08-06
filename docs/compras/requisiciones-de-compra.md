@@ -138,7 +138,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{
-    "purchase_requisition": {
+    "purchases_purchase_requisition": {
       "reference": "Requisicion de prueba",
       "expected_at": "2024-01-19",
       "requestor_id": "1",
@@ -169,7 +169,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{
-    "purchase_requisition": {
+    "purchases_purchase_requisition": {
       "reference": "Requisicion de servicios",
       "expected_at": "2024-01-19",
       "requestor_id": "1",
@@ -195,7 +195,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X PUT \
   -d '{
-    "purchase_requisition": {
+    "purchases_purchase_requisition": {
       "approved": "1",
       "approver_id": "1"
     }
@@ -273,6 +273,39 @@ curl -v \
     "purchase_requisition_ids": ["1", "2"]
   }' \
   https://app.zauru.com/purchases/purchase_requisitions/bulk_approve_form.json
+```
+
+### Aprobar requisiciones de compra en lote
+Aprueba las requisiciones indicadas y crea automaticamente las ordenes de compra agrupadas por proveedor. Puede ajustar el proveedor, costo unitario y cantidad de cada detalle antes de aprobar.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "purchase_requisition_ids": ["1", "2"],
+    "purchase_requisition_details": {
+      "1": {
+        "payee_id": "1",
+        "unit_cost": "100",
+        "quantity": "10"
+      },
+      "2": {
+        "payee_id": "1",
+        "unit_cost": "200",
+        "quantity": "5"
+      }
+    },
+    "purchase_requisition_account_details": {
+      "3": {
+        "payee_id": "2",
+        "cost": "300"
+      }
+    }
+  }' \
+  https://app.zauru.com/purchases/purchase_requisitions/bulk_approve.json
 ```
 
 ### Ver el resultado de una aprobación

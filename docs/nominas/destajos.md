@@ -158,7 +158,7 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X POST \
   -d '{
-    "unpaid_piecework": {
+    "piecework": {
       "date": "2024-06-15",
       "supervisor_id": "1",
       "notes": "Corte de cafe parcela norte",

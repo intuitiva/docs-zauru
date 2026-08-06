@@ -276,3 +276,13 @@ curl -v \
   -X POST \
   https://app.zauru.com/settings/forms/form_submissions/1/make_it_current_version.json
 ```
+
+#### Ver versiones de un envío de formulario
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/settings/forms/form_submissions/1/versions.json
+```

@@ -124,7 +124,7 @@ Esto generará un JSON similar a este:
     "active":true,
     "address_line_1":"dirección física",
     "address_line_2":null,
-    "city":null,
+    "city_name":null,
     "contact":null,
     "created_at":"2019-01-31T15:51:01-06:00",
     "ean13":null,

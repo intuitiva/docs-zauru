@@ -135,11 +135,10 @@ curl -v \
         "0": {
           "item_id": "1",
           "quantity": "1",
-          "unit_price_cost": "650",
+          "unit_price": "650",
           "reference": ""
         }
-      },
-      "memo": "generado desde el API"
+      }
     }
   }' \
   https://app.zauru.com/pos/invoices.json
@@ -180,6 +179,17 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/pos/invoices/1.json
+  ```
+
+### Nueva factura (prellenado)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/pos/invoices/new.json
   ```
 
 ### Actualizar factura

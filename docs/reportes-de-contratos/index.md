@@ -82,3 +82,20 @@ Parametros:
 
 - `doc_type`: tipo de documento del contrato (`1` = Orden, `2` = Factura no Pagada, `3` = Caso, `4` = Orden de Compra). Por defecto `1`.
 - `include_closed`: `1` para incluir contratos cerrados, `0` para excluirlos. Por defecto `0`.
+
+### Contratos con generación pendiente
+
+Devuelve los contratos que tienen cuotas que debieron haberse generado pero no se generaron (huecos o duplicaciones en las recurrencias).
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  "https://app.zauru.com/contracts/reports/contracts_with_pending_generation.json?doc_type=1"
+```
+
+Parametros:
+
+- `doc_type`: tipo de documento del contrato (`1` = Orden, `2` = Factura no Pagada, `3` = Caso, `4` = Orden de Compra). Por defecto `1`.

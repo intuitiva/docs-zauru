@@ -123,7 +123,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/tag_categories.json
+  https://app.zauru.com/settings/tags/tag_categories.json
 ```
 
 ### Obtener detalles de un proyecto
@@ -145,7 +145,7 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/tag_categories/1.json
+  https://app.zauru.com/settings/tags/tag_categories/1.json
 ```
 
 ### Crear proyecto
@@ -185,5 +185,65 @@ curl -v \
       "description": "Descripción de la categoría"
     }
   }' \
-  https://app.zauru.com/settings/tag_categories.json
+  https://app.zauru.com/settings/tags/tag_categories.json
+```
+
+### Actualizar proyecto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "tag": {
+      "name": "proyecto actualizado",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/settings/tags/1.json
+```
+
+### Eliminar proyecto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/tags/1.json
+```
+
+### Actualizar categoría de proyecto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "tag_category": {
+      "name": "Categoría actualizada",
+      "active": true
+    }
+  }' \
+  https://app.zauru.com/settings/tags/tag_categories/1.json
+```
+
+### Eliminar categoría de proyecto
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/settings/tags/tag_categories/1.json
 ```

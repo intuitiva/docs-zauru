@@ -176,8 +176,7 @@ curl -v \
           "quantity": "1",
           "unit_price": "650"
         }
-      },
-      "memo": "generado desde el API"
+      }
     }
   }' \
   https://app.zauru.com/pos/sale_orders.json

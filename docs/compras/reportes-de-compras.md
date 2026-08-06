@@ -178,7 +178,7 @@ curl -v \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   -X GET \
-  "https://app.zauru.com/purchases/reports/purchased_items_between_dates?s_date=2024-01-01&e_date=2024-01-31"
+  "https://app.zauru.com/purchases/reports/purchased_items_between_dates.json?date=2024-01-01&days=30"
 ```
 
 ### Costo de inventario actual (DataTables)
