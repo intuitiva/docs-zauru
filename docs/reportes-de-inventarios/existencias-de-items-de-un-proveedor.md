@@ -17,3 +17,13 @@ Para visualizar el reporte de Existencias de ítems de un proveedor debemos de:
 ![Existencias de items](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-1.png)
 
 ![Existencias de iems](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-2.png)
+
+El reporte muestra el nivel actual de existencias de todos los productos de un proveedor, incluyendo disponible, entrante y saliente.
+
+**Filtros**:
+
+- **Proveedor**: seleccione el proveedor a consultar.
+
+**Columnas**: producto, categoria, disponible, entrante, saliente.
+
+**Exportacion**: disponible en formato XLS.

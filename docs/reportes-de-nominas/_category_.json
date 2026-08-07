@@ -1,0 +1,13 @@
+{
+  "position": 22,
+  "label": "Reportes de Nominas",
+  "link": {
+    "type": "doc",
+    "id": "reportes-de-nominas/index"
+  },
+  "collapsible": true,
+  "collapsed": true,
+  "customProps": {
+    "icon": "chart-line"
+  }
+}

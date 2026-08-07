@@ -20,3 +20,5 @@ Después de seleccionar el día, aparecerán dos cuadros. El primero es el cuadr
 El segundo cuadro aparecerá la información de los pagos que se recibieron ese día, con la respectiva información de la factura que se pagó.
 
 ![imagen2](/img/reportes-de-ventas/reportes-ventas-cierre-diario-2.jpg)
+
+El reporte de cierre diario incluye facturas, órdenes, pagos y facturas anuladas agrupados por vendedor y punto de venta. Permite seleccionar si se usa la fecha de emisión o la fecha de creación.

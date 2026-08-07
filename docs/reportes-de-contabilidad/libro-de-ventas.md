@@ -13,3 +13,24 @@ El libro de ventas lo ubicamos en:
   - Libro de Ventas
 
 ![Libro de ventas](/img/reportes-de-contabilidad/libro-de-ventas-1.png)
+
+El libro de ventas es un reporte fiscal que lista todas las facturas de venta emitidas en un mes. Es esencial para la declaracion de impuestos.
+
+**Parametros**:
+
+- **Mes y año**: mes a reportar.
+- **Agencia** (opcional): filtrar por agencia especifica.
+
+**Informacion mostrada por factura**:
+
+- Numero de factura y serie.
+- NIT del cliente.
+- Nombre del cliente.
+- Monto de bienes (productos).
+- Monto de servicios.
+- Exportaciones.
+- Ventas exentas.
+- IVA de debito fiscal.
+- Otros impuestos.
+- Notas de credito asociadas.
+- Total.

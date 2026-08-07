@@ -16,42 +16,15 @@ Los pasos para ver el libro mayor son:
 ![imagen2](/img/reportes-de-contabilidad/libro-mayor-1.jpg)
 ![imagen3](/img/reportes-de-contabilidad/libro-mayor-2.jpg)
 
-## API (llamadas desde sistemas externos)
+El reporte muestra el movimiento de cada cuenta contable durante el mes, con su saldo inicial, movimientos del mes y saldo final, y permite verificar la integridad de los saldos de cada cuenta.
 
-### Consultar el estado de generacion del libro mayor
+**Parametros**:
 
-El libro mayor se genera de forma asincrona. Este endpoint recibe el `zid` del reporte en proceso y devuelve su estado, porcentaje y, cuando termina, la URL a la que redirigir.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/accounting/reports/check_general_ledger.json?zid=XXXX"
-```
+- **Mes y año**: mes a reportar.
 
-Esto devolverá un JSON similar a este:
-```json
-{
-  "status": "not_found"
-}
-```
+**Versiones**:
 
-### Consultar el estado de generacion del libro mayor diario
+- **Libro mayor mensual**: acumulado del mes.
+- **Libro mayor diario**: desglose diario de movimientos por cuenta.
 
-Version diaria del libro mayor, tambien generada de forma asincrona. Recibe el `zid` del reporte en proceso.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/accounting/reports/check_daily_general_ledger.json?zid=XXXX"
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "status": "not_found"
-}
-```
+Ambas versiones se generan asincronamente para meses con alto volumen.

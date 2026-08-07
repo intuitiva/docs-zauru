@@ -14,23 +14,22 @@ Para localizar el libro de compras nos vamos a:
 
 ![Libro de Compras](/img/reportes-de-contabilidad/libro-de-compras-1.png)
 
-## API (llamadas desde sistemas externos)
+Es un reporte fiscal que lista todas las compras y gastos del mes.
 
-### Consultar el estado de generacion del libro de compras
+**Parametros**:
 
-El libro de compras se genera de forma asincrona. Este endpoint recibe el `zid` del reporte en proceso y devuelve su estado, porcentaje y, cuando termina, la URL a la que redirigir.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/accounting/reports/check_purchase_ledger.json?zid=XXXX"
-```
+- **Mes y año**: mes a reportar.
 
-Esto devolverá un JSON similar a este:
-```json
-{
-  "status": "not_found"
-}
-```
+**Informacion mostrada**:
+
+- Numero de documento.
+- NIT del proveedor.
+- Nombre del proveedor.
+- Monto de la compra.
+- IVA credito fiscal.
+- Impuestos extra (combustible, etc.).
+- Total.
+
+El libro de compras utiliza las cuentas configuradas en [Configuraciones](../contabilidad/configuraciones) para identificar gastos de combustible, impuestos al combustible y otros impuestos extra.
+
+**Generacion asincrona**: Para meses con muchas transacciones, el reporte se genera en segundo plano. El sistema mostrara el progreso y, al finalizar, permitira descargar el Excel.

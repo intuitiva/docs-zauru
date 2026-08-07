@@ -14,25 +14,21 @@ Los pasos para ver el balance general son:
 
 Acá puede ver ver su balance general global o puede seleccionar los detalles por mes.
 
-![captura conta1](/img/reportes-de-contabilidad/balance-general-1.png)!
+![captura conta1](/img/reportes-de-contabilidad/balance-general-1.png)
 
-## API (llamadas desde sistemas externos)
+El reporte presenta:
 
-### Consultar el estado de generacion del balance en moneda local
+- Activos (corrientes y no corrientes)
+- Pasivos (corrientes y no corrientes)
+- Capital o Patrimonio
 
-El balance en moneda local se genera de forma asincrona. Este endpoint recibe el `zid` del reporte en proceso y devuelve su estado, porcentaje y, cuando termina, la URL a la que redirigir.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  "https://app.zauru.com/accounting/reports/check_balance_sheet_in_local_currency.json?zid=XXXX"
-```
+**Parametros**:
 
-Esto devolverá un JSON similar a este:
-```json
-{
-  "status": "not_found"
-}
-```
+- **Mes y año**: fecha de corte del balance.
+- **Cantidad de meses**: cuantos meses hacia atras mostrar (permite ver la evolucion mensual).
+
+**Versiones**:
+
+- **Estandar**: clasifica por tipo de cuenta y liquidez, con totales por moneda.
+- **Por grupos de cuenta**: consolida por grupo de cuenta en lugar de cuenta individual.
+- **En moneda local**: convierte todos los saldos a la moneda de la entidad (se genera en segundo plano para balances grandes).

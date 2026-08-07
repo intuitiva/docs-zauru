@@ -19,3 +19,9 @@ Para ingresar al reporte es necesario realizar lo siguiente:
 
 
 Luego hay que elegir el mes, año y de que vendedor se quiere ver la información. Aparecerán las facturas y la cantidad de las facturas que se han pagado y cuales no se han pagado aun.
+
+El reporte muestra el detalle de ventas mensuales por vendedor con desglose de facturas, órdenes y notas de crédito. Permite:
+
+- Seleccionar vendedores específicos.
+- Filtrar por rango de fechas.
+- Incluir o excluir IVA.

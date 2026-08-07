@@ -18,3 +18,5 @@ Para ingresar a este reporte hay que seguir los siguientes pasos:
 Después de seleccionar el mes, año y proveedor, se enlistara los productos que se le compro al proveedor. A un lado se puede ver la información los productos como la cantidad que se han vendido, el costo, precio y el margen promedio de ganancia.
 
 ![imagen2](/img/reportes-de-ventas/reportes-ventas-item-por-proveedor-mensual-2.jpg)
+
+Es el reporte mensual de ítems por proveedor con ventas y costos calculados.

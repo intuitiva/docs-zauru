@@ -30,4 +30,4 @@ El punto de venta (P.D.V.) de Zauru ofrece las siguientes funcionalidades:
 - **[Gestionar envios](gestionar-envios.md)**: Administre los envios en transito y registre las entregas de productos.
 
 ### Reportes
-- **[Reportes](reportes.md)**: Consulte cierres diarios, ventas mensuales, productos vendidos y otros reportes operativos del punto de venta.
+- **[Reportes](../reportes-de-puntos-de-venta)**: Consulte cierres diarios, ventas mensuales, productos vendidos y otros reportes operativos del punto de venta.

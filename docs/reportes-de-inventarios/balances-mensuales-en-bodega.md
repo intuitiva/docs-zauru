@@ -17,3 +17,15 @@ Para ingresar al Balance Mensual en Bodega es necesario seguir los siguientes pa
 Una vez se haya ingresado, se tiene que seleccionar la que se quiere observar, el mes y el año. Después aparecerá enlistado los productos que ingresaron en ese mes. También se observará los productos que salieron de bodegas y por último el total de producto que se encuentra en la bodega.
 
 ![imagen2](/img/reportes-de-inventarios/balances-mensuales-en-bodega-2.png)
+
+El reporte muestra el balance de inventario mensual: saldo inicial, ingresos, egresos, egresos no entregados y saldo final para cada producto en una bodega o en todas las bodegas.
+
+**Filtros**:
+
+- **Mes y año**: periodo a consultar.
+- **Bodega**: bodega especifica o todas.
+- **Tipo de stock**: stock disponible (available) o stock fisico (available + outgoing).
+
+**Columnas**: producto, categoria, saldo inicial, ingresos, egresos, egresos no entregados, saldo final.
+
+**Exportacion**: disponible en formato XLS.

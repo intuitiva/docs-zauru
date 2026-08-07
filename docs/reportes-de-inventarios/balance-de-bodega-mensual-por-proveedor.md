@@ -15,3 +15,11 @@ Lo podemos localizar en:
 Acá podemos visualizar el balance inicial, entrada, salida que nos da el balance final por línea.
 
 ![balance de bodega mensual por proveedor](/img/reportes-de-inventarios/balance-de-bodega-mensual-por-proveedor-1.png)
+
+**Filtros**:
+
+- **Mes y año**: periodo a consultar.
+- **Bodega**: bodega especifica o todas.
+- **Proveedor**: seleccione el proveedor a analizar.
+
+**Exportacion**: disponible en formato XLS.
