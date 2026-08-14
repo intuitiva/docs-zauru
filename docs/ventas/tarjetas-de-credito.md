@@ -4,7 +4,7 @@ sidebar_label: "Tarjetas de Crédito"
 sidebar_position: 6
 ---
 
-Este tutorial está enfocado en como agregar, consultar y desactivar tarjetas de crédito para los clientes. Las tarjetas de crédito permiten a los clientes realizar pagos a través de una pasarela de pago configurada previamente.
+Este tutorial está enfocado en como agregar, consultar y desactivar tarjetas de crédito para los clientes, para tokenizar las tarjetas de crédito y permitir el cobro con tarjeta de crédito automático sin volver a digitar la información de la tarjeta de crédito. Las tarjetas de crédito permiten a los clientes realizar pagos a través de una pasarela de pago configurada previamente.
 
 ## Requisitos Previos
 
@@ -15,7 +15,7 @@ Antes de poder agregar una tarjeta de crédito a un cliente, se debe contar con 
 3. Debe existir al menos una **configuración de gateway** activa (vea el tutorial de "Configuraciones de Gateway/Pasarela de Pago").
 4. El gateway configurado debe tener habilitada la opción de **tokenización**.
 
-## Agregar una Tarjeta de Crédito al Cliente
+## Agregar una Tarjeta de Crédito al Cliente (tokenizarla)
 
 Los pasos para agregar una tarjeta de crédito a un cliente son los siguientes:
 
@@ -85,6 +85,8 @@ La tarjeta será desactivada (soft-delete) y ya no estará disponible para reali
 
 ![imagen4](/img/ventas/tarjetas-de-credito-4.png)
 
+## Cobrar con Tarjeta de Crédito
+
 ## API (llamadas desde sistemas externos)
 
 ### Crear tarjeta de crédito para un cliente
@@ -145,3 +147,83 @@ Esto devolverá un JSON similar a este:
 ```json
 {}
 ```
+
+### Crear un pago con tarjeta de crédito automático
+
+Al crear un pago normal asociado a un método de pago que tenga una pasarela configurada con tokenización, Zauru generará un intento de cobro a la tarjeta tokenizada del cliente. Si la pasarela requiere CVV para cobrar, debe enviarlo en el campo `gateway_cvv`.
+
+```bash
+curl -X POST \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -d '{
+    "payment": {
+      "task_reason": "",
+      "agency_id": 1,
+      "payment_details_attributes": {
+        "0": {
+          "amount": 50,
+          "invoice_id": 1,
+          "reference": ""
+        }
+      },
+      "memo": "",
+      "pdf_cache": "",
+      "gateway_cvv": "456",
+      "date": "2026-08-14",
+      "charger_id": 1,
+      "receipt": "",
+      "delegates": [""],
+      "payment_method_id": 1,
+      "payee_id": 1,
+      "reference": "",
+      "image_cache": "",
+      "image1_cache": "",
+      "draft": "0"
+    }
+  }' \
+  https://app.zauru.com/sales/payments.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 2,
+  "id_number": null,
+  "reference": "772256",
+  "date": "2026-08-14",
+  "payee_id": 1,
+  "image": {"url": null, "standard": {"url": null}},
+  "agency_id": 1,
+  "payment_method_id": 1,
+  "amount": "50.0",
+  "voided": false,
+  "voided_at": null,
+  "creator_id": 1,
+  "entity_id": 1,
+  "memo": "",
+  "created_at": "2026-08-14T18:22:52.090Z",
+  "updated_at": "2026-08-14T18:22:52.090Z",
+  "receipt": "",
+  "payment_details_count": 1,
+  "draft": false,
+  "confirmed_at": "2026-08-14T18:22:48.514Z",
+  "confirmer_id": 1,
+  "pos": false,
+  "draft_number": null,
+  "voider_id": null,
+  "exchange_rate": 1.0,
+  "currency_id": 1,
+  "external_image_url": null,
+  "image1": {"url": null, "standard": {"url": null}},
+  "pdf": {"url": null, "thumbnail": {"url": null}},
+  "charger_id": 1,
+  "credit_card_authorization_code": "772256",
+  "credit_card_transaction_id": "7867317702326193004806"
+}
+```
+
+Los campos `credit_card_authorization_code` y `credit_card_transaction_id` confirman que el pago se cobró exitosamente contra la tarjeta tokenizada a través del gateway.
