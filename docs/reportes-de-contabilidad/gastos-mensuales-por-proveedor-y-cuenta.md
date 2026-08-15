@@ -1,7 +1,7 @@
 ---
 title: "Gastos Mensuales por Proveedor y Cuenta"
 sidebar_label: "Gastos Mensuales por Proveedor y Cuenta"
-sidebar_position: 36
+sidebar_position: 31
 ---
 
 Este reporte muestra el desglose de gastos mensuales por proveedor y ademas por cuenta contable.

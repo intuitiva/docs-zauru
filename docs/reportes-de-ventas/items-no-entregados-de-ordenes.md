@@ -1,7 +1,7 @@
 ---
 title: "Ítems No Entregados de Órdenes"
 sidebar_label: "Ítems No Entregados de Órdenes"
-sidebar_position: 74
+sidebar_position: 72
 ---
 
 Este reporte muestra los ítems en órdenes de venta que no han sido entregados.

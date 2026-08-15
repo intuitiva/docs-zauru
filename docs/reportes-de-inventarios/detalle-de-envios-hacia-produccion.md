@@ -1,7 +1,7 @@
 ---
 title: "Detalle de Envios Hacia Produccion"
 sidebar_label: "Detalle de Envios Hacia Produccion"
-sidebar_position: 18
+sidebar_position: 11
 ---
 
 Este reporte muestra el detalle de todos los envios que ingresaron a la bodega virtual de Produccion en un mes especifico.

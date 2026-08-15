@@ -1,7 +1,7 @@
 ---
 title: "Item de Compra entre Fechas"
 sidebar_label: "Item de Compra entre Fechas"
-sidebar_position: 15
+sidebar_position: 14
 ---
 
 Este reporte es el detalle de compras de un producto especifico entre dos fechas. Muestra cada orden de compra que incluye ese producto, con cantidades, costos unitarios originales y costos finales calculados.

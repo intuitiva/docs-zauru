@@ -51,3 +51,35 @@ En las [Configuraciones](configuraciones) de contabilidad puede establecer una c
 ## Fecha de cierre contable
 
 En las configuraciones puede establecer una fecha de cierre ("closed until date"). Cuando esta fecha esta configurada, el sistema protege todas las transacciones anteriores a esa fecha: no podran ser editadas ni borradas. Esto permite cerrar periodos contables ya revisados y declarados.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar el formulario de cierre mensual del estado de resultados
+
+Obtiene los datos del formulario para generar el cierre mensual del estado de resultados (cuenta de capital destino, mes y ano). El proceso de generacion del cierre (`automatic_monthly_close_process`) solo responde HTML desde la interfaz web, por lo que el cierre se ejecuta desde la pantalla de cuentas.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/automatic_monthly_close.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
+### Consultar el formulario de cierre anual del estado de resultados
+
+Obtiene los datos del formulario para generar el cierre anual del estado de resultados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/automatic_annual_close.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

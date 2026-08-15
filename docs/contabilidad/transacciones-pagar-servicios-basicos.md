@@ -105,3 +105,158 @@ Le aparecerán las opciones para crear una nueva transacción, los pasos para cr
 Le deberá aparecer un mensaje de éxito notificándole que se creo la transacción exitosamente. Para imprimir el cheque presione el botón de “Imprimir como cheque”.
 
 ![imagen9](/img/contabilidad/transacciones-pagar-servicios-basicos-9.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Crear una transaccion (pago de servicio al contado)
+
+El pago al contado se registra desde la cuenta monetaria hacia la cuenta de gasto del servicio, con los datos de la factura.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "printable": true,
+      "reference": "Pago de telefono",
+      "invoice": "F-500",
+      "invoice_date": "2026-07-28",
+      "date": "2026-08-01",
+      "account_id": "1",
+      "amount": "250",
+      "splits_attributes": {
+        "0": {
+          "reference": "Telefono",
+          "account_id": "2",
+          "amount": "250.0"
+        }
+      },
+      "memo": "Factura de telefono al contado"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": true,
+  "invoice": "F-500",
+  "id_number": null,
+  "reference": "Pago de telefono",
+  "date": "2026-08-01",
+  "income": false,
+  "memo": "Factura de telefono al contado",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 1,
+  "amount": "250.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": "2026-07-28",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```
+
+### Crear una transaccion (factura de servicio al credito)
+
+Cuando el proveedor da credito, primero se ingresa la factura desde la cuenta "Cuentas por pagar credito" hacia la cuenta de gasto. El pago posterior es una transaccion desde la cuenta monetaria hacia "Cuentas por pagar credito".
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "reference": "Factura de telefono al credito",
+      "invoice": "F-501",
+      "invoice_date": "2026-07-28",
+      "date": "2026-08-15",
+      "account_id": "3",
+      "amount": "250",
+      "splits_attributes": {
+        "0": {
+          "reference": "Telefono",
+          "account_id": "2",
+          "amount": "250.0"
+        }
+      },
+      "memo": "Factura al credito"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 2,
+  "zid": 2,
+  "printable": false,
+  "invoice": "F-501",
+  "id_number": null,
+  "reference": "Factura de telefono al credito",
+  "date": "2026-08-15",
+  "income": false,
+  "memo": "Factura al credito",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 3,
+  "amount": "250.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": "2026-07-28",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```

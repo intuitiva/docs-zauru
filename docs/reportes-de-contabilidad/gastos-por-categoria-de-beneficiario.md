@@ -1,7 +1,7 @@
 ---
 title: "Gastos por Categoria de Beneficiario"
 sidebar_label: "Gastos por Categoria de Beneficiario"
-sidebar_position: 37
+sidebar_position: 32
 ---
 
 Este reporte muestra los gastos asociados a una etiqueta (tag), agrupados por categoria de beneficiario.

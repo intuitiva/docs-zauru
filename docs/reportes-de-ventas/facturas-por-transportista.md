@@ -1,7 +1,7 @@
 ---
 title: "Facturas por Transportista (Shipper)"
 sidebar_label: "Facturas por Transportista (Shipper)"
-sidebar_position: 72
+sidebar_position: 70
 ---
 
 Este reporte muestra las facturas u órdenes de venta filtradas por transportista y fecha de entrega.

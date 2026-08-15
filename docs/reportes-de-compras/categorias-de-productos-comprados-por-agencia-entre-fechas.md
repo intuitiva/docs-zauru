@@ -1,7 +1,7 @@
 ---
 title: "Categorias de Productos Comprados por Agencia entre Fechas"
 sidebar_label: "Categorias de Productos Comprados por Agencia entre Fechas"
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 Similar al reporte de categorias compradas, pero agrupado por agencia y categoria de producto. Muestra cantidades, costos en moneda local y costos sin IVA.

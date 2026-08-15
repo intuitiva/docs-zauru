@@ -1,7 +1,7 @@
 ---
 title: "Categoria de Item de Compra entre Fechas"
 sidebar_label: "Categoria de Item de Compra entre Fechas"
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 Similar al reporte de item de compra, pero para una categoria completa de productos. Muestra todas las ordenes de compra que incluyen productos de la categoria seleccionada.

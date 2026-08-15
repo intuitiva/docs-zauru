@@ -94,3 +94,128 @@ El reporte muestra:
 - **Todas las bodegas**: Muestra los productos cuyo total global está por debajo del punto de re orden configurado en el ítem.
 
 El reporte incluye el nombre del producto, la cantidad disponible, el punto de re orden configurado, la última compra realizada y puede exportarse a formato Excel (.xls).
+
+## API (llamadas desde sistemas externos)
+
+### Ver existencias y puntos de re orden de una bodega
+
+Devuelve las existencias de la bodega con el punto de re orden configurado (`stock_reorder_point`) para cada producto.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks.json?warehouse=1
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "item_id": 1,
+    "item_name": "Producto 1",
+    "item_code": "P1",
+    "stock_id": 1,
+    "stock_available": 25,
+    "stock_incoming": 0,
+    "stock_outgoing": 1,
+    "stock_physical": 26,
+    "stock_reorder_point": 30,
+    "stock_updated_at": "2026-08-01T10:00:00.000Z"
+  },
+  {
+    "item_id": 2,
+    "item_name": "Producto 7",
+    "item_code": "P7",
+    "stock_id": 2,
+    "stock_available": 25,
+    "stock_incoming": 10,
+    "stock_outgoing": 0,
+    "stock_physical": 25,
+    "stock_reorder_point": 10,
+    "stock_updated_at": "2026-08-01T10:00:00.000Z"
+  }
+]
+```
+
+### Ver el detalle de una existencia
+
+Devuelve el registro de existencia con el punto de re orden y la cantidad económica de orden configurados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "entity_id": 1,
+  "item_id": 2,
+  "agency_id": 1,
+  "available": "25.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "reorder_point": "30.000000",
+  "economic_order_quantity": "50.000000",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000"
+}
+```
+
+### Obtener estructura para editar una existencia
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "entity_id": 1,
+  "item_id": 2,
+  "agency_id": 1,
+  "available": "25.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "reorder_point": "30.000000",
+  "economic_order_quantity": "50.000000",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000"
+}
+```
+
+### Actualizar el punto de re orden y la cantidad economica de orden
+
+Actualiza el punto de re orden (`reorder_point`) y la cantidad económica de orden (`economic_order_quantity`) de la existencia de un producto en una bodega.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "stock": {
+      "reorder_point": 30,
+      "economic_order_quantity": 50
+    }
+  }' \
+  https://app.zauru.com/inventories/stocks/1.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

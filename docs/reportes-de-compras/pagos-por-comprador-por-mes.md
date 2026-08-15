@@ -1,7 +1,7 @@
 ---
 title: "Pagos por Comprador por Mes"
 sidebar_label: "Pagos por Comprador por Mes"
-sidebar_position: 24
+sidebar_position: 23
 ---
 
 Este reporte muestra los pagos realizados agrupados por comprador y por metodo de pago dentro de un periodo.

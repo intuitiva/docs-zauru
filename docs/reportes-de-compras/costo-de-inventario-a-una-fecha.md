@@ -1,7 +1,7 @@
 ---
 title: "Costo de Inventario a una Fecha"
 sidebar_label: "Costo de Inventario a una Fecha"
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 Este reporte muestra el costo del inventario a una fecha historica especifica. Utiliza los costos promedios registrados hasta esa fecha para reconstruir el valor del inventario en el pasado.

@@ -1,7 +1,7 @@
 ---
 title: "Producciones Mensuales por Empleado"
 sidebar_label: "Producciones Mensuales por Empleado"
-sidebar_position: 14
+sidebar_position: 7
 ---
 
 Este reporte muestra los envios de produccion (hacia la bodega virtual de Produccion) realizados por un empleado especifico en un mes determinado.

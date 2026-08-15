@@ -37,3 +37,258 @@ En el listado de tipos de destajo, hacer clic en **"Exportar"** para descargar u
 ## Editar y borrar tipos de destajo
 
 Desde el detalle del tipo de destajo, usar los botones **"Editar"** y **"Borrar"**.
+
+## API (llamadas desde sistemas externos)
+
+### Listar tipos de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "active": true,
+    "zid": 1,
+    "piecework_type_group_id": 1,
+    "id_number": "DEST-001",
+    "name": "Corte de cafe",
+    "unit_of_measurement": "quintal",
+    "value": "45.500000",
+    "description": "Corte de cafe por quintal",
+    "account_id": 2,
+    "creator_id": 3,
+    "updater_id": 3,
+    "entity_id": 1,
+    "created_at": "2026-08-01T10:00:00.000Z",
+    "updated_at": "2026-08-01T10:00:00.000Z",
+    "includes_bonus": true,
+    "overtime": false,
+    "force_whole_week_bonuses_with_other_bonused_piecework_types": false,
+    "piecework_type_group": {
+      "id_number": "GRP-001",
+      "name": "Cosecha"
+    }
+  },
+  {
+    "id": 2,
+    "active": true,
+    "zid": 2,
+    "piecework_type_group_id": 2,
+    "id_number": "DEST-002",
+    "name": "Siembra",
+    "unit_of_measurement": "tarea",
+    "value": "30.000000",
+    "description": "Siembra por tarea",
+    "account_id": 2,
+    "creator_id": 3,
+    "updater_id": null,
+    "entity_id": 1,
+    "created_at": "2026-08-01T11:00:00.000Z",
+    "updated_at": "2026-08-01T11:00:00.000Z",
+    "includes_bonus": true,
+    "overtime": false,
+    "force_whole_week_bonuses_with_other_bonused_piecework_types": false,
+    "piecework_type_group": {
+      "id_number": "GRP-002",
+      "name": "Siembra"
+    }
+  }
+]
+```
+
+### Ver un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "active": true,
+  "zid": 1,
+  "piecework_type_group_id": 1,
+  "id_number": "DEST-001",
+  "name": "Corte de cafe",
+  "unit_of_measurement": "quintal",
+  "value": "45.500000",
+  "description": "Corte de cafe por quintal",
+  "account_id": 2,
+  "creator_id": 3,
+  "updater_id": 3,
+  "entity_id": 1,
+  "created_at": "2026-08-01T10:00:00.000Z",
+  "updated_at": "2026-08-01T10:00:00.000Z",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
+### Obtener estructura para crear un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/new.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": null,
+  "active": true,
+  "zid": null,
+  "piecework_type_group_id": null,
+  "id_number": null,
+  "name": null,
+  "unit_of_measurement": null,
+  "value": null,
+  "description": null,
+  "account_id": null,
+  "creator_id": null,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": null,
+  "updated_at": null,
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
+### Obtener estructura para editar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/payroll/settings/piecework_types/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "active": true,
+  "zid": 1,
+  "piecework_type_group_id": 1,
+  "id_number": "DEST-001",
+  "name": "Corte de cafe",
+  "unit_of_measurement": "quintal",
+  "value": "45.500000",
+  "description": "Corte de cafe por quintal",
+  "account_id": 2,
+  "creator_id": 3,
+  "updater_id": 3,
+  "entity_id": 1,
+  "created_at": "2026-08-01T10:00:00.000Z",
+  "updated_at": "2026-08-01T10:00:00.000Z",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
+### Crear un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "piecework_type": {
+      "active": true,
+      "name": "Corte de cafe",
+      "value": "45.5",
+      "unit_of_measurement": "quintal",
+      "account_id": "2",
+      "piecework_type_group_id": "1",
+      "includes_bonus": true,
+      "force_whole_week_bonuses_with_other_bonused_piecework_types": false,
+      "overtime": false
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_types.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "active": true,
+  "zid": 1,
+  "piecework_type_group_id": 1,
+  "id_number": "DEST-001",
+  "name": "Corte de cafe",
+  "unit_of_measurement": "quintal",
+  "value": "45.500000",
+  "description": null,
+  "account_id": 2,
+  "creator_id": 3,
+  "updater_id": null,
+  "entity_id": 1,
+  "created_at": "2026-08-01T10:00:00.000Z",
+  "updated_at": "2026-08-01T10:00:00.000Z",
+  "includes_bonus": true,
+  "overtime": false,
+  "force_whole_week_bonuses_with_other_bonused_piecework_types": false
+}
+```
+
+### Actualizar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "piecework_type": {
+      "value": "50.0",
+      "includes_bonus": false
+    }
+  }' \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+
+### Borrar un tipo de destajo
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X DELETE \
+  https://app.zauru.com/payroll/settings/piecework_types/1.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

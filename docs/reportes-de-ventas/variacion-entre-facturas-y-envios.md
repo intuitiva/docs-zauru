@@ -1,7 +1,7 @@
 ---
 title: "Variación entre Facturas y Envíos"
 sidebar_label: "Variación entre Facturas y Envíos"
-sidebar_position: 76
+sidebar_position: 74
 ---
 
 Este reporte compara las cantidades facturadas contra las cantidades enviadas, mostrando las diferencias.

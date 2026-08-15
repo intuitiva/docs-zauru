@@ -1,7 +1,7 @@
 ---
 title: "Kardex de Producto entre Fechas"
 sidebar_label: "Kardex de Producto entre Fechas"
-sidebar_position: 36
+sidebar_position: 26
 ---
 
 Este reporte muestra el historial completo de movimientos de un producto entre dos meses. Incluye todas las entradas (compras) y salidas (ventas), con sus costos unitarios, costos promedio y saldos acumulados. Es util para auditoria de costos y trazabilidad de inventario.

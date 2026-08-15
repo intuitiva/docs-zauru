@@ -1,7 +1,7 @@
 ---
 title: "Movimientos en Cuentas de Proyecto"
 sidebar_label: "Movimientos en Cuentas de Proyecto"
-sidebar_position: 39
+sidebar_position: 34
 ---
 
 Este reporte muestra las transacciones y el balance corrido de una cuenta de proyecto (activo, pasivo o capital) filtradas por etiqueta.

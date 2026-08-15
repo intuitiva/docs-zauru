@@ -65,33 +65,3 @@ Cuando se activa esta opción, al editar las variaciones de un ítem se mostrar�
 Después de realizar los cambios deseados, presione "Actualizar Variable" para guardar la configuración. Le aparecerá un mensaje de éxito confirmando que las variables se actualizaron correctamente.
 
 ![imagen2](/img/primeros-pasos/configuraciones-entidad-2.png)
-
-## API (llamadas desde sistemas externos)
-
-### Obtener configuraciones de la entidad
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/settings_settings/new.json
-```
-
-### Actualizar configuraciones de la entidad
-
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "date_format": "DD/MM/YYYY",
-    "boolean_format": "S/N",
-    "show_empty_fields": "1"
-  }' \
-  https://app.zauru.com/settings/settings_settings.json
-```

@@ -1,7 +1,7 @@
 ---
 title: "Movimientos de Beneficiario en Cuenta"
 sidebar_label: "Movimientos de Beneficiario en Cuenta"
-sidebar_position: 24
+sidebar_position: 22
 ---
 
 Este reporte muestra todas las transacciones de un beneficiario especifico dentro de una cuenta contable, con balance corrido.

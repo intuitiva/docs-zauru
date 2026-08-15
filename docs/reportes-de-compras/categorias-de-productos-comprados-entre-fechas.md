@@ -1,7 +1,7 @@
 ---
 title: "Categorias de Productos Comprados entre Fechas"
 sidebar_label: "Categorias de Productos Comprados entre Fechas"
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 Este reporte muestra las compras agrupadas por categoria de producto entre dos fechas. Incluye el costo total por categoria. Tambien agrupa las compras de cuentas contables por grupo de cuenta.

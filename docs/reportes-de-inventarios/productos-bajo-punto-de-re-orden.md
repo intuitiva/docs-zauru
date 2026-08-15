@@ -1,7 +1,7 @@
 ---
 title: "Productos Bajo Punto de Re Orden"
 sidebar_label: "Productos Bajo Punto de Re Orden"
-sidebar_position: 16
+sidebar_position: 9
 ---
 
 Este reporte muestra todos los productos que estan por debajo de su punto de re orden, indicando la necesidad de reabastecimiento.

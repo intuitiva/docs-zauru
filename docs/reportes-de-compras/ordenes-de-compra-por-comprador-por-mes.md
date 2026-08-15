@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de Compra por Comprador por Mes"
 sidebar_label: "Ordenes de Compra por Comprador por Mes"
-sidebar_position: 23
+sidebar_position: 22
 ---
 
 Este reporte agrupa las ordenes de compra emitidas en un mes por comprador. Es util para evaluar el desempeno de los compradores.

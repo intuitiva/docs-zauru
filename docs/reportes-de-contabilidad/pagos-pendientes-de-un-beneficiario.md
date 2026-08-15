@@ -1,7 +1,7 @@
 ---
 title: "Pagos Pendientes de un Beneficiario"
 sidebar_label: "Pagos Pendientes de un Beneficiario"
-sidebar_position: 26
+sidebar_position: 23
 ---
 
 Este reporte muestra todas las partidas no reconciliadas de un beneficiario especifico en una cuenta reconciliable.

@@ -1,7 +1,7 @@
 ---
 title: "Balance Detallado de Cuentas por Cobrar"
 sidebar_label: "Balance Detallado de Cuentas por Cobrar"
-sidebar_position: 91
+sidebar_position: 85
 ---
 
 Este reporte es una hoja de balance detallada de cuentas por cobrar que puede exportarse a Excel con formato de balance. Incluye todas las facturas pendientes con sus respectivos montos, fechas de vencimiento y buckets de antigüedad.

@@ -1,7 +1,7 @@
 ---
 title: "Ingresos Etiquetados de Cliente"
 sidebar_label: "Ingresos Etiquetados de Cliente"
-sidebar_position: 40
+sidebar_position: 35
 ---
 
 Este reporte muestra los ingresos asociados a un cliente (beneficiario), agrupados por etiqueta.

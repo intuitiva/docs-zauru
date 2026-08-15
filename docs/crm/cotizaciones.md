@@ -490,7 +490,14 @@ curl -v \
   -H "Content-type: application/json" \
   -H "X-User-Email: prueba@zauru.com" \
   -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/crm/quotes/entity_name/1.json
+  https://app.zauru.com/crm/quotes/1/entity_name.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "name": "Entidad Ejemplo, S.A."
+}
 ```
 
 ## Obtener plantillas de impresión disponibles para cotizaciones

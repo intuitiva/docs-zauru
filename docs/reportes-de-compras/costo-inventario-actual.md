@@ -1,7 +1,7 @@
 ---
 title: "Costo Inventario Actual"
 sidebar_label: "Costo Inventario Actual"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 En el momento de poner un precio, es importante tomar en cuenta el margen de ganancia que necesita la empresa. Para realizar el cálculo de margen de ganancia es importante tener el costo del producto al momento de ingresar a la empresa. Para esto, Zauru ofrece el servicio de poder observar el costo unitario del inventario.
@@ -20,3 +20,54 @@ Aparecerán todos los productos que están en el inventario de la empresa. A un 
 ![imagen2](/img/reportes-de-compras/costo-inventario-actual-2.png)
 
 El reporte muestra el costo actual del inventario disponible en todas las agencias. Incluye el costo promedio ponderado de cada producto, el stock disponible, el stock fisico y el valor total del inventario. Puede exportarse en formato CSV (compatible con SAT) o XLS.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar el costo del inventario actual
+Los datos del listado se obtienen mediante el endpoint del datatable:
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d 'draw=1&start=0&length=40&search[value]=&order[0][column]=1&order[0][dir]=asc' \
+  https://app.zauru.com/purchases/reports/datatables_inventory_cost.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 1,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "id": 1,
+      "code": "P-001",
+      "e": "7501000000001",
+      "p": "Proveedor Ejemplo A, S.A.",
+      "item": "Refresco Cola 355ml",
+      "mu": "UND",
+      "stock": 10,
+      "phystock": 12,
+      "unitcost": "5.25",
+      "total": "52.50"
+    },
+    {
+      "id": 2,
+      "code": "P-002",
+      "e": "",
+      "p": "Proveedor Ejemplo B, S.A.",
+      "item": "Bolsa de Azucar 1kg",
+      "mu": "UNIDAD",
+      "stock": 25,
+      "phystock": 25,
+      "unitcost": "3.10",
+      "total": "77.50"
+    }
+  ]
+}
+```

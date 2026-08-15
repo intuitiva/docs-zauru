@@ -1,7 +1,7 @@
 ---
 title: "Activos Correlativos Imprimibles"
 sidebar_label: "Activos Correlativos Imprimibles"
-sidebar_position: 27
+sidebar_position: 24
 ---
 
 Este reporte lista las transacciones de cuentas de activo filtradas por rango de numeracion correlativa, y permite buscar documentos por su numero de serie y rango.

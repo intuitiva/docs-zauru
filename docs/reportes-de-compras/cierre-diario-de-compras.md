@@ -1,7 +1,7 @@
 ---
 title: "Cierre Diario de Compras"
 sidebar_label: "Cierre Diario de Compras"
-sidebar_position: 20
+sidebar_position: 19
 ---
 
 Este reporte diario muestra todas las ordenes de compra emitidas en un dia, los pagos realizados y las ordenes de compra anuladas. Agrupa totales por termino de pago y por metodo de pago. Es util para cuadres de caja diarios.

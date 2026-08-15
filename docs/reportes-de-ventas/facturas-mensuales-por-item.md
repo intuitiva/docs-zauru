@@ -1,7 +1,7 @@
 ---
 title: "Facturas Mensuales por Ítem"
 sidebar_label: "Facturas Mensuales por Ítem"
-sidebar_position: 84
+sidebar_position: 79
 ---
 
 Este reporte muestra las facturas mensuales agrupadas por ítem.

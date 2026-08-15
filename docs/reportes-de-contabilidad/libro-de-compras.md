@@ -1,7 +1,7 @@
 ---
 title: "Libro de Compras"
 sidebar_label: "Libro de Compras"
-sidebar_position: 13
+sidebar_position: 12
 ---
 
 El libro de compras y gastos es un documento que informa de todas las compras realizadas, así como de los gastos derivados de la actividad.

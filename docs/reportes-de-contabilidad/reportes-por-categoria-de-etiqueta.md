@@ -1,7 +1,7 @@
 ---
 title: "Reportes por Categoria de Etiqueta"
 sidebar_label: "Reportes por Categoria de Etiqueta"
-sidebar_position: 38
+sidebar_position: 33
 ---
 
 Todos los reportes por etiqueta tienen su contraparte por **categoria de etiqueta**, que abarca todas las etiquetas hijas de una categoria. Son utiles para ver resultados consolidados de areas o departamentos completos.

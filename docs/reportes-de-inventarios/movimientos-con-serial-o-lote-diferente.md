@@ -1,7 +1,7 @@
 ---
 title: "Movimientos Con Serial o Lote Diferente"
 sidebar_label: "Movimientos Con Serial o Lote Diferente"
-sidebar_position: 13
+sidebar_position: 6
 ---
 
 Este reporte identifica movimientos de envios donde el numero de serie o lote registrado en el movimiento no coincide con el producto del movimiento.

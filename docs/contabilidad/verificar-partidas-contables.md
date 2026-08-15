@@ -89,3 +89,106 @@ La transaccion mostrara un icono de auditoria. Una vez auditada, solo es posible
 ## Fecha de cierre contable
 
 Ademas de la verificacion individual, puede configurar una fecha de cierre global en [Configuraciones](configuraciones). Todas las transacciones con fecha anterior a la fecha de cierre configurada seran protegidas automaticamente contra edicion y borrado.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar el balance de una cuenta
+
+Obtiene los datos de la cuenta contable que se esta verificando contra el estado de cuenta. Las acciones de verificacion (`verify`) y auditoria (`audit`) de las transacciones solo responden HTML/XML, por lo que la verificacion se realiza desde la interfaz web.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/1/balance.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "active": true,
+  "code": "1.1.1",
+  "name": "Cuenta BAC",
+  "description": "Cuenta monetaria",
+  "value": "12000.0",
+  "credit_limit": null,
+  "liquid": true,
+  "reconciliable": false,
+  "account_group_id": 1,
+  "currency_id": 1,
+  "account_type_id": 1,
+  "entity_id": 1,
+  "updater_id": 1,
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 0,
+  "entries_count": 2,
+  "cost": false
+}
+```
+
+### Consultar las transacciones de una cuenta (datatables)
+
+Devuelve el listado de transacciones de la cuenta en formato datatables, con el estado de verificacion (`v`) y auditoria (`a`) de cada partida, para compararlas contra el estado de cuenta del banco.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "scope": "all"
+  }' \
+  https://app.zauru.com/accounting/accounts/1/datatables_show.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 1,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "zid": 1,
+      "id": "A-101",
+      "ref": "Deposito de ejemplo",
+      "a": "",
+      "v": false,
+      "r": "-",
+      "d": "01/08/2026",
+      "p": "Cliente Prueba, S.A.",
+      "acc": "Insumos de Oficina",
+      "pay": "",
+      "dep": "1000.0",
+      "tag": "",
+      "ra": "",
+      "DT_RowId": "accounting-account-entry-1"
+    },
+    {
+      "zid": 2,
+      "id": "A-102",
+      "ref": "Pago de servicios",
+      "a": "",
+      "v": true,
+      "r": "-",
+      "d": "02/08/2026",
+      "p": "Proveedor de Servicios",
+      "acc": "Telefono",
+      "pay": "250.0",
+      "dep": "",
+      "tag": "",
+      "ra": "",
+      "DT_RowId": "accounting-account-entry-2"
+    }
+  ]
+}
+```

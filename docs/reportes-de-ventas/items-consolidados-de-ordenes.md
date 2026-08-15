@@ -1,7 +1,7 @@
 ---
 title: "Ítems Consolidados de Órdenes"
 sidebar_label: "Ítems Consolidados de Órdenes"
-sidebar_position: 73
+sidebar_position: 71
 ---
 
 Este reporte muestra los ítems consolidados desde órdenes de venta (para órdenes que fueron consolidadas).

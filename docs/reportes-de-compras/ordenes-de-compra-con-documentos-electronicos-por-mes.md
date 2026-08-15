@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de Compra con Documentos Electronicos por Mes"
 sidebar_label: "Ordenes de Compra con Documentos Electronicos por Mes"
-sidebar_position: 25
+sidebar_position: 24
 ---
 
 Este reporte muestra las ordenes de compra que tienen documentos tributarios electronicos asociados (FEL, DTE, etc.) recibidas en un mes especifico.

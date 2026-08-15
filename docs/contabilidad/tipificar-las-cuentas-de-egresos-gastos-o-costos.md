@@ -77,3 +77,115 @@ Al exportar la nomenclatura contable a Excel, las cuentas de tipo 3 (Gastos) se 
 - Costos (`cost = true`)
 
 Esto permite revisar facilmente que cuentas estan correctamente clasificadas.
+
+## API (llamadas desde sistemas externos)
+
+### Obtener detalle de una cuenta contable
+
+Incluye el atributo `cost` que indica si la cuenta de tipo "Gastos" esta tipificada como costo.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/accounting/accounts/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "active": true,
+  "code": "5.1.1",
+  "name": "Costo de mercaderia vendida",
+  "description": "Costo de ventas",
+  "value": "0.0",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": 1,
+  "currency_id": 1,
+  "account_type_id": 3,
+  "entity_id": 1,
+  "updater_id": 1,
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 0,
+  "entries_count": 0,
+  "cost": true
+}
+```
+
+### Crear una cuenta de gastos marcada como costo
+
+Al crear una cuenta contable de tipo 3 (Gastos), use el atributo `cost` para decidir si aparecera en la seccion de Costos (`cost: true`) o de Gastos (`cost: false`) del estado de resultados.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "account": {
+      "name": "Materia prima",
+      "code": "5.1.2",
+      "description": "Materia prima directa",
+      "account_type_id": "3",
+      "account_group_id": "1",
+      "currency_id": "1",
+      "active": true,
+      "cost": true
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 2,
+  "zid": 2,
+  "active": true,
+  "code": "5.1.2",
+  "name": "Materia prima",
+  "description": "Materia prima directa",
+  "value": "0.0",
+  "credit_limit": null,
+  "liquid": false,
+  "reconciliable": false,
+  "account_group_id": 1,
+  "currency_id": 1,
+  "account_type_id": 3,
+  "entity_id": 1,
+  "updater_id": 1,
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 0,
+  "entries_count": 0,
+  "cost": true
+}
+```
+
+### Actualizar la tipificacion de una cuenta (marcar o desmarcar como costo)
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "account": {
+      "cost": true
+    }
+  }' \
+  https://app.zauru.com/accounting/accounts/1.json
+```
+
+En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).

@@ -1,7 +1,7 @@
 ---
 title: "Ítems No Entregados de Envíos"
 sidebar_label: "Ítems No Entregados de Envíos"
-sidebar_position: 75
+sidebar_position: 73
 ---
 
 Este reporte muestra los ítems en envíos que no han sido entregados.

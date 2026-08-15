@@ -1,7 +1,7 @@
 ---
 title: "Libro de Ventas Diario"
 sidebar_label: "Libro de Ventas Diario"
-sidebar_position: 12
+sidebar_position: 11
 ---
 
 El libro de ventas diario nos muestra la información por día.

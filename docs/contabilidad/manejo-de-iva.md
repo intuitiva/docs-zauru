@@ -86,3 +86,86 @@ En el ejemplo, el balance menor es el de IVA por cobrar (Q1,655.60) y el mayor (
 Si la operacion fuera al reves, o sea, el IVA por cobrar fuera el mayor (en valor absoluto) que el IVA por pagar, la operacion a realizar es exactamente la misma, se crea desde **IVA por cobrar** hacia **IVA por pagar** con el monto mas pequeno entre los 2 saldos para establecer el credito fiscal con el que contamos. Nuestro credito fiscal coincidira con el saldo nuevo de la cuenta IVA por cobrar.
 
 De esta forma se podra tener controlado el IVA.
+
+## API (llamadas desde sistemas externos)
+
+### Crear una transaccion de compra o gasto con IVA
+
+Cuando se registra una compra o un gasto por medio de una transaccion contable, el IVA por cobrar se registra como un split hacia la cuenta de IVA configurada (`vat_to_charge`). El monto de la transaccion (`amount`) es el total y los `splits_attributes` separan el gasto neto del IVA.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "reference": "Compra con IVA",
+      "invoice": "B-100",
+      "invoice_date": "2026-08-01",
+      "date": "2026-08-01",
+      "account_id": "1",
+      "amount": "1160",
+      "splits_attributes": {
+        "0": {
+          "reference": "Gasto neto",
+          "account_id": "2",
+          "amount": "1000.0"
+        },
+        "1": {
+          "reference": "IVA por cobrar",
+          "account_id": "3",
+          "amount": "160.0"
+        }
+      },
+      "memo": "Compra con IVA por cobrar"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": false,
+  "invoice": "B-100",
+  "id_number": null,
+  "reference": "Compra con IVA",
+  "date": "2026-08-01",
+  "income": false,
+  "memo": "Compra con IVA por cobrar",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 1,
+  "amount": "1160.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 2,
+  "invoice_date": "2026-08-01",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```

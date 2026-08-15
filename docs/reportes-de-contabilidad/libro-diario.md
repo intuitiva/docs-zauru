@@ -1,7 +1,7 @@
 ---
 title: "Libro Diario"
 sidebar_label: "Libro Diario"
-sidebar_position: 15
+sidebar_position: 13
 ---
 
 El libro diario es un libro donde se anotan todas las transacciones por día y orden cronológico.
@@ -38,3 +38,52 @@ Es el registro cronologico de todas las transacciones contables del mes y la bas
 - **Libro diario estandar**: navegable con DataTables, permite busqueda y paginacion.
 - **Libro diario consolidado**: agrupa por tipo de documento y cuenta.
 - **Descarga Excel**: genera archivo Excel del libro diario completo.
+
+## API (llamadas desde sistemas externos)
+
+### Listado del libro diario (DataTables)
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d 'f_start=2026-08-01&f_end=2026-08-31&draw=1&start=0&length=40&search[value]=&order[0][column]=1&order[0][dir]=asc' \
+  https://app.zauru.com/accounting/reports/daily_ledger_datatables.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 1,
+  "recordsTotal": 120,
+  "recordsFiltered": 120,
+  "data": [
+    {
+      "zid": "1",
+      "date": "01/08/2026",
+      "reference": "FAC-0001",
+      "code": "1.01",
+      "account": "Caja",
+      "memo": "Pago a proveedor",
+      "owe": "",
+      "have": "Q1,500.00",
+      "second_currency": "",
+      "exchange_rate": ""
+    },
+    {
+      "zid": "2",
+      "date": "02/08/2026",
+      "reference": "FAC-0002",
+      "code": "4.01",
+      "account": "Ventas",
+      "memo": "Venta de mercaderia",
+      "owe": "Q2,000.00",
+      "have": "",
+      "second_currency": "",
+      "exchange_rate": ""
+    }
+  ]
+}
+```

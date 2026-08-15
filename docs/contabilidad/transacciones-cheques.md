@@ -57,3 +57,81 @@ Le aparecerán las opciones para crear un nueva transacción, los pasos para emi
 Luego de especificar todos los campos del cheque presione “Crear nueva transacción” para emitir el cheque.
 
 ![imagen4](/img/contabilidad/transacciones-cheques-4.png)
+
+## API (llamadas desde sistemas externos)
+
+### Crear una transaccion (emitir cheque)
+
+El cheque se emite como una transaccion contable desde la cuenta monetaria hacia la cuenta de gasto. Use `printable: true` si desea imprimirlo como cheque y `endorsement_restriction: true` si el cheque requiere endoso restringido. Para un cheque post-fechado coloque en `date` la fecha en la que se puede cobrar.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "printable": true,
+      "endorsement_restriction": false,
+      "reference": "Cheque a proveedor",
+      "date": "2026-08-01",
+      "account_id": "1",
+      "amount": "1000",
+      "splits_attributes": {
+        "0": {
+          "reference": "Pago de mercaderia",
+          "account_id": "2",
+          "amount": "1000.0"
+        }
+      },
+      "memo": "Cheque normal"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": true,
+  "invoice": null,
+  "id_number": null,
+  "reference": "Cheque a proveedor",
+  "date": "2026-08-01",
+  "income": false,
+  "memo": "Cheque normal",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 1,
+  "amount": "1000.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": null,
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```

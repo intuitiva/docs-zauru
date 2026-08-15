@@ -1,7 +1,7 @@
 ---
 title: "Flujo de Caja"
 sidebar_label: "Flujo de Caja"
-sidebar_position: 17
+sidebar_position: 15
 ---
 
 Se entiende por flujo de caja o flujo de finanzas el conjunto de los flujos de entradas y salidas de caja o efectivo en un periodo dado.

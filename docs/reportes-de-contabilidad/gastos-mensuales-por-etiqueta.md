@@ -1,7 +1,7 @@
 ---
 title: "Gastos Mensuales por Etiqueta"
 sidebar_label: "Gastos Mensuales por Etiqueta"
-sidebar_position: 29
+sidebar_position: 25
 ---
 
 Este reporte muestra los gastos de un mes especifico filtrados por una etiqueta (tag).

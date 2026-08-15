@@ -27,3 +27,55 @@ Le aparecerán las opciones para editar el usuario a desactivar:
 Para desactivar únicamente necesita quitar la opción de ¿Activa?, dejando el cuadro en blanco y presionar el botón de __Actualizar suscripción__.
 
 ![desactivar suscripciones dos ok](/img/permisos-de-acceso/desactivar-suscripciones-2.png)
+
+## API (llamadas desde sistemas externos)
+
+### Obtener los datos de la suscripcion a editar
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/access_control/subscriptions/1/edit.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "active": true,
+  "read_only": false,
+  "user_id": 2,
+  "role_id": 3,
+  "invitation_id": 1,
+  "entity_id": 1,
+  "updater_id": 2,
+  "notes": "Acceso al modulo de ventas",
+  "created_at": "2026-08-01T10:00:00.000Z",
+  "updated_at": "2026-08-01T10:00:00.000Z"
+}
+```
+
+### Desactivar una suscripcion
+
+Para desactivar una suscripcion, actualice el campo `active` a `false` (equivale a quitar la opcion "¿Activa?" en la interfaz). Tambien puede actualizar `read_only`, `user_id`, `role_id` y `notes`.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X PUT \
+  -d '{
+    "subscription": {
+      "active": false
+    }
+  }' \
+  https://app.zauru.com/access_control/subscriptions/1.json
+```
+
+En caso de exito, retorna un codigo HTTP `200 OK` (sin cuerpo).

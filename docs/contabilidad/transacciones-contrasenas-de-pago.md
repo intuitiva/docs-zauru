@@ -50,3 +50,82 @@ Presione “Crear nueva transacción”.
 Le aparecerá un mensaje notificándole que la transacción se creo exitosamente, para imprimir la contraseña de pago seleccione “Imprimir como Contraseña de Pago” en la parte inferior de la pagina.
 
 ![imagen3](/img/contabilidad/transacciones-contrasenas-de-pago-3.jpg)
+
+## API (llamadas desde sistemas externos)
+
+### Crear una transaccion (contraseña de pago)
+
+La contraseña de pago se registra como una transaccion contable desde la cuenta "Cuentas por pagar credito" hacia la cuenta de gasto, con los datos de la factura del proveedor y la fecha esperada de pago en `date`. Use `printable: true` para poder imprimirla como contraseña de pago.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "printable": true,
+      "reference": "Factura de proveedor",
+      "invoice": "A-1020",
+      "invoice_date": "2026-07-25",
+      "date": "2026-08-15",
+      "account_id": "1",
+      "amount": "800",
+      "splits_attributes": {
+        "0": {
+          "reference": "Proveedores y acreedores locales",
+          "account_id": "2",
+          "amount": "800.0"
+        }
+      },
+      "memo": "Contraseña de pago"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": true,
+  "invoice": "A-1020",
+  "id_number": null,
+  "reference": "Factura de proveedor",
+  "date": "2026-08-15",
+  "income": false,
+  "memo": "Contraseña de pago",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 1,
+  "amount": "800.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": "2026-07-25",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```

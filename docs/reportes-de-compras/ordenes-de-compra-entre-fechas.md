@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de Compra entre Fechas"
 sidebar_label: "Ordenes de Compra entre Fechas"
-sidebar_position: 19
+sidebar_position: 18
 ---
 
 Este reporte lista las ordenes de compra emitidas entre dos fechas. Permite filtrar por agencia y por categoria de producto. Muestra informacion de recepcion y agencia de cada item.

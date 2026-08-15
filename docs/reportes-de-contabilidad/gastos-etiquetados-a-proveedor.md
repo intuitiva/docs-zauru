@@ -1,7 +1,7 @@
 ---
 title: "Gastos Etiquetados a Proveedor"
 sidebar_label: "Gastos Etiquetados a Proveedor"
-sidebar_position: 41
+sidebar_position: 36
 ---
 
 Este reporte muestra los gastos asociados a un proveedor (beneficiario), agrupados por etiqueta.

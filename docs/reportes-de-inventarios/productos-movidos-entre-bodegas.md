@@ -1,7 +1,7 @@
 ---
 title: "Productos Movidos Entre Bodegas"
 sidebar_label: "Productos Movidos Entre Bodegas"
-sidebar_position: 19
+sidebar_position: 12
 ---
 
 Este reporte muestra las cantidades diarias de productos movidos entre dos bodegas especificas.

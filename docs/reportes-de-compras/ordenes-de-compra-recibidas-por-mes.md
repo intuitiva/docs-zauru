@@ -1,7 +1,7 @@
 ---
 title: "Ordenes de Compra Recibidas por Mes"
 sidebar_label: "Ordenes de Compra Recibidas por Mes"
-sidebar_position: 22
+sidebar_position: 21
 ---
 
 Este reporte muestra las ordenes de compra recibidas en un mes especifico. Incluye informacion del proveedor, termino de pago, moneda, tipo de cambio, agencia y envios asociados.

@@ -1,7 +1,7 @@
 ---
 title: "Productos Comprados a Proveedores entre Fechas"
 sidebar_label: "Productos Comprados a Proveedores entre Fechas"
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 Este reporte muestra los productos comprados a cada proveedor entre dos fechas. Agrupa por proveedor y producto, mostrando la cantidad comprada, el costo con IVA y el costo sin IVA. Es util para analisis de compras por proveedor.

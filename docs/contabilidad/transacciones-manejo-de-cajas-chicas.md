@@ -150,3 +150,156 @@ En resumen, el proceso de liquidacion permite:
 5. Crear la transaccion, que automaticamente suma todos los gastos, crea una sola transaccion de pago y reconcilia todas las partidas seleccionadas.
 
 Esto es mas eficiente que crear el pago manualmente y luego reconciliar partida por partida.
+
+## API (llamadas desde sistemas externos)
+
+### Registrar el traslado de fondos a la caja chica del empleado
+
+Primero se trasladan los fondos del banco (o de efectivo) hacia la caja chica del empleado.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "printable": true,
+      "reference": "Traslado a caja chica",
+      "date": "2026-08-01",
+      "account_id": "1",
+      "amount": "600",
+      "splits_attributes": {
+        "0": {
+          "reference": "Caja chica del empleado",
+          "account_id": "2",
+          "amount": "600.0"
+        }
+      },
+      "memo": "Fondos para gastos del empleado"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "zid": 1,
+  "printable": true,
+  "invoice": null,
+  "id_number": null,
+  "reference": "Traslado a caja chica",
+  "date": "2026-08-01",
+  "income": false,
+  "memo": "Fondos para gastos del empleado",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 1,
+  "amount": "600.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": null,
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```
+
+### Registrar un gasto pagado desde la caja chica
+
+El gasto del empleado se registra desde la caja chica hacia la cuenta de gasto. Si el gasto se paga vencido, use la cuenta "Cuentas por pagar a empleados" como cuenta principal (`account_id`) en lugar de la caja chica.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "entry": {
+      "payee_id": "1",
+      "reference": "Gasto de caja chica",
+      "invoice": "D-410",
+      "invoice_date": "2026-08-01",
+      "date": "2026-08-01",
+      "account_id": "2",
+      "amount": "90",
+      "splits_attributes": {
+        "0": {
+          "reference": "Agua",
+          "account_id": "3",
+          "amount": "90.0"
+        }
+      },
+      "memo": "Gasto pagado por el empleado"
+    }
+  }' \
+  https://app.zauru.com/accounting/entries.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 2,
+  "zid": 2,
+  "printable": false,
+  "invoice": "D-410",
+  "id_number": null,
+  "reference": "Gasto de caja chica",
+  "date": "2026-08-01",
+  "income": false,
+  "memo": "Gasto pagado por el empleado",
+  "image": null,
+  "verified": false,
+  "audited": false,
+  "payee_id": 1,
+  "entity_id": 1,
+  "reconciliation_id": null,
+  "updater_id": 1,
+  "account_id": 2,
+  "amount": "90.0",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000",
+  "splits_count": 1,
+  "invoice_date": "2026-08-01",
+  "pdf": null,
+  "contract_id": null,
+  "verified_at": null,
+  "audited_at": null,
+  "conciliation_id": null,
+  "split_conciliation_id": null,
+  "endorsement_restriction": false,
+  "exempt": false,
+  "small_taxpayer": false,
+  "external_image_url": null,
+  "reception_id": null,
+  "inventory_audit_id": null,
+  "source_doc_type_id": 3,
+  "monthly_entry_source_doc_type_id": null,
+  "cost_center_id": null
+}
+```

@@ -1,7 +1,7 @@
 ---
 title: "Números de Factura Duplicados"
 sidebar_label: "Números de Factura Duplicados"
-sidebar_position: 83
+sidebar_position: 78
 ---
 
 Este reporte detecta facturas con números de factura duplicados.

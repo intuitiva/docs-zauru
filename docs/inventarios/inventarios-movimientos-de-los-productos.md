@@ -78,3 +78,270 @@ Para productos que manejan lotes, puede ver el detalle de movimientos de un lote
 4. Hacer clic sobre la cantidad en la bodega que desea revisar.
 
 Esto mostrará el historial de envíos que afectaron ese lote en esa bodega, con el saldo acumulado después de cada movimiento.
+
+## API (llamadas desde sistemas externos)
+
+### Ver la existencia de un producto en una bodega
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "id": 1,
+  "entity_id": 1,
+  "item_id": 2,
+  "agency_id": 1,
+  "available": "25.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "reorder_point": "30.000000",
+  "economic_order_quantity": "50.000000",
+  "created_at": "2026-08-01 10:00:00.000000",
+  "updated_at": "2026-08-01 10:00:00.000000"
+}
+```
+
+### Movimientos de un producto en una bodega
+
+Devuelve los envíos que afectaron la existencia del producto en la bodega, con el saldo acumulado después de cada movimiento. El `id` en la URL corresponde al id de la existencia (stock).
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/inventories/stocks/1/datatables_show.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "zid": "1",
+      "id": "RES-001",
+      "ref": "Entrega a cliente",
+      "nt": false,
+      "pd": "2026-08-01 10:00",
+      "d": "2026-08-01",
+      "ads": "Bodega Central",
+      "in": "",
+      "out": "8",
+      "a": "23",
+      "o": "0",
+      "i": "0",
+      "ra": "",
+      "DT_RowId": "inventories-stock-detail-1"
+    },
+    {
+      "zid": "2",
+      "id": "RES-002",
+      "ref": "Reabastecimiento",
+      "nt": false,
+      "pd": "2026-08-01 12:00",
+      "d": "2026-08-01",
+      "ads": "Bodega Central",
+      "in": "15",
+      "out": "",
+      "a": "25",
+      "o": "0",
+      "i": "0",
+      "ra": "",
+      "DT_RowId": "inventories-stock-detail-2"
+    }
+  ]
+}
+```
+
+### Existencias del producto en todas las bodegas
+
+Devuelve el acumulado disponible, entrante y saliente del producto (llaves `available`, `incoming` y `outgoing`) y una llave por cada bodega con el registro de existencia. El `id` en la URL corresponde al id del producto.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/stocks/1/item.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "available": 100,
+  "outgoing": 1,
+  "incoming": 10,
+  "1": {
+    "id": 1,
+    "entity_id": 1,
+    "item_id": 1,
+    "agency_id": 1,
+    "available": "33.000000",
+    "incoming": "0.000000",
+    "outgoing": "1.000000",
+    "reorder_point": "30.000000",
+    "economic_order_quantity": "50.000000"
+  },
+  "2": {
+    "id": 2,
+    "entity_id": 1,
+    "item_id": 1,
+    "agency_id": 2,
+    "available": "67.000000",
+    "incoming": "10.000000",
+    "outgoing": "0.000000",
+    "reorder_point": "0.000000",
+    "economic_order_quantity": "0.000000"
+  }
+}
+```
+
+### Movimientos del producto en todas las bodegas
+
+Devuelve todos los envíos que incluyen el producto, indicando bodega origen, bodega destino, cantidades y fechas. El `id` en la URL corresponde al id del producto.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/inventories/stocks/1/datatables_item.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "zid": "1",
+      "id_number": "RES-001",
+      "reference": "Entrega a cliente",
+      "needs_transport": false,
+      "planned_delivery": "2026-08-01 10:00",
+      "delivered_at": "01/08/2026",
+      "agency_from": "Bodega Central",
+      "agency_to": "Zona 8",
+      "income": false,
+      "items_booked": "8",
+      "items_delivered": "8",
+      "memo": "",
+      "record_actions": "",
+      "DT_RowId": "inventories-stock-shipment-1"
+    },
+    {
+      "zid": "2",
+      "id_number": "RES-002",
+      "reference": "Reabastecimiento",
+      "needs_transport": false,
+      "planned_delivery": "2026-08-01 12:00",
+      "delivered_at": "01/08/2026",
+      "agency_from": "Zona 8",
+      "agency_to": "Bodega Central",
+      "income": true,
+      "items_booked": "15",
+      "items_delivered": "15",
+      "memo": "",
+      "record_actions": "",
+      "DT_RowId": "inventories-stock-shipment-2"
+    }
+  ]
+}
+```
+
+### Movimientos de un lote en una bodega
+
+Devuelve la existencia del lote en la bodega junto con los envíos que lo afectaron. El `id` en la URL corresponde al id de la existencia del lote (lot stock).
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/lot_stocks/1.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "lot_id": 1,
+  "entity_id": 1,
+  "agency_id": 1,
+  "available": "8.000000",
+  "incoming": "0.000000",
+  "outgoing": "0.000000",
+  "created_at": "2026-08-01T10:00:00.000Z",
+  "updated_at": "2026-08-01T10:00:00.000Z",
+  "shipments": [
+    {
+      "id": 1,
+      "zid": 1,
+      "id_number": "RES-001",
+      "reference": "Entrega de lote",
+      "agency_from_id": 1,
+      "agency_to_id": 2,
+      "delivered_at": "2026-08-01T10:00:00.000Z",
+      "movements": [
+        {
+          "id": 1,
+          "shipment_id": 1,
+          "item_id": 2,
+          "lot_id": 1,
+          "booked_quantity": "8.0",
+          "delivered_quantity": "8.0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "zid": 2,
+      "id_number": "RES-002",
+      "reference": "Reabastecimiento de lote",
+      "agency_from_id": 2,
+      "agency_to_id": 1,
+      "delivered_at": "2026-08-01T12:00:00.000Z",
+      "movements": [
+        {
+          "id": 2,
+          "shipment_id": 2,
+          "item_id": 2,
+          "lot_id": 1,
+          "booked_quantity": "15.0",
+          "delivered_quantity": "15.0"
+        }
+      ]
+    }
+  ]
+}
+```

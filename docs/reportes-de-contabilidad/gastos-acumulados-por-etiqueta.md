@@ -1,7 +1,7 @@
 ---
 title: "Gastos Acumulados por Etiqueta"
 sidebar_label: "Gastos Acumulados por Etiqueta"
-sidebar_position: 30
+sidebar_position: 26
 ---
 
 Este reporte muestra todos los gastos historicos asociados a una etiqueta (tag), sin limite de fecha.

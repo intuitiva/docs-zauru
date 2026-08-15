@@ -1,7 +1,7 @@
 ---
 title: "Proveedores - Saldos Pendientes de Pago"
 sidebar_label: "Proveedores - Saldos Pendientes de Pago"
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 Este reporte de antiguedad de saldos muestra las cuentas por pagar a proveedores separadas por periodos de vencimiento (corriente, 1-30 dias, 31-60 dias, 61-90 dias, 91-120 dias, mas de 120 dias).

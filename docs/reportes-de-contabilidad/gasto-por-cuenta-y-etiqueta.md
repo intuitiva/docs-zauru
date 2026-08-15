@@ -1,7 +1,7 @@
 ---
 title: "Gasto por Cuenta y Etiqueta"
 sidebar_label: "Gasto por Cuenta y Etiqueta"
-sidebar_position: 31
+sidebar_position: 27
 ---
 
 Este reporte permite ver el detalle de transacciones de una cuenta de gasto especifica filtrada por etiqueta (tag), con posibilidad de rango de fechas.

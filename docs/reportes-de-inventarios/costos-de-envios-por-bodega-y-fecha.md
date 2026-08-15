@@ -1,7 +1,7 @@
 ---
 title: "Costos de Envios por Bodega y Fecha"
 sidebar_label: "Costos de Envios por Bodega y Fecha"
-sidebar_position: 21
+sidebar_position: 14
 ---
 
 Este reporte calcula el costo de los envios realizados, mostrando el costo promedio, costo total y precio de venta sugerido.

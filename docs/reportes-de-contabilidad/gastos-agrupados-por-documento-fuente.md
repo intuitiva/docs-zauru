@@ -1,7 +1,7 @@
 ---
 title: "Gastos Agrupados por Documento Fuente"
 sidebar_label: "Gastos Agrupados por Documento Fuente"
-sidebar_position: 34
+sidebar_position: 29
 ---
 
 Este reporte muestra los gastos de una etiqueta (tag) agrupados por numero de factura o documento fuente en un rango de fechas.

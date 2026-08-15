@@ -1,7 +1,7 @@
 ---
 title: "Movimientos de Costo de Inventario"
 sidebar_label: "Movimientos de Costo de Inventario"
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 Este reporte muestra los movimientos de inventario (entradas y salidas) entre dos fechas para una agencia. Incluye saldos iniciales, movimientos y saldos finales.

@@ -1,7 +1,7 @@
 ---
 title: "Items de Compras entre Fechas"
 sidebar_label: "Items de Compras entre Fechas"
-sidebar_position: 17
+sidebar_position: 16
 ---
 
 Este reporte es matricial: las filas son las ordenes de compra y las columnas son los productos. Muestra cantidades solicitadas/recibidas, costos unitarios originales y costos computados finales para cada combinacion orden-producto.

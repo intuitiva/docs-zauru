@@ -1,7 +1,7 @@
 ---
 title: "Ultimos Movimientos por Bodega"
 sidebar_label: "Ultimos Movimientos por Bodega"
-sidebar_position: 20
+sidebar_position: 13
 ---
 
 Este reporte muestra el ultimo movimiento registrado de cada producto en cada bodega. Se genera de forma asincrona y se almacena en cache para consultas posteriores.
@@ -26,3 +26,31 @@ Para generar el reporte:
 - Puede refrescar el reporte para regenerarlo con datos actualizados.
 
 **Exportacion**: disponible en formato XLS.
+
+## API (llamadas desde sistemas externos)
+
+### Consultar el estado de generacion del reporte
+
+Al abrir la pagina del reporte en el sistema, la generacion en segundo plano se inicia y se obtiene un `zid`. Con ese identificador puede consultar el estado por API:
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/reports/check_last_movements_per_agency.json?zid=2
+```
+
+Esto devolverá un JSON similar a este:
+
+```json
+{
+  "status": "completed",
+  "percentage": 100,
+  "message": null,
+  "redirect_url": "http://app.zauru.com/inventories/reports/last_movements_per_agency?warehouse_id=1&before_date=2026-08-01"
+}
+```
+
+Los valores posibles de `status` son `pending`, `processing`, `completed`, `failed` y `expired`. El campo `redirect_url` solo aparece cuando el reporte esta listo. Si el `zid` no existe, devuelve `{"status": "not_found"}`.

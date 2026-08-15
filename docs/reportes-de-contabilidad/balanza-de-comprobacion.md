@@ -1,7 +1,7 @@
 ---
 title: "Balanza de Comprobacion"
 sidebar_label: "Balanza de Comprobacion"
-sidebar_position: 23
+sidebar_position: 21
 ---
 
 La balanza de comprobacion lista todas las cuentas con sus sumas del debe, sumas del haber y saldos en un rango de fechas personalizado.

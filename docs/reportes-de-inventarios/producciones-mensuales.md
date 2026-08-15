@@ -1,7 +1,7 @@
 ---
 title: "Producciones Mensuales"
 sidebar_label: "Producciones Mensuales"
-sidebar_position: 15
+sidebar_position: 8
 ---
 
 Este reporte muestra un resumen de todas las producciones del mes agrupadas por empleado.
