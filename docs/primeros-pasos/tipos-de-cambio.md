@@ -4,9 +4,7 @@ sidebar_label: "Tipos de Cambio de Referencia"
 sidebar_position: 1
 ---
 
-Es probable que en ciertas ocasiones en su negocio facture y cobre en una moneda extranjera.
-
-Zauru le permite establecer todos los tipos de cambio de la moneda que su proceso requiera. La forma de hacerlo es la siguiente:
+Cuando compra mercadería en dólares, factura a un cliente del extranjero o cobra en otra moneda, Zauru necesita el tipo de cambio correcto para convertir cada cifra. En esta pantalla puede establecer todos los tipos de cambio que su operación requiera y registrar de qué fuente obtuvo cada uno. La forma de hacerlo es la siguiente:
 
 1. Ir a “Configuraciones”.
 2. Seleccionar “Tipos de Cambio”.
@@ -127,6 +125,8 @@ Zauru le permite exportar su historial de tipos de cambio en formato CSV o XLS. 
 3. Seleccionar el formato de exportación deseado (CSV o XLS).
 
 Los datos exportados incluyen: fecha, moneda de origen, tipo de cambio, moneda de destino, fuente, usuario que creó y fecha de creación.
+
+Con su historial de tipos de cambio al día, las conversiones en facturas y cobros se harán siempre con la referencia correcta. Recuerde actualizar el tipo de cambio cada vez que la moneda se mueva; también puede exportar el historial en CSV o XLS cuando necesite revisarlo fuera de Zauru.
 
 ### Exportar vía API
 

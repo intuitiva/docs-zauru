@@ -4,7 +4,7 @@ sidebar_label: "Incidencias"
 sidebar_position: 11
 ---
 
-Este tutorial trata sobre el registro y gestion de incidencias de empleados, como llegadas tarde, ausencias, faltas y otras situaciones que generan descuentos en la nomina.
+Cuando un empleado llega tarde, falta un día o pide un adelanto de salario, alguien tiene que anotarlo para que el descuento aparezca en su nómina. Aquí se registran y gestionan esas incidencias —llegadas tarde, ausencias, faltas y otras situaciones que generan descuentos—, y el sistema calcula el descuento según el tipo que usted elija.
 
 ## Listado de incidencias
 
@@ -72,7 +72,7 @@ En el detalle de la incidencia, hacer clic en **"Borrar"**. Solo se pueden borra
 
 ## Importacion masiva de incidencias
 
-Para registrar muchas incidencias a la vez, se puede usar la importacion masiva desde un archivo.
+Si al cierre del día tiene una pila de llegadas tarde de toda la cuadrilla, anotarlas una por una no es el mejor uso de su tiempo. Para registrar muchas incidencias a la vez, se puede usar la importación masiva desde un archivo.
 
 1. Ir a **"Nominas"**.
 2. En el submenu de incidencias, seleccionar **"Importar incidencias"**.
@@ -84,6 +84,8 @@ El sistema procesa el archivo y crea las incidencias correspondientes. Las incid
 ## Relacion con corridas de nomina
 
 Cuando se procesa una corrida de nomina, el sistema busca las incidencias de cada empleado que esten dentro del rango de fechas de la corrida y aplica los descuentos correspondientes. Los descuentos aparecen como deducciones en el detalle de la nomina del empleado.
+
+Con las incidencias registradas, los descuentos se aplicarán solos cuando se procese la corrida de nómina que cubra esas fechas. Si cada periodo maneja muchas incidencias, la importación masiva se convertirá en su mejor aliada para no dejar ninguna fuera.
 
 ## API (llamadas desde sistemas externos)
 

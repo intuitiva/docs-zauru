@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones generales de nomina"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en las configuraciones generales del modulo de nominas: parametros del ciclo de pago, calendarios de pago, cuentas contables, umbrales de alerta, control de partidas contables, calculo de tiempo personal y parametros de liquidacion por despido y renuncia.
+Cuando llega fin de mes y toca pagar planilla, todo lo que el sistema calcula depende de lo que usted configure aquí: cada cuánto se paga, qué calendario se sigue y cómo se calcula una liquidación si alguien es despedido o renuncia. Es la base sobre la que funciona todo el módulo de nóminas: parámetros del ciclo de pago, calendarios de pago, cuentas contables, umbrales de alerta, control de partidas contables, cálculo de tiempo personal y parámetros de liquidación por despido y renuncia.
 
 Para acceder a las configuraciones generales de nomina:
 
@@ -40,7 +40,7 @@ El sistema soporta cuatro frecuencias de pago. Para cada una se configura el dia
 
 ## Calculo de tiempo personal para empleados por destajo
 
-Para empleados tipo destajo, el pago de tiempo personal se calcula en base a un promedio de ingresos diarios. Se configuran los siguientes parametros:
+Si sus empleados ganan por destajo, sus vacaciones no se pueden pagar sobre un salario fijo: el sistema necesita saber cuánto ganaron en promedio en los últimos días. Para empleados tipo destajo, el pago de tiempo personal se calcula en base a un promedio de ingresos diarios. Se configuran los siguientes parametros:
 
 - **Cantidad de nominas recientes para calcular ingreso diario promedio**: numero de nominas anteriores (de 1 a 52) que se usan para calcular el promedio.
 - **Atributo de nomina para calcular ingreso diario promedio**: campo de la nomina usado como base del calculo (salario, horas extra, etc.).
@@ -61,3 +61,5 @@ Para empleados tipo destajo, el pago de tiempo personal se calcula en base a un 
 2. Hacer clic en **"Actualizar Configuraciones"**.
 
 Las configuraciones quedan almacenadas a nivel de entidad. Si no existen configuraciones previas, el formulario las crea automaticamente al guardar.
+
+Con esta base lista, el módulo de nóminas está listo para trabajar: el siguiente paso es crear sus puestos de trabajo y sus beneficios y deducciones. Y si algún día cambian las políticas de la empresa, conviene volver aquí primero, porque un ajuste a tiempo evita sorpresas en la corrida de fin de mes.

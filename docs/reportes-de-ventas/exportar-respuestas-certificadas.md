@@ -4,7 +4,7 @@ sidebar_label: "Exportar Respuestas Certificadas"
 sidebar_position: 50
 ---
 
-Este reporte exporta las respuestas de certificación del almacenamiento externo de documentos.
+Cuando necesita descargar los comprobantes de certificación de sus documentos almacenados, este reporte exporta las respuestas certificadas del almacenamiento externo para el rango de fechas que usted indique.
 
 Para ingresar al reporte:
 

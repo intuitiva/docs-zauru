@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones de Ventas"
 sidebar_position: 20
 ---
 
-En el módulo de ventas se pueden configurar varias opciones que le permitirán llevar un mejor control contable de sus ventas, las opciones configurables son las siguientes:
+¿Su cliente de siempre paga a 30 días, pero el nuevo quiere todo de contado? ¿Necesita que los mayoristas vean precios distintos a los del mostrador? Todo eso se ajusta una sola vez en este módulo, para que después cada venta se contabilice y se cobre como su negocio lo necesita. Las opciones configurables son las siguientes:
 
 1. Términos de Pago
 2. Descuentos
@@ -19,7 +19,7 @@ La forma de configurar estas opciones es la siguiente:
 ---
 
 ## Términos de Pago
-Los términos de pago sirven para especificar la cantidad de tiempo que le daremos a nuestro cliente para efectuar el pago de un producto o servicio brindado por su empresa. El termino de pago puede especificar lo siguiente:
+Cuando usted le vende de contado a unos clientes y a crédito a otros, cada plazo que maneja merece su propio término de pago. Los términos de pago sirven para especificar la cantidad de tiempo que le daremos a nuestro cliente para efectuar el pago de un producto o servicio brindado por su empresa. El termino de pago puede especificar lo siguiente:
 
 - Desde que cuenta hasta que cuenta se afectara cuando se haga una venta.
 - La categoría de clientes que aplican al termino de pago.
@@ -223,7 +223,7 @@ A diferencia de otros elementos en Zauru, los descuentos se eliminan físicament
 ---
 
 ## Métodos de Pago
-Los métodos de pago especifican de que forma pagara el cliente, en efectivo, con tarjeta o si se le dará crédito por ejemplo. Se especifica también que cuenta contable será afectada al momento del cobro de una orden o factura.
+Cada forma en que le pagan a usted —en efectivo, por depósito o con tarjeta— debe existir como método de pago para que cada cobro caiga en la cuenta contable correcta. Los métodos de pago especifican de que forma pagara el cliente, en efectivo, con tarjeta o si se le dará crédito por ejemplo. Se especifica también que cuenta contable será afectada al momento del cobro de una orden o factura.
 
 ### Listar Métodos de Pago
 
@@ -529,6 +529,8 @@ Las variables configurables incluyen:
 - **Incluir referencia de línea en descripción XML**: Agrega la referencia de la línea en el XML.
 - **Addendum personalizado**: Texto adicional para incluir en el XML de facturación.
 - **Incoterm para facturas de exportación**: Término de comercio internacional para exportaciones.
+
+Estas configuraciones se hacen pocas veces, pero marcan la diferencia todos los días: cada factura que emita usará los términos, descuentos, métodos de pago y precios que dejó definidos aquí. Revíselas con calma una vez y sus ventas quedarán contabilizadas y cobradas tal como su negocio lo necesita.
 
 ---
 

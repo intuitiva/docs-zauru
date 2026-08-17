@@ -4,7 +4,7 @@ sidebar_label: "Clientes Mensuales del Punto de Venta"
 sidebar_position: 3
 ---
 
-Para empresas que realizan distribución o importan productos, es importante saber a quién se le vende el producto. Al mismo tiempo, se tiene que tener conocimiento si la venta hacia los clientes existe o no ganancia. La forma de saber esto es teniendo al mano el monto que se vendió para realizar el cálculo de margen de ganancia.
+Si su empresa distribuye o importa productos, saber quién compra y cuánto compra cada mes es clave para cuidar su margen. Este reporte le muestra los clientes que facturaron en el mes y, si les otorgó crédito, cuánto le queda por cobrar de cada uno.
 
 Para obtener la información de los clientes es necesario seguir los siguientes pasos:
 

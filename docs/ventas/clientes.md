@@ -4,7 +4,7 @@ sidebar_label: "Clientes"
 sidebar_position: 1
 ---
 
-Este tutorial está enfocado en como crear, editar, y borrar clientes.  Estos nos sirven para los siguientes tipos de documentos:
+Piense en cuántas veces al día necesita el nombre, el NIT o la dirección de alguien para poder facturarle. Este tutorial le muestra cómo crear, editar y desactivar clientes para tener toda esa información a la mano en cada venta. Los clientes se usan para los siguientes tipos de documentos:
 1. Ordenes de ventas (ventas o POS)
 2. Facturas (ventas o POS)
 3. Pagos (ventas o POS)
@@ -83,6 +83,8 @@ En la página de detalles se muestra:
 - **Totales**: Monto total facturado, monto total ordenado y monto total pagado.
 - **Facturas**: Un listado paginado con todas las facturas del cliente, incluyendo número de factura, fecha, total, saldo pendiente y estado. El listado soporta búsqueda y ordenamiento por columnas.
 - **Formularios y envíos**: Información sobre formularios y envíos asociados al cliente.
+
+Con el cliente creado y sus datos completos, facturar y cobrar será mucho más rápido: cada vez que lo seleccione en una orden o en una factura, Zauru ya tendrá su NIT, su moneda y su dirección. El siguiente paso natural es asignarle sus precios y emitir su primera venta.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Estado de Resultados"
 sidebar_position: 14
 ---
 
-El estado de resultados desglosa las distintas categorías de los gastos e ingresos y muestran su resultado en un periodo de tiempo.
+¿Le preguntaron cuánto ganó la empresa el mes pasado, o quiere saber en qué se fueron los ingresos? El estado de resultados desglosa las distintas categorías de los gastos e ingresos y le muestra su resultado en un periodo de tiempo, desde la utilidad bruta hasta la utilidad neta.
 
 Los pasos para ingresar a ver el estado de resultados son los siguientes:
 

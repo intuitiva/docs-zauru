@@ -4,11 +4,11 @@ sidebar_label: "Corridas de nomina"
 sidebar_position: 13
 ---
 
-Este tutorial trata sobre la gestion completa de corridas de nomina, desde la generacion automatica segun calendarios, pasando por la aprobacion y pago, hasta la consulta de nominas individuales y corridas pagadas.
+Cuando llega fin de mes y toca pagar planilla, la corrida de nómina es el momento de la verdad: ahí se juntan los salarios, destajos, horas extra y deducciones de todos sus empleados. Esta guía le acompaña en todo el recorrido, desde generar la corrida —automáticamente o a mano—, revisarla, aprobarla y pagarla, hasta consultar las nóminas individuales y el historial de corridas pagadas.
 
 ## Corridas de nomina no pagadas
 
-Las corridas de nomina no pagadas son el centro de operaciones de la nomina. Aqui se crean, aprueban y pagan las corridas.
+Las corridas de nómina no pagadas son el centro de operaciones de la nómina: aquí pasa la mayor parte de su tiempo cada quincena o cada mes. Aquí se crean, aprueban y pagan las corridas.
 
 Para acceder:
 
@@ -157,7 +157,7 @@ Mientras los PDF se generan, se puede consultar el progreso con los botones de v
 
 ## Nominas individuales
 
-Cada corrida de nomina contiene una nomina por cada empleado incluido. La nomina individual es el registro de pago de un empleado en un periodo especifico.
+Cuando un empleado pregunta cuánto le pagaron y por qué, la nómina individual es el documento que responde todo. Cada corrida de nómina contiene una nómina por cada empleado incluido, y esa nómina individual es el registro de pago del empleado en un periodo específico.
 
 ### Ver detalle de una nomina individual
 
@@ -317,7 +317,7 @@ En el detalle de la nomina, hacer clic en **"Borrar"**. Solo disponible si la co
 
 ## Corridas de nomina pagadas
 
-Las corridas pagadas son de solo lectura. Muestran el historial de todas las corridas que ya fueron pagadas.
+Una vez pagada, la corrida pasa aquí para quedarse como historial. Las corridas pagadas son de solo lectura y muestran todas las corridas que ya fueron pagadas.
 
 Para acceder:
 
@@ -348,6 +348,8 @@ Si se necesita corregir una corrida ya pagada:
 ### Impresion masiva en corridas pagadas
 
 Las mismas opciones de impresion masiva (generar PDF todas y generar PDF de mi agencia) estan disponibles para corridas pagadas.
+
+Con la corrida pagada, su ciclo queda cerrado: los destajos pasaron a pagados, las incidencias quedaron descontadas y cada empleado puede recibir su boleta. Si detecta un error, recuerde que puede revertir el pago; y cuando llegue la siguiente fecha, el sistema ya tendrá las próximas corridas programadas esperándole.
 
 ## API (llamadas desde sistemas externos)
 

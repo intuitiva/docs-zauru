@@ -4,9 +4,7 @@ sidebar_label: "Tarjetas de Regalo"
 sidebar_position: 13
 ---
 
-Este tutorial está enfocado en la gestión de tarjetas de regalo (gift cards) en Zauru, incluyendo la configuración de tipos de tarjeta de regalo y la administración de las tarjetas emitidas.
-
-Las tarjetas de regalo permiten a los clientes adquirir un saldo prepagado que puede ser utilizado posteriormente como método de pago en facturas y órdenes de venta.
+Piense en el cliente que quiere regalar algo pero prefiere que el agasajado elija, o en la temporada en la que todos buscan un detalle para regalar: ahí entran las tarjetas de regalo, que permiten a los clientes adquirir un saldo prepagado que puede ser utilizado posteriormente como método de pago en facturas y órdenes de venta. Este tutorial le muestra cómo configurar los tipos de tarjeta de regalo y cómo administrar las tarjetas emitidas.
 
 ---
 
@@ -128,6 +126,8 @@ Para redimir (usar) una tarjeta de regalo como método de pago en una factura:
 
 1. Al momento de crear un pago para una factura u orden de venta, seleccione un método de pago configurado para aceptar tarjetas de regalo.
 2. Durante el proceso de pago, el sistema aplicará automáticamente el saldo de la tarjeta de regalo si corresponde.
+
+Con esto, la tarjeta de regalo fluye de punta a punta: se configura el tipo, se emite automáticamente al venderla y se redime cuando el cliente la usa para pagar. Cualquier duda sobre el saldo de una tarjeta se resuelve al instante con la búsqueda por número de identificación.
 
 ---
 

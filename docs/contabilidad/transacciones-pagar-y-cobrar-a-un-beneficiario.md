@@ -4,8 +4,7 @@ sidebar_label: "[Transacciones] Pagar y cobrar a un beneficiario en una sola tra
 sidebar_position: 20
 ---
 
-Este tutorial esta enfocado en pagar y cobrarle a un beneficiario en la misma transacción.
-Puede suceder el caso en el que usted le haya hecho un préstamo al empleado, y se lo vaya descontando mes a mes de su salario. No hay necesidad de hacer dos transacciones para registrar este movimiento. Se mostrara en el siguiente ejemplo como hacerlo en un movimiento.
+Si le prestó dinero a un empleado y va descontándoselo poco a poco del salario, no necesita crear dos transacciones cada vez que le paga: aquí aprenderá a cobrar y pagar en un solo movimiento. El ejemplo clásico es el préstamo que se descuenta mes a mes de la planilla.
 
 Suponga que tiene un empleado que devenga un salario de Q3,000 mensuales mas comisiones. El empleado le solicita a usted un préstamo de Q6,000 quetzales, y usted se lo va descontar de su salario en 12 pagos.
 
@@ -41,6 +40,8 @@ h. Aquí deberá colocar el total de comisiones, que en este ejemplo son Q,1,500
 Por ultimo haga click sobre “Crear nueva transacción” para emitir el cheque ya con el descuento.
 
 ![imagen2](/img/contabilidad/transacciones-pagar-y-cobrar-a-un-beneficiario-2.jpg)
+
+Con un solo cheque usted pagó el salario y recuperó parte del préstamo, y ambas cuentas quedaron con sus montos correctos: la de gastos y la de cuentas por cobrar. Repita el mismo movimiento cada mes mientras dure el descuento.
 
 ## API (llamadas desde sistemas externos)
 

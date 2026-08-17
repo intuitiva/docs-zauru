@@ -4,7 +4,7 @@ sidebar_label: "Ventas Mensuales de Ítems"
 sidebar_position: 19
 ---
 
-Este reporte es el reporte completo de ventas mensuales con cantidades, precios, costos, márgenes y análisis de contribución por ítem y paquete.
+Si quiere saber qué productos dejan ganancia de verdad y cuáles apenas se mueven, este es el reporte completo del mes. Trae cantidades, precios, costos, márgenes y la contribución de cada ítem y paquete, todo en un solo lugar.
 
 Para ingresar al reporte:
 

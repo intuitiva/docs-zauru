@@ -4,7 +4,7 @@ sidebar_label: "Solicitudes de Traslado"
 sidebar_position: 10
 ---
 
-Este tutorial esta enfocado en la creación y manejo de solicitudes de traslado entre bodegas.
+Cuando una sucursal necesita mercadería que está en otra bodega, conviene pedirla de manera ordenada y con seguimiento, sin mover existencias hasta que quede claro qué se va a trasladar. Para eso sirven las solicitudes de traslado: la bodega destino pide, la solicitud pasa por un flujo de aprobación y, cuando se convierte en envíos, la mercadería se mueve con respaldo. Este tutorial le muestra cómo crear la solicitud, revisar la disponibilidad en la bodega origen y cerrar el ciclo con envíos o requisiciones de compra.
 
 ## ¿Qué es una solicitud de traslado?
 
@@ -17,7 +17,7 @@ Una solicitud de traslado (Transfer Request) es un documento que permite solicit
 
 ## Estados de una solicitud de traslado
 
-Una solicitud de traslado pasa por tres estados durante su ciclo de vida:
+¿En qué va mi pedido? La solicitud responde sola con su estado, que le dice si todavía puede editarla, si ya generó envíos o si ya está completamente atendida. Una solicitud de traslado pasa por tres estados durante su ciclo de vida:
 
 1. **Abierta (Open)**: La solicitud fue creada pero aún no se ha generado ningún envío. Es completamente editable y se puede anular.
 2. **En proceso (In Progress)**: Se ha creado al menos un envío parcial desde la solicitud, o se ha generado una requisición de compra. Ya no se puede anular pero sí se puede editar.
@@ -175,6 +175,8 @@ Con base en esto, la solicitud se clasifica como:
 - **Abierta**: Ningún producto ha sido reservado aún.
 - **En proceso**: Algunos productos han sido reservados pero no todos.
 - **Cerrada**: Todas las cantidades solicitadas han sido reservadas.
+
+Con la solicitud creada y convertida en envíos, la mercadería llega a la bodega destino con todo el historial respaldado. Recuerde que lo que no se pudo cubrir puede salir como requisición de compra, y que la solicitud se cierra sola cuando todo queda reservado. Así, cada traslado entre bodegas queda documentado de principio a fin.
 
 ## API (llamadas desde sistemas externos)
 

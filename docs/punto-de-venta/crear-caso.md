@@ -4,7 +4,7 @@ sidebar_label: "Crear caso"
 sidebar_position: 5
 ---
 
-Este tutorial esta enfocado en crear casos desde el punto de venta.
+Cuando un cliente entra con un teléfono dañado o un electrodoméstico que no funciona y le pide que su técnico lo revise, aquí es donde deja registrada esa entrada a servicio. El caso guarda el síntoma, el cliente, los productos o servicios que se van a cobrar y hasta el número de serie del equipo, para que nadie pierda el hilo mientras se repara.
 
 Los pasos para crear un nuevo caso son los siguientes:
 
@@ -79,6 +79,8 @@ Cuando el servicio tecnico ha sido completado:
 El sistema le pedira confirmacion. Una vez cerrado, el caso no podra ser editado nuevamente.
 
 **Nota**: Si el caso tiene una factura asociada, asegurese de que la factura haya sido cobrada antes de cerrar el caso.
+
+Con el caso registrado, su equipo de servicio técnico ya tiene todo el historial en un solo lugar: qué se reparó, qué se cobró y en qué fecha. Cuando el cliente regrese por su equipo, puede cobrar el caso desde el listado y cerrarlo con la tranquilidad de que la factura quedó saldada.
 
 ## API (llamadas desde sistemas externos)
 

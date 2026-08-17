@@ -4,9 +4,7 @@ sidebar_label: "Permisos personalizados"
 sidebar_position: 2
 ---
 
-Zauru le permite asignar permisos por rol para controlar el acceso de sus usuarios.
-
-Existen más de 600 permisos distintos para personalizar cualquier proceso y limitar o permitir cualquier restricción de visualizar o crear información que se necesite.
+Si quiere que su contador cree facturas y cobros pero no que anule pagos, o que su vendedor registre clientes sin poder borrarlos, aquí configura exactamente qué puede hacer cada rol. Zauru le permite asignar permisos por rol para controlar el acceso de sus usuarios, con más de 600 permisos distintos para personalizar cualquier proceso y limitar o permitir lo que se puede ver o crear según lo que cada responsabilidad necesite.
 
 A continuación se mostrara un ejemplo de como dar permisos a un rol creado previamente llamado “Contabilidad”. Después de darle permisos a este rol, se puede asignar a uno o varios usuarios. Los pasos para asignar permisos son los siguientes:
 
@@ -89,6 +87,8 @@ Para actualizar los permisos presione “Actualizar”.
 Debera aparecer en la pantalla un mensaje de exito notificandole que los permisos se actualizaron exitosamente. Debe esperar el tiempo especificado para que los cambios de permisos tengan efecto. En este caso se debe esperar 2 minutos para que se actualizen los permisos.
 
 ![imagen12](/img/permisos-de-acceso/permisos-6.jpg)
+
+Con los permisos actualizados, el rol de contabilidad ya puede facturar y cobrar, pero no eliminar facturas ni pagos. Recuerde esperar los dos minutos para que los cambios tengan efecto; el siguiente paso natural es suscribir a uno o varios usuarios con este rol para que empiecen a trabajar.
 
 ## API (llamadas desde sistemas externos)
 

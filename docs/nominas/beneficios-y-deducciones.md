@@ -4,7 +4,7 @@ sidebar_label: "Beneficios y deducciones"
 sidebar_position: 3
 ---
 
-Los beneficios y deducciones son las percepciones adicionales al salario (bonos, comisiones extra, viaticos) y las deducciones (prestamos, cuotas sindicales, embargos) que se aplican en la nomina.
+Cuando llega fin de mes y hay que pagar planilla, no todo es salario: quizá un empleado pidió un préstamo que se le descuenta en cuotas, otro se ganó un bono de productividad y a todos les corresponde la cuota del IGSS. Los beneficios y deducciones son justamente eso: las percepciones adicionales al salario (bonos, comisiones extra, viáticos) y las deducciones (préstamos, cuotas sindicales, embargos) que se aplican en la nómina.
 
 Para gestionar beneficios y deducciones:
 
@@ -15,7 +15,7 @@ Para gestionar beneficios y deducciones:
 
 ## Filtros del listado
 
-El listado permite filtrar por ambito de aplicacion:
+Cuando su lista ya es larga —IGSS, bonos, préstamos, viáticos—, estos filtros le ayudan a ver solo lo que necesita en cada momento. El listado permite filtrar por ámbito de aplicación:
 
 - **En ciclo**: beneficios/deducciones que aplican en corridas de nomina regulares.
 - **Fuera de ciclo**: beneficios/deducciones que aplican en corridas fuera de ciclo (anuales, semestrales, etc.).
@@ -83,7 +83,9 @@ En el detalle, hacer clic en **"Borrar"**. Solo se pueden borrar beneficios/dedu
 
 ## Formulas
 
-Las formulas permiten calculos personalizados para beneficios y deducciones. Se escriben usando la sintaxis de formulas del sistema. Las formulas se configuran en el modulo de configuracion general del sistema, no en el modulo de nominas. Al crear un beneficio/deduccion, se puede seleccionar una formula existente.
+Si el cálculo que necesita no cabe en un porcentaje ni en un monto fijo, una fórmula personalizada puede resolverlo. Las fórmulas permiten cálculos personalizados para beneficios y deducciones. Se escriben usando la sintaxis de formulas del sistema. Las formulas se configuran en el modulo de configuracion general del sistema, no en el modulo de nominas. Al crear un beneficio/deduccion, se puede seleccionar una formula existente.
+
+Con sus beneficios y deducciones configurados, cada corrida de nómina los aplicará sola, tanto al empleado como a la empresa. El siguiente paso natural es asignarlos a sus puestos de trabajo, para que cada contrato nuevo los herede sin trabajo extra.
 
 ## API (llamadas desde sistemas externos)
 

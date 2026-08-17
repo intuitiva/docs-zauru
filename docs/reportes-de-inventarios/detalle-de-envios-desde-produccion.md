@@ -4,7 +4,7 @@ sidebar_label: "Detalle de Envios Desde Produccion"
 sidebar_position: 10
 ---
 
-Este reporte muestra el detalle de todos los envios que salieron de la bodega virtual de Produccion en un mes especifico.
+Si su empresa fabrica productos, este reporte es la memoria de todo lo que salió de la bodega virtual de Producción en un mes: qué se produjo, en qué cantidad y a dónde se envió. Úselo al cierre de cada mes para tener ordenada su producción.
 
 Para generar el reporte:
 
@@ -20,3 +20,5 @@ Para generar el reporte:
 **Columnas**: producto, cantidad, fecha de entrega, proveedor, bodega destino, empleado que reservo, referencia del envio.
 
 **Exportacion**: disponible en formato XLS.
+
+Revisar este detalle mes a mes le permite mantener la trazabilidad de su producción: qué se hizo, cuándo y para quién.

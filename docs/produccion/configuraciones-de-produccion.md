@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones de Produccion"
 sidebar_position: 1
 ---
 
-Antes de comenzar a utilizar el modulo de produccion, es necesario configurar los parametros contables y operativos que regiran el comportamiento del modulo. Los pasos para configurar la produccion son los siguientes:
+Si su negocio ya fabrica productos o esta por empezar a manufacturarlos, este es el primer paso del camino: dejar lista la contabilidad y la operacion del modulo antes de crear su primera orden. Esta configuracion se hace una sola vez y define como se comportara cada corrida que cree despues: que bodega se usara, que cuentas recibiran los costos y como se medira el avance. Los pasos para configurar la produccion son los siguientes:
 
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Configuraciones"**.
@@ -51,3 +51,5 @@ l. **Metrica de Progreso para Lotes de Produccion**: Seleccione como se medira e
 Una vez que haya completado todos los campos, presione **"Guardar Configuraciones"**.
 
 Le aparecera un mensaje de exito notificandole que las configuraciones de produccion fueron guardadas correctamente.
+
+Con las configuraciones guardadas, el modulo ya esta listo para trabajar. El siguiente paso natural es definir las listas de materiales de los productos que fabrica, para que cada orden de produccion sepa exactamente que materias primas consumira y a que bodegas tocara.

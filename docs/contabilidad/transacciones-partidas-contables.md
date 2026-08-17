@@ -4,7 +4,7 @@ sidebar_label: "Transacciones (partidas contables)"
 sidebar_position: 11
 ---
 
-Este tutorial trata del unico documento que sirve para mover los saldos entre cuentas. Por ser un sistema de partida doble, el dinero no aparece y desaparece, tiene que proceder de alguna cuenta para acreditarse en otra cuenta.
+Cada vez que entra o sale dinero sin pasar por una venta o una compra —un ajuste, un gasto menor, un traslado entre cuentas—, necesita una transacción contable que lo registre. La transacción es el único documento que mueve los saldos entre cuentas: por ser un sistema de partida doble, el dinero no aparece ni desaparece, tiene que proceder de alguna cuenta para acreditarse en otra cuenta.
 
 ## Listado de transacciones
 
@@ -123,6 +123,8 @@ Permite imprimir varias transacciones a la vez:
 ### Descargar PDF multiple
 
 Similar a la impresion multiple, pero genera un archivo PDF para descargar en lugar de mostrar en pantalla. Util para archivar o enviar por correo.
+
+Con esto ya domina el documento más importante de la contabilidad: cada movimiento de su empresa puede quedar registrado, revisado y respaldado en papel o en PDF. Verificar y auditar las transacciones importantes es el paso que sigue para proteger su información contra ediciones accidentales.
 
 ## API (llamadas desde sistemas externos)
 

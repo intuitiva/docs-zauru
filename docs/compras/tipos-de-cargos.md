@@ -4,7 +4,7 @@ sidebar_label: "Tipos de cargos"
 sidebar_position: 2
 ---
 
-Un tipo de cargo es un cargo que se le agrega a la compra y que aumenta el costo del producto. Generalmente los cargos se aplican a las ordenes de compra cuando es una importación. Los cargos podrían ser de aranceles, de GPS o de impuestos por ejemplo.
+Cada vez que importa mercadería, sobre ella viajan gastos extra: fletes, seguros, aranceles o el monitoreo GPS del contenedor. Esos cargos aumentan el costo real de sus productos, y para que Zauru se los reparta en el costo de cada artículo, primero debe crearle un tipo de cargo a cada uno. En este tutorial aprenderá a crear los tipos de cargos que su operación usa, para tenerlos listos al momento de registrarlos en sus órdenes de compra.
 
 Para configurar los tipos de cargos:
 
@@ -34,6 +34,8 @@ A continuación le aparecerán las opciones para crear un nuevo tipo de cargo, l
 Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo el tipo de cargo exitosamente.
 
 ![imagen7](/img/compras/configuracion-7.jpg)
+
+Con sus tipos de cargo creados, ya puede aplicarlos a cualquier orden de compra o consolidado, y Zauru los repartirá ponderadamente en el costo de cada producto. Recuerde marcar la casilla para que el cargo se incluya en el costo, así su margen de ganancia siempre reflejará lo que de verdad pagó por traer la mercadería a su bodega.
 
 ## API (llamadas desde sistemas externos)
 

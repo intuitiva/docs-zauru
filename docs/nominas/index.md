@@ -4,7 +4,7 @@ sidebar_label: "Nominas"
 sidebar_position: 0
 ---
 
-Este modulo sirve para la gestion completa de la nomina de empleados, incluyendo contratos de trabajo, destajos, incidencias, tiempo personal, corridas de nomina y reportes. Soporta empleados asalariados (jornal) y empleados por destajo (pago por tarea). Incluye las siguientes funcionalidades:
+Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado con pagar a su equipo: contratos de trabajo, destajos, incidencias, tiempo personal, corridas de nómina y reportes. Da igual si sus empleados ganan por jornal o por tarea (destajo): aquí conviven ambos esquemas y cada pieza puede configurarse según cómo trabaja su empresa. Incluye las siguientes funcionalidades:
 
 ## Configuracion
 

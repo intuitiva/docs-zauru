@@ -4,7 +4,7 @@ sidebar_label: "Importar Facturas no Pagadas"
 sidebar_position: 22
 ---
 
-Este tutorial está enfocado en como importar facturas no pagadas desde un archivo externo hacia Zauru. Esta funcionalidad es útil cuando se necesita migrar facturas desde otro sistema o registrar facturas en lote.
+¿Acaba de mudarse a Zauru desde otro sistema y necesita traer consigo todas las facturas pendientes de cobro? ¿O quiere registrar muchas facturas de una sola vez sin digitarlas una por una? Este tutorial le muestra cómo importar facturas no pagadas desde un archivo externo, para que su historial de cobros no empiece en cero.
 
 ## Importar Facturas no Pagadas
 
@@ -31,6 +31,8 @@ El sistema procesará el archivo y creará las facturas no pagadas según los da
 - Verifique que los datos del archivo estén correctamente formateados antes de importar.
 - Asegúrese de que los clientes, ítems, vendedores y puntos de venta referenciados en el archivo ya existan en Zauru.
 - Se recomienda hacer una importación de prueba con pocos registros antes de importar el archivo completo.
+
+Con la importación hecha, sus facturas pendientes ya viven en Zauru y podrá cobrarlas e imprimirlas como si las hubiera creado aquí. Haga primero una prueba con pocos registros y, cuando confirme que todo salió bien, importe el archivo completo con tranquilidad.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Liquidaciones"
 sidebar_position: 9
 ---
 
-Este tutorial explica como realizar liquidaciones en el modulo de contabilidad. Una liquidacion permite registrar un pago o cobro consolidado contra una cuenta reconciliable, seleccionando multiples partidas pendientes para saldarlas en una sola operacion.
+¿Le toca pagarle a un empleado varios gastos juntos, o cobrarle a un cliente varias facturas en un solo depósito? En lugar de crear una transacción por cada partida, puede saldarlas todas de una vez con una liquidación. Una liquidacion permite registrar un pago o cobro consolidado contra una cuenta reconciliable, seleccionando multiples partidas pendientes para saldarlas en una sola operacion.
 
 ## Que es una liquidacion
 
@@ -90,6 +90,8 @@ Ventajas de usar liquidaciones sobre crear transacciones manuales:
 - Las partidas quedan automaticamente reconciliadas.
 - Se mantiene la trazabilidad de que partidas se pagaron juntas.
 - Es mas rapido que crear una transaccion y luego reconciliar manualmente.
+
+Con la liquidación creada, sus partidas quedan saldadas y enlazadas, y podrá ver en cualquier momento qué pagos se hicieron juntos. La próxima vez que un empleado le entregue sus gastos del mes, este mismo flujo le tomará solo unos minutos.
 
 ## API (llamadas desde sistemas externos)
 

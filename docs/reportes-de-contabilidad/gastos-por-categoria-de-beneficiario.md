@@ -4,7 +4,7 @@ sidebar_label: "Gastos por Categoria de Beneficiario"
 sidebar_position: 32
 ---
 
-Este reporte muestra los gastos asociados a una etiqueta (tag), agrupados por categoria de beneficiario.
+¿Quiere saber cómo se reparte su gasto entre las distintas categorías de beneficiarios, por ejemplo cuánto va a proveedores y cuánto a colaboradores? Este reporte le muestra los gastos asociados a una etiqueta (tag), agrupados por categoría de beneficiario.
 
 Para ingresar a este reporte:
 
@@ -15,3 +15,5 @@ Para ingresar a este reporte:
 **Parametros**:
 
 - **Categoria de beneficiario**.
+
+Con esta vista puede identificar rápidamente a qué tipo de beneficiario se va su dinero y evaluar si el reparto es el que esperaba.

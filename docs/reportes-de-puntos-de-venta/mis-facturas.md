@@ -4,7 +4,7 @@ sidebar_label: "Mis Facturas"
 sidebar_position: 1
 ---
 
-Este reporte muestra las facturas emitidas por el vendedor actual en un mes especifico.
+Si usted es vendedor y quiere ver el fruto de su trabajo, este reporte le muestra las facturas que usted mismo emitió en un mes. Úselo para llevar el control de su meta personal, preparar una reunión con su jefe o simplemente saber cuánto facturó cada mes.
 
 Para ingresar al reporte:
 
@@ -22,3 +22,5 @@ Para ingresar al reporte:
 - Total facturado en el mes.
 - Cantidad de facturas emitidas.
 - Cantidad de productos vendidos (items facturados).
+
+Con este reporte, su historial del mes queda completo: cuánto facturó, cuántas facturas emitió y cuántos productos movió.

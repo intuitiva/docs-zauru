@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en configurar el modulo de Contabilidad para establecer las transacciones contables que se generan automaticamente y parametros generales del modulo. Zauru le permite a usted especificar las siguientes configuraciones:
+Cada empresa maneja la contabilidad a su manera, y esta página es el punto de partida para dejar el módulo trabajando como usted lo necesita. Conviene revisarla cuando empieza a usar Zauru por primera vez, cuando su contador define nuevas cuentas de IVA o de inventario, o cuando necesita proteger un periodo ya declarado. Aquí se establecen las cuentas contables que reciben las transacciones automáticas y los parámetros generales del módulo. Zauru le permite especificar las siguientes configuraciones:
 
 ## Cuentas contables automaticas
 
@@ -43,7 +43,7 @@ Define el orden de prioridad para asignar automaticamente el centro de costo en 
 
 ## Configuracion del libro de compras
 
-Estas configuraciones permiten personalizar el libro de compras para adaptarse a los requisitos fiscales de cada pais:
+Si la SAT o su contador le piden desglosar el combustible, ciertos impuestos o el correlativo interno en el libro de compras, estas configuraciones le permiten adaptarlo a los requisitos fiscales que le apliquen:
 
 ### Cuenta de gasto de combustible
 Seleccione la cuenta contable que registra el gasto de combustible para que aparezca identificado en el libro de compras.
@@ -80,3 +80,5 @@ Los pasos para establecer las configuraciones de contabilidad son los siguientes
 11. Seleccione "Actualizar Configuraciones" para aplicar los cambios.
 
 ![imagen1](/img/contabilidad/configuraciones-1.jpg)
+
+Con las configuraciones actualizadas, cada venta y cada compra generará sus transacciones de IVA e inventario en las cuentas correctas sin trabajo manual adicional. Si en el futuro cambia de cuentas o quiere proteger un periodo ya cerrado, este es el lugar para ajustarlo.

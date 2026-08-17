@@ -4,11 +4,11 @@ sidebar_label: "Envíos"
 sidebar_position: 3
 ---
 
-Este tutorial esta basado en crear envíos y el flujo de trabajo que se requiere para despacharlos (opcional), entregarlos, devolverlos (opcional) y anularlos (opcional).
+Cuando mueve mercadería entre bodegas o recibe producto de un proveedor, la diferencia entre un inventario sano y uno desordenado está en llevar cada envío por su ciclo completo: reservar, despachar y entregar. Este tutorial le acompaña en ese recorrido, incluyendo los casos que surgen en el día a día, como devolver una entrega que llegó mal o anular una reservación que ya no necesita. Al terminar, sabrá manejar un envío con y sin transporte, imprimirlo y exportar sus movimientos.
 
 ## Flujo de trabajo de un envío
 
-El ciclo de vida de un envío en Zauru sigue los siguientes estados:
+Imagínese el recorrido de la mercadería desde que la reserva hasta que llega a su destino: ese es el ciclo de vida de un envío, y en Zauru sigue los siguientes estados:
 
 - **Reservación (Booked)**: Envío preliminar, los productos están reservados pero aún no se han movido.
 - **Tránsito (Shipped)**: El envío fue despachado de la bodega origen pero aún no ha sido recibido en la bodega destino (solo para envíos con transporte).
@@ -310,6 +310,8 @@ Cuando termine de colocar la cantidad que recibió, presione "Actualizar envío"
 Le aparecerá una mensaje notificando que se entrego la reservación. Ahora tendrá los productos reservados en la bodega de destino.
 
 ![imagen11](/img/inventarios/envios-11.jpg)
+
+Con esto domina el flujo completo de un envío: creó la reservación, la despachó cuando hubo transporte y la entregó en la bodega destino, con la opción de devolver o anular cuando las cosas cambiaron sobre la marcha. El siguiente paso natural es verificar que las existencias de cada bodega reflejen esos movimientos, y recuerde que puede crear reservaciones directamente desde una solicitud de traslado para ahorrarse el doble trabajo.
 
 ## API (llamadas desde sistemas externos)
 

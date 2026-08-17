@@ -4,7 +4,7 @@ sidebar_label: "Movimientos de Beneficiario en Cuenta"
 sidebar_position: 22
 ---
 
-Este reporte muestra todas las transacciones de un beneficiario especifico dentro de una cuenta contable, con balance corrido.
+Cuando un proveedor o un cliente le pide cuentas claras de todo lo que se ha movido entre ustedes, este reporte le da el historial completo. Le muestra todas las transacciones de ese beneficiario dentro de una cuenta contable, con el balance corrido de cada movimiento.
 
 Para ingresar a este reporte:
 

@@ -4,7 +4,7 @@ sidebar_label: "Precios sugeridos"
 sidebar_position: 3
 ---
 
-Antes de comenzar a vender sus productos tiene que ponerle precios sugeridos de venta. Si algun item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta.
+Piense en el momento de abrir su tienda: si un producto no tiene precio, no podrá facturarlo. Por eso, antes de comenzar a vender hay que asignarle precios sugeridos de venta a cada producto: si algun item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta. Aquí verá cómo crearlos a mano, cómo consultar su historial y cómo importarlos masivamente desde Excel para ahorrarse horas de digitación.
 
 ## Listar Precios Sugeridos
 
@@ -183,6 +183,8 @@ Al terminar de llenar el archivo de Excel con todos los precios de sus productos
 7. Para Importar los precios presione **"Importar Precios"**.
 
 ![imagen7](/img/ventas/importar-precios-4.jpg)
+
+Con los precios cargados, todos sus productos quedaron listos para aparecer en las órdenes y facturas, y usted se ahorró la digitación manual de cada uno. Cada vez que cambien sus precios, puede repetir la importación o actualizar los precios sugeridos directamente desde este módulo.
 
 ## API (llamadas desde sistemas externos)
 

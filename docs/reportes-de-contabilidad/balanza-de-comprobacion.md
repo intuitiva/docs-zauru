@@ -4,7 +4,7 @@ sidebar_label: "Balanza de Comprobacion"
 sidebar_position: 21
 ---
 
-La balanza de comprobacion lista todas las cuentas con sus sumas del debe, sumas del haber y saldos en un rango de fechas personalizado.
+¿Su contador le pidió la balanza para revisar que todo cuadre antes de cerrar el periodo, o quiere comprobarlo usted mismo? Este reporte lista todas las cuentas con sus sumas del debe, sumas del haber y saldos en un rango de fechas personalizado.
 
 Para ingresar a este reporte:
 
@@ -22,3 +22,5 @@ Para ingresar a este reporte:
 - Para cada cuenta: saldo inicial, movimientos del periodo (debe y haber), saldo final.
 - Subtotales por tipo de cuenta y por moneda.
 - Permite verificar que el total de debitos sea igual al total de creditos.
+
+Con ella puede verificar de un vistazo que la contabilidad esté cuadrada y dejar listo el cierre del periodo.

@@ -4,7 +4,7 @@ sidebar_label: "Formatos de Impresión (Plantillas)"
 sidebar_position: 5
 ---
 
-Zauru le permite crear plantillas de impresión para cualquier documentos que usted necesite, entre ellos:
+Cuando necesita imprimir sobre papelería especial — chequeras, facturas pre impresas, recibos o cotizaciones —, la plantilla correcta hace que cada dato caiga exactamente en su casilla. Zauru le permite crear plantillas de impresión para cualquier documento que usted necesite, entre ellos:
 
 - Facturas pre impresas.
 - Cheque.
@@ -162,6 +162,8 @@ El sistema generará un archivo PDF con datos de ejemplo para que pueda verifica
 ## Grupos en Plantillas de Impresión para Formularios
 
 Zauru permite asociar grupos de formularios a plantillas de impresión. Esto es útil cuando un formulario tiene grupos dinámicos y usted desea que la plantilla de impresión muestre correctamente los datos agrupados. Al crear o editar una plantilla de impresión, puede seleccionar los grupos de formulario que se utilizarán para estructurar la salida impresa.
+
+Con la plantilla creada, sus datos ordenados y la impresión de documentos adjuntada, ya puede imprimir desde la transacción correspondiente. Le recomendamos hacer una prueba en hoja en blanco antes de imprimir sobre sus chequeras o papelería oficial, y ajustar las medidas si algo no cae exactamente donde debe.
 
 ## API (llamadas desde sistemas externos)
 

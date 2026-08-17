@@ -4,7 +4,7 @@ sidebar_label: "Cobrar facturas (total, parcial o consolidado)"
 sidebar_position: 9
 ---
 
-Este tutorial esta enfocado en el cobro de facturas no pagadas. Existen cuatro formas de cobrar una factura:
+Piense en la última vez que un cliente le pagó la mitad hoy y prometió el resto para el lunes. Este tutorial le muestra cómo registrar esos cobros en Zauru, ya sea que le paguen una parte, el total o varias facturas de un solo golpe. Existen cuatro formas de cobrar una factura:
 
 1. Cobro Parcial
 2. Cobro Total
@@ -15,7 +15,7 @@ Este tutorial esta enfocado en el cobro de facturas no pagadas. Existen cuatro f
 Las primeras 3 formas se explicaran en este tutorial.
 
 ## Cobrar Factura Parcialmente
-El cobro parcial es un cobro en donde no se paga toda la factura, solo una parte, y el cliente sigue debiendo. Los pasos para hacer un cobro parcial son los siguientes:
+Un cliente llega con un abono y le dice que el saldo se lo pagará la próxima semana: eso es un cobro parcial, en el que no se paga toda la factura sino solo una parte, y el cliente sigue debiendo el resto. Los pasos para hacer un cobro parcial son los siguientes:
 
 1. Ir a “Ventas”.
 2. Seleccionar “Facturas no Pagadas”.
@@ -64,7 +64,7 @@ Al cobrar el total de la factura la factura pasa a ser una factura pagada. Los p
 
 
 ## Cobro Consolidado de Facturas
-El cobro consolidado de facturas permite pagar dos o mas facturas del mismo cliente con un solo pago.
+Piense en un cliente que le debe varias facturas y quiere saldarlas todas con un solo depósito: en lugar de crear un pago por cada una, el cobro consolidado permite pagar dos o mas facturas del mismo cliente con un solo pago.
 
 ## Listar y Gestionar Pagos
 
@@ -112,6 +112,8 @@ Para consultar el historial de pagos anulados:
 1. Ir a **"Ventas"**.
 2. Seleccionar **"Pagos"**.
 3. Seleccionar **"Pagos Anulados"**.
+
+Ya tiene registrado el cobro y la factura quedó al día, ya sea completa o con su saldo pendiente. Cuando el cliente termine de pagar el resto, puede repetir estos mismos pasos para saldar lo que falta; y desde la lista de pagos podrá imprimir recibos o anular un cobro si se equivocó.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Gestión de sincronizaciones WooCommerce"
 sidebar_position: 10
 ---
 
-Zauru permite administrar las configuraciones de sincronización con WooCommerce directamente desde la interfaz web, en la sección de sincronizaciones de WooCommerce (`/ecommerce/woocommerce_items_syncs`).
+Si su tienda WooCommerce ya está sincronizada con Zauru, aquí es donde controla todo lo que pasa entre ambos sistemas: puede pausar una sincronización mientras ajusta su catálogo, forzarla de inmediato cuando necesita que la tienda se actualice ya, o crear una configuración nueva si abre otra tienda. Zauru permite administrar las configuraciones de sincronización con WooCommerce directamente desde la interfaz web, en la sección de sincronizaciones de WooCommerce (`/ecommerce/woocommerce_items_syncs`).
 
 ## Listado de sincronizaciones
 
@@ -101,6 +101,8 @@ El formulario de creación/edición de una sincronización contiene todos los pa
 
 ### Webhooks
 - URL de webhook para anulaciones (`webhook_url_when_voiding`)
+
+Con esto, usted tiene el control completo de las sincronizaciones: puede dejarlas correr solas según su horario o intervenir a mano cuando lo necesite. Si algún día los productos no aparecen en la tienda como espera, puede forzar la sincronización y revisar los logs para encontrar la causa.
 
 ## API (llamadas desde sistemas externos)
 

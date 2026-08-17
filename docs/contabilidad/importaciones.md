@@ -4,7 +4,7 @@ sidebar_label: "Importaciones"
 sidebar_position: 6
 ---
 
-Este tutorial explica como importar datos masivamente al modulo de contabilidad de Zauru mediante archivos CSV.
+Si está migrando su empresa desde otro sistema contable, o empieza con Zauru y no quiere teclear cuenta por cuenta, las importaciones por CSV le ahorran horas de trabajo. Aquí verá cómo cargar de una sola vez su catálogo de cuentas, sus grupos de cuentas y su historial de transacciones.
 
 ## Importacion de cuentas contables
 
@@ -74,6 +74,8 @@ El archivo CSV debe contener las siguientes columnas:
 - `currency_id`: ID de la moneda
 
 La primera fila del archivo se considera encabezado y se omite durante la importacion.
+
+Una vez importado todo, conviene revisar un par de cuentas y transacciones al azar para confirmar que los datos llegaron completos y correctos. Con su información cargada, ya puede seguir con los saldos iniciales o comenzar a registrar las transacciones del día a día.
 
 ## API (llamadas desde sistemas externos)
 

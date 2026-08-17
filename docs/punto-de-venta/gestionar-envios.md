@@ -4,7 +4,7 @@ sidebar_label: "Gestionar envios"
 sidebar_position: 11
 ---
 
-Este tutorial esta enfocado en gestionar los envios (transitos) de productos entre bodegas desde el punto de venta. Un envio ocurre cuando una reserva ha sido despachada y los productos estan en transito hacia su destino. En esta seccion usted puede ver los envios en transito y registrar la entrega cuando los productos llegan a su destino.
+Cuando despachó una reserva y la mercadería va en camino hacia otra sucursal, aquí es donde usted le da seguimiento a ese viaje. Puede ver qué envíos están en tránsito, de qué bodega salieron y hacia cuál van, y registrar la entrega cuando el camión llega a su destino para que los productos ingresen al inventario. Es la pantalla que cierra el ciclo de cada traslado entre bodegas.
 
 ## Listado de envios en transito
 
@@ -67,6 +67,8 @@ b. **Productos**: Listado de productos con cantidades reservadas y entregadas.
 c. **Estado**: Estado actual del envio (reservado, en transito, entregado, etc.).
 
 d. **Imprimir**: Acceso a las plantillas de impresion configuradas para ese estado.
+
+Con cada envío entregado, la mercadería que salió de una bodega ya descansa en la otra y el inventario de ambas sucursales queda al día. Si una entrega llegó incompleta, no se preocupe: el sistema le dejó el faltante pendiente para que lo complete cuando llegue el resto.
 
 ## API (llamadas desde sistemas externos)
 

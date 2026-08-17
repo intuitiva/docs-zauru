@@ -4,11 +4,11 @@ sidebar_label: "Destajos"
 sidebar_position: 10
 ---
 
-Este tutorial trata sobre la gestion de destajos, que son las tareas pagadas por unidad de trabajo realizada (no por salario fijo). Los destajos permiten registrar el trabajo diario de empleados contratados bajo la modalidad de pago por tarea.
+Si sus empleados ganan por destajo —por quintal cortado, por caja armada, por tarea sembrada—, aquí es donde se registra cada jornada de trabajo. Los destajos son las tareas pagadas por unidad de trabajo realizada, no por salario fijo, y este documento le muestra cómo capturarlos, incluidos los feriados, para que lleguen solos a la corrida de nómina.
 
 ## Destajos no pagados
 
-Los destajos no pagados son aquellos que aun no han sido incluidos en una corrida de nomina.
+Los destajos no pagados son el trabajo de la semana que todavía espera su pago: todo lo que registre aquí se incluirá en la próxima corrida de nómina. Son aquellos que aún no han sido incluidos en una corrida.
 
 Para acceder a los destajos no pagados:
 
@@ -93,7 +93,7 @@ En el detalle del destajo, hacer clic en **"Borrar"**. Solo se pueden borrar des
 
 ## Destajos pagados
 
-Los destajos pagados son aquellos que ya han sido incluidos en una corrida de nomina que fue marcada como pagada. Son de solo lectura.
+Cuando la corrida se pagó, los destajos se mueven aquí y quedan como historial. Los destajos pagados son aquellos que ya han sido incluidos en una corrida de nómina marcada como pagada, y son de solo lectura.
 
 Para acceder a los destajos pagados:
 
@@ -108,7 +108,7 @@ El listado cuenta con busqueda por texto, igual que los destajos no pagados.
 
 ## Destajos de feriado
 
-La funcionalidad de destajos de feriado permite registrar automaticamente destajos en dias feriados, aplicando el recargo de horas extra correspondiente.
+Si su cuadrilla trabajó un feriado —digamos un 25 de diciembre—, no tiene que anotar empleado por empleado. La funcionalidad de destajos de feriado registra automáticamente los destajos del día feriado, aplicando el recargo de horas extra correspondiente.
 
 Para crear un destajo de feriado:
 
@@ -134,6 +134,8 @@ El sistema genera automaticamente los detalles de destajo para todos los emplead
 Cuando una corrida de nomina se genera o se aprueba, el sistema incluye automaticamente los destajos no pagados que esten dentro del rango de fechas de la corrida y que pertenezcan a empleados incluidos en la misma.
 
 Al pagar una corrida de nomina, los destajos incluidos pasan automaticamente de "no pagados" a "pagados" y ya no pueden ser modificados.
+
+Con los destajos registrados, su parte está hecha: la corrida de nómina los tomará según el rango de fechas y los convertirá en pago. Ya solo queda revisar los saldos cuando se genere la corrida, o capturar el trabajo del día siguiente.
 
 ## API (llamadas desde sistemas externos)
 

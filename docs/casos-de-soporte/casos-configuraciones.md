@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones"
 sidebar_position: 15
 ---
 
-Este tutorial esta enfocado en la configuracion de webhooks y correos electronicos para el modulo de casos de soporte.
+¿Le gustaría que su propio sistema se enterara solo cada vez que se crea, actualiza o cierra un caso? ¿Y que los correos de soporte salieran a nombre de su empresa, con su asunto y su saludo? Este tutorial le muestra la configuración de webhooks y correos electrónicos del módulo de casos de soporte, para que la comunicación con sus clientes y sus sistemas funcione sin trabajo manual.
 
 Para acceder a las configuraciones:
 
@@ -15,7 +15,7 @@ Para acceder a las configuraciones:
 
 ## Configuracion de Webhooks
 
-Los webhooks permiten que Zauru notifique a un sistema externo cada vez que ocurre un evento en los casos de soporte. Puede configurar webhooks para tres eventos:
+Si su taller usa otro sistema para el inventario o la mensajería, los webhooks le evitan estar copiando datos a mano: Zauru notifica a ese sistema externo cada vez que ocurre un evento en los casos de soporte. Puede configurar webhooks para tres eventos:
 
 ### Webhook al Crear un Caso
 
@@ -34,7 +34,7 @@ Los webhooks permiten que Zauru notifique a un sistema externo cada vez que ocur
 
 ## Configuracion de Correo Electronico
 
-Estas opciones controlan el envio de correos electronicos al utilizar la funcion **"Enviar por Correo"** en un caso.
+Cuando el cliente reciba el correo con el resumen de su caso, conviene que el remitente sea su empresa y que la respuesta llegue a la persona correcta. Estas opciones controlan el envio de correos electronicos al utilizar la funcion **"Enviar por Correo"** en un caso.
 
 ### Remitente del Correo
 
@@ -64,6 +64,8 @@ Estas opciones controlan el envio de correos electronicos al utilizar la funcion
 ## Guardar Configuraciones
 
 Despues de realizar los cambios, presione el boton de guardar. Las configuraciones se aplican de inmediato y afectan a todos los casos de soporte de la entidad.
+
+Con las configuraciones guardadas, cada correo y cada notificación saldrá con la identidad de su empresa sin que tenga que escribirla cada vez. El siguiente paso natural es probar el flujo completo: cree un caso de prueba y envíe el correo al cliente para ver cómo queda con su plantilla.
 
 ## API (llamadas desde sistemas externos)
 

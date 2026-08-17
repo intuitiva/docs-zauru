@@ -4,7 +4,7 @@ sidebar_label: "Cierre Diario Consolidado"
 sidebar_position: 5
 ---
 
-Reporte mensual que consolida la operacion de todo un mes, mostrando totales por dia.
+Cuando termina el mes y quiere ver cómo fue la operación de su punto de venta día por día, este reporte se lo cuenta todo: ventas, anulaciones, créditos y cobros. Es el repaso mensual que le ayuda a detectar días fuertes, días flojos y tendencias sin revisar cada cierre por separado.
 
 Para ingresar al reporte:
 
@@ -26,3 +26,5 @@ Para ingresar al reporte:
 - Facturas por termino de pago (cantidad y monto).
 - Cobros por metodo de pago (monto).
 - Correlatividad de numeros de factura por dia (para facturas no electronicas).
+
+Con este reporte, revisar el mes es como hojear el diario de su punto de venta: todo lo importante, en orden y de un vistazo.

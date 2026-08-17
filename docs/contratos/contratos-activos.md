@@ -4,7 +4,7 @@ sidebar_label: "Contratos Activos"
 sidebar_position: 2
 ---
 
-Al momento de activar el contrato preliminar se convierte en un contrato activo; lo que significa que va a generar documentos recurrentemente con la periodicidad estipulada, indefinidamente o una cantidad específica de recurrencias.
+Cuando activa un contrato preliminar, Zauru empieza a trabajar por usted: revisa todos los días si toca generar una cuota y la crea sin que usted mueva un dedo. Ese contrato pasa a ser un contrato activo y vive en esta sección, donde podrá darle seguimiento día a día. Un contrato activo genera documentos recurrentemente con la periodicidad estipulada, indefinidamente o una cantidad específica de recurrencias.
 
 ## Listado de Contratos Activos
 
@@ -16,7 +16,7 @@ Desde este listado también se puede acceder a los **Contratos Anulados** (Voide
 
 ### Contratos Anulados
 
-Los contratos anulados son contratos activos que fueron cancelados y ya no aparecen en los listados principales. Un contrato solo se puede anular si no tiene documentos generados asociados (facturas, órdenes de compra, casos o envíos). La anulación no es destructiva (no borra el registro), pero marca el contrato como anulado.
+Si activó un contrato por error o el cliente desistió antes de que se generara ningún documento, puede anularlo sin perder el registro. Los contratos anulados son contratos activos que fueron cancelados y ya no aparecen en los listados principales. Un contrato solo se puede anular si no tiene documentos generados asociados (facturas, órdenes de compra, casos o envíos). La anulación no es destructiva (no borra el registro), pero marca el contrato como anulado.
 
 ## Generar Documentos Automáticamente
 Este es el comportamiento normal de un contrato, que genere documentos automáticamente basados en la recurrencia específica (ver [(recurrencias)](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias)).
@@ -74,7 +74,7 @@ Debajo de la tabla de documentos generados se muestra un resumen con:
 ![resumen de estado](/img/contratos/contratos-activos-6.png)
 
 ## Editar Contratos Activos
-Los contratos activos se pueden editar para que las siguientes recurrencias respeten los nuevos parámetros del contrato. El editar el contrato no cambia las cuotas anteriores.
+¿El cliente cambió de plan o de precio a mitad del camino? No hace falta cerrar el contrato y crear otro. Los contratos activos se pueden editar para que las siguientes recurrencias respeten los nuevos parámetros del contrato. El editar el contrato no cambia las cuotas anteriores.
 
 El formulario de edición es idéntico al de creación de contrato preliminar e incluye todas las secciones: tipo de documento, referencia, datos de recurrencia, moras, detalles de items, partidas contables, entradas extra e información de pago automático.
 
@@ -184,6 +184,8 @@ En el detalle del contrato activo se muestran también todos los documentos prev
 - **Facturas Asociadas**: Facturas adicionales (no generadas automáticamente) vinculadas al contrato.
 - **Órdenes de Compra Asociadas**: Órdenes de compra vinculadas al contrato.
 - **Casos Asociados**: Casos de soporte vinculados al contrato.
+
+Con esto, su contrato activo queda completo: Zauru se encarga de generar cada cuota en su fecha y usted tiene a la mano el estado, las moras, los documentos y la impresión. El día a día se reduce a revisar que las cuotas salgan bien y, cuando el servicio termine, decidir si cierra el contrato o lo deja corriendo.
 
 ## API (llamadas desde sistemas externos)
 

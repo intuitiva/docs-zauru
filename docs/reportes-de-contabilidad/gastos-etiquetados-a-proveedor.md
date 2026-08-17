@@ -4,7 +4,7 @@ sidebar_label: "Gastos Etiquetados a Proveedor"
 sidebar_position: 36
 ---
 
-Este reporte muestra los gastos asociados a un proveedor (beneficiario), agrupados por etiqueta.
+¿Quiere ver todo lo que le ha comprado a un proveedor y cómo se distribuye entre sus etiquetas de gasto? Este reporte le muestra los gastos asociados a un proveedor (beneficiario), agrupados por etiqueta.
 
 Para ingresar a este reporte:
 
@@ -16,3 +16,5 @@ Para ingresar a este reporte:
 
 - **Beneficiario** (proveedor).
 - **Etiqueta** (opcional, para filtrar aun mas).
+
+Útil cuando necesita revisar sus compras a un proveedor puntual o cuadrar el gasto del mes con la etiqueta que le corresponde.

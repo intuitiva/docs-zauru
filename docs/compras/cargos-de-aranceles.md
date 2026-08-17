@@ -4,7 +4,7 @@ sidebar_label: "Cargos de Aranceles"
 sidebar_position: 9
 ---
 
-Este tutorial esta enfocado en agregar cargos de aranceles por productos a una orden de compra.
+Cuando su importación llega a puerto, la aduana le cobra aranceles e impuestos por cada producto, y esos montos forman parte del costo real de su mercadería. Si no los registra, el costo de su inventario queda incompleto. En este tutorial aprenderá a registrar los cargos de arancel a una orden de compra, producto por producto, para que Zauru los reparta en el costo de cada artículo de acuerdo con su póliza de importación.
 
 Los pasos para agregar aranceles a una orden de compra son los siguientes:
 
@@ -42,6 +42,8 @@ i. Presione “Crear cargo” para crear el cargo de arancel a su orden de compr
 Le aparecerá un mensaje de éxito notificándole que el cargo de arancel fue creado exitosamente.
 
 ![imagen3](/img/compras/cargos-de-aranceles-3.jpg)
+
+Con los aranceles registrados, cada producto de su importación ya refleja el costo que realmente pagó al internar la mercadería. Si su póliza incluye además fletes, seguros o gastos de agencia aduanal, puede registrarlos como cargos adicionales a la misma orden de compra; cuando ya tenga el costo completo, el siguiente paso natural es recibir la mercadería en su bodega.
 
 ## API (llamadas desde sistemas externos)
 

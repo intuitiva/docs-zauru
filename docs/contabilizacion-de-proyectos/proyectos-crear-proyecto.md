@@ -4,9 +4,7 @@ sidebar_label: "Crear Proyecto"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en la creación de un proyecto. Cuando usted crea un proyecto esta creando un “Folder” en donde podrá adjuntar muchos “Archivos”, por archivos nos referimos a las transacciones contables, facturas emitida, ordenes de compra emitidas, casos, envíos y/o cotizaciones que usted realice.
-También se pueden entender como __centros de costos__ para agrupar transacciones de gastos.
-Conforme usted vaya asociando sus transacciones al proyecto, se irán registrando y las podrá ver en el balance del proyecto, en donde podrá saber cuanto ha gastado y cuanto a ingresado del proyecto.
+Antes de poder asociar cualquier gasto, factura o cotización a una obra, primero necesita crear el proyecto en Zauru. Piense en el proyecto como un folder: cuando usted lo crea, podrá adjuntarle muchos archivos — es decir, las transacciones contables, facturas emitidas, órdenes de compra emitidas, casos, envíos y cotizaciones que realice — y todo quedará agrupado en un solo lugar. Los proyectos también funcionan como centros de costos para agrupar transacciones de gastos. Conforme vaya asociando sus transacciones al proyecto, se irán registrando y las podrá ver en el balance del proyecto, donde sabrá cuánto ha gastado y cuánto ha ingresado.
 
 Los pasos para crear un proyecto son los siguientes:
 
@@ -31,6 +29,8 @@ c. Presione “Crear Proyecto”.
 Le aparecerá un mensaje de éxito en la pantalla. Ahora que creo el proyecto podrá comenzar a adjuntar sus transacciones asociadas al mismo.
 
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-crear-proyecto-3.jpg)
+
+Con esto su proyecto ya está creado y listo para recibir transacciones. El siguiente paso natural es comenzar a adjuntarle los gastos y las facturas de la obra; y si el trabajo es muy complejo, puede organizarlo en subproyectos para llevar un control aún más fino.
 
 ## API (llamadas desde sistemas externos)
 

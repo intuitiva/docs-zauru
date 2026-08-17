@@ -4,7 +4,7 @@ sidebar_label: "Solicitar los items disponibles con su foto, precios y existenci
 sidebar_position: 4
 ---
 
-Para obtener un detalle en tiempo real de los items disponibles para la venta necesitamos hacer una consulta por el API de Zauru con las siguientes características:
+Si su tienda en línea necesita mostrar el catálogo de Zauru con precios, fotos y existencias siempre al día, este es el endpoint que le entrega esa información en tiempo real. Úselo cuando quiera publicar productos sin cargarlos a mano o cuando necesite saber cuánto queda en bodega antes de prometer una entrega. Para obtener el detalle de los items disponibles para la venta, se hace una consulta por el API de Zauru con las siguientes características:
 
 ```bash
 curl -v \
@@ -208,4 +208,8 @@ Para los paquetes, las condiciones equivalentes son:
 
 ## Almacenamiento en caché
 
+Gracias a esta caché, las consultas frecuentes de su tienda responden rápido sin sacrificar frescura: cualquier cambio en los precios invalida automáticamente el valor guardado.
+
 Los precios de los paquetes se almacenan en caché por 3 horas para optimizar el rendimiento. La clave de caché incluye el ID de la entidad, la lista de precios, la cantidad de precios de paquetes y la fecha de última actualización, por lo que cualquier cambio en los precios invalida automáticamente la caché.
+
+Con esta respuesta, su tienda puede mostrar catálogo, fotos, precios y existencias tal como están en Zauru, sin duplicar trabajo. Cuando el catálogo ya fluya hacia la tienda, el siguiente paso natural es dejar listos los pedidos para que regresen a Zauru como órdenes de venta.

@@ -4,9 +4,7 @@ sidebar_label: "Costos unitarios iniciales"
 sidebar_position: 11
 ---
 
-Este tutorial está enfocado en cómo crear o importar los costos iniciales de sus productos, para que al momento de la venta, usted pueda saber cuanto le costo y a cuanto vendio el producto (Margen de ganancia).
-
-Este proceso es útil cuando no se requiere importar TODO le historial de la empresa porque la empresa lleva bastante tiempo funcionando y no es práctico migrar toda la información histórica a Zauru. Es por eso que se registran balances iniciales en las cuentas, saldos de mercadería y los __costos unitarios iniciales__.
+Si su empresa lleva bastante tiempo funcionando y recién empieza a usar Zauru, no es práctico migrar toda la información histórica de sus compras. Lo que sí vale la pena es registrar los __costos unitarios iniciales__ de su mercadería, junto con los balances iniciales en las cuentas y los saldos de bodega, para que al momento de cada venta usted pueda saber cuánto le costó el producto y a cuánto lo vendió, es decir, su margen de ganancia desde el primer día. Este tutorial le mostrará cómo crear esos costos uno por uno o importarlos todos de una vez desde una plantilla de Excel.
 
 La forma de crear un nuevo costo inicial es la siguiente:
 
@@ -70,6 +68,8 @@ Luego de ingresar los datos en su plantilla de impresión deberá guardarla e im
 Si su plantilla de impresión esta correcta, le aparecerá un mensaje de éxito notificándole que sus costos iniciales se importaron correctamente. Si recibe un mensaje de error, revise los datos de su plantilla.
 
 ![imagen7](/img/compras/preparacion-subir-costos-iniciales-7.jpg)
+
+Con los costos iniciales cargados, Zauru ya puede calcular el costo promedio ponderado de cada producto y mostrarle su margen de ganancia en cada venta. A partir de aquí, cada compra que usted registre actualizará esos costos automáticamente, sin que tenga que hacer nada más.
 
 ## API (llamadas desde sistemas externos)
 

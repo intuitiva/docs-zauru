@@ -4,11 +4,11 @@ sidebar_label: "Contratos (Membresías)"
 sidebar_position: 5
 ---
 
-Los contratos en Zauru representan las membresías de su entidad con los diferentes planes y aplicaciones contratados. Cada contrato define qué aplicaciones (módulos) tiene disponibles su entidad y por cuánto tiempo.
+Cuando su membresía está por vencer, cuando su negocio crece y necesita sumar el módulo de Compras, o cuando quiere dejar un respaldo de su historial para su contador, los contratos son su lugar en Zauru. Los contratos representan las membresías de su entidad con los diferentes planes y aplicaciones contratados: cada contrato define qué aplicaciones (módulos) tiene disponibles su entidad y por cuánto tiempo.
 
 ## Planes Disponibles
 
-Zauru ofrece diferentes planes que agrupan conjuntos de aplicaciones:
+Conocer los planes le ayuda a decidir si lo que su negocio necesita hoy es Servicios o si ya es momento de sumar Compras. Zauru ofrece diferentes planes que agrupan conjuntos de aplicaciones:
 
 - **Servicios:** Incluye Control de Acceso, Configuraciones, Contabilidad, Inventarios y Ventas.
 - **Distribución:** Incluye además de lo anterior, Compras.
@@ -33,13 +33,15 @@ Los pasos para crear o renovar un contrato son:
 
 ## Exportar Contratos
 
-Zauru le permite exportar su historial de contratos en formato CSV o XLS. Para exportar:
+Si su contador le pide el historial de membresías para sus registros, puede exportarlo y guardarlo donde prefiera. Zauru le permite exportar su historial de contratos en formato CSV o XLS. Para exportar:
 
 1. Ir a "Control de Acceso".
 2. Seleccionar "Contratos".
 3. Seleccionar el formato de exportación deseado (CSV o XLS).
 
 ![Opciones de exportación de contratos en CSV o XLS](/img/permisos-de-acceso/contratos-3.png)
+
+Con esto ya tiene a la mano el historial de contratos de su entidad. Cuando su membresía esté por vencer, puede volver a esta sección para renovarla, mejorarla o rebajarla según lo que su negocio necesite, y exportar el detalle cuando su contador se lo pida.
 
 ## API (llamadas desde sistemas externos)
 

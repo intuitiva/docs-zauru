@@ -4,7 +4,7 @@ sidebar_label: "[Transacciones] Cheques emitidos (normales y post-fechados)"
 sidebar_position: 12
 ---
 
-Este tutorial esta enfocado en la emisión de cheques. Cuando usted emite un cheque a un proveedor de productos o servicios, puede que el cheque se emita para cobrar el mismo día, o el cheque sea post-fechado, ambos casos se mostraran en los siguientes ejemplos.
+Cada vez que paga a un proveedor con cheque, conviene registrarlo en el momento para que la cuenta de banco y el gasto queden al día. A veces el cheque se cobra el mismo día y a veces usted lo post-fecha para que se cobre después; aquí le mostramos ambos casos paso a paso.
 
 > Emitir cheques para pagos también se puede realizar desde el módulo de compras con un [pago orden de compras](https://docs.zauru.com/compras/pagar-ordenes-de-compra-y-cargos-adicionales).
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
@@ -57,6 +57,8 @@ Le aparecerán las opciones para crear un nueva transacción, los pasos para emi
 Luego de especificar todos los campos del cheque presione “Crear nueva transacción” para emitir el cheque.
 
 ![imagen4](/img/contabilidad/transacciones-cheques-4.png)
+
+Con el cheque emitido, su cuenta monetaria refleja la salida y el gasto queda registrado en la cuenta correcta, listo para aparecer en sus reportes del mes. Si el cheque es post-fechado, recuerde que el banco lo reflejará cuando se cobre, no el día en que lo emitió.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Contratos de trabajo"
 sidebar_position: 9
 ---
 
-Este tutorial trata sobre la gestion de contratos de trabajo, que vinculan empleados a puestos de trabajo y definen las condiciones salariales, metodo de pago, tiempo personal y terminos de contratacion.
+Cuando contrata a alguien —o cuando llega el momento de liquidarlo—, el contrato de trabajo es el documento que une todo: el empleado con su puesto, su salario por hora, su método de pago y sus días de tiempo personal. Aquí aprenderá a crearlo, consultarlo, terminarlo y a revisar los cálculos de liquidación que el sistema genera al cerrar la relación laboral.
 
 ## Listado de contratos
 
@@ -138,6 +138,8 @@ En el detalle del contrato, hacer clic en **"Borrar"**. Solo se pueden borrar co
 ## Imprimir un contrato de trabajo
 
 En el detalle del contrato, hacer clic en **"Imprimir"** o **"Descargar PDF"** para generar una version imprimible del contrato usando la plantilla configurada. El sistema soporta multiples plantillas de impresion para contratos de trabajo.
+
+Con los contratos registrados, el sistema ya sabe cuánto pagar a cada empleado, cuánto bonificarle y qué descontarle en cada corrida. Si alguien deja la empresa, termine su contrato y revise la liquidación calculada; si no, siga con las corridas de nómina cuando llegue la fecha de pago.
 
 ## API (llamadas desde sistemas externos)
 

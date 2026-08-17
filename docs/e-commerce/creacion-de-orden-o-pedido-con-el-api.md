@@ -4,9 +4,7 @@ sidebar_label: "Creación de una orden o pedido con el API"
 sidebar_position: 5
 ---
 
-Para crear una orden/pedido por el API de e-commerce, se deben enviar 3 campos principales, el cliente (__obligatorio__), la orden (__obligatorio__) y el pago (__opcional__).
-
-En general se debe enviar un JSON con esta estructura:
+Si un sistema externo necesita registrar pedidos en Zauru sin pasar por la interfaz web —por ejemplo, cuando su tienda en línea o un servicio propio recibe compras y quiere que queden como órdenes de venta—, este es el endpoint que debe usar. En cada llamada se envían tres bloques principales: el cliente (__obligatorio__), la orden (__obligatorio__) y el pago (__opcional__). En general se debe enviar un JSON con esta estructura:
 ```json
 {
   "client": {
@@ -201,3 +199,5 @@ Esto devolverá un JSON similar a este:
   "original_request_id": null
 }
 ```
+
+Con esto ya puede crear pedidos desde cualquier sistema externo y actualizarlos cuando lo necesite. Si quiere ver cómo aterriza cada pedido en Zauru, el siguiente paso natural es revisar la sección de solicitudes de e-commerce, donde cada uno queda registrado con su estado y sus movimientos.

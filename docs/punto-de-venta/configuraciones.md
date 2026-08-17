@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en las configuraciones del punto de venta para poder emitir facturas, crear ordenes de venta, casos, compras, reservas, traslados y recibir mercaderia. Las configuraciones que se pueden hacer son para predeterminar ciertos valores que usted desea que siempre se generen en los nuevos documentos del punto de venta.
+Si está montando su punto de venta por primera vez, o quiere que cada factura salga con el cliente, la agencia y el término de pago que usted siempre usa, este es el lugar para dejarlo todo listo. Con unas pocas configuraciones, sus vendedores no tendrán que repetir los mismos datos en cada documento: el sistema los traerá solos en facturas, órdenes, casos, compras, reservas y traslados. Aquí también ajusta detalles de la pantalla, como mostrar las imágenes de los productos o los botones de ancho doble, para que el mostrador trabaje a su ritmo.
 
 Los pasos para configurar el punto de venta son los siguientes:
 
@@ -137,3 +137,5 @@ Por ultimo, para guardar sus configuraciones presione "Actualizar Configuracione
 ![imagen2](/img/punto-de-venta/configuraciones-2.png)
 
 Le aparecera un mensaje de exito en la pantalla notificandole que se actualizaron los datos.
+
+Con las configuraciones guardadas, su punto de venta queda a la medida de su negocio: cada documento nuevo nacerá con los valores que usted eligió y la pantalla se verá como usted la necesita. Si más adelante cambia de proveedor, de agencia o de flujo de trabajo, puede volver a esta sección las veces que quiera y ajustar lo que sea necesario.

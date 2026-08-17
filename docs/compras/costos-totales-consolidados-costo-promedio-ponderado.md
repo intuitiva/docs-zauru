@@ -4,9 +4,7 @@ sidebar_label: "Costos totales consolidados (Costo Promedio Ponderado)"
 sidebar_position: 12
 ---
 
-Este tutorial esta enfocado en la verificación del costo promedio ponderado de su producto.
-
-Cada vez que usted realiza una compra de un producto, Zauru mantiene un registro de la cantidad y el costo al que usted compra, calculando el costo promedio ponderado en base a esta información.
+¿Compra el mismo producto a precios distintos a lo largo del año y quiere saber cuánto le cuesta en promedio? Cada vez que usted realiza una compra, Zauru registra la cantidad y el costo al que compró, y con esa información calcula el costo promedio ponderado de cada producto. Este tutorial le mostrará cómo consultar ese promedio cuando necesite saber el costo real de su inventario, por ejemplo al fijar precios de venta o al preparar un reporte para su contador.
 
 Los pasos para ver el costo promedio ponderado de sus productos son los siguientes:
 
@@ -22,6 +20,8 @@ Le aparecerán los detalles del costo total, en donde podrá encontrar el regist
 En la parte inferior del reporte podrá encontrar el Promedio que es el costo promedio ponderado según las compras que ha hecho de este producto.
 
 ![imagen2](/img/compras/costos-totales-consolidados-costo-promedio-ponderado-2.jpg)
+
+Con el costo promedio ponderado a la vista, usted ya sabe cuánto le cuesta realmente cada producto que tiene en bodega, aunque los precios de compra hayan subido o bajado entre pedido y pedido. Esa es la cifra que Zauru utiliza para valorar su inventario y calcular el margen de ganancia de cada venta.
 
 ## API (llamadas desde sistemas externos)
 

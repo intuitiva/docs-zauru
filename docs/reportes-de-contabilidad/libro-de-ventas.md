@@ -4,7 +4,7 @@ sidebar_label: "Libro de Ventas"
 sidebar_position: 20
 ---
 
-El libro de ventas e ingresos es un libro auxiliar en donde se apuntan de manera cronológica y correlativa todas las ventas e ingresos.  Este registro permite calcular el importe de los impuestos que se debe pagar sobre dichas ventas.
+Cuando su contador le pide el respaldo de todas las facturas del mes para calcular los impuestos, el libro de ventas es el documento que necesita. Aquí se registran, de manera cronológica y correlativa, todas las ventas e ingresos de la empresa, con el detalle de IVA débito fiscal y notas de crédito de cada factura.
 
 El libro de ventas lo ubicamos en:
 
@@ -34,3 +34,5 @@ El libro de ventas es un reporte fiscal que lista todas las facturas de venta em
 - Otros impuestos.
 - Notas de credito asociadas.
 - Total.
+
+Con esta información podrá cuadrar sus ventas del mes y preparar la declaración de impuestos con la seguridad de que cuenta con todas sus facturas.

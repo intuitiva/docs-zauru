@@ -4,7 +4,7 @@ sidebar_label: "Rentabilidad"
 sidebar_position: 8
 ---
 
-Este tutorial esta enfocado en el analisis de rentabilidad de un caso de soporte. Esta funcionalidad le permite comparar los ingresos generados por el caso contra los costos incurridos, para determinar el margen de ganancia.
+¿Le dejó ganancia aquella reparación, o los repuestos se comieron todo lo cobrado? Después de cerrar un caso, vale la pena mirar los números. El análisis de rentabilidad le permite comparar los ingresos generados por el caso contra los costos incurridos, para determinar el margen de ganancia de cada atención.
 
 ## Acceder al Analisis de Rentabilidad
 
@@ -50,6 +50,8 @@ El analisis le permite responder preguntas como:
 - Cual fue el margen de ganancia?
 
 Los costos mostrados son estimados basados en los datos contables disponibles en el sistema.
+
+Con estos números, puede decidir con datos si conviene cobrar más por ciertas reparaciones o si hay repuestos que salen más caros de lo que se factura. La próxima vez que cierre un caso, pase primero por el análisis de rentabilidad y compare antes de dar por terminada la atención.
 
 ## API (llamadas desde sistemas externos)
 

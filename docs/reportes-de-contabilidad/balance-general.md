@@ -4,7 +4,7 @@ sidebar_label: "Balance General"
 sidebar_position: 1
 ---
 
-El balance general es un documento financiero que representa la situación de una empresa en un momento determinado. Nos proporciona una descripción general de los activos, pasivos y capital contable.
+Cuando el banco o su contador le piden saber cómo está la empresa en una fecha concreta, el balance general es la respuesta. Representa la situación financiera de su empresa en un momento determinado, con una descripción general de los activos, pasivos y capital contable.
 
 Los pasos para ver el balance general son:
 
@@ -32,3 +32,5 @@ El reporte presenta:
 - **Estandar**: clasifica por tipo de cuenta y liquidez, con totales por moneda.
 - **Por grupos de cuenta**: consolida por grupo de cuenta en lugar de cuenta individual.
 - **En moneda local**: convierte todos los saldos a la moneda de la entidad (se genera en segundo plano para balances grandes).
+
+Así puede entregar su balance con la presentación que mejor se adapte a quien lo va a recibir, ya sea su banco, su contador o sus socios.

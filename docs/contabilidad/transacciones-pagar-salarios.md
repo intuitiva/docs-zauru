@@ -4,7 +4,7 @@ sidebar_label: "[Transacciones] Pagar Salarios (incluyendo prestaciones)"
 sidebar_position: 18
 ---
 
-Este tutorial esta enfocado en el pago de salarios y prestaciones a los empleados.
+Cada vez que paga la planilla, conviene dejar registrado el cheque de cada empleado para que el gasto de salarios quede al día en sus cuentas. Aquí verá cómo pagar salarios y prestaciones, con la opción de desglosar en un mismo pago conceptos como comisiones o gasolina.
 
 ## Pagar Salarios
 Los pasos para emitir un cheque de pago de salarios son los siguientes:
@@ -64,6 +64,8 @@ f. Coloque la cantidad por la que se realiza el cheque.
 g. Seleccione la cuenta de prestaciones
 
 ![imagen4](/img/contabilidad/transacciones-pagar-salarios-4.jpg)
+
+Con el pago registrado, el gasto de salarios o prestaciones queda reflejado en la cuenta correcta y su contabilidad mensual avanza sin huecos. Si su pago incluye varios conceptos, desglóselos en un mismo cheque para que cada cuenta de gasto reciba lo que le corresponde.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Agencias"
 sidebar_position: 3
 ---
 
-Zauru le permite llevar control de todas sus agencias (bodegas, puntos de venta, talleres y fabricas) Puede llevar control de existencias, reservaciones de ingreso y de salida de la agencia y ventas desde esa agencia.  La forma de crear una nueva agencia es la siguiente:
+Cuando abre una sucursal nueva o necesita una bodega adicional para separar su mercadería, el primer paso es registrarla como agencia en Zauru. Cada agencia le permite llevar control de sus existencias, de las reservaciones de ingreso y de salida y de las ventas que se hacen desde ese lugar, ya sea una bodega, un punto de venta, un taller o una fábrica. La forma de crear una nueva agencia es la siguiente:
 
 1. Ir a “Configuraciones”.
 2. Seleccionar “Agencias”.
@@ -73,7 +73,7 @@ Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la agen
 
 ## Formularios Asociados a la Agencia
 
-Al visualizar los detalles de una agencia, Zauru le mostrará los formularios personalizados que tenga asociados. Si ha creado formularios para el tipo de documento "Agencia", estos aparecerán en la vista de detalle para que pueda llenarlos con información adicional de cada agencia.
+Cuando necesite capturar información adicional que no cabe en los campos estándar de una agencia, puede recurrir a los formularios personalizados. Al visualizar los detalles de una agencia, Zauru le mostrará los formularios personalizados que tenga asociados. Si ha creado formularios para el tipo de documento "Agencia", estos aparecerán en la vista de detalle para que pueda llenarlos con información adicional de cada agencia.
 
 ## Exportar Agencias
 
@@ -104,6 +104,8 @@ Le deberán aparecer las opciones para crear una nueva categoría de agencias, l
 3. Presionar el botón de __Crear categoría de agencia__.
 
 ![Nueva categoría de ítems](/img/primeros-pasos/agencias-6.png)
+
+Ha creado su agencia y, si lo deseaba, la ha organizado dentro de una categoría. Con esto, su bodega, punto de venta, taller o fábrica queda listo para registrar movimientos de productos y ventas; cuando tenga empleados registrados, podrá asignarlos como encargados de cada agencia.
 
 ### API (llamadas desde sistemas externos)
 

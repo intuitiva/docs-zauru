@@ -4,7 +4,7 @@ sidebar_label: "Ventas"
 sidebar_position: 0
 ---
 
-Este módulo está diseñado para llevar el control completo de facturación y cobros (parciales, totales o consolidados). A continuación se describen las principales funcionalidades del módulo de ventas.
+¿Cuánto le debe cada cliente? ¿La mercadería que salió de la bodega ya quedó facturada y registrada? Si usted vende todos los días y quiere tener claras las respuestas, este módulo le da el control completo de facturación y cobros, ya sean parciales, totales o consolidados. A continuación se describen las principales funcionalidades del módulo de ventas.
 
 ## Funcionalidades Principales
 

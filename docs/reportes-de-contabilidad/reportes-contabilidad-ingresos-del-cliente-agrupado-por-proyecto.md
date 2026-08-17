@@ -4,9 +4,7 @@ sidebar_label: "Ingresos del Cliente Agrupado por Proyecto Ingresos del Cliente 
 sidebar_position: 18
 ---
 
-¿Qué pasa cuando un cliente tiene varios proyectos con la empresa, y el cliente quiere saber cuando dinero le ha desembolsado en todos los proyectos?
-
-Todos los proyectos normales necesitan ingresos, anticipados o vencidos. El reporte enlista los ingresos registrados que la empresa ha recibido de parte del cliente, además, se muestran agrupados basados en el proyecto en el que están involucrados.
+¿Su cliente tiene varios proyectos con su empresa y quiere saber cuánto le ha desembolsado en cada uno? Este reporte le enlista los ingresos que ha recibido de parte del cliente, agrupados por el proyecto al que pertenecen, para que ambos tengan las cuentas claras de un vistazo.
 
 Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 
@@ -20,3 +18,5 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Al seleccionar al beneficiario, se enlistara la información de las transacciones que ha realizado agrupado por proyecto y totalizado.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-ingresos-del-cliente-agrupado-por-proyecto-2.png)
+
+Con esta vista podrá responder las preguntas de su cliente con cifras claras y confirmar que los ingresos de cada proyecto estén completos.

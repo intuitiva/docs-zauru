@@ -4,7 +4,7 @@ sidebar_label: "Sincronización de Aplicaciones"
 sidebar_position: 5
 ---
 
-La sincronización de aplicaciones en Zauru le permite replicar información de sus tablas dinámicas (WebApp Tables) hacia una base de datos externa (PostgreSQL), para que sus webapps personalizadas puedan consultar los datos de forma directa y eficiente por medio de GraphQL o consultas SQL.
+Si su webapp personalizada consulta a cada rato las tablas dinámicas de Zauru, llega un momento en que conviene que esa información viva también en su propia base de datos. La sincronización de aplicaciones (App Syncs) le permite replicar la información de sus WebApp Tables hacia una base de datos externa PostgreSQL, para que sus webapps puedan consultar los datos de forma directa y eficiente por medio de GraphQL o consultas SQL.
 
 ## Crear una Sincronización
 
@@ -22,11 +22,13 @@ Al crear una sincronización deberá especificar:
 
 ## Refresco Completo (Full Refresh)
 
-Una sincronización puede realizar un refresco completo que copia todos los datos actuales desde Zauru hacia la base de datos externa. Esta operación se ejecuta en segundo plano y puede tardar varios minutos dependiendo del volumen de datos.
+Resulta muy útil cuando acaba de crear la sincronización por primera vez o cuando quiere alinear su base externa con todo lo que existe hoy en Zauru. Una sincronización puede realizar un refresco completo que copia todos los datos actuales desde Zauru hacia la base de datos externa. Esta operación se ejecuta en segundo plano y puede tardar varios minutos dependiendo del volumen de datos.
 
 ## Sincronización de IDs Pendientes
 
-Zauru mantiene una cola de IDs pendientes de sincronizar. Cada vez que un registro se crea, actualiza o elimina, su ID se agrega a esta cola para ser sincronizado incrementalmente. Puede ejecutar la sincronización inmediata de los IDs pendientes en cualquier momento.
+Para el día a día no hace falta un refresco completo cada vez que alguien toca un registro. Zauru mantiene una cola de IDs pendientes de sincronizar. Cada vez que un registro se crea, actualiza o elimina, su ID se agrega a esta cola para ser sincronizado incrementalmente. Puede ejecutar la sincronización inmediata de los IDs pendientes en cualquier momento.
+
+Con la sincronización en marcha, su base externa se mantiene al día con lo que su equipo registra en Zauru y sus webapps pueden consultar esa información sin depender de cada llamada al API. Si en algún momento estrena una tabla o necesita alinear todo de nuevo, el refresco completo y la cola de IDs pendientes son sus aliados para poner las cosas en orden.
 
 ## API (llamadas desde sistemas externos)
 

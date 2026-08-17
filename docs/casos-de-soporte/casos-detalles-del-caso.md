@@ -4,7 +4,7 @@ sidebar_label: "Detalles del Caso"
 sidebar_position: 3
 ---
 
-Este tutorial esta enfocado en la pagina de detalles de un caso, donde puede consultar toda la informacion relacionada.
+A mitad de una reparación, un cliente llama para preguntar si su equipo ya tiene repuestos; usted abre el caso y le responde en el mismo momento. La página de detalles de un caso reúne toda la información relacionada — suministros, horas, facturas y notas — y este tutorial le enseña dónde encontrar cada dato.
 
 Para ver los detalles de un caso:
 
@@ -78,6 +78,8 @@ Si la entidad utiliza formularios personalizados para casos de soporte, en esta 
 ### Plantillas de Impresion
 
 En la parte superior de la pagina, si tiene plantillas de impresion configuradas, podra seleccionar una para imprimir o descargar el caso en PDF.
+
+Con la página de detalles dominada, podrá responder cualquier pregunta sobre un caso sin salir de esta pantalla. Cuando la atención esté terminada, desde aquí mismo podrá imprimir o descargar el documento, enviar el resumen por correo y revisar la rentabilidad antes de cerrar el caso.
 
 ## API (llamadas desde sistemas externos)
 

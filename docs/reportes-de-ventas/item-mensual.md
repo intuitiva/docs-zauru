@@ -4,7 +4,7 @@ sidebar_label: "Ítem Mensual"
 sidebar_position: 20
 ---
 
-Este reporte muestra las cantidades vendidas mensualmente de un ítem seleccionado, desglosadas por vendedor y punto de venta.
+Cuando quiere saber cuánto se vendió de un producto estrella durante el mes, este reporte le muestra las cantidades vendidas del ítem que elija, desglosadas por vendedor y punto de venta.
 
 Para ingresar al reporte:
 
@@ -12,3 +12,5 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítem Mensual".
 4. Seleccionar el ítem y el mes a consultar.
+
+Con ese desglose puede evaluar a sus vendedores, comparar el desempeño de sus tiendas y planear las compras del próximo mes.

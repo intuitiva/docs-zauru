@@ -4,7 +4,7 @@ sidebar_label: "Anular una factura o recibo (incluyendo el pago)"
 sidebar_position: 7
 ---
 
-Este tutorial esta enfocado en la anulación de una factura y sus repercusiones. Solo se puede anular una factura no pagada, si la factura tiene un pago, __primero hay que anular el pago__, después anular la factura y esto hará que se revierta lo siguiente:
+¿Se equivocó al emitir una factura o su cliente canceló la venta y necesita dejar todo como estaba? Aquí verá cómo anular una factura o un recibo y qué sucede en la contabilidad y en el inventario al hacerlo. Solo se puede anular una factura no pagada: si la factura tiene un pago, __primero hay que anular el pago__ y después anular la factura, y esto hará que se revierta lo siguiente:
 
 - Transacciones de Ventas e IVA por Pagar.
 - Movimientos de inventario de Bodega a Cliente.
@@ -64,6 +64,7 @@ Aca puede consultar el historial de los pagos anulados, pueden sucitar por coloc
 2. Seleccionar "pagos"
 3. Seleccionar "pagos anulados"
 
+Listo. Con esto ya sabe cómo deshacer una factura junto con su pago, y dónde consultar el historial de facturas y pagos anulados. Si vuelve a equivocarse, bastará con repetir estos pasos para revertir la venta, la salida de mercadería de la bodega y las transacciones contables en cuestión de minutos.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Incidencias por Tipo entre Fechas"
 sidebar_position: 21
 ---
 
-Este reporte lista todas las incidencias agrupadas por tipo de incidencia en un rango de fechas. Muestra para cada incidencia: empleado, fecha, tipo, cantidad y descuento aplicado.
+Si necesita revisar de un vistazo todas las incidencias de un periodo, agrupadas por tipo, este reporte se las presenta ordenadas y listas para analizar. Es útil, por ejemplo, para saber cuántos descuentos por falta o retardo hubo en la quincena o para preparar la información que le pida su auditor o su contador. Muestra para cada incidencia: empleado, fecha, tipo, cantidad y descuento aplicado.
 
 Para ingresar al reporte:
 
@@ -17,3 +17,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Descárguelo en Excel y tendrá el detalle listo para revisarlo o compartirlo.

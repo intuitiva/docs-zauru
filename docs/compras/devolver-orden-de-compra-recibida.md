@@ -4,7 +4,7 @@ sidebar_label: "Anular recepciones de una orden de compra"
 sidebar_position: 6
 ---
 
-Este tutorial esta enfocado en devolver los productos de una orden de compra después de una recepción.
+Le llegó mercadería dañada, vencida o que no es la que usted pidió, y toca regresarla al proveedor. Devolver una recepción en Zauru le permite corregir esa compra: el sistema regresa automáticamente el producto de su inventario hacia el proveedor, de modo que sus existencias y su cuenta con el proveedor quedan cuadradas.
 
 Existen varias situaciones por las cuales se regresen los productos de una orden de compra, por ejemplo:
 
@@ -34,6 +34,8 @@ Al devolver la orden de compra automáticamente se regresará el producto de su 
 ![imagen2](/img/compras/devolver-orden-de-compra-recibida-3.jpg)
 
 Puede repetir los pasos 1 al 5 para anular todas las recepciones que tenga la Orden de Compra.
+
+Con la devolución hecha, su inventario vuelve a reflejar únicamente la mercadería que de verdad tiene en bodega, y la cuenta con el proveedor se corrige. Si el proveedor le repone la mercadería más adelante, puede crear una nueva recepción sobre la misma orden; y si le emite una nota de crédito, puede registrarla para cerrar la compra sin cabos sueltos.
 
 ## API (llamadas desde sistemas externos)
 

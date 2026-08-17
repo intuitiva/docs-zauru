@@ -4,7 +4,7 @@ sidebar_label: "Lotes de Produccion"
 sidebar_position: 6
 ---
 
-Los lotes de produccion permiten agrupar multiples ordenes de produccion relacionadas para monitorear su progreso de forma consolidada. Un lote puede contener una orden raiz y sus ordenes hijas de sub-ensamblajes, o cualquier conjunto de ordenes que desee agrupar.
+Si una corrida de produccion involucra varias ordenes relacionadas — por ejemplo, el producto final y sus sub-ensamblajes — agruparlas en un lote le permite ver el avance de todo de un solo vistazo, en lugar de revisar orden por orden. Es especialmente util cuando fabrica productos compuestos o cuando quiere entregar a su equipo un panorama consolidado de una corrida grande. Los lotes de produccion permiten agrupar multiples ordenes de produccion relacionadas para monitorear su progreso de forma consolidada: un lote puede contener una orden raiz y sus ordenes hijas de sub-ensamblajes, o cualquier conjunto de ordenes que desee agrupar.
 
 ## Ver lotes de produccion abiertos
 
@@ -73,6 +73,8 @@ Para consultar lotes que han sido anulados:
 3. Seleccionar la pestana **"Anulados"**.
 
 En esta vista podra ver todos los lotes que fueron anulados, incluyendo informacion sobre quien los anulo y cuando.
+
+Cuando todas las ordenes de un lote se completan, el lote se cierra automaticamente y pasa a la seccion de lotes cerrados, donde podra revisar el resultado final de la corrida cuando lo necesite.
 
 ## API (llamadas desde sistemas externos)
 

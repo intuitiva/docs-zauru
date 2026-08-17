@@ -4,7 +4,7 @@ sidebar_label: "Crear Clientes y/o Proveedores (Beneficiarios)"
 sidebar_position: 6
 ---
 
-Los beneficiarios son clientes o proveedores de productos o servicios. Pueden ser categorizados de varias maneras, de acuerdo a la necesidad de su empresa. A continuación veremos como se manejan en Zauru.
+Antes de emitir su primera factura o registrar su primera compra, Zauru necesita saber a quién le está vendiendo o a quién le está comprando. Los beneficiarios son sus clientes y proveedores de productos o servicios, y pueden categorizarse de varias maneras según la necesidad de su empresa, por ejemplo por tipo, por días de crédito o por listado de precios. A continuación veremos cómo se manejan en Zauru.
 
 ## Nuevo Beneficiario
 Antes de poder comprar o vender tenemos que especificar a quien le estamos comprando o a quien le estamos vendiendo. Para llevar este registro debemos de crear un nuevo beneficiario. Los pasos para crear un beneficiario son los siguientes:
@@ -19,7 +19,7 @@ Antes de poder comprar o vender tenemos que especificar a quien le estamos compr
 
 ## Tipos de Beneficiarios
 
-Hay tres tipos de beneficiarios:
+Al registrar a un nuevo contacto, conviene decidir primero qué papel juega en su negocio, porque de ello dependen las transacciones en las que podrá aparecer. Hay tres tipos de beneficiarios:
 
 
 1. Los beneficiarios que son proveedores. *Los proveedores pueden ser "Proveedores de Bienes" o "Proveedores de Servicios" (que servirá en el libro de compras)*
@@ -102,7 +102,7 @@ Las entradas de texto permitidas para cada campo están especificadas en la imag
 
 
 ## Categorizar Beneficiarios
-Puede que tus clientes o proveedores tengan alguna categoría, por ejemplo, cantidad de días de crédito, cliente mayorista o proveedor mayorista, etc. Y puede que esta categoría este vinculada con un termino de pago. Los pasos para categorizar un beneficiario en Zauru son los siguientes:
+Cuando sus clientes o proveedores tengan condiciones distintas entre sí — unos mayoristas, otros con más días de crédito —, las categorías le ayudan a organizarlos y a vincularlos con términos de pago. Los pasos para categorizar un beneficiario en Zauru son los siguientes:
 
 1. Ir a “Configuraciones”.
 2. Seleccionar “Beneficiarios”.
@@ -138,6 +138,8 @@ Después de crear la categoría de beneficiario deberá colocársela a el client
 4. Seleccionar la categoría a la que pertenece este beneficiario y click en “Actualizar Beneficiario”.
 
 ![imagen 10](/img/primeros-pasos/beneficiarios-10.png)
+
+Ya cuenta con beneficiarios creados, categorizados y organizados. Con este registro listo, podrá seleccionar a sus clientes y proveedores al momento de facturar o comprar; el siguiente paso natural es crear los ítems que les venderá o comprará.
 
 ## API (llamadas desde sistemas externos)
 

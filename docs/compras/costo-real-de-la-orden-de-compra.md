@@ -4,7 +4,7 @@ sidebar_label: "Costo real de la orden de compra"
 sidebar_position: 14
 ---
 
-Este tutorial esta enfocado en la verificación del costo real de sus productos en una orden de compra, ya con todos los cargos incluidos y promediados ponderadamente.
+¿Cuánto le costó realmente cada producto después de pagar flete, seguro y aranceles? Cada vez que usted agrega cargos a una orden de compra, Zauru los reparte ponderadamente entre los productos, y antes de vender conviene dar una última mirada al costo real de cada artículo. En este tutorial aprenderá a revisarlo desde los detalles de la orden de compra.
 Los pasos para ver el costo real de sus productos en una orden de compra son los siguientes:
 
 1. Ir a “Compras”.
@@ -16,6 +16,8 @@ Los pasos para ver el costo real de sus productos en una orden de compra son los
 Le aparecerán los detalles de la orden de compra, en la parte inferior de la página podrá encontrar los costos unitarios preliminares, como se muestra en la imagen, en donde podrá ver como aumenta el costo de sus productos con cada cargo o arancel agregado a la orden de compra.
 
 ![imagen2](/img/compras/costo-real-de-la-orden-de-compra-2.png)
+
+Con el costo real verificado, ya puede confiar en que su margen de ganancia se calcula sobre el costo completo de la mercadería y no solo sobre el precio que le facturó el proveedor. Si quiere revisar el costo promedio que Zauru maneja para un producto a lo largo de todas sus compras, puede consultar los costos totales consolidados de ese producto.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Venta y Facturas"
 sidebar_position: 4
 ---
 
-Este tutorial esta enfocado en explicar las diferencias entre una orden de venta y una factura; y entender cuando usar cada una de ellas.
+Piense en un cliente que pide mercadería hoy pero la quiere facturar hasta el viernes, o en un servicio que se cobra por adelantado. Para decidir cómo registrarlo, primero hay que entender la diferencia entre una orden de venta y una factura, y este tutorial le muestra cuándo usar cada una, cómo crearlas y cómo convertir una orden en factura.
 
 Una orden de venta es una pre-factura o dependiendo del flujo de trabajo se puede tomar como una orden de trabajo o hasta como una cotización.
 
@@ -259,6 +259,8 @@ De manera similar, para facturas electrónicas anuladas, puede consultar la resp
 2. Seleccionar la opción de **"Respuesta Certificada de Anulación"** (`external_storage_certified_response_for_voiding`).
 
 Esta funcionalidad también está disponible para notas de crédito electrónicas, tanto para su emisión como para su anulación.
+
+Con esto domina el ciclo completo de venta: crea la orden, la convierte en factura cuando corresponde y consulta o reenvía el documento electrónico cuando el cliente lo necesita. Cada venta que registre quedará con su contabilidad, su inventario y su respaldo fiscal en orden.
 
 ## API (llamadas desde sistemas externos)
 

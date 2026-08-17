@@ -4,7 +4,7 @@ sidebar_label: "Clientes con Series"
 sidebar_position: 13
 ---
 
-Este tutorial esta enfocado en como consultar los clientes que poseen numeros de serie y los numeros de serie que cada cliente tiene.
+Cuando un cliente llama y dice que el producto que le compró está fallando, lo primero es saber exactamente cuál equipo le vendió. Este tutorial le muestra cómo consultar los clientes que poseen números de serie y los números de serie que cada cliente tiene, para que identifique el producto en cuestión y le abra un caso de soporte en segundos.
 
 ## Ver Clientes con Numeros de Serie
 

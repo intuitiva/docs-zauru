@@ -4,11 +4,11 @@ sidebar_label: "Etiquetas (Tags)"
 sidebar_position: 13
 ---
 
-Las etiquetas en Zauru le permiten categorizar y filtrar diferentes elementos del sistema como ítems, beneficiarios, envíos, entre otros. Las etiquetas se pueden organizar en categorías de etiquetas y pueden tener una estructura jerárquica.
+Cuando sus listados crecen, encontrar un producto o un cliente específico puede volverse cuesta arriba. Las etiquetas le permiten categorizar y filtrar diferentes elementos del sistema — como ítems, beneficiarios y envíos — para ubicarlos al instante; por ejemplo, puede marcar a sus clientes VIP o a los productos de una temporada. Las etiquetas se organizan en categorías de etiquetas y pueden tener una estructura jerárquica.
 
 ## Categoría de Etiquetas
 
-Las categorías de etiquetas le permiten agrupar etiquetas relacionadas. Las categorías pueden tener categorías padre, formando una estructura de árbol.
+Si su negocio maneja muchas etiquetas, agruparlas en categorías evita que la lista se vuelva interminable. Las categorías de etiquetas le permiten agrupar etiquetas relacionadas, y pueden tener categorías padre, formando una estructura de árbol.
 
 Los pasos para crear una nueva categoría de etiqueta son:
 
@@ -42,6 +42,8 @@ Los pasos para crear una nueva etiqueta son:
 ## Grafo de Categorías de Etiquetas
 
 Zauru le permite visualizar la estructura jerárquica de sus categorías de etiquetas y las etiquetas contenidas en ellas por medio de un grafo interactivo. Este grafo le muestra de forma visual cómo se organizan sus etiquetas y categorías.
+
+Ya tiene sus etiquetas y categorías listas. Ahora puede asignarlas a sus ítems y beneficiarios para filtrar sus listados con un solo clic; el grafo le ayudará a mantener a la vista cómo está organizada toda su estructura.
 
 ## API (llamadas desde sistemas externos)
 

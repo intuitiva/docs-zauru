@@ -4,7 +4,7 @@ sidebar_label: "Reportes Entregables"
 sidebar_position: 11
 ---
 
-Zauru le permite programar el envío automático de reportes por correo electrónico. Los Reportes Entregables son configuraciones que definen qué reporte se envía, a quién, con qué frecuencia y en qué formato. También puede realizar envíos inmediatos de reportes a usted mismo o a sus beneficiarios (clientes/proveedores).
+Imagínese recibir el reporte de ventas cada mañana en su correo, sin abrir Zauru ni dar un solo clic. Los Reportes Entregables le permiten programar el envío automático de reportes por correo electrónico, definiendo qué reporte se envía, a quién, con qué frecuencia y en qué formato. También puede realizar envíos inmediatos a usted mismo o a sus beneficiarios, por ejemplo para mandarle a un cliente su estado de cuenta.
 
 ## Nuevo Reporte Entregable
 
@@ -77,6 +77,8 @@ Esta funcionalidad le permite enviar un reporte directamente al correo electrón
 - **Destinatario:** La dirección de correo electrónico a la que se enviará (si no se especifica, se usan los correos registrados del beneficiario).
 - **Asunto:** El asunto del correo electrónico (opcional, por defecto "Reporte desde Zauru").
 - **Cuerpo del mensaje:** Un texto adicional que se incluirá en el cuerpo del correo (opcional).
+
+Con el reporte entregable configurado y probado, su información llegará sola a quien la necesita. Puede crear tantos como quiera — uno diario para el gerente, uno mensual para el contador — y ajustarlos en cualquier momento; para envíos puntuales, la opción de envío inmediato siempre está a la mano.
 
 ## API (llamadas desde sistemas externos)
 

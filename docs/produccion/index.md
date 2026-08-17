@@ -4,7 +4,7 @@ sidebar_label: "Produccion"
 sidebar_position: 0
 ---
 
-El modulo de produccion permite gestionar todo el ciclo de manufactura: desde la definicion de listas de materiales, creacion de ordenes de produccion, ejecucion en piso, cierre con movimientos de inventario y contabilidad, ordenes de trabajo internas y reportes de eficiencia y costos.
+Si su negocio fabrica productos, consume inventario internamente o necesita controlar cada corrida de manufactura de principio a fin, este modulo lo acompana en todo el ciclo: desde la receta de cada producto hasta el cierre con inventario y contabilidad. El modulo de produccion permite gestionar todo el ciclo de manufactura: desde la definicion de listas de materiales, creacion de ordenes de produccion, ejecucion en piso, cierre con movimientos de inventario y contabilidad, ordenes de trabajo internas y reportes de eficiencia y costos.
 
 ## Funcionalidades Principales
 

@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones de mi usuario"
 sidebar_position: 0
 ---
 
-En Zauru existen operaciones básicas que todos los usuarios pueden realizar sin necesidad de que involucren permisos.
+El primer día que abre Zauru, lo último que quiere es quedarse esperando a que un administrador le resuelva algo que usted mismo puede hacer en segundos. Entrar al sistema, recuperar una contraseña olvidada, cambiar de empresa o desbloquear su cuenta son operaciones básicas que todos los usuarios pueden realizar por su cuenta, sin necesidad de permisos.
 
 Estas tareas son:
 

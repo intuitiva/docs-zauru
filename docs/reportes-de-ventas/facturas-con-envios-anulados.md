@@ -4,7 +4,7 @@ sidebar_label: "Facturas con Envíos Anulados"
 sidebar_position: 76
 ---
 
-Este reporte lista las facturas cuyos envíos fueron anulados.
+Cuando se anula un envío y queda la duda de qué facturas se vieron afectadas, este reporte le lista las facturas cuyos envíos fueron anulados, para que pueda revisarlas y decidir el siguiente paso.
 
 Para ingresar al reporte:
 

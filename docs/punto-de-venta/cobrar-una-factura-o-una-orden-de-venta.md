@@ -4,7 +4,7 @@ sidebar_label: "Cobrar una factura o una orden de venta"
 sidebar_position: 4
 ---
 
-Este tutorial esta enfocado en cobrar las facturas u ordenes de venta desde el punto de venta. Los pasos para cobrar una factura son los siguientes:
+Un cliente que compró al crédito en su tienda le deja una factura pendiente, y este tutorial le muestra cómo cobrársela cuando regresa a pagar, ya sea en efectivo, con tarjeta o con una mezcla de ambos métodos. Lo mismo aplica cuando una orden de venta ya se convirtió en factura y es hora de registrar el pago. Los pasos para cobrar una factura son los siguientes:
 
 1. Ir a “P.D.V”.
 2. Seleccionar “Facturas” u "Ordenes".
@@ -97,6 +97,8 @@ Para anular un cobro no confirmado:
 3. Confirme la anulacion.
 
 El cobro sera anulado y la factura volvera a aparecer como no pagada.
+
+Con esto ya domina el flujo de cobros del punto de venta: registrar el pago, confirmarlo para que la factura quede saldada y, si el cliente cambió de opinión o hubo un error, anularlo con confianza. Al final de su turno, el resumen por método de pago le dirá exactamente cuánto entró en efectivo y cuánto en tarjeta.
 
 ## API (llamadas desde sistemas externos)
 

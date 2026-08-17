@@ -4,9 +4,7 @@ sidebar_label: "Configuración de WooCommerce para conectarlo con Zauru"
 sidebar_position: 8
 ---
 
-Para tener una tienda en linea la plataforma de preferencia en el mundo para el 2020 es [woocommerce](https://woocommerce.com) (un plugin de Wordpress).
-
-La prioridad debería de ser tener una página __sumamente rápida y amigable__.
+Si está por lanzar su tienda en línea sobre WooCommerce, este manual le evita dolores de cabeza desde el día uno: aquí se decide el hosting, el tema y los plugins que harán que la tienda sea rápida y que la integración con Zauru funcione sin fricciones. Para tener una tienda en línea, la plataforma más usada en el mundo es [woocommerce](https://woocommerce.com) (un plugin de WordPress). La prioridad debería ser tener una página __sumamente rápida y amigable__.
 
 ## Escoger un hosting realmente rápido
 
@@ -42,6 +40,8 @@ Para configurarlo hay que seguir estos pasos:
 
 ### Agregar unidad de medida en los productos
 
+Si vende productos que se compran por libra, por metro o por galón, este plugin hace que el cliente vea claramente la unidad en la que está comprando.
+
 Este va a habilitar la sincronización de las unidades de medida de Zauru con el producto en WooCommerce, en algunos casos esto le facilitará al cliente enteder qué está comprando.
 
 [https://wordpress.org/plugins/woocommerce-unit-of-measure/](https://wordpress.org/plugins/woocommerce-unit-of-measure/ "Woocommerce unidades de medida")
@@ -57,3 +57,5 @@ Este plugin NO es para la integración con Zauru, pero es para que los clientes 
 ![WP Mail SMPT](/img/e-commerce/configuracion-de-woocommerce-para-conectarlo-con-zauru-5.png)
 
 [https://wpmailsmtp.com](https://wpmailsmtp.com "WP Mail SMTP")
+
+Con estos ajustes, su tienda queda rápida para los clientes y lista para la integración con Zauru. El siguiente paso es crear la clave de API de WooCommerce y configurar el sincronizador, para que el catálogo y los pedidos empiecen a fluir solos entre ambos sistemas.

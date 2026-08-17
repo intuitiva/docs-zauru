@@ -4,9 +4,7 @@ sidebar_label: "Registros de Acceso"
 sidebar_position: 4
 ---
 
-Cada click que un usuario hace en el sistema queda resgistrado para que usted pueda comprobar si un usuario en verdad hizo o no hizo algun movimiento o transaccion.
-
-Nuestro registro histórico de acceso tiene una duración de 48 horas, luego de eso la información se borra.
+¿Anularon una factura y nadie sabe quién fue? Los registros de acceso le cuentan exactamente qué hizo cada usuario en Zauru, movimiento por movimiento. Cada clic que un usuario hace en el sistema queda registrado para que usted pueda comprobar si en verdad hizo o no alguna transacción. Tenga presente que el registro histórico de acceso tiene una duración de 48 horas: después de ese tiempo la información se borra, así que conviene revisar los movimientos mientras aún están disponibles.
 
 La forma de ver los registros de acceso de los usuarios es la siguiente:
 
@@ -24,6 +22,8 @@ La forma de ver los registros de acceso de los usuarios es la siguiente:
 Se desplegaran todos los movimientos y transacciones que ha realizado este usuario en la fecha que se especifico.
 
 ![imagen14](/img/permisos-de-acceso/registros-de-acceso-2.jpg)
+
+Con esto puede comprobar, movimiento por movimiento, lo que un usuario hizo en el sistema. Como los registros solo se conservan 48 horas, conviene revisarlos pronto cuando necesite aclarar algo, y ajustar los permisos del usuario si encuentra algo fuera de lugar.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones de Gateway"
 sidebar_position: 23
 ---
 
-Este tutorial está enfocado en como crear, editar y gestionar las configuraciones de las pasarelas de pago (gateways) en Zauru. Las configuraciones de gateway permiten integrar Zauru con procesadores de pago para tokenizar tarjetas de crédito, procesar pagos recurrentes y manejar reembolsos.
+¿Quiere cobrarle a sus clientes con tarjeta sin volver a pedirles el número cada vez? Para eso hay que conectar Zauru con su procesador de pagos mediante una configuración de gateway. Este tutorial le muestra cómo crear, editar y gestionar estas configuraciones, que permiten integrar Zauru con procesadores de pago para tokenizar tarjetas de crédito, procesar pagos recurrentes y manejar reembolsos.
 
 ## Listar Configuraciones de Gateway
 
@@ -92,6 +92,8 @@ Para eliminar una configuración de gateway:
 1. Ir a **"Ventas"** > **"Configuraciones"** > **"Configuraciones de Gateway"**.
 2. Localizar la configuración que desea eliminar y presionar **"Destruirlo"**.
 3. Confirmar la eliminación.
+
+Con la configuración lista y activa, sus pagos con tarjeta ya pueden procesarse de forma automática. Si algo sale mal durante un cobro, la bitácora de operaciones del gateway le mostrará exactamente qué pasó entre Zauru y el procesador de pago.
 
 ## API (llamadas desde sistemas externos)
 

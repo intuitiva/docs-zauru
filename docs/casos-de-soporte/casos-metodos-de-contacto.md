@@ -4,7 +4,7 @@ sidebar_label: "Métodos de Contacto"
 sidebar_position: 14
 ---
 
-Este tutorial esta enfocado en la administracion de los metodos de contacto utilizados en los casos de soporte. Los metodos de contacto indican la via por la cual el cliente se comunico para reportar el caso (telefono, correo electronico, presencial, chat, etc.).
+Cada caso entra por una vía distinta: un cliente llama, otro escribe por WhatsApp y otro llega a la recepción de su taller. Los métodos de contacto registran la vía por la cual el cliente se comunicó para reportar el caso (teléfono, correo electrónico, presencial, chat, etc.), y este tutorial le muestra cómo administrarlos para que cada caso quede clasificado desde el primer minuto.
 
 ## Listar Metodos de Contacto
 
@@ -42,6 +42,8 @@ Le aparecera el listado de metodos de contacto configurados en su entidad. Para 
 1. En el listado, haga click sobre **"Eliminar"** (basurero) en el metodo deseado.
 
 **Nota**: Solo puede eliminar un metodo de contacto si no esta siendo utilizado por ningun caso existente.
+
+Con los métodos de contacto definidos, cada caso nuevo quedará clasificado según la vía por la que llegó y sus reportes de soporte serán más claros. El siguiente paso natural es crear un caso usando estos métodos, o ajustar las configuraciones de correo para que las notificaciones salgan a la medida de su empresa.
 
 ## API (llamadas desde sistemas externos)
 

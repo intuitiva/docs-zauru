@@ -4,7 +4,7 @@ sidebar_label: "Libro de Salarios entre Fechas"
 sidebar_position: 22
 ---
 
-Este es el reporte completo de salarios para un empleado en un rango de fechas. Es el equivalente a un "wage ledger" o libro de salarios oficial. Incluye todas las nominas del empleado con el desglose completo de cada concepto: salario, horas extra, comisiones, bonificacion, beneficios, deducciones, incidencias, destajos, tiempo personal y totales.
+Cuando un empleado pide ver el desglose completo de todo lo que ha ganado y todo lo que se le ha descontado, este es el documento que usted le muestra o le imprime. Es el libro de salarios oficial del empleado: todas sus nóminas en el rango de fechas, con cada concepto —salario, horas extra, comisiones, bonificación, beneficios, deducciones, incidencias, destajos, tiempo personal— y los totales.
 
 Para ingresar al reporte:
 
@@ -18,3 +18,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Con la exportación a Excel puede guardarlo como respaldo o entregarlo directamente al empleado o a su contador.

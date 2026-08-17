@@ -4,7 +4,7 @@ sidebar_label: "Integración con WooCommerce"
 sidebar_position: 7
 ---
 
-WooCommerce es el software para tienda en linea más usado en el mundo y se puede adaptar para muchísimos casos distintos.
+Si su tienda ya está en WooCommerce y quiere que el catálogo y los pedidos se muevan solos entre la tienda y Zauru, este manual le explica exactamente cómo funciona esa conexión. WooCommerce es el software para tienda en línea más usado en el mundo y se puede adaptar para muchísimos casos distintos.
 ![logo woo commerce](/img/e-commerce/integracion-con-woocommerce-1.png)
 
 Los 2 sub-sistemas en Zauru que realizan tareas específicas en la integración con WooCommerce son:
@@ -103,3 +103,5 @@ Cuando un cliente coloca un pedido en WooCommerce, todos los datos de la orden s
 
 ### Webhook para anulaciones
 Adicionalmente, se puede configurar un webhook para cuando un producto es anulado o eliminado en WooCommerce (`webhook_url_when_voiding`), permitiendo que Zauru reciba notificaciones de estos eventos y pueda tomar acciones correspondientes.
+
+Con estos dos subsistemas en marcha, su catálogo y sus pedidos viajan solos entre WooCommerce y Zauru, y usted puede dedicar su tiempo a vender en lugar de a registrar. Si todavía falta la parte técnica, el siguiente paso es revisar las tareas del implementador para dejar la conexión lista y probarla con una compra de prueba.

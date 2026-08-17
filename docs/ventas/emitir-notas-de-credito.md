@@ -4,9 +4,9 @@ sidebar_label: "Emitir una nota de crédito (descuento, anulación o devolución
 sidebar_position: 14
 ---
 
-## Notas de Crédito
+¿Su cliente devolvió mercadería, usted le prometió un descuento después de haber facturado o necesita anular una factura por completo? Para esos tres casos existe la nota de crédito, y este tutorial le muestra cómo emitirla en cada uno.
 
-Este tutorial esta enfocado en la creación de notas de crédito sobre una factura.
+## Notas de Crédito
 
 Una nota de crédito es un documento comercial emitido por el vendedor que le brinda un saldo a favor al cliente, emitido por cualquiera de los siguientes motivos:
 
@@ -124,6 +124,8 @@ Cuando termine de colocar los productos y sus cantidades presione “Crear notas
 Le aparecerá un mensaje de éxito en la pantalla. En la parte inferior podrá ver las transacciones contables asociadas y los movimientos de inventario asociados. Automáticamente se creara una reservación de “Cliente” hacia “Bodega” para retornar los productos especificados en la nota de crédito.
 
 ![imagen10](/img/ventas/emitir-notas-de-credito-10.jpg)
+
+Ya emitió la nota de crédito y Zauru se encargó del resto: revirtió las transacciones contables y regresó la mercadería a la bodega cuando correspondía. El cliente ahora tiene un saldo a favor que podrá canjear más adelante en otra factura, y usted puede consultar o imprimir la nota cuando la necesite.
 
 ## API (llamadas desde sistemas externos)
 

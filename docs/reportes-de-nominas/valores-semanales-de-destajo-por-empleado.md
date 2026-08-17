@@ -4,7 +4,7 @@ sidebar_label: "Valores Semanales de Destajo por Empleado"
 sidebar_position: 1
 ---
 
-Este reporte muestra una matriz donde las filas son los empleados, las columnas son los dias de la semana y las celdas contienen el valor total de destajos de cada empleado por dia. Es util para ver la distribucion semanal de trabajo por destajo.
+Para ver de una sola mirada cuánto destajo hizo cada empleado cada día de la semana, esta matriz es ideal. Las filas son los empleados, las columnas son los días y cada celda muestra el valor total de destajos de ese día.
 
 Para ingresar al reporte:
 
@@ -15,3 +15,5 @@ Para ingresar al reporte:
 **Parametros**:
 
 - Rango de fechas (semana).
+
+Es la forma más rápida de ver cómo se distribuyó el trabajo por destajo durante la semana.

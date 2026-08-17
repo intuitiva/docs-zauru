@@ -4,7 +4,7 @@ sidebar_label: "Crear factura"
 sidebar_position: 3
 ---
 
-Este tutorial esta enfocado en la creación de facturas desde el punto de venta.
+Si atiende un mostrador o una tienda física, esta es la pantalla que más va a usar en el día: cada vez que un cliente compra y necesita su factura, aquí la emite en segundos, escaneando códigos de barras y eligiendo los productos de su bodega. También le sirve cuando una orden de venta ya está lista para convertirse en factura.
 
 Los pasos para crear una nueva factura son los siguientes:
 
@@ -112,6 +112,8 @@ Para modificar datos superficiales de una factura sin alterar sus productos ni m
 2. Podra modificar: numero de factura, referencia, fecha, vendedor, memo y etiquetas.
 3. Tambien podra adjuntar una imagen a la factura.
 4. Presione "Guardar".
+
+Con esto ya domina el ciclo completo de la factura: crearla, corregirla antes de emitirla, anularla si algo salió mal y convertir una orden en factura con un solo clic. El siguiente paso natural es registrar el cobro para que la factura quede saldada y su listado de pendientes se mantenga limpio al final del día.
 
 ## API (llamadas desde sistemas externos)
 

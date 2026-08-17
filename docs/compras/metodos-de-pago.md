@@ -4,7 +4,7 @@ sidebar_label: "Metodos de pago"
 sidebar_position: 3
 ---
 
-Un método de pago es la forma en la que se va pagar la compra. Puede que se pague al contado o que el proveedor le acepte pago con tarjeta.
+Cuando llega el momento de pagarle a un proveedor, usted decide de qué forma sale el dinero: puede ser en efectivo, con cheque o por transferencia bancaria, según lo que le acepte cada proveedor. Cada una de esas formas es un método de pago, y configurarlo bien le asegura que cada pago afecte la cuenta contable correcta. En este tutorial aprenderá a crear los métodos de pago que su empresa usa a diario.
 
 Para configurar los métodos de pago:
 
@@ -33,6 +33,8 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se cr
 Cada vez que haga una compra podrá seleccionar este nuevo método de pago.
 
 ![imagen9](/img/compras/configuracion-9.jpg)
+
+Con el método de pago creado, Zauru registrará la salida de dinero desde la cuenta que usted definió en el momento de pagar. Si su empresa paga con varios medios, repita el proceso para cada uno: al final tendrá su catálogo completo listo para usar en todos los pagos a proveedores.
 
 ## API (llamadas desde sistemas externos)
 

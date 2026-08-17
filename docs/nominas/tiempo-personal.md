@@ -4,11 +4,11 @@ sidebar_label: "Tiempo personal"
 sidebar_position: 12
 ---
 
-Este tutorial trata sobre la gestion de tiempo personal (vacaciones, enfermedad, permisos) de los empleados, incluyendo solicitudes, aprobaciones y consulta de saldos.
+Cuando un empleado pide vacaciones o reporta una enfermedad, hay que saber cuántos días le quedan, aprobar la solicitud y asegurarse de que el pago llegue a su nómina. Aquí se gestiona el tiempo personal (vacaciones, enfermedad, permisos), desde la solicitud y su aprobación o rechazo hasta la consulta de saldos con historial completo.
 
 ## Solicitudes de tiempo personal
 
-Las solicitudes de tiempo personal permiten a los empleados solicitar dias libres. Siguen un flujo de trabajo completo: en proceso, aprobado, rechazado y gozado.
+Cuando un empleado le pide una semana libre, ese pedido nace aquí como una solicitud. Las solicitudes de tiempo personal permiten a los empleados solicitar días libres y siguen un flujo de trabajo completo: en proceso, aprobado, rechazado y gozado.
 
 Para acceder a las solicitudes:
 
@@ -132,7 +132,7 @@ En el detalle de la solicitud, hacer clic en **"Imprimir"** para generar una ver
 
 ## Saldos de tiempo personal
 
-Los saldos de tiempo personal muestran la cantidad de dias disponibles para cada empleado y el historial de movimientos.
+Antes de aprobar unas vacaciones, conviene mirar aquí cuántos días le quedan al empleado y por qué. Los saldos de tiempo personal muestran la cantidad de días disponibles para cada empleado y el historial de movimientos.
 
 Para acceder a los saldos:
 
@@ -163,6 +163,8 @@ En el listado, hacer clic en el empleado para ver el historial completo:
   - Incidencias que descuentan dias de tiempo personal.
   - Corridas de nomina que incluyen pagos de tiempo personal.
   - Cada movimiento muestra la fecha, tipo, descripcion, dias sumados/restados y saldo resultante.
+
+Con las solicitudes y saldos al día, cada ausencia quedará registrada con su aprobación y su pago correspondiente. Cuando el empleado disfrute sus días, marque la solicitud como gozada y el saldo se ajustará solo: así el historial siempre contará la misma historia que la realidad.
 
 ## API (llamadas desde sistemas externos)
 

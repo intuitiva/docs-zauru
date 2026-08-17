@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Produccion Cerradas"
 sidebar_position: 5
 ---
 
-Las ordenes de produccion cerradas son aquellas que ya han completado su ciclo de manufactura, con los movimientos de inventario y contabilidad procesados.
+Cuando una corrida termina y el producto ya entro a la bodega, la orden pasa a esta seccion con toda su contabilidad e inventario ya aplicados. Es el lugar indicado para verificar que se fabrico y que se consumio en corridas pasadas, para imprimir un comprobante de una produccion ya entregada, o para corregir un cierre que se hizo por error. Las ordenes de produccion cerradas son aquellas que ya han completado su ciclo de manufactura, con los movimientos de inventario y contabilidad procesados.
 
 ## Consultar ordenes cerradas
 
@@ -68,6 +68,8 @@ Para imprimir una orden de produccion cerrada:
 ![imagen4](/img/produccion/ordenes-de-produccion-cerradas-4.png)
 
 Seleccione la plantilla de impresion que desea utilizar y presione **"Imprimir"**. Tambien puede descargar la orden en formato PDF utilizando el boton **"Descargar PDF"**.
+
+Con esto, el historial de su produccion queda completo y trazable. Si luego quiere analizar cuanto rindio cada responsable o comparar el consumo contra lo producido, los reportes de produccion le dan ese panorama a partir de las ordenes cerradas que aprendio a consultar aqui.
 
 ## API (llamadas desde sistemas externos)
 

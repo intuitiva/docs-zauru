@@ -4,7 +4,7 @@ sidebar_label: "Tareas del implementador para conectar WooCommerce y Zauru"
 sidebar_position: 9
 ---
 
-Hay varias tareas que hace el implementador para conectar woo commerce con Zauru
+Si le toca a usted dejar conectada una tienda WooCommerce con Zauru, aquí está la lista completa de tareas en el orden en que conviene hacerlas: primero se prepara la tienda y el sincronizador de items, y después el webhook que trae los pedidos de regreso a Zauru. Siga los pasos tal como aparecen y, al final, el catálogo y los pedidos viajarán solos entre ambos sistemas.
 
 ## Sincronizador de items
 
@@ -71,3 +71,5 @@ Para el envío de pedidos de Zauru a WooCommerce utilizamos un software adiciona
 4. __zauru user email:__ el correo del usuario que utilizaremos para comunicarnos entre Zauru y WooCommerce
 5. __zauru user token:__ el token del usuario que utilizaremos para comunicarnos entre Zauru y WooCommerce
 6. __zauru host:__ el URL de Zauru (se puede usar el URL del servidor de pruebas)
+
+Con la clave de API, el sincronizador y el webhook configurados, la integración queda completa: los productos fluyen de Zauru hacia WooCommerce y los pedidos regresan solos como solicitudes de e-commerce. Antes de dar el trabajo por terminado, conviene hacer una compra de prueba y verificar que la orden de venta se genere sin errores.

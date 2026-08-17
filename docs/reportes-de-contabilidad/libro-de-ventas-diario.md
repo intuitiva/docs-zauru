@@ -4,7 +4,7 @@ sidebar_label: "Libro de Ventas Diario"
 sidebar_position: 11
 ---
 
-El libro de ventas diario nos muestra la información por día.
+Si quiere revisar cómo se vendió en un día en particular —por ejemplo, para cuadrar la caja al cierre de la jornada o revisar la facturación de una fecha específica—, este reporte le muestra la información del libro de ventas día por día.
 
 Se encuentra localizado en:
 

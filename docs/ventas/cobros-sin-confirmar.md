@@ -4,7 +4,7 @@ sidebar_label: "Cobros sin confirmar (pagos provisionales)"
 sidebar_position: 19
 ---
 
-Este tutorial esta enfocado en la creación de pagos provisionales para dar recibos provisionales. Este caso se da únicamente con las empresas que tienen facturas cambiarias y tienen que reportar a la SAT la factura junto con su recibo de caja.
+Piense en un cliente que le entrega un cheque: usted todavía no sabe si el banco lo hará bueno, pero él necesita llevarse algo que confirme su pago. Para eso existen los pagos provisionales, con los que se entrega un recibo provisional mientras el pago se confirma. Este caso se da únicamente con las empresas que tienen facturas cambiarias y tienen que reportar a la SAT la factura junto con su recibo de caja.
 
 Dar un recibo provisional nos sirve cuando un cliente nos hace un pago que no podemos confirmar, un cheque por ejemplo, se ingresa el pago pendiente de confirmación y se imprime un recibo provisional para que el cliente se lo lleve. Luego, cuando el pago se confirma, se hace un recibo de caja y se adjunta a la factura para enviárselo a la SAT.
 
@@ -57,6 +57,8 @@ Luego de que se confirme que el pago que hizo el cliente se pudo cobrar deberá 
 Le aparecerá un mensaje notificándole que se creo el pago, para imprimir el recibo de caja presione “Imprimir como Recibo”.
 
 ![imagen5](/img/ventas/cobros-sin-confirmar-5.jpg)
+
+Así de sencillo: el cliente se fue tranquilo con su recibo provisional y, una vez confirmado el pago, usted emitió el recibo de caja que se reporta a la SAT junto con la factura. Repita estos pasos cada vez que reciba un pago pendiente de confirmación y su flujo de caja estará siempre al día.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Números de Serie Atendidos"
 sidebar_position: 12
 ---
 
-Este tutorial esta enfocado en la creacion de casos con numeros de serie y su verificacion. Tambien cubre como consultar el detalle de costos asociados a un numero de serie.
+Cuando un cliente trae a soporte un producto que usted le vendió, conviene saber exactamente cuál es y cuántas veces ha pasado por el taller. Este tutorial le muestra la creación de casos con números de serie y cómo consultar el detalle de costos asociados a cada número de serie, para que conozca la historia completa de cada equipo que atiende.
 
 ## Usar un Numero de Serie al Crear un Caso
 
