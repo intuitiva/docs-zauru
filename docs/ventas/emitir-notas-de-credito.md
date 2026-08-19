@@ -127,6 +127,18 @@ Le aparecerá un mensaje de éxito en la pantalla. En la parte inferior podrá v
 
 Ya emitió la nota de crédito y Zauru se encargó del resto: revirtió las transacciones contables y regresó la mercadería a la bodega cuando correspondía. El cliente ahora tiene un saldo a favor que podrá canjear más adelante en otra factura, y usted puede consultar o imprimir la nota cuando la necesite.
 
+## Validaciones y consideraciones al emitir notas de crédito
+
+### Límite de cantidad respecto a la factura original
+
+Al emitir una nota de crédito por devolución (total o parcial), la cantidad ingresada por cada producto se valida contra la cantidad facturada. La suma de las cantidades de **todos los detalles de notas de crédito** aplicados a una misma línea de la factura —incluyendo las notas de crédito ya emitidas y no anuladas, así como los demás renglones que esté agregando en la misma nota— no puede superar la cantidad que se facturó originalmente en esa línea.
+
+Si intenta devolver más de lo facturado, el sistema mostrará un error indicando que la cantidad devuelta supera la cantidad disponible (mostrando la cantidad facturada original) y no permitirá crear la nota de crédito hasta ajustar las cantidades.
+
+### Errores al emitir notas de crédito desde intenciones de envío (FEL Guatemala)
+
+Cuando se emite una nota de crédito a partir de una intención de envío (*submission intent*) en Guatemala y el documento no puede generarse por errores de validación, Zauru ahora muestra el mensaje de error específico y lo redirige de regreso al listado de intenciones de envío, en lugar de fallar de manera silenciosa.
+
 ## API (llamadas desde sistemas externos)
 
 ### Listar las notas de crédito abiertas (no redimidas)

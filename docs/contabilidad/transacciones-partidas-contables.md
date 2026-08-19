@@ -17,6 +17,14 @@ El listado de transacciones permite:
 - Filtrar por rango de fechas (fecha de transaccion o fecha de creacion).
 - Buscar por texto (referencia, numero de documento, beneficiario, etc.).
 
+### Busqueda en el listado
+
+Al escribir en el cuadro de busqueda del listado de transacciones, el sistema bloquea el campo de busqueda mientras se esta ejecutando la busqueda. Esto evita que se lancen busquedas superpuestas o fragmentadas cuando se escribe rapido, y le da resultados de filtrado mas confiables.
+
+![Cuadro de búsqueda del listado de transacciones bloqueado mientras se ejecuta la búsqueda](/img/contabilidad/transacciones-partidas-contables-4.png)
+
+El campo se habilita automaticamente en cuanto termina la busqueda, por lo que puede seguir filtrando sin interrupciones.
+
 ## Crear una transaccion
 
 Para crear una transaccion se puede ingresar desde "Transacciones" o desde "Cuentas" y acreditar o debitar de una cuenta.

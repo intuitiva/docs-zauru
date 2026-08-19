@@ -48,16 +48,16 @@ El listado cuenta con busqueda por texto para localizar destajos por fecha, supe
 - **Incluye bonificacion**: indica si el valor del tipo de destajo incluye la bonificacion mensual. Se muestra como icono de verificacion (verde) o equis (rojo).
 - **Referencia**: texto opcional para identificar el detalle (ej. numero de parcela, ubicacion, lote).
 
-4. Usar los botones para agregar mas filas:
+4. Agregar y eliminar filas de detalle (todo se procesa en el navegador, sin esperar al servidor):
 
-- **"+"**: agrega una fila.
-- **"+2"**: agrega dos filas.
-- **"+5"**: agrega cinco filas.
-- **"+10"**: agrega diez filas.
-- **"+20"**: agrega veinte filas.
+- **"Agregar linea" (boton "+")**: agrega una fila nueva al instante. El proceso ahora es del lado del cliente, por lo que ya no existen los botones "+2", "+5", "+10" ni "+20".
+- **Eliminar fila (icono de basura)**: cada fila tiene un icono de papelera para borrarla de inmediato del formulario.
+- **Enter como Tab**: al presionar **Enter** dentro de un campo, el cursor salta al siguiente campo de la misma fila, igual que con la tecla Tab.
+- **Actualizacion inmediata de valores y totales**: al agregar o eliminar filas, el valor de cada detalle y el valor total del destajo se recalculan al instante. Al borrar una fila, su valor se pone en 0 para que la suma de los detalles coincida con el total del destajo. Ya no es necesario previsualizar ni actualizar para ver los totales actualizados.
+- **Correccion de filas en rosa**: si una fila se marcaba en color rosa (por ejemplo, por un empleado y tipo de destajo repetidos), al corregirla ya no queda resaltada en rosa; ademas, un valor igual a 0 se maneja correctamente.
 
 5. Hacer clic en **"Previsualizar"** para verificar los calculos antes de guardar.
-6. Hacer clic en **"Actualizar"** para refrescar los valores calculados sin perder los datos ingresados.
+6. Hacer clic en **"Actualizar"** (boton que ahora aparece junto al selector de **Supervisor**) para refrescar los valores calculados sin perder los datos ingresados. Al actualizar tambien se limpian los errores del formulario.
 7. Completar el campo **"Notas"** con observaciones adicionales (opcional).
 8. Hacer clic en **"Guardar"**.
 
@@ -83,7 +83,7 @@ En el listado, hacer clic en el ID del destajo. El detalle muestra:
 
 1. En el detalle del destajo, hacer clic en **"Editar"**.
 2. El formulario es identico al de creacion, con los valores actuales precargados.
-3. Se pueden agregar, modificar o eliminar filas de detalle.
+3. Se pueden agregar, modificar o eliminar filas de detalle. Al entrar a editar, el sistema elimina los detalles de destajo que ya no apliquen y los valores y el total se actualizan de inmediato al agregar o borrar filas. El borrado de filas funciona del lado del cliente (icono de papelera por fila) y al presionar Enter se avanza al siguiente campo como con Tab.
 4. Hacer clic en **"Previsualizar"** para verificar cambios.
 5. Hacer clic en **"Guardar"**.
 

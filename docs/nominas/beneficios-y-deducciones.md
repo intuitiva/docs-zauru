@@ -53,7 +53,7 @@ Si el beneficio/deduccion aplica fuera de ciclo, configurar el mes de inicio del
 - **Incluir comisiones en el calculo**: si se marca, el porcentaje se calcula sobre salario + comisiones.
 - **Monto empleado**: monto fijo que se suma o resta al empleado.
 - **Formula empleado**: formula personalizada para calcular el monto del empleado.
-- **Monto flexible empleado**: si se marca, el monto del empleado es editable manualmente en cada nomina.
+- **Monto flexible empleado**: casilla de verificacion. Si se marca, el monto del empleado es editable manualmente en cada nomina (campo abierto en la nomina). El formulario lo muestra correctamente como una casilla (si/no), no como un campo numerico.
 - **Cuenta empleado**: cuenta contable asociada al movimiento del empleado.
 
 ### Configuracion de la entidad

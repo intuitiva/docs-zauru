@@ -55,6 +55,22 @@ Si sus empleados ganan por destajo, sus vacaciones no se pueden pagar sobre un s
 
 - Mismos parametros que despido, pero aplicables al caso de renuncia voluntaria. Tipicamente se configuran con valores menores (o cero) que el despido.
 
+## Manejo del pago al terminar un contrato
+
+Cuando termina un contrato, el sistema no solo calcula la indemnizacion: tambien debe decidir como pagar el ultimo salario, las incidencias, el tiempo personal pendiente y los beneficios del empleado. Esta seccion controla ese comportamiento y la contabilizacion de la liquidacion.
+
+![Configuracion del manejo del pago al terminar un contrato](/img/nominas/configuraciones-de-nomina-6.png)
+
+- **Cuenta de gasto de indemnizacion**: cuenta contable donde se registra el gasto de la indemnizacion (por lo general una cuenta tipo "Indemnizacion" o "Terminacion de empleado"). Suele coincidir con la cuenta de liquidacion.
+- **Cuenta de tiempo personal (PTO)**: cuenta contable donde se registra el pago de los dias de tiempo personal pendientes al terminar el contrato.
+- **Forzar metodo de pago de nomina en la terminacion**: metodo de pago que se usara para pagar la liquidacion (ej. cheque o banco). Si se deja en blanco, el sistema usa el metodo de pago por defecto configurado en el contrato de trabajo.
+- **Manejo del ultimo pago de nomina en la terminacion**: define si el ultimo salario, las incidencias, el tiempo personal y los beneficios se pagan dentro de la liquidacion de la terminacion o en la proxima corrida de nomina:
+
+  - **Incluir salario, incidencias, tiempo personal y beneficios en el pago de la terminacion de contrato**: todo se liquida de inmediato al terminar el contrato. El empleado queda excluido de la proxima corrida de nomina.
+  - **Incluir salario, incidencias, tiempo personal y beneficios en la proxima nomina**: el empleado se incluye en la proxima corrida de nomina regular para recibir ese pago. El valor por defecto es liquidar en la terminacion.
+
+Esta configuracion afecta directamente lo que muestra el detalle de la terminacion del contrato (ver seccion "Terminar un contrato de trabajo" en Contratos de trabajo).
+
 ## Como guardar las configuraciones
 
 1. Completar los campos segun las politicas de la empresa.

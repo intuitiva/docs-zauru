@@ -797,3 +797,14 @@ Esto devolverá un JSON similar a este:
 ```json
 {}
 ```
+
+### Campos adicionales soportados en la importación
+
+Además de los campos previos, el archivo de importación de precios ahora admite las siguientes columnas:
+
+- `currency_code`: código de la moneda (ej. `GTQ`, `USD`). Zauru buscará la moneda por su código; si no existe, la importación reportará el error "La moneda no existe".
+- `price_list_name`: nombre de la lista de precios a la que pertenece el precio. Zauru buscará la lista por nombre; si no existe, reportará "La lista de precios no existe".
+- `price_list_id`: ID de la lista de precios.
+- `flexible_price_expiration`: fecha de expiración del precio flexible.
+
+Si la moneda o la lista de precios indicadas no existen, la fila no se importará y se mostrará el error correspondiente.

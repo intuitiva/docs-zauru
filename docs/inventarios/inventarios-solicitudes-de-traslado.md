@@ -163,6 +163,23 @@ Esto abrirá el formulario de reservación con los datos precargados desde la so
 
 Al crear el envío, las cantidades reservadas se descuentan de las cantidades solicitadas. Cuando todas las cantidades hayan sido reservadas, la solicitud se cerrará automáticamente.
 
+## Autorizar solo el stock disponible
+
+Además del botón "Autorizar", en los detalles de una solicitud de traslado abierta aparece el botón "Autorizar solo stock disponible". Este botón le permite generar el envío (reservación) reservando únicamente la cantidad de stock que realmente está disponible en la bodega origen, en lugar de la cantidad completa solicitada.
+
+![Detalle de solicitud de traslado abierta con botón de autorizar solo stock disponible](/img/inventarios/inventarios-solicitudes-de-traslado-8.png)
+
+1. Abra los detalles de una solicitud de traslado abierta.
+
+2. Seleccione "Autorizar solo stock disponible".
+
+Esto abrirá el formulario de reservación con los datos precargados desde la solicitud, pero con las siguientes diferencias respecto a la autorización normal:
+
+- Solo se incluyen los productos que tienen stock disponible en la bodega origen; los productos sin stock no aparecen en el envío.
+- La cantidad a reservar de cada producto se limita al stock disponible (la cantidad mínima entre lo solicitado pendiente y el stock disponible), sin exceder lo que hay en la bodega origen.
+
+De esta forma, puede adelantar el envío de lo que sí está disponible y dejar el saldo faltante para un envío posterior o para una requisición de compra.
+
 ## Estados de cumplimiento de la solicitud
 
 En los detalles de la solicitud podrá ver para cada producto:
