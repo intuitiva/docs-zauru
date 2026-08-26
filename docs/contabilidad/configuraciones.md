@@ -6,19 +6,19 @@ sidebar_position: 1
 
 Cada empresa maneja la contabilidad a su manera, y esta página es el punto de partida para dejar el módulo trabajando como usted lo necesita. Conviene revisarla cuando empieza a usar Zauru por primera vez, cuando su contador define nuevas cuentas de IVA o de inventario, o cuando necesita proteger un periodo ya declarado. Aquí se establecen las cuentas contables que reciben las transacciones automáticas y los parámetros generales del módulo. Zauru le permite especificar las siguientes configuraciones:
 
-## Cuentas contables automaticas
+## Cuentas contables del sistema
 
 ### IVA de ventas (IVA por Pagar)
-Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Pagar generadas automaticamente al emitir facturas de venta.
+Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Pagar al emitir facturas de venta.
 
 ### IVA de compras (IVA por Cobrar)
-Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Cobrar generadas automaticamente al registrar compras.
+Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Cobrar al registrar compras.
 
 ### Activo de Inventario
 Seleccione la cuenta de activo que registra el monto del inventario cuando se compra mercaderia. El activo de inventario se incrementa cada vez que usted compra producto y se debita cuando lo vende.
 
 ### Gasto del Costo de Inventario
-Seleccione la cuenta de gasto que registra el costo del inventario cuando se genera una venta. Al vender un producto se genera automaticamente una transaccion desde Activo de Inventario hacia Costo del Inventario.
+Seleccione la cuenta de gasto que registra el costo del inventario cuando se genera una venta. Al vender un producto se registra una transaccion desde Activo de Inventario hacia Costo del Inventario.
 
 ### Cuenta de Resultados (Capital)
 Seleccione la cuenta de capital (patrimonio) a donde se trasladaran los resultados del cierre mensual y anual del estado de resultados. Generalmente se utiliza una cuenta como "Utilidades del periodo" o "Resultados acumulados".
