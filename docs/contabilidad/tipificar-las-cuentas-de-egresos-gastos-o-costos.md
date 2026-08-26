@@ -4,11 +4,11 @@ sidebar_label: "Tipificar las cuentas de egresos (Gastos o Costos)"
 sidebar_position: 3
 ---
 
-Este tutorial esta enfocado a diferenciar las cuentas de egresos para que aparezcan en el lugar correcto en el estado de resultados y demas reportes.
+Si su contador le pide el estado de resultados y los números del margen bruto no le cuadran, muchas veces la causa es una cuenta de egresos mal tipificada. Al momento de crear o revisar sus cuentas de gastos, decida si cada una es un costo o un gasto, para que aparezca en el lugar correcto del estado de resultados y demás reportes.
 
 ## Diferencia entre Costo y Gasto
 
-En Zauru, las cuentas de tipo "Gastos" (tipo 3) se subdividen en dos categorias:
+La pregunta clave es simple: ¿este egreso está ligado directamente a lo que usted produce o vende? En Zauru, las cuentas de tipo "Gastos" (tipo 3) se subdividen en dos categorias:
 
 1. **Costos**: egresos directamente relacionados con la produccion o venta de bienes y servicios (ej. costo de mercaderia vendida, materia prima, mano de obra directa).
 2. **Gastos**: egresos operativos y administrativos (ej. alquileres, salarios administrativos, servicios basicos, papeleria).
@@ -77,6 +77,8 @@ Al exportar la nomenclatura contable a Excel, las cuentas de tipo 3 (Gastos) se 
 - Costos (`cost = true`)
 
 Esto permite revisar facilmente que cuentas estan correctamente clasificadas.
+
+Con sus cuentas bien tipificadas, el estado de resultados mostrará ingresos, costos y gastos donde corresponde, y los márgenes de su negocio se leerán con claridad. Cuando exporte la nomenclatura a Excel, podrá revisar de un vistazo que ninguna cuenta quedó mal clasificada.
 
 ## API (llamadas desde sistemas externos)
 

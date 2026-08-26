@@ -4,7 +4,7 @@ sidebar_label: "Gasto por Proyecto"
 sidebar_position: 19
 ---
 
-En muchas ocasiones es necesario llevar control de un gasto en específico en un proyecto. El control puede ser necesario porque hay que realizar un pago a algun proveedor o el gasto es un material costoso o difícil de conseguir. Para ayudar a llevar este control pueden ingresar al reporte de Gasto por Proyecto. El reporte enlista el monto total del gasto en un proyecto en específico.
+En muchas ocasiones conviene llevar control de un gasto en específico dentro de un proyecto: porque debe preparar el pago a un proveedor, o porque se trata de un material costoso o difícil de conseguir. Este reporte le enlista el monto total de ese gasto en el proyecto, para que lo tenga siempre a la vista.
 
 Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 
@@ -18,3 +18,5 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Una vez hayan ingresado al reporte, hay que seleccionar el proyecto y el nombre del gasto A continuación se ve enlistado todas las transacciones que se han realizado con el gasto seleccionado.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gasto-por-proyecto-2.png)
+
+Así sabrá de un vistazo cuánto se ha gastado en ese concepto y podrá preparar los pagos con la información a la mano.

@@ -4,7 +4,7 @@ sidebar_label: "E-commerce"
 sidebar_position: 0
 ---
 
-El módulo de E-commerce de Zauru permite la compra y venta de productos o servicios a través de medios electrónicos, facilitando la integración entre Zauru y cualquier tienda en línea para mayor eficiencia en las transacciones entre empresas, clientes y consumidores.
+¿Le gustaría que cada venta de su tienda en línea llegara sola a Zauru, con su orden de venta y su pago ya registrados, sin tener que pasarla a mano? El módulo de E-commerce de Zauru hace justamente eso: permite la compra y venta de productos o servicios a través de medios electrónicos y facilita la integración entre Zauru y cualquier tienda en línea, para mayor eficiencia en las transacciones entre empresas, clientes y consumidores. Lo aprovechará al máximo cuando su tienda empiece a recibir pedidos en línea o cuando quiera mantener el catálogo siempre al día sin cargar productos manualmente.
 
 ## Funcionalidades principales
 

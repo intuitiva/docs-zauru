@@ -4,7 +4,7 @@ sidebar_label: "Crear orden de venta"
 sidebar_position: 2
 ---
 
-Los pasos para crear una nueva orden de venta desde el Punto de Venta son los siguientes:
+Cuando un cliente reserva productos para recogerlos o pagarlos más tarde, una orden de venta es la mejor manera de apartarle la mercadería sin facturar todavía. También le sirve cuando el cliente aún está decidiendo cantidades y usted quiere dejar el pedido anotado para cerrarlo después. Al guardar la orden, los productos almacenables quedan reservados para ese cliente. Los pasos para crear una nueva orden de venta desde el punto de venta son los siguientes:
 
 1. Ir a “Punto de Venta” (P.D.V.).
 2. Seleccionar “Nueva Orden”.
@@ -104,6 +104,8 @@ Para anular una orden:
 3. Confirme la anulacion.
 
 **Importante**: No podra anular una orden que tenga envios en transito asociados. La orden sera anulada y los productos reservados seran devueltos al inventario.
+
+Ya sabe crear, editar y anular una orden de venta. Cuando el cliente confirme la compra, el siguiente paso es convertirla en factura con un solo clic y cobrarla, sin volver a escribir ni un dato.
 
 ## API (llamadas desde sistemas externos)
 

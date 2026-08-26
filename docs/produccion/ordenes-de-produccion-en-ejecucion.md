@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Produccion en Ejecucion"
 sidebar_position: 4
 ---
 
-Las ordenes de produccion en ejecucion son aquellas que ya han sido iniciadas y se encuentran activas en el piso de produccion. Desde esta seccion puede monitorear el progreso, pausar, reanudar, registrar conteos parciales y cerrar las ordenes.
+Cuando la produccion ya arranco y los operarios estan en el piso, esta pantalla se convierte en su centro de mando: aqui sigue el avance de cada corrida, pausa cuando termina un turno o falta material, y registra el conteo de lo que ya salio. Tambien es desde donde se cierra la orden cuando el producto esta listo para entrar a la bodega. Las ordenes de produccion en ejecucion son aquellas que ya han sido iniciadas y se encuentran activas en el piso de produccion; desde esta seccion puede monitorear el progreso, pausar, reanudar, registrar conteos parciales y cerrar las ordenes.
 
 ## Monitorear ordenes en ejecucion
 
@@ -61,7 +61,7 @@ Este conteo se utiliza para calcular el porcentaje de avance de la orden y del l
 
 ## Cerrar una orden de produccion
 
-El cierre de una orden de produccion es el paso final del proceso de manufactura. Al cerrar la orden, el sistema realizara los movimientos de inventario, calculara los costos y generara los asientos contables correspondientes.
+El momento del cierre llega cuando las unidades ya estan terminadas y listas para ingresar a la bodega. El cierre de una orden de produccion es el paso final del proceso de manufactura: al cerrar la orden, el sistema realizara los movimientos de inventario, calculara los costos y generara los asientos contables correspondientes.
 
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Ordenes en Ejecucion"**.
@@ -111,6 +111,8 @@ Si necesita revertir una orden en ejecucion a estado planificada:
 El sistema pausara la orden (si esta en ejecucion), liberara las reservas de lotes, anulara los movimientos de inventario no entregados y restaurara el estado a planificada.
 
 Le aparecera un mensaje de exito confirmando la operacion.
+
+Cuando la orden se cierra, deja de aparecer en esta seccion y pasa a la de ordenes cerradas, con su inventario y contabilidad ya aplicados. Desde alli podra consultarla, imprimirla o devolverla a ejecucion si algo no cuadra.
 
 ## API (llamadas desde sistemas externos)
 

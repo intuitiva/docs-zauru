@@ -4,11 +4,11 @@ sidebar_label: "Paquetes"
 sidebar_position: 6
 ---
 
-Este tutorial esta basado en la creación de paquetes de productos para la venta y la consulta de sus existencias.
+Si usted arma combos para la venta, como un kit escolar o una promoción de temporada, los paquetes le evitan buscar cada producto por separado en cada factura. Un paquete agrupa varios productos para venderlos como una sola unidad, y Zauru calcula por usted cuántos paquetes puede armar con el stock que tiene. Este tutorial le muestra cómo crearlos, configurarlos y consultar sus existencias.
 
 ## ¿Qué es un paquete?
 
-Un paquete (bundle) es un conjunto de productos que se venden juntos como una unidad. Zauru soporta dos tipos de paquetes:
+Un paquete (bundle) es un conjunto de productos que se venden juntos como una unidad: piense en un kit escolar o en un combo promocional que arma con varios ítems. Zauru soporta dos tipos de paquetes:
 
 1. **Paquetes estáticos**: Conjunto predefinido de productos específicos con cantidades fijas.
 2. **Paquetes dinámicos (por categoría)**: Paquete que se arma automáticamente con productos de una categoría, permitiendo flexibilidad en la composición según disponibilidad.
@@ -119,7 +119,7 @@ Esto mostrará las etiquetas disponibles para filtrar los paquetes.
 
 ## Existencias de paquetes (Bundle Stocks)
 
-Zauru calcula automáticamente las existencias disponibles de cada paquete basándose en la disponibilidad de sus componentes. La cantidad disponible de un paquete se determina como el **mínimo** de las cantidades disponibles de sus componentes dividido por la cantidad requerida de cada uno.
+¿Cuántos paquetes puede prometer en una oferta? Zauru calcula automáticamente las existencias disponibles de cada paquete basándose en la disponibilidad de sus componentes. La cantidad disponible de un paquete se determina como el **mínimo** de las cantidades disponibles de sus componentes dividido por la cantidad requerida de cada uno.
 
 Por ejemplo, si un paquete "Combo Oficina" contiene:
 - 2 cuadernos (stock disponible: 10)
@@ -158,6 +158,8 @@ Al hacer clic sobre un paquete en la vista de existencias, podrá ver:
 3. Seleccionar "Exportar".
 
 Esto descargará un archivo XLS con las existencias de todos los paquetes por bodega.
+
+Con el paquete creado, ya puede seleccionarlo en una reservación y venderlo como una sola unidad, mientras Zauru descuenta cada componente de su bodega. Para cerrar el ciclo, asigne el precio sugerido del paquete en el módulo de Ventas y revise sus existencias antes de cada oferta, para prometer solo lo que realmente puede entregar.
 
 ## API (llamadas desde sistemas externos)
 

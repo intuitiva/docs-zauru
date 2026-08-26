@@ -4,9 +4,12 @@ sidebar_label: "Contratos Preliminares"
 sidebar_position: 1
 ---
 
-Los Contratos preliminares son la primera fase de los contratos, acá se crean, se editan y se borran los contratos pero no van a generar documentos automáticamente.
+Cuando un cliente acepta una mensualidad por servicios, un plan de mantenimiento o un arriendo, aquí es donde nace su contrato: se crea, se ajusta las veces que haga falta y se deja perfecto antes de ponerlo a correr. Los contratos preliminares son la primera fase de los contratos: acá se crean, se editan y se borran, pero no van a generar documentos automáticamente hasta que usted los active.
 
 ## Conceptos de los contratos
+
+Antes de crear el primer contrato conviene recorrer estos conceptos: son la base de todo lo que verá en el formulario, y entenderlos ahora le ahorrará sorpresas cuando el contrato ya esté generando cuotas.
+
 ### Tipos de Documentos que Generan los Contratos
 
 1. __Orden__: Orden de venta o prefactura (ver detalles [aquí](https://docs.zauru.com/ventas/ordenes-de-venta-o-facturas)). Permite editar, consolidar y recibir anticipos por la misma. Ideal para negocios que deben cambiar los montos de algunas cuotas por distintas razones.
@@ -220,6 +223,8 @@ En el detalle del contrato se muestran todos los documentos previamente asociado
 - **Facturas Asociadas**: Con estado, número de factura, referencia, fecha, items, monto.
 - **Órdenes de Compra Asociadas**: Con estado, número, referencia, fecha, items, monto.
 - **Casos Asociados**: Con estado, número de caso, referencia, síntoma, fecha, monto.
+
+Con el contrato preliminar revisado y sus documentos de respaldo asociados, solo queda dar el paso que pone todo en movimiento: activarlo. Al activarlo, el contrato pasará a la sección de Contratos Activos y Zauru empezará a generar cada cuota en la fecha que usted configuró.
 
 ## API (llamadas desde sistemas externos)
 

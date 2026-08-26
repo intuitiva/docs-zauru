@@ -4,7 +4,7 @@ sidebar_label: "Enlazar partidas y contra partidas (reconciliar)"
 sidebar_position: 8
 ---
 
-Este tutorial esta enfocado en reconciliar partidas contables. Zauru concilia automaticamente sus cuentas contables, por ejemplo: cuando usted vende se genera una transaccion de "Ventas" a "Cuentas por Cobrar" y cuando a usted le pagan, se genera una transaccion contable de "Cuentas por Cobrar" a "Cuenta Monetaria" o "Efectivo" conciliando automaticamente sus cuentas por cobrar, pero, para llevar un registro de conciliaciones usted debe reconciliar las transacciones, o relacionarlas una con la otra. Esto le permitira llevar un registro mas detallado de sus conciliaciones y podra buscar facilmente transacciones que aun no estan conciliadas.
+Cuando un cliente le paga una factura, o usted paga una deuda con un cheque, conviene dejar enlazadas las dos transacciones para saber siempre qué factura corresponde a qué pago. Zauru mueve los saldos entre cuentas automáticamente —por ejemplo, de "Ventas" a "Cuentas por Cobrar" y luego a "Cuenta Monetaria" o "Efectivo"—, pero enlazar las partidas entre sí le da un registro más detallado: podrá buscar fácilmente las transacciones que aún no están conciliadas y confirmar que nada quedó pendiente.
 
 Los pasos para crear una reconciliacion son los siguientes:
 

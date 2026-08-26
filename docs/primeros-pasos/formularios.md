@@ -4,7 +4,7 @@ sidebar_label: "Formularios"
 sidebar_position: 8
 ---
 
-Los formularios han sido diseñados en Zauru, con el propósito de generar formatos personalizados que abarcan una amplia gama de aplicaciones, tales como fichas clínicas para pacientes, formularios para el seguimiento de garantías, así como instrumentos de control, entre otros.
+Cuando los campos estándar de Zauru no alcanzan para registrar todo lo que su negocio necesita, un formulario personalizado es la solución: fichas clínicas para pacientes, seguimiento de garantías o instrumentos de control propios de su empresa. Los formularios le permiten capturar esa información adicional directamente sobre los documentos del sistema, con los campos y grupos que usted diseñe.
 
 ## Nuevo Formulario
 Los pasos para crear un nuevo Formularios son:
@@ -54,7 +54,7 @@ A continuación, se detallan los pasos para crear un nuevo formulario, destacand
 
 ## Versiones de Formularios
 
-Zauru maneja un sistema de versiones para formularios. Cada vez que edita un formulario existente, se crea una nueva versión del mismo, manteniendo el historial completo de cambios. Esto permite:
+Cuando modifica un formulario que ya está en uso, las versiones le dan tranquilidad: si un cambio no funciona como esperaba, puede volver atrás con facilidad. Zauru maneja un sistema de versiones para formularios. Cada vez que edita un formulario existente, se crea una nueva versión del mismo, manteniendo el historial completo de cambios. Esto permite:
 
 - Mantener un historial de todas las modificaciones realizadas a un formulario.
 - Restaurar una versión anterior del formulario si es necesario.
@@ -103,6 +103,8 @@ Los formularios pueden tener grupos que organizan los campos en secciones lógic
 
 - **Grupos estáticos:** Agrupan campos relacionados visualmente.
 - **Grupos dinámicos:** Permiten agrupar campos que se repiten según una variable. Por ejemplo, un grupo "Dirección" que contenga los campos "Dirección", "Ciudad" y "Código Postal", y que se repita si el formulario tiene una variable de grupo dinámico.
+
+Su formulario está listo para usarse. Puede previsualizarlo, duplicarlo o seguir ajustándolo con la seguridad de que el historial de versiones guarda cada cambio; cuando esté conforme, quedará disponible para llenarse desde los documentos asociados.
 
 ## API (llamadas desde sistemas externos)
 

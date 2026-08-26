@@ -4,7 +4,7 @@ sidebar_label: "Crear reserva"
 sidebar_position: 8
 ---
 
-Este tutorial esta enfocado en crear reservas de inventario desde el punto de venta. Una reserva (booking) permite apartar productos de una bodega para un traslado futuro a otra bodega o para un cliente, sin que los productos salgan del inventario hasta que se realice el envio.
+Si su negocio mueve mercadería entre sucursales o aparta productos para un cliente que los recogerá después, una reserva le asegura que esos artículos queden comprometidos y que nadie más los venda por error. La reserva (booking) aparta los productos de una bodega para un traslado futuro a otra bodega o para un cliente, sin que salgan del inventario hasta que usted realice el envío.
 
 ## Listado de reservas
 
@@ -81,6 +81,8 @@ Una vez que la reserva esta lista para ser despachada:
 ## Entregar un envio
 
 Cuando el envio llega a su destino, debe ser entregado para que los productos ingresen al inventario de la agencia destino. Vea el tutorial "Gestionar envios" para mas detalles.
+
+Con la reserva creada y convertida en envío, la mercadería queda en camino y la bodega destino sabe exactamente qué esperar. Cuando el camión llegue a la otra sucursal, registre la entrega y el inventario de ambas bodegas quedará al día.
 
 ## API (llamadas desde sistemas externos)
 

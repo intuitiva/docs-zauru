@@ -4,7 +4,7 @@ sidebar_label: "Operaciones de Gateway"
 sidebar_position: 24
 ---
 
-Este tutorial está enfocado en como consultar el historial de operaciones realizadas a través de las pasarelas de pago (gateways) configuradas en Zauru. Estas operaciones incluyen tokenización de tarjetas, cobros, reembolsos y cualquier otra interacción con el gateway.
+¿Le rechazaron un pago con tarjeta y no sabe por qué? La bitácora de operaciones guarda el registro de todo lo que Zauru conversa con su pasarela de pago, y este tutorial le muestra cómo consultarlo. Estas operaciones incluyen tokenización de tarjetas, cobros, reembolsos y cualquier otra interacción con el gateway.
 
 ## Consultar la Bitácora de Operaciones
 
@@ -57,3 +57,5 @@ Para ver los detalles completos de una operación de gateway:
 ![imagen3](/img/ventas/operaciones-de-gateway-3.png)
 
 Esta información es especialmente útil cuando se necesita diagnosticar por qué un pago fue rechazado o por qué la tokenización de una tarjeta falló.
+
+La próxima vez que un cliente le diga que su tarjeta fue rechazada, ya sabe dónde mirar: entre a la bitácora, filtre las operaciones con error y encontrará la solicitud y la respuesta exactas del gateway. Con eso podrá explicarle al cliente qué pasó o corregir la configuración que está fallando.

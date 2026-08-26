@@ -4,9 +4,7 @@ sidebar_label: "Gastos Mensuales por Proyecto por Proveedor"
 sidebar_position: 4
 ---
 
-¿En su empresa existe control mensual de gastos de los proveedores en un proyecto?
-
-En muchas empresas, se tiene un presupuesto mensual con los proveedores y/o también se les paga mensualmente. También en este mismo tema, sucede que no se tiene conocimiento de la cantidad de gasto de un proveedor meses anteriores en un proyecto en específico.  Zauru ofrece un reporte en donde se enlista el monto del gasto con un proveedor en un mes en específico, en un proyecto en específico.
+¿Quiere saber cuánto gastó con cada proveedor en un mes determinado y en un proyecto específico? Si su empresa les paga mensualmente o maneja un presupuesto mensual con ellos, este reporte le enlista el monto gastado con cada proveedor en el mes y el proyecto que usted elija.
 
 Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 
@@ -20,3 +18,5 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 A continuación se selecciona el mes y el año que se desee consultar y proyecto. Después aparecerá en un cuadro la información que de los proveedores con los montos gastados.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-mensuales-por-proyecto-por-proveedor-2.png)
+
+Con esta vista mensual podrá comparar lo gastado contra su presupuesto y planear los pagos del siguiente mes.

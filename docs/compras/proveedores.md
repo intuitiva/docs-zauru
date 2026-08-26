@@ -4,9 +4,11 @@ sidebar_label: "Proveedores"
 sidebar_position: 15
 ---
 
+Antes de registrar su primera orden de compra necesita tener al proveedor en el sistema, con su NIT, su dirección y sus datos de contacto. Cada vez que le compre a alguien nuevo, o cuando necesite actualizar los datos de un proveedor existente o revisar el estado de sus facturas, este tutorial le muestra cómo hacerlo.
+
 ## Proveedores
 
-Este tutorial está enfocado en como crear y editar proveedores de bienes o servicios.
+Cada vez que empieza a comprarle a alguien nuevo, ese contacto se convierte en un proveedor en Zauru. Aquí aprenderá a crear y editar proveedores de bienes o servicios, y a mantener sus datos al día para ubicarlos fácilmente en cada compra.
 
 Para guardar sus cambios haga click sobre “Crear beneficiario” o "Editar Beneficiario"
 
@@ -66,6 +68,8 @@ Le deberán aparecer las siguientes opciones para crear un nuevo proveedor:
 11. Segmento de Comunicación (Campos opcionales para guardar información información de la empresa).
 12. Segmento de Contacto (Campos opcionales para guardar información información de contacto con el proveedor).
 13. Seleccionar "Crear beneficiario" para completar el proceso de crear el proveedor.
+
+Con el proveedor creado, ya puede seleccionarlo al momento de hacer sus órdenes de compra, y Zauru irá acumulando su historial de facturas pagadas y saldos pendientes para que lo consulte cuando quiera. Si un proveedor deja de trabajar con usted, no lo elimine: es preferible desactivarlo, así conserva todo su historial contable intacto.
 
 ## API (llamadas desde sistemas externos)
 

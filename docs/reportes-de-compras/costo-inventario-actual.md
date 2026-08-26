@@ -4,7 +4,7 @@ sidebar_label: "Costo Inventario Actual"
 sidebar_position: 1
 ---
 
-En el momento de poner un precio, es importante tomar en cuenta el margen de ganancia que necesita la empresa. Para realizar el cálculo de margen de ganancia es importante tener el costo del producto al momento de ingresar a la empresa. Para esto, Zauru ofrece el servicio de poder observar el costo unitario del inventario.
+Cuando va a fijar el precio de un producto, lo primero que necesita es saber cuánto le costó. Este reporte le muestra el costo unitario de cada producto de su inventario, para que calcule su margen de ganancia con datos reales y actualizados y no pierda dinero al vender.
 
 Para ingresar es necesario realizar lo siguiente:
 

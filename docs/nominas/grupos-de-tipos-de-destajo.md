@@ -4,7 +4,7 @@ sidebar_label: "Grupos de tipos de destajo"
 sidebar_position: 8
 ---
 
-Los grupos permiten organizar los tipos de destajo en categorias.
+Cuando su lista de tipos de destajo crece —corte, siembra, limpieza, empaque—, agruparlos por actividad le ahorra tiempo al registrar destajos y al leer reportes. Los grupos permiten organizar los tipos de destajo en categorías, como Cosecha, Siembra o Mantenimiento.
 
 Para gestionar grupos:
 
@@ -23,6 +23,8 @@ Para gestionar grupos:
 - **Descripcion**: descripcion opcional.
 
 3. Hacer clic en **"Guardar"**.
+
+Con los grupos creados, puede asignar cada tipo de destajo al grupo que le corresponde y mantener su listado ordenado. Esa organización se reflejará también en los reportes y le facilitará el día a día cuando registre destajos.
 
 ## API (llamadas desde sistemas externos)
 

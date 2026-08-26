@@ -4,7 +4,7 @@ sidebar_label: "Reportes de Nominas"
 sidebar_position: 0
 ---
 
-Los reportes de nominas nos ayudan a visualizar la informacion de destajos, corridas de nomina, beneficios y deducciones de los empleados de una forma consolidada.
+Los reportes de nóminas son su ventana para entender cómo se mueve la planilla: cuánto se paga en destajos, qué incluyó cada corrida y qué beneficios y deducciones recibieron los empleados. Cuando necesite revisar costos, responder la consulta de un empleado o cuadrar la contabilidad de una corrida, aquí encontrará la información consolidada y lista para usar.
 
 Para acceder a los reportes:
 

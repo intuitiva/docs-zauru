@@ -4,9 +4,7 @@ sidebar_label: "Registrar Notas de Crédito Compras"
 sidebar_position: 16
 ---
 
-Este tutorial esta enfocado en la creación de notas de crédito sobre una orden de compra.
-
-Una nota de crédito de compras es un documento comercial emitido por el proveedor para notificar la devolución parcial, devolución total o descuento sobre la factura emitida por el mismo proveedor en la orden de compra registrada en Zauru.
+¿Su proveedor le devolvió dinero porque le entregó mercadería de menos, le hizo un descuento o usted le regresó producto? Esa devolución llega en forma de nota de crédito de compras: el documento comercial con el que el proveedor le notifica la devolución parcial, la devolución total o el descuento sobre la factura que él mismo le emitió en la orden de compra registrada en Zauru. En este tutorial aprenderá a registrar la nota de crédito y a redimirla, para que la cuenta con el proveedor quede saldada y la orden de compra se cierre sin dejar ningún cabo abierto.
 
 El proceso de registro de notas de crédito consiste en 2 grandes pasos.
 El primer paso es el de __registrar la nota de crédito__, que a su vez consiste en 1 o 2 pasos:
@@ -63,6 +61,8 @@ Recordar que en este envío nuevo; el origen y el destino debería de estar al r
 para poder redimir la nota de crédito primero necesitamos crear un método de pago en compras (Ej. Notas de crédito) con la configuración necesaria para que la cuenta de notas de crédito recibidas se salde (Ver manual de Métodos de pagos https://docs.zauru.com/compras/metodos-de-pago, la cuenta a seleccionar en el paso 2 del manual debe ser la cuenta de Activo de las Notas de crédito recibidas).
 
 Para concluir el proceso de redimir la nota de crédito es pagar la orden de compra, se debe realizar un pago (o varios si fuera el caso) utilizando la forma de pago con la que se realizo el o los pagos de la orden de compra y un último pago utilizando el método de pago creado anteriormente (Ej. Notas de crédito).
+
+Al terminar, la orden de compra queda cerrada y la cuenta con el proveedor saldada, sin cabos sueltos en su contabilidad. Si el proveedor le entrega otra nota de crédito por una compra distinta, repita el mismo proceso para esa orden.
 
 ## API (llamadas desde sistemas externos)
 

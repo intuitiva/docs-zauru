@@ -4,7 +4,7 @@ sidebar_label: "Costo de Inventario Actual por Agencia"
 sidebar_position: 2
 ---
 
-Este reporte muestra el costo actual del inventario filtrado para una agencia especifica. Muestra el costo promedio de cada producto en la bodega seleccionada.
+Si maneja varias agencias y quiere saber cuánto vale el inventario de cada bodega, este reporte le muestra el costo promedio de cada producto filtrado para una agencia específica. Es útil para conocer la inversión que tiene detenida en cada punto de venta.
 
 Para ingresar al reporte:
 
@@ -14,6 +14,8 @@ Para ingresar al reporte:
 4. Seleccionar la agencia a consultar.
 
 Puede exportarse en formato CSV (compatible con SAT) o XLS.
+
+Con este reporte podrá revisar el valor de cada bodega por separado y descargarlo en el formato que mejor le convenga para sus análisis o para cumplir con el SAT.
 
 ## API (llamadas desde sistemas externos)
 

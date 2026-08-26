@@ -4,7 +4,7 @@ sidebar_label: "Consolidado de Materias Primas para Ordenes Planificadas"
 sidebar_position: 1
 ---
 
-Este reporte muestra un consolidado de todas las materias primas requeridas por las ordenes de produccion planificadas (no iniciadas, no cerradas y no anuladas).
+¿Tiene órdenes de producción planificadas y quiere asegurarse de que no falte material cuando toque arrancar? Este reporte reúne todas las materias primas que van a necesitar esas órdenes (las que aún no se inician, no están cerradas ni anuladas), con la cantidad total requerida y su desglose por fecha. Es perfecto para planificar las compras de insumos con anticipación y evitar sustos el día de la producción.
 
 ![imagen2](/img/produccion/reportes-de-produccion-2.png)
 

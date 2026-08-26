@@ -4,7 +4,7 @@ sidebar_label: "Cobrar más de lo que dice la factura (sobre-cobrar)"
 sidebar_position: 12
 ---
 
-Este tutorial esta enfocado en cobrar mas de lo que dice la factura. Pueden haber casos en donde el cliente por error le deposite más de lo que le tenia que pagar, en el siguiente ejemplo mostraremos como registrar estos pagos mayores a la factura y como registrar la devolución del dinero extra.
+¿Su cliente depositó de más y ahora no sabe cómo registrar ese dinero extra sin descuadrar la factura? No se preocupe: nos pasa a todos cuando alguien transfiere Q550 para una factura de Q500. En el siguiente ejemplo le mostraremos cómo registrar estos pagos mayores a la factura y cómo registrar la devolución del dinero extra.
 
 Los pasos para hacer el cobro mayor al total a la factura son los siguientes:
 
@@ -50,6 +50,8 @@ Ahora iremos a las facturas no pagadas para devolverle al cliente los Q50 adicio
 ![imagen6](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-6.jpg)
 ![imagen7](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-7.jpg)
 ![imagen8](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-8.jpg)
+
+Con estos pasos la factura queda saldada y los Q50 adicionales regresaron a manos del cliente, tal como debe ser. La próxima vez que alguien deposite de más, ya sabrá exactamente cómo registrar el sobre-cobro y cómo devolver la diferencia sin que su contabilidad se descontrole.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de compra"
 sidebar_position: 4
 ---
 
-Este tutorial esta basado en hacer una orden de compra de mercadería. Existen dos tipos de ordenes de compra:
+Cada vez que necesita reponer inventario, ya sea comprándole a un proveedor local o trayendo mercadería del extranjero, todo empieza con una orden de compra: el documento donde queda constancia de qué le compró a quién, a qué costo y en qué condiciones, y que sirve de base para todo el resto del flujo de compras. En este tutorial aprenderá a crear los dos tipos de orden de compra que maneja Zauru:
 
 1. Orden de compra local
 2. Orden de compra al exterior (Importación)

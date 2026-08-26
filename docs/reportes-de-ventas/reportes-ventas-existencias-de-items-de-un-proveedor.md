@@ -4,7 +4,7 @@ sidebar_label: "Existencias de Items de un Proveedor"
 sidebar_position: 6
 ---
 
-En una empresa que desarrolla proyecto, hay productos que se le compra a un proveedor en específico. Es necesario tener control en esos productos. Control como la existencia de los productos. Esto ayuda para evitar que el inventario se quede sin producto.
+Si le compra ciertos productos a un proveedor fijo, conviene saber exactamente cuánto tiene en bodega antes de que se agoten. Este reporte le muestra las existencias de los productos de cada proveedor, para que reponer a tiempo sea cuestión de un vistazo.
 
 Para ingresar al reporte es necesario seguir los siguientes pasos:
 

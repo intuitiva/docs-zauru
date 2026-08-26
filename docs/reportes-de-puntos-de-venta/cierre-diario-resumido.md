@@ -4,7 +4,7 @@ sidebar_label: "Cierre Diario Resumido"
 sidebar_position: 4
 ---
 
-Version resumida del cierre diario, mostrando unicamente totales facturados y cobrados sin el detalle de cada documento.
+Hay días en los que no necesita el detalle de cada documento: solo quiere confirmar cuánto se facturó y cuánto se cobró. Para eso existe esta versión resumida del cierre diario, pensada para cuando el tiempo apremia y las cifras clave bastan.
 
 Para ingresar al reporte:
 
@@ -16,3 +16,5 @@ Para ingresar al reporte:
 
 - **Fecha**: seleccione el dia a consultar.
 - **Vendedor**: filtro por vendedor.
+
+Con dos cifras claras —lo facturado y lo cobrado— cierra el día con tranquilidad y sigue con lo que sigue.

@@ -4,7 +4,7 @@ sidebar_label: "Enviar por Correo"
 sidebar_position: 10
 ---
 
-Este tutorial esta enfocado en como enviar el resumen de un caso de soporte por correo electronico al cliente.
+El cliente ya recogió su equipo reparado y se va con las manos ocupadas; ¿no sería bueno que le llegara un correo con el detalle de lo que se hizo y lo que pagó? Este tutorial le muestra cómo enviar el resumen de un caso de soporte por correo electrónico al cliente, para que la atención cierre con una comunicación formal y sin trabajo extra.
 
 ## Configuracion Previa
 
@@ -31,6 +31,8 @@ Las configuraciones disponibles incluyen:
 El sistema enviara automaticamente un correo electronico al cliente con la informacion del caso, utilizando la plantilla de correo configurada.
 
 Le aparecera un mensaje de exito confirmando que el correo fue enviado.
+
+Con el correo enviado, el cliente se lleva el resumen de la atención y usted la tranquilidad de que todo quedó documentado. El siguiente paso natural es cerrar el caso para que pase al historial de casos cerrados con su ciclo completo.
 
 ## API (llamadas desde sistemas externos)
 

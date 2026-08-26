@@ -4,7 +4,7 @@ sidebar_label: "Gastos Mensuales por Etiqueta"
 sidebar_position: 25
 ---
 
-Este reporte muestra los gastos de un mes especifico filtrados por una etiqueta (tag).
+¿Quiere ver cuánto gastó el mes pasado en una etiqueta puntual, como combustible o mercadeo? Este reporte le muestra los gastos de un mes específico filtrados por una etiqueta (tag).
 
 Para ingresar a este reporte:
 
@@ -17,3 +17,5 @@ Para ingresar a este reporte:
 - **Mes y año**.
 - **Etiqueta**.
 - **Agrupado**: opcionalmente agrupa por grupo de cuenta.
+
+Útil para comparar el gasto de esa etiqueta mes a mes y notar a tiempo si se está saliendo del presupuesto.

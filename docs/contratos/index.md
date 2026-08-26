@@ -4,7 +4,7 @@ sidebar_label: "Contratos"
 sidebar_position: 0
 ---
 
-Este módulo está diseñado para llevar control de generación automática de documentos recurrentes como ordenes de venta, facturas, ordenes de compra y casos de soporte.
+Si su negocio cobra mensualidades, arriendos, membresías o mantenimientos, este módulo le devuelve el control: Zauru genera por usted las ordenes de venta, facturas, ordenes de compra y casos de soporte que se repiten una y otra vez, con la periodicidad que cada contrato necesite. Se configura una vez y el sistema se encarga del resto, incluso de cobrar mora cuando un cliente se atrasa.
 
 Los contratos en Zauru permiten:
 - Definir la periodicidad y cantidad de documentos a generar automáticamente.

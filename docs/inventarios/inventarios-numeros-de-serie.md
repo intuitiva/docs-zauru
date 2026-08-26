@@ -4,7 +4,7 @@ sidebar_label: "Numeros de Serie"
 sidebar_position: 9
 ---
 
-Este tutorial esta basado en la creación y manejo de números de serie.
+Si vende productos idénticos entre sí pero que necesita identificar uno por uno, como electrodomésticos, maquinaria o vehículos, los números de serie son su herramienta. Con ellos sabe exactamente cuál unidad está en qué bodega, cuál se vendió y por dónde pasó cada una. Este tutorial le muestra cómo crear números de serie, consultarlos y hacer una reservación para ingresarlos desde el proveedor a su bodega.
 
 ## ¿Qué son los números de serie?
 
@@ -170,6 +170,8 @@ A continuación le aparecerá el segundo paso para crear la reservación, aquí 
 Le aparecerá un mensaje notificándole que la reservación fue creada exitosamente, podrá ver los detalles de la reservación o entregarla en la parte inferior.
 
 ![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
+
+Con la reservación entregada, cada número de serie quedó disponible en su bodega y listo para moverse o venderse. A partir de ahora puede dar seguimiento individual a cada unidad: consultar dónde está, ver su historial y exportar el listado a Excel cuando necesite una foto completa. Así, ya no tendrá que adivinar cuál máquina o cuál artículo salió de la bodega.
 
 ## API (llamadas desde sistemas externos)
 

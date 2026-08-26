@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Trabajo Cerradas"
 sidebar_position: 9
 ---
 
-Las ordenes de trabajo cerradas son aquellas que ya han sido completadas, con los movimientos de inventario y contabilidad procesados.
+Cuando una orden de trabajo se cierra, los consumos ya descontaron inventario y su contabilidad quedo aplicada; esta pantalla le permite revisar esa historia completa cuando la necesita. Es util para verificar cuanto material se uso en un proceso interno, para imprimir un comprobante de un consumo pasado, o para corregir un cierre hecho por error. Las ordenes de trabajo cerradas son aquellas que ya han sido completadas, con los movimientos de inventario y contabilidad procesados.
 
 ## Consultar ordenes de trabajo cerradas
 
@@ -78,6 +78,8 @@ Al igual que en las ordenes de trabajo abiertas, puede buscar por:
 - Numero de factura asignada o numero de orden de venta.
 - Lote de destino (nombre de item o nombre de lote).
 - Numero de serie de destino.
+
+Con esto, cada consumo interno queda documentado y localizable. Si etiqueto sus ordenes, los reportes consolidados por etiqueta le permiten ver todos estos consumos agrupados; y cuando el taller vuelva a necesitar materiales, una nueva orden de trabajo abierta iniciara el ciclo con la tranquilidad de que el historico anterior quedo bien resguardado.
 
 ## API (llamadas desde sistemas externos)
 

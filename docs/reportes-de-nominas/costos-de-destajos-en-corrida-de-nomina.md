@@ -4,7 +4,7 @@ sidebar_label: "Costos de Destajos en Corrida de Nomina"
 sidebar_position: 8
 ---
 
-Este reporte muestra los costos de destajos desglosados por tipo de destajo para una corrida de nomina especifica. Es util para conciliar los destajos incluidos en una corrida.
+Antes de aprobar el pago de una corrida, conviene confirmar que los montos cuadren. Si está conciliando los destajos incluidos en una corrida —por ejemplo, para verificar cuánto corresponde a cada tipo de tarea—, este reporte le desglosa el costo de los destajos por tipo para la corrida que usted seleccione.
 
 Para ingresar al reporte:
 
@@ -17,3 +17,5 @@ Para ingresar al reporte:
 - Corrida de nomina.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Con este desglose puede aprobar la corrida con confianza y detectar cualquier diferencia antes de contabilizarla.

@@ -4,9 +4,7 @@ sidebar_label: "Requisiciones de Compra"
 sidebar_position: 17
 ---
 
-Este tutorial esta enfocado en la creacion de requisiciones de compra y su aprobacion para convertirlas en ordenes de compra.
-
-Una requisicion de compra es una solicitud interna de compra de productos o servicios. Es el primer paso en el flujo de compras antes de generar una orden de compra. Las requisiciones permiten que los empleados soliciten productos o servicios que necesitan, y luego un aprobador revisa y aprueba estas solicitudes para generar las ordenes de compra correspondientes.
+¿Se le está acabando un producto en bodega y necesita que su equipo lo pida a tiempo? Con las requisiciones de compra, sus empleados pueden solicitar internamente los productos o servicios que necesitan, y un encargado las revisa y aprueba para convertirlas en órdenes de compra, todo sin salir de Zauru. Este tutorial le muestra cómo crear una requisición, aprobarla una por una o en lote, y ver las órdenes de compra que se generan a partir de ella.
 
 ## Crear una requisicion de compra
 
@@ -115,6 +113,8 @@ Si necesita anular una requisicion de compra, puede hacerlo de la siguiente form
 4. Seleccionar "Anular".
 
 La requisicion pasara a la lista de requisiciones anuladas. Puede ver las requisiciones anuladas seleccionando la pestana "Anuladas" en el listado de requisiciones.
+
+Con esto ya conoce el ciclo completo de una requisición: crearla, aprobarla y ver cómo se convierte en órdenes de compra, o anularla si ya no aplica. De las órdenes generadas hacia adelante, el flujo sigue como cualquier compra normal: autorizar, recibir en bodega y pagar al proveedor.
 
 ## API (llamadas desde sistemas externos)
 

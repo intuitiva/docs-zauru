@@ -4,7 +4,7 @@ sidebar_label: "Terminos de pago"
 sidebar_position: 1
 ---
 
-Un termino de pago es el tiempo en el que se realizara el pago a un beneficiario. Zauru le permite configurar los terminos de pago de sus compras.
+¿Usted le paga a sus proveedores al contado o le dan días de crédito? Cada acuerdo que tiene con un proveedor se puede dejar configurado en Zauru como un término de pago, con sus días de crédito y las cuentas contables por donde pasará la transacción de cada compra. En este tutorial aprenderá a crear esos términos para que, al registrar una compra, solo tenga que elegir el acuerdo que ya definió.
 
 La forma de configurar sus compras es la siguiente:
 

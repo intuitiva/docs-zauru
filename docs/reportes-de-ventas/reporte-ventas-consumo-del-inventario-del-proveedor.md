@@ -4,7 +4,7 @@ sidebar_label: "Consumo del Inventario del Proveedor"
 sidebar_position: 5
 ---
 
-Existen productos que están constantemente saliendo y entrado en el inventario de una empresa. Estos productos tienen que tener un cuidado especial ya que es importante predecir cuan necesario es tener el producto en el inventario. Hay que realizar cálculos el balance del producto y consumo promedio. Para simplificar el trabajo de la empresa, Zauru brinda la asistencia por medio del Consumo del Inventario del Proveedor.
+Si le compra ciertos productos a un mismo proveedor y salen de su bodega constantemente, conviene saber cuánto le duran antes de volver a pedir. Este reporte le calcula el consumo promedio mensual y cuántos meses de inventario le quedan, para que nunca se quede sin producto ni compre de más.
 
 Para ingresar es necesario realizar lo siguiente:
 

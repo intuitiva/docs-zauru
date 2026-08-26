@@ -4,7 +4,7 @@ sidebar_label: "Crear una factura que no registre impuestos (recibos)"
 sidebar_position: 18
 ---
 
-Este tutorial esta enfocado en crear una factura que no registre impuestos, o lo que comúnmente se le conoce como recibo.
+¿Le vende a alguien que no necesita factura fiscal, o quiere entregar un comprobante sencillo sin que se mueva el IVA? Para eso se usa el recibo: una factura que no registra impuestos. Este tutorial le muestra cómo emitirlo en menos de un minuto.
 
 Los pasos para crear un recibo son los siguientes:
 
@@ -34,6 +34,8 @@ e. Coloque los productos o servicios que va vender, la cantidad y el precio unit
 Para generar la factura sin impuestos o recibo seleccione “Crear factura”.
 
 ![imagen2](/img/ventas/facturas-no-fiscales-recibos-3.jpg)
+
+El recibo quedó emitido y la venta no registró impuestos, justo lo que buscaba. Ahora puede cobrarlo como cualquier otra factura; la diferencia es que este comprobante mantiene su contabilidad limpia cuando la operación no debe generar IVA.
 
 ## API (llamadas desde sistemas externos)
 

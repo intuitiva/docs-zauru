@@ -4,7 +4,7 @@ sidebar_label: "Productos Comprados entre Fechas"
 sidebar_position: 11
 ---
 
-Este reporte muestra un resumen de productos comprados entre dos fechas, agrupados por producto. Incluye la cantidad total comprada, el costo unitario promedio y el costo total.
+¿Necesita ver cuánto compró de cada producto en un periodo? Este reporte resume las compras entre dos fechas, agrupadas por producto, con la cantidad total comprada, el costo unitario promedio y el costo total. Es ideal para identificar de un vistazo sus artículos de mayor movimiento.
 
 Para ingresar al reporte:
 
@@ -14,6 +14,8 @@ Para ingresar al reporte:
 4. Seleccionar el rango de fechas.
 
 Permite filtrar por agencia.
+
+Con este resumen podrá revisar el comportamiento de compra de cada producto y planificar sus próximas adquisiciones con datos en mano.
 
 ## API (llamadas desde sistemas externos)
 

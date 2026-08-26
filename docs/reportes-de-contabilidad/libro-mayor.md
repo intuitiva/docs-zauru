@@ -4,7 +4,7 @@ sidebar_label: "Libro Mayor"
 sidebar_position: 17
 ---
 
-El libro mayor es un libro que clasifica las operaciones por cuentas de manera que se puede ver el detalle de los movimientos y el saldo total de cada cuenta.
+Si su contador le pregunta por qué el saldo de una cuenta llegó a donde está, o usted quiere revisar el detalle de los movimientos de una cuenta durante el mes, el libro mayor es el reporte que responde. Clasifica las operaciones por cuenta, para que vea cada movimiento y el saldo total de un vistazo.
 
 Los pasos para ver el libro mayor son:
 
@@ -28,3 +28,5 @@ El reporte muestra el movimiento de cada cuenta contable durante el mes, con su 
 - **Libro mayor diario**: desglose diario de movimientos por cuenta.
 
 Ambas versiones se generan asincronamente para meses con alto volumen.
+
+Con este reporte podrá seguir el rastro de cada cuenta, desde el saldo inicial hasta el último movimiento del mes.

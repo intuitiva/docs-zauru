@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Produccion Finalizadas por Responsable"
 sidebar_position: 3
 ---
 
-Este reporte lista individualmente las ordenes de produccion cerradas agrupadas por responsable, dentro de un rango de fechas.
+¿Quiere revisar cómo le fue a cada responsable en el período? Este reporte lista una por una las órdenes de producción cerradas, agrupadas por quien las atendió, dentro del rango de fechas que usted elija. Le sirve para preparar una reunión de productividad o para reconocer el ritmo de cada persona con datos.
 
 Para generar este reporte:
 
@@ -25,3 +25,5 @@ Para cada orden se muestra:
 - Si esta habilitado el campo extra en las configuraciones, se mostrara el valor de dicho campo.
 
 Puede exportar el reporte a Excel presionando el boton **"Exportar a XLS"**.
+
+Con esta lista puede comparar el desempeño de cada responsable y decidir, con datos en la mano, dónde conviene dar apoyo.

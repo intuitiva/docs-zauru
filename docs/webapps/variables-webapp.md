@@ -4,11 +4,7 @@ sidebar_label: "Variables Webapp"
 sidebar_position: 2
 ---
 
-Estas variables se utilizan usualmente para guardar configuraciones de nuestras webapps.
-
-Son totalmente accesibles desde el API por lo que cualquier aplicación externa hecha a la medida puede consultarla, editarla o destruirla (si tienen suficientes permisos).
-
-Estas variables pueden contener cualquier tipo de información en modo de texto, es responsabilidad del dearrollador interpretar esa información antes de utilizarla.
+Cuando su webapp necesita recordar algo entre una visita y otra —el URL de un servicio externo, un umbral de descuento, un texto de bienvenida— las variables para webapps son el lugar ideal para guardarlo. Cada variable almacena una configuración en modo de texto y queda totalmente accesible desde el API, de modo que cualquier aplicación externa hecha a la medida puede consultarla, editarla o eliminarla si cuenta con los permisos suficientes. Recuerde que el valor viaja como texto: es responsabilidad del desarrollador interpretar esa información antes de utilizarla.
 
 El listado de variables es el siguiente:
 ![webapp vars index](/img/webapps/variables-webapp-1.png)
@@ -25,6 +21,8 @@ Es el mismo formulario que para crear una nueva variable.
 ## Detalles de una variable para webapp
 El detalle me muestra el valor y todos los campos adicionales de la webapp.
 ![webapp var show](/img/webapps/variables-webapp-4.png)
+
+Con sus variables guardadas, sus webapps pueden leer y actualizar sus propias configuraciones sin necesidad de tocar el código cada vez. El paso natural que sigue es consumir esas variables desde su aplicación a la medida, o incrustarla dentro de Zauru para manejarlo todo en un mismo lugar.
 
 ## API (llamadas desde sistemas externos)
 

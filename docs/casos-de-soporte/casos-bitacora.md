@@ -4,7 +4,7 @@ sidebar_label: "Bitácora del Caso"
 sidebar_position: 7
 ---
 
-Este tutorial esta enfocado en como registrar la bitacora de un caso de soporte. La bitacora le permite llevar un registro cronologico de todas las actividades, notas y evidencias relacionadas al caso.
+Cuando un caso toma varios días — una reparación en espera de repuestos, una garantía que debe autorizar el fabricante — conviene dejar anotado cada avance para no perder el hilo. La bitácora le permite llevar un registro cronológico de todas las actividades, notas y evidencias relacionadas al caso, para que usted y sus compañeros sepan siempre en qué punto va la atención.
 
 ## Agregar una Entrada a la Bitacora
 
@@ -34,6 +34,8 @@ Las entradas de la bitacora se mostraran en orden cronologico en la pagina de de
 
 - Esta funcionalidad esta disponible para todas las entidades que utilizan el sistema de bitacora tradicional (entidades 301 y 436). Para el resto de entidades, se recomienda utilizar el sistema de **formularios** para registrar el seguimiento del caso.
 - Puede agregar tantas entradas como sea necesario a lo largo del ciclo de vida del caso.
+
+Con la bitácora al día, cualquiera de su equipo podrá retomar un caso a mitad de camino sin tener que llamar para preguntar qué se hizo. El siguiente paso natural es actualizar los datos del caso con el diagnóstico y la solución, y cerrarlo cuando el trabajo esté terminado.
 
 ## API (llamadas desde sistemas externos)
 

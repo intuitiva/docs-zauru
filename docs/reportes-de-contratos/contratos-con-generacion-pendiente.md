@@ -4,7 +4,7 @@ sidebar_label: "Contratos con Generación Pendiente"
 sidebar_position: 2
 ---
 
-Este reporte identifica contratos que tienen cuotas que debieron haberse generado pero por alguna razón no se generaron (huecos o duplicaciones en las recurrencias).
+¿Le ha pasado que un contrato deja de generar sus cuotas y nadie se da cuenta hasta que el cliente reclama? Este reporte lo ayuda a detectar esos casos antes de que escalen: identifica los contratos que tienen cuotas que debieron haberse generado y no se generaron, ya sea por huecos o por duplicaciones en las recurrencias. Conviene revisarlo cuando sospeche que una cuota no se emitió o como verificación periódica de que todos los contratos están al día.
 
 Por cada contrato muestra:
 
@@ -22,6 +22,8 @@ Para ingresar al reporte:
 3. Seleccionar "Contratos con Generación Pendiente".
 
 **Filtro disponible:** Tipo de Documento.
+
+Con este reporte puede corregir la generación de cuotas a tiempo y evitar que un contrato se quede atrás.
 
 ## API (llamadas desde sistemas externos)
 

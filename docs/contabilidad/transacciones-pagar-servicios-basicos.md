@@ -4,11 +4,13 @@ sidebar_label: "[Transacciones] Pagar servicios básicos"
 sidebar_position: 19
 ---
 
+Cada mes le llegan las facturas de luz, agua, teléfono e internet, y cada una merece quedar registrada en sus gastos. En esta página aprenderá a pagarlas al contado, o a ingresarlas primero cuando el proveedor le da crédito.
+
 > Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compra)
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
 
 ## (Agua, Luz, Teléfono, etc.)
-Este tutorial esta basado en como hacer pagos de servicios básicos como el agua, luz, teléfono, internet, etc. Existen dos formas de hacerlo, una forma es pagando al momento de recibir la factura, y la otra forma es recibir la factura y días después, hacer el pago. Se ejemplificaran las dos formas en el siguiente tutorial.
+Ya sea la factura de la luz que llega cada mes o el servicio de internet que vence la próxima semana, aquí aprenderá a registrarlos. Existen dos formas de pagar: al momento de recibir la factura, o recibirla y pagarla días después; a continuación se ejemplifican las dos.
 
 ### Pagar servicio básicos al contado
 En la siguiente imagen se muestra como crear una nueva transacción contable para hacer el pago de una factura a un proveedor al contado, esto quiere decir, que el pago se hace al momento que se da la factura. Los pasos son los siguientes:
@@ -105,6 +107,8 @@ Le aparecerán las opciones para crear una nueva transacción, los pasos para cr
 Le deberá aparecer un mensaje de éxito notificándole que se creo la transacción exitosamente. Para imprimir el cheque presione el botón de “Imprimir como cheque”.
 
 ![imagen9](/img/contabilidad/transacciones-pagar-servicios-basicos-9.jpg)
+
+Con la factura ingresada y el cheque emitido, la cuenta por pagar queda saldada y el gasto del servicio queda en la cuenta correcta para sus reportes. Repita este flujo con cada factura del mes y su contabilidad de servicios básicos estará siempre al día.
 
 ## API (llamadas desde sistemas externos)
 

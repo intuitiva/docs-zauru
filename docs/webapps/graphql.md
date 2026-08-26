@@ -4,7 +4,7 @@ sidebar_label: "GraphQL API"
 sidebar_position: 6
 ---
 
-Zauru ofrece un endpoint de GraphQL que le permite consultar la información de su entidad (y sus WebApp Tables) de forma flexible y eficiente desde sus aplicaciones externas. El acceso a GraphQL se realiza por medio de un token JWT generado por Zauru.
+Si su equipo quiere consultar los datos de Zauru desde una aplicación externa —por ejemplo, mostrar las filas de sus WebApp Tables en un tablero propio o alimentar un reporte personalizado— GraphQL es la puerta más cómoda. Zauru ofrece un endpoint de GraphQL que le permite consultar la información de su entidad (y sus WebApp Tables) de forma flexible y eficiente. El acceso a GraphQL se realiza por medio de un token JWT generado por Zauru, y en esta página le explicamos cómo obtenerlo y utilizarlo.
 
 ## Obtener un Token JWT
 
@@ -16,6 +16,8 @@ Los pasos para obtener su token son:
 2. Seleccionar "GraphQL".
 
 Zauru le mostrará su token JWT, la URL del endpoint de GraphQL y la fecha de expiración del token.
+
+Con el token en sus manos, sus aplicaciones ya pueden leer la información de Zauru desde afuera. Recuerde que el token expira a los cinco días: cuando eso suceda, puede volver al módulo de GraphQL y generar uno nuevo siguiendo estos mismos pasos.
 
 ## API (llamadas desde sistemas externos)
 

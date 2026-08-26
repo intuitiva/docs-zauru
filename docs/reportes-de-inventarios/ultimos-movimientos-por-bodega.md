@@ -4,7 +4,7 @@ sidebar_label: "Ultimos Movimientos por Bodega"
 sidebar_position: 13
 ---
 
-Este reporte muestra el ultimo movimiento registrado de cada producto en cada bodega. Se genera de forma asincrona y se almacena en cache para consultas posteriores.
+Cuando quiere saber qué está pasando en su bodega sin revisar cientos de movimientos, este reporte le muestra el último movimiento registrado de cada producto. Así descubre en segundos si un producto se movió hace poco o si lleva tiempo sin actividad.
 
 Para generar el reporte:
 
@@ -26,6 +26,8 @@ Para generar el reporte:
 - Puede refrescar el reporte para regenerarlo con datos actualizados.
 
 **Exportacion**: disponible en formato XLS.
+
+Es el reporte ideal para un vistazo rápido al estado de su bodega o para detectar productos que llevan demasiado tiempo sin moverse.
 
 ## API (llamadas desde sistemas externos)
 

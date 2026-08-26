@@ -4,7 +4,7 @@ sidebar_label: "Cuentas Contables"
 sidebar_position: 2
 ---
 
-El Modulo de Contabilidad almacena la nomenclatura de cuentas que usted desee, comprendemos que la contabilidad puede ser muy variable en cada empresa, y le permitimos a usted manejarla de la forma que usted prefiera. Zauru mantiene un registro de todas las transacciones contables de compra, venta y pagos de productos y servicios. Al igual que un registro de las cuentas bancarias de la empresa.
+Cada empresa lleva su contabilidad a su manera, y en Zauru usted arma la nomenclatura de cuentas como mejor le convenga: aquí le mostramos cómo crearla, ordenarla y dejarla lista desde el primer día. Este es el punto de partida natural cuando está montando su empresa en el sistema o cuando abre una cuenta nueva en el banco y necesita reflejarla contablemente. Zauru mantiene un registro de todas las transacciones contables de compra, venta y pagos de productos y servicios, así como un registro de las cuentas bancarias de la empresa.
 
 A continuacion vera como se maneja la contabilidad en Zauru.
 
@@ -12,7 +12,7 @@ A continuacion vera como se maneja la contabilidad en Zauru.
 
 ## Cuentas Patrimoniales
 
-Existen 3 tipos de cuentas patrimoniales en Zauru:
+Para saber dónde va a parar cada movimiento, conviene empezar por conocer los tres tipos de cuentas patrimoniales, que reflejan lo que la empresa posee y lo que debe:
 
 1. **Activos** (tipo 1): Bienes o servicios que posee la empresa con los cuales se obtienen beneficios.
 2. **Pasivos** (tipo 2): Deudas u obligaciones de la empresa.
@@ -51,7 +51,7 @@ Un tipo de cuenta con `categoria = true` (Gastos e Ingresos) significa que es un
 
 ## Grupos de Cuentas
 
-Los grupos de cuentas permiten organizar jerarquicamente las cuentas contables. Cada grupo de cuentas tiene:
+Cuando su catálogo crece con decenas de cuentas, los grupos le ayudan a mantenerlas ordenadas por rubros, como si fueran las gavetas de un archivero. Cada grupo de cuentas tiene:
 
 - **Codigo**: identificador del grupo (ej. "1", "1.1").
 - **Nombre**: nombre descriptivo (ej. "Activos Corrientes", "Gastos Operativos").
@@ -181,6 +181,8 @@ Los pasos para crear una nueva transaccion de saldos iniciales son los siguiente
 9. Para Guardar sus cambios seleccione el boton de "Crear transaccion".
 
 ![imagen12](/img/contabilidad/cuentas-contables-12.jpg)
+
+Con su nomenclatura creada y sus saldos iniciales registrados, la contabilidad queda lista para recibir cada transacción del día a día, y sus reportes reflejarán la realidad de la empresa desde el primer momento. Si en el camino necesita más cuentas o más grupos, puede agregarlos siguiendo los mismos pasos.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Producciones Mensuales"
 sidebar_position: 8
 ---
 
-Este reporte muestra un resumen de todas las producciones del mes agrupadas por empleado.
+Al finalizar el mes, este reporte le ofrece un panorama completo de la producción: todas las producciones del mes, agrupadas por empleado. Úselo para ver quién produjo qué y cuánto contribuyó cada uno al resultado del mes.
 
 Para generar el reporte:
 
@@ -18,3 +18,5 @@ Para generar el reporte:
 - **Mes y año**: seleccione el periodo a consultar.
 
 **Columnas**: empleado, cantidad de envios de produccion realizados.
+
+Este resumen le da una forma justa y transparente de comparar la actividad de su equipo de producción mes a mes.

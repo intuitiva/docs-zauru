@@ -4,7 +4,7 @@ sidebar_label: "Cierre Diario de Productos"
 sidebar_position: 3
 ---
 
-Similar al cierre diario, pero incluye el desglose de productos vendidos.
+Al final del día, saber cuánto vendió no siempre es suficiente: a veces quiere ver qué productos fueron los protagonistas. Este reporte le muestra el cierre diario con el desglose de productos vendidos, para que sepa exactamente qué salió de su inventario y cuánto aportó cada uno.
 
 Para ingresar al reporte:
 
@@ -21,3 +21,5 @@ Para ingresar al reporte:
 
 - Facturas del dia con sus productos.
 - Totales facturados y cobrados con desglose por producto.
+
+Con este desglose, reponer el inventario y reconocer los productos estrella del día se vuelve una tarea natural al cerrar su jornada.

@@ -4,9 +4,7 @@ sidebar_label: "Lotes"
 sidebar_position: 8
 ---
 
-Este tutorial esta enfocado en la creación y el manejo de lotes de inventario.
-
-Los lotes nos sirven para poder llevar control de productos perecederos con fecha de expiración. Para usar lotes, el ítem debe ser de tipo "Perecedero" (product_type = 3).
+Si vende productos con fecha de vencimiento, como alimentos o medicinas, necesita saber no solo cuánto tiene, sino de qué lote es cada unidad y cuándo expira. Los lotes le permiten separar cada ingreso de mercadería y despachar primero lo que vence antes, para reducir pérdidas. Este tutorial le muestra cómo crear el lote, ingresarle producto y consultar sus existencias por bodega. Para usar lotes, el ítem debe ser de tipo "Perecedero" (product_type = 3).
 
 ## Crear un ítem perecedero
 
@@ -160,6 +158,8 @@ Si necesita eliminar todas las existencias de lotes en una bodega (por ejemplo, 
 3. Seleccionar la opción "Vaciar existencias de lote".
 
 Esta acción eliminará todas las existencias de lotes y se ejecuta de forma asíncrona en segundo plano. Utilice esta función con precaución ya que los datos no se pueden recuperar.
+
+Con los lotes creados y con existencias, ya puede saber qué hay de cada ingreso y cuánto tiempo le queda antes de que expire. Ahora puede consultar los lotes por bodega, exportarlos a Excel para revisarlos con calma y separar los que ya vencieron, para que su bodega entregue primero lo más antiguo y las mermas se reduzcan.
 
 ## API (llamadas desde sistemas externos)
 

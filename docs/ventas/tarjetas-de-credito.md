@@ -4,7 +4,7 @@ sidebar_label: "Tarjetas de Crédito"
 sidebar_position: 6
 ---
 
-Este tutorial está enfocado en como agregar, consultar y desactivar tarjetas de crédito para los clientes, para tokenizar las tarjetas de crédito y permitir el cobro con tarjeta de crédito automático sin volver a digitar la información de la tarjeta de crédito. Las tarjetas de crédito permiten a los clientes realizar pagos a través de una pasarela de pago configurada previamente.
+Piense en un cliente que le compra cada semana y siempre paga con la misma tarjeta: ¿y si pudiera cobrarle sin volver a pedirle el número cada vez? Eso es lo que logra la tokenización. Este tutorial le muestra cómo agregar, consultar y desactivar las tarjetas de crédito de los clientes, para cobrarles automáticamente a través de una pasarela de pago configurada previamente, sin volver a digitar la información de la tarjeta.
 
 ## Requisitos Previos
 
@@ -86,6 +86,8 @@ La tarjeta será desactivada (soft-delete) y ya no estará disponible para reali
 ![imagen4](/img/ventas/tarjetas-de-credito-4.png)
 
 ## Cobrar con Tarjeta de Crédito
+
+Con la tarjeta guardada en el perfil del cliente, el próximo cobro se hace casi solo: Zauru la usa automáticamente a través del gateway, y solo se le pedirá el CVV si la pasarela lo exige. Así, sus clientes frecuentes pagan en segundos y usted nunca vuelve a manipular los datos completos de una tarjeta.
 
 ## API (llamadas desde sistemas externos)
 

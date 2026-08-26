@@ -4,7 +4,7 @@ sidebar_label: "Configuración de Variables del Módulo de Compras"
 sidebar_position: 21
 ---
 
-Este documento describe las variables de configuracion avanzada del modulo de Compras. Estas variables controlan el comportamiento del modulo a nivel de entidad y permiten personalizar la experiencia segun las necesidades del negocio.
+¿Quiere que las órdenes de compra se autoricen solas, que los pagos a proveedores pasen por doble revisión o que el número de factura se separe en serie y correlativo? Esos son ejemplos de lo que puede ajustar con las variables de configuración avanzada del módulo de Compras. Revíselas cuando esté montando Zauru por primera vez o cuando algún proceso de compras no se comporte como su operación lo necesita, y active únicamente las que le hagan sentido a su negocio.
 
 Para acceder a la configuracion de variables:
 
@@ -17,6 +17,8 @@ Para acceder a la configuracion de variables:
 ---
 
 ## Variables de Configuracion
+
+Antes de cambiar una variable, piense en el proceso concreto de su día a día que quiere mejorar: cada una de las siguientes resuelve una situación real de compras. Las listamos con su nombre técnico y una explicación de lo que hace cada una.
 
 ### Ordenes de Compra Pre-Autorizadas
 **Variable:** `purchase_orders_pre_authorized`
@@ -105,3 +107,5 @@ Para guardar los cambios en las variables de configuracion:
 ![imagen2](/img/compras/configuracion-de-variables-2.png)
 
 Le aparecera un mensaje de exito notificandole que la configuracion se guardo exitosamente.
+
+Con la configuración guardada, el módulo de Compras queda ajustado a la forma en que su empresa trabaja. Si más adelante nota que un proceso no se comporta como usted espera, regrese a esta pantalla: es muy probable que el ajuste que necesita esté entre estas variables.

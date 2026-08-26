@@ -4,9 +4,7 @@ sidebar_label: "Ordenes de Compra Cerradas"
 sidebar_position: 18
 ---
 
-Este tutorial esta enfocado en la visualizacion y gestion de las ordenes de compra que ya han sido completamente recibidas y pagadas.
-
-Cuando una orden de compra ha sido recibida en su totalidad y ademas ha sido pagada por completo, automaticamente se traslada a la seccion de "Ordenes de Compra Cerradas". En esta seccion puede consultar el historial de compras completadas y realizar ediciones limitadas a la informacion de las mismas.
+¿Necesita consultar cómo quedó una compra de meses atrás, corregir una referencia o volver a imprimir una orden que ya pagó? Cuando una orden de compra ha sido recibida en su totalidad y además ha sido pagada por completo, Zauru la traslada automáticamente a la sección de "Ordenes de Compra Cerradas". Ahí encontrará el historial de compras completadas de su empresa y podrá hacer ediciones limitadas a la información, sin riesgo de alterar los números que ya quedaron contabilizados.
 
 ## Listar ordenes de compra cerradas
 
@@ -57,7 +55,7 @@ i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).
 
 ## Editar informacion de una orden de compra cerrada
 
-Las ordenes de compra cerradas permiten ediciones limitadas a ciertos campos informativos. No se pueden modificar los productos, cantidades, costos, recepciones ni pagos.
+A veces, después de cerrar una compra, se da cuenta de que la referencia quedó poco clara, necesita adjuntar el PDF de la factura o quiere agregar una nota para su archivo. Las ordenes de compra cerradas permiten ediciones limitadas a ciertos campos informativos, y por eso no se pueden modificar los productos, cantidades, costos, recepciones ni pagos.
 
 Los pasos para editar una orden de compra cerrada son:
 

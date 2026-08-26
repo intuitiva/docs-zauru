@@ -4,7 +4,7 @@ sidebar_label: "Punto de Venta"
 sidebar_position: 0
 ---
 
-Facturacion y cobros con pantallas touch y lector de codigo de barras.
+Si atiende un mostrador, una tienda física o varias sucursales, este es el corazón de su operación diaria: aquí factura, cobra, recibe mercadería y mueve inventario con pantallas táctiles y lector de códigos de barras, pensado para trabajar rápido con el cliente al frente. Los módulos de abajo le acompañan desde la venta más sencilla al contado hasta el traslado de productos entre bodegas.
 
 ## Modulos del Punto de Venta
 

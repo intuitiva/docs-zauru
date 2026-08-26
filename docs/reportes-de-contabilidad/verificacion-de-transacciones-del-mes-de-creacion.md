@@ -4,7 +4,7 @@ sidebar_label: "Verificacion de Transacciones del Mes de Creacion"
 sidebar_position: 37
 ---
 
-Este reporte muestra, para una cuenta especifica, las transacciones creadas en un mes y si fueron verificadas dentro del mismo mes.
+¿Quiere confirmar que todas las transacciones creadas en el mes ya quedaron verificadas antes del cierre? Este reporte le muestra, para una cuenta específica, qué transacciones se crearon en el mes y si alcanzaron a verificarse dentro del mismo mes.
 
 Para ingresar a este reporte:
 
@@ -16,3 +16,5 @@ Para ingresar a este reporte:
 
 - **Cuenta**: cuenta a verificar.
 - **Mes y año**: mes de creacion de las transacciones.
+
+Así podrá cerrar el mes con la seguridad de que no quedaron transacciones sin verificar en la cuenta.

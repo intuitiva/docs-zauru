@@ -4,7 +4,7 @@ sidebar_label: "Libro Diario"
 sidebar_position: 13
 ---
 
-El libro diario es un libro donde se anotan todas las transacciones por día y orden cronológico.
+Si quiere recorrer la contabilidad de su empresa transacción por transacción, o revisar el detalle de una operación de una fecha específica, el libro diario es el lugar para empezar. Aquí se anotan todas las operaciones por día y en orden cronológico.
 
 El libro diario lo puede encontrar en:
 
@@ -38,6 +38,8 @@ Es el registro cronologico de todas las transacciones contables del mes y la bas
 - **Libro diario estandar**: navegable con DataTables, permite busqueda y paginacion.
 - **Libro diario consolidado**: agrupa por tipo de documento y cuenta.
 - **Descarga Excel**: genera archivo Excel del libro diario completo.
+
+Con estas versiones podrá revisar el mes a su ritmo y descargar el detalle completo para compartirlo con su contador.
 
 ## API (llamadas desde sistemas externos)
 

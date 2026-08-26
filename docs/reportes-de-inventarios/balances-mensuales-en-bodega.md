@@ -4,7 +4,7 @@ sidebar_label: "Balances Mensuales en Bodega"
 sidebar_position: 1
 ---
 
-En muchas ocasiones, las empreses tienen bodegas para almacenar los productos que después venderán. Esto quiere decir que el movimiento en la bodega es constante. Compra de productos implica ingreso a la bodega, asi como también la venta de los productos significa egreso de la bodega. Para una empresa es importante mantener el control de esos movimientos.
+En muchas ocasiones, las empresas tienen bodegas para almacenar los productos que después venderán. Esto quiere decir que el movimiento en la bodega es constante: cada compra representa un ingreso y cada venta, una salida. Para una empresa es importante mantener el control de esos movimientos.
 
 Para ingresar al Balance Mensual en Bodega es necesario seguir los siguientes pasos:
 
@@ -29,3 +29,5 @@ El reporte muestra el balance de inventario mensual: saldo inicial, ingresos, eg
 **Columnas**: producto, categoria, saldo inicial, ingresos, egresos, egresos no entregados, saldo final.
 
 **Exportacion**: disponible en formato XLS.
+
+Al revisarlo mes a mes, podrá comparar el movimiento de sus bodegas y conciliar con calma el inventario contra lo que realmente tiene almacenado.

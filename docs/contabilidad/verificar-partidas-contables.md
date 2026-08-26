@@ -4,11 +4,11 @@ sidebar_label: "Verificar partidas contables"
 sidebar_position: 10
 ---
 
-Este tutorial explica como verificar sus partidas para que no se puedan volver a editar ni borrar, y como auditar partidas para un nivel adicional de seguridad.
+Cuando el banco le entrega su estado de cuenta, el mejor hábito es compararlo contra sus partidas y marcar cada una como verificada para que nadie la mueva después. Aquí verá cómo verificar sus partidas contra el estado de cuenta del banco, y cómo auditarlas cuando necesita un nivel adicional de seguridad.
 
 ## Verificacion de partidas
 
-La verificacion es el primer nivel de bloqueo. Una vez verificada, una transaccion no puede ser editada ni borrada.
+La verificación es el primer nivel de bloqueo: piense en ella como el sello que confirma que una partida ya cuadró contra el banco y no debe tocarse. Una vez verificada, una transaccion no puede ser editada ni borrada.
 
 ### Como verificar
 
@@ -89,6 +89,8 @@ La transaccion mostrara un icono de auditoria. Una vez auditada, solo es posible
 ## Fecha de cierre contable
 
 Ademas de la verificacion individual, puede configurar una fecha de cierre global en [Configuraciones](configuraciones). Todas las transacciones con fecha anterior a la fecha de cierre configurada seran protegidas automaticamente contra edicion y borrado.
+
+Con sus partidas verificadas, usted puede confiar en que cada número cuadra contra el estado de cuenta y en que nada importante se moverá sin control. Si además fija una fecha de cierre contable, el periodo completo queda protegido para su contador o para la SAT.
 
 ## API (llamadas desde sistemas externos)
 

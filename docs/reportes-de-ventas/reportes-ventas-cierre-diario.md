@@ -4,7 +4,7 @@ sidebar_label: "Cierre Diario"
 sidebar_position: 7
 ---
 
-Después de un día de ventas, en las empresas es necesario realizar un corte de caja. Esto significa que se tiene que verificar el ingreso de dinero a la caja. El ingreso puede ser dinero al contado, tarjeta de crédito o créditos que da la empresa. A veces el proceso es largo porque se suman uno por uno las facturas y después se compara con el efectivo, POS y otro instrumento de pago. Zauru facilita este proceso con el reporte de Cierre Diario porque al ingresar ya está desplegada toda la información de ventas y pagos.
+Cuando termina el día de ventas, toca el corte de caja: verificar cuánto dinero entró, ya sea en efectivo, con tarjeta o por los créditos que dio la empresa. Hacerlo a mano significa sumar facturas una por una y comparar contra el efectivo, el POS y demás instrumentos de pago. Con el Cierre Diario, Zauru le presenta toda esa información de ventas y pagos apenas usted entra, y el corte queda listo en minutos.
 
 Para ingresar es necesario hacer lo siguiente:
 

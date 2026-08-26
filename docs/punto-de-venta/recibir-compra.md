@@ -4,7 +4,7 @@ sidebar_label: "Recibir compra"
 sidebar_position: 9
 ---
 
-Este tutorial esta enfocado en recibir los productos de una orden de compra desde el punto de venta. Cuando usted crea una orden de compra, el sistema genera automaticamente una recepcion pendiente. Para que los productos ingresen al inventario, debe completar el proceso de recepcion.
+Llega el camión del proveedor y con él la mercadería que ordenó: este es el momento de registrar esa recepción para que los productos entren a su bodega y puedan venderse. Cuando usted crea una orden de compra, el sistema genera automáticamente una recepción pendiente que espera este paso. Completar la recepción es lo que hace que el inventario refleje lo que realmente llegó, ni una caja de más ni una de menos.
 
 ## Listado de compras pendientes de recibir
 
@@ -54,6 +54,8 @@ Al guardar la recepcion:
 - La orden de compra se marcara como recibida (total o parcialmente).
 
 Si no se recibe la cantidad total comprada, la orden de compra permanecera como "no recibida" para que pueda completar la recepcion en el futuro.
+
+Con la recepción guardada, su bodega ya tiene la mercadería lista para facturar y el historial de compras queda completo: qué pidió, qué llegó y qué sigue pendiente del proveedor. Si la entrega llegó incompleta, el sistema dejó todo anotado para que la próxima recepción termine el trabajo.
 
 ## API (llamadas desde sistemas externos)
 

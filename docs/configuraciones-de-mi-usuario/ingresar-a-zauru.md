@@ -4,6 +4,8 @@ sidebar_label: "Ingresar a Zauru"
 sidebar_position: 1
 ---
 
+El primer día de trabajo con Zauru, o cada mañana al encender la computadora, todo empieza en el mismo lugar: la página de ingreso. En esta guía le mostramos cómo entrar y el detalle que hay que cuidar para que el sistema siempre lo lleve a donde corresponde.
+
 Para accesar a Zauru escribimos en el URL de nuestro navegador (firefox, chrome, safari, edge, opera):
 > [app.zauru.com](https://app.zauru.com)
 

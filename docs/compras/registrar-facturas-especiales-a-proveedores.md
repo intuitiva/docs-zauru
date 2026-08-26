@@ -4,7 +4,7 @@ sidebar_label: "Emitir Facturas de compras a Proveedores"
 sidebar_position: 13
 ---
 
-El proceso de emisión de facturas de compras a proveedores tiene como objetivo registrar las adquisiciones a proveedores que operan en la economía informal o que, por diversas razones, no pueden proporcionar un documento contable convencional. En Guatemala, este procedimiento se denomina "__Facturas Especiales__", mientras que en El Salvador, el documento generado se conoce como "__Facturas de Sujeto Excluido__", y en Costa Rica se hace referencia a ellas como "__Facturas de Compras__".
+¿Le compra mercadería a un agricultor, le paga flete a un piloto particular o adquiere servicios de alguien que no le extiende factura? Para que ese gasto quede respaldado ante la administración tributaria, usted mismo debe emitir el documento que legaliza la compra. En Guatemala, este procedimiento se denomina "__Facturas Especiales__", mientras que en El Salvador el documento generado se conoce como "__Facturas de Sujeto Excluido__", y en Costa Rica se hace referencia a ellas como "__Facturas de Compras__".
 
 Las facturas de compra constituyen un documento legal debidamente autorizado por las entidades de administración tributaria de cada país. Este documento se emplea como respaldo al adquirir bienes o servicios de personas individuales que, debido a la naturaleza de sus actividades o por circunstancias particulares, no emiten o entregan el correspondiente documento tributario.
 
@@ -85,6 +85,8 @@ Notar que la transacción hacia cuentas por pagar queda con valor de Q.100.00.
 Notar que la Factura Especial da el total de Q.117.89.
 
 ![Muestra de Factura Especial](/img/compras/registrar-facturas-especiales-a-proveedores-9.png)
+
+Con la Factura Especial emitida, su compra queda respaldada legalmente aunque el proveedor no le haya entregado factura, y la transacción queda registrada en su contabilidad. Si acumula varias de estas compras, puede agrupar las órdenes ya recibidas y pendientes de pago en un consolidado de factura especial para emitir un solo documento.
 
 ## API (llamadas desde sistemas externos)
 

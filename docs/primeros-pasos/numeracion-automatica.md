@@ -4,7 +4,7 @@ sidebar_label: "Numeración Automática de Documentos (Plantillas)"
 sidebar_position: 4
 ---
 
-Zauru le permite colocar números automáticos de documento a:
+Antes de emitir su primer documento, conviene decidir cómo se numerará, para que cada factura o cheque salga con su número correcto sin digitarlo a mano. Zauru le permite colocar números automáticos de documento a:
 
 - Clientes
 - Proveedores
@@ -63,7 +63,7 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo 
 
 ![imagen6](/img/primeros-pasos/numeracion-automatica-6.jpg)
 
-
+Con su numeración automática creada, cada documento saldrá con la serie que usted definió y sin riesgo de números repetidos. Puede crear tantas numeraciones como necesite — una por agencia, por vendedor o por tipo de documento —, y Zauru aplicará la que corresponda según las restricciones que haya configurado.
 
 ---
 

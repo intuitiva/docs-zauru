@@ -4,9 +4,7 @@ sidebar_label: "Categoría de Gastos por Proyecto"
 sidebar_position: 6
 ---
 
-¿Qué sucede cuando se quiere saber el porcentaje de inversión de una categoría de gasto en un proyecto?
-
-Para realizar proyecto, hay empresas que tienen un presupuesto. A la vez, tienen presupuestos para los distintos gastos de una misma categoria. Zauru le da la opcion de un reporte enliste todas las transacciones con sus montos de un categoria en especifico en un proyecto en especifico.
+¿Quiere saber cuánto se ha gastado en una categoría dentro de un proyecto, por ejemplo en materiales o en mano de obra? Si su empresa maneja un presupuesto por categorías de gasto, este reporte le enlista todas las transacciones de la categoría en el proyecto, con sus montos, para que compare el gasto real contra lo presupuestado.
 
 Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 
@@ -20,3 +18,5 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Después se selecciona el proyecto y la categoría del gasto para que aparezca la información de la categoría en el proyecto.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-categoria-de-gastos-por-proyecto-2.png)
+
+Con esta lista podrá comparar el gasto real de la categoría contra su presupuesto y detectar a tiempo cualquier desviación.

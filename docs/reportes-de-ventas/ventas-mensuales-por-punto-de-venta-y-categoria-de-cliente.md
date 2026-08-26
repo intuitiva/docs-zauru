@@ -4,7 +4,7 @@ sidebar_label: "Ventas Mensuales por Punto de Venta y Categoría de Cliente"
 sidebar_position: 18
 ---
 
-Este reporte muestra una matriz de ventas mensuales donde las filas son los puntos de venta y las columnas son las categorías de clientes.
+Si maneja varios puntos de venta, conviene saber qué categoría de clientes compra más en cada uno. Esta matriz le cruza los dos datos en segundos, ideal para comparar sucursales y planificar inventario o promociones.
 
 Para ingresar al reporte:
 

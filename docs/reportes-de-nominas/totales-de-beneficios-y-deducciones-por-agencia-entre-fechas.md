@@ -4,7 +4,7 @@ sidebar_label: "Totales de Beneficios y Deducciones por Agencia entre Fechas"
 sidebar_position: 14
 ---
 
-Este reporte muestra los totales de cada tipo de beneficio y deduccion, agrupados por agencia, en un rango de fechas. Es util para analisis de costos laborales por agencia o sucursal.
+Si quiere comparar cuánto pesan los beneficios y las deducciones en cada agencia o sucursal, este reporte se lo presenta agrupado por agencia en el rango de fechas que elija. Le sirve, por ejemplo, para preparar el análisis de costos laborales del mes o para detectar dónde se concentran las deducciones.
 
 Para ingresar al reporte:
 
@@ -17,3 +17,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Con la exportación a Excel, cada agencia queda lista para su análisis.

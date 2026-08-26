@@ -4,7 +4,7 @@ sidebar_label: "Costos Semanales de Destajos"
 sidebar_position: 2
 ---
 
-Este reporte muestra el costo de destajos agrupado por tipo de destajo para cada semana. Permite ver cuales tipos de tarea generan mas costo.
+¿Cuánto le está costando cada tipo de destajo semana a semana? Si quiere identificar qué tareas pesan más en el gasto o comparar una semana contra la anterior, este reporte le agrupa el costo de los destajos por tipo de tarea para cada semana del rango que elija.
 
 Para ingresar al reporte:
 
@@ -15,3 +15,5 @@ Para ingresar al reporte:
 **Parametros**:
 
 - Rango de fechas.
+
+Es una forma sencilla de ver hacia dónde se va el dinero de sus destajos y planear con calma las próximas semanas.

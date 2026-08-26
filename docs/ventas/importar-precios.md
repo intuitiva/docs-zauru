@@ -4,7 +4,7 @@ sidebar_label: "Precios sugeridos"
 sidebar_position: 3
 ---
 
-Antes de comenzar a vender sus productos tiene que ponerle precios sugeridos de venta. Si algun item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta.
+Piense en el momento de abrir su tienda: si un producto no tiene precio, no podrá facturarlo. Por eso, antes de comenzar a vender hay que asignarle precios sugeridos de venta a cada producto: si algun item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta. Aquí verá cómo crearlos a mano, cómo consultar su historial y cómo importarlos masivamente desde Excel para ahorrarse horas de digitación.
 
 ## Listar Precios Sugeridos
 
@@ -183,6 +183,8 @@ Al terminar de llenar el archivo de Excel con todos los precios de sus productos
 7. Para Importar los precios presione **"Importar Precios"**.
 
 ![imagen7](/img/ventas/importar-precios-4.jpg)
+
+Con los precios cargados, todos sus productos quedaron listos para aparecer en las órdenes y facturas, y usted se ahorró la digitación manual de cada uno. Cada vez que cambien sus precios, puede repetir la importación o actualizar los precios sugeridos directamente desde este módulo.
 
 ## API (llamadas desde sistemas externos)
 
@@ -795,3 +797,14 @@ Esto devolverá un JSON similar a este:
 ```json
 {}
 ```
+
+### Campos adicionales soportados en la importación
+
+Además de los campos previos, el archivo de importación de precios ahora admite las siguientes columnas:
+
+- `currency_code`: código de la moneda (ej. `GTQ`, `USD`). Zauru buscará la moneda por su código; si no existe, la importación reportará el error "La moneda no existe".
+- `price_list_name`: nombre de la lista de precios a la que pertenece el precio. Zauru buscará la lista por nombre; si no existe, reportará "La lista de precios no existe".
+- `price_list_id`: ID de la lista de precios.
+- `flexible_price_expiration`: fecha de expiración del precio flexible.
+
+Si la moneda o la lista de precios indicadas no existen, la fila no se importará y se mostrará el error correspondiente.

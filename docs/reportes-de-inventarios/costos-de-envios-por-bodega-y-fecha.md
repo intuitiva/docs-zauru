@@ -4,7 +4,7 @@ sidebar_label: "Costos de Envios por Bodega y Fecha"
 sidebar_position: 14
 ---
 
-Este reporte calcula el costo de los envios realizados, mostrando el costo promedio, costo total y precio de venta sugerido.
+Cuando envía productos a la bodega de un cliente y quiere saber cuánto le costó de verdad cada entrega, este reporte le muestra el costo promedio, el costo total y el precio de venta sugerido de los envíos realizados. Es una forma sencilla de entender la rentabilidad de lo que sale de su bodega.
 
 Para generar el reporte:
 
@@ -29,3 +29,5 @@ Para generar el reporte:
 - El precio de venta se obtiene del precio sugerido del item para la bodega destino.
 
 **Exportacion**: disponible en formato XLS.
+
+Conocer el costo real de cada envío le ayuda a fijar mejores precios, defender sus márgenes y reconocer cuáles clientes justifican el esfuerzo de la entrega.

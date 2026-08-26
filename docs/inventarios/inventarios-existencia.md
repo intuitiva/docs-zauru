@@ -4,7 +4,7 @@ sidebar_label: "Subir existencias iniciales"
 sidebar_position: 1
 ---
 
-Zauru le permite importar existencias de sus productos por medio de una plantilla de Excel predefinida. Antes de poder importar existencias tuvo que haber creado los ítems de sus productos.
+Cuando empieza a trabajar con Zauru, o cuando abre una bodega nueva, el primer reto es registrar todo lo que ya tiene sin contar producto por producto a mano. Para eso existe la importación de existencias iniciales: con una plantilla de Excel predefinida usted carga las cantidades de todos sus productos en un solo paso. Eso sí, antes de importar existencias debe haber creado los ítems de sus productos.
 
 Los pasos para importar existencias son los siguientes:
 
@@ -48,6 +48,8 @@ Después de haber hecho su plantilla de importación de Excel, los pasos para co
 7.Presione “Importar Existencias” para importar.
 
 ![imagen4](/img/inventarios/inventarios-existencia-4.png)
+
+Con la importación hecha, sus productos ya tienen existencias en la bodega y están listos para moverse: puede reservarlos en un envío, venderlos o auditarlos. Si más adelante abre otra bodega, el mismo procedimiento le sirve para dejarla con existencias al día.
 
 ## API (llamadas desde sistemas externos)
 

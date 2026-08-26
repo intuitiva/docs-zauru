@@ -4,7 +4,7 @@ sidebar_label: "Gastos por Proyecto por Proveedor"
 sidebar_position: 5
 ---
 
-En los proyectos no se involucra solamente una empresa. Existe un sin numeros de proveedores que aportan conocimiento, material, mano de obra, entre otros elementos para que el proyecto sea un éxito. Es necesario siempre tener un control de los proveedores en un proyecto, para asi tener las cuentas a la mano en el momento de pagarles o para comparar el gasto con el presupuesto.
+En un proyecto participan muchos proveedores que aportan materiales, mano de obra o conocimiento, y conviene tener sus cuentas a la mano al momento de pagarles o de comparar el gasto contra el presupuesto. Este reporte le enlista los gastos realizados con cada proveedor dentro del proyecto.
 
 Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 
@@ -18,3 +18,5 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 Al seleccionar el proyecto, se verá enlistada toda la información de los gastos que se han realizado con el proveedor seleccionado.
 
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-por-proyecto-por-proveedor-2.png)
+
+Con esta lista podrá comparar lo gastado con cada proveedor y tener las cuentas a la mano cuando llegue el momento de pagarles.

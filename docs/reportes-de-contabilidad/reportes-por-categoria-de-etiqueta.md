@@ -4,7 +4,7 @@ sidebar_label: "Reportes por Categoria de Etiqueta"
 sidebar_position: 33
 ---
 
-Todos los reportes por etiqueta tienen su contraparte por **categoria de etiqueta**, que abarca todas las etiquetas hijas de una categoria. Son utiles para ver resultados consolidados de areas o departamentos completos.
+Si quiere ver los resultados consolidados de un área o departamento completo —por ejemplo, todos los gastos de la división de proyectos—, estos reportes son para usted. Cada reporte por etiqueta tiene su contraparte por categoría de etiqueta, que reúne todas las etiquetas hijas de una categoría.
 
 Para ingresar a estos reportes:
 
@@ -20,3 +20,5 @@ Para ingresar a estos reportes:
 - Balance por categoria de etiqueta.
 - Gastos por documento fuente y categoria de etiqueta.
 - Gastos por proveedor y categoria de etiqueta.
+
+Con estos reportes podrá presentar los números de cada área o departamento sin armar sumas manuales.

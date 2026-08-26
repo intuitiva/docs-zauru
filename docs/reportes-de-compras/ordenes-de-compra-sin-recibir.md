@@ -4,13 +4,15 @@ sidebar_label: "Ordenes de Compra Sin Recibir"
 sidebar_position: 20
 ---
 
-Este reporte lista todas las ordenes de compra que han sido autorizadas pero no han sido recibidas aun. Es util para dar seguimiento a compras pendientes de recepcion.
+Cuando necesita ver qué órdenes siguen sin recibir —por ejemplo, para reclamar a un proveedor una entrega atrasada o para preparar la recepción de lo que está por llegar— este reporte le lista todas las órdenes autorizadas que aún no han sido recibidas. Es su herramienta para que ninguna compra autorizada se quede en el aire.
 
 Para ingresar al reporte:
 
 1. Ir a "Compras".
 2. Seleccionar "Reportes".
 3. Seleccionar "Ordenes de Compra sin Recibir".
+
+Con este listado puede dar seguimiento a cada orden pendiente y asegurarse de que todo lo autorizado termine recibido y registrado.
 
 ## API (llamadas desde sistemas externos)
 

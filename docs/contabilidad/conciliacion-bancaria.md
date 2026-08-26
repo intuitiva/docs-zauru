@@ -4,7 +4,7 @@ sidebar_label: "Conciliacion Bancaria"
 sidebar_position: 23
 ---
 
-La conciliacion en el sistema sirve para asegurarnos que la informacion del estado de cuenta del banco coincide con la informacion registrada en Zauru de una forma rapida y con el valor anadido que nos muestra los cheques en circulacion (transacciones que no estan en el estado de cuenta del banco pero si en Zauru o viceversa).
+Cada vez que el banco le entrega el estado de cuenta del mes, conviene tomarlo y comprobar que lo que dice coincide con lo que está registrado en Zauru: aquí le mostramos cómo hacerlo de forma rápida y ordenada. Es el momento de conciliar cuando quiere estar seguro de que no le falta ningún depósito ni le sobra ningún cheque, y de paso ver los cheques en circulación: transacciones que ya están en Zauru pero que el banco todavía no refleja (o viceversa).
 
 Como datos iniciales necesitamos el estado de cuenta del banco para poder generar la conciliacion, algo similar a esto:
 
@@ -90,6 +90,8 @@ El reporte de conciliacion muestra:
 Este reporte ya se puede imprimir para presentarlo.
 
 ![reporte de conciliacion](/img/contabilidad/conciliacion-bancaria-8.png)
+
+Con la conciliación cerrada, usted ya puede presentar el reporte a su contador o archivarlo como respaldo del mes: los saldos cuadran y las diferencias quedan explicadas partida por partida. El siguiente paso natural es verificar esas partidas contables para que el periodo quede protegido contra ediciones.
 
 ## API (llamadas desde sistemas externos)
 

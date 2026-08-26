@@ -4,9 +4,7 @@ sidebar_label: "Consolidar varias orden de compra"
 sidebar_position: 7
 ---
 
-Este tutorial esta enfocado en consolidar dos o mas ordenes de compra. Esta función beneficia a los importadores que generen dos compras en el mismo país pero a distinto proveedor, y luego reciba las dos ordenes de compra en puerto origen y las importe juntas en un solo contenedor.
-
-Para poder registrar cargos de importación, aranceles o impuestos de las dos compras a la vez, Zauru le permite consolidar dos o mas ordenes de compra, y agregar los cargos y aranceles una sola vez para las dos o mas compras.
+Imagínese que le compra mercadería a dos proveedores en el mismo país y ambas compras viajan juntas en un solo contenedor hasta su bodega: el flete, el seguro y los aranceles se pagan una sola vez, pero deben repartirse entre las dos órdenes. Para esos casos, Zauru le permite consolidar dos o más órdenes de compra y registrar los cargos de importación, aranceles e impuestos una sola vez para todas las compras que viajaron juntas. En este tutorial aprenderá a crear la consolidación y a revisar cómo quedan unidas sus órdenes.
 
 Los pasos para hacer una consolidación de ordenes de compra son los siguientes:
 
@@ -41,7 +39,7 @@ En los detalles del Consolidado podrá encontrar las ordenes de compra que se co
 
 ## Consolidados para Facturas Especiales
 
-Zauru tambien permite crear consolidados para el caso especial de facturas de compras a proveedores (Facturas Especiales, Facturas de Sujeto Excluido o Facturas de Compras). Estos consolidados se crean a partir de ordenes de compra que ya fueron recibidas pero aun no han sido pagadas.
+Hay otro momento en el que un consolidado le ahorra tiempo: cuando usted le compra a proveedores que no emiten factura, como un transportista individual o un productor agrícola, y necesita emitir el documento que respalda esas compras. Zauru también permite crear consolidados para el caso especial de facturas de compras a proveedores (Facturas Especiales, Facturas de Sujeto Excluido o Facturas de Compras), a partir de órdenes de compra que ya fueron recibidas pero aún no han sido pagadas.
 
 La diferencia principal con un consolidado regular es que este tipo de consolidado esta disenado para emitir la factura especial que respalda las compras realizadas a proveedores que no emiten factura. El consolidado de factura especial utiliza un termino de pago que fuerza el calculo de precios sin impuestos y un item predefinido para el consolidado.
 
@@ -76,6 +74,8 @@ Para utilizar los consolidados de facturas especiales, debe tener configurado:
 3. Numeracion automatica de documentos para facturas especiales (FEL).
 
 Consulte los tutoriales de "Configuracion de Variables del Modulo de Compras" y "Emitir Facturas de compras a Proveedores" para mas detalles.
+
+Con el consolidado creado, ya puede registrar los cargos de importación una sola vez y ver cómo se reparten entre todas las órdenes que viajaron juntas. Ese es el paso que sigue naturalmente en su flujo: agregar fletes, aranceles y demás gastos al consolidado para que cada producto cargue su parte justa del costo.
 
 ## API (llamadas desde sistemas externos)
 

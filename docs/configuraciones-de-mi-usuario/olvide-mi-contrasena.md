@@ -4,7 +4,7 @@ sidebar_label: "Olvide mi contraseña"
 sidebar_position: 2
 ---
 
-Suele suceder que se nos olvida nuestra contraseña, para ingresar de nuevo es necesario realizar los siguientes pasos después de ingresar nuestro usuario y contraseña:
+Es lunes por la mañana, abre la computadora para facturar y la contraseña no le viene a la mente por más que lo intente. No se preocupe: nos pasa a todos, y Zauru tiene un camino sencillo para volver a entrar sin depender de nadie. Si olvidó su contraseña, realice los siguientes pasos desde la pantalla donde se colocan el usuario y la contraseña:
 
 Ingresar a: Olvide mi contraseña
 Ingresar a: Usuario

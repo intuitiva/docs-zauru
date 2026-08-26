@@ -4,7 +4,7 @@ sidebar_label: "Adjuntar un gasto a un proyecto"
 sidebar_position: 2
 ---
 
-Este tutorial esta enfocado en adjuntar gastos a un proyecto para que se vean reflejados en el balance mensual del proyecto.
+Cuando un gasto pertenece a una obra y no a la operación normal de su empresa — por ejemplo, la compra de materiales para una construcción o el pago de un flete exclusivo de un proyecto — conviene adjuntarlo al proyecto correspondiente. Así, cada gasto queda registrado en su lugar y aparece en el balance mensual del proyecto, sin mezclarse con los demás gastos de la empresa. Este tutorial le muestra cómo hacerlo en pocos pasos.
 
 Los pasos para hacerlo son los siguientes:
 
@@ -24,6 +24,8 @@ Le aparecerán las opciones para crear un nueva transacción, después de coloca
 Luego de crear la factura le aparecerá un mensaje en la pantalla y podrá ver los detalles de la transacción creada, en la parte inferior de la página podrá ver los proyectos asociados. Esta transacción de gastos se vera reflejada en el balance mensual del proyecto.
 
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-adjuntar-un-gasto-a-un-proyecto-3.jpg)
+
+Ya tiene su gasto asociado al proyecto. Si quiere verlo reflejado junto con todos los demás movimientos de la obra, el siguiente paso natural es revisar el balance mensual del proyecto, donde encontrará esta transacción ordenada junto al resto.
 
 ## API (llamadas desde sistemas externos)
 
