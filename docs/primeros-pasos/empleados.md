@@ -4,7 +4,7 @@ sidebar_label: "Empleados"
 sidebar_position: 2
 ---
 
-Zauru le permite tener un registro de todos sus empleados, asignar responsabilidades distintas a cada empleado y asignar una agencia para el punto de venta o para que registre casos en el modulo de soporte.
+Cada vez que contrata a alguien nuevo, conviene registrarlo en Zauru para que pueda participar en las operaciones que le correspondan. El registro de empleados le permite asignar responsabilidades distintas a cada persona — como vender, comprar o registrar casos de soporte — y asignarle una agencia para el punto de venta.
 
 Los pasos para crear un nuevo empleado son:
 
@@ -43,7 +43,7 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se cr
 ![imagen11](/img/primeros-pasos/empleados-4.png)
 
 ## Categoría de Empleados
-Zauru le permite tener un registro de todos sus empleados y categorizarlos para tenerlos organizados de una forma más eficiente.
+Cuando su equipo crece, organizar a los empleados por categorías — por ejemplo, administrativos y vendedores — le facilita ubicarlos y filtrarlos en los listados.
 
 Los pasos para crear una nueva categoría de empleado son:
 
@@ -710,6 +710,8 @@ Los datos exportados incluyen: numero de identificación, nombre, identificació
 ## Formularios Asociados al Empleado
 
 Al visualizar los detalles de un empleado, Zauru le mostrará los formularios personalizados que tenga asociados para el tipo de documento "Empleado". Estos formularios permiten capturar información adicional específica de cada empleado.
+
+Ya creó sus empleados, los organizó en categorías y, si lo necesitaba, los importó desde Excel. Ahora puede seleccionarlos en las transacciones según sus responsabilidades; si aún no ha creado las agencias a las que los asignará, ese es el siguiente paso natural.
 
 ## API (llamadas desde sistemas externos)
 

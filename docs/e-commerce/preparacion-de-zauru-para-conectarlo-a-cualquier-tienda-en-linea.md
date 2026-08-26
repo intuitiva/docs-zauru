@@ -4,7 +4,7 @@ sidebar_label: "Preparación de Zauru para conectarlo a cualquier software de ti
 sidebar_position: 1
 ---
 
-Para que Zauru se pueda conectar a cualquier e-commerce debemos configurar algunas cosas para que la comunicación fluya sin problemas entre los 2 sistemas.
+Si ya tiene una tienda en línea —o planea abrirla pronto— y quiere que los pedidos entren solos a Zauru, esta guía es su punto de partida: aquí se prepara todo lo que Zauru necesita antes de conectar cualquier tienda. Con estos ajustes iniciales, la comunicación entre ambos sistemas fluye sin problemas y cada pedido llega listo para convertirse en una orden de venta.
 
 ## Habilitar el módulo de e-commerce
 Este paso es solicitarlo a su distribuidor de Zauru porque puede incurrir en costos adicionales.
@@ -24,6 +24,9 @@ Luego que se haya aceptado la invitación y creado el rol, podemos unirlos por m
 Este usuario debe tener TODOS los permisos disponibles del módulo de e-commerce. Ver el manual de [permisos personalizados](https://docs.zauru.com/permisos-de-acceso/permisos "permisos").
 
 ## Habilitar e-commerce en los Items
+
+Aquí decide qué productos quiere vender en línea: no es necesario habilitar todo el catálogo, únicamente los items que quiera mostrar en la tienda.
+
 Para que los items se puedan sincronizar desde el módulo de [e-commerce](https://docs.zauru.com/e-commerce/solicitar-los-items-disponibles-con-el-api "solicitar items") es habilitar en cada item que se quiera mostrar en la tienda en linea.
 
 ## Agregar la responsabilidad de e-commerce en las agencias de donde se va a obtener producto para la tienda en linea
@@ -49,3 +52,5 @@ Los campos principales que se configuran en esta sección son:
 7. **Usuario de e-commerce** — El usuario asignado para procesar las solicitudes de e-commerce.
 8. **URL de producción** — La URL de la tienda en línea en producción.
 9. **URL de pruebas** — La URL de la tienda en línea en pruebas.
+
+Con esta preparación lista, Zauru queda a un paso de recibir pedidos de cualquier tienda en línea. Lo que sigue es afinar los parámetros en la configuración avanzada del módulo y, si su tienda es WooCommerce, dejar lista la conexión de ese lado.

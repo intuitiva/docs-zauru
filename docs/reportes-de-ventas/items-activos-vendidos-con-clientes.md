@@ -4,13 +4,15 @@ sidebar_label: "Ítems Activos Vendidos con Clientes"
 sidebar_position: 30
 ---
 
-Este reporte es el listado de ítems activos que han sido vendidos, mostrando los clientes que los compraron.
+Si quiere saber qué productos de su catálogo siguen saliendo y quiénes los compran, este listado se lo muestra con nombre y apellido. Reúne los ítems activos que han sido vendidos junto a los clientes que los compraron, ideal cuando revisa qué tiene rotación real o prepara una oferta dirigida.
 
 Para ingresar al reporte:
 
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Activos Vendidos con Clientes".
+
+Con el reporte en pantalla sabrá qué productos vale la pena seguir impulsando y con qué clientes conviene hablar primero.
 
 ## API (llamadas desde sistemas externos)
 

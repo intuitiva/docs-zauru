@@ -4,7 +4,7 @@ sidebar_label: "Nominas por Corrida de Nomina"
 sidebar_position: 10
 ---
 
-Este es el reporte de nivel empleado de una corrida de nomina. Para cada empleado muestra:
+Antes de aprobar una corrida de nómina, conviene revisar que cada empleado haya quedado bien calculado, y este reporte le da ese panorama completo, empleado por empleado. También es la mejor manera de responderle a alguien que pregunta cómo se integró su pago de la quincena. Para cada empleado muestra:
 
 - Salario base.
 - Horas extra.
@@ -28,3 +28,5 @@ Para ingresar al reporte:
 - Corrida de nomina.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Con el Excel en la mano, la revisión de la corrida y el respaldo de cada cálculo quedan resueltos.

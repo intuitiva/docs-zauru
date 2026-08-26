@@ -4,8 +4,7 @@ sidebar_label: "Existencias de Items de un Proveedor"
 sidebar_position: 5
 ---
 
-Crea un listado exhaustivo de todos los ítems proporcionados por el proveedor.
-Nos servirá como una herramienta valiosa para la gestión eficiente y efectiva de las existencias de ítems de un proveedor, asegurando coherencia en los procedimientos y calidad en el manejo del los inventarios.
+Antes de llamar a su proveedor o de preparar una orden de compra, es bueno tener a la vista cuánto tiene de cada uno de sus ítems. Este reporte le muestra el nivel actual de existencias de todos los productos de un proveedor, separando lo disponible, lo entrante y lo saliente, para que nunca pida de más ni se quede corto.
 
 Para visualizar el reporte de Existencias de ítems de un proveedor debemos de:
 
@@ -27,3 +26,5 @@ El reporte muestra el nivel actual de existencias de todos los productos de un p
 **Columnas**: producto, categoria, disponible, entrante, saliente.
 
 **Exportacion**: disponible en formato XLS.
+
+Con esta vista clara de sus existencias, cada orden de compra se vuelve más segura y cada visita del proveedor, más productiva.

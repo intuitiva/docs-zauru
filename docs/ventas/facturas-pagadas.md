@@ -4,7 +4,7 @@ sidebar_label: "Facturas Pagadas"
 sidebar_position: 11
 ---
 
-Este tutorial está enfocado en como consultar, imprimir y gestionar las facturas que ya han sido pagadas total o parcialmente.
+¿Necesita reimprimir la factura de un cliente que ya pagó, o revisar cuánto le han abonado hasta hoy? Este tutorial le muestra cómo consultar, imprimir y gestionar las facturas que ya han sido pagadas total o parcialmente, incluyendo la descarga en PDF y la edición de datos sin tocar la contabilidad.
 
 ## Listar Facturas Pagadas
 
@@ -88,6 +88,8 @@ Para realizar esta edición:
 Para anular una factura que ya está pagada, primero debe anular el pago asociado. Consulte el tutorial de **"Anular una factura o recibo"** para el procedimiento completo.
 
 Las facturas pagadas que no tienen detalles de pago y tienen saldo pendiente en cero pueden ser anuladas directamente con la opción **"Anular sin Pagos"**.
+
+Con esto podrá encontrar cualquier factura pagada en segundos y entregarle al cliente una copia impresa o en PDF cuando la pida. Si alguna vez necesita corregirla de raíz, recuerde que primero se anula el pago; el procedimiento completo está en el tutorial de anulación de facturas.
 
 ## API (llamadas desde sistemas externos)
 

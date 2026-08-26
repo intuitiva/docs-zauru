@@ -4,7 +4,7 @@ sidebar_label: "Casos Cerrados"
 sidebar_position: 11
 ---
 
-Este tutorial esta enfocado en como consultar y gestionar los casos que ya han sido cerrados.
+¿Necesita revisar cómo se resolvió una garantía hace tres meses, o repasar el historial de atenciones de un cliente antes de cotizarle un nuevo servicio? Los casos cerrados guardan todo ese pasado. Aquí aprenderá a consultar y gestionar los casos que ya fueron cerrados, con los mismos filtros y opciones que los casos abiertos.
 
 ## Ver Casos Cerrados
 
@@ -56,6 +56,8 @@ Para cada caso cerrado, tiene disponibles las siguientes acciones:
 ## Ver Detalles de un Caso Cerrado
 
 Al hacer click en **"Verificar"**, vera la misma pagina de detalles que en un caso abierto, con toda la informacion del caso: suministros, horas de agentes, facturas, ordenes de compra, bitacora y formularios.
+
+Con el historial a la mano, podrá responder en minutos cuando un cliente pregunte cuándo fue la última vez que se atendió su equipo o qué se le cobró. Para atender los pendientes del día, el siguiente paso natural es volver al listado de casos abiertos.
 
 ## API (llamadas desde sistemas externos)
 

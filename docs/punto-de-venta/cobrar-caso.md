@@ -4,7 +4,7 @@ sidebar_label: "Cobrar caso"
 sidebar_position: 6
 ---
 
-Este tutorial esta enfocado en cobrar un caso creado desde el punto de venta. Los pasos para cobrar un caso son los siguientes:
+Cuando un cliente llega a recoger el equipo que dejó en servicio técnico y paga la reparación al momento de la entrega, aquí es donde registra ese cobro. Este tutorial también le será útil cada vez que un caso del punto de venta tenga una factura pendiente y quiera cobrarla desde la misma pantalla. Los pasos para cobrar un caso son los siguientes:
 
 1. Ir a “P.D.V.”
 2. Seleccionar “Casos”.
@@ -51,6 +51,8 @@ Si necesita anular un cobro de caso no confirmado:
 3. Confirme la anulacion.
 
 El cobro sera anulado y la factura del caso volvera a aparecer como no pagada.
+
+Ya conoce el ciclo completo del cobro de un caso: crearlo, confirmarlo y, si hace falta, anularlo. Cuando cierre el caso, la factura y su cobro quedarán bien contabilizados, y si el cliente aún no ha pagado, puede volver a este listado cuando regrese por su equipo.
 
 ## API (llamadas desde sistemas externos)
 

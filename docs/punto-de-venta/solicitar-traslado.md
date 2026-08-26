@@ -4,7 +4,7 @@ sidebar_label: "Solicitar traslado"
 sidebar_position: 10
 ---
 
-Este tutorial esta enfocado en crear solicitudes de traslado de productos entre bodegas desde el punto de venta. Una solicitud de traslado permite a un punto de venta pedir productos a una bodega central u otra sucursal para reabastecer su inventario.
+Cuando las estanterías de su sucursal se quedan vacías y la mercadería está en la bodega central, una solicitud de traslado es la manera formal de pedirla. Con ella, su punto de venta le dice a la otra bodega qué productos necesita y para cuándo, y queda todo por escrito para que nadie tenga que adivinar qué hacía falta. Es el primer paso del reabastecimiento entre sucursales.
 
 ## Listado de solicitudes de traslado
 
@@ -72,6 +72,8 @@ Para modificar una solicitud existente:
 2. Haga click en el boton de editar.
 3. Realice los cambios necesarios en productos, cantidades o datos generales.
 4. Presione "Guardar" para actualizar la solicitud.
+
+Con la solicitud creada, la bodega de origen ya sabe exactamente qué prepararle. El siguiente paso del viaje de esa mercadería es convertir la solicitud en una reserva para despacharla, y desde ahí quedará en camino hacia su punto de venta.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,9 +4,7 @@ sidebar_label: "Roles"
 sidebar_position: 1
 ---
 
-Los roles en Zauru se crean para asignarles ciertos permisos y asignárselo a *__uno o varios usuarios__* cuando se suscriben.
-
-Esto nos facilita el proceso de reemplazo de usuarios (en caso de renuncia o despido de empleados) o en el crecimiento de los negocios donde aumentan sucursales, vendedores o personal operativo.
+Cuando contrata a su primer cajero, cuando un empleado renuncia y llega su reemplazo, o cuando abre una sucursal nueva con más vendedores, los roles le ahorran configurar permisos persona por persona. Los roles en Zauru se crean para asignarles ciertos permisos y asignárselos a *__uno o varios usuarios__* cuando se suscriben, lo que facilita el proceso de reemplazo de usuarios (en caso de renuncia o despido de empleados) o el crecimiento de los negocios donde aumentan sucursales, vendedores o personal operativo.
 
 Los pasos para crear un nuevo rol son los siguientes:
 

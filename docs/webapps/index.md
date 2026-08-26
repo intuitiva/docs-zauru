@@ -4,7 +4,7 @@ sidebar_label: "Webapps"
 sidebar_position: 0
 ---
 
-Este módulo potencializa la creación de aplicaciones a la medida integradas con Zauru para que se sientan como aplicaciones nativas de Zauru.
+Cuando su equipo maneja procesos o herramientas que Zauru todavía no cubre —una hoja de cálculo de cotizaciones, un formulario de captura propio, un tablero de producción— el módulo de Webapps le permite traerlos adentro del sistema. Con este módulo puede crear aplicaciones a la medida, integradas con Zauru, que se sienten y se usan como aplicaciones nativas, sin saltar entre pestañas ni duplicar información.
 
 ## Historia de las Webapps
 Las aplicaciones web son aplicaciones hechas con tecnologías abiertas que permiten la interacción con el usuario a traves de un navegador como Firefox, Chrome, Safari o Edge.

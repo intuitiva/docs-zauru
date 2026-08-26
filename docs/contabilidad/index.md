@@ -4,7 +4,7 @@ sidebar_label: "Contabilidad"
 sidebar_position: 0
 ---
 
-Este módulo sirve para el control de dinero de la empresa mediante un sistema de partida doble, permitiendo llevar la contabilidad de forma completa. Incluye las siguientes funcionalidades:
+Si quiere saber en todo momento cuánto dinero entra, cuánto sale y dónde está cada quetzal de su empresa, este módulo le da ese control completo: cada venta, compra y pago queda registrado en un sistema de partida doble, con sus cuentas, sus impuestos y sus reportes al día. Es la herramienta que usa cada día para registrar transacciones, cada fin de mes para conciliar y cerrar, y cada vez que su contador o la SAT le piden un reporte. Incluye las siguientes funcionalidades:
 
 ## Configuración y catálogo de cuentas
 

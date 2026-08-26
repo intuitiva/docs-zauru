@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Venta y Facturas"
 sidebar_position: 4
 ---
 
-Este tutorial esta enfocado en explicar las diferencias entre una orden de venta y una factura; y entender cuando usar cada una de ellas.
+Piense en un cliente que pide mercadería hoy pero la quiere facturar hasta el viernes, o en un servicio que se cobra por adelantado. Para decidir cómo registrarlo, primero hay que entender la diferencia entre una orden de venta y una factura, y este tutorial le muestra cuándo usar cada una, cómo crearlas y cómo convertir una orden en factura.
 
 Una orden de venta es una pre-factura o dependiendo del flujo de trabajo se puede tomar como una orden de trabajo o hasta como una cotización.
 
@@ -192,6 +192,28 @@ Para consultar el historial de facturas anuladas:
 
 Puede filtrar por rango de fechas para acotar la búsqueda.
 
+### Cambiar los números de serie de los bundles de una factura (no pagada)
+
+Si una factura no pagada contiene ítems identificables dentro de bundles (paquetes) y tiene un envío de entrega registrado, Zauru le permite corregir los números de serie asociados a esos ítems sin tener que anular la factura.
+
+Para cambiar los números de serie:
+
+1. Ir a **"Ventas"** > **"Facturas no Pagadas"**.
+2. Abrir la factura no pagada correspondiente.
+3. Hacer click en la acción **"Cambiar números de serie"** (icono de código de barras). Esta opción solo aparece cuando la factura cumple las condiciones (factura no pagada con bundles identificables que tengan envío de entrega).
+4. En el formulario, indique una **referencia** (obligatoria) para registrar el cambio.
+5. Para cada ítem se mostrará el **número de serie actual** y un selector con los números de serie disponibles en la agencia. Elija el nuevo número de serie para cada uno.
+6. Presione **"Guardar"**.
+
+![cambiar-numeros-de-serie](/img/ventas/cambiar-numeros-de-serie-1.png)
+
+El sistema genera internamente el movimiento de los ítems con los nuevos números de serie y, al finalizar, se mostrará un mensaje de confirmación. Tenga en cuenta las siguientes validaciones:
+
+- Debe registrar una referencia; de lo contrario el cambio no se guardará.
+- No puede asignar el mismo número de serie a dos ítems distintos (los números de serie deben ser únicos).
+- Solo se pueden seleccionar números de serie disponibles en la agencia de la factura.
+- Si no modifica ningún número de serie, el sistema le indicará que no hubo cambios que guardar.
+
 ## Gestión Avanzada de Órdenes de Venta
 
 ### Editar Metadata de Creación de una Orden
@@ -259,6 +281,8 @@ De manera similar, para facturas electrónicas anuladas, puede consultar la resp
 2. Seleccionar la opción de **"Respuesta Certificada de Anulación"** (`external_storage_certified_response_for_voiding`).
 
 Esta funcionalidad también está disponible para notas de crédito electrónicas, tanto para su emisión como para su anulación.
+
+Con esto domina el ciclo completo de venta: crea la orden, la convierte en factura cuando corresponde y consulta o reenvía el documento electrónico cuando el cliente lo necesita. Cada venta que registre quedará con su contabilidad, su inventario y su respaldo fiscal en orden.
 
 ## API (llamadas desde sistemas externos)
 

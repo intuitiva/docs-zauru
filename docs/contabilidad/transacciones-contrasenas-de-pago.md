@@ -4,7 +4,7 @@ sidebar_label: "[Transacciones] Contraseñas de pago a proveedores"
 sidebar_position: 13
 ---
 
-Este tutorial esta enfocado en la creación de contraseñas de pago para los proveedores. Las contraseñas de pago se dan cuando un proveedor nos da una factura al crédito y tenemos que darle un detalle de la fecha en que se va pagar la factura que nos emitieron.
+Cada vez que un proveedor le entrega una factura al crédito, conviene dejarle por escrito cuándo se la va a pagar: ese comprobante es la contraseña de pago, y aquí verá cómo crearla e imprimirla. Le sirve para tener claras sus cuentas por pagar y para que el proveedor sepa exactamente cuándo esperar su dinero.
 
 > Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compras).
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
@@ -50,6 +50,8 @@ Presione “Crear nueva transacción”.
 Le aparecerá un mensaje notificándole que la transacción se creo exitosamente, para imprimir la contraseña de pago seleccione “Imprimir como Contraseña de Pago” en la parte inferior de la pagina.
 
 ![imagen3](/img/contabilidad/transacciones-contrasenas-de-pago-3.jpg)
+
+Con la contraseña de pago creada e impresa, la factura del proveedor queda registrada en sus cuentas por pagar con la fecha de pago prometida. Cuando llegue ese día, registre el pago del cheque y salde la cuenta por pagar.
 
 ## API (llamadas desde sistemas externos)
 

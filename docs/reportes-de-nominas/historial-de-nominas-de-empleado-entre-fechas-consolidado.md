@@ -4,7 +4,7 @@ sidebar_label: "Historial de Nominas de Empleado entre Fechas (Consolidado)"
 sidebar_position: 12
 ---
 
-Este reporte muestra un resumen consolidado de todas las nominas de un empleado en un rango de fechas. Agrupa los totales de salario, horas extra, jornada nocturna, comisiones, bonificacion, beneficios y deducciones por corrida.
+Si un empleado le pide un resumen de lo que se le ha pagado en un período —o usted necesita revisar la trayectoria de pagos de alguien—, este reporte le entrega el historial consolidado de sus nóminas. Agrupa por corrida los totales de salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios y deducciones.
 
 Para ingresar al reporte:
 
@@ -18,3 +18,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Es la foto completa del historial de pago de un empleado, en un solo lugar y lista para imprimir o compartir.

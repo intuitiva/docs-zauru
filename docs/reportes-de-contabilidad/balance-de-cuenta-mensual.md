@@ -4,7 +4,7 @@ sidebar_label: "Balance de Cuenta Mensual"
 sidebar_position: 7
 ---
 
-El balance de cuenta mensual nos muestra los movimientos de la cuenta que estamos consultando, se puede consultar hasta un máximo de seis meses.
+¿Quiere seguirle el rastro a una cuenta contable específica, como si revisara su estado de cuenta bancario? El balance de cuenta mensual le muestra los movimientos de la cuenta que está consultando, y puede consultarlo hasta un máximo de seis meses.
 
 Los pasos para ver el balance de cuenta mensual son:
 
@@ -33,3 +33,5 @@ El reporte muestra el estado de cuenta mensual de una cuenta contable especifica
 - Debitos (cargos).
 - Creditos (abonos).
 - Saldo (balance corrido).
+
+Con este desglose puede revisar transacción por transacción, conciliar saldos y detectar cualquier movimiento que no cuadre antes de cerrar el mes.

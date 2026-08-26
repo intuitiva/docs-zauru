@@ -4,12 +4,12 @@ sidebar_label: "[Transacciones] Manejo de Cajas Chicas"
 sidebar_position: 17
 ---
 
-Este tutorial esta enfocado en registrar los gastos de la empresa hecho por los empleados. Hay dos formas de registrar estos gastos:
+Cada vez que un empleado gasta dinero de la empresa —para la oficina, una entrega o un mandado—, conviene dejar registrado de dónde salió el efectivo y en qué se usó. Hay dos formas de registrar estos gastos: darle el dinero primero y que después reporte, o esperar a que reporte y pagarle después.
 
 1. Gastos pagados anticipadamente: Se le da el efectivo al empleado para que el gaste y luego reporte sus gastos.
 2. Gastos pagados vencidos: El empleado gasta, reporta sus gastos y luego se le paga lo que gasto.
 
-En las dos formas se recomienda manejar una caja chica del empleado, para poder registrar el traslado de fondos y registrar los gastos. Las dos formas se ejemplificaran en el siguiente tutorial.
+En las dos formas se recomienda manejar una caja chica del empleado, para poder registrar el traslado de fondos y registrar los gastos.
 
 ## Gastos pagados anticipadamente
 
@@ -150,6 +150,8 @@ En resumen, el proceso de liquidacion permite:
 5. Crear la transaccion, que automaticamente suma todos los gastos, crea una sola transaccion de pago y reconcilia todas las partidas seleccionadas.
 
 Esto es mas eficiente que crear el pago manualmente y luego reconciliar partida por partida.
+
+Con estos pasos ya puede controlar los gastos que sus empleados hacen con dinero de la empresa, sin perder de vista cuánto se les entregó y cuánto han reportado. Revisar periódicamente la caja chica de cada empleado le dirá si hay fondos sin justificar antes de que el mes se complique.
 
 ## API (llamadas desde sistemas externos)
 

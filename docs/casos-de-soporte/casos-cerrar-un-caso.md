@@ -4,7 +4,7 @@ sidebar_label: "Cerrar un Caso"
 sidebar_position: 4
 ---
 
-Este tutorial esta enfocado en cerrar un caso. Luego de que el caso haya sido atendido y debidamente registrado, se debera cerrar el caso. Los pasos para cerrar un caso son los siguientes:
+Cuando el técnico termina la reparación y el cliente ya recogió su equipo, lo único que falta es cerrar el caso para que el listado de pendientes refleje la realidad. Luego de que el caso haya sido atendido y debidamente registrado, deberá cerrarlo; los pasos para hacerlo son los siguientes:
 
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Casos Abiertos"**.
@@ -21,6 +21,8 @@ Al cerrar el caso, el sistema automaticamente:
 Le aparecera un mensaje de exito en la pantalla, y ahora el caso lo podra encontrar en **"Casos Cerrados"**.
 
 ![imagen](/img/casos-de-soporte/casos-cerrar-un-caso-2.jpg)
+
+Con el caso cerrado, su equipo ya no se confundirá con atenciones que en realidad terminaron. Si el caso dejó facturas sin emitir, el siguiente paso natural es facturarlas y cobrarlas; de lo contrario, el caso queda archivado y listo para consultarse en el historial de casos cerrados.
 
 ## API (llamadas desde sistemas externos)
 

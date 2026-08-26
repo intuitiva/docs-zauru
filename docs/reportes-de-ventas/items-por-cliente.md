@@ -4,7 +4,7 @@ sidebar_label: "Ítems por Cliente"
 sidebar_position: 31
 ---
 
-Este reporte lista los ítems vendidos a un cliente específico en un rango de fechas. Permite exportar a Excel.
+Si un cliente quiere repasar todo lo que le ha comprado en un periodo, este reporte se lo arma al instante. Lista los ítems vendidos a un cliente específico dentro del rango de fechas que usted elija, y puede exportarse a Excel para compartirlo o archivarlo.
 
 Para ingresar al reporte:
 
@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems por Cliente".
 4. Seleccionar el cliente y el rango de fechas.
+
+Con esa lista podrá responder las consultas de sus clientes y cerrar cortes de cuenta con la información completa y ordenada.
 
 ## API (llamadas desde sistemas externos)
 

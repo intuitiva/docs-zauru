@@ -4,7 +4,7 @@ sidebar_label: "Costo de Inventario Actual (Metodo PEPS)"
 sidebar_position: 3
 ---
 
-Este reporte muestra el costo actual del inventario utilizando el metodo de valuacion PEPS (Primeras Entradas, Primeras Salidas) en lugar del costo promedio ponderado.
+Cuando necesita valorar su inventario con el método PEPS (primeras entradas, primeras salidas), por ejemplo para una auditoría o un requerimiento fiscal, este reporte calcula el costo actual de cada producto con ese criterio en lugar del costo promedio ponderado. Así podrá presentar la valuación que le solicitan sin recalcular nada a mano.
 
 Para ingresar al reporte:
 
@@ -14,6 +14,8 @@ Para ingresar al reporte:
 4. Seleccionar la agencia a consultar.
 
 Disponible por agencia y con exportacion SAT.
+
+Con este reporte tendrá la valuación PEPS lista para consultar por agencia y descargar en el formato que necesite.
 
 ## API (llamadas desde sistemas externos)
 

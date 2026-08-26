@@ -4,7 +4,7 @@ sidebar_label: "Facturas electrónicas en contingencia en Guatemala"
 sidebar_position: 17
 ---
 
-Las facturas electrónicas en contingencia se utilizan en situaciones en las que no es posible emitir una factura electrónica estándar debido a problemas técnicos o de conectividad con el certificador. Estas facturas permiten a los contribuyentes continuar con sus operaciones comerciales sin interrupciones mientras se resuelven los problemas técnicos.
+Piense en un día en que se le cae el internet o el certificador no responde, y sus clientes están esperando su factura: en ese momento, la factura en contingencia es la diferencia entre seguir vendiendo o detener la tienda. Las facturas electrónicas en contingencia se utilizan cuando no es posible emitir una factura electrónica estándar debido a problemas técnicos o de conectividad con el certificador. Estas facturas permiten a los contribuyentes continuar con sus operaciones comerciales sin interrupciones mientras se resuelven los problemas técnicos.
 
 ## Proceso operativo de emitir facturas electrónicas en contingencia
 

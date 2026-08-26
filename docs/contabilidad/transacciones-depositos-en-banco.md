@@ -4,7 +4,7 @@ sidebar_label: "[Transacciones] Depósitos en banco"
 sidebar_position: 15
 ---
 
-Este tutorial muestra como registrar un depósito hecho por un beneficiario a la cuenta monetaria. Puede ser que le hayan depositado por algún préstamo o alguna deuda. O puede ser que al final del día cada uno de sus puntos de venta deposita el efectivo a su cuenta monetaria.
+Cada vez que le depositan a su cuenta monetaria, conviene registrarlo para que el saldo del banco en Zauru refleje la realidad. Puede ser un cliente que le abona una deuda o un préstamo, o sus puntos de venta que depositan el efectivo del día; aquí verá cómo dejar ese movimiento asentado.
 
 Los pasos para registrar un deposito son los siguientes:
 
@@ -32,6 +32,8 @@ f. Coloque la cuenta en la que se hizo el depósito.
 Para crear el depósito seleccione “Crear nueva transacción” en la parte de abajo.
 
 ![imagen2](/img/contabilidad/transacciones-depositos-en-banco-2.jpg)
+
+Con el depósito registrado, su cuenta de banco cuadra con lo que realmente le depositaron y el origen del dinero queda documentado. Al final del mes, esta información le facilitará la conciliación bancaria.
 
 ## API (llamadas desde sistemas externos)
 

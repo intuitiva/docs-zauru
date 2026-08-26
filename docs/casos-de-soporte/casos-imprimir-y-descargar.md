@@ -4,7 +4,7 @@ sidebar_label: "Imprimir y Descargar PDF"
 sidebar_position: 9
 ---
 
-Este tutorial esta enfocado en como imprimir un caso de soporte o descargarlo en formato PDF.
+Hay clientes que quieren llevarse una hoja física con el detalle de su reparación, y hay contadores que necesitan el comprobante en PDF; en ambos casos, la página del caso lo resuelve. Este tutorial le muestra cómo imprimir un caso de soporte o descargarlo en formato PDF usando las plantillas configuradas.
 
 ## Imprimir un Caso
 
@@ -32,13 +32,15 @@ Para descargar un caso en formato PDF:
 
 ## Plantillas de Impresion
 
-Las plantillas de impresion disponibles dependen de la configuracion de la entidad. Pueden filtrarse por:
+La plantilla define cómo se verá el documento final: su membrete, sus columnas, su orden. Las plantillas de impresion disponibles dependen de la configuracion de la entidad. Pueden filtrarse por:
 - **Agencia** (punto de soporte)
 - **Responsable** del caso
 - **Creador** del caso
 - **Estado** (garantia, cortesia, cerrado)
 
 Si no tiene plantillas configuradas, contacte a su administrador del sistema para que configure las plantillas de impresion para casos de soporte.
+
+Con el documento en mano — impreso o en PDF — el caso ya se puede entregar al cliente o archivarse. El siguiente paso natural es enviar el resumen por correo o cerrar el caso para dar por terminada la atención.
 
 ## API (llamadas desde sistemas externos)
 

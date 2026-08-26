@@ -4,7 +4,7 @@ sidebar_label: "Gastos por Proveedor y Etiqueta"
 sidebar_position: 28
 ---
 
-Este reporte muestra los gastos asociados a una etiqueta (tag), agrupados por proveedor (beneficiario).
+¿Quiere saber cuánto le compró a cada proveedor dentro de una etiqueta de gasto, como materia prima o servicios? Este reporte le muestra los gastos asociados a una etiqueta (tag), agrupados por proveedor (beneficiario).
 
 Para ingresar a este reporte:
 
@@ -16,3 +16,5 @@ Para ingresar a este reporte:
 
 - **Etiqueta**.
 - Opcionalmente por mes y año.
+
+Útil para comparar proveedores del mismo rubro y decidir dónde le conviene comprar.

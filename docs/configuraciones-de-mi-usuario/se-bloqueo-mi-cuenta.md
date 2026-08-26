@@ -4,7 +4,7 @@ sidebar_label: "Se bloqueó mi usuario"
 sidebar_position: 3
 ---
 
-Cuando se bloquea nuestra cuenta por 10 intentos fallidos después de colocar nuestro usuario y nuestra contraseña es necesario realizar los siguientes pasos para desbloquearla:
+Si alguien intentó entrar con su usuario varias veces sin éxito —o si usted mismo tecleó mal la contraseña una y otra vez—, Zauru bloquea la cuenta después de 10 intentos fallidos como medida de seguridad. No es grave: puede desbloquearla usted mismo en pocos pasos, sin que intervenga un administrador:
 
 - Presionar "Desbloquear mi cuenta"
 - Ingresar usuario
@@ -15,3 +15,5 @@ Cuando se bloquea nuestra cuenta por 10 intentos fallidos después de colocar nu
 Llegará un correo que debemos seguir las instrucciones para desbloquearlo.
 
 ![correo bloqueo](/img/configuraciones-de-mi-usuario/se-bloqueo-mi-cuenta-2.png)
+
+Al seguir las instrucciones del correo, su cuenta queda desbloqueada y puede volver a trabajar con normalidad. Si sospecha que alguien más estuvo intentando entrar, aproveche para cambiar su contraseña y dormir tranquilo.

@@ -4,7 +4,7 @@ sidebar_label: "[Transacciones] Gastos de insumos sin control de inventario"
 sidebar_position: 16
 ---
 
-Este tutorial esta enfocado en realizar transacciones contables de compra de insumos para la oficina que no registran inventario, como por ejemplo, papel higiénico, hojas de papel, clips, folders, etc. Los pasos para registrar este tipo de gastos son los siguientes:
+Cada vez que compra papel, clips, folders o cualquier insumo para la oficina, conviene registrar el gasto sin complicarse con inventarios, para que sus cuentas de gastos queden completas y sus reportes no oculten nada. Estos gastos no registran inventario, a diferencia de la mercadería que compra para vender. Los pasos para registrar este tipo de gastos son los siguientes:
 
 1. Ir a “Contabilidad”.
 2. Seleccionar “Transacciones”.
@@ -34,6 +34,8 @@ h. Aquí deberá seleccionar la cuenta del gasto, en el ejemplo seleccionamos la
 Para crear el gasto seleccione “Crear Transacción” en la parte de abajo.
 
 ![imagen2](/img/contabilidad/transacciones-gastos-de-insumos-2.jpg)
+
+Con el gasto registrado, sus insumos de oficina quedan contabilizados en la cuenta correcta y disponibles para los reportes del mes. Si quiere llevar un control más fino, puede crear cuentas específicas como "Lapiceros" o "Papel Higiénico" y repetir este mismo flujo.
 
 ## API (llamadas desde sistemas externos)
 

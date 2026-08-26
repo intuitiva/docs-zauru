@@ -4,7 +4,7 @@ sidebar_label: "Consolidado de Detalles de Ordenes de Trabajo por Etiqueta"
 sidebar_position: 5
 ---
 
-Este reporte consolida los detalles de las ordenes de trabajo cerradas agrupandolos por etiqueta (tag). Ademas de los consumos de inventario por ordenes de trabajo, el reporte incluye informacion de ordenes de compra y facturas asociadas a la misma etiqueta.
+¿Necesita saber cuánto costó realmente un proyecto o un grupo de trabajo? Este reporte reúne los detalles de las órdenes de trabajo cerradas agrupados por etiqueta: además de los consumos de inventario de cada orden, incluye las órdenes de compra y las facturas asociadas a esa misma etiqueta. Le sirve cuando quiere revisar la rentabilidad de un proyecto terminado o verificar que todos los costos de una etiqueta estén completos.
 
 Para generar este reporte:
 

@@ -4,9 +4,7 @@ sidebar_label: "Cargos Pagados"
 sidebar_position: 19
 ---
 
-Este tutorial esta enfocado en la visualizacion y gestion de los cargos adicionales que ya han sido pagados.
-
-Cuando usted paga un cargo adicional (como fletes, seguros, impuestos, etc.) asociado a una orden de compra o a un consolidado, ese cargo se traslada automaticamente a la seccion de "Cargos Pagados". En esta seccion puede consultar el historial de cargos pagados y realizar ediciones limitadas a la informacion de los mismos.
+¿Ya pagó un flete, un seguro o un impuesto y quiere revisar cómo quedó registrado? Cada vez que usted paga un cargo adicional asociado a una orden de compra o a un consolidado, Zauru lo traslada automáticamente a la sección de "Cargos Pagados". Ahí encontrará el historial completo de cargos pagados para consultarlo cuando lo necesite, por ejemplo para comprobar un pago con su contador, y podrá corregir datos informativos como el número de factura, la referencia o las notas.
 
 ## Listar cargos pagados
 
@@ -59,7 +57,7 @@ i. Documentos electronicos asociados.
 
 ## Editar informacion de un cargo pagado
 
-Los cargos pagados permiten ediciones limitadas a ciertos campos informativos. No se pueden modificar los tipos de cargo, montos, ni la orden de compra asociada.
+A veces, después de pagar, se da cuenta de que el número de factura quedó mal o quiere agregar una nota para su archivo. Los cargos pagados permiten ediciones limitadas a ciertos campos informativos, sin tocar los montos ni la contabilidad; por eso no se pueden modificar los tipos de cargo, los montos ni la orden de compra asociada.
 
 Los pasos para editar un cargo pagado son:
 
@@ -88,6 +86,8 @@ f. Etiquetas (tags).
 ![imagen5](/img/compras/cargos-pagados-5.png)
 
 Al terminar de editar, presione "Actualizar" para guardar los cambios.
+
+Con esto ya puede mantener ordenado el historial de cargos pagados sin alterar su contabilidad. Recuerde que los cargos que todavía están pendientes de pago se manejan desde la sección de Cargos, y pasarán a esta lista automáticamente en cuanto usted los pague.
 
 ## API (llamadas desde sistemas externos)
 

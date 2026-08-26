@@ -4,6 +4,8 @@ sidebar_label: "Facturas Electrónicas en Guatemala"
 sidebar_position: 8
 ---
 
+¿Va a empezar a emitir factura electrónica en Guatemala y no sabe por dónde comenzar? Aquí encontrará el contexto y el proceso completo: qué son FACE y FEL, qué necesita preparar con la SAT y con su certificador, y cuáles son los pasos para dejar su empresa facturando electrónicamente. Este documento le sirve cuando está por implementar la facturación FEL o cuando necesita entender las piezas que Zauru requiere para conectarse.
+
 ## Historia de FACE
 A partir del 2007 en Guatemala se empezó a implementar la factura electrónica FACE, este esquema involucraba a obligatoriamente a terceros (generadores de facturas electrónicas - __GFACE__) a ser intermediarios entre la Superintendencia de Administración Tributaria __SAT__ y el contribuyente emisor de facturas.
 
@@ -55,6 +57,8 @@ Este es el documento que se le va a enviar al cliente, ya sea una factura, una f
 7. Enviar la representación gráfica PDF de los documentos tributarios electrónicos a emitir al GFACE (para su verificación) y a Zauru para su implementación.
 8. Revisar las pruebas generadas por Zauru en el portal del GFACE y los PDFs generados
 9. Aprobar implementión del GFACE y de Intuitiva.
+
+Siguiendo esta lista de principio a fin, su empresa queda autorizada y facturando electrónicamente con Zauru. Una vez en producción, cada factura que emita saldrá firmada, certificada y con su representación gráfica lista para entregarle al cliente, ya sea impresa o por correo.
 
 ## API (llamadas desde sistemas externos)
 

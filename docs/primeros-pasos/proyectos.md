@@ -4,11 +4,11 @@ sidebar_label: "Proyectos"
 sidebar_position: 9
 ---
 
-Zauru le permite organizar sus productos, clientes y proveedores mediante un sistema jerárquico de proyectos. Las proyectos se agrupan en Categorías de proyectos que pueden tener una estructura padre-hijo, permitiendo una organización arbórea de su información. Además, Zauru ofrece una visualización gráfica de la jerarquía de categorías de proyectos.
+Si su negocio trabaja con proyectos — una constructora con varias obras, una distribuidora con distintas líneas o una empresa con varios frentes de trabajo —, organizar sus productos y contactos por proyecto evita que todo se mezcle. Zauru le permite organizar sus productos, clientes y proveedores mediante un sistema jerárquico de proyectos, agrupados en Categorías con estructura padre-hijo. Además, puede visualizar esa jerarquía completa en un gráfico interactivo.
 
 ## Categorías de proyectos
 
-Las Categorías de proyectos son contenedores que agrupan proyectos relacionadas y pueden tener subcategorías, formando una jerarquía. Los pasos para crear una nueva Categoría de proyecto son:
+Antes de crear los proyectos, conviene pensar en las categorías que los agruparán, para que la estructura tenga lógica desde el inicio. Las Categorías de proyectos son contenedores que agrupan proyectos relacionados y pueden tener subcategorías, formando una jerarquía. Los pasos para crear una nueva Categoría de proyecto son:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "proyectos".
@@ -67,7 +67,7 @@ El gráfico mostrará la estructura jerárquica completa: categorías padre, sub
 
 ## Proyectos
 
-Las proyectos son marcadores que puede asignar a sus productos y beneficiarios para organizarlos y filtrarlos. Cada proyecto pertenece a una Categoría de Proyecto. Los pasos para crear una nueva proyecto son:
+Cuando ya tenga sus categorías, crear los proyectos es cuestión de minutos; luego solo deberá asignarlos a los productos o beneficiarios que correspondan. Los proyectos son marcadores que puede asignar a sus productos y beneficiarios para organizarlos y filtrarlos, y cada uno pertenece a una Categoría de Proyecto. Los pasos para crear un nuevo proyecto son:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Proyectos".
@@ -101,6 +101,8 @@ Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proy
 ### Filtrar por proyectos
 
 Una vez que haya asignado proyectos a sus productos o beneficiarios, podrá filtrarlos por proyecto desde sus respectivos listados. En el módulo de Ítems y en el módulo de Beneficiarios aparecerá una nube de proyectos que le permitirá filtrar rápidamente los registros que tengan un proyecto específico.
+
+Ya tiene sus proyectos y categorías organizados. Asígnelos a sus productos y beneficiarios para filtrar sus listados por proyecto; cada vez que su negocio abra un frente nuevo, podrá crear la categoría y los proyectos correspondientes en minutos.
 
 ## API (llamadas desde sistemas externos)
 

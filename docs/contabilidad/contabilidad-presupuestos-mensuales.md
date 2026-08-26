@@ -4,7 +4,7 @@ sidebar_label: "Presupuestos mensuales"
 sidebar_position: 21
 ---
 
-Este tutorial esta enfocado en la gestion completa de presupuestos en Zauru. Existen tres tipos de presupuestos que permiten controlar los gastos e ingresos desde diferentes enfoques.
+Si quiere ponerse un límite de gastos para el mes, controlar cuánto se invierte en un proyecto o saber qué áreas se están pasando del presupuesto antes de que sea tarde, esta guía es para usted. Conviene crear el presupuesto a inicios de mes, antes de que empiecen los gastos, y revisarlo conforme avanzan las compras. Existen tres tipos de presupuestos en Zauru, y cada uno controla los gastos e ingresos desde un enfoque distinto.
 
 ## Tipos de presupuestos
 
@@ -141,6 +141,8 @@ Este grafico permite visualizar rapidamente que areas estan dentro o fuera de pr
 
 - **Ejecutado**: muestra la ejecucion por cada etiqueta y subcategoria.
 - **Otros**: etiquetas con movimientos que no fueron incluidas en el presupuesto.
+
+Con su presupuesto creado, podrá volver a él cada vez que quiera saber si va dentro o fuera de lo planeado, y los rubros en rojo le avisarán dónde ajustar antes de cerrar el mes. Si su presupuesto se mantiene parecido mes a mes, recuerde que puede duplicarlo para no empezar de cero.
 
 ## API (llamadas desde sistemas externos)
 

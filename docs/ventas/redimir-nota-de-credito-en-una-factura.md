@@ -4,7 +4,7 @@ sidebar_label: "Redimir una nota de crédito emitida a una factura"
 sidebar_position: 15
 ---
 
-Este tutorial esta basado en como aplicar una nota de crédito a una factura no pagada.
+¿Le emitió una nota de crédito a un cliente y ahora llega a comprar de nuevo? Lo natural es aplicar ese saldo a favor a la factura pendiente, para que pague menos o no pague nada. Este tutorial le muestra cómo redimir una nota de crédito sobre una factura no pagada.
 
 
 1. Ir a "Ventas".
@@ -41,6 +41,8 @@ Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado ex
 
 
 Regresamos a facturas no pagadas, si el cliente cancelo se aplica el pago normal de lo contrario seguira en faturas no pagadas hasta que cancele la cantidad pendiente.
+
+Así quedó aplicada la nota de crédito: si cubría todo el saldo, la factura desaparece de las pendientes; si no, seguirá apareciendo por la diferencia hasta que el cliente la cancele. La próxima vez que ese cliente vuelva, podrá repetir el proceso con cualquier otra nota de crédito que tenga a su favor.
 
 ## API (llamadas desde sistemas externos)
 

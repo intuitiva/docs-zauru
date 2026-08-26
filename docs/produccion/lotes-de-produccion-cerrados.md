@@ -4,7 +4,7 @@ sidebar_label: "Lotes de Produccion Cerrados"
 sidebar_position: 7
 ---
 
-Los lotes de produccion cerrados son aquellos en los que todas las ordenes de produccion que los componen han sido cerradas o anuladas. Un lote se cierra automaticamente cuando se completa la ultima orden activa.
+Cuando la ultima orden de un lote se cierra, Zauru lo mueve automaticamente a esta seccion: aqui queda la historia de cada corrida terminada, lista para revisarse. Es la pantalla que consulta cuando quiere verificar el resultado de una produccion que ya termino — que se completo, que se consumio y con que progreso cerro — o cuando necesita el detalle de una corrida pasada para comparar. Los lotes cerrados son aquellos en los que todas las ordenes de produccion que los componen han sido cerradas o anuladas, y se cierran automaticamente al completarse la ultima orden activa.
 
 ## Consultar lotes cerrados
 
@@ -33,3 +33,5 @@ En la vista de detalle podra ver:
 - El resultado final de cada orden (cantidad completada, materias primas consumidas, subproductos generados).
 - La metrica de progreso final del lote.
 - Las metricas configuradas para ordenes en ejecucion y lotes (tiempo, conteo parcial u ordenes).
+
+Con esto, cada corrida terminada queda documentada y a un par de clics de distancia. La proxima vez que planifique una produccion similar, puede volver aqui para comparar cantidades y tiempos, y ajustar su siguiente lote con datos reales en mano.

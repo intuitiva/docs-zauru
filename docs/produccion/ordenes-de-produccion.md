@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Produccion"
 sidebar_position: 3
 ---
 
-Las ordenes de produccion representan una corrida de manufactura planificada. Se crean a partir de una lista de materiales y pasan por los estados: planificada, en ejecucion y cerrada.
+Cuando le piden fabricar cierta cantidad de un producto — digamos 50 unidades para reponer inventario o para cumplir un pedido — usted crea aqui la orden de produccion que formaliza esa corrida: quien la ejecuta, cuanto se producira y con que materias primas. Es la puerta de entrada de toda manufactura en Zauru. Las ordenes de produccion representan una corrida de manufactura planificada: se crean a partir de una lista de materiales y pasan por los estados planificada, en ejecucion y cerrada.
 
 ## Crear una orden de produccion
 
@@ -108,6 +108,8 @@ Para anular una orden de produccion:
 4. Presione el boton **"Eliminar"**.
 
 Esto anulara la orden (la marcara como anulada sin eliminarla fisicamente de la base de datos). Si la orden tiene movimientos de inventario asociados, estos seran revertidos.
+
+Una vez creada, la orden queda en estado planificada esperando a que usted la inicie. Al arrancar la produccion pasara a la seccion de ordenes en ejecucion, donde podra seguir su avance, pausarla y cerrarla cuando el producto este listo.
 
 ## API (llamadas desde sistemas externos)
 

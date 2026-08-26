@@ -4,7 +4,7 @@ sidebar_label: "Facturas Sin Asiento Contable de Ventas"
 sidebar_position: 77
 ---
 
-Este reporte detecta facturas que no generaron su asiento contable de ventas correspondiente. Permite regenerarlos.
+Cuando su contador encuentra diferencias al cuadrar los saldos, este reporte detecta las facturas que no generaron su asiento contable de ventas y le permite regenerarlos para dejar la contabilidad al día.
 
 Para ingresar al reporte:
 

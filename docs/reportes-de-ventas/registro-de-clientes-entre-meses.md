@@ -4,7 +4,7 @@ sidebar_label: "Registro de Clientes entre Meses"
 sidebar_position: 38
 ---
 
-Este reporte muestra la comparativa de clientes activos entre dos meses, mostrando clientes nuevos, retenidos y perdidos.
+¿Su cartera de clientes está creciendo o se le está escapando? Este reporte compara dos meses y le muestra quiénes son clientes nuevos, quiénes se mantuvieron y quiénes se fueron. Es la forma más rápida de saber si sus esfuerzos de venta están rindiendo frutos.
 
 Para ingresar al reporte:
 
@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar los dos meses a comparar.
 
 Incluye opción de exportar a PDF.
+
+Con esta comparativa puede reaccionar a tiempo: contactar a los clientes que se alejan y dar seguimiento a los que llegaron.

@@ -4,7 +4,7 @@ sidebar_label: "Cargos adicionales a una orden de compra o consolidado"
 sidebar_position: 8
 ---
 
-Este tutorial esta enfocado en registrar cargos adicionales a una orden de compra. Es probable que cuando usted haga una orden de compra local le cobren flete y seguridad por su mercadería. O puede ser que usted importe y le cobren cargos adicionales a su mercadería como impuestos o GPS.
+Cada vez que le compra mercadería a un proveedor, es común que además del precio de los productos le cobren flete y seguridad, sobre todo cuando se trata de una importación en la que también aparecen impuestos o el monitoreo GPS del contenedor. Si no registra esos cargos, el costo de su mercadería queda incompleto y su margen de ganancia se ve inflado. En este tutorial aprenderá a registrar los cargos adicionales a una orden de compra, ya sea a una sola orden o a un consolidado de varias, para que queden repartidos en el costo real de cada producto.
 
 Hay dos formas de agregar cargos:
 
@@ -99,6 +99,8 @@ Haga click sobre “Detalles” (El ojo) para ver los detalles de la orden de co
 Le aparecerán los detalles de la orden de compra, en la parte inferior de la página podrá encontrar los cargos asociados que se crearon. Estos cargos se distribuyen ponderadamente en el costo de cada producto.
 
 ![imagen7](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-7.jpg)
+
+Con sus cargos registrados, el costo de cada producto ya incluye todo lo que usted pagó para traerlo a su bodega. El siguiente paso natural de su flujo es pagar esos cargos al proveedor; una vez pagados, Zauru los trasladará a la sección de Cargos Pagados, donde podrá consultarlos cuando lo necesite.
 
 ## API (llamadas desde sistemas externos)
 

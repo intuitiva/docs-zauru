@@ -4,7 +4,7 @@ sidebar_label: "Destajos: Empleados por Fecha"
 sidebar_position: 6
 ---
 
-Este reporte muestra una matriz donde las filas son los empleados y las columnas son los tipos de destajo. Cada celda muestra el valor total de destajos de ese empleado para ese tipo de destajo en el rango de fechas seleccionado.
+Cuando un empleado le pregunta cuánto ganó por cada tipo de tarea en un período, este reporte le responde de un vistazo. Presenta una tabla con los empleados en las filas y los tipos de destajo en las columnas, donde cada celda muestra el valor total que esa persona acumuló en el rango de fechas seleccionado.
 
 Para ingresar al reporte:
 
@@ -17,3 +17,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Es la referencia rápida para revisar o confirmar los pagos de destajo de todo el equipo en un solo lugar.

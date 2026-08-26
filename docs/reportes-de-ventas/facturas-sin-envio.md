@@ -4,7 +4,7 @@ sidebar_label: "Facturas Sin Envío"
 sidebar_position: 75
 ---
 
-Este reporte lista las facturas que no tienen envíos asociados. Permite exportar.
+Cuando un cliente llama preguntando por qué no le ha llegado su pedido, este reporte le muestra las facturas que no tienen envíos asociados, para detectar a tiempo las entregas pendientes.
 
 Para ingresar al reporte:
 

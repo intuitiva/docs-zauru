@@ -4,20 +4,11 @@ sidebar_label: "Punto de re orden"
 sidebar_position: 4
 ---
 
-Este tutorial esta basado en la creación y verificación de puntos de re orden de sus productos.
-
-Un punto de re orden es una cantidad mínima de producto que debería de tener en su inventario. Existen dos puntos de re orden en Zauru:
-
-1. Punto de re orden de un producto (total en todas las bodegas).
-2. Punto de re orden de un producto por bodega.
-
-Adicionalmente, puede configurar la **cantidad económica de orden**, que es la cantidad recomendada para reabastecer cuando se alcanza el punto de re orden. También existe un reporte dedicado para ver todos los productos que están por debajo de su punto de re orden.
-
-Las dos formas de punto de re orden se ejemplificaran en el siguiente tutorial.
+¿Le ha pasado que un cliente pide un producto y descubre que se agotó sin darse cuenta? El punto de re orden existe para que eso no vuelva a ocurrir: es la cantidad mínima que usted define por producto, y Zauru le avisa cuando las existencias caen por debajo de ella, incluso pintándolas en rojo. Existen dos formas de configurarlo: el punto de re orden de un producto (total en todas las bodegas) y el punto de re orden por bodega. Adicionalmente, puede establecer la **cantidad económica de orden**, que es la cantidad recomendada para reabastecer cuando se alcanza el punto de re orden, y consultar un reporte dedicado con todos los productos que ya están por debajo.
 
 ## Punto de re orden de un producto
 
-El punto de re orden por producto es una cantidad minima de un producto en especifico que debería de tener al sumar las existencias de ese producto en todas sus bodegas.
+Si sus bodegas se reabastecen entre sí, conviene pensar en cuánto necesita la empresa en total, sin importar dónde esté repartido. El punto de re orden por producto es una cantidad mínima que debería de tener al sumar las existencias de ese producto en todas sus bodegas.
 
 El punto de re orden de un producto debe de ser establecido en las características del ítem. Los pasos para establecer el punto de re orden de un producto se muestran en el tutorial de "Crear Ítems".
 
@@ -33,7 +24,7 @@ Aquí podrá ver todas las existencias por bodega de cada producto, en este ejem
 
 ## Punto de re orden por bodega
 
-En el punto de re orden por bodega se especifica la cantidad mínima que debería de haber de un producto en una bodega en especifico. La forma de colocar el punto de re orden por bodega es la siguiente:
+Cuando cada bodega se abastece por su cuenta, el límite conviene fijarlo por bodega: así, la sucursal pide cuando su propio stock baja, sin esperar a que se agote el total de la empresa. Para configurarlo, siga estos pasos:
 
 1. Ir a "Inventarios".
 2. Seleccionar "Existencias".
@@ -94,6 +85,8 @@ El reporte muestra:
 - **Todas las bodegas**: Muestra los productos cuyo total global está por debajo del punto de re orden configurado en el ítem.
 
 El reporte incluye el nombre del producto, la cantidad disponible, el punto de re orden configurado, la última compra realizada y puede exportarse a formato Excel (.xls).
+
+Con los puntos de re orden configurados, ya no tiene que memorizar cuándo comprar: el sistema le avisa en rojo cada vez que un producto se acerca al límite. El siguiente paso natural es revisar el reporte de productos bajo punto de re orden al inicio de la semana y generar las compras a tiempo, para que su bodega nunca quede desabastecida.
 
 ## API (llamadas desde sistemas externos)
 

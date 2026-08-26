@@ -4,7 +4,7 @@ sidebar_label: "Puestos de trabajo"
 sidebar_position: 2
 ---
 
-Los puestos de trabajo definen el tipo de contratacion, frecuencia de pago y cuentas contables asociadas. Para gestionar puestos:
+Antes de contratar al primer empleado, conviene tener los puestos listos —Operario de producción, Administrador, Supervisor de cuadrilla—, porque de aquí salen las reglas de pago de cada quien. Los puestos de trabajo definen el tipo de contratación (jornal o destajo), la frecuencia de pago y las cuentas contables asociadas. Para gestionar puestos:
 
 1. Ir a **"Nominas"**.
 2. En **"Settings"**, seleccionar **"Puestos de trabajo"**.
@@ -54,6 +54,8 @@ Al crear o editar un puesto, se pueden asignar beneficios y deducciones por defe
 ## Borrar un puesto de trabajo
 
 En el detalle del puesto, hacer clic en **"Borrar"**. Solo se pueden borrar puestos que no tengan contratos asociados.
+
+Con los puestos definidos y sus beneficios asignados, cada contrato que cree heredará la configuración completa sin trabajo extra. Ese es el siguiente paso natural: crear el contrato de trabajo de su primer empleado.
 
 ## API (llamadas desde sistemas externos)
 

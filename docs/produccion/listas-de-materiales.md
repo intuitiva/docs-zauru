@@ -4,7 +4,7 @@ sidebar_label: "Listas de Materiales"
 sidebar_position: 2
 ---
 
-Una lista de materiales (Bill of Materials o BOM) es la receta o formula que define que materias primas se necesitan para fabricar un producto, en que cantidades y desde que bodegas se consumiran. Tambien permite definir los subproductos que se espera obtener durante el proceso de manufactura.
+Cuando le piden fabricar un producto — ya sea una tanda de panes, un lote de cosmeticos o un mueble ensamblado — la lista de materiales es la receta que garantiza que cada corrida consuma exactamente lo que debe. Es el punto de partida de todo el modulo: sin lista de materiales no hay orden de produccion. Una lista de materiales (Bill of Materials o BOM) define que materias primas se necesitan para fabricar un producto, en que cantidades y desde que bodegas se consumiran, y tambien permite registrar los subproductos que se espera obtener durante el proceso de manufactura.
 
 ## Crear una lista de materiales
 
@@ -79,6 +79,8 @@ Confirme la eliminacion cuando se le solicite. Le aparecera un mensaje de exito 
 ## Vista previa de la lista de materiales
 
 Mientras esta creando o editando una lista de materiales, puede presionar **"Previsualizar"** para ver como quedara la lista antes de guardarla. Esto es util para revisar que todas las cantidades y asignaciones sean correctas.
+
+Con sus listas de materiales creadas y revisadas, ya tiene la base de todo el flujo de manufactura. El siguiente paso natural es planificar ordenes de produccion que usen esas recetas, asignar un responsable y poner la corrida en marcha.
 
 ## API (llamadas desde sistemas externos)
 

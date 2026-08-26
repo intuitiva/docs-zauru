@@ -4,7 +4,7 @@ sidebar_label: "Detalle de Envios Hacia Produccion"
 sidebar_position: 11
 ---
 
-Este reporte muestra el detalle de todos los envios que ingresaron a la bodega virtual de Produccion en un mes especifico.
+Antes de producir, los insumos tienen que llegar a la bodega virtual de Producción. Este reporte le muestra todo lo que ingresó a producción durante el mes, para que sepa con qué materiales contó su equipo y de qué bodega provino cada envío.
 
 Para generar el reporte:
 
@@ -20,3 +20,5 @@ Para generar el reporte:
 **Columnas**: producto, cantidad, fecha de entrega, proveedor, bodega origen, empleado que reservo, referencia del envio.
 
 **Exportacion**: disponible en formato XLS.
+
+Con este detalle podrá verificar qué materiales llegaron a producción y desde dónde, y conciliar sus entregas internas del mes.

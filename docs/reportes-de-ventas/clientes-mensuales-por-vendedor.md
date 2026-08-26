@@ -4,7 +4,7 @@ sidebar_label: "Clientes Mensuales del Vendedor"
 sidebar_position: 1
 ---
 
-Muchas empresas que trabajan con Zauru manejan el tema de las comisiones con los vendedores. Entonces  la empresa tiene que tener el conocimiento de las ventas de su personal. La información que principalmente necesitan es la cantidad que venden para así poder sacar el porcentaje de comisión que corresponde. Zauru tiene la herramienta para tener la suma de todas las factura en el reporte de Cliente Mensuales del Vendedor
+Cuando llega la quincena y hay que calcular las comisiones de los vendedores, lo primero que se necesita saber es cuánto vendió cada uno. Este reporte le da la suma de todas las facturas del vendedor que usted elija, con el detalle de las que ya se pagaron y de las que siguen pendientes.
 
 Para ingresar al reporte es necesario realizar lo siguiente:
 

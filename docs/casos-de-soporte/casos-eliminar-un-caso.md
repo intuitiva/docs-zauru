@@ -4,7 +4,7 @@ sidebar_label: "Eliminar un Caso"
 sidebar_position: 5
 ---
 
-Este tutorial esta enfocado en como eliminar un caso de soporte.
+A veces un caso se crea por error, se duplica, o el cliente cancela la atención antes de que se haga nada; en esos momentos conviene saber eliminar el registro para no ensuciar los listados. Este tutorial le muestra cómo eliminar un caso de soporte y las precauciones que debe tomar antes de hacerlo.
 
 ## Consideraciones antes de Eliminar
 
@@ -29,6 +29,8 @@ Antes de eliminar un caso, tome en cuenta lo siguiente:
 6. Confirme la eliminacion.
 
 Si las facturas asociadas fueron anuladas exitosamente, el caso se eliminara y aparecera un mensaje de exito.
+
+Ya sabe cómo mantener limpios sus listados de soporte. Recuerde que esta acción no se puede deshacer, así que conviene confirmar bien antes de borrar; si en realidad lo que necesita es atender al cliente, el siguiente paso natural es crear un caso nuevo y registrarlo desde cero.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Tipos de destajo"
 sidebar_position: 7
 ---
 
-Los tipos de destajo definen las tareas que se pagan por unidad de trabajo realizada.
+Si sus empleados ganan por quintal cortado, caja armada o tarea sembrada, cada una de esas actividades es un tipo de destajo. Los tipos de destajo definen las tareas que se pagan por unidad de trabajo realizada: su valor por unidad, su medida y la cuenta contable del gasto.
 
 Para gestionar tipos de destajo:
 
@@ -37,6 +37,8 @@ En el listado de tipos de destajo, hacer clic en **"Exportar"** para descargar u
 ## Editar y borrar tipos de destajo
 
 Desde el detalle del tipo de destajo, usar los botones **"Editar"** y **"Borrar"**.
+
+Con los tipos de destajo listos, ya puede registrar el trabajo diario de cada empleado y el sistema calculará el valor automáticamente. Si su listado empieza a crecer, los grupos de tipos de destajo le ayudarán a mantenerlo ordenado.
 
 ## API (llamadas desde sistemas externos)
 

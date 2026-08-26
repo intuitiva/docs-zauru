@@ -4,7 +4,7 @@ sidebar_label: "Consolidar Ordenes"
 sidebar_position: 5
 ---
 
-Este tutorial esta enfocado en como consolidar multiples ordenes de venta en una sola factura. La consolidacion de ordenes es util cuando un cliente realiza varias ordenes de venta por separado y se desea emitir una sola factura que las agrupe.
+¿Un mismo cliente le hizo tres pedidos esta semana y no quiere recibir tres facturas ni que le cobren varios fletes? La consolidación de ordenes resuelve exactamente eso: agrupa varias ordenes de venta de un mismo cliente en una sola factura. Este tutorial le muestra cómo hacerlo, cómo revisar una consolidación ya creada y cómo deshacerla si se arrepiente.
 
 ## Requisitos para Consolidar Ordenes
 
@@ -86,6 +86,8 @@ En las configuraciones de ventas, existe la opcion **"Deshabilitar trabajos en s
 ## Exportar Detalles de una Consolidacion
 
 Desde la pagina de detalles de una consolidacion, puede exportar los detalles a formato XLS utilizando la opcion de exportacion disponible.
+
+Con la consolidación creada, su cliente recibe una sola factura que agrupa todos sus pedidos, y usted se ahorra los cobros y la contabilidad por separado. Si el cliente cambia de opinión, puede desconsolidar en cualquier momento y las ordenes vuelven a quedar abiertas tal como estaban.
 
 ## API (llamadas desde sistemas externos)
 

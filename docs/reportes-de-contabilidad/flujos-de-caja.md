@@ -4,7 +4,7 @@ sidebar_label: "Flujo de Caja"
 sidebar_position: 15
 ---
 
-Se entiende por flujo de caja o flujo de finanzas el conjunto de los flujos de entradas y salidas de caja o efectivo en un periodo dado.
+¿Se ha preguntado por qué su caja no refleja las ganancias del mes, o cuánto efectivo tendrá disponible a fin de mes? El flujo de caja le muestra el conjunto de entradas y salidas de caja o efectivo en un periodo dado, para que entienda cómo se mueve realmente su dinero.
 
 El flujo de caja lo localizamos en:
 
@@ -29,3 +29,5 @@ El reporte muestra los movimientos de efectivo del mes, partiendo de la utilidad
 4. Cambios en cuentas de activo y pasivo.
 5. Cambios en cuentas de capital.
 6. Flujo de efectivo neto (acumulado).
+
+Con este reporte puede anticipar cómo estará su efectivo al cierre del mes y tomar decisiones con calma antes de que las cuentas lo tomen por sorpresa.

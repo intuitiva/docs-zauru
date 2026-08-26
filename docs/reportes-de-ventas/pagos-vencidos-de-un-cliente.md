@@ -4,7 +4,7 @@ sidebar_label: "Pagos Vencidos de un Cliente"
 sidebar_position: 60
 ---
 
-Este reporte muestra los pagos vencidos de un cliente específico.
+Si un cliente le pregunta cuánto le debe, o si usted quiere saber con exactitud qué cuotas tiene atrasadas, este reporte se lo dice en segundos. Muestra los pagos vencidos de un cliente en particular, sin ruido ni información de más.
 
 Para ingresar al reporte:
 
@@ -12,3 +12,5 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Vencidos de un Cliente".
 4. Seleccionar el cliente.
+
+Así puede presentarle a su cliente una cuenta clara de lo vencido y acordar el pago sin sorpresas.

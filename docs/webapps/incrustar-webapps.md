@@ -4,7 +4,7 @@ sidebar_label: "Incrustar Webapps dentro de Zauru"
 sidebar_position: 1
 ---
 
-Al tener desarrollada una aplicación web (independientemente de la tecnología utilizada), necesitamos un URL público por donde se pueda accesar esa aplicación y ya estamos listos para poder incrustar esta aplicación dentro de Zauru como una webapp.
+Si su equipo ya desarrolló una aplicación a la medida —un formulario propio, un tablero de control o cualquier herramienta que hoy vive en otra pestaña del navegador— puede traerla adentro de Zauru para que se sienta como un módulo nativo del sistema. Solo necesita que la aplicación tenga un URL público, sin importar la tecnología con la que fue hecha, y en unos minutos quedará disponible como una webapp dentro de Zauru.
 
 Primero debemos navegar al módulo de webapp
 

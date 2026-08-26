@@ -4,7 +4,7 @@ sidebar_label: "Productos Comprados a Proveedores entre Fechas"
 sidebar_position: 10
 ---
 
-Este reporte muestra los productos comprados a cada proveedor entre dos fechas. Agrupa por proveedor y producto, mostrando la cantidad comprada, el costo con IVA y el costo sin IVA. Es util para analisis de compras por proveedor.
+Si quiere saber cuánto le ha comprado a cada proveedor en un periodo —por ejemplo, antes de negociar mejores precios o para comparar proveedores— este reporte se lo muestra producto por producto, con la cantidad comprada y el costo con y sin IVA. Así verá con claridad en qué proveedor concentra sus compras de cada artículo.
 
 Para ingresar al reporte:
 
@@ -12,3 +12,5 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Productos Comprados a Proveedores entre Fechas".
 4. Seleccionar el rango de fechas.
+
+Con este desglose podrá preparar sus negociaciones y decidir con datos si le conviene consolidar compras o diversificar proveedores.

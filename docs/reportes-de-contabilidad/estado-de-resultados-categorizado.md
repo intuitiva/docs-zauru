@@ -4,7 +4,7 @@ sidebar_label: "Estado de Resultados Categorizado"
 sidebar_position: 16
 ---
 
-El estado de resultados categorizado está agrupado por categorías de gastos e ingresos detalladas en cada rubro y muestran su resultado en un periodo de tiempo.
+¿Quiere ver con claridad en qué se le fue el dinero este mes, rubro por rubro? El estado de resultados categorizado agrupa los gastos e ingresos por categorías detalladas en cada rubro y le muestra su resultado en un periodo de tiempo, ideal cuando necesita explicar los números a un socio o revisar el rendimiento de cada área.
 
 Los pasos para ingresar a ver el estado de resultados categorizado son los siguientes:
 

@@ -4,7 +4,7 @@ sidebar_label: "Contratos por Vencer"
 sidebar_position: 3
 ---
 
-Este reporte muestra los contratos que están próximos a vencer (finalizar su cantidad de cuotas) dentro del período seleccionado.
+Cuando un contrato está por vencer y no quiere que se le pase la renovación, este reporte le avisa con tiempo. Muestra los contratos que están próximos a finalizar su cantidad de cuotas dentro del período que usted elija, para que pueda proponer la renovación al cliente antes de que el contrato expire.
 
 Por cada contrato muestra:
 

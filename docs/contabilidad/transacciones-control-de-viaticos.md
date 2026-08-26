@@ -7,12 +7,10 @@ sidebar_position: 14
 > Registrar compras de bienes o servicios por parte del empleado se puede realizar desde el modulo de compras con una orden de compra.
 > Hay empresas que prefieren separar este proceso de las compras de mercaderia y es por eso que existe este tutorial.
 
-Este tutorial esta enfocado en el pago de viaticos a los empleados. Hay dos formas de pagar viaticos:
+Cada vez que un empleado sale a viajar o a comprar para la empresa, conviene dejar registrado el dinero que se le entrega y los gastos que reporta a su regreso. Hay dos formas de manejar los viáticos: pagarlos anticipadamente o pagarlos vencidos, y aquí le mostramos las dos.
 
 1. Pago anticipado
 2. Pago vencido
-
-Se ejemplificaran las dos formas en este tutorial.
 
 ## Pago de Viaticos Anticipados
 
@@ -157,6 +155,8 @@ En resumen, el proceso de liquidacion permite:
    - Reconcilia todas las partidas seleccionadas con el pago.
 
 Esto es mas eficiente que crear el pago manualmente y luego reconciliar partida por partida.
+
+Con estos pasos ya puede manejar los viáticos de sus empleados, ya sea que les entregue el dinero por adelantado o que les pague lo que gastaron después de viajar. La caja chica del empleado le permite seguir cada quetzal: cuánto se entregó, cuánto se gastó y cuánto quedó pendiente.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Cierre Diario"
 sidebar_position: 2
 ---
 
-Este reporte muestra un resumen detallado de la operacion de un dia especifico en el punto de venta.
+Cuando termina la jornada y quiere dejar el día bien cerrado, este reporte es su resumen de confianza: todo lo facturado, cobrado y anulado en el punto de venta. Es el documento para cerrar la caja con calma, ya sea que atienda usted el mostrador o que supervise a su equipo de vendedores.
 
 Para ingresar al reporte:
 
@@ -25,3 +25,5 @@ Para ingresar al reporte:
 - **Totales**: suma total facturada y suma total cobrada.
 
 **Exportacion**: este reporte se puede exportar a formato XLS.
+
+Cerrar la caja con este reporte es cerrarla bien: las cifras concilian y usted se va a casa con la tranquilidad de que el día quedó completo.

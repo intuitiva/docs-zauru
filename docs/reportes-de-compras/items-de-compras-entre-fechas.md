@@ -4,7 +4,7 @@ sidebar_label: "Items de Compras entre Fechas"
 sidebar_position: 16
 ---
 
-Este reporte es matricial: las filas son las ordenes de compra y las columnas son los productos. Muestra cantidades solicitadas/recibidas, costos unitarios originales y costos computados finales para cada combinacion orden-producto.
+Cuando necesita revisar el detalle completo de las compras de un periodo, este reporte le presenta una matriz en la que cada fila es una orden de compra y cada columna un producto, con cantidades y costos. Es útil para ver de un vistazo qué se compró y a qué precio, sin abrir orden por orden.
 
 Para ingresar al reporte:
 
@@ -12,3 +12,5 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Items de Compras entre Fechas".
 4. Seleccionar el rango de fechas.
+
+Con esta vista general podrá identificar rápidamente los productos con mayor movimiento y revisar los costos de cada orden del periodo.

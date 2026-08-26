@@ -4,9 +4,9 @@ sidebar_label: "Emitir una nota de crédito (descuento, anulación o devolución
 sidebar_position: 14
 ---
 
-## Notas de Crédito
+¿Su cliente devolvió mercadería, usted le prometió un descuento después de haber facturado o necesita anular una factura por completo? Para esos tres casos existe la nota de crédito, y este tutorial le muestra cómo emitirla en cada uno.
 
-Este tutorial esta enfocado en la creación de notas de crédito sobre una factura.
+## Notas de Crédito
 
 Una nota de crédito es un documento comercial emitido por el vendedor que le brinda un saldo a favor al cliente, emitido por cualquiera de los siguientes motivos:
 
@@ -124,6 +124,20 @@ Cuando termine de colocar los productos y sus cantidades presione “Crear notas
 Le aparecerá un mensaje de éxito en la pantalla. En la parte inferior podrá ver las transacciones contables asociadas y los movimientos de inventario asociados. Automáticamente se creara una reservación de “Cliente” hacia “Bodega” para retornar los productos especificados en la nota de crédito.
 
 ![imagen10](/img/ventas/emitir-notas-de-credito-10.jpg)
+
+Ya emitió la nota de crédito y Zauru se encargó del resto: revirtió las transacciones contables y regresó la mercadería a la bodega cuando correspondía. El cliente ahora tiene un saldo a favor que podrá canjear más adelante en otra factura, y usted puede consultar o imprimir la nota cuando la necesite.
+
+## Validaciones y consideraciones al emitir notas de crédito
+
+### Límite de cantidad respecto a la factura original
+
+Al emitir una nota de crédito por devolución (total o parcial), la cantidad ingresada por cada producto se valida contra la cantidad facturada. La suma de las cantidades de **todos los detalles de notas de crédito** aplicados a una misma línea de la factura —incluyendo las notas de crédito ya emitidas y no anuladas, así como los demás renglones que esté agregando en la misma nota— no puede superar la cantidad que se facturó originalmente en esa línea.
+
+Si intenta devolver más de lo facturado, el sistema mostrará un error indicando que la cantidad devuelta supera la cantidad disponible (mostrando la cantidad facturada original) y no permitirá crear la nota de crédito hasta ajustar las cantidades.
+
+### Errores al emitir notas de crédito desde intenciones de envío (FEL Guatemala)
+
+Cuando se emite una nota de crédito a partir de una intención de envío (*submission intent*) en Guatemala y el documento no puede generarse por errores de validación, Zauru ahora muestra el mensaje de error específico y lo redirige de regreso al listado de intenciones de envío, en lugar de fallar de manera silenciosa.
 
 ## API (llamadas desde sistemas externos)
 

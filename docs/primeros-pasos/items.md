@@ -4,7 +4,7 @@ sidebar_label: "Items"
 sidebar_position: 7
 ---
 
-Los ítems son artículos de los que queremos llevar el control. Hay varias formas de categorizarlas y hay varios tipos, a continuación veremos  como funcionan en Zauru.
+Antes de vender o comprar su primer producto, necesita registrarlo como ítem en Zauru. Los ítems son los artículos de los que usted quiere llevar el control: la mercadería que almacena, los productos que vende y los servicios que presta. Hay varios tipos de ítems y varias formas de categorizarlos; a continuación veremos cómo funcionan en Zauru.
 
 ## Nuevo Ítem (producto o servicio)
 Antes de poder vender o comprar productos o servicios, hay que crear los ítems que contengan el nombre y las especificaciones de estos. Los pasos para crear un Ítem son los siguientes:
@@ -16,7 +16,7 @@ Antes de poder vender o comprar productos o servicios, hay que crear los ítems 
 ![43a69-nuevoitemskitch](/img/primeros-pasos/items-1.jpg)
 
 ## Tipos de Item basados en como se manejan sus inventarios
-Hay 2 tipos de Ítems:
+Al crear un ítem, lo primero que conviene aclarar es si se trata de un producto que se almacena o de un servicio. Hay 2 tipos de Ítems:
 
 1. Los Ítems que son productos
 2. Los ítems que son servicios
@@ -146,6 +146,8 @@ Es probable que sus productos estén categorizados por tamaño, color, peso, tip
 8. Presione “Crear Marca”.
 
 ![Nueva Marca de Ítems](/img/primeros-pasos/items-12.png)
+
+Ya registró sus ítems y los organizó con categorías, súper categorías y marcas según lo necesitaba. Con su catálogo en orden, podrá asignarles precios, controlar existencias y usarlos en ventas y compras; si tiene muchos productos pendientes, la importación desde Excel le ahorrará horas de trabajo.
 
 ## API (llamadas desde sistemas externos)
 

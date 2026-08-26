@@ -4,14 +4,7 @@ sidebar_label: "Movimientos de los productos"
 sidebar_position: 5
 ---
 
-Este tutorial esta enfocado en ver los movimientos de los productos para saber donde están sus productos y por donde pasaron.
-
-Existen dos formas de ver los movimientos de productos en Zauru:
-
-1. Movimientos del producto por bodega.
-2. Movimientos del producto por todas las bodegas.
-
-Las dos formas se explicaran en el siguiente tutorial.
+Cuando las existencias no cuadran, la pregunta del momento es: ¿por dónde pasó este producto? Los movimientos le cuentan la historia completa de su mercadería: qué entró, qué salió y cuánto quedó después de cada operación, como un extracto bancario de la bodega. Si un cliente reclama una entrega o usted necesita reconciliar un faltante, aquí encontrará la respuesta. Existen dos formas de ver los movimientos en Zauru, por bodega y en todas las bodegas, y ambas se explican en este tutorial.
 
 ## Movimientos de los productos por bodega
 
@@ -78,6 +71,8 @@ Para productos que manejan lotes, puede ver el detalle de movimientos de un lote
 4. Hacer clic sobre la cantidad en la bodega que desea revisar.
 
 Esto mostrará el historial de envíos que afectaron ese lote en esa bodega, con el saldo acumulado después de cada movimiento.
+
+Con el historial de movimientos a la mano, puede rastrear cualquier producto desde que entró hasta donde está ahora, bodega por bodega. Ese rastro es su mejor aliado para explicar diferencias y responder reclamos con datos en la mano. Cuando encuentre una inconsistencia, el paso natural es corregirla con una auditoría de inventario.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,13 +4,7 @@ sidebar_label: "Existencias"
 sidebar_position: 2
 ---
 
-Este tutorial esta enfocado en ver las existencias de sus productos. Existen dos formas de ver las existencias:
-
-1. Existencias por bodega.
-2. Existencias de todas las bodegas.
-
-
-Ambas formas se mostraran en este tutorial.
+Antes de vender, comprar o trasladar, conviene saber cuánto tiene y dónde. Si un cliente pregunta si hay producto en la tienda de la Zona 8, o si la bodega central necesita reabastecimiento, la respuesta está en las existencias. Zauru le muestra dos vistas complementarias: las existencias de una bodega en particular y las de todas las bodegas juntas. En ambas podrá ver cuánto está disponible, cuánto está por ingresar y cuánto está reservado para salir.
 
 ## Existencias por bodega
 Los pasos para ver las existencias de sus productos por bodega son los siguientes:
@@ -38,6 +32,8 @@ Aquí podrá ver el listado de existencias de cada producto por bodega.
 
 ![imagen2](/img/inventarios/inventarios-existencias-2.jpg)
 
+
+Ya sabe dónde mirar para responder cuánto tiene y en qué bodega. Con esa claridad puede pasar a la acción: reabastecer los productos que van bajando, reservar mercadería para un cliente o corregir las cantidades que no cuadran. Si quiere saber por dónde pasó un producto, el tutorial de movimientos le muestra el historial completo de cada bodega.
 
 ### API (llamadas desde sistemas externos)
 

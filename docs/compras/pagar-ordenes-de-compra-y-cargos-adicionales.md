@@ -4,7 +4,7 @@ sidebar_label: "Pagar ordenes de compra y cargos adicionales"
 sidebar_position: 10
 ---
 
-Este tutorial esta enfocado en pagar ordenes de compra y sus cargos adicionales.
+La mercadería ya llegó y su proveedor espera el pago, ya sea completo o en abonos. En este tutorial aprenderá a pagar sus órdenes de compra y los cargos adicionales asociados, y a elegir cuánto paga en cada ocasión: el monto total o pagos parciales según lo que haya acordado con el proveedor.
 
 Los pasos para hacer el pago de una orden de compra son los siguientes:
 
@@ -84,6 +84,7 @@ Le aparecerá un mensaje en la pantalla notificándole que se creo el pago exito
 
 ![imagen7](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-7.jpg)
 
+Con el pago registrado, Zauru deja constancia de cuánto le queda debiendo a cada proveedor, de modo que usted siempre sepa lo que le falta por pagar. Cuando una orden esté totalmente recibida y pagada, pasará automáticamente a la sección de Ordenes de Compra Cerradas, donde quedará guardada como parte de su historial.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Contratos Pendientes de Cierre"
 sidebar_position: 4
 ---
 
-Este reporte muestra los contratos que ya generaron todas sus cuotas pero aún no han sido cerrados (siguen apareciendo como activos).
+¿Tiene contratos que ya cumplieron todas sus cuotas pero siguen apareciendo como activos? Este reporte los identifica, para que su lista de contratos vigentes no se llene de compromisos que en realidad ya terminaron. Es útil al final del período, cuando quiere cerrar lo que ya se cobró por completo y mantener limpia su cartera.
 
 Por cada contrato muestra:
 
@@ -21,3 +21,5 @@ Para ingresar al reporte:
 3. Seleccionar "Contratos Pendientes de Cierre".
 
 **Filtro disponible:** Tipo de Documento.
+
+Con esta lista puede cerrar los contratos que ya cumplieron su ciclo y mantener el control de su cartera al día.

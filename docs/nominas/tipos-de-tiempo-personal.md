@@ -4,7 +4,7 @@ sidebar_label: "Tipos de tiempo personal"
 sidebar_position: 6
 ---
 
-Los tipos de tiempo personal definen las categorias de ausencias pagadas (vacaciones, enfermedad, etc.).
+No todas las ausencias se tratan igual: unas vacaciones, una enfermedad o un permiso personal pueden pagarse distinto, y por eso conviene separarlas en categorías. Los tipos de tiempo personal definen esas categorías de ausencias pagadas (vacaciones, enfermedad, etc.) para que cada solicitud use la que le corresponde.
 
 Para gestionar tipos de tiempo personal:
 
@@ -23,6 +23,8 @@ Para gestionar tipos de tiempo personal:
 - **Tipo general**: clasificacion del tipo de tiempo personal.
 
 3. Hacer clic en **"Guardar"**.
+
+Con sus categorías listas, cada solicitud de tiempo personal quedará bien clasificada desde el primer día. El siguiente paso es usarlas al registrar solicitudes de vacaciones o enfermedad, y dejar que el sistema cuide los saldos de cada empleado.
 
 ## API (llamadas desde sistemas externos)
 

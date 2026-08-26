@@ -4,7 +4,7 @@ sidebar_label: "Manejo de impuestos indirectos o IVA"
 sidebar_position: 7
 ---
 
-Este tutorial esta enfocado en el manejo de impuestos indirecto. Antes de ver este tutorial asegurese de haber visto el tutorial de [Configuraciones](configuraciones) en donde se establecen las cuentas de IVA.
+Cada fin de mes llega la pregunta de siempre: ¿cuánto IVA tengo que pagar y cuánto tengo a favor? Este tutorial le muestra cómo Zauru registra el IVA de cada venta y de cada compra, y cómo regularizarlo al final del periodo para saber exactamente cuánto pagarle al fisco. Antes de continuar, asegurese de haber visto el tutorial de [Configuraciones](configuraciones) en donde se establecen las cuentas de IVA.
 
 Zauru lleva el registro de IVA por pagar (IVA debito fiscal), que es el IVA que se genera cuando se vende, y del IVA por cobrar (IVA credito fiscal), que es el IVA que se genera cuando se compra. Se mostrara como verificar ambos IVA en el siguiente ejemplo.
 

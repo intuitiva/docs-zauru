@@ -4,13 +4,15 @@ sidebar_label: "Obtener credenciales por URL con el API"
 sidebar_position: 6
 ---
 
-Este endpoint permite a sistemas externos resolver automáticamente las credenciales de usuario de Zauru necesarias para interactuar con el API de e-commerce, basándose en la URL de la tienda en línea.
+Si su integración necesita conectarse a varias tiendas de Zauru y no quiere guardar a mano las credenciales de cada una, este endpoint le resuelve el problema: usted envía la URL de la tienda y Zauru le devuelve el email y el token del usuario de e-commerce correspondiente. Es especialmente útil para servicios centralizados de sincronización que administran muchas entidades.
 
 ## Funcionamiento
 
 Cuando un sistema externo necesita conectarse a Zauru pero no conoce qué usuario y token utilizar, puede consultar este endpoint enviando el URL de la tienda. Zauru busca en sus variables de entidad el URL registrado y devuelve el email y token del usuario de e-commerce asociado.
 
 ## Autenticación
+
+No importa que su servicio no conozca todavía el email ni el token del usuario de Zauru: este endpoint se identifica con su propio token de autorización.
 
 Este endpoint no utiliza la autenticación estándar por `X-User-Email` y `X-User-Token`. En su lugar, requiere un token de autorización único que debe enviarse como parámetro `auth_token`.
 
@@ -103,3 +105,5 @@ Para que este endpoint funcione correctamente, la entidad debe tener configurada
 |----------|-------------|
 | `ecommerce_production_url` | La URL de producción de la tienda, configurada en [configuración avanzada](/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce) |
 | `ecommerce_requests_user_id` | El ID del usuario de e-commerce, configurado en [configuración avanzada](/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce) |
+
+Con esto, resolver credenciales deja de ser trabajo manual: cada vez que integre una tienda nueva, solo debe registrar sus variables de entidad y este endpoint entregará el usuario y el token correctos.

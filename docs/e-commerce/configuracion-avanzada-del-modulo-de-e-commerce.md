@@ -4,7 +4,7 @@ sidebar_label: "Configuración avanzada del módulo de e-commerce"
 sidebar_position: 2
 ---
 
-La pantalla de configuración del módulo de e-commerce (`/ecommerce/ecommerce_settings/new`) contiene todos los parámetros necesarios para automatizar el procesamiento de los pedidos que ingresan desde una tienda en línea. A continuación se detalla cada campo.
+Si ya preparó Zauru para conectarlo a su tienda en línea, este es el siguiente paso para que todo funcione solo: aquí se define cómo se convertirá cada pedido en una orden de venta, sin intervención manual. Por ejemplo, usted indica con qué método de pago se registrará el pago, desde qué bodega se despachará la mercadería y qué vendedor aparecerá en las órdenes. La pantalla de configuración del módulo de e-commerce (`/ecommerce/ecommerce_settings/new`) contiene todos los parámetros necesarios para automatizar el procesamiento de los pedidos que ingresan desde una tienda en línea; a continuación se detalla cada campo.
 
 ![Pantalla de configuración avanzada del módulo de e-commerce con parámetros y campos](/img/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce-1.png)
 
@@ -68,10 +68,14 @@ Este valor se almacena en la variable `ecommerce_tests_url`.
 
 ## Dónde se almacenan los valores
 
+Si administra más de una entidad, esto es una ventaja: cada una guarda su propia configuración, sin que una pise a la otra.
+
 Todas las configuraciones se almacenan como variables de la entidad (`Variable`). Esto permite que:
 - Cada entidad tenga su propia configuración independiente
 - Se puedan crear, actualizar o eliminar valores según se necesite
 - Se mantenga un registro del creador (`creator`) de cada variable
+
+Con la configuración lista, Zauru ya sabe exactamente cómo debe tratar cada pedido que llegue de su tienda en línea. El siguiente paso natural es dejar que las solicitudes empiecen a entrar y comprobar que se convierten en órdenes de venta sin fricciones.
 
 ## API (llamadas desde sistemas externos)
 

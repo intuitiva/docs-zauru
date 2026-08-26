@@ -4,7 +4,7 @@ sidebar_label: "Ventas Mensuales por Vendedor y Categoria de Cliente"
 sidebar_position: 6
 ---
 
-Este reporte desglosa las ventas mensuales por vendedor y por categoria de cliente.
+Cuando quiere entender de dónde vienen sus ventas del mes, este reporte le desglosa las ventas mensuales por vendedor y por categoría de cliente. Es la herramienta para descubrir quiénes están vendiendo más y qué tipo de clientes sostienen su negocio.
 
 Para ingresar al reporte:
 
@@ -25,3 +25,5 @@ Para ingresar al reporte:
 - Totales facturados por categoria de cliente.
 - Notas de credito desglosadas por vendedor y categoria de cliente (si se incluyen).
 - Ventas reales (facturas menos notas de credito).
+
+Con esta matriz de ventas, planear el mes siguiente deja de ser intuición: usted ve exactamente dónde concentrar esfuerzos y reconocer a su equipo.

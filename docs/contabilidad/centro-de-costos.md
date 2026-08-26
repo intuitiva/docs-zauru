@@ -4,7 +4,7 @@ sidebar_label: "Centro de Costos"
 sidebar_position: 5
 ---
 
-Este tutorial explica como gestionar el centro de costos en Zauru. Los centros de costo permiten clasificar y asignar transacciones contables a proyectos, departamentos, sucursales o cualquier unidad de negocio que necesite seguimiento independiente.
+Si quiere saber cuánto le está costando realmente cada proyecto, sucursal o departamento —y no solo cuánto gasta su empresa en total—, los centros de costo son la herramienta que necesita. Úselos cuando arranca un proyecto nuevo y quiere medir sus gastos aparte, o cuando su contador le pide separar los números de cada unidad de negocio. En Zauru, los centros de costo permiten clasificar y asignar las transacciones contables a proyectos, departamentos, sucursales o cualquier unidad de negocio que necesite seguimiento independiente.
 
 ## Categorias de centro de costos
 
@@ -34,7 +34,7 @@ Desde el listado de categorias puede editar o eliminar cualquier categoria exist
 
 ## Centros de costo
 
-Los centros de costo son las unidades especificas a las que se asignan las transacciones.
+Piense en las categorías como el tipo de unidad y en los centros de costo como cada unidad concreta: por ejemplo, la categoría puede ser "Proyectos" y el centro de costo, el "Proyecto A". Cada transacción se asigna a uno de estos centros específicos.
 
 ![Listado de centros de costo](/img/contabilidad/centro-de-costos-3.png)
 
@@ -73,6 +73,8 @@ Tanto las categorias como los centros de costo pueden buscarse por:
 - Nombre
 - Descripcion
 - Categoria (en el caso de centros de costo)
+
+Una vez creados sus centros de costo, podrá asignarlos al registrar cada transacción y generar reportes que le muestren, con claridad, cuánto ingresa y cuánto gasta cada proyecto o departamento. Revise también las prioridades de asignación automática para que las ventas y compras se clasifiquen solas.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Estructura de Documentos"
 sidebar_position: 3
 ---
 
-Estas páginas solo son una referencia para los campos que tiene cada tipo de documento para poder hacer webapps que sepan los nombres de los campos, el tipo de dato que es, el valor predeterminado y si es un campo obligatorio o no.
+Cuando su webapp vaya a crear o consultar documentos por medio del API —una factura, una orden de compra, un envío— le convendrá saber exactamente cómo se llama cada campo, qué tipo de dato espera y cuáles son obligatorios antes de enviar la primera petición. Por ejemplo, si su aplicación registrará facturas, querrá confirmar si el campo `taxable` es requerido o si puede omitirlo. Esta página es esa referencia: el listado de campos de cada tipo de documento, con su nombre, tipo de dato, valor predeterminado y si es obligatorio o no.
 ![estructura documento](/img/webapps/estructura-de-documentos-1.png)
 
 ## API (llamadas desde sistemas externos)

@@ -4,7 +4,7 @@ sidebar_label: "Importaciones de Datos"
 sidebar_position: 10
 ---
 
-Zauru le permite importar datos de forma masiva desde archivos de Excel (CSV o XLS), con un sistema de mapeo de columnas flexible que le permite indicar qué columna de su archivo corresponde a qué campo de Zauru. Este sistema unificado de importación soporta múltiples tipos de documentos y le permite validar cada fila antes de importarla definitivamente.
+Cuando comienza a usar Zauru, es normal llegar con cientos de productos, clientes o empleados ya registrados en hojas de Excel. Las importaciones de datos le permiten subirlos de forma masiva desde archivos CSV o XLS, con un sistema de mapeo flexible que le permite indicar qué columna de su archivo corresponde a qué campo de Zauru. Además, puede validar cada fila antes de importarla definitivamente, para corregir errores sin ensuciar su información.
 
 ## Tipos de Documentos Soportados para Importación
 
@@ -93,6 +93,8 @@ El flujo de trabajo recomendado para una importación exitosa es:
 5. Importe las filas validadas una por una o en lote.
 
 6. Verifique en el módulo correspondiente que los datos se hayan importado correctamente.
+
+Con este flujo dominado, podrá poblar Zauru con sus datos históricos en cuestión de minutos. Después de cada importación, dé un repaso en el módulo correspondiente para confirmar que todo quedó como esperaba; ese chequeo final es la mejor garantía de que su información arranca limpia.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Estado Consolidado de Contratos Activos"
 sidebar_position: 1
 ---
 
-Este reporte muestra un resumen del estado de todos los contratos activos, indicando por cada contrato:
+¿Quiere ver de un vistazo cómo va toda su cartera de contratos activos? Este reporte le presenta un resumen del estado de cada contrato, para que sepa cuántas cuotas faltan por generar, cuánto está pendiente de facturar y en qué punto del flujo van sus documentos. Por cada contrato muestra:
 
 - ID, Beneficiario, Referencia.
 - Total de Cuotas y Cuota Actual.

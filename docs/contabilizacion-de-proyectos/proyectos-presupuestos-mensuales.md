@@ -4,6 +4,8 @@ sidebar_label: "Presupuestos mensuales por proyecto"
 sidebar_position: 4
 ---
 
+¿Quiere saber si los gastos de una obra van según lo planeado? Con un presupuesto mensual por proyecto puede definir cuánto espera gastar, o cuánto espera recibir, en cada rubro y después compararlo contra lo que realmente se ejecuta. Es especialmente útil en obras largas, donde un gasto fuera de control se descubre mejor temprano que tarde.
+
 Los pasos para crear un presupuesto mensual por proyecto son los siguientes:
 
 1. Ir a “Contabilidad”.
@@ -36,6 +38,8 @@ Cuando termine de especificar los gastos presupuestados para el proyecto presion
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se creo el presupuesto exitosamente. Podrá ver los detalles de su proyecto en el botón de “Ver” (ojo).
 
 ![imagen4](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-4.jpg)
+
+Ya tiene su presupuesto por proyecto creado y puede consultar sus detalles cuando lo necesite. A medida que vaya adjuntando gastos y facturas al proyecto, podrá comparar lo presupuestado contra lo ejecutado en el balance, y así mantener la obra dentro de lo planeado.
 
 ## API (llamadas desde sistemas externos)
 

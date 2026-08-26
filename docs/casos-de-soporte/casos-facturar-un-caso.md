@@ -4,9 +4,7 @@ sidebar_label: "Facturar un Caso"
 sidebar_position: 6
 ---
 
-Este tutorial esta enfocado en la facturación de un caso para cobrarle al cliente por el servicio prestado.
-
-Es probable que en ciertas ocasiones cuando usted le de mantenimiento al producto que vende, o atienda un caso de sus clientes, les cobre por el servicio. Zauru le da la opción de facturar cuando usted crea un caso.
+Es probable que en ciertas ocasiones, cuando usted le dé mantenimiento al producto que vende o atienda un caso de sus clientes, les cobre por el servicio; por ejemplo, una reparación fuera de garantía o una visita técnica con repuestos. Zauru le da la opción de facturar cuando usted crea un caso, y este tutorial le muestra cómo hacerlo para que el cobro quede registrado desde el primer momento.
 
 Los pasos para facturar un caso son los siguientes:
 
@@ -32,6 +30,8 @@ Luego de crear el caso usted puede verificar la factura asociada haciendo click 
 Le aparecerán los detalles del caso, en la parte inferior de la pagina podrá encontrar las facturas asociadas, en donde podrá ver la factura que se creo automáticamente luego de crear el caso. La factura saldrá por la cantidad que usted coloque en los detalles del caso.
 
 ![imagen4](/img/casos-de-soporte/casos-facturar-un-caso-4.jpg)
+
+Con la factura emitida desde el mismo caso, el cobro queda amarrado a la atención sin pasos extra. El siguiente paso natural es registrar el avance del trabajo en la bitácora y, cuando el cliente pague, cerrar el caso sabiendo que la facturación ya quedó resuelta.
 
 ## API (llamadas desde sistemas externos)
 

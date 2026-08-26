@@ -4,7 +4,7 @@ sidebar_label: "Configuraciones de la Entidad"
 sidebar_position: 12
 ---
 
-Zauru le permite configurar variables globales de su entidad (empresa) que afectan el comportamiento del sistema en distintos módulos. Estas configuraciones se encuentran en la sección de Variables de Entidad.
+Cuando nota que sus documentos impresos no se ven como usted espera — la fecha en un orden distinto, campos vacíos de más o textos que no cuadran —, muy probablemente la solución está en las configuraciones de su entidad. Desde esta sección puede ajustar variables globales de su empresa que afectan el comportamiento del sistema en distintos módulos. Estas configuraciones se encuentran en la sección de Variables de Entidad.
 
 ## Acceder a las Configuraciones de Entidad
 
@@ -17,9 +17,11 @@ Para acceder a las configuraciones de su entidad:
 
 ## Variables de Entidad Disponibles
 
+No es necesario modificarlas todas: ajuste únicamente las que apliquen a su operación. A continuación encontrará cada variable con una breve explicación de lo que cambia al configurarla.
+
 ### Webhook para Creación de Ítems
 
-Zauru puede enviar una notificación a una URL externa (webhook) cada vez que se crea un nuevo ítem en el sistema.
+Si su catálogo también vive en otro sistema o desea enterarse al instante cuando alguien crea un producto nuevo, esta variable es para usted. Zauru puede enviar una notificación a una URL externa (webhook) cada vez que se crea un nuevo ítem en el sistema.
 
 - **Activar envío de webhook:** Marque esta casilla para activar el envío de notificaciones cuando se crea un ítem.
 - **URL del webhook:** Especifique la URL a la que Zauru enviará la notificación. La notificación incluirá los datos del ítem creado.
@@ -65,3 +67,5 @@ Cuando se activa esta opción, al editar las variaciones de un ítem se mostrar�
 Después de realizar los cambios deseados, presione "Actualizar Variable" para guardar la configuración. Le aparecerá un mensaje de éxito confirmando que las variables se actualizaron correctamente.
 
 ![imagen2](/img/primeros-pasos/configuraciones-entidad-2.png)
+
+Ha dejado las configuraciones de su entidad a la medida de su operación. Puede volver a esta pantalla en cualquier momento para ajustarlas cuando sus necesidades cambien.

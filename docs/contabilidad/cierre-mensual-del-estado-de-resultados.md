@@ -4,7 +4,7 @@ sidebar_label: "Cierre mensual del Estado de Resultados"
 sidebar_position: 22
 ---
 
-Para registrar las ganancias del periodo (mensual) de la forma correcta, necesitamos calcular la utilidad del mes (ingresos - costos - gastos) y ese saldo lo necesitamos trasladar de todas nuestras cuentas de ingresos y gastos al capital (utilidades del mes).
+Si su contador le pide el cierre del mes, o usted quiere saber cuánto ganó o perdió su empresa en el periodo, aquí aprenderá a hacerlo en pocos pasos. Para registrar las ganancias mensuales de la forma correcta, se calcula la utilidad del mes (ingresos - costos - gastos) y ese saldo se traslada de todas las cuentas de ingresos y gastos hacia el capital (utilidades del mes).
 
 Zauru tiene un mecanismo sumamente sencillo para realizar ese proceso:
 
@@ -51,6 +51,8 @@ En las [Configuraciones](configuraciones) de contabilidad puede establecer una c
 ## Fecha de cierre contable
 
 En las configuraciones puede establecer una fecha de cierre ("closed until date"). Cuando esta fecha esta configurada, el sistema protege todas las transacciones anteriores a esa fecha: no podran ser editadas ni borradas. Esto permite cerrar periodos contables ya revisados y declarados.
+
+Con el cierre generado, las cuentas de ingresos y gastos quedan saldadas y la utilidad del mes queda reflejada en el capital, lista para presentarse en el estado de resultados. Cuando lo considere listo, puede fijar la fecha de cierre contable para proteger ese periodo contra ediciones.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Cierre por Producto Diario"
 sidebar_position: 4
 ---
 
-Para tener mayor conocimiento de las ventas, muchas empresas necesitan saber a quién se le vendió el producto, como también que cantidad se le vendió. También es importante saber cómo se gestionó el pago de los productos. Para tener toda esta información a la mano, Zauru ofrece el Cierre por Producto Diario.
+Al final del día, conviene saber exactamente qué se vendió, a quién y cómo se pagó. Este reporte le resume todo eso en una sola pantalla: los productos del día, los clientes que los compraron y los pagos que entraron.
 
 Para ingresar al Cierre por Producto Diario es necesario realizar los siguiente:
 

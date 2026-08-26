@@ -4,11 +4,13 @@ sidebar_label: "Subproyectos"
 sidebar_position: 6
 ---
 
-En caso de que los proyectos sean muy complejos se pueden granular en subproyectos.
+Cuando un proyecto es muy grande — por ejemplo, una obra que incluye cimentación, estructura y acabados, o un proyecto con varias fases — llevarlo como un solo bloque puede volverse confuso. En esos casos conviene dividirlo en subproyectos, de modo que cada fase tenga su propio control de gastos e ingresos sin perder la visión del proyecto completo. El siguiente video le muestra cómo crearlos y aprovecharlos al máximo.
 
 Este video muestra como poder utilizarlos y aprovecharlos al máximo:
 
   <video controls="true" allowfullscreen="true"><source src="https://res.cloudinary.com/hurynnu8i/video/upload/v1448544355/subproyectos_ihdztf.mp4" type="video/mp4"/></video>
+
+Ya conoce cómo dividir sus proyectos en subproyectos. Al organizar cada fase por separado, podrá seguir el avance de cada una en su propio balance y tomar decisiones con mucha más claridad sobre dónde están sus recursos.
 
 ## API (llamadas desde sistemas externos)
 

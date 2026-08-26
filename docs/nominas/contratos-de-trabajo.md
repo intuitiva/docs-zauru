@@ -4,7 +4,7 @@ sidebar_label: "Contratos de trabajo"
 sidebar_position: 9
 ---
 
-Este tutorial trata sobre la gestion de contratos de trabajo, que vinculan empleados a puestos de trabajo y definen las condiciones salariales, metodo de pago, tiempo personal y terminos de contratacion.
+Cuando contrata a alguien —o cuando llega el momento de liquidarlo—, el contrato de trabajo es el documento que une todo: el empleado con su puesto, su salario por hora, su método de pago y sus días de tiempo personal. Aquí aprenderá a crearlo, consultarlo, terminarlo y a revisar los cálculos de liquidación que el sistema genera al cerrar la relación laboral.
 
 ## Listado de contratos
 
@@ -123,13 +123,25 @@ Si se adjunto un PDF del contrato firmado, muestra un enlace para descargarlo.
 
 3. Hacer clic en **"Guardar"**.
 
+Al guardar, el sistema **desactiva automaticamente al empleado** (ademas de cerrar el contrato). Si posteriormente se revierte la terminacion, el empleado y el contrato se reactivan.
+
 El sistema automaticamente calcula la liquidacion basandose en:
 
 - **Promedio de salario mensual**: calculado a partir de la cantidad de nominas recientes configurada en las configuraciones generales.
 - **Indemnizacion**: porcentaje del promedio de salario mensual configurado para el tipo de terminacion.
 - **Dias pendientes de tiempo personal**: calculo del valor de los dias de tiempo personal no gozados, segun el porcentaje configurado para el tipo de terminacion.
 
-El detalle de la terminacion muestra estos calculos discriminados y el total de la liquidacion.
+El detalle de la terminacion muestra estos calculos discriminados y el total de la liquidacion:
+
+![Detalle de liquidacion al terminar un contrato](/img/nominas/contratos-de-trabajo-4.png)
+
+- **Indemnizacion (Severance Pay)**: salario ordinario, salario extra y, de corresponder, comisiones de ventas y beneficios/deducciones en ciclo del primer mes, resaltados en rojo.
+- **Nomina final (ultimo pago)**: si la configuracion de "Manejo del pago al terminar un contrato" indica liquidar en la terminacion, muestra los dias aplicables, salario, salario extra, salario de turno nocturno, bonificacion mensual y beneficios/deducciones del periodo final, con el total del ultimo pago. Si la configuracion indica incluirlo en la proxima nomina, este pago no aparece aqui y el empleado se procesa en la siguiente corrida.
+- **Beneficios fuera de ciclo pendientes**: lista de beneficios/deducciones fuera de ciclo que aun no se han pagado, con su monto.
+- **Tiempo personal pendiente**: dias pendientes, monto del tiempo personal y bonificacion asociada, mas el total de la liquidacion.
+- **Partidas contables asociadas**: las entradas contables generadas por la liquidacion (indemnizacion, tiempo personal, etc.), con enlace a cada asiento.
+
+El comportamiento del ultimo pago y la contabilizacion se controlan en las **Configuraciones generales de nomina**, seccion "Manejo del pago al terminar un contrato".
 
 ## Borrar un contrato de trabajo
 
@@ -138,6 +150,8 @@ En el detalle del contrato, hacer clic en **"Borrar"**. Solo se pueden borrar co
 ## Imprimir un contrato de trabajo
 
 En el detalle del contrato, hacer clic en **"Imprimir"** o **"Descargar PDF"** para generar una version imprimible del contrato usando la plantilla configurada. El sistema soporta multiples plantillas de impresion para contratos de trabajo.
+
+Con los contratos registrados, el sistema ya sabe cuánto pagar a cada empleado, cuánto bonificarle y qué descontarle en cada corrida. Si alguien deja la empresa, termine su contrato y revise la liquidación calculada; si no, siga con las corridas de nómina cuando llegue la fecha de pago.
 
 ## API (llamadas desde sistemas externos)
 

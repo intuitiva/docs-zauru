@@ -4,7 +4,7 @@ sidebar_label: "Mis Facturas (Vendedor Actual)"
 sidebar_position: 12
 ---
 
-Este reporte muestra las facturas mensuales del vendedor actual (usuario logueado) con totales, cantidades de facturas y cantidades de ítems.
+Si quiere saber cómo va su mes, este reporte le muestra sus propias facturas: totales, cantidad de facturas y cantidad de ítems. Es su tablero personal para medir su avance sin depender de nadie más.
 
 Para ingresar al reporte:
 
@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Mis Facturas".
 
 Por defecto muestra el mes actual.
+
+Con estos números podrá comparar su desempeño mes a mes y ajustar el ritmo para cerrar el mes como espera.

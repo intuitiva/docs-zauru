@@ -4,7 +4,7 @@ sidebar_label: "Metodos de pago"
 sidebar_position: 4
 ---
 
-Los metodos de pago definen las cuentas contables utilizadas para registrar los pagos de nomina.
+Cuando paga planilla, cada empleado puede recibir su dinero por depósito bancario, efectivo o cheque, y cada forma de pago necesita sus cuentas contables para que la contabilidad cuadre. Los métodos de pago definen esas cuentas, tanto para pagos individuales como para el pago consolidado de toda la corrida.
 
 Para gestionar metodos de pago:
 
@@ -27,6 +27,8 @@ Para gestionar metodos de pago:
 ## Asignar metodo de pago a un contrato
 
 Cada contrato de trabajo puede tener un metodo de pago por defecto. El metodo de pago se selecciona al crear o editar el contrato de trabajo, en el campo **"Metodo de pago por defecto"**.
+
+Con los métodos de pago definidos, cada contrato puede traer el suyo por defecto y las corridas sabrán a qué cuentas contables mover el dinero. El siguiente paso es configurar los puestos de trabajo, para que cada contrato nuevo herede la configuración correcta desde el primer día.
 
 ## API (llamadas desde sistemas externos)
 

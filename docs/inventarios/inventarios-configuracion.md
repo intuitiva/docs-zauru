@@ -4,7 +4,7 @@ sidebar_label: "Configuración"
 sidebar_position: 12
 ---
 
-Este tutorial explica las opciones de configuración disponibles para el módulo de Inventarios. Estas configuraciones se establecen a nivel de entidad y afectan el comportamiento del módulo para todos los usuarios de la empresa.
+Cuando su empresa crece, las reglas de inventario dejan de ser obvias: ¿quién puede cambiar el tipo de un producto?, ¿se ocultan los ítems descontinuados?, ¿los ajustes de auditoría deben llegar a la contabilidad? Estas y otras decisiones se definen en la configuración del módulo de Inventarios, que se establece a nivel de entidad y aplica para todos los usuarios de la empresa. Revise este tutorial al implementar Zauru, o cuando la operación le pida ajustar una regla.
 
 ## Acceder a la configuración
 
@@ -16,6 +16,8 @@ Si es la primera vez que accede, verá el formulario para crear la configuració
 ![Formulario de configuración del módulo de Inventarios](/img/inventarios/inventarios-configuracion-1.png)
 
 ## Opciones de configuración
+
+Cada opción se explica a continuación con su recomendación, para que decida con confianza cuál le conviene a su operación.
 
 ### Permitir modificar tipo de producto (allow_item_type_modification)
 
@@ -94,6 +96,8 @@ Cuando se genera un envío de ajuste desde una auditoría:
 - Se acredita a la cuenta de inventario del producto (o la cuenta destino configurada).
 
 **Nota**: Si un producto no tiene un costo promedio mayor a cero, no se genera asiento contable para ese movimiento, ya que el monto sería cero.
+
+Con la configuración en su lugar, el módulo de Inventarios trabaja con las reglas que su operación necesita: productos protegidos de cambios accidentales, vistas limpias y auditorías que se reflejan en la contabilidad. Vale la pena revisar estas opciones cuando cambien sus procesos de compras o traslados, para que el sistema siga el ritmo de su empresa.
 
 ## API (llamadas desde sistemas externos)
 

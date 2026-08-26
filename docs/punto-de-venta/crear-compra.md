@@ -4,7 +4,7 @@ sidebar_label: "Crear compra"
 sidebar_position: 7
 ---
 
-Los pasos para crear una nueva compra desde el Punto de Venta permiten registrar ordenes de compra de productos o gastos. Al crear una compra de productos, estos ingresaran a la bodega actual del usuario una vez recibidos.
+Cuando su bodega se queda corta de mercadería o hay que pagar el alquiler del local, aquí es donde registra la orden de compra, sea de productos para vender o de gastos del negocio. Al crear una compra de productos, estos ingresarán a su bodega una vez que los reciba, y el sistema le deja lista una recepción pendiente para confirmarla cuando el proveedor entregue. Los pasos para crear una nueva compra desde el punto de venta son los siguientes:
 
 ## Crear una orden de compra de productos
 
@@ -76,6 +76,8 @@ Para registrar el pago a un proveedor:
 3. Coloque una referencia (opcional).
 4. Verifique el monto a pagar.
 5. Presione "Crear descargo".
+
+Con la orden de compra creada y el pago registrado, la mercadería queda encaminada hacia su bodega. El siguiente paso natural es recibirla cuando el proveedor la entregue, para que las existencias suban y sus vendedores puedan facturar esos productos de inmediato.
 
 ## API (llamadas desde sistemas externos)
 

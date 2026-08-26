@@ -4,7 +4,7 @@ sidebar_label: "Crear un Caso"
 sidebar_position: 2
 ---
 
-Este tutorial esta enfocado en la creacion y edicion de un caso en el modulo de Soporte.
+Llega un cliente con un equipo dañado, o llama para reportar un producto que no le funciona, y usted abre un caso para dejar constancia del trabajo por hacer; con esa acción empieza todo el ciclo de soporte. Este tutorial le muestra la creación y edición de un caso en el módulo de Soporte, desde el registro del síntoma hasta el diagnóstico y la solución cuando el trabajo ya terminó.
 
 Los pasos para crear un nuevo caso son los siguientes:
 
@@ -102,6 +102,8 @@ Por ultimo presione **"Actualizar Caso"**.
 Le aparecera un mensaje de exito en la pantalla notificandole que el caso fue actualizado exitosamente.
 
 ![imagen5](/img/casos-de-soporte/casos-crear-un-caso-5.jpg)
+
+Con el caso creado y actualizado, ya quedó el registro completo de la atención: qué se hizo, qué repuestos se usaron y quién trabajó en ello. El siguiente paso natural es documentar cada avance en la bitácora mientras avanza la reparación y, cuando todo esté resuelto, cerrar el caso para que el cliente quede atendido de principio a fin.
 
 ## API (llamadas desde sistemas externos)
 

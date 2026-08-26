@@ -4,7 +4,7 @@ sidebar_label: "Empleados por Tarea por Fecha"
 sidebar_position: 5
 ---
 
-Este reporte lista todos los empleados que realizaron un tipo de destajo especifico en un rango de fechas. Muestra empleado, fecha, cantidad y valor.
+¿Quiénes trabajaron en una tarea específica y cuánto produjo cada uno? Si necesita revisar el detalle de una actividad o armar un control por tarea, este reporte le lista todos los empleados que realizaron un tipo de destajo, con su fecha, cantidad y valor.
 
 Para ingresar al reporte:
 
@@ -18,3 +18,5 @@ Para ingresar al reporte:
 - Rango de fechas.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Le queda así el detalle completo de una tarea, de la fecha a la persona, para seguimiento o comprobación.

@@ -4,14 +4,16 @@ sidebar_label: "Recepción de solicitudes de e-commerce (pedidos)"
 sidebar_position: 3
 ---
 
-Cuando un sistema de e-commerce (tienda en linea) le manda a Zauru un pedido entra a travez del módulo de e-commerce en la sección de solicitudes de e-commerce.
+Cuando su tienda en línea empieza a recibir pedidos a cualquier hora del día, cada uno entra a Zauru por la sección de solicitudes de e-commerce, y aquí es donde usted les da seguimiento. Si un pedido no se procesó bien, el error queda registrado y usted puede corregirlo y reprocesarlo sin perder la venta.
 
-Las solicitudes de e-commerce registran la información pertinente que permite darle seguimiento al proceso completo. Los datos que quedan registrados son:
+Las solicitudes de e-commerce registran la información pertinente que permite darle seguimiento al proceso completo; los datos que quedan registrados son:
 1. Los envíos entre bodegas que se generan automáticamente para poder completar el pedido desde la bodega de donde se están consolidando los pedidos.
 2. La orden de ventas asociada con su pago pertinente (si aplica)
 3. El cliente (encontrado o creado) asociado a la orden de venta.
 
 ## Filtros de solicitudes
+
+Cuando ya son varios pedidos al día, los filtros le ayudan a concentrarse únicamente en lo que está pendiente.
 
 Las solicitudes de e-commerce se pueden filtrar por su estado de procesamiento:
 
@@ -35,6 +37,8 @@ El volver a procesar la solicitud intentará:
 ## Gestión manual de solicitudes de e-commerce
 
 Además de recibir pedidos por el API, Zauru permite gestionar manualmente las solicitudes de e-commerce desde la interfaz web.
+
+Esto es muy útil cuando un cliente compra por teléfono o por chat y usted quiere registrar su pedido aprovechando el mismo flujo automatizado.
 
 ### Ver detalle de una solicitud
 Al seleccionar una solicitud de la lista, se muestra una vista detallada con toda la información de la solicitud: parámetros originales (`raw_params`), errores (`raw_errors`), facturas y envíos asociados, fecha de creación y última actualización, y estado de completado.
@@ -69,6 +73,8 @@ Para prevenir la creación de pedidos duplicados, Zauru verifica el campo `origi
 Esto es especialmente importante cuando la tienda en línea reenvía notificaciones (webhooks) que podrían generar pedidos duplicados.
 
 Para que esta validación funcione correctamente, el sistema externo debe incluir un identificador único (`id`) dentro del JSON que envía en el campo `original_request`.
+
+Con esto, usted ya sabe dónde aterriza cada pedido de su tienda y cómo mantener la sección en orden: revisar pendientes, corregir errores, anular lo que no va y procesar lo que sí. Cuando el flujo esté rodando, verá sus órdenes de venta y sus pagos avanzar sin intervención.
 
 ## API (llamadas desde sistemas externos)
 

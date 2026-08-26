@@ -4,9 +4,7 @@ sidebar_label: "Crear recepciones para recibir ordenes de compra"
 sidebar_position: 5
 ---
 
-Este tutorial esta enfocado en recibir las ordenes de compra.
-
-Luego de crear la orden de compra y agregar todos los cargos y aranceles a la misma, el siguiente paso es recibir los productos a su bodega destino.
+La mercadería que usted ordenó por fin llegó a su bodega, y ese es el momento de crear la recepción: el registro con el que Zauru ingresa los productos a su inventario para que ya pueda venderlos. Luego de crear la orden de compra y agregarle todos los cargos y aranceles, el siguiente paso natural es recibir los productos en su bodega destino. En este tutorial le mostramos cómo hacerlo.
 
 Los pasos para recibir una orden de compra son los siguientes:
 
@@ -33,6 +31,8 @@ e. Por ultimo presione “Crear recepción”.
 Le aparecerá un mensaje notificándole que se recibió la orden de compra exitosamente.
 
 ![imagen3](/img/compras/recibir-los-productos-de-orden-de-compra-3.jpg)
+
+Con la recepción creada, la mercadería ya forma parte de su inventario y queda lista para la venta. Si el proveedor le entregó menos de lo ordenado, puede crear otra recepción por lo que falte; y si algo llegó dañado o equivocado, puede devolver la recepción desde los detalles de la orden de compra.
 
 ## API (llamadas desde sistemas externos)
 

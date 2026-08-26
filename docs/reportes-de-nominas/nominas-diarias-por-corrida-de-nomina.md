@@ -4,7 +4,7 @@ sidebar_label: "Nominas Diarias por Corrida de Nomina"
 sidebar_position: 11
 ---
 
-Similar al reporte de nominas por corrida, pero con un desglose diario de los destajos incluidos. Muestra para cada empleado, dia por dia, los valores de destajo.
+Si un empleado de destajo le pregunta cómo se armó su pago de la semana, este reporte le permite mostrarle el detalle día por día. A diferencia del resumen por corrida, aquí ve los valores de destajo de cada jornada de cada empleado.
 
 Para ingresar al reporte:
 
@@ -17,3 +17,5 @@ Para ingresar al reporte:
 - Corrida de nomina.
 
 **Opcion de exportacion**: descarga en Excel (XLS).
+
+Así la conversación con el empleado se resuelve con el detalle diario en la mano, sin tener que calcular nada de memoria.

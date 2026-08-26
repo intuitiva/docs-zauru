@@ -4,7 +4,7 @@ sidebar_label: "Beneficiarios"
 sidebar_position: 4
 ---
 
-Este tutorial explica como gestionar beneficiarios (clientes, proveedores y ambos) en Zauru. Los beneficiarios son las personas o empresas con las que se realizan transacciones comerciales.
+Cada vez que le vende a un cliente nuevo o le compra a un proveedor por primera vez, conviene tenerlo registrado como beneficiario antes de hacer la primera transacción. También es el momento de revisarlo cuando un contacto cambia de teléfono, de dirección o de datos fiscales. Los beneficiarios son las personas o empresas con las que usted realiza transacciones comerciales, y en Zauru pueden ser clientes, proveedores o ambos a la vez.
 
 ## Listado de beneficiarios
 
@@ -103,6 +103,8 @@ En el listado de beneficiarios puede buscar por:
 - Categoria de beneficiario
 
 La busqueda utiliza coincidencias parciales con soporte para busqueda por similitud (trigram).
+
+Con su listado de beneficiarios completo y bien clasificado, cada transacción que registre quedará asociada a la persona o empresa correcta, y podrá filtrar sus movimientos por cliente o proveedor cuando lo necesite. El siguiente paso natural es crear las cuentas contables donde se registrarán esas transacciones.
 
 ## API (llamadas desde sistemas externos)
 

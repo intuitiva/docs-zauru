@@ -4,7 +4,7 @@ sidebar_label: "Contratos Cerrados"
 sidebar_position: 3
 ---
 
-Los contratos cerrados son aquellos que ya finalizaron su ciclo de vida y no generan más cuotas. Un contrato se cierra automáticamente cuando se ha generado la última cuota configurada (para contratos con cantidad finita de cuotas) o manualmente por el usuario.
+Cuando un contrato termina, Zauru lo guarda en esta sección como parte del historial de la empresa: aquí se consulta qué se le facturó a un cliente que ya terminó su relación comercial, y aquí vuelve a la vida si el cliente decide retomar el servicio. Los contratos cerrados son aquellos que ya finalizaron su ciclo de vida y no generan más cuotas. Un contrato se cierra automáticamente cuando se ha generado la última cuota configurada (para contratos con cantidad finita de cuotas) o manualmente por el usuario.
 
 ## Listado de Contratos Cerrados
 
@@ -54,6 +54,8 @@ Al igual que en los contratos activos, en el detalle del contrato cerrado se pue
 6. Casos
 
 Para asociar un nuevo documento solo hay que ingresar al detalle del contrato e ingresar al tipo de documento a asociar.
+
+Así queda el contrato cerrado convertido en un expediente completo: puede consultarlo, imprimirlo y asociarle documentos siempre que lo necesite. Y si el cliente vuelve, recuerde que con re-abrirlo el contrato regresa a preliminar y queda listo para activarse de nuevo.
 
 ## API (llamadas desde sistemas externos)
 

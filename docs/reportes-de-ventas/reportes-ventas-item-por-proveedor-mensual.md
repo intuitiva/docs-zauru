@@ -4,7 +4,7 @@ sidebar_label: "Item por Proveedor Mensual"
 sidebar_position: 9
 ---
 
-Al momento de fijar un precio en un producto, es necesario saber si este precio representa una ganancia para la empresa. Normalmente al realizar la diferencia del costo del producto con el precio del producto se puede tener el margen de ganancia. Pero a los costó hay que agregarles cargos extras como impuestos, seguridad entre otras cosas. Entonces, el cálculo suele complicarse. Para facilitar la ayuda, Zauru puede generar el cálculo del margen promedio en relación a las ventas que se han realizado.
+Fijar un precio no basta con restar el costo: hay que sumar impuestos y otros cargos, y el cálculo se complica rápido. Este reporte le calcula el margen promedio de ganancia de cada producto según las ventas del mes, para que sepa con confianza si su precio deja utilidad.
 
 Para ingresar a este reporte hay que seguir los siguientes pasos:
 
@@ -20,3 +20,5 @@ Después de seleccionar el mes, año y proveedor, se enlistara los productos que
 ![imagen2](/img/reportes-de-ventas/reportes-ventas-item-por-proveedor-mensual-2.jpg)
 
 Es el reporte mensual de ítems por proveedor con ventas y costos calculados.
+
+Con esos números puede ajustar precios con tranquilidad y negociar con sus proveedores con datos en la mano.

@@ -4,7 +4,7 @@ sidebar_label: "Ordenes de Trabajo"
 sidebar_position: 8
 ---
 
-Las ordenes de trabajo permiten registrar consumos internos de inventario, ya sea para procesos productivos que no siguen el flujo de ordenes de produccion o para cualquier otro uso interno de materiales. Las ordenes de trabajo pueden contener items individuales o paquetes (bundles), y soportan el manejo de lotes y numeros de serie.
+Si en su operacion hay consumos internos que no siguen una corrida formal de manufactura — materiales para mantenimiento, repuestos para un equipo o insumos que se entregan a un area — la orden de trabajo es la forma correcta de registrarlos para que el inventario y la contabilidad queden al dia. Es el registro que usa cuando algo sale de bodega hacia un uso interno. Las ordenes de trabajo permiten registrar consumos internos de inventario; pueden contener items individuales o paquetes (bundles), y soportan el manejo de lotes y numeros de serie.
 
 ## Crear una orden de trabajo
 
@@ -87,7 +87,7 @@ Cuando termine, presione **"Actualizar Orden de Trabajo"**.
 
 ## Cerrar una orden de trabajo
 
-El cierre de una orden de trabajo genera los movimientos de inventario y asientos contables correspondientes:
+Cuando el material ya fue consumido y quiere dejar el inventario y la contabilidad al dia, llega el momento de cerrar. El cierre de una orden de trabajo genera los movimientos de inventario y asientos contables correspondientes:
 
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Ordenes de Trabajo"**.
@@ -136,6 +136,8 @@ Las ordenes de trabajo pueden filtrarse por multiples criterios:
 - Numero de serie de destino (nombre de serial, ID o nombre de item).
 
 Puede utilizar la barra de busqueda en la parte superior de la lista para encontrar ordenes rapidamente.
+
+Una vez cerrada, la orden pasara a la seccion de ordenes de trabajo cerradas, donde podra consultarla, imprimirla o reabrirla si descubre que falto registrar algo. Si la etiqueto, los reportes consolidados por etiqueta le mostraran todos estos consumos agrupados.
 
 ## API (llamadas desde sistemas externos)
 

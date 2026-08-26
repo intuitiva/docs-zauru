@@ -4,9 +4,7 @@ sidebar_label: "Tablas dinámicas (WebApp Tables)"
 sidebar_position: 4
 ---
 
-Las tablas dinámicas en zauru nos permiten ampliar cualquier tipo de funcionalidad que necesitemos y que no tengamos directamente, como por ejemplo: Catálogos específicos, historial de registros, versiones de registros, listado de opciones específicas.
-
-Estas tablas dinámicas tienen un CRUD disponible (Crear, Editar, Eliminar, Listar). Llevan una estructura específica (Números, Texto) y pueden crecer tanto como quieras.
+¿Necesita guardar en Zauru información que el sistema no maneja de fábrica —un catálogo propio, el historial de versiones de un registro o un listado de opciones para su webapp? Las tablas dinámicas (WebApp Tables) le permiten ampliar cualquier funcionalidad que su operación requiera, sin esperar a que el sistema la incluya. Cada tabla incluye su CRUD completo (crear, editar, eliminar y listar), acepta estructuras de números y texto, y puede crecer tanto como usted la necesite.
 
 ## Creación y edición de WebApp Table
 
@@ -32,6 +30,8 @@ Con eso nuestra webapp table se creará y ya la tendremos lista para ser utiliza
 Ahora podemos hacer uso de nuestra nueva webapp table para ingresar registros, o actualizar los ya existentes.
 
 ![EjemploListadoRegistrosWebAppTable](/img/webapps/tablas-dinamicas-webapp-tables-4.png)
+
+Con esto, su tabla dinámica queda creada y lista para recibir registros. Lo que sigue naturalmente es llenarla desde el sistema o conectarla con su webapp personalizada; más adelante, si sus aplicaciones la consultan con frecuencia, también podrá sincronizarla con una base de datos externa.
 
 ## Uso de la API
 

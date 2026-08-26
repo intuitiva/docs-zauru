@@ -4,11 +4,9 @@ sidebar_label: "Desactivar suscripciones"
 sidebar_position: 7
 ---
 
-Las suscripciones en Zauru se crean para dar accesos a un usuario para ingresar al sistema por medio de un correo electrónico.
+Cuando un empleado sale de su empresa o necesita dejar de usar Zauru por un tiempo, no hace falta borrar su cuenta: basta con desactivar su suscripción para que su acceso al sistema quede bloqueado al momento. Las suscripciones en Zauru se crean para dar acceso a un usuario a ingresar al sistema por medio de un correo electrónico, y desactivarlas es un proceso sencillo y reversible.
 
-Una vez creada la suscripción en el sistema Zauru, es posible que necesite desactivarlos.
-
-Los pasos para crear desactivar un usuario son los siguientes:
+Los pasos para desactivar un usuario son los siguientes:
 
 1. Ir a “Control de Acceso”.
 2. Seleccionar “Suscripciones”.
@@ -27,6 +25,8 @@ Le aparecerán las opciones para editar el usuario a desactivar:
 Para desactivar únicamente necesita quitar la opción de ¿Activa?, dejando el cuadro en blanco y presionar el botón de __Actualizar suscripción__.
 
 ![desactivar suscripciones dos ok](/img/permisos-de-acceso/desactivar-suscripciones-2.png)
+
+Con el cuadro de ¿Activa? en blanco, el usuario ya no podrá ingresar a Zauru. Si más adelante esa persona vuelve a su equipo, el proceso es igual de sencillo: edite su suscripción, marque de nuevo la casilla y presione el botón Actualizar suscripción.
 
 ## API (llamadas desde sistemas externos)
 

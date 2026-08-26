@@ -4,7 +4,7 @@ sidebar_label: "Consumo del Inventario del Proveedor"
 sidebar_position: 4
 ---
 
-Acá podemos ver el consumo por todos los proveedores o por proveedor con los que cuenta la empresa, opción para consultar hasta un máximo de doce meses.
+Cuando esté planeando sus próximas compras, conviene saber qué tan rápido se están consumiendo los productos de cada proveedor. Este reporte le muestra el consumo de todos sus proveedores, o de uno en particular, analizando hasta doce meses hacia atrás para que pueda anticipar cuánto le durará el inventario.
 
 Para ver el reporte de consumo del inventario del proveedor debemos de:
 
@@ -30,3 +30,5 @@ El reporte analiza el consumo mensual promedio de los productos de cada proveedo
 - **Meses restantes**: stock actual / consumo mensual promedio.
 
 **Exportacion**: disponible en formato XLS.
+
+Con esta lectura clara del consumo y de los meses que le quedan de inventario, podrá planear sus compras sin urgencias y pedirle a cada proveedor justo lo que necesita.

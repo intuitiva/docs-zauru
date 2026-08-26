@@ -4,7 +4,7 @@ sidebar_label: "Productos Terminados por Responsable"
 sidebar_position: 2
 ---
 
-Este reporte agrupa los productos terminados de ordenes de produccion cerradas por empleado responsable, dentro de un rango de fechas.
+¿Quiere saber cuánto terminó cada empleado en la semana o en el mes? Este reporte agrupa los productos terminados de las órdenes de producción cerradas por empleado responsable, dentro del rango de fechas que elija. Le sirve para revisar el ritmo de cada persona o para responder con cifras cuando le pregunten quién produjo qué.
 
 Para generar este reporte:
 
@@ -23,3 +23,5 @@ El reporte muestra:
 - Fechas de las ordenes.
 
 Puede exportar el reporte a Excel presionando el boton **"Exportar a XLS"**.
+
+Con el detalle por empleado puede reconocer el trabajo bien hecho o reacomodar la carga cuando alguien queda más recargado.

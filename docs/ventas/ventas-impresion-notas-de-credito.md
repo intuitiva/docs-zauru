@@ -4,7 +4,7 @@ sidebar_label: "Impresión Notas de Crédito"
 sidebar_position: 16
 ---
 
-Este tutorial fue realizado para mostrar los pasos a seguir, para la impresión de Notas de Crédito
+¿Emite una nota de crédito y su cliente quiere llevarse el documento impreso para sus archivos? Este tutorial le muestra los pasos para imprimir una nota de crédito desde Zauru, desde ubicarla en el listado hasta confirmar la impresora y el número de copias.
 
 1.       Seleccionar Ventas.
 
@@ -37,6 +37,8 @@ Acontinuación presione las teclas “CTRL + P”  para enviar  a la impresora p
 Verifique en Nombre que la impresora es la correcta, en Número de copias la cantidad de hojas a imprimir y luego click en aceptar normal.
 
 ![imagen5](/img/ventas/ventas-impresion-notas-de-credito-5.png)
+
+Con la nota impresa y entregada, su cliente tiene el documento que respalda su saldo a favor y usted tiene el control del movimiento. Cada vez que necesite una copia, ya sea para el cliente o para sus archivos, el proceso es el mismo y toma menos de un minuto.
 
 ## API (llamadas desde sistemas externos)
 

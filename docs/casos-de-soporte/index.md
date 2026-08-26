@@ -4,7 +4,7 @@ sidebar_label: "Casos de Soporte"
 sidebar_position: 0
 ---
 
-El modulo de Casos de Soporte le permite gestionar el ciclo de vida completo de un caso de soporte a sus clientes, desde la creacion, edicion, documentacion, registro de horas de agentes, facturacion, cierre y analisis de rentabilidad.
+Cada vez que un cliente trae un equipo dañado o reporta un problema con lo que le compró, usted abre un caso y comienza un recorrido: atenderlo, documentarlo, cobrarlo y medir cuánto le dejó. El módulo de Casos de Soporte le permite gestionar ese ciclo de vida completo — desde la creación, edición, documentación y registro de horas de agentes, hasta la facturación, el cierre y el análisis de rentabilidad — para que ninguna atención quede en el aire.
 
 ## Funcionalidades del Modulo de Casos de Soporte
 

@@ -4,7 +4,7 @@ sidebar_label: "API de Cotizaciones"
 sidebar_position: 1
 ---
 
-El módulo de CRM de Zauru expone una serie de endpoints JSON que le permiten integrar sus aplicaciones externas con las funcionalidades de cotización, catálogo de productos, creación de órdenes de venta y gestión de contactos.
+Cuando un cliente le pide una cotización desde su página web, o su equipo de ventas trabaja con una herramienta propia que necesita hablar con Zauru, estos endpoints son el puente. El módulo de CRM de Zauru expone una serie de endpoints JSON que le permiten integrar sus aplicaciones externas con las funcionalidades de cotización, catálogo de productos, creación de órdenes de venta y gestión de contactos.
 
 ## Obtener ítems disponibles para la venta
 

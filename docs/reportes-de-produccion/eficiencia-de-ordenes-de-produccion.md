@@ -4,7 +4,7 @@ sidebar_label: "Eficiencia de Ordenes de Produccion"
 sidebar_position: 4
 ---
 
-Este reporte analiza la diferencia entre el consumo de materias primas y el resultado obtenido para cada orden de produccion cerrada.
+¿Quiere saber qué tan cerca estuvo cada orden de producción de lo planificado? Este reporte compara, para cada orden cerrada, la materia prima que se consumió con el resultado que se obtuvo. Le sirve cuando una orden gastó más de la cuenta o cuando quiere evaluar cómo rindió la planta en un período.
 
 Para generar este reporte:
 
@@ -25,3 +25,5 @@ El reporte muestra:
 - Comparativa entre lo planificado y lo real para evaluar la eficiencia.
 
 Puede exportar el reporte a Excel presionando el boton **"Exportar a XLS"**.
+
+Con la comparativa entre lo planificado y lo real puede detectar qué órdenes consumieron de más y ajustar la planeación de las siguientes.

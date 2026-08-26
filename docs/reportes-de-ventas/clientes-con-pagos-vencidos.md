@@ -4,7 +4,7 @@ sidebar_label: "Clientes con Pagos Vencidos"
 sidebar_position: 56
 ---
 
-Este reporte lista los clientes que tienen pagos vencidos. Retorna JSON para uso en dropdowns.
+Cuando llega el momento de cobrar, este reporte le dice de inmediato qué clientes tienen pagos vencidos, para que su equipo sepa a quién llamar primero.
 
 Para ingresar al reporte:
 

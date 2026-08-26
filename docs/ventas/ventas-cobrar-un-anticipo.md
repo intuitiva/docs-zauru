@@ -4,7 +4,7 @@ sidebar_label: "Cobrar un anticipo (Cobrar antes de facturar)"
 sidebar_position: 10
 ---
 
-Este tutorial esta enfocado en cobrar anticipos. Un anticipo es un cobro que se la hace al cliente antes de facturar para comenzar la relación de trabajo. Los pasos para cobrar un anticipo a una orden de venta son los siguientes:
+Piense en un proyecto grande: el cliente acepta la orden, pero antes de empezar usted necesita un adelanto para comprar materiales o asegurar el trabajo. Ese cobro antes de facturar es un anticipo, y este tutorial le muestra cómo registrarlo sobre una orden de venta. Los pasos para cobrar un anticipo a una orden de venta son los siguientes:
 
 1. Ir a “Ventas”.
 2. Seleccionar “Ordenes”.
@@ -39,6 +39,8 @@ Para crear el anticipo presione “Crear Pago”.
 Le aparecerá un mensaje en la pantalla notificándole que el pago se creo exitosamente, en la parte inferior de la pagina podrá encontrar los datos de la orden de venta que se pago y el detalle del pago.
 
 ![imagen3](/img/ventas/ventas-cobrar-un-anticipo-3.jpg)
+
+Con el anticipo registrado, la orden de venta refleja cuánto se ha cobrado por adelantado, y cuando llegue el momento de facturar, el saldo pendiente ya tomará en cuenta lo que el cliente pagó. Así puede empezar el trabajo con la confianza de que su esfuerzo está respaldado.
 
 ## API (llamadas desde sistemas externos)
 

@@ -4,7 +4,7 @@ sidebar_label: "Casos Abiertos"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en como navegar y filtrar el listado de casos abiertos.
+Cuando un cliente llama preguntando por el estado de su reparación, o cuando usted quiere repartir el trabajo del día entre sus agentes, el listado de casos abiertos es su punto de partida. Aquí encontrará todos los casos que aún no han sido cerrados, y aprenderá a localizar el que busca en segundos usando los filtros y las opciones disponibles.
 
 Los pasos para ver los casos abiertos son los siguientes:
 
@@ -25,7 +25,7 @@ Le aparecera el listado de todos los casos que aun no han sido cerrados. En este
 
 ## Filtros Disponibles
 
-El listado de casos abiertos permite aplicar varios filtros para encontrar casos especificos:
+¿Busca los casos que le tocan hoy a usted, o los que entraron durante la última semana? El listado de casos abiertos permite aplicar varios filtros para encontrar casos especificos:
 
 ### Filtro por Rango de Fechas
 
@@ -53,6 +53,8 @@ Para cada caso en el listado, tiene disponibles las siguientes acciones:
 - **Editar** (icono de lapiz): Permite modificar los datos del caso.
 - **Eliminar** (icono de basurero): Borra el caso (solo si no tiene facturas emitidas).
 - **Cerrar Caso** (icono de check): Cierra el caso y lo mueve a Casos Cerrados.
+
+Con esto ya domina el listado de casos abiertos: encontrar, editar, cerrar y eliminar desde un solo lugar. Cuando localice el caso que le interesa, el siguiente paso natural es abrir sus detalles para registrar el diagnóstico y la solución, y luego cerrarlo cuando el cliente ya haya recibido su equipo.
 
 ## API (llamadas desde sistemas externos)
 
