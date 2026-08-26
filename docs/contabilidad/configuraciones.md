@@ -4,21 +4,21 @@ sidebar_label: "Configuraciones"
 sidebar_position: 1
 ---
 
-Este tutorial esta enfocado en configurar el modulo de Contabilidad para establecer las transacciones contables que se generan automaticamente y parametros generales del modulo. Zauru le permite a usted especificar las siguientes configuraciones:
+Este tutorial esta enfocado en configurar el modulo de Contabilidad para definir a que cuentas contables se dirigiran ciertas operaciones del sistema (como el calculo de algunos impuestos) y otros parametros generales del modulo. Zauru le permite a usted especificar las siguientes configuraciones:
 
-## Cuentas contables automaticas
+## Cuentas contables del sistema
 
 ### IVA de ventas (IVA por Pagar)
-Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Pagar generadas automaticamente al emitir facturas de venta.
+Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Pagar al emitir facturas de venta.
 
 ### IVA de compras (IVA por Cobrar)
-Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Cobrar generadas automaticamente al registrar compras.
+Seleccione la cuenta contable a donde deberan ir todas las transacciones de IVA por Cobrar al registrar compras.
 
 ### Activo de Inventario
 Seleccione la cuenta de activo que registra el monto del inventario cuando se compra mercaderia. El activo de inventario se incrementa cada vez que usted compra producto y se debita cuando lo vende.
 
 ### Gasto del Costo de Inventario
-Seleccione la cuenta de gasto que registra el costo del inventario cuando se genera una venta. Al vender un producto se genera automaticamente una transaccion desde Activo de Inventario hacia Costo del Inventario.
+Seleccione la cuenta de gasto que registra el costo del inventario cuando se genera una venta. Al vender un producto se registra una transaccion desde Activo de Inventario hacia Costo del Inventario.
 
 ### Cuenta de Resultados (Capital)
 Seleccione la cuenta de capital (patrimonio) a donde se trasladaran los resultados del cierre mensual y anual del estado de resultados. Generalmente se utiliza una cuenta como "Utilidades del periodo" o "Resultados acumulados".
