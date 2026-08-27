@@ -4,48 +4,41 @@ sidebar_label: "Subir existencias iniciales"
 sidebar_position: 1
 ---
 
-Cuando empieza a trabajar con Zauru, o cuando abre una bodega nueva, el primer reto es registrar todo lo que ya tiene sin contar producto por producto a mano. Para eso existe la importación de existencias iniciales: con una plantilla de Excel predefinida usted carga las cantidades de todos sus productos en un solo paso. Eso sí, antes de importar existencias debe haber creado los ítems de sus productos.
+Cuando empieza a trabajar con Zauru, o cuando abre una bodega nueva, el primer reto es registrar todo lo que ya tiene sin contar producto por producto a mano. Para eso existe la importación de existencias iniciales: con una plantilla predefinida se cargan las cantidades de todos los productos en un solo paso. Antes de importar existencias debe haber creado los ítems de sus productos.
 
 Los pasos para importar existencias son los siguientes:
 
-1. Ir a “Inventarios”.
-2. Seleccionar “Existencias”.
-3. Seleccionar “Importar”.
+1. Ir a "Inventarios".
+2. Seleccionar "Existencias".
+3. Seleccionar "Importar".
 
 ![imagen1](/img/inventarios/inventarios-existencia-1.jpg)
 
-
-4.Descargar la plantilla de Excel con los campos predefinidos para importar existencias.
+4. Descargar la plantilla con los campos predefinidos para importar existencias. Hay plantillas disponibles para CSV, Excel (.xls) y OpenOffice/LibreOffice (.ods).
 
 ![imagen2](/img/inventarios/inventarios-existencia-2.png)
 
+Los campos de la plantilla son los siguientes:
 
-Esta es la plantilla de Excel, los campos predeterminados son los siguientes:
+- **quantity**: cantidad existente del producto.
+- **item_zid**: ID del ítem generado automáticamente por Zauru.
+- **item_code**: código asignado al ítem.
+- **lot_id**: ID del lote, si el producto pertenece a uno.
 
-1. Quantity: Debe colocar la cantidad existente del producto.
-2. Ítem_zid: Debe colocar el ID del ítem generado automáticamente por Zauru.
-3. Ítem_code: Debe colocar el código que usted le puso al ítem.
-4. Lot_id: Si el producto pertence a un lote, coloque el ID del lote.
+Los campos obligatorios son:
 
+- **quantity**
+- uno de los dos: **item_zid** o **item_code**
 
-Los únicos campos obligatorios con:
-
-- Quantity
-- Ítem_zid o Ítem_code.
-
-
-Luego de terminar de hacer la plantilla de Excel deberá guardarla para importarla mas adelante.
+Luego de terminar la plantilla, guardarla para importarla más adelante.
 
 ![imagen3](/img/inventarios/inventarios-existencia-3.png)
 
+Después de preparar la plantilla, los pasos para continuar con la importación son:
 
-Después de haber hecho su plantilla de importación de Excel, los pasos para continuar con la importación son los siguientes:
-
-5.Seleccione la bodega a la que desea importar las existencias.
-
-6.Seleccione la Ubicación del archivo de Excel que creo, le recomendamos que revise que la cantidad que coloco en el archivo de Excel sean las correctas.
-
-7.Presione “Importar Existencias” para importar.
+5. Seleccionar la bodega a la que desea importar las existencias.
+6. Seleccionar el archivo creado; conviene revisar que las cantidades sean correctas.
+7. Presionar "Importar existencias".
 
 ![imagen4](/img/inventarios/inventarios-existencia-4.png)
 
@@ -54,7 +47,7 @@ Con la importación hecha, sus productos ya tienen existencias en la bodega y es
 ## API (llamadas desde sistemas externos)
 
 ### Importar existencias iniciales
-Importa existencias de productos a una bodega desde un archivo de Excel predefinido.
+Importa existencias de productos a una bodega desde un archivo predefinido.
 ```bash
 curl -v \
   -H "Accept: application/json" \

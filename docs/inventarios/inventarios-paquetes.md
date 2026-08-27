@@ -117,49 +117,11 @@ En la vista de paquetes, puede filtrar por etiquetas usando la nube de etiquetas
 
 Esto mostrará las etiquetas disponibles para filtrar los paquetes.
 
-## Existencias de paquetes (Bundle Stocks)
+## Existencias de paquetes
 
-¿Cuántos paquetes puede prometer en una oferta? Zauru calcula automáticamente las existencias disponibles de cada paquete basándose en la disponibilidad de sus componentes. La cantidad disponible de un paquete se determina como el **mínimo** de las cantidades disponibles de sus componentes dividido por la cantidad requerida de cada uno.
+Las existencias de paquetes se consultan desde la pantalla "Existencias", en la pestaña "Existencias de paquetes". Zauru calcula el disponible de cada paquete a partir del stock de sus componentes y muestra el desglose por componente al abrir el detalle; la exportación a Excel está disponible en la misma pantalla. El procedimiento completo está en [Existencias](/inventarios/inventarios-existencias).
 
-Por ejemplo, si un paquete "Combo Oficina" contiene:
-- 2 cuadernos (stock disponible: 10)
-- 1 lapicero (stock disponible: 3)
-
-El paquete tendrá disponible: min(10/2, 3/1) = min(5, 3) = **3 unidades**.
-
-### Ver existencias de paquetes por bodega
-
-1. Ir a "Inventarios".
-2. Seleccionar "Existencias de paquetes".
-3. Seleccione la bodega que desea consultar.
-
-Podrá ver cada paquete con su cantidad disponible calculada.
-
-### Ver existencias de paquetes en todas las bodegas
-
-1. Ir a "Inventarios".
-2. Seleccionar "Existencias de paquetes".
-3. Seleccionar la pestaña "Todas las bodegas".
-
-Aquí podrá ver las existencias de cada paquete desglosadas por bodega.
-
-### Ver detalle de existencias de un paquete
-
-Al hacer clic sobre un paquete en la vista de existencias, podrá ver:
-
-- El desglose de componentes del paquete.
-- Las existencias disponibles de cada componente.
-- Cuántas unidades del paquete se pueden armar con el stock actual.
-
-### Exportar existencias de paquetes
-
-1. Ir a "Inventarios".
-2. Seleccionar "Existencias de paquetes".
-3. Seleccionar "Exportar".
-
-Esto descargará un archivo XLS con las existencias de todos los paquetes por bodega.
-
-Con el paquete creado, ya puede seleccionarlo en una reservación y venderlo como una sola unidad, mientras Zauru descuenta cada componente de su bodega. Para cerrar el ciclo, asigne el precio sugerido del paquete en el módulo de Ventas y revise sus existencias antes de cada oferta, para prometer solo lo que realmente puede entregar.
+Con el paquete creado, ya puede seleccionarlo en una reservación y venderlo como una sola unidad, mientras Zauru descuenta cada componente de su bodega. Para cerrar el ciclo, asigne el precio sugerido del paquete en el módulo de Ventas.
 
 ## API (llamadas desde sistemas externos)
 
@@ -471,62 +433,7 @@ Esto devolverá un JSON similar a este:
 []
 ```
 
-### Obtener el detalle de existencias de un paquete
-Devuelve los datos del paquete junto con las métricas de existencias (disponible, entrante, saliente) calculadas para la bodega indicada.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/inventories/bundle_stocks/1.json?warehouse=1
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
-
-### Obtener las existencias de un paquete en todas las bodegas
-Devuelve un hash con las existencias disponibles del paquete desglosadas por bodega.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/inventories/bundle_stocks/all_warehouses.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "[25, 2]": {
-    "available": 0,
-    "id": 2
-  },
-  "[8580, 2]": {
-    "available": 0,
-    "id": 2
-  }
-}
-```
-
-### Obtener las existencias de un paquete en todas las bodegas con totales
-Devuelve las existencias del paquete (disponible, entrante y saliente) desglosadas por bodega, junto con los totales sumados.
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/inventories/bundle_stocks/1/item.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+Los endpoints de existencias de paquetes (`bundle_stocks`) se documentan en [Existencias](/inventarios/inventarios-existencias).
 
 ### Importar paquetes
 Importa paquetes desde un archivo. El cuerpo de la petición debe incluir el archivo a importar.
