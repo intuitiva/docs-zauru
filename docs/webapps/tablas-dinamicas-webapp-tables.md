@@ -33,6 +33,29 @@ Ahora podemos hacer uso de nuestra nueva webapp table para ingresar registros, o
 
 Con esto, su tabla dinámica queda creada y lista para recibir registros. Lo que sigue naturalmente es llenarla desde el sistema o conectarla con su webapp personalizada; más adelante, si sus aplicaciones la consultan con frecuencia, también podrá sincronizarla con una base de datos externa.
 
+## Tipos de datos de las columnas
+
+Cada columna admite uno de estos tipos de datos:
+
+| Tipo | Valor en la API | Descripción |
+| --- | --- | --- |
+| Numero | `int` | Números enteros. Se muestran con separador de miles. |
+| Texto | `string` | Texto libre. |
+| Condición | `boolean` | Valores de verdadero o falso, mostrados con un ícono. Se interpretan como verdaderos los valores `true`, `t`, `1`, `yes`, `y` y `si`. |
+| Fecha | `date` | Fechas. Aceptan formato ISO (`2026-08-27`), `dd/mm/yyyy` y otros formatos comunes; se muestran en formato largo. |
+| Decimal | `decimal` | Números con decimales, mostrados con separadores de miles y decimales, sin ceros finales. |
+| JSON | `json` | Estructuras JSON (objetos o arreglos), mostradas formateadas. |
+| JSON (jsonb) | `jsonb` | Igual que JSON; se almacena como tipo `jsonb` en la base de datos. |
+| JSON (URLs de archivos) | `jsonb_urls` | Una URL o un listado de URLs. En el show de un documento vinculado, cada URL se muestra como imagen en miniatura si apunta a una imagen (jpg, png, gif, webp, svg, entre otras extensiones) o como botón de descarga en cualquier otro caso. |
+
+## Configuración de la tabla y sus columnas
+
+- **Cargar en show del documento relacionado**: si está habilitado, la tabla se muestra en el show de los documentos vinculados (órdenes de compra, facturas, entre otros).
+- **Título en show**: título que se muestra para la columna en el show de los documentos vinculados. Si se deja vacío, se usa el nombre de la columna.
+- **Ocultar en show**: si está marcado, la columna no se muestra en el show de los documentos vinculados; el dato se sigue guardando y la API lo sigue devolviendo.
+
+Al editar una tabla existente se pueden agregar columnas nuevas, renombrarlas, cambiar su tipo y eliminarlas. Los cambios se aplican a los registros existentes: las columnas renombradas conservan sus datos, las columnas nuevas quedan con valor vacío y al eliminar una columna se borran sus datos en todos los registros. La eliminación pide confirmación y no se puede deshacer.
+
 ## Uso de la API
 
 Como en todos los casos, aquí también tenemos acceso a una API para gestionar todo en relación al CRUD de las webapp tables y sus registros.
@@ -205,6 +228,30 @@ Esto devolverá un JSON similar a este:
     [
       "Texto",
       "string"
+    ],
+    [
+      "Condición",
+      "boolean"
+    ],
+    [
+      "Fecha",
+      "date"
+    ],
+    [
+      "Decimal",
+      "decimal"
+    ],
+    [
+      "JSON",
+      "json"
+    ],
+    [
+      "JSON (jsonb)",
+      "jsonb"
+    ],
+    [
+      "JSON (URLs de archivos)",
+      "jsonb_urls"
     ]
   ]
 }
