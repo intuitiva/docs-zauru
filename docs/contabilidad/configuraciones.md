@@ -6,6 +6,26 @@ sidebar_position: 1
 
 Cada empresa maneja la contabilidad a su manera, y esta página es el punto de partida para dejar el módulo trabajando como usted lo necesita. Conviene revisarla cuando empieza a usar Zauru por primera vez, cuando su contador define nuevas cuentas de IVA o de inventario, o cuando necesita proteger un periodo ya declarado. Aquí se establecen las cuentas contables que reciben las transacciones automáticas y los parámetros generales del módulo. Zauru le permite especificar las siguientes configuraciones:
 
+## Pasos para configurar
+
+Los pasos para establecer las configuraciones de contabilidad son los siguientes:
+
+1. Ir a "Contabilidad".
+2. Seleccionar el Icono de "Configuraciones".
+3. Seleccione a que cuenta contable deberan ir todas las transacciones de IVA por Pagar (VENTAS).
+4. Selecciona a que cuenta contable deberan ir todas las transacciones de IVA por Cobrar (COMPRAS).
+5. Seleccione a que cuenta contable deberan ir todas las transacciones de Activo de Inventario (COMPRA).
+6. Seleccione a que cuenta contable deberan ir las transacciones de gasto del Costo de Inventario (VENTAS).
+7. Seleccione la cuenta de capital para cierre de resultados.
+8. Establezca la fecha de cierre contable si lo desea.
+9. Configure las prioridades de centro de costos para ventas y compras.
+10. Configure las cuentas del libro de compras segun sus necesidades fiscales.
+11. Seleccione "Actualizar Configuraciones" para aplicar los cambios.
+
+![imagen1](/img/contabilidad/configuraciones-1.jpg)
+
+Con las configuraciones actualizadas, cada venta y cada compra generará sus transacciones de IVA e inventario en las cuentas correctas sin trabajo manual adicional. Si en el futuro cambia de cuentas o quiere proteger un periodo ya cerrado, este es el lugar para ajustarlo.
+
 ## Cuentas contables del sistema
 
 ### IVA de ventas (IVA por Pagar)
@@ -62,23 +82,3 @@ Cuentas contables para impuestos adicionales que requieran ser identificados por
 
 ### Columna de serial en libro de compras
 Active esta opcion si necesita mostrar una columna con el numero de serie o correlativo interno en el libro de compras.
-
-## Pasos para configurar
-
-Los pasos para establecer las configuraciones de contabilidad son los siguientes:
-
-1. Ir a "Contabilidad".
-2. Seleccionar el Icono de "Configuraciones".
-3. Seleccione a que cuenta contable deberan ir todas las transacciones de IVA por Pagar (VENTAS).
-4. Selecciona a que cuenta contable deberan ir todas las transacciones de IVA por Cobrar (COMPRAS).
-5. Seleccione a que cuenta contable deberan ir todas las transacciones de Activo de Inventario (COMPRA).
-6. Seleccione a que cuenta contable deberan ir las transacciones de gasto del Costo de Inventario (VENTAS).
-7. Seleccione la cuenta de capital para cierre de resultados.
-8. Establezca la fecha de cierre contable si lo desea.
-9. Configure las prioridades de centro de costos para ventas y compras.
-10. Configure las cuentas del libro de compras segun sus necesidades fiscales.
-11. Seleccione "Actualizar Configuraciones" para aplicar los cambios.
-
-![imagen1](/img/contabilidad/configuraciones-1.jpg)
-
-Con las configuraciones actualizadas, cada venta y cada compra generará sus transacciones de IVA e inventario en las cuentas correctas sin trabajo manual adicional. Si en el futuro cambia de cuentas o quiere proteger un periodo ya cerrado, este es el lugar para ajustarlo.
