@@ -1,7 +1,7 @@
 ---
 title: "Numeros de Serie"
 sidebar_label: "Numeros de Serie"
-sidebar_position: 9
+sidebar_position: 3
 ---
 
 Si vende productos idénticos entre sí pero que necesita identificar uno por uno, como electrodomésticos, maquinaria o vehículos, los números de serie son su herramienta. Con ellos sabe exactamente cuál unidad está en qué bodega, cuál se vendió y por dónde pasó cada una. Este tutorial le muestra cómo crear números de serie, consultarlos y hacer una reservación para ingresarlos desde el proveedor a su bodega.

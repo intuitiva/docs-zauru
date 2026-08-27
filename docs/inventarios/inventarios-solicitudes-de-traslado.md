@@ -1,7 +1,7 @@
 ---
 title: "Solicitudes de Traslado"
 sidebar_label: "Solicitudes de Traslado"
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 Cuando una sucursal necesita mercadería que está en otra bodega, conviene pedirla de manera ordenada y con seguimiento, sin mover existencias hasta que quede claro qué se va a trasladar. Para eso sirven las solicitudes de traslado: la bodega destino pide, la solicitud pasa por un flujo de aprobación y, cuando se convierte en envíos, la mercadería se mueve con respaldo. Este tutorial le muestra cómo crear la solicitud, revisar la disponibilidad en la bodega origen y cerrar el ciclo con envíos o requisiciones de compra.
