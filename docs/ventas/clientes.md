@@ -13,21 +13,47 @@ Piense en cuántas veces al día necesita el nombre, el NIT o la dirección de a
 
 ## Características del Cliente (campos)
 
-Un cliente puede tener muchas características como por ejemplo su nit, la moneda en que se le factura, su teléfono, dirección, etc. Para especificar estas características deberá colocárselas al momento de crear o editar al cliente, las características son las siguientes:
+Un cliente puede tener muchas características como por ejemplo su NIT, la moneda en que se le factura, su teléfono, dirección, etc. Para especificar estas características deberá colocárselas al momento de crear o editar al cliente. El formulario agrupa los campos en las siguientes secciones:
 
-1. Nombre (Comercial), Ejemplo: (Industria de Hamburguesas, S.A.)
-2. Referencia (Nombre común o sobrenombre), Ejemplo: (McDonald´s)
-3. Seleccione una categoría previamente creada para su cliente, Ejemplo: (Mayorista, Minorista). Esta categoría es opcional si está configurado el módulo de ventas para seleccionar categoría de beneficiario. Esta categoría se puede vincular con un listado de precios, para manejar diferentes precios entre sus clientes o proveedores.
-4. NIT (Numero de identificación de impuestos).
-5. Coloque la moneda en que se le factura al cliente.
-6. Coloque la dirección.
-7. Segunda línea para la dirección del beneficiario.
-8. Latitud.
-9. Longitud.
-10. Dirección de entrega de productos.
-11. Número de teléfono.
-12. Correo electrónico.
-13. Notas referente al cliente.
+**Datos generales**
+
+- **¿Activo?**: indica si el cliente está activo para usarse en ventas.
+- **Número de cliente**: número generado automáticamente por la numeración automática de documentos; no se puede editar.
+- **Nombre**: nombre comercial del cliente, por ejemplo "Industria de Hamburguesas, S.A.".
+- **Número de identificación personal (PIN)**: documento de identificación personal del cliente. Si la entidad tiene configurado un servicio externo de almacenamiento de documentos, se muestra un botón para buscar el PIN en ese servicio.
+- **Referencia**: nombre común o sobrenombre, por ejemplo "McDonald's".
+- **Categoría**: categoría previamente creada para el cliente, por ejemplo "Mayorista" o "Minorista". Se puede vincular con un listado de precios para manejar diferentes precios entre clientes o proveedores. Aparece solo si está habilitada la variable "enable_client_category_altering" en la entidad.
+- **Término de pago predeterminado**: término de pago que se asigna al cliente por defecto. Aparece si la entidad tiene términos de pago activos.
+- **Vendedor exclusivo**: empleado vendedor asignado al cliente.
+- **Etiquetas**: etiquetas para clasificar y filtrar clientes. Aparece si la entidad tiene etiquetas creadas.
+
+**Fiscal**
+
+- **NIT**: número de identificación de impuestos. Si la entidad tiene configurado un servicio externo de almacenamiento de documentos, se muestra un botón para buscar el NIT en ese servicio.
+- **Registro de contribuyente**: número de identificación del contribuyente. Visible solo en entidades de El Salvador y Costa Rica.
+- **Actividad económica**: actividad del contribuyente. Visible solo en entidades de El Salvador.
+- **Moneda**: moneda en que se factura al cliente.
+
+**Ubicación**
+
+- **Dirección**: dirección del cliente.
+- **Dirección línea 2**: segunda línea para la dirección del cliente.
+- **¿Extranjero?**: indica si el cliente es extranjero; al marcarla se muestra el campo "País".
+- **País**: país del cliente; se usa cuando el cliente es extranjero.
+- **Distrito**: distrito de la dirección del cliente. Visible si la entidad usa distritos.
+- **Ciudad**: ciudad de la dirección del cliente.
+- **Latitud**: latitud de la ubicación del cliente.
+- **Longitud**: longitud de la ubicación del cliente.
+- **Cliente para exportación**: marca al cliente para operaciones de exportación.
+- **Dirección de entrega**: dirección donde se entregan los productos.
+
+**Comunicación**
+
+- **Teléfono**: número de teléfono del cliente.
+- **Correo electrónico**: correo electrónico del cliente.
+- **Contacto**: nombre de la persona de contacto.
+
+**Notas**: notas referentes al cliente.
 
 Para guardar sus cambios haga click sobre “Crear beneficiario” o "Editar Beneficiario"
 
