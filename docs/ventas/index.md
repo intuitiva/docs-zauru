@@ -13,7 +13,7 @@ Si necesita tener claras las respuestas a cuánto le debe cada cliente y si la m
 
 ## Precios
 
-3. **[Precios Sugeridos](/ventas/importar-precios)**: consulta de precios vigentes de ítems y paquetes, historial de cambios con usuario y fecha, creación manual, importación masiva desde Excel y exportación.
+3. **[Precios Sugeridos](/ventas/precios-sugeridos)**: consulta de precios vigentes de ítems y paquetes, historial de cambios con usuario y fecha, creación manual, importación masiva desde Excel y exportación.
 
 ## Órdenes de venta y facturas
 

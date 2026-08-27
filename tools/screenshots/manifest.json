@@ -3884,8 +3884,8 @@
     },
     {
       "section": "ventas",
-      "slug": "importar-precios",
-      "docPath": "docs/ventas/importar-precios.md",
+      "slug": "precios-sugeridos",
+      "docPath": "docs/ventas/precios-sugeridos.md",
       "existingImageCount": 5,
       "shots": [
         {

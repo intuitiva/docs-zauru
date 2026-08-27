@@ -4,7 +4,7 @@ sidebar_label: "Precios sugeridos"
 sidebar_position: 3
 ---
 
-Piense en el momento de abrir su tienda: si un producto no tiene precio, no podrá facturarlo. Por eso, antes de comenzar a vender hay que asignarle precios sugeridos de venta a cada producto: si algun item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta. Aquí verá cómo crearlos a mano, cómo consultar su historial y cómo importarlos masivamente desde Excel para ahorrarse horas de digitación.
+Piense en el momento de abrir su tienda: si un producto no tiene precio, no podrá facturarlo. Por eso, antes de comenzar a vender hay que asignarle precios sugeridos de venta a cada producto: si algún item o paquete no tiene precio no va a aparecer en el listado de items o paquetes disponibles para la venta. Aquí verá cómo crearlos a mano, cómo consultar su historial, cómo funciona el precio flexible con fecha de expiración y cómo importarlos masivamente desde Excel para ahorrarse horas de digitación.
 
 ## Listar Precios Sugeridos
 
@@ -12,45 +12,46 @@ Para consultar los precios sugeridos de sus items y paquetes:
 
 1. Ir a **"Ventas"**.
 2. Seleccionar **"Precios Sugeridos"**.
-3. Seleccione la pestana de **"Items"** o **"Paquetes"** segun corresponda.
+3. Seleccionar la pestaña de **"Items"** o **"Paquetes"** según corresponda.
 
 ![imagen1](/img/ventas/importar-precios-0.png)
 
-### Pestana de Items
+### Pestaña de Items
 
-En el listado de items podra ver:
+En el listado de items podrá ver:
 
-- El nombre y codigo del item.
+- El nombre y código del item.
 - La categoria del item.
 - El precio actual en cada listado de precios configurado.
 - La moneda del precio.
 
-La tabla cuenta con busqueda integrada por texto, que busca tanto en el nombre y codigo del item como en el nombre de los listados de precios. Los resultados se muestran paginados de 40 registros por pagina. Puede ordenar por ZID, codigo o nombre del item.
+La tabla cuenta con búsqueda integrada por texto, que busca tanto en el nombre y código del item como en el nombre de los listados de precios. Los resultados se muestran paginados de 40 registros por página. Puede ordenar por ZID, código o nombre del item.
 
-### Pestana de Paquetes
+### Pestaña de Paquetes
 
-La pestana de paquetes funciona de manera similar a la de items, pero muestra los paquetes (bundles) activos con sus precios sugeridos. La busqueda y paginacion funcionan de la misma manera. Puede ordenar por ID, codigo o nombre del paquete.
+La pestaña de paquetes funciona de manera similar a la de items, pero muestra los paquetes (bundles) activos con sus precios sugeridos. La búsqueda y paginación funcionan de la misma manera. Puede ordenar por ID, código o nombre del paquete.
 
 ## Ver Detalles de un Precio Sugerido
 
 Para ver el historial completo de precios de un item o paquete:
 
 1. En el listado de precios sugeridos, haga click sobre el precio que desea consultar.
-2. Se mostrara el historial completo de precios para ese item o paquete dentro del mismo listado de precios.
+2. Se mostrará el historial completo de precios para ese item o paquete dentro del mismo listado de precios.
 
 ![imagen2](/img/ventas/importar-precios-0b.png)
 
 El historial de precios incluye:
 
 - Todos los precios anteriores y el actual.
-- El monto de cada precio historico.
+- El monto de cada precio histórico.
 - La moneda de cada precio.
 - Si el precio era flexible o no.
+- La fecha de expiración del precio, si tiene.
 - Notas asociadas a cada precio.
-- Fecha de creacion de cada precio.
-- Usuario que creo cada precio.
+- Fecha de creación de cada precio.
+- Usuario que creó cada precio.
 
-El sistema determina automaticamente si esta consultando un item o un paquete y muestra el historial correspondiente al listado de precios asociado.
+El sistema determina automáticamente si está consultando un item o un paquete y muestra el historial correspondiente al listado de precios asociado.
 
 ## Crear un Precio Sugerido Manualmente
 
@@ -64,25 +65,27 @@ Si desea crear un precio sugerido para un item o paquete de forma manual:
 
 Los campos necesarios son:
 
-a. **Item o Paquete**: Seleccione el item o paquete al que desea asignar el precio. Los paquetes se identifican con el prefijo "b" en el codigo (ej. "b123"). Los items aparecen agrupados por categoria y tambien se muestran items sin categoria.
+a. **Item o Paquete**: Seleccione el item o paquete al que desea asignar el precio. Los paquetes se identifican con el prefijo "b" en el código (ej. "b123"). Los items aparecen agrupados por categoria y también se muestran items sin categoria.
 
-b. **Listado de precios**: Seleccione el listado de precios al que pertenecera este precio. Solo aparecen los listados de precios activos.
+b. **Listado de precios**: Seleccione el listado de precios al que pertenecerá este precio. Solo aparecen los listados de precios activos.
 
 c. **Moneda**: Seleccione la moneda del precio.
 
 d. **Monto**: Coloque el precio de venta sugerido.
 
-e. **Precio flexible**: Marque esta opcion si desea que el precio pueda ser modificado al momento de facturar.
+e. **Precio flexible**: Marque esta opción si desea que el precio pueda ser modificado al momento de facturar.
 
-f. **Notas**: Coloque notas adicionales sobre el precio.
+f. **Fecha de expiración**: Aparece solo si marcó "Precio flexible". Indica hasta qué fecha el precio podrá modificarse al facturar; vencida la fecha, el precio queda fijo en su monto. Ver [Precios flexibles con fecha de expiración](#precios-flexibles-con-fecha-de-expiración) para el detalle completo.
+
+g. **Notas**: Coloque notas adicionales sobre el precio.
 
 Para guardar presione **"Crear Precio"**.
 
-### Creacion con Pre-llenado de Campos desde la URL
+### Creación con Pre-llenado de Campos desde la URL
 
-Zauru permite pre-llenar el formulario de creacion de precios pasando parametros por URL. Esto es util para integraciones o accesos directos. Los parametros disponibles son:
+Zauru permite pre-llenar el formulario de creación de precios pasando parámetros por URL. Esto es útil para integraciones o accesos directos. Los parámetros disponibles son:
 
-| Parametro | Descripcion |
+| Parámetro | Descripción |
 |-----------|-------------|
 | `i` | ID del item |
 | `p` | ID del listado de precios |
@@ -96,9 +99,23 @@ Ejemplo de URL con pre-llenado:
 /sales/suggested_prices/new?i=150&p=3&a=99.99&c=1&f=f
 ```
 
-### Deteccion Automatica de Paquetes
+### Detección Automática de Paquetes
 
-Al crear un precio, si el ID del item comienza con "b", el sistema detecta automaticamente que se trata de un paquete y asigna el precio al bundle correspondiente en lugar de a un item regular.
+Al crear un precio, si el ID del item comienza con "b", el sistema detecta automáticamente que se trata de un paquete y asigna el precio al bundle correspondiente en lugar de a un item regular.
+
+## Precios flexibles con fecha de expiración
+
+Un precio flexible es aquel que puede modificarse al momento de facturar. Un precio flexible puede tener además una fecha de expiración: hasta esa fecha el precio puede modificarse al facturar y, una vez vencida, deja de ser flexible y queda fijo en su monto.
+
+Cómo funciona:
+
+- La función debe estar habilitada en la empresa mediante la variable de configuración `flexible_price_expiration_date`. Si no lo está, Zauru descarta la fecha al crear el precio y este queda como precio flexible sin expiración.
+- El campo "Fecha de expiración" solo aplica a precios flexibles. Si el precio no es flexible, el sistema elimina la fecha aunque se haya indicado.
+- Si el precio tiene fecha de expiración, el monto es obligatorio. Un precio flexible sin fecha de expiración es el único caso en que el monto puede quedar vacío.
+- Cuando la fecha de expiración llega (fecha menor o igual al día actual), una tarea programada diaria marca el precio como no flexible. El precio no se elimina ni cambia de monto: solo deja de poder modificarse al facturar.
+- La fecha de expiración se muestra en el detalle del precio y en la columna "Fecha de expiración flexible" del historial.
+- En la importación de Excel, la fecha se indica en la columna `flexible_price_expiration`.
+- En el API, la fecha viaja en el campo `expiration_date` de los JSON de precios sugeridos.
 
 ## Desactivar un Precio Sugerido
 
@@ -107,9 +124,9 @@ Para desactivar un precio sugerido (no se elimina, solo se marca como no vigente
 1. En el listado de precios sugeridos, localice el precio que desea desactivar.
 2. Haga click sobre **"Destruirlo"**.
 
-Esto alterna la marca de `current` del precio a `false`, por lo que ya no sera el precio vigente. El nuevo precio activo sera el siguiente en el historial (si existe). El historial de precios se mantiene para referencia. Este mecanismo de soft-delete permite mantener trazabilidad completa de los cambios de precios.
+Esto alterna la marca de `current` del precio a `false`, por lo que ya no será el precio vigente. El nuevo precio activo será el siguiente en el historial (si existe). El historial de precios se mantiene para referencia. Este mecanismo de soft-delete permite mantener trazabilidad completa de los cambios de precios.
 
-Despues de desactivar, sera redirigido automaticamente al listado correspondiente (items o paquetes) segun el tipo de precio desactivado.
+Después de desactivar, será redirigido automáticamente al listado correspondiente (items o paquetes) según el tipo de precio desactivado.
 
 ## Exportar Precios Sugeridos
 
@@ -117,41 +134,41 @@ Zauru permite exportar los precios sugeridos en diferentes formatos:
 
 ### Exportar Precios de Items a Excel
 
-Desde el listado de items, puede exportar a formato XLS. El archivo incluira:
-- Todos los items activos y vendibles con sus categorias.
+Desde el listado de items, puede exportar a formato XLS. El archivo incluirá:
+- Todos los items activos y vendibles con sus categorías.
 - Los precios actuales en cada listado de precios activo.
 - La moneda de cada precio.
 
 ### Exportar Precios de Paquetes a Excel
 
-Desde la pestana de paquetes, puede exportar los precios de los bundles activos a XLS con la misma estructura.
+Desde la pestaña de paquetes, puede exportar los precios de los bundles activos a XLS con la misma estructura.
 
 ### Exportar Precios de Items a JSON
 
-La exportacion a JSON de items retorna un arreglo con todos los items activos y vendibles que tienen precio en el listado de precios general (sin `price_list_id`). Incluye:
+La exportación a JSON de items retorna un arreglo con todos los items activos y vendibles que tienen precio en el listado de precios general (sin `price_list_id`). Incluye:
 
-- Datos del item (excepto imagenes, timestamps).
+- Datos del item (excepto imágenes, timestamps).
 - Etiquetas (tags) del item.
-- Categoria del item.
+- Categoría del item.
 - Marca del item.
 - Precios sugeridos actuales (monto y moneda).
 
 ### Exportar Precios de Paquetes a JSON
 
-La exportacion a JSON de paquetes retorna un hash donde la llave es el ID del paquete y el valor contiene los precios sugeridos actuales agrupados por listado de precios.
+La exportación a JSON de paquetes retorna un hash donde la llave es el ID del paquete y el valor contiene los precios sugeridos actuales agrupados por listado de precios.
 
 ## Importar Excel con Precios
 
 Zauru le permite importar los precios de todos sus productos por medio de una plantilla de Excel para no tener que ponerlos manualmente. Los pasos para importar precios de los items son los siguientes:
 
-1. Ir a ventas
+1. Ir a **"Ventas"**.
 2. Seleccionar **"Precios Sugeridos"**.
-3. Seleccionar **"Item"** o **"Paquete"** segun sea el caso.
+3. Seleccionar **"Item"** o **"Paquete"** según sea el caso.
 4. Seleccionar **"Importar"**.
 
 ![imagen4](/img/ventas/importar-precios-1.jpg)
 
-A continuacion debera descargar la plantilla de Excel para colocar los datos que quiere importar.
+A continuación deberá descargar la plantilla de Excel para colocar los datos que quiere importar.
 
 5. Descargar plantilla de Excel.
 
@@ -172,13 +189,13 @@ Los campos obligatorios son:
 
 ![imagen5](/img/ventas/importar-precios-2.png)
 
-Esta es la plantilla de Excel donde debera colocar los datos del item y su precio.
+Esta es la plantilla de Excel donde deberá colocar los datos del item y su precio.
 
 ![imagen6](/img/ventas/importar-precios-3.png)
 
-Al terminar de llenar el archivo de Excel con todos los precios de sus productos debera guardar el archivo y adjuntarlo para importar sus precios, como se muestra en el paso.
+Al terminar de llenar el archivo de Excel con todos los precios de sus productos deberá guardar el archivo y adjuntarlo para importar sus precios, como se muestra en el paso.
 
-6. Seleccione la ubicacion de su plantilla de Excel.
+6. Seleccione la ubicación de su plantilla de Excel.
 
 7. Para Importar los precios presione **"Importar Precios"**.
 
@@ -469,7 +486,7 @@ curl -v \
   https://app.zauru.com/sales/suggested_prices/1.json
 ```
 
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+En caso de éxito, retorna un código HTTP `204 No Content` (sin cuerpo).
 
 ### Exportar precios sugeridos de items a JSON
 ```bash

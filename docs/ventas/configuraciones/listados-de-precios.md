@@ -70,7 +70,7 @@ Le deberá aparecer un mensaje de éxito en la pantalla mostrándole la categor�
 
 ![imagen20](/img/ventas/configuraciones-20.jpg)
 
-Ahora deberá colocar el precio a sus ítems en este listado de precios, los pasos para hacerlo se especifican en el tutorial de [**"Precios Sugeridos"**](/ventas/importar-precios).
+Ahora deberá colocar el precio a sus ítems en este listado de precios, los pasos para hacerlo se especifican en el tutorial de [**"Precios Sugeridos"**](/ventas/precios-sugeridos).
 
 ## Eliminar un Listado de Precios
 

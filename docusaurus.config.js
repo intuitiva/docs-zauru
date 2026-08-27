@@ -89,6 +89,21 @@ const config = {
     ],
   ],
 
+  // Redirects for renamed pages (static HTML files generated at build).
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/ventas/precios-sugeridos",
+            from: "/ventas/importar-precios",
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
