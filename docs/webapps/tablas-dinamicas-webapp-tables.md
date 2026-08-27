@@ -572,3 +572,45 @@ Esto devolverá un JSON similar a este:
   "status": "ok"
 }
 ```
+
+## Ejemplo de caso de uso: programaciones de Agrocréditos
+
+La webapp de Agrocréditos de 4 Pinos administra programaciones de siembra y cosecha por socio. Zauru no maneja programaciones de fábrica y varias aplicaciones necesitan los mismos registros: Agrocréditos los crea y consulta, la webapp de recepciones los necesita al registrar recepciones, y los usuarios de Zauru los consultan desde el CRUD de WebApps => Tablas. Una webapp table centraliza el dato en Zauru y evita duplicarlo entre aplicaciones.
+
+### Estructura de la tabla
+
+La webapp table "programaciones" guarda, entre otras, estas columnas:
+
+- **payee_id**: id del socio dueño de la programación.
+- **item_id**: id de la verdura sembrada.
+- **variedad**: variedad del cultivo.
+- **fecha_siembra**: fecha de siembra planeada.
+- **fecha_cosecha_inicio** y **fecha_cosecha_fin**: ventana de cosecha calculada a partir del ciclo del cultivo.
+- **cantidad_medida**: cantidad sembrada, en cuerdas o pilones.
+- **porcentaje_entrega_cosecha**: porcentaje de entrega esperado al momento de la cosecha.
+- **prestamo_maximo_pos_gtq**: tope de préstamo en punto de venta, calculado con la tasa de Agrocréditos y las cuerdas equivalentes.
+- **estado**: estado de la programación ("en_curso", "completada" o "eliminada").
+- **purchase_orders**: listado JSON de las órdenes de compra (recepciones) asociadas a la programación.
+- **observaciones**: notas libres.
+
+### Cómo escribe la webapp en la tabla
+
+Agrocréditos crea y actualiza programaciones con los endpoints de la API de filas documentados arriba: `POST` a `/apps/webapp_tables/151/webapp_rows.json` para crear y `PATCH` a `/apps/webapp_tables/151/webapp_rows/:id.json` para actualizar. Al crear una fila, Zauru devuelve el id real del registro y la webapp lo guarda como referencia. Las programaciones no se eliminan físicamente: la webapp marca la columna "estado" como "eliminada" para conservar la auditoría del registro.
+
+### Sincronización de la webapp table a Appocus (AppSync)
+
+Las webapps de Appocus no consultan la API de Zauru para leer; trabajan sobre una copia de los datos en una base de datos Postgres propia, sincronizada desde Zauru. La copia se configura con un AppSync:
+
+1. Ir a "WebApps" => "AppSyncs".
+2. Click sobre "add AppSync".
+3. Ingresar el nombre de la aplicación en "AppName" y marcar "Active?".
+4. En el listado de tablas, marcar la tabla "webapp_rows" y, en la columna "Options", seleccionar las webapp tables a sincronizar (en este ejemplo, "programaciones").
+5. Guardar. Zauru crea en la base de datos de Appocus una tabla por cada webapp table seleccionada, llamada `webapp_table_<nombre>_<id>` (por ejemplo, `webapp_table_programaciones_151`), con columnas tipadas según la estructura de la webapp table: `int` como entero, `boolean` como booleano, `json`, `jsonb` y `jsonb_urls` como JSONB, y los demás tipos como texto.
+
+El flujo habitual no requiere intervención: al crear, editar o eliminar una fila de la webapp table, Zauru encola el cambio y un job programado lo replica a la tabla remota. La pestaña "AppSyncIdsToSync" muestra la cola de cambios pendientes y permite sincronizar de inmediato; el botón "Full Refresh" del detalle de un AppSync recrea las tablas remotas desde cero.
+
+### Consumo entre webapps
+
+La webapp de recepciones lee la tabla sincronizada de programaciones para preseleccionar la programación del socio y de la verdura al registrar una recepción, y escribe las órdenes de compra registradas en la columna "purchase_orders" de la fila. Agrocréditos usa ese dato para bloquear la edición de una programación que ya tiene recepciones, mostrar cuántas recepciones tiene y calcular los pagos de crédito sobre las órdenes de compra registradas.
+
+Con una sola webapp table como fuente, Zauru queda como dueño del dato y ninguna aplicación duplica la información.
