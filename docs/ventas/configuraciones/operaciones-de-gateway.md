@@ -1,7 +1,7 @@
 ---
 title: "Operaciones de Gateway - Bitácora"
 sidebar_label: "Operaciones de Gateway"
-sidebar_position: 24
+sidebar_position: 7
 ---
 
 ¿Le rechazaron un pago con tarjeta y no sabe por qué? La bitácora de operaciones guarda el registro de todo lo que Zauru conversa con su pasarela de pago, y este tutorial le muestra cómo consultarlo. Estas operaciones incluyen tokenización de tarjetas, cobros, reembolsos y cualquier otra interacción con el gateway.

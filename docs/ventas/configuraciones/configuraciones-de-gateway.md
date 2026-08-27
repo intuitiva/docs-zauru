@@ -1,7 +1,7 @@
 ---
 title: "Configuraciones de Gateway / Pasarela de Pago"
 sidebar_label: "Configuraciones de Gateway"
-sidebar_position: 23
+sidebar_position: 6
 ---
 
 ¿Quiere cobrarle a sus clientes con tarjeta sin volver a pedirles el número cada vez? Para eso hay que conectar Zauru con su procesador de pagos mediante una configuración de gateway. Este tutorial le muestra cómo crear, editar y gestionar estas configuraciones, que permiten integrar Zauru con procesadores de pago para tokenizar tarjetas de crédito, procesar pagos recurrentes y manejar reembolsos.

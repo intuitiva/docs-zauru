@@ -1,7 +1,7 @@
 ---
 title: "Emitir una nota de crédito (descuento, anulación o devolución)"
 sidebar_label: "Emitir una nota de crédito (descuento, anulación o devolución)"
-sidebar_position: 14
+sidebar_position: 13
 ---
 
 ¿Su cliente devolvió mercadería, usted le prometió un descuento después de haber facturado o necesita anular una factura por completo? Para esos tres casos existe la nota de crédito, y este tutorial le muestra cómo emitirla en cada uno.

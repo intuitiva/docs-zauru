@@ -1,7 +1,7 @@
 ---
 title: "Impresión Notas de Crédito"
 sidebar_label: "Impresión Notas de Crédito"
-sidebar_position: 16
+sidebar_position: 15
 ---
 
 ¿Emite una nota de crédito y su cliente quiere llevarse el documento impreso para sus archivos? Este tutorial le muestra los pasos para imprimir una nota de crédito desde Zauru, desde ubicarla en el listado hasta confirmar la impresora y el número de copias.

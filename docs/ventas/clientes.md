@@ -1,7 +1,7 @@
 ---
 title: "Clientes"
 sidebar_label: "Clientes"
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Piense en cuántas veces al día necesita el nombre, el NIT o la dirección de alguien para poder facturarle. Este tutorial le muestra cómo crear, editar y desactivar clientes para tener toda esa información a la mano en cada venta. Los clientes se usan para los siguientes tipos de documentos:

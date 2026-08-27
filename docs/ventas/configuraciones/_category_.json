@@ -1,0 +1,10 @@
+{
+  "position": 1,
+  "label": "Configuraciones",
+  "link": {
+    "type": "doc",
+    "id": "ventas/configuraciones/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

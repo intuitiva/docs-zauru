@@ -1,7 +1,7 @@
 ---
 title: "Tarjetas de Regalo (Gift Cards)"
 sidebar_label: "Tarjetas de Regalo"
-sidebar_position: 13
+sidebar_position: 5
 ---
 
 Piense en el cliente que quiere regalar algo pero prefiere que el agasajado elija, o en la temporada en la que todos buscan un detalle para regalar: ahí entran las tarjetas de regalo, que permiten a los clientes adquirir un saldo prepagado que puede ser utilizado posteriormente como método de pago en facturas y órdenes de venta. Este tutorial le muestra cómo configurar los tipos de tarjeta de regalo y cómo administrar las tarjetas emitidas.

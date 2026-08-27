@@ -17,6 +17,23 @@
   # Keep npm quiet in CI logs.
   NPM_FLAGS = "--no-audit --no-fund"
 
+# Permanent redirects for pages moved under /ventas/configuraciones/
+# when the sales settings tutorial was split into one page per tab.
+[[redirects]]
+  from = "/ventas/tarjetas-de-regalo"
+  to = "/ventas/configuraciones/tarjetas-de-regalo"
+  status = 301
+
+[[redirects]]
+  from = "/ventas/configuraciones-de-gateway"
+  to = "/ventas/configuraciones/configuraciones-de-gateway"
+  status = 301
+
+[[redirects]]
+  from = "/ventas/operaciones-de-gateway"
+  to = "/ventas/configuraciones/operaciones-de-gateway"
+  status = 301
+
 # Docusaurus emits clean, extension-less URLs (e.g. /webapps instead of
 # /webapps.html), so we let Netlify serve the static files as-is and
 # fall back to the pretty URL when no extension is given.

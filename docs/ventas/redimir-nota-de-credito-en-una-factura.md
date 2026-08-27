@@ -1,7 +1,7 @@
 ---
 title: "Redimir una nota de crédito emitida a una factura"
 sidebar_label: "Redimir una nota de crédito emitida a una factura"
-sidebar_position: 15
+sidebar_position: 14
 ---
 
 ¿Le emitió una nota de crédito a un cliente y ahora llega a comprar de nuevo? Lo natural es aplicar ese saldo a favor a la factura pendiente, para que pague menos o no pague nada. Este tutorial le muestra cómo redimir una nota de crédito sobre una factura no pagada.
