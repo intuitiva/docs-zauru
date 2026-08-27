@@ -1,7 +1,7 @@
 ---
 title: "Envíos"
 sidebar_label: "Envíos"
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 Un envío mueve mercadería entre bodegas o recibe producto de un proveedor. Cada envío sigue un ciclo de estados que va desde la reservación hasta la entrega, con dos caminos según necesite transporte o no.
@@ -28,12 +28,12 @@ Reservación → Tránsito → Entrega
 
 ## Tutoriales
 
-1. **[Reservaciones](/inventarios/inventarios-reservaciones)**: crear, editar, imprimir y exportar reservaciones; reservas con números de serie, paquetes, solicitudes de traslado y vínculos con contratos, facturas y órdenes de compra.
-2. **[Tránsitos](/inventarios/inventarios-transitos)**: despachar un envío con transporte y recibirlo en la bodega destino.
-3. **[Entregas](/inventarios/inventarios-entregas)**: entregar un envío sin transporte, editar e imprimir entregas, exportar movimientos y emitir documentos electrónicos.
-4. **[Devoluciones](/inventarios/inventarios-devoluciones)**: devolver una entrega que llegó con errores y ver el historial de entregas devueltas.
-5. **[Anulaciones](/inventarios/inventarios-anulaciones)**: anular una reservación que ya no se necesita y ver el historial de reservaciones anuladas.
-6. **[Reemplazar items de un envío](/inventarios/inventarios-reemplazar-items-de-un-envio)**: importar desde Excel los movimientos de una reservación, reemplazando los items y cantidades cargados manualmente.
+1. **[Reservaciones](/inventarios/envios/reservaciones)**: crear, editar, imprimir y exportar reservaciones; reservas con números de serie, paquetes, solicitudes de traslado y vínculos con contratos, facturas y órdenes de compra.
+2. **[Tránsitos](/inventarios/envios/transitos)**: despachar un envío con transporte y recibirlo en la bodega destino.
+3. **[Entregas](/inventarios/envios/entregas)**: entregar un envío sin transporte, editar e imprimir entregas, exportar movimientos y emitir documentos electrónicos.
+4. **[Devoluciones](/inventarios/envios/devoluciones)**: devolver una entrega que llegó con errores y ver el historial de entregas devueltas.
+5. **[Anulaciones](/inventarios/envios/anulaciones)**: anular una reservación que ya no se necesita y ver el historial de reservaciones anuladas.
+6. **[Reemplazar items de un envío](/inventarios/envios/reemplazar-items-de-un-envio)**: importar desde Excel los movimientos de una reservación, reemplazando los items y cantidades cargados manualmente.
 
 ## Filtros compartidos
 

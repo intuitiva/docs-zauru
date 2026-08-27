@@ -1,7 +1,7 @@
 ---
 title: "Reemplazar items de un envío"
 sidebar_label: "Reemplazar items de un envío"
-sidebar_position: 3.6
+sidebar_position: 6
 ---
 
 Cuando una reservación tiene muchos items, cargarlos uno por uno en el formulario puede ser lento. La opción "Reemplazar items de un envío" permite importar los movimientos desde un archivo Excel (.xlsx) o CSV, reemplazando todos los items y cantidades del envío en un solo paso. Solo aplica mientras el envío esté en estado de Reservación.

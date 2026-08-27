@@ -1,7 +1,7 @@
 ---
 title: "Reservaciones"
 sidebar_label: "Reservaciones"
-sidebar_position: 3.1
+sidebar_position: 1
 ---
 
 Una reservación es el primer paso de un envío: se reservan los productos en la bodega origen para que no se usen en otro movimiento, pero aún no salen de la bodega. Desde aquí se despacha (si necesita transporte) o se entrega directamente.
@@ -13,7 +13,7 @@ Los pasos para ver las reservaciones son:
 1. Ir a "Inventarios".
 2. Seleccionar "Reservaciones".
 
-La tabla muestra una fila por reservación con las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Origen", "Destino", "Tipo" e "Items". Los filtros de alcance, rango de fechas y etiquetas se describen en [Envíos](/inventarios/envios).
+La tabla muestra una fila por reservación con las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Origen", "Destino", "Tipo" e "Items". Los filtros de alcance, rango de fechas y etiquetas se describen en [Envíos](/inventarios/envios/).
 
 ## Crear una reservación
 

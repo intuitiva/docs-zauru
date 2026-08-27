@@ -1,14 +1,14 @@
 ---
 title: "Tránsitos"
 sidebar_label: "Tránsitos"
-sidebar_position: 3.2
+sidebar_position: 2
 ---
 
 El tránsito es el estado intermedio de un envío con transporte: el producto ya salió de la bodega origen pero aún no llegó a la bodega destino. Para llegar a tránsito se despacha la reservación; para salir de tránsito se recibe en la bodega destino, lo que convierte el envío en entrega.
 
 ## Despachar una reservación
 
-Para crear un envío que necesite transporte, se marca la casilla "Necesita Transporte" al crear la reservación. El procedimiento para crear la reservación se detalla en [Reservaciones](/inventarios/inventarios-reservaciones).
+Para crear un envío que necesite transporte, se marca la casilla "Necesita Transporte" al crear la reservación. El procedimiento para crear la reservación se detalla en [Reservaciones](/inventarios/envios/reservaciones).
 
 ![imagen6](/img/inventarios/envios-6.png)
 
@@ -33,7 +33,7 @@ Los pasos para ver los envíos en tránsito son:
 1. Ir a "Inventarios".
 2. Seleccionar "Tránsitos".
 
-La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Entrega Estimada", "Despachado el", "Origen", "Destino", "Tipo" e "Items". El filtro de alcance se describe en [Envíos](/inventarios/envios).
+La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Entrega Estimada", "Despachado el", "Origen", "Destino", "Tipo" e "Items". El filtro de alcance se describe en [Envíos](/inventarios/envios/).
 
 ## Recibir un envío en tránsito
 

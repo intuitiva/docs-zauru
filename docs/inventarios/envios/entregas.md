@@ -1,10 +1,10 @@
 ---
 title: "Entregas"
 sidebar_label: "Entregas"
-sidebar_position: 3.3
+sidebar_position: 3
 ---
 
-La entrega es el estado final de un envío: el producto llegó a la bodega destino y las existencias se transfirieron. Para llegar a entrega hay dos caminos: despachar y recibir un envío con transporte ([Tránsitos](/inventarios/inventarios-transitos)) o entregar directamente una reservación sin transporte.
+La entrega es el estado final de un envío: el producto llegó a la bodega destino y las existencias se transfirieron. Para llegar a entrega hay dos caminos: despachar y recibir un envío con transporte ([Tránsitos](/inventarios/envios/transitos)) o entregar directamente una reservación sin transporte.
 
 ## Entregar una reservación sin transporte
 
@@ -28,7 +28,7 @@ Los pasos para ver las entregas son:
 1. Ir a "Inventarios".
 2. Seleccionar "Entregas".
 
-La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Entregado el", "Origen", "Destino", "Tipo", "Items" y "Memo". Los filtros de alcance, rango de fechas y etiquetas se describen en [Envíos](/inventarios/envios).
+La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Entregado el", "Origen", "Destino", "Tipo", "Items" y "Memo". Los filtros de alcance, rango de fechas y etiquetas se describen en [Envíos](/inventarios/envios/).
 
 ## Editar una entrega
 

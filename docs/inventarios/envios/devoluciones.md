@@ -1,7 +1,7 @@
 ---
 title: "Devoluciones"
 sidebar_label: "Devoluciones"
-sidebar_position: 3.4
+sidebar_position: 4
 ---
 
 Una devolución revierte una entrega que ya se realizó: desaparecen las existencias de la bodega destino y regresan a la bodega origen. Se usa cuando una entrega llegó con errores y no se puede editar, ya que las entregas solo permiten modificar campos secundarios.

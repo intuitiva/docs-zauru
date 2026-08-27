@@ -1,0 +1,10 @@
+{
+  "position": 3,
+  "label": "Envíos",
+  "link": {
+    "type": "doc",
+    "id": "inventarios/envios/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

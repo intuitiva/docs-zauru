@@ -1,7 +1,7 @@
 ---
 title: "Anulaciones"
 sidebar_label: "Anulaciones"
-sidebar_position: 3.5
+sidebar_position: 5
 ---
 
 Una anulación cancela una reservación que ya no se necesita, antes de que se despache o entregue. Al anular, se liberan las reservas de productos y el envío pasa a "Reservaciones Anuladas". No se puede recuperar.
@@ -21,7 +21,7 @@ Al anular una reservación:
 - El envío pasa a la pestaña "Reservaciones Anuladas".
 - Los envíos anulados no se pueden recuperar ni editar.
 
-La anulación solo aplica mientras el envío esté en estado de Reservación. Si el envío ya fue despachado o entregado, se debe usar [Devoluciones](/inventarios/inventarios-devoluciones) para revertirlo.
+La anulación solo aplica mientras el envío esté en estado de Reservación. Si el envío ya fue despachado o entregado, se debe usar [Devoluciones](/inventarios/envios/devoluciones) para revertirlo.
 
 ## Ver reservaciones anuladas
 
