@@ -1,0 +1,10 @@
+{
+  "position": 2,
+  "label": "Existencias",
+  "link": {
+    "type": "doc",
+    "id": "inventarios/existencias/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}
