@@ -57,7 +57,23 @@ Contiene tres bloques:
 2. **Ítem**: ID, código, EAN13, nombre, categoría, punto de reorden, cantidad económica de la orden y etiquetas. El nombre del ítem es un enlace a su configuración.
 3. **Cantidades**: "Disponible", "Por Ingresar", "Por Egresar", "Físicas", "Punto de Reorden" y "Cantidad Económica de la Orden" de esa existencia.
 
-Debajo aparece la tabla "Envíos", con el historial de reservaciones y entregas que afectaron esa existencia en la bodega. Cada fila muestra el identificador del envío, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega contraparte, cuánto entró, cuánto salió, el saldo disponible después de cada movimiento, el saldo por egresar y el saldo por ingresar. El historial se lee de abajo hacia arriba: la última fila corresponde al movimiento más reciente. Ese historial se explica en detalle en [Movimientos de los productos](/inventarios/inventarios-movimientos-de-los-productos).
+Debajo aparece la tabla "Envíos", con el historial de reservaciones y entregas que afectaron esa existencia en la bodega.
+
+![imagen-movimientos-1](/img/inventarios/inventarios-movimientos-de-los-productos-1.png)
+
+La tabla muestra el identificador del envío, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega contraparte, cuánto entró, cuánto salió, el saldo disponible después de cada movimiento, el saldo por egresar y el saldo por ingresar.
+
+![imagen-movimientos-2](/img/inventarios/inventarios-movimientos-de-los-productos-2.jpg)
+
+La lectura es de abajo hacia arriba: la última fila corresponde al movimiento más reciente. En el ejemplo, entran 8, luego entran 15 y hay disponible 23, luego entran 2 y hay disponibles 25.
+
+![imagen-movimientos-3](/img/inventarios/inventarios-movimientos-de-los-productos-3.jpg)
+
+Cada movimiento muestra:
+- **Referencia del envío**: identificador de la reservación o entrega.
+- **Fecha**: fecha en que se realizó el movimiento.
+- **Cantidad entrada/salida**: cuánto producto entró o salió.
+- **Saldo acumulado**: cantidad disponible después de cada movimiento, calculado cronológicamente.
 
 Desde "Editar" se modifican el "Punto de Reorden" y la "Cantidad Económica de la Orden" de la existencia en esa bodega. El procedimiento completo está en [Punto de re orden](/inventarios/inventarios-punto-de-re-orden).
 
@@ -70,7 +86,13 @@ Contiene:
 1. **Datos del ítem**: ID, código, EAN13, nombre, punto de reorden, cantidad económica de la orden y etiquetas. El nombre del ítem es un enlace a su configuración. Si el ítem tiene imagen, se muestra a la derecha.
 2. **Tabla por bodega**: una fila por métrica ("Disponible", "Por Ingresar", "Por Egresar", "Físicas") y una columna por bodega, más una columna "Total". En las bodegas no virtuales, el valor de "Disponible" es un enlace a "Detalles de la Existencia" de ese producto en esa bodega. En las bodegas virtuales, los valores son texto plano.
 3. **Botón "Detalles del Ítem"**: enlace a la configuración completa del producto.
-4. **Tabla "Envíos"**: historial completo de envíos que incluyen ese producto, con filtros por tipo de movimiento ("Todos", "Ingresos", "Salidas", "Transferencias"). Cada fila muestra el identificador, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega origen, la bodega destino, el tipo de movimiento, la cantidad reservada, la cantidad entregada y las notas.
+4. **Tabla "Envíos"**: historial completo de envíos que incluyen ese producto, con filtros por tipo de movimiento ("Todos", "Ingresos", "Salidas", "Transferencias").
+
+![imagen-movimientos-4](/img/inventarios/inventarios-movimientos-de-los-productos-4.jpg)
+
+Cada fila muestra el identificador, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega origen, la bodega destino, el tipo de movimiento, la cantidad reservada, la cantidad entregada y las notas.
+
+![imagen-movimientos-5](/img/inventarios/inventarios-movimientos-de-los-productos-5.jpg)
 
 ## Acciones
 
@@ -237,3 +259,125 @@ curl -v \
 ```
 
 En caso de éxito, retorna un código HTTP `204 No Content` (sin cuerpo).
+
+### Movimientos de un producto en una bodega
+Devuelve los envíos que afectaron la existencia del producto en la bodega, con el saldo acumulado después de cada movimiento. El `id` en la URL corresponde al id de la existencia (stock).
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/inventories/stocks/1/datatables_show.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "zid": "1",
+      "id": "RES-001",
+      "ref": "Entrega a cliente",
+      "nt": false,
+      "pd": "2026-08-01 10:00",
+      "d": "2026-08-01",
+      "ads": "Bodega Central",
+      "in": "",
+      "out": "8",
+      "a": "23",
+      "o": "0",
+      "i": "0",
+      "ra": "",
+      "DT_RowId": "inventories-stock-detail-1"
+    },
+    {
+      "zid": "2",
+      "id": "RES-002",
+      "ref": "Reabastecimiento",
+      "nt": false,
+      "pd": "2026-08-01 12:00",
+      "d": "2026-08-01",
+      "ads": "Bodega Central",
+      "in": "15",
+      "out": "",
+      "a": "25",
+      "o": "0",
+      "i": "0",
+      "ra": "",
+      "DT_RowId": "inventories-stock-detail-2"
+    }
+  ]
+}
+```
+
+### Movimientos del producto en todas las bodegas
+Devuelve todos los envíos que incluyen el producto, indicando bodega origen, bodega destino, cantidades y fechas. El `id` en la URL corresponde al id del producto.
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "start": 0,
+    "length": 40,
+    "search": { "value": "" },
+    "order": { "0": { "column": 0, "dir": "desc" } }
+  }' \
+  https://app.zauru.com/inventories/stocks/1/datatables_item.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+{
+  "draw": 0,
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "zid": "1",
+      "id_number": "RES-001",
+      "reference": "Entrega a cliente",
+      "needs_transport": false,
+      "planned_delivery": "2026-08-01 10:00",
+      "delivered_at": "01/08/2026",
+      "agency_from": "Bodega Central",
+      "agency_to": "Zona 8",
+      "income": false,
+      "items_booked": "8",
+      "items_delivered": "8",
+      "memo": "",
+      "record_actions": "",
+      "DT_RowId": "inventories-stock-shipment-1"
+    },
+    {
+      "zid": "2",
+      "id_number": "RES-002",
+      "reference": "Reabastecimiento",
+      "needs_transport": false,
+      "planned_delivery": "2026-08-01 12:00",
+      "delivered_at": "01/08/2026",
+      "agency_from": "Zona 8",
+      "agency_to": "Bodega Central",
+      "income": true,
+      "items_booked": "15",
+      "items_delivered": "15",
+      "memo": "",
+      "record_actions": "",
+      "DT_RowId": "inventories-stock-shipment-2"
+    }
+  ]
+}
+```

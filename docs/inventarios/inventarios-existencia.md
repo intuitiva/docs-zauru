@@ -1,7 +1,7 @@
 ---
 title: "Subir existencias iniciales"
 sidebar_label: "Subir existencias iniciales"
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 Cuando empieza a trabajar con Zauru, o cuando abre una bodega nueva, el primer reto es registrar todo lo que ya tiene sin contar producto por producto a mano. Para eso existe la importación de existencias iniciales: con una plantilla predefinida se cargan las cantidades de todos los productos en un solo paso. Antes de importar existencias debe haber creado los ítems de sus productos.

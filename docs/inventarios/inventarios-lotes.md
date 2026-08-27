@@ -1,7 +1,7 @@
 ---
 title: "Lotes"
 sidebar_label: "Lotes"
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 Si vende productos con fecha de vencimiento, como alimentos o medicinas, necesita saber no solo cuánto tiene, sino de qué lote es cada unidad y cuándo expira. Los lotes le permiten separar cada ingreso de mercadería y despachar primero lo que vence antes, para reducir pérdidas. Este tutorial le muestra cómo crear el lote, ingresarle producto y consultar sus existencias por bodega. Para usar lotes, el ítem debe ser de tipo "Perecedero" (product_type = 3).
