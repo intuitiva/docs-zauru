@@ -6,9 +6,12 @@ sidebar_position: 0
 
 Si quiere saber en todo momento cuánto dinero entra, cuánto sale y dónde está cada quetzal de su empresa, este módulo le da ese control completo: cada venta, compra y pago queda registrado en un sistema de partida doble, con sus cuentas, sus impuestos y sus reportes al día. Es la herramienta que usa cada día para registrar transacciones, cada fin de mes para conciliar y cerrar, y cada vez que su contador o la SAT le piden un reporte. Incluye las siguientes funcionalidades:
 
-## Configuración y catálogo de cuentas
+## Configuraciones
 
 1. **[Configuraciones generales](/contabilidad/configuraciones)**: establecimiento de cuentas contables para IVA, inventario, cierre de resultados, fechas de cierre, prioridades de centro de costos y configuraciones del libro de compras.
+
+## Cuentas contables
+
 2. **[Nomenclatura contable](/contabilidad/cuentas-contables)**: creación y gestión de cuentas patrimoniales (activos, pasivos, capital) y cuentas de gestión (ingresos, gastos), con soporte para múltiples monedas.
 3. **[Grupos de cuentas](/contabilidad/cuentas-contables)**: agrupación jerárquica de cuentas contables con códigos, tipos y monedas, incluyendo importación masiva por CSV.
 4. **[Tipos de cuenta](/contabilidad/cuentas-contables)**: administración de tipos de cuenta (activo, pasivo, capital, ingresos, gastos) para clasificar la naturaleza contable.
