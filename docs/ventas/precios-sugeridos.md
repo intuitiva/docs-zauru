@@ -157,51 +157,67 @@ La exportación a JSON de items retorna un arreglo con todos los items activos y
 
 La exportación a JSON de paquetes retorna un hash donde la llave es el ID del paquete y el valor contiene los precios sugeridos actuales agrupados por listado de precios.
 
-## Importar Excel con Precios
+## Importar Precios desde Excel
 
-Zauru le permite importar los precios de todos sus productos por medio de una plantilla de Excel para no tener que ponerlos manualmente. Los pasos para importar precios de los items son los siguientes:
+La importación de precios sugeridos de items y paquetes se realiza desde el módulo de Importaciones de Datos, que permite mapear las columnas del archivo y validar cada fila antes de importarla. El botón **"Importar"** de cada pestaña de Precios Sugeridos abre directamente la pantalla de nueva importación.
+
+El flujo completo (mapeo de columnas, validación fila por fila e importación) está descrito en [Importaciones de Datos](/primeros-pasos/importaciones-de-datos).
+
+### Importar precios de items
 
 1. Ir a **"Ventas"**.
 2. Seleccionar **"Precios Sugeridos"**.
-3. Seleccionar **"Item"** o **"Paquete"** según sea el caso.
-4. Seleccionar **"Importar"**.
+3. En la pestaña de **"Items"**, seleccionar **"Importar"**.
+4. Adjuntar el archivo Excel (CSV o XLS) y presionar **"Crear Data import"**.
+5. Mapear las columnas, validar las filas e importarlas.
 
-![imagen4](/img/ventas/importar-precios-1.jpg)
+El tipo de documento queda fijo en **"Actualizar Ítems"**: cada fila busca el item por `zid`, `code` o `ean13` y actualiza sus campos. Para crear items nuevos con su precio, usar el tipo **"Crear Ítems con Precios"** desde Importaciones de Datos.
 
-A continuación deberá descargar la plantilla de Excel para colocar los datos que quiere importar.
+### Importar precios de paquetes
 
-5. Descargar plantilla de Excel.
+1. Ir a **"Ventas"**.
+2. Seleccionar **"Precios Sugeridos"**.
+3. En la pestaña de **"Paquetes"**, seleccionar **"Importar"**.
+4. Seleccionar el tipo de documento, adjuntar el archivo Excel (CSV o XLS) y presionar **"Crear Data import"**.
+5. Mapear las columnas, validar las filas e importarlas.
 
-Los campos permitidos para importar son:
+Hay dos tipos de documento:
 
-- currency_id
-- amount
-- notes
-- flexible_price
-- item_id
-- bundle_id
+- **Crear Paquetes con Precios** (`bundles_with_prices`): crea paquetes nuevos con su composición y precio.
+- **Actualizar Paquetes** (`bundles_update`): actualiza paquetes existentes buscándolos por `zid`, `code` o `ean13`. La composición incluida en el archivo reemplaza la composición completa del paquete.
 
-Los campos obligatorios son:
+#### Composición del paquete
 
-- currency_id
-- amount
-- item_id o bundle_id
+La composición se indica con las siguientes columnas (pueden combinarse):
 
-![imagen5](/img/ventas/importar-precios-2.png)
+- `items_by_id`, `items_by_zid`, `items_by_code`, `items_by_ean13`, `items_by_name`
+- `item_categories_by_id`, `item_categories_by_zid`, `item_categories_by_name`
 
-Esta es la plantilla de Excel donde deberá colocar los datos del item y su precio.
+Cada celda contiene pares `identificador:cantidad` separados por punto y coma. Si no se indica la cantidad, es 1. Ejemplo en `items_by_code`: `SKU001:2;SKU002:1`. Cuando se identifica por nombre, la búsqueda es por coincidencia parcial.
 
-![imagen6](/img/ventas/importar-precios-3.png)
+Reglas de la composición:
 
-Al terminar de llenar el archivo de Excel con todos los precios de sus productos deberá guardar el archivo y adjuntarlo para importar sus precios, como se muestra en el paso.
+- El paquete debe incluir al menos un item o una categoría; si no, la fila reporta "Debe incluir al menos un item o categoría".
+- Si un identificador no existe, la fila reporta "El item no existe" o "La categoría no existe", indicando la columna.
 
-6. Seleccione la ubicación de su plantilla de Excel.
+#### Precio del paquete
 
-7. Para Importar los precios presione **"Importar Precios"**.
+Si la fila incluye la columna `amount`, al importarla se crea el precio sugerido del paquete. Las columnas de precio son:
 
-![imagen7](/img/ventas/importar-precios-4.jpg)
+- `amount`: monto del precio.
+- `currency_id` o `currency_code`: moneda del precio (ej. `GTQ`, `USD`). Si no se indica, se usa la moneda de la empresa.
+- `price_list_id` o `price_list_name`: listado de precios al que pertenece. Si no se indica, el precio pertenece al listado general.
+- `flexible_price`: si el precio puede modificarse al facturar (valores `TRUE` o `FALSE`).
+- `flexible_price_expiration`: fecha de expiración del precio flexible (ver [Precios flexibles con fecha de expiración](#precios-flexibles-con-fecha-de-expiración)).
+- `tag_ids`: IDs de etiquetas separados por coma.
 
-Con los precios cargados, todos sus productos quedaron listos para aparecer en las órdenes y facturas, y usted se ahorró la digitación manual de cada uno. Cada vez que cambien sus precios, puede repetir la importación o actualizar los precios sugeridos directamente desde este módulo.
+Si la moneda o la lista de precios indicadas no existen, la fila no se importa y reporta "La moneda no existe" o "La lista de precios no existe".
+
+Las mismas columnas de precio aplican a la importación de items con "Actualizar Ítems".
+
+#### Plantilla
+
+Desde la pantalla de nueva importación se puede descargar la plantilla del tipo de documento seleccionado. La plantilla incluye una fila de ejemplo con el formato esperado.
 
 ## API (llamadas desde sistemas externos)
 
@@ -783,45 +799,3 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener plantilla para importar precios
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/sales/suggested_prices/price_imports/new.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
-
-### Importar precios desde un archivo
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -F "price_import[file]=@/ruta/al/archivo.xlsx" \
-  https://app.zauru.com/sales/suggested_prices/price_imports.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
-
-### Campos adicionales soportados en la importación
-
-Además de los campos previos, el archivo de importación de precios ahora admite las siguientes columnas:
-
-- `currency_code`: código de la moneda (ej. `GTQ`, `USD`). Zauru buscará la moneda por su código; si no existe, la importación reportará el error "La moneda no existe".
-- `price_list_name`: nombre de la lista de precios a la que pertenece el precio. Zauru buscará la lista por nombre; si no existe, reportará "La lista de precios no existe".
-- `price_list_id`: ID de la lista de precios.
-- `flexible_price_expiration`: fecha de expiración del precio flexible.
-
-Si la moneda o la lista de precios indicadas no existen, la fila no se importará y se mostrará el error correspondiente.
