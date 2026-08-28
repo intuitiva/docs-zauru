@@ -144,34 +144,7 @@ Para eliminar un número de serie:
 3. Buscar el número de serie que desea eliminar.
 4. Seleccionar "Eliminar".
 
-## Crear una reservación de Número de Serie (Desde Proveedor a la bodega)
-
-Los pasos para hacer una reservación de entrada de un producto con numero de serie son los siguientes:
-
-1. Ir a "Inventarios".
-2. Seleccionar "Reservaciones".
-3. Seleccionar "Nueva reservación de #s de Serie".
-
-![imagen5](/img/inventarios/inventarios-numeros-de-serie-5.jpg)
-
-Le aparecerá el primer paso para hacer la reservación de ingreso, los pasos a seguir son los siguientes:
-
-1. Aquí deberá seleccionar la bodega "Vendor(Proveedor)" y presionar "Cambiar de Bodega".
-2. Coloque el numero de serie (previamente creado) del producto que desea ingresar.
-
-Por ultimo presione "Generar Reservación".
-
-![imagen6](/img/inventarios/inventarios-numeros-de-serie-6.jpg)
-
-A continuación le aparecerá el segundo paso para crear la reservación, aquí solo deberá colocar los detalles de la reservación como la referencia, la fecha de entrega estimada, si necesita o no transporte. Por ultimo presione "Crear envío".
-
-![imagen7](/img/inventarios/inventarios-numeros-de-serie-7.jpg)
-
-Le aparecerá un mensaje notificándole que la reservación fue creada exitosamente, podrá ver los detalles de la reservación o entregarla en la parte inferior.
-
-![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
-
-Con la reservación entregada, cada número de serie quedó disponible en su bodega y listo para moverse o venderse. A partir de ahora puede dar seguimiento individual a cada unidad: consultar dónde está, ver su historial y exportar el listado a Excel cuando necesite una foto completa. Así, ya no tendrá que adivinar cuál máquina o cuál artículo salió de la bodega.
+Para crear una reservación de números de serie desde el proveedor, ver [Reservación de números de serie](/inventarios/envios/reservaciones/reservacion-de-numeros-de-serie).
 
 ## API (llamadas desde sistemas externos)
 
