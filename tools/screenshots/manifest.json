@@ -855,7 +855,7 @@
     {
       "section": "contabilidad",
       "slug": "beneficiarios",
-      "docPath": "docs/contabilidad/beneficiarios.md",
+      "docPath": "docs/contabilidad/beneficiarios/index.md",
       "existingImageCount": 0,
       "shots": [
         {
@@ -895,7 +895,8 @@
           ],
           "insertAfterText": "- Los formularios personalizados enviados para este beneficiario."
         }
-      ]
+      ],
+      "imageSlug": "beneficiarios"
     },
     {
       "section": "contabilidad",

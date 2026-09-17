@@ -112,7 +112,10 @@ for (const doc of docs) {
   fs.mkdirSync(outDir, { recursive: true });
 
   for (const shot of doc.shots) {
-    const fileName = `${doc.slug}-${shot.stepNumber}.${format}`;
+    // imageSlug: cuando varios .md comparten las mismas imágenes (repo
+    // reorganizado), el nombre de archivo se define en el doc entry
+    const fileBase = doc.imageSlug || doc.slug;
+    const fileName = `${fileBase}-${shot.stepNumber}.${format}`;
     const outPath = path.join(outDir, fileName);
     const relOut = path.relative(REPO_ROOT, outPath);
 
