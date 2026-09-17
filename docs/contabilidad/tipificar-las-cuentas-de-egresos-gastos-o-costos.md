@@ -64,6 +64,8 @@ Se requiere entrar a cada cuenta. Ya dentro de la cuenta se puede revisar si est
 
 Si esta incorrecto, editar la cuenta y cambiarla.
 
+![Formulario de edición de cuenta contable con la casilla Es costo](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-3.png)
+
 ## Tipificacion en presupuestos
 
 La clasificacion de costo vs. gasto tambien afecta los reportes de presupuestos. Al crear un presupuesto de egresos, puede elegir cuentas de gastos o de costos segun lo que necesite presupuestar. Los presupuestos usan el tipo de cuenta 3 (Gastos) y filtran segun el atributo `cost`.

@@ -13,7 +13,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
-![imagen5](/img/produccion/reportes-de-produccion-5.png)
+![imagen5](/img/produccion/eficiencia-de-ordenes-de-produccion-1.png)
 
 El reporte muestra:
 

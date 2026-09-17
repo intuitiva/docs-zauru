@@ -205,7 +205,7 @@ Para cambiar los números de serie:
 5. Para cada ítem se mostrará el **número de serie actual** y un selector con los números de serie disponibles en la agencia. Elija el nuevo número de serie para cada uno.
 6. Presione **"Guardar"**.
 
-![cambiar-numeros-de-serie](/img/ventas/cambiar-numeros-de-serie-1.png)
+![cambiar-numeros-de-serie](/img/ventas/ordenes-de-venta-o-facturas-7.png)
 
 El sistema genera internamente el movimiento de los ítems con los nuevos números de serie y, al finalizar, se mostrará un mensaje de confirmación. Tenga en cuenta las siguientes validaciones:
 

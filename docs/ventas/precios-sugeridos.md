@@ -14,6 +14,8 @@ Para consultar los precios sugeridos de sus items y paquetes:
 2. Seleccionar **"Precios Sugeridos"**.
 3. Seleccionar la pestaña de **"Items"** o **"Paquetes"** según corresponda.
 
+![3. Seleccionar la pestaña de **"Items"** o **"Paquetes"** según corresponda.](/img/ventas/precios-sugeridos-0.png)
+
 ![imagen1](/img/ventas/importar-precios-0.png)
 
 ### Pestaña de Items

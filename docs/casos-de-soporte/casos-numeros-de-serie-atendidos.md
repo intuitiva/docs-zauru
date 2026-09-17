@@ -10,21 +10,21 @@ Cuando un cliente trae a soporte un producto que usted le vendió, conviene sabe
 
 Para registrar un numero de serie cuando usted crea un caso, primero debe colocar el nombre del cliente y la informacion del caso que se esta atendiendo y luego refrescar la pantalla, como se muestra en la siguiente imagen.
 
-![imgen1](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-1.jpg)
+![imgen1](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-1.png)
 
 Luego de refrescar, podra seleccionar el numero de serie del producto que el cliente compro. Solo le apareceran los numeros de serie que ese cliente haya comprado.
 
-![imagen2](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-2.jpg)
+![imagen2](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-2.png)
 
 Despues de crear el caso automaticamente quedara un registro de los numeros de serie que se han atendido.
 
-![imagen3](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-3.jpg)
+![imagen3](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-3.png)
 
 ## Ver Numeros de Serie Atendidos
 
 Para ver el registro de los numeros de serie atendidos debera seleccionar **"Numeros de Serie Atendidos"**.
 
-![imagen4](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-4.jpg)
+![imagen4](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-4.png)
 
 En este listado podra ver:
 - **Numero de Serie** (ID interno)

@@ -13,7 +13,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas (fecha inicial y fecha final).
 4. Presione **"Generar Reporte"**.
 
-![imagen3](/img/produccion/reportes-de-produccion-3.png)
+![imagen3](/img/produccion/productos-terminados-por-responsable-1.png)
 
 El reporte muestra:
 

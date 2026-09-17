@@ -84,7 +84,9 @@ function imageDiskPath(repoRoot, ref) {
   );
 }
 
-/** Docs con al menos una referencia /img/ cuyo archivo no existe en static/. */
+/** Docs con al menos una referencia /img/ cuyo archivo no existe en static/.
+ * La sección es la PRIMERA carpeta bajo docs/ (soporta docs anidados:
+ * docs/ventas/configuraciones/x.md → sección "ventas"). */
 export function findBrokenRefDocs(docsDir, repoRoot) {
   const results = [];
   (function walk(dir) {
@@ -98,7 +100,7 @@ export function findBrokenRefDocs(docsDir, repoRoot) {
         if (broken.length) {
           results.push({
             mdPath: p,
-            section: path.basename(path.dirname(p)),
+            section: path.relative(docsDir, p).split(path.sep)[0],
             slug: path.basename(p, '.md'),
             docPath: path.relative(repoRoot, p),
             content,

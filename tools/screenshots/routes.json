@@ -1,0 +1,6147 @@
+{
+  "generatedAt": "2026-09-17",
+  "source": "baculo/config/routes.rb",
+  "sourceSha": "ede2b30df",
+  "routeCount": 1318,
+  "routes": [
+    {
+      "path": "/access_control/access_logs",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/access_logs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/billings",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/billings/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/billings/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/access_control/billings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/access_control/contracts",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/contracts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/contracts/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/access_control/contracts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/access_control/invitations",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/invitations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/invitations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/access_control/permissions",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/roles",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/roles/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/roles/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/access_control/roles/new",
+      "kind": "new"
+    },
+    {
+      "path": "/access_control/subscriptions",
+      "kind": "index"
+    },
+    {
+      "path": "/access_control/subscriptions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/access_control/subscriptions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/access_control/subscriptions/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/access_control/subscriptions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/account_types",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/account_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/account_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/account_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounting_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounts",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/accounts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/accounts/:id/balance",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/accounts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/accounts/account_group_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounts/account_groups",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/accounts/account_groups/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/accounts/account_groups/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/accounts/account_groups/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounts/account_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounts/automatic_annual_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/accounts/automatic_monthly_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/accounts/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/accounts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/accounts/reconciliations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/accounts/reconciliations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/budgets",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/budgets/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/budgets/:id/duplicate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/budgets/:id/show_grouped",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/:id/show_others",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/:id/get_graph_data",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/:id/show_graph",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/:id/show_others",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/tag_category_budgets/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets/:id/show_grouped",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets/:id/show_others",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/budgets/tagged_budgets/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/categories",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/conciliations",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/conciliations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/conciliations/:id/close",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/conciliations/:id/conciliate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/conciliations/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/conciliations/:id/report",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/conciliations/:id/unclose",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/conciliations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/cost_center_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/cost_center_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/cost_center_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/cost_center_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/cost_centers",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/cost_centers/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/cost_centers/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/cost_centers/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/entries",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/entries/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/entries/:id/audit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/entries/:id/multiple_download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/:id/multiple_print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/:id/settlement_form",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/:id/verify",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/entries/entries_import/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/entries/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/entries/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/monthly_entry_source_doc_types",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/monthly_entry_source_doc_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/monthly_entry_source_doc_types/:id/show_entries",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/accounting/monthly_entry_source_doc_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/payees",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/payees/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/payees/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/payees/new",
+      "kind": "new"
+    },
+    {
+      "path": "/accounting/payees/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/reports/balance_sheet",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/balance_sheet_cat",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/balance_sheet_in_local_currency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/cash_flow",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_balance_sheet_in_local_currency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_consolidated_daily_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_daily_general_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_daily_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_general_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_purchase_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/check_report",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/consolidated_daily_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/consolidated_sales_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/consolidated_sales_ledger_no_tax",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/correlative_printable_assets",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/daily_general_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/daily_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/daily_sales_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/detailed_expenses_by_cost_center",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/fix_accounts_with_wrong_value",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/general_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_account_balance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_expense",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_expenses_by_vendor_and_account",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_fiscal_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_tagged_expenses_by_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/monthly_tagged_expenses_by_vendors_group",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/movement_in_project_accounts",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/payee_movements_in_account",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/profit_loss",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/profit_loss_by_cost_center",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/profit_loss_cat",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/purchase_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/purchase_ledger_sv",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/sales_ledger",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/sales_ledger_sv",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_balance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expense",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expense_group",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_by_payee_categories",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_by_payee_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_by_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_by_vendors_group",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_to_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_expenses_to_vendor_by_tag_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_balance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_expense",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_expense_group",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_monthly_expense",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_group_monthly_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_grouped_expenses_by_docs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_groups_grouped_expenses_by_docs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_incomes_from_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_monthly_expense",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/tagged_monthly_expenses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/trial_balance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/unbalanced_entries",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/unbalanced_reconciliable_assets",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/unbalanced_reconciliable_liabilities",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/unpaid_payments_of_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/reports/verified_within_created_at_month",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/accounting/suggested_accounts",
+      "kind": "index"
+    },
+    {
+      "path": "/accounting/suggested_accounts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/accounting/suggested_accounts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/accounting/suggested_accounts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/applications",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/applications/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/applications/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/applications/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/applications/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/benefits_deductions_incidents_formulas",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/benefits_deductions_incidents_formulas/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/benefits_deductions_incidents_formulas/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/benefits_deductions_incidents_formulas/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/cities",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/cities/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/cities/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/cities/cities_in_country",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/cities/cities_in_state",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/cities/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/cms_write_ahead_logs",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/cms_write_ahead_logs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/cms_write_ahead_logs/force_sync",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/contract_formulas",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/contract_formulas/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/contract_formulas/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/contract_formulas/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/countries",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/countries/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/countries/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/countries/list",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/countries/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/currencies",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/currencies/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/currencies/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/currencies/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/currencies/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/districts",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/districts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/districts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/districts/districts_in_city",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/districts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/document_external_storage_services",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/document_external_storage_services/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/document_external_storage_services/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/document_external_storage_services/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/entities",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/entities/:entity_id/fees",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/entities/:entity_id/fees/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/entities/:entity_id/fees/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/entities/:entity_id/fees/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/:entity_id/fees/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/:id/update_activation",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/update_activations",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/:entity_id/memberships/update_current_membership",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/:entity_id/variables",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/entities/:entity_id/variables/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/entities/:entity_id/variables/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/entities/:entity_id/variables/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/entities/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/entities/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/entities/:id/update_current_membership",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/admin/entities/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/entities/update_all_memberships_activations",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entities/update_current_memberships",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/entity_types",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/entity_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/entity_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/entity_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/gateways",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/gateways/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/gateways/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/gateways/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/incoterms",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/incoterms/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/incoterms/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/incoterms/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/item_country_codes",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/item_country_codes/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/item_country_codes/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/item_country_codes/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/linkers",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/linkers/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/linkers/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/linkers/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/operations",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/operations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/operations/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/operations/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/operations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/print_variables",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/print_variables/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/print_variables/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/print_variables/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/print_variables/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/states",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/states/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/states/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/states/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/states/states_in_country",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/translations",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/translations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/translations/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/translations/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/translations/import",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/translations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/users",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/users/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/users/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/users/:user_id/variables",
+      "kind": "index"
+    },
+    {
+      "path": "/admin/users/:user_id/variables/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/admin/users/:user_id/variables/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/admin/users/:user_id/variables/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/users/create_active_user_permissions",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/users/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/admin/users/new",
+      "kind": "new"
+    },
+    {
+      "path": "/admin/users/refresh_active_user_permissions",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/ajax_waits",
+      "kind": "index"
+    },
+    {
+      "path": "/ajax_waits/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/ajax_waits/new",
+      "kind": "new"
+    },
+    {
+      "path": "/analysis/analyses",
+      "kind": "index"
+    },
+    {
+      "path": "/analysis/analyses/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/analysis/analyses/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/analysis/analyses/edit_permission",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/analysis/analyses/new",
+      "kind": "new"
+    },
+    {
+      "path": "/analysis/analyses/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/analysis/direct_connections",
+      "kind": "index"
+    },
+    {
+      "path": "/analysis/direct_connections/new",
+      "kind": "new"
+    },
+    {
+      "path": "/apps/app_sync_ids_to_syncs",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/app_sync_ids_to_syncs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/app_syncs",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/app_syncs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/app_syncs/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/app_syncs/:id/full_refresh",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/apps/app_syncs/:id/refresh_status",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/apps/app_syncs/get_columns",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/app_syncs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/apps/documents_structures",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/documents_structures/case",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/documents_structures/contract",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/documents_structures/entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/documents_structures/invoice",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/documents_structures/purchase_order",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/documents_structures/shipment",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/apps/graphql",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/webapp_tables",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/webapp_tables/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/webapp_tables/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/webapp_tables/:id/rowables",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/apps/webapp_tables/:webapp_table_id/webapp_rows",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/webapp_tables/:webapp_table_id/webapp_rows/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/webapp_tables/:webapp_table_id/webapp_rows/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/webapp_tables/:webapp_table_id/webapp_rows/new",
+      "kind": "new"
+    },
+    {
+      "path": "/apps/webapp_tables/new",
+      "kind": "new"
+    },
+    {
+      "path": "/apps/webapp_vars",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/webapp_vars/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/webapp_vars/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/webapp_vars/new",
+      "kind": "new"
+    },
+    {
+      "path": "/apps/webapps",
+      "kind": "index"
+    },
+    {
+      "path": "/apps/webapps_permissions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/webapps/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/apps/webapps/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/apps/webapps/new",
+      "kind": "new"
+    },
+    {
+      "path": "/company",
+      "kind": "show"
+    },
+    {
+      "path": "/company/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/contracts/active_contracts",
+      "kind": "index"
+    },
+    {
+      "path": "/contracts/active_contracts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/contract_status",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/fees_entries_details",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/generate_arrears",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/generate_documents_form",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/pending_fees_entries_details",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/:id/show_current_arrears",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/active_contracts/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/contracts/closed_contracts",
+      "kind": "index"
+    },
+    {
+      "path": "/contracts/closed_contracts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/contracts/closed_contracts/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/closed_contracts/:id/unclose",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/contracts_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/contracts/draft_contracts",
+      "kind": "index"
+    },
+    {
+      "path": "/contracts/draft_contracts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/contracts/draft_contracts/:id/activate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/draft_contracts/:id/contract_details_in_time",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/contracts/draft_contracts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/contracts/draft_contracts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/contracts/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/contracts/reports/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/contracts/reports/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/contracts/reports/consolidated_active_contract_status",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/contracts/reports/contracts_overdue_for_closing",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/contracts/reports/contracts_to_expire",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/contracts/reports/contracts_with_pending_generation",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/contracts/reports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/crm/quotes",
+      "kind": "index"
+    },
+    {
+      "path": "/crm/quotes/:id/entity_name",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/crm/quotes/active_currencies",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/active_payment_terms",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/active_sellers",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/active_tags",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/contact_methods",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/discounts",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/get_items_for_sale",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/get_items_for_sale_with_images",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/payee_categories",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/print_templates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/crm/quotes/seller_info",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/data_import_jobs",
+      "kind": "index"
+    },
+    {
+      "path": "/data_import_jobs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/data_import_jobs/:id/get_uuid_based_on_external_id",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests",
+      "kind": "index"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/:id/generate_movements_order_and_payments",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/credentials_based_on_url",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/get_items_for_ecommerce",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/new",
+      "kind": "new"
+    },
+    {
+      "path": "/ecommerce/ecommerce_requests/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/ecommerce/ecommerce_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/ecommerce/woocommerce_items_syncs",
+      "kind": "index"
+    },
+    {
+      "path": "/ecommerce/woocommerce_items_syncs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/ecommerce/woocommerce_items_syncs/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/ecommerce/woocommerce_items_syncs/:id/force_sync",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/ecommerce/woocommerce_items_syncs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/bookings",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/bookings/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/bookings/:id/deliver",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bookings/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/bookings/:id/movements_export",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bookings/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bookings/:id/ship",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bookings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/bookings/new_serials",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bookings/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bookings/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundle_stocks",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/bundle_stocks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/bundle_stocks/:id/item",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bundle_stocks/all_warehouses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundle_stocks/stocks_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundle_stocks/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundles",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/bundles/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/bundles/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/bundles/:id/edit_images",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/bundles/bundle_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/bundles/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundles/get_dynamic_items_with_stock",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/bundles/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/bundles/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/closed_transfer_requests",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/closed_transfer_requests/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/deliveries",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/deliveries/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/deliveries/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/deliveries/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/deliveries/:id/external_storage_certified_response_for_voiding",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/deliveries/:id/issue_external_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/deliveries/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/deliveries/returned",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/deliveries/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/inventories_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/inventory_audits",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id/create_entry_for_generated_shipment",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id/disassociate_returned_shipments",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id/generate_shipment",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/inventory_audits/:id/replace_inventary_audits_with_excel_form",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/inventory_audits/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/lot_stocks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/lots",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/lots/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/lots/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/lots/:id/item",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/lots/all_warehouses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/lots/lots_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/lots/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/open_transfer_requests",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/open_transfer_requests/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/open_transfer_requests/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/open_transfer_requests/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/reports/check_last_movements_per_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/check_report",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/fix_serials_locations",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/fix_undelivered_deliveries",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/fix_unmatched_lot",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/fix_unmatched_stock",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/inventory_consumption_between_dates_in_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/items_moved_between_warehouses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/last_movements_per_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/list_unmatched_lots_with_stocks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/list_unmatched_serials_and_stocks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/list_unmatched_serials_with_stocks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_productions",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_productions_by_booker",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_shipment_details_from_production",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_shipment_details_to_production",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_warehouse_balance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_warehouse_balance_by_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/monthly_warehouse_balance_by_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/request_outcomes_based_on_consumption_between_dates_and_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/shipments_cost_by_agency_and_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/stocks_less_than_reorder_point",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/vendor_inventory_consumption",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/vendor_stocks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/warehouse_balance_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/warehouse_balance_between_dates_by_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/reports/warehouse_balance_between_dates_by_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/serials",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/serials/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/serials/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/serials/:id/item",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/serials/:item_id/item_movements_in_agency/:agency_id",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/serials/all_warehouses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/serials/autocomplete",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/serials/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/serials/new_multiple",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/serials/serials_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/stocks",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/stocks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/stocks/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/inventories/stocks/:id/item",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/inventories/stocks/all_warehouses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/stocks/prices_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/stocks/stock_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/inventories/stocks/stocks_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/stocks/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/inventories/transits",
+      "kind": "index"
+    },
+    {
+      "path": "/inventories/transits/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/inventories/transits/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/login",
+      "kind": "custom"
+    },
+    {
+      "path": "/notifications",
+      "kind": "index"
+    },
+    {
+      "path": "/oauth/admin",
+      "kind": "index"
+    },
+    {
+      "path": "/oauth/admin/active_entities",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/oauth/admin/all_entities",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/incidents",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/incidents/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/incidents/:id/duplicate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/incidents/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/incidents/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/paid_payroll_runs",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/paid_payroll_runs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/paid_payroll_runs/:id/unpay",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/paid_payroll_runs/check_print_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/paid_payroll_runs/check_print_all_from_my_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/paid_pieceworks",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/paid_pieceworks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_balances",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_balances/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id/approve",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id/disapprove",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id/disreject",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/personal_time_off/personal_time_off_requests/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/piecework_holidays/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/reports/benefit_deduction_type_in_agency_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/daily_payroll_run_payrolls",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/daily_pieceworks_employees_quantities_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employee_payroll_runs_detailed_payrolls_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employee_payroll_runs_payrolls_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employee_tasks_consolidated_by_piecework_per_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employee_tasks_per_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employees_hires_and_terminations_by_date_range",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/employees_per_task_per_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/fix_deducted_incidents",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/fix_missing_entry_in_pieceworks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/fix_unmatched_payroll_total_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/fix_unmatched_payroll_total_pay",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/fix_unmatched_pieceworks_entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/incidents_by_type_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/incidents_with_status_by_employee_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/missing_entry_in_pieceworks",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/payroll_run_account_groups_and_accounts_names",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/payroll_run_payrolls",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/payroll_run_pieceworks_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/pieceworks_employees_per_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/unmatched_payroll_total_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/unmatched_payroll_total_pay",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/unmatched_payroll_vs_entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/unmatched_piecework_vs_entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/wage_ledger_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/weekly_piecework_values_by_employees",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/weekly_pieceworks_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/reports/work_contracts_expiring_soon",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/settings/incident_types",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/incident_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/incident_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/incident_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/job_positions",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/job_positions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/job_positions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/job_positions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/payroll_benefits_deductions",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/payroll_benefits_deductions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/payroll_benefits_deductions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/payroll_benefits_deductions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/payroll_payment_methods",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/payroll_payment_methods/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/payroll_payment_methods/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/payroll_payment_methods/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/payroll_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/personal_time_off_types",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/personal_time_off_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/personal_time_off_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/personal_time_off_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/piecework_type_groups",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/piecework_type_groups/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/piecework_type_groups/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/piecework_type_groups/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/settings/piecework_types",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/settings/piecework_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/settings/piecework_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/settings/piecework_types/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/settings/piecework_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/approve",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/disapprove",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/export",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/fill_flexible_benefits_and_deductions",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/import",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/mini_export",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/pay",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/check_print_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/check_print_all_from_my_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/generate_from_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/generate_off_cycle",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/payrolls/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/payrolls/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/payrolls/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/payrolls/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/unpaid_payroll_runs/payrolls/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/unpaid_pieceworks",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/unpaid_pieceworks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/unpaid_pieceworks/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/unpaid_pieceworks/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/work_contracts",
+      "kind": "index"
+    },
+    {
+      "path": "/payroll/work_contracts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/payroll/work_contracts/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/work_contracts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/payroll/work_contracts/:id/export_details",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/work_contracts/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/payroll/work_contracts/:work_contract_id/work_contract_terminations/new",
+      "kind": "new"
+    },
+    {
+      "path": "/payroll/work_contracts/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/work_contracts/import",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/payroll/work_contracts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/bookings",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/bookings/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/bookings/:id/deliver",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/bookings/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/bookings/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/bookings/:id/ship",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/bookings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/cases",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/cases/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/cases/:id/close",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/cases/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/cases/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/cases/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/charges",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/charges/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/charges/:id/confirm",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/charges/:id/confirm_payment_method",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/charges/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/charges/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/charges/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/invoices/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/invoices/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/invoices/:id/issue_fast",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/invoices/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/invoices/:id/shallow_edit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/invoices/get_categories_items_bundles_prices_stocks_images",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/invoices/item_bundle_info",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/invoices/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/invoices/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/pos_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/purchases",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/purchases/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/purchases/:id/new_discharge",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/purchases/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/purchases/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/purchases/new_expense_purchase",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/receptions",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/receptions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/receptions/:id/receive",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/reports/book_outcomes_based_on_consumption_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/consolidated_daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/daily_item_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/daily_items_sold",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/inventory_consumption_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/monthly_sales_by_seller_and_client_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/my_invoices",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/purchased_item_categories_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/purchased_items_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/purchases_daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/reports/summarized_daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/sale_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/sale_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/sale_orders/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/sale_orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/sale_orders/:id/void",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/pos/sale_orders/get_categories_items_bundles_prices_stocks_images",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/sale_orders/item_bundle_info",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/sale_orders/new",
+      "kind": "new"
+    },
+    {
+      "path": "/pos/sale_orders/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/pos/shipments",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/shipments/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/shipments/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/transfer_requests",
+      "kind": "index"
+    },
+    {
+      "path": "/pos/transfer_requests/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/pos/transfer_requests/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/pos/transfer_requests/new",
+      "kind": "new"
+    },
+    {
+      "path": "/production/bill_of_materials",
+      "kind": "index"
+    },
+    {
+      "path": "/production/bill_of_materials/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/bill_of_materials/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/production/bill_of_materials/new",
+      "kind": "new"
+    },
+    {
+      "path": "/production/closed_production_batches",
+      "kind": "index"
+    },
+    {
+      "path": "/production/closed_production_batches/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/closed_production_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/production/closed_production_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/closed_production_orders/:id/return_to_running",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/closed_work_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/production/closed_work_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/closed_work_orders/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/closed_work_orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/closed_work_orders/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/open_work_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/production/open_work_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/open_work_orders/:id/close",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/open_work_orders/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/open_work_orders/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/production/open_work_orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/open_work_orders/new",
+      "kind": "new"
+    },
+    {
+      "path": "/production/open_work_orders/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/open_work_orders/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/production_batches",
+      "kind": "index"
+    },
+    {
+      "path": "/production/production_batches/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/production_batches/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/production_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/production/production_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/production_orders/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/production_orders/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/production/production_orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/production_orders/:id/start_production",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/production_orders/new",
+      "kind": "new"
+    },
+    {
+      "path": "/production/production_orders/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/production_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/production/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/production/reports/consolidated_raw_materials_from_planned_production_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/reports/consolidated_work_order_details_by_tag",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/reports/finished_production_orders_by_responsible",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/reports/finished_products_by_responsible",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/reports/production_orders_efficiency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/production/running_production_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/production/running_production_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/production/running_production_orders/:id/close",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/running_production_orders/:id/resume",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/production/running_production_orders/:id/return_to_planned",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/profile",
+      "kind": "show"
+    },
+    {
+      "path": "/profile/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/profile/edit_password",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/charges",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/charges/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/charges/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/charges/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/charges/tariffs_charges/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/charges/tariffs_charges/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/charges/tariffs_charges/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/charges/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/closed_purchase_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/closed_purchase_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/closed_purchase_orders/:id/rebound",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/closed_purchase_orders/:id/shallow_edit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/computed_costs",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/computed_costs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/computed_costs/:id/average_calculation",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/computed_costs/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/computed_costs/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/computed_costs/initial_cost_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/computed_costs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/consolidates",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/consolidates/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/consolidates/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/consolidates/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/consolidates/:id/items",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/consolidates/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/consolidates/check_print_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/consolidates/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/consolidates/new_for_special_invoice",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/discharges",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/discharges/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/discharges/:id/authorize",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/discharges/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/discharges/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/discharges/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/discharges/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/paid_charges",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/paid_charges/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/paid_charges/:id/shallow_edit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/authorize",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/deauthorize",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/external_storage_certified_response_for_voiding",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/fix_cost_in_sold_items_after_receiving_again",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/partial_receive",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/print_templates",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/rebound",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/rebound_reception",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/receive",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/receive_serials",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/replace_purchase_order_details_with_excel_form",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:id/review_cost_in_sold_items_after_receiving_again",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_orders/:purchase_order_id/receptions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/purchase_orders/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/purchase_orders/last_unit_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/purchase_orders/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/purchase_orders/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/purchase_orders/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/purchase_requisitions",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/purchase_requisitions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/purchase_requisitions/:id/approval_result",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/purchases/purchase_requisitions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/purchase_requisitions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/purchase_requisitions/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/reports/accounts_purchases_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/check_report",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_cost_by_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_cost_by_agency_sat",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_cost_sat",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_fifo_cost_by_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/current_inventory_fifo_cost_by_agency_sat",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/detailed_vendors_unpaid_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/detailed_vendors_unpaid_payments_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/differences_in_computed_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/fix_not_paid_purchase_orders_due_zero",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/inventory_cost_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/inventory_cost_movements",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/item_category_purchases_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/item_purchases_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/items_purchases_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/monthly_purchase_orders_by_purchaser",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/monthly_purchase_orders_with_external_storage_entries",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/monthly_received_purchase_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/orphan_discharges",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/product_kardex_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchase_order_reception_entry_date_mismatches",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchase_orders_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchase_orders_without_computed_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchased_item_categories_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchased_item_categories_by_agency_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchased_items_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchased_items_from_vendors_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/purchaser_monthly_discharges",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/reception_without_entry_add_missing_transaction/:reception_id",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/receptions_without_entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/record_of_suppliers_between_months",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/sync_charges_due_with_discharges",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/sync_items_average_cost_with_computed_cost",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/sync_purchase_orders_due_with_discharges",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/unreceived_purchase_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/update_average_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/vendors_unpaid_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/vendors_unpaid_payments_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/reports/wrong_purchase_order_inventory_transaction",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/settings/charge_terms",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/settings/charge_terms/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/settings/charge_terms/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/settings/charge_terms/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/settings/charge_types",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/settings/charge_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/settings/charge_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/settings/charge_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/settings/discharge_methods",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/settings/discharge_methods/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/settings/discharge_methods/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/settings/discharge_methods/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/settings/purchases_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/vendors",
+      "kind": "index"
+    },
+    {
+      "path": "/purchases/vendors/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/purchases/vendors/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/purchases/vendors/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/purchases/vendors/new",
+      "kind": "new"
+    },
+    {
+      "path": "/purchases/vendors/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/receptions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/receptions/:id/rebound",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/receptions/:id/retry_object_creation",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/clients",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/clients/:client_id/credit_cards/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/clients/:client_id/credit_cards/:id/set_default",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/clients/:client_id/credit_cards/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/clients/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/clients/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/clients/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/clients/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/clients/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/draft_payments",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/draft_payments/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/draft_payments/:id/confirm",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/draft_payments/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/gateway_configs",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/gateway_configs/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/gateway_configs/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/gateway_configs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/gift_cards",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/gift_cards/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/gift_cards/lookup",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/orders",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/orders/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/orders/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/orders/:id/edit_creation",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/:id/export_consolidated",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/:id/gift",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/:id/void",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/orders/active_sellers",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/orders/consolidate_new",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/orders/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/orders/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/orders/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/orders/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/paid_invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/paid_invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/paid_invoices/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/paid_invoices/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/paid_invoices/:id/shallow_edit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/payments",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/payments/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/payments/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/payments/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/payments/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/payments/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/payments/new_advance",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/payments/new_unconfirmed",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/payments/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/payments/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/prices",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/prices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/prices/bundles",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/provisional_invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id/create_definitive",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id/external_storage_certified_response_for_voiding",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/provisional_invoices/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/provisional_invoices/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/reports/bundle_sales_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/category_bundle_invoice_details",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/charger_monthly_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/check_report",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/client_balance_statement",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/client_category_pending_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/client_pending_overdue_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/client_pending_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/client_tag_and_seller_pending_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/clients_unpaid_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/clients_unpaid_payments_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/clients_unpaid_payments_include_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/clients_with_overdue_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/consolidated_daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/consolidated_daily_sales_entries",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/consolidated_items_from_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/customers_contribution_to_sales",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/daily_item_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/daily_ordered_items_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/daily_orders_by_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/daily_payments_by_payment_method",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/detailed_clients_unpaid_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/documents_issued_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/documents_issued_in_contingency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/duplicated_invoice_numbers",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/electronic_invoice_details_storage",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/electronic_invoices_consolidated_storage",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/electronic_invoices_storage",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/electronic_payments_storage",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/export_certified_responses",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/fix_bundles_costs_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/fix_items_costs_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/fix_paid_without_paid_at_invoices",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/fix_unpaid_invoices_due_zero",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/grouped_items_sales_by_seller",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/hourly_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/invoices_by_shipper",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/invoices_items_cost_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/invoices_with_voided_shipment",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/invoices_without_sales_entry",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/invoices_without_shipment",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/item_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/item_by_payment_term_and_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/item_category_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/item_sales_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/items_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/items_contribution_to_sales",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/items_sales_by_seller",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_bundle",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_charges_by_seller_and_payment_days",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_invoices_by_item",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_item",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_items",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_items_paid",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_orders_by_agency",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_sales_by_point_of_sale_and_client_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_sales_by_seller_and_client_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_sales_by_seller_and_item_category",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_sales_by_seller_and_item_type",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_sales_by_seller_and_payment_term",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_vendor_items",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/monthly_vendor_items_by_seller",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/my_invoices",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/ordered_items_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/payment_methods_by_charger_in_date",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/point_of_sale_monthly_clients",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/received_payments_per_payment_method_grupued_by_seller",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/record_of_clients_between_months",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/record_of_clients_between_months_pdf",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sales_details_with_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sales_details_with_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sales_with_costs",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/selled_items_between_dates",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_charges_by_month_and_payment_days",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_grouped_pending_payments_by_client",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_invoices_by_vendor",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_monthly_clients",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_monthly_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_monthly_sales",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_pending_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/seller_pending_payments_include_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sold_active_items_with_clients",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sold_category_bundles_by_selected_item",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/summarized_daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/sync_invoice_due_with_payments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/undelivered_items_orders",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/variation_between_invoices_and_shipments",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/reports/weekly_item",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/sales_consolidates",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/sales_consolidates/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/sales_consolidates/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id/external_storage_certified_response_for_voiding",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/:id/redeem_with_associated_invoice",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/sales_notes/credit_notes/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/sales_notes/debit_notes",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/sales_notes/debit_notes/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/sales_notes/debit_notes/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/sales/gateway_operation_intents",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/sales/gateway_operation_intents/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/discounts",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/settings/discounts/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/discounts/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/settings/discounts/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/settings/gift_card_types",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/settings/gift_card_types/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/gift_card_types/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/settings/gift_card_types/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/settings/payment_methods",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/settings/payment_methods/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/payment_methods/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/settings/payment_methods/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/settings/payment_terms",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/settings/payment_terms/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/payment_terms/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/settings/payment_terms/actives",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/settings/payment_terms/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/settings/price_lists",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/settings/price_lists/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/settings/price_lists/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/settings/price_lists/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/settings/sales_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/suggested_prices",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/suggested_prices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/suggested_prices/bundles",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/suggested_prices/bundles_export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/suggested_prices/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/suggested_prices/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/suggested_prices/price_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/unpaid_invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/change_serial_numbers",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/external_storage_certified_response_for_voiding",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/issue_fast",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/:id/shallow_edit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/sales/unpaid_invoices/check_print_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/unpaid_invoices/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/unpaid_invoices/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/unpaid_invoices/print_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/unpaid_invoices/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/sales/unpaid_invoices/unpaid_invoice_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/sales/unpaid_invoices/voided",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/agencies",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/agencies/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/agencies/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/agencies/agency_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/agencies/agency_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/agencies/agency_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/agencies/agency_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/agencies/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/agencies/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/data_imports",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/data_imports/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/data_imports/:id/download_attached_file",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/data_imports/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/data_imports/:id/edit_data",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/data_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/data_imports/template",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/deliverable_reports",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/deliverable_reports/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/deliverable_reports/:id/send_email",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/deliverable_reports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/employees",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/employees/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/employees/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/employees/employee_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/employees/employee_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/employees/employee_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/employees/employee_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/employees/employee_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/employees/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/employees/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/exchange_rates",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/exchange_rates/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/exchange_rates/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/exchange_rates/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/forms",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/forms/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/forms/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/forms/:id/preview",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/:id/versions",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/form_submissions",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id/export",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/form_submissions/:id/versions",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/forms/form_submissions/export_all",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/forms/form_submissions/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/forms/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/items/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/items/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/items/:id/edit_images",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/items/:id/edit_item_variations",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/items/brands",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/items/brands/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/items/brands/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/items/brands/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/items/item_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/items/item_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/items/item_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/items/item_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/item_import_checks/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/item_import_checks/new_missing_items",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/items/item_imports/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/items/item_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/item_stock_price_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/item_super_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/items/item_super_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/items/item_super_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/items/item_super_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/items/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/link_docs/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/payees",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/payees/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/payees/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/payees/:id/sync_payee_to_crm",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/payees/autocomplete",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_export_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_foreign_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_pin",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_pin_export_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/autocomplete_pin_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/export",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/get_payee",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/payees/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/payees/payee_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/payees/payee_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/payees/payee_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/payees/payee_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/payees/payee_imports/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/payees/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/settings/settings_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes/:id/external_storage_envelope",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes/:id/external_storage_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_credit_notes/:id/issue_credit_note_based_on_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/:id/external_storage_envelope",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/:id/external_storage_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/:id/issue_invoice_based_on_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_invoices/link_orphan_to_invoices",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices/:id/external_storage_envelope",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices/:id/external_storage_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_provisional_invoices/link_orphan_to_provisional_invoices",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/:id/external_storage_envelope",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/:id/external_storage_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/:id/issue_purchase_order_based_on_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_purchases/link_orphan_to_purchases",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/settings/submission_intent_for_shipments",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/submission_intent_for_shipments/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/submission_intent_for_shipments/:id/external_storage_certified_response",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_shipments/:id/external_storage_envelope",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/submission_intent_for_shipments/:id/external_storage_origin_document",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/tags",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/tags/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/tags/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/tags/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/tags/tag_categories",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/tags/tag_categories/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/tags/tag_categories/:id/duplicate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/tags/tag_categories/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/tags/tag_categories/:id/get_graph_data",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/tags/tag_categories/:id/show_graph",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/tags/tag_categories/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/templates/document_automatic_numbers",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/templates/document_automatic_numbers/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/templates/document_automatic_numbers/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/templates/document_automatic_numbers/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/templates/document_prints",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/templates/document_prints/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/templates/document_prints/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/templates/document_prints/new",
+      "kind": "new"
+    },
+    {
+      "path": "/settings/templates/print_templates",
+      "kind": "index"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/duplicate",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/edit_data",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/preview",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/preview_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/templates/print_templates/:id/preview_with_vars",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/settings/templates/print_templates/new",
+      "kind": "new"
+    },
+    {
+      "path": "/support/cases",
+      "kind": "index"
+    },
+    {
+      "path": "/support/cases/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/support/cases/:id/close",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/support/cases/:id/download_pdf",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/support/cases/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/support/cases/:id/print",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/support/cases/:id/profit",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/support/cases/:id/send_email",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/support/cases/new",
+      "kind": "new"
+    },
+    {
+      "path": "/support/cases/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/support/clients_with_serials",
+      "kind": "index"
+    },
+    {
+      "path": "/support/clients_with_serials/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/support/closed_cases",
+      "kind": "index"
+    },
+    {
+      "path": "/support/closed_cases/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/support/closed_cases/tag_cloud",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/support/contact_methods",
+      "kind": "index"
+    },
+    {
+      "path": "/support/contact_methods/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/support/contact_methods/:id/edit",
+      "kind": "edit"
+    },
+    {
+      "path": "/support/contact_methods/new",
+      "kind": "new"
+    },
+    {
+      "path": "/support/reports",
+      "kind": "index"
+    },
+    {
+      "path": "/support/reports/daily_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/support/reports/hourly_close",
+      "kind": "custom-collection"
+    },
+    {
+      "path": "/support/serials_attended",
+      "kind": "index"
+    },
+    {
+      "path": "/support/serials_attended/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/support/serials_attended/new",
+      "kind": "new"
+    },
+    {
+      "path": "/support/settings/support_settings/new",
+      "kind": "new"
+    },
+    {
+      "path": "/tasks",
+      "kind": "index"
+    },
+    {
+      "path": "/tasks/:id",
+      "kind": "show"
+    },
+    {
+      "path": "/tasks/:id/complete",
+      "kind": "custom-member"
+    },
+    {
+      "path": "/tasks/new",
+      "kind": "new"
+    },
+    {
+      "path": "/users/sign_in",
+      "kind": "custom"
+    },
+    {
+      "path": "/work_contract_terminations/:id",
+      "kind": "show"
+    },
+    {
+      "path": "access_control",
+      "kind": "custom"
+    },
+    {
+      "path": "access_control/index",
+      "kind": "index"
+    },
+    {
+      "path": "accounting",
+      "kind": "custom"
+    },
+    {
+      "path": "accounting/index",
+      "kind": "index"
+    },
+    {
+      "path": "admin",
+      "kind": "custom"
+    },
+    {
+      "path": "admin/index",
+      "kind": "index"
+    },
+    {
+      "path": "analysis",
+      "kind": "custom"
+    },
+    {
+      "path": "analysis/index",
+      "kind": "index"
+    },
+    {
+      "path": "apps",
+      "kind": "custom"
+    },
+    {
+      "path": "apps/index",
+      "kind": "index"
+    },
+    {
+      "path": "contracts",
+      "kind": "custom"
+    },
+    {
+      "path": "contracts/index",
+      "kind": "index"
+    },
+    {
+      "path": "crm",
+      "kind": "custom"
+    },
+    {
+      "path": "crm/index",
+      "kind": "index"
+    },
+    {
+      "path": "ecommerce",
+      "kind": "custom"
+    },
+    {
+      "path": "ecommerce/index",
+      "kind": "index"
+    },
+    {
+      "path": "inventories",
+      "kind": "custom"
+    },
+    {
+      "path": "inventories/index",
+      "kind": "index"
+    },
+    {
+      "path": "oauth",
+      "kind": "custom"
+    },
+    {
+      "path": "oauth/index",
+      "kind": "index"
+    },
+    {
+      "path": "payroll",
+      "kind": "custom"
+    },
+    {
+      "path": "payroll/index",
+      "kind": "index"
+    },
+    {
+      "path": "pos",
+      "kind": "custom"
+    },
+    {
+      "path": "pos/index",
+      "kind": "index"
+    },
+    {
+      "path": "production",
+      "kind": "custom"
+    },
+    {
+      "path": "production/index",
+      "kind": "index"
+    },
+    {
+      "path": "purchases",
+      "kind": "custom"
+    },
+    {
+      "path": "purchases/index",
+      "kind": "index"
+    },
+    {
+      "path": "sales",
+      "kind": "custom"
+    },
+    {
+      "path": "sales/index",
+      "kind": "index"
+    },
+    {
+      "path": "settings",
+      "kind": "custom"
+    },
+    {
+      "path": "settings/index",
+      "kind": "index"
+    },
+    {
+      "path": "support",
+      "kind": "custom"
+    },
+    {
+      "path": "support/index",
+      "kind": "index"
+    }
+  ],
+  "skippedCount": 216,
+  "skipped": [
+    {
+      "line": 1,
+      "text": "require 'sidekiq/web'"
+    },
+    {
+      "line": 4,
+      "text": "Rails.application.routes.draw do"
+    },
+    {
+      "line": 6,
+      "text": "def draw(routes_name)"
+    },
+    {
+      "line": 7,
+      "text": "instance_eval(File.read(Rails.root.join(\"config/routes/#{routes_name}.rb\")))"
+    },
+    {
+      "line": 10,
+      "text": "draw :sidekiq"
+    },
+    {
+      "line": 15,
+      "text": "authenticated :user do"
+    },
+    {
+      "line": 16,
+      "text": "root 'profiles#show'"
+    },
+    {
+      "line": 19,
+      "text": "unauthenticated :user do"
+    },
+    {
+      "line": 20,
+      "text": "as :user do"
+    },
+    {
+      "line": 22,
+      "text": "root :to => redirect('/users/auth/zauru?locale=es'), as: nil"
+    },
+    {
+      "line": 27,
+      "text": "devise_scope :user do"
+    },
+    {
+      "line": 35,
+      "text": "devise_for :users, only: :omniauth_callbacks, controllers: {omniauth_callbacks: 'admin/omniauth_callbacks'}"
+    },
+    {
+      "line": 37,
+      "text": "devise_scope :user do"
+    },
+    {
+      "line": 39,
+      "text": "delete 'sign_out', :to => 'devise/sessions#destroy'"
+    },
+    {
+      "line": 45,
+      "text": "devise_for :users, skip: :omniauth_callbacks, :controllers => { :sessions => 'admin/devise' }"
+    },
+    {
+      "line": 53,
+      "text": "post 'fe/autenticacion/api/semilla', to: 'dgii#login_with_semilla', as: :login_with_semilla"
+    },
+    {
+      "line": 61,
+      "text": "patch :update_password"
+    },
+    {
+      "line": 92,
+      "text": "get '/(:locale)/subscribe', to: 'companies#new', as: :subscribe, constraints: { locale: /[a-z]{2}/ }, defaults: { locale: I18n.default_locale }"
+    },
+    {
+      "line": 101,
+      "text": "match '/(:locale)/signup/:token', :to =>\"profiles#new\", :as => :signup, :constraints => {:locale => /[a-z]{2}/}, :defaults => {:locale => I18n.default_locale}, :format => false, :via => :get"
+    },
+    {
+      "line": 123,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 132,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 168,
+      "text": "patch :import_process, :on => :collection"
+    },
+    {
+      "line": 212,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 215,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 219,
+      "text": "patch :update_data, on: :member"
+    },
+    {
+      "line": 220,
+      "text": "post :validate_row, on: :member"
+    },
+    {
+      "line": 221,
+      "text": "post :destroy_column, on: :member"
+    },
+    {
+      "line": 222,
+      "text": "post :destroy_row, on: :member"
+    },
+    {
+      "line": 223,
+      "text": "post :import_row, on: :member"
+    },
+    {
+      "line": 232,
+      "text": "patch :update_data, :on => :member"
+    },
+    {
+      "line": 248,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 251,
+      "text": "post :search_payee, :on => :collection"
+    },
+    {
+      "line": 252,
+      "text": "post :search_payee_name, :on => :collection"
+    },
+    {
+      "line": 269,
+      "text": "patch :update_images, :on => :member"
+    },
+    {
+      "line": 270,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 273,
+      "text": "patch :update_item_variations, on: :member"
+    },
+    {
+      "line": 278,
+      "text": "post :create_missing_items, :on => :collection"
+    },
+    {
+      "line": 283,
+      "text": "post :immediate_delivery_to_me, :on => :collection"
+    },
+    {
+      "line": 284,
+      "text": "post :immediate_delivery_to_payee, :on => :collection"
+    },
+    {
+      "line": 287,
+      "text": "post :duplicate, on: :member"
+    },
+    {
+      "line": 289,
+      "text": "post :make_it_current_version, on: :member"
+    },
+    {
+      "line": 294,
+      "text": "post :send_email, on: :member"
+    },
+    {
+      "line": 298,
+      "text": "post :make_it_current_version, on: :member"
+    },
+    {
+      "line": 299,
+      "text": "post :duplicate, on: :member"
+    },
+    {
+      "line": 308,
+      "text": "post :import_xml, on: :collection"
+    },
+    {
+      "line": 316,
+      "text": "post :import_json, on: :collection"
+    },
+    {
+      "line": 328,
+      "text": "post :import_xml, on: :collection"
+    },
+    {
+      "line": 336,
+      "text": "post :import_xml, on: :collection"
+    },
+    {
+      "line": 355,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 358,
+      "text": "post :datatables_show, :on => :member"
+    },
+    {
+      "line": 359,
+      "text": "post :datatables_balance, :on => :member"
+    },
+    {
+      "line": 363,
+      "text": "patch :automatic_monthly_close_process, :on => :collection"
+    },
+    {
+      "line": 370,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 377,
+      "text": "post :settlement_action, :on => :member"
+    },
+    {
+      "line": 396,
+      "text": "patch :conciliate_action, :on => :member"
+    },
+    {
+      "line": 408,
+      "text": "post :refresh_balance_sheet_in_local_currency, :on => :collection"
+    },
+    {
+      "line": 444,
+      "text": "post :refresh_purchase_ledger, :on => :collection"
+    },
+    {
+      "line": 447,
+      "text": "post :daily_ledger_datatables, :on => :collection"
+    },
+    {
+      "line": 448,
+      "text": "post :gen_daily_ledger, :on => :collection"
+    },
+    {
+      "line": 451,
+      "text": "post :refresh_consolidated_daily_ledger, :on => :collection"
+    },
+    {
+      "line": 468,
+      "text": "post :refresh_general_ledger, on: :collection"
+    },
+    {
+      "line": 471,
+      "text": "post :refresh_daily_general_ledger, on: :collection"
+    },
+    {
+      "line": 475,
+      "text": "post :gen_fix_accounts_with_wrong_value, on: :collection"
+    },
+    {
+      "line": 489,
+      "text": "post :create_purchase_requisition, on: :member"
+    },
+    {
+      "line": 497,
+      "text": "patch :update_images, on: :member"
+    },
+    {
+      "line": 498,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 503,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 504,
+      "text": "post :datatables_all_warehouse, :on => :collection"
+    },
+    {
+      "line": 508,
+      "text": "post :create_multiple, :on => :collection"
+    },
+    {
+      "line": 516,
+      "text": "post :datatables_item, :on => :member"
+    },
+    {
+      "line": 517,
+      "text": "post :datatables_show, :on => :member"
+    },
+    {
+      "line": 518,
+      "text": "post :datatables_index, :on => :collection"
+    },
+    {
+      "line": 526,
+      "text": "post :datatables_index, :on => :collection"
+    },
+    {
+      "line": 532,
+      "text": "post :datatables_index, :on => :collection"
+    },
+    {
+      "line": 533,
+      "text": "post :datatables_show, :on => :member"
+    },
+    {
+      "line": 535,
+      "text": "delete :empty_lot_stock, :on => :member"
+    },
+    {
+      "line": 539,
+      "text": "post :datatables, :on => :member"
+    },
+    {
+      "line": 543,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 545,
+      "text": "post :datatables_voided, :on => :collection"
+    },
+    {
+      "line": 550,
+      "text": "post :create_serials, :on => :collection"
+    },
+    {
+      "line": 554,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 558,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 560,
+      "text": "post :returned_datatables, on: :collection"
+    },
+    {
+      "line": 568,
+      "text": "post :replace_inventary_audits_with_excel_action, :on => :member"
+    },
+    {
+      "line": 571,
+      "text": "patch :update_system_quantities, on: :member"
+    },
+    {
+      "line": 578,
+      "text": "post :gen_fix_unmatched_stock"
+    },
+    {
+      "line": 580,
+      "text": "post :gen_fix_unmatched_lot"
+    },
+    {
+      "line": 582,
+      "text": "post :gen_fix_serials_locations"
+    },
+    {
+      "line": 584,
+      "text": "post :gen_fix_undelivered_deliveries"
+    },
+    {
+      "line": 586,
+      "text": "post :gen_list_unmatched_serials_with_stocks"
+    },
+    {
+      "line": 588,
+      "text": "post :gen_list_unmatched_serials_and_stocks"
+    },
+    {
+      "line": 590,
+      "text": "post :gen_list_unmatched_lots_with_stocks"
+    },
+    {
+      "line": 608,
+      "text": "post :refresh_last_movements_per_agency"
+    },
+    {
+      "line": 634,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 635,
+      "text": "post :datatables_show, on: :member"
+    },
+    {
+      "line": 642,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 643,
+      "text": "post :datatables_bundles, :on => :collection"
+    },
+    {
+      "line": 651,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 652,
+      "text": "post :datatables_voided, :on => :collection"
+    },
+    {
+      "line": 658,
+      "text": "post :consolidate_create, on: :collection"
+    },
+    {
+      "line": 660,
+      "text": "patch :update_creation, on: :member"
+    },
+    {
+      "line": 668,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 669,
+      "text": "post :datatables_voided, :on => :collection"
+    },
+    {
+      "line": 673,
+      "text": "post :gen_print_all, :on => :collection"
+    },
+    {
+      "line": 679,
+      "text": "patch :shallow_update, :on => :member"
+    },
+    {
+      "line": 681,
+      "text": "patch :change_serial_numbers, on: :member"
+    },
+    {
+      "line": 684,
+      "text": "post :resend_mail, on: :member"
+    },
+    {
+      "line": 687,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 698,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 703,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 705,
+      "text": "post :datatables_voided, :on => :collection"
+    },
+    {
+      "line": 708,
+      "text": "post :create_unconfirmed, :on => :collection"
+    },
+    {
+      "line": 713,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 717,
+      "text": "patch :shallow_update, :on => :member"
+    },
+    {
+      "line": 718,
+      "text": "delete :no_payments_void, :on => :member"
+    },
+    {
+      "line": 721,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 728,
+      "text": "post :resend_mail, on: :member"
+    },
+    {
+      "line": 731,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 796,
+      "text": "post :undelivered_items_shipments, on: :collection"
+    },
+    {
+      "line": 821,
+      "text": "post :gen_sync_invoice_due_with_payments, on: :collection"
+    },
+    {
+      "line": 822,
+      "text": "post :gen_fix_unpaid_invoices_due_zero, on: :collection"
+    },
+    {
+      "line": 823,
+      "text": "post :gen_fix_paid_without_paid_at_invoices, on: :collection"
+    },
+    {
+      "line": 824,
+      "text": "post :gen_invoices_without_sales_entry, on: :collection"
+    },
+    {
+      "line": 825,
+      "text": "post :gen_invoices_without_shipment, on: :collection"
+    },
+    {
+      "line": 826,
+      "text": "post :gen_invoices_with_voided_shipment, on: :collection"
+    },
+    {
+      "line": 847,
+      "text": "post :bulk_approve_form, on: :collection"
+    },
+    {
+      "line": 848,
+      "text": "post :bulk_approve, on: :collection"
+    },
+    {
+      "line": 854,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 855,
+      "text": "post :datatables_purchase_orders, :on => :member"
+    },
+    {
+      "line": 856,
+      "text": "post :datatables_charges, :on => :member"
+    },
+    {
+      "line": 861,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 862,
+      "text": "post :datatables_voided, :on => :collection"
+    },
+    {
+      "line": 867,
+      "text": "patch :receive_action, :on => :member"
+    },
+    {
+      "line": 869,
+      "text": "patch :partial_receive_action, :on => :member"
+    },
+    {
+      "line": 871,
+      "text": "patch :receive_serials_action, :on => :member"
+    },
+    {
+      "line": 872,
+      "text": "patch :update_received, :on => :member"
+    },
+    {
+      "line": 876,
+      "text": "post :replace_purchase_order_details_with_excel_action, :on => :member"
+    },
+    {
+      "line": 891,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 893,
+      "text": "post :create_for_special_invoice, :on => :collection"
+    },
+    {
+      "line": 897,
+      "text": "post :gen_print_all, on: :collection"
+    },
+    {
+      "line": 899,
+      "text": "post :multiple_print, :on => :member"
+    },
+    {
+      "line": 903,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 909,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 915,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 917,
+      "text": "patch :shallow_update, :on => :member"
+    },
+    {
+      "line": 921,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 923,
+      "text": "patch :shallow_update, :on => :member"
+    },
+    {
+      "line": 926,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 931,
+      "text": "post :datatables_inventory_cost, :on => :collection"
+    },
+    {
+      "line": 932,
+      "text": "post :datatables_inventory_cost_by_agency, :on => :collection"
+    },
+    {
+      "line": 933,
+      "text": "post :datatables_inventory_fifo_cost_by_agency, :on => :collection"
+    },
+    {
+      "line": 960,
+      "text": "post :datatables_unreceived_purchase_orders, on: :collection"
+    },
+    {
+      "line": 974,
+      "text": "post :gen_fix_not_paid_purchase_orders_due_zero, on: :collection"
+    },
+    {
+      "line": 975,
+      "text": "post :gen_sync_purchase_orders_due_with_discharges, on: :collection"
+    },
+    {
+      "line": 976,
+      "text": "post :gen_sync_charges_due_with_discharges, on: :collection"
+    },
+    {
+      "line": 995,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1000,
+      "text": "post :create_log, on: :member"
+    },
+    {
+      "line": 1005,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1008,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1025,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1029,
+      "text": "delete :no_payments_void, :on => :member"
+    },
+    {
+      "line": 1032,
+      "text": "patch :shallow_update, :on => :member"
+    },
+    {
+      "line": 1037,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1044,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1050,
+      "text": "post :create_purchase_expense, :on => :collection"
+    },
+    {
+      "line": 1051,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1053,
+      "text": "post :create_discharge, :on => :collection"
+    },
+    {
+      "line": 1058,
+      "text": "post :receive, action: :receive_create, on: :member"
+    },
+    {
+      "line": 1059,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1062,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1100,
+      "text": "patch \"update_permission\" => \"analyses#update_permission\", :on => :collection"
+    },
+    {
+      "line": 1116,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1118,
+      "text": "post :generate_documents_action, :on => :member"
+    },
+    {
+      "line": 1122,
+      "text": "delete :close, on: :member"
+    },
+    {
+      "line": 1130,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1161,
+      "text": "post :get_valid_agencies_for_items, on: :collection, :format => 'json'"
+    },
+    {
+      "line": 1162,
+      "text": "post :new_quote, on: :collection"
+    },
+    {
+      "line": 1163,
+      "text": "post :get_html_from_print_template, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1164,
+      "text": "post :get_pdf_from_print_template, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1165,
+      "text": "post :get_url_from_template, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1166,
+      "text": "post :send_print_template_mail, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1167,
+      "text": "post :send_attachment_mail, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1168,
+      "text": "post :create_payee, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1169,
+      "text": "patch 'update_payee/:id', :on => :collection, to: 'quotes#update_payee', :format => 'json'"
+    },
+    {
+      "line": 1170,
+      "text": "post :sales_orders, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1171,
+      "text": "post :draft_contracts, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1184,
+      "text": "post :create_user, :on => :collection, :format => 'json'"
+    },
+    {
+      "line": 1185,
+      "text": "patch 'update_user/:id', :on => :collection, to: 'admin#update_user', :format => 'json'"
+    },
+    {
+      "line": 1219,
+      "text": "post :sync_now, on: :collection"
+    },
+    {
+      "line": 1224,
+      "text": "post :create_rowables, :on => :member"
+    },
+    {
+      "line": 1227,
+      "text": "post   :associate"
+    },
+    {
+      "line": 1228,
+      "text": "delete :dissociate"
+    },
+    {
+      "line": 1254,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1257,
+      "text": "post :import, on: :collection, to: \"work_contracts#create_import\""
+    },
+    {
+      "line": 1268,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1271,
+      "text": "post :datatables, on: :collection"
+    },
+    {
+      "line": 1287,
+      "text": "patch :fill_flexible_benefits_and_deductions_action, on: :member"
+    },
+    {
+      "line": 1288,
+      "text": "post :gen_print_all, on: :collection"
+    },
+    {
+      "line": 1290,
+      "text": "post :gen_print_all_from_my_agency, on: :collection"
+    },
+    {
+      "line": 1295,
+      "text": "post :import, on: :member, to: \"unpaid_payroll_runs#create_import\""
+    },
+    {
+      "line": 1299,
+      "text": "post :gen_print_all, on: :collection"
+    },
+    {
+      "line": 1301,
+      "text": "post :gen_print_all_from_my_agency, on: :collection"
+    },
+    {
+      "line": 1306,
+      "text": "post :multiple_print, :on => :member"
+    },
+    {
+      "line": 1311,
+      "text": "post :datatables, :on => :collection"
+    },
+    {
+      "line": 1317,
+      "text": "post :reject, on: :member"
+    },
+    {
+      "line": 1371,
+      "text": "post :move_to_batch"
+    },
+    {
+      "line": 1372,
+      "text": "post :remove_from_batch"
+    },
+    {
+      "line": 1380,
+      "text": "post :datatables"
+    },
+    {
+      "line": 1382,
+      "text": "post :datatables_voided"
+    },
+    {
+      "line": 1387,
+      "text": "patch :update_close"
+    },
+    {
+      "line": 1394,
+      "text": "post :datatables"
+    },
+    {
+      "line": 1398,
+      "text": "post :unclose"
+    },
+    {
+      "line": 1405,
+      "text": "post :pause"
+    },
+    {
+      "line": 1409,
+      "text": "patch :update_close"
+    },
+    {
+      "line": 1410,
+      "text": "post :partial_count"
+    },
+    {
+      "line": 1415,
+      "text": "post :datatables"
+    }
+  ]
+}

@@ -1,7 +1,31 @@
 [
   {
+    "label": "Registros de Acceso",
+    "path": "/access_control/access_logs"
+  },
+  {
+    "label": "Mis Pagos",
+    "path": "/access_control/billings"
+  },
+  {
+    "label": "Mis Aplicaciones",
+    "path": "/access_control/contracts"
+  },
+  {
+    "label": "Invitaciones",
+    "path": "/access_control/invitations"
+  },
+  {
     "label": "Permisos",
     "path": "/access_control/permissions"
+  },
+  {
+    "label": "Roles",
+    "path": "/access_control/roles"
+  },
+  {
+    "label": "Suscripciones",
+    "path": "/access_control/subscriptions"
   },
   {
     "label": "Cuentas",
@@ -36,7 +60,43 @@
     "path": "/accounting/reports"
   },
   {
-    "label": "DEMO MEGAMART (123456-7)",
+    "label": "Reportes",
+    "path": "/analysis/analyses"
+  },
+  {
+    "label": "Permisos de los Reportes",
+    "path": "/analysis/analyses/edit_permission"
+  },
+  {
+    "label": "Conexión Directa",
+    "path": "/analysis/direct_connections/new"
+  },
+  {
+    "label": "Análisis",
+    "path": "/analysis/index"
+  },
+  {
+    "label": "Estructuras de los Documentos",
+    "path": "/apps/documents_structures"
+  },
+  {
+    "label": "GraphQL",
+    "path": "/apps/graphql"
+  },
+  {
+    "label": "WebApps",
+    "path": "/apps/index"
+  },
+  {
+    "label": "Variables",
+    "path": "/apps/webapp_vars"
+  },
+  {
+    "label": "WebApps",
+    "path": "/apps/webapps"
+  },
+  {
+    "label": "INTUITIVA, SOCIEDAD ANONIMA (8005046-8)",
     "path": "/company"
   },
   {
@@ -64,12 +124,104 @@
     "path": "/contracts/reports"
   },
   {
+    "label": "Solicitud de e-commerce",
+    "path": "/ecommerce/ecommerce_requests"
+  },
+  {
+    "label": "e-commerce",
+    "path": "/ecommerce/index"
+  },
+  {
+    "label": "Sincronizadores de Items en Woocommerce",
+    "path": "/ecommerce/woocommerce_items_syncs"
+  },
+  {
+    "label": "Paquetes",
+    "path": "/inventories/bundles"
+  },
+  {
+    "label": "Inventarios",
+    "path": "/inventories/index"
+  },
+  {
+    "label": "Reportes",
+    "path": "/inventories/reports"
+  },
+  {
+    "label": "Existencias",
+    "path": "/inventories/stocks"
+  },
+  {
     "label": "Notificaciones",
     "path": "/notifications"
   },
   {
+    "label": "Incidentes",
+    "path": "/payroll/incidents"
+  },
+  {
+    "label": "Planillas",
+    "path": "/payroll/index"
+  },
+  {
+    "label": "Nóminas Pagadas",
+    "path": "/payroll/paid_payroll_runs"
+  },
+  {
+    "label": "Tiempo Fuera Personal",
+    "path": "/payroll/personal_time_off/personal_time_off_balances"
+  },
+  {
+    "label": "Reportes",
+    "path": "/payroll/reports"
+  },
+  {
+    "label": "Nóminas no Pagadas",
+    "path": "/payroll/unpaid_payroll_runs"
+  },
+  {
+    "label": "Contratos de Trabajo",
+    "path": "/payroll/work_contracts"
+  },
+  {
+    "label": "Casos",
+    "path": "/pos/cases"
+  },
+  {
+    "label": "✚ Caso",
+    "path": "/pos/cases/new"
+  },
+  {
+    "label": "Cobros",
+    "path": "/pos/charges"
+  },
+  {
+    "label": "P.D.V.",
+    "path": "/pos/index"
+  },
+  {
+    "label": "Facturas",
+    "path": "/pos/invoices"
+  },
+  {
+    "label": "✚ Factura",
+    "path": "/pos/invoices/new"
+  },
+  {
     "label": "Compras",
     "path": "/pos/purchases"
+  },
+  {
+    "label": "✚ Compra",
+    "path": "/pos/purchases/new"
+  },
+  {
+    "label": "Ordenes",
+    "path": "/pos/sale_orders"
+  },
+  {
+    "label": "✚ Orden",
+    "path": "/pos/sale_orders/new"
   },
   {
     "label": "sartip@zauru.com",
@@ -80,10 +232,6 @@
     "path": "/profile/edit"
   },
   {
-    "label": "Cargos",
-    "path": "/purchases/charges"
-  },
-  {
     "label": "Ordenes de Compra Cerradas",
     "path": "/purchases/closed_purchase_orders"
   },
@@ -92,20 +240,12 @@
     "path": "/purchases/computed_costs"
   },
   {
-    "label": "Consolidados",
-    "path": "/purchases/consolidates"
-  },
-  {
     "label": "Pagos",
     "path": "/purchases/discharges"
   },
   {
     "label": "Compras",
     "path": "/purchases/index"
-  },
-  {
-    "label": "Cargos Pagados",
-    "path": "/purchases/paid_charges"
   },
   {
     "label": "Ordenes de Compra",
@@ -168,6 +308,10 @@
     "path": "/settings/data_imports"
   },
   {
+    "label": "Reportes por Correo",
+    "path": "/settings/deliverable_reports"
+  },
+  {
     "label": "Empleados",
     "path": "/settings/employees"
   },
@@ -204,8 +348,20 @@
     "path": "/support/cases"
   },
   {
+    "label": "Casos Cerrados",
+    "path": "/support/closed_cases"
+  },
+  {
+    "label": "Métodos de Contacto",
+    "path": "/support/contact_methods"
+  },
+  {
     "label": "Soporte",
     "path": "/support/index"
+  },
+  {
+    "label": "Reportes",
+    "path": "/support/reports"
   },
   {
     "label": "Tareas",

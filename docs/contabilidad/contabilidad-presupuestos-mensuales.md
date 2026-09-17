@@ -67,9 +67,13 @@ Si el monto ejecutado supera al presupuestado, el rubro se muestra en rojo.
 
 La vista "Agrupado" muestra el presupuesto consolidado por grupo de cuenta, comparando ejecutado vs. presupuestado a nivel de grupo.
 
+![Vista agrupada del presupuesto mensual](/img/contabilidad/contabilidad-presupuestos-mensuales-4.png)
+
 ### Vista no agrupada (otros)
 
 La vista "Otros" muestra unicamente los gastos o ingresos que ocurrieron en el mes pero que no fueron incluidos en ninguna linea del presupuesto.
+
+![Vista no agrupada de otros gastos del presupuesto](/img/contabilidad/contabilidad-presupuestos-mensuales-5.png)
 
 ### Duplicar un presupuesto
 

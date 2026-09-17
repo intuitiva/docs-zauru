@@ -124,6 +124,9 @@ Para beneficios y deducciones configurados como flexibles (con el campo **"Monto
 1. En el listado de corridas, hacer clic en **"Llenar beneficios flexibles"** (icono de usuarios).
 2. Aparece una tabla con todos los empleados de la corrida y las columnas de cada beneficio/deduccion flexible.
 3. Ingresar los montos correspondientes para cada empleado.
+
+![Tabla de llenado de beneficios flexibles](/img/nominas/corridas-de-nomina-4.png)
+
 4. Hacer clic en **"Actualizar beneficios flexibles"**.
 
 El sistema procesa los cambios de forma asincrona. Mientras el proceso esta en curso, no se puede iniciar otro llenado de beneficios flexibles en la misma corrida.
