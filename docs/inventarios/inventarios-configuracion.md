@@ -1,7 +1,7 @@
 ---
 title: "Configuración de Inventarios"
 sidebar_label: "Configuración"
-sidebar_position: 12
+sidebar_position: 1
 ---
 
 Cuando su empresa crece, las reglas de inventario dejan de ser obvias: ¿quién puede cambiar el tipo de un producto?, ¿se ocultan los ítems descontinuados?, ¿los ajustes de auditoría deben llegar a la contabilidad? Estas y otras decisiones se definen en la configuración del módulo de Inventarios, que se establece a nivel de entidad y aplica para todos los usuarios de la empresa. Revise este tutorial al implementar Zauru, o cuando la operación le pida ajustar una regla.

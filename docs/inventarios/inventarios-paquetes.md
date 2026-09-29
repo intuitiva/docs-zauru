@@ -119,7 +119,7 @@ Esto mostrará las etiquetas disponibles para filtrar los paquetes.
 
 ## Existencias de paquetes
 
-Las existencias de paquetes se consultan desde la pantalla "Existencias", en la pestaña "Existencias de paquetes". Zauru calcula el disponible de cada paquete a partir del stock de sus componentes y muestra el desglose por componente al abrir el detalle; la exportación a Excel está disponible en la misma pantalla. El procedimiento completo está en [Existencias](/inventarios/inventarios-existencias).
+Las existencias de paquetes se consultan desde la pantalla "Existencias", en la pestaña "Existencias de paquetes". Zauru calcula el disponible de cada paquete a partir del stock de sus componentes y muestra el desglose por componente al abrir el detalle; la exportación a Excel está disponible en la misma pantalla. El procedimiento completo está en [Existencias de paquetes](/inventarios/existencias/existencias-de-paquetes).
 
 Con el paquete creado, ya puede seleccionarlo en una reservación y venderlo como una sola unidad, mientras Zauru descuenta cada componente de su bodega. Para cerrar el ciclo, asigne el precio sugerido del paquete en el módulo de Ventas.
 
@@ -433,7 +433,7 @@ Esto devolverá un JSON similar a este:
 []
 ```
 
-Los endpoints de existencias de paquetes (`bundle_stocks`) se documentan en [Existencias](/inventarios/inventarios-existencias).
+Los endpoints de existencias de paquetes (`bundle_stocks`) se documentan en [Existencias de paquetes](/inventarios/existencias/existencias-de-paquetes).
 
 ### Importar paquetes
 Importa paquetes desde un archivo. El cuerpo de la petición debe incluir el archivo a importar.

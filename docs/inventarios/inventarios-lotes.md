@@ -1,7 +1,7 @@
 ---
 title: "Lotes"
 sidebar_label: "Lotes"
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 Si vende productos con fecha de vencimiento, como alimentos o medicinas, necesita saber no solo cuánto tiene, sino de qué lote es cada unidad y cuándo expira. Los lotes le permiten separar cada ingreso de mercadería y despachar primero lo que vence antes, para reducir pérdidas. Este tutorial le muestra cómo crear el lote, ingresarle producto y consultar sus existencias por bodega. Para usar lotes, el ítem debe ser de tipo "Perecedero" (product_type = 3).
@@ -31,35 +31,7 @@ Le aparecerán las opciones para crear un nuevo lote, los pasos para crearlo son
 
 ![imagen3](/img/inventarios/inventarios-lotes-3.jpg)
 
-## Ingresar producto a un lote
-
-Luego de crear el lote, tendrá que hacer una reservación para ingresar producto a ese lote.
-
-Los pasos para hacerlo son los siguientes:
-
-1. Ir a "Inventarios".
-2. Seleccionar "Reservaciones".
-3. Seleccionar "Nueva Reservación".
-
-![imagen4](/img/inventarios/inventarios-lotes-4.jpg)
-
-Le aparecerán las opciones para crear una nueva reservación. Los campos que debe colocar son los siguientes:
-
-a. Coloque una referencia de la reservación que esta creando.
-
-b. Coloque la fecha de entrega estimada.
-
-c. Seleccione la bodega "Vendor (Proveedor) y luego coloque la bodega destino donde ingresara el producto.
-
-d. Coloque el producto y seleccione el lote previamente creado, luego coloque la cantidad de producto que ingresara al lote.
-
-Por ultimo presione "Crear envío".
-
-![imagen5](/img/inventarios/inventarios-lotes-5.jpg)
-
-Le aparecerá un mensaje en la pantalla notificándole que la reservación fue creada exitosamente. En la parte inferior de la pagina podrá encontrar los detalles de la reservación y la podrá entregar.
-
-![imagen6](/img/inventarios/inventarios-lotes-6.jpg)
+Para ingresar producto a un lote desde el proveedor, ver [Reservación de lotes](/inventarios/envios/reservaciones/reservacion-de-lotes).
 
 ## Ver lotes por bodega
 

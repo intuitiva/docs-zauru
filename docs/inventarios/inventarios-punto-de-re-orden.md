@@ -1,7 +1,7 @@
 ---
 title: "Punto de re orden"
 sidebar_label: "Punto de re orden"
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 ¿Le ha pasado que un cliente pide un producto y descubre que se agotó sin darse cuenta? El punto de re orden existe para que eso no vuelva a ocurrir: es la cantidad mínima que usted define por producto, y Zauru le avisa cuando las existencias caen por debajo de ella, incluso pintándolas en rojo. Existen dos formas de configurarlo: el punto de re orden de un producto (total en todas las bodegas) y el punto de re orden por bodega. Adicionalmente, puede establecer la **cantidad económica de orden**, que es la cantidad recomendada para reabastecer cuando se alcanza el punto de re orden, y consultar un reporte dedicado con todos los productos que ya están por debajo.

@@ -1,10 +1,8 @@
 ---
-title: "Reservaciones"
-sidebar_label: "Reservaciones"
+title: "Crear una reservación"
+sidebar_label: "Crear una reservación"
 sidebar_position: 1
 ---
-
-Una reservación es el primer paso de un envío: se reservan los productos en la bodega origen para que no se usen en otro movimiento, pero aún no salen de la bodega. Desde aquí se despacha (si necesita transporte) o se entrega directamente.
 
 ## Vista de Reservaciones
 
@@ -49,15 +47,7 @@ Para agregar paquetes en lugar de productos individuales, buscar el código del 
 
 Para productos identificables, la cantidad se fija en 1 y se selecciona el número de serie. Para productos perecederos, se selecciona el lote.
 
-### Reservación con números de serie
-
-Para crear una reservación de productos identificables seleccionando series específicas:
-
-1. Ir a "Inventarios".
-2. Seleccionar "Reservaciones".
-3. Seleccionar "Nueva Reservación de #s de Serie".
-4. Seleccionar la bodega origen y los números de serie a mover.
-5. Completar el formulario de reservación con referencia, fechas y transporte.
+Para crear una reservación seleccionando series específicas, ver [Reservación de números de serie](/inventarios/envios/reservaciones/reservacion-de-numeros-de-serie). Para ingresar producto a un lote, ver [Reservación de lotes](/inventarios/envios/reservaciones/reservacion-de-lotes).
 
 ### Reservación desde una solicitud de traslado
 
@@ -97,7 +87,7 @@ Podrá modificar la referencia, fechas, transportista, items, cantidades, etique
 1. Ir a "Inventarios".
 2. Seleccionar "Reservaciones".
 3. Buscar la reservación que desea imprimir.
-4. Seleccionar "Imprimir".
+4. Seleccionar "Imprimir.
 
 El documento incluye referencia, fechas, productos, cantidades y bodegas origen y destino.
 

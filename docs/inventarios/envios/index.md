@@ -28,7 +28,7 @@ Reservación → Tránsito → Entrega
 
 ## Tutoriales
 
-1. **[Reservaciones](/inventarios/envios/reservaciones)**: crear, editar, imprimir y exportar reservaciones; reservas con números de serie, paquetes, solicitudes de traslado y vínculos con contratos, facturas y órdenes de compra.
+1. **[Reservaciones](/inventarios/envios/reservaciones/)**: crear, editar, imprimir y exportar reservaciones; reservas con números de serie, paquetes, solicitudes de traslado y vínculos con contratos, facturas y órdenes de compra.
 2. **[Tránsitos](/inventarios/envios/transitos)**: despachar un envío con transporte y recibirlo en la bodega destino.
 3. **[Entregas](/inventarios/envios/entregas)**: entregar un envío sin transporte, editar e imprimir entregas, exportar movimientos y emitir documentos electrónicos.
 4. **[Devoluciones](/inventarios/envios/devoluciones)**: devolver una entrega que llegó con errores y ver el historial de entregas devueltas.

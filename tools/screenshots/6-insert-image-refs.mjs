@@ -43,11 +43,12 @@ for (const doc of manifest.docs) {
   let content = fs.readFileSync(mdPath, 'utf8');
   let rewrittenHere = 0;
 
-  // Reescribe /img/section/slug-N.<otraExt> → .<format> (png)
+  // Reescribe /img/section/<base>-N.<otraExt> → .<format> (png)
+  const fileBase = doc.imageSlug || doc.slug;
   for (const shot of doc.shots) {
-    const pngRef = `/img/${doc.section}/${doc.slug}-${shot.stepNumber}.${format}`;
+    const pngRef = `/img/${doc.section}/${fileBase}-${shot.stepNumber}.${format}`;
     const altExtRe = new RegExp(
-      `(!\\[[^\\]]*\\]\\()(/img/${escapeRegExp(doc.section)}/${escapeRegExp(doc.slug)}-${shot.stepNumber}\\.)(?!${escapeRegExp(format)})[a-zA-Z0-9]+(\\))`,
+      `(!\\[[^\\]]*\\]\\()(/img/${escapeRegExp(doc.section)}/${escapeRegExp(fileBase)}-${shot.stepNumber}\\.)(?!${escapeRegExp(format)})[a-zA-Z0-9]+(\\))`,
       'g'
     );
     const next = content.replace(altExtRe, `$1${pngRef}$3`);
@@ -61,7 +62,7 @@ for (const doc of manifest.docs) {
   const insertions = [];
 
   for (const shot of doc.shots) {
-    const imgRef = `/img/${doc.section}/${doc.slug}-${shot.stepNumber}.${format}`;
+    const imgRef = `/img/${doc.section}/${fileBase}-${shot.stepNumber}.${format}`;
     const imgLine = `![${shot.caption}](${imgRef})`;
 
     if (content.includes(imgRef)) {
@@ -89,7 +90,7 @@ for (const doc of manifest.docs) {
       'static',
       'img',
       doc.section,
-      `${doc.slug}-${shot.stepNumber}.${format}`
+      `${fileBase}-${shot.stepNumber}.${format}`
     );
     if (!fs.existsSync(imgDiskPath)) {
       if (dryRun) {

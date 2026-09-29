@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ¿Tiene órdenes de producción planificadas y quiere asegurarse de que no falte material cuando toque arrancar? Este reporte reúne todas las materias primas que van a necesitar esas órdenes (las que aún no se inician, no están cerradas ni anuladas), con la cantidad total requerida y su desglose por fecha. Es perfecto para planificar las compras de insumos con anticipación y evitar sustos el día de la producción.
 
-![imagen2](/img/produccion/reportes-de-produccion-2.png)
+![imagen2](/img/produccion/consolidado-de-materias-primas-para-ordenes-planificadas-1.png)
 
 Para cada materia prima el reporte muestra:
 

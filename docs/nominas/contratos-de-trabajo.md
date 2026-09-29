@@ -117,6 +117,8 @@ Si se adjunto un PDF del contrato firmado, muestra un enlace para descargarlo.
 1. En el detalle del contrato, hacer clic en **"Terminar"** (icono de bandera).
 2. Completar los campos de terminacion:
 
+![Formulario de terminación de contrato de trabajo](/img/nominas/contratos-de-trabajo-5.png)
+
 - **Fecha de terminacion**: fecha en que finaliza la relacion laboral.
 - **Tipo de terminacion**: seleccionar entre **"Despido"** o **"Renuncia"**.
 - **Razon**: descripcion del motivo de la terminacion.

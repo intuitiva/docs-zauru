@@ -14,7 +14,7 @@ El listado de beneficiarios permite filtrar por:
 - **Proveedores**: muestra solo los beneficiarios marcados como vendedores.
 - **Clientes y Proveedores**: muestra los beneficiarios marcados como ambos.
 
-Tambien se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas.
+También se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas.
 
 ![Listado de beneficiarios con filtros Todos, Clientes, Proveedores y Clientes y Proveedores](/img/contabilidad/beneficiarios-1.png)
 
@@ -33,35 +33,35 @@ Los pasos para crear un nuevo beneficiario son:
 - **Nombre**: nombre de la persona o empresa.
 - **Referencia**: texto de referencia interna para identificar al beneficiario.
 - **Es proveedor**: marcar si el beneficiario es proveedor de bienes o servicios.
-- **Es proveedor de servicios**: marcar si es especificamente proveedor de servicios.
+- **Es proveedor de servicios**: marcar si es específicamente proveedor de servicios.
 - **Es cliente**: marcar si el beneficiario es cliente.
-- **Categoria de beneficiario**: clasificacion del beneficiario (ej. nacional, extranjero, empleado, etc.).
-- **NIT**: numero de identificacion tributaria.
+- **Categoría de beneficiario**: clasificación del beneficiario (ej. nacional, extranjero, empleado, etc.).
+- **NIT**: número de identificación tributaria.
 - **Moneda**: moneda en la que opera el beneficiario.
 - **Etiquetas**: etiquetas para clasificar y filtrar al beneficiario.
-- **Termino de pago por defecto**: plazo de pago que se asigna automaticamente en transacciones.
+- **Término de pago por defecto**: plazo de pago que se asigna automáticamente en transacciones.
 
 ### Datos fiscales
 
-- **Exento**: marcar si el beneficiario esta exento de IVA.
-- **Pequeno contribuyente**: marcar si aplica el regimen de pequeno contribuyente.
+- **Exento**: marcar si el beneficiario está exento de IVA.
+- **Pequeño contribuyente**: marcar si aplica el régimen de pequeño contribuyente.
 - **Gran contribuyente**: marcar si es gran contribuyente.
-- **Cliente para exportacion**: marcar si es un cliente en el extranjero.
-- **Registro tributario**: numero de registro fiscal extendido.
+- **Cliente para exportación**: marcar si es un cliente en el extranjero.
+- **Registro tributario**: número de registro fiscal extendido.
 
 ### Datos de contacto y ubicacion
 
-- **Direccion** (linea 1 y 2): direccion fisica del beneficiario.
-- **Pais**: pais de residencia fiscal.
-- **Ciudad**: ciudad de ubicacion.
-- **Actividad economica**: giro o actividad del beneficiario.
-- **Telefono**: numero de contacto.
-- **Correo electronico**: email de contacto.
-- **Pagina web**: sitio web del beneficiario.
+- **Dirección** (línea 1 y 2): dirección física del beneficiario.
+- **País**: país de residencia fiscal.
+- **Ciudad**: ciudad de ubicación.
+- **Actividad económica**: giro o actividad del beneficiario.
+- **Teléfono**: número de contacto.
+- **Correo electrónico**: email de contacto.
+- **Página web**: sitio web del beneficiario.
 - **Contacto**: nombre de la persona de contacto.
-- **Telefono del contacto**: telefono directo del contacto.
+- **Teléfono del contacto**: teléfono directo del contacto.
 - **Email del contacto**: correo del contacto.
-- **DPI**: documento personal de identificacion (para personas individuales).
+- **DPI**: documento personal de identificación (para personas individuales).
 - **Es extranjero**: marcar si el beneficiario es del extranjero.
 
 ### Documentos y notas
@@ -72,7 +72,7 @@ Los pasos para crear un nuevo beneficiario son:
 
 ### Formularios personalizados
 
-Los beneficiarios pueden tener formularios personalizados asociados, que permiten capturar informacion adicional especifica para su empresa.
+Los beneficiarios pueden tener formularios personalizados asociados, que permiten capturar información adicional específica para su empresa.
 
 ## Ver detalle del beneficiario
 
@@ -85,24 +85,29 @@ Al ver el detalle de un beneficiario se muestra:
 
 ## Editar un beneficiario
 
-Desde la vista de detalle, haga clic en "Editar" para modificar cualquier campo del beneficiario.
+1. Ir a "Contabilidad".
+2. Seleccionar "Beneficiarios".
+3. Seleccionar el beneficiario que desea modificar.
+4. Hacer clic en "Editar".
+5. Actualizar la información necesaria.
+6. Guardar los cambios.
 
-## Numeracion automatica
+## Numeración automática
 
-Los beneficiarios pueden tener numeracion automatica configurada en el sistema para asignarles un ID unico secuencial.
+Los beneficiarios pueden tener numeración automática configurada en el sistema para asignarles un ID único secuencial.
 
-## Filtros y busqueda
+## Filtros y búsqueda
 
 En el listado de beneficiarios puede buscar por:
 - Nombre
 - Referencia
 - NIT
-- Direccion
-- Telefono
+- Dirección
+- Teléfono
 - Email
-- Categoria de beneficiario
+- Categoría de beneficiario
 
-La busqueda utiliza coincidencias parciales con soporte para busqueda por similitud (trigram).
+La búsqueda utiliza coincidencias parciales con soporte para búsqueda por similitud (trigram).
 
 Con su listado de beneficiarios completo y bien clasificado, cada transacción que registre quedará asociada a la persona o empresa correcta, y podrá filtrar sus movimientos por cliente o proveedor cuando lo necesite. El siguiente paso natural es crear las cuentas contables donde se registrarán esas transacciones.
 

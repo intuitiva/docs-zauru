@@ -33,6 +33,9 @@ Al crear la sincronización, se registran automáticamente:
 ## Editar una sincronización
 
 Se puede modificar cualquier parámetro de una sincronización existente, incluyendo:
+
+![Vista de detalle de una sincronización WooCommerce existente](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-3.png)
+
 - Cambiar las credenciales de WooCommerce
 - Modificar la frecuencia de sincronización
 - Ajustar los límites de productos y categorías por lote
@@ -40,6 +43,8 @@ Se puede modificar cualquier parámetro de una sincronización existente, incluy
 - Activar o desactivar la sincronización
 
 Al editar, se actualiza el campo `updater_id` con el usuario que realizó el cambio.
+
+![Formulario de edición de sincronización WooCommerce](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-4.png)
 
 ## Eliminar una sincronización
 

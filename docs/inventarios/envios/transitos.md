@@ -8,7 +8,7 @@ El tránsito es el estado intermedio de un envío con transporte: el producto ya
 
 ## Despachar una reservación
 
-Para crear un envío que necesite transporte, se marca la casilla "Necesita Transporte" al crear la reservación. El procedimiento para crear la reservación se detalla en [Reservaciones](/inventarios/envios/reservaciones).
+Para crear un envío que necesite transporte, se marca la casilla "Necesita Transporte" al crear la reservación. El procedimiento para crear la reservación se detalla en [Reservaciones](/inventarios/envios/reservaciones/).
 
 ![imagen6](/img/inventarios/envios-6.png)
 

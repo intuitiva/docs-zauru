@@ -15,6 +15,8 @@ Para acceder a los destajos no pagados:
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Destajos no pagados"**.
 
+![2. Seleccionar **"Destajos no pagados"**.](/img/nominas/destajos-1.png)
+
 ### Listado de destajos no pagados
 
 El listado muestra todos los destajos pendientes de pago, organizados por agencia. Cada fila muestra:
@@ -34,6 +36,9 @@ El listado cuenta con busqueda por texto para localizar destajos por fecha, supe
 ### Crear un destajo
 
 1. En el listado de destajos no pagados, hacer clic en **"Nuevo"**.
+
+![1. En el listado de destajos no pagados, hacer clic en **"Nuevo"**.](/img/nominas/destajos-2.png)
+
 2. Completar los campos del encabezado:
 
 - **Supervisor**: persona que superviso el trabajo.
@@ -100,6 +105,8 @@ Para acceder a los destajos pagados:
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Destajos pagados"**.
 
+![2. Seleccionar **"Destajos pagados"**.](/img/nominas/destajos-4.png)
+
 El listado y el detalle son iguales a los destajos no pagados, pero sin opciones de edicion ni borrado.
 
 ### Busqueda avanzada (datatables)
@@ -118,6 +125,9 @@ Para crear un destajo de feriado:
 ### Crear un destajo de feriado
 
 1. Hacer clic en **"Nuevo"**.
+
+![1. Hacer clic en **"Nuevo"**.](/img/nominas/destajos-5.png)
+
 2. Completar los campos:
 
 - **Fecha del feriado**: fecha del dia feriado.

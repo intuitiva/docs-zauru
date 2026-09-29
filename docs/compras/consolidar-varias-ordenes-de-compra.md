@@ -12,7 +12,7 @@ Los pasos para hacer una consolidación de ordenes de compra son los siguientes:
 2. Seleccionar “Ordenes de Compra”.
 3. Seleccionar “Nueva Orden de Compra”.
 
-![imagen1](/img/compras/consolidar-varias-ordenes-de-compra-1.jpg)
+![imagen1](/img/compras/consolidar-varias-ordenes-de-compra-1.png)
 
 
 Le aparecerán las opciones para crear una nueva orden de compra, los campos que debe llenar son los siguientes:
@@ -23,13 +23,13 @@ b. Seleccione las ordenes de compra que desea consolidar.
 
 c. Presione “Crear Consolidado”.
 
-![imagen2](/img/compras/consolidar-varias-ordenes-de-compra-2.jpg)
+![imagen2](/img/compras/consolidar-varias-ordenes-de-compra-2.png)
 
 
 
 Le aparecerá un mensaje en la pantalla notificándole que la consolidación se creo exitosamente. Presione Verificar (El ojo) para ver los detalles de la consolidación.
 
-![imagen3](/img/compras/consolidar-varias-ordenes-de-compra-3.jpg)
+![imagen3](/img/compras/consolidar-varias-ordenes-de-compra-3.png)
 
 
 

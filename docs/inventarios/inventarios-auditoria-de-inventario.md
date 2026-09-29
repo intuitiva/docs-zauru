@@ -1,7 +1,7 @@
 ---
 title: "Auditoria de Inventario"
 sidebar_label: "Auditoria de Inventario"
-sidebar_position: 7
+sidebar_position: 10
 ---
 
 Cuando las cantidades del sistema dejan de cuadrar con lo que realmente hay en la bodega, es momento de una auditoría de inventario. Si usted hace conteos físicos al cierre de mes, al cierre fiscal o después de un faltante sospechoso, este tutorial le muestra cómo registrar lo observado, detectar las diferencias y generar los envíos de ajuste que devuelven la calma a sus existencias. También aprenderá a cargar los conteos desde Excel y a reflejar los ajustes en su contabilidad.

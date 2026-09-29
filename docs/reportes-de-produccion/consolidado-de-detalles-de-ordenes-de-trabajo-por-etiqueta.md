@@ -13,7 +13,7 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
-![imagen6](/img/produccion/reportes-de-produccion-6.png)
+![imagen6](/img/produccion/consolidado-de-detalles-de-ordenes-de-trabajo-por-etiqueta-1.png)
 
 El reporte muestra por cada etiqueta:
 

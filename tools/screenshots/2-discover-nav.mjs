@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 /**
- * discover-nav.mjs — Inicia sesión en Zauru y vuelca el menú de navegación
+ * 2-discover-nav.mjs — Inicia sesión en Zauru y vuelca el menú de navegación
  * (sidebar + topnav) a nav.json: un mapa etiqueta → ruta que
- * generate-manifest.mjs usa para elegir URLs reales en vez de adivinarlas.
+ * 3-generate-manifest.mjs usa para elegir URLs reales en vez de adivinarlas.
+ *
+ * En Zauru toda la navegación se renderiza en el HTML de cada página (JS solo
+ * la oculta fuera del módulo actual), así que basta volcar los <a href> de la
+ * home con un usuario que tenga permisos sobre todos los módulos.
  *
  * Uso:
- *   node discover-nav.mjs [--headed]
+ *   node 2-discover-nav.mjs [--headed]
  */
 import fs from 'node:fs';
 import path from 'node:path';

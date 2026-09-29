@@ -1,0 +1,10 @@
+{
+  "position": 1,
+  "label": "Reservaciones",
+  "link": {
+    "type": "doc",
+    "id": "inventarios/envios/reservaciones/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}
