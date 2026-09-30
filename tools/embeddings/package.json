@@ -1,0 +1,13 @@
+{
+  "name": "zauru-docs-embeddings",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crea la base rag y carga los tutoriales de docs/ en Postgres",
+  "scripts": {
+    "import": "node import_tutorials.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
