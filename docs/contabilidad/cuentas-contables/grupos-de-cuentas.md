@@ -1,7 +1,7 @@
 ---
 title: "Grupos de Cuentas"
 sidebar_label: "Grupos de Cuentas"
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Un grupo de cuentas reúne cuentas bajo un mismo rubro: activos corrientes, cuentas por pagar, gastos operativos. Cada cuenta pertenece a un grupo y hereda de él su tipo de cuenta y su moneda, de modo que el grupo es la unidad con la que se ordena el catálogo y con la que el balance general y el estado de resultados agrupan sus totales.

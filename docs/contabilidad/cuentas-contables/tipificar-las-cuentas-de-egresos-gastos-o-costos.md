@@ -19,15 +19,15 @@ La diferencia es importante porque el estado de resultados muestra:
 2. **Costos** (para calcular la utilidad bruta)
 3. **Gastos** (para calcular la utilidad neta)
 
-## Como afecta el estado de resultados
+## Cómo afecta el estado de resultados
 
-El estado de resultados muestra el siguiente orden principal (tipo de cuenta):
+El estado de resultados se arma en este orden (tipo de cuenta):
 
 1. Ingresos
-2. Costos
-3. Gastos
+2. Costos: con estos se calcula la utilidad bruta (ingresos - costos).
+3. Gastos: con estos se calcula la utilidad neta (utilidad bruta - gastos).
 
-El estado de resultados muestra como orden secundario (grupo de cuenta) el orden alfabetico de los mismos de la nomenclatura:
+Dentro de cada sección, las cuentas se ordenan por el código y el nombre de su grupo de cuenta, y luego por el código de la cuenta, según la nomenclatura:
 
 1. Ingresos
     1. Ingresos por ventas
@@ -40,7 +40,7 @@ El estado de resultados muestra como orden secundario (grupo de cuenta) el orden
     2. Otros gastos
     3. Salarios
 
-Es por eso que es importante que se tipifique correctamente la cuenta para que el estado de resultados muestre lo que necesita: ingresos, margenes brutos (ingresos - costos) y margenes netos (margen bruto - gastos).
+Es por eso que es importante que se tipifique correctamente la cuenta para que el estado de resultados muestre lo que necesita: ingresos, utilidad bruta (ingresos - costos) y utilidad neta (utilidad bruta - gastos).
 
 ## Marcar una cuenta como Costo
 
@@ -58,17 +58,13 @@ Por ejemplo:
 
 Se requiere entrar a cada cuenta. Ya dentro de la cuenta se puede revisar si esta correcta la tipificacion de la cuenta.
 
-![Vista de detalle de una cuenta contable mostrando la tipificación de costo](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-2.png)
-
 ![Listado de cuentas contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-1.png)
 
-Si esta incorrecto, editar la cuenta y cambiarla.
-
-![Formulario de edición de cuenta contable con la casilla Es costo](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-3.png)
+En el detalle de una cuenta de tipo "Gastos" se muestra si la cuenta está marcada como costo. Si esta incorrecto, editar la cuenta y cambiarla.
 
 ## Tipificacion en presupuestos
 
-La clasificacion de costo vs. gasto tambien afecta los reportes de presupuestos. Al crear un presupuesto de egresos, puede elegir cuentas de gastos o de costos segun lo que necesite presupuestar. Los presupuestos usan el tipo de cuenta 3 (Gastos) y filtran segun el atributo `cost`.
+Al crear un presupuesto de egresos puede elegir cualquier cuenta de tipo "Gastos" (tipo 3), sea costo o gasto operativo: el presupuesto no distingue entre costo y gasto. El atributo `cost` solo cambia la sección del estado de resultados y la exportación de la nomenclatura.
 
 ![Listado de presupuestos contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-4.png)
 
@@ -103,7 +99,7 @@ Esto devolverá un JSON similar a este:
   "id": 1,
   "zid": 1,
   "active": true,
-  "code": "5.1.1",
+  "code": "3.1.1",
   "name": "Costo de mercaderia vendida",
   "description": "Costo de ventas",
   "value": "0.0",
@@ -137,7 +133,7 @@ curl -v \
   -d '{
     "account": {
       "name": "Materia prima",
-      "code": "5.1.2",
+      "code": "3.1.2",
       "description": "Materia prima directa",
       "account_type_id": "3",
       "account_group_id": "1",
@@ -155,7 +151,7 @@ Esto devolverá un JSON similar a este:
   "id": 2,
   "zid": 2,
   "active": true,
-  "code": "5.1.2",
+  "code": "3.1.2",
   "name": "Materia prima",
   "description": "Materia prima directa",
   "value": "0.0",

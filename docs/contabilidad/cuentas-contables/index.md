@@ -1,7 +1,7 @@
 ---
 title: "Cuentas Contables"
 sidebar_label: "Cuentas Contables"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 Cada empresa lleva su contabilidad a su manera, y en Zauru usted arma la nomenclatura de cuentas como mejor le convenga: aquí le mostramos cómo crearla, ordenarla y dejarla lista desde el primer día. Este es el punto de partida natural cuando está montando su empresa en el sistema o cuando abre una cuenta nueva en el banco y necesita reflejarla contablemente. Zauru mantiene un registro de todas las transacciones contables de compra, venta y pagos de productos y servicios, así como un registro de las cuentas bancarias de la empresa.
@@ -9,6 +9,12 @@ Cada empresa lleva su contabilidad a su manera, y en Zauru usted arma la nomencl
 A continuacion vera como se maneja la contabilidad en Zauru.
 
 ![imagen1](/img/contabilidad/cuentas-contables-1.png)
+
+## Tutoriales
+
+1. **[Grupos de cuentas](/contabilidad/cuentas-contables/grupos-de-cuentas)**: agrupación de cuentas por rubro, con código, tipo de cuenta y moneda. Incluye importación masiva.
+2. **[Tipificar las cuentas de egresos (gastos o costos)](/contabilidad/cuentas-contables/tipificar-las-cuentas-de-egresos-gastos-o-costos)**: clasificación de una cuenta de gastos como costo o gasto operativo para el estado de resultados.
+3. **[Tipificar las cuentas patrimoniales (activos, pasivos o capital)](/contabilidad/cuentas-contables/tipificar-las-cuentas-patrimoniales)**: clasificación de las cuentas patrimoniales según su liquidez para el balance general.
 
 ## Cuentas Patrimoniales
 
@@ -49,15 +55,11 @@ Los tipos de cuenta son administrados a nivel de sistema y definen la naturaleza
 
 Un tipo de cuenta con `categoria = true` (Gastos e Ingresos) significa que es una cuenta de gestion y aparecera en el estado de resultados. Si `categoria = false`, es una cuenta patrimonial y aparecera en el balance general.
 
-## Grupos de Cuentas
-
-Las cuentas se organizan en grupos por rubro. Los grupos tienen su propio tutorial: ver [Grupos de Cuentas](/contabilidad/grupos-de-cuentas).
-
 ## Nomenclatura de Cuentas
 
 Zauru le permite tener la nomenclatura de cuentas que usted desee, con los rubros de cuentas que usted prefiera. Los pasos para crear su propia nomenclatura de activos, pasivos o capital son los siguientes:
 
-1. Crear el [Grupo de Cuentas](/contabilidad/grupos-de-cuentas).
+1. Crear el [Grupo de Cuentas](/contabilidad/cuentas-contables/grupos-de-cuentas).
 2. Crear una Cuenta y categorizarla en el grupo de Cuenta Creado.
 
 ### Crear una nueva Cuenta
@@ -74,7 +76,7 @@ Los campos para crear una cuenta son los siguientes:
 
 - **Tipo de cuenta**: Activo, Pasivo, Capital, Gastos o Ingresos.
 - **Activa**: si la cuenta esta activa para uso.
-- **Liquida**: si es una cuenta corriente o con disponibilidad inmediata (30 dias). Afecta como se muestra en el balance general (corriente vs no corriente) y en el flujo de efectivo.
+- **Líquido**: si es una cuenta corriente o con disponibilidad inmediata (30 días). Afecta cómo se muestra en el balance general (corriente vs no corriente) y en el flujo de efectivo. Ver [Tipificar las cuentas patrimoniales](/contabilidad/cuentas-contables/tipificar-las-cuentas-patrimoniales).
 - **Balance 0**: si es una cuenta que deberia tener balance 0, como cuentas por cobrar, cuentas por pagar, adelantos. Las cuentas marcadas con balance 0 mostraran una alerta si quedan con saldo despues de una reconciliacion.
 - **Reconciliable**: si la cuenta puede ser utilizada para reconciliaciones y liquidaciones. Por defecto, las cuentas por pagar y por cobrar son reconciliables.
 - **Es costo**: para cuentas de gastos, marcar si es un costo (en lugar de un gasto operativo). Los costos aparecen en una seccion separada del estado de resultados.
@@ -103,7 +105,7 @@ El listado de cuentas permite filtrar por:
 
 ### Importar cuentas
 
-Las cuentas contables pueden importarse masivamente desde un archivo CSV. Ver el tutorial de [Importaciones](importaciones).
+Las cuentas contables pueden importarse masivamente desde un archivo CSV. Ver el tutorial de [Importaciones](/contabilidad/importaciones).
 
 ## Cuentas Sugeridas
 

@@ -1202,7 +1202,7 @@
     {
       "section": "contabilidad",
       "slug": "tipificar-las-cuentas-de-egresos-gastos-o-costos",
-      "docPath": "docs/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos.md",
+      "docPath": "docs/contabilidad/cuentas-contables/tipificar-las-cuentas-de-egresos-gastos-o-costos.md",
       "existingImageCount": 0,
       "shots": [
         {
@@ -1253,7 +1253,7 @@
             ".table-responsive",
             "#budgets_table"
           ],
-          "insertAfterText": "La clasificacion de costo vs. gasto tambien afecta los reportes de presupuestos. Al crear un presupuesto de egresos, puede elegir cuentas de gastos o de costos segun lo que necesite presupuestar. Los presupuestos usan el tipo de cuenta 3 (Gastos) y filtran segun el atributo `cost`."
+          "insertAfterText": "Al crear un presupuesto de egresos puede elegir cualquier cuenta de tipo \"Gastos\" (tipo 3), sea costo o gasto operativo: el presupuesto no distingue entre costo y gasto. El atributo `cost` solo cambia la sección del estado de resultados y la exportación de la nomenclatura."
         }
       ]
     },

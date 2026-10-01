@@ -99,6 +99,14 @@ const config = {
             to: "/ventas/precios-sugeridos",
             from: "/ventas/importar-precios",
           },
+          {
+            to: "/contabilidad/cuentas-contables/grupos-de-cuentas",
+            from: "/contabilidad/grupos-de-cuentas",
+          },
+          {
+            to: "/contabilidad/cuentas-contables/tipificar-las-cuentas-de-egresos-gastos-o-costos",
+            from: "/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos",
+          },
         ],
       },
     ],
