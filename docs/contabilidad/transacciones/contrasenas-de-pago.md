@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Contraseñas de pago a proveedores"
-sidebar_label: "[Transacciones] Contraseñas de pago a proveedores"
-sidebar_position: 13
+title: "Contraseñas de pago a proveedores"
+sidebar_label: "Contraseñas de pago a proveedores"
+sidebar_position: 2
 ---
 
 Cada vez que un proveedor le entrega una factura al crédito, conviene dejarle por escrito cuándo se la va a pagar: ese comprobante es la contraseña de pago, y aquí verá cómo crearla e imprimirla. Le sirve para tener claras sus cuentas por pagar y para que el proveedor sepa exactamente cuándo esperar su dinero.

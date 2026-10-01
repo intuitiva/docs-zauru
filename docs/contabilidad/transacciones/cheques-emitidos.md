@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Cheques emitidos (normales y post-fechados)"
-sidebar_label: "[Transacciones] Cheques emitidos (normales y post-fechados)"
-sidebar_position: 12
+title: "Cheques emitidos (normales y post-fechados)"
+sidebar_label: "Cheques emitidos (normales y post-fechados)"
+sidebar_position: 1
 ---
 
 Cada vez que paga a un proveedor con cheque, conviene registrarlo en el momento para que la cuenta de banco y el gasto queden al día. A veces el cheque se cobra el mismo día y a veces usted lo post-fecha para que se cobre después; aquí le mostramos ambos casos paso a paso.

@@ -1260,7 +1260,7 @@
     {
       "section": "contabilidad",
       "slug": "transacciones-partidas-contables",
-      "docPath": "docs/contabilidad/transacciones-partidas-contables.md",
+      "docPath": "docs/contabilidad/transacciones/index.md",
       "existingImageCount": 0,
       "shots": [
         {

@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Manejo de Cajas Chicas"
-sidebar_label: "[Transacciones] Manejo de Cajas Chicas"
-sidebar_position: 17
+title: "Manejo de cajas chicas"
+sidebar_label: "Manejo de cajas chicas"
+sidebar_position: 6
 ---
 
 Cada vez que un empleado gasta dinero de la empresa —para la oficina, una entrega o un mandado—, conviene dejar registrado de dónde salió el efectivo y en qué se usó. Hay dos formas de registrar estos gastos: darle el dinero primero y que después reporte, o esperar a que reporte y pagarle después.
@@ -139,7 +139,7 @@ Para crear el pago presione "Crear nueva transaccion".
 
 ## Liquidaciones
 
-Cuando tiene multiples gastos de empleados que necesitan ser pagados en una sola operacion, puede utilizar el proceso de liquidacion en lugar de crear transacciones manuales una por una. Vea el tutorial de [Liquidaciones](liquidaciones) para el procedimiento detallado.
+Cuando tiene multiples gastos de empleados que necesitan ser pagados en una sola operacion, puede utilizar el proceso de liquidacion en lugar de crear transacciones manuales una por una. Vea el tutorial de [Liquidaciones](/contabilidad/liquidaciones) para el procedimiento detallado.
 
 En resumen, el proceso de liquidacion permite:
 

@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Pagar servicios básicos"
-sidebar_label: "[Transacciones] Pagar servicios básicos"
-sidebar_position: 19
+title: "Pagar servicios básicos"
+sidebar_label: "Pagar servicios básicos"
+sidebar_position: 8
 ---
 
 Cada mes le llegan las facturas de luz, agua, teléfono e internet, y cada una merece quedar registrada en sus gastos. En esta página aprenderá a pagarlas al contado, o a ingresarlas primero cuando el proveedor le da crédito.

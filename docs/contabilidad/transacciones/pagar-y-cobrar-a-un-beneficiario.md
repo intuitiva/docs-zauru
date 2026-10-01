@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
-sidebar_label: "[Transacciones] Pagar y cobrar a un beneficiario en una sola transacción"
-sidebar_position: 20
+title: "Pagar y cobrar a un beneficiario en una sola transacción"
+sidebar_label: "Pagar y cobrar a un beneficiario en una sola transacción"
+sidebar_position: 9
 ---
 
 Si le prestó dinero a un empleado y va descontándoselo poco a poco del salario, no necesita crear dos transacciones cada vez que le paga: aquí aprenderá a cobrar y pagar en un solo movimiento. El ejemplo clásico es el préstamo que se descuenta mes a mes de la planilla.

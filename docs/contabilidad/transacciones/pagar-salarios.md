@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Pagar Salarios (incluyendo prestaciones)"
-sidebar_label: "[Transacciones] Pagar Salarios (incluyendo prestaciones)"
-sidebar_position: 18
+title: "Pagar salarios (incluyendo prestaciones)"
+sidebar_label: "Pagar salarios (incluyendo prestaciones)"
+sidebar_position: 7
 ---
 
 Cada vez que paga la planilla, conviene dejar registrado el cheque de cada empleado para que el gasto de salarios quede al día en sus cuentas. Aquí verá cómo pagar salarios y prestaciones, con la opción de desglosar en un mismo pago conceptos como comisiones o gasolina.

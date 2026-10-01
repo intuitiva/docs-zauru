@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Gastos de insumos sin control de inventario"
-sidebar_label: "[Transacciones] Gastos de insumos sin control de inventario"
-sidebar_position: 16
+title: "Gastos de insumos sin control de inventario"
+sidebar_label: "Gastos de insumos sin control de inventario"
+sidebar_position: 5
 ---
 
 Cada vez que compra papel, clips, folders o cualquier insumo para la oficina, conviene registrar el gasto sin complicarse con inventarios, para que sus cuentas de gastos queden completas y sus reportes no oculten nada. Estos gastos no registran inventario, a diferencia de la mercadería que compra para vender. Los pasos para registrar este tipo de gastos son los siguientes:

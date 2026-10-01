@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Controlar viaticos (anticipados y vencidos)"
-sidebar_label: "[Transacciones] Controlar viaticos (anticipados y vencidos)"
-sidebar_position: 14
+title: "Controlar viáticos (anticipados y vencidos)"
+sidebar_label: "Controlar viáticos (anticipados y vencidos)"
+sidebar_position: 3
 ---
 
 > Registrar compras de bienes o servicios por parte del empleado se puede realizar desde el modulo de compras con una orden de compra.
@@ -141,7 +141,7 @@ Para crear la transferencia seleccione "Crear nueva transaccion".
 
 ## Liquidaciones
 
-Cuando tiene multiples gastos de un empleado que necesitan ser pagados en una sola operacion, puede utilizar el proceso de liquidacion en lugar de crear transacciones manuales una por una. Vea el tutorial de [Liquidaciones](liquidaciones) para el procedimiento detallado.
+Cuando tiene multiples gastos de un empleado que necesitan ser pagados en una sola operacion, puede utilizar el proceso de liquidacion en lugar de crear transacciones manuales una por una. Vea el tutorial de [Liquidaciones](/contabilidad/liquidaciones) para el procedimiento detallado.
 
 En resumen, el proceso de liquidacion permite:
 

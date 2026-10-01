@@ -1,10 +1,22 @@
 ---
-title: "Transacciones (partidas contables)"
-sidebar_label: "Transacciones (partidas contables)"
-sidebar_position: 11
+title: "Transacciones"
+sidebar_label: "Transacciones"
+sidebar_position: 0
 ---
 
 Cada vez que entra o sale dinero sin pasar por una venta o una compra —un ajuste, un gasto menor, un traslado entre cuentas—, necesita una transacción contable que lo registre. La transacción es el único documento que mueve los saldos entre cuentas: por ser un sistema de partida doble, el dinero no aparece ni desaparece, tiene que proceder de alguna cuenta para acreditarse en otra cuenta.
+
+## Tutoriales
+
+1. **[Cheques emitidos (normales y post-fechados)](/contabilidad/transacciones/cheques-emitidos)**: registro de un cheque normal o post-fechado, con su impresión.
+2. **[Contraseñas de pago a proveedores](/contabilidad/transacciones/contrasenas-de-pago)**: creación e impresión de la contraseña de pago de una factura al crédito.
+3. **[Controlar viáticos (anticipados y vencidos)](/contabilidad/transacciones/control-de-viaticos)**: registro de viáticos pagados por anticipado o vencidos, con la caja chica del empleado.
+4. **[Depósitos en banco](/contabilidad/transacciones/depositos-en-banco)**: registro de depósitos de clientes, préstamos o puntos de venta en una cuenta monetaria.
+5. **[Gastos de insumos sin control de inventario](/contabilidad/transacciones/gastos-de-insumos)**: registro de compras de insumos de oficina que no llevan inventario.
+6. **[Manejo de cajas chicas](/contabilidad/transacciones/manejo-de-cajas-chicas)**: gastos de caja chica pagados anticipadamente o vencidos.
+7. **[Pagar salarios (incluyendo prestaciones)](/contabilidad/transacciones/pagar-salarios)**: pago de la planilla y las prestaciones, con desglose de comisiones u otros conceptos.
+8. **[Pagar servicios básicos](/contabilidad/transacciones/pagar-servicios-basicos)**: pago de servicios básicos al contado o registro de la factura al crédito.
+9. **[Pagar y cobrar a un beneficiario en una sola transacción](/contabilidad/transacciones/pagar-y-cobrar-a-un-beneficiario)**: cobro y pago en un solo movimiento, por ejemplo un préstamo descontado del salario.
 
 ## Listado de transacciones
 

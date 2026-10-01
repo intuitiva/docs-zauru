@@ -29,7 +29,7 @@ Si quiere saber en todo momento cuánto dinero entra, cuánto sale y dónde est�
 
 ## Transacciones y operaciones contables
 
-10. **[Transacciones (partidas contables)](/contabilidad/transacciones-partidas-contables)**: creación, edición, borrado, verificación, auditoría, impresión individual y múltiple, descarga de PDF, delegación de tareas, etiquetado, adjunto de imágenes y asignación a centro de costos. Las ediciones generan una bitácora de historial.
+10. **[Transacciones](/contabilidad/transacciones)**: creación, edición, borrado, verificación, auditoría, impresión y descarga de PDF, delegación de tareas, etiquetado, adjunto de imágenes, asignación a centro de costos y API. Las ediciones generan una bitácora de historial. Incluye los tutoriales de cheques, contraseñas de pago, viáticos, depósitos, gastos de insumos, cajas chicas, salarios, servicios básicos y pagos y cobros a beneficiarios.
 11. **[Liquidaciones](/contabilidad/liquidaciones)**: registro de pagos o cobros consolidados contra una cuenta reconciliable, seleccionando múltiples partidas para saldarlas en una sola operación.
 12. **[Importación de transacciones](/contabilidad/importaciones)**: carga masiva de partidas contables desde archivos CSV.
 

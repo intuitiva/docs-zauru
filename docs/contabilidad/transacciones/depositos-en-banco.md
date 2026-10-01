@@ -1,7 +1,7 @@
 ---
-title: "[Transacciones] Depósitos en banco"
-sidebar_label: "[Transacciones] Depósitos en banco"
-sidebar_position: 15
+title: "Depósitos en banco"
+sidebar_label: "Depósitos en banco"
+sidebar_position: 4
 ---
 
 Cada vez que le depositan a su cuenta monetaria, conviene registrarlo para que el saldo del banco en Zauru refleje la realidad. Puede ser un cliente que le abona una deuda o un préstamo, o sus puntos de venta que depositan el efectivo del día; aquí verá cómo dejar ese movimiento asentado.

@@ -1,0 +1,10 @@
+{
+  "label": "Transacciones",
+  "position": 11,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "contabilidad/transacciones/index"
+  }
+}
