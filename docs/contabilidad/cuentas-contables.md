@@ -51,47 +51,14 @@ Un tipo de cuenta con `categoria = true` (Gastos e Ingresos) significa que es un
 
 ## Grupos de Cuentas
 
-Cuando su catálogo crece con decenas de cuentas, los grupos le ayudan a mantenerlas ordenadas por rubros, como si fueran las gavetas de un archivero. Cada grupo de cuentas tiene:
-
-- **Codigo**: identificador del grupo (ej. "1", "1.1").
-- **Nombre**: nombre descriptivo (ej. "Activos Corrientes", "Gastos Operativos").
-- **Tipo de cuenta**: a que tipo pertenece (activo, pasivo, capital, gastos, ingresos).
-- **Moneda**: en que moneda se manejan las cuentas del grupo.
-- **Descripcion**: opcional.
-- **Color**: opcional, para identificacion visual.
-
-### Importar grupos de cuentas
-
-Los grupos de cuentas pueden importarse masivamente desde un archivo CSV. Ver el tutorial de [Importaciones](importaciones) para mas detalle.
+Las cuentas se organizan en grupos por rubro. Los grupos tienen su propio tutorial: ver [Grupos de Cuentas](/contabilidad/grupos-de-cuentas).
 
 ## Nomenclatura de Cuentas
 
 Zauru le permite tener la nomenclatura de cuentas que usted desee, con los rubros de cuentas que usted prefiera. Los pasos para crear su propia nomenclatura de activos, pasivos o capital son los siguientes:
 
-1. Crear el Grupo de Cuentas.
+1. Crear el [Grupo de Cuentas](/contabilidad/grupos-de-cuentas).
 2. Crear una Cuenta y categorizarla en el grupo de Cuenta Creado.
-
-### Crear un nuevo Grupo de Cuentas
-
-1. Ir a "Contabilidad".
-2. Seleccionar "Cuentas".
-3. Seleccionar la pestana "Grupo de Cuentas".
-4. Click sobre "Nuevo Grupo de Cuentas".
-
-![imagen5](/img/contabilidad/cuentas-contables-5.jpg)
-
-Los campos a llenar:
-
-- **Codigo** del grupo de la cuenta.
-- **Nombre** del grupo de la cuenta.
-- **Tipo de cuenta** a la que pertenece (Activo, Pasivo, Capital).
-- **Moneda** en que se maneja el grupo.
-- **Descripcion** del grupo de cuentas.
-- **Color** (opcional).
-
-Para guardar los cambios presione "Crear grupo de cuenta".
-
-![imagen6](/img/contabilidad/cuentas-contables-6.jpg)
 
 ### Crear una nueva Cuenta
 
@@ -233,7 +200,7 @@ curl -v \
   https://app.zauru.com/accounting/accounts.json
 ```
 
-Esto devolverá un JSON similar a este:
+Devuelve un arreglo indexado por tipo de cuenta (1, 2 y 5); los espacios sin cuentas se devuelven como `null`. Cada cuenta tiene esta forma:
 ```json
 [
   null,
@@ -260,129 +227,12 @@ Esto devolverá un JSON similar a este:
       "entries_count": 284,
       "cost": false,
       "color": "#CCCCCC"
-    },
-    {
-      "id": 6,
-      "zid": 7,
-      "active": true,
-      "code": "",
-      "name": "cuentas por cobrar a tecno soluciones",
-      "description": "",
-      "value": "-170.0",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 4,
-      "account_type_id": 3,
-      "entity_id": 4,
-      "updater_id": 4,
-      "created_at": "2023-08-11T17:49:20.792Z",
-      "updated_at": "2026-02-01T01:53:15.265Z",
-      "splits_count": 1,
-      "entries_count": 2,
-      "cost": false,
-      "color": "#CCCCCC"
-    }
-  ],
-  [
-    {
-      "id": 8,
-      "zid": 9,
-      "active": true,
-      "code": "",
-      "name": "cuentas por pagar tecno soluciones $",
-      "description": "",
-      "value": "257.64",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 4,
-      "account_type_id": 4,
-      "entity_id": 4,
-      "updater_id": 5,
-      "created_at": "2025-05-27T23:14:17.875Z",
-      "updated_at": "2025-06-02T16:07:26.687Z",
-      "splits_count": 0,
-      "entries_count": 1,
-      "cost": false,
-      "color": "#CCCCCC"
-    },
-    {
-      "id": 10,
-      "zid": 11,
-      "active": true,
-      "code": "",
-      "name": "tarjeta de credito AMEX $",
-      "description": "",
-      "value": "-4.65",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 4,
-      "account_type_id": 4,
-      "entity_id": 4,
-      "updater_id": 5,
-      "created_at": "2024-05-23T21:11:12.179Z",
-      "updated_at": "2026-06-24T14:52:44.339Z",
-      "splits_count": 31,
-      "entries_count": 105,
-      "cost": false,
-      "color": "#CCCCCC"
     }
   ],
   null,
   null,
-  [
-    {
-      "id": 12,
-      "zid": 13,
-      "active": true,
-      "code": "",
-      "name": "capital",
-      "description": "",
-      "value": "45000.0",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": 14,
-      "currency_id": 3,
-      "account_type_id": 15,
-      "entity_id": 4,
-      "updater_id": 4,
-      "created_at": "2013-01-03T01:50:31.000Z",
-      "updated_at": "2016-09-04T16:15:06.784Z",
-      "splits_count": 0,
-      "entries_count": 11,
-      "cost": false,
-      "color": "#CCCCCC"
-    },
-    {
-      "id": 16,
-      "zid": 17,
-      "active": true,
-      "code": "",
-      "name": "cuenta cuadradora de IVA (facturas regaladas)",
-      "description": "",
-      "value": "53132.88",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": 14,
-      "currency_id": 3,
-      "account_type_id": 15,
-      "entity_id": 4,
-      "updater_id": 4,
-      "created_at": "2014-02-27T15:43:28.137Z",
-      "updated_at": "2023-01-14T13:08:13.594Z",
-      "splits_count": 44,
-      "entries_count": 68,
-      "cost": false,
-      "color": "#CCCCCC"
-    }
-  ]
+  null,
+  null
 ]
 ```
 
@@ -396,7 +246,7 @@ curl -v \
   https://app.zauru.com/accounting/categories.json
 ```
 
-Esto devolverá un JSON similar a este:
+Devuelve un arreglo indexado por tipo de cuenta (3 y 4); los espacios sin cuentas se devuelven como `null`. Cada cuenta tiene esta forma:
 ```json
 [
   null,
@@ -425,79 +275,9 @@ Esto devolverá un JSON similar a este:
       "entries_count": 0,
       "cost": false,
       "color": "#cccccc"
-    },
-    {
-      "id": 7,
-      "zid": 8,
-      "active": true,
-      "code": "",
-      "name": "desarrollo freelance importado",
-      "description": "",
-      "value": "0.0",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 5,
-      "account_type_id": 4,
-      "entity_id": 5,
-      "updater_id": 5,
-      "created_at": "2011-08-03T21:05:56.000Z",
-      "updated_at": "2021-09-28T01:16:43.053Z",
-      "splits_count": 13,
-      "entries_count": 0,
-      "cost": true,
-      "color": "#CCCCCC"
     }
   ],
-  [
-    {
-      "id": 9,
-      "zid": 10,
-      "active": true,
-      "code": "",
-      "name": "capitalización de intereses",
-      "description": "",
-      "value": "22.47",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 3,
-      "account_type_id": 11,
-      "entity_id": 5,
-      "updater_id": 5,
-      "created_at": "2012-12-08T19:44:43.000Z",
-      "updated_at": "2026-07-01T19:00:47.349Z",
-      "splits_count": 225,
-      "entries_count": 151,
-      "cost": false,
-      "color": "#CCCCCC"
-    },
-    {
-      "id": 12,
-      "zid": 13,
-      "active": true,
-      "code": "",
-      "name": "Otros Ingresos",
-      "description": "",
-      "value": "0.01",
-      "credit_limit": null,
-      "liquid": false,
-      "reconciliable": false,
-      "account_group_id": null,
-      "currency_id": 3,
-      "account_type_id": 11,
-      "entity_id": 5,
-      "updater_id": 5,
-      "created_at": "2014-02-21T15:09:55.813Z",
-      "updated_at": "2025-03-17T22:16:59.822Z",
-      "splits_count": 34,
-      "entries_count": 35,
-      "cost": false,
-      "color": "#CCCCCC"
-    }
-  ]
+  null
 ]
 ```
 
@@ -751,212 +531,6 @@ curl -v \
   -H "X-User-Token: XSDFKK09238487DLFS" \
   https://app.zauru.com/accounting/accounts/automatic_annual_close.json
 ```
-
-## API de grupos de cuentas (llamadas desde sistemas externos)
-
-### Consultar listado de grupos de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/accounting/accounts/account_groups.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-[
-  {
-    "id": "7854",
-    "zid": "16",
-    "name": "OTRAS CUENTAS POR PAGAR",
-    "description": null,
-    "account_type_id": "2",
-    "updater_id": "1106",
-    "entity_id": "351",
-    "currency_id": "1",
-    "created_at": "2019-08-10 15:36:49.896725",
-    "updated_at": "2020-02-25 15:27:47.552578",
-    "code": "213",
-    "accounts_count": "11",
-    "color": "#FF0000"
-  }
-]
-```
-
-### Obtener detalle de un grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/accounting/accounts/account_groups/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "7854",
-  "zid": "16",
-  "name": "OTRAS CUENTAS POR PAGAR",
-  "description": null,
-  "account_type_id": "2",
-  "updater_id": "1106",
-  "entity_id": "351",
-  "currency_id": "1",
-  "created_at": "2019-08-10 15:36:49.896725",
-  "updated_at": "2020-02-25 15:27:47.552578",
-  "code": "213",
-  "accounts_count": "11",
-  "color": "#FF0000"
-}
-```
-
-### Obtener el formulario de nuevo grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/accounting/accounts/account_groups/new.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "7854",
-  "zid": "16",
-  "name": "OTRAS CUENTAS POR PAGAR",
-  "description": null,
-  "account_type_id": "2",
-  "updater_id": "1106",
-  "entity_id": "351",
-  "currency_id": "1",
-  "created_at": "2019-08-10 15:36:49.896725",
-  "updated_at": "2020-02-25 15:27:47.552578",
-  "code": "213",
-  "accounts_count": "11",
-  "color": "#FF0000"
-}
-```
-
-### Obtener el formulario de edicion de un grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/accounting/accounts/account_groups/1/edit.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "7854",
-  "zid": "16",
-  "name": "OTRAS CUENTAS POR PAGAR",
-  "description": null,
-  "account_type_id": "2",
-  "updater_id": "1106",
-  "entity_id": "351",
-  "currency_id": "1",
-  "created_at": "2019-08-10 15:36:49.896725",
-  "updated_at": "2020-02-25 15:27:47.552578",
-  "code": "213",
-  "accounts_count": "11",
-  "color": "#FF0000"
-}
-```
-
-### Crear un grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "account_group": {
-      "code": "1.1",
-      "name": "Activos Corrientes",
-      "account_type_id": 1,
-      "currency_id": 1
-    }
-  }' \
-  https://app.zauru.com/accounting/accounts/account_groups.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "7854",
-  "zid": "16",
-  "name": "OTRAS CUENTAS POR PAGAR",
-  "description": null,
-  "account_type_id": "2",
-  "updater_id": "1106",
-  "entity_id": "351",
-  "currency_id": "1",
-  "created_at": "2019-08-10 15:36:49.896725",
-  "updated_at": "2020-02-25 15:27:47.552578",
-  "code": "213",
-  "accounts_count": "11",
-  "color": "#FF0000"
-}
-```
-
-### Actualizar un grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
-  -d '{
-    "account_group": {
-      "name": "Activos Corrientes Actualizado"
-    }
-  }' \
-  https://app.zauru.com/accounting/accounts/account_groups/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "7854",
-  "zid": "16",
-  "name": "OTRAS CUENTAS POR PAGAR",
-  "description": null,
-  "account_type_id": "2",
-  "updater_id": "1106",
-  "entity_id": "351",
-  "currency_id": "1",
-  "created_at": "2019-08-10 15:36:49.896725",
-  "updated_at": "2020-02-25 15:27:47.552578",
-  "code": "213",
-  "accounts_count": "11",
-  "color": "#FF0000"
-}
-```
-
-### Borrar un grupo de cuentas
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X DELETE \
-  https://app.zauru.com/accounting/accounts/account_groups/1.json
-```
-
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
 ## API de tipos de cuenta (llamadas desde sistemas externos)
 

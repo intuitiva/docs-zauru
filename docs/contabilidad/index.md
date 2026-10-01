@@ -13,7 +13,7 @@ Si quiere saber en todo momento cuánto dinero entra, cuánto sale y dónde est�
 ## Cuentas contables
 
 2. **[Nomenclatura contable](/contabilidad/cuentas-contables)**: creación y gestión de cuentas patrimoniales (activos, pasivos, capital) y cuentas de gestión (ingresos, gastos), con soporte para múltiples monedas.
-3. **[Grupos de cuentas](/contabilidad/cuentas-contables)**: agrupación jerárquica de cuentas contables con códigos, tipos y monedas, incluyendo importación masiva por CSV.
+3. **[Grupos de cuentas](/contabilidad/grupos-de-cuentas)**: agrupación de cuentas contables por rubro, con código, tipo de cuenta y moneda, que ordena el catálogo y subtotaliza los reportes. Incluye importación masiva.
 4. **[Tipos de cuenta](/contabilidad/cuentas-contables)**: administración de tipos de cuenta (activo, pasivo, capital, ingresos, gastos) para clasificar la naturaleza contable.
 5. **[Cuentas sugeridas](/contabilidad/cuentas-contables)**: catálogo de cuentas sugeridas por tipo de entidad para facilitar la creación del catálogo contable.
 6. **[Tipificación de cuentas de egresos](/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos)**: clasificación de cuentas como gastos o costos para que aparezcan correctamente en el estado de resultados.

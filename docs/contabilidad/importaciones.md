@@ -48,7 +48,7 @@ El sistema procesara el archivo y creara las transacciones. Si alguna fila no pu
 
 ## Importacion de grupos de cuentas
 
-Permite cargar masivamente grupos de cuentas desde un archivo CSV.
+Permite cargar masivamente grupos de cuentas desde un archivo CSV, Excel (.xls) u ODS.
 
 ### Pasos para importar grupos de cuentas
 
@@ -61,19 +61,19 @@ Permite cargar masivamente grupos de cuentas desde un archivo CSV.
 
 ![Formulario de importación de grupos de cuentas](/img/contabilidad/importaciones-6.png)
 
-4. Seleccionar el archivo CSV.
+4. Seleccionar el archivo.
 5. Hacer clic en "Importar".
 
-### Formato del CSV para grupos de cuentas
+### Formato del archivo para grupos de cuentas
 
-El archivo CSV debe contener las siguientes columnas:
-- `code`: codigo del grupo de cuenta
+El archivo debe contener las siguientes columnas:
+- `code`: codigo del grupo de cuenta (opcional)
 - `name`: nombre del grupo
-- `description`: descripcion
+- `description`: descripcion (opcional)
 - `account_type_id`: ID del tipo de cuenta (1=Activo, 2=Pasivo, 3=Gastos, 4=Ingresos, 5=Capital)
 - `currency_id`: ID de la moneda
 
-La primera fila del archivo se considera encabezado y se omite durante la importacion.
+Las columnas requeridas son `name`, `account_type_id` y `currency_id`. La primera fila del archivo se considera encabezado y se omite durante la importacion.
 
 Una vez importado todo, conviene revisar un par de cuentas y transacciones al azar para confirmar que los datos llegaron completos y correctos. Con su información cargada, ya puede seguir con los saldos iniciales o comenzar a registrar las transacciones del día a día.
 
