@@ -7,7 +7,7 @@ Carga los Markdown de `docs/` en Postgres para búsqueda y embeddings. Con un us
 1. Se conecta a la base de mantenimiento (`postgres` por defecto) y crea `rag` si no existe.
 2. En `rag` activa las extensiones `pg_trgm` y `vector`.
 3. Crea la tabla `data` si no existe.
-4. Recorre `docs/**/*.md`, quita el frontmatter YAML y hace upsert por `path`.
+4. Recorre `docs/**/*.md`, separa el frontmatter (`title`, `sidebar_label`, `sidebar_position`) del cuerpo y hace upsert por `path`.
 5. Borra las filas cuyo archivo ya no está en `docs/`.
 6. Pide un embedding por cada fila con `embedding` NULL y lo guarda. El texto ya quedó confirmado antes de este paso: si el servidor no responde, el import del Markdown no se revierte.
 
@@ -36,7 +36,7 @@ Por defecto usa el usuario `finanzas`, la base `rag` y la carpeta `docs/` de est
 Comprueba el resultado:
 
 ```sql
-SELECT id, left(tutorial, 50), embedding, updated_at, path
+SELECT id, title, sidebar_label, sidebar_position, left(tutorial, 50), embedding IS NOT NULL AS has_embedding, path
 FROM data
 LIMIT 3;
 ```
@@ -62,6 +62,9 @@ Copia `.env.example` a `.env`. El archivo `.env` no se sube al repositorio. Si u
 | --- | --- | --- |
 | `id` | `integer` | Primary key, identity |
 | `path` | `text NOT NULL` | Ruta relativa al Markdown, por ejemplo `casos-de-soporte/casos-abiertos.md`. Única |
-| `tutorial` | `text NOT NULL` | Contenido sin frontmatter. Índice GIN trigram (`gin_trgm_ops`) |
+| `title` | `text NOT NULL` | `title` del front matter |
+| `sidebar_label` | `text NOT NULL` | `sidebar_label` del front matter |
+| `sidebar_position` | `double precision NOT NULL` | `sidebar_position` del front matter. Acepta decimales (`0.5`) |
+| `tutorial` | `text NOT NULL` | Cuerpo del Markdown, sin front matter. Índice GIN trigram (`gin_trgm_ops`) |
 | `embedding` | `vector(1024)` | Nullable. Lo llena este script con `EMBEDDING_URL` (Qwen3 embeddings 0.6B) |
 | `updated_at` | `timestamptz NOT NULL` | `mtime` del archivo. Default `now()` |
