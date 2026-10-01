@@ -9,8 +9,9 @@ Carga los Markdown de `docs/` en Postgres para búsqueda y embeddings. Con un us
 3. Crea la tabla `data` si no existe.
 4. Recorre `docs/**/*.md`, quita el frontmatter YAML y hace upsert por `path`.
 5. Borra las filas cuyo archivo ya no está en `docs/`.
+6. Pide un embedding por cada fila con `embedding` NULL y lo guarda. El texto ya quedó confirmado antes de este paso: si el servidor no responde, el import del Markdown no se revierte.
 
-`updated_at` es la fecha de modificación del archivo. `embedding` queda en `NULL`: este script no calcula vectores. Si vuelves a correrlo y el texto del tutorial cambió, el embedding de esa fila se pone en `NULL` para que no quede desfasado.
+`updated_at` es la fecha de modificación del archivo. Si el texto del tutorial cambió, el embedding de esa fila se pone en `NULL` y se vuelve a pedir. Las filas que ya tienen vector no se recalculan.
 
 ## Requisitos
 
@@ -53,6 +54,7 @@ Copia `.env.example` a `.env`. El archivo `.env` no se sube al repositorio. Si u
 | `PGDATABASE` | `rag` | Base que se crea y se llena |
 | `PGADMIN_DATABASE` | `postgres` | Base a la que se conecta para el `CREATE DATABASE` |
 | `DOCS_PATH` | `<repo>/docs` | Carpeta de Markdown |
+| `EMBEDDING_URL` | vacío | URL del `POST /embedding`. Vacío deja `embedding` en `NULL` |
 
 ## Tabla `data`
 
@@ -61,5 +63,5 @@ Copia `.env.example` a `.env`. El archivo `.env` no se sube al repositorio. Si u
 | `id` | `integer` | Primary key, identity |
 | `path` | `text NOT NULL` | Ruta relativa al Markdown, por ejemplo `casos-de-soporte/casos-abiertos.md`. Única |
 | `tutorial` | `text NOT NULL` | Contenido sin frontmatter. Índice GIN trigram (`gin_trgm_ops`) |
-| `embedding` | `vector(1024)` | Nullable. Lo llena otro proceso (Qwen3 embeddings 0.6B) |
+| `embedding` | `vector(1024)` | Nullable. Lo llena este script con `EMBEDDING_URL` (Qwen3 embeddings 0.6B) |
 | `updated_at` | `timestamptz NOT NULL` | `mtime` del archivo. Default `now()` |

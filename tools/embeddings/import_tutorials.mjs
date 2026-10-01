@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * import_tutorials.mjs — Crea la base rag (si no existe), la tabla data
- * y carga los Markdown de docs/ sin frontmatter.
+ * import_tutorials.mjs — Crea la base rag (si no existe), la tabla data,
+ * carga los Markdown de docs/ sin frontmatter y pide los embeddings
+ * que faltan al servidor configurado en EMBEDDING_URL.
  *
  * Uso:
  *   node import_tutorials.mjs
@@ -143,6 +144,124 @@ CREATE UNIQUE INDEX IF NOT EXISTS data_path_uidx ON data (path);
 CREATE INDEX IF NOT EXISTS data_tutorial_trgm_idx ON data USING gin (tutorial gin_trgm_ops);
 `;
 
+const EMBEDDING_DIM = 1024;
+
+function errorMessage(error) {
+  if (!(error instanceof Error)) return String(error);
+  const cause = error.cause;
+  if (cause instanceof Error && cause.message.length > 0) {
+    return `${error.message}: ${cause.message}`;
+  }
+  return error.message;
+}
+
+function extractEmbedding(payload) {
+  if (Array.isArray(payload)) {
+    if (payload.length > 0 && payload.every((value) => typeof value === 'number')) {
+      return payload;
+    }
+    if (
+      payload.length > 0 &&
+      payload.every(
+        (row) =>
+          Array.isArray(row) &&
+          row.length > 0 &&
+          row.every((value) => typeof value === 'number'),
+      )
+    ) {
+      return payload[payload.length - 1];
+    }
+    const first = payload[0];
+    if (first && typeof first === 'object' && !Array.isArray(first) && 'embedding' in first) {
+      return extractEmbedding(first.embedding);
+    }
+  }
+
+  if (payload && typeof payload === 'object' && !Array.isArray(payload)) {
+    if ('embedding' in payload) return extractEmbedding(payload.embedding);
+    if (Array.isArray(payload.data) && payload.data.length > 0) {
+      return extractEmbedding(payload.data[0]);
+    }
+  }
+
+  throw new Error('la respuesta no trae un vector de números');
+}
+
+async function fetchEmbedding(url, content) {
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content }),
+      signal: AbortSignal.timeout(120_000),
+    });
+  } catch (error) {
+    throw new Error(`no se pudo conectar con ${url} (${errorMessage(error)})`);
+  }
+
+  if (!response.ok) {
+    const body = await response.text();
+    const detail = body.trim().slice(0, 300);
+    throw new Error(
+      `HTTP ${response.status}${detail.length > 0 ? `: ${detail}` : ''}`,
+    );
+  }
+
+  let payload;
+  try {
+    payload = await response.json();
+  } catch (error) {
+    throw new Error(`la respuesta no es JSON (${errorMessage(error)})`);
+  }
+
+  const vector = extractEmbedding(payload);
+  if (vector.length !== EMBEDDING_DIM) {
+    throw new Error(`dimensión ${vector.length}, se esperaba ${EMBEDDING_DIM}`);
+  }
+  if (!vector.every((value) => Number.isFinite(value))) {
+    throw new Error('el vector contiene valores no numéricos');
+  }
+  return vector;
+}
+
+async function fillEmbeddings(client, url) {
+  const pending = await client.query(
+    'SELECT id, path, tutorial FROM data WHERE embedding IS NULL ORDER BY path',
+  );
+  const rows = pending.rows;
+  if (rows.length === 0) {
+    console.log('Embeddings al día: no hay filas con embedding NULL');
+    return;
+  }
+
+  console.log(`Calculando embeddings: ${rows.length} filas en ${url}`);
+  let filled = 0;
+  for (const row of rows) {
+    if (row.tutorial.trim().length === 0) {
+      console.log(`Sin texto, se omite: ${row.path}`);
+      continue;
+    }
+
+    let vector;
+    try {
+      vector = await fetchEmbedding(url, row.tutorial);
+    } catch (error) {
+      throw new Error(
+        `No se pudo calcular el embedding de ${row.path} (${filled}/${rows.length} listos): ${errorMessage(error)}`,
+      );
+    }
+
+    await client.query('UPDATE data SET embedding = $1::vector WHERE id = $2', [
+      `[${vector.join(',')}]`,
+      row.id,
+    ]);
+    filled += 1;
+    console.log(`Embedding ${filled}/${rows.length}: ${row.path}`);
+  }
+  console.log(`Embeddings listos: ${filled}`);
+}
+
 const UPSERT_SQL = `
 INSERT INTO data (path, tutorial, updated_at)
 VALUES ($1, $2, $3)
@@ -197,6 +316,13 @@ async function main() {
     } catch (error) {
       await client.query('ROLLBACK');
       throw error;
+    }
+
+    const embeddingUrl = env('EMBEDDING_URL', '');
+    if (embeddingUrl.length === 0) {
+      console.log('EMBEDDING_URL vacío: los embeddings quedan en NULL');
+    } else {
+      await fillEmbeddings(client, embeddingUrl);
     }
   } finally {
     await client.end();
