@@ -27,7 +27,7 @@ El campo se habilita automaticamente en cuanto termina la busqueda, por lo que p
 
 ## Crear una transaccion
 
-Para crear una transaccion se puede ingresar desde "Transacciones" o desde "Cuentas" y acreditar o debitar de una cuenta.
+Puede crear una transacción desde "Transacciones" o "Cuentas" y acreditar o debitar de una cuenta.
 
 ![Formulario de creación de nueva transacción con campos y splits](/img/contabilidad/transacciones-partidas-contables-2.png)
 
@@ -56,7 +56,7 @@ Para crear una transaccion se puede ingresar desde "Transacciones" o desde "Cuen
 
 ### Ordenes de compra asociadas
 
-Al crear una transaccion, puede asociarla a una orden de compra existente, lo que vincula el pago con la compra.
+Al crear una transaccion, puede asociarla a una orden de compra, lo que vincula el pago con la compra.
 
 ### Notas de credito asociadas
 
@@ -132,7 +132,7 @@ Permite imprimir varias transacciones a la vez:
 
 Similar a la impresion multiple, pero genera un archivo PDF para descargar en lugar de mostrar en pantalla. Util para archivar o enviar por correo.
 
-Con esto ya domina el documento más importante de la contabilidad: cada movimiento de su empresa puede quedar registrado, revisado y respaldado en papel o en PDF. Verificar y auditar las transacciones importantes es el paso que sigue para proteger su información contra ediciones accidentales.
+Con esto ya domina el documento más importante de la contabilidad: cada movimiento de su empresa puede quedar registrado, revisado y respaldado en papel o en PDF.
 
 ## API (llamadas desde sistemas externos)
 
