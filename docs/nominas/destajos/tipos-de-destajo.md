@@ -1,7 +1,7 @@
 ---
 title: "Tipos de destajo"
 sidebar_label: "Tipos de destajo"
-sidebar_position: 7
+sidebar_position: 1
 ---
 
 Si sus empleados ganan por quintal cortado, caja armada o tarea sembrada, cada una de esas actividades es un tipo de destajo. Los tipos de destajo definen las tareas que se pagan por unidad de trabajo realizada: su valor por unidad, su medida y la cuenta contable del gasto.

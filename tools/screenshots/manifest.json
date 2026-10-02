@@ -1898,9 +1898,10 @@
     },
     {
       "section": "nominas",
-      "slug": "destajos",
-      "docPath": "docs/nominas/destajos.md",
-      "existingImageCount": 0,
+      "slug": "destajos-no-pagados",
+      "imageSlug": "destajos",
+      "docPath": "docs/nominas/destajos/destajos-no-pagados.md",
+      "existingImageCount": 1,
       "shots": [
         {
           "stepNumber": 1,
@@ -1916,7 +1917,7 @@
         },
         {
           "stepNumber": 2,
-          "caption": "1. En el listado de destajos no pagados, hacer clic en **\"Nuevo\"**.",
+          "caption": "1. En el listado de destajos no pagados, hacer clic en **\"Nuevo Destajo\"**.",
           "zauruPath": "/payroll/unpaid_pieceworks/new",
           "waitForSelector": [
             "form",
@@ -1924,7 +1925,7 @@
             ".piecework-form",
             "#content"
           ],
-          "insertAfterText": "1. En el listado de destajos no pagados, hacer clic en **\"Nuevo\"**."
+          "insertAfterText": "1. En el listado de destajos no pagados, hacer clic en **\"Nuevo Destajo\"**."
         },
         {
           "stepNumber": 3,
@@ -1937,8 +1938,17 @@
             "#content",
             ".show-page"
           ],
-          "insertAfterText": "En el listado, hacer clic en el ID del destajo. El detalle muestra:"
-        },
+          "insertAfterText": "En el listado, hacer clic en el ID del destajo o en el icono de ojo. El detalle muestra:"
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "destajos-pagados",
+      "imageSlug": "destajos",
+      "docPath": "docs/nominas/destajos/destajos-pagados.md",
+      "existingImageCount": 1,
+      "shots": [
         {
           "stepNumber": 4,
           "caption": "2. Seleccionar **\"Destajos pagados\"**.",
@@ -1950,10 +1960,19 @@
             ".table"
           ],
           "insertAfterText": "2. Seleccionar **\"Destajos pagados\"**."
-        },
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "destajos-de-feriado",
+      "imageSlug": "destajos",
+      "docPath": "docs/nominas/destajos/destajos-de-feriado.md",
+      "existingImageCount": 1,
+      "shots": [
         {
           "stepNumber": 5,
-          "caption": "1. Hacer clic en **\"Nuevo\"**.",
+          "caption": "3. Hacer clic en **\"Nuevo destajo de asueto\"**.",
           "zauruPath": "/payroll/piecework_holidays/new",
           "waitForSelector": [
             "form",
@@ -1961,7 +1980,7 @@
             "#content",
             ".holiday-form"
           ],
-          "insertAfterText": "1. Hacer clic en **\"Nuevo\"**."
+          "insertAfterText": "3. Hacer clic en **\"Nuevo destajo de asueto\"**."
         }
       ]
     },

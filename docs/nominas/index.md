@@ -14,8 +14,8 @@ Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado
 4. **Metodos de pago**: configuracion de cuentas contables para pago individual de empleados y pago consolidado de corridas de nomina.
 5. **Tipos de incidencia**: definicion de categorias de incidencias con descuentos por monto, porcentaje o formula, incluyendo descuento como dias de tiempo personal.
 6. **Tipos de tiempo personal**: definicion de categorias de tiempo personal (vacaciones, enfermedad, etc.).
-7. **Tipos de destajo**: definicion de tareas por destajo con valor unitario, unidad de medida, cuenta contable y configuracion de bonificacion.
-8. **Grupos de tipos de destajo**: agrupacion de tipos de destajo para organizacion y reportes.
+7. **[Tipos de destajo](/nominas/destajos/tipos-de-destajo)**: definicion de tareas por destajo con valor unitario, unidad de medida, cuenta contable y configuracion de bonificacion.
+8. **[Grupos de tipos de destajo](/nominas/destajos/grupos-de-tipos-de-destajo)**: agrupacion de tipos de destajo para organizacion y reportes.
 
 ## Contratos de trabajo
 
@@ -24,9 +24,9 @@ Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado
 
 ## Destajos
 
-11. **Destajos no pagados**: creacion y gestion de tareas por destajo con asignacion de empleados, tipos de destajo, cantidades y supervisor. Soporte para agregar multiples filas con los botones "+", "+2", "+5", "+10", "+20".
-12. **Destajos pagados**: consulta de destajos que ya han sido incluidos en corridas de nomina pagadas.
-13. **Destajos de feriado**: generacion de destajos para dias feriados con horas extra.
+11. **[Destajos no pagados](/nominas/destajos/destajos-no-pagados)**: creación y gestión de tareas por destajo con asignación de empleados, tipos de destajo, cantidades y supervisor. Las filas se agregan con el botón "+".
+12. **[Destajos pagados](/nominas/destajos/destajos-pagados)**: consulta de destajos que ya han sido incluidos en corridas de nomina pagadas.
+13. **[Destajos de feriado](/nominas/destajos/destajos-de-feriado)**: generación de destajos para un día de asueto a partir de los destajos de la semana anterior.
 
 ## Incidencias
 

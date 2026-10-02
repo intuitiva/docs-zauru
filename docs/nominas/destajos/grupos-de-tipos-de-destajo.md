@@ -1,7 +1,7 @@
 ---
 title: "Grupos de tipos de destajo"
 sidebar_label: "Grupos de tipos de destajo"
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 Cuando su lista de tipos de destajo crece —corte, siembra, limpieza, empaque—, agruparlos por actividad le ahorra tiempo al registrar destajos y al leer reportes. Los grupos permiten organizar los tipos de destajo en categorías, como Cosecha, Siembra o Mantenimiento.
