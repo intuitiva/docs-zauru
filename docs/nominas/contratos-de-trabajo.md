@@ -41,7 +41,7 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 
 ### Datos de pago
 
-- **Metodo de pago por defecto**: metodo de pago que se usara para pagar al empleado en las corridas de nomina.
+- **Metodo de pago por defecto**: metodo de pago que se usara para pagar al empleado en las nóminas.
 - **Salario por hora ordinario**: tarifa por hora de trabajo ordinario. El sistema muestra una sugerencia del calculo mensual basado en la frecuencia de pago y las horas de trabajo del puesto.
 - **Salario por hora extraordinario diurno**: tarifa por hora extra diurna.
 - **Salario por hora extraordinario nocturno**: tarifa por hora extra nocturna.
@@ -138,7 +138,7 @@ El detalle de la terminacion muestra estos calculos discriminados y el total de 
 ![Detalle de liquidacion al terminar un contrato](/img/nominas/contratos-de-trabajo-4.png)
 
 - **Indemnizacion (Severance Pay)**: salario ordinario, salario extra y, de corresponder, comisiones de ventas y beneficios/deducciones en ciclo del primer mes, resaltados en rojo.
-- **Nomina final (ultimo pago)**: si la configuracion de "Manejo del pago al terminar un contrato" indica liquidar en la terminacion, muestra los dias aplicables, salario, salario extra, salario de turno nocturno, bonificacion mensual y beneficios/deducciones del periodo final, con el total del ultimo pago. Si la configuracion indica incluirlo en la proxima nomina, este pago no aparece aqui y el empleado se procesa en la siguiente corrida.
+- **Nomina final (ultimo pago)**: si la configuracion de "Manejo del pago al terminar un contrato" indica liquidar en la terminacion, muestra los dias aplicables, salario, salario extra, salario de turno nocturno, bonificacion mensual y beneficios/deducciones del periodo final, con el total del ultimo pago. Si la configuracion indica incluirlo en la proxima nomina, este pago no aparece aqui y el empleado se procesa en la siguiente nómina.
 - **Beneficios fuera de ciclo pendientes**: lista de beneficios/deducciones fuera de ciclo que aun no se han pagado, con su monto.
 - **Tiempo personal pendiente**: dias pendientes, monto del tiempo personal y bonificacion asociada, mas el total de la liquidacion.
 - **Partidas contables asociadas**: las entradas contables generadas por la liquidacion (indemnizacion, tiempo personal, etc.), con enlace a cada asiento.
@@ -153,7 +153,7 @@ En el detalle del contrato, hacer clic en **"Borrar"**. Solo se pueden borrar co
 
 En el detalle del contrato, hacer clic en **"Imprimir"** o **"Descargar PDF"** para generar una version imprimible del contrato usando la plantilla configurada. El sistema soporta multiples plantillas de impresion para contratos de trabajo.
 
-Con los contratos registrados, el sistema ya sabe cuánto pagar a cada empleado, cuánto bonificarle y qué descontarle en cada corrida. Si alguien deja la empresa, termine su contrato y revise la liquidación calculada; si no, siga con las corridas de nómina cuando llegue la fecha de pago.
+Con los contratos registrados, el sistema ya sabe cuánto pagar a cada empleado, cuánto bonificarle y qué descontarle en cada nómina. Si alguien deja la empresa, termine su contrato y revise la liquidación calculada; si no, siga con las nóminas cuando llegue la fecha de pago.
 
 ## API (llamadas desde sistemas externos)
 

@@ -34,7 +34,7 @@ Para gestionar tipos de incidencia:
 
 Similar a las demas configuraciones: desde el detalle del tipo de incidencia, usar los botones **"Editar"** y **"Borrar"**.
 
-Con los tipos configurados, registrar una llegada tarde o un adelanto de salario será cuestión de segundos: el sistema sabrá cuánto descontar y a qué cuenta. El paso siguiente es registrar las incidencias del día a día, para que aparezcan descontadas en la próxima corrida de nómina.
+Con los tipos configurados, registrar una llegada tarde o un adelanto de salario será cuestión de segundos: el sistema sabrá cuánto descontar y a qué cuenta. El paso siguiente es registrar las incidencias del día a día, para que aparezcan descontadas en la próxima nómina.
 
 ## API (llamadas desde sistemas externos)
 

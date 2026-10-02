@@ -1790,13 +1790,13 @@
     },
     {
       "section": "nominas",
-      "slug": "corridas-de-nomina",
-      "docPath": "docs/nominas/corridas-de-nomina.md",
-      "existingImageCount": 0,
+      "slug": "nominas-no-pagadas",
+      "docPath": "docs/nominas/nominas/nominas-no-pagadas.md",
+      "existingImageCount": 4,
       "shots": [
         {
           "stepNumber": 1,
-          "caption": "Listado de corridas de nomina no pagadas",
+          "caption": "Listado de nóminas no pagadas",
           "zauruPath": "/payroll/unpaid_payroll_runs",
           "waitForSelector": [
             "table",
@@ -1804,11 +1804,11 @@
             ".list-table",
             "#payroll-runs"
           ],
-          "insertAfterText": "El listado muestra todas las corridas pendientes en formato de tabla con las siguientes columnas:"
+          "insertAfterText": "El listado muestra todas las nóminas pendientes en formato de tabla con las siguientes columnas:"
         },
         {
           "stepNumber": 2,
-          "caption": "Formulario de nueva corrida de nomina",
+          "caption": "Formulario de nueva nómina",
           "zauruPath": "/payroll/unpaid_payroll_runs/new",
           "waitForSelector": [
             "form",
@@ -1816,11 +1816,11 @@
             ".payroll-run-form",
             "input[name='payroll_run[name]']"
           ],
-          "insertAfterText": "3. Hacer clic en **\"Guardar\"**."
+          "insertAfterText": "3. Hacer clic en **\"Crear Nómina\"**."
         },
         {
           "stepNumber": 3,
-          "caption": "Detalle de una corrida de nomina no pagada",
+          "caption": "Detalle de una nómina no pagada",
           "zauruPath": "/payroll/unpaid_payroll_runs/1",
           "resolveId": true,
           "waitForSelector": [
@@ -1829,11 +1829,11 @@
             "#payroll-run-info",
             ".show-payroll-run"
           ],
-          "insertAfterText": "- **Formularios asociados**: plantillas de impresion vinculadas."
+          "insertAfterText": "- **Formularios asociados**: plantillas de impresión vinculadas."
         },
         {
           "stepNumber": 4,
-          "caption": "Tabla de llenado de beneficios flexibles",
+          "caption": "Tabla de llenado de beneficios y deducciones flexibles",
           "zauruPath": "/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions",
           "resolveId": true,
           "waitForSelector": [
@@ -1843,35 +1843,18 @@
             "#fill_flexible"
           ],
           "insertAfterText": "3. Ingresar los montos correspondientes para cada empleado."
-        },
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "nominas-pagadas",
+      "docPath": "docs/nominas/nominas/nominas-pagadas.md",
+      "existingImageCount": 2,
+      "shots": [
         {
-          "stepNumber": 5,
-          "caption": "Detalle de nomina individual",
-          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/1",
-          "resolveId": true,
-          "waitForSelector": [
-            ".payroll-detail",
-            "table",
-            "#payroll-info",
-            ".show-payroll"
-          ],
-          "insertAfterText": "- Creador y fecha de creacion."
-        },
-        {
-          "stepNumber": 6,
-          "caption": "Formulario de nueva nomina individual",
-          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/new",
-          "waitForSelector": [
-            "form",
-            "#new_payroll",
-            ".payroll-form",
-            "select[name='payroll[work_contract_id]']"
-          ],
-          "insertAfterText": "3. Hacer clic en **\"Guardar\"**."
-        },
-        {
-          "stepNumber": 7,
-          "caption": "Listado de corridas de nomina pagadas",
+          "stepNumber": 1,
+          "caption": "Listado de nóminas pagadas",
           "zauruPath": "/payroll/paid_payroll_runs",
           "waitForSelector": [
             "table",
@@ -1879,11 +1862,11 @@
             ".list-table",
             "#paid-payroll-runs"
           ],
-          "insertAfterText": "Muestra todas las corridas pagadas con el mismo formato que las no pagadas. Incluye busqueda y filtros."
+          "insertAfterText": "Muestra todas las nóminas pagadas con el mismo formato que las no pagadas, e incluye búsqueda y filtros."
         },
         {
-          "stepNumber": 8,
-          "caption": "Detalle de una corrida pagada",
+          "stepNumber": 2,
+          "caption": "Detalle de una nómina pagada",
           "zauruPath": "/payroll/paid_payroll_runs/1",
           "resolveId": true,
           "waitForSelector": [
@@ -1892,7 +1875,40 @@
             "#paid-payroll-run-info",
             ".show-paid-payroll-run"
           ],
-          "insertAfterText": "Igual que las no pagadas, pero sin opciones de edicion ni aprobacion. Muestra todas las nominas, destajos y partidas contables asociadas."
+          "insertAfterText": "Igual que el detalle de una nómina no pagada, pero sin opciones de edición ni aprobación. Muestra las nóminas individuales, los destajos y las partidas contables asociadas."
+        }
+      ]
+    },
+    {
+      "section": "nominas",
+      "slug": "nominas-individuales",
+      "docPath": "docs/nominas/nominas/nominas-individuales.md",
+      "existingImageCount": 0,
+      "shots": [
+        {
+          "stepNumber": 1,
+          "caption": "Detalle de una nómina individual",
+          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/1",
+          "resolveId": true,
+          "waitForSelector": [
+            ".payroll-detail",
+            "table",
+            "#payroll-info",
+            ".show-payroll"
+          ],
+          "insertAfterText": "- Creador y fecha de creación."
+        },
+        {
+          "stepNumber": 2,
+          "caption": "Formulario de nueva nómina individual",
+          "zauruPath": "/payroll/unpaid_payroll_runs/payrolls/new",
+          "waitForSelector": [
+            "form",
+            "#new_payroll",
+            ".payroll-form",
+            "select[name='payroll[work_contract_id]']"
+          ],
+          "insertAfterText": "5. Hacer clic en **\"Crear Planillas\"**."
         }
       ]
     },

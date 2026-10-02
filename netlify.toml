@@ -34,6 +34,13 @@
   to = "/ventas/configuraciones/operaciones-de-gateway"
   status = 301
 
+# Permanent redirect when the payroll runs tutorial was split into
+# "Nóminas no pagadas", "Nóminas pagadas" y "Nóminas individuales".
+[[redirects]]
+  from = "/nominas/corridas-de-nomina"
+  to = "/nominas/nominas"
+  status = 301
+
 # Docusaurus emits clean, extension-less URLs (e.g. /webapps instead of
 # /webapps.html), so we let Netlify serve the static files as-is and
 # fall back to the pretty URL when no extension is given.

@@ -4,7 +4,7 @@ sidebar_label: "Destajos no pagados"
 sidebar_position: 3
 ---
 
-Los destajos no pagados son el trabajo registrado que todavía espera su pago: se incluirán en la próxima corrida de nómina.
+Los destajos no pagados son el trabajo registrado que todavía espera su pago: se incluirán en la próxima nómina.
 
 Para acceder a los destajos no pagados:
 

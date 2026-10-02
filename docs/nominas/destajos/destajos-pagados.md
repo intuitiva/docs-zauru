@@ -4,7 +4,7 @@ sidebar_label: "Destajos pagados"
 sidebar_position: 4
 ---
 
-Los destajos pagados son los que ya fueron incluidos en una corrida de nómina marcada como pagada. Pasan a este listado como historial y son de solo lectura.
+Los destajos pagados son los que ya fueron incluidos en una nómina pagada. Pasan a este listado como historial y son de solo lectura.
 
 Para acceder a los destajos pagados:
 

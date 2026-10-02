@@ -1,17 +1,17 @@
 ---
-title: "Nominas"
-sidebar_label: "Nominas"
+title: "Nóminas"
+sidebar_label: "Nóminas"
 sidebar_position: 0
 ---
 
-Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado con pagar a su equipo: contratos de trabajo, destajos, incidencias, tiempo personal, corridas de nómina y reportes. Da igual si sus empleados ganan por jornal o por tarea (destajo): aquí conviven ambos esquemas y cada pieza puede configurarse según cómo trabaja su empresa. Incluye las siguientes funcionalidades:
+Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado con pagar a su equipo: contratos de trabajo, destajos, incidencias, tiempo personal, nóminas y reportes. Da igual si sus empleados ganan por jornal o por tarea (destajo): aquí conviven ambos esquemas y cada pieza puede configurarse según cómo trabaja su empresa. Incluye las siguientes funcionalidades:
 
 ## Configuracion
 
 1. **Configuraciones generales**: establecimiento del ciclo de pago, calendarios de nomina (mensual, quincenal, catorcenal, semanal), umbrales de alerta, parametros de calculo de tiempo personal, parametros de liquidacion por despido y renuncia, y control de generacion de partidas contables.
 2. **Puestos de trabajo**: creacion y gestion de puestos con tipo de pago (asalariado o destajo), frecuencia de pago, horas de trabajo, cuentas contables para salario, horas extra, comisiones y bonificacion, y asignacion de beneficios y deducciones por defecto.
 3. **Beneficios y deducciones**: configuracion de percepciones y deducciones con porcentajes, montos fijos, formulas, cuentas contables, umbrales de salario, ciclos fuera de nomina (anual, semestral, trimestral, bimestral) y montos flexibles editables por el usuario.
-4. **Metodos de pago**: configuracion de cuentas contables para pago individual de empleados y pago consolidado de corridas de nomina.
+4. **Metodos de pago**: configuracion de cuentas contables para pago individual de empleados y pago consolidado de nóminas.
 5. **Tipos de incidencia**: definicion de categorias de incidencias con descuentos por monto, porcentaje o formula, incluyendo descuento como dias de tiempo personal.
 6. **Tipos de tiempo personal**: definicion de categorias de tiempo personal (vacaciones, enfermedad, etc.).
 7. **[Tipos de destajo](/nominas/destajos/tipos-de-destajo)**: definicion de tareas por destajo con valor unitario, unidad de medida, cuenta contable y configuracion de bonificacion.
@@ -25,7 +25,7 @@ Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado
 ## Destajos
 
 11. **[Destajos no pagados](/nominas/destajos/destajos-no-pagados)**: creación y gestión de tareas por destajo con asignación de empleados, tipos de destajo, cantidades y supervisor. Las filas se agregan con el botón "+".
-12. **[Destajos pagados](/nominas/destajos/destajos-pagados)**: consulta de destajos que ya han sido incluidos en corridas de nomina pagadas.
+12. **[Destajos pagados](/nominas/destajos/destajos-pagados)**: consulta de destajos que ya han sido incluidos en nóminas pagadas.
 13. **[Destajos de feriado](/nominas/destajos/destajos-de-feriado)**: generación de destajos para un día de asueto a partir de los destajos de la semana anterior.
 
 ## Incidencias
@@ -36,19 +36,19 @@ Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado
 ## Tiempo personal
 
 16. **Solicitudes de tiempo personal**: creacion, edicion, aprobacion, rechazo y consulta de solicitudes de tiempo personal con flujo de trabajo completo (en proceso, aprobado, rechazado, gozado).
-17. **Saldos de tiempo personal**: consulta de saldos de tiempo personal por empleado, con historial de movimientos que incluye solicitudes, incidencias y corridas de nomina.
+17. **Saldos de tiempo personal**: consulta de saldos de tiempo personal por empleado, con historial de movimientos que incluye solicitudes, incidencias y nóminas.
 
-## Corridas de nomina
+## Nóminas
 
-18. **Corridas de nomina no pagadas**: creacion manual o generacion automatica de corridas de nomina segun calendario configurado (mensual, quincenal, catorcenal, semanal), con flujo de aprobacion y pago. Incluye corridas fuera de ciclo para beneficios anuales, semestrales, trimestrales y bimestrales.
-19. **Corridas de nomina pagadas**: consulta de corridas ya pagadas con opcion de revertir pago.
-20. **Nominas individuales**: creacion, edicion y consulta de la nomina de cada empleado dentro de una corrida, con calculo automatico de salario, horas extra, jornada nocturna, comisiones, bonificacion, beneficios, deducciones e incidencias. Incluye generacion de partidas contables, impresion de boletas y descarga de PDF.
-21. **Llenado de beneficios flexibles**: ingreso manual de montos variables para beneficios y deducciones marcados como flexibles, con procesamiento asincrono.
+18. **[Nóminas no pagadas](/nominas/nominas/nominas-no-pagadas)**: creación manual o generación automática de la nómina del periodo según el calendario configurado (mensual, quincenal, catorcenal o semanal), con flujo de aprobación y pago. Incluye nóminas fuera de ciclo para beneficios anuales, semestrales, trimestrales y bimestrales.
+19. **[Nóminas pagadas](/nominas/nominas/nominas-pagadas)**: consulta de las nóminas ya pagadas con opción de des-pagar.
+20. **[Nóminas individuales](/nominas/nominas/nominas-individuales)**: consulta, creación, edición e impresión de la nómina de cada empleado dentro de la nómina del periodo, con cálculo automático de salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios, deducciones e incidencias. Incluye generación de partidas contables, impresión de boletas y descarga de PDF.
+21. **[Llenado de beneficios y deducciones flexibles](/nominas/nominas/nominas-no-pagadas#llenar-beneficios-y-deducciones-flexibles)**: ingreso manual de montos variables para beneficios y deducciones marcados como flexibles, con procesamiento asíncrono.
 
 ## Reportes
 
-22. **Reportes de destajos**: valores semanales por empleado, costos semanales por tipo, tareas por empleado en rango de fechas, empleados por tarea, matriz de empleados x tipos de destajo, cantidades diarias y costos de destajos en corrida de nomina.
-23. **Reportes de nomina**: consolidado de nominas por corrida con desglose de beneficios y deducciones, desglose diario, historial de empleado entre fechas (consolidado y detallado), totales de beneficios/deducciones por agencia.
+22. **Reportes de destajos**: valores semanales por empleado, costos semanales por tipo, tareas por empleado en rango de fechas, empleados por tarea, matriz de empleados x tipos de destajo, cantidades diarias y costos de destajos en la nómina.
+23. **Reportes de nomina**: consolidado de nóminas con desglose de beneficios y deducciones, desglose diario, historial de empleado entre fechas (consolidado y detallado), totales de beneficios/deducciones por agencia.
 24. **Reportes de conciliacion contable**: destajos sin partida, nominas sin partida, totales de pago sin conciliar, totales de costo sin conciliar, partidas faltantes en destajos e incidencias no descontadas correctamente.
 25. **Libro de salarios**: reporte completo de salarios por empleado en un rango de fechas.
 26. **Incidencias por tipo**: listado de incidencias agrupadas por tipo entre fechas.
@@ -56,4 +56,4 @@ Cuando llega la quincena o fin de mes, este módulo resuelve todo lo relacionado
 ## Impresion
 
 27. **Impresion de boletas**: plantillas de impresion para nominas individuales, con soporte de descarga de PDF.
-28. **Impresion masiva**: generacion de PDF para todas las nominas de una corrida o para las de la agencia del usuario, con procesamiento asincrono y seguimiento de progreso.
+28. **Impresion masiva**: generación de PDF para todas las nóminas de una nómina o para las de la locación del usuario, con procesamiento asíncrono y seguimiento de progreso.

@@ -68,7 +68,7 @@ En el listado, hacer clic en la incidencia. El detalle muestra:
 
 ## Borrar una incidencia
 
-En el detalle de la incidencia, hacer clic en **"Borrar"**. Solo se pueden borrar incidencias que no hayan sido incluidas en una corrida de nomina pagada.
+En el detalle de la incidencia, hacer clic en **"Borrar"**. Solo se pueden borrar incidencias que no hayan sido incluidas en una nómina pagada.
 
 ## Importacion masiva de incidencias
 
@@ -79,13 +79,13 @@ Si al cierre del día tiene una pila de llegadas tarde de toda la cuadrilla, ano
 3. Seleccionar el archivo con los datos de incidencias.
 4. Hacer clic en **"Importar"**.
 
-El sistema procesa el archivo y crea las incidencias correspondientes. Las incidencias importadas apareceran en el listado de incidencias y se aplicaran en la siguiente corrida de nomina que incluya al empleado.
+El sistema procesa el archivo y crea las incidencias correspondientes. Las incidencias importadas aparecerán en el listado de incidencias y se aplicarán en la siguiente nómina que incluya al empleado.
 
-## Relacion con corridas de nomina
+## Relación con las nóminas
 
-Cuando se procesa una corrida de nomina, el sistema busca las incidencias de cada empleado que esten dentro del rango de fechas de la corrida y aplica los descuentos correspondientes. Los descuentos aparecen como deducciones en el detalle de la nomina del empleado.
+Cuando se procesa una nómina, el sistema busca las incidencias de cada empleado que estén dentro del rango de fechas de la nómina y aplica los descuentos correspondientes. Los descuentos aparecen como deducciones en el detalle de la nómina del empleado.
 
-Con las incidencias registradas, los descuentos se aplicarán solos cuando se procese la corrida de nómina que cubra esas fechas. Si cada periodo maneja muchas incidencias, la importación masiva se convertirá en su mejor aliada para no dejar ninguna fuera.
+Con las incidencias registradas, los descuentos se aplicarán solos cuando se procese la nómina que cubra esas fechas. Si cada periodo maneja muchas incidencias, la importación masiva se convertirá en su mejor aliada para no dejar ninguna fuera.
 
 ## API (llamadas desde sistemas externos)
 

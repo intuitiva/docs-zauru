@@ -17,8 +17,8 @@ Para gestionar beneficios y deducciones:
 
 Cuando su lista ya es larga —IGSS, bonos, préstamos, viáticos—, estos filtros le ayudan a ver solo lo que necesita en cada momento. El listado permite filtrar por ámbito de aplicación:
 
-- **En ciclo**: beneficios/deducciones que aplican en corridas de nomina regulares.
-- **Fuera de ciclo**: beneficios/deducciones que aplican en corridas fuera de ciclo (anuales, semestrales, etc.).
+- **En ciclo**: beneficios/deducciones que aplican en nóminas regulares.
+- **Fuera de ciclo**: beneficios/deducciones que aplican en nóminas fuera de ciclo (anuales, semestrales, etc.).
 - **Tiempo personal**: beneficios/deducciones que aplican sobre pagos de tiempo personal.
 - **Inactivos**: beneficios/deducciones desactivados.
 
@@ -85,7 +85,7 @@ En el detalle, hacer clic en **"Borrar"**. Solo se pueden borrar beneficios/dedu
 
 Si el cálculo que necesita no cabe en un porcentaje ni en un monto fijo, una fórmula personalizada puede resolverlo. Las fórmulas permiten cálculos personalizados para beneficios y deducciones. Se escriben usando la sintaxis de formulas del sistema. Las formulas se configuran en el modulo de configuracion general del sistema, no en el modulo de nominas. Al crear un beneficio/deduccion, se puede seleccionar una formula existente.
 
-Con sus beneficios y deducciones configurados, cada corrida de nómina los aplicará sola, tanto al empleado como a la empresa. El siguiente paso natural es asignarlos a sus puestos de trabajo, para que cada contrato nuevo los herede sin trabajo extra.
+Con sus beneficios y deducciones configurados, cada nómina los aplicará sola, tanto al empleado como a la empresa. El siguiente paso natural es asignarlos a sus puestos de trabajo, para que cada contrato nuevo los herede sin trabajo extra.
 
 ## API (llamadas desde sistemas externos)
 

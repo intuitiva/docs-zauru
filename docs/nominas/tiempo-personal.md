@@ -161,7 +161,7 @@ En el listado, hacer clic en el empleado para ver el historial completo:
 - **Historial de movimientos**: tabla con cada movimiento que afecta el saldo:
   - Solicitudes de tiempo personal (dias gozados).
   - Incidencias que descuentan dias de tiempo personal.
-  - Corridas de nomina que incluyen pagos de tiempo personal.
+  - Nóminas que incluyen pagos de tiempo personal.
   - Cada movimiento muestra la fecha, tipo, descripcion, dias sumados/restados y saldo resultante.
 
 Con las solicitudes y saldos al día, cada ausencia quedará registrada con su aprobación y su pago correspondiente. Cuando el empleado disfrute sus días, marque la solicitud como gozada y el saldo se ajustará solo: así el historial siempre contará la misma historia que la realidad.

@@ -13,8 +13,8 @@ Para acceder a las configuraciones generales de nomina:
 
 ## Parametros del ciclo de pago
 
-- **Inicio del ciclo de pago**: fecha desde la cual el sistema comienza a calcular los ciclos de nomina. Todas las corridas generadas automaticamente parten de esta fecha.
-- **Mostrar proximas corridas con dias de anticipacion**: cantidad de dias antes de la fecha de inicio para mostrar las corridas programadas en la lista de acciones.
+- **Inicio del ciclo de pago**: fecha desde la cual el sistema comienza a calcular los ciclos de nomina. Todas las nóminas generadas automáticamente parten de esta fecha.
+- **Mostrar próximas nóminas con días de anticipación**: cantidad de días antes de la fecha de inicio para mostrar las nóminas programadas en la lista de acciones.
 
 ## Calendarios de pago
 
@@ -64,10 +64,10 @@ Cuando termina un contrato, el sistema no solo calcula la indemnizacion: tambien
 - **Cuenta de gasto de indemnizacion**: cuenta contable donde se registra el gasto de la indemnizacion (por lo general una cuenta tipo "Indemnizacion" o "Terminacion de empleado"). Suele coincidir con la cuenta de liquidacion.
 - **Cuenta de tiempo personal (PTO)**: cuenta contable donde se registra el pago de los dias de tiempo personal pendientes al terminar el contrato.
 - **Forzar metodo de pago de nomina en la terminacion**: metodo de pago que se usara para pagar la liquidacion (ej. cheque o banco). Si se deja en blanco, el sistema usa el metodo de pago por defecto configurado en el contrato de trabajo.
-- **Manejo del ultimo pago de nomina en la terminacion**: define si el ultimo salario, las incidencias, el tiempo personal y los beneficios se pagan dentro de la liquidacion de la terminacion o en la proxima corrida de nomina:
+- **Manejo del ultimo pago de nomina en la terminacion**: define si el ultimo salario, las incidencias, el tiempo personal y los beneficios se pagan dentro de la liquidacion de la terminacion o en la próxima nómina:
 
-  - **Incluir salario, incidencias, tiempo personal y beneficios en el pago de la terminacion de contrato**: todo se liquida de inmediato al terminar el contrato. El empleado queda excluido de la proxima corrida de nomina.
-  - **Incluir salario, incidencias, tiempo personal y beneficios en la proxima nomina**: el empleado se incluye en la proxima corrida de nomina regular para recibir ese pago. El valor por defecto es liquidar en la terminacion.
+  - **Incluir salario, incidencias, tiempo personal y beneficios en el pago de la terminacion de contrato**: todo se liquida de inmediato al terminar el contrato. El empleado queda excluido de la próxima nómina.
+  - **Incluir salario, incidencias, tiempo personal y beneficios en la proxima nomina**: el empleado se incluye en la próxima nómina regular para recibir ese pago. El valor por defecto es liquidar en la terminacion.
 
 Esta configuracion afecta directamente lo que muestra el detalle de la terminacion del contrato (ver seccion "Terminar un contrato de trabajo" en Contratos de trabajo).
 
@@ -78,4 +78,4 @@ Esta configuracion afecta directamente lo que muestra el detalle de la terminaci
 
 Las configuraciones quedan almacenadas a nivel de entidad. Si no existen configuraciones previas, el formulario las crea automaticamente al guardar.
 
-Con esta base lista, el módulo de nóminas está listo para trabajar: el siguiente paso es crear sus puestos de trabajo y sus beneficios y deducciones. Y si algún día cambian las políticas de la empresa, conviene volver aquí primero, porque un ajuste a tiempo evita sorpresas en la corrida de fin de mes.
+Con esta base lista, el módulo de nóminas está listo para trabajar: el siguiente paso es crear sus puestos de trabajo y sus beneficios y deducciones. Y si algún día cambian las políticas de la empresa, conviene volver aquí primero, porque un ajuste a tiempo evita sorpresas en la nómina de fin de mes.
