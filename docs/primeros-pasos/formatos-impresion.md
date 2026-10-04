@@ -4,170 +4,147 @@ sidebar_label: "Formatos de Impresión (Plantillas)"
 sidebar_position: 5
 ---
 
-Cuando necesita imprimir sobre papelería especial — chequeras, facturas pre impresas, recibos o cotizaciones —, la plantilla correcta hace que cada dato caiga exactamente en su casilla. Zauru le permite crear plantillas de impresión para cualquier documento que usted necesite, entre ellos:
+Zauru permite imprimir sobre papelería preimpresa mediante plantillas de impresión. Los tipos de documento disponibles son:
 
-- Facturas pre impresas.
-- Cheque.
-- Cheque-Voucher.
-- Contraseña de Pago.
+- Facturas preimpresas.
+- Cheques.
+- Cheque-voucher.
+- Contraseña de pago.
 - Recibo.
 - Memo.
 - Cotización.
 - Envío.
 - Formularios.
 
-En las siguientes imágenes se ejemplificara la creación de un formato de impresión para cheques, la forma de hacer una nueva plantilla de impresión es la siguiente:
-
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar la pestaña de “Plantillas de Impresión”.
-4. Presionar “Nueva Plantilla de Impresión”.
-
-![imagen1](/img/primeros-pasos/formatos-impresion-1.jpg)
-
-Le debera aparecer las opciones para crear una nueva plantilla de impresión, en estas opciones usted debera especificar el tamaño de la hoja y la cantidad de columnas que tiene el encabezado, el cuerpo y el pie de pagina de su plantilla de impresion. Las opciones mas relevantes a colocar son las siguientes:
-
-a. Si quita el cheque en esta opción la plantilla de impresión no estará activada para usarse.
-
-b. Seleccione que tipo de operación ira ligada a esta plantilla de impresión, en este ejemplo se selecciono “Transacciones”, porque los cheques se hacen desde transacciones, si usted quiere hacer un formato de impresión de facturas deberá seleccionar “Facturas no Pagadas” en este campo.
-
-c. Si selecciona esta opción su formato de impresión tendrá un campo disponible para colocarle titulo.
-
-![imagen2](/img/primeros-pasos/formatos-impresion-2.png)
-
-d. Si selecciona este campo su formato de impresión tendrá un campo para colocar un subtitulo.
-
-e. Si selecciona este campo podrá incluir un logo en el formato de impresión, abajo aparecen las opciones para configurar el ancho y alto del logo y la posición en la que debe aparecer en la hoja.
-
-f. Si selecciona esta opción podrá incluir un segundo logo en la plantilla de impresión.
-
-g. Aquí debe seleccionar la ubicación de la imagen que quiere utilizar para el logo.
-
-![imagen3](/img/primeros-pasos/formatos-impresion-3.png)
-
-h. Esta campo permite configurar la cantidad de filas y columnas que llevara la cabecera, se puede incluir un titulo en la cabecera y también se le pueden poner bordes a las filas y columnas. Las filas y columnas deben ser especificadas por usted y también puede colocarle un titulo a la fila o columna, solo debe marcar el recuadro de “Titulo”.
-
-En ese ejemplo, solo necesitamos 2 columnas y 4 filas para hacer una impresión de cheque, en otros formatos de impresión puede que sea necesario tener mas filas y columnas.
-
-i. Aquí deberá colocar el espacio en cm. entre el encabezado y el cuerpo.
-
-j. Este campo permite configurar la cantidad de columnas que llevara el cuerpo. Se le puede incluir un titulo al cuerpo, al igual que un titulo a las columnas. Si selecciona “Pie de Página” le permitirá tener una fila mas en el cuerpo, generalmente el pie de página en el cuerpo se utiliza para colocar el total en letras y el total de un formato de impresión.
-
-![imagen4](/img/primeros-pasos/formatos-impresion-4.jpg)
-
-k. Aquí deberá colocar el espacio en cm. entre el cuerpo y el pie de página.
-
-L. Este campo permite configurar la cantidad de filas y columnas que lleva el pie de página.  Para que se incluya el pie de página en la hoja debe seleccionar el cheque de “Incluye Pie de Página”. Se puede incluir un título en el pie de pagina, o un titulo en la fila o columna. También se le puede colocar bordes a las filas y columnas.
-
-m. Si selecciona esta opción tendrá una ultima fila al final de la impresión para poder agregar datos, generalmente esta opción sirve para agregar espacio para firmas o para términos y condiciones en el formato de impresión.
-
-n. Aquí puede seleccionar cuantas impresiones quiere que salgan por página, en ciertos casos, como en la impresión de facturas, se debe imprimir dos o tres copias, una copia al cliente, una al contador y una para registro de la empresa.  También puede colocar la brecha en cm. entre estas impresiones.
-
-Por ultimo seleccione “Crear Plantilla de impresión” para guardar los cambios efectuados.
-
-![imagen5](/img/primeros-pasos/formatos-impresion-5.jpg)
-
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue creada exitosamente. El siguiente paso para configurar su plantilla es editas los datos que llevara.
-
-Para editar los datos refiérase al paso 1 de la imágen.
-
-![imagen6](/img/primeros-pasos/formatos-impresion-6.jpg)
-
-## Editar datos de la Plantilla de Impresion
-Después de establecer las medidas de su plantilla de impresión debe establecer el espacio de sus filas y columnas y los datos que llevara dentro de cada casilla. En la siguiente imagen se muestra los datos que debería de llevar una plantilla de impresión de cheques.
-
-Los pasos para colocar datos son los siguientes:
-
-1. En esta tabla encontrara todos los campos que son permitidos en la plantilla de impresión que esta realizando. Los campos que tienen una X son campos que se pueden colocar en cualquier parte de la plantilla, los campos que tienen un cheque, solo se pueden colocar en la primer fila del cuerpo, son datos repetibles, como la cantidad, el precio o el precio unitario.
-2. Debe colocar el alto y el ancho de sus filas y columnas.
-3. Dentro de cada celda debe colocar las variables establecidas en la tabla de la derecha, con un signo de dólar ($) al principio o también puede colocar texto plano en la celda, en este ejemplo se le coloca NO NEGOCIABLE a la celda porque queremos que nuestra plantilla de impresión de cheques siempre imprima este texto.
-
-![imagen7](/img/primeros-pasos/formatos-impresion-7.jpg)
-
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue creada exitosamente. Le recomendamos que antes de comenzar a imprimir sobre sus cheques o facturas reales, haga pruebas sobre una hoja en blanco para ver si su plantilla necesita modificaciones.
-
-En el recuadro de “Tareas Especiales” aparecen tres iconos, el primero es una vista previa de la plantilla de impresión. El segundo es para editar los datos de la plantilla y el tercero es para duplicar la plantilla de impresión. En el siguiente ejemplo se mostrara como duplicar la plantilla de impresión.
-
-![imagen8](/img/primeros-pasos/formatos-impresion-8.jpg)
-
-## Duplicar una plantilla de impresión
-Hay veces en las que queremos tener dos plantillas de impresión muy parecidas, pero con ciertos datos distintos, para no tener que hacer una nueva plantilla de impresión desde cero, Zauru le permite duplicar una plantilla de impresión existente para que pueda editar datos en la copia y mantener la plantilla existente a la vez.
-
-La forma de duplicar un plantilla de impresión es la siguiente.
-
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar el botón de “Duplicar”.
-
-![imagen9](/img/primeros-pasos/formatos-impresion-9.jpg)
-
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue duplicada exitosamente. Zauru le creara una plantilla de impresión con el mismo nombre pero con la palabra “copia” al final. Ahora podrá editar esta copia y hacerle las modificaciones que usted desee sin alterar la plantilla de impresión original.
-
-El ultimo paso para poder imprimir es adjuntar la plantilla de impresión a una Impresión de Documentos, en el siguiente ejemplo se mostrara como adjuntarla para poder imprimir.
-
-![imagen10](/img/primeros-pasos/formatos-impresion-10.jpg)
-
-## Impresión de Documentos
-Después de crear y modificar la plantilla de impresión, se debe adjuntar a una impresión de documentos para seleccionar en que tipo de transacción se podrá imprimir con esta plantilla de impresión. También se pueden agregar ciertas restricciones para la impresión de documentos, por ejemplo, si es un cheque, que la transacción sea imprimible y salga desde la cuenta monetaria para que se pueda imprimir con esta plantilla de impresión.
-
-Los pasos para crear una impresión de documentos son los siguientes:
-
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar “Impresión de Documentos”.
-4. Seleccionar “Nueva impresión de Documentos”.
-
-![imagen11](/img/primeros-pasos/formatos-impresion-11.jpg)
-
-Le aparecerán las opciones para crear una nueva impresión de documentos, los pasos a seguir son los siguientes:
-
-1. Si desea que esta impresión este activa, deje el cheque en el recuadro, para desactivarla quite el cheque.
-2. Seleccione desde que operación se usara la impresión de documentos, en este ejemplo seleccionamos “Transacciones” porque los cheques se hacen desde transacciones contables. Presione refrescar para que Zauru despliegue las plantillas de impresión que están creadas desde esa operación.
-3. Seleccione la plantilla de impresión creada anteriormente que quiere utilizar.
-4. En este campo puede agregar las restricciones que usted desee para que se pueda usar esta impresión de documentos. En este ejemplo agregamos la restricción “Imprimible” para que cada vez que se haga una transacción con el cheque de Imprimible seleccionado, despliegue la impresión de documentos de cheque.
-5. Si usted selecciona el cheque le dará valor a esta restricción, si deja el cheque en blanco, la impresión de documentos aparecerá en cualquier transacción.
-
-![imagen12](/img/primeros-pasos/formatos-impresion-12.jpg)
-
-Ahora agregaremos una restricción para que solo salga la impresión de documentos si es desde la cuenta monetaria, la manera de hacer es la siguiente:
-
-6. Seleccionar la restricción de “Cuenta” y presionar “Agregar Restricción”.
-
-7. Seleccionar la cuenta a la que desea aplicar la restricción, en este ejemplo se selecciona la cuenta monetaria para que cuando se haga una transacción contable desde la cuenta monetaria, que sea imprimible, aparezca la impresión de documentos.
-
-8. Aquí podrá colocar una nota de la impresión de documentos. Es opcional y no aparecerá al momento de imprimir.
-
-9. Seleccione  “Crear impresión de documento” para guardar los cambios.
-
-![imagen13](/img/primeros-pasos/formatos-impresion-13.jpg)
-
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la impresión de documento se creo exitosamente.
-
-![imagen14](/img/primeros-pasos/formatos-impresion-14.jpg)
-
-
----
-
-## Vista Previa en PDF
-
-Zauru le permite generar una vista previa en PDF de su plantilla de impresión para verificar cómo se verá el documento final antes de imprimirlo. Para generar la vista previa:
+## Crear una plantilla de impresión
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Plantillas".
 3. Seleccionar la pestaña "Plantillas de Impresión".
-4. En el listado, hacer click en el icono de "Vista Previa PDF" en la plantilla deseada.
+4. Presionar "Nueva Plantilla de Impresión".
 
-El sistema generará un archivo PDF con datos de ejemplo para que pueda verificar el diseño, la disposición de los campos y las medidas configuradas.
+![imagen1](/img/primeros-pasos/formatos-impresion-1.jpg)
 
-## Grupos en Plantillas de Impresión para Formularios
+El formulario de creación solicita:
 
-Zauru permite asociar grupos de formularios a plantillas de impresión. Esto es útil cuando un formulario tiene grupos dinámicos y usted desea que la plantilla de impresión muestre correctamente los datos agrupados. Al crear o editar una plantilla de impresión, puede seleccionar los grupos de formulario que se utilizarán para estructurar la salida impresa.
+- **Activo**: si se desmarca, la plantilla no se puede usar.
+- **Operación**: operación a la que se liga la plantilla. Para cheques, seleccionar "Transacciones"; para facturas, "Facturas no Pagadas".
+- **Nombre**: nombre con el que se identifica la plantilla.
+- **Fuente** y **tamaño de letra**: tipografía del texto impreso.
+- **Ancho**, **alto**, **margen superior**, **margen izquierdo** y **píxeles por cm**: medidas de la hoja y del área de impresión.
+- **Incluye título** e **incluye subtítulo**: agregan un título y un subtítulo al documento.
+- **Incluye logo** e **incluye segundo logo**: imprimen el logo y el segundo logo de la empresa, con ancho y alto en píxeles y posición en centímetros.
+- **Imagen**: imagen de la plantilla con su ancho, alto y posición. En la posición 0, 0 se imprime como fondo de la hoja.
+- **Encabezado**: filas, columnas, títulos de fila y columna, y bordes.
+- **Espacio entre encabezado y cuerpo**: separación en centímetros.
+- **Cuerpo**: columnas y títulos de columna. La opción "Pie de Página" agrega una fila al final del cuerpo para totales.
+- **Espacio entre cuerpo y pie de página**: separación en centímetros.
+- **Pie de página**: filas, columnas, títulos y bordes.
+- **Pie de página final**: última fila al final de la impresión para firmas o términos y condiciones.
+- **Impresiones por página** y **brecha entre impresiones**: copias por hoja y separación en centímetros entre ellas.
+- **Notas**: comentario interno; no se imprime.
 
-Con la plantilla creada, sus datos ordenados y la impresión de documentos adjuntada, ya puede imprimir desde la transacción correspondiente. Le recomendamos hacer una prueba en hoja en blanco antes de imprimir sobre sus chequeras o papelería oficial, y ajustar las medidas si algo no cae exactamente donde debe.
+Presionar "Crear Plantilla de Impresión" para guardar.
+
+![imagen2](/img/primeros-pasos/formatos-impresion-2.png)
+
+![imagen3](/img/primeros-pasos/formatos-impresion-3.png)
+
+![imagen4](/img/primeros-pasos/formatos-impresion-4.jpg)
+
+![imagen5](/img/primeros-pasos/formatos-impresion-5.jpg)
+
+## Editar los datos de la plantilla
+
+1. En el listado, hacer click en el icono "Editar Datos" de la plantilla.
+2. Colocar el alto y ancho de las filas y columnas.
+3. Escribir en cada celda una variable del panel "Variables de Impresión" con el signo `$` al inicio (por ejemplo `$payee_name`) o texto fijo (por ejemplo `NO NEGOCIABLE`).
+
+Las variables marcadas en la columna "Exclusivo del cuerpo" se colocan en la primera fila del cuerpo y se repiten en cada línea del documento, como cantidad, precio o precio unitario.
+
+Al guardar, Zauru confirma la actualización. Antes de imprimir sobre chequeras o papelería real, hacer una prueba en una hoja en blanco.
+
+![imagen6](/img/primeros-pasos/formatos-impresion-6.jpg)
+
+![imagen7](/img/primeros-pasos/formatos-impresion-7.jpg)
+
+En la columna "Tareas Especiales" del listado hay iconos para:
+
+- "Vista Previa": abre la plantilla.
+- "Vista Previa con Variables": muestra el nombre de las variables en la plantilla.
+- "Vista Previa PDF": genera la plantilla en PDF. Solo aparece en plantillas de cotizaciones, facturas no pagadas, notas de crédito, contratos activos y casos.
+- "Editar Datos": abre la edición de filas y celdas.
+- "Duplicar": crea una copia de la plantilla.
+
+![imagen8](/img/primeros-pasos/formatos-impresion-8.jpg)
+
+## Duplicar una plantilla de impresión
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. En la columna "Tareas Especiales", hacer click en "Duplicar".
+
+Zauru crea una copia con el mismo nombre y la palabra "copia" al final. La plantilla original no se modifica.
+
+![imagen9](/img/primeros-pasos/formatos-impresion-9.jpg)
+
+## Impresión de documentos
+
+La impresión de documentos define en qué operación y bajo qué restricciones se usa una plantilla de impresión.
+
+![imagen10](/img/primeros-pasos/formatos-impresion-10.jpg)
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. Seleccionar "Impresión de Documentos".
+4. Presionar "Nueva Impresión de Documentos".
+
+El formulario solicita:
+
+- **Activo**: si se desmarca, la impresión no se usa.
+- **Operación**: operación donde estará disponible. Presionar "Actualizar" para desplegar las plantillas de esa operación.
+- **Plantilla de impresión**: plantilla creada para esa operación.
+- **Nueva restricción** y **Agregar Restricción**: condiciones para que la impresión aparezca, por ejemplo "Imprimible" o una cuenta monetaria. En las restricciones de casilla, marcarla exige que la transacción cumpla la condición.
+- **Notas**: opcional; no aparece al imprimir.
+
+Presionar "Crear Impresión de Documento" para guardar. La plantilla aparecerá al imprimir desde la operación cuando se cumplan las restricciones.
+
+![imagen11](/img/primeros-pasos/formatos-impresion-11.jpg)
+
+![imagen12](/img/primeros-pasos/formatos-impresion-12.jpg)
+
+![imagen13](/img/primeros-pasos/formatos-impresion-13.jpg)
+
+![imagen14](/img/primeros-pasos/formatos-impresion-14.jpg)
+
+## Grupos en plantillas de formularios
+
+Las plantillas de la operación "Formularios" pueden asociarse a los grupos del formulario. Al crear o editar la plantilla, seleccionar los grupos para que la impresión muestre los datos agrupados.
+
+---
 
 ## API (llamadas desde sistemas externos)
 
-### Obtener listado de plantillas de impresión
+Todas las llamadas usan la URL base `https://app.zauru.com` y los encabezados `X-User-Email` y `X-User-Token`.
+
+| Método | Ruta | Uso |
+| --- | --- | --- |
+| GET | `/settings/templates/print_templates.json` | Listar plantillas de impresión. |
+| GET | `/settings/templates/print_templates/{id}.json` | Ver una plantilla. |
+| POST | `/settings/templates/print_templates.json` | Crear una plantilla. |
+| PATCH | `/settings/templates/print_templates/{id}.json` | Actualizar una plantilla. |
+| DELETE | `/settings/templates/print_templates/{id}.json` | Eliminar una plantilla. |
+| GET | `/settings/templates/print_templates/{id}/duplicate.json` | Duplicar una plantilla. |
+| GET | `/settings/templates/print_templates/{id}/edit_data.json` | Obtener filas y celdas para editar. |
+| PATCH | `/settings/templates/print_templates/{id}/update_data.json` | Actualizar filas y celdas. |
+| GET | `/settings/templates/document_prints.json` | Listar impresiones de documentos. |
+| GET | `/settings/templates/document_prints/{id}.json` | Ver una impresión de documento. |
+| POST | `/settings/templates/document_prints.json` | Crear una impresión de documento. |
+| PUT | `/settings/templates/document_prints/{id}.json` | Actualizar una impresión de documento. |
+| DELETE | `/settings/templates/document_prints/{id}.json` | Eliminar una impresión de documento. |
+
+Ejemplo del listado de plantillas:
+
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -177,707 +154,23 @@ curl -v \
   https://app.zauru.com/settings/templates/print_templates.json
 ```
 
-Esto devolverá un JSON similar a este:
+Respuesta (campos principales):
+
 ```json
 [
-  {
-    "id": 1,
-    "operation_id": 2,
-    "updater_id": 3,
-    "zid": 4,
-    "active": true,
-    "name": "facturas oficina para distribuidor con descuento (Imprime solo Descuento Extra)",
-    "font_family": "Helvetica, Arial, sans-serif",
-    "font_size": "12",
-    "width": 21.6,
-    "height": 8.8,
-    "top_margin": 2.6,
-    "left_margin": 1.3,
-    "pixels_per_cm": 43,
-    "title": false,
-    "title_string": null,
-    "entity_id": 5,
-    "subtitle": false,
-    "subtitle_string": null,
-    "logo": false,
-    "logo_width": 100,
-    "logo_height": 100,
-    "logo_left": 12.5,
-    "logo_top": 3.5,
-    "logo2": false,
-    "logo2_width": 200,
-    "logo2_height": 200,
-    "logo2_left": 3.5,
-    "logo2_top": 20.5,
-    "image": {
-      "url": null
-    },
-    "image_width": 300,
-    "image_height": 300,
-    "image_left": 1.5,
-    "image_top": 1.5,
-    "header": true,
-    "header_border": 0,
-    "header_title": false,
-    "header_title_string": null,
-    "header_row_titles": false,
-    "header_rows": 4,
-    "header_column_titles": false,
-    "header_columns": 4,
-    "header_body_gap": 1.1,
-    "body_border": 0,
-    "body_title": false,
-    "body_title_string": null,
-    "body_column_titles": false,
-    "body_columns": 3,
-    "body_footer": true,
-    "footer_body_gap": 0.8,
-    "footer": true,
-    "footer_border": 0,
-    "footer_title": false,
-    "footer_title_string": null,
-    "footer_row_titles": false,
-    "footer_rows": 1,
-    "footer_column_titles": false,
-    "footer_columns": 4,
-    "page_footer": false,
-    "page_footer_string": null,
-    "prints_per_page": 3,
-    "prints_gap": 0.6,
-    "notes": "",
-    "created_at": "2017-04-18T16:49:30.449Z",
-    "updated_at": "2017-04-18T16:50:13.297Z",
-    "body_special_reconciliations_over_splits": false,
-    "variable_height_body": false,
-    "image_half_size_double_dpi": false,
-    "form_id": null,
-    "form_version": 0,
-    "body_special_pieceworks_over_payroll_details": false
-  },
   {
     "id": 6,
     "operation_id": 2,
-    "updater_id": 7,
-    "zid": 8,
     "active": true,
     "name": "facturas oficina para distribuidor",
-    "font_family": "Helvetica, Arial, sans-serif",
-    "font_size": "12",
     "width": 21.6,
     "height": 8.8,
-    "top_margin": 2.6,
-    "left_margin": 1.3,
-    "pixels_per_cm": 43,
-    "title": false,
-    "title_string": null,
-    "entity_id": 5,
-    "subtitle": false,
-    "subtitle_string": null,
-    "logo": false,
-    "logo_width": 100,
-    "logo_height": 100,
-    "logo_left": 12.5,
-    "logo_top": 3.5,
-    "logo2": false,
-    "logo2_width": 200,
-    "logo2_height": 200,
-    "logo2_left": 3.5,
-    "logo2_top": 20.5,
-    "image": {
-      "url": null
-    },
-    "image_width": 300,
-    "image_height": 300,
-    "image_left": 1.5,
-    "image_top": 1.5,
     "header": true,
-    "header_border": 0,
-    "header_title": false,
-    "header_title_string": null,
-    "header_row_titles": false,
-    "header_rows": 4,
-    "header_column_titles": false,
-    "header_columns": 4,
-    "header_body_gap": 1.1,
-    "body_border": 0,
-    "body_title": false,
-    "body_title_string": null,
-    "body_column_titles": false,
     "body_columns": 3,
-    "body_footer": false,
-    "footer_body_gap": 0.8,
     "footer": true,
-    "footer_border": 0,
-    "footer_title": false,
-    "footer_title_string": null,
-    "footer_row_titles": false,
-    "footer_rows": 1,
-    "footer_column_titles": false,
-    "footer_columns": 4,
-    "page_footer": false,
-    "page_footer_string": null,
-    "prints_per_page": 3,
-    "prints_gap": 0.6,
-    "notes": "",
-    "created_at": "2014-03-20T15:11:38.191Z",
-    "updated_at": "2017-04-03T18:34:23.927Z",
-    "body_special_reconciliations_over_splits": false,
-    "variable_height_body": false,
-    "image_half_size_double_dpi": false,
-    "form_id": null,
-    "form_version": 0,
-    "body_special_pieceworks_over_payroll_details": false
+    "prints_per_page": 3
   }
 ]
 ```
 
-### Obtener detalle de una plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/templates/print_templates/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "5002",
-  "operation_id": "1577",
-  "updater_id": "214",
-  "zid": "6",
-  "active": true,
-  "name": "Envio OT",
-  "font_family": "Helvetica, Arial, sans-serif",
-  "font_size": "14",
-  "width": "21.59",
-  "height": "27.94",
-  "top_margin": "0",
-  "left_margin": "0.8",
-  "pixels_per_cm": "42",
-  "title": false,
-  "title_string": null,
-  "entity_id": "1303",
-  "subtitle": false,
-  "subtitle_string": null,
-  "logo": false,
-  "logo_width": "100",
-  "logo_height": "100",
-  "logo_left": "12.5",
-  "logo_top": "3.5",
-  "logo2": false,
-  "logo2_width": "200",
-  "logo2_height": "200",
-  "logo2_left": "3.5",
-  "logo2_top": "20.5",
-  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
-  "image_width": "2119",
-  "image_height": "2718",
-  "image_left": "0",
-  "image_top": "0",
-  "header": true,
-  "header_border": "0",
-  "header_title": false,
-  "header_title_string": null,
-  "header_row_titles": false,
-  "header_rows": "7",
-  "header_column_titles": false,
-  "header_columns": "3",
-  "header_body_gap": "0",
-  "body_border": "0",
-  "body_title": false,
-  "body_title_string": null,
-  "body_column_titles": true,
-  "body_columns": "3",
-  "body_footer": true,
-  "footer_body_gap": "0",
-  "footer": true,
-  "footer_border": "0",
-  "footer_title": false,
-  "footer_title_string": null,
-  "footer_row_titles": false,
-  "footer_rows": "7",
-  "footer_column_titles": false,
-  "footer_columns": "8",
-  "page_footer": false,
-  "page_footer_string": null,
-  "prints_per_page": "1",
-  "prints_gap": "0",
-  "notes": null,
-  "created_at": "2026-06-23 14:53:13.710213",
-  "updated_at": "2026-06-23 14:54:13.877052",
-  "body_special_reconciliations_over_splits": false,
-  "variable_height_body": false,
-  "image_half_size_double_dpi": true,
-  "form_id": null,
-  "form_version": "0",
-  "body_special_pieceworks_over_payroll_details": false
-}
-```
-
-### Crear plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "print_template": {
-      "name": "Plantilla de Factura",
-      "operation_id": "1",
-      "active": true,
-      "width": "21",
-      "height": "29.7",
-      "pixels_per_cm": "37.8"
-    }
-  }' \
-  https://app.zauru.com/settings/templates/print_templates.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "5002",
-  "operation_id": "1577",
-  "updater_id": "214",
-  "zid": "6",
-  "active": true,
-  "name": "Envio OT",
-  "font_family": "Helvetica, Arial, sans-serif",
-  "font_size": "14",
-  "width": "21.59",
-  "height": "27.94",
-  "top_margin": "0",
-  "left_margin": "0.8",
-  "pixels_per_cm": "42",
-  "title": false,
-  "title_string": null,
-  "entity_id": "1303",
-  "subtitle": false,
-  "subtitle_string": null,
-  "logo": false,
-  "logo_width": "100",
-  "logo_height": "100",
-  "logo_left": "12.5",
-  "logo_top": "3.5",
-  "logo2": false,
-  "logo2_width": "200",
-  "logo2_height": "200",
-  "logo2_left": "3.5",
-  "logo2_top": "20.5",
-  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
-  "image_width": "2119",
-  "image_height": "2718",
-  "image_left": "0",
-  "image_top": "0",
-  "header": true,
-  "header_border": "0",
-  "header_title": false,
-  "header_title_string": null,
-  "header_row_titles": false,
-  "header_rows": "7",
-  "header_column_titles": false,
-  "header_columns": "3",
-  "header_body_gap": "0",
-  "body_border": "0",
-  "body_title": false,
-  "body_title_string": null,
-  "body_column_titles": true,
-  "body_columns": "3",
-  "body_footer": true,
-  "footer_body_gap": "0",
-  "footer": true,
-  "footer_border": "0",
-  "footer_title": false,
-  "footer_title_string": null,
-  "footer_row_titles": false,
-  "footer_rows": "7",
-  "footer_column_titles": false,
-  "footer_columns": "8",
-  "page_footer": false,
-  "page_footer_string": null,
-  "prints_per_page": "1",
-  "prints_gap": "0",
-  "notes": null,
-  "created_at": "2026-06-23 14:53:13.710213",
-  "updated_at": "2026-06-23 14:54:13.877052",
-  "body_special_reconciliations_over_splits": false,
-  "variable_height_body": false,
-  "image_half_size_double_dpi": true,
-  "form_id": null,
-  "form_version": "0",
-  "body_special_pieceworks_over_payroll_details": false
-}
-```
-
-### Actualizar plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PATCH \
-  -d '{
-    "print_template": {
-      "name": "Plantilla de Factura Actualizada"
-    }
-  }' \
-  https://app.zauru.com/settings/templates/print_templates/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "5002",
-  "operation_id": "1577",
-  "updater_id": "214",
-  "zid": "6",
-  "active": true,
-  "name": "Envio OT",
-  "font_family": "Helvetica, Arial, sans-serif",
-  "font_size": "14",
-  "width": "21.59",
-  "height": "27.94",
-  "top_margin": "0",
-  "left_margin": "0.8",
-  "pixels_per_cm": "42",
-  "title": false,
-  "title_string": null,
-  "entity_id": "1303",
-  "subtitle": false,
-  "subtitle_string": null,
-  "logo": false,
-  "logo_width": "100",
-  "logo_height": "100",
-  "logo_left": "12.5",
-  "logo_top": "3.5",
-  "logo2": false,
-  "logo2_width": "200",
-  "logo2_height": "200",
-  "logo2_left": "3.5",
-  "logo2_top": "20.5",
-  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
-  "image_width": "2119",
-  "image_height": "2718",
-  "image_left": "0",
-  "image_top": "0",
-  "header": true,
-  "header_border": "0",
-  "header_title": false,
-  "header_title_string": null,
-  "header_row_titles": false,
-  "header_rows": "7",
-  "header_column_titles": false,
-  "header_columns": "3",
-  "header_body_gap": "0",
-  "body_border": "0",
-  "body_title": false,
-  "body_title_string": null,
-  "body_column_titles": true,
-  "body_columns": "3",
-  "body_footer": true,
-  "footer_body_gap": "0",
-  "footer": true,
-  "footer_border": "0",
-  "footer_title": false,
-  "footer_title_string": null,
-  "footer_row_titles": false,
-  "footer_rows": "7",
-  "footer_column_titles": false,
-  "footer_columns": "8",
-  "page_footer": false,
-  "page_footer_string": null,
-  "prints_per_page": "1",
-  "prints_gap": "0",
-  "notes": null,
-  "created_at": "2026-06-23 14:53:13.710213",
-  "updated_at": "2026-06-23 14:54:13.877052",
-  "body_special_reconciliations_over_splits": false,
-  "variable_height_body": false,
-  "image_half_size_double_dpi": true,
-  "form_id": null,
-  "form_version": "0",
-  "body_special_pieceworks_over_payroll_details": false
-}
-```
-
-### Eliminar plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X DELETE \
-  https://app.zauru.com/settings/templates/print_templates/1.json
-```
-
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
-
-### Duplicar plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/templates/print_templates/1/duplicate.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "status": "ok"
-}
-```
-
-### Obtener datos para editar una plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/templates/print_templates/1/edit_data.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "5002",
-  "operation_id": "1577",
-  "updater_id": "214",
-  "zid": "6",
-  "active": true,
-  "name": "Envio OT",
-  "font_family": "Helvetica, Arial, sans-serif",
-  "font_size": "14",
-  "width": "21.59",
-  "height": "27.94",
-  "top_margin": "0",
-  "left_margin": "0.8",
-  "pixels_per_cm": "42",
-  "title": false,
-  "title_string": null,
-  "entity_id": "1303",
-  "subtitle": false,
-  "subtitle_string": null,
-  "logo": false,
-  "logo_width": "100",
-  "logo_height": "100",
-  "logo_left": "12.5",
-  "logo_top": "3.5",
-  "logo2": false,
-  "logo2_width": "200",
-  "logo2_height": "200",
-  "logo2_left": "3.5",
-  "logo2_top": "20.5",
-  "image": "image/upload/v1782226453/DESARROLLOSARQUBOSOCIEDADANNIMA/print_template/print_template_6_f4datq2yzghsvbswfgi9.png",
-  "image_width": "2119",
-  "image_height": "2718",
-  "image_left": "0",
-  "image_top": "0",
-  "header": true,
-  "header_border": "0",
-  "header_title": false,
-  "header_title_string": null,
-  "header_row_titles": false,
-  "header_rows": "7",
-  "header_column_titles": false,
-  "header_columns": "3",
-  "header_body_gap": "0",
-  "body_border": "0",
-  "body_title": false,
-  "body_title_string": null,
-  "body_column_titles": true,
-  "body_columns": "3",
-  "body_footer": true,
-  "footer_body_gap": "0",
-  "footer": true,
-  "footer_border": "0",
-  "footer_title": false,
-  "footer_title_string": null,
-  "footer_row_titles": false,
-  "footer_rows": "7",
-  "footer_column_titles": false,
-  "footer_columns": "8",
-  "page_footer": false,
-  "page_footer_string": null,
-  "prints_per_page": "1",
-  "prints_gap": "0",
-  "notes": null,
-  "created_at": "2026-06-23 14:53:13.710213",
-  "updated_at": "2026-06-23 14:54:13.877052",
-  "body_special_reconciliations_over_splits": false,
-  "variable_height_body": false,
-  "image_half_size_double_dpi": true,
-  "form_id": null,
-  "form_version": "0",
-  "body_special_pieceworks_over_payroll_details": false
-}
-```
-
-### Actualizar datos de una plantilla de impresión
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PATCH \
-  -d '{
-    "print_template": {
-      "print_template_rows_attributes": [
-        {"title": "Encabezado", "size": "3"}
-      ],
-      "print_template_cells_attributes": [
-        {"title": "Nombre", "value": "$payee_name"}
-      ]
-    }
-  }' \
-  https://app.zauru.com/settings/templates/print_templates/1/update_data.json
-```
-
-### Obtener listado de impresiones de documentos
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/templates/document_prints.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-[
-  {
-    "id": "4119",
-    "zid": "2",
-    "active": true,
-    "operation_id": "436",
-    "print_template_id": "4857",
-    "notes": null,
-    "updater_id": "214",
-    "entity_id": "1303",
-    "created_at": "2026-03-05 17:35:47.490994",
-    "updated_at": "2026-03-05 17:35:47.490994",
-    "document_constraints_count": "0"
-  }
-]
-```
-
-### Obtener detalle de una impresión de documento
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/templates/document_prints/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "4119",
-  "zid": "2",
-  "active": true,
-  "operation_id": "436",
-  "print_template_id": "4857",
-  "notes": null,
-  "updater_id": "214",
-  "entity_id": "1303",
-  "created_at": "2026-03-05 17:35:47.490994",
-  "updated_at": "2026-03-05 17:35:47.490994",
-  "document_constraints_count": "0"
-}
-```
-
-### Crear impresión de documento
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "document_print": {
-      "active": true,
-      "operation_id": "1",
-      "print_template_id": "1",
-      "notes": "Impresión para facturas"
-    }
-  }' \
-  https://app.zauru.com/settings/templates/document_prints.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "4119",
-  "zid": "2",
-  "active": true,
-  "operation_id": "436",
-  "print_template_id": "4857",
-  "notes": null,
-  "updater_id": "214",
-  "entity_id": "1303",
-  "created_at": "2026-03-05 17:35:47.490994",
-  "updated_at": "2026-03-05 17:35:47.490994",
-  "document_constraints_count": "0"
-}
-```
-
-### Actualizar impresión de documento
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
-  -d '{
-    "document_print": {
-      "active": true,
-      "print_template_id": "2"
-    }
-  }' \
-  https://app.zauru.com/settings/templates/document_prints/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "4119",
-  "zid": "2",
-  "active": true,
-  "operation_id": "436",
-  "print_template_id": "4857",
-  "notes": null,
-  "updater_id": "214",
-  "entity_id": "1303",
-  "created_at": "2026-03-05 17:35:47.490994",
-  "updated_at": "2026-03-05 17:35:47.490994",
-  "document_constraints_count": "0"
-}
-```
-
-### Eliminar impresión de documento
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X DELETE \
-  https://app.zauru.com/settings/templates/document_prints/1.json
-```
-
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+Las operaciones de escritura (`POST`, `PATCH`, `PUT` y `DELETE`) usan los mismos campos del formulario: `name`, `operation_id`, `active`, medidas y secciones. Al eliminar, Zauru responde `204 No Content`.
