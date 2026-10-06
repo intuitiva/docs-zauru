@@ -13,11 +13,17 @@ Para crear un caso:
 
 Complete los campos:
 
-- **Sujeto a Impuestos**: selecciónelo para emitir factura; déjelo en blanco para emitir un recibo.
-- **Síntoma**: motivo por el que se registra el caso.
-- **Cliente**: nombre del cliente; a este nombre saldrá la factura o el recibo.
-- **Números de serie**: números de serie que el cliente haya comprado.
-- **Productos y servicios**: agréguelos con el código de barras, el código manual, o selecciónelos de la lista y especifique la cantidad.
+a. **Sujeto a Impuestos**: selecciónelo para emitir factura; déjelo en blanco para emitir un recibo.
+
+b. **Síntoma**: motivo por el que se registra el caso.
+
+c. **Cliente**: nombre del cliente; a este nombre saldrá la factura o el recibo.
+
+d. **Números de serie**: números de serie que el cliente haya comprado.
+
+e. Agregue productos o servicios con el código de barras o el código manual.
+
+f. Si no usa códigos, seleccione los productos o servicios de la lista y especifique la cantidad.
 
 Presione "Guardar".
 
