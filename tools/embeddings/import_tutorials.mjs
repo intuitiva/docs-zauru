@@ -247,7 +247,7 @@ async function fetchEmbedding(url, content) {
     response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content }),
+      body: JSON.stringify({ input: content }),
       signal: AbortSignal.timeout(120_000),
     });
   } catch (error) {
