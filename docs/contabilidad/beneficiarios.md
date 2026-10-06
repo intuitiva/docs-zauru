@@ -8,7 +8,8 @@ Cada vez que le vende a un cliente nuevo o le compra a un proveedor por primera 
 
 ## Listado de beneficiarios
 
-El listado de beneficiarios permite filtrar por:
+El listado de beneficiarios permite consultar y filtrar las personas o empresas registradas en Zauru. Los filtros disponibles son:
+
 - **Todos**: muestra todos los beneficiarios.
 - **Clientes**: muestra solo los beneficiarios marcados como compradores.
 - **Proveedores**: muestra solo los beneficiarios marcados como vendedores.
@@ -17,6 +18,8 @@ El listado de beneficiarios permite filtrar por:
 También se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas.
 
 ![Listado de beneficiarios con filtros Todos, Clientes, Proveedores y Clientes y Proveedores](/img/contabilidad/beneficiarios-1.png)
+
+En el listado se puede buscar por nombre, referencia, NIT, dirección, teléfono, correo electrónico y categoría de beneficiario. La búsqueda admite coincidencias parciales y similitud (trigram).
 
 ## Crear un nuevo beneficiario
 
@@ -31,37 +34,36 @@ Los pasos para crear un nuevo beneficiario son:
 ### Campos del beneficiario
 
 - **Nombre**: nombre de la persona o empresa.
-- **Referencia**: texto de referencia interna para identificar al beneficiario.
+- **Referencia**: nombre común o apodo con el que identifica al beneficiario.
 - **Es proveedor**: marcar si el beneficiario es proveedor de bienes o servicios.
-- **Es proveedor de servicios**: marcar si es específicamente proveedor de servicios.
+- **Tipo de proveedor**: al marcar "Es proveedor", elegir si es proveedor de bienes o de servicios.
 - **Es cliente**: marcar si el beneficiario es cliente.
 - **Categoría de beneficiario**: clasificación del beneficiario (ej. nacional, extranjero, empleado, etc.).
 - **NIT**: número de identificación tributaria.
 - **Moneda**: moneda en la que opera el beneficiario.
 - **Etiquetas**: etiquetas para clasificar y filtrar al beneficiario.
-- **Término de pago por defecto**: plazo de pago que se asigna automáticamente en transacciones.
+- **Término de pago por defecto**: plazo de pago que se asigna automáticamente en transacciones. Se muestra al marcar "Es cliente".
+- **DPI**: documento personal de identificación (para personas individuales).
 
 ### Datos fiscales
 
 - **Exento**: marcar si el beneficiario está exento de IVA.
 - **Pequeño contribuyente**: marcar si aplica el régimen de pequeño contribuyente.
 - **Gran contribuyente**: marcar si es gran contribuyente.
-- **Cliente para exportación**: marcar si es un cliente en el extranjero.
-- **Registro tributario**: número de registro fiscal extendido.
+- **Registro tributario**: número de registro fiscal extendido (solo El Salvador).
+- **Actividad económica**: giro o actividad del beneficiario (solo El Salvador).
 
-### Datos de contacto y ubicacion
+### Datos de contacto y ubicación
 
 - **Dirección** (línea 1 y 2): dirección física del beneficiario.
-- **País**: país de residencia fiscal.
+- **País**: país de residencia fiscal. Se muestra al marcar "Es extranjero".
 - **Ciudad**: ciudad de ubicación.
-- **Actividad económica**: giro o actividad del beneficiario.
 - **Teléfono**: número de contacto.
 - **Correo electrónico**: email de contacto.
 - **Página web**: sitio web del beneficiario.
 - **Contacto**: nombre de la persona de contacto.
 - **Teléfono del contacto**: teléfono directo del contacto.
 - **Email del contacto**: correo del contacto.
-- **DPI**: documento personal de identificación (para personas individuales).
 - **Es extranjero**: marcar si el beneficiario es del extranjero.
 
 ### Documentos y notas
@@ -77,7 +79,8 @@ Los beneficiarios pueden tener formularios personalizados asociados, que permite
 ## Ver detalle del beneficiario
 
 Al ver el detalle de un beneficiario se muestra:
-- Toda la informacion registrada del beneficiario.
+
+- La información registrada del beneficiario.
 - El listado de transacciones contables asociadas a este beneficiario.
 - Los formularios personalizados enviados para este beneficiario.
 
@@ -94,22 +97,7 @@ Al ver el detalle de un beneficiario se muestra:
 
 ## Numeración automática
 
-Los beneficiarios pueden tener numeración automática configurada en el sistema para asignarles un ID único secuencial.
-
-## Filtros y búsqueda
-
-En el listado de beneficiarios puede buscar por:
-- Nombre
-- Referencia
-- NIT
-- Dirección
-- Teléfono
-- Email
-- Categoría de beneficiario
-
-La búsqueda utiliza coincidencias parciales con soporte para búsqueda por similitud (trigram).
-
-Con su listado de beneficiarios completo y bien clasificado, cada transacción que registre quedará asociada a la persona o empresa correcta, y podrá filtrar sus movimientos por cliente o proveedor cuando lo necesite. El siguiente paso natural es crear las cuentas contables donde se registrarán esas transacciones.
+Si la numeración automática de documentos está configurada, el campo "Número de beneficiario" se asigna automáticamente con un ID único secuencial.
 
 ## API (llamadas desde sistemas externos)
 
@@ -332,7 +320,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener el formulario de edicion de un beneficiario
+### Obtener el formulario de edición de un beneficiario
 ```bash
 curl -v \
   -H "Accept: application/json" \

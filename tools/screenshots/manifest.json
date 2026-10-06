@@ -855,7 +855,7 @@
     {
       "section": "contabilidad",
       "slug": "beneficiarios",
-      "docPath": "docs/contabilidad/beneficiarios/index.md",
+      "docPath": "docs/contabilidad/beneficiarios.md",
       "existingImageCount": 0,
       "shots": [
         {
@@ -868,7 +868,7 @@
             "#payees-index",
             ".dataTables_wrapper"
           ],
-          "insertAfterText": "Tambien se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas."
+          "insertAfterText": "También se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas."
         },
         {
           "stepNumber": 2,

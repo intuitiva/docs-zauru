@@ -107,6 +107,18 @@ const config = {
             to: "/contabilidad/cuentas-contables/tipificar-las-cuentas-de-egresos-gastos-o-costos",
             from: "/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos",
           },
+          {
+            to: "/contabilidad/beneficiarios",
+            from: "/contabilidad/beneficiarios/listado-de-beneficiarios",
+          },
+          {
+            to: "/contabilidad/beneficiarios",
+            from: "/contabilidad/beneficiarios/crear-un-nuevo-beneficiario",
+          },
+          {
+            to: "/contabilidad/beneficiarios",
+            from: "/contabilidad/beneficiarios/editar-un-beneficiario",
+          },
         ],
       },
     ],
