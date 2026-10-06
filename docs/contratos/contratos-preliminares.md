@@ -51,27 +51,8 @@ Las moras son un proceso complejo. Lo más complejo es describir la mora correct
 7. __Tasa de interés__: Es la referencia de la tasa de interés para las fórmulas de moras. También se puede expresar en diferentes medidas de periodicidad.
 
 ### Fórmulas en el detalle de los contratos y las transacciones asociadas
-Las fórmulas son una de las partes más complejas y versátiles que tiene el sistema para calcular montos en los detalles de las facturas y en las transacciones asociadas de las facturas generadas.
 
-Tenemos varias fórmulas básicas que ayudan a calcular capital e interés de una cuota nivelada. Estas fórmulas se pueden utilizar en el detalle de los contratos y las transacciones asociadas. Algunas fórmulas que ya manejamos, ideal para empresas que dan préstamos u ofrecen leasing:
-
-1. __Conversión de $ a moneda local del item__: Me convierte el número en el precio unitario/costo unitario que está en $ en su equivalente en la moneda local y lo sustituye en el precio unitario del documento generado. Ejemplo: Si el precio unitario dice 10, cantidad 2 y el tipo de cambio el día que se genera la cuota es 8.00 el precio unitario que generará será 80.00 y el precio de la linea 160.00.
-2. __PMT de anualidad (cuota nivelada)__: Utiliza la función de *pago* (excel en español) o *pmt* (excel en inglés) de una cuota nivelada (constante) y en una tasa de interés constante para conocer el monto del pago períodico. Los parámetros son: la tasa de interés con su temporalidad ([Ver referencia punto 11](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias)), el número de cuotas menos las cuotas iniciales extrañas ([Ver referencias punto 4 y 5](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias)), monto del contrato menos el anticipo ([Ver referencia punto 9 y 10](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias))
-3. __Diferencia de saldos de capital entre períodos (capital a pagar)__: Calcula el monto de capital que conforma la cuota nivelada (constante) en una cuota específica. Utiliza como parámetros: la cuota actual y todos los parámetros de la cuota nivelada (PMT de anualidad).
-4. __Diferencia de cuota nivelada y capital a pagar (intereses)__: Calcula el monto de intereses que conforma la cuota nivelada (constante) en una cuota específica. Utiliza como parámetros: la cuota actual y todos los parámetros de la cuota nivelada (PMT de anualidad).
-
-Hay muchas más fórmulas que se pueden utilizar y cada vez agregamos nuevas para poder utilizar con clientes nuevos.
-
-#### Tipos de Fórmulas Disponibles
-
-Las fórmulas están categorizadas según su uso:
-
-1. __Fórmulas para Detalles del Contrato (contract_details)__: Se aplican a los items/bundles del contrato para calcular precios unitarios dinámicos.
-2. __Fórmulas para Entradas Extra (extra_entries)__: Se aplican a las entradas adicionales del término de pago.
-3. __Fórmulas para Splits Extra (extra_splits)__: Se aplican a los desgloses contables adicionales.
-4. __Fórmulas para Moras (arrears)__: Se aplican al cálculo de montos de mora.
-
-NOTA: Las transacciones asociadas a los documentos generados solo aplican al generar FACTURAS, no aplican para ordenes de venta, ni casos, ni ordenes de compra.
+Los contratos pueden calcular montos por su cuenta usando fórmulas, por ejemplo para cuotas niveladas de préstamos o leasing. Es un tema amplio, así que lo separamos en su propio tutorial: [Fórmulas de Contratos](https://docs.zauru.com/contratos/formulas-de-contratos).
 
 ## Crear Contratos
 
