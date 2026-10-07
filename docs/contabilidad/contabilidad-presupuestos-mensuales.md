@@ -670,7 +670,7 @@ curl -v \
 
 En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
-## API de presupuestos por categoria de etiqueta (llamadas desde sistemas externos)
+## API de presupuestos por categoría de etiqueta (llamadas desde sistemas externos)
 
 ### Obtener los datos del grafico jerarquico de un presupuesto por categoria
 ```bash

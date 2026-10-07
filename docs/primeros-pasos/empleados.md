@@ -64,7 +64,7 @@ Le deberán aparecer las opciones para crear una nueva categoría de empleado, l
 
 ![Nueva categoría de empleado](/img/primeros-pasos/empleados-6.png)
 
-### API (llamadas desde sistemas externos)
+## API (llamadas desde sistemas externos)
 
 #### Obtener listado del empleado
 ```bash
@@ -713,7 +713,7 @@ Al visualizar los detalles de un empleado, Zauru le mostrará los formularios pe
 
 Ya creó sus empleados, los organizó en categorías y, si lo necesitaba, los importó desde Excel. Ahora puede seleccionarlos en las transacciones según sus responsabilidades; si aún no ha creado las agencias a las que los asignará, ese es el siguiente paso natural.
 
-## API (llamadas desde sistemas externos)
+## API de categorías, exportación e importación de empleados (llamadas desde sistemas externos)
 
 ### Obtener listado de categorías de empleados
 ```bash

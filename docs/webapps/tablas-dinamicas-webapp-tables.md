@@ -56,7 +56,7 @@ Cada columna admite uno de estos tipos de datos:
 
 Al editar una tabla existente se pueden agregar columnas nuevas, renombrarlas, cambiar su tipo y eliminarlas. Los cambios se aplican a los registros existentes: las columnas renombradas conservan sus datos, las columnas nuevas quedan con valor vacío y al eliminar una columna se borran sus datos en todos los registros. La eliminación pide confirmación y no se puede deshacer.
 
-## Uso de la API
+## API (llamadas desde sistemas externos)
 
 Como en todos los casos, aquí también tenemos acceso a una API para gestionar todo en relación al CRUD de las webapp tables y sus registros.
 
@@ -313,7 +313,7 @@ curl -v \
   https://app.zauru.com/apps/webapp_tables/1/create_rowables.json
 ```
 
-## API de Filas (Webapp Rows)
+## API de filas de webapp tables (llamadas desde sistemas externos)
 
 Las filas de una webapp table se gestionan a través de rutas anidadas.
 

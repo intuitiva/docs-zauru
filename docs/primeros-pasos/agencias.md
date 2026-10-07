@@ -107,7 +107,7 @@ Le deberán aparecer las opciones para crear una nueva categoría de agencias, l
 
 Ha creado su agencia y, si lo deseaba, la ha organizado dentro de una categoría. Con esto, su bodega, punto de venta, taller o fábrica queda listo para registrar movimientos de productos y ventas; cuando tenga empleados registrados, podrá asignarlos como encargados de cada agencia.
 
-### API (llamadas desde sistemas externos)
+## API (llamadas desde sistemas externos)
 
 #### Obtener listado de la agencias
 ```bash

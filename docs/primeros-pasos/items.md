@@ -769,7 +769,7 @@ Los datos exportados incluyen: código, nombre, categoría, marca, etiquetas, es
 
 Al visualizar los detalles de un ítem, Zauru le mostrará los formularios personalizados que tenga asociados para el tipo de documento "Ítem". También podrá ver el historial de formularios enviados (submissions) relacionados con ese ítem.
 
-## API (llamadas desde sistemas externos)
+## API de marcas, súper categorías, importación y exportación de ítems (llamadas desde sistemas externos)
 
 ### Obtener listado de marcas
 ```bash

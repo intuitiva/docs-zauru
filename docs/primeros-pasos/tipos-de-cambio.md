@@ -114,20 +114,6 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-
-
-## Exportar Tipos de Cambio
-
-Zauru le permite exportar su historial de tipos de cambio en formato CSV o XLS. Para exportar:
-
-1. Ir a "Configuraciones".
-2. Seleccionar "Tipos de Cambio".
-3. Seleccionar el formato de exportación deseado (CSV o XLS).
-
-Los datos exportados incluyen: fecha, moneda de origen, tipo de cambio, moneda de destino, fuente, usuario que creó y fecha de creación.
-
-Con su historial de tipos de cambio al día, las conversiones en facturas y cobros se harán siempre con la referencia correcta. Recuerde actualizar el tipo de cambio cada vez que la moneda se mueva; también puede exportar el historial en CSV o XLS cuando necesite revisarlo fuera de Zauru.
-
 ### Exportar vía API
 
 ```bash
@@ -165,3 +151,15 @@ Esto devolverá un JSON similar a este:
   "updated_at": "2013-01-08T16:54:55.991Z"
 }
 ```
+
+## Exportar Tipos de Cambio
+
+Zauru le permite exportar su historial de tipos de cambio en formato CSV o XLS. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Tipos de Cambio".
+3. Seleccionar el formato de exportación deseado (CSV o XLS).
+
+Los datos exportados incluyen: fecha, moneda de origen, tipo de cambio, moneda de destino, fuente, usuario que creó y fecha de creación.
+
+Con su historial de tipos de cambio al día, las conversiones en facturas y cobros se harán siempre con la referencia correcta. Recuerde actualizar el tipo de cambio cada vez que la moneda se mueva; también puede exportar el historial en CSV o XLS cuando necesite revisarlo fuera de Zauru.

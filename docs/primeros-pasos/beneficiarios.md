@@ -469,7 +469,7 @@ Zauru le permite exportar su listado de beneficiarios en formato CSV, XLS o JSON
 
 Si tiene un filtro de etiquetas activo, la exportación incluirá solamente los beneficiarios de esa etiqueta.
 
-## API (llamadas desde sistemas externos)
+## API de consulta y administración de beneficiarios (llamadas desde sistemas externos)
 
 ### Obtener listado de beneficiarios
 ```bash

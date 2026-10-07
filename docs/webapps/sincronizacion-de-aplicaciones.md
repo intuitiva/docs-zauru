@@ -177,7 +177,7 @@ curl -v \
   https://app.zauru.com/apps/app_syncs/1/refresh_status.json
 ```
 
-## API de IDs Pendientes de Sincronizar
+## API de IDs pendientes de sincronizar (llamadas desde sistemas externos)
 
 ### Obtener listado de IDs pendientes
 ```bash
