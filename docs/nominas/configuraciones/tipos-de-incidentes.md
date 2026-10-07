@@ -1,44 +1,44 @@
 ---
-title: "Tipos de incidencia"
-sidebar_label: "Tipos de incidencia"
+title: "Tipos de incidentes"
+sidebar_label: "Tipos de incidentes"
 sidebar_position: 5
 ---
 
-Cuando alguien llega tarde o falta, el descuento no se inventa en el momento: se calcula según el tipo de incidencia que usted configuró. Los tipos de incidencia definen esas categorías (llegadas tarde, ausencias, faltas) y cómo se calcula el descuento para cada tipo, ya sea por monto fijo, porcentaje o fórmula.
+Cuando alguien llega tarde o falta, el descuento no se inventa en el momento: se calcula según el tipo de incidente que usted configuró. Los tipos de incidentes definen esas categorías (llegadas tarde, ausencias, faltas) y cómo se calcula el descuento para cada tipo, ya sea por monto fijo, porcentaje o fórmula.
 
-Para gestionar tipos de incidencia:
+Para gestionar tipos de incidentes:
 
 1. Ir a **"Nominas"**.
-2. En **"Settings"**, seleccionar **"Tipos de incidencia"**.
+2. En **"Settings"**, seleccionar **"Tipos de incidentes"**.
 
-## Crear un tipo de incidencia
+## Crear un tipo de incidente
 
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
-![Formulario de nuevo tipo de incidencia](/img/nominas/configuraciones-de-nomina-7.png)
+![Formulario de nuevo tipo de incidente](/img/nominas/configuraciones-de-nomina-7.png)
 
 - **Activo**: marcar para que este disponible.
 - **Nombre**: nombre del tipo (ej. "Llegada tarde", "Ausencia injustificada").
-- **Categoria**: clasificacion del tipo de incidencia.
-- **Monto de descuento**: monto fijo a descontar por cada incidencia.
+- **Categoría**: clasificación del tipo de incidente.
+- **Monto de descuento**: monto fijo a descontar por cada incidente.
 - **Porcentaje de descuento**: porcentaje del salario a descontar.
 - **Formula**: formula personalizada para calcular el descuento.
 - **Cuenta contable**: cuenta donde se registra el descuento.
-- **Descuento flexible por incidencia**: si se marca, el monto del descuento es editable manualmente en cada incidencia.
-- **Descuento como dias de tiempo personal**: si se marca, la incidencia descuenta dias del saldo de tiempo personal del empleado.
+- **Descuento flexible por incidente**: si se marca, el monto del descuento es editable manualmente en cada incidente.
+- **Descuento como días de tiempo fuera personal**: si se marca, el incidente descuenta días del saldo de tiempo fuera personal del empleado.
 
 3. Hacer clic en **"Guardar"**.
 
-## Editar y borrar tipos de incidencia
+## Editar y borrar tipos de incidentes
 
-Similar a las demas configuraciones: desde el detalle del tipo de incidencia, usar los botones **"Editar"** y **"Borrar"**.
+Similar a las demas configuraciones: desde el detalle del tipo de incidente, usar los botones **"Editar"** y **"Borrar"**.
 
-Con los tipos configurados, registrar una llegada tarde o un adelanto de salario será cuestión de segundos: el sistema sabrá cuánto descontar y a qué cuenta. El paso siguiente es registrar las incidencias del día a día, para que aparezcan descontadas en la próxima nómina.
+Con los tipos configurados, registrar una llegada tarde o un adelanto de salario será cuestión de segundos: el sistema sabrá cuánto descontar y a qué cuenta. El paso siguiente es registrar los incidentes del día a día, para que aparezcan descontados en la próxima nómina.
 
 ## API (llamadas desde sistemas externos)
 
-### Listar tipos de incidencia
+### Listar tipos de incidentes
 
 ```bash
 curl -v \
@@ -97,7 +97,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-### Ver un tipo de incidencia
+### Ver un tipo de incidente
 
 ```bash
 curl -v \
@@ -133,7 +133,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener estructura para crear un tipo de incidencia
+### Obtener estructura para crear un tipo de incidente
 
 ```bash
 curl -v \
@@ -169,7 +169,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener estructura para editar un tipo de incidencia
+### Obtener estructura para editar un tipo de incidente
 
 ```bash
 curl -v \
@@ -205,7 +205,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Crear un tipo de incidencia
+### Crear un tipo de incidente
 
 ```bash
 curl -v \
@@ -251,7 +251,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Actualizar un tipo de incidencia
+### Actualizar un tipo de incidente
 
 ```bash
 curl -v \
@@ -294,7 +294,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Borrar un tipo de incidencia
+### Borrar un tipo de incidente
 
 ```bash
 curl -v \

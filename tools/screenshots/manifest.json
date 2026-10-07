@@ -2002,13 +2002,13 @@
     },
     {
       "section": "nominas",
-      "slug": "incidencias",
-      "docPath": "docs/nominas/incidencias.md",
+      "slug": "incidentes",
+      "docPath": "docs/nominas/incidentes.md",
       "existingImageCount": 1,
       "shots": [
         {
           "stepNumber": 3,
-          "caption": "Detalle de una incidencia con datos y descuento calculado",
+          "caption": "Detalle de un incidente con datos y descuento calculado",
           "zauruPath": "/payroll/incidents/:id",
           "waitForSelector": [
             "table",
@@ -2017,7 +2017,7 @@
             "main",
             "#content"
           ],
-          "insertAfterText": "En el listado, hacer clic en la incidencia. El detalle muestra:",
+          "insertAfterText": "En el listado, hacer clic en el incidente. El detalle muestra:",
           "resolveId": true
         }
       ],
@@ -2025,13 +2025,13 @@
     },
     {
       "section": "nominas",
-      "slug": "tiempo-personal",
-      "docPath": "docs/nominas/tiempo-personal.md",
-      "existingImageCount": 0,
+      "slug": "tiempo-fuera-personal",
+      "docPath": "docs/nominas/tiempo-fuera-personal.md",
+      "existingImageCount": 5,
       "shots": [
         {
           "stepNumber": 1,
-          "caption": "Listado de solicitudes de tiempo personal con estados",
+          "caption": "Listado de solicitudes de tiempo fuera personal con estados",
           "zauruPath": "/payroll/personal_time_off/personal_time_off_requests",
           "waitForSelector": [
             "table",
@@ -2043,7 +2043,7 @@
         },
         {
           "stepNumber": 2,
-          "caption": "Formulario para crear una solicitud de tiempo personal",
+          "caption": "Formulario para crear una solicitud de tiempo fuera personal",
           "zauruPath": "/payroll/personal_time_off/personal_time_off_requests/new",
           "waitForSelector": [
             "form",
@@ -2055,7 +2055,7 @@
         },
         {
           "stepNumber": 3,
-          "caption": "Detalle de una solicitud de tiempo personal",
+          "caption": "Detalle de una solicitud de tiempo fuera personal",
           "zauruPath": "/payroll/personal_time_off/personal_time_off_requests/1",
           "resolveId": true,
           "waitForSelector": [
@@ -2068,7 +2068,7 @@
         },
         {
           "stepNumber": 4,
-          "caption": "Listado de saldos de tiempo personal por empleado",
+          "caption": "Listado de saldos de tiempo fuera personal por empleado",
           "zauruPath": "/payroll/personal_time_off/personal_time_off_balances",
           "waitForSelector": [
             "table",
@@ -2076,11 +2076,11 @@
             "#balances_list",
             ".list-container"
           ],
-          "insertAfterText": "El listado muestra todos los empleados con su saldo de tiempo personal. Se puede filtrar por:"
+          "insertAfterText": "El listado muestra todos los empleados con su saldo de tiempo fuera personal. Se puede filtrar por:"
         },
         {
           "stepNumber": 5,
-          "caption": "Detalle del saldo de tiempo personal con historial",
+          "caption": "Detalle del saldo de tiempo fuera personal con historial",
           "zauruPath": "/payroll/personal_time_off/personal_time_off_balances/1",
           "resolveId": true,
           "waitForSelector": [

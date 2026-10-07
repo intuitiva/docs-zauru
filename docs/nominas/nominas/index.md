@@ -1,10 +1,10 @@
 ---
 title: "Nóminas"
 sidebar_label: "Nóminas"
-sidebar_position: 13
+sidebar_position: 4
 ---
 
-Una nómina es el registro del pago de un empleado en un periodo: salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios, deducciones e incidencias. Zauru agrupa las nóminas de todos los empleados en una nómina por periodo, la que antes se llamaba corrida de nómina.
+Una nómina es el registro del pago de un empleado en un periodo: salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios, deducciones e incidentes. Zauru agrupa las nóminas de todos los empleados en una nómina por periodo, la que antes se llamaba corrida de nómina.
 
 La agrupación cambia la forma de trabajar: en lugar de calcular, aprobar, pagar y contabilizar el pago de cada empleado por separado, la nómina del periodo incluye a todos los empleados aplicables y se procesa de una sola vez. Cada empleado conserva su nómina individual dentro de la nómina del periodo, con el detalle de cómo se calculó su pago.
 

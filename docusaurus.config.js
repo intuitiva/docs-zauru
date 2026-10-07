@@ -119,6 +119,38 @@ const config = {
             to: "/contabilidad/beneficiarios",
             from: "/contabilidad/beneficiarios/editar-un-beneficiario",
           },
+          {
+            to: "/nominas/configuraciones/configuraciones-generales-de-nomina",
+            from: "/nominas/configuraciones-generales-de-nomina",
+          },
+          {
+            to: "/nominas/configuraciones/puestos-de-trabajo",
+            from: "/nominas/puestos-de-trabajo",
+          },
+          {
+            to: "/nominas/configuraciones/beneficios-y-deducciones",
+            from: "/nominas/beneficios-y-deducciones",
+          },
+          {
+            to: "/nominas/configuraciones/metodos-de-pago",
+            from: "/nominas/metodos-de-pago",
+          },
+          {
+            to: "/nominas/configuraciones/tipos-de-incidentes",
+            from: "/nominas/tipos-de-incidencia",
+          },
+          {
+            to: "/nominas/configuraciones/tipos-de-tiempo-fuera-personal",
+            from: "/nominas/tipos-de-tiempo-personal",
+          },
+          {
+            to: "/nominas/incidentes",
+            from: "/nominas/incidencias",
+          },
+          {
+            to: "/nominas/tiempo-fuera-personal",
+            from: "/nominas/tiempo-personal",
+          },
         ],
       },
     ],

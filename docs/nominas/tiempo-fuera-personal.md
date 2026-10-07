@@ -1,42 +1,42 @@
 ---
-title: "Tiempo personal"
-sidebar_label: "Tiempo personal"
-sidebar_position: 12
+title: "Tiempo fuera personal"
+sidebar_label: "Tiempo fuera personal"
+sidebar_position: 6
 ---
 
-Cuando un empleado pide vacaciones o reporta una enfermedad, hay que saber cuántos días le quedan, aprobar la solicitud y asegurarse de que el pago llegue a su nómina. Aquí se gestiona el tiempo personal (vacaciones, enfermedad, permisos), desde la solicitud y su aprobación o rechazo hasta la consulta de saldos con historial completo.
+Cuando un empleado pide vacaciones o reporta una enfermedad, hay que saber cuántos días le quedan, aprobar la solicitud y asegurarse de que el pago llegue a su nómina. Aquí se gestiona el tiempo fuera personal (vacaciones, enfermedad, permisos), desde la solicitud y su aprobación o rechazo hasta la consulta de saldos con historial completo.
 
-## Solicitudes de tiempo personal
+## Solicitudes de tiempo fuera personal
 
-Cuando un empleado le pide una semana libre, ese pedido nace aquí como una solicitud. Las solicitudes de tiempo personal permiten a los empleados solicitar días libres y siguen un flujo de trabajo completo: en proceso, aprobado, rechazado y gozado.
+Cuando un empleado le pide una semana libre, ese pedido nace aquí como una solicitud. Las solicitudes de tiempo fuera personal permiten a los empleados solicitar días libres y siguen un flujo de trabajo completo: en proceso, aprobado, rechazado y gozado.
 
 Para acceder a las solicitudes:
 
 1. Ir a **"Nominas"**.
-2. En **"Tiempo personal"**, seleccionar **"Solicitudes"**.
+2. En **"Tiempo fuera personal"**, seleccionar **"Solicitudes"**.
 
 ### Listado de solicitudes
 
 El listado muestra todas las solicitudes con su estado:
 
-![Listado de solicitudes de tiempo personal con estados](/img/nominas/tiempo-personal-1.png)
+![Listado de solicitudes de tiempo fuera personal con estados](/img/nominas/tiempo-fuera-personal-1.png)
 
 - **En proceso** (icono azul): solicitud pendiente de aprobacion.
 - **Aprobado** (icono verde con una verificacion): solicitud aprobada pero aun no gozada.
 - **Rechazado** (icono rojo): solicitud rechazada.
 - **Gozado** (icono verde con doble verificacion): solicitud aprobada y ya gozada.
 
-Cada fila muestra: ID, empleado, tipo de tiempo personal, fecha de inicio, fecha de fin, dias solicitados y estado.
+Cada fila muestra: ID, empleado, tipo de tiempo fuera personal, fecha de inicio, fecha de fin, dias solicitados y estado.
 
-### Crear una solicitud de tiempo personal
+### Crear una solicitud de tiempo fuera personal
 
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
-![Formulario para crear una solicitud de tiempo personal](/img/nominas/tiempo-personal-2.png)
+![Formulario para crear una solicitud de tiempo fuera personal](/img/nominas/tiempo-fuera-personal-2.png)
 
 - **Empleado**: seleccionar el empleado solicitante.
-- **Tipo de tiempo personal**: seleccionar el tipo (vacaciones, enfermedad, permiso personal, etc.).
+- **Tipo de tiempo fuera personal**: seleccionar el tipo (vacaciones, enfermedad, permiso personal, etc.).
 - **Fecha de inicio**: primer dia de la ausencia.
 - **Fecha de fin**: ultimo dia de la ausencia.
 - **Dias**: cantidad de dias habiles solicitados.
@@ -51,27 +51,27 @@ La solicitud queda en estado **"En proceso"**.
 
 En el listado, hacer clic en la solicitud para ver el detalle completo:
 
-![Detalle de una solicitud de tiempo personal](/img/nominas/tiempo-personal-3.png)
+![Detalle de una solicitud de tiempo fuera personal](/img/nominas/tiempo-fuera-personal-3.png)
 
 #### Informacion general
 
 - ID de la solicitud.
 - Empleado.
-- Tipo de tiempo personal.
+- Tipo de tiempo fuera personal.
 - Fecha de inicio y fecha de fin.
 - Dias solicitados.
 - Notas.
-- Saldo de tiempo personal del empleado (enlace al historial).
+- Saldo de tiempo fuera personal del empleado (enlace al historial).
 
 #### Pago en contratos de destajo
 
-Para empleados contratados bajo la modalidad de destajo, el sistema muestra el calculo del pago de tiempo personal:
+Para empleados contratados bajo la modalidad de destajo, el sistema muestra el calculo del pago de tiempo fuera personal:
 
 - Tabla con las nominas recientes usadas para el calculo del promedio: rango de fechas de cada nomina, dias trabajados y monto.
 - Total de dias y monto considerado.
 - **Promedio diario**: resultado de dividir el monto total entre los dias.
-- **Subtotal de pago de tiempo personal**: promedio diario multiplicado por los dias de la solicitud.
-- Para cada beneficio/deduccion aplicable a tiempo personal: nombre y monto calculado.
+- **Subtotal de pago de tiempo fuera personal**: promedio diario multiplicado por los dias de la solicitud.
+- Para cada beneficio/deduccion aplicable a tiempo fuera personal: nombre y monto calculado.
 - **Total a pagar**: subtotal mas beneficios/deducciones asociados.
 
 Este calculo se basa en la cantidad de nominas recientes configurada en **"Configuraciones generales"** para el promedio diario.
@@ -130,20 +130,20 @@ En el detalle, hacer clic en **"Borrar"**. Solo se pueden borrar solicitudes que
 
 En el detalle de la solicitud, hacer clic en **"Imprimir"** para generar una version imprimible usando la plantilla configurada.
 
-## Saldos de tiempo personal
+## Saldos de tiempo fuera personal
 
-Antes de aprobar unas vacaciones, conviene mirar aquí cuántos días le quedan al empleado y por qué. Los saldos de tiempo personal muestran la cantidad de días disponibles para cada empleado y el historial de movimientos.
+Antes de aprobar unas vacaciones, conviene mirar aquí cuántos días le quedan al empleado y por qué. Los saldos de tiempo fuera personal muestran la cantidad de días disponibles para cada empleado y el historial de movimientos.
 
 Para acceder a los saldos:
 
 1. Ir a **"Nominas"**.
-2. En **"Tiempo personal"**, seleccionar **"Saldos"**.
+2. En **"Tiempo fuera personal"**, seleccionar **"Saldos"**.
 
 ### Listado de saldos
 
-El listado muestra todos los empleados con su saldo de tiempo personal. Se puede filtrar por:
+El listado muestra todos los empleados con su saldo de tiempo fuera personal. Se puede filtrar por:
 
-![Listado de saldos de tiempo personal por empleado](/img/nominas/tiempo-personal-4.png)
+![Listado de saldos de tiempo fuera personal por empleado](/img/nominas/tiempo-fuera-personal-4.png)
 
 - **Activos**: empleados con contrato activo.
 - **Terminados**: empleados con contrato terminado.
@@ -155,20 +155,20 @@ Cada fila muestra: empleado, dias disponibles, dias gozados, dias pendientes.
 
 En el listado, hacer clic en el empleado para ver el historial completo:
 
-![Detalle del saldo de tiempo personal con historial](/img/nominas/tiempo-personal-5.png)
+![Detalle del saldo de tiempo fuera personal con historial](/img/nominas/tiempo-fuera-personal-5.png)
 
 - **Saldo actual**: dias disponibles.
 - **Historial de movimientos**: tabla con cada movimiento que afecta el saldo:
-  - Solicitudes de tiempo personal (dias gozados).
-  - Incidencias que descuentan dias de tiempo personal.
-  - Nóminas que incluyen pagos de tiempo personal.
+  - Solicitudes de tiempo fuera personal (dias gozados).
+  - Incidentes que descuentan días de tiempo fuera personal.
+  - Nóminas que incluyen pagos de tiempo fuera personal.
   - Cada movimiento muestra la fecha, tipo, descripcion, dias sumados/restados y saldo resultante.
 
 Con las solicitudes y saldos al día, cada ausencia quedará registrada con su aprobación y su pago correspondiente. Cuando el empleado disfrute sus días, marque la solicitud como gozada y el saldo se ajustará solo: así el historial siempre contará la misma historia que la realidad.
 
 ## API (llamadas desde sistemas externos)
 
-### Listar solicitudes de tiempo personal
+### Listar solicitudes de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -269,7 +269,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-### Crear una solicitud de tiempo personal
+### Crear una solicitud de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -338,7 +338,7 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/approve.json
 ```
 
-### Listar saldos de tiempo personal
+### Listar saldos de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -366,9 +366,9 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-### Ver una solicitud de tiempo personal
+### Ver una solicitud de tiempo fuera personal
 
-Devuelve la solicitud con el empleado, tipo de tiempo personal y formularios asociados.
+Devuelve la solicitud con el empleado, tipo de tiempo fuera personal y formularios asociados.
 
 ```bash
 curl -v \
@@ -519,7 +519,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Actualizar una solicitud de tiempo personal
+### Actualizar una solicitud de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -575,7 +575,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Borrar una solicitud de tiempo personal
+### Borrar una solicitud de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -632,9 +632,9 @@ curl -v \
   https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1/disreject.json
 ```
 
-### Ver el saldo de tiempo personal de un empleado
+### Ver el saldo de tiempo fuera personal de un empleado
 
-Devuelve el saldo con el historial completo de movimientos (solicitudes, incidencias y nominas que afectan el saldo).
+Devuelve el saldo con el historial completo de movimientos (solicitudes, incidentes y nóminas que afectan el saldo).
 
 ```bash
 curl -v \

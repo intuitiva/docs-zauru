@@ -4,7 +4,7 @@ sidebar_label: "Nóminas individuales"
 sidebar_position: 3
 ---
 
-Cada nómina del periodo incluye una nómina por empleado: el registro de su pago en el rango de fechas. La nómina individual muestra el desglose completo del cálculo (salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios, deducciones e incidencias) y es la que se imprime o descarga como boleta de pago.
+Cada nómina del periodo incluye una nómina por empleado: el registro de su pago en el rango de fechas. La nómina individual muestra el desglose completo del cálculo (salario, horas extra, jornada nocturna, comisiones, bonificación, beneficios, deducciones e incidentes) y es la que se imprime o descarga como boleta de pago.
 
 Para llegar a una nómina individual:
 
@@ -29,9 +29,9 @@ El detalle muestra:
 - Fecha de inicio del contrato de trabajo.
 - Método de pago.
 - Días aplicables en el periodo.
-- Días de tiempo personal en el periodo.
+- Días de tiempo fuera personal en el periodo.
 
-### Detalle de beneficios, deducciones e incidencias
+### Detalle de beneficios, deducciones e incidentes
 
 Tabla principal con el desglose completo de la nómina individual. Cada fila muestra una columna de incidente (si aplica), referencia, monto empleado y monto entidad:
 
@@ -46,7 +46,7 @@ Tabla principal con el desglose completo de la nómina individual. Cada fila mue
 **Beneficios y deducciones**: cada beneficio o deducción configurado aparece como una fila con:
 
 - Nombre del beneficio o deducción.
-- Tipo de incidencia asociada (si aplica).
+- Tipo de incidente asociado (si aplica).
 - Referencia.
 - Monto del empleado (positivo para beneficios, negativo para deducciones).
 - Monto de la entidad (aporte patronal).
@@ -60,7 +60,7 @@ Tabla principal con el desglose completo de la nómina individual. Cada fila mue
 
 Para nóminas fuera de ciclo, el sistema muestra información de referencia con datos de nóminas anteriores:
 
-- **Nóminas entre fechas**: tabla con salario, horas extra, jornada nocturna, comisiones, pagos de tiempo personal, beneficios y deducciones del periodo fuera de ciclo.
+- **Nóminas entre fechas**: tabla con salario, horas extra, jornada nocturna, comisiones, pagos de tiempo fuera personal, beneficios y deducciones del periodo fuera de ciclo.
 - **Nóminas del mes anterior**: misma tabla para el mes inmediatamente anterior.
 
 Ambas tablas muestran los montos del empleado y de la entidad por separado.
@@ -81,15 +81,15 @@ Tabla con todos los destajos del empleado incluidos en esta nómina individual:
 
 Total de valores de destajo incluidos.
 
-### Tiempo personal utilizado
+### Tiempo fuera personal utilizado
 
-Tabla con las solicitudes de tiempo personal que afectan esta nómina individual:
+Tabla con las solicitudes de tiempo fuera personal que afectan esta nómina individual:
 
 - Notas de la solicitud.
 - Fecha de inicio y fin.
 - Total de días de la solicitud.
 - Días que aplican en esta nómina.
-- Monto pagado por tiempo personal.
+- Monto pagado por tiempo fuera personal.
 
 ### Partidas contables asociadas
 
@@ -122,21 +122,21 @@ Si existen plantillas de impresión configuradas para nóminas, se muestran los 
 - **Empleado**: contrato de trabajo del empleado.
 - **Método de Pago**: método de pago para esta nómina individual (por defecto, el del contrato).
 
-3. En la tabla de beneficios, deducciones e incidencias, revisar y ajustar los montos:
+3. En la tabla de beneficios, deducciones e incidentes, revisar y ajustar los montos:
 
 - **Salario**: monto calculado según el contrato y el periodo.
 - **Horas extra**: ingresar las horas trabajadas y una referencia; el sistema calcula el monto con la tarifa horaria del contrato.
 - **Jornada nocturna**: ingresar las horas nocturnas y una referencia; el sistema calcula el monto con la tarifa horaria del contrato.
 - **Comisiones por ventas**: si aplica, ingresar el monto y una referencia.
 - **Beneficios y deducciones**: cada uno aparece con su monto calculado. Si el beneficio o deducción tiene marcado **"Monto Flexible"**, el campo del monto empleado es editable.
-- **Incidencias**: las incidencias del empleado en el periodo aparecen como filas de deducción.
+- **Incidentes**: los incidentes del empleado en el periodo aparecen como filas de deducción.
 
 Usar los botones **"+"**, **"+2"** y **"+5"** para agregar filas de beneficios o deducciones adicionales. El botón **"Refrescar"** vuelve a calcular los montos.
 
 4. En **"Información Adicional"**, agregar un **"Memo"** si hace falta.
 5. Hacer clic en **"Crear Planillas"**.
 
-Al guardar, el sistema calcula todos los montos a partir del contrato, los beneficios, las deducciones y las incidencias, y genera las partidas contables correspondientes (salvo que la configuración **"NO generar partidas contables en Nóminas"** esté activa).
+Al guardar, el sistema calcula todos los montos a partir del contrato, los beneficios, las deducciones y los incidentes, y genera las partidas contables correspondientes (salvo que la configuración **"NO generar partidas contables en Nóminas"** esté activa).
 
 ## Editar una nómina individual
 
@@ -249,7 +249,7 @@ Esto devolverá un JSON similar a este:
 
 ### Ver una nómina individual
 
-Devuelve la nómina con todos sus detalles, beneficios/deducciones, destajos asociados, partidas contables y tiempo personal.
+Devuelve la nómina con todos sus detalles, beneficios/deducciones, destajos asociados, partidas contables y tiempo fuera personal.
 
 ```bash
 curl -v \
