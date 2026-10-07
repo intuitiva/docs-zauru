@@ -4,108 +4,107 @@ sidebar_label: "Crear orden de venta"
 sidebar_position: 2
 ---
 
-Cuando un cliente reserva productos para recogerlos o pagarlos más tarde, una orden de venta es la mejor manera de apartarle la mercadería sin facturar todavía. También le sirve cuando el cliente aún está decidiendo cantidades y usted quiere dejar el pedido anotado para cerrarlo después. Al guardar la orden, los productos almacenables quedan reservados para ese cliente. Los pasos para crear una nueva orden de venta desde el punto de venta son los siguientes:
+Cuando un cliente reserva productos para recogerlos o pagarlos más tarde, la orden de venta aparta la mercadería sin facturar. También sirve cuando el cliente aún decide cantidades y usted quiere dejar el pedido anotado para cerrarlo después. Al guardar la orden, los productos almacenables quedan reservados para ese cliente. Los pasos para crear una nueva orden de venta desde el punto de venta son los siguientes:
 
-1. Ir a “Punto de Venta” (P.D.V.).
-2. Seleccionar “Nueva Orden”.
-3. Le aparecerán las opciones para crear una nueva orden de venta, cada vez que un usuario cree una nueva orden, el podrá seleccionar únicamente los productos que hayan sido requeridos por su cliente.
+1. Ir a "Punto de Venta" (P.D.V.).
+2. Seleccionar "Nueva Orden".
+3. Seleccionar los productos que solicitó el cliente.
 
 Los campos que se pueden colocar en la orden de venta son:
 
-a. Referencia: Coloque una breve referencia para encontrar fácilmente la orden de venta.
+a. **Referencia**: coloque una referencia breve para identificar la orden.
 
-b. Cliente: Coloque el nombre del Cliente existente al que se le va a emitir la orden de venta o agregue uno nuevo.
+b. **Cliente**: seleccione un cliente existente o agregue uno nuevo.
 
-c. Seleccione el vendedor: Persona que está realizando la venta.
+c. **Vendedor**: empleado que realiza la venta.
 
-d.  Aquí podrá escanear los códigos de barra de los productos o colocar manualmente el código para que se agreguen a la factura.
+d. **Código de barras**: escanee los códigos o escríbalos manualmente para agregar los productos a la orden.
 
-e. Agregar o quitar cantidad de productos: si en la orden se van a agregar dos o más productos de un mismo tipo, solamente debe dar click en “+” o “-“ para realizarlo.
+e. **Cantidad**: use "+" y "-" para agregar o quitar unidades del mismo producto.
 
-f. Sujeto a impuestos: Con esta opción usted puede seleccionar si va a emitir factura al concluir orden, o únicamente recibo comprobante.
+f. **Sujeto a impuestos**: seleccione si la orden se emitirá como factura o solo como recibo comprobante.
 
 ![imagen1](/img/punto-de-venta/crear-orden-de-venta-1.png)
 
-
-Ahora agregue los productos o servicios que se van a adicionar en la orden  y la cantidad. Aun podrá especificar si desea que registre impuestos o que no registre impuestos y sea solo un recibo. Luego presione Guardar para emitir la orden.
+Agregue los productos o servicios y la cantidad; defina si la orden registra impuestos o es solo recibo, y presione "Guardar" para emitirla.
 
 ![imagen2](/img/punto-de-venta/crear-orden-de-venta-2.png)
 
+Al presionar "Guardar", la orden se genera automáticamente y los productos almacenables quedan reservados.
 
-Al presionar un click sobre el icono Guardar,  automáticamente la orden de venta será generada, y se realizara la reserva de los productos si estos fueron de tipo almacenables.
-
-Es importante mencionar que al crear la orden aun nos va a permitir editarla para agregar o quitar productos o servicios, destruirla o emitir la factura.
+Después de crearla, todavía puede editarla para agregar o quitar productos, eliminarla o emitir la factura.
 
 ![imagen3](/img/punto-de-venta/crear-orden-de-venta-3.png)
 
-## Listado de ordenes de venta
+## Listado de órdenes de venta
 
-Para ver todas las ordenes de venta pendientes:
+Para ver las órdenes de venta pendientes:
 
 1. Ir a "P.D.V."
-2. Seleccionar "Ordenes".
+2. Seleccionar "Órdenes".
 
-Le aparecera un listado con todas las ordenes de venta que cumplen las siguientes condiciones:
-- No han sido emitidas como factura
-- No estan pagadas
-- No estan anuladas
-- Pertenecen a la agencia del usuario
+Aparecerá un listado con las órdenes que cumplen estas condiciones:
+
+- No han sido emitidas como factura.
+- No están pagadas.
+- No están anuladas.
+- Pertenecen a la agencia del usuario.
 
 Puede filtrar por:
 
-a. **Etiquetas (Tags)**: Filtre las ordenes por etiquetas asignadas.
+a. **Etiquetas**: filtre por etiquetas asignadas.
 
-Desde el listado usted podra:
+Desde el listado puede:
 
-a. **Ver detalle**: Haga click sobre una orden para ver sus productos, precios y otros detalles.
+a. **Ver detalle**: haga click sobre una orden para ver sus productos, precios y otros datos.
 
-b. **Editar**: Modifique la orden para agregar o quitar productos. Vea la seccion "Editar una orden de venta".
+b. **Editar**: modifique la orden para agregar o quitar productos. Vea "Editar una orden de venta".
 
-c. **Emitir factura**: Convierta la orden en una factura. Vea el tutorial "Crear factura".
+c. **Emitir factura**: convierta la orden en factura. Vea "Crear factura".
 
-d. **Imprimir**: Imprima la orden utilizando las plantillas configuradas.
+d. **Imprimir**: use las plantillas de impresión configuradas.
 
-e. **Anular**: Anule la orden si ya no es necesaria.
+e. **Anular**: anule la orden si ya no es necesaria.
 
-f. **Cobrar**: Si la orden ya fue emitida como factura, podra registrarel cobro.
+f. **Cobrar**: registre el cobro si la orden ya fue emitida como factura.
 
 ## Editar una orden de venta
 
-Para modificar una orden existente que aun no ha sido emitida como factura:
+Para modificar una orden que aún no ha sido emitida como factura:
 
-1. En el listado de ordenes, localice la orden que desea modificar.
-2. Seleccione el icono de "Editar".
-3. Podra modificar los siguientes campos:
+1. En el listado de órdenes, localice la orden.
+2. Seleccione el icono "Editar".
+3. Puede modificar los siguientes campos:
 
-a. **Referencia**: Actualice la referencia de la orden.
+a. **Referencia**: actualice la referencia.
 
-b. **Cliente**: Cambie el cliente asociado a la orden.
+b. **Cliente**: cambie el cliente asociado.
 
-c. **Vendedor**: Cambie el vendedor asignado.
+c. **Vendedor**: cambie el vendedor.
 
-d. **Productos**: Agregue o quite productos, modifique cantidades y precios.
+d. **Productos**: agregue o quite productos; modifique cantidades y precios.
 
-e. **Sujeto a impuestos**: Cambie si la orden genera factura o recibo.
+e. **Sujeto a impuestos**: cambie si genera factura o recibo.
 
-f. **Descuento**: Aplique un descuento global a la orden.
+f. **Descuento**: aplique un descuento global.
 
-g. **Etiquetas**: Asigne o modifique etiquetas.
+g. **Etiquetas**: asigne o modifique etiquetas.
 
 4. Presione "Guardar" para actualizar la orden.
 
-**Nota**: Si la orden ya fue emitida como factura, no podra ser editada.
+**Nota**: Si la orden ya fue emitida como factura, no se puede editar.
 
 ## Anular una orden de venta
 
 Para anular una orden:
 
-1. En el listado de ordenes, localice la orden a anular.
-2. Presione el boton de "Anular".
-3. Confirme la anulacion.
+1. En el listado de órdenes, localice la orden.
+2. Presione "Anular".
+3. Confirme la anulación.
 
-**Importante**: No podra anular una orden que tenga envios en transito asociados. La orden sera anulada y los productos reservados seran devueltos al inventario.
+**Importante**: No se puede anular una orden con envíos en tránsito asociados. Al anularla, los productos reservados se devuelven al inventario.
 
-Ya sabe crear, editar y anular una orden de venta. Cuando el cliente confirme la compra, el siguiente paso es convertirla en factura con un solo clic y cobrarla, sin volver a escribir ni un dato.
+Ya sabe crear, editar y anular una orden de venta. Cuando el cliente confirme la compra, conviértala en factura con un clic y registre el cobro, sin volver a escribir los datos.
 
 ## API (llamadas desde sistemas externos)
 
