@@ -19,7 +19,7 @@ Cuando su lista ya es larga —IGSS, bonos, préstamos, viáticos—, estos filt
 
 - **En ciclo**: beneficios/deducciones que aplican en nóminas regulares.
 - **Fuera de ciclo**: beneficios/deducciones que aplican en nóminas fuera de ciclo (anuales, semestrales, etc.).
-- **Tiempo personal**: beneficios/deducciones que aplican sobre pagos de tiempo personal.
+- **Tiempo fuera personal**: beneficios/deducciones que aplican sobre pagos de tiempo fuera personal.
 - **Inactivos**: beneficios/deducciones desactivados.
 
 ## Crear un beneficio o deduccion
@@ -32,7 +32,7 @@ Cuando su lista ya es larga —IGSS, bonos, préstamos, viáticos—, estos filt
 ### Datos generales
 
 - **Activo**: marcar para que este disponible.
-- **Aplica a**: seleccionar el ambito: nomina regular, fuera de ciclo, tiempo personal o inactivo.
+- **Aplica a**: seleccionar el ambito: nomina regular, fuera de ciclo, tiempo fuera personal o inactivo.
 - **Nombre**: nombre del beneficio o deduccion (ej. "Prestamo personal", "Bono de productividad", "IGSS laboral").
 - **Aplicar si el salario es mayor o igual a**: umbral de salario minimo para que aplique. Dejar en blanco para que aplique siempre.
 - **Aplicar si los dias por semana con destajo bonificado son**: condicion para empleados por destajo, basada en la cantidad de dias con destajo que incluyen bonificacion.

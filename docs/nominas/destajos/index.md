@@ -1,7 +1,7 @@
 ---
 title: "Destajos"
 sidebar_label: "Destajos"
-sidebar_position: 10
+sidebar_position: 3
 ---
 
 Si sus empleados ganan por destajo —por quintal cortado, por caja armada, por tarea sembrada—, aquí se registra cada jornada de trabajo. Los destajos son las tareas pagadas por unidad de trabajo realizada, no por salario fijo; el sistema calcula el valor de cada detalle y lo deja listo para la nómina.

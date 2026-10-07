@@ -115,7 +115,7 @@ En el listado, hacer clic en el nombre o ID de la nómina. El detalle muestra:
 - Procesa el pago de todas las nóminas individuales.
 - Genera las partidas contables del pago, salvo que la empresa tenga deshabilitada la generación de partidas en nóminas.
 - Los destajos asociados pasan de "no pagados" a "pagados".
-- Las incidencias quedan marcadas como descontadas.
+- Los incidentes quedan marcados como descontados.
 - La nómina se mueve a la sección **"Nóminas Pagadas"**.
 
 ## Llenar beneficios y deducciones flexibles
@@ -148,7 +148,7 @@ En el detalle, hacer clic en el icono de basura. Solo disponible si la nómina n
 En el detalle de la nómina, hay tres opciones de exportación:
 
 - **"Exportar Mini Excel"**: descarga un archivo Excel con los datos básicos de cada nómina individual (empleado, cuenta bancaria y total a pagar).
-- **"Exportar a Excel"**: descarga un archivo XLS con el detalle completo de las nóminas individuales, incluyendo cada beneficio, deducción e incidencia.
+- **"Exportar a Excel"**: descarga un archivo XLS con el detalle completo de las nóminas individuales, incluyendo cada beneficio, deducción e incidente.
 - **"Exportar a CSV"**: descarga el mismo detalle completo en formato CSV.
 
 ## Generar los PDF de las nóminas

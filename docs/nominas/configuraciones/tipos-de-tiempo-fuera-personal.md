@@ -1,34 +1,34 @@
 ---
-title: "Tipos de tiempo personal"
-sidebar_label: "Tipos de tiempo personal"
+title: "Tipos de tiempo fuera personal"
+sidebar_label: "Tipos de tiempo fuera personal"
 sidebar_position: 6
 ---
 
-No todas las ausencias se tratan igual: unas vacaciones, una enfermedad o un permiso personal pueden pagarse distinto, y por eso conviene separarlas en categorías. Los tipos de tiempo personal definen esas categorías de ausencias pagadas (vacaciones, enfermedad, etc.) para que cada solicitud use la que le corresponde.
+No todas las ausencias se tratan igual: unas vacaciones, una enfermedad o un permiso personal pueden pagarse distinto, y por eso conviene separarlas en categorías. Los tipos de tiempo fuera personal definen esas categorías de ausencias pagadas (vacaciones, enfermedad, etc.) para que cada solicitud use la que le corresponde.
 
-Para gestionar tipos de tiempo personal:
+Para gestionar tipos de tiempo fuera personal:
 
 1. Ir a **"Nominas"**.
-2. En **"Settings"**, seleccionar **"Tipos de tiempo personal"**.
+2. En **"Settings"**, seleccionar **"Tipos de tiempo fuera personal"**.
 
-## Crear un tipo de tiempo personal
+## Crear un tipo de tiempo fuera personal
 
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
-![Formulario de nuevo tipo de tiempo personal](/img/nominas/configuraciones-de-nomina-8.png)
+![Formulario de nuevo tipo de tiempo fuera personal](/img/nominas/configuraciones-de-nomina-8.png)
 
 - **Nombre**: nombre del tipo (ej. "Vacaciones", "Enfermedad", "Permiso personal").
 - **Descripcion**: descripcion opcional.
-- **Tipo general**: clasificacion del tipo de tiempo personal.
+- **Tipo general**: clasificacion del tipo de tiempo fuera personal.
 
 3. Hacer clic en **"Guardar"**.
 
-Con sus categorías listas, cada solicitud de tiempo personal quedará bien clasificada desde el primer día. El siguiente paso es usarlas al registrar solicitudes de vacaciones o enfermedad, y dejar que el sistema cuide los saldos de cada empleado.
+Con sus categorías listas, cada solicitud de tiempo fuera personal quedará bien clasificada desde el primer día. El siguiente paso es usarlas al registrar solicitudes de vacaciones o enfermedad, y dejar que el sistema cuide los saldos de cada empleado.
 
 ## API (llamadas desde sistemas externos)
 
-### Listar tipos de tiempo personal
+### Listar tipos de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -71,7 +71,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-### Ver un tipo de tiempo personal
+### Ver un tipo de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -99,7 +99,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener estructura para crear un tipo de tiempo personal
+### Obtener estructura para crear un tipo de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -127,7 +127,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener estructura para editar un tipo de tiempo personal
+### Obtener estructura para editar un tipo de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -155,7 +155,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Crear un tipo de tiempo personal
+### Crear un tipo de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -192,7 +192,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Actualizar un tipo de tiempo personal
+### Actualizar un tipo de tiempo fuera personal
 
 ```bash
 curl -v \
@@ -227,7 +227,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Borrar un tipo de tiempo personal
+### Borrar un tipo de tiempo fuera personal
 
 ```bash
 curl -v \

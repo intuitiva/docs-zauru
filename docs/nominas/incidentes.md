@@ -1,95 +1,95 @@
 ---
-title: "Incidencias"
-sidebar_label: "Incidencias"
-sidebar_position: 11
+title: "Incidentes"
+sidebar_label: "Incidentes"
+sidebar_position: 5
 ---
 
-Cuando un empleado llega tarde, falta un día o pide un adelanto de salario, alguien tiene que anotarlo para que el descuento aparezca en su nómina. Aquí se registran y gestionan esas incidencias —llegadas tarde, ausencias, faltas y otras situaciones que generan descuentos—, y el sistema calcula el descuento según el tipo que usted elija.
+Cuando un empleado llega tarde, falta un día o pide un adelanto de salario, alguien tiene que anotarlo para que el descuento aparezca en su nómina. Aquí se registran y gestionan esos incidentes —llegadas tarde, ausencias, faltas y otras situaciones que generan descuentos—, y el sistema calcula el descuento según el tipo que usted elija.
 
-## Listado de incidencias
+## Listado de incidentes
 
-Para acceder al listado de incidencias:
+Para acceder al listado de incidentes:
 
 1. Ir a **"Nominas"**.
-2. Seleccionar **"Incidencias"**.
+2. Seleccionar **"Incidentes"**.
 
 ### Busqueda y filtros
 
-El listado muestra todas las incidencias registradas. Se puede buscar por empleado y filtrar por agencia.
+El listado muestra todos los incidentes registrados. Se puede buscar por empleado y filtrar por agencia.
 
-### Duplicar una incidencia
+### Duplicar un incidente
 
-Cada incidencia tiene la opcion de **"Duplicar"**, que permite copiar la incidencia para el mes siguiente o cualquier otro periodo. Esto es util para incidencias que se repiten periodicamente (ej. descuentos mensuales fijos).
+Cada incidente tiene la opción de **"Duplicar"**, que permite copiar el incidente para el mes siguiente o cualquier otro periodo. Esto es útil para incidentes que se repiten periódicamente (ej. descuentos mensuales fijos).
 
-1. En el listado, hacer clic en **"Duplicar"** sobre la incidencia deseada.
-2. El sistema copia los datos de la incidencia original.
+1. En el listado, hacer clic en **"Duplicar"** sobre el incidente deseado.
+2. El sistema copia los datos del incidente original.
 3. Modificar la fecha y otros datos segun corresponda.
 4. Hacer clic en **"Guardar"**.
 
-## Crear una incidencia
+## Crear un incidente
 
-1. En el listado de incidencias, hacer clic en **"Nuevo"**.
+1. En el listado de incidentes, hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
-- **Empleado**: seleccionar el empleado al que se le registra la incidencia.
-- **Tipo de incidencia**: seleccionar el tipo (llegada tarde, ausencia, etc.). El tipo de incidencia determina el monto o porcentaje de descuento.
-- **Fecha**: fecha en que ocurrio la incidencia.
+- **Empleado**: seleccionar el empleado al que se le registra el incidente.
+- **Tipo de incidente**: seleccionar el tipo (llegada tarde, ausencia, etc.). El tipo de incidente determina el monto o porcentaje de descuento.
+- **Fecha**: fecha en que ocurrió el incidente.
 - **Cantidad**: numero de ocurrencias (ej. cantidad de llegadas tarde en el periodo).
-- **Referencia**: texto descriptivo para identificar la incidencia.
+- **Referencia**: texto descriptivo para identificar el incidente.
 - **Notas**: observaciones adicionales.
 
 3. Hacer clic en **"Guardar"**.
 
 El sistema automaticamente:
 
-- Calcula el descuento basado en el tipo de incidencia (monto fijo, porcentaje o formula).
-- Si el tipo de incidencia tiene marcado **"Descuento flexible por incidencia"**, el monto del descuento es editable manualmente.
-- Si el tipo de incidencia tiene marcado **"Descuento como dias de tiempo personal"**, se descuentan los dias correspondientes del saldo de tiempo personal del empleado.
+- Calcula el descuento basado en el tipo de incidente (monto fijo, porcentaje o formula).
+- Si el tipo de incidente tiene marcado **"Descuento flexible por incidente"**, el monto del descuento es editable manualmente.
+- Si el tipo de incidente tiene marcado **"Descuento como días de tiempo fuera personal"**, se descuentan los días correspondientes del saldo de tiempo fuera personal del empleado.
 
-## Ver detalle de una incidencia
+## Ver detalle de un incidente
 
-En el listado, hacer clic en la incidencia. El detalle muestra:
+En el listado, hacer clic en el incidente. El detalle muestra:
 
-![Detalle de una incidencia con datos y descuento calculado](/img/nominas/incidencias-3.png)
+![Detalle de un incidente con datos y descuento calculado](/img/nominas/incidentes-3.png)
 
-- ID de la incidencia.
+- ID del incidente.
 - Empleado.
-- Tipo de incidencia con su categoria.
+- Tipo de incidente con su categoría.
 - Fecha.
 - Monto de descuento calculado.
 - Referencia y notas.
 - Informacion de creacion y edicion.
 
-## Editar una incidencia
+## Editar un incidente
 
-1. En el detalle de la incidencia, hacer clic en **"Editar"**.
+1. En el detalle del incidente, hacer clic en **"Editar"**.
 2. Modificar los campos necesarios.
 3. Hacer clic en **"Guardar"**.
 
-## Borrar una incidencia
+## Borrar un incidente
 
-En el detalle de la incidencia, hacer clic en **"Borrar"**. Solo se pueden borrar incidencias que no hayan sido incluidas en una nómina pagada.
+En el detalle del incidente, hacer clic en **"Borrar"**. Solo se pueden borrar incidentes que no hayan sido incluidos en una nómina pagada.
 
-## Importacion masiva de incidencias
+## Importación masiva de incidentes
 
-Si al cierre del día tiene una pila de llegadas tarde de toda la cuadrilla, anotarlas una por una no es el mejor uso de su tiempo. Para registrar muchas incidencias a la vez, se puede usar la importación masiva desde un archivo.
+Si al cierre del día tiene una pila de llegadas tarde de toda la cuadrilla, anotarlas una por una no es el mejor uso de su tiempo. Para registrar muchos incidentes a la vez, se puede usar la importación masiva desde un archivo.
 
 1. Ir a **"Nominas"**.
-2. En el submenu de incidencias, seleccionar **"Importar incidencias"**.
-3. Seleccionar el archivo con los datos de incidencias.
+2. En el submenú de incidentes, seleccionar **"Importar incidentes"**.
+3. Seleccionar el archivo con los datos de incidentes.
 4. Hacer clic en **"Importar"**.
 
-El sistema procesa el archivo y crea las incidencias correspondientes. Las incidencias importadas aparecerán en el listado de incidencias y se aplicarán en la siguiente nómina que incluya al empleado.
+El sistema procesa el archivo y crea los incidentes correspondientes. Los incidentes importados aparecerán en el listado de incidentes y se aplicarán en la siguiente nómina que incluya al empleado.
 
 ## Relación con las nóminas
 
-Cuando se procesa una nómina, el sistema busca las incidencias de cada empleado que estén dentro del rango de fechas de la nómina y aplica los descuentos correspondientes. Los descuentos aparecen como deducciones en el detalle de la nómina del empleado.
+Cuando se procesa una nómina, el sistema busca los incidentes de cada empleado que estén dentro del rango de fechas de la nómina y aplica los descuentos correspondientes. Los descuentos aparecen como deducciones en el detalle de la nómina del empleado.
 
-Con las incidencias registradas, los descuentos se aplicarán solos cuando se procese la nómina que cubra esas fechas. Si cada periodo maneja muchas incidencias, la importación masiva se convertirá en su mejor aliada para no dejar ninguna fuera.
+Con los incidentes registrados, los descuentos se aplicarán solos cuando se procese la nómina que cubra esas fechas. Si cada periodo maneja muchos incidentes, la importación masiva se convertirá en su mejor aliada para no dejar ninguno fuera.
 
 ## API (llamadas desde sistemas externos)
 
-### Listar incidencias
+### Listar incidentes
 
 ```bash
 curl -v \
@@ -156,7 +156,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-### Crear una incidencia
+### Crear un incidente
 
 ```bash
 curl -v \
@@ -200,7 +200,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Ver una incidencia
+### Ver un incidente
 
 ```bash
 curl -v \
@@ -235,7 +235,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Borrar una incidencia
+### Borrar un incidente
 
 ```bash
 curl -v \
@@ -249,9 +249,9 @@ curl -v \
 
 En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
 
-### Obtener estructura para crear una incidencia
+### Obtener estructura para crear un incidente
 
-Devuelve la incidencia vacia junto con los empleados y tipos de incidencia disponibles.
+Devuelve el incidente vacío junto con los empleados y tipos de incidente disponibles.
 
 ```bash
 curl -v \
@@ -449,7 +449,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Obtener estructura para editar una incidencia
+### Obtener estructura para editar un incidente
 
 ```bash
 curl -v \
@@ -484,7 +484,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-### Actualizar una incidencia
+### Actualizar un incidente
 
 ```bash
 curl -v \

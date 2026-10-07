@@ -1,10 +1,10 @@
 ---
 title: "Contratos de trabajo"
 sidebar_label: "Contratos de trabajo"
-sidebar_position: 9
+sidebar_position: 2
 ---
 
-Cuando contrata a alguien —o cuando llega el momento de liquidarlo—, el contrato de trabajo es el documento que une todo: el empleado con su puesto, su salario por hora, su método de pago y sus días de tiempo personal. Aquí aprenderá a crearlo, consultarlo, terminarlo y a revisar los cálculos de liquidación que el sistema genera al cerrar la relación laboral.
+Cuando contrata a alguien —o cuando llega el momento de liquidarlo—, el contrato de trabajo es el documento que une todo: el empleado con su puesto, su salario por hora, su método de pago y sus días de tiempo fuera personal. Aquí aprenderá a crearlo, consultarlo, terminarlo y a revisar los cálculos de liquidación que el sistema genera al cerrar la relación laboral.
 
 ## Listado de contratos
 
@@ -27,7 +27,7 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 1. En el listado de contratos, hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
-![Formulario de nuevo contrato de trabajo con datos básicos, pago y tiempo personal](/img/nominas/contratos-de-trabajo-2.png)
+![Formulario de nuevo contrato de trabajo con datos básicos, pago y tiempo fuera personal](/img/nominas/contratos-de-trabajo-2.png)
 
 ### Datos basicos
 
@@ -46,12 +46,12 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 - **Salario por hora extraordinario diurno**: tarifa por hora extra diurna.
 - **Salario por hora extraordinario nocturno**: tarifa por hora extra nocturna.
 - **Bonificacion mensual**: monto mensual de bonificacion obligatoria (ej. Decreto 42-92 en Guatemala).
-- **Descontar tiempo personal en calculo de bonificacion**: si se marca, los dias de tiempo personal no se consideran como dias laborados para el calculo de la bonificacion. Si no se marca, los dias de tiempo personal cuentan como laborados para la bonificacion.
+- **Descontar tiempo fuera personal en cálculo de bonificación**: si se marca, los días de tiempo fuera personal no se consideran como días laborados para el cálculo de la bonificación. Si no se marca, los días de tiempo fuera personal cuentan como laborados para la bonificación.
 
-### Tiempo personal
+### Tiempo fuera personal
 
-- **Dias de tiempo personal por ano**: cantidad de dias de vacaciones o tiempo personal que el empleado acumula por ano.
-- **Agregar saldo del ano al cumplir el ano**: si se marca, el saldo de tiempo personal del nuevo ano se agrega al cumplir el aniversario laboral. Si no se marca, se agrega al inicio del ano calendario.
+- **Días de tiempo fuera personal por año**: cantidad de días de vacaciones o tiempo fuera personal que el empleado acumula por año.
+- **Agregar saldo del año al cumplir el año**: si se marca, el saldo de tiempo fuera personal del nuevo año se agrega al cumplir el aniversario laboral. Si no se marca, se agrega al inicio del año calendario.
 
 ### Contrato firmado
 
@@ -61,7 +61,7 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 
 Al guardar el contrato, el sistema automaticamente:
 - Asigna los beneficios y deducciones configurados en el puesto de trabajo.
-- Inicializa el saldo de tiempo personal del empleado.
+- Inicializa el saldo de tiempo fuera personal del empleado.
 
 ## Ver detalle de un contrato
 
@@ -86,11 +86,11 @@ Incluye una tabla con los **"Beneficios y deducciones por defecto"** que se here
 
 ### Pago
 
-Muestra el metodo de pago por defecto, los salarios por hora (ordinario, extraordinario diurno, extraordinario nocturno), la bonificacion mensual y la configuracion de descuento de tiempo personal en bonificacion.
+Muestra el metodo de pago por defecto, los salarios por hora (ordinario, extraordinario diurno, extraordinario nocturno), la bonificación mensual y la configuración de descuento de tiempo fuera personal en bonificación.
 
-### Tiempo personal
+### Tiempo fuera personal
 
-Muestra los dias de tiempo personal por ano y si el saldo se agrega en aniversario o en ano calendario.
+Muestra los días de tiempo fuera personal por año y si el saldo se agrega en aniversario o en año calendario.
 
 ### Terminacion de contrato
 
@@ -131,7 +131,7 @@ El sistema automaticamente calcula la liquidacion basandose en:
 
 - **Promedio de salario mensual**: calculado a partir de la cantidad de nominas recientes configurada en las configuraciones generales.
 - **Indemnizacion**: porcentaje del promedio de salario mensual configurado para el tipo de terminacion.
-- **Dias pendientes de tiempo personal**: calculo del valor de los dias de tiempo personal no gozados, segun el porcentaje configurado para el tipo de terminacion.
+- **Días pendientes de tiempo fuera personal**: cálculo del valor de los días de tiempo fuera personal no gozados, según el porcentaje configurado para el tipo de terminación.
 
 El detalle de la terminacion muestra estos calculos discriminados y el total de la liquidacion:
 
@@ -140,8 +140,8 @@ El detalle de la terminacion muestra estos calculos discriminados y el total de 
 - **Indemnizacion (Severance Pay)**: salario ordinario, salario extra y, de corresponder, comisiones de ventas y beneficios/deducciones en ciclo del primer mes, resaltados en rojo.
 - **Nomina final (ultimo pago)**: si la configuracion de "Manejo del pago al terminar un contrato" indica liquidar en la terminacion, muestra los dias aplicables, salario, salario extra, salario de turno nocturno, bonificacion mensual y beneficios/deducciones del periodo final, con el total del ultimo pago. Si la configuracion indica incluirlo en la proxima nomina, este pago no aparece aqui y el empleado se procesa en la siguiente nómina.
 - **Beneficios fuera de ciclo pendientes**: lista de beneficios/deducciones fuera de ciclo que aun no se han pagado, con su monto.
-- **Tiempo personal pendiente**: dias pendientes, monto del tiempo personal y bonificacion asociada, mas el total de la liquidacion.
-- **Partidas contables asociadas**: las entradas contables generadas por la liquidacion (indemnizacion, tiempo personal, etc.), con enlace a cada asiento.
+- **Tiempo fuera personal pendiente**: días pendientes, monto del tiempo fuera personal y bonificación asociada, más el total de la liquidación.
+- **Partidas contables asociadas**: las entradas contables generadas por la liquidación (indemnización, tiempo fuera personal, etc.), con enlace a cada asiento.
 
 El comportamiento del ultimo pago y la contabilizacion se controlan en las **Configuraciones generales de nomina**, seccion "Manejo del pago al terminar un contrato".
 

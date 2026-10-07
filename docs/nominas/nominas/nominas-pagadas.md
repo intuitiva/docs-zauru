@@ -30,7 +30,7 @@ Si se necesita corregir una nómina ya pagada:
 1. En el detalle de la nómina pagada, hacer clic en **"Des-pagar"**.
 2. La nómina regresa a estado **"Aprobada"** en la sección de nóminas no pagadas.
 3. Los destajos asociados regresan a estado "no pagados".
-4. Las incidencias quedan sin descontar y las nóminas individuales vuelven a ser editables.
+4. Los incidentes quedan sin descontar y las nóminas individuales vuelven a ser editables.
 
 ## Impresión masiva en nóminas pagadas
 
