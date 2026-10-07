@@ -269,30 +269,6 @@ Esto devolverá un JSON similar a este:
       "extra_tax_2": 0.0,
       "quotable": true,
       "ecommerce": false,
-      "image2": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image3": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image4": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image5": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
       "msrp": null,
       "tax1_use_msrp": false,
       "tax2_use_msrp": false,
@@ -356,30 +332,6 @@ Esto devolverá un JSON similar a este:
       "sellable": true,
       "weight": null,
       "volume": null,
-      "image2": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image3": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image4": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image5": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
       "color": "#CCCCCC",
       "zid": 2,
       "measurement_unit": null,
@@ -426,6 +378,8 @@ Esto devolverá un JSON similar a este:
   }
 }
 ```
+
+Los campos `image2` a `image5` repiten la estructura de `image` en cada producto o paquete.
 
 ### Listar ordenes de venta (datatables)
 
@@ -1086,30 +1040,6 @@ Esto devolverá un JSON similar a este:
       "item_category_id": 7,
       "weight": null,
       "volume": null,
-      "image2": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image3": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image4": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
-      "image5": {
-        "url": null,
-        "thumbnail_fill": {
-          "url": null
-        }
-      },
       "color": "#CCCCCC",
       "zid": 2,
       "measurement_unit": null,
@@ -1187,3 +1117,5 @@ Esto devolverá un JSON similar a este:
   "double_width_button": false
 }
 ```
+
+Los campos `image2` a `image5` repiten la estructura de `image` en cada producto o paquete.
