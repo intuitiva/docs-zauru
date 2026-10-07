@@ -64,14 +64,13 @@ Desde el listado se puede:
 - **Anular**: anula una factura emitida por error.
 - **Editar**: abre una factura que todavía está en estado de orden.
 
-## Editar y emitir una orden
+## Editar y convertir una orden de venta en factura
 
-Una factura en estado de orden todavía no ha sido emitida y se puede modificar.
+Una orden de venta todavía no ha sido emitida y se puede modificar antes de convertirla en factura.
 
-1. En el listado, localizar la factura en estado "orden".
-2. Seleccionar el icono de "Editar".
-3. Modificar los productos, las cantidades, los precios o los datos generales.
-4. Seleccionar "Guardar" para emitirla con los cambios.
+1. Entrar al listado de órdenes de venta y seleccionar "Emitir factura".
+2. Modificar los productos, las cantidades, los precios o los datos generales.
+3. Seleccionar "Guardar" para emitirla con los cambios.
 
 Las facturas ya emitidas no se pueden editar mediante este formulario. Para corregirlas, anular la factura y crear una nueva.
 
