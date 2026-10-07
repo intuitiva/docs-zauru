@@ -16,6 +16,7 @@ El punto de venta (P.D.V.) de Zauru ofrece las siguientes funcionalidades:
 ### Operaciones de venta
 - **[Crear orden de venta](crear-orden-de-venta.md)**: Cree ordenes de venta con reserva de productos, para luego convertirlas en facturas.
 - **[Crear factura](crear-factura.md)**: Emita facturas directamente desde el punto de venta, con soporte para lector de codigo de barras.
+- **[API de facturas](api-facturas.md)**: Integre la creación, consulta, emisión, actualización y anulación de facturas.
 - **[Cobrar una factura o una orden de venta](cobrar-una-factura-o-una-orden-de-venta.md)**: Registre los cobros de facturas y ordenes de venta, con soporte para multiples metodos de pago.
 
 ### Servicio tecnico
