@@ -14,59 +14,71 @@ Los pasos para crear un nuevo empleado son:
 
 ![imagen8](/img/primeros-pasos/empleados-1.png)
 
-Le deberán aparecer las opciones para crear un nuevo empleado, los campos mas importantes a colocar son los siguientes:
+Los campos más importantes del formulario son los siguientes:
 
-a. Si quita el cheque del recuadro, el empleado estará inactivo en el sistema.
-
-b. Para que cada vez que cree un nuevo empleado se le asigne un numero automático deberá crear una numeración automática de documentos.
-
-c. Coloque el nombre del empleado
+- **¿Activo?**: si quita la marca, el empleado queda inactivo en el sistema.
+- **Número de Empleado**: se genera automáticamente si tiene configurada una numeración automática de documentos (ver [Numeración Automática de Documentos](numeracion-automatica.md)).
+- **Nombre**: nombre del empleado.
+- **Categoría de Empleado**: categoría a la que pertenece el empleado (ver [Categorías de Empleados](categorias-de-empleados.md)).
 
 ![imagen9](/img/primeros-pasos/empleados-2.jpg)
 
-d. La agencia que coloque definirá que agencia tendrá el empleado en el modulo de soporte y punto de venta.
-
-e. Aquí podrá colocar las responsabilidades del empleado, las responsabilidades que usted le coloque permitirán seleccionar al empleado en las transacciones que esa responsabilidad conlleve, por ejemplo:
-
-- Contador: Sera responsable de realizar transacciones contables.
-- Controlador de inventarios: Sera responsable de reservaciones de inventario.
-- Vendedor: Sera responsable de ventas.
-- Comprador: Sera responsable de compras.
-- Agente de soporte: Sera responsable de registrar casos.
+- **Locación**: agencia asignada al empleado; define la agencia que tendrá en Soporte y Punto de Venta.
+- **Responsabilidades**: permiten seleccionar al empleado en las transacciones que esa responsabilidad conlleve:
+  - **Contador**: transacciones contables.
+  - **Controlador de Inventarios**: reservaciones de inventario.
+  - **Vendedor**: ventas.
+  - **Comprador**: compras.
+  - **Agente de Soporte**: registro de casos.
 
 Para guardar los cambios presione “Crear empleado”.
 
 ![imagen10](/img/primeros-pasos/empleados-3.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se creo el empleado. Ahora podrá ver este empleado en su listado y lo podrá seleccionar en las transacciones que haga de acuerdo a las responsabilidades del empleado.
+Le aparecerá un mensaje de éxito. Ahora podrá verlo en el listado y seleccionarlo en las transacciones según sus responsabilidades.
 
 ![imagen11](/img/primeros-pasos/empleados-4.png)
 
-## Categoría de Empleados
-Cuando su equipo crece, organizar a los empleados por categorías — por ejemplo, administrativos y vendedores — le facilita ubicarlos y filtrarlos en los listados.
+## Filtrar Empleados por Agencia
 
-Los pasos para crear una nueva categoría de empleado son:
+En el listado puede seleccionar una agencia en **Filtrar Agencia** y presionar "Cambiar" para ver solo los empleados de esa agencia. También puede filtrar por estado: "Activa", "Inactivos" o "Todos".
 
-1. Ir a “Configuraciones”.
-2. Seleccionar “Empleados”.
-3. Seleccionar "Categoría de Empleado".
-4. Seleccionar “Nueva categoría de Empleado”.
+## Importar Empleados
 
-![Categoría de Empleado](/img/primeros-pasos/empleados-5.png)
+Si ya tiene un listado de empleados, puede importarlo en lugar de ingresarlos uno por uno, con plantillas predefinidas de Excel.
 
-Le deberán aparecer las opciones para crear una nueva categoría de empleado, los campos mas importantes a colocar son los siguientes:
+Los pasos para importar empleados son:
 
-1. Colocar el __Nombre__ de la categoría.
+1. Ir a "Configuraciones".
+2. Seleccionar "Empleados".
+3. Click en "Importar".
 
-2. Puede colocar alguna descripción de la categoría en el segmento de Notas.
+![imagen12](/img/primeros-pasos/empleados-7.png)
 
-3. Presionar el botón __Crear Categoría de empleado__.
+Seleccione el archivo de Excel con los datos de sus empleados y presione el botón de importación; el sistema creará los registros.
 
-![Nueva categoría de empleado](/img/primeros-pasos/empleados-6.png)
+También puede importar de forma masiva con [Importaciones de Datos](importaciones-de-datos.md), seleccionando el tipo de documento "Crear Empleados" o "Crear Empleados y Contratos de Trabajo".
+
+## Exportar Empleados
+
+Puede exportar el listado en formato CSV o XLS, con la opción de filtrar por agencia. Para exportar:
+
+1. Ir a "Configuraciones".
+2. Seleccionar "Empleados".
+3. Si lo desea, seleccione una agencia para filtrar.
+4. Seleccione el formato de exportación deseado (CSV o XLS).
+
+Los datos exportados incluyen: número de identificación, nombre, identificación, nacionalidad, correo, puesto, dirección, teléfono, cumpleaños, estado civil, ocupación, fecha de inicio, salario, seguro social, NIT, notas, banco, cuenta bancaria, agencia, tarifas por hora y usuario que actualizó.
+
+## Formularios Asociados al Empleado
+
+En los detalles de un empleado, Zauru muestra los formularios personalizados del tipo de documento "Empleado" (ver [Formularios](formularios.md)) para capturar información adicional de cada empleado.
+
+Ya puede seleccionar a sus empleados en las transacciones según sus responsabilidades. Si aún no ha creado las [agencias](agencias.md) a las que los asignará, ese es el siguiente paso natural.
 
 ## API (llamadas desde sistemas externos)
 
-#### Obtener listado del empleado
+### Obtener listado del empleado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -214,7 +226,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-#### Obtener detalles del empleado
+### Obtener detalles del empleado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -295,7 +307,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-#### Crear empleado
+### Crear empleado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -385,7 +397,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-#### Actualizar empleado
+### Actualizar empleado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -457,7 +469,7 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-#### Eliminar empleado
+### Eliminar empleado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -468,9 +480,9 @@ curl -v \
   https://app.zauru.com/settings/employees/1.json
 ```
 
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
+En caso de éxito, retorna un código HTTP `204 No Content` (sin cuerpo).
 
-#### Obtener listado de empleados filtrado por estado
+### Obtener listado de empleados filtrado por estado
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -618,7 +630,7 @@ Esto devolverá un JSON similar a este:
 ]
 ```
 
-#### Datatables de empleados
+### Datatables de empleados
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -673,176 +685,6 @@ Esto devolverá un JSON similar a este:
 }
 ```
 
-
----
-
-## Filtrar Empleados por Agencia
-
-Zauru le permite filtrar el listado de empleados por agencia. En la vista de listado de empleados, puede seleccionar una agencia específica para ver únicamente los empleados asignados a esa agencia. También puede filtrar por estado: Activos, Inactivos o Todos.
-
-## Importar Empleados
-
-Es probable que cuando comience a usar Zauru tenga una lista de empleados que sea más eficiente importar que ingresar manualmente. Zauru le permite importar empleados por medio de plantillas predefinidas de Excel.
-
-Los pasos para importar empleados son:
-
-1. Ir a "Configuraciones".
-2. Seleccionar "Empleados".
-3. Click en "Importar".
-
-![imagen12](/img/primeros-pasos/empleados-7.png)
-
-A continuación deberá seleccionar el archivo de Excel con los datos de sus empleados y presionar el botón de importación. El sistema procesará el archivo y creará los registros de empleados.
-
-También puede realizar importaciones masivas de empleados utilizando el sistema de Importaciones de Datos (ver la sección de [Importaciones de Datos](importaciones-de-datos.md)) seleccionando el tipo de documento "Crear Empleados" o "Crear Empleados y Contratos de Trabajo".
-
-## Exportar Empleados
-
-Zauru le permite exportar su listado de empleados en formato CSV o XLS, con la opción de filtrar por agencia. Para exportar:
-
-1. Ir a "Configuraciones".
-2. Seleccionar "Empleados".
-3. Si lo desea, seleccione una agencia para filtrar.
-4. Seleccione el formato de exportación deseado (CSV o XLS).
-
-Los datos exportados incluyen: numero de identificación, nombre, identificación, nacionalidad, correo, puesto, dirección, teléfono, cumpleaños, estado civil, ocupación, fecha de inicio, salario, seguro social, NIT, notas, banco, cuenta bancaria, agencia, tarifas por hora y usuario que actualizó.
-
-## Formularios Asociados al Empleado
-
-Al visualizar los detalles de un empleado, Zauru le mostrará los formularios personalizados que tenga asociados para el tipo de documento "Empleado". Estos formularios permiten capturar información adicional específica de cada empleado.
-
-Ya creó sus empleados, los organizó en categorías y, si lo necesitaba, los importó desde Excel. Ahora puede seleccionarlos en las transacciones según sus responsabilidades; si aún no ha creado las agencias a las que los asignará, ese es el siguiente paso natural.
-
-## API de categorías, exportación e importación de empleados (llamadas desde sistemas externos)
-
-### Obtener listado de categorías de empleados
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/employees/employee_categories.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-[
-  {
-    "id": 1,
-    "zid": 1,
-    "employees_count": 0,
-    "name": "Administrativo",
-    "notes": "Personal administrativo",
-    "entity_id": 2,
-    "creator_id": 3,
-    "updater_id": 3,
-    "created_at": "2026-08-06T04:14:17.819Z",
-    "updated_at": "2026-08-06T04:14:17.819Z"
-  }
-]
-```
-
-### Crear categoría de empleado
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X POST \
-  -d '{
-    "employee_category": {
-      "name": "Administrativo",
-      "notes": "Personal administrativo"
-    }
-  }' \
-  https://app.zauru.com/settings/employees/employee_categories.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "name": [
-    "ya ha sido tomado"
-  ],
-  "entity": [
-    "es inválido"
-  ]
-}
-```
-
-### Obtener detalle de una categoría de empleado
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  https://app.zauru.com/settings/employees/employee_categories/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "1",
-  "zid": "1",
-  "employees_count": "2",
-  "name": "Transportista",
-  "notes": "Los que llevan el envío a otra agencia.",
-  "entity_id": "802",
-  "creator_id": "2512",
-  "updater_id": "2512",
-  "created_at": "2023-04-03 17:51:43.16891",
-  "updated_at": "2023-04-03 17:51:43.16891"
-}
-```
-
-### Actualizar categoría de empleado
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X PUT \
-  -d '{
-    "employee_category": {
-      "name": "Administrativo y Finanzas"
-    }
-  }' \
-  https://app.zauru.com/settings/employees/employee_categories/1.json
-```
-
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": "1",
-  "zid": "1",
-  "employees_count": "2",
-  "name": "Transportista",
-  "notes": "Los que llevan el envío a otra agencia.",
-  "entity_id": "802",
-  "creator_id": "2512",
-  "updater_id": "2512",
-  "created_at": "2023-04-03 17:51:43.16891",
-  "updated_at": "2023-04-03 17:51:43.16891"
-}
-```
-
-### Eliminar categoría de empleado
-```bash
-curl -v \
-  -H "Accept: application/json" \
-  -H "Content-type: application/json" \
-  -H "X-User-Email: prueba@zauru.com" \
-  -H "X-User-Token: XSDFKK09238487DLFS" \
-  -X DELETE \
-  https://app.zauru.com/settings/employees/employee_categories/1.json
-```
-
-En caso de exito, retorna un codigo HTTP `204 No Content` (sin cuerpo).
-
 ### Exportar empleados
 ```bash
 curl -v \
@@ -853,9 +695,7 @@ curl -v \
   https://app.zauru.com/settings/employees/export.csv
 ```
 
-### API de Importación de Empleados
-
-#### Crear importación de empleados
+### Crear importación de empleados
 ```bash
 curl -v \
   -H "Accept: application/json" \
