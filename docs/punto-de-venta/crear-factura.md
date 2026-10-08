@@ -9,7 +9,7 @@ Si atiende un mostrador o una tienda física, esta es la pantalla que más va a 
 ## Crear una factura
 
 1. Ir a "Punto de Venta".
-2. Seleccionar "Nueva Factura".
+2. Seleccionar "Nueva Factura" (+ FACTURA).
 
 El usuario solo puede seleccionar productos de la bodega que tiene asignada o de la bodega predeterminada en la configuración del punto de venta.
 
@@ -64,14 +64,13 @@ Desde el listado se puede:
 - **Anular**: anula una factura emitida por error.
 - **Editar**: abre una factura que todavía está en estado de orden.
 
-## Editar y emitir una orden
+## Editar y convertir una orden de venta en factura
 
-Una factura en estado de orden todavía no ha sido emitida y se puede modificar.
+Una orden de venta todavía no ha sido emitida y se puede modificar antes de convertirla en factura.
 
-1. En el listado, localizar la factura en estado "orden".
-2. Seleccionar el icono de "Editar".
-3. Modificar los productos, las cantidades, los precios o los datos generales.
-4. Seleccionar "Guardar" para emitirla con los cambios.
+1. Entrar al listado de órdenes de venta y seleccionar "Emitir factura".
+2. Modificar los productos, las cantidades, los precios o los datos generales.
+3. Seleccionar "Guardar" para emitirla con los cambios.
 
 Las facturas ya emitidas no se pueden editar mediante este formulario. Para corregirlas, anular la factura y crear una nueva.
 
@@ -80,7 +79,7 @@ Las facturas ya emitidas no se pueden editar mediante este formulario. Para corr
 Para convertir una orden de venta en factura:
 
 1. Abrir el detalle de la orden de venta.
-2. Seleccionar "Emitir factura".
+2. Seleccionar "Emitir Factura Rápido" (icono del rayo).
 
 La orden se convierte inmediatamente en factura y conserva sus productos, cantidades y precios.
 
@@ -101,4 +100,295 @@ Para modificar datos sin alterar los productos ni los montos:
 3. Adjuntar una imagen si es necesario.
 4. Seleccionar "Guardar".
 
-Las llamadas disponibles para integraciones externas se encuentran en [API de facturas del punto de venta](/punto-de-venta/api-facturas).
+## API (llamadas desde sistemas externos)
+
+Todas las llamadas requieren los siguientes encabezados:
+
+```bash
+-H "Accept: application/json" \
+-H "Content-type: application/json" \
+-H "X-User-Email: usuario@zauru.com" \
+-H "X-User-Token: TOKEN_DEL_USUARIO"
+```
+
+Reemplazar el correo y el token por las credenciales de un usuario de Zauru. En los ejemplos, `1` representa el identificador de una factura.
+
+### Crear una factura
+
+`POST /pos/invoices.json`
+
+```bash
+curl -X POST \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  -d '{
+    "invoice": {
+      "reference": "Venta mostrador",
+      "taxable": "1",
+      "payment_term_id": "1",
+      "payee_id": "1",
+      "seller_id": "1",
+      "invoice_details_attributes": {
+        "0": {
+          "item_id": "1",
+          "quantity": "1",
+          "unit_price": "650"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/invoices.json
+```
+
+Devuelve la factura creada y sus detalles (`invoice_details`). Los campos principales son `id`, `order_number`, `invoice_number`, `total`, `issued` y `paid`.
+
+### Listar facturas
+
+`POST /pos/invoices/datatables.json`
+
+```bash
+curl -X POST \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  -d '{
+    "start": "0",
+    "length": "40",
+    "search": {"value": "", "regex": "false"}
+  }' \
+  https://app.zauru.com/pos/invoices/datatables.json
+```
+
+Devuelve el formato de DataTables:
+
+```json
+{
+  "draw": 0,
+  "recordsTotal": 0,
+  "recordsFiltered": 0,
+  "data": []
+}
+```
+
+### Ver una factura
+
+`GET /pos/invoices/:id.json`
+
+```bash
+curl -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/1.json
+```
+
+Devuelve la factura y sus detalles. Además incluye el cliente (`payee`), los asientos contables (`entries`), los pagos (`payment_details`) y los formularios enviados (`submissions`). Los campos principales son:
+
+```json
+{
+  "id": 1,
+  "order_number": "ORD-456",
+  "invoice_number": "SERIE A - 456",
+  "reference": "Venta mostrador",
+  "date": "2026-08-06",
+  "subtotal": "500.0",
+  "total": "500.0",
+  "due": "500.0",
+  "seller_id": 1,
+  "payee_id": 4,
+  "issued": true,
+  "paid": false,
+  "voided": false,
+  "invoice_details": [
+    {
+      "id": 1,
+      "item_id": 10,
+      "reference": "",
+      "unit_price": "250.0",
+      "quantity": "2.0",
+      "price": "500.0"
+    }
+  ]
+}
+```
+
+### Obtener datos para una factura nueva
+
+`GET /pos/invoices/new.json`
+
+```bash
+curl -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/new.json
+```
+
+Devuelve los valores iniciales de una factura y las listas de productos, paquetes, categorías, precios y existencias de la bodega del usuario:
+
+```json
+{
+  "invoice": {"invoice_number": "FEL", "taxable": true, "seller_id": 1},
+  "items": [],
+  "bundles": [],
+  "categories": [],
+  "item_prices": {},
+  "bundle_prices": {},
+  "item_stocks": {},
+  "bundle_stocks": {}
+}
+```
+
+### Actualizar una factura no emitida
+
+`PUT /pos/invoices/:id.json`
+
+```bash
+curl -X PUT \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  -d '{
+    "invoice": {
+      "reference": "Venta corregida",
+      "invoice_details_attributes": {
+        "0": {"id": "1", "quantity": "2"}
+      }
+    }
+  }' \
+  https://app.zauru.com/pos/invoices/1.json
+```
+
+Solo se pueden actualizar facturas en estado de orden. Si la factura ya fue emitida, devuelve `{"error": "No Editable"}`.
+
+### Emitir una orden rápidamente
+
+`GET /pos/invoices/:id/issue_fast.json`
+
+```bash
+curl -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/1/issue_fast.json
+```
+
+Convierte una orden de venta en factura y conserva sus productos, cantidades y precios. Devuelve la factura emitida y sus detalles.
+
+### Consultar datos superficiales de una factura
+
+`GET /pos/invoices/:id/shallow_edit.json`
+
+```bash
+curl -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/1/shallow_edit.json
+```
+
+Devuelve los datos que se pueden modificar sin cambiar los productos ni los montos: número de factura, referencia, fecha, vendedor, memo, etiquetas e imagen.
+
+### Actualizar datos superficiales de una factura
+
+`PATCH /pos/invoices/:id/shallow_update.json`
+
+```bash
+curl -X PATCH \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  -d '{
+    "invoice": {
+      "reference": "Referencia actualizada",
+      "memo": "Nota actualizada",
+      "created_at": "2026-05-25"
+    }
+  }' \
+  https://app.zauru.com/pos/invoices/1/shallow_update.json
+```
+
+Actualiza los campos superficiales sin ejecutar los callbacks normales de la factura. Acepta `invoice_number`, `reference`, `date`, `seller_id`, `memo`, `tag_ids`, `invoice_image` y `created_at`. Devuelve la factura actualizada y sus detalles.
+
+### Anular una factura
+
+`DELETE /pos/invoices/:id.json`
+
+```bash
+curl -X DELETE \
+  -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/1.json
+```
+
+Anula la factura. Si la operación es correcta, devuelve `204 No Content` sin cuerpo.
+
+### Anular una factura sin pagos
+
+`DELETE /pos/invoices/:id/no_payments_void.json`
+
+```bash
+curl -X DELETE \
+  -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/1/no_payments_void.json
+```
+
+Usar esta llamada cuando la factura no tiene pagos asociados y el saldo pendiente es cero. Si no se cumplen ambas condiciones, devuelve un error de validación. Si la operación es correcta, devuelve `204 No Content` sin cuerpo.
+
+### Obtener productos, paquetes, precios y existencias
+
+`GET /pos/invoices/get_categories_items_bundles_prices_stocks_images.json`
+
+```bash
+curl -H "Accept: application/json" \
+  -H "X-User-Email: usuario@zauru.com" \
+  -H "X-User-Token: TOKEN_DEL_USUARIO" \
+  https://app.zauru.com/pos/invoices/get_categories_items_bundles_prices_stocks_images.json
+```
+
+Devuelve los datos necesarios para construir la pantalla de factura: productos, paquetes, categorías, precios, existencias, tarjetas de regalo, marcas y las opciones visuales configuradas para el punto de venta:
+
+```json
+{
+  "items": [
+    {
+      "id": 1,
+      "code": "S31",
+      "name": "1 hora de Configurar Impresoras",
+      "item_category_id": 3,
+      "pays_vat": true
+    }
+  ],
+  "bundles": [
+    {
+      "id": 6,
+      "code": "base",
+      "name": "Modulo Base",
+      "pays_vat": true
+    }
+  ],
+  "categories": [
+    {
+      "id": 9,
+      "name": "cuotas distribuidor"
+    }
+  ],
+  "item_prices": {"344504": 3050.0},
+  "bundle_prices": {"2655": "229.0"},
+  "item_stocks": {"344504": null},
+  "bundle_stocks": {"2655": null}
+}
+```
+
+La respuesta completa incluye contadores y mapas adicionales (`item_categories_count`, `gift_card_types`, `brands`, entre otros) y cada producto o paquete puede traer campos internos como `gemma_q4f16_embedding`, que no son necesarios para integrar la facturación.
+
+Para consultar el precio y la existencia de un producto o paquete específico:
+
+`GET /pos/invoices/item_bundle_info?item_id=1&bundle_id=2&agency_id=3&payee_id=4`
+
+Los parámetros `item_id` y `bundle_id` son alternativos. `agency_id` determina la existencia y `payee_id` permite aplicar la lista de precios del cliente.
+
