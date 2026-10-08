@@ -4,7 +4,12 @@ sidebar_label: "Crear órdenes de compra"
 sidebar_position: 1
 ---
 
-Zauru maneja dos tipos de orden de compra: la local y la de importación. Este tutorial explica cómo crear ambas.
+Cada vez que necesita reponer inventario, ya sea comprándole a un proveedor local o trayendo mercadería del extranjero, todo empieza con una orden de compra: el documento donde queda constancia de qué le compró a quién, a qué costo y en qué condiciones, y que sirve de base para todo el resto del flujo de compras. En este tutorial aprenderá a crear los dos tipos de orden de compra que maneja Zauru:
+
+1. Orden de compra local
+2. Orden de compra al exterior (Importación)
+
+Ambos se ejemplifican en este tutorial.
 
 ## Crear una orden de compra local
 
@@ -17,15 +22,25 @@ Zauru maneja dos tipos de orden de compra: la local y la de importación. Este t
 Complete los campos:
 
 a. Coloque una referencia breve para ubicar la orden en el listado.
+
 b. Quite el cheque de "Sujeto a Impuestos" si la compra no causó impuestos o si no desea registrarlos.
+
 c. Coloque el número de factura, si se la dieron.
+
 d. Coloque la fecha de la compra.
+
 e. Coloque la fecha esperada de recepción.
+
 f. Seleccione el término de pago acordado: contado o crédito.
+
 g. Coloque el proveedor; si es nuevo, agréguelo antes de continuar.
+
 h. Coloque el origen de la mercadería, si lo conoce.
+
 i. Seleccione el empleado que hizo la compra.
+
 j. Seleccione la moneda de la compra.
+
 k. Coloque el producto y la cantidad ordenada; para agregar otro producto presione "+".
 
 ![imagen2](/img/compras/ordenes-de-compra-2.jpg)
@@ -53,20 +68,35 @@ Aparecerá un mensaje de confirmación; ahora recíbala en su bodega para poder 
 Complete los campos:
 
 a. Coloque una referencia breve; en el ejemplo, "Importación de Mercadería".
+
 b. Deje marcado el cheque de "Sujeto a Impuestos". Zauru no calcula los impuestos automáticamente en importaciones; más adelante usted los registra como Cargos y Aranceles.
+
 c. Coloque la factura o recibo, si se lo brindaron.
+
 d. Coloque la fecha de la compra.
+
 e. Coloque la fecha esperada de despacho de la mercadería.
+
 f. Seleccione el término de pago acordado: crédito o contado.
+
 g. Coloque el proveedor existente o agregue uno nuevo.
+
 h. Coloque el origen de la mercadería o la ubicación de la bodega del proveedor.
+
 i. Seleccione el empleado encargado de la compra.
+
 j. Seleccione la moneda de la compra.
+
 k. Seleccione "Importar" para marcar la compra como importación.
+
 l. Seleccione el INCOTERM de la importación. En el ejemplo se usa FOB (Free on Board), el término más común para mercadería que viaja en barco.
+
 m. Coloque el lugar de entrega; en el ejemplo, Puerto Quetzal.
+
 n. Seleccione el tipo de transporte.
+
 o. Coloque el forwarder o intermediario que maneja la mercadería.
+
 p. Seleccione los productos, la cantidad y el costo unitario original, sin incluir cargos ni aranceles.
 
 ![imagen7](/img/compras/ordenes-de-compra-7.png)
