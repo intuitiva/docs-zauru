@@ -86,7 +86,7 @@ Los pasos para colocar datos son:
 
 Aparecerá un mensaje de éxito confirmando que la plantilla fue creada. Antes de imprimir sobre cheques o facturas reales, haga pruebas en una hoja en blanco para ver si la plantilla necesita ajustes.
 
-En "Tareas Especiales" aparecen tres iconos: vista previa de la plantilla, editar sus datos y duplicarla. El siguiente ejemplo muestra cómo duplicar la plantilla de impresión.
+En "Tareas Especiales" aparecen cuatro iconos: vista previa con datos de ejemplo, vista previa con las variables, editar datos y duplicar. En algunas plantillas aparece además la vista previa PDF. El siguiente ejemplo muestra cómo duplicar la plantilla de impresión.
 
 ![imagen8](/img/primeros-pasos/formatos-impresion-8.jpg)
 
@@ -122,7 +122,7 @@ Los pasos para crear una impresión de documentos son los siguientes:
 Aparecerán las opciones para crear la impresión de documentos. Los pasos son:
 
 1. Si desea que esta impresión esté activa, deje el cheque en el recuadro, para desactivarla quite el cheque.
-2. Seleccione desde qué operación se usará la impresión de documentos, en este ejemplo seleccionamos "Transacciones" porque los cheques se hacen desde transacciones contables. Presione refrescar para que Zauru despliegue las plantillas de impresión que están creadas desde esa operación.
+2. Seleccione desde qué operación se usará la impresión de documentos, en este ejemplo seleccionamos "Transacciones" porque los cheques se hacen desde transacciones contables. Presione "Actualizar" para que Zauru despliegue las plantillas de impresión creadas desde esa operación.
 3. Seleccione la plantilla de impresión creada anteriormente que quiere utilizar.
 4. En este campo puede agregar las restricciones que usted desee para que se pueda usar esta impresión de documentos. En este ejemplo agregamos la restricción "Imprimible" para que cada vez que se haga una transacción con el cheque de Imprimible seleccionado, despliegue la impresión de documentos de cheque.
 5. Si usted selecciona el cheque le dará valor a esta restricción, si deja el cheque en blanco, la impresión de documentos aparecerá en cualquier transacción.
@@ -150,14 +150,12 @@ Aparecerá un mensaje de éxito confirmando que la impresión de documento se cr
 
 ## Vista Previa en PDF
 
-Zauru genera una vista previa en PDF de la plantilla de impresión para verificar el documento final antes de imprimirlo:
+En las plantillas de cotizaciones, facturas no pagadas, notas de crédito, contratos activos y casos, el listado incluye el icono de "Vista Previa PDF", que genera un PDF con datos de ejemplo para verificar el diseño, la disposición de los campos y las medidas configuradas:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Plantillas".
 3. Seleccionar la pestaña "Plantillas de Impresión".
 4. Hacer click en el icono de "Vista Previa PDF" de la plantilla deseada.
-
-El PDF incluye datos de ejemplo para verificar el diseño, la disposición de los campos y las medidas configuradas.
 
 ## Grupos en Plantillas de Impresión para Formularios
 
