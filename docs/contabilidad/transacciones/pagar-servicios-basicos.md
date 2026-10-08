@@ -6,7 +6,7 @@ sidebar_position: 8
 
 Cada mes le llegan las facturas de luz, agua, teléfono e internet, y cada una merece quedar registrada en sus gastos. En esta página aprenderá a pagarlas al contado, o a ingresarlas primero cuando el proveedor le da crédito.
 
-> Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compra)
+> Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](/compras/ordenes-de-compra/crear-ordenes-de-compra)
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
 
 ## (Agua, Luz, Teléfono, etc.)
