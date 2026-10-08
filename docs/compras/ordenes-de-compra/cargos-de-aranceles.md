@@ -1,10 +1,10 @@
 ---
-title: "Cargos de Aranceles"
-sidebar_label: "Cargos de Aranceles"
-sidebar_position: 9
+title: "Cargos de Aranceles (Impuestos de importación)"
+sidebar_label: "Cargos de Aranceles (Impuestos de importación)"
+sidebar_position: 6
 ---
 
-Cuando su importación llega a puerto, la aduana le cobra aranceles e impuestos por cada producto, y esos montos forman parte del costo real de su mercadería. Si no los registra, el costo de su inventario queda incompleto. En este tutorial aprenderá a registrar los cargos de arancel a una orden de compra, producto por producto, para que Zauru los reparta en el costo de cada artículo de acuerdo con su póliza de importación.
+Cuando su importación llega a puerto, la aduana le cobra aranceles e impuestos por cada producto, y esos montos forman parte del costo real de su mercadería. En Centroamérica, el impuesto de importación DAI (Derecho Arancelario a la Importación) aplica un porcentaje extra que varía según el tipo de ítem importado; por eso esta opción permite registrar el impuesto línea por línea, de modo que cada producto lleve su propio porcentaje y no uno igual para todos, como ocurre con el IVA. Si no registra esos cargos, el costo de su inventario queda incompleto. En este tutorial aprenderá a registrar los cargos de arancel a una orden de compra, producto por producto, para que Zauru los reparta en el costo de cada artículo de acuerdo con su póliza de importación.
 
 Los pasos para agregar aranceles a una orden de compra son los siguientes:
 
@@ -48,7 +48,7 @@ Con los aranceles registrados, cada producto de su importación ya refleja el co
 ## API (llamadas desde sistemas externos)
 
 ### Ver detalles de un cargo de arancel
-El 1 al final de la URL es el ID del cargo de arancel
+El 1 al final de la URL es el ID del cargo de arancel.
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -59,13 +59,10 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges/1.json
 ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+Devuelve el mismo objeto del cargo que "Ver detalles de un cargo" en [Cargos adicionales a una orden de compra o consolidado](/compras/ordenes-de-compra/cargos-adicionales-a-una-orden-de-compra-o-consolidado).
 
 ### Obtener datos para un cargo de arancel nuevo
-El parámetro `po` es el ID de la orden de compra a la que se le agregaran los aranceles
+El parámetro `po` es el ID de la orden de compra a la que se le agregarán los aranceles.
 ```bash
 curl -v \
   -H "Accept: application/json" \
@@ -76,10 +73,7 @@ curl -v \
   "https://app.zauru.com/purchases/charges/tariffs_charges/new.json?po=1"
 ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+Devuelve el mismo JSON que "Ver detalles de un cargo de arancel".
 
 ### Obtener datos para editar un cargo de arancel
 ```bash
@@ -92,10 +86,7 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges/1/edit.json
 ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+Devuelve el mismo JSON que "Ver detalles de un cargo de arancel".
 
 ### Crear nuevo cargo de arancel
 ```bash
@@ -118,10 +109,6 @@ curl -v \
         "0": {
           "purchase_order_detail_id": "1",
           "amount": "50"
-        },
-        "1": {
-          "purchase_order_detail_id": "2",
-          "amount": "75"
         }
       }
     }
@@ -129,7 +116,7 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges.json
 ```
 
-Esto devolverá un JSON similar a este:
+En caso de éxito, devuelve el mismo JSON que "Ver detalles de un cargo de arancel". Si el cargo no es válido, devuelve un JSON con los errores, por ejemplo:
 ```json
 {
   "payee_info": [
@@ -164,7 +151,4 @@ curl -v \
   https://app.zauru.com/purchases/charges/tariffs_charges/1.json
 ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+Devuelve el mismo JSON que "Ver detalles de un cargo de arancel".

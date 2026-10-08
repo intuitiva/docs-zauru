@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Cada vez que un proveedor le entrega una factura al crédito, conviene dejarle por escrito cuándo se la va a pagar: ese comprobante es la contraseña de pago, y aquí verá cómo crearla e imprimirla. Le sirve para tener claras sus cuentas por pagar y para que el proveedor sepa exactamente cuándo esperar su dinero.
 
-> Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](https://docs.zauru.com/compras/orden-de-compras).
+> Pagar servicios también se puede realizar desde el módulo de compras con una [orden de compras](/compras/ordenes-de-compra/crear-ordenes-de-compra).
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
 
 Los pasos para crear una contraseña de pago son los siguientes:

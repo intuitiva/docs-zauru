@@ -1,0 +1,10 @@
+{
+  "position": 4,
+  "label": "Órdenes de compra",
+  "link": {
+    "type": "doc",
+    "id": "compras/ordenes-de-compra/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

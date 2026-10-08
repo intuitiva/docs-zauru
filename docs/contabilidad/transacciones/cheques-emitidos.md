@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Cada vez que paga a un proveedor con cheque, conviene registrarlo en el momento para que la cuenta de banco y el gasto queden al día. A veces el cheque se cobra el mismo día y a veces usted lo post-fecha para que se cobre después; aquí le mostramos ambos casos paso a paso.
 
-> Emitir cheques para pagos también se puede realizar desde el módulo de compras con un [pago orden de compras](https://docs.zauru.com/compras/pagar-ordenes-de-compra-y-cargos-adicionales).
+> Emitir cheques para pagos también se puede realizar desde el módulo de compras con un [pago orden de compras](/compras/ordenes-de-compra/pagar-ordenes-de-compra-y-cargos-adicionales).
 > Hay empresas que prefieren solo tener compras de mercadería en el módulo de compras por lo que exite este tutorial.
 
 ## Emitir un cheque Normal
