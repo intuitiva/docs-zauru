@@ -4,7 +4,7 @@ sidebar_label: "Formatos de Impresión (Plantillas)"
 sidebar_position: 5
 ---
 
-Cuando necesita imprimir sobre papelería especial — chequeras, facturas pre impresas, recibos o cotizaciones —, la plantilla correcta hace que cada dato caiga exactamente en su casilla. Zauru le permite crear plantillas de impresión para cualquier documento que usted necesite, entre ellos:
+Las plantillas de impresión colocan cada dato en su casilla al imprimir sobre papelería especial: chequeras, facturas pre impresas, recibos o cotizaciones. Zauru permite crear plantillas para cualquier documento, entre ellos:
 
 - Facturas pre impresas.
 - Cheque.
@@ -16,132 +16,132 @@ Cuando necesita imprimir sobre papelería especial — chequeras, facturas pre i
 - Envío.
 - Formularios.
 
-En las siguientes imágenes se ejemplificara la creación de un formato de impresión para cheques, la forma de hacer una nueva plantilla de impresión es la siguiente:
+Las siguientes imágenes muestran cómo crear una plantilla de impresión para cheques:
 
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar la pestaña de “Plantillas de Impresión”.
-4. Presionar “Nueva Plantilla de Impresión”.
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. Seleccionar la pestaña de "Plantillas de Impresión".
+4. Presionar "Nueva Plantilla de Impresión".
 
 ![imagen1](/img/primeros-pasos/formatos-impresion-1.jpg)
 
-Le debera aparecer las opciones para crear una nueva plantilla de impresión, en estas opciones usted debera especificar el tamaño de la hoja y la cantidad de columnas que tiene el encabezado, el cuerpo y el pie de pagina de su plantilla de impresion. Las opciones mas relevantes a colocar son las siguientes:
+Aparecerán las opciones para crear la plantilla. En ellas se especifica el tamaño de la hoja y las columnas del encabezado, el cuerpo y el pie de página. Las opciones más relevantes son:
 
-a. Si quita el cheque en esta opción la plantilla de impresión no estará activada para usarse.
+a. Si quita el cheque, la plantilla queda inactiva.
 
-b. Seleccione que tipo de operación ira ligada a esta plantilla de impresión, en este ejemplo se selecciono “Transacciones”, porque los cheques se hacen desde transacciones, si usted quiere hacer un formato de impresión de facturas deberá seleccionar “Facturas no Pagadas” en este campo.
+b. Seleccione la operación ligada a la plantilla de impresión. En el ejemplo se seleccionó "Transacciones", porque los cheques se hacen desde transacciones; para facturas seleccione "Facturas no Pagadas".
 
-c. Si selecciona esta opción su formato de impresión tendrá un campo disponible para colocarle titulo.
+c. Si selecciona esta opción, la plantilla tendrá un campo para el título.
 
 ![imagen2](/img/primeros-pasos/formatos-impresion-2.png)
 
-d. Si selecciona este campo su formato de impresión tendrá un campo para colocar un subtitulo.
+d. Si selecciona este campo, la plantilla tendrá un campo para el subtítulo.
 
-e. Si selecciona este campo podrá incluir un logo en el formato de impresión, abajo aparecen las opciones para configurar el ancho y alto del logo y la posición en la que debe aparecer en la hoja.
+e. Si selecciona este campo podrá incluir un logo; abajo se configuran su ancho, alto y posición en la hoja.
 
-f. Si selecciona esta opción podrá incluir un segundo logo en la plantilla de impresión.
+f. Si selecciona esta opción podrá incluir un segundo logo.
 
-g. Aquí debe seleccionar la ubicación de la imagen que quiere utilizar para el logo.
+g. Aquí debe seleccionar la imagen que usará como logo.
 
 ![imagen3](/img/primeros-pasos/formatos-impresion-3.png)
 
-h. Esta campo permite configurar la cantidad de filas y columnas que llevara la cabecera, se puede incluir un titulo en la cabecera y también se le pueden poner bordes a las filas y columnas. Las filas y columnas deben ser especificadas por usted y también puede colocarle un titulo a la fila o columna, solo debe marcar el recuadro de “Titulo”.
+h. Este campo configura las filas y columnas de la cabecera, que puede llevar título y bordes. Usted especifica filas y columnas, y para titularlas debe marcar el recuadro "Título".
 
-En ese ejemplo, solo necesitamos 2 columnas y 4 filas para hacer una impresión de cheque, en otros formatos de impresión puede que sea necesario tener mas filas y columnas.
+En el ejemplo bastan 2 columnas y 4 filas para imprimir un cheque; otros formatos pueden requerir más filas y columnas.
 
 i. Aquí deberá colocar el espacio en cm. entre el encabezado y el cuerpo.
 
-j. Este campo permite configurar la cantidad de columnas que llevara el cuerpo. Se le puede incluir un titulo al cuerpo, al igual que un titulo a las columnas. Si selecciona “Pie de Página” le permitirá tener una fila mas en el cuerpo, generalmente el pie de página en el cuerpo se utiliza para colocar el total en letras y el total de un formato de impresión.
+j. Este campo configura las columnas del cuerpo y permite incluir un título al cuerpo y otro a las columnas. Al seleccionar "Pie de Página" se agrega una fila al cuerpo, que suele usarse para el total en letras y el total del formato.
 
 ![imagen4](/img/primeros-pasos/formatos-impresion-4.jpg)
 
 k. Aquí deberá colocar el espacio en cm. entre el cuerpo y el pie de página.
 
-L. Este campo permite configurar la cantidad de filas y columnas que lleva el pie de página.  Para que se incluya el pie de página en la hoja debe seleccionar el cheque de “Incluye Pie de Página”. Se puede incluir un título en el pie de pagina, o un titulo en la fila o columna. También se le puede colocar bordes a las filas y columnas.
+l. Este campo configura las filas y columnas del pie de página. Para incluirlo en la hoja debe seleccionar el cheque de "Incluye Pie de Página". Puede agregar un título y bordes a las filas y columnas.
 
-m. Si selecciona esta opción tendrá una ultima fila al final de la impresión para poder agregar datos, generalmente esta opción sirve para agregar espacio para firmas o para términos y condiciones en el formato de impresión.
+m. Si selecciona esta opción tendrá una última fila al final de la impresión, útil para firmas o términos y condiciones.
 
-n. Aquí puede seleccionar cuantas impresiones quiere que salgan por página, en ciertos casos, como en la impresión de facturas, se debe imprimir dos o tres copias, una copia al cliente, una al contador y una para registro de la empresa.  También puede colocar la brecha en cm. entre estas impresiones.
+n. Aquí selecciona cuántas impresiones salen por página; para facturas, por ejemplo, pueden ser dos o tres copias: cliente, contador y registro de la empresa. También puede indicar la brecha en cm. entre impresiones.
 
-Por ultimo seleccione “Crear Plantilla de impresión” para guardar los cambios efectuados.
+Por último seleccione "Crear Plantilla de impresión" para guardar los cambios.
 
 ![imagen5](/img/primeros-pasos/formatos-impresion-5.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue creada exitosamente. El siguiente paso para configurar su plantilla es editas los datos que llevara.
+Aparecerá un mensaje de éxito confirmando que la plantilla fue creada. El siguiente paso es editar los datos que llevará.
 
-Para editar los datos refiérase al paso 1 de la imágen.
+Para editar los datos, refiérase al paso 1 de la imagen.
 
 ![imagen6](/img/primeros-pasos/formatos-impresion-6.jpg)
 
-## Editar datos de la Plantilla de Impresion
-Después de establecer las medidas de su plantilla de impresión debe establecer el espacio de sus filas y columnas y los datos que llevara dentro de cada casilla. En la siguiente imagen se muestra los datos que debería de llevar una plantilla de impresión de cheques.
+## Editar datos de la Plantilla de Impresión
+Después de establecer las medidas de la plantilla debe definir el tamaño de sus filas y columnas y los datos de cada casilla. La siguiente imagen muestra los datos de una plantilla de impresión de cheques.
 
-Los pasos para colocar datos son los siguientes:
+Los pasos para colocar datos son:
 
-1. En esta tabla encontrara todos los campos que son permitidos en la plantilla de impresión que esta realizando. Los campos que tienen una X son campos que se pueden colocar en cualquier parte de la plantilla, los campos que tienen un cheque, solo se pueden colocar en la primer fila del cuerpo, son datos repetibles, como la cantidad, el precio o el precio unitario.
+1. En esta tabla encontrará todos los campos que son permitidos en la plantilla de impresión que está realizando. Los campos que tienen una X son campos que se pueden colocar en cualquier parte de la plantilla, los campos que tienen un cheque, solo se pueden colocar en la primera fila del cuerpo, son datos repetibles, como la cantidad, el precio o el precio unitario.
 2. Debe colocar el alto y el ancho de sus filas y columnas.
 3. Dentro de cada celda debe colocar las variables establecidas en la tabla de la derecha, con un signo de dólar ($) al principio o también puede colocar texto plano en la celda, en este ejemplo se le coloca NO NEGOCIABLE a la celda porque queremos que nuestra plantilla de impresión de cheques siempre imprima este texto.
 
 ![imagen7](/img/primeros-pasos/formatos-impresion-7.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue creada exitosamente. Le recomendamos que antes de comenzar a imprimir sobre sus cheques o facturas reales, haga pruebas sobre una hoja en blanco para ver si su plantilla necesita modificaciones.
+Aparecerá un mensaje de éxito confirmando que la plantilla fue creada. Antes de imprimir sobre cheques o facturas reales, haga pruebas en una hoja en blanco para ver si la plantilla necesita ajustes.
 
-En el recuadro de “Tareas Especiales” aparecen tres iconos, el primero es una vista previa de la plantilla de impresión. El segundo es para editar los datos de la plantilla y el tercero es para duplicar la plantilla de impresión. En el siguiente ejemplo se mostrara como duplicar la plantilla de impresión.
+En "Tareas Especiales" aparecen tres iconos: vista previa de la plantilla, editar sus datos y duplicarla. El siguiente ejemplo muestra cómo duplicar la plantilla de impresión.
 
 ![imagen8](/img/primeros-pasos/formatos-impresion-8.jpg)
 
 ## Duplicar una plantilla de impresión
-Hay veces en las que queremos tener dos plantillas de impresión muy parecidas, pero con ciertos datos distintos, para no tener que hacer una nueva plantilla de impresión desde cero, Zauru le permite duplicar una plantilla de impresión existente para que pueda editar datos en la copia y mantener la plantilla existente a la vez.
+Para tener dos plantillas parecidas sin crearlas desde cero, Zauru permite duplicar una plantilla existente: edite los datos de la copia y conserve la original.
 
-La forma de duplicar un plantilla de impresión es la siguiente.
+La forma de duplicar una plantilla de impresión es la siguiente:
 
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar el botón de “Duplicar”.
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. Seleccionar el botón de "Duplicar".
 
 ![imagen9](/img/primeros-pasos/formatos-impresion-9.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la plantilla de impresión fue duplicada exitosamente. Zauru le creara una plantilla de impresión con el mismo nombre pero con la palabra “copia” al final. Ahora podrá editar esta copia y hacerle las modificaciones que usted desee sin alterar la plantilla de impresión original.
+Aparecerá un mensaje de éxito confirmando que la plantilla fue duplicada. Zauru crea una copia con el mismo nombre más la palabra "copia" al final. Podrá editarla sin alterar la plantilla original.
 
-El ultimo paso para poder imprimir es adjuntar la plantilla de impresión a una Impresión de Documentos, en el siguiente ejemplo se mostrara como adjuntarla para poder imprimir.
+El último paso para imprimir es adjuntar la plantilla a una Impresión de Documentos. El siguiente ejemplo muestra cómo hacerlo.
 
 ![imagen10](/img/primeros-pasos/formatos-impresion-10.jpg)
 
 ## Impresión de Documentos
-Después de crear y modificar la plantilla de impresión, se debe adjuntar a una impresión de documentos para seleccionar en que tipo de transacción se podrá imprimir con esta plantilla de impresión. También se pueden agregar ciertas restricciones para la impresión de documentos, por ejemplo, si es un cheque, que la transacción sea imprimible y salga desde la cuenta monetaria para que se pueda imprimir con esta plantilla de impresión.
+Después de crear la plantilla de impresión, se adjunta a una impresión de documentos para seleccionar en qué tipo de transacción se puede imprimir. También se agregan restricciones: en el caso de un cheque, que la transacción sea imprimible y salga desde la cuenta monetaria.
 
 Los pasos para crear una impresión de documentos son los siguientes:
 
-1. Ir a “Configuraciones”.
-2. Seleccionar “Plantillas”.
-3. Seleccionar “Impresión de Documentos”.
-4. Seleccionar “Nueva impresión de Documentos”.
+1. Ir a "Configuraciones".
+2. Seleccionar "Plantillas".
+3. Seleccionar "Impresión de Documentos".
+4. Seleccionar "Nueva impresión de Documentos".
 
 ![imagen11](/img/primeros-pasos/formatos-impresion-11.jpg)
 
-Le aparecerán las opciones para crear una nueva impresión de documentos, los pasos a seguir son los siguientes:
+Aparecerán las opciones para crear la impresión de documentos. Los pasos son:
 
-1. Si desea que esta impresión este activa, deje el cheque en el recuadro, para desactivarla quite el cheque.
-2. Seleccione desde que operación se usara la impresión de documentos, en este ejemplo seleccionamos “Transacciones” porque los cheques se hacen desde transacciones contables. Presione refrescar para que Zauru despliegue las plantillas de impresión que están creadas desde esa operación.
+1. Si desea que esta impresión esté activa, deje el cheque en el recuadro, para desactivarla quite el cheque.
+2. Seleccione desde qué operación se usará la impresión de documentos, en este ejemplo seleccionamos "Transacciones" porque los cheques se hacen desde transacciones contables. Presione refrescar para que Zauru despliegue las plantillas de impresión que están creadas desde esa operación.
 3. Seleccione la plantilla de impresión creada anteriormente que quiere utilizar.
-4. En este campo puede agregar las restricciones que usted desee para que se pueda usar esta impresión de documentos. En este ejemplo agregamos la restricción “Imprimible” para que cada vez que se haga una transacción con el cheque de Imprimible seleccionado, despliegue la impresión de documentos de cheque.
+4. En este campo puede agregar las restricciones que usted desee para que se pueda usar esta impresión de documentos. En este ejemplo agregamos la restricción "Imprimible" para que cada vez que se haga una transacción con el cheque de Imprimible seleccionado, despliegue la impresión de documentos de cheque.
 5. Si usted selecciona el cheque le dará valor a esta restricción, si deja el cheque en blanco, la impresión de documentos aparecerá en cualquier transacción.
 
 ![imagen12](/img/primeros-pasos/formatos-impresion-12.jpg)
 
-Ahora agregaremos una restricción para que solo salga la impresión de documentos si es desde la cuenta monetaria, la manera de hacer es la siguiente:
+Ahora agregaremos una restricción para que la impresión de documentos solo salga desde la cuenta monetaria:
 
-6. Seleccionar la restricción de “Cuenta” y presionar “Agregar Restricción”.
+6. Seleccionar la restricción de "Cuenta" y presionar "Agregar Restricción".
 
-7. Seleccionar la cuenta a la que desea aplicar la restricción, en este ejemplo se selecciona la cuenta monetaria para que cuando se haga una transacción contable desde la cuenta monetaria, que sea imprimible, aparezca la impresión de documentos.
+7. Seleccionar la cuenta a la que desea aplicar la restricción; en este ejemplo se selecciona la cuenta monetaria para que, cuando se haga una transacción contable imprimible desde la cuenta monetaria, aparezca la impresión de documentos.
 
 8. Aquí podrá colocar una nota de la impresión de documentos. Es opcional y no aparecerá al momento de imprimir.
 
-9. Seleccione  “Crear impresión de documento” para guardar los cambios.
+9. Seleccione "Crear impresión de documento" para guardar los cambios.
 
 ![imagen13](/img/primeros-pasos/formatos-impresion-13.jpg)
 
-Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la impresión de documento se creo exitosamente.
+Aparecerá un mensaje de éxito confirmando que la impresión de documento se creó.
 
 ![imagen14](/img/primeros-pasos/formatos-impresion-14.jpg)
 
@@ -150,20 +150,20 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificándole que la im
 
 ## Vista Previa en PDF
 
-Zauru le permite generar una vista previa en PDF de su plantilla de impresión para verificar cómo se verá el documento final antes de imprimirlo. Para generar la vista previa:
+Zauru genera una vista previa en PDF de la plantilla de impresión para verificar el documento final antes de imprimirlo:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Plantillas".
 3. Seleccionar la pestaña "Plantillas de Impresión".
-4. En el listado, hacer click en el icono de "Vista Previa PDF" en la plantilla deseada.
+4. Hacer click en el icono de "Vista Previa PDF" de la plantilla deseada.
 
-El sistema generará un archivo PDF con datos de ejemplo para que pueda verificar el diseño, la disposición de los campos y las medidas configuradas.
+El PDF incluye datos de ejemplo para verificar el diseño, la disposición de los campos y las medidas configuradas.
 
 ## Grupos en Plantillas de Impresión para Formularios
 
-Zauru permite asociar grupos de formularios a plantillas de impresión. Esto es útil cuando un formulario tiene grupos dinámicos y usted desea que la plantilla de impresión muestre correctamente los datos agrupados. Al crear o editar una plantilla de impresión, puede seleccionar los grupos de formulario que se utilizarán para estructurar la salida impresa.
+Zauru permite asociar grupos de formularios a plantillas de impresión para que los datos de formularios con grupos dinámicos se impriman agrupados. Al crear o editar la plantilla, puede seleccionar los grupos de formulario que estructurarán la salida impresa.
 
-Con la plantilla creada, sus datos ordenados y la impresión de documentos adjuntada, ya puede imprimir desde la transacción correspondiente. Le recomendamos hacer una prueba en hoja en blanco antes de imprimir sobre sus chequeras o papelería oficial, y ajustar las medidas si algo no cae exactamente donde debe.
+Con la plantilla creada, sus datos ordenados y la impresión de documentos adjuntada, ya puede imprimir desde la transacción correspondiente. Haga una prueba en hoja en blanco antes de imprimir sobre sus chequeras o papelería oficial, y ajuste las medidas si algo no cae donde debe.
 
 ## API (llamadas desde sistemas externos)
 
