@@ -1,0 +1,10 @@
+{
+  "position": 4.5,
+  "label": "Facturas",
+  "link": {
+    "type": "doc",
+    "id": "ventas/facturas/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}

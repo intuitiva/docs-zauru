@@ -151,6 +151,10 @@ const config = {
             to: "/nominas/tiempo-fuera-personal",
             from: "/nominas/tiempo-personal",
           },
+          {
+            to: "/ventas/ordenes-de-venta",
+            from: "/ventas/ordenes-de-venta-o-facturas",
+          },
         ],
       },
     ],
