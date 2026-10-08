@@ -30,3 +30,69 @@ Si la factura provisional ha sido **anulada**, la impresión y el PDF ahora mues
 ## Representación electrónica (FEL Guatemala)
 
 En la facturación electrónica de Guatemala, las facturas provisionales ahora tratan todos sus renglones como **bienes** en su representación electrónica (campo `BienOServicio = B`), independientemente del tipo de ítem.
+
+## API (llamadas desde sistemas externos)
+
+### Listar facturas provisionales
+
+Devuelve hasta 100 facturas provisionales no anuladas de la entidad.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/provisional_invoices.json
+```
+
+Esto devolverá un JSON similar a este:
+```json
+[
+  {
+    "id": 1,
+    "zid": 2,
+    "invoice_number": null,
+    "date": "2026-08-10",
+    "issued_at": "2026-08-10T15:20:31.000Z",
+    "agency_id": 4,
+    "payee_id": 5,
+    "seller_id": 6,
+    "currency_id": 1,
+    "exchange_rate": 1.0,
+    "subtotal": "1250.0",
+    "total": "1250.0",
+    "taxable": false,
+    "excempt": true,
+    "foreign": true,
+    "reference": "PRE-FACTURA-001",
+    "memo": "",
+    "voided": false,
+    "provisional_invoice_details_count": 2,
+    "created_at": "2026-08-10T15:20:31.000Z",
+    "updated_at": "2026-08-10T15:20:31.000Z"
+  }
+]
+```
+
+### Consultar la respuesta certificada de una factura provisional
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/provisional_invoices/1/external_storage_certified_response.json
+```
+
+### Consultar la respuesta certificada de anulación de una factura provisional
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/sales/provisional_invoices/1/external_storage_certified_response_for_voiding.json
+```

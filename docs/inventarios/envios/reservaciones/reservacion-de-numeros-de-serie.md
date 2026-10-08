@@ -32,3 +32,52 @@ Le aparecerá un mensaje notificando que la reservación fue creada exitosamente
 ![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
 
 Con la reservación entregada, cada número de serie queda disponible en la bodega y listo para moverse o venderse. La creación de números de serie se documenta en [Números de serie](/inventarios/inventarios-numeros-de-serie).
+
+## API (llamadas desde sistemas externos)
+
+### Crear la reservación con números de serie
+
+Cada número de serie va en un movimiento con `booked_quantity` de 1. La bodega de origen es la agencia del proveedor (`Vendor`) y la de destino, la bodega en la que se ingresarán los números de serie.
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  -X POST \
+  -d '{
+    "shipment": {
+      "reference": "Ingreso de números de serie",
+      "booker_id": "1",
+      "needs_transport": "0",
+      "planned_delivery": "2026-08-15",
+      "agency_from_id": "2",
+      "agency_to_id": "1",
+      "movements_attributes": {
+        "0": {
+          "item_id": "3",
+          "booked_quantity": "1",
+          "serial_id": "10"
+        },
+        "1": {
+          "item_id": "3",
+          "booked_quantity": "1",
+          "serial_id": "11"
+        }
+      }
+    }
+  }' \
+  https://app.zauru.com/inventories/bookings.json
+```
+
+Los números de serie deben estar creados previamente y pertenecer al ítem del movimiento; de lo contrario la reservación no se crea. Para consultar la reservación con sus movimientos:
+
+```bash
+curl -v \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "X-User-Email: prueba@zauru.com" \
+  -H "X-User-Token: XSDFKK09238487DLFS" \
+  https://app.zauru.com/inventories/bookings/1.json
+```
