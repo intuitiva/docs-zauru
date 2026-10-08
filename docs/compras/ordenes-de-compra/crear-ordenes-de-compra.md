@@ -109,7 +109,7 @@ Aparecerá un mensaje de éxito. Autorice la orden y luego agregue los cargos y 
 
 ![imagen9](/img/compras/ordenes-de-compra-9.jpg)
 
-Aparecerá un mensaje de confirmación. Para más detalles, consulte [Cargos adicionales a una orden de compra o consolidado](/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado) o [Cargos de Aranceles](/compras/cargos-de-aranceles).
+Aparecerá un mensaje de confirmación. Para más detalles, consulte [Cargos adicionales a una orden de compra o consolidado](/compras/ordenes-de-compra/cargos-adicionales-a-una-orden-de-compra-o-consolidado) o [Cargos de Aranceles](/compras/cargos-de-aranceles).
 
 ![imagen10](/img/compras/ordenes-de-compra-10.jpg)
 
