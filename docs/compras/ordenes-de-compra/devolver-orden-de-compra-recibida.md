@@ -1,7 +1,7 @@
 ---
 title: "Anular recepciones de una orden de compra"
 sidebar_label: "Anular recepciones de una orden de compra"
-sidebar_position: 6
+sidebar_position: 3
 ---
 
 Le llegó mercadería dañada, vencida o que no es la que usted pidió, y toca regresarla al proveedor. Devolver una recepción en Zauru le permite corregir esa compra: el sistema regresa automáticamente el producto de su inventario hacia el proveedor, de modo que sus existencias y su cuenta con el proveedor quedan cuadradas.
@@ -16,7 +16,7 @@ Existen varias situaciones por las cuales se regresen los productos de una orden
 En el siguiente ejemplo se mostrara como devolver recepciones de orden de compra:
 
 1. Ir a “Compras”.
-2. Seleccionar “Ordenes de Compra” o la opción “Ordenes de Compra Cerradas”.
+2. Seleccionar **“Ordenes de Compra”** o la opción **“Ordenes de Compra Cerradas”**.
 3. Seleccionar “Detalles”  de la orden de compra que quiere devolver.
 
 ![Seleccionar Orden de compra](/img/compras/devolver-orden-de-compra-recibida-1.png)
