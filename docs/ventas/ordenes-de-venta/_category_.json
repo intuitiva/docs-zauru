@@ -1,0 +1,10 @@
+{
+  "position": 4,
+  "label": "Órdenes de Venta",
+  "link": {
+    "type": "doc",
+    "id": "ventas/ordenes-de-venta/index"
+  },
+  "collapsible": true,
+  "collapsed": true
+}
