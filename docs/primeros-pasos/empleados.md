@@ -4,7 +4,7 @@ sidebar_label: "Empleados"
 sidebar_position: 2
 ---
 
-Registre a cada empleado en Zauru para que pueda participar en las operaciones que le correspondan. En el registro puede asignarle responsabilidades (vender, comprar o registrar casos de soporte) y una agencia para el punto de venta.
+Cada vez que contrata a alguien nuevo, conviene registrarlo en Zauru para que pueda participar en las operaciones que le correspondan. El registro de empleados le permite asignar responsabilidades distintas a cada persona — como vender, comprar o registrar casos de soporte — y asignarle una agencia para el punto de venta.
 
 Los pasos para crear un nuevo empleado son:
 
@@ -14,7 +14,7 @@ Los pasos para crear un nuevo empleado son:
 
 ![imagen8](/img/primeros-pasos/empleados-1.png)
 
-Le aparecerán las opciones para crear el empleado; los campos más importantes son los siguientes:
+Los campos más importantes del formulario son los siguientes:
 
 - **¿Activo?**: si quita la marca, el empleado queda inactivo en el sistema.
 - **Número de Empleado**: se genera automáticamente si tiene configurada una numeración automática de documentos (ver [Numeración Automática de Documentos](numeracion-automatica.md)).
@@ -23,8 +23,8 @@ Le aparecerán las opciones para crear el empleado; los campos más importantes 
 
 ![imagen9](/img/primeros-pasos/empleados-2.jpg)
 
-- **Locación**: agencia asignada al empleado; define la agencia que tendrá en los módulos de Soporte y Punto de Venta.
-- **Responsabilidades**: responsabilidades asignadas; permiten seleccionar al empleado en las transacciones que cada una conlleve:
+- **Locación**: agencia asignada al empleado; define la agencia que tendrá en Soporte y Punto de Venta.
+- **Responsabilidades**: permiten seleccionar al empleado en las transacciones que esa responsabilidad conlleve:
   - **Contador**: transacciones contables.
   - **Controlador de Inventarios**: reservaciones de inventario.
   - **Vendedor**: ventas.
@@ -35,17 +35,17 @@ Para guardar los cambios presione “Crear empleado”.
 
 ![imagen10](/img/primeros-pasos/empleados-3.jpg)
 
-Le aparecerá un mensaje de éxito confirmando que el empleado se creó. Ahora podrá verlo en el listado y seleccionarlo en las transacciones según sus responsabilidades.
+Le aparecerá un mensaje de éxito. Ahora podrá verlo en el listado y seleccionarlo en las transacciones según sus responsabilidades.
 
 ![imagen11](/img/primeros-pasos/empleados-4.png)
 
 ## Filtrar Empleados por Agencia
 
-En el listado de empleados puede seleccionar una agencia en **Filtrar Agencia** y presionar "Cambiar" para ver únicamente los empleados asignados a esa agencia. También puede filtrar por estado: "Activa", "Inactivos" o "Todos".
+En el listado puede seleccionar una agencia en **Filtrar Agencia** y presionar "Cambiar" para ver solo los empleados de esa agencia. También puede filtrar por estado: "Activa", "Inactivos" o "Todos".
 
 ## Importar Empleados
 
-Si ya tiene un listado de empleados, puede importarlo en lugar de ingresarlos uno por uno. La importación se hace por medio de plantillas predefinidas de Excel.
+Si ya tiene un listado de empleados, puede importarlo en lugar de ingresarlos uno por uno, con plantillas predefinidas de Excel.
 
 Los pasos para importar empleados son:
 
@@ -55,13 +55,13 @@ Los pasos para importar empleados son:
 
 ![imagen12](/img/primeros-pasos/empleados-7.png)
 
-A continuación deberá seleccionar el archivo de Excel con los datos de sus empleados y presionar el botón de importación. El sistema procesará el archivo y creará los registros de empleados.
+Seleccione el archivo de Excel con los datos de sus empleados y presione el botón de importación; el sistema creará los registros.
 
-También puede realizar importaciones masivas de empleados utilizando el sistema de Importaciones de Datos (ver la sección de [Importaciones de Datos](importaciones-de-datos.md)) seleccionando el tipo de documento "Crear Empleados" o "Crear Empleados y Contratos de Trabajo".
+También puede importar de forma masiva con [Importaciones de Datos](importaciones-de-datos.md), seleccionando el tipo de documento "Crear Empleados" o "Crear Empleados y Contratos de Trabajo".
 
 ## Exportar Empleados
 
-Puede exportar el listado de empleados en formato CSV o XLS, con la opción de filtrar por agencia. Para exportar:
+Puede exportar el listado en formato CSV o XLS, con la opción de filtrar por agencia. Para exportar:
 
 1. Ir a "Configuraciones".
 2. Seleccionar "Empleados".
@@ -72,7 +72,7 @@ Los datos exportados incluyen: número de identificación, nombre, identificaci�
 
 ## Formularios Asociados al Empleado
 
-En los detalles de un empleado, Zauru muestra los formularios personalizados asociados al tipo de documento "Empleado" (ver [Formularios](formularios.md)). Permiten capturar información adicional específica de cada empleado.
+En los detalles de un empleado, Zauru muestra los formularios personalizados del tipo de documento "Empleado" (ver [Formularios](formularios.md)) para capturar información adicional de cada empleado.
 
 Ya puede seleccionar a sus empleados en las transacciones según sus responsabilidades. Si aún no ha creado las [agencias](agencias.md) a las que los asignará, ese es el siguiente paso natural.
 

@@ -4,7 +4,7 @@ sidebar_label: "Categorías de Empleados"
 sidebar_position: 2.5
 ---
 
-Las categorías organizan a los empleados —por ejemplo, administrativos y vendedores— y facilitan ubicarlos y filtrarlos en el listado.
+Cuando su equipo crece, organizar a los empleados por categorías — por ejemplo, administrativos y vendedores — le facilita ubicarlos y filtrarlos en los listados.
 
 Los pasos para crear una nueva categoría de empleado son:
 
@@ -15,16 +15,16 @@ Los pasos para crear una nueva categoría de empleado son:
 
 ![Listado de categorías de empleado](/img/primeros-pasos/empleados-5.png)
 
-Le aparecerán las opciones para crear la categoría; los campos son los siguientes:
+Los campos son los siguientes:
 
-- **Nombre**: nombre de la categoría, con el que se identifica en el listado de empleados.
-- **Notas**: descripción opcional de la categoría, en la sección "Información Adicional".
+- **Nombre**: nombre con el que se identifica la categoría.
+- **Notas**: descripción opcional, en la sección "Información Adicional".
 
 Para guardar los cambios presione "Crear Categoría de empleado".
 
 ![Nueva categoría de empleado](/img/primeros-pasos/empleados-6.png)
 
-Para asignar una categoría a un empleado, selecciónela en el campo **Categoría de Empleado** del formulario del empleado (ver [Empleados](empleados.md)).
+Asigne la categoría a un empleado desde el campo **Categoría de Empleado** de su formulario (ver [Empleados](empleados.md)).
 
 ## API (llamadas desde sistemas externos)
 
