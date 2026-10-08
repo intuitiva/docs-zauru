@@ -53,7 +53,7 @@ Aparecerá un mensaje de éxito. Antes de recibir la orden, debe autorizarla com
 
 ![imagen4](/img/compras/ordenes-de-compra-4.jpg)
 
-Aparecerá un mensaje de confirmación; ahora recíbala en su bodega para poder venderla. Para más detalles, consulte [Crear recepciones para recibir órdenes de compra](/compras/recibir-los-productos-de-orden-de-compra).
+Aparecerá un mensaje de confirmación; ahora recíbala en su bodega para poder venderla. Para más detalles, consulte [Crear recepciones para recibir órdenes de compra](/compras/ordenes-de-compra/recibir-los-productos-de-orden-de-compra).
 
 ![imagen5](/img/compras/ordenes-de-compra-5.jpg)
 

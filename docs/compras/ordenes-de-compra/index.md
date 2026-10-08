@@ -9,3 +9,4 @@ Una orden de compra registra qué se compró, a qué proveedor, a qué costo y e
 ## Tutoriales
 
 1. **[Crear órdenes de compra](/compras/ordenes-de-compra/crear-ordenes-de-compra)**: crear órdenes de compra locales y de importación, y llamadas a la API.
+2. **[Crear recepciones para recibir órdenes de compra](/compras/ordenes-de-compra/recibir-los-productos-de-orden-de-compra)**: registrar el ingreso de la mercadería al inventario y llamadas a la API.
