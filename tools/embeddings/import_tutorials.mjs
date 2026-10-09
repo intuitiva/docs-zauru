@@ -327,6 +327,7 @@ async function fillEmbeddings(client, url, fetchEmbedding) {
 
   console.log(`Calculando embeddings: ${rows.length} filas en ${url}`);
   let filled = 0;
+  const failed = [];
   for (const row of rows) {
     if (row.tutorial.trim().length === 0) {
       console.log(`Sin texto, se omite: ${row.path}`);
@@ -337,9 +338,10 @@ async function fillEmbeddings(client, url, fetchEmbedding) {
     try {
       vector = await fetchEmbedding(url, row.tutorial);
     } catch (error) {
-      throw new Error(
-        `No se pudo calcular el embedding de ${row.path} (${filled}/${rows.length} listos): ${errorMessage(error)}`,
-      );
+      const reason = errorMessage(error);
+      failed.push({ path: row.path, reason });
+      console.error(`Embedding vacío (error), se continúa: ${row.path} — ${reason}`);
+      continue;
     }
 
     await client.query('UPDATE data SET embedding = $1::vector WHERE id = $2', [
@@ -350,6 +352,13 @@ async function fillEmbeddings(client, url, fetchEmbedding) {
     console.log(`Embedding ${filled}/${rows.length}: ${row.path}`);
   }
   console.log(`Embeddings listos: ${filled}`);
+  if (failed.length === 0) return;
+
+  console.error(`Embeddings vacíos por error (${failed.length}). Quedaron en NULL:`);
+  for (const item of failed) {
+    console.error(`- ${item.path}: ${item.reason}`);
+  }
+  process.exitCode = 1;
 }
 
 const UPSERT_SQL = `
