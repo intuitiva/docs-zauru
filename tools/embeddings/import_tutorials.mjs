@@ -3,7 +3,8 @@
  * import_tutorials.mjs — Crea la base rag (si no existe), la tabla data,
  * carga los Markdown de docs/ (cuerpo sin frontmatter, más title,
  * sidebar_label y sidebar_position) y pide los embeddings que faltan
- * al servidor configurado en EMBEDDING_URL.
+ * a EMBEDDING_URL. EMBEDDING_SERVER elige el formato: llamafile
+ * ({"content"}) o lmstudio ({"input"}).
  *
  * Uso:
  *   node import_tutorials.mjs
@@ -209,45 +210,58 @@ function errorMessage(error) {
   return error.message;
 }
 
-function extractEmbedding(payload) {
-  if (Array.isArray(payload)) {
-    if (payload.length > 0 && payload.every((value) => typeof value === 'number')) {
-      return payload;
-    }
-    if (
-      payload.length > 0 &&
-      payload.every(
-        (row) =>
-          Array.isArray(row) &&
-          row.length > 0 &&
-          row.every((value) => typeof value === 'number'),
-      )
-    ) {
-      return payload[payload.length - 1];
-    }
-    const first = payload[0];
-    if (first && typeof first === 'object' && !Array.isArray(first) && 'embedding' in first) {
-      return extractEmbedding(first.embedding);
-    }
-  }
-
-  if (payload && typeof payload === 'object' && !Array.isArray(payload)) {
-    if ('embedding' in payload) return extractEmbedding(payload.embedding);
-    if (Array.isArray(payload.data) && payload.data.length > 0) {
-      return extractEmbedding(payload.data[0]);
-    }
-  }
-
-  throw new Error('la respuesta no trae un vector de números');
+function isNumberVector(value) {
+  return (
+    Array.isArray(value) &&
+    value.length > 0 &&
+    value.every((item) => typeof item === 'number')
+  );
 }
 
-async function fetchEmbedding(url, content) {
+function embeddingVector(value, server) {
+  let vector = value;
+  if (
+    Array.isArray(value) &&
+    value.length > 0 &&
+    value.every((row) => isNumberVector(row))
+  ) {
+    vector = value[value.length - 1];
+  }
+  if (!isNumberVector(vector)) {
+    throw new Error(`${server} no devolvió un vector de números`);
+  }
+  return vector;
+}
+
+function embeddingFromLlamafile(payload) {
+  if (isNumberVector(payload) || (Array.isArray(payload) && payload.every((row) => isNumberVector(row)))) {
+    return embeddingVector(payload, 'llamafile');
+  }
+
+  const row = Array.isArray(payload) ? payload[0] : payload;
+  if (!row || typeof row !== 'object' || Array.isArray(row) || !('embedding' in row)) {
+    throw new Error('llamafile no devolvió un campo embedding');
+  }
+  return embeddingVector(row.embedding, 'llamafile');
+}
+
+function embeddingFromLmstudio(payload) {
+  const data =
+    payload && typeof payload === 'object' && !Array.isArray(payload) ? payload.data : undefined;
+  const embedding = Array.isArray(data) ? data[0]?.embedding : undefined;
+  if (!isNumberVector(embedding)) {
+    throw new Error('LM Studio no devolvió data[0].embedding');
+  }
+  return embedding;
+}
+
+async function postEmbedding(url, body) {
   let response;
   try {
     response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ input: content }),
+      body: JSON.stringify(body),
       signal: AbortSignal.timeout(120_000),
     });
   } catch (error) {
@@ -255,21 +269,29 @@ async function fetchEmbedding(url, content) {
   }
 
   if (!response.ok) {
-    const body = await response.text();
-    const detail = body.trim().slice(0, 300);
-    throw new Error(
-      `HTTP ${response.status}${detail.length > 0 ? `: ${detail}` : ''}`,
-    );
+    const text = await response.text();
+    const detail = text.trim().slice(0, 300);
+    throw new Error(`HTTP ${response.status}${detail.length > 0 ? `: ${detail}` : ''}`);
   }
 
-  let payload;
   try {
-    payload = await response.json();
+    return await response.json();
   } catch (error) {
     throw new Error(`la respuesta no es JSON (${errorMessage(error)})`);
   }
+}
 
-  const vector = extractEmbedding(payload);
+async function fetchLlamafileEmbedding(url, content) {
+  const payload = await postEmbedding(url, { content });
+  return checkedEmbedding(embeddingFromLlamafile(payload));
+}
+
+async function fetchLmstudioEmbedding(url, content) {
+  const payload = await postEmbedding(url, { input: content });
+  return checkedEmbedding(embeddingFromLmstudio(payload));
+}
+
+function checkedEmbedding(vector) {
   if (vector.length !== EMBEDDING_DIM) {
     throw new Error(`dimensión ${vector.length}, se esperaba ${EMBEDDING_DIM}`);
   }
@@ -279,7 +301,21 @@ async function fetchEmbedding(url, content) {
   return vector;
 }
 
-async function fillEmbeddings(client, url) {
+function embeddingClient() {
+  const server = env('EMBEDDING_SERVER', '').trim().toLowerCase();
+  switch (server) {
+    case 'llamafile':
+      return { name: 'llamafile', fetchEmbedding: fetchLlamafileEmbedding };
+    case 'lmstudio':
+      return { name: 'lmstudio', fetchEmbedding: fetchLmstudioEmbedding };
+    default:
+      throw new Error(
+        `EMBEDDING_SERVER inválido (${server.length === 0 ? 'ausente' : server}). Usa llamafile o lmstudio`,
+      );
+  }
+}
+
+async function fillEmbeddings(client, url, fetchEmbedding) {
   const pending = await client.query(
     'SELECT id, path, tutorial FROM data WHERE embedding IS NULL ORDER BY path',
   );
@@ -393,7 +429,9 @@ async function main() {
     if (embeddingUrl.length === 0) {
       console.log('EMBEDDING_URL vacío: los embeddings quedan en NULL');
     } else {
-      await fillEmbeddings(client, embeddingUrl);
+      const embeddings = embeddingClient();
+      console.log(`Servidor de embeddings: ${embeddings.name}`);
+      await fillEmbeddings(client, embeddingUrl, embeddings.fetchEmbedding);
     }
   } finally {
     await client.end();

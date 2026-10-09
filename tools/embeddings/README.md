@@ -54,7 +54,8 @@ Copia `.env.example` a `.env`. El archivo `.env` no se sube al repositorio. Si u
 | `PGDATABASE` | `rag` | Base que se crea y se llena |
 | `PGADMIN_DATABASE` | `postgres` | Base a la que se conecta para el `CREATE DATABASE` |
 | `DOCS_PATH` | `<repo>/docs` | Carpeta de Markdown |
-| `EMBEDDING_URL` | vacío | URL del `POST /embedding`. Vacío deja `embedding` en `NULL` |
+| `EMBEDDING_SERVER` | — | `llamafile` (`{"content"}`) o `lmstudio` (`{"input"}`). Obligatorio si `EMBEDDING_URL` tiene valor |
+| `EMBEDDING_URL` | vacío | URL del POST de embeddings. Vacío deja `embedding` en `NULL` |
 
 ## Tabla `data`
 
