@@ -12,7 +12,7 @@ Si quiere saber en todo momento cuánto dinero entra, cuánto sale y dónde est�
 
 ## Cuentas contables
 
-2. **[Cuentas contables](/contabilidad/cuentas-contables)**: nomenclatura de cuentas patrimoniales (activos, pasivos, capital) y de gestión (ingresos, gastos), tipos de cuenta y cuentas sugeridas, con soporte para múltiples monedas. Incluye los tutoriales de grupos de cuentas, tipificación de las cuentas de egresos (gastos o costos) y tipificación de las cuentas patrimoniales (activos, pasivos o capital).
+2. **[Cuentas contables](/contabilidad/cuentas-contables)**: nomenclatura de cuentas patrimoniales (activos, pasivos, capital) y de gestión (ingresos, gastos), con soporte para múltiples monedas. Incluye los tutoriales de grupos de cuentas, tipificación de las cuentas de egresos (gastos o costos) y tipificación de las cuentas patrimoniales (activos, pasivos o capital).
 
 ## Beneficiarios y centro de costos
 
