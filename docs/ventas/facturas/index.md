@@ -4,7 +4,7 @@ sidebar_label: "Facturas"
 sidebar_position: 0
 ---
 
-Una factura ya es una venta confirmada: al emitirla, Zauru genera automáticamente las transacciones contables de cuentas por cobrar, IVA por pagar y costo de mercadería, y los productos salen de la bodega hacia el cliente. Sus características son:
+Una factura es una venta confirmada: al emitirla, Zauru genera automáticamente las transacciones contables de cuentas por cobrar, IVA por pagar y costo de mercadería, y los productos salen de la bodega hacia el cliente. Sus características son:
 
 - **No se puede editar** después de emitida; solo admite una edición superficial del número, la referencia, la fecha, el vendedor, las notas y las etiquetas.
 - Se puede cobrar total o parcialmente.
