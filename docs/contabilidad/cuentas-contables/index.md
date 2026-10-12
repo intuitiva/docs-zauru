@@ -16,31 +16,6 @@ A continuacion vera como se maneja la contabilidad en Zauru.
 2. **[Tipificar las cuentas de egresos (gastos o costos)](/contabilidad/cuentas-contables/tipificar-las-cuentas-de-egresos-gastos-o-costos)**: clasificación de una cuenta de gastos como costo o gasto operativo para el estado de resultados.
 3. **[Tipificar las cuentas patrimoniales (activos, pasivos o capital)](/contabilidad/cuentas-contables/tipificar-las-cuentas-patrimoniales)**: clasificación de las cuentas patrimoniales según su liquidez para el balance general.
 
-## Cuentas Patrimoniales
-
-Para saber dónde va a parar cada movimiento, conviene empezar por conocer los tres tipos de cuentas patrimoniales, que reflejan lo que la empresa posee y lo que debe:
-
-1. **Activos** (tipo 1): Bienes o servicios que posee la empresa con los cuales se obtienen beneficios.
-2. **Pasivos** (tipo 2): Deudas u obligaciones de la empresa.
-3. **Capital** (tipo 5): Es la diferencia entre el valor de todas las propiedades de la empresa y el total de sus deudas.
-
-![imagen2](/img/contabilidad/cuentas-contables-2.png)
-
-## Cuentas de Gestion (Categorias de Cuentas)
-
-![imagen3](/img/contabilidad/cuentas-contables-3.png)
-
-Existen 2 tipos de cuentas de gestion en Zauru (categorias):
-
-1. **Gastos** (tipo 3): Representan los egresos de la empresa, tanto costos como gastos operativos.
-2. **Ingresos** (tipo 4): Representan los ingresos por ventas y otros ingresos.
-
-![imagen4](/img/contabilidad/cuentas-contables-4.jpg)
-
-Cada tipo de cuenta define su comportamiento contable:
-- **Cuentas de debito** (activos y gastos): aumentan con debitos y disminuyen con creditos.
-- **Cuentas de credito** (pasivos, capital e ingresos): aumentan con creditos y disminuyen con debitos.
-
 ## Tipos de Cuenta
 
 Los tipos de cuenta son administrados a nivel de sistema y definen la naturaleza de cada cuenta. Los tipos predefinidos son:
@@ -55,6 +30,10 @@ Los tipos de cuenta son administrados a nivel de sistema y definen la naturaleza
 
 Un tipo de cuenta con `categoria = true` (Gastos e Ingresos) significa que es una cuenta de gestion y aparecera en el estado de resultados. Si `categoria = false`, es una cuenta patrimonial y aparecera en el balance general.
 
+Cada tipo de cuenta define su comportamiento contable:
+- **Cuentas de débito** (activos y gastos): aumentan con débitos y disminuyen con créditos.
+- **Cuentas de crédito** (pasivos, capital e ingresos): aumentan con créditos y disminuyen con débitos.
+
 ## Nomenclatura de Cuentas
 
 Zauru le permite tener la nomenclatura de cuentas que usted desee, con los rubros de cuentas que usted prefiera. Los pasos para crear su propia nomenclatura de activos, pasivos o capital son los siguientes:
@@ -64,15 +43,7 @@ Zauru le permite tener la nomenclatura de cuentas que usted desee, con los rubro
 
 ### Crear una nueva Cuenta
 
-Ahora debera crear las cuentas que desee categorizar en este grupo de cuenta. Los pasos para hacerlo son los siguientes:
-
-1. Ir a "Contabilidad".
-2. Seleccionar "Cuentas".
-3. Crear una nueva cuenta y adjuntarla al grupo de cuenta que se creo previamente.
-
-![imagen8](/img/contabilidad/cuentas-contables-8.jpg)
-
-Los campos para crear una cuenta son los siguientes:
+Los pasos para crear una cuenta están en [Grupos de cuentas](/contabilidad/cuentas-contables/grupos-de-cuentas). Los campos del formulario son los siguientes:
 
 - **Tipo de cuenta**: Activo, Pasivo, Capital, Gastos o Ingresos.
 - **Activa**: si la cuenta esta activa para uso.
