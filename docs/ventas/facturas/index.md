@@ -7,8 +7,6 @@ sidebar_position: 0
 Una factura ya es una venta confirmada: al emitirla, Zauru genera automáticamente las transacciones contables de cuentas por cobrar, IVA por pagar y costo de mercadería, y los productos salen de la bodega hacia el cliente. Sus características son:
 
 - **No se puede editar** después de emitida; solo admite una edición superficial del número, la referencia, la fecha, el vendedor, las notas y las etiquetas.
-- Genera automáticamente las transacciones contables.
-- Los productos salen de la bodega hacia el cliente.
 - Se puede cobrar total o parcialmente.
 
 Si necesita cambiar productos, cantidades o precios después de la venta inicial, use una [orden de venta](/ventas/ordenes-de-venta) y conviértala en factura cuando esté lista. Este tutorial explica cómo crear facturas, listar las que están pendientes de pago y gestionar su impresión, reenvío y anulación.
