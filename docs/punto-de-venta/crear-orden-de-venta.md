@@ -782,10 +782,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders.json
   ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+En caso de éxito, retorna un código HTTP `201 Created` y la orden creada, con los mismos campos que "Editar orden de venta".
 
 ### Editar orden de venta
 
@@ -798,110 +795,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders/1/edit.json
   ```
 
-Esto devolverá un JSON similar a este:
-```json
-{
-  "id": 1,
-  "zid": 1,
-  "order_number": "ORD-456",
-  "invoice_number": "SERIE A - 456",
-  "reference": "prueba editada",
-  "date": "2026-08-06",
-  "subtotal": "750.0",
-  "discount_id": null,
-  "extra_discount": "0.0",
-  "total": "750.0",
-  "due": "686.0",
-  "needs_delivery": false,
-  "delivery_date": null,
-  "delivery_address": null,
-  "seller_id": 1,
-  "creator_id": 2,
-  "updater_id": 3,
-  "taxable": true,
-  "issuer_id": 2,
-  "issued": true,
-  "issued_at": "2010-05-31T18:39:45.000Z",
-  "paid": false,
-  "paid_at": null,
-  "voider_id": 3,
-  "voided": true,
-  "voided_at": "2026-08-06T04:14:21.145Z",
-  "entity_id": 2,
-  "memo": "editado desde el API",
-  "order_image": {
-    "url": null,
-    "standard": {
-      "url": null
-    }
-  },
-  "invoice_image": {
-    "url": null,
-    "standard": {
-      "url": null
-    }
-  },
-  "payee_id": 4,
-  "payment_expected_at": "2026-08-06",
-  "agency_id": 5,
-  "payment_term_id": 6,
-  "created_at": "2024-01-15T06:39:00.000Z",
-  "updated_at": "2026-08-06T04:17:08.645Z",
-  "invoice_details_count": 1,
-  "shipper_id": 1,
-  "pos": true,
-  "order_pdf": {
-    "url": null,
-    "thumbnail": {
-      "url": null
-    }
-  },
-  "contract_id": null,
-  "electronic_authorization_supporting_document": null,
-  "electronic_tax_document": null,
-  "crm_url": null,
-  "zid_by_agency_and_creator": 1,
-  "not_included_vat": null,
-  "exchange_rate": 1.0,
-  "excempt": false,
-  "currency_id": 1,
-  "resolution": null,
-  "resolution_date": null,
-  "authorized_serial": null,
-  "foreign": false,
-  "ecommerce_request_id": null,
-  "external_image_url": null,
-  "uuid": "6139c00a-8d07-4408-b180-a9f22061630c",
-  "id_number": null,
-  "great_contributor": null,
-  "sales_consolidate_id": null,
-  "email": "contacto@ejemplo.com",
-  "resolution_notes": null,
-  "client_identification_type_when_issuing_invoices": 0,
-  "export": false,
-  "export_references": null,
-  "sv_ccf": false,
-  "contingency": 0,
-  "withheld_vat": null,
-  "withheld_income_tax": null,
-  "contingency_number": null,
-  "cr_ticket": false,
-  "mail_resent_at": "2026-08-06T04:13:55.700Z",
-  "donation": false,
-  "gift_card_1_id": null,
-  "gift_card_1_id_number": null,
-  "gift_card_1_discount": "0.0",
-  "gift_card_2_id": null,
-  "gift_card_2_id_number": null,
-  "gift_card_2_discount": "0.0",
-  "export_consignee_name": null,
-  "export_consignee_address": null,
-  "export_consignee_country": null,
-  "export_reference": null,
-  "export_electronic_tax_document": null,
-  "export_declaration": null
-}
-```
+Devuelve la orden con los mismos campos que "Ver orden de venta", excepto `payee`, `invoice_details`, `entries`, `payment_details` y `submissions`.
 
 ### Actualizar orden de venta
 
@@ -939,10 +833,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders/1/void.json
   ```
 
-Esto devolverá un JSON similar a este:
-```json
-{}
-```
+En caso de éxito, retorna un código HTTP `204 No Content` (sin cuerpo). Si la orden no se puede anular (por ejemplo, por envíos en tránsito), devuelve un código HTTP `422`.
 
 ### Eliminar orden de venta
 
@@ -1117,5 +1008,3 @@ Esto devolverá un JSON similar a este:
   "double_width_button": false
 }
 ```
-
-Los campos `image2` a `image5` repiten la estructura de `image` en cada producto o paquete.
