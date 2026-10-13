@@ -61,30 +61,30 @@ El único campo obligatorio del ítem es el nombre; todos los demás son opciona
 ![Características del ítem](/img/primeros-pasos/items-3.jpg)
 
 ## Importar Ítems
+Cuando su empresa tiene cientos de productos o servicios puede ser tedioso crear items. Zauru le permite importar cantidades grandes de Ítems en formatos pre-definidos de Excel. Los pasos para importar ítems son los siguientes:
 
-Cuando su empresa tiene cientos de productos o servicios, Zauru le permite importar cantidades grandes de ítems en formatos predefinidos de Excel. Los pasos para importar ítems son los siguientes:
+1. Ir a “Configuraciones”.
+2. Seleccionar “Ítems”.
+3. Click en el botón de “Importar”.
 
-1. Ir a "Configuraciones".
-2. Seleccionar "Ítems".
-3. Click en el botón de "Importar".
+![5](/img/primeros-pasos/items-4.png)
 
-![Importar Ítems](/img/primeros-pasos/items-4.png)
+A continuación encontrara una guía para la importación de sus Ítems.
 
-4. Descargar la plantilla de importación de Ítems señalada. El único campo obligatorio para importar ítems es el nombre; todos los demás campos son opcionales.
+4.  Deberá descargar la plantilla de importación de Ítems señalada. El único campo obligatorio para importar ítems es el nombre, todos los demás campos son opcionales.
 
-Las entradas de texto permitidas para cada campo son las siguientes:
+Las entradas de texto permitidas para cada campo están especificadas en la imagen de abajo y son las siguientes:
 
 - Booleano: TRUE or FALSE, si no se especifica una de las dos variables en la importación el sistema asumirá que es FALSE.
-- Número Entero: Solo se permiten números sin punto decimal o separador de miles (comas).
-- Número con Decimales: Solo números sin separador de miles (comas).
+- Numero Entero: Solo se permiten números sin punto decimal o separador de miles (comas).
+- Numero con Decimales: Solo numero sin separador de miles (comas).
 - Texto: Cualquier carácter es permitido.
 - Cadena de texto: Cualquier carácter dentro de la cadena es permitido, pero que no sea mayor a 256 caracteres.
 
-5. Al terminar de colocar los campos que desee importar en la plantilla de Excel, seleccionar el archivo a importar.
+5. Al terminar de colocar los campos que desee importar en la plantilla de Excel deberá seleccionar el archivo a importar.
 
-6. Seleccionar el botón de "Importar Ítems" y esperar a que Zauru suba sus ítems; si aparece algún error en la importación, revisar si la plantilla de Excel cumple las normas de importación.
-
-![Importar Ítems](/img/primeros-pasos/items-5.jpg)
+6. Seleccione el botón de “Importar Ítems” y espere a que Zauru suba sus ítems, si aparece algún error en la importación, revise si su plantilla de Excel cumple las normas de importación.
+![6](/img/primeros-pasos/items-5.jpg)
 
 ## Variaciones de Ítems
 
