@@ -782,7 +782,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders.json
   ```
 
-En caso de éxito, retorna un código HTTP `201 Created` y la orden creada, con los mismos campos que "Editar orden de venta".
+En caso de éxito, retorna un código HTTP `201 Created` y la orden creada, con los mismos campos que [Editar orden de venta](#editar-orden-de-venta).
 
 ### Editar orden de venta
 
@@ -795,7 +795,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders/1/edit.json
   ```
 
-Devuelve la orden con los mismos campos que "Ver orden de venta", excepto `payee`, `invoice_details`, `entries`, `payment_details` y `submissions`.
+Devuelve la orden con los mismos campos que [Ver orden de venta](#ver-orden-de-venta), excepto `payee`, `invoice_details`, `entries`, `payment_details` y `submissions`.
 
 ### Actualizar orden de venta
 
@@ -820,7 +820,7 @@ curl -v \
   https://app.zauru.com/pos/sale_orders/1.json
   ```
 
-Devuelve la orden actualizada, con el mismo JSON de "Editar orden de venta".
+Devuelve la orden actualizada, con el mismo JSON de [Editar orden de venta](#editar-orden-de-venta).
 
 ### Anular orden de venta
 
