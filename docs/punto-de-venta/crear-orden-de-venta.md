@@ -121,107 +121,6 @@ curl -v \
 Esto devolverá un JSON similar a este:
 ```json
 {
-  "order": {
-    "id": null,
-    "zid": null,
-    "order_number": "",
-    "invoice_number": null,
-    "reference": null,
-    "date": "2026-08-06",
-    "subtotal": "0.0",
-    "discount_id": null,
-    "extra_discount": "0.0",
-    "total": "0.0",
-    "due": null,
-    "needs_delivery": false,
-    "delivery_date": null,
-    "delivery_address": null,
-    "seller_id": 1,
-    "creator_id": null,
-    "updater_id": null,
-    "taxable": true,
-    "issuer_id": null,
-    "issued": false,
-    "issued_at": null,
-    "paid": false,
-    "paid_at": null,
-    "voider_id": null,
-    "voided": false,
-    "voided_at": null,
-    "entity_id": 2,
-    "memo": null,
-    "order_image": {
-      "url": null,
-      "standard": {
-        "url": null
-      }
-    },
-    "invoice_image": {
-      "url": null,
-      "standard": {
-        "url": null
-      }
-    },
-    "payee_id": null,
-    "payment_expected_at": null,
-    "agency_id": 3,
-    "payment_term_id": 4,
-    "created_at": null,
-    "updated_at": null,
-    "invoice_details_count": 0,
-    "shipper_id": null,
-    "pos": true,
-    "order_pdf": {
-      "url": null,
-      "thumbnail": {
-        "url": null
-      }
-    },
-    "contract_id": null,
-    "electronic_authorization_supporting_document": null,
-    "electronic_tax_document": null,
-    "crm_url": null,
-    "zid_by_agency_and_creator": 0,
-    "not_included_vat": null,
-    "exchange_rate": 1.0,
-    "excempt": false,
-    "currency_id": 1,
-    "resolution": null,
-    "resolution_date": null,
-    "authorized_serial": null,
-    "foreign": false,
-    "ecommerce_request_id": null,
-    "external_image_url": null,
-    "uuid": null,
-    "id_number": null,
-    "great_contributor": null,
-    "sales_consolidate_id": null,
-    "email": null,
-    "resolution_notes": null,
-    "client_identification_type_when_issuing_invoices": 0,
-    "export": false,
-    "export_references": null,
-    "sv_ccf": false,
-    "contingency": 0,
-    "withheld_vat": null,
-    "withheld_income_tax": null,
-    "contingency_number": null,
-    "cr_ticket": false,
-    "mail_resent_at": null,
-    "donation": false,
-    "gift_card_1_id": null,
-    "gift_card_1_id_number": null,
-    "gift_card_1_discount": "0.0",
-    "gift_card_2_id": null,
-    "gift_card_2_id_number": null,
-    "gift_card_2_discount": "0.0",
-    "export_consignee_name": null,
-    "export_consignee_address": null,
-    "export_consignee_country": null,
-    "export_reference": null,
-    "export_electronic_tax_document": null,
-    "export_declaration": null
-  },
   "items": [
     {
       "id": 5,
@@ -378,6 +277,8 @@ Esto devolverá un JSON similar a este:
   }
 }
 ```
+
+La respuesta también incluye el objeto `order`, con los mismos campos de la orden que [Ver orden de venta](#ver-orden-de-venta).
 
 Los campos `image2` a `image5` repiten la estructura de `image` en cada producto o paquete.
 
