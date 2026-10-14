@@ -15,7 +15,7 @@ Estas fórmulas ya vienen listas y cubren el caso más común: calcular el capit
 1. **Conversión de $ a moneda local del item**: Toma el precio unitario/costo que está en dólares y lo convierte a la moneda local usando el tipo de cambio del día en que se genera la cuota. **Ejemplo:** si el precio unitario es USD 10, la cantidad es 2 y el tipo de cambio del día es 8.00, la línea se genera con un precio unitario de 80.00 y un total de 160.00.
 
 2. **PMT de anualidad (cuota nivelada)**: Calcula el monto del pago periódico de una cuota nivelada (constante) a una tasa de interés constante. Es la misma función *pago* (Excel en español) o *pmt* (Excel en inglés). Sus parámetros son:
-   - La tasa de interés con su periodicidad (ver el punto 11 de [Recurrencias](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias)).
+   - La tasa de interés con su periodicidad (ver el punto 11 de [Recurrencias](https://docs.zauru.com/contratos/conceptos-de-contratos#recurrencias)).
    - El número de cuotas menos las cuotas iniciales extrañas (ver los puntos 4 y 5).
    - El monto total del contrato menos el anticipo (ver los puntos 9 y 10).
 

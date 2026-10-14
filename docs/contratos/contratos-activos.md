@@ -19,7 +19,7 @@ Desde este listado también se puede acceder a los **Contratos Anulados** (Voide
 Si activó un contrato por error o el cliente desistió antes de generar documentos, puede anularlo sin perder el registro. Los contratos anulados son activos cancelados que ya no aparecen en los listados principales. Solo se puede anular si no tiene documentos generados asociados (facturas, órdenes de compra, casos o envíos). La anulación no borra el registro, solo lo marca como anulado.
 
 ## Generar Documentos Automáticamente
-Es el comportamiento normal del contrato: generar documentos automáticamente según la recurrencia (ver [(recurrencias)](https://docs.zauru.com/contratos/contratos-preliminares#recurrencias)).
+Es el comportamiento normal del contrato: generar documentos automáticamente según la recurrencia (ver [(recurrencias)](https://docs.zauru.com/contratos/conceptos-de-contratos#recurrencias)).
 
 Zauru revisa diariamente a las 3AM (-6:00 UTM) si hay recurrencias que generar y las genera.
 
