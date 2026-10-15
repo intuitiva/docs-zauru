@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Almacenamiento Consolidado de Facturas Electrónicas".
 
 Con este consolidado puede verificar de un vistazo que las facturas electrónicas del período estén completas y tener respaldada su documentación tributaria sin buscar documento por documento.
+
+![Vista del reporte Almacenamiento Consolidado de Facturas Electrónicas](/img/reportes-de-ventas/almacenamiento-consolidado-de-facturas-electronicas-1.png)

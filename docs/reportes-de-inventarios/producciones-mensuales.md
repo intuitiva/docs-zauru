@@ -19,4 +19,6 @@ Para generar el reporte:
 
 **Columnas**: empleado, cantidad de envios de produccion realizados.
 
+![Resultado del reporte Producciones mensuales mostrando la tabla con empleado y cantidad de envíos de producción realizados.](/img/reportes-de-inventarios/producciones-mensuales-2.png)
+
 Este resumen le da una forma justa y transparente de comparar la actividad de su equipo de producción mes a mes.

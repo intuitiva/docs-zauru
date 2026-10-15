@@ -2,10 +2,11 @@
 /**
  * insert-image-refs.mjs — Inserta las referencias ![caption](/img/...) en los
  * .md, justo después de la línea insertAfterText de cada shot del manifiesto.
- * También reescribe refs existentes con otra extensión (p.ej. .jpg) a .png.
+ * Solo inserta o cambia una referencia cuando la imagen está verificada
+ * (revisión visual aceptada) y insertAfterText aparece una sola vez.
  *
  * Uso:
- *   node insert-image-refs.mjs [--dry-run] [--docs slug1,slug2]
+ *   node 6-insert-image-refs.mjs [--dry-run] [--docs slug1,slug2]
  *
  *   --dry-run  Muestra qué insertaría/reescribiría, sin tocar los archivos.
  *   --docs     Solo procesa los slugs indicados.
@@ -15,6 +16,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { TOOL_DIR, REPO_ROOT } from './lib/env.mjs';
+import { planInsertion, isVerifiedResult } from './lib/insert.mjs';
+import { shotImageRef, refToDisk } from './lib/images.mjs';
+import { readResults } from './lib/results.mjs';
 
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
@@ -25,10 +29,10 @@ const docsFilter = (() => {
 
 const manifest = JSON.parse(fs.readFileSync(path.join(TOOL_DIR, 'manifest.json'), 'utf8'));
 const format = manifest.imageFormat || 'png';
+const results = readResults(path.join(TOOL_DIR, 'results.json'));
 
 let totalInserted = 0;
 let totalSkipped = 0;
-let totalRewritten = 0;
 const problems = [];
 
 for (const doc of manifest.docs) {
@@ -41,76 +45,30 @@ for (const doc of manifest.docs) {
   }
 
   let content = fs.readFileSync(mdPath, 'utf8');
-  let rewrittenHere = 0;
-
-  // Reescribe /img/section/<base>-N.<otraExt> → .<format> (png)
-  const fileBase = doc.imageSlug || doc.slug;
-  for (const shot of doc.shots) {
-    const pngRef = `/img/${doc.section}/${fileBase}-${shot.stepNumber}.${format}`;
-    const altExtRe = new RegExp(
-      `(!\\[[^\\]]*\\]\\()(/img/${escapeRegExp(doc.section)}/${escapeRegExp(fileBase)}-${shot.stepNumber}\\.)(?!${escapeRegExp(format)})[a-zA-Z0-9]+(\\))`,
-      'g'
-    );
-    const next = content.replace(altExtRe, `$1${pngRef}$3`);
-    if (next !== content) {
-      rewrittenHere++;
-      content = next;
-    }
-  }
-
   const lines = content.split('\n');
   const insertions = [];
 
   for (const shot of doc.shots) {
-    const imgRef = `/img/${doc.section}/${fileBase}-${shot.stepNumber}.${format}`;
-    const imgLine = `![${shot.caption}](${imgRef})`;
-
-    if (content.includes(imgRef)) {
+    if (shot.captureMode === 'blocked') {
       totalSkipped++;
-      continue; // ya existe (tras posible rewrite)
-    }
-
-    const needle = (shot.insertAfterText || '').trim();
-    if (!needle) {
-      problems.push(`${doc.slug}-${shot.stepNumber}: insertAfterText vacío en el manifiesto`);
       continue;
     }
-
-    let idx = lines.findIndex((l) => l.trim() === needle);
-    if (idx === -1) idx = lines.findIndex((l) => l.includes(needle));
-    if (idx === -1) {
-      problems.push(
-        `${doc.slug}-${shot.stepNumber}: no se encontró insertAfterText en ${doc.docPath}\n    → "${needle.slice(0, 80)}…"`
-      );
-      continue;
-    }
-
-    const imgDiskPath = path.join(
-      REPO_ROOT,
-      'static',
-      'img',
-      doc.section,
-      `${fileBase}-${shot.stepNumber}.${format}`
-    );
-    if (!fs.existsSync(imgDiskPath)) {
-      if (dryRun) {
-        console.log(`  ⚠ ${doc.slug}-${shot.stepNumber}: aún no existe ${path.relative(REPO_ROOT, imgDiskPath)}`);
-      } else {
-        problems.push(
-          `${doc.slug}-${shot.stepNumber}: falta el archivo ${path.relative(REPO_ROOT, imgDiskPath)} (corre run-screenshots.mjs primero)`
-        );
-        continue;
+    const imageRef = shotImageRef(doc, shot, format);
+    const verified = isVerifiedResult(results.images[imageRef]) && fs.existsSync(refToDisk(REPO_ROOT, imageRef));
+    const decision = planInsertion({
+      lines,
+      needle: shot.insertAfterText,
+      imageRef,
+      verified,
+    });
+    if (decision.action !== 'insert') {
+      totalSkipped++;
+      if (decision.reason !== 'ya existe' && decision.reason !== 'sin imagen verificada') {
+        problems.push(`${doc.slug}-${shot.stepNumber}: ${decision.reason}`);
       }
+      continue;
     }
-
-    insertions.push({ idx, imgLine, stepNumber: shot.stepNumber });
-  }
-
-  if (rewrittenHere) {
-    totalRewritten += rewrittenHere;
-    if (dryRun) {
-      console.log(`  ${doc.docPath}: reescribiría ${rewrittenHere} ref(s) → .${format}`);
-    }
+    insertions.push({ idx: decision.index, imgLine: `![${shot.caption}](${imageRef})`, stepNumber: shot.stepNumber });
   }
 
   if (insertions.length) {
@@ -126,31 +84,20 @@ for (const doc of manifest.docs) {
     }
   }
 
-  if (!dryRun && (insertions.length || rewrittenHere)) {
+  if (!dryRun && insertions.length) {
     fs.writeFileSync(mdPath, lines.join('\n'));
-    const parts = [];
-    if (insertions.length) parts.push(`${insertions.length} insertada(s)`);
-    if (rewrittenHere) parts.push(`${rewrittenHere} reescrita(s)→.${format}`);
-    console.log(`✓ ${doc.docPath} — ${parts.join(', ')}`);
+    console.log(`✓ ${doc.docPath} — ${insertions.length} insertada(s)`);
   }
 }
 
 if (dryRun) {
-  console.log(
-    `\n[dry-run] Se insertarían ${totalInserted}, reescribirían ${totalRewritten}, ya existentes ${totalSkipped}.`
-  );
+  console.log(`\n[dry-run] Se insertarían ${totalInserted}, ya existentes u omitidas ${totalSkipped}.`);
 } else {
-  console.log(
-    `\nInsertadas ${totalInserted}, reescritas ${totalRewritten}, ya existentes ${totalSkipped}.`
-  );
+  console.log(`\nInsertadas ${totalInserted}, omitidas ${totalSkipped}.`);
 }
 
 if (problems.length) {
   console.log('\nProblemas:');
   for (const p of problems) console.log(`  ✗ ${p}`);
   process.exitCode = 1;
-}
-
-function escapeRegExp(s) {
-  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }

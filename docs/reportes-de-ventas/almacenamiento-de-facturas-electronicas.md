@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Almacenamiento de Facturas Electrónicas".
 
 Así, cuando necesite sustentar el IVA ante el fisco o compartir la documentación con su contador, la tiene ordenada y al alcance de un clic.
+
+![Reporte de Almacenamiento de Facturas Electrónicas](/img/reportes-de-ventas/almacenamiento-de-facturas-electronicas-1.png)

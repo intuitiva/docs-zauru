@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Órdenes Diarias por Punto de Venta".
 4. Seleccionar la fecha a consultar.
 
+![Reporte Órdenes Diarias por Punto de Venta mostrando tabla de órdenes agrupadas por punto de venta](/img/reportes-de-ventas/ordenes-diarias-por-punto-de-venta-1.png)
+
 Con ese corte diario podrá detectar rápido si alguna sucursal se movió menos de lo esperado y actuar desde el día siguiente.

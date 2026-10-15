@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Costos Semanales de Destajos"**.
 
+![Vista del reporte Costos Semanales de Destajos mostrando el rango de fechas y la tabla de costos por tipo de destajo por semana](/img/reportes-de-nominas/costos-semanales-de-destajos-1.png)
+
 **Parametros**:
 
 - Rango de fechas.

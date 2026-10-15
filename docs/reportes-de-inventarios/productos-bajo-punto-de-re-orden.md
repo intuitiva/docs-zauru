@@ -9,8 +9,14 @@ La mejor manera de no quedarse sin producto es anticiparse: este reporte le mues
 Para generar el reporte:
 
 1. Ir a "Inventarios" > "Reportes".
+
+![Pantalla del reporte 'Productos bajo punto de re orden' antes de aplicar filtros](/img/reportes-de-inventarios/productos-bajo-punto-de-re-orden-2.png)
+
 2. Seleccionar "Productos bajo punto de re orden".
 3. Seleccionar la bodega.
+
+![Resultado del reporte después de presionar 'Generar reporte'](/img/reportes-de-inventarios/productos-bajo-punto-de-re-orden-3.png)
+
 4. Presionar "Generar reporte".
 
 **Filtros**:

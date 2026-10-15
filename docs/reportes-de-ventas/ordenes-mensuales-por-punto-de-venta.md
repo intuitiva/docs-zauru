@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Órdenes Mensuales por Punto de Venta".
 4. Seleccionar el mes y año.
 
+![Pantalla de filtros del reporte Órdenes Mensuales por Punto de Venta, donde se selecciona mes y año.](/img/reportes-de-ventas/ordenes-mensuales-por-punto-de-venta-1.png)
+
 Con ese resumen mensual podrá ver qué puntos de venta crecen, cuáles se estancan y dónde poner la atención el próximo mes.

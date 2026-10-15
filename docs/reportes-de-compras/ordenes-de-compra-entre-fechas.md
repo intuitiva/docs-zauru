@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Ordenes de Compra entre Fechas".
 4. Seleccionar el rango de fechas.
 
+![Vista del reporte Órdenes de Compra entre Fechas con filtro de fechas](/img/reportes-de-compras/ordenes-de-compra-entre-fechas-1.png)
+
 Con este reporte puede revisar la actividad de compras de un periodo de principio a fin y verificar qué órdenes ya fueron recibidas y cuáles siguen pendientes.

@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar el punto de venta, la fecha y la ventana de horas.
 
 Así puede cuadrar cada turno por separado y detectar rápidamente cualquier diferencia de caja.
+
+![Pantalla del reporte Cierre por Hora con filtros de punto de venta, fecha y rango horario.](/img/reportes-de-ventas/cierre-por-hora-1.png)

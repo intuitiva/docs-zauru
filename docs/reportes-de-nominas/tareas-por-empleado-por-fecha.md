@@ -14,6 +14,8 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+![Reporte Tareas por Empleado por Fecha mostrando filtros de empleado y rango de fechas y tabla de resultados](/img/reportes-de-nominas/tareas-por-empleado-por-fecha-1.png)
+
 - Empleado.
 - Rango de fechas.
 

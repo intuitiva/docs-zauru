@@ -13,6 +13,8 @@ Para generar el reporte:
 3. Seleccionar la bodega y el rango de fechas.
 4. Presionar "Generar reporte".
 
+![Resultado del reporte mostrando los últimos movimientos por producto](/img/reportes-de-inventarios/ultimos-movimientos-por-bodega-2.png)
+
 **Filtros**:
 
 - **Bodega**: seleccione la bodega a consultar.

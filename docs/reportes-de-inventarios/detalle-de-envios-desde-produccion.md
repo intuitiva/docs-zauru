@@ -9,6 +9,9 @@ Si su empresa fabrica productos, este reporte es la memoria de todo lo que sali√
 Para generar el reporte:
 
 1. Ir a "Inventarios" > "Reportes".
+
+![Lista de reportes donde se selecciona 'Detalle de envios desde produccion'](/img/reportes-de-inventarios/detalle-de-envios-desde-produccion-1.png)
+
 2. Seleccionar "Detalle de envios desde produccion".
 3. Seleccionar el mes y a√±o.
 4. Presionar "Generar reporte".

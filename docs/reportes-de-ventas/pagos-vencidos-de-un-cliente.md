@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar el cliente.
 
 Así puede presentarle a su cliente una cuenta clara de lo vencido y acordar el pago sin sorpresas.
+
+![Reporte Pagos Vencidos de un Cliente con el filtro de cliente](/img/reportes-de-ventas/pagos-vencidos-de-un-cliente-1.png)

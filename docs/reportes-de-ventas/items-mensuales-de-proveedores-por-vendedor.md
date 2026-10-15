@@ -12,4 +12,6 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Mensuales de Proveedores por Vendedor".
 
+![Vista del reporte Ítems Mensuales de Proveedores por Vendedor](/img/reportes-de-ventas/items-mensuales-de-proveedores-por-vendedor-1.png)
+
 Con ese desglose podrá reconocer qué vendedores mueven mejor cada línea y conversar con datos en mano sobre el desempeño del equipo.

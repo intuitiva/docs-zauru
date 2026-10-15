@@ -18,3 +18,5 @@ Para ingresar a este reporte:
 - **Etiqueta**: tag asociado al proyecto.
 
 Así podrá revisar cada movimiento de la cuenta del proyecto y confirmar que el balance coincida con lo que espera.
+
+![Reporte Movimientos en Cuentas de Proyecto mostrando transacciones y balance corrido filtrados por cuenta y etiqueta.](/img/reportes-de-contabilidad/movimientos-en-cuentas-de-proyecto-1.png)

@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Cierre Diario de Compras".
 4. Seleccionar la fecha a consultar.
 
+![Pantalla del reporte Cierre Diario de Compras mostrando filtros de fecha y resultados](/img/reportes-de-compras/cierre-diario-de-compras-1.png)
+
 Con este cierre podrá terminar el día con la seguridad de que las compras y los pagos quedaron cuadrados y respaldados.

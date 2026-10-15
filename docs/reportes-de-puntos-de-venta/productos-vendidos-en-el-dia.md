@@ -6,6 +6,8 @@ sidebar_position: 7
 
 Al final del día, todos quieren saber: ¿qué se vendió hoy y a qué precio? Este reporte le responde mostrando cuántos productos se vendieron, a qué precio promedio y el total de venta por producto en un día específico.
 
+![Reporte de Productos Vendidos en el Día mostrando filtros y tabla de resultados](/img/reportes-de-puntos-de-venta/productos-vendidos-en-el-dia-1.png)
+
 Para ingresar al reporte:
 
 1. Ir a "P.D.V.".

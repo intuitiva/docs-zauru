@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Activos Vendidos con Clientes".
 
+![Vista del reporte Ítems Activos Vendidos con Clientes mostrando tabla de ítems y clientes](/img/reportes-de-ventas/items-activos-vendidos-con-clientes-1.png)
+
 Con el reporte en pantalla sabrá qué productos vale la pena seguir impulsando y con qué clientes conviene hablar primero.
 
 ## API (llamadas desde sistemas externos)

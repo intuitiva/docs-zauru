@@ -16,13 +16,15 @@
  * El orquestador (navegar → checks → ocultar → screenshot) vive en
  * 5-run-screenshots.mjs.
  */
-import { baseUrl } from './session.mjs';
+import { baseUrl, isSignInUrl } from './session.mjs';
+import { classifyLoadedPage, intersectsViewport } from './page-state.mjs';
+import { clickIsMutating } from './safety.mjs';
 
 /** Error de captura con categoría (para agrupar en failures.log). */
 export class CaptureError extends Error {
   constructor(kind, message) {
     super(message);
-    this.kind = kind; // 'http' | 'url-mismatch' | 'access' | 'no-id' | 'actions' | 'navigate'
+    this.kind = kind; // 'http' | 'url-mismatch' | 'access' | 'no-id' | 'actions' | 'navigate' | 'session' | 'listing' | 'blocked' | 'framing' | 'selector'
   }
 }
 
@@ -110,7 +112,7 @@ const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
  * primer registro real que case con "listPath/:id<tail>"; si no hay con
  * tail, acepta "listPath/:id". Ordena por id ascendente (más estable).
  */
-async function firstRecordHref(page, listPath, tailSegs) {
+async function firstRecordHref(page, listPath, tailSegs, recordLink) {
   const esc = escapeRe(listPath);
   const tails = tailSegs.map((s) => `/${escapeRe(s)}`).join('');
   const withTail = tailSegs.length ? new RegExp(`^${esc}/(\\d+)${tails}$`) : null;
@@ -118,13 +120,16 @@ async function firstRecordHref(page, listPath, tailSegs) {
 
   const collect = (re) =>
     page.evaluate(
-      ({ source }) => {
+      ({ source, recordLink: linkSel }) => {
         const rx = new RegExp(source);
         const hits = [];
-        for (const a of document.querySelectorAll('a[href]')) {
+        const nodes = linkSel ? document.querySelectorAll(linkSel) : document.querySelectorAll('a[href]');
+        for (const a of nodes) {
+          const raw = a.href || a.getAttribute('href');
+          if (!raw) continue;
           let pathname;
           try {
-            pathname = new URL(a.href, location.origin).pathname;
+            pathname = new URL(raw, location.origin).pathname;
           } catch {
             continue;
           }
@@ -135,7 +140,7 @@ async function firstRecordHref(page, listPath, tailSegs) {
         hits.sort((a, b) => a.id - b.id);
         return hits[0].href;
       },
-      { source: re.source }
+      { source: re.source, recordLink: recordLink || '' }
     );
 
   if (withTail) {
@@ -152,17 +157,19 @@ async function firstRecordHref(page, listPath, tailSegs) {
  * los enlaces en la página del PADRE ya resuelta (donde suelen vivir los
  * links a los recursos anidados).
  */
-export async function resolveIdsInPath(page, zauruPath) {
+export async function resolveIdsInPath(page, zauruPath, options = {}) {
   const parts = splitIdParts(zauruPath);
   if (!parts) throw new CaptureError('no-id', `resolveId pero ${zauruPath} no tiene segmento de id`);
 
   let resolved = '';
-  for (const part of parts) {
-    const listPath = (resolved + '/' + part.literals.join('/')).replace(/\/{2,}/g, '/');
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i];
+    const computed = (resolved + '/' + part.literals.join('/')).replace(/\/{2,}/g, '/');
+    const listPath = i === 0 && options.listPath ? options.listPath : computed;
     const parentUrl = resolved ? baseUrl() + resolved : null;
-    const href = await resolveLevelHref(page, listPath, part.tail, parentUrl);
+    const href = await resolveLevelHref(page, listPath, part.tail, parentUrl, i === 0 ? options.recordLink : null);
     if (!href) {
-      throw new CaptureError('no-id', `el listado ${listPath} no tiene registros navegables para ${zauruPath}`);
+      throw new CaptureError('no-id', `ausencia real de datos: el listado ${listPath} no tiene registros navegables para ${zauruPath}`);
     }
     let next = href;
     const tailStr = part.tail.length ? '/' + part.tail.join('/') : '';
@@ -172,57 +179,120 @@ export async function resolveIdsInPath(page, zauruPath) {
   return resolved;
 }
 
-async function resolveLevelHref(page, listPath, tailSegs, parentUrl) {
-  // 1) el listado propio
-  try {
-    await page.goto(baseUrl() + listPath, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
-    const href = await firstRecordHref(page, listPath, tailSegs);
-    if (href) return href;
-  } catch (err) {
-    // sigue con el fallback
-  }
-  // 2) fallback: la página del padre ya resuelta contiene los links anidados
-  if (parentUrl) {
-    try {
-      await page.goto(parentUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-      await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
-      return await firstRecordHref(page, listPath, tailSegs);
-    } catch {
-      return null;
-    }
-  }
-  return null;
+async function inspectLoaded(page, response) {
+  const status = typeof response?.status === 'function' ? response.status() : response?.status || 0;
+  if (isSignInUrl(page.url())) return classifyLoadedPage({ signIn: true, status });
+  const flash = await findDangerFlash(page);
+  const railsError = await findRailsErrorPage(page);
+  return classifyLoadedPage({ status, flash, railsError });
 }
 
-/** Ejecuta las actions del shot en orden.
- *  scrollTo es cosmético: si falla, se omite (warning) y la captura continúa.
- *  click/fill/select/waitFor fallar abortan el shot (estado a medias no se captura). */
-export async function runActions(page, actions, { onSoftFail } = {}) {
+function throwIfUnusable(state, where) {
+  if (!state || state.kind === 'ok') return;
+  throw new CaptureError(state.kind === 'session' ? 'session' : state.kind, `${state.message} en ${where}`);
+}
+
+/** Espera a que DataTables deje de procesar. Si no asienta, no es "sin datos". */
+export async function waitForListingSettled(page) {
+  await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+  const pending = await page.evaluate(() => {
+    const el = document.querySelector('.dataTables_processing');
+    if (!el) return false;
+    const style = getComputedStyle(el);
+    return style.display !== 'none' && style.visibility !== 'hidden';
+  });
+  if (!pending) return;
+  try {
+    await page.waitForFunction(() => {
+      const el = document.querySelector('.dataTables_processing');
+      if (!el) return true;
+      const style = getComputedStyle(el);
+      return style.display === 'none' || style.visibility === 'hidden';
+    }, { timeout: 15000 });
+  } catch {
+    throw new CaptureError('listing', 'el listado sigue cargando; no se concluye que no hay datos');
+  }
+}
+
+async function resolveLevelHref(page, listPath, tailSegs, parentUrl, recordLink) {
+  const response = await page.goto(baseUrl() + listPath, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  throwIfUnusable(await inspectLoaded(page, response), listPath);
+  await waitForListingSettled(page);
+  const href = await firstRecordHref(page, listPath, tailSegs, recordLink);
+  if (href) return href;
+  if (!parentUrl) return null;
+  const parentResponse = await page.goto(parentUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  throwIfUnusable(await inspectLoaded(page, parentResponse), parentUrl);
+  await waitForListingSettled(page);
+  return firstRecordHref(page, listPath, tailSegs, recordLink);
+}
+
+/** Ejecuta las actions. Un scroll o un selector que no aparece aborta: no se guarda la captura. */
+export async function runActions(page, actions) {
   for (const action of actions || []) {
     const [key, value] = Object.entries(action || {})[0] || [];
     try {
-      if (key === 'click') await page.click(value, { timeout: 8000 });
-      else if (key === 'fill') await page.fill(value.selector, String(value.value ?? ''), { timeout: 8000 });
+      if (key === 'click') {
+        if (clickIsMutating(value)) {
+          throw new CaptureError('blocked', `el click "${value}" escribiría un registro; no se solicitó`);
+        }
+        await page.click(value, { timeout: 8000 });
+      } else if (key === 'fill') await page.fill(value.selector, String(value.value ?? ''), { timeout: 8000 });
       else if (key === 'select') await page.selectOption(value.selector, String(value.value ?? ''), { timeout: 8000 });
       else if (key === 'scrollTo') {
-        await page.locator(value).first().scrollIntoViewIfNeeded({ timeout: 8000 });
+        const loc = page.locator(value).first();
+        await loc.waitFor({ state: 'visible', timeout: 8000 });
+        await loc.scrollIntoViewIfNeeded({ timeout: 8000 });
       } else if (key === 'waitFor') await page.waitForSelector(value, { timeout: 10000, state: 'visible' });
       else if (key === 'waitMs') await page.waitForTimeout(Number(value) || 500);
     } catch (err) {
-      if (key === 'scrollTo') {
-        onSoftFail?.(`scrollTo "${value}" no encontró el elemento; se captura sin reposicionar`);
-        continue;
-      }
-      throw new CaptureError('actions', `acción ${key} falló: ${String(err).split('\n')[0]}`);
+      if (err instanceof CaptureError) throw err;
+      const kind = key === 'scrollTo' ? 'framing' : 'actions';
+      throw new CaptureError(kind, `acción ${key} falló: ${String(err).split('\n')[0]}`);
     }
   }
 }
 
-/** ¿El pathname final corresponde al path pedido? Permite /index equivalente. */
+export async function requireAnySelector(page, selectors) {
+  if (!selectors?.length) return null;
+  const matched = await waitForAny(page, selectors);
+  if (!matched) {
+    throw new CaptureError('selector', `ningún selector obligatorio coincidió (${selectors.join(', ')})`);
+  }
+  return matched;
+}
+
+export async function assertInFrame(page, selector, viewport = { width: 1600, height: 900 }) {
+  const loc = page.locator(selector).first();
+  try {
+    await loc.waitFor({ state: 'visible', timeout: 8000 });
+    await loc.scrollIntoViewIfNeeded({ timeout: 8000 });
+  } catch (err) {
+    if (err instanceof CaptureError) throw err;
+    throw new CaptureError('selector', `no se pudo enfocar ${selector}: ${String(err).split('\n')[0]}`);
+  }
+  const box = await loc.boundingBox();
+  if (!box) throw new CaptureError('framing', `focusSelector ${selector} no tiene caja visible`);
+  const rect = { top: box.y, bottom: box.y + box.height, left: box.x, right: box.x + box.width };
+  if (!intersectsViewport(rect, viewport)) {
+    throw new CaptureError('framing', `focusSelector ${selector} quedó fuera del encuadre`);
+  }
+}
+
+export async function assertPageHasContent(page) {
+  const length = await page.evaluate(() => (document.body?.innerText || '').replace(/\s+/g, ' ').trim().length);
+  if (length < 40) throw new CaptureError('framing', 'la página no tiene contenido visible tras ocultar las barras');
+}
+
+/** ¿El pathname final corresponde al path pedido? Permite /index y segmentos :id. */
 export function pathnameMatches(actualPathname, wantedPath) {
   const norm = (p) => ('/' + String(p).replace(/^\/+|\/+$/g, '')).replace(/\/index$/, '/');
   const a = norm(actualPathname);
   const w = norm(wantedPath);
-  return a === w || a === w + '/' || w === a + '/';
+  if (a === w || a === w + '/' || w === a + '/') return true;
+  if (!String(wantedPath).includes(':')) return false;
+  const as = a.split('/').filter(Boolean);
+  const ws = w.split('/').filter(Boolean);
+  if (as.length !== ws.length) return false;
+  return ws.every((seg, i) => (seg.startsWith(':') ? /^[0-9A-Za-z_.:-]+$/.test(as[i]) : seg === as[i]));
 }

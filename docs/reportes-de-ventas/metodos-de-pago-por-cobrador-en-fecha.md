@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Métodos de Pago por Cobrador en Fecha".
 4. Seleccionar el rango de fechas.
 
+![Reporte Métodos de Pago por Cobrador en Fecha mostrando filtros de fecha y tabla de resultados.](/img/reportes-de-ventas/metodos-de-pago-por-cobrador-en-fecha-1.png)
+
 Con ese desglose podrá cuadrar cada ruta con confianza y cerrar el día sin dudas sobre lo recaudado.

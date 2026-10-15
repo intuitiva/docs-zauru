@@ -12,4 +12,6 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes por Vendedor".
 
+![Reporte de Pagos Pendientes por Vendedor mostrando los pagos agrupados por vendedor](/img/reportes-de-ventas/pagos-pendientes-por-vendedor-1.png)
+
 Con esta vista, cada vendedor sale con su listado claro y usted puede ver de un vistazo quién concentra la mayor deuda pendiente.

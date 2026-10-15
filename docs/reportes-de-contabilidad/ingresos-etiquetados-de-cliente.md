@@ -8,6 +8,8 @@ sidebar_position: 35
 
 Para ingresar a este reporte:
 
+![Reporte Ingresos Etiquetados de Cliente mostrando filtros y tabla de resultados](/img/reportes-de-contabilidad/ingresos-etiquetados-de-cliente-1.png)
+
 1. Ir a "Contabilidad".
 2. Seleccionar "Reportes".
 3. Seleccionar "Ingresos Etiquetados de Cliente".

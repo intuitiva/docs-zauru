@@ -23,6 +23,8 @@ Los pasos para ver las existencias de paquetes de una bodega son:
 
 La tabla muestra una fila por paquete con las columnas "Código", "Nombre", "Disponible", "Por Ingresar", "Por Egresar", "Física" y una columna de acciones. El significado de cada columna y su enlace:
 
+![Vista por bodega de existencias de paquetes (tabla principal)](/img/inventarios/existencias-de-paquetes-1.png)
+
 - **Código**: texto plano, no es un enlace.
 - **Nombre**: enlace a "Detalle de existencias de paquetes" en todas las bodegas, que muestra las existencias del paquete desglosadas por bodega. Se explica más abajo.
 - **Disponible**: enlace a "Detalle de existencias de paquetes" en la bodega seleccionada, que muestra las métricas del paquete y el desglose de componentes. Se explica más abajo.
@@ -41,6 +43,8 @@ Los pasos para ver las existencias de paquetes en todas las bodegas son:
 4. Presionar "Todas las Bodegas".
 
 La tabla muestra una fila por paquete y una columna por bodega, más una columna "Total". El significado de cada columna y su enlace:
+
+![Vista de todas las bodegas (matriz de existencias de paquetes)](/img/inventarios/existencias-de-paquetes-2.png)
 
 - **ID**: enlace a "Detalle de existencias de paquetes" en todas las bodegas, que muestra las existencias del paquete desglosadas por bodega.
 - **Código**: texto plano, no es un enlace.

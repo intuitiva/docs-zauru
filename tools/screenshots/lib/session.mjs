@@ -19,6 +19,7 @@ export const isSignInUrl = (url) => {
     const u = new URL(url);
     const base = new URL(baseUrl());
     if (u.host !== base.host) return true; // proveedor OAuth
+    if (u.pathname.startsWith('/users/auth/')) return true; // ida o callback sin sesión
     return u.pathname.startsWith('/login') || u.pathname.startsWith('/users/sign_in');
   } catch {
     return false;
@@ -30,17 +31,20 @@ export const isSignInUrl = (url) => {
  * Reutiliza storageState.json si existe y sigue siendo válido; si no,
  * hace login con ZAURU_EMAIL / ZAURU_PASSWORD y lo guarda.
  */
-export async function getAuthenticatedContext({ headless = true } = {}) {
+export async function getAuthenticatedContext({ headless = true, onContext } = {}) {
   loadEnv();
   const browser = await chromium.launch({ headless });
   const scale = Number(process.env.SCREENSHOT_SCALE || 2);
 
-  const newContext = (storageState) =>
-    browser.newContext({
+  const newContext = async (storageState) => {
+    const context = await browser.newContext({
       viewport: { width: 1600, height: 900 }, // 16:9
       deviceScaleFactor: scale,
       ...(storageState ? { storageState } : {}),
     });
+    if (onContext) await onContext(context);
+    return context;
+  };
 
   // 1) Intenta reutilizar la sesión guardada
   if (fs.existsSync(STORAGE_STATE_PATH)) {
@@ -79,7 +83,14 @@ async function login(browser, newContext) {
   await page.fill(passwordInput, password);
   await Promise.all([
     page
-      .waitForURL((u) => !isSignInUrl(u.toString()), { timeout: 45000 })
+      .waitForURL((u) => {
+        const href = u.toString();
+        try {
+          return !isSignInUrl(href) || new URL(href).pathname.includes('/callback');
+        } catch {
+          return false;
+        }
+      }, { timeout: 45000 })
       .catch(() => {}),
     page.click(submitInput),
   ]);
@@ -87,7 +98,14 @@ async function login(browser, newContext) {
   await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
 
   if (isSignInUrl(page.url())) {
+    const title = await page.title().catch(() => '');
+    const callback = new URL(page.url()).pathname.includes('/callback');
     await browser.close();
+    if (callback || /doesn't exist|no existe|404/i.test(title)) {
+      throw new Error(
+        'el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.'
+      );
+    }
     throw new Error(
       'Login falló: seguimos en la página del proveedor OAuth. Revisa ZAURU_EMAIL/ZAURU_PASSWORD y los selectores ZAURU_*_INPUT en .env'
     );

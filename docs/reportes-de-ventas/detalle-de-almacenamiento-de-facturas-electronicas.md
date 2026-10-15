@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Detalle de Almacenamiento de Facturas Electrónicas".
 
 Así su documentación fiscal queda completa y con el nivel de detalle que las revisiones suelen pedir.
+
+![Reporte Detalle de Almacenamiento de Facturas Electrónicas](/img/reportes-de-ventas/detalle-de-almacenamiento-de-facturas-electronicas-1.png)

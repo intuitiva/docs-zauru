@@ -8,6 +8,8 @@ Para ver de una sola mirada cuánto destajo hizo cada empleado cada día de la s
 
 Para ingresar al reporte:
 
+![Reporte de Valores Semanales de Destajo por Empleado mostrando matriz de empleados vs días de la semana](/img/reportes-de-nominas/valores-semanales-de-destajo-por-empleado-1.png)
+
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Valores Semanales de Destajo por Empleado"**.

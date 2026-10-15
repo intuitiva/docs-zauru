@@ -14,7 +14,12 @@ Para ingresar a estos reportes:
 
 **Reportes disponibles por categoria de etiqueta**:
 
+![Reporte 'Gastos mensuales por categoria de etiqueta'.](/img/reportes-de-contabilidad/reportes-por-categoria-de-etiqueta-2.png)
+
 - Gastos mensuales por categoria de etiqueta.
+
+![Reporte 'Balance por categoria de etiqueta'.](/img/reportes-de-contabilidad/reportes-por-categoria-de-etiqueta-3.png)
+
 - Gastos acumulados por categoria de etiqueta.
 - Detalle por cuenta y categoria de etiqueta (con rango de fechas).
 - Balance por categoria de etiqueta.

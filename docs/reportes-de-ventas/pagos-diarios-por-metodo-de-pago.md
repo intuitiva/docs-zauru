@@ -8,6 +8,8 @@ Si quiere ver el mes completo de cobros en una sola mirada, este reporte se lo p
 
 Para ingresar al reporte:
 
+![Reporte Pagos Diarios por Método de Pago mostrando selector de mes y tabla de calor](/img/reportes-de-ventas/pagos-diarios-por-metodo-de-pago-1.png)
+
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Diarios por Método de Pago".

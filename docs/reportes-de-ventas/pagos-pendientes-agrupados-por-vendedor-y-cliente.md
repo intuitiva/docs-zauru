@@ -12,4 +12,6 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes Agrupados por Vendedor y Cliente".
 
+![Vista del reporte Pagos Pendientes Agrupados por Vendedor y Cliente](/img/reportes-de-ventas/pagos-pendientes-agrupados-por-vendedor-y-cliente-1.png)
+
 Con esa vista agrupada podrá asignar prioridades de cobro y hablar con cada vendedor sobre sus cuentas abiertas.

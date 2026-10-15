@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar el rango de fechas.
 
 Con esta vista general podrá identificar rápidamente los productos con mayor movimiento y revisar los costos de cada orden del periodo.
+
+![Reporte de Items de Compras entre Fechas con rango de fechas seleccionado y tabla de resultados](/img/reportes-de-compras/items-de-compras-entre-fechas-2.png)

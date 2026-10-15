@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Pagos Pendientes de Clientes Incluyendo Órdenes".
 
 Con esa vista completa sabrá cuánto le debe realmente cada cliente, facturado o no, antes de decidir nuevas ventas al crédito.
+
+![Reporte de Pagos Pendientes de Clientes Incluyendo Órdenes mostrando la tabla de resultados.](/img/reportes-de-ventas/pagos-pendientes-de-clientes-incluyendo-ordenes-1.png)

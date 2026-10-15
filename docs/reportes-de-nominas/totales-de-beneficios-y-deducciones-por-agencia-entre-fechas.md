@@ -8,6 +8,8 @@ Si quiere comparar cuánto pesan los beneficios y las deducciones en cada agenci
 
 Para ingresar al reporte:
 
+![Filtro de rango de fechas del reporte Totales de Beneficios y Deducciones por Agencia entre Fechas](/img/reportes-de-nominas/totales-de-beneficios-y-deducciones-por-agencia-entre-fechas-1.png)
+
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Totales de Beneficios/Deducciones por Agencia entre Fechas"**.

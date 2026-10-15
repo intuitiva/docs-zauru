@@ -10,6 +10,8 @@ Si cobra una mensualidad por contrato y un cliente se atrasa en el pago, o si lo
 
 Estos tres parámetros conviene dejarlos listos antes de que un contrato empiece a generar cuotas, porque son los que deciden qué se le cobra a un cliente cuando cae en mora y cómo se identifican los documentos que el sistema genera por su cuenta.
 
+![Página de configuración de contratos donde se definen el item de mora, término de pago y referencia extra](/img/contratos/configuracion-de-contratos-1.png)
+
 ### Item de Mora
 
 Cuando un cliente se atrasa en el pago de sus cuotas, el sistema le generará una orden de venta o una factura por ese cargo. Este parámetro define el item (producto o servicio) que se utilizará para ese concepto de mora.

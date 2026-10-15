@@ -45,7 +45,7 @@ config/routes.rb            menú real de la app
 | 1 | `1-extract-routes.mjs` | `baculo/config/routes.rb` | `routes.json` (1498 rutas GET reales) | Cuando cambien rutas del ERP |
 | 2 | `2-discover-nav.mjs` | Zauru (login, menú de la home) | `nav.json` (etiqueta → ruta) | Antes de regenerar el manifiesto |
 | 3 | `3-generate-manifest.mjs` | `docs/*.md` + routes + nav | `manifest.json` | Cuando falten pantallas en el manual |
-| 4 | `4-validate-manifest.mjs` | manifest + routes + docs | (solo reporte) | SIEMPRE antes de capturar |
+| 4 | `4-validate-manifest.mjs` | manifest + routes + docs + controllers de baculo | reporte (`--fix` corrige `manifest.json`) | SIEMPRE antes de capturar |
 | 5 | `5-run-screenshots.mjs` | manifest + sesión Zauru | PNGs en `static/img/`, `failures.log` | Tras validar |
 | 6 | `6-insert-image-refs.mjs` | manifest + PNGs | refs `![…]` dentro de los `.md` | Tras capturar |
 | 7 | `7-report-missing.mjs` | refs rotas + failures.log | `MISSING-IMAGES.xlsx` | Para triaje manual |
@@ -59,8 +59,19 @@ config/routes.rb            menú real de la app
   rutas de esa lista; cualquier path inexistente se descarta.
 - **Nunca más "la misma foto para pasos distintos".** El validador (regla E5)
   exige que dos shots de un mismo doc con la misma URL se diferencien con
-  `actions` (pestaña, filtro, modal). El runner ejecuta esas acciones antes
-  de capturar.
+  `actions` (pestaña, filtro, modal) o `focusSelector`. El runner ejecuta esas
+  acciones antes de capturar. E8 hace lo mismo entre documentos y W4 avisa
+  cuando dos documentos apuntan al mismo reporte.
+- **Lo curado no se pierde al regenerar.** `--gaps` solo genera shots para
+  refs rotas que ningún shot cubre y para docs sin entrada; todo lo que sale
+  del LLM pasa por `repairDocEntry` (selectores ejecutables, anclas reales,
+  rutas que escriben como vista previa, destinos repetidos bloqueados) antes
+  de escribirse. `4-validate-manifest.mjs --fix` aplica esas mismas
+  correcciones a todo el manifiesto sin llamar al LLM.
+- **Rutas que escriben, según baculo.** Validador, generador y runner
+  escanean `baculo/app/controllers` además de la lista fija: un GET como
+  `/payroll/reports/fix_deducted_incidents` (hace `update_all`) es E7 y se
+  fotografía solo el enlace, sin abrirlo.
 - **Nunca más "captura de la pantalla equivocada".** Zauru redirige cuando
   falta permiso o el registro no existe. El runner compara la URL final con
   la pedida y aborta si difiere (regla `url-mismatch`): lo que aterriza en
@@ -98,18 +109,25 @@ node 1-extract-routes.mjs
 node 2-discover-nav.mjs
 
 # 2) Manifiesto
-node 3-generate-manifest.mjs --gaps          # huecos: refs rotas + sin imágenes
-node 3-generate-manifest.mjs --regen slug1,slug2   # repara docs completos
-node 3-generate-manifest.mjs --docs docs/ventas/clientes.md
-#    Ajustes finos: edita manifest.json a mano.
+node 3-generate-manifest.mjs --gaps          # solo lo que falta: refs rotas sin shot + docs sin entrada
+node 3-generate-manifest.mjs --regen slug1,slug2   # rehace docs completos (pisa su entrada)
+node 3-generate-manifest.mjs --docs docs/ventas/clientes.md   # rehace ese doc (pisa su entrada)
+#    Ajustes finos: edita manifest.json a mano. --gaps no pisa lo curado.
 
 # 3) Valida ANTES de capturar (offline, sin navegador)
 node 4-validate-manifest.mjs                 # exit 1 si hay errores
+node 4-validate-manifest.mjs --fix           # aplica las correcciones automáticas y valida
 
 # 4) Captura
 node 5-run-screenshots.mjs                   # respeta los PNG ya existentes
-node 5-run-screenshots.mjs --force           # recaptura TODO el manifiesto
-node 5-run-screenshots.mjs --docs beneficiarios --headed   # depurar
+node 5-run-screenshots.mjs --audit           # inventario, galería y validador, sin navegador
+node 5-run-screenshots.mjs --docs beneficiarios --output-dir /tmp/capturas
+node 5-run-screenshots.mjs --retry-failed    # solo fallos de captura y rechazos visuales
+
+# 4.5) Revisar los candidatos en results.json y poner 
+# "status": "verified",
+# "visualReview": "accepted"
+node 5-run-screenshots.mjs --promote         # copia al manual únicamente lo aceptado en results.json
 
 # 5) Inserta refs nuevas en los .md
 node 6-insert-image-refs.mjs --dry-run && node 6-insert-image-refs.mjs
@@ -191,7 +209,7 @@ guarda un estado a medias).
 
 | Síntoma | Causa probable | Qué hacer |
 |---------|----------------|-----------|
-| `HTTP 404 en <ruta>` en failures.log | ruta del manifiesto no existe (enjaulado debería evitarlo) | `node 4-validate-manifest.mjs` y regenera ese doc |
+| `el callback OAuth GET /users/auth/zauru/callback responde 404` | El proveedor acepta el usuario, pero Zauru no completa la sesión | No se guarda ninguna captura. Hay que permitir el callback GET en el servidor y volver a correr |
 | `url-mismatch: aterrizó en X en vez de Y` | Zauru redirige (permiso faltante, registro sin acceso) | verifica permisos del usuario en .env; si el redirect es legítimo, pon la ruta final en el manifiesto |
 | `el listado X no tiene registros navegables` | tenant de demo sin datos para ese recurso | crea un registro de demo o cambia la ruta |
 | `acción click falló` | el selector de la pestaña/botón cambió | ajusta `actions` en el manifiesto (usa `--debug-dom`) |

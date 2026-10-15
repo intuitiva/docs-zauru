@@ -14,6 +14,8 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+![Vista del reporte Ventas Mensuales por Vendedor y Categoria de Cliente con filtros y resultados](/img/reportes-de-puntos-de-venta/ventas-mensuales-por-vendedor-y-categoria-de-cliente-1.png)
+
 - **Mes y ano**: seleccione el mes a consultar.
 - **Incluir IVA**: active esta opcion si desea que los montos incluyan IVA.
 - **Incluir notas de credito**: active esta opcion si desea que se descuenten las notas de credito del mes.

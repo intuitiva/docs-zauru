@@ -12,4 +12,6 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Comisiones de Vendedores por Proveedor".
 
+![Reporte de Comisiones de Vendedores por Proveedor mostrando facturas desglosadas por proveedor.](/img/reportes-de-ventas/comisiones-de-vendedores-por-proveedor-1.png)
+
 Con ese desglose puede calcular comisiones diferenciadas y explicarle a cada vendedor exactamente de dónde sale su cifra.

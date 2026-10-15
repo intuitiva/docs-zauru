@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Pagos Mensuales por Vendedor".
 
 Con ese comparativo podrá reconocer a los vendedores que mejor cobran y conversar con datos sobre las metas del siguiente mes.
+
+![Reporte Pagos Mensuales por Vendedor mostrando tabla de vendedores y montos pagados en el mes seleccionado.](/img/reportes-de-ventas/pagos-mensuales-por-vendedor-1.png)

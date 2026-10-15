@@ -12,6 +12,8 @@ Para ingresar a este reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Balanza de Comprobacion".
 
+![Pantalla del reporte Balanza de Comprobacion mostrando tabla de cuentas con debe, haber y saldo.](/img/reportes-de-contabilidad/balanza-de-comprobacion-1.png)
+
 **Parametros**:
 
 - **Fecha de inicio** y **Fecha de fin**: periodo personalizado.

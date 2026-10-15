@@ -14,6 +14,8 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+![Pantalla del reporte Historial de Nominas de Empleado entre Fechas (Detallado) con filtros de empleado y rango de fechas](/img/reportes-de-nominas/historial-de-nominas-de-empleado-entre-fechas-detallado-1.png)
+
 - Empleado.
 - Rango de fechas.
 

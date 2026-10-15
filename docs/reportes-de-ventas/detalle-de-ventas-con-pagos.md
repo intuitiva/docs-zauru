@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Detalle de Ventas con Pagos".
 
 Así resuelve las dudas de los clientes sobre sus saldos sin ir a buscar los pagos uno por uno.
+
+![Vista del reporte Detalle de Ventas con Pagos mostrando tabla de facturas y sus pagos](/img/reportes-de-ventas/detalle-de-ventas-con-pagos-1.png)

@@ -8,6 +8,8 @@ sidebar_position: 1
 
 Para ingresar al reporte:
 
+![Vista del reporte Cierre Diario mostrando casos cerrados agrupados por serie](/img/reportes-de-casos-de-soporte/cierre-diario-1.png)
+
 1. Ir a "Casos de Soporte".
 2. Seleccionar "Reportes".
 3. Seleccionar "Cierre Diario".

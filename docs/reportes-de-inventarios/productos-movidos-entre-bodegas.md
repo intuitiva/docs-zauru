@@ -11,6 +11,9 @@ Para generar el reporte:
 1. Ir a "Inventarios" > "Reportes".
 2. Seleccionar "Productos movidos entre bodegas".
 3. Seleccionar las bodegas y el tipo de fecha.
+
+![Formulario del reporte 'Productos movidos entre bodegas' con filtros de bodega origen, destino y tipo de fecha](/img/reportes-de-inventarios/productos-movidos-entre-bodegas-2.png)
+
 4. Presionar "Generar reporte".
 
 **Filtros**:

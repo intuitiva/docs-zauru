@@ -14,6 +14,8 @@ Para ingresar a este reporte:
 
 **Parametros**:
 
+![Pantalla del reporte Gastos Mensuales por Proveedor y Cuenta mostrando filtros y tabla de resultados](/img/reportes-de-contabilidad/gastos-mensuales-por-proveedor-y-cuenta-1.png)
+
 - **Ano y mes** de inicio.
 - **Cantidad de meses** a mostrar.
 

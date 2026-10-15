@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Pagos Pendientes por Categoría de Cliente".
 
 Con esta vista puede decidir a qué categoría de clientes conviene cobrarle primero y revisar los pagos provisionales antes de darlos por confirmados.
+
+![Reporte Pagos Pendientes por Categoría de Cliente mostrando tabla de categorías y montos pendientes](/img/reportes-de-ventas/pagos-pendientes-por-categoria-de-cliente-1.png)

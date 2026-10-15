@@ -8,6 +8,8 @@ Cuando necesita revisar factura por factura quién le debe y hace cuánto, este 
 
 Para ingresar al reporte:
 
+![Reporte de Pagos Pendientes Detallados de Clientes mostrando listado de facturas pendientes por cliente](/img/reportes-de-ventas/pagos-pendientes-detallados-de-clientes-1.png)
+
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes Detallados de Clientes".

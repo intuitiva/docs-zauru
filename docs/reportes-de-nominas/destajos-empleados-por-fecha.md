@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Destajos: Empleados por Fecha"**.
 
+![Vista del reporte Destajos: Empleados por Fecha mostrando tabla con empleados y tipos de destajo](/img/reportes-de-nominas/destajos-empleados-por-fecha-1.png)
+
 **Parametros**:
 
 - Rango de fechas.

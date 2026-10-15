@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Ventas de Ítems por Vendedor".
 
 Con este detalle puede ajustar metas y reconocer a los vendedores que destacan en cada producto.
+
+![Reporte de Ventas de Ítems por Vendedor mostrando tabla de ítems y vendedores con filtros de fecha.](/img/reportes-de-ventas/ventas-de-items-por-vendedor-1.png)

@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar las etiquetas a filtrar.
 
 Así puede organizar la cobranza por etiqueta o por vendedor y saber exactamente dónde concentrarse.
+
+![Reporte de Pagos Pendientes por Etiqueta de Cliente y Vendedor mostrando tabla con totales por etiqueta y vendedor](/img/reportes-de-ventas/pagos-pendientes-por-etiqueta-de-cliente-y-vendedor-1.png)

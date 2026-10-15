@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Libro de Salarios entre Fechas"**.
 
+![Pantalla del reporte Libro de Salarios entre Fechas con filtros de empleado y rango de fechas](/img/reportes-de-nominas/libro-de-salarios-entre-fechas-1.png)
+
 **Parametros**:
 
 - Empleado.

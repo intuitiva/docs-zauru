@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Incidencias por Tipo entre Fechas"**.
 
+![Reporte de Incidencias por Tipo entre Fechas mostrando resultados filtrados por rango de fechas](/img/reportes-de-nominas/incidencias-por-tipo-entre-fechas-1.png)
+
 **Parametros**:
 
 - Rango de fechas.

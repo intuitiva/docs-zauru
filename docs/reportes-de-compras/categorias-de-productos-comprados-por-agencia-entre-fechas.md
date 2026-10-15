@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Categorias de Productos Comprados por Agencia entre Fechas".
 4. Seleccionar el rango de fechas.
 
+![Vista del reporte Categorias de Productos Comprados por Agencia entre Fechas con filtros de fechas y tabla de resultados](/img/reportes-de-compras/categorias-de-productos-comprados-por-agencia-entre-fechas-1.png)
+
 Con este desglose podrá revisar qué categorías pesan más en cada agencia y planear las compras de cada una según su comportamiento real.

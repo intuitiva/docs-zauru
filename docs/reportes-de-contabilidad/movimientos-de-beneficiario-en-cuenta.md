@@ -12,6 +12,8 @@ Para ingresar a este reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Movimientos de Beneficiario en Cuenta".
 
+![Formulario de filtros del reporte Movimientos de Beneficiario en Cuenta](/img/reportes-de-contabilidad/movimientos-de-beneficiario-en-cuenta-1.png)
+
 **Parametros**:
 
 - **Cuenta**: cuenta contable.

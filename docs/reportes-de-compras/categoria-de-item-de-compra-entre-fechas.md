@@ -8,6 +8,8 @@ Si quiere revisar cuánto ha comprado de una categoría completa de productos, c
 
 Para ingresar al reporte:
 
+![Pagina del reporte Categoria de Item de Compra entre Fechas](/img/reportes-de-compras/categoria-de-item-de-compra-entre-fechas-1.png)
+
 1. Ir a "Compras".
 2. Seleccionar "Reportes".
 3. Seleccionar "Categoria de Item de Compra entre Fechas".

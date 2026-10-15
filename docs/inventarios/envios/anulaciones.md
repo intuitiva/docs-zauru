@@ -10,6 +10,8 @@ Una anulación cancela una reservación que ya no se necesita, antes de que se d
 
 Los pasos para anular una reservación son:
 
+![Lista de reservaciones (Inventarios → Reservaciones)](/img/inventarios/anulaciones-1.png)
+
 1. Ir a "Inventarios".
 2. Seleccionar "Reservaciones".
 3. Abrir la reservación que desea anular.
@@ -30,6 +32,8 @@ Para ver el historial de reservaciones anuladas:
 1. Ir a "Inventarios".
 2. Seleccionar "Reservaciones".
 3. Seleccionar "Reservaciones Anuladas".
+
+![Lista de reservaciones anuladas (pestaña Reservaciones Anuladas)](/img/inventarios/anulaciones-3.png)
 
 La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Anulado el", "Origen", "Destino", "Tipo", "Items" y "Memo".
 

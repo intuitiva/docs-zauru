@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar el rango de fechas.
 
 Con esa lista puede darle seguimiento a lo pendiente y asegurarse de que ninguna factura del período se quede sin certificar.
+
+![Reporte Documentos Emitidos en Contingencia mostrando facturas certificadas y pendientes](/img/reportes-de-ventas/documentos-emitidos-en-contingencia-1.png)

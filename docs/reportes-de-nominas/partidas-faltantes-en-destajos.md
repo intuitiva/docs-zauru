@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Partidas Faltantes en Destajos"**.
 
+![Lista del reporte Partidas Faltantes en Destajos](/img/reportes-de-nominas/partidas-faltantes-en-destajos-1.png)
+
 **Opcion de correccion**: el boton **"Corregir"** genera las partidas faltantes.
 
 Con el botón Corregir deja la contabilidad completa en un solo paso.

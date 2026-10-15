@@ -13,6 +13,8 @@ Para ingresar al reporte:
 3. Seleccionar "Registro de Clientes entre Meses".
 4. Seleccionar los dos meses a comparar.
 
+![Pantalla del reporte Registro de Clientes entre Meses mostrando los selectores de meses y botón de generar](/img/reportes-de-ventas/registro-de-clientes-entre-meses-1.png)
+
 Incluye opción de exportar a PDF.
 
 Con esta comparativa puede reaccionar a tiempo: contactar a los clientes que se alejan y dar seguimiento a los que llegaron.

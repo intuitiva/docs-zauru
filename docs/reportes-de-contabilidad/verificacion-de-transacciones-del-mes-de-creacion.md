@@ -18,3 +18,5 @@ Para ingresar a este reporte:
 - **Mes y año**: mes de creacion de las transacciones.
 
 Así podrá cerrar el mes con la seguridad de que no quedaron transacciones sin verificar en la cuenta.
+
+![Reporte de Verificación de Transacciones del Mes de Creación mostrando filtros de cuenta y mes/año](/img/reportes-de-contabilidad/verificacion-de-transacciones-del-mes-de-creacion-1.png)

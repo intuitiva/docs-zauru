@@ -17,6 +17,8 @@ Antes de aprobar una corrida de nómina, conviene revisar que cada empleado haya
 
 Es el reporte mas completo para revision de una corrida.
 
+![Página de selección del reporte Nominas por Corrida de Nomina](/img/reportes-de-nominas/nominas-por-corrida-de-nomina-1.png)
+
 Para ingresar al reporte:
 
 1. Ir a **"Nominas"**.

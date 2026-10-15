@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Ítems Mensuales Pagados".
 
 Con este análisis podrá hablar de ventas cobradas, no solo facturadas, cuando prepare sus números del mes.
+
+![Vista del reporte Ítems Mensuales Pagados mostrando tabla de ítems por mes](/img/reportes-de-ventas/items-mensuales-pagados-1.png)

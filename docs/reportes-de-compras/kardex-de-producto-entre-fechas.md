@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Kardex de Producto entre Fechas".
 4. Seleccionar el producto y el rango de fechas.
 
+![Vista del reporte Kardex de Producto entre Fechas con filtros de producto y rango de fechas](/img/reportes-de-compras/kardex-de-producto-entre-fechas-1.png)
+
 Con el kardex podrá auditar los costos de un producto y demostrar su trazabilidad de principio a fin.

@@ -8,6 +8,8 @@ Antes de producir, los insumos tienen que llegar a la bodega virtual de Producci
 
 Para generar el reporte:
 
+![Formulario de filtros del reporte Detalle de envios hacia produccion (mes y año)](/img/reportes-de-inventarios/detalle-de-envios-hacia-produccion-2.png)
+
 1. Ir a "Inventarios" > "Reportes".
 2. Seleccionar "Detalle de envios hacia produccion".
 3. Seleccionar el mes y año.

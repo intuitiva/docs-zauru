@@ -6,6 +6,8 @@ sidebar_position: 23
 
 Renovar los contratos a tiempo evita sorpresas legales y empleados trabajando sin respaldo. Si quiere anticiparse y revisar, por ejemplo, cuáles contratos vencen en los próximos 30 días, este reporte le lista los contratos que están por vencer dentro de la cantidad de días que usted indique.
 
+![Reporte de Contratos por Vencer](/img/reportes-de-nominas/contratos-por-vencer-1.png)
+
 Para ingresar al reporte:
 
 1. Ir a **"Nominas"**.

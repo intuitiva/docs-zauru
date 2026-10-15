@@ -8,6 +8,8 @@ Si su empresa compra servicios o registra gastos por cuentas contables, como fle
 
 Para ingresar al reporte:
 
+![Vista del reporte Cuentas de Compras entre Fechas con filtros de fechas y tabla de resultados](/img/reportes-de-compras/cuentas-de-compras-entre-fechas-1.png)
+
 1. Ir a "Compras".
 2. Seleccionar "Reportes".
 3. Seleccionar "Cuentas de Compras entre Fechas".

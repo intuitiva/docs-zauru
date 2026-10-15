@@ -8,6 +8,8 @@ Cuando su contador le pide ubicar un comprobante por su serie o su número, o ne
 
 Para ingresar a este reporte:
 
+![Reporte de Activos Correlativos Imprimibles mostrando filtros de cuenta, prefijo, rango y nombre.](/img/reportes-de-contabilidad/activos-correlativos-imprimibles-1.png)
+
 1. Ir a "Contabilidad".
 2. Seleccionar "Reportes".
 3. Seleccionar "Activos Correlativos Imprimibles".

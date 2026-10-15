@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Ítems No Entregados de Órdenes".
 
 Con esa lista podrá priorizar las entregas y llamar a los clientes que más tiempo llevan esperando, antes de que se impacienten.
+
+![Reporte de Ítems No Entregados de Órdenes mostrando los ítems pendientes de entrega](/img/reportes-de-ventas/items-no-entregados-de-ordenes-1.png)

@@ -4,6 +4,8 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { parseAllImageRefs } from './inventory.mjs';
+import { refToDisk, shotImageRef } from './images.mjs';
 
 export const DEFAULT_WAIT_SELECTORS = [
   'table',
@@ -74,29 +76,23 @@ export function parseImageRefs(content) {
   return out;
 }
 
-function imageDiskPath(repoRoot, ref) {
-  return path.join(
-    repoRoot,
-    'static',
-    'img',
-    ref.section,
-    `${ref.slug}-${ref.stepNumber}.${ref.ext}`
-  );
-}
-
 /** Docs con al menos una referencia /img/ cuyo archivo no existe en static/.
- * La sección es la PRIMERA carpeta bajo docs/ (soporta docs anidados:
- * docs/ventas/configuraciones/x.md → sección "ventas"). */
+ * Incluye index.md, documentos anidados y nombres sin numeración. */
 export function findBrokenRefDocs(docsDir, repoRoot) {
   const results = [];
   (function walk(dir) {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const p = path.join(dir, entry.name);
       if (entry.isDirectory()) walk(p);
-      else if (entry.name.endsWith('.md') && entry.name !== 'index.md') {
+      else if (entry.name.endsWith('.md')) {
         const content = fs.readFileSync(p, 'utf8');
-        const refs = parseImageRefs(content);
-        const broken = refs.filter((r) => !fs.existsSync(imageDiskPath(repoRoot, r)));
+        const refs = parseAllImageRefs(content).map((r) => ({
+          ...r,
+          // compatibilidad con el generador, que espera slug/stepNumber
+          slug: r.slug,
+          stepNumber: r.stepNumber,
+        }));
+        const broken = refs.filter((r) => !fs.existsSync(refToDisk(repoRoot, r.imgRef)));
         if (broken.length) {
           results.push({
             mdPath: p,
@@ -111,6 +107,13 @@ export function findBrokenRefDocs(docsDir, repoRoot) {
     }
   })(docsDir);
   return results.sort((a, b) => a.docPath.localeCompare(b.docPath));
+}
+
+/** Refs rotas que ningún shot de `entry` (entrada del manifiesto) produce todavía. */
+export function uncoveredRefs(entry, refs, format = 'png') {
+  if (!entry) return refs;
+  const covered = new Set(entry.shots.map((s) => shotImageRef(entry, s, format)));
+  return refs.filter((r) => !covered.has(r.imgRef));
 }
 
 /** Docs sin ninguna imagen markdown (![). Excluye index.md. */

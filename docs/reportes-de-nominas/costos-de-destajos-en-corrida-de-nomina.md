@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Costos de Destajos en Corrida de Nomina"**.
 
+![Página del reporte Costos de Destajos en Corrida de Nomina mostrando el selector de corrida de nomina y la tabla de resultados.](/img/reportes-de-nominas/costos-de-destajos-en-corrida-de-nomina-1.png)
+
 **Parametros**:
 
 - Corrida de nomina.

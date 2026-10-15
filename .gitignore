@@ -24,6 +24,8 @@ npm-cache/
 # Herramienta de screenshots (secretos y sesión local)
 tools/screenshots/.env
 tools/screenshots/storageState.json
+tools/screenshots/runs/
+tools/screenshots/review/
 
 # Importador de tutoriales (credenciales locales)
 tools/embeddings/.env

@@ -6,6 +6,8 @@ sidebar_position: 9
 
 Antes de pagarle a un proveedor o de renegociar condiciones con él, conviene tener a mano su estado de cuenta completo. Este reporte le muestra todas las órdenes de compra y cargos emitidos entre dos meses, junto con los pagos realizados, para que sepa exactamente cuánto le debe.
 
+![Formulario de filtros del reporte Estado de Cuenta de Proveedor por Meses](/img/reportes-de-compras/estado-de-cuenta-de-proveedor-por-meses-1.png)
+
 Para ingresar al reporte:
 
 1. Ir a "Compras".

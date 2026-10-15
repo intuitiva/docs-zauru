@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Números de Factura Duplicados".
 
 Con la lista en mano podrá corregir los duplicados a tiempo y mantener su numeración limpia y confiable.
+
+![Lista del reporte Números de Factura Duplicados](/img/reportes-de-ventas/numeros-de-factura-duplicados-1.png)

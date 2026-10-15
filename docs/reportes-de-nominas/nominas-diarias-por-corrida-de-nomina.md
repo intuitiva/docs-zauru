@@ -14,6 +14,8 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+![Reporte Nominas Diarias por Corrida de Nomina mostrando formulario de selección y resultados](/img/reportes-de-nominas/nominas-diarias-por-corrida-de-nomina-1.png)
+
 - Corrida de nomina.
 
 **Opcion de exportacion**: descarga en Excel (XLS).

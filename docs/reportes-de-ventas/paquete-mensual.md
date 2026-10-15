@@ -13,4 +13,6 @@ Para ingresar al reporte:
 3. Seleccionar "Paquete Mensual".
 4. Seleccionar el paquete y el mes a consultar.
 
+![Pantalla del reporte Paquete Mensual mostrando filtros de paquete y mes, y la tabla de resultados.](/img/reportes-de-ventas/paquete-mensual-1.png)
+
 Con esta vista puede ajustar sus promociones y reconocer a los vendedores que más mueven cada paquete.

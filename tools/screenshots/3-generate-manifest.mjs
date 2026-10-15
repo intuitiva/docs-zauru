@@ -14,8 +14,15 @@
  *   node 3-generate-manifest.mjs --gaps [--dry-run]   # Tier A: refs rotas + Tier B: sin imágenes
  *   node 3-generate-manifest.mjs --docs docs/ventas/clientes.md [...]
  *   node 3-generate-manifest.mjs --missing            # todos los .md sin imágenes
+ *   node 3-generate-manifest.mjs --regen slug1,slug2  # rehace docs completos desde sus refs
  *
- * Después de generarlo, valida SIEMPRE: node 4-validate-manifest.mjs
+ * --gaps y --missing NO tocan lo que ya está en el manifiesto: Tier A solo
+ * añade shots para refs rotas que ningún shot produce, y Tier B / --missing
+ * omiten los docs que ya tienen entrada. Para rehacer un doc a propósito usa
+ * --docs o --regen.
+ *
+ * Toda entrada generada pasa por repairDocEntry (lib/repair.mjs) antes de
+ * escribirse. Después de generarlo, valida SIEMPRE: node 4-validate-manifest.mjs
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,11 +34,15 @@ import {
   isApiCodeDoc,
   looksLikeDetailPath,
   parseImageRefs,
-  resolveZauruPath,
+  uncoveredRefs,
 } from './lib/gaps.mjs';
 import { readRoutes, readNav, readManifest, writeManifest, manifestPath, MAX_SHOTS_PER_DOC } from './lib/manifest.mjs';
 import { candidateMatches } from './lib/routes.mjs';
 import { prefixesForSection } from './lib/sections.mjs';
+import { parseJsonPayload } from './lib/json-payload.mjs';
+import { normalizeActions } from './lib/actions.mjs';
+import { matchAnchor, repairDocEntry } from './lib/repair.mjs';
+import { baculoControllersDir, loadMutatingNamesFromControllers } from './lib/safety.mjs';
 
 loadEnv();
 
@@ -44,6 +55,7 @@ if (!routesData) {
   console.error('No existe routes.json. Corre primero: node 1-extract-routes.mjs');
   process.exit(1);
 }
+const mutatingNames = loadMutatingNamesFromControllers(baculoControllersDir(REPO_ROOT));
 const nav = readNav();
 if (!nav.length) {
   console.error('nav.json está vacío o no existe. Corre primero: node 2-discover-nav.mjs');
@@ -51,7 +63,7 @@ if (!nav.length) {
 }
 
 // ── Candidatos por módulo: patrones GET "fotografiables" + etiquetas del menú ──
-const NON_UI_LAST_SEGMENT = /^(datatables.*|.*_datatables|datatables_.*)$|(^|_)(export|autocomplete|tag_cloud|download_pdf|print|gen_|check_|refresh_|fix_|get_|unmatched|associate|dissociate)(_|$)|_data(s|set)?$|^(voided|resume|unclose|rebound|retry_object_creation)$/;
+const NON_UI_LAST_SEGMENT = /^(datatables.*|.*_datatables|datatables_.*)$|(^|_)(export|autocomplete|tag_cloud|download_pdf|print|gen_|check_|refresh_|fix_|get_|unmatched|associate|dissociate)(_|$)|_data(s|set)?$|^(voided|resume|unclose|rebound|rebound_reception|return_to_running|send_email|generate_arrears|retry_object_creation)$/;
 const NON_UI_KIND = new Set(['custom-member']);
 
 function screenshotCandidates(prefixes) {
@@ -107,18 +119,16 @@ function loadOrCreateManifest() {
   return manifest;
 }
 
-function upsertDoc(manifest, entry) {
+function findEntry(manifest, docPath) {
+  return manifest.docs.find((d) => d.docPath === docPath) || null;
+}
+
+/** Repara la entrada contra su .md y la guarda (reemplaza la del mismo docPath). */
+function upsertDoc(manifest, entry, content) {
+  repairDocEntry(entry, { content, mutatingNames });
   const at = manifest.docs.findIndex((d) => d.docPath === entry.docPath);
   if (at === -1) manifest.docs.push(entry);
   else manifest.docs[at] = entry;
-}
-
-/** Sustituye :param por el primer nav-path real que case con el patrón. */
-function navPathMatchesPattern(navPath, pattern) {
-  const ps = pattern.split('/');
-  const ns = navPath.split('/');
-  if (ps.length !== ns.length) return false;
-  return ps.every((seg, i) => (seg.startsWith(':') ? /^\d+$/.test(ns[i]) || ns[i] === seg : seg === ns[i]));
 }
 
 // ── Prompts: el LLM solo ELIGE de la lista y redacta ────────────────────────
@@ -192,13 +202,6 @@ ${meta.content.slice(0, 14000)}
 ---`;
 }
 
-function parseJsonPayload(text) {
-  const start = text.indexOf('{');
-  const end = text.lastIndexOf('}');
-  if (start === -1 || end === -1) throw new Error(`Respuesta sin JSON: ${text.slice(0, 200)}`);
-  return JSON.parse(text.slice(start, end + 1));
-}
-
 async function openRouterChat(system, user, { retries = 1, netRetries = 3 } = {}) {
   const apiKey = requireEnv('OPENROUTER_API_KEY');
   const model = process.env.MANIFEST_MODEL || 'z-ai/glm-5.2:free';
@@ -254,28 +257,19 @@ async function openRouterChat(system, user, { retries = 1, netRetries = 3 } = {}
   throw lastErr;
 }
 
-const ALLOWED_ACTIONS = new Set(['click', 'fill', 'select', 'waitFor', 'waitMs', 'scrollTo']);
+/** Actions del LLM ya ejecutables (selectores válidos, máx. 3); undefined si no queda ninguna. */
+function llmActions(raw) {
+  const { actions } = normalizeActions(raw);
+  return actions.length ? actions : undefined;
+}
 
 /** Normaliza el shot del LLM y lo valida contra routes.json. null = descartar. */
-function normalizeShot(rawShot, stepNumber, patterns) {
+function normalizeShot(rawShot, stepNumber, patterns, content = '') {
   const zauruPath = String(rawShot.zauruPath || '').trim();
   const route = zauruPath ? candidateMatches(patterns, zauruPath) : null;
   if (zauruPath && !route) return { shot: null, reason: `ruta no existente en routes.json: ${zauruPath}` };
 
-  let actions = Array.isArray(rawShot.actions) ? rawShot.actions : undefined;
-  if (actions) {
-    actions = actions
-      .map((a) => {
-        if (typeof a !== 'object' || !a) return null;
-        const [key, value] = Object.entries(a)[0] || [];
-        if (!ALLOWED_ACTIONS.has(key)) return null;
-        return { [key]: value };
-      })
-      .filter(Boolean)
-      .slice(0, 3);
-    if (!actions.length) actions = undefined;
-  }
-
+  const actions = llmActions(rawShot.actions);
   const shot = {
     stepNumber,
     caption: String(rawShot.caption || '').trim(),
@@ -283,7 +277,7 @@ function normalizeShot(rawShot, stepNumber, patterns) {
     ...(zauruPath && (rawShot.resolveId === true || looksLikeDetailPath(zauruPath)) ? { resolveId: true } : {}),
     ...(actions ? { actions } : {}),
     waitForSelector: Array.isArray(rawShot.waitForSelector) ? rawShot.waitForSelector.map(String).filter(Boolean) : [],
-    insertAfterText: String(rawShot.insertAfterText || '').trim(),
+    insertAfterText: matchAnchor(content, rawShot.insertAfterText),
   };
   return { shot, reason: null };
 }
@@ -303,19 +297,7 @@ async function callLlmForPaths(meta, candidates, shots) {
     const zauruPath = String(f?.zauruPath || s.zauruPath || '').trim();
     const route = zauruPath ? candidateMatches(routesData.routes, zauruPath) : null;
     if (zauruPath && !route) return { ...s, zauruPath: '' }; // enjaulado: descarta lo inventado
-    let actions = Array.isArray(f?.actions) ? f.actions : undefined;
-    if (actions) {
-      actions = actions
-        .map((a) => {
-          if (typeof a !== 'object' || !a) return null;
-          const [key, value] = Object.entries(a)[0] || [];
-          if (!ALLOWED_ACTIONS.has(key)) return null;
-          return { [key]: value };
-        })
-        .filter(Boolean)
-        .slice(0, 3);
-      if (!actions.length) actions = undefined;
-    }
+    const actions = llmActions(f?.actions);
     return {
       ...s,
       zauruPath,
@@ -325,27 +307,22 @@ async function callLlmForPaths(meta, candidates, shots) {
   });
 }
 
-function applyResolvedPath(shots, resolved) {
-  return shots.map((s) => {
-    const zauruPath = s.zauruPath || resolved.path || '';
-    const out = { ...s, zauruPath };
-    if (zauruPath && (s.resolveId || looksLikeDetailPath(zauruPath))) out.resolveId = true;
-    else delete out.resolveId;
-    return out;
-  });
-}
-
 // ── Procesamiento por doc ───────────────────────────────────────────────────
 const stats = {
   generated: 0,
   dropped: [], // shots descartados por ruta inexistente
   skippedApi: [],
+  kept: [], // docs que ya estaban en el manifiesto y no se tocaron
   errors: [],
 };
 
-async function processLlmDocs(mdFiles, manifest) {
+async function processLlmDocs(mdFiles, manifest, { skipExisting = false } = {}) {
   for (const mdPath of mdFiles) {
     const meta = docMeta(mdPath);
+    if (skipExisting && findEntry(manifest, meta.rel)) {
+      stats.kept.push(meta.rel);
+      continue;
+    }
     if (isApiCodeDoc(mdPath, meta.content)) {
       stats.skippedApi.push(meta.rel);
       console.log(`↷ ${meta.rel} — omitido (API/código)`);
@@ -359,18 +336,22 @@ async function processLlmDocs(mdFiles, manifest) {
       const shots = [];
       for (let i = 0; i < Math.min(entry.shots.length, MAX_SHOTS_PER_DOC); i++) {
         const stepNumber = meta.existingImageCount + 1 + i;
-        const { shot, reason } = normalizeShot(entry.shots[i], stepNumber, routesData.routes);
+        const { shot, reason } = normalizeShot(entry.shots[i], stepNumber, routesData.routes, meta.content);
         if (shot) shots.push(shot);
         else if (reason) stats.dropped.push(`${meta.slug}: ${reason}`);
       }
-      upsertDoc(manifest, {
-        section: meta.section,
-        slug: meta.slug,
-        docPath: meta.rel,
-        existingImageCount: meta.existingImageCount,
-        shots,
-        source: 'llm',
-      });
+      upsertDoc(
+        manifest,
+        {
+          section: meta.section,
+          slug: meta.slug,
+          docPath: meta.rel,
+          existingImageCount: meta.existingImageCount,
+          shots,
+          source: 'llm',
+        },
+        meta.content
+      );
       stats.generated++;
       console.log(`${shots.length} shots válidos${entry.shots.length > shots.length ? ` (${entry.shots.length - shots.length} descartados)` : ''}`);
     } catch (err) {
@@ -386,8 +367,19 @@ async function processGaps(manifest) {
 
   console.log(`\n── Tier A: refs rotas (${broken.length} docs) ──`);
   for (const doc of broken) {
-    const stepNums = doc.brokenRefs.map((r) => r.stepNumber);
-    let shots = inferShotsFromBrokenRefs(doc.content, doc.section, doc.slug, stepNums);
+    const existing = findEntry(manifest, doc.docPath);
+    const pending = uncoveredRefs(existing, doc.brokenRefs);
+    if (!pending.length) {
+      stats.kept.push(doc.docPath);
+      continue;
+    }
+    const stepNums = pending.map((r) => r.stepNumber).filter((n) => n != null);
+    const taken = new Set((existing?.shots || []).map((s) => s.stepNumber));
+    let shots = inferShotsFromBrokenRefs(doc.content, doc.section, doc.slug, stepNums).filter((s) => !taken.has(s.stepNumber));
+    if (!shots.length) {
+      console.log(`↷ ${doc.docPath} — ${pending.length} ref(s) sin numerar o de otro doc; usa 4-validate-manifest.mjs --fix`);
+      continue;
+    }
     const candidates = screenshotCandidates(prefixesForSection(doc.section));
 
     // El LLM asigna ruta POR SHOT (la heurística nav a granel repetiría la
@@ -416,14 +408,17 @@ async function processGaps(manifest) {
       }
     }
 
-    upsertDoc(manifest, {
-      section: doc.section,
-      slug: doc.slug,
-      docPath: doc.docPath,
-      existingImageCount: doc.content.split('\n').filter((l) => l.includes(`/img/${doc.section}/${doc.slug}-`)).length,
-      shots,
-      source: 'broken-refs',
-    });
+    const entry = existing
+      ? { ...existing, shots: [...existing.shots, ...shots].sort((a, b) => a.stepNumber - b.stepNumber) }
+      : {
+          section: doc.section,
+          slug: doc.slug,
+          docPath: doc.docPath,
+          existingImageCount: doc.content.split('\n').filter((l) => l.includes(`/img/${doc.section}/${doc.slug}-`)).length,
+          shots,
+          source: 'broken-refs',
+        };
+    if (!dryRun) upsertDoc(manifest, entry, doc.content);
   }
 
   const noImage = findNoImageDocs(docsDir).filter((p) => !brokenPaths.has(p));
@@ -431,7 +426,9 @@ async function processGaps(manifest) {
   if (dryRun) {
     for (const mdPath of noImage) {
       const meta = docMeta(mdPath);
-      if (isApiCodeDoc(mdPath, meta.content)) {
+      if (findEntry(manifest, meta.rel)) {
+        stats.kept.push(meta.rel);
+      } else if (isApiCodeDoc(mdPath, meta.content)) {
         stats.skippedApi.push(meta.rel);
         console.log(`↷ ${meta.rel} — omitido (API/código)`);
       } else {
@@ -439,7 +436,7 @@ async function processGaps(manifest) {
       }
     }
   } else {
-    await processLlmDocs(noImage, manifest);
+    await processLlmDocs(noImage, manifest, { skipExisting: true });
   }
 }
 
@@ -450,6 +447,9 @@ function printSummary() {
   for (const d of stats.dropped) console.log(`    · ${d}`);
   console.log(`  Omitidos API/código: ${stats.skippedApi.length}`);
   for (const d of stats.skippedApi) console.log(`    · ${d}`);
+  if (stats.kept.length) {
+    console.log(`  Ya en el manifiesto, sin cambios: ${stats.kept.length} (para rehacerlos: --docs <archivo.md> o --regen <slug>)`);
+  }
   if (stats.errors.length) {
     console.log(`  Errores: ${stats.errors.length}`);
     for (const e of stats.errors) console.log(`    ✗ ${e.doc}: ${e.error}`);
@@ -499,14 +499,18 @@ if (regenSlugs) {
           }
           return true;
         });
-        upsertDoc(manifest, {
-          section: meta.section,
-          slug: meta.slug,
-          docPath: meta.rel,
-          existingImageCount: refs.length,
-          shots: valid,
-          source: 'regen',
-        });
+        upsertDoc(
+          manifest,
+          {
+            section: meta.section,
+            slug: meta.slug,
+            docPath: meta.rel,
+            existingImageCount: refs.length,
+            shots: valid,
+            source: 'regen',
+          },
+          meta.content
+        );
         console.log(`${valid.length}/${shots.length} shots con ruta`);
       } catch (err) {
         stats.errors.push({ doc: meta.rel, error: String(err) });

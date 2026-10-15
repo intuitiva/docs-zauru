@@ -14,3 +14,5 @@ Para ingresar al reporte:
 4. Seleccionar el item y el rango de fechas.
 
 Con este detalle tendrá a la mano el historial de precios del producto para comparar proveedores o revisar incrementos de costo.
+
+![Pantalla del reporte 'Item de Compra entre Fechas' con filtros de producto y rango de fechas y tabla de resultados.](/img/reportes-de-compras/item-de-compra-entre-fechas-1.png)

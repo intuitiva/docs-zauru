@@ -12,6 +12,8 @@ Para ingresar a este reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes de un Beneficiario".
 
+![Reporte de Pagos Pendientes de un Beneficiario con filtros de cuenta y beneficiario](/img/reportes-de-contabilidad/pagos-pendientes-de-un-beneficiario-1.png)
+
 **Parametros**:
 
 - **Cuenta**: cuenta reconciliable.

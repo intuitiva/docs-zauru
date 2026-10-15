@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Destajos Sin Partida Contable"**.
 
+![Reporte Destajos Sin Partida Contable mostrando lista de destajos sin partida contable y botón Corregir](/img/reportes-de-nominas/destajos-sin-partida-contable-1.png)
+
 **Opcion de correccion**: el boton **"Corregir"** genera las partidas contables faltantes para todos los destajos listados.
 
 Una vez corregidos, sus destajos y su contabilidad quedan alineados y listos para cerrar el período sin diferencias.

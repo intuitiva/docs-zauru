@@ -12,4 +12,6 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Consolidados de Órdenes".
 
+![Reporte de Ítems Consolidados de Órdenes mostrando la tabla de ítems agrupados](/img/reportes-de-ventas/items-consolidados-de-ordenes-1.png)
+
 Con esta vista podrá confirmar que la consolidación quedó completa antes de entregar o facturar, sin sorpresas de último momento.

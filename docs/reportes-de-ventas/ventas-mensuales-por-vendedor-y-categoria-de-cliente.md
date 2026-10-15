@@ -20,3 +20,5 @@ Permite:
 - Exportar a Excel.
 
 Con este cruce puede asignar carteras con criterio y detectar oportunidades donde un vendedor aún no llega.
+
+![Reporte de Ventas Mensuales por Vendedor y Categoría de Cliente mostrando filtros y tabla de resultados.](/img/reportes-de-ventas/ventas-mensuales-por-vendedor-y-categoria-de-cliente-1.png)

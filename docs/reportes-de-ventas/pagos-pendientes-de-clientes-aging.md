@@ -8,6 +8,8 @@ Si quiere saber qué tan vieja es la deuda de cada cliente, este reporte se lo d
 
 Para ingresar al reporte:
 
+![Reporte de Pagos Pendientes de Clientes (Aging) mostrando los rangos de antigüedad](/img/reportes-de-ventas/pagos-pendientes-de-clientes-aging-1.png)
+
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes de Clientes (Aging)".

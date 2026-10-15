@@ -8,6 +8,8 @@ Cuando su contador le pida los respaldos de los pagos electrónicos del mes, est
 
 Para ingresar al reporte:
 
+![Reporte de Almacenamiento de Pagos Electrónicos](/img/reportes-de-ventas/almacenamiento-de-pagos-electronicos-1.png)
+
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".
 3. Seleccionar "Almacenamiento de Pagos Electrónicos".

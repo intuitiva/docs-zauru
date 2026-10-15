@@ -12,6 +12,8 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Proveedores - Saldos Pendientes Detallado".
 
+![Reporte Proveedores - Saldos Pendientes Detallado](/img/reportes-de-compras/proveedores-saldos-pendientes-detallado-1.png)
+
 Permite filtrar por categoria de proveedor.
 
 Con el detalle documento por documento podrá localizar cualquier diferencia y conciliar sus cuentas por pagar con total tranquilidad.

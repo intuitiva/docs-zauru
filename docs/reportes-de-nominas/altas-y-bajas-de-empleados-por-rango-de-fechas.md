@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar **"Altas y Bajas de Empleados por Rango de Fechas"**.
 
 Con esta lista a la vista puede responder de inmediato cualquier consulta sobre el movimiento de personal y detectar a tiempo las vacantes que necesitan cubrirse.
+
+![Reporte de Altas y Bajas de Empleados por Rango de Fechas mostrando tabla de resultados y filtros de fecha](/img/reportes-de-nominas/altas-y-bajas-de-empleados-por-rango-de-fechas-1.png)

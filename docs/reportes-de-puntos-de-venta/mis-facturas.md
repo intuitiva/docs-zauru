@@ -8,6 +8,8 @@ Si usted es vendedor y quiere ver el fruto de su trabajo, este reporte le muestr
 
 Para ingresar al reporte:
 
+![Reporte Mis Facturas mostrando listado de facturas emitidas por el vendedor](/img/reportes-de-puntos-de-venta/mis-facturas-1.png)
+
 1. Ir a "P.D.V.".
 2. Seleccionar "Reportes".
 3. Seleccionar "Mis Facturas".

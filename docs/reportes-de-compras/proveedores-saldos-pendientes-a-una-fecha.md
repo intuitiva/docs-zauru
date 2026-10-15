@@ -8,6 +8,8 @@ Si necesita reconstruir cuánto le debía a cada proveedor en una fecha del pasa
 
 Para ingresar al reporte:
 
+![Formulario de filtros del reporte Proveedores - Saldos Pendientes a una Fecha](/img/reportes-de-compras/proveedores-saldos-pendientes-a-una-fecha-1.png)
+
 1. Ir a "Compras".
 2. Seleccionar "Reportes".
 3. Seleccionar "Proveedores - Saldos Pendientes a una Fecha".

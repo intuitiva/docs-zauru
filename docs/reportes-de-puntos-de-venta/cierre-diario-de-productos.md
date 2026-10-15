@@ -8,6 +8,8 @@ Al final del día, saber cuánto vendió no siempre es suficiente: a veces quier
 
 Para ingresar al reporte:
 
+![Pantalla del reporte Cierre Diario de Productos mostrando filtros de fecha y vendedor y la tabla de facturas con desglose por producto](/img/reportes-de-puntos-de-venta/cierre-diario-de-productos-1.png)
+
 1. Ir a "P.D.V.".
 2. Seleccionar "Reportes".
 3. Seleccionar "Cierre Diario de Productos".

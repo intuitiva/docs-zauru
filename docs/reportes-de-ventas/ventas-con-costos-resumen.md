@@ -13,3 +13,5 @@ Para ingresar al reporte:
 3. Seleccionar "Ventas con Costos (Resumen)".
 
 Con estas cifras consolidadas puede responder en segundos cuánto se vendió y cuánto se ganó.
+
+![Vista del reporte Ventas con Costos (Resumen) mostrando las cifras consolidadas de ventas y costos.](/img/reportes-de-ventas/ventas-con-costos-resumen-1.png)
