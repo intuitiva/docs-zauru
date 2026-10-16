@@ -55,6 +55,8 @@ Para reagrupar ordenes de produccion entre lotes abiertos:
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=1"}]} */}
+
 ![imagen3](/img/produccion/lotes-de-produccion-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/production_batches/:id">{"https://app.zauru.com/production/production_batches/:id"}</a></figcaption>
@@ -74,6 +76,8 @@ Solo puede anular un lote de produccion que este en estado abierto y cuyas orden
 4. Presione el boton **"Eliminar"**.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=-1"}]} */}
 
 ![imagen4](/img/produccion/lotes-de-produccion-4.png)
 

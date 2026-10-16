@@ -36,6 +36,8 @@ Si por alguna razón se necesita que un contrato cerrado vuelva a generar cuotas
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href*=\"unclose\"]","captureMode":"preview"} */}
+
 ![reabrir contrato cerrado](/img/contratos/contratos-cerrados-2.png)
 
 <figcaption><a href="https://app.zauru.com/contracts/closed_contracts/:id">{"https://app.zauru.com/contracts/closed_contracts/:id"}</a></figcaption>

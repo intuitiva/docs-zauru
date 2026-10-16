@@ -57,6 +57,8 @@ Si necesita revertir el cierre de una orden de trabajo:
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=-1"}]} */}
+
 ![imagen3](/img/produccion/ordenes-de-trabajo-cerradas-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/closed_work_orders/:id">{"https://app.zauru.com/production/closed_work_orders/:id"}</a></figcaption>

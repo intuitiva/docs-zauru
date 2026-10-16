@@ -49,6 +49,8 @@ Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la cate
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
+
 ![imagen3](/img/primeros-pasos/proyectos-3.png)
 
 <figcaption><a href="https://app.zauru.com/settings/tags/:id">{"https://app.zauru.com/settings/tags/:id"}</a></figcaption>
@@ -82,6 +84,8 @@ Zauru le permite visualizar la jerarquía completa de sus categorías de proyect
 4. Hacer click en "Gráfico" sobre la categoría raíz que desea visualizar.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
 
 ![imagen5](/img/primeros-pasos/proyectos-5.png)
 
@@ -132,6 +136,8 @@ Para guardar los cambios presione "Crear Proyecto".
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proyecto se creó exitosamente.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen8](/img/primeros-pasos/proyectos-8.png)
 

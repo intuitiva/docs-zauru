@@ -65,6 +65,8 @@ i. Documentos electronicos asociados.
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"h3 >> nth=1"}]} */}
+
 ![imagen3](/img/compras/cargos-pagados-3.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/paid_charges/:id">{"https://app.zauru.com/purchases/paid_charges/:id"}</a></figcaption>
@@ -104,6 +106,8 @@ e. Memo o notas.
 f. Etiquetas (tags).
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"#additional_data"}]} */}
 
 ![imagen5](/img/compras/cargos-pagados-5.png)
 

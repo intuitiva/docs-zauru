@@ -16,6 +16,8 @@ Los pasos para crear una lista de materiales son los siguientes:
 
 <figure>
 
+{/* screenshot: {"actions":[{"click":"a[href='/production/bill_of_materials/new']"}]} */}
+
 ![imagen1](/img/produccion/listas-de-materiales-1.png)
 
 <figcaption><a href="https://app.zauru.com/production/bill_of_materials">{"https://app.zauru.com/production/bill_of_materials"}</a></figcaption>
@@ -53,6 +55,8 @@ Cuando haya completado todos los campos, presione **"Crear Lista de Materiales"*
 Le aparecera un mensaje de exito notificandole que la lista de materiales fue creada exitosamente.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen3](/img/produccion/listas-de-materiales-3.png)
 

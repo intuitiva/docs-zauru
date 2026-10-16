@@ -63,6 +63,8 @@ i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=-1"}]} */}
+
 ![imagen3](/img/compras/ordenes-de-compra-cerradas-3.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
@@ -112,6 +114,8 @@ k. Etiquetas (tags).
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"#additional_data"}]} */}
+
 ![imagen5](/img/compras/ordenes-de-compra-cerradas-5.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
@@ -131,6 +135,8 @@ Los pasos para reabrir una orden de compra cerrada son:
 4. Seleccionar "Reabrir Orden de Compra".
 
 <figure>
+
+{/* screenshot: {"focusSelector":"a[href*=\"rebound\"]","captureMode":"preview"} */}
 
 ![imagen6](/img/compras/ordenes-de-compra-cerradas-6.png)
 

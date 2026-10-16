@@ -51,6 +51,8 @@ e. Presione "Crear Data import" para iniciar el proceso.
 
 <figure>
 
+{/* screenshot: {"focusSelector":"input[type=\"submit\"]","captureMode":"preview"} */}
+
 ![imagen2](/img/primeros-pasos/importaciones-de-datos-2.png)
 
 <figcaption><a href="https://app.zauru.com/settings/data_imports/new">{"https://app.zauru.com/settings/data_imports/new"}</a></figcaption>
@@ -69,6 +71,8 @@ Los pasos para mapear las columnas son:
 3. Si tiene campos que son referencias a otros objetos (como `brand_id`, `item_category_id`, `payee_id`), identifíquelos con el sufijo `_id` en las opciones.
 
 <figure>
+
+{/* screenshot: {"focusSelector":"select.column-mapping"} */}
 
 ![imagen3](/img/primeros-pasos/importaciones-de-datos-3.png)
 
@@ -92,6 +96,8 @@ En la vista de edición de datos usted podrá:
 5. **Eliminar columnas:** Puede eliminar columnas completas que no necesite mapear.
 
 <figure>
+
+{/* screenshot: {"focusSelector":"#import tbody"} */}
 
 ![imagen4](/img/primeros-pasos/importaciones-de-datos-4.png)
 

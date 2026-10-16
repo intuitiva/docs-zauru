@@ -23,6 +23,8 @@ Solo necesita indicar el **rango de fechas** (fecha inicial y fecha final) del p
 
 <figure>
 
+{/* screenshot: {"focusSelector":"table:not(.dictionary)"} */}
+
 ![Resultado del reporte de bundles de categoría vendidos por item](/img/reportes-de-ventas/bundles-de-categoria-vendidos-por-item-2.png)
 
 <figcaption><a href="https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item">{"https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item"}</a></figcaption>

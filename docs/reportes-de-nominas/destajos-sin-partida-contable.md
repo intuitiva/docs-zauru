@@ -14,6 +14,8 @@ Para ingresar al reporte:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href*=\"fix_missing_entry_in_pieceworks\"]","captureMode":"preview","waitForSelector":["table",".btn-corregir","h1"]} */}
+
 ![Reporte Destajos Sin Partida Contable mostrando lista de destajos sin partida contable y botón Corregir](/img/reportes-de-nominas/destajos-sin-partida-contable-1.png)
 
 <figcaption><a href="https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks">{"https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks"}</a></figcaption>

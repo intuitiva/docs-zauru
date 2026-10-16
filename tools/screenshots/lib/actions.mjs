@@ -25,7 +25,7 @@ export function usableSelector(selector) {
 }
 
 /**
- * Actions tal como las escribe el LLM → actions ejecutables.
+ * Normaliza acciones y detecta operaciones no ejecutables.
  * `{click: {selector}}` pasa a string y `:contains(` a `:has-text(`.
  * Lo que no se puede ejecutar se descarta y se devuelve en `dropped`.
  */

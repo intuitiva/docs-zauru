@@ -4,6 +4,7 @@
   "private": true,
   "description": "Documentación del usuario de Zauru ERP/CRM (Docusaurus)",
   "scripts": {
+    "screenshots": "node tools/screenshots/screenshots.mjs",
     "docusaurus": "docusaurus",
     "start": "docusaurus start --no-open",
     "build": "docusaurus build",

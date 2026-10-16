@@ -70,6 +70,8 @@ Para guardar presione **"Crear Configuración de Gateway"**.
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
+
 ![imagen3](/img/ventas/configuraciones-de-gateway-3.png)
 
 <figcaption><a href="https://app.zauru.com/sales/gateway_configs/new">{"https://app.zauru.com/sales/gateway_configs/new"}</a></figcaption>

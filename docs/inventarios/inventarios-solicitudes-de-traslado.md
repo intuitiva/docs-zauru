@@ -152,6 +152,8 @@ Cuando una solicitud de traslado tiene productos sin stock suficiente en la bode
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"h3:has-text(\"Cargo\")"}]} */}
+
 ![Detalle de solicitud de traslado con opción de crear requisición de compra](/img/inventarios/inventarios-solicitudes-de-traslado-6.png)
 
 <figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
@@ -179,6 +181,8 @@ Para satisfacer una solicitud de traslado, debe crear envíos (reservaciones) de
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"legend"}]} */}
+
 ![Sección de envíos en detalle de solicitud con botón de nuevo envío](/img/inventarios/inventarios-solicitudes-de-traslado-7.png)
 
 <figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
@@ -198,6 +202,8 @@ Al crear el envío, las cantidades reservadas se descuentan de las cantidades so
 Además del botón "Autorizar", en los detalles de una solicitud de traslado abierta aparece el botón "Autorizar solo stock disponible". Este botón le permite generar el envío (reservación) reservando únicamente la cantidad de stock que realmente está disponible en la bodega origen, en lugar de la cantidad completa solicitada.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=-1"}]} */}
 
 ![Detalle de solicitud de traslado abierta con botón de autorizar solo stock disponible](/img/inventarios/inventarios-solicitudes-de-traslado-8.png)
 

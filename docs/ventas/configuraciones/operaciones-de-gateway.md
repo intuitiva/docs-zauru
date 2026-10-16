@@ -38,6 +38,8 @@ b. **Rango de fechas**:
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Este paso solo se distinguía con una espera. El aviso depende de crear o modificar un registro, y esa escritura no se ejecuta."} */}
+
 ![imagen2](/img/ventas/operaciones-de-gateway-2.png)
 
 <figcaption><a href="https://app.zauru.com/sales/sales/gateway_operation_intents">{"https://app.zauru.com/sales/sales/gateway_operation_intents"}</a></figcaption>

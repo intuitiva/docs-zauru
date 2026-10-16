@@ -65,6 +65,8 @@ Le aparecera un mensaje de exito notificandole que la orden de produccion fue cr
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
+
 ![imagen3](/img/produccion/ordenes-de-produccion-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/production_orders">{"https://app.zauru.com/production/production_orders"}</a></figcaption>
@@ -120,6 +122,8 @@ Para reagrupar una orden de produccion en un lote diferente:
 4. En la seccion de lote, seleccione **"Mover a Lote"** y elija el lote de destino.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=1"}]} */}
 
 ![imagen6](/img/produccion/ordenes-de-produccion-6.png)
 

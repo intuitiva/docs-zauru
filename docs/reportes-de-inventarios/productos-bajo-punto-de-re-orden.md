@@ -22,6 +22,8 @@ Para generar el reporte:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"table:not(.dictionary)","waitForSelector":["table.results","tbody tr",".export-button","h1"]} */}
+
 ![Resultado del reporte después de presionar 'Generar reporte'](/img/reportes-de-inventarios/productos-bajo-punto-de-re-orden-3.png)
 
 <figcaption><a href="https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point">{"https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point"}</a></figcaption>

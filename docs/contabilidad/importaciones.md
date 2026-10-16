@@ -77,6 +77,8 @@ Permite cargar masivamente grupos de cuentas desde un archivo CSV, Excel (.xls) 
 
 <figure>
 
+{/* screenshot: {"actions":[{"click":"a[href*='/accounting/accounts/account_groups']"}]} */}
+
 ![Pestaña de grupos de cuentas en el listado de cuentas](/img/contabilidad/importaciones-5.png)
 
 <figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>

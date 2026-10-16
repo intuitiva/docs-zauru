@@ -63,7 +63,12 @@ export async function getAuthenticatedContext({ headless = true, onContext } = {
   }
 
   // 2) Login fresco
-  return login(browser, newContext);
+  try {
+    return await login(browser, newContext);
+  } catch (err) {
+    await browser.close();
+    throw err;
+  }
 }
 
 async function login(browser, newContext) {

@@ -46,6 +46,8 @@ Si su contador le pide el historial de membresías para sus registros, puede exp
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=1"}]} */}
+
 ![Opciones de exportación de contratos en CSV o XLS](/img/permisos-de-acceso/contratos-3.png)
 
 <figcaption><a href="https://app.zauru.com/access_control/contracts">{"https://app.zauru.com/access_control/contracts"}</a></figcaption>

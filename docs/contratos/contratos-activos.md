@@ -68,6 +68,8 @@ En el detalle del contrato, la sección "Documentos Consolidados" indica cuánta
 En el detalle del contrato podemos observar el listado de los documentos generados automáticamente o manualmente.
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"h3:has-text(\"Documentos\")"}]} */}
+
 ![documentos generados](/img/contratos/contratos-activos-4.png)
 
 <figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id">{"https://app.zauru.com/contracts/active_contracts/:id"}</a></figcaption>
@@ -92,6 +94,8 @@ Debajo de la tabla de documentos generados se muestra un resumen con:
 - Cantidad y monto de documentos en cada estado del flujo de trabajo (borrador, ordenado, autorizado, pagado, etc.)
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"h3:has-text(\"Resumen\")"}]} */}
 
 ![resumen de estado](/img/contratos/contratos-activos-6.png)
 
@@ -216,6 +220,8 @@ Los documentos que se pueden asociar son:
 
 Para asociar un documento, entre al detalle del contrato e ingrese al tipo de documento a asociar:
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"h3:has-text(\"Compras\")"}]} */}
 
 ![asociar documentos](/img/contratos/contratos-activos-5.png)
 

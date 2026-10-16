@@ -13,6 +13,8 @@ Para ingresar al reporte es necesario realizar lo siguiente:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href$=\"/sales/reports/seller_monthly_clients\"]"} */}
+
 ![Listado de reportes de ventas en Zauru](/img/reportes-de-ventas/clientes-mensuales-por-vendedor-1.png)
 
 <figcaption><a href="https://app.zauru.com/sales/reports">{"https://app.zauru.com/sales/reports"}</a></figcaption>

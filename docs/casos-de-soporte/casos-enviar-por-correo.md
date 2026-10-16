@@ -28,6 +28,8 @@ Las configuraciones disponibles incluyen:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href*=\"send_email\"]","captureMode":"preview"} */}
+
 ![imagen1](/img/casos-de-soporte/casos-enviar-por-correo-1.png)
 
 <figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>

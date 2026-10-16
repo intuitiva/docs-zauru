@@ -100,6 +100,8 @@ La tarjeta será desactivada (soft-delete) y ya no estará disponible para reali
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
+
 ![imagen4](/img/ventas/tarjetas-de-credito-4.png)
 
 <figcaption><a href="https://app.zauru.com/sales/clients/:client_id/credit_cards/:id">{"https://app.zauru.com/sales/clients/:client_id/credit_cards/:id"}</a></figcaption>

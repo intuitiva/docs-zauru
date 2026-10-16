@@ -22,6 +22,8 @@ export const MUTATING_GET_SEGMENTS = new Set([
   'delete',
   'send_email',
   'generate_arrears',
+  'fix_deducted_incidents',
+  'fix_missing_entry_in_pieceworks',
 ]);
 
 const WRITE_BODY = /_method=(?:put|patch|delete)/i;

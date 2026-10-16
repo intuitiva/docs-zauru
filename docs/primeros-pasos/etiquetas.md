@@ -26,6 +26,8 @@ Los pasos para crear una nueva categoría de etiqueta son:
 
 <figure>
 
+{/* screenshot: {"actions":[{"click":"a[href='/settings/tags/tag_categories']"}]} */}
+
 ![Pestaña de categorías de etiquetas y botón nueva categoría](/img/primeros-pasos/etiquetas-2.png)
 
 <figcaption><a href="https://app.zauru.com/settings/tags">{"https://app.zauru.com/settings/tags"}</a></figcaption>

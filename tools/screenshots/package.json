@@ -3,23 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Captura automática de screenshots de Zauru para la documentación (Playwright + manifiesto)",
+  "description": "Captura de Zauru en staging desde los enlaces de las imágenes del manual",
   "scripts": {
-    "extract-routes": "node 1-extract-routes.mjs",
-    "discover-nav": "node 2-discover-nav.mjs",
-    "generate": "node 3-generate-manifest.mjs",
-    "gaps": "node 3-generate-manifest.mjs --gaps",
-    "validate": "node 4-validate-manifest.mjs",
-    "audit": "node 5-run-screenshots.mjs --audit",
-    "test": "node --test test/*.test.mjs",
-    "run": "node 5-run-screenshots.mjs",
-    "insert-refs": "node 6-insert-image-refs.mjs",
-    "report": "node 7-report-missing.mjs"
+    "audit": "node screenshots.mjs audit",
+    "capture": "node screenshots.mjs capture",
+    "promote": "node screenshots.mjs promote",
+    "report": "node screenshots.mjs report",
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^3.1.1",
     "exceljs": "^4.4.0",
-    "github-slugger": "^2.0.0",
-    "jsonrepair": "^3.15.0",
     "playwright": "^1.49.0"
   }
 }

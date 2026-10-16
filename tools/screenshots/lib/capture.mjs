@@ -1,5 +1,5 @@
 /**
- * capture.mjs — Piezas puras de captura de un shot del manifiesto.
+ * capture.mjs — Piezas de navegación, acciones y comprobación de capturas.
  *
  * Reglas de corrección que implemente aquí:
  *   1. VERIFICACIÓN DE URL: tras navegar, el pathname final DEBE coincidir
@@ -14,7 +14,7 @@
  *      diferenciar estados de una misma página.
  *
  * El orquestador (navegar → checks → ocultar → screenshot) vive en
- * 5-run-screenshots.mjs.
+ * screenshots.mjs.
  */
 import { baseUrl, isSignInUrl } from './session.mjs';
 import { classifyLoadedPage, intersectsViewport } from './page-state.mjs';
@@ -88,12 +88,12 @@ export async function findRailsErrorPage(page) {
  *   [{ literals: ['sales','clients'], tail: ['credit_cards','new'] }]
  * null si no hay segmento de id.
  */
-export function splitIdParts(zauruPath) {
+export function splitIdParts(zauruPath, { placeholdersOnly = false } = {}) {
   const segs = zauruPath.replace(/\/+$/, '').split('/').filter(Boolean);
   const parts = [];
   let literals = [];
   for (const seg of segs) {
-    if (/^\d+$/.test(seg) || seg.startsWith(':')) {
+    if ((!placeholdersOnly && /^\d+$/.test(seg)) || seg.startsWith(':')) {
       parts.push({ literals: literals.slice(), tail: [] });
       literals = [];
     } else {
@@ -158,7 +158,7 @@ async function firstRecordHref(page, listPath, tailSegs, recordLink) {
  * links a los recursos anidados).
  */
 export async function resolveIdsInPath(page, zauruPath, options = {}) {
-  const parts = splitIdParts(zauruPath);
+  const parts = splitIdParts(zauruPath, options);
   if (!parts) throw new CaptureError('no-id', `resolveId pero ${zauruPath} no tiene segmento de id`);
 
   let resolved = '';
@@ -208,7 +208,7 @@ export async function waitForListingSettled(page) {
       if (!el) return true;
       const style = getComputedStyle(el);
       return style.display === 'none' || style.visibility === 'hidden';
-    }, { timeout: 15000 });
+    }, null, { timeout: 15000 });
   } catch {
     throw new CaptureError('listing', 'el listado sigue cargando; no se concluye que no hay datos');
   }

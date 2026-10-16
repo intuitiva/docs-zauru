@@ -25,6 +25,8 @@ Antes de eliminar un caso, tome en cuenta lo siguiente:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[data-method=\"delete\"], a[href*=\"destroy\"]","captureMode":"preview"} */}
+
 ![imagen1](/img/casos-de-soporte/casos-eliminar-un-caso-1.png)
 
 <figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>

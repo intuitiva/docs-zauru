@@ -21,6 +21,8 @@ sidebar_position: 14
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Este paso solo se distinguía con una espera. El aviso depende de crear o modificar un registro, y esa escritura no se ejecuta."} */}
+
 ![Vista con botón Cobrar de una factura no pagada](/img/ventas/redimir-nota-de-credito-en-una-factura-2.png)
 
 <figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>

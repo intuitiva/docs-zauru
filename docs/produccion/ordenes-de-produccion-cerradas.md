@@ -57,6 +57,8 @@ Si necesita reabrir una orden de produccion ya cerrada:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href*=\"return_to_running\"]","captureMode":"preview"} */}
+
 ![imagen3](/img/produccion/ordenes-de-produccion-cerradas-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/closed_production_orders/:id">{"https://app.zauru.com/production/closed_production_orders/:id"}</a></figcaption>
@@ -81,6 +83,8 @@ Para imprimir una orden de produccion cerrada:
 4. Presione el boton **"Imprimir"**.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"h3 >> nth=2"}]} */}
 
 ![imagen4](/img/produccion/ordenes-de-produccion-cerradas-4.png)
 

@@ -21,6 +21,8 @@ Luego de refrescar, podra seleccionar el numero de serie del producto que el cli
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"#case_raw_serial_info"}]} */}
+
 ![imagen2](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-2.png)
 
 <figcaption><a href="https://app.zauru.com/support/cases/new">{"https://app.zauru.com/support/cases/new"}</a></figcaption>

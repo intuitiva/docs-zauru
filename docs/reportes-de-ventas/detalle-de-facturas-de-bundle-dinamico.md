@@ -23,6 +23,8 @@ Solo necesita indicar el **rango de fechas** (fecha inicial y fecha final) del p
 
 <figure>
 
+{/* screenshot: {"focusSelector":"table:not(.dictionary)"} */}
+
 ![Resultado del reporte de detalle de facturas de bundle dinámico](/img/reportes-de-ventas/detalle-de-facturas-de-bundle-dinamico-2.png)
 
 <figcaption><a href="https://app.zauru.com/sales/reports/category_bundle_invoice_details">{"https://app.zauru.com/sales/reports/category_bundle_invoice_details"}</a></figcaption>

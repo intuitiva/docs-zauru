@@ -73,6 +73,8 @@ Después de realizar los cambios deseados, presione "Actualizar Variable" para g
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
+
 ![imagen2](/img/primeros-pasos/configuraciones-entidad-2.png)
 
 <figcaption><a href="https://app.zauru.com/company/edit">{"https://app.zauru.com/company/edit"}</a></figcaption>

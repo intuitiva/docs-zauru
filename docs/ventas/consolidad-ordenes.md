@@ -46,6 +46,8 @@ d. **Referencia**: Coloque una breve referencia para identificar la consolidacio
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Este paso solo se distinguía con una espera. El aviso depende de crear o modificar un registro, y esa escritura no se ejecuta."} */}
+
 ![imagen2](/img/ventas/consolidad-ordenes-2.png)
 
 <figcaption><a href="https://app.zauru.com/sales/sales_consolidates/new">{"https://app.zauru.com/sales/sales_consolidates/new"}</a></figcaption>
@@ -98,6 +100,8 @@ Si necesita deshacer una consolidacion:
 Al desconsolidar, las ordenes volveran a su estado original (abiertas) y la factura consolidada sera eliminada.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Este paso solo se distinguía con una espera. El aviso depende de crear o modificar un registro, y esa escritura no se ejecuta."} */}
 
 ![imagen5](/img/ventas/consolidad-ordenes-5.png)
 

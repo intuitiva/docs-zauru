@@ -111,6 +111,8 @@ Para guardar los cambios en las variables de configuracion:
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
+
 ![imagen2](/img/compras/configuracion-de-variables-2.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/settings/purchases_settings/new">{"https://app.zauru.com/purchases/settings/purchases_settings/new"}</a></figcaption>

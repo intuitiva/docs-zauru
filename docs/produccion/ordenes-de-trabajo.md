@@ -69,6 +69,8 @@ Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cread
 
 <figure>
 
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
+
 ![imagen3](/img/produccion/ordenes-de-trabajo-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/open_work_orders">{"https://app.zauru.com/production/open_work_orders"}</a></figcaption>
@@ -82,6 +84,8 @@ Al crear o editar una orden de trabajo, si selecciona un paquete (bundle), puede
 2. Seleccione la accion **"Explotar"** en el pie del formulario.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
 
 ![imagen4](/img/produccion/ordenes-de-trabajo-4.png)
 
@@ -142,6 +146,8 @@ Al presionar **"Cerrar Orden de Trabajo"**, el sistema realizara las siguientes 
 Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cerrada exitosamente.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen7](/img/produccion/ordenes-de-trabajo-7.png)
 

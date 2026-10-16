@@ -76,10 +76,15 @@ y referéncialo como `/img/<sección>/<documento>-<N>.jpg`.
 ### Captura automática de screenshots
 
 Existe una herramienta en [`tools/screenshots/`](tools/screenshots/README.md) que
-inicia sesión en Zauru con Playwright, captura pantallas del área de contenido
-como PNG siguiendo esta misma convención e inserta las referencias en los `.md`.
-Ver su README para el flujo completo (`discover-nav` → `generate-manifest` →
-`run-screenshots` → `insert-image-refs`).
+lee la imagen y el enlace dentro de cada `<figure>`, inicia sesión en staging
+con Playwright y captura esa página conservando el nombre del archivo.
+El enlace del manual usa `app.zauru.com`; al capturar se cambia el origen a
+`zauru.herokuapp.com`. No necesita manifiesto ni generación con LLM.
+
+Desde la raíz: `npm run screenshots -- capture --docs docs/compras/cargos-pagados.md`.
+Después de revisar las candidatas y aceptar su revisión en `tools/screenshots/results.json`,
+`npm run screenshots -- promote` las incorpora a `static/img/`.
+Ver el README de la herramienta para instalación, auditoría y opciones.
 
 ## Despliegue
 

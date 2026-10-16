@@ -15,6 +15,8 @@ Desde la página de detalles de una factura provisional:
 
 <figure>
 
+{/* screenshot: {"focusSelector":"a[href*=\"/print\"]"} */}
+
 ![facturas-provisionales-imprimir](/img/ventas/facturas-provisionales-1.png)
 
 <figcaption><a href="https://app.zauru.com/sales/provisional_invoices/:id">{"https://app.zauru.com/sales/provisional_invoices/:id"}</a></figcaption>
@@ -25,6 +27,8 @@ Desde la página de detalles de una factura provisional:
 Si la factura provisional ha sido **anulada**, la impresión y el PDF ahora muestran automáticamente un mensaje de **"ANULADO" (VOIDED)**, de modo que el documento impreso refleje claramente su estado.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Hace falta una factura provisional anulada; el runner toma el primer registro del listado y no puede garantizar ese estado."} */}
 
 ![facturas-provisionales-anulada](/img/ventas/facturas-provisionales-2.png)
 

@@ -1,26 +1,37 @@
-/**
- * images.mjs — Nombre estable de cada captura.
- *
- * El nombre por defecto sigue siendo `<imageSlug|slug>-<step>.<ext>`.
- * `imageRef` es opcional y conserva nombres especiales que no siguen esa
- * numeración (`importar-precios-0b.png`, jpg de otra carpeta, etc.).
- */
+/** Rutas y formatos de las imágenes existentes en el manual. */
 import path from 'node:path';
-
-export function shotImageRef(doc, shot, format = 'png') {
-  if (shot?.imageRef) {
-    const raw = String(shot.imageRef).trim().split(/\s/)[0];
-    if (raw.startsWith('/img/')) return raw;
-    return `/img/${doc.section}/${raw.replace(/^\//, '')}`;
-  }
-  const base = doc.imageSlug || doc.slug;
-  return `/img/${doc.section}/${base}-${shot.stepNumber}.${format}`;
-}
+import fs from 'node:fs';
 
 /** `/img/compras/a.png` → `<repo>/static/img/compras/a.png`. */
 export function refToDisk(repoRoot, imageRef) {
-  const rel = String(imageRef || '').replace(/^\//, '');
-  return path.join(repoRoot, 'static', rel);
+  if (typeof imageRef !== 'string' || !imageRef.startsWith('/img/') || /[?#\\\x00]/.test(imageRef) || /%2f|%5c/i.test(imageRef)) throw new Error('la imagen debe ser una ruta local bajo /img/');
+  const ref = decodeURIComponent(imageRef);
+  if (ref.split('/').some((s) => s === '.' || s === '..') || /[?#\\\x00]/.test(ref)) throw new Error('ruta de imagen inválida');
+  const root = path.resolve(repoRoot, 'static', 'img');
+  const dest = path.resolve(repoRoot, 'static', ref.slice(1));
+  if (!dest.startsWith(root + path.sep)) throw new Error('la imagen sale de static/img');
+  return dest;
+}
+
+/** Resolver también padres existentes para detectar directorios enlazados. */
+function realDestination(file) {
+  const suffix = [];
+  let current = path.resolve(file);
+  while (!fs.existsSync(current)) {
+    const parent = path.dirname(current);
+    if (parent === current) throw new Error(`no se pudo resolver ${file}`);
+    suffix.unshift(path.basename(current));
+    current = parent;
+  }
+  return path.join(fs.realpathSync(current), ...suffix);
+}
+
+export function candidatePathFor(repoRoot, outputDir, imageRef) {
+  const candidate = path.join(outputDir, path.relative(path.join(repoRoot, 'static'), refToDisk(repoRoot, imageRef)));
+  const published = realDestination(path.join(repoRoot, 'static'));
+  const resolved = realDestination(candidate);
+  if (resolved === published || resolved.startsWith(published + path.sep)) throw new Error('el directorio de candidatas no puede escribir dentro de static; usa runs/ o /tmp');
+  return candidate;
 }
 
 export function extensionOf(imageRef, fallback = 'png') {

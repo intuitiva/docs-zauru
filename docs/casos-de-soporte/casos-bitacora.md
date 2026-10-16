@@ -17,6 +17,8 @@ Los pasos para registrar una entrada en la bitacora son:
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"h3:has-text(\"Bitácora\")"}]} */}
+
 ![imagen1](/img/casos-de-soporte/casos-bitacora-1.png)
 
 <figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
@@ -32,6 +34,8 @@ Los pasos para registrar una entrada en la bitacora son:
 6. Presione **"Crear Bitacora"**.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"#case_log_log"}]} */}
 
 ![imagen2](/img/casos-de-soporte/casos-bitacora-2.png)
 

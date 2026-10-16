@@ -67,6 +67,8 @@ Para guardar presione **"Crear Tipo de Tarjeta de Regalo"**.
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
+
 ![imagen3](/img/ventas/tarjetas-de-regalo-3.png)
 
 <figcaption><a href="https://app.zauru.com/sales/settings/gift_card_types/new">{"https://app.zauru.com/sales/settings/gift_card_types/new"}</a></figcaption>

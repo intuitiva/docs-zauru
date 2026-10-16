@@ -53,6 +53,8 @@ l. **Metrica de Progreso para Lotes de Produccion**: Seleccione como se medira e
 
 <figure>
 
+{/* screenshot: {"focusSelector":"label[for=\"running_batch_progress_metric\"]"} */}
+
 ![imagen2](/img/produccion/configuraciones-de-produccion-2.png)
 
 <figcaption><a href="https://app.zauru.com/production/settings/production_settings/new">{"https://app.zauru.com/production/settings/production_settings/new"}</a></figcaption>

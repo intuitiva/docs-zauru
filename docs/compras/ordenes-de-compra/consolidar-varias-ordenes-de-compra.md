@@ -29,6 +29,8 @@ c. Presione "Crear Consolidado".
 
 <figure>
 
+{/* screenshot: {"focusSelector":"button:has-text('Crear Consolidado')","captureMode":"preview"} */}
+
 ![imagen2](/img/compras/consolidar-varias-ordenes-de-compra-2.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/consolidates/new">{"https://app.zauru.com/purchases/consolidates/new"}</a></figcaption>
@@ -37,6 +39,8 @@ c. Presione "Crear Consolidado".
 Aparecerá un mensaje de éxito. Presione "Verificar" (el ojo) para ver los detalles de la consolidación.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen3](/img/compras/consolidar-varias-ordenes-de-compra-3.png)
 
@@ -66,6 +70,8 @@ Los pasos para crear un consolidado de factura especial son:
 
 <figure>
 
+{/* screenshot: {"actions":[{"click":"a[href='/purchases/consolidates/new_for_special_invoice']"}]} */}
+
 ![imagen5](/img/compras/consolidar-varias-ordenes-de-compra-5.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/consolidates/index">{"https://app.zauru.com/purchases/consolidates/index"}</a></figcaption>
@@ -82,6 +88,8 @@ c. El sistema usa automáticamente el ítem configurado en las variables de comp
 d. Presione "Crear Consolidado".
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
 
 ![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-6.png)
 

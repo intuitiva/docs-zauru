@@ -53,6 +53,8 @@ Para reanudar una orden que fue pausada previamente:
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=1"}]} */}
+
 ![imagen3](/img/produccion/ordenes-de-produccion-en-ejecucion-3.png)
 
 <figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
@@ -72,6 +74,8 @@ Si su metrica de progreso esta configurada como conteo parcial, puede registrar 
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"table >> nth=-1"}]} */}
+
 ![imagen4](/img/produccion/ordenes-de-produccion-en-ejecucion-4.png)
 
 <figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
@@ -89,6 +93,8 @@ El momento del cierre llega cuando las unidades ya estan terminadas y listas par
 4. Presione el boton **"Cerrar"**.
 
 <figure>
+
+{/* screenshot: {"actions":[{"scrollTo":"h3 >> nth=1"}]} */}
 
 ![imagen5](/img/produccion/ordenes-de-produccion-en-ejecucion-5.png)
 
@@ -109,6 +115,8 @@ e. **Notas**: Puede agregar notas sobre el cierre de la orden.
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"legend"}]} */}
+
 ![imagen6](/img/produccion/ordenes-de-produccion-en-ejecucion-6.png)
 
 <figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
@@ -128,6 +136,8 @@ Al presionar **"Cerrar Orden"**, el sistema realizara las siguientes operaciones
 Le aparecera un mensaje de exito notificandole que la orden fue cerrada exitosamente. La orden pasara a la seccion de ordenes cerradas.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen7](/img/produccion/ordenes-de-produccion-en-ejecucion-7.png)
 

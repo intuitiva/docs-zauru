@@ -20,34 +20,50 @@
     "/img/casos-de-soporte/casos-bitacora-1.png": {
       "status": "blocked",
       "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
+      "cause": "http: HTTP 500 en /support/cases/65084",
       "hash": null,
       "candidatePath": null,
+      "fingerprint": "3e18a8de9d29a922ec8ef61feb712446259bd47a3b2fff2eb1231ad2e282a5de",
       "config": {
         "docPath": "docs/casos-de-soporte/casos-bitacora.md",
-        "slug": "casos-bitacora",
-        "section": "casos-de-soporte",
-        "stepNumber": 1,
+        "line": 18,
         "imageRef": "/img/casos-de-soporte/casos-bitacora-1.png",
-        "zauruPath": "/support/cases/:id"
+        "sourceUrl": "https://app.zauru.com/support/cases/:id",
+        "targetUrl": "https://zauru.herokuapp.com/support/cases/:id",
+        "resolvedPath": null,
+        "captureMode": null,
+        "actions": [
+          {
+            "scrollTo": "h3:has-text(\"Bitácora\")"
+          }
+        ],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.295Z"
+      "updatedAt": "2026-10-16T13:48:25.062Z"
     },
     "/img/casos-de-soporte/casos-bitacora-2.png": {
       "status": "blocked",
       "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
+      "cause": "http: HTTP 500 en /support/cases/65084",
       "hash": null,
       "candidatePath": null,
+      "fingerprint": "4f0e326b8ecd4d4865a3893de436652b0729925e47a7f6a9852cd924075a149e",
       "config": {
         "docPath": "docs/casos-de-soporte/casos-bitacora.md",
-        "slug": "casos-bitacora",
-        "section": "casos-de-soporte",
-        "stepNumber": 2,
+        "line": 36,
         "imageRef": "/img/casos-de-soporte/casos-bitacora-2.png",
-        "zauruPath": "/support/cases/:id"
+        "sourceUrl": "https://app.zauru.com/support/cases/:id",
+        "targetUrl": "https://zauru.herokuapp.com/support/cases/:id",
+        "resolvedPath": null,
+        "captureMode": null,
+        "actions": [
+          {
+            "scrollTo": "#case_log_log"
+          }
+        ],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.295Z"
+      "updatedAt": "2026-10-16T13:48:27.437Z"
     },
     "/img/casos-de-soporte/casos-casos-cerrados-1.png": {
       "status": "blocked",
@@ -338,84 +354,112 @@
       "updatedAt": "2026-10-14T02:59:25.296Z"
     },
     "/img/compras/cargos-pagados-1.png": {
-      "status": "blocked",
-      "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
-      "hash": null,
-      "candidatePath": null,
+      "status": "candidate",
+      "visualReview": "pending",
+      "cause": null,
+      "hash": "6c1bc5cc314eb13ec5df6c5745b7ff8b44fb7d1cd1e50f25cf1875a20ec60119",
+      "candidatePath": "/Users/sartipaz/Documents/zauru/code/docs-zauru/tools/screenshots/runs/2026-10-16T18-31-19-144Z/img/compras/cargos-pagados-1.png",
+      "fingerprint": "bf31e8da33167674fbc583d06b1416aac41363adceeba3fb55c8a9708ece273a",
       "config": {
         "docPath": "docs/compras/cargos-pagados.md",
-        "slug": "cargos-pagados",
-        "section": "compras",
-        "stepNumber": 1,
+        "line": 17,
         "imageRef": "/img/compras/cargos-pagados-1.png",
-        "zauruPath": "/purchases/paid_charges"
+        "sourceUrl": "https://app.zauru.com/purchases/paid_charges",
+        "targetUrl": "https://zauru.herokuapp.com/purchases/paid_charges",
+        "resolvedPath": "/purchases/paid_charges",
+        "captureMode": null,
+        "actions": [],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.296Z"
+      "updatedAt": "2026-10-16T18:31:27.072Z"
     },
     "/img/compras/cargos-pagados-2.png": {
-      "status": "blocked",
-      "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
-      "hash": null,
-      "candidatePath": null,
+      "status": "candidate",
+      "visualReview": "pending",
+      "cause": null,
+      "hash": "fb58360b08d1531e2c097cc5e4defa382ba7350394a685bdc1326d1e90fbb831",
+      "candidatePath": "/Users/sartipaz/Documents/zauru/code/docs-zauru/tools/screenshots/runs/2026-10-16T18-31-19-144Z/img/compras/cargos-pagados-2.png",
+      "fingerprint": "c065f8f689f266f5c0ad6f80a97f7b9708bfa67a5fe83e469c182bced9a7aef6",
       "config": {
         "docPath": "docs/compras/cargos-pagados.md",
-        "slug": "cargos-pagados",
-        "section": "compras",
-        "stepNumber": 2,
+        "line": 39,
         "imageRef": "/img/compras/cargos-pagados-2.png",
-        "zauruPath": "/purchases/paid_charges/:id"
+        "sourceUrl": "https://app.zauru.com/purchases/paid_charges/:id",
+        "targetUrl": "https://zauru.herokuapp.com/purchases/paid_charges/:id",
+        "resolvedPath": "/purchases/paid_charges/13944",
+        "captureMode": null,
+        "actions": [],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.296Z"
+      "updatedAt": "2026-10-16T18:31:29.897Z"
     },
     "/img/compras/cargos-pagados-3.png": {
-      "status": "blocked",
-      "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
-      "hash": null,
-      "candidatePath": null,
+      "status": "candidate",
+      "visualReview": "pending",
+      "cause": null,
+      "hash": "03009167b95f6605fa094d7147e7ff13c99a5ec84ba0fc5817b286e0e06e1430",
+      "candidatePath": "/Users/sartipaz/Documents/zauru/code/docs-zauru/tools/screenshots/runs/2026-10-16T18-31-19-144Z/img/compras/cargos-pagados-3.png",
+      "fingerprint": "0c4f49dc72807c9c667a2dc892f0f12c66f6598fc18b8899e0b2e6bc5e72ddf5",
       "config": {
         "docPath": "docs/compras/cargos-pagados.md",
-        "slug": "cargos-pagados",
-        "section": "compras",
-        "stepNumber": 3,
+        "line": 66,
         "imageRef": "/img/compras/cargos-pagados-3.png",
-        "zauruPath": "/purchases/paid_charges/:id"
+        "sourceUrl": "https://app.zauru.com/purchases/paid_charges/:id",
+        "targetUrl": "https://zauru.herokuapp.com/purchases/paid_charges/:id",
+        "resolvedPath": "/purchases/paid_charges/13944",
+        "captureMode": null,
+        "actions": [
+          {
+            "scrollTo": "h3 >> nth=1"
+          }
+        ],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.296Z"
+      "updatedAt": "2026-10-16T18:31:32.633Z"
     },
     "/img/compras/cargos-pagados-4.png": {
-      "status": "blocked",
-      "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
-      "hash": null,
-      "candidatePath": null,
+      "status": "candidate",
+      "visualReview": "pending",
+      "cause": null,
+      "hash": "a59244f319d71de99fffc9d8280f1306fceb9a485d1e875b1a2b4b19fe2b070b",
+      "candidatePath": "/Users/sartipaz/Documents/zauru/code/docs-zauru/tools/screenshots/runs/2026-10-16T18-31-19-144Z/img/compras/cargos-pagados-4.png",
+      "fingerprint": "26841ba59efc9c8c44749a603a85f483e078865618c4081d7bb5f795e2b1262d",
       "config": {
         "docPath": "docs/compras/cargos-pagados.md",
-        "slug": "cargos-pagados",
-        "section": "compras",
-        "stepNumber": 4,
+        "line": 87,
         "imageRef": "/img/compras/cargos-pagados-4.png",
-        "zauruPath": "/purchases/paid_charges/:id/shallow_edit"
+        "sourceUrl": "https://app.zauru.com/purchases/paid_charges/:id/shallow_edit",
+        "targetUrl": "https://zauru.herokuapp.com/purchases/paid_charges/:id/shallow_edit",
+        "resolvedPath": "/purchases/paid_charges/13944/shallow_edit",
+        "captureMode": null,
+        "actions": [],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.296Z"
+      "updatedAt": "2026-10-16T18:31:40.497Z"
     },
     "/img/compras/cargos-pagados-5.png": {
-      "status": "blocked",
-      "visualReview": null,
-      "cause": "autenticación: el callback OAuth GET /users/auth/zauru/callback responde 404. No se inició sesión, no se consultó ninguna pantalla y no se modificó ningún registro.",
-      "hash": null,
-      "candidatePath": null,
+      "status": "candidate",
+      "visualReview": "pending",
+      "cause": null,
+      "hash": "d9ad757281f2e76332937d51cc9e0582ac7d5ef5057535e0582cf4113d24a721",
+      "candidatePath": "/Users/sartipaz/Documents/zauru/code/docs-zauru/tools/screenshots/runs/2026-10-16T18-31-19-144Z/img/compras/cargos-pagados-5.png",
+      "fingerprint": "cafa2c615f55559f7f56066ab5ea42406251eba9e1188eb719501c3a733018c1",
       "config": {
         "docPath": "docs/compras/cargos-pagados.md",
-        "slug": "cargos-pagados",
-        "section": "compras",
-        "stepNumber": 5,
+        "line": 108,
         "imageRef": "/img/compras/cargos-pagados-5.png",
-        "zauruPath": "/purchases/paid_charges/:id"
+        "sourceUrl": "https://app.zauru.com/purchases/paid_charges/:id",
+        "targetUrl": "https://zauru.herokuapp.com/purchases/paid_charges/:id",
+        "resolvedPath": "/purchases/paid_charges/13944",
+        "captureMode": null,
+        "actions": [
+          {
+            "scrollTo": "#additional_data"
+          }
+        ],
+        "focusSelector": null
       },
-      "updatedAt": "2026-10-14T02:59:25.296Z"
+      "updatedAt": "2026-10-16T18:31:43.392Z"
     },
     "/img/contratos/contratos-activos-1.png": {
       "status": "blocked",

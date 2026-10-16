@@ -43,6 +43,8 @@ h. Presione "Crear requisicion de compra" para guardar los cambios.
 
 <figure>
 
+{/* screenshot: {"actions":[{"scrollTo":"input[type=\"submit\"]"}]} */}
+
 ![imagen2](/img/compras/requisiciones-de-compra-2.png)
 
 <figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions/new">{"https://app.zauru.com/purchases/purchase_requisitions/new"}</a></figcaption>
@@ -51,6 +53,8 @@ h. Presione "Crear requisicion de compra" para guardar los cambios.
 Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"El aviso de éxito solo aparece después de crear o modificar un registro. No se ejecuta esa escritura."} */}
 
 ![imagen3](/img/compras/requisiciones-de-compra-3.png)
 
@@ -120,6 +124,8 @@ d. Presione "Aprobar y Crear Ordenes de Compra".
 El sistema creara automaticamente las ordenes de compra agrupadas por proveedor. Le aparecera un resumen de las ordenes de compra creadas.
 
 <figure>
+
+{/* screenshot: {"captureMode":"blocked","blockedCause":"Este paso solo se distinguía con una espera. El aviso depende de crear o modificar un registro, y esa escritura no se ejecuta."} */}
 
 ![imagen7](/img/compras/requisiciones-de-compra-7.png)
 
