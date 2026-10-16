@@ -10,7 +10,12 @@ Cuando abre una sucursal nueva o necesita una bodega adicional para separar su m
 2. Seleccionar “Agencias”.
 3. Seleccionar “Nueva Agencia”.
 
+<figure>
+
 ![imagen4](/img/primeros-pasos/agencias-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies">{"https://app.zauru.com/settings/agencies"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear una nueva agencia, las opciones son las siguientes:
 
@@ -32,7 +37,12 @@ e. En este campo puede colocar al empleado encargado de esta agencia. Para poder
 
 f. Aquí puede colocar el nombre del contacto para comunicarse a esta agencia.
 
+<figure>
+
 ![imagen5](/img/primeros-pasos/agencias-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies/new">{"https://app.zauru.com/settings/agencies/new"}</a></figcaption>
+</figure>
 
 g. Deberá colocar la dirección de esta agencia, este es el segundo campo obligatorio para crear una agencia.
 
@@ -65,11 +75,21 @@ r. Si su entidad utiliza servicios de facturación electrónica, puede especific
 
 Para guardar los cambios presione “Crear Agencia”.
 
+<figure>
+
 ![imagen6](/img/primeros-pasos/agencias-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies/new">{"https://app.zauru.com/settings/agencies/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la agencia se creo exitosamente. Ahora podrá usar esta agencia para hacer sus movimientos de productos.
 
+<figure>
+
 ![imagen7](/img/primeros-pasos/agencias-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies">{"https://app.zauru.com/settings/agencies"}</a></figcaption>
+</figure>
 
 ## Formularios Asociados a la Agencia
 
@@ -93,7 +113,12 @@ Zauru le permite llevar control de todas sus agencias organizándolas por Catego
 3. Seleccionar “Categoría de Agencias”.
 4. Seleccionar “Nueva categoría de Agencia”.
 
+<figure>
+
 ![Categoría de ítems](/img/primeros-pasos/agencias-5.png)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies/agency_categories">{"https://app.zauru.com/settings/agencies/agency_categories"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear una nueva categoría de agencias, las opciones son las siguientes:
 
@@ -103,7 +128,12 @@ Le deberán aparecer las opciones para crear una nueva categoría de agencias, l
 
 3. Presionar el botón de __Crear categoría de agencia__.
 
+<figure>
+
 ![Nueva categoría de ítems](/img/primeros-pasos/agencias-6.png)
+
+<figcaption><a href="https://app.zauru.com/settings/agencies/agency_categories/new">{"https://app.zauru.com/settings/agencies/agency_categories/new"}</a></figcaption>
+</figure>
 
 Ha creado su agencia y, si lo deseaba, la ha organizado dentro de una categoría. Con esto, su bodega, punto de venta, taller o fábrica queda listo para registrar movimientos de productos y ventas; cuando tenga empleados registrados, podrá asignarlos como encargados de cada agencia.
 

@@ -10,7 +10,12 @@ El tránsito es el estado intermedio de un envío con transporte: el producto ya
 
 Para crear un envío que necesite transporte, se marca la casilla "Necesita Transporte" al crear la reservación. El procedimiento para crear la reservación se detalla en [Reservaciones](/inventarios/envios/reservaciones/).
 
+<figure>
+
 ![imagen6](/img/inventarios/envios-6.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 Los campos adicionales para un envío con transporte son:
 
@@ -20,11 +25,21 @@ Los campos adicionales para un envío con transporte son:
 
 Presionar "Crear envío".
 
+<figure>
+
 ![imagen7](/img/inventarios/envios-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/new">{"https://app.zauru.com/inventories/bookings/new"}</a></figcaption>
+</figure>
 
 Para sacar el producto de la bodega origen, abrir la reservación y presionar "Despachar". El envío pasa a tránsito.
 
+<figure>
+
 ![imagen8](/img/inventarios/envios-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/:id">{"https://app.zauru.com/inventories/bookings/:id"}</a></figcaption>
+</figure>
 
 ## Vista de Tránsitos
 
@@ -43,7 +58,12 @@ Para recibir el envío en la bodega destino:
 2. Seleccionar "Tránsitos".
 3. Presionar el icono del camión sobre el envío a recibir.
 
+<figure>
+
 ![imagen9](/img/inventarios/envios-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/transits">{"https://app.zauru.com/inventories/transits"}</a></figcaption>
+</figure>
 
 Se abre la vista "Entregar Envío en Tránsito", que muestra los items reservados y un campo "Entregados" por cada uno. Colocar la cantidad que realmente se recibió.
 
@@ -51,11 +71,21 @@ Si recibe menos de lo reservado, Zauru genera automáticamente una reservación 
 
 Presionar "Actualizar envío" para confirmar la recepción.
 
+<figure>
+
 ![imagen10](/img/inventarios/envios-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/transits/:id/edit">{"https://app.zauru.com/inventories/transits/:id/edit"}</a></figcaption>
+</figure>
 
 El envío pasa a entregado y los productos aparecen en la bodega destino.
 
+<figure>
+
 ![imagen11](/img/inventarios/envios-11.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/deliveries">{"https://app.zauru.com/inventories/deliveries"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

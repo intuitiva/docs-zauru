@@ -12,11 +12,21 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 2. Ingresar a Reportes
 3. Seleccionar Gastos Agrupados por Documentos por Proyectos
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-agrupados-por-documento-por-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 Al ingresar al reporte se tiene que seleccionar el proyecto y de qué fecha a qué fecha debe de aparecer la información enlistada. Después se podrá ver la información destallada de las distintas transacciones con la información del documento.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-agrupados-por-documento-por-proyecto-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_grouped_expenses_by_docs">{"https://app.zauru.com/accounting/reports/tagged_grouped_expenses_by_docs"}</a></figcaption>
+</figure>
 
 Con este listado podrá preparar la liquidación que su cliente le pide, con cada gasto y su documento de respaldo.

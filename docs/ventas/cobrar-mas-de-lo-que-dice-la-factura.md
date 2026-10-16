@@ -12,7 +12,12 @@ Los pasos para hacer el cobro mayor al total a la factura son los siguientes:
 2. Seleccionar “Facturas no Pagadas”.
 3. Click sobre “Cobrar” (La tarjeta).
 
+<figure>
+
 ![imagen1](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo pago, los campos que debe llenar son los siguientes:
@@ -31,13 +36,23 @@ f. Coloque la cantidad que el cliente pagó, en este ejemplo la factura esta por
 
 Por ultimo presione crear pago.
 
+<figure>
+
 ![imagen2](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado exitosamente.
 
+<figure>
+
 ![imagen3](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 
 
@@ -45,11 +60,36 @@ Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado ex
 
 Ahora iremos a las facturas no pagadas para devolverle al cliente los Q50 adicionales que pago.
 
+<figure>
+
 ![imagen4](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen5](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen6](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen7](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen8](/img/ventas/cobrar-mas-de-lo-que-dice-la-factura-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 Con estos pasos la factura queda saldada y los Q50 adicionales regresaron a manos del cliente, tal como debe ser. La próxima vez que alguien deposite de más, ya sabrá exactamente cómo registrar el sobre-cobro y cómo devolver la diferencia sin que su contabilidad se descontrole.
 

@@ -11,13 +11,23 @@ La forma de configurar sus compras es la siguiente:
 1. Ir a “compras”.
 2. Seleccionar el icono de configuraciones.
 
+<figure>
+
 ![imagen1](/img/compras/configuracion-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/index">{"https://app.zauru.com/purchases/index"}</a></figcaption>
+</figure>
 
 ## Crear un termino de pago
 
 Para crear un nuevo termino de pago debe hacer click en “Nuevo Termino de Pago”. (1)
 
+<figure>
+
 ![imagen2](/img/compras/configuracion-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_terms">{"https://app.zauru.com/purchases/settings/charge_terms"}</a></figcaption>
+</figure>
 
 A continuación le aparecerán los opciones para crear un nuevo término de pago, las opciones son las siguientes:
 
@@ -29,11 +39,21 @@ A continuación le aparecerán los opciones para crear un nuevo término de pago
 6. Coloque la cantidad de días de crédito que tendrá este termino de pago.
 7. Presione “Crear término de pago” para guardar los cambios.
 
+<figure>
+
 ![imagen3](/img/compras/configuracion-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_terms/new">{"https://app.zauru.com/purchases/settings/charge_terms/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se creo el término de pago exitosamente.  Ahora al momento de hacer una compra podrá seleccionar el nuevo termino de pago que ha creado.
 
+<figure>
+
 ![imagen4](/img/compras/configuracion-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_terms">{"https://app.zauru.com/purchases/settings/charge_terms"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

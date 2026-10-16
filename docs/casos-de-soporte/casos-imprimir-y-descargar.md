@@ -15,7 +15,12 @@ Para imprimir un caso:
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, seleccione una **plantilla de impresion** del listado desplegable.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-imprimir-y-descargar-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id/print">{"https://app.zauru.com/support/cases/:id/print"}</a></figcaption>
+</figure>
 
 5. Haga click sobre **"Imprimir"** para ver la vista previa.
 6. Presione **CTRL + P** para enviar a la impresora.
@@ -28,7 +33,12 @@ Para descargar un caso en formato PDF:
 2. En lugar de hacer click en **"Imprimir"**, seleccione la opcion **"Descargar PDF"**.
 3. El sistema generara el archivo PDF y lo descargara automaticamente.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-imprimir-y-descargar-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 ## Plantillas de Impresion
 

@@ -22,11 +22,21 @@ Los campos principales de la factura son:
 - **Proyecto**: asocia la factura a un proyecto.
 - **Código del producto**: permite escanear el código de barras o escribirlo manualmente para agregar un producto.
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/crear-factura-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/invoices/new">{"https://app.zauru.com/pos/invoices/new"}</a></figcaption>
+</figure>
 
 Agregar los productos o servicios y especificar la cantidad. También se puede aplicar un descuento y definir si la operación registra impuestos o funciona como recibo sin impuestos. Seleccionar "Imprimir" para emitir la factura.
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/crear-factura-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/invoices/new">{"https://app.zauru.com/pos/invoices/new"}</a></figcaption>
+</figure>
 
 La plantilla de impresión permite imprimir la factura con `Ctrl+P`. Los accesos disponibles en la parte derecha permiten:
 
@@ -35,7 +45,12 @@ La plantilla de impresión permite imprimir la factura con `Ctrl+P`. Los accesos
 - Ver el detalle de la factura creada.
 - Cobrar la factura.
 
+<figure>
+
 ![imagen3](/img/punto-de-venta/crear-factura-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/invoices/:id">{"https://app.zauru.com/pos/invoices/:id"}</a></figcaption>
+</figure>
 
 ## Listado de facturas
 

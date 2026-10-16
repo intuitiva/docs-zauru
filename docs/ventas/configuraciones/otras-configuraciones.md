@@ -10,7 +10,12 @@ Esta sección maneja muchas configuraciones que se permiten fijar en Zauru. Las 
 Estas variables son autoexplicativas. Las nombraremos brevemente para su referencia:
 
 - __Deshabilitar la validación de crédito suficiente:__ Esto permite emitir facturas por sobre el límite de crédito (monto, cantidad o vencimiento).
+<figure>
+
 ![deshabilitar validar limite de credito](/img/ventas/configuraciones-21.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/sales_settings/new">{"https://app.zauru.com/sales/settings/sales_settings/new"}</a></figcaption>
+</figure>
 
 ## Variables para los Webhooks
 Estas variables permiten extender Zauru y comunicarlo automáticamente con otros servicios como [Zapier](https://zapier.com "Zapier").

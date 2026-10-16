@@ -14,7 +14,12 @@ Los pasos para crear una orden de trabajo son los siguientes:
 2. Seleccionar **"Ordenes de Trabajo"**.
 3. Seleccionar **"Nueva Orden de Trabajo"**.
 
+<figure>
+
 ![imagen1](/img/produccion/ordenes-de-trabajo-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders">{"https://app.zauru.com/production/open_work_orders"}</a></figcaption>
+</figure>
 
 Le aparecera el formulario para crear una nueva orden de trabajo. Los campos que debe llenar son los siguientes:
 
@@ -51,13 +56,23 @@ l. **Detalles**: Agregue los items o paquetes que conforman la orden de trabajo.
 
    Si desea utilizar un paquete y necesita visualizar o editar sus componentes, utilice la funcion **"Explotar"** que expande el paquete en sus componentes individuales.
 
+<figure>
+
 ![imagen2](/img/produccion/ordenes-de-trabajo-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders/new">{"https://app.zauru.com/production/open_work_orders/new"}</a></figcaption>
+</figure>
 
 Cuando haya completado todos los campos, presione **"Crear Orden de Trabajo"**.
 
 Le aparecera un mensaje de exito notificandole que la orden de trabajo fue creada exitosamente. La orden quedara en estado abierta.
 
+<figure>
+
 ![imagen3](/img/produccion/ordenes-de-trabajo-3.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders">{"https://app.zauru.com/production/open_work_orders"}</a></figcaption>
+</figure>
 
 ## Explotar un paquete en sus componentes
 
@@ -66,7 +81,12 @@ Al crear o editar una orden de trabajo, si selecciona un paquete (bundle), puede
 1. En el formulario de creacion o edicion, seleccione el paquete en el campo de detalle.
 2. Seleccione la accion **"Explotar"** en el pie del formulario.
 
+<figure>
+
 ![imagen4](/img/produccion/ordenes-de-trabajo-4.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders/new">{"https://app.zauru.com/production/open_work_orders/new"}</a></figcaption>
+</figure>
 
 El sistema expandira el paquete en sus componentes. Para items identificables (con numero de serie), se crearan lineas individuales de cantidad 1 por cada numero de serie. Para items perecederos (con lote), se mostraran los lotes disponibles.
 
@@ -79,7 +99,12 @@ Para editar una orden de trabajo abierta:
 3. Seleccione la orden que desea editar.
 4. Presione el boton **"Editar"**.
 
+<figure>
+
 ![imagen5](/img/produccion/ordenes-de-trabajo-5.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders/:id/edit">{"https://app.zauru.com/production/open_work_orders/:id/edit"}</a></figcaption>
+</figure>
 
 Puede modificar los campos de la orden y las lineas de detalle. Para refrescar las cantidades disponibles de inventario sin guardar, utilice el boton **"Refrescar"**.
 
@@ -94,7 +119,12 @@ Cuando el material ya fue consumido y quiere dejar el inventario y la contabilid
 3. Seleccione la orden que desea cerrar.
 4. Presione el boton **"Cerrar"**.
 
+<figure>
+
 ![imagen6](/img/produccion/ordenes-de-trabajo-6.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders/:id">{"https://app.zauru.com/production/open_work_orders/:id"}</a></figcaption>
+</figure>
 
 Le aparecera el formulario de cierre donde debera confirmar o ajustar las cantidades entregadas de cada linea de detalle:
 
@@ -111,7 +141,12 @@ Al presionar **"Cerrar Orden de Trabajo"**, el sistema realizara las siguientes 
 
 Le aparecera un mensaje de exito notificandole que la orden de trabajo fue cerrada exitosamente.
 
+<figure>
+
 ![imagen7](/img/produccion/ordenes-de-trabajo-7.png)
+
+<figcaption><a href="https://app.zauru.com/production/open_work_orders">{"https://app.zauru.com/production/open_work_orders"}</a></figcaption>
+</figure>
 
 ## Eliminar (Anular) una orden de trabajo
 

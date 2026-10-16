@@ -8,7 +8,12 @@ Si quiere comparar cuánto pesan los beneficios y las deducciones en cada agenci
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Filtro de rango de fechas del reporte Totales de Beneficios y Deducciones por Agencia entre Fechas](/img/reportes-de-nominas/totales-de-beneficios-y-deducciones-por-agencia-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/benefit_deduction_type_in_agency_between_dates">{"https://app.zauru.com/payroll/reports/benefit_deduction_type_in_agency_between_dates"}</a></figcaption>
+</figure>
 
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.

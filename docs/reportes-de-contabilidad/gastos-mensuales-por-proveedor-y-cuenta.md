@@ -14,7 +14,12 @@ Para ingresar a este reporte:
 
 **Parametros**:
 
+<figure>
+
 ![Pantalla del reporte Gastos Mensuales por Proveedor y Cuenta mostrando filtros y tabla de resultados](/img/reportes-de-contabilidad/gastos-mensuales-por-proveedor-y-cuenta-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/monthly_expenses_by_vendor_and_account">{"https://app.zauru.com/accounting/reports/monthly_expenses_by_vendor_and_account"}</a></figcaption>
+</figure>
 
 - **Ano y mes** de inicio.
 - **Cantidad de meses** a mostrar.

@@ -12,7 +12,12 @@ La forma de crear un nuevo costo inicial es la siguiente:
 2. Seleccionar “Costos Totales”.
 3. Seleccionar “Nuevo Costo Inicial”.
 
+<figure>
+
 ![imagen1](/img/compras/preparacion-subir-costos-iniciales-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs">{"https://app.zauru.com/purchases/computed_costs"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo costo inicial, las opciones son las siguientes:
@@ -22,25 +27,45 @@ Le aparecerán las opciones para crear un nuevo costo inicial, las opciones son 
 3. Coloque el costo promedio al que generalmente compra su producto.
 4. Para guardar los cambios seleccione “Crear costo”.
 
+<figure>
+
 ![imagen2](/img/compras/preparacion-subir-costos-iniciales-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs/new">{"https://app.zauru.com/purchases/computed_costs/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje en la pantalla notificando que se creo el costo inicial exitosamente.
 
+<figure>
+
 ![imagen3](/img/compras/preparacion-subir-costos-iniciales-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs">{"https://app.zauru.com/purchases/computed_costs"}</a></figcaption>
+</figure>
 
 ## Importar Costos Iniciales
 Zauru también le permite importar costos iniciales de muchos productos por medio de una plantilla de Excel, para que no los tenga que ingresar uno por uno. La forma de hacerlo es la siguiente:
 
 1. Diríjase a “Compras” y luego “Costos Totales” y seleccione Importar.
 
+<figure>
+
 ![imagen4](/img/compras/preparacion-subir-costos-iniciales-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs">{"https://app.zauru.com/purchases/computed_costs"}</a></figcaption>
+</figure>
 
 
 2.Debe descargar la plantilla de Excel para importar los costos iniciales de sus productos.
 
 En la siguiente hoja aparecen las especificaciones de los campos permitidos en la importación de costos totales.
 
+<figure>
+
 ![imagen5](/img/compras/preparacion-subir-costos-iniciales-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs/initial_cost_imports/new">{"https://app.zauru.com/purchases/computed_costs/initial_cost_imports/new"}</a></figcaption>
+</figure>
 
 Esta es la plantilla de Excel donde deberá colocar los datos de sus costos totales, los campos significan lo siguiente:
 
@@ -67,7 +92,12 @@ Luego de ingresar los datos en su plantilla de impresión deberá guardarla e im
 
 Si su plantilla de impresión esta correcta, le aparecerá un mensaje de éxito notificándole que sus costos iniciales se importaron correctamente. Si recibe un mensaje de error, revise los datos de su plantilla.
 
+<figure>
+
 ![imagen7](/img/compras/preparacion-subir-costos-iniciales-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs">{"https://app.zauru.com/purchases/computed_costs"}</a></figcaption>
+</figure>
 
 Con los costos iniciales cargados, Zauru ya puede calcular el costo promedio ponderado de cada producto y mostrarle su margen de ganancia en cada venta. A partir de aquí, cada compra que usted registre actualizará esos costos automáticamente, sin que tenga que hacer nada más.
 

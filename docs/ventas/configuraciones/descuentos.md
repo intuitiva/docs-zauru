@@ -27,7 +27,12 @@ Los pasos para crear un nuevo descuento son los siguientes:
 1. Ir a **"Ventas"** > **"Configuraciones"** > **"Descuentos"**.
 2. Presionar **"Nuevo Descuento"**.
 
+<figure>
+
 ![imagen7](/img/ventas/configuraciones-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/discounts">{"https://app.zauru.com/sales/settings/discounts"}</a></figcaption>
+</figure>
 
 Ahora le aparecerán las opciones para crear un nuevo Descuento:
 
@@ -45,7 +50,12 @@ Ahora le aparecerán las opciones para crear un nuevo Descuento:
 12. Coloque una **nota** para describir el descuento.
 13. Para guardar los cambios presione **"Crear descuento"**.
 
+<figure>
+
 ![imagen8](/img/ventas/configuraciones-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/discounts/new">{"https://app.zauru.com/sales/settings/discounts/new"}</a></figcaption>
+</figure>
 
 ## Filtrar por Categoría de Cliente
 
@@ -62,7 +72,12 @@ Después de crear el descuento deberá editarlo para especificar qué términos 
 1. Le aparecerá un mensaje de éxito después de crear el descuento.
 2. Presione el botón de **"Editar"** en el descuento.
 
+<figure>
+
 ![imagen9](/img/ventas/configuraciones-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/discounts">{"https://app.zauru.com/sales/settings/discounts"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones de edición:
 
@@ -71,11 +86,21 @@ Le aparecerán las opciones de edición:
 5. Seleccione los **paquetes** (bundles) a los que aplica el descuento (puede seleccionar múltiples).
 6. Para guardar los cambios presione **"Actualizar Descuento"**.
 
+<figure>
+
 ![imagen10](/img/ventas/configuraciones-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/discounts/:id/edit">{"https://app.zauru.com/sales/settings/discounts/:id/edit"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito y ahora el descuento será aplicable a los términos de pago, ítems y paquetes que especificó.
 
+<figure>
+
 ![imagen11](/img/ventas/configuraciones-11.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/discounts">{"https://app.zauru.com/sales/settings/discounts"}</a></figcaption>
+</figure>
 
 **Nota**: Al actualizar un descuento, todas las asignaciones existentes de términos de pago, ítems y paquetes se eliminan y se recrean con las nuevas selecciones. Esto evita inconsistencias en las reglas de descuento.
 
@@ -86,7 +111,12 @@ Para verificar que el término de pago que especificó tenga el descuento que cr
 1. Diríjase a la pestaña de **"Términos de pago"** en las configuraciones de ventas.
 2. Verifique que en la columna de **"Descuentos Permitidos"** aparezca el descuento que colocó al término de pago.
 
+<figure>
+
 ![imagen12](/img/ventas/configuraciones-12.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms">{"https://app.zauru.com/sales/settings/payment_terms"}</a></figcaption>
+</figure>
 
 También puede ver los descuentos desde la vista de detalle de cada término de pago.
 

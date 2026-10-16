@@ -12,7 +12,12 @@ Los pasos para desactivar un usuario son los siguientes:
 2. Seleccionar “Suscripciones”.
 3. Identificar el usuario a desactivar y dar clic en el ícono de editar “Ícono con forma de lápiz”.
 
+<figure>
+
 ![desactivar suscripciones ok](/img/permisos-de-acceso/desactivar-suscripciones-1.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/subscriptions">{"https://app.zauru.com/access_control/subscriptions"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para editar el usuario a desactivar:
 
@@ -24,7 +29,12 @@ Le aparecerán las opciones para editar el usuario a desactivar:
 
 Para desactivar únicamente necesita quitar la opción de ¿Activa?, dejando el cuadro en blanco y presionar el botón de __Actualizar suscripción__.
 
+<figure>
+
 ![desactivar suscripciones dos ok](/img/permisos-de-acceso/desactivar-suscripciones-2.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/subscriptions/:id/edit">{"https://app.zauru.com/access_control/subscriptions/:id/edit"}</a></figcaption>
+</figure>
 
 Con el cuadro de ¿Activa? en blanco, el usuario ya no podrá ingresar a Zauru. Si más adelante esa persona vuelve a su equipo, el proceso es igual de sencillo: edite su suscripción, marque de nuevo la casilla y presione el botón Actualizar suscripción.
 

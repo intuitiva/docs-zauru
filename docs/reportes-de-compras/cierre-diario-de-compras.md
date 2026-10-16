@@ -13,6 +13,11 @@ Para ingresar al reporte:
 3. Seleccionar "Cierre Diario de Compras".
 4. Seleccionar la fecha a consultar.
 
+<figure>
+
 ![Pantalla del reporte Cierre Diario de Compras mostrando filtros de fecha y resultados](/img/reportes-de-compras/cierre-diario-de-compras-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/daily_close">{"https://app.zauru.com/purchases/reports/daily_close"}</a></figcaption>
+</figure>
 
 Con este cierre podrá terminar el día con la seguridad de que las compras y los pagos quedaron cuadrados y respaldados.

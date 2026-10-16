@@ -14,7 +14,12 @@ Los pasos para crear una lista de materiales son los siguientes:
 2. Seleccionar **"Listas de Materiales"**.
 3. Seleccionar **"Nueva Lista de Materiales"**.
 
+<figure>
+
 ![imagen1](/img/produccion/listas-de-materiales-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/bill_of_materials">{"https://app.zauru.com/production/bill_of_materials"}</a></figcaption>
+</figure>
 
 Le aparecera el formulario para crear una nueva lista de materiales. Los campos que debe llenar son los siguientes:
 
@@ -36,13 +41,23 @@ d. **Subproductos**: Si su proceso de manufactura genera subproductos, puede def
 
    Al igual que con las materias primas, use los botones **"+"**, **"+2"** o **"+5"** para agregar filas de subproductos.
 
+<figure>
+
 ![imagen2](/img/produccion/listas-de-materiales-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/bill_of_materials/new">{"https://app.zauru.com/production/bill_of_materials/new"}</a></figcaption>
+</figure>
 
 Cuando haya completado todos los campos, presione **"Crear Lista de Materiales"**.
 
 Le aparecera un mensaje de exito notificandole que la lista de materiales fue creada exitosamente.
 
+<figure>
+
 ![imagen3](/img/produccion/listas-de-materiales-3.png)
+
+<figcaption><a href="https://app.zauru.com/production/bill_of_materials">{"https://app.zauru.com/production/bill_of_materials"}</a></figcaption>
+</figure>
 
 ## Editar una lista de materiales
 
@@ -53,7 +68,12 @@ Para editar una lista de materiales existente:
 3. Seleccione la lista de materiales que desea editar de la lista.
 4. Presione el boton **"Editar"**.
 
+<figure>
+
 ![imagen4](/img/produccion/listas-de-materiales-4.png)
+
+<figcaption><a href="https://app.zauru.com/production/bill_of_materials/:id/edit">{"https://app.zauru.com/production/bill_of_materials/:id/edit"}</a></figcaption>
+</figure>
 
 Realice los cambios necesarios en los campos y lineas de detalle. Puede:
 - Modificar las cantidades de las materias primas existentes.

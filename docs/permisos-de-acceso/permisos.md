@@ -11,7 +11,12 @@ A continuación se mostrara un ejemplo de como dar permisos a un rol creado prev
 1. Ir a “Control de Accesos”.
 2. Seleccionar “Permisos”.
 
+<figure>
+
 ![imagen7](/img/permisos-de-acceso/permisos-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 En este ejemplo le asignaremos permisos de facturación y cobro de facturas al rol de contabilidad, no le daremos permisos para que pueda eliminar facturas ni pagos, solo crearlos. También se le dara permisos para crear clientes nuevos y editarlos, pero no podrá destruirlos. Los permisos son los siguientes:
 
@@ -26,7 +31,12 @@ En este ejemplo le asignaremos permisos de facturación y cobro de facturas al r
 - __New__: Asignar este permiso permitirá al usuario crear un nuevo cliente.
 - __Edit__: Asignar este permiso permitirá al usuario editar el cliente.
 
+<figure>
+
 ![imagen8](/img/permisos-de-acceso/permisos-2.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 *Facturas Pagadas*
 
@@ -42,7 +52,12 @@ En este ejemplo le asignaremos permisos de facturación y cobro de facturas al r
 - __Edit__:  Asignar este permiso permitirá al usuario editar el Método de Pago.
 - __Destroy__: Asignar este permiso permitirá al usuario destruir el Método de Pago.
 
+<figure>
+
 ![imagen9](/img/permisos-de-acceso/permisos-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 *Pagos*
 
@@ -63,7 +78,12 @@ Términos de Pago
 - __Edit__:  Asignar este permiso permitirá al usuario editar el Método de Pago.
 - __Destroy__: Asignar este permiso permitirá al usuario destruir el Método de Pago.
 
+<figure>
+
 ![imagen10](/img/permisos-de-acceso/permisos-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 
 *Facturas no Pagadas*
@@ -80,13 +100,23 @@ Términos de Pago
 
 Para actualizar los permisos presione “Actualizar”.
 
+<figure>
+
 ![imagen11](/img/permisos-de-acceso/permisos-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 
 
 Debera aparecer en la pantalla un mensaje de exito notificandole que los permisos se actualizaron exitosamente. Debe esperar el tiempo especificado para que los cambios de permisos tengan efecto. En este caso se debe esperar 2 minutos para que se actualizen los permisos.
 
+<figure>
+
 ![imagen12](/img/permisos-de-acceso/permisos-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/permissions">{"https://app.zauru.com/access_control/permissions"}</a></figcaption>
+</figure>
 
 Con los permisos actualizados, el rol de contabilidad ya puede facturar y cobrar, pero no eliminar facturas ni pagos. Recuerde esperar los dos minutos para que los cambios tengan efecto; el siguiente paso natural es suscribir a uno o varios usuarios con este rol para que empiecen a trabajar.
 

@@ -16,7 +16,12 @@ Los pasos para emitir un cheque normal son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-cheques-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán los detalles para crear una nueva transacción, los campos que debe llenar para emitir un cheque son los siguientes:
@@ -39,7 +44,12 @@ g. Seleccione la cuenta de gasto para detallar que se esta pagando.
 
 Para emitir el cheque seleccione “Crear nueva transacción” en la parte de abajo.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-cheques-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 ## Emitir un cheque Post Fechado
@@ -49,14 +59,24 @@ Los pasos para emitir un cheque Post Fechado son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-cheques-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nueva transacción, los pasos para emitir el cheque post fechado son los mismo que un cheque normal, la diferencia es que en la fecha, debe colocar la fecha en la que se puede cobrar el cheque.
 
 Luego de especificar todos los campos del cheque presione “Crear nueva transacción” para emitir el cheque.
 
+<figure>
+
 ![imagen4](/img/contabilidad/transacciones-cheques-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con el cheque emitido, su cuenta monetaria refleja la salida y el gasto queda registrado en la cuenta correcta, listo para aparecer en sus reportes del mes. Si el cheque es post-fechado, recuerde que el banco lo reflejará cuando se cobre, no el día en que lo emitió.
 

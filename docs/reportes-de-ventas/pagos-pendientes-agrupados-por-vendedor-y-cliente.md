@@ -12,6 +12,11 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes Agrupados por Vendedor y Cliente".
 
+<figure>
+
 ![Vista del reporte Pagos Pendientes Agrupados por Vendedor y Cliente](/img/reportes-de-ventas/pagos-pendientes-agrupados-por-vendedor-y-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/seller_grouped_pending_payments_by_client">{"https://app.zauru.com/sales/reports/seller_grouped_pending_payments_by_client"}</a></figcaption>
+</figure>
 
 Con esa vista agrupada podrá asignar prioridades de cobro y hablar con cada vendedor sobre sus cuentas abiertas.

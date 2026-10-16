@@ -16,11 +16,21 @@ Cada vez que usted emite una factura sujeta a impuestos no de exportacion, Zauru
 2. Ir a Facturas Pagas
 3. Seleccionar "Ver" en la factura que desea verificar.
 
+<figure>
+
 ![imagen1](/img/contabilidad/manejo-de-IVA-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices">{"https://app.zauru.com/sales/paid_invoices"}</a></figcaption>
+</figure>
 
 En "Transacciones Asociadas" podra ver la transaccion que se genera automaticamente de IVA por Pagar cuando usted factura.
 
+<figure>
+
 ![imagen2](/img/contabilidad/manejo-de-IVA-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices/:id">{"https://app.zauru.com/sales/paid_invoices/:id"}</a></figcaption>
+</figure>
 
 ## IVA por cobrar (IVA credito fiscal)
 
@@ -36,11 +46,21 @@ En el siguiente ejemplo se muestra la transaccion contable de Compras. Los pasos
 2. Seleccionar "Ordenes de Compra".
 3. Seleccione "Ver".
 
+<figure>
+
 ![imagen3](/img/contabilidad/manejo-de-IVA-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 En la parte de "Transacciones Asociadas" se ve reflejada la transaccion que se genera automaticamente, que va desde "cuentas por pagar contado" hacia "inventario de mercaderia" e "IVA por Cobrar".
 
+<figure>
+
 ![imagen4](/img/contabilidad/manejo-de-IVA-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 ## Registro de IVA por cobrar en el modulo de Contabilidad
 
@@ -50,7 +70,12 @@ Cuando usted registra una compra o un gasto por medio de una transaccion contabl
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen5](/img/contabilidad/manejo-de-IVA-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Luego de colocar los campos de la transaccion de compra o de gasto que quiere crear, debera presionar **+IVA** como se muestra en el paso 4. Esto hara que Zauru genere una nueva columna del lado derecho, separando la cantidad total entre el gasto y el IVA por cobrar.
 
@@ -65,7 +90,12 @@ La cuenta de IVA utilizada es la configurada en [Configuraciones](configuracione
 
 Para crear la transaccion presione el boton "Crear Transaccion" que se encuentra al final de la pagina.
 
+<figure>
+
 ![imagen6](/img/contabilidad/manejo-de-IVA-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ## Regularizacion de IVA
 
@@ -77,11 +107,21 @@ El proceso es sencillo, pero delicado. Debemos saber los saldos de ambos IVAs al
 
 La forma mas rapida de generar esta regularizacion es entrando al reporte de balance de cuenta mensual 2 veces (uno en cada IVA) y generar los reportes uno de la cuenta **IVA por pagar** y otro de la cuenta **IVA por cobrar** el mismo mes (asumiendo que el balance inicial es 0 en ambas cuentas).
 
+<figure>
+
 ![balances ivas](/img/contabilidad/manejo-de-IVA-7.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/monthly_account_balance">{"https://app.zauru.com/accounting/reports/monthly_account_balance"}</a></figcaption>
+</figure>
 
 En el ejemplo, el balance menor es el de IVA por cobrar (Q1,655.60) y el mayor (en valor absoluto) es IVA por pagar (Q5,615.32) por lo que debemos crear una transaccion el ultimo dia del mes revisado desde **IVA por cobrar** hacia **IVA por pagar** con el monto mas pequeno entre los 2 saldos y asi minimizar el monto que vamos a tener que pagarle al fisco (que coincidira con el saldo nuevo de la cuenta IVA por pagar).
 
+<figure>
+
 ![regularizacion iva](/img/contabilidad/manejo-de-IVA-8.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Si la operacion fuera al reves, o sea, el IVA por cobrar fuera el mayor (en valor absoluto) que el IVA por pagar, la operacion a realizar es exactamente la misma, se crea desde **IVA por cobrar** hacia **IVA por pagar** con el monto mas pequeno entre los 2 saldos para establecer el credito fiscal con el que contamos. Nuestro credito fiscal coincidira con el saldo nuevo de la cuenta IVA por cobrar.
 

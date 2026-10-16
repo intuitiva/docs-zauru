@@ -10,7 +10,12 @@ Cuando compra mercadería en dólares, factura a un cliente del extranjero o cob
 2. Seleccionar “Tipos de Cambio”.
 3. Seleccionar “Nuevo Tipo de Cambio”.
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/tipos-de-cambio-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/exchange_rates">{"https://app.zauru.com/settings/exchange_rates"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear el tipo de cambio, las opciones son las siguientes:
@@ -20,12 +25,22 @@ Le aparecerán las opciones para crear el tipo de cambio, las opciones son las s
 3. Aquí podrá colocar de que fuente se obtuvo el tipo de cambio.
 4. Para guardar los cambios presione “Crear tipo de cambio”.
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/tipos-de-cambio-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/exchange_rates/new">{"https://app.zauru.com/settings/exchange_rates/new"}</a></figcaption>
+</figure>
 
 
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que el tipo de cambio fue creado exitosamente. Cada vez que se factura o se cobre en esta moneda, se utilizara el tipo de cambio más reciente para calcular la conversión de la moneda.
 
+<figure>
+
 ![imagen3](/img/primeros-pasos/tipos-de-cambio-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/exchange_rates">{"https://app.zauru.com/settings/exchange_rates"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

@@ -25,12 +25,22 @@ Los pasos para crear un presupuesto mensual son los siguientes:
 1. Ir a "Contabilidad".
 2. Seleccionar "Presupuestos".
 
+<figure>
+
 ![Listado de presupuestos mensuales en Zauru](/img/contabilidad/contabilidad-presupuestos-mensuales-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets">{"https://app.zauru.com/accounting/budgets"}</a></figcaption>
+</figure>
 
 3. Seleccionar la pestana "Mensuales".
 4. Seleccionar "Nuevo Presupuesto".
 
+<figure>
+
 ![Formulario de nuevo presupuesto mensual](/img/contabilidad/contabilidad-presupuestos-mensuales-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/new">{"https://app.zauru.com/accounting/budgets/new"}</a></figcaption>
+</figure>
 
 ### Campos del presupuesto
 
@@ -53,7 +63,12 @@ Use los botones "+" para agregar un rubro adicional, "+2" para agregar dos rubro
 
 Al ver el detalle de un presupuesto, el sistema muestra:
 
+<figure>
+
 ![Detalle de un presupuesto mensual con ejecutado vs presupuestado](/img/contabilidad/contabilidad-presupuestos-mensuales-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/1">{"https://app.zauru.com/accounting/budgets/1"}</a></figcaption>
+</figure>
 
 - **Agrupado**: cuentas que estan en el presupuesto, comparando el monto presupuestado vs. el monto ejecutado (gastos reales del mes).
 - **No agrupado**: gastos o ingresos del mes en cuentas que no estan incluidas en el presupuesto.
@@ -67,13 +82,23 @@ Si el monto ejecutado supera al presupuestado, el rubro se muestra en rojo.
 
 La vista "Agrupado" muestra el presupuesto consolidado por grupo de cuenta, comparando ejecutado vs. presupuestado a nivel de grupo.
 
+<figure>
+
 ![Vista agrupada del presupuesto mensual](/img/contabilidad/contabilidad-presupuestos-mensuales-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/1/show_grouped">{"https://app.zauru.com/accounting/budgets/1/show_grouped"}</a></figcaption>
+</figure>
 
 ### Vista no agrupada (otros)
 
 La vista "Otros" muestra unicamente los gastos o ingresos que ocurrieron en el mes pero que no fueron incluidos en ninguna linea del presupuesto.
 
+<figure>
+
 ![Vista no agrupada de otros gastos del presupuesto](/img/contabilidad/contabilidad-presupuestos-mensuales-5.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/1/show_others">{"https://app.zauru.com/accounting/budgets/1/show_others"}</a></figcaption>
+</figure>
 
 ### Duplicar un presupuesto
 
@@ -95,7 +120,12 @@ Los presupuestos por etiqueta permiten controlar gastos o ingresos asociados a u
 3. Seleccionar la pestana "Por Etiqueta".
 4. Hacer clic en "Nuevo Presupuesto por Etiqueta".
 
+<figure>
+
 ![Formulario de nuevo presupuesto por etiqueta](/img/contabilidad/contabilidad-presupuestos-mensuales-6.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tagged_budgets/new">{"https://app.zauru.com/accounting/budgets/tagged_budgets/new"}</a></figcaption>
+</figure>
 
 Los campos son similares al presupuesto mensual normal, pero en lugar de mes y ano, debe seleccionar:
 - **Etiqueta**: el tag cuyas transacciones se presupuestan (cada etiqueta solo puede tener un presupuesto).
@@ -121,7 +151,12 @@ Por ejemplo, si tiene una categoria "Proyectos" con etiquetas "Proyecto A", "Pro
 3. Seleccionar la pestana "Por Categoria de Etiqueta".
 4. Hacer clic en "Nuevo Presupuesto por Categoria".
 
+<figure>
+
 ![Formulario de nuevo presupuesto por categoria de etiqueta](/img/contabilidad/contabilidad-presupuestos-mensuales-7.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tag_category_budgets/new">{"https://app.zauru.com/accounting/budgets/tag_category_budgets/new"}</a></figcaption>
+</figure>
 
 ### Campos
 

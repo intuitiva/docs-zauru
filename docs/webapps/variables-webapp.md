@@ -7,20 +7,40 @@ sidebar_position: 2
 Cuando su webapp necesita recordar algo entre una visita y otra —el URL de un servicio externo, un umbral de descuento, un texto de bienvenida— las variables para webapps son el lugar ideal para guardarlo. Cada variable almacena una configuración en modo de texto y queda totalmente accesible desde el API, de modo que cualquier aplicación externa hecha a la medida puede consultarla, editarla o eliminarla si cuenta con los permisos suficientes. Recuerde que el valor viaja como texto: es responsabilidad del desarrollador interpretar esa información antes de utilizarla.
 
 El listado de variables es el siguiente:
+<figure>
+
 ![webapp vars index](/img/webapps/variables-webapp-1.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_vars">{"https://app.zauru.com/apps/webapp_vars"}</a></figcaption>
+</figure>
 
 ## Nueva variable para webapp
 
 Hay campos adicionales que pueden servir para tipificar el valor de la variable, los únicos campos oblicagorios son nombre, clase y valor.
+<figure>
+
 ![webapp vars new](/img/webapps/variables-webapp-2.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_vars/new">{"https://app.zauru.com/apps/webapp_vars/new"}</a></figcaption>
+</figure>
 
 ## Editar variable para webapp
 Es el mismo formulario que para crear una nueva variable.
+<figure>
+
 ![webapp vars edit](/img/webapps/variables-webapp-3.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_vars/:id/edit">{"https://app.zauru.com/apps/webapp_vars/:id/edit"}</a></figcaption>
+</figure>
 
 ## Detalles de una variable para webapp
 El detalle me muestra el valor y todos los campos adicionales de la webapp.
+<figure>
+
 ![webapp var show](/img/webapps/variables-webapp-4.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_vars/:id">{"https://app.zauru.com/apps/webapp_vars/:id"}</a></figcaption>
+</figure>
 
 Con sus variables guardadas, sus webapps pueden leer y actualizar sus propias configuraciones sin necesidad de tocar el código cada vez. El paso natural que sigue es consumir esas variables desde su aplicación a la medida, o incrustarla dentro de Zauru para manejarlo todo en un mismo lugar.
 

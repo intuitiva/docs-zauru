@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Con esa lista puede darle seguimiento a lo pendiente y asegurarse de que ninguna factura del período se quede sin certificar.
 
+<figure>
+
 ![Reporte Documentos Emitidos en Contingencia mostrando facturas certificadas y pendientes](/img/reportes-de-ventas/documentos-emitidos-en-contingencia-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/documents_issued_in_contingency">{"https://app.zauru.com/sales/reports/documents_issued_in_contingency"}</a></figcaption>
+</figure>

@@ -19,4 +19,9 @@ Para ingresar a este reporte:
 
 Con este desglose puede conciliar cada gasto contra su factura de origen y tener la documentación de respaldo a la mano cuando la necesite.
 
+<figure>
+
 ![Vista del reporte Gastos Agrupados por Documento Fuente con filtros de etiqueta y rango de fechas](/img/reportes-de-contabilidad/gastos-agrupados-por-documento-fuente-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_grouped_expenses_by_docs">{"https://app.zauru.com/accounting/reports/tagged_grouped_expenses_by_docs"}</a></figcaption>
+</figure>

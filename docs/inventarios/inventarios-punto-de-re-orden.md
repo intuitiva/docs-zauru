@@ -20,7 +20,12 @@ Los pasos para ver el punto de re orden de un producto son los siguientes:
 
 Aquí podrá ver todas las existencias por bodega de cada producto, en este ejemplo, lo colocamos al Producto 1 un punto de re orden global de 10, esto quiere decir que cuando el total de las existencias de todas las bodegas sea menor a 10, que nos avise para que volvamos a comprar. En la imagen se muestra el producto en rojo, notificando que ya llego a su punto de re orden.
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-punto-de-re-orden-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/all_warehouses">{"https://app.zauru.com/inventories/stocks/all_warehouses"}</a></figcaption>
+</figure>
 
 ## Punto de re orden por bodega
 
@@ -31,11 +36,21 @@ Cuando cada bodega se abastece por su cuenta, el límite conviene fijarlo por bo
 3. Seleccione la pestaña de "Todas las Bodegas".
 4. Haga click sobre la cantidad en la bodega que quiere especificar el punto de re orden. En el ejemplo vamos modificar el punto de re orden para el producto 7 en la bodega de Zona 8.
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-punto-de-re-orden-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/all_warehouses">{"https://app.zauru.com/inventories/stocks/all_warehouses"}</a></figcaption>
+</figure>
 
 Le aparecerán los detalles de la existencia del producto 7 en la bodega Zona 8. Presione editar en la parte inferior para establecer el punto de re orden.
 
+<figure>
+
 ![imagen3](/img/inventarios/inventarios-punto-de-re-orden-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id">{"https://app.zauru.com/inventories/stocks/:id"}</a></figcaption>
+</figure>
 
 Encontrara las opciones para colocar el punto de re orden, los campos que tiene que llenar son los siguientes:
 
@@ -47,7 +62,12 @@ c. Presione "Actualizar Existencia".
 
 En este ejemplo establecimos que cuando el Producto 7 llegue a 30 Unidades en la Bodega Zona 8, nos notifique para re ordenar, y colocamos que la cantidad recomendada de re orden debería de ser de 50 unidades.
 
+<figure>
+
 ![imagen4](/img/inventarios/inventarios-punto-de-re-orden-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id/edit">{"https://app.zauru.com/inventories/stocks/:id/edit"}</a></figcaption>
+</figure>
 
 ## Verificación de puntos de re orden por bodega
 
@@ -59,7 +79,12 @@ Los pasos para ver las notificaciones de re orden por bodega son los siguientes:
 
 Si hay algún producto que alcanzo el punto de re orden le aparecerá en rojo. En este ejemplo se muestra que del producto 7 ya solo quedan 25 unidades, y el punto de orden que establecimos era al alcanzar 30, por eso aparece el producto en rojo.
 
+<figure>
+
 ![imagen5](/img/inventarios/inventarios-punto-de-re-orden-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks">{"https://app.zauru.com/inventories/stocks"}</a></figcaption>
+</figure>
 
 ## Cantidad económica de orden
 

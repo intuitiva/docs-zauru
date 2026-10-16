@@ -21,7 +21,12 @@ Le aparecera el listado de todos los casos que aun no han sido cerrados. En este
 - **Responsable** asignado
 - **Cliente**
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-abiertos-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 ## Filtros Disponibles
 

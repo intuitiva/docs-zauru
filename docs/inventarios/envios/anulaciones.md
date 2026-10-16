@@ -10,7 +10,12 @@ Una anulación cancela una reservación que ya no se necesita, antes de que se d
 
 Los pasos para anular una reservación son:
 
+<figure>
+
 ![Lista de reservaciones (Inventarios → Reservaciones)](/img/inventarios/anulaciones-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 1. Ir a "Inventarios".
 2. Seleccionar "Reservaciones".
@@ -33,7 +38,12 @@ Para ver el historial de reservaciones anuladas:
 2. Seleccionar "Reservaciones".
 3. Seleccionar "Reservaciones Anuladas".
 
+<figure>
+
 ![Lista de reservaciones anuladas (pestaña Reservaciones Anuladas)](/img/inventarios/anulaciones-3.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/voided">{"https://app.zauru.com/inventories/bookings/voided"}</a></figcaption>
+</figure>
 
 La tabla muestra las columnas "ID", "Reservación #", "Referencia", "Necesita Transporte", "Entrega Estimada", "Anulado el", "Origen", "Destino", "Tipo", "Items" y "Memo".
 

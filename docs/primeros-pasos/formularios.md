@@ -13,11 +13,21 @@ Los pasos para crear un nuevo Formularios son:
 2. Seleccionar “Formularios”.
 3. Seleccionar “Nuevo Formulario”
 
+<figure>
+
 ![Formularios](/img/primeros-pasos/formularios-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/forms">{"https://app.zauru.com/settings/forms"}</a></figcaption>
+</figure>
 
 A continuación, se detallan los pasos para crear un nuevo formulario, destacando los campos esenciales a completar:
 
+<figure>
+
 ![Nuevo formulario](/img/primeros-pasos/formularios-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/forms/new">{"https://app.zauru.com/settings/forms/new"}</a></figcaption>
+</figure>
 
 0. __Variables de impresión editables:__ En la mayoría de los casos, esta opción permanecerá desmarcada, siendo seleccionada únicamente cuando sea necesario asignar un nombre a la variable generada al crear un campo (Paso No. 4).
 
@@ -68,7 +78,12 @@ Para ver el historial de versiones de un formulario:
 2. Seleccionar "Formularios".
 3. En el listado, seleccionar "Versiones" en el formulario deseado.
 
+<figure>
+
 ![Versiones de formulario](/img/primeros-pasos/formularios-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/forms">{"https://app.zauru.com/settings/forms"}</a></figcaption>
+</figure>
 
 Aparecerá un listado con todas las versiones del formulario, mostrando el número de versión, la fecha de creación y el usuario que la creó. Desde aquí usted puede:
 

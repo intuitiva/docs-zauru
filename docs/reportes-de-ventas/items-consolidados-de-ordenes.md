@@ -12,6 +12,11 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Consolidados de Órdenes".
 
+<figure>
+
 ![Reporte de Ítems Consolidados de Órdenes mostrando la tabla de ítems agrupados](/img/reportes-de-ventas/items-consolidados-de-ordenes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/consolidated_items_from_orders">{"https://app.zauru.com/sales/reports/consolidated_items_from_orders"}</a></figcaption>
+</figure>
 
 Con esta vista podrá confirmar que la consolidación quedó completa antes de entregar o facturar, sin sorpresas de último momento.

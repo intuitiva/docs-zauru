@@ -12,7 +12,12 @@ Los pasos para localizar el libro de ventas son:
   - Reportes
   - Libro de Ventas consolidado
 
+<figure>
+
 ![Libro de ventas consolidado](/img/reportes-de-contabilidad/libro-de-ventas-consolidado-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/consolidated_sales_ledger">{"https://app.zauru.com/accounting/reports/consolidated_sales_ledger"}</a></figcaption>
+</figure>
 
 El libro de ventas consolidado agrupa las facturas por serie de numeracion correlativa.
 

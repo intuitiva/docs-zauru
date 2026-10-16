@@ -23,40 +23,85 @@ Los pasos para ir a las cuentas contables son los siguientes:
 1. Ir a "Contabilidad".
 2. Ir a "Cuentas".
 
+<figure>
+
 ![imagen2](/img/contabilidad/verificar-partidas-contables-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 Le apareceran sus cuentas contables. Vamos a seleccionar la cuenta de banco que queremos verificar con nuestro estado de cuenta. En este ejemplo seleccionamos "Cuenta BAC" para ver los detalles de las transacciones contables.
 
+<figure>
+
 ![imagen3](/img/contabilidad/verificar-partidas-contables-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 Le aparecera el listado de transacciones. Seleccione "Balance" para ver las transacciones realizadas con el balance de la cuenta.
 
 El balance se lee de abajo hacia arriba, como se muestran las flechas en el ejemplo.
 
+<figure>
+
 ![imagen4](/img/contabilidad/verificar-partidas-contables-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id">{"https://app.zauru.com/accounting/accounts/:id"}</a></figcaption>
+</figure>
 
 Ahora vamos a comparar las transacciones que dicen en el estado de cuenta con las transacciones que se detallan en Zauru para verificar que los numeros cuadren.
 
 Vamos a verificar la primer transaccion que aparece en el estado de cuenta con las transacciones que aparecen en los detalles de la cuenta en Zauru.
 
+<figure>
+
 ![imagen5](/img/contabilidad/verificar-partidas-contables-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 Para confirmar que la transaccion que aparece en el estado de cuenta esta igual en los detalles de Zauru, le daremos click a "Verificar".
 
+<figure>
+
 ![imagen6](/img/contabilidad/verificar-partidas-contables-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito en la pantalla y ahora la transaccion aparecera con un cheque indicando que esta verificada.
 
+<figure>
+
 ![imagen7](/img/contabilidad/verificar-partidas-contables-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen10](/img/contabilidad/verificar-partidas-contables-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 Asi deberiamos de ir verificando todas las transacciones que hay para poder encontrar si hay alguna transaccion que este mal, o que no este registrada.
 
+<figure>
+
 ![imagen8](/img/contabilidad/verificar-partidas-contables-9.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 Al hacer la verificacion de todas las transacciones encontramos que el saldo de la cuenta en Zauru no cuadraba con el saldo de la cuenta en el estado de cuenta por Q1,000. Encontramos que habia un deposito de Q1,000 que no fue registrado en Zauru y por eso no cuadraba.
 
+<figure>
+
 ![imagen9](/img/contabilidad/verificar-partidas-contables-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 ## Auditoria de partidas
 

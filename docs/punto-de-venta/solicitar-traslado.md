@@ -15,7 +15,12 @@ Para ver las solicitudes de traslado existentes:
 
 Le aparecera un listado con todas las solicitudes de traslado que no estan anuladas, filtradas por la agencia del usuario actual (como origen o destino).
 
+<figure>
+
 ![Listado de solicitudes de traslado filtradas por agencia](/img/punto-de-venta/solicitar-traslado-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/transfer_requests">{"https://app.zauru.com/pos/transfer_requests"}</a></figcaption>
+</figure>
 
 Desde el listado usted podra:
 
@@ -36,7 +41,12 @@ Los pasos para crear una solicitud de traslado son:
 
 Le apareceran las opciones para crear una nueva solicitud. Los campos que debe llenar son:
 
+<figure>
+
 ![Formulario para crear nueva solicitud de traslado](/img/punto-de-venta/solicitar-traslado-2.png)
+
+<figcaption><a href="https://app.zauru.com/pos/transfer_requests/new">{"https://app.zauru.com/pos/transfer_requests/new"}</a></figcaption>
+</figure>
 
 a. **Agencia destino**: La agencia que recibira los productos (su punto de venta). Se asigna automaticamente segun la agencia del usuario.
 

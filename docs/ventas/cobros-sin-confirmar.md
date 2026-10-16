@@ -14,7 +14,12 @@ Los pasos para crear un pago provisional son los siguientes:
 2. Seleccionar “Facturas no Pagadas”.
 3. Seleccionar “Nueva Factura”.
 
+<figure>
+
 ![imagen1](/img/ventas/cobros-sin-confirmar-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo pago provisional, los campos que debe colocar son los siguientes:
@@ -33,7 +38,12 @@ f. Coloque la cantidad del pago.
 
 Presione “Crear Pago”.
 
+<figure>
+
 ![imagen2](/img/ventas/cobros-sin-confirmar-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new_unconfirmed">{"https://app.zauru.com/sales/payments/new_unconfirmed"}</a></figcaption>
+</figure>
 
 
 
@@ -41,7 +51,12 @@ Le aparecerá un mensaje en la pantalla notificándole que el pago fue creado ex
 
 Presione “Imprimir Recibo Provisional” para imprimir el recibo que le dará al cliente, este no es un recibo de caja. El siguiente paso es confirmar el pago y emitir el recibo de caja. Puede confirmar en esta misma pagina o puede confirmar desde “Pagos sin Confirmar” como se muestra en el siguiente ejemplo.
 
+<figure>
+
 ![imagen3](/img/ventas/cobros-sin-confirmar-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/draft_payments/:id">{"https://app.zauru.com/sales/draft_payments/:id"}</a></figcaption>
+</figure>
 
 
 
@@ -51,12 +66,22 @@ Luego de que se confirme que el pago que hizo el cliente se pudo cobrar deberá 
 2. Seleccionar “Pagos sin Confirmar”.
 3. Click sobre “Confirmar” (Pulgar Arriba).
 
+<figure>
+
 ![imagen4](/img/ventas/cobros-sin-confirmar-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/draft_payments">{"https://app.zauru.com/sales/draft_payments"}</a></figcaption>
+</figure>
 
 
 Le aparecerá un mensaje notificándole que se creo el pago, para imprimir el recibo de caja presione “Imprimir como Recibo”.
 
+<figure>
+
 ![imagen5](/img/ventas/cobros-sin-confirmar-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 Así de sencillo: el cliente se fue tranquilo con su recibo provisional y, una vez confirmado el pago, usted emitió el recibo de caja que se reporta a la SAT junto con la factura. Repita estos pasos cada vez que reciba un pago pendiente de confirmación y su flujo de caja estará siempre al día.
 

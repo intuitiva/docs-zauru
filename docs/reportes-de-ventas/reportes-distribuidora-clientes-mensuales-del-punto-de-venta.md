@@ -12,11 +12,21 @@ Para obtener la información de los clientes es necesario seguir los siguientes 
 2. Seleccionar Reportes
 3. Hacer click en Clientes Mensuales del Punto de Venta
 
+<figure>
+
 ![imagen1](/img/reportes-de-ventas/reportes-distribuidora-clientes-mensuales-del-punto-de-venta-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/reports">{"https://app.zauru.com/sales/reports"}</a></figcaption>
+</figure>
 
 
 Después de seleccionar la bodega, el mes y el año, aparecerá enlistado los clientes que han facturado. Si se le otorgo crédito, se mostrará el monto que no ha pagado aún.
 
+<figure>
+
 ![imagen2](/img/reportes-de-ventas/reportes-distribuidora-clientes-mensuales-del-punto-de-venta-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/point_of_sale_monthly_clients">{"https://app.zauru.com/sales/reports/point_of_sale_monthly_clients"}</a></figcaption>
+</figure>
 
 El reporte muestra el detalle de ventas mensuales por punto de venta con desglose de facturas, órdenes y notas de crédito. Permite filtrar por vendedor e incluir/excluir IVA y notas de crédito.

@@ -6,7 +6,12 @@ sidebar_position: 6
 
 Cuando una reservación tiene muchos items, cargarlos uno por uno en el formulario puede ser lento. La opción "Reemplazar items de un envío" permite importar los movimientos desde un archivo Excel (.xlsx) o CSV, reemplazando todos los items y cantidades del envío en un solo paso. Solo aplica mientras el envío esté en estado de Reservación.
 
+<figure>
+
 ![Lista de reservaciones donde se puede seleccionar la reservación a modificar.](/img/inventarios/reemplazar-items-de-un-envio-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 ## Reemplazar los items de una reservación
 

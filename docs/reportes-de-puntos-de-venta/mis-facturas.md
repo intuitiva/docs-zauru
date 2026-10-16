@@ -8,7 +8,12 @@ Si usted es vendedor y quiere ver el fruto de su trabajo, este reporte le muestr
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Reporte Mis Facturas mostrando listado de facturas emitidas por el vendedor](/img/reportes-de-puntos-de-venta/mis-facturas-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/reports/my_invoices">{"https://app.zauru.com/pos/reports/my_invoices"}</a></figcaption>
+</figure>
 
 1. Ir a "P.D.V.".
 2. Seleccionar "Reportes".

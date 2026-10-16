@@ -10,7 +10,12 @@ Cuando un contrato termina, Zauru lo guarda en esta sección como parte del hist
 
 Al ingresar a la sección de Contratos Cerrados se muestra una tabla con todos los contratos que han sido cerrados (ya sea automática o manualmente). Se puede filtrar por tipo de documento.
 
+<figure>
+
 ![listado de contratos cerrados](/img/contratos/contratos-cerrados-1.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/closed_contracts">{"https://app.zauru.com/contracts/closed_contracts"}</a></figcaption>
+</figure>
 
 Las columnas del listado incluyen: ID, Tipo de Documento, Número de Contrato, Referencia, Beneficiario, Cuotas, Periodicidad, Fecha de Inicio, Fecha de Cierre, Monto y Acciones.
 
@@ -29,7 +34,12 @@ Al hacer clic en un contrato cerrado se muestra el mismo detalle que en los cont
 
 Si por alguna razón se necesita que un contrato cerrado vuelva a generar cuotas, se puede re-abrir. Al re-abrir un contrato cerrado, este regresa al estado de **Contrato Preliminar**, lo que significa que no empezará a generar cuotas automáticamente hasta que sea activado nuevamente.
 
+<figure>
+
 ![reabrir contrato cerrado](/img/contratos/contratos-cerrados-2.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/closed_contracts/:id">{"https://app.zauru.com/contracts/closed_contracts/:id"}</a></figcaption>
+</figure>
 
 Para re-abrir un contrato cerrado:
 1. Ingresar al detalle del contrato cerrado.

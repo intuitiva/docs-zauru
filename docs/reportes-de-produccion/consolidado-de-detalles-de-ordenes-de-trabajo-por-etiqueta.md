@@ -13,7 +13,12 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
+<figure>
+
 ![imagen6](/img/produccion/consolidado-de-detalles-de-ordenes-de-trabajo-por-etiqueta-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/reports/consolidated_work_order_details_by_tag">{"https://app.zauru.com/production/reports/consolidated_work_order_details_by_tag"}</a></figcaption>
+</figure>
 
 El reporte muestra por cada etiqueta:
 

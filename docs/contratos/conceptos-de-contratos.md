@@ -66,7 +66,12 @@ Esta vista está disponible tanto en contratos preliminares como activos.
 
 Una de las razones del contrato es agrupar la información de una forma coherente dentro de Zauru y que se asemeje a la realidad. Es por eso que permitimos adjuntar documentos al contrato fuera de las cuotas, solo los relacionamos para que quede de referencia. Las cuotas solo se pueden asociar al contrato al generar un documento, automática o manualmente.
 
+<figure>
+
 ![asociar documentos](/img/contratos/contratos-preliminares-3.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/draft_contracts/:id">{"https://app.zauru.com/contracts/draft_contracts/:id"}</a></figcaption>
+</figure>
 
 Los documentos que se pueden asociar:
 1. Nueva Transacción

@@ -8,7 +8,12 @@ Si quiere revisar cuánto ha comprado de una categoría completa de productos, c
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Pagina del reporte Categoria de Item de Compra entre Fechas](/img/reportes-de-compras/categoria-de-item-de-compra-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/item_category_purchases_between_dates">{"https://app.zauru.com/purchases/reports/item_category_purchases_between_dates"}</a></figcaption>
+</figure>
 
 1. Ir a "Compras".
 2. Seleccionar "Reportes".

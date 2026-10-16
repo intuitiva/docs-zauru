@@ -12,7 +12,12 @@ Los pasos para recibir una orden de compra son los siguientes:
 2. Seleccionar “Ordenes de Compra”.
 3. Seleccionar “Nueva recepción” (La Caja).
 
+<figure>
+
 ![imagen1](/img/compras/recibir-los-productos-de-orden-de-compra-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para recibir una orden de compra, los campos que debe llenar son los siguientes:
 
@@ -26,11 +31,21 @@ d. Coloque la cantidad entregada de cada uno de sus productos ordenados.
 
 e. Por ultimo presione “Crear recepción”.
 
+<figure>
+
 ![Nueva recepción](/img/compras/recibir-los-productos-de-orden-de-compra-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:purchase_order_id/receptions/new">{"https://app.zauru.com/purchases/purchase_orders/:purchase_order_id/receptions/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificándole que se recibió la orden de compra exitosamente.
 
+<figure>
+
 ![imagen3](/img/compras/recibir-los-productos-de-orden-de-compra-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Con la recepción creada, la mercadería ya forma parte de su inventario y queda lista para la venta. Si el proveedor le entregó menos de lo ordenado, puede crear otra recepción por lo que falte; y si algo llegó dañado o equivocado, puede devolver la recepción desde los detalles de la orden de compra.
 

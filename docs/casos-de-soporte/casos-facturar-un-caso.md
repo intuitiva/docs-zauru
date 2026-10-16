@@ -12,24 +12,44 @@ Los pasos para facturar un caso son los siguientes:
 2. Seleccionar “Casos Abiertos”.
 3. Seleccionar “Nuevo Caso”.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-facturar-un-caso-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo caso, para que se facture cuando usted cree el caso, tiene que colocar si el caso es por garantía o cortesía, esto hara que al mismo tiempo que se crea el caso, se emita una factura a nombre del cliente por la cantidad que usted coloque en los “Detalles” del caso.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-facturar-un-caso-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases/new">{"https://app.zauru.com/support/cases/new"}</a></figcaption>
+</figure>
 
 
 
 Luego de crear el caso usted puede verificar la factura asociada haciendo click en “Verificar”.
 
+<figure>
+
 ![imagen3](/img/casos-de-soporte/casos-facturar-un-caso-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerán los detalles del caso, en la parte inferior de la pagina podrá encontrar las facturas asociadas, en donde podrá ver la factura que se creo automáticamente luego de crear el caso. La factura saldrá por la cantidad que usted coloque en los detalles del caso.
 
+<figure>
+
 ![imagen4](/img/casos-de-soporte/casos-facturar-un-caso-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 Con la factura emitida desde el mismo caso, el cobro queda amarrado a la atención sin pasos extra. El siguiente paso natural es registrar el avance del trabajo en la bitácora y, cuando el cliente pague, cerrar el caso sabiendo que la facturación ya quedó resuelta.
 

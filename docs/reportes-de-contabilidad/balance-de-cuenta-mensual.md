@@ -14,7 +14,12 @@ Los pasos para ver el balance de cuenta mensual son:
 
 Acá puede ver ver su balance de cuenta mensual global o puede seleccionar los detalles por mes.
 
+<figure>
+
 ![balance de cuenta mensual](/img/reportes-de-contabilidad/balance-de-cuenta-mensual-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/monthly_account_balance">{"https://app.zauru.com/accounting/reports/monthly_account_balance"}</a></figcaption>
+</figure>
 
 El reporte muestra el estado de cuenta mensual de una cuenta contable especifica, similar a un estado de cuenta bancario.
 

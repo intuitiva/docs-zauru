@@ -30,7 +30,12 @@ Los pasos para crear una nueva importación de datos son:
 2. Seleccionar "Importaciones de Datos".
 3. Seleccionar "Nueva Importación de Datos".
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/importaciones-de-datos-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/data_imports/new">{"https://app.zauru.com/settings/data_imports/new"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear una nueva importación:
 
@@ -44,7 +49,12 @@ d. Puede agregar una nota o memo para identificar esta importación.
 
 e. Presione "Crear Data import" para iniciar el proceso.
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/importaciones-de-datos-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/data_imports/new">{"https://app.zauru.com/settings/data_imports/new"}</a></figcaption>
+</figure>
 
 ## Mapeo de Columnas
 
@@ -58,7 +68,12 @@ Los pasos para mapear las columnas son:
 
 3. Si tiene campos que son referencias a otros objetos (como `brand_id`, `item_category_id`, `payee_id`), identifíquelos con el sufijo `_id` en las opciones.
 
+<figure>
+
 ![imagen3](/img/primeros-pasos/importaciones-de-datos-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/data_imports/:id/edit_data">{"https://app.zauru.com/settings/data_imports/:id/edit_data"}</a></figcaption>
+</figure>
 
 Una vez mapeadas las columnas, presione "Actualizar Data import" para guardar la configuración de mapeo.
 
@@ -76,7 +91,12 @@ En la vista de edición de datos usted podrá:
 
 5. **Eliminar columnas:** Puede eliminar columnas completas que no necesite mapear.
 
+<figure>
+
 ![imagen4](/img/primeros-pasos/importaciones-de-datos-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/data_imports/:id/edit_data">{"https://app.zauru.com/settings/data_imports/:id/edit_data"}</a></figcaption>
+</figure>
 
 ## Proceso de Validación e Importación
 

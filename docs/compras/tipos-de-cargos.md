@@ -11,7 +11,12 @@ Para configurar los tipos de cargos:
 1. Ir a “compras”.
 2. Seleccionar el icono de configuraciones.
 
+<figure>
+
 ![imagen1](/img/compras/configuracion-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/index">{"https://app.zauru.com/purchases/index"}</a></figcaption>
+</figure>
 
 ## Crear un tipo de cargo
 
@@ -20,7 +25,12 @@ Para crear un nuevo tipo de cargo debe:
 1. Seleccionar la pestaña de Tipos de Cargos en las Configuraciones de Compras.
 2. Seleccionar “Nuevo Tipo de Cargo”.
 
+<figure>
+
 ![imagen5](/img/compras/configuracion-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_types">{"https://app.zauru.com/purchases/settings/charge_types"}</a></figcaption>
+</figure>
 
 A continuación le aparecerán las opciones para crear un nuevo tipo de cargo, las opciones son las siguientes:
 
@@ -29,11 +39,21 @@ A continuación le aparecerán las opciones para crear un nuevo tipo de cargo, l
 3. Para que este cargo sea incluido en el costo de su producto debe seleccionar esta casilla.
 4. Para guardar los cambios presione “Crear tipo de cargo”.
 
+<figure>
+
 ![imagen6](/img/compras/configuracion-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_types/new">{"https://app.zauru.com/purchases/settings/charge_types/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creo el tipo de cargo exitosamente.
 
+<figure>
+
 ![imagen7](/img/compras/configuracion-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_types">{"https://app.zauru.com/purchases/settings/charge_types"}</a></figcaption>
+</figure>
 
 Con sus tipos de cargo creados, ya puede aplicarlos a cualquier orden de compra o consolidado, y Zauru los repartirá ponderadamente en el costo de cada producto. Recuerde marcar la casilla para que el cargo se incluya en el costo, así su margen de ganancia siempre reflejará lo que de verdad pagó por traer la mercadería a su bodega.
 

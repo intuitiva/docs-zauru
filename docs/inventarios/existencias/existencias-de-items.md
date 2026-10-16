@@ -26,7 +26,12 @@ La tabla muestra una fila por producto con las columnas "Código", "Nombre", "Di
 
 Cuando un producto está por debajo de su punto de reorden, la fila aparece en rojo.
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-existencias-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks">{"https://app.zauru.com/inventories/stocks"}</a></figcaption>
+</figure>
 
 ## Vista de todas las bodegas
 
@@ -45,7 +50,12 @@ La tabla muestra una fila por producto y una columna por bodega, más una column
 - **Total**: texto plano en negrita, no es un enlace. Es la suma de las cantidades de todas las bodegas.
 - **Columna de acciones (icono camión)**: enlace a "Nueva Reservación" con el producto preseleccionado, para crear un envío directamente.
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-existencias-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/all_warehouses">{"https://app.zauru.com/inventories/stocks/all_warehouses"}</a></figcaption>
+</figure>
 
 ## Detalles de la Existencia
 
@@ -59,15 +69,30 @@ Contiene tres bloques:
 
 Debajo aparece la tabla "Envíos", con el historial de reservaciones y entregas que afectaron esa existencia en la bodega.
 
+<figure>
+
 ![imagen-movimientos-1](/img/inventarios/inventarios-movimientos-de-los-productos-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id">{"https://app.zauru.com/inventories/stocks/:id"}</a></figcaption>
+</figure>
 
 La tabla muestra el identificador del envío, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega contraparte, cuánto entró, cuánto salió, el saldo disponible después de cada movimiento, el saldo por egresar y el saldo por ingresar.
 
+<figure>
+
 ![imagen-movimientos-2](/img/inventarios/inventarios-movimientos-de-los-productos-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id">{"https://app.zauru.com/inventories/stocks/:id"}</a></figcaption>
+</figure>
 
 La lectura es de abajo hacia arriba: la última fila corresponde al movimiento más reciente. En el ejemplo, entran 8, luego entran 15 y hay disponible 23, luego entran 2 y hay disponibles 25.
 
+<figure>
+
 ![imagen-movimientos-3](/img/inventarios/inventarios-movimientos-de-los-productos-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id">{"https://app.zauru.com/inventories/stocks/:id"}</a></figcaption>
+</figure>
 
 Cada movimiento muestra:
 - **Referencia del envío**: identificador de la reservación o entrega.
@@ -88,11 +113,21 @@ Contiene:
 3. **Botón "Detalles del Ítem"**: enlace a la configuración completa del producto.
 4. **Tabla "Envíos"**: historial completo de envíos que incluyen ese producto, con filtros por tipo de movimiento ("Todos", "Ingresos", "Salidas", "Transferencias").
 
+<figure>
+
 ![imagen-movimientos-4](/img/inventarios/inventarios-movimientos-de-los-productos-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id/item">{"https://app.zauru.com/inventories/stocks/:id/item"}</a></figcaption>
+</figure>
 
 Cada fila muestra el identificador, la referencia, si necesita transporte, la fecha de entrega estimada, la fecha de entrega real, la bodega origen, la bodega destino, el tipo de movimiento, la cantidad reservada, la cantidad entregada y las notas.
 
+<figure>
+
 ![imagen-movimientos-5](/img/inventarios/inventarios-movimientos-de-los-productos-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/:id/item">{"https://app.zauru.com/inventories/stocks/:id/item"}</a></figcaption>
+</figure>
 
 ## Acciones
 

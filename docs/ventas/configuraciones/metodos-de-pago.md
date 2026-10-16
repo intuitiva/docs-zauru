@@ -27,7 +27,12 @@ La forma de configurar los métodos de pago es la siguiente:
 1. Ir a Métodos de pago en las configuraciones de ventas.
 2. Seleccionar "Nuevo Método de Pago".
 
+<figure>
+
 ![imagen13](/img/ventas/configuraciones-13.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_methods">{"https://app.zauru.com/sales/settings/payment_methods"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo Método de Pago, las opciones son las siguientes:
 
@@ -41,11 +46,21 @@ Le aparecerán las opciones para crear un nuevo Método de Pago, las opciones so
 8. Marque **Comercio electrónico** (`ecommerce`) si este método de pago estará disponible para pagos en línea.
 9. Para guardar los cambios presione **"Crear método de pago"**.
 
+<figure>
+
 ![imagen14](/img/ventas/configuraciones-14.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_methods/new">{"https://app.zauru.com/sales/settings/payment_methods/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla y una columna en color verde mostrando el nuevo método de pago creado.
 
+<figure>
+
 ![imagen15](/img/ventas/configuraciones-15.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_methods">{"https://app.zauru.com/sales/settings/payment_methods"}</a></figcaption>
+</figure>
 
 ## Editar un Método de Pago
 

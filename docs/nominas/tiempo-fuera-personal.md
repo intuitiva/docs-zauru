@@ -19,7 +19,12 @@ Para acceder a las solicitudes:
 
 El listado muestra todas las solicitudes con su estado:
 
+<figure>
+
 ![Listado de solicitudes de tiempo fuera personal con estados](/img/nominas/tiempo-fuera-personal-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests">{"https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests"}</a></figcaption>
+</figure>
 
 - **En proceso** (icono azul): solicitud pendiente de aprobacion.
 - **Aprobado** (icono verde con una verificacion): solicitud aprobada pero aun no gozada.
@@ -33,7 +38,12 @@ Cada fila muestra: ID, empleado, tipo de tiempo fuera personal, fecha de inicio,
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario para crear una solicitud de tiempo fuera personal](/img/nominas/tiempo-fuera-personal-2.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/new">{"https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/new"}</a></figcaption>
+</figure>
 
 - **Empleado**: seleccionar el empleado solicitante.
 - **Tipo de tiempo fuera personal**: seleccionar el tipo (vacaciones, enfermedad, permiso personal, etc.).
@@ -51,7 +61,12 @@ La solicitud queda en estado **"En proceso"**.
 
 En el listado, hacer clic en la solicitud para ver el detalle completo:
 
+<figure>
+
 ![Detalle de una solicitud de tiempo fuera personal](/img/nominas/tiempo-fuera-personal-3.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1">{"https://app.zauru.com/payroll/personal_time_off/personal_time_off_requests/1"}</a></figcaption>
+</figure>
 
 #### Informacion general
 
@@ -143,7 +158,12 @@ Para acceder a los saldos:
 
 El listado muestra todos los empleados con su saldo de tiempo fuera personal. Se puede filtrar por:
 
+<figure>
+
 ![Listado de saldos de tiempo fuera personal por empleado](/img/nominas/tiempo-fuera-personal-4.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances">{"https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances"}</a></figcaption>
+</figure>
 
 - **Activos**: empleados con contrato activo.
 - **Terminados**: empleados con contrato terminado.
@@ -155,7 +175,12 @@ Cada fila muestra: empleado, dias disponibles, dias gozados, dias pendientes.
 
 En el listado, hacer clic en el empleado para ver el historial completo:
 
+<figure>
+
 ![Detalle del saldo de tiempo fuera personal con historial](/img/nominas/tiempo-fuera-personal-5.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances/1">{"https://app.zauru.com/payroll/personal_time_off/personal_time_off_balances/1"}</a></figcaption>
+</figure>
 
 - **Saldo actual**: dias disponibles.
 - **Historial de movimientos**: tabla con cada movimiento que afecta el saldo:

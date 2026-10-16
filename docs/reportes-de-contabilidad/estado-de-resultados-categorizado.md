@@ -14,7 +14,12 @@ Los pasos para ingresar a ver el estado de resultados categorizado son los sigui
 
 Puede ver su estado de resultados categorizado global o puede seleccionar los detalles por mes.
 
+<figure>
+
 ![Estado de resultados categorizado](/img/reportes-de-contabilidad/libro-estado-de-resultados-categorizado-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/profit_loss_cat">{"https://app.zauru.com/accounting/reports/profit_loss_cat"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

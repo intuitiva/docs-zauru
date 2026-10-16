@@ -19,7 +19,12 @@ En la siguiente imagen se muestra como crear una nueva transacción contable par
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-pagar-servicios-basicos-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva transacción contable. En la siguiente imagen se muestra como crear un cheque para pagar una factura de servicio telefónico. Los pasos son los siguientes:
@@ -36,18 +41,33 @@ Le aparecerán las opciones para crear una nueva transacción contable. En la si
 10. Seleccione la cuenta de gasto que va pagar, en este ejemplo se coloca teléfono porque estamos pagando una factura de servicio telefónico.
 11. Presione “Crear transacción” para emitir el cheque.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-pagar-servicios-basicos-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 Le deberá aparecer un mensaje de éxito notificándole que la transacción fue creada exitosamente. Para imprimir el cheque creado presione el botón de “Imprimir como Cheque”.
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-pagar-servicios-basicos-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/:id">{"https://app.zauru.com/accounting/entries/:id"}</a></figcaption>
+</figure>
 
 
 Le aparecerá una nueva ventana con el documento a imprimir. Para imprimir presione CTRL + P y seleccione la impresora a la que se va enviar la impresión.
 
 
+<figure>
+
 ![imagen4](/img/contabilidad/transacciones-pagar-servicios-basicos-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/:id/print">{"https://app.zauru.com/accounting/entries/:id/print"}</a></figcaption>
+</figure>
 
 
 ## Pagar servicios de proveedores que nos dan crédito
@@ -59,7 +79,12 @@ En la segunda manera de hacer pagos se ingresa primero la factura del proveedor,
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen5](/img/contabilidad/transacciones-pagar-servicios-basicos-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva transacción, los pasos para ingresar una factura al crédito de un proveedor son los siguientes:
@@ -75,7 +100,12 @@ Le aparecerán las opciones para crear una nueva transacción, los pasos para in
 9. Seleccione la cuenta del gasto que esta haciendo, en este ejemplo se coloco “teléfono” porque se esta ingresando una factura de servicio telefónico.
 10. Seleccione “Crear transacción” para crear la factura.
 
+<figure>
+
 ![imagen6](/img/contabilidad/transacciones-pagar-servicios-basicos-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 Cuando llegue el momento de hacer el pago al proveedor, deberá emitir un cheque para pagar la factura que ingreso previamente, los pasos para hacerlo son los siguientes:
@@ -84,7 +114,12 @@ Cuando llegue el momento de hacer el pago al proveedor, deberá emitir un cheque
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen7](/img/contabilidad/transacciones-pagar-servicios-basicos-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 
@@ -101,12 +136,22 @@ Le aparecerán las opciones para crear una nueva transacción, los pasos para cr
 9. Aquí deberá colocar la cuenta “Cuentas por pagar crédito” para saldar la factura que se creo anteriormente, que salía desde esta cuenta.
 10. Presione “Crear transacción” para emitir el cheque.
 
+<figure>
+
 ![imagen8](/img/contabilidad/transacciones-pagar-servicios-basicos-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 Le deberá aparecer un mensaje de éxito notificándole que se creo la transacción exitosamente. Para imprimir el cheque presione el botón de “Imprimir como cheque”.
 
+<figure>
+
 ![imagen9](/img/contabilidad/transacciones-pagar-servicios-basicos-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/:id">{"https://app.zauru.com/accounting/entries/:id"}</a></figcaption>
+</figure>
 
 Con la factura ingresada y el cheque emitido, la cuenta por pagar queda saldada y el gasto del servicio queda en la cuenta correcta para sus reportes. Repita este flujo con cada factura del mes y su contabilidad de servicios básicos estará siempre al día.
 

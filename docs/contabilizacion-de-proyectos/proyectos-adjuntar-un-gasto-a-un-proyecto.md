@@ -12,18 +12,33 @@ Los pasos para hacerlo son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilizacion-de-proyectos/proyectos-adjuntar-un-gasto-a-un-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nueva transacción, después de colocar los detalles de la transacción del gasto deberá adjuntarla al proyecto que desea, como se muestra en la siguiente imagen.
 
+<figure>
+
 ![imagen2](/img/contabilizacion-de-proyectos/proyectos-adjuntar-un-gasto-a-un-proyecto-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 
 Luego de crear la factura le aparecerá un mensaje en la pantalla y podrá ver los detalles de la transacción creada, en la parte inferior de la página podrá ver los proyectos asociados. Esta transacción de gastos se vera reflejada en el balance mensual del proyecto.
 
+<figure>
+
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-adjuntar-un-gasto-a-un-proyecto-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/:id">{"https://app.zauru.com/accounting/entries/:id"}</a></figcaption>
+</figure>
 
 Ya tiene su gasto asociado al proyecto. Si quiere verlo reflejado junto con todos los demás movimientos de la obra, el siguiente paso natural es revisar el balance mensual del proyecto, donde encontrará esta transacción ordenada junto al resto.
 

@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos por Método de Pago Agrupados por Vendedor".
 
+<figure>
+
 ![Filtros del reporte de pagos por método de pago agrupados por vendedor](/img/reportes-de-ventas/pagos-por-metodo-de-pago-agrupados-por-vendedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/received_payments_per_payment_method_grupued_by_seller">{"https://app.zauru.com/sales/reports/received_payments_per_payment_method_grupued_by_seller"}</a></figcaption>
+</figure>
 
 En la parte superior podrá aplicar los siguientes filtros:
 
@@ -21,7 +26,12 @@ En la parte superior podrá aplicar los siguientes filtros:
 - **Vendedor**: permite filtrar el reporte a un solo vendedor o dejarlo en "Todos".
 - **Método de pago**: permite filtrar a un solo método de pago o dejarlo en "Todos".
 
+<figure>
+
 ![Resultado del reporte de pagos por método de pago agrupados por vendedor](/img/reportes-de-ventas/pagos-por-metodo-de-pago-agrupados-por-vendedor-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/received_payments_per_payment_method_grupued_by_seller">{"https://app.zauru.com/sales/reports/received_payments_per_payment_method_grupued_by_seller"}</a></figcaption>
+</figure>
 
 El reporte muestra una tabla por cada vendedor, con las siguientes columnas:
 

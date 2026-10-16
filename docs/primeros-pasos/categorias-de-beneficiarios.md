@@ -13,7 +13,12 @@ Las categorías agrupan a sus clientes y proveedores según condiciones comercia
 3. Seleccionar la pestaña "Categorías de Beneficiarios".
 4. Click en "Nueva Categoría de Beneficiario".
 
+<figure>
+
 ![Pestaña Categorías de Beneficiarios con el botón Nueva Categoría de Beneficiario](/img/primeros-pasos/beneficiarios-6.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/payee_categories">{"https://app.zauru.com/settings/payees/payee_categories"}</a></figcaption>
+</figure>
 
 En el formulario:
 
@@ -22,11 +27,21 @@ En el formulario:
 3. **Notas**: descripción de la categoría (ej. clientes que compran más de Q10,000 al mes).
 4. Click en "Crear categoría de beneficiario".
 
+<figure>
+
 ![Formulario de nueva categoría de beneficiario](/img/primeros-pasos/beneficiarios-7.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/payee_categories/new">{"https://app.zauru.com/settings/payees/payee_categories/new"}</a></figcaption>
+</figure>
 
 Zauru muestra un mensaje de confirmación.
 
+<figure>
+
 ![Mensaje de categoría de beneficiario creada exitosamente](/img/primeros-pasos/beneficiarios-8.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/payee_categories">{"https://app.zauru.com/settings/payees/payee_categories"}</a></figcaption>
+</figure>
 
 ## Asignar una categoría a un beneficiario
 
@@ -34,11 +49,21 @@ Zauru muestra un mensaje de confirmación.
 2. Seleccionar "Beneficiarios".
 3. Click en "Editar" en el beneficiario que desea categorizar.
 
+<figure>
+
 ![Botón Editar en el listado de beneficiarios](/img/primeros-pasos/beneficiarios-9.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees">{"https://app.zauru.com/settings/payees"}</a></figcaption>
+</figure>
 
 4. Seleccionar la categoría y click en "Actualizar Beneficiario".
 
+<figure>
+
 ![Categoría seleccionada en el formulario de edición del beneficiario](/img/primeros-pasos/beneficiarios-10.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/:id/edit">{"https://app.zauru.com/settings/payees/:id/edit"}</a></figcaption>
+</figure>
 
 Ya puede agrupar a sus beneficiarios por condiciones comerciales. Si aún no los ha creado, vea [Crear Clientes y/o Proveedores (Beneficiarios)](/primeros-pasos/beneficiarios).
 

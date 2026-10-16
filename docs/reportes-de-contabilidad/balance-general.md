@@ -14,7 +14,12 @@ Los pasos para ver el balance general son:
 
 Acá puede ver ver su balance general global o puede seleccionar los detalles por mes.
 
+<figure>
+
 ![captura conta1](/img/reportes-de-contabilidad/balance-general-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/balance_sheet">{"https://app.zauru.com/accounting/reports/balance_sheet"}</a></figcaption>
+</figure>
 
 El reporte presenta:
 

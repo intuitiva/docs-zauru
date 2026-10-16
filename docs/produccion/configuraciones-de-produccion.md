@@ -9,7 +9,12 @@ Si su negocio ya fabrica productos o esta por empezar a manufacturarlos, este es
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Configuraciones"**.
 
+<figure>
+
 ![imagen1](/img/produccion/configuraciones-de-produccion-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/settings/production_settings/new">{"https://app.zauru.com/production/settings/production_settings/new"}</a></figcaption>
+</figure>
 
 Le aparecera un formulario con los siguientes campos:
 
@@ -46,7 +51,12 @@ l. **Metrica de Progreso para Lotes de Produccion**: Seleccione como se medira e
    - **Conteo Parcial**: Basado en los conteos parciales de las ordenes del lote.
    - **Ordenes**: Basado en la proporcion de ordenes cerradas dentro del lote.
 
+<figure>
+
 ![imagen2](/img/produccion/configuraciones-de-produccion-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/settings/production_settings/new">{"https://app.zauru.com/production/settings/production_settings/new"}</a></figcaption>
+</figure>
 
 Una vez que haya completado todos los campos, presione **"Guardar Configuraciones"**.
 

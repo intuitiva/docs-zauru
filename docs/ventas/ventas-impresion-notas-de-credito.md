@@ -12,19 +12,34 @@ sidebar_position: 15
 
 3.       Pestaña Notas de Crédito.
 
+<figure>
+
 ![imagen1](/img/ventas/ventas-impresion-notas-de-credito-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes">{"https://app.zauru.com/sales/sales_notes/credit_notes"}</a></figcaption>
+</figure>
 
 
 
 Seleccionar la Nota de Crédito que desea imprimir en el ícono de Detalles Normal.
 
+<figure>
+
 ![imagen2](/img/ventas/ventas-impresion-notas-de-credito-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes">{"https://app.zauru.com/sales/sales_notes/credit_notes"}</a></figcaption>
+</figure>
 
 
 
 A continuación le desplegara el detalle de todos los movimientos implicados en la Nota de Crédito (Detalle NC, Cliente, Memo, Proyectos, Transacciones, Envíos Asociados, Cobros Asociados, Flujo de Trabajo), Mostrando al final del documento la opción para imprimir la Nota de Crédito.
 
+<figure>
+
 ![imagen3](/img/ventas/ventas-impresion-notas-de-credito-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/:id">{"https://app.zauru.com/sales/sales_notes/credit_notes/:id"}</a></figcaption>
+</figure>
 
 
 

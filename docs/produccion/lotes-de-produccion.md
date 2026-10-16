@@ -13,7 +13,12 @@ Los pasos para ver los lotes de produccion abiertos son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Lotes de Produccion"**.
 
+<figure>
+
 ![imagen1](/img/produccion/lotes-de-produccion-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/production_batches">{"https://app.zauru.com/production/production_batches"}</a></figcaption>
+</figure>
 
 En esta pantalla vera un listado de todos los lotes de produccion que se encuentran en estado abierto. Para cada lote se muestra el progreso segun la metrica configurada (tiempo, conteo parcial u ordenes completadas).
 
@@ -25,7 +30,12 @@ Para ver la informacion completa de un lote:
 2. Seleccionar **"Lotes de Produccion"**.
 3. Seleccione el lote que desea consultar.
 
+<figure>
+
 ![imagen2](/img/produccion/lotes-de-produccion-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/production_batches/:id">{"https://app.zauru.com/production/production_batches/:id"}</a></figcaption>
+</figure>
 
 En la vista de detalle podra ver:
 - La orden raiz del lote.
@@ -43,7 +53,12 @@ Para reagrupar ordenes de produccion entre lotes abiertos:
 3. Seleccione el lote que contiene la orden que desea mover.
 4. En la orden deseada, seleccione **"Mover a Lote"** y elija el lote de destino de la lista de lotes abiertos disponibles.
 
+<figure>
+
 ![imagen3](/img/produccion/lotes-de-produccion-3.png)
+
+<figcaption><a href="https://app.zauru.com/production/production_batches/:id">{"https://app.zauru.com/production/production_batches/:id"}</a></figcaption>
+</figure>
 
 Tambien puede remover una orden de su lote actual sin asignarla a otro lote.
 
@@ -58,7 +73,12 @@ Solo puede anular un lote de produccion que este en estado abierto y cuyas orden
 3. Seleccione el lote que desea anular.
 4. Presione el boton **"Eliminar"**.
 
+<figure>
+
 ![imagen4](/img/produccion/lotes-de-produccion-4.png)
+
+<figcaption><a href="https://app.zauru.com/production/production_batches/:id">{"https://app.zauru.com/production/production_batches/:id"}</a></figcaption>
+</figure>
 
 Al anular el lote, todas las ordenes de produccion que contiene tambien seran anuladas y sus movimientos de inventario revertidos.
 

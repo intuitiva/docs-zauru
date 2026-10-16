@@ -17,7 +17,12 @@ Antes de aprobar una corrida de nómina, conviene revisar que cada empleado haya
 
 Es el reporte mas completo para revision de una corrida.
 
+<figure>
+
 ![Página de selección del reporte Nominas por Corrida de Nomina](/img/reportes-de-nominas/nominas-por-corrida-de-nomina-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/payroll_run_payrolls">{"https://app.zauru.com/payroll/reports/payroll_run_payrolls"}</a></figcaption>
+</figure>
 
 Para ingresar al reporte:
 

@@ -26,7 +26,12 @@ Los pasos para crear o renovar un contrato son:
 1. Ir a "Control de Acceso".
 2. Seleccionar "Contratos".
 
+<figure>
+
 ![Listado de contratos de la entidad en Zauru](/img/permisos-de-acceso/contratos-1.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/contracts">{"https://app.zauru.com/access_control/contracts"}</a></figcaption>
+</figure>
 
 3. Seleccionar "Nuevo Contrato".
 4. Elegir el plan deseado y presionar el botón correspondiente.
@@ -39,7 +44,12 @@ Si su contador le pide el historial de membresías para sus registros, puede exp
 2. Seleccionar "Contratos".
 3. Seleccionar el formato de exportación deseado (CSV o XLS).
 
+<figure>
+
 ![Opciones de exportación de contratos en CSV o XLS](/img/permisos-de-acceso/contratos-3.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/contracts">{"https://app.zauru.com/access_control/contracts"}</a></figcaption>
+</figure>
 
 Con esto ya tiene a la mano el historial de contratos de su entidad. Cuando su membresía esté por vencer, puede volver a esta sección para renovarla, mejorarla o rebajarla según lo que su negocio necesite, y exportar el detalle cuando su contador se lo pida.
 

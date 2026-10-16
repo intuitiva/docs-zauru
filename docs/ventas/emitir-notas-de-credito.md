@@ -26,7 +26,12 @@ b. Seleccionar “Facturas no Pagadas”.
 
 c. Seleccionar “NC” sobre la factura a la que desea emitir la nota de crédito.
 
+<figure>
+
 ![imagen1](/img/ventas/emitir-notas-de-credito-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para emitir una nueva nota de crédito. Los campos que debe llenar son los siguientes:
 
@@ -42,7 +47,12 @@ e. En concepto coloque (Anulación).
 
 Presione crear notas de crédito.
 
+<figure>
+
 ![imagen2](/img/ventas/emitir-notas-de-credito-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/new">{"https://app.zauru.com/sales/sales_notes/credit_notes/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se creo la nota de crédito exitosamente.
 
@@ -54,7 +64,12 @@ Si en la factura hubiera algún producto asociado también se generaría automá
 
 En el tutorial de “Aplicar una nota de crédito” se mostrara como canjear una nota de crédito.
 
+<figure>
+
 ![imagen3](/img/ventas/emitir-notas-de-credito-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/:id">{"https://app.zauru.com/sales/sales_notes/credit_notes/:id"}</a></figcaption>
+</figure>
 
 ## Nota de crédito por descuento
 
@@ -66,7 +81,12 @@ Los pasos para crear un descuento por medio de una nota de crédito son los sigu
 2. Seleccionar “Facturas no Pagadas”.
 3. Click sobre “NC” sobre la factura a la que desea emitir la nota de crédito.
 
+<figure>
+
 ![imagen4](/img/ventas/emitir-notas-de-credito-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerán los detalles de la factura y las opciones para  para emitir una nueva nota de crédito, los campos que deberá llenar son los siguientes:
 
@@ -84,11 +104,21 @@ f.  Coloque la cantidad del descuento por la que se emite la nota de crédito.
 
 Seleccione “Crear notas de crédito”.
 
+<figure>
+
 ![imagen5](/img/ventas/emitir-notas-de-credito-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/new">{"https://app.zauru.com/sales/sales_notes/credit_notes/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificándole que la nota de crédito fue creada exitosamente. En la parte inferior de la página encontrara las transacciones contables asociadas.
 
+<figure>
+
 ![imagen6](/img/ventas/emitir-notas-de-credito-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/:id">{"https://app.zauru.com/sales/sales_notes/credit_notes/:id"}</a></figcaption>
+</figure>
 
 ## Nota de Crédito por devolución parcial
 Los pasos para emitir una nota crédito por una devolución parcial del producto facturado son los siguientes:
@@ -97,7 +127,12 @@ Los pasos para emitir una nota crédito por una devolución parcial del producto
 2. Seleccionar “Facturas no Pagadas”.
 3. Seleccionar “NC” Sobre la factura que desea emitir la nota de crédito.
 
+<figure>
+
 ![imagen7](/img/ventas/emitir-notas-de-credito-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para emitir una nota de crédito, los campos que debe llenar son los siguientes:
 
@@ -113,17 +148,32 @@ e. Seleccione el concepto por el cual se esta emitiendo la nota de crédito. En 
 
 f. Seleccione el producto que esta devolviendo el cliente, luego presione “+” y coloque la cantidad que el cliente esta devolviendo de ese producto.
 
+<figure>
+
 ![imagen8](/img/ventas/emitir-notas-de-credito-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/new">{"https://app.zauru.com/sales/sales_notes/credit_notes/new"}</a></figcaption>
+</figure>
 
 Para agregar mas productos seleccione el producto y luego presione “+”, el botón de refrescar y el botón de vista previa le sirven para refrescar la página antes de emitir la nota de crédito, esto le permitirá ver si hay algún error en las cantidades.
 
 Cuando termine de colocar los productos y sus cantidades presione “Crear notas de crédito”.
 
+<figure>
+
 ![imagen9](/img/ventas/emitir-notas-de-credito-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/new">{"https://app.zauru.com/sales/sales_notes/credit_notes/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito en la pantalla. En la parte inferior podrá ver las transacciones contables asociadas y los movimientos de inventario asociados. Automáticamente se creara una reservación de “Cliente” hacia “Bodega” para retornar los productos especificados en la nota de crédito.
 
+<figure>
+
 ![imagen10](/img/ventas/emitir-notas-de-credito-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_notes/credit_notes/:id">{"https://app.zauru.com/sales/sales_notes/credit_notes/:id"}</a></figcaption>
+</figure>
 
 Ya emitió la nota de crédito y Zauru se encargó del resto: revirtió las transacciones contables y regresó la mercadería a la bodega cuando correspondía. El cliente ahora tiene un saldo a favor que podrá canjear más adelante en otra factura, y usted puede consultar o imprimir la nota cuando la necesite.
 

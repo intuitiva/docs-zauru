@@ -12,9 +12,19 @@ Para ingresar al Cierre por Producto Diario es necesario realizar los siguiente:
 2. Hacer click en Reportes
 3. Seleccionar Cierre por Producto Diario
 
+<figure>
+
 ![imagen1](/img/reportes-de-ventas/reportes-distribuidoras-cierre-por-producto-diario-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/reports">{"https://app.zauru.com/sales/reports"}</a></figcaption>
+</figure>
 
 
 Una vez se haya seleccionado la fecha y la bodega, aparecerá las ventas que se realizaron. Enlistado estará los productos que se vendieron y a que cliente se le vendieron. Por último, aparecerán los pagos que se realizaron ese mismo día.
 
+<figure>
+
 ![imagen2](/img/reportes-de-ventas/reportes-distribuidoras-cierre-por-producto-diario-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/daily_item_close">{"https://app.zauru.com/sales/reports/daily_item_close"}</a></figcaption>
+</figure>

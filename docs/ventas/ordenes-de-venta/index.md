@@ -27,7 +27,12 @@ Los pasos para crear una orden de venta son los siguientes:
 2. Seleccionar “Ordenes”.
 3. Seleccionar “Nueva Orden”.
 
+<figure>
+
 ![imagen1](/img/ventas/ordenes-de-venta-o-facturas-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/orders">{"https://app.zauru.com/sales/orders"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva orden de venta, los campos que debe llenar son los siguientes:
@@ -47,13 +52,23 @@ f. Coloque los productos o servicios que desea facturar, la cantidad y el precio
 
 Por ultimo presione “Crear orden”.
 
+<figure>
+
 ![imagen2](/img/ventas/ordenes-de-venta-o-facturas-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/orders/new">{"https://app.zauru.com/sales/orders/new"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se creo la orden exitosamente.
 
+<figure>
+
 ![imagen3](/img/ventas/ordenes-de-venta-o-facturas-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/orders/:id">{"https://app.zauru.com/sales/orders/:id"}</a></figcaption>
+</figure>
 
 ## Listar las Ordenes de Venta
 
@@ -73,7 +88,12 @@ f. Cobrar
 
 g. Emitir factura rápida: genera la factura de inmediato con la fecha del día, sin pasar por el formulario de factura.
 
+<figure>
+
 ![imagen4](/img/ventas/ordenes-de-venta-o-facturas-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/orders">{"https://app.zauru.com/sales/orders"}</a></figcaption>
+</figure>
 
 ## Gestión Avanzada de Órdenes de Venta
 

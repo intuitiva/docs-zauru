@@ -8,7 +8,12 @@ Si quiere ver el mes completo de cobros en una sola mirada, este reporte se lo p
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Reporte Pagos Diarios por Método de Pago mostrando selector de mes y tabla de calor](/img/reportes-de-ventas/pagos-diarios-por-metodo-de-pago-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/daily_payments_by_payment_method">{"https://app.zauru.com/sales/reports/daily_payments_by_payment_method"}</a></figcaption>
+</figure>
 
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".

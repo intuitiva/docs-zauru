@@ -21,4 +21,9 @@ Permite:
 
 Con este cruce puede asignar carteras con criterio y detectar oportunidades donde un vendedor aún no llega.
 
+<figure>
+
 ![Reporte de Ventas Mensuales por Vendedor y Categoría de Cliente mostrando filtros y tabla de resultados.](/img/reportes-de-ventas/ventas-mensuales-por-vendedor-y-categoria-de-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/monthly_sales_by_seller_and_client_category">{"https://app.zauru.com/sales/reports/monthly_sales_by_seller_and_client_category"}</a></figcaption>
+</figure>

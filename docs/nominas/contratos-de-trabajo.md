@@ -15,7 +15,12 @@ Para acceder al listado de contratos:
 
 El listado muestra todos los contratos con su estado (activo, terminado) y permite filtrar por:
 
+<figure>
+
 ![Listado de contratos de trabajo con filtros por agencia y estado](/img/nominas/contratos-de-trabajo-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/work_contracts">{"https://app.zauru.com/payroll/work_contracts"}</a></figcaption>
+</figure>
 
 - **Agencia**: filtrar contratos por agencia del empleado.
 - **Estado**: filtrar por contratos activos, terminados o todos.
@@ -27,7 +32,12 @@ Cada fila muestra el ID, empleado, puesto de trabajo, fecha de inicio, fecha de 
 1. En el listado de contratos, hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo contrato de trabajo con datos básicos, pago y tiempo fuera personal](/img/nominas/contratos-de-trabajo-2.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/work_contracts/new">{"https://app.zauru.com/payroll/work_contracts/new"}</a></figcaption>
+</figure>
 
 ### Datos basicos
 
@@ -67,7 +77,12 @@ Al guardar el contrato, el sistema automaticamente:
 
 En el listado de contratos, hacer clic en el numero de contrato o en el nombre del empleado para ver el detalle completo:
 
+<figure>
+
 ![Detalle de un contrato de trabajo con información y beneficios del puesto](/img/nominas/contratos-de-trabajo-3.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/work_contracts/1">{"https://app.zauru.com/payroll/work_contracts/1"}</a></figcaption>
+</figure>
 
 ### Informacion basica
 
@@ -117,7 +132,12 @@ Si se adjunto un PDF del contrato firmado, muestra un enlace para descargarlo.
 1. En el detalle del contrato, hacer clic en **"Terminar"** (icono de bandera).
 2. Completar los campos de terminacion:
 
+<figure>
+
 ![Formulario de terminación de contrato de trabajo](/img/nominas/contratos-de-trabajo-5.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations/new">{"https://app.zauru.com/payroll/work_contracts/1/work_contract_terminations/new"}</a></figcaption>
+</figure>
 
 - **Fecha de terminacion**: fecha en que finaliza la relacion laboral.
 - **Tipo de terminacion**: seleccionar entre **"Despido"** o **"Renuncia"**.
@@ -135,7 +155,12 @@ El sistema automaticamente calcula la liquidacion basandose en:
 
 El detalle de la terminacion muestra estos calculos discriminados y el total de la liquidacion:
 
+<figure>
+
 ![Detalle de liquidacion al terminar un contrato](/img/nominas/contratos-de-trabajo-4.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/work_contracts/1/edit">{"https://app.zauru.com/payroll/work_contracts/1/edit"}</a></figcaption>
+</figure>
 
 - **Indemnizacion (Severance Pay)**: salario ordinario, salario extra y, de corresponder, comisiones de ventas y beneficios/deducciones en ciclo del primer mes, resaltados en rojo.
 - **Nomina final (ultimo pago)**: si la configuracion de "Manejo del pago al terminar un contrato" indica liquidar en la terminacion, muestra los dias aplicables, salario, salario extra, salario de turno nocturno, bonificacion mensual y beneficios/deducciones del periodo final, con el total del ultimo pago. Si la configuracion indica incluirlo en la proxima nomina, este pago no aparece aqui y el empleado se procesa en la siguiente nómina.

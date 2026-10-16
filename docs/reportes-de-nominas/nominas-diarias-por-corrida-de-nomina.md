@@ -14,7 +14,12 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+<figure>
+
 ![Reporte Nominas Diarias por Corrida de Nomina mostrando formulario de selección y resultados](/img/reportes-de-nominas/nominas-diarias-por-corrida-de-nomina-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/daily_payroll_run_payrolls">{"https://app.zauru.com/payroll/reports/daily_payroll_run_payrolls"}</a></figcaption>
+</figure>
 
 - Corrida de nomina.
 

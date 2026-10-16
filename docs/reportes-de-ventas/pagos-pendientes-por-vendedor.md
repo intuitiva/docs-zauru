@@ -12,6 +12,11 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes por Vendedor".
 
+<figure>
+
 ![Reporte de Pagos Pendientes por Vendedor mostrando los pagos agrupados por vendedor](/img/reportes-de-ventas/pagos-pendientes-por-vendedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/seller_pending_payments">{"https://app.zauru.com/sales/reports/seller_pending_payments"}</a></figcaption>
+</figure>
 
 Con esta vista, cada vendedor sale con su listado claro y usted puede ver de un vistazo quién concentra la mayor deuda pendiente.

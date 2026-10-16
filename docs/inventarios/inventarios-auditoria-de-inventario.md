@@ -18,7 +18,12 @@ Los pasos para crear una auditoria de inventario son los siguientes:
 2. Seleccionar "Auditorías".
 3. Seleccionar "Nueva Auditoría de Inventario".
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-auditoria-de-inventario-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventory_audits">{"https://app.zauru.com/inventories/inventory_audits"}</a></figcaption>
+</figure>
 
 Le aparecerán los campos para hacer una auditoría de inventario, los campos que debe llenar son los siguientes:
 
@@ -30,7 +35,12 @@ c. Seleccione el producto que esta en la bodega y coloque la cantidad que esta o
 
 d. Seleccione el más para agregar otro producto y coloque la cantidad observada del producto.
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-auditoria-de-inventario-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventory_audits/new">{"https://app.zauru.com/inventories/inventory_audits/new"}</a></figcaption>
+</figure>
 
 ### Modos de agregar productos
 
@@ -53,11 +63,21 @@ Al crear una auditoría, tiene múltiples opciones para agregar productos al lis
 
 Al final cuando termine de colocar los productos y la cantidad observada presione "Crear auditoría de inventario".
 
+<figure>
+
 ![imagen3](/img/inventarios/inventarios-auditoria-de-inventario-3.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventory_audits/new">{"https://app.zauru.com/inventories/inventory_audits/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito notificándole que se creo la auditoría exitosamente. Seleccione el ojo para ver los detalles de la auditoría.
 
+<figure>
+
 ![imagen4](/img/inventarios/inventarios-auditoria-de-inventario-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventory_audits">{"https://app.zauru.com/inventories/inventory_audits"}</a></figcaption>
+</figure>
 
 ## Ver detalles de una auditoría
 
@@ -72,7 +92,12 @@ En los detalles de la auditoría encontrará:
   - **Costo promedio**: El costo unitario promedio del producto a la fecha de la auditoría.
   - **Costo total de la diferencia**: La diferencia multiplicada por el costo promedio.
 
+<figure>
+
 ![imagen5](/img/inventarios/inventarios-auditoria-de-inventario-5.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventory_audits/:id">{"https://app.zauru.com/inventories/inventory_audits/:id"}</a></figcaption>
+</figure>
 
 ### Modo de stock disponible vs stock físico
 

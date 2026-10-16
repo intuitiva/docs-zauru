@@ -12,7 +12,12 @@ Los pasos para registrar un deposito son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-depositos-en-banco-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva transacciones, los campos que deberá llenar para hacer un depósito son los siguientes:
@@ -31,7 +36,12 @@ f. Coloque la cuenta en la que se hizo el depósito.
 
 Para crear el depósito seleccione “Crear nueva transacción” en la parte de abajo.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-depositos-en-banco-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con el depósito registrado, su cuenta de banco cuadra con lo que realmente le depositaron y el origen del dinero queda documentado. Al final del mes, esta información le facilitará la conciliación bancaria.
 

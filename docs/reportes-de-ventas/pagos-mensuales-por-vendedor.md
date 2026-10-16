@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con ese comparativo podrá reconocer a los vendedores que mejor cobran y conversar con datos sobre las metas del siguiente mes.
 
+<figure>
+
 ![Reporte Pagos Mensuales por Vendedor mostrando tabla de vendedores y montos pagados en el mes seleccionado.](/img/reportes-de-ventas/pagos-mensuales-por-vendedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/seller_monthly_payments">{"https://app.zauru.com/sales/reports/seller_monthly_payments"}</a></figcaption>
+</figure>

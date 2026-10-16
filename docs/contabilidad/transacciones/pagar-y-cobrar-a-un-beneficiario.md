@@ -16,7 +16,12 @@ Los pasos para hacer esta transacción son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-pagar-y-cobrar-a-un-beneficiario-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nueva transacción, los campos que deberá llenar son los siguientes:
@@ -39,7 +44,12 @@ h. Aquí deberá colocar el total de comisiones, que en este ejemplo son Q,1,500
 
 Por ultimo haga click sobre “Crear nueva transacción” para emitir el cheque ya con el descuento.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-pagar-y-cobrar-a-un-beneficiario-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con un solo cheque usted pagó el salario y recuperó parte del préstamo, y ambas cuentas quedaron con sus montos correctos: la de gastos y la de cuentas por cobrar. Repita el mismo movimiento cada mes mientras dure el descuento.
 

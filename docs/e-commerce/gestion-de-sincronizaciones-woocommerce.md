@@ -10,7 +10,12 @@ Si su tienda WooCommerce ya está sincronizada con Zauru, aquí es donde control
 
 La vista principal muestra todas las configuraciones de sincronización de la entidad, permitiendo ver de un vistazo:
 
+<figure>
+
 ![Listado de sincronizaciones WooCommerce con estado, frecuencia y URL](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-1.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/woocommerce_items_syncs">{"https://app.zauru.com/ecommerce/woocommerce_items_syncs"}</a></figcaption>
+</figure>
 
 - El estado de cada configuración (activa o inactiva)
 - La frecuencia de sincronización programada
@@ -24,7 +29,12 @@ Para crear una nueva configuración de sincronización:
 2. Seleccionar "Nueva sincronización"
 3. Llenar el formulario con los parámetros de conexión
 
+<figure>
+
 ![Formulario para crear nueva sincronización WooCommerce](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-2.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/woocommerce_items_syncs/new">{"https://app.zauru.com/ecommerce/woocommerce_items_syncs/new"}</a></figcaption>
+</figure>
 
 Al crear la sincronización, se registran automáticamente:
 - `creator_id`: el usuario que creó la configuración
@@ -34,7 +44,12 @@ Al crear la sincronización, se registran automáticamente:
 
 Se puede modificar cualquier parámetro de una sincronización existente, incluyendo:
 
+<figure>
+
 ![Vista de detalle de una sincronización WooCommerce existente](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-3.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/woocommerce_items_syncs/1">{"https://app.zauru.com/ecommerce/woocommerce_items_syncs/1"}</a></figcaption>
+</figure>
 
 - Cambiar las credenciales de WooCommerce
 - Modificar la frecuencia de sincronización
@@ -44,7 +59,12 @@ Se puede modificar cualquier parámetro de una sincronización existente, incluy
 
 Al editar, se actualiza el campo `updater_id` con el usuario que realizó el cambio.
 
+<figure>
+
 ![Formulario de edición de sincronización WooCommerce](/img/e-commerce/gestion-de-sincronizaciones-woocommerce-4.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/edit">{"https://app.zauru.com/ecommerce/woocommerce_items_syncs/1/edit"}</a></figcaption>
+</figure>
 
 ## Eliminar una sincronización
 

@@ -8,7 +8,12 @@ sidebar_position: 1
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Vista del reporte Cierre Diario mostrando casos cerrados agrupados por serie](/img/reportes-de-casos-de-soporte/cierre-diario-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/reports/daily_close">{"https://app.zauru.com/support/reports/daily_close"}</a></figcaption>
+</figure>
 
 1. Ir a "Casos de Soporte".
 2. Seleccionar "Reportes".

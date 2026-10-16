@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con esta lista a la vista puede responder de inmediato cualquier consulta sobre el movimiento de personal y detectar a tiempo las vacantes que necesitan cubrirse.
 
+<figure>
+
 ![Reporte de Altas y Bajas de Empleados por Rango de Fechas mostrando tabla de resultados y filtros de fecha](/img/reportes-de-nominas/altas-y-bajas-de-empleados-por-rango-de-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/employees_hires_and_terminations_by_date_range">{"https://app.zauru.com/payroll/reports/employees_hires_and_terminations_by_date_range"}</a></figcaption>
+</figure>

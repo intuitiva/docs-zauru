@@ -8,7 +8,12 @@ Cuando su contador le pide ubicar un comprobante por su serie o su número, o ne
 
 Para ingresar a este reporte:
 
+<figure>
+
 ![Reporte de Activos Correlativos Imprimibles mostrando filtros de cuenta, prefijo, rango y nombre.](/img/reportes-de-contabilidad/activos-correlativos-imprimibles-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/correlative_printable_assets">{"https://app.zauru.com/accounting/reports/correlative_printable_assets"}</a></figcaption>
+</figure>
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Reportes".

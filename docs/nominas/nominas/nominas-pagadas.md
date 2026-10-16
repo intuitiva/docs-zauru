@@ -15,13 +15,23 @@ Para acceder:
 
 Muestra todas las nóminas pagadas con el mismo formato que las no pagadas, e incluye búsqueda y filtros.
 
+<figure>
+
 ![Listado de nóminas pagadas](/img/nominas/nominas-pagadas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/paid_payroll_runs">{"https://app.zauru.com/payroll/paid_payroll_runs"}</a></figcaption>
+</figure>
 
 ## Ver detalle de una nómina pagada
 
 Igual que el detalle de una nómina no pagada, pero sin opciones de edición ni aprobación. Muestra las nóminas individuales, los destajos y las partidas contables asociadas.
 
+<figure>
+
 ![Detalle de una nómina pagada](/img/nominas/nominas-pagadas-2.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/paid_payroll_runs/1">{"https://app.zauru.com/payroll/paid_payroll_runs/1"}</a></figcaption>
+</figure>
 
 ## Des-pagar una nómina
 

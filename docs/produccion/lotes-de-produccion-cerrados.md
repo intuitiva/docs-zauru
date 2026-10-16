@@ -13,7 +13,12 @@ Los pasos para ver los lotes de produccion cerrados son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Lotes Cerrados"**.
 
+<figure>
+
 ![imagen1](/img/produccion/lotes-de-produccion-cerrados-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_production_batches">{"https://app.zauru.com/production/closed_production_batches"}</a></figcaption>
+</figure>
 
 En esta pantalla vera un listado de todos los lotes de produccion que han sido cerrados, ordenados por fecha de cierre (los mas recientes primero). Para cada lote se muestra la orden raiz, la fecha de cierre y el progreso final alcanzado.
 
@@ -25,7 +30,12 @@ Para ver la informacion completa de un lote cerrado:
 2. Seleccionar **"Lotes Cerrados"**.
 3. Seleccione el lote que desea consultar.
 
+<figure>
+
 ![imagen2](/img/produccion/lotes-de-produccion-cerrados-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_production_batches/:id">{"https://app.zauru.com/production/closed_production_batches/:id"}</a></figcaption>
+</figure>
 
 En la vista de detalle podra ver:
 - La orden raiz del lote.

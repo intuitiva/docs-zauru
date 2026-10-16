@@ -12,7 +12,12 @@ Para localizar el libro de compras nos vamos a:
   - Reportes
   - Libro de compras
 
+<figure>
+
 ![Libro de Compras](/img/reportes-de-contabilidad/libro-de-compras-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/purchase_ledger">{"https://app.zauru.com/accounting/reports/purchase_ledger"}</a></figcaption>
+</figure>
 
 Es un reporte fiscal que lista todas las compras y gastos del mes.
 

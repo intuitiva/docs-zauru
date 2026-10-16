@@ -14,7 +14,12 @@ Para consultar la lista de configuraciones de gateway:
 2. Seleccionar **"Configuraciones"**.
 3. Seleccionar la pestaña de **"Configuraciones de Gateway"**.
 
+<figure>
+
 ![imagen1](/img/ventas/configuraciones-de-gateway-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gateway_configs">{"https://app.zauru.com/sales/gateway_configs"}</a></figcaption>
+</figure>
 
 Las configuraciones de gateway pueden filtrarse por estado:
 - **Activas**: Muestra solo las configuraciones activas.
@@ -30,7 +35,12 @@ Los pasos para crear una nueva configuración de gateway son los siguientes:
 3. Seleccionar la pestaña de **"Configuraciones de Gateway"**.
 4. Presionar **"Nueva Configuración de Gateway"**.
 
+<figure>
+
 ![imagen2](/img/ventas/configuraciones-de-gateway-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gateway_configs/new">{"https://app.zauru.com/sales/gateway_configs/new"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear una nueva configuración de gateway. Los campos que debe llenar son los siguientes:
 
@@ -58,7 +68,12 @@ k. **Predeterminado**: Marque esta opción si desea que esta sea la configuraci�
 
 Para guardar presione **"Crear Configuración de Gateway"**.
 
+<figure>
+
 ![imagen3](/img/ventas/configuraciones-de-gateway-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gateway_configs/new">{"https://app.zauru.com/sales/gateway_configs/new"}</a></figcaption>
+</figure>
 
 ### Opciones Avanzadas del Gateway
 
@@ -81,7 +96,12 @@ Para editar una configuración de gateway existente:
 3. Realizar los cambios necesarios.
 4. Presionar **"Actualizar Configuración de Gateway"**.
 
+<figure>
+
 ![imagen4](/img/ventas/configuraciones-de-gateway-4.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gateway_configs/:id/edit">{"https://app.zauru.com/sales/gateway_configs/:id/edit"}</a></figcaption>
+</figure>
 
 **Nota**: Si deja el campo de contraseña en blanco al editar, la contraseña existente no se modificará.
 

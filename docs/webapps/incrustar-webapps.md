@@ -8,7 +8,12 @@ Si su equipo ya desarrolló una aplicación a la medida —un formulario propio,
 
 Primero debemos navegar al módulo de webapp
 
+<figure>
+
 ![webapp index](/img/webapps/incrustar_webapps-1.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapps">{"https://app.zauru.com/apps/webapps"}</a></figcaption>
+</figure>
 
 Luego presionamos "Nueva Webapp" y registramos la información.
 
@@ -24,14 +29,29 @@ Asumiendo que nuestro webapp esté alojado en el dominio https://primerwebapp.za
 </iframe>
 ```
 
+<figure>
+
 ![webapp new](/img/webapps/incrustar_webapps-2.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapps/new">{"https://app.zauru.com/apps/webapps/new"}</a></figcaption>
+</figure>
 
 Al guardar tenemos que hacer un último paso y es darnos permisos para que nos aparezca en el listado de webapps
 
+<figure>
+
 ![webapps permissions](/img/webapps/incrustar_webapps-3.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapps_permissions/:id/edit">{"https://app.zauru.com/apps/webapps_permissions/:id/edit"}</a></figcaption>
+</figure>
 
 Ahora ya podemos accesar desde Zauru a nuestros webapps
 
+<figure>
+
 ![webapp details](/img/webapps/incrustar_webapps-4.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapps/:id">{"https://app.zauru.com/apps/webapps/:id"}</a></figcaption>
+</figure>
 
 Ahora ya no hay que tener 2 pestañas o ventanas del navegador para utilizar nuestras webapps personalizadas.

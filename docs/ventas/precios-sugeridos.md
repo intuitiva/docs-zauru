@@ -14,9 +14,19 @@ Para consultar los precios sugeridos de sus items y paquetes:
 2. Seleccionar **"Precios Sugeridos"**.
 3. Seleccionar la pestaña de **"Items"** o **"Paquetes"** según corresponda.
 
+<figure>
+
 ![3. Seleccionar la pestaña de **"Items"** o **"Paquetes"** según corresponda.](/img/ventas/precios-sugeridos-0.png)
 
+<figcaption><a href="https://app.zauru.com/sales/suggested_prices">{"https://app.zauru.com/sales/suggested_prices"}</a></figcaption>
+</figure>
+
+<figure>
+
 ![imagen1](/img/ventas/importar-precios-0.png)
+
+<figcaption><a href="https://app.zauru.com/sales/suggested_prices">{"https://app.zauru.com/sales/suggested_prices"}</a></figcaption>
+</figure>
 
 ### Pestaña de Items
 
@@ -40,7 +50,12 @@ Para ver el historial completo de precios de un item o paquete:
 1. En el listado de precios sugeridos, haga click sobre el precio que desea consultar.
 2. Se mostrará el historial completo de precios para ese item o paquete dentro del mismo listado de precios.
 
+<figure>
+
 ![imagen2](/img/ventas/importar-precios-0b.png)
+
+<figcaption><a href="https://app.zauru.com/sales/suggested_prices">{"https://app.zauru.com/sales/suggested_prices"}</a></figcaption>
+</figure>
 
 El historial de precios incluye:
 
@@ -63,7 +78,12 @@ Si desea crear un precio sugerido para un item o paquete de forma manual:
 2. Seleccionar **"Precios Sugeridos"**.
 3. Seleccionar **"Nuevo"**.
 
+<figure>
+
 ![imagen3](/img/ventas/importar-precios-0c.png)
+
+<figcaption><a href="https://app.zauru.com/sales/suggested_prices/new">{"https://app.zauru.com/sales/suggested_prices/new"}</a></figcaption>
+</figure>
 
 Los campos necesarios son:
 

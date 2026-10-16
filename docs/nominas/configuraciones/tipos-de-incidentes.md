@@ -16,7 +16,12 @@ Para gestionar tipos de incidentes:
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo tipo de incidente](/img/nominas/configuraciones-de-nomina-7.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/incident_types/new">{"https://app.zauru.com/payroll/settings/incident_types/new"}</a></figcaption>
+</figure>
 
 - **Activo**: marcar para que este disponible.
 - **Nombre**: nombre del tipo (ej. "Llegada tarde", "Ausencia injustificada").

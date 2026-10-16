@@ -27,11 +27,21 @@ f. Si no usa códigos, seleccione los productos o servicios de la lista y especi
 
 Presione "Guardar".
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/crear-caso-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/cases/new">{"https://app.zauru.com/pos/cases/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito. Use los iconos de la derecha para ver el detalle, editar, cerrar o cobrar el caso.
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/crear-caso-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/cases">{"https://app.zauru.com/pos/cases"}</a></figcaption>
+</figure>
 
 ## Editar un caso
 

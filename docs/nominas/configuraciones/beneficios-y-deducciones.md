@@ -11,7 +11,12 @@ Para gestionar beneficios y deducciones:
 1. Ir a **"Nominas"**.
 2. En **"Settings"**, seleccionar **"Beneficios y deducciones"**.
 
+<figure>
+
 ![Listado de beneficios y deducciones](/img/nominas/configuraciones-de-nomina-4.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/payroll_benefits_deductions">{"https://app.zauru.com/payroll/settings/payroll_benefits_deductions"}</a></figcaption>
+</figure>
 
 ## Filtros del listado
 
@@ -27,7 +32,12 @@ Cuando su lista ya es larga —IGSS, bonos, préstamos, viáticos—, estos filt
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo beneficio o deduccion](/img/nominas/configuraciones-de-nomina-5.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/payroll_benefits_deductions/new">{"https://app.zauru.com/payroll/settings/payroll_benefits_deductions/new"}</a></figcaption>
+</figure>
 
 ### Datos generales
 

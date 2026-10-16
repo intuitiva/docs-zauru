@@ -10,7 +10,12 @@ Piense en un proyecto grande: el cliente acepta la orden, pero antes de empezar 
 2. Seleccionar “Ordenes”.
 3. Seleccionar “Cobrar” (La tarjeta)
 
+<figure>
+
 ![imagen1](/img/ventas/ventas-cobrar-un-anticipo-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/orders">{"https://app.zauru.com/sales/orders"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo pago, los campos que debe llenar son los siguientes:
@@ -32,13 +37,23 @@ g. Coloque la cantidad del pago, en este ejemplo colocamos la mitad del total de
 
 Para crear el anticipo presione “Crear Pago”.
 
+<figure>
+
 ![imagen2](/img/ventas/ventas-cobrar-un-anticipo-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new_advance">{"https://app.zauru.com/sales/payments/new_advance"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerá un mensaje en la pantalla notificándole que el pago se creo exitosamente, en la parte inferior de la pagina podrá encontrar los datos de la orden de venta que se pago y el detalle del pago.
 
+<figure>
+
 ![imagen3](/img/ventas/ventas-cobrar-un-anticipo-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 Con el anticipo registrado, la orden de venta refleja cuánto se ha cobrado por adelantado, y cuando llegue el momento de facturar, el saldo pendiente ya tomará en cuenta lo que el cliente pagó. Así puede empezar el trabajo con la confianza de que su esfuerzo está respaldado.
 

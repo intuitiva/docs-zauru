@@ -10,7 +10,12 @@ Cuando un cliente llega a recoger el equipo que dejó en servicio técnico y pag
 2. Seleccionar “Casos”.
 3. Seleccionar el icono de “Cobrar”.
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/cobrar-caso-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/cases">{"https://app.zauru.com/pos/cases"}</a></figcaption>
+</figure>
 
 
 Le aparecerán los detalles de la factura no pagada y abajo las opciones para crear el nuevo cobro. Los campos que debe colocar son:
@@ -25,11 +30,21 @@ c. Coloque la cantidad que se esta cobrando en el método de pago especificado.
 
 Presione “Crear pago”.
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/cobrar-caso-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/charges/new">{"https://app.zauru.com/pos/charges/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificando que el cobro fue creado exitosamente. Este cobro pasara a un listado de cobros sin confirmar, la factura seguirá siendo una factura no pagada hasta que usted confirme el pago.
 
+<figure>
+
 ![imagen3](/img/punto-de-venta/cobrar-caso-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/charges">{"https://app.zauru.com/pos/charges"}</a></figcaption>
+</figure>
 
 ## Confirmar el pago de un caso
 

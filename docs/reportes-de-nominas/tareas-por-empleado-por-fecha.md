@@ -14,7 +14,12 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+<figure>
+
 ![Reporte Tareas por Empleado por Fecha mostrando filtros de empleado y rango de fechas y tabla de resultados](/img/reportes-de-nominas/tareas-por-empleado-por-fecha-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/employee_tasks_per_date">{"https://app.zauru.com/payroll/reports/employee_tasks_per_date"}</a></figcaption>
+</figure>
 
 - Empleado.
 - Rango de fechas.

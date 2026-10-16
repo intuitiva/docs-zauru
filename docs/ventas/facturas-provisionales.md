@@ -13,13 +13,23 @@ Desde la página de detalles de una factura provisional:
 1. Seleccione una **plantilla de impresión**.
 2. Haga click en **"Imprimir"** para ver la vista previa, o use la opción para **descargar el PDF**.
 
+<figure>
+
 ![facturas-provisionales-imprimir](/img/ventas/facturas-provisionales-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/provisional_invoices/:id">{"https://app.zauru.com/sales/provisional_invoices/:id"}</a></figcaption>
+</figure>
 
 ## Mensaje de factura anulada (VOIDED)
 
 Si la factura provisional ha sido **anulada**, la impresión y el PDF ahora muestran automáticamente un mensaje de **"ANULADO" (VOIDED)**, de modo que el documento impreso refleje claramente su estado.
 
+<figure>
+
 ![facturas-provisionales-anulada](/img/ventas/facturas-provisionales-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/provisional_invoices/:id">{"https://app.zauru.com/sales/provisional_invoices/:id"}</a></figcaption>
+</figure>
 
 ## Mejoras recientes en la impresión
 

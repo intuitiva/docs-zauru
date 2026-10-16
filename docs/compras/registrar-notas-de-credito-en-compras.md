@@ -18,10 +18,20 @@ El segundo paso es el de __redimir la nota de crédito__, para que la Orden de C
 ### Generar partida contable (Para OC de Gastos)
 Lo primero que hay que revisar es la partida existente, porque nos tenemos que basar en eso para generar la partida de la Nota de Crédito.
 Este es el ejemplo que vamos a utilizar como partida contable:
+<figure>
+
 ![transaccion existente en OC](/img/compras/registrar-notas-de-credito-en-compras-1.png)
 
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
+
 Ahora vamos a crear una nueva partida de la Nota de crédito asociada a la Orden de Compra (Para este caso debe de existir una cuenta de Activo Ej: Nota de crédito recibida):
+<figure>
+
 ![boton asociar transaccion a la OC](/img/compras/registrar-notas-de-credito-en-compras-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Para Nota de Crédito por anulación completa, la transacción debería de ser:
 Gasto X Q312.50 => Nota de crédito recibida Q350
@@ -35,10 +45,20 @@ Para que esta nota de crédito aparezca en el libro de compras, la transaccion d
 
 ### Generar partida contable (Para OC de Mercadería)
 Lo primero que hay que revisar es la partida existente, porque nos tenemos que basar en eso para generar la partida de la Nota de Crédito, __OJO:__ para este caso en lugar de la cuenta: __Gasto X__, la transacción iría a la cuenta de __Activo de Inventario (Mercadería por ejemplo)__.
+<figure>
+
 ![transaccion existente en OC](/img/compras/registrar-notas-de-credito-en-compras-3.png)
 
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
+
 Ahora vamos a crear una nueva partida de la Nota de crédito asociada a la Orden de Compra (Para este caso debe de existir una cuenta de Activo Ej: Nota de crédito recibida).
+<figure>
+
 ![boton asociar transaccion a la OC](/img/compras/registrar-notas-de-credito-en-compras-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Para Nota de Crédito por anulación completa, la transacción debería de ser:
 Mercaderia Q312.50 => Nota de crédito recibida Q350
@@ -53,7 +73,12 @@ Para que esta nota de crédito aparezca en el libro de compras, la transaccion d
 ### Generar envío de la devolución de los productos
 
 Si la nota de Crédito implica una devolución de mercadería, tendremos que crear un envío asociado a la orden de compra por medio del siguiente botón.
+<figure>
+
 ![boton asociar nuevo envio a OC](/img/compras/registrar-notas-de-credito-en-compras-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Recordar que en este envío nuevo; el origen y el destino debería de estar al revés de lo que está el envío creado automáticamente en la orden de compras
 

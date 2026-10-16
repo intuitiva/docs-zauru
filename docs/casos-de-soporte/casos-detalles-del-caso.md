@@ -13,7 +13,12 @@ Para ver los detalles de un caso:
 3. Hacer click sobre **"Verificar"** (icono de ojo) en el caso deseado.
 4. O bien, hacer click sobre el **ID** del caso.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-detalles-del-caso-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 ## Informacion Mostrada en los Detalles
 

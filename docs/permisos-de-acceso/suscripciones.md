@@ -8,7 +8,12 @@ Cuando su equipo crece y necesita dar acceso a varios vendedores, cajeros o bode
 
 Se le puede asignar un rol a los usuarios hasta que el usuario haya aceptado la invitación.
 
+<figure>
+
 ![suscripciones](/img/permisos-de-acceso/suscripciones-1.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/subscriptions">{"https://app.zauru.com/access_control/subscriptions"}</a></figcaption>
+</figure>
 
 ## Nueva suscripción
 
@@ -16,7 +21,12 @@ Si un empleado nuevo ya aceptó su invitación, este es el momento de darle su r
 
 En esta página solo se debe seleccionar el usuario con invitación aceptada y el rol que se le quiere dar.
 
+<figure>
+
 ![nueva suscripcion](/img/permisos-de-acceso/suscripciones-2.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/subscriptions/new">{"https://app.zauru.com/access_control/subscriptions/new"}</a></figcaption>
+</figure>
 
 Con la suscripción creada, el usuario ya puede entrar a Zauru con los permisos de su rol y su ficha de empleado queda asociada a su cuenta. Si en el futuro alguien sale de su equipo, puede desactivar su suscripción desde esta misma sección para bloquear su acceso.
 

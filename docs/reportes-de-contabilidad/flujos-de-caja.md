@@ -12,7 +12,12 @@ El flujo de caja lo localizamos en:
 - Reportes
 - Flujo de Caja
 
+<figure>
+
 ![Flujo de caja](/img/reportes-de-contabilidad/flujos_de_caja-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/cash_flow">{"https://app.zauru.com/accounting/reports/cash_flow"}</a></figcaption>
+</figure>
 
 El reporte muestra los movimientos de efectivo del mes, partiendo de la utilidad neta y ajustando por cambios en cuentas por cobrar, cuentas por pagar y otras cuentas patrimoniales.
 

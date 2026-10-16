@@ -19,7 +19,12 @@ Los pasos para crear una factura son los siguientes:
 2. Seleccionar “Facturas no Pagadas”.
 3. Seleccionar “Nueva Factura”.
 
+<figure>
+
 ![imagen5](/img/ventas/ordenes-de-venta-o-facturas-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva factura. Los campos que debe llenar son los siguientes:
@@ -43,7 +48,12 @@ h. Coloque los productos, la cantidad y el precio unitario que desea facturar. P
 
 Para emitir la factura presione “Crear Factura”.
 
+<figure>
+
 ![imagen6](/img/ventas/ordenes-de-venta-o-facturas-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/new">{"https://app.zauru.com/sales/unpaid_invoices/new"}</a></figcaption>
+</figure>
 
 ## Listar Facturas no Pagadas
 
@@ -135,7 +145,12 @@ Para cambiar los números de serie:
 5. Para cada ítem se mostrará el **número de serie actual** y un selector con los números de serie disponibles en la agencia. Elija el nuevo número de serie para cada uno.
 6. Presione **"Guardar"**.
 
+<figure>
+
 ![cambiar-numeros-de-serie](/img/ventas/ordenes-de-venta-o-facturas-7.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/:id/change_serial_numbers">{"https://app.zauru.com/sales/unpaid_invoices/:id/change_serial_numbers"}</a></figcaption>
+</figure>
 
 El sistema genera internamente el movimiento de los ítems con los nuevos números de serie y, al finalizar, se mostrará un mensaje de confirmación. Tenga en cuenta las siguientes validaciones:
 

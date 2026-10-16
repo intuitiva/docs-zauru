@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con la lista en mano podrá corregir los duplicados a tiempo y mantener su numeración limpia y confiable.
 
+<figure>
+
 ![Lista del reporte Números de Factura Duplicados](/img/reportes-de-ventas/numeros-de-factura-duplicados-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/duplicated_invoice_numbers">{"https://app.zauru.com/sales/reports/duplicated_invoice_numbers"}</a></figcaption>
+</figure>

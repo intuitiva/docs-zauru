@@ -13,7 +13,12 @@ Cuando su empresa crece, las reglas de inventario dejan de ser obvias: ¿quién 
 
 Si es la primera vez que accede, verá el formulario para crear la configuración inicial. Si ya existe una configuración, podrá editarla.
 
+<figure>
+
 ![Formulario de configuración del módulo de Inventarios](/img/inventarios/inventarios-configuracion-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/inventories_settings/new">{"https://app.zauru.com/inventories/inventories_settings/new"}</a></figcaption>
+</figure>
 
 ## Opciones de configuración
 

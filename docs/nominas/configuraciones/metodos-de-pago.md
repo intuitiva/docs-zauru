@@ -16,7 +16,12 @@ Para gestionar metodos de pago:
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo metodo de pago](/img/nominas/configuraciones-de-nomina-6.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/payroll_payment_methods/new">{"https://app.zauru.com/payroll/settings/payroll_payment_methods/new"}</a></figcaption>
+</figure>
 
 - **Nombre**: nombre descriptivo del metodo (ej. "Deposito bancario", "Efectivo", "Cheque").
 - **Cuenta de nomina individual**: cuenta contable usada para pagos a empleados individuales.

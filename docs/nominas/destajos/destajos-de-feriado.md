@@ -12,7 +12,12 @@ Para crear un destajo de feriado:
 2. Seleccionar **"Destajos no pagados"**.
 3. Hacer clic en **"Nuevo destajo de asueto"**.
 
+<figure>
+
 ![3. Hacer clic en **"Nuevo destajo de asueto"**.](/img/nominas/destajos-5.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/piecework_holidays/new">{"https://app.zauru.com/payroll/piecework_holidays/new"}</a></figcaption>
+</figure>
 
 ## Crear un destajo de feriado
 

@@ -21,7 +21,12 @@ Los pasos para crear una reservación son:
 2. Seleccionar "Reservaciones".
 3. Seleccionar "Nueva Reservación".
 
+<figure>
+
 ![imagen1](/img/inventarios/envios-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 Los campos del formulario son:
 
@@ -41,7 +46,12 @@ Los campos del formulario son:
 
 Presionar "Crear envío" para guardar la reservación.
 
+<figure>
+
 ![imagen2](/img/inventarios/envios-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/new">{"https://app.zauru.com/inventories/bookings/new"}</a></figcaption>
+</figure>
 
 Para agregar paquetes en lugar de productos individuales, buscar el código del paquete que empieza con "b" seguido del ID (por ejemplo "b123"). Zauru desglosa el paquete en sus componentes con las cantidades correspondientes.
 

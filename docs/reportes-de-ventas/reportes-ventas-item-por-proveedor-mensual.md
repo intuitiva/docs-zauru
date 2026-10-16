@@ -12,12 +12,22 @@ Para ingresar a este reporte hay que seguir los siguientes pasos:
 2. Hacer click en Reportes
 3. Seleccionar al lado izquierdo Item del Proveedor Mensual
 
+<figure>
+
 ![imagen1](/img/reportes-de-ventas/reportes-ventas-item-por-proveedor-mensual-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/reports">{"https://app.zauru.com/sales/reports"}</a></figcaption>
+</figure>
 
 
 Después de seleccionar el mes, año y proveedor, se enlistara los productos que se le compro al proveedor. A un lado se puede ver la información los productos como la cantidad que se han vendido, el costo, precio y el margen promedio de ganancia.
 
+<figure>
+
 ![imagen2](/img/reportes-de-ventas/reportes-ventas-item-por-proveedor-mensual-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/monthly_vendor_items">{"https://app.zauru.com/sales/reports/monthly_vendor_items"}</a></figcaption>
+</figure>
 
 Es el reporte mensual de ítems por proveedor con ventas y costos calculados.
 

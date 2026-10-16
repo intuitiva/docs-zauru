@@ -13,7 +13,12 @@ Para ingresar al reporte:
 3. Seleccionar "Registro de Clientes entre Meses".
 4. Seleccionar los dos meses a comparar.
 
+<figure>
+
 ![Pantalla del reporte Registro de Clientes entre Meses mostrando los selectores de meses y botón de generar](/img/reportes-de-ventas/registro-de-clientes-entre-meses-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/record_of_clients_between_months">{"https://app.zauru.com/sales/reports/record_of_clients_between_months"}</a></figcaption>
+</figure>
 
 Incluye opción de exportar a PDF.
 

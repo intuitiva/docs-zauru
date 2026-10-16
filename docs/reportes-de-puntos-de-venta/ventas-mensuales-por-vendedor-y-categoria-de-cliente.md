@@ -14,7 +14,12 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+<figure>
+
 ![Vista del reporte Ventas Mensuales por Vendedor y Categoria de Cliente con filtros y resultados](/img/reportes-de-puntos-de-venta/ventas-mensuales-por-vendedor-y-categoria-de-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/reports/monthly_sales_by_seller_and_client_category">{"https://app.zauru.com/pos/reports/monthly_sales_by_seller_and_client_category"}</a></figcaption>
+</figure>
 
 - **Mes y ano**: seleccione el mes a consultar.
 - **Incluir IVA**: active esta opcion si desea que los montos incluyan IVA.

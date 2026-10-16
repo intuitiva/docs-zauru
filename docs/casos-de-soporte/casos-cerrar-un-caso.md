@@ -10,7 +10,12 @@ Cuando el técnico termina la reparación y el cliente ya recogió su equipo, lo
 2. Seleccionar **"Casos Abiertos"**.
 3. Seleccionar el boton de **"Cerrar Caso"** como se muestra en la imagen.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-cerrar-un-caso-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 Al cerrar el caso, el sistema automaticamente:
 - Cambia el estado del caso a **cerrado**.
@@ -20,7 +25,12 @@ Al cerrar el caso, el sistema automaticamente:
 
 Le aparecera un mensaje de exito en la pantalla, y ahora el caso lo podra encontrar en **"Casos Cerrados"**.
 
+<figure>
+
 ![imagen](/img/casos-de-soporte/casos-cerrar-un-caso-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/closed_cases">{"https://app.zauru.com/support/closed_cases"}</a></figcaption>
+</figure>
 
 Con el caso cerrado, su equipo ya no se confundirá con atenciones que en realidad terminaron. Si el caso dejó facturas sin emitir, el siguiente paso natural es facturarlas y cobrarlas; de lo contrario, el caso queda archivado y listo para consultarse en el historial de casos cerrados.
 

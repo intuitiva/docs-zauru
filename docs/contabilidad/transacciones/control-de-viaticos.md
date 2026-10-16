@@ -22,7 +22,12 @@ Los pasos para registrar la transferencia monetaria a la caja chica del empleado
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva transaccion".
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-control-de-viaticos-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 En el siguiente ejemplo se registra un cheque a un empleado desde "cuenta monetaria" hacia "caja chica del empleado". Las opciones para hacer la transferencia monetaria a la caja chica del empleado son las siguientes:
 
@@ -42,7 +47,12 @@ g. Coloque la cuenta de la caja chica del empleado, en este ejemplo se seleccion
 
 Para crear la transferencia seleccione "Crear nueva transaccion". El siguiente paso es registrar los gastos que haga el empleado de viaticos por medio de una transaccion contable que salga desde "caja chica empleados" hacia "viaticos".
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-control-de-viaticos-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Los pasos para registrar los gastos de viaticos hechos por el empleado son los siguientes:
 
@@ -50,7 +60,12 @@ Los pasos para registrar los gastos de viaticos hechos por el empleado son los s
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-control-de-viaticos-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Hay dos maneras de registrar los gastos:
 
@@ -77,7 +92,12 @@ h. Seleccione la cuenta gasto, en este ejemplo seleccionamos "gasolina", pero ta
 
 Para crear el registro de gastos seleccione "Crear nueva transaccion".
 
+<figure>
+
 ![imagen4](/img/contabilidad/transacciones-control-de-viaticos-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ## Pago de Viaticos Vencidos
 
@@ -87,7 +107,12 @@ Cuando se pagan viaticos vencidos, primero se registra el gasto que tuvo el empl
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen5](/img/contabilidad/transacciones-control-de-viaticos-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 En el siguiente ejemplo se muestra como registrar los gastos por factura. Las opciones a colocar para registrar los gastos de viaticos son las siguientes:
 
@@ -109,7 +134,12 @@ h. Seleccione la cuenta gasto, en este ejemplo seleccionamos "gasolina", pero ta
 
 Para crear el registro de gastos seleccione "Crear nueva transaccion".
 
+<figure>
+
 ![imagen6](/img/contabilidad/transacciones-control-de-viaticos-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 El siguiente paso es crear el pago de los viaticos al empleado. Los pasos para crear el pago son los siguientes:
 
@@ -117,7 +147,12 @@ El siguiente paso es crear el pago de los viaticos al empleado. Los pasos para c
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen7](/img/contabilidad/transacciones-control-de-viaticos-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 En el siguiente ejemplo se registra un cheque a un empleado desde "cuenta monetaria" hacia "cuentas por pagar a empleados" para saldar la deuda de viaticos vencidos. Los campos a llenar son los siguientes:
 
@@ -137,7 +172,12 @@ g. Coloque la cuenta "cuentas por pagar a empleados".
 
 Para crear la transferencia seleccione "Crear nueva transaccion".
 
+<figure>
+
 ![imagen8](/img/contabilidad/transacciones-control-de-viaticos-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ## Liquidaciones
 

@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Así su documentación fiscal queda completa y con el nivel de detalle que las revisiones suelen pedir.
 
+<figure>
+
 ![Reporte Detalle de Almacenamiento de Facturas Electrónicas](/img/reportes-de-ventas/detalle-de-almacenamiento-de-facturas-electronicas-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/electronic_invoice_details_storage">{"https://app.zauru.com/sales/reports/electronic_invoice_details_storage"}</a></figcaption>
+</figure>

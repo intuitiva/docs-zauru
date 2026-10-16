@@ -15,7 +15,12 @@ Los pasos para registrar una entrada en la bitacora son:
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, ubique la seccion de **Bitacora del Caso**.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-bitacora-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 5. Complete los campos de la nueva entrada:
    - **Fecha**: Fecha de la actividad registrada.
@@ -26,7 +31,12 @@ Los pasos para registrar una entrada en la bitacora son:
 
 6. Presione **"Crear Bitacora"**.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-bitacora-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 Las entradas de la bitacora se mostraran en orden cronologico en la pagina de detalles del caso. Cada entrada muestra la fecha y el texto registrado, asi como las imagenes y PDFs adjuntos.
 

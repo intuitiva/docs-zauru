@@ -23,7 +23,12 @@ Las siguientes imágenes muestran cómo crear una plantilla de impresión para c
 3. Seleccionar la pestaña de "Plantillas de Impresión".
 4. Presionar "Nueva Plantilla de Impresión".
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/formatos-impresion-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates">{"https://app.zauru.com/settings/templates/print_templates"}</a></figcaption>
+</figure>
 
 Aparecerán las opciones para crear la plantilla. En ellas se especifica el tamaño de la hoja y las columnas del encabezado, el cuerpo y el pie de página. Las opciones más relevantes son:
 
@@ -33,7 +38,12 @@ b. Seleccione la operación ligada a la plantilla de impresión. En el ejemplo s
 
 c. Si selecciona esta opción, la plantilla tendrá un campo para el título.
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/formatos-impresion-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates/new">{"https://app.zauru.com/settings/templates/print_templates/new"}</a></figcaption>
+</figure>
 
 d. Si selecciona este campo, la plantilla tendrá un campo para el subtítulo.
 
@@ -43,7 +53,12 @@ f. Si selecciona esta opción podrá incluir un segundo logo.
 
 g. Aquí debe seleccionar la imagen que usará como logo.
 
+<figure>
+
 ![imagen3](/img/primeros-pasos/formatos-impresion-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates/new">{"https://app.zauru.com/settings/templates/print_templates/new"}</a></figcaption>
+</figure>
 
 h. Este campo configura las filas y columnas de la cabecera, que puede llevar título y bordes. Usted especifica filas y columnas, y para titularlas debe marcar el recuadro "Título".
 
@@ -53,7 +68,12 @@ i. Aquí deberá colocar el espacio en cm. entre el encabezado y el cuerpo.
 
 j. Este campo configura las columnas del cuerpo y permite incluir un título al cuerpo y otro a las columnas. Al seleccionar "Pie de Página" se agrega una fila al cuerpo, que suele usarse para el total en letras y el total del formato.
 
+<figure>
+
 ![imagen4](/img/primeros-pasos/formatos-impresion-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates/new">{"https://app.zauru.com/settings/templates/print_templates/new"}</a></figcaption>
+</figure>
 
 k. Aquí deberá colocar el espacio en cm. entre el cuerpo y el pie de página.
 
@@ -65,13 +85,23 @@ n. Aquí selecciona cuántas impresiones salen por página; para facturas, por e
 
 Por último seleccione "Crear Plantilla de impresión" para guardar los cambios.
 
+<figure>
+
 ![imagen5](/img/primeros-pasos/formatos-impresion-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates/new">{"https://app.zauru.com/settings/templates/print_templates/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito confirmando que la plantilla fue creada. El siguiente paso es editar los datos que llevará.
 
 Para editar los datos, refiérase al paso 1 de la imagen.
 
+<figure>
+
 ![imagen6](/img/primeros-pasos/formatos-impresion-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates">{"https://app.zauru.com/settings/templates/print_templates"}</a></figcaption>
+</figure>
 
 ## Editar datos de la Plantilla de Impresión
 Después de establecer las medidas de la plantilla debe definir el tamaño de sus filas y columnas y los datos de cada casilla. La siguiente imagen muestra los datos de una plantilla de impresión de cheques.
@@ -82,13 +112,23 @@ Los pasos para colocar datos son:
 2. Debe colocar el alto y el ancho de sus filas y columnas.
 3. Dentro de cada celda debe colocar las variables establecidas en la tabla de la derecha, con un signo de dólar ($) al principio o también puede colocar texto plano en la celda, en este ejemplo se le coloca NO NEGOCIABLE a la celda porque queremos que nuestra plantilla de impresión de cheques siempre imprima este texto.
 
+<figure>
+
 ![imagen7](/img/primeros-pasos/formatos-impresion-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates/:id/edit_data">{"https://app.zauru.com/settings/templates/print_templates/:id/edit_data"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito confirmando que la plantilla fue creada. Antes de imprimir sobre cheques o facturas reales, haga pruebas en una hoja en blanco para ver si la plantilla necesita ajustes.
 
 En "Tareas Especiales" aparecen cuatro iconos: vista previa con datos de ejemplo, vista previa con las variables, editar datos y duplicar. En algunas plantillas aparece además la vista previa PDF. El siguiente ejemplo muestra cómo duplicar la plantilla de impresión.
 
+<figure>
+
 ![imagen8](/img/primeros-pasos/formatos-impresion-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates">{"https://app.zauru.com/settings/templates/print_templates"}</a></figcaption>
+</figure>
 
 ## Duplicar una plantilla de impresión
 Para tener dos plantillas parecidas sin crearlas desde cero, Zauru permite duplicar una plantilla existente: edite los datos de la copia y conserve la original.
@@ -99,13 +139,23 @@ La forma de duplicar una plantilla de impresión es la siguiente:
 2. Seleccionar "Plantillas".
 3. Seleccionar el botón de "Duplicar".
 
+<figure>
+
 ![imagen9](/img/primeros-pasos/formatos-impresion-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates">{"https://app.zauru.com/settings/templates/print_templates"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito confirmando que la plantilla fue duplicada. Zauru crea una copia con el mismo nombre más la palabra "copia" al final. Podrá editarla sin alterar la plantilla original.
 
 El último paso para imprimir es adjuntar la plantilla a una Impresión de Documentos. El siguiente ejemplo muestra cómo hacerlo.
 
+<figure>
+
 ![imagen10](/img/primeros-pasos/formatos-impresion-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/print_templates">{"https://app.zauru.com/settings/templates/print_templates"}</a></figcaption>
+</figure>
 
 ## Impresión de Documentos
 Después de crear la plantilla de impresión, se adjunta a una impresión de documentos para seleccionar en qué tipo de transacción se puede imprimir. También se agregan restricciones: en el caso de un cheque, que la transacción sea imprimible y salga desde la cuenta monetaria.
@@ -117,7 +167,12 @@ Los pasos para crear una impresión de documentos son los siguientes:
 3. Seleccionar "Impresión de Documentos".
 4. Seleccionar "Nueva impresión de Documentos".
 
+<figure>
+
 ![imagen11](/img/primeros-pasos/formatos-impresion-11.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_prints">{"https://app.zauru.com/settings/templates/document_prints"}</a></figcaption>
+</figure>
 
 Aparecerán las opciones para crear la impresión de documentos. Los pasos son:
 
@@ -127,7 +182,12 @@ Aparecerán las opciones para crear la impresión de documentos. Los pasos son:
 4. En este campo puede agregar las restricciones que usted desee para que se pueda usar esta impresión de documentos. En este ejemplo agregamos la restricción "Imprimible" para que cada vez que se haga una transacción con el cheque de Imprimible seleccionado, despliegue la impresión de documentos de cheque.
 5. Si usted selecciona el cheque le dará valor a esta restricción, si deja el cheque en blanco, la impresión de documentos aparecerá en cualquier transacción.
 
+<figure>
+
 ![imagen12](/img/primeros-pasos/formatos-impresion-12.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_prints/new">{"https://app.zauru.com/settings/templates/document_prints/new"}</a></figcaption>
+</figure>
 
 Ahora agregaremos una restricción para que la impresión de documentos solo salga desde la cuenta monetaria:
 
@@ -139,11 +199,21 @@ Ahora agregaremos una restricción para que la impresión de documentos solo sal
 
 9. Seleccione "Crear impresión de documento" para guardar los cambios.
 
+<figure>
+
 ![imagen13](/img/primeros-pasos/formatos-impresion-13.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_prints/new">{"https://app.zauru.com/settings/templates/document_prints/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito confirmando que la impresión de documento se creó.
 
+<figure>
+
 ![imagen14](/img/primeros-pasos/formatos-impresion-14.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_prints">{"https://app.zauru.com/settings/templates/document_prints"}</a></figcaption>
+</figure>
 
 
 ---

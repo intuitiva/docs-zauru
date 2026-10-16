@@ -12,7 +12,12 @@ Los pasos para ver el balance mensual del proyecto son los siguientes:
 2. Seleccionar “Reportes”.
 3. Seleccionar “Balance del Proyecto”.
 
+<figure>
+
 ![imagen1](/img/contabilizacion-de-proyectos/proyectos-balance-mensual-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 
@@ -20,6 +25,11 @@ Le aparecerá el balance del proyecto, para cambiar de proyecto, seleccione el p
 
 El balance se debe leer desde abajo hacia arriba, las transacciones están ordenadas por orden cronológico.
 
+<figure>
+
 ![imagen2](/img/contabilizacion-de-proyectos/proyectos-balance-mensual-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_balance">{"https://app.zauru.com/accounting/reports/tagged_balance"}</a></figcaption>
+</figure>
 
 Con esto ya sabe cómo está su proyecto mes a mes. Revisar este balance con regularidad le permitirá detectar a tiempo los gastos que se salen de lo planeado y tomar decisiones antes de que sea tarde; puede complementarlo con un presupuesto por proyecto para comparar lo presupuestado contra lo realmente ejecutado.

@@ -14,7 +14,12 @@ Los pasos para crear un nuevo reporte entregable son:
 2. Seleccionar "Reportes Entregables".
 3. Seleccionar "Nuevo Reporte Entregable".
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/reportes-entregables-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/deliverable_reports">{"https://app.zauru.com/settings/deliverable_reports"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear un nuevo reporte entregable:
 
@@ -44,11 +49,21 @@ i. **Asunto del correo:** Especifique el asunto que llevará el correo electrón
 
 Para guardar los cambios presione "Crear Reporte entregable".
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/reportes-entregables-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/deliverable_reports/:id/edit">{"https://app.zauru.com/settings/deliverable_reports/:id/edit"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que el reporte entregable se creó exitosamente.
 
+<figure>
+
 ![imagen3](/img/primeros-pasos/reportes-entregables-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/deliverable_reports">{"https://app.zauru.com/settings/deliverable_reports"}</a></figcaption>
+</figure>
 
 ## Enviar Reporte de Prueba
 

@@ -12,14 +12,24 @@ Los pasos para ver el costo promedio ponderado de sus productos son los siguient
 2. Seleccionar “Costos Totales”.
 3. Seleccionar “Verificar” (El Ojo) en el producto que desea ver.
 
+<figure>
+
 ![imagen1](/img/compras/costos-totales-consolidados-costo-promedio-ponderado-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs">{"https://app.zauru.com/purchases/computed_costs"}</a></figcaption>
+</figure>
 
 
 Le aparecerán los detalles del costo total, en donde podrá encontrar el registro de todas las compras que se han hecho de este producto, la cantidad, el costo unitario y el costo por cantidad al que se compro.
 
 En la parte inferior del reporte podrá encontrar el Promedio que es el costo promedio ponderado según las compras que ha hecho de este producto.
 
+<figure>
+
 ![imagen2](/img/compras/costos-totales-consolidados-costo-promedio-ponderado-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/computed_costs/:id">{"https://app.zauru.com/purchases/computed_costs/:id"}</a></figcaption>
+</figure>
 
 Con el costo promedio ponderado a la vista, usted ya sabe cuánto le cuesta realmente cada producto que tiene en bodega, aunque los precios de compra hayan subido o bajado entre pedido y pedido. Esa es la cifra que Zauru utiliza para valorar su inventario y calcular el margen de ganancia de cada venta.
 

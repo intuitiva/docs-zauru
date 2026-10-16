@@ -25,7 +25,12 @@ Adicionalmente, existe una vista de **solicitudes anuladas** que muestra todas l
 
 ## Solicitudes no procesadas
 Cuando por alguna razón, las solicitudes no han sido procesadas el error va a aparecer en la sección de errores y esto me va a permitir tomar acción para corregirla y reprocesarla o destruirla.
+<figure>
+
 ![errores y acciones de solicitudes de ecommerce](/img/e-commerce/recepcion-de-solicitudes-de-e-commerce-pedidos-1.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/ecommerce_requests">{"https://app.zauru.com/ecommerce/ecommerce_requests"}</a></figcaption>
+</figure>
 
 El volver a procesar la solicitud intentará:
 1. Validar que el pedido coincida con la información en Zauru, específicamente códigos del item (SKUs) y existencias disponibles

@@ -5,7 +5,12 @@ sidebar_position: 3
 ---
 
 Cuando su webapp vaya a crear o consultar documentos por medio del API —una factura, una orden de compra, un envío— le convendrá saber exactamente cómo se llama cada campo, qué tipo de dato espera y cuáles son obligatorios antes de enviar la primera petición. Por ejemplo, si su aplicación registrará facturas, querrá confirmar si el campo `taxable` es requerido o si puede omitirlo. Esta página es esa referencia: el listado de campos de cada tipo de documento, con su nombre, tipo de dato, valor predeterminado y si es obligatorio o no.
+<figure>
+
 ![estructura documento](/img/webapps/estructura-de-documentos-1.png)
+
+<figcaption><a href="https://app.zauru.com/apps/documents_structures">{"https://app.zauru.com/apps/documents_structures"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

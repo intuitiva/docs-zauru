@@ -33,7 +33,12 @@ Los pasos para crear una nueva solicitud de traslado son los siguientes:
 
 Le aparecerán los campos para crear la solicitud, los cuales debe llenar de la siguiente manera:
 
+<figure>
+
 ![Formulario de nueva solicitud de traslado con campos de bodega origen, destino, solicitante y productos](/img/inventarios/inventarios-solicitudes-de-traslado-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/new">{"https://app.zauru.com/inventories/open_transfer_requests/new"}</a></figcaption>
+</figure>
 
 a. **Bodega origen**: Seleccione la bodega desde donde se solicita el traslado de los productos. Solo se muestran bodegas activas, no virtuales y que sean almacén.
 
@@ -62,7 +67,12 @@ Al igual que en las reservaciones, puede seleccionar paquetes (bundles) en las s
 
 En los detalles de una solicitud de traslado, puede ver la disponibilidad de stock de cada producto solicitado en la bodega origen. Esto le permite saber si hay suficiente inventario para satisfacer la solicitud:
 
+<figure>
+
 ![Detalle de solicitud de traslado mostrando disponibilidad de stock en bodega origen](/img/inventarios/inventarios-solicitudes-de-traslado-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
+</figure>
 
 - **Productos con stock disponible**: Se muestran con la cantidad disponible en verde.
 - **Productos sin stock disponible**: Se muestran con disponibilidad en cero o insuficiente.
@@ -80,7 +90,12 @@ Para ver las solicitudes que están activas:
 
 La vista principal muestra las solicitudes abiertas. Puede filtrar por:
 
+<figure>
+
 ![Listado de solicitudes de traslado abiertas con filtros por estado](/img/inventarios/inventarios-solicitudes-de-traslado-3.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/index">{"https://app.zauru.com/inventories/open_transfer_requests/index"}</a></figcaption>
+</figure>
 
 - **Nuevas (Open)**: Solicitudes recién creadas sin envíos generados.
 - **En proceso (In Progress)**: Solicitudes con al menos un envío parcial generado.
@@ -95,7 +110,12 @@ Cuando una solicitud ha sido completamente satisfecha (todas las cantidades fuer
 
 Aquí podrá ver el historial de solicitudes que ya fueron completadas. También puede ver sus detalles y los envíos asociados.
 
+<figure>
+
 ![Listado de solicitudes de traslado cerradas con historial completado](/img/inventarios/inventarios-solicitudes-de-traslado-4.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/closed_transfer_requests/index">{"https://app.zauru.com/inventories/closed_transfer_requests/index"}</a></figcaption>
+</figure>
 
 ## Editar una solicitud de traslado
 
@@ -130,7 +150,12 @@ Cuando una solicitud de traslado tiene productos sin stock suficiente en la bode
 
 1. Abra los detalles de la solicitud de traslado.
 
+<figure>
+
 ![Detalle de solicitud de traslado con opción de crear requisición de compra](/img/inventarios/inventarios-solicitudes-de-traslado-6.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
+</figure>
 
 2. Seleccione "Crear requisición de compra".
 
@@ -152,7 +177,12 @@ Para satisfacer una solicitud de traslado, debe crear envíos (reservaciones) de
 
 1. Abra los detalles de la solicitud.
 
+<figure>
+
 ![Sección de envíos en detalle de solicitud con botón de nuevo envío](/img/inventarios/inventarios-solicitudes-de-traslado-7.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
+</figure>
 
 2. En la sección de envíos, seleccione "Nuevo envío".
 
@@ -167,7 +197,12 @@ Al crear el envío, las cantidades reservadas se descuentan de las cantidades so
 
 Además del botón "Autorizar", en los detalles de una solicitud de traslado abierta aparece el botón "Autorizar solo stock disponible". Este botón le permite generar el envío (reservación) reservando únicamente la cantidad de stock que realmente está disponible en la bodega origen, en lugar de la cantidad completa solicitada.
 
+<figure>
+
 ![Detalle de solicitud de traslado abierta con botón de autorizar solo stock disponible](/img/inventarios/inventarios-solicitudes-de-traslado-8.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/open_transfer_requests/:id">{"https://app.zauru.com/inventories/open_transfer_requests/:id"}</a></figcaption>
+</figure>
 
 1. Abra los detalles de una solicitud de traslado abierta.
 

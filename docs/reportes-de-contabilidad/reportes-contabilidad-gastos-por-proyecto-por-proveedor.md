@@ -12,11 +12,21 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 2. Ingresar a Reportes
 3. Seleccionar Gastos por Proyectos por Proveedor
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-por-proyecto-por-proveedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 Al seleccionar el proyecto, se verá enlistada toda la información de los gastos que se han realizado con el proveedor seleccionado.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-por-proyecto-por-proveedor-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_expenses_by_vendor">{"https://app.zauru.com/accounting/reports/tagged_expenses_by_vendor"}</a></figcaption>
+</figure>
 
 Con esta lista podrá comparar lo gastado con cada proveedor y tener las cuentas a la mano cuando llegue el momento de pagarles.

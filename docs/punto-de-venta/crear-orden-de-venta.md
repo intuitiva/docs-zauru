@@ -24,17 +24,32 @@ e. **Cantidad**: use "+" y "-" para agregar o quitar unidades del mismo producto
 
 f. **Sujeto a impuestos**: seleccione si la orden se emitirá como factura o solo como recibo comprobante.
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/crear-orden-de-venta-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/sale_orders/new">{"https://app.zauru.com/pos/sale_orders/new"}</a></figcaption>
+</figure>
 
 Agregue los productos o servicios y la cantidad; defina si la orden registra impuestos o es solo recibo, y presione "Guardar" para emitirla.
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/crear-orden-de-venta-2.png)
+
+<figcaption><a href="https://app.zauru.com/pos/sale_orders/new">{"https://app.zauru.com/pos/sale_orders/new"}</a></figcaption>
+</figure>
 
 Al presionar "Guardar", la orden se genera automáticamente y los productos almacenables quedan reservados.
 
 Después de crearla, todavía puede editarla para agregar o quitar productos, eliminarla o emitir la factura.
 
+<figure>
+
 ![imagen3](/img/punto-de-venta/crear-orden-de-venta-3.png)
+
+<figcaption><a href="https://app.zauru.com/pos/sale_orders">{"https://app.zauru.com/pos/sale_orders"}</a></figcaption>
+</figure>
 
 ## Listado de órdenes de venta
 

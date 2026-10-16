@@ -11,4 +11,9 @@ Para acceder a los reportes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Reportes"**.
 
+<figure>
+
 ![imagen1](/img/produccion/reportes-de-produccion-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/reports">{"https://app.zauru.com/production/reports"}</a></figcaption>
+</figure>

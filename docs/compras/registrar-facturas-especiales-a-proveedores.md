@@ -22,11 +22,21 @@ A continuación, se detallan los pasos a seguir para configurar el término de p
 
 3.       Seleccionar Nuevo término de pago.
 
+<figure>
+
 ![Compras / Configuración / Nuevo termino de pago](/img/compras/registrar-facturas-especiales-a-proveedores-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_terms">{"https://app.zauru.com/purchases/settings/charge_terms"}</a></figcaption>
+</figure>
 
 A continuación llenar las casillas señaladas, *__por favor tome en cuenta que debe apoyarse con su contador o departamento contable para asegurarse que cuentas contables necesita utilizar__*.
 
+<figure>
+
 ![Compras / término de pago](/img/compras/registrar-facturas-especiales-a-proveedores-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/charge_terms/new">{"https://app.zauru.com/purchases/settings/charge_terms/new"}</a></figcaption>
+</figure>
 
 ### Numeración Automática de Documentos (para Facturas Electrónicas Especiales FEL)
 
@@ -38,7 +48,12 @@ A continuación, se detallan los pasos a seguir para configurar la numeración a
 
 3.       Seleccionar Nuevo número automático de documentos.
 
+<figure>
+
 ![Configuración/Plantillas/Nuevo número automático de documentos](/img/compras/registrar-facturas-especiales-a-proveedores-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_automatic_numbers">{"https://app.zauru.com/settings/templates/document_automatic_numbers"}</a></figcaption>
+</figure>
 
 A continuación llenar las casillas señaladas, con las cuentas que corresponden.
 
@@ -50,7 +65,12 @@ A continuación llenar las casillas señaladas, con las cuentas que corresponden
 
 4.       Seleccionar su emisor de facturas electrónicas.
 
+<figure>
+
 ![Plantillas / Facturas especiales](/img/compras/registrar-facturas-especiales-a-proveedores-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/templates/document_automatic_numbers/new">{"https://app.zauru.com/settings/templates/document_automatic_numbers/new"}</a></figcaption>
+</figure>
 
 ## Creación de Facturas Especiales
 
@@ -58,7 +78,12 @@ A continuación llenar las casillas señaladas, con las cuentas que corresponden
 2.       Seleccionar Compras.
 3.       Seleccionar Nueva orden de compra.
 
+<figure>
+
 ![Compras / Nueva orden de compra](/img/compras/registrar-facturas-especiales-a-proveedores-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 A continuación llenar las casillas señaladas, con los datos que corresponde.
 
@@ -66,11 +91,21 @@ A continuación llenar las casillas señaladas, con los datos que corresponde.
 2.       En término de pago seleccionar __Factura Especial__.
 3.       Busque a su proveedor o cree uno nuevo.
 
+<figure>
+
 ![Compras / Nueva orden de compra](/img/compras/registrar-facturas-especiales-a-proveedores-6.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 4.       Si es compra de productos seleccionar la opción de __Detalle de ïtem__ y seleccionar el/los ítem(s) comprado(s), si es algún servicio, seleccionar la opción de __Detalle de cuentas__ y seleccionar la cuenta contable que implique el gasto realizado.
 
+<figure>
+
 ![Compras / Factura especial 2/3](/img/compras/registrar-facturas-especiales-a-proveedores-7.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 5.       Desplazarse al final de la página y dar click en __Crear la orden compra.__
 
@@ -78,13 +113,23 @@ A continuación llenar las casillas señaladas, con los datos que corresponde.
 
 Notar que la transacción hacia cuentas por pagar queda con valor de Q.100.00.
 
+<figure>
+
 ![Transaccion OK Factura especial](/img/compras/registrar-facturas-especiales-a-proveedores-8.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 ### Diferencias entre la impresión y el registro de la Factura Especial
 
 Notar que la Factura Especial da el total de Q.117.89.
 
+<figure>
+
 ![Muestra de Factura Especial](/img/compras/registrar-facturas-especiales-a-proveedores-9.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id/print">{"https://app.zauru.com/purchases/purchase_orders/:id/print"}</a></figcaption>
+</figure>
 
 Con la Factura Especial emitida, su compra queda respaldada legalmente aunque el proveedor no le haya entregado factura, y la transacción queda registrada en su contabilidad. Si acumula varias de estas compras, puede agrupar las órdenes ya recibidas y pendientes de pago en un consolidado de factura especial para emitir un solo documento.
 

@@ -13,7 +13,12 @@ Los pasos para crear un presupuesto mensual por proyecto son los siguientes:
 3. Seleccionar la pestaña “Presupuestos por Proyecto”.
 4. Seleccionar “Nuevo Presupuesto del Proyecto”.
 
+<figure>
+
 ![imagen1](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tagged_budgets">{"https://app.zauru.com/accounting/budgets/tagged_budgets"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo presupuesto de proyecto, los campos a llenar son los siguientes:
 
@@ -25,19 +30,34 @@ c. Coloque el monto total del proyecto.
 
 d. Coloque el rubro de gastos o ingresos y coloque la cantidad presupuestada. Para agregar un rubro extra presione “+” para agregar dos rubros extras presione “+2”.
 
+<figure>
+
 ![imagen2](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tagged_budgets/new">{"https://app.zauru.com/accounting/budgets/tagged_budgets/new"}</a></figcaption>
+</figure>
 
 
 
 Cuando termine de especificar los gastos presupuestados para el proyecto presione “Crear presupuesto por proyecto”.
 
+<figure>
+
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tagged_budgets/new">{"https://app.zauru.com/accounting/budgets/tagged_budgets/new"}</a></figcaption>
+</figure>
 
 
 
 Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se creo el presupuesto exitosamente. Podrá ver los detalles de su proyecto en el botón de “Ver” (ojo).
 
+<figure>
+
 ![imagen4](/img/contabilizacion-de-proyectos/proyectos-presupuestos-mensuales-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets/tagged_budgets">{"https://app.zauru.com/accounting/budgets/tagged_budgets"}</a></figcaption>
+</figure>
 
 Ya tiene su presupuesto por proyecto creado y puede consultar sus detalles cuando lo necesite. A medida que vaya adjuntando gastos y facturas al proyecto, podrá comparar lo presupuestado contra lo ejecutado en el balance, y así mantener la obra dentro de lo planeado.
 

@@ -12,11 +12,21 @@ Los pasos para importar existencias son los siguientes:
 2. Seleccionar "Existencias".
 3. Seleccionar "Importar".
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-existencia-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks">{"https://app.zauru.com/inventories/stocks"}</a></figcaption>
+</figure>
 
 4. Descargar la plantilla con los campos predefinidos para importar existencias. Hay plantillas disponibles para CSV, Excel (.xls) y OpenOffice/LibreOffice (.ods).
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-existencia-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/stock_imports/new">{"https://app.zauru.com/inventories/stocks/stock_imports/new"}</a></figcaption>
+</figure>
 
 Los campos de la plantilla son los siguientes:
 
@@ -40,7 +50,12 @@ Después de preparar la plantilla, los pasos para continuar con la importación 
 6. Seleccionar el archivo creado; conviene revisar que las cantidades sean correctas.
 7. Presionar "Importar existencias".
 
+<figure>
+
 ![imagen4](/img/inventarios/inventarios-existencia-4.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks/stock_imports/new">{"https://app.zauru.com/inventories/stocks/stock_imports/new"}</a></figcaption>
+</figure>
 
 Con la importación hecha, sus productos ya tienen existencias en la bodega y están listos para moverse: puede reservarlos en un envío, venderlos o auditarlos. Si más adelante abre otra bodega, el mismo procedimiento le sirve para dejarla con existencias al día.
 

@@ -15,15 +15,30 @@ Los pasos para crear una nueva categoría de etiqueta son:
 1. Ir a "Configuraciones".
 2. Seleccionar "Etiquetas".
 
+<figure>
+
 ![Listado de etiquetas y categorías en Configuraciones > Etiquetas](/img/primeros-pasos/etiquetas-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags">{"https://app.zauru.com/settings/tags"}</a></figcaption>
+</figure>
 
 3. Seleccionar la pestaña "Categoría de Etiquetas".
 
+<figure>
+
 ![Pestaña de categorías de etiquetas y botón nueva categoría](/img/primeros-pasos/etiquetas-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags">{"https://app.zauru.com/settings/tags"}</a></figcaption>
+</figure>
 
 4. Seleccionar "Nueva Categoría de Etiqueta".
 
+<figure>
+
 ![Formulario de nueva categoría de etiqueta](/img/primeros-pasos/etiquetas-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/tag_categories/new">{"https://app.zauru.com/settings/tags/tag_categories/new"}</a></figcaption>
+</figure>
 
 ## Nueva Etiqueta
 
@@ -33,7 +48,12 @@ Los pasos para crear una nueva etiqueta son:
 2. Seleccionar "Etiquetas".
 3. Seleccionar "Nueva Etiqueta".
 
+<figure>
+
 ![Formulario de nueva etiqueta](/img/primeros-pasos/etiquetas-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/new">{"https://app.zauru.com/settings/tags/new"}</a></figcaption>
+</figure>
 
 4. Colocar el nombre de la etiqueta.
 5. Seleccionar la categoría a la que pertenece (opcional).

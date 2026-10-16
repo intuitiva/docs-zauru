@@ -14,7 +14,12 @@ Los pasos para crear una requisicion de compra son los siguientes:
 2. Seleccionar "Requisiciones de Compra".
 3. Seleccionar "Nueva Requisicion de Compra".
 
+<figure>
+
 ![imagen1](/img/compras/requisiciones-de-compra-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions/new">{"https://app.zauru.com/purchases/purchase_requisitions/new"}</a></figcaption>
+</figure>
 
 Le apareceran las opciones para crear una nueva requisicion de compra, los campos que debe llenar son los siguientes:
 
@@ -36,11 +41,21 @@ g. Si selecciono "Detalle de cuentas", seleccione las cuentas contables, el cost
 
 h. Presione "Crear requisicion de compra" para guardar los cambios.
 
+<figure>
+
 ![imagen2](/img/compras/requisiciones-de-compra-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions/new">{"https://app.zauru.com/purchases/purchase_requisitions/new"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito notificandole que la requisicion fue creada exitosamente.
 
+<figure>
+
 ![imagen3](/img/compras/requisiciones-de-compra-3.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions/:id">{"https://app.zauru.com/purchases/purchase_requisitions/:id"}</a></figcaption>
+</figure>
 
 ## Aprobar requisiciones de compra
 
@@ -58,7 +73,12 @@ Los pasos para aprobar una requisicion individual son los siguientes:
 3. Seleccionar "Detalles" (El Ojo) en la requisicion que desea aprobar.
 4. Seleccionar "Aprobar".
 
+<figure>
+
 ![imagen4](/img/compras/requisiciones-de-compra-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions/:id/approval_result">{"https://app.zauru.com/purchases/purchase_requisitions/:id/approval_result"}</a></figcaption>
+</figure>
 
 Al aprobar la requisicion, esta cambiara su estado a "Aprobada" y ya no podra ser editada.
 
@@ -73,7 +93,12 @@ Los pasos para aprobar en lote son los siguientes:
 3. Seleccionar las requisiciones que desea aprobar marcando las casillas correspondientes.
 4. Seleccionar "Aprobar en Lote".
 
+<figure>
+
 ![imagen5](/img/compras/requisiciones-de-compra-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_requisitions">{"https://app.zauru.com/purchases/purchase_requisitions"}</a></figcaption>
+</figure>
 
 Le aparecera el formulario de aprobacion en lote, los campos que debe llenar son los siguientes:
 
@@ -85,11 +110,21 @@ c. Verifique o ajuste el costo unitario de cada producto. El sistema le sugerira
 
 d. Presione "Aprobar y Crear Ordenes de Compra".
 
+<figure>
+
 ![imagen6](/img/compras/requisiciones-de-compra-6.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 El sistema creara automaticamente las ordenes de compra agrupadas por proveedor. Le aparecera un resumen de las ordenes de compra creadas.
 
+<figure>
+
 ![imagen7](/img/compras/requisiciones-de-compra-7.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 ## Ver el resultado de la aprobacion
 

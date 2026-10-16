@@ -11,11 +11,21 @@ Los pasos para ver el costo real de sus productos en una orden de compra son los
 2. Seleccionar “Ordenes de Compra”.
 3. Seleccionar “Verificar” (El Ojo).
 
+<figure>
+
 ![imagen1](/img/compras/costo-real-de-la-orden-de-compra-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Le aparecerán los detalles de la orden de compra, en la parte inferior de la página podrá encontrar los costos unitarios preliminares, como se muestra en la imagen, en donde podrá ver como aumenta el costo de sus productos con cada cargo o arancel agregado a la orden de compra.
 
+<figure>
+
 ![imagen2](/img/compras/costo-real-de-la-orden-de-compra-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Con el costo real verificado, ya puede confiar en que su margen de ganancia se calcula sobre el costo completo de la mercadería y no solo sobre el precio que le facturó el proveedor. Si quiere revisar el costo promedio que Zauru maneja para un producto a lo largo de todas sus compras, puede consultar los costos totales consolidados de ese producto.
 

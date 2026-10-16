@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Así puede cuadrar cada turno por separado y detectar rápidamente cualquier diferencia de caja.
 
+<figure>
+
 ![Pantalla del reporte Cierre por Hora con filtros de punto de venta, fecha y rango horario.](/img/reportes-de-ventas/cierre-por-hora-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/hourly_close">{"https://app.zauru.com/sales/reports/hourly_close"}</a></figcaption>
+</figure>

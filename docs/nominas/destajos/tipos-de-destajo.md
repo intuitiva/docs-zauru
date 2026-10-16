@@ -16,7 +16,12 @@ Para gestionar tipos de destajo:
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo tipo de destajo](/img/nominas/configuraciones-de-nomina-9.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/piecework_types/new">{"https://app.zauru.com/payroll/settings/piecework_types/new"}</a></figcaption>
+</figure>
 
 - **Activo**: marcar para que este disponible.
 - **Nombre**: nombre del tipo de destajo (ej. "Corte de cafe", "Siembra", "Limpieza de terreno").

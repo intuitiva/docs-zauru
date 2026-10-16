@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con esa vista completa sabrá cuánto le debe realmente cada cliente, facturado o no, antes de decidir nuevas ventas al crédito.
 
+<figure>
+
 ![Reporte de Pagos Pendientes de Clientes Incluyendo Órdenes mostrando la tabla de resultados.](/img/reportes-de-ventas/pagos-pendientes-de-clientes-incluyendo-ordenes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/clients_unpaid_payments_include_orders">{"https://app.zauru.com/sales/reports/clients_unpaid_payments_include_orders"}</a></figcaption>
+</figure>

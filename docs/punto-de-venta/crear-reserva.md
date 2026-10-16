@@ -15,7 +15,12 @@ Para ver las reservas existentes:
 
 Le aparecera un listado con todas las reservas que no han sido enviadas, entregadas, anuladas ni devueltas, filtradas por la agencia del usuario actual.
 
+<figure>
+
 ![Listado de reservas de inventario en el punto de venta](/img/punto-de-venta/crear-reserva-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/bookings">{"https://app.zauru.com/pos/bookings"}</a></figcaption>
+</figure>
 
 Desde el listado usted podra:
 
@@ -38,7 +43,12 @@ Los pasos para crear una nueva reserva son:
 
 Le apareceran las opciones para crear una nueva reserva. Los campos que debe llenar son:
 
+<figure>
+
 ![Formulario para crear una nueva reserva de inventario](/img/punto-de-venta/crear-reserva-2.png)
+
+<figcaption><a href="https://app.zauru.com/pos/bookings/new">{"https://app.zauru.com/pos/bookings/new"}</a></figcaption>
+</figure>
 
 a. **Agencia origen**: La bodega desde donde se reservaran los productos. Se asigna automaticamente segun la agencia del usuario.
 

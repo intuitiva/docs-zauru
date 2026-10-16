@@ -59,7 +59,12 @@ Si sus empleados ganan por destajo, sus vacaciones no se pueden pagar sobre un s
 
 Cuando termina un contrato, el sistema no solo calcula la indemnización: también debe decidir cómo pagar el último salario, los incidentes, el tiempo fuera personal pendiente y los beneficios del empleado. Esta sección controla ese comportamiento y la contabilización de la liquidación.
 
+<figure>
+
 ![Configuracion del manejo del pago al terminar un contrato](/img/nominas/configuraciones-de-nomina-6.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/payroll_settings/new">{"https://app.zauru.com/payroll/settings/payroll_settings/new"}</a></figcaption>
+</figure>
 
 - **Cuenta de gasto de indemnizacion**: cuenta contable donde se registra el gasto de la indemnizacion (por lo general una cuenta tipo "Indemnizacion" o "Terminacion de empleado"). Suele coincidir con la cuenta de liquidacion.
 - **Cuenta de tiempo fuera personal (PTO)**: cuenta contable donde se registra el pago de los días de tiempo fuera personal pendientes al terminar el contrato.

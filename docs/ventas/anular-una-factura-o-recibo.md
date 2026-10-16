@@ -19,21 +19,41 @@ En el siguiente ejemplo se muestra como anular el pago de una factura pagada, pa
 2. Seleccionar “Facturas Pagadas”.
 3. Seleccionar “Verificar” (El ojo) para ver los detalles de la factura.
 
+<figure>
+
 ![imagen1](/img/ventas/anular-una-factura-o-recibo-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices">{"https://app.zauru.com/sales/paid_invoices"}</a></figcaption>
+</figure>
 
 Aparecerán los detalles de la factura, en la parte inferior de la pagina podrá encontrar los cobros asociados. Haga click sobre el ID o la referencia del cobro que quiere eliminar.
 
+<figure>
+
 ![imagen2](/img/ventas/anular-una-factura-o-recibo-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices/:id">{"https://app.zauru.com/sales/paid_invoices/:id"}</a></figcaption>
+</figure>
 
 
 
 Aparecerán los detalles del pago, presione “Destruirlo” en la parte inferior de la página para eliminar el pago asociado a la factura.
 
+<figure>
+
 ![imagen3](/img/ventas/anular-una-factura-o-recibo-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito en pantalla notificándole que el pago se anulo exitosamente.
 
+<figure>
+
 ![imagen4](/img/ventas/anular-una-factura-o-recibo-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments">{"https://app.zauru.com/sales/payments"}</a></figcaption>
+</figure>
 
 ## Anular una factura no pagada
 
@@ -43,11 +63,21 @@ Ahora la factura ya no aparecerá como factura pagada, si no como factura no pag
 2. Seleccionar “Facturas no Pagadas”.
 3. Click sobre “Eliminar” (Basurero)
 
+<figure>
+
 ![imagen5](/img/ventas/anular-una-factura-o-recibo-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificándole que la factura fue eliminada exitosamente, automáticamente se regresaran los productos que habían salido de la bodega, y se regresara
 
+<figure>
+
 ![imagen6](/img/ventas/anular-una-factura-o-recibo-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 ## Facturas Anuladas

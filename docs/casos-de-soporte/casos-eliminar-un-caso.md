@@ -23,7 +23,12 @@ Antes de eliminar un caso, tome en cuenta lo siguiente:
 3. Localizar el caso que desea eliminar.
 4. Hacer click sobre el icono de **"Eliminar"** (basurero).
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-eliminar-un-caso-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 5. El sistema le mostrara un mensaje de confirmacion: **"Esta seguro de destruirlo?"**
 6. Confirme la eliminacion.

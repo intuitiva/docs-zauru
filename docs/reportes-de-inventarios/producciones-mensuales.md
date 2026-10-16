@@ -19,6 +19,11 @@ Para generar el reporte:
 
 **Columnas**: empleado, cantidad de envios de produccion realizados.
 
+<figure>
+
 ![Resultado del reporte Producciones mensuales mostrando la tabla con empleado y cantidad de envíos de producción realizados.](/img/reportes-de-inventarios/producciones-mensuales-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/monthly_productions">{"https://app.zauru.com/inventories/reports/monthly_productions"}</a></figcaption>
+</figure>
 
 Este resumen le da una forma justa y transparente de comparar la actividad de su equipo de producción mes a mes.

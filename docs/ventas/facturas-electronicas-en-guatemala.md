@@ -33,12 +33,22 @@ Este es un archivo *.pfx* que adentro contiene un certificado con su llave priva
 
 Con este archivo se firma cada documento tributario electrónico que la SAT verifica su autenticidad ya que la misma SAT generó ese certificado.
 
+<figure>
+
 ![certificado con contrasenia](/img/ventas/facturas-electronicas-en-guatemala-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/sales_settings/new">{"https://app.zauru.com/sales/settings/sales_settings/new"}</a></figcaption>
+</figure>
 
 ### Credenciales para comunicarse al GFACE
 Estas credenciales usualmente son un usuario y contraseña (a veces se refieren al mismo como un APIKEY). Estas credenciales le van a permitir a Zauru enviarle documentos al GFACE para que los procese y nos responda.
 
+<figure>
+
 ![credenciales gface](/img/ventas/facturas-electronicas-en-guatemala-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/sales_settings/new">{"https://app.zauru.com/sales/settings/sales_settings/new"}</a></figcaption>
+</figure>
 
 ### Número de sucursal registrada en la SAT para las agencias vigentes
 Usualmente es un número correlativo empezando por 1. El portal del GFACE usualmente tiene esa información.

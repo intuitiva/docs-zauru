@@ -13,9 +13,19 @@ Para visualizar el reporte de Existencias de ítems de un proveedor debemos de:
 - Sección de Existencias
 - Seleccionar Existencias de ítems de un proveedor.
 
+<figure>
+
 ![Existencias de items](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-1.png)
 
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
+
+<figure>
+
 ![Existencias de iems](/img/reportes-de-inventarios/existencias-de-items-de-un-proveedor-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/vendor_stocks">{"https://app.zauru.com/inventories/reports/vendor_stocks"}</a></figcaption>
+</figure>
 
 El reporte muestra el nivel actual de existencias de todos los productos de un proveedor, incluyendo disponible, entrante y saliente.
 

@@ -9,7 +9,12 @@ El primer día de trabajo con Zauru, o cada mañana al encender la computadora, 
 Para accesar a Zauru escribimos en el URL de nuestro navegador (firefox, chrome, safari, edge, opera):
 > [app.zauru.com](https://app.zauru.com)
 
+<figure>
+
 ![escribir app zauru com-2](/img/configuraciones-de-mi-usuario/ingresar-a-zauru-1.png)
+
+<figcaption><a href="https://app.zauru.com/">{"https://app.zauru.com/"}</a></figcaption>
+</figure>
 
 El sistema __va a cambiar__ el URL para redirigirlos a nuestro autorizador de oAuth que está en id.zauru.com.
 

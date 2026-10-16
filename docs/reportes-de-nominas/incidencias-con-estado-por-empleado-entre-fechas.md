@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con los estados a la vista sabrá cuáles incidencias están listas para incluirse y cuáles conviene revisar antes de pagar.
 
+<figure>
+
 ![Vista del reporte Incidencias con Estado por Empleado entre Fechas con filtros de fecha y tabla de resultados](/img/reportes-de-nominas/incidencias-con-estado-por-empleado-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/incidents_with_status_by_employee_between_dates">{"https://app.zauru.com/payroll/reports/incidents_with_status_by_employee_between_dates"}</a></figcaption>
+</figure>

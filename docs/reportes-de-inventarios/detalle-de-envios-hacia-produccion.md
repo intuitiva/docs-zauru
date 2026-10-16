@@ -8,7 +8,12 @@ Antes de producir, los insumos tienen que llegar a la bodega virtual de Producci
 
 Para generar el reporte:
 
+<figure>
+
 ![Formulario de filtros del reporte Detalle de envios hacia produccion (mes y año)](/img/reportes-de-inventarios/detalle-de-envios-hacia-produccion-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/monthly_shipment_details_to_production">{"https://app.zauru.com/inventories/reports/monthly_shipment_details_to_production"}</a></figcaption>
+</figure>
 
 1. Ir a "Inventarios" > "Reportes".
 2. Seleccionar "Detalle de envios hacia produccion".

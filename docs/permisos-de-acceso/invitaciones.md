@@ -12,15 +12,30 @@ Para crear un nuevo usuario deberá enviar una invitación al correo electrónic
 2. Seleccionar “Invitaciones”.
 3. Seleccionar el botón de “Nueva invitación”.
 
+<figure>
+
 ![imagen1](/img/permisos-de-acceso/invitaciones-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/invitations">{"https://app.zauru.com/access_control/invitations"}</a></figcaption>
+</figure>
 
 A continuación deberá colocar el correo del nuevo usuario y dar click en el botón de “Crear invitación”.
 
+<figure>
+
 ![imagen2](/img/permisos-de-acceso/invitaciones-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/invitations/new">{"https://app.zauru.com/access_control/invitations/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje notificándole que la invitación fue creada exitosamente.
 
+<figure>
+
 ![imagen3](/img/permisos-de-acceso/invitaciones-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/invitations">{"https://app.zauru.com/access_control/invitations"}</a></figcaption>
+</figure>
 
 El nuevo usuario recibirá un correo de Zauru donde deberá dar click a Suscribirse y llenar sus datos. Luego de que el nuevo usuario acepte la invitación, un correo de notificación le llegará al remitente de la invitación, diciendo de que la invitación de tal correo fue aceptada.
 

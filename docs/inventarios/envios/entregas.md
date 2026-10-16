@@ -15,11 +15,21 @@ Para un envío sin transporte, la reservación se entrega directamente desde su 
 3. Abrir la reservación que desea entregar.
 4. Presionar "Entregar.
 
+<figure>
+
 ![imagen3](/img/inventarios/envios-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/:id">{"https://app.zauru.com/inventories/bookings/:id"}</a></figcaption>
+</figure>
 
 El envío pasa a la pestaña "Entregas" y los productos aparecen en la bodega destino.
 
+<figure>
+
 ![imagen4](/img/inventarios/envios-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/deliveries">{"https://app.zauru.com/inventories/deliveries"}</a></figcaption>
+</figure>
 
 ## Vista de Entregas
 

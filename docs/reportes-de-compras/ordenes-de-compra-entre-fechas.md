@@ -13,6 +13,11 @@ Para ingresar al reporte:
 3. Seleccionar "Ordenes de Compra entre Fechas".
 4. Seleccionar el rango de fechas.
 
+<figure>
+
 ![Vista del reporte Órdenes de Compra entre Fechas con filtro de fechas](/img/reportes-de-compras/ordenes-de-compra-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/purchase_orders_between_dates">{"https://app.zauru.com/purchases/reports/purchase_orders_between_dates"}</a></figcaption>
+</figure>
 
 Con este reporte puede revisar la actividad de compras de un periodo de principio a fin y verificar qué órdenes ya fueron recibidas y cuáles siguen pendientes.

@@ -12,7 +12,12 @@ Para ingresar a este reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Movimientos de Beneficiario en Cuenta".
 
+<figure>
+
 ![Formulario de filtros del reporte Movimientos de Beneficiario en Cuenta](/img/reportes-de-contabilidad/movimientos-de-beneficiario-en-cuenta-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/payee_movements_in_account">{"https://app.zauru.com/accounting/reports/payee_movements_in_account"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

@@ -15,7 +15,12 @@ Antes de crear los proyectos, conviene pensar en las categorías que los agrupar
 3. Seleccionar la pestaña "Categorías de proyectos".
 4. Seleccionar "Nueva Categoría de proyecto".
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/proyectos-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/tag_categories/new">{"https://app.zauru.com/settings/tags/tag_categories/new"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear una nueva categoría de proyecto:
 
@@ -33,11 +38,21 @@ f. Puede adjuntar un archivo PDF a la categoría.
 
 Para guardar los cambios presione "Crear Categoría de proyecto".
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/proyectos-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/:id">{"https://app.zauru.com/settings/tags/:id"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la categoría de proyecto se creó exitosamente.
 
+<figure>
+
 ![imagen3](/img/primeros-pasos/proyectos-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/:id">{"https://app.zauru.com/settings/tags/:id"}</a></figcaption>
+</figure>
 
 ### Duplicar una Categoría de proyecto
 
@@ -48,7 +63,12 @@ Zauru le permite duplicar una categoría de proyecto existente, incluyendo todas
 3. Seleccionar la pestaña "Categorías de proyectos".
 4. Hacer click en "Duplicar" sobre la categoría que desea duplicar.
 
+<figure>
+
 ![imagen4](/img/primeros-pasos/proyectos-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/:id/edit">{"https://app.zauru.com/settings/tags/:id/edit"}</a></figcaption>
+</figure>
 
 Zauru creará una copia de la categoría con el sufijo "copia" y todas sus subcategorías hijas serán duplicadas también.
 
@@ -61,7 +81,12 @@ Zauru le permite visualizar la jerarquía completa de sus categorías de proyect
 3. Seleccionar la pestaña "Categorías de Proyectos".
 4. Hacer click en "Gráfico" sobre la categoría raíz que desea visualizar.
 
+<figure>
+
 ![imagen5](/img/primeros-pasos/proyectos-5.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/:id/edit">{"https://app.zauru.com/settings/tags/:id/edit"}</a></figcaption>
+</figure>
 
 El gráfico mostrará la estructura jerárquica completa: categorías padre, subcategorías y las proyectos contenidas en cada categoría.
 
@@ -74,7 +99,12 @@ Cuando ya tenga sus categorías, crear los proyectos es cuestión de minutos; lu
 3. Seleccionar la pestaña "Proyectos".
 4. Seleccionar "Nueva Proyecto".
 
+<figure>
+
 ![imagen6](/img/primeros-pasos/proyectos-6.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/tag_categories/:id">{"https://app.zauru.com/settings/tags/tag_categories/:id"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las opciones para crear una nueva proyecto:
 
@@ -92,11 +122,21 @@ f. Puede adjuntar un archivo PDF al proyecto.
 
 Para guardar los cambios presione "Crear Proyecto".
 
+<figure>
+
 ![imagen7](/img/primeros-pasos/proyectos-7.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/tag_categories/:id/show_graph">{"https://app.zauru.com/settings/tags/tag_categories/:id/show_graph"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla indicándole que la proyecto se creó exitosamente.
 
+<figure>
+
 ![imagen8](/img/primeros-pasos/proyectos-8.png)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/:id">{"https://app.zauru.com/settings/tags/:id"}</a></figcaption>
+</figure>
 
 ### Filtrar por proyectos
 

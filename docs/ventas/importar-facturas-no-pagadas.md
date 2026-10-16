@@ -14,7 +14,12 @@ Los pasos para importar facturas no pagadas son los siguientes:
 2. Seleccionar **"Facturas no Pagadas"**.
 3. Seleccionar **"Importar"**.
 
+<figure>
+
 ![imagen1](/img/ventas/importar-facturas-no-pagadas-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerá el formulario de importación donde deberá:
 
@@ -22,7 +27,12 @@ a. Seleccionar el archivo a importar (formato CSV, XLS o XLSX).
 
 b. Presionar **"Importar Facturas"**.
 
+<figure>
+
 ![imagen2](/img/ventas/importar-facturas-no-pagadas-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/unpaid_invoice_imports/new">{"https://app.zauru.com/sales/unpaid_invoices/unpaid_invoice_imports/new"}</a></figcaption>
+</figure>
 
 El sistema procesará el archivo y creará las facturas no pagadas según los datos proporcionados. Al finalizar, será redirigido al listado de facturas no pagadas donde podrá verificar las facturas importadas.
 

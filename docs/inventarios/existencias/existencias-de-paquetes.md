@@ -23,7 +23,12 @@ Los pasos para ver las existencias de paquetes de una bodega son:
 
 La tabla muestra una fila por paquete con las columnas "Código", "Nombre", "Disponible", "Por Ingresar", "Por Egresar", "Física" y una columna de acciones. El significado de cada columna y su enlace:
 
+<figure>
+
 ![Vista por bodega de existencias de paquetes (tabla principal)](/img/inventarios/existencias-de-paquetes-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bundle_stocks">{"https://app.zauru.com/inventories/bundle_stocks"}</a></figcaption>
+</figure>
 
 - **Código**: texto plano, no es un enlace.
 - **Nombre**: enlace a "Detalle de existencias de paquetes" en todas las bodegas, que muestra las existencias del paquete desglosadas por bodega. Se explica más abajo.
@@ -44,7 +49,12 @@ Los pasos para ver las existencias de paquetes en todas las bodegas son:
 
 La tabla muestra una fila por paquete y una columna por bodega, más una columna "Total". El significado de cada columna y su enlace:
 
+<figure>
+
 ![Vista de todas las bodegas (matriz de existencias de paquetes)](/img/inventarios/existencias-de-paquetes-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bundle_stocks/all_warehouses">{"https://app.zauru.com/inventories/bundle_stocks/all_warehouses"}</a></figcaption>
+</figure>
 
 - **ID**: enlace a "Detalle de existencias de paquetes" en todas las bodegas, que muestra las existencias del paquete desglosadas por bodega.
 - **Código**: texto plano, no es un enlace.

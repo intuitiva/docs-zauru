@@ -12,11 +12,21 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Bundles de Categoría Vendidos por Item".
 
+<figure>
+
 ![Filtros del reporte de bundles de categoría vendidos por item](/img/reportes-de-ventas/bundles-de-categoria-vendidos-por-item-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item">{"https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item"}</a></figcaption>
+</figure>
 
 Solo necesita indicar el **rango de fechas** (fecha inicial y fecha final) del período que desea consultar.
 
+<figure>
+
 ![Resultado del reporte de bundles de categoría vendidos por item](/img/reportes-de-ventas/bundles-de-categoria-vendidos-por-item-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item">{"https://app.zauru.com/sales/reports/sold_category_bundles_by_selected_item"}</a></figcaption>
+</figure>
 
 El reporte muestra una tabla por cada item, con las siguientes columnas:
 

@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Destajos Sin Partida Contable"**.
 
+<figure>
+
 ![Reporte Destajos Sin Partida Contable mostrando lista de destajos sin partida contable y botón Corregir](/img/reportes-de-nominas/destajos-sin-partida-contable-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks">{"https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks"}</a></figcaption>
+</figure>
 
 **Opcion de correccion**: el boton **"Corregir"** genera las partidas contables faltantes para todos los destajos listados.
 

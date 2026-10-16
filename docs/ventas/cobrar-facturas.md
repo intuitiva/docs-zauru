@@ -21,7 +21,12 @@ Un cliente llega con un abono y le dice que el saldo se lo pagará la próxima s
 2. Seleccionar “Facturas no Pagadas”.
 3. Click sobre “Cobrar” (La primer tarjeta)
 
+<figure>
+
 ![imagen1](/img/ventas/cobrar-facturas-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo pago. Los campos que debe llenar son los siguientes:
 
@@ -41,26 +46,56 @@ f. Coloque la cantidad que el cliente pagó, en este ejemplo colocamos la mitad 
 Presione “Crear Pago”
 
 
+<figure>
+
 ![imagen2](/img/ventas/cobrar-facturas-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
 
 
 Le aparecerá un mensaje de éxito en la pantalla y podrá encontrar los detales en la parte inferior de la pagina.
 
+<figure>
+
 ![imagen3](/img/ventas/cobrar-facturas-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 
 
 En las facturas no pagadas podrá encontrar la factura, pero ahora aparecerá que solo debe la mitad.
 
+<figure>
+
 ![imagen4](/img/ventas/cobrar-facturas-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 ## Cobrar el total de la factura
 Al cobrar el total de la factura la factura pasa a ser una factura pagada. Los pasos para cobrar el total de una factura son los siguientes:
 
+<figure>
+
 ![imagen5](/img/ventas/cobrar-facturas-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen6](/img/ventas/cobrar-facturas-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen7](/img/ventas/cobrar-facturas-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/:id">{"https://app.zauru.com/sales/payments/:id"}</a></figcaption>
+</figure>
 
 
 ## Cobro Consolidado de Facturas

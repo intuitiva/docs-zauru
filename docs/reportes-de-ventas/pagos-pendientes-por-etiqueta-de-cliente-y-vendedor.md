@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Así puede organizar la cobranza por etiqueta o por vendedor y saber exactamente dónde concentrarse.
 
+<figure>
+
 ![Reporte de Pagos Pendientes por Etiqueta de Cliente y Vendedor mostrando tabla con totales por etiqueta y vendedor](/img/reportes-de-ventas/pagos-pendientes-por-etiqueta-de-cliente-y-vendedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/client_tag_and_seller_pending_payments">{"https://app.zauru.com/sales/reports/client_tag_and_seller_pending_payments"}</a></figcaption>
+</figure>

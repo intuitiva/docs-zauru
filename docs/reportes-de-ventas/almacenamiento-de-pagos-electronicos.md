@@ -8,7 +8,12 @@ Cuando su contador le pida los respaldos de los pagos electrónicos del mes, est
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Reporte de Almacenamiento de Pagos Electrónicos](/img/reportes-de-ventas/almacenamiento-de-pagos-electronicos-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/electronic_payments_storage">{"https://app.zauru.com/sales/reports/electronic_payments_storage"}</a></figcaption>
+</figure>
 
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".

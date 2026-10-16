@@ -8,7 +8,12 @@ Cada empresa lleva su contabilidad a su manera, y en Zauru usted arma la nomencl
 
 A continuacion vera como se maneja la contabilidad en Zauru.
 
+<figure>
+
 ![imagen1](/img/contabilidad/cuentas-contables-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 ## Tutoriales
 
@@ -61,7 +66,12 @@ Los pasos para crear una cuenta están en [Grupos de cuentas](/contabilidad/cuen
 
 Para guardar los cambios presione click en "Crear cuenta".
 
+<figure>
+
 ![imagen9](/img/contabilidad/cuentas-contables-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/new">{"https://app.zauru.com/accounting/accounts/new"}</a></figcaption>
+</figure>
 
 ### Exportar nomenclatura contable
 
@@ -96,7 +106,12 @@ Se pueden crear saldos iniciales de:
 
 La forma de hacerlo es la siguiente:
 
+<figure>
+
 ![imagen11](/img/contabilidad/cuentas-contables-11.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Los pasos para crear una nueva transaccion de saldos iniciales son los siguientes:
 
@@ -110,7 +125,12 @@ Los pasos para crear una nueva transaccion de saldos iniciales son los siguiente
 8. Si lleva IVA seleccione el boton de +IVA, el sistema automaticamente calculara su IVA por cobrar (Proveedores) o IVA por pagar (Clientes).
 9. Para Guardar sus cambios seleccione el boton de "Crear transaccion".
 
+<figure>
+
 ![imagen12](/img/contabilidad/cuentas-contables-12.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con su nomenclatura creada y sus saldos iniciales registrados, la contabilidad queda lista para recibir cada transacción del día a día, y sus reportes reflejarán la realidad de la empresa desde el primer momento. Si en el camino necesita más cuentas o más grupos, puede agregarlos siguiendo los mismos pasos.
 

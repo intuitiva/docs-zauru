@@ -13,7 +13,12 @@ Para generar este reporte:
 3. Seleccione el rango de fechas (fecha inicial y fecha final).
 4. Presione **"Generar Reporte"**.
 
+<figure>
+
 ![imagen3](/img/produccion/productos-terminados-por-responsable-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/reports/finished_products_by_responsible">{"https://app.zauru.com/production/reports/finished_products_by_responsible"}</a></figcaption>
+</figure>
 
 El reporte muestra:
 

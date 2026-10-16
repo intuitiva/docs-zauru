@@ -14,7 +14,12 @@ Antes de vender o comprar, hay que crear el ítem con su nombre y especificacion
 2. Seleccionar "Ítems".
 3. Seleccionar "Nuevo Ítem".
 
+<figure>
+
 ![Nuevo Ítem](/img/primeros-pasos/items-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items">{"https://app.zauru.com/settings/items"}</a></figcaption>
+</figure>
 
 ## Tipos de Ítems según su Inventario
 
@@ -30,7 +35,12 @@ En el "Tipo de Producto" (Paso 2) hay 3 opciones:
 2. Perecedero: los ítems pertenecen a un lote y tienen fecha de expiración.
 3. Normal: sin número de serie ni fecha de vencimiento.
 
+<figure>
+
 ![Tipos de productos](/img/primeros-pasos/items-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items/new">{"https://app.zauru.com/settings/items/new"}</a></figcaption>
+</figure>
 
 ## Características de los Ítems
 
@@ -58,7 +68,12 @@ Para guardar los cambios, presionar "Crear Ítem".
 
 El único campo obligatorio del ítem es el nombre; todos los demás son opcionales.
 
+<figure>
+
 ![Características del ítem](/img/primeros-pasos/items-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items/new">{"https://app.zauru.com/settings/items/new"}</a></figcaption>
+</figure>
 
 ## Importar Ítems
 Cuando su empresa tiene cientos de productos o servicios puede ser tedioso crear items. Zauru le permite importar cantidades grandes de Ítems en formatos pre-definidos de Excel. Los pasos para importar ítems son los siguientes:
@@ -67,7 +82,12 @@ Cuando su empresa tiene cientos de productos o servicios puede ser tedioso crear
 2. Seleccionar “Ítems”.
 3. Click en el botón de “Importar”.
 
+<figure>
+
 ![5](/img/primeros-pasos/items-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items">{"https://app.zauru.com/settings/items"}</a></figcaption>
+</figure>
 
 A continuación encontrara una guía para la importación de sus Ítems.
 
@@ -84,7 +104,12 @@ Las entradas de texto permitidas para cada campo están especificadas en la imag
 5. Al terminar de colocar los campos que desee importar en la plantilla de Excel deberá seleccionar el archivo a importar.
 
 6. Seleccione el botón de “Importar Ítems” y espere a que Zauru suba sus ítems, si aparece algún error en la importación, revise si su plantilla de Excel cumple las normas de importación.
+<figure>
+
 ![6](/img/primeros-pasos/items-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items/item_imports/new">{"https://app.zauru.com/settings/items/item_imports/new"}</a></figcaption>
+</figure>
 
 ## Variaciones de Ítems
 

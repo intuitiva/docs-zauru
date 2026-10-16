@@ -14,7 +14,12 @@ Para ingresar al reporte:
 
 **Parametros**:
 
+<figure>
+
 ![Pantalla del reporte Historial de Nominas de Empleado entre Fechas (Consolidado) mostrando filtros y tabla de resultados](/img/reportes-de-nominas/historial-de-nominas-de-empleado-entre-fechas-consolidado-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/employee_payroll_runs_payrolls_between_dates">{"https://app.zauru.com/payroll/reports/employee_payroll_runs_payrolls_between_dates"}</a></figcaption>
+</figure>
 
 - Empleado.
 - Rango de fechas.

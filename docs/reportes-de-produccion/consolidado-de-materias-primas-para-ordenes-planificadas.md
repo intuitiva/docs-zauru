@@ -6,7 +6,12 @@ sidebar_position: 1
 
 ¿Tiene órdenes de producción planificadas y quiere asegurarse de que no falte material cuando toque arrancar? Este reporte reúne todas las materias primas que van a necesitar esas órdenes (las que aún no se inician, no están cerradas ni anuladas), con la cantidad total requerida y su desglose por fecha. Es perfecto para planificar las compras de insumos con anticipación y evitar sustos el día de la producción.
 
+<figure>
+
 ![imagen2](/img/produccion/consolidado-de-materias-primas-para-ordenes-planificadas-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/reports/consolidated_raw_materials_from_planned_production_orders">{"https://app.zauru.com/production/reports/consolidated_raw_materials_from_planned_production_orders"}</a></figcaption>
+</figure>
 
 Para cada materia prima el reporte muestra:
 

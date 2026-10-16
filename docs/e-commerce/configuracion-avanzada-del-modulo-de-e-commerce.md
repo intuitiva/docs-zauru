@@ -6,7 +6,12 @@ sidebar_position: 2
 
 Si ya preparó Zauru para conectarlo a su tienda en línea, este es el siguiente paso para que todo funcione solo: aquí se define cómo se convertirá cada pedido en una orden de venta, sin intervención manual. Por ejemplo, usted indica con qué método de pago se registrará el pago, desde qué bodega se despachará la mercadería y qué vendedor aparecerá en las órdenes. La pantalla de configuración del módulo de e-commerce (`/ecommerce/ecommerce_settings/new`) contiene todos los parámetros necesarios para automatizar el procesamiento de los pedidos que ingresan desde una tienda en línea; a continuación se detalla cada campo.
 
+<figure>
+
 ![Pantalla de configuración avanzada del módulo de e-commerce con parámetros y campos](/img/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce-1.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/ecommerce_settings/new">{"https://app.zauru.com/ecommerce/ecommerce_settings/new"}</a></figcaption>
+</figure>
 
 ## Parámetros de configuración
 

@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con esa lista podrá priorizar las entregas y llamar a los clientes que más tiempo llevan esperando, antes de que se impacienten.
 
+<figure>
+
 ![Reporte de Ítems No Entregados de Órdenes mostrando los ítems pendientes de entrega](/img/reportes-de-ventas/items-no-entregados-de-ordenes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/undelivered_items_orders">{"https://app.zauru.com/sales/reports/undelivered_items_orders"}</a></figcaption>
+</figure>

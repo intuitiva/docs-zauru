@@ -15,7 +15,12 @@ Para ver los envios que estan en transito:
 
 Le aparecera un listado con todos los envios que estan en estado "transito" (enviados pero no entregados, no anulados y no devueltos). Puede filtrar por:
 
+<figure>
+
 ![Listado de envíos en tránsito en el punto de venta](/img/punto-de-venta/gestionar-envios-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/shipments">{"https://app.zauru.com/pos/shipments"}</a></figcaption>
+</figure>
 
 a. **Todos**: Muestra todos los envios donde la agencia del usuario es origen o destino.
 
@@ -58,7 +63,12 @@ Presione "Guardar" para registrar la entrega. Al guardar:
 
 Al hacer click sobre un envio en el listado, usted podra ver:
 
+<figure>
+
 ![Detalle de un envío con productos y estado](/img/punto-de-venta/gestionar-envios-3.png)
+
+<figcaption><a href="https://app.zauru.com/pos/shipments/1">{"https://app.zauru.com/pos/shipments/1"}</a></figcaption>
+</figure>
 
 a. **Datos generales**: Agencia origen, agencia destino, fecha de creacion, fecha planificada de entrega.
 

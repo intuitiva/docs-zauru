@@ -13,7 +13,12 @@ Los pasos para emitir un cheque de pago de salarios son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-pagar-salarios-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Los campos a llenar para crear el pago de salario son los siguientes:
@@ -34,7 +39,12 @@ g. Coloque la cuenta de gasto “salarios”, también puede agregar mas cuentas
 
 Para crear el cheque presione “Crear nueva transacción” en la parte de abajo.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-pagar-salarios-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 ## Pagar prestaciones
@@ -44,7 +54,12 @@ Los pasos para emitir un cheque para pagar prestaciones son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva transacción”.
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-pagar-salarios-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Los campos a llenar para crear el pago de prestaciones son los siguientes:
@@ -63,7 +78,12 @@ f. Coloque la cantidad por la que se realiza el cheque.
 
 g. Seleccione la cuenta de prestaciones
 
+<figure>
+
 ![imagen4](/img/contabilidad/transacciones-pagar-salarios-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con el pago registrado, el gasto de salarios o prestaciones queda reflejado en la cuenta correcta y su contabilidad mensual avanza sin huecos. Si su pago incluye varios conceptos, desglóselos en un mismo cheque para que cada cuenta de gasto reciba lo que le corresponde.
 

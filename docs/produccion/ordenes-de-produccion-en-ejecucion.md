@@ -13,7 +13,12 @@ Los pasos para ver las ordenes en ejecucion son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Ordenes en Ejecucion"**.
 
+<figure>
+
 ![imagen1](/img/produccion/ordenes-de-produccion-en-ejecucion-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders">{"https://app.zauru.com/production/running_production_orders"}</a></figcaption>
+</figure>
 
 En esta pantalla vera un listado de todas las ordenes de produccion que se encuentran en estado de ejecucion. Puede filtrar por lote de produccion utilizando el selector en la parte superior. Para cada orden se muestra informacion como: referencia, item a fabricar, cantidad objetivo, cantidad completada, responsable y tiempo acumulado de ejecucion.
 
@@ -26,7 +31,12 @@ Para detener temporalmente una orden de produccion:
 3. Seleccione la orden que desea pausar.
 4. Presione el boton **"Pausar"**.
 
+<figure>
+
 ![imagen2](/img/produccion/ordenes-de-produccion-en-ejecucion-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
+</figure>
 
 Se le solicitara que ingrese notas opcionales sobre el motivo de la pausa. El sistema registrara el evento de pausa y acumulara el tiempo transcurrido desde el ultimo inicio.
 
@@ -41,7 +51,12 @@ Para reanudar una orden que fue pausada previamente:
 3. Seleccione la orden pausada que desea reanudar.
 4. Presione el boton **"Reanudar"**.
 
+<figure>
+
 ![imagen3](/img/produccion/ordenes-de-produccion-en-ejecucion-3.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
+</figure>
 
 El sistema registrara el evento de reanudacion y continuara acumulando el tiempo de ejecucion.
 
@@ -55,7 +70,12 @@ Si su metrica de progreso esta configurada como conteo parcial, puede registrar 
 4. Presione el boton **"Conteo Parcial"**.
 5. Ingrese la cantidad de unidades producidas hasta el momento.
 
+<figure>
+
 ![imagen4](/img/produccion/ordenes-de-produccion-en-ejecucion-4.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
+</figure>
 
 Este conteo se utiliza para calcular el porcentaje de avance de la orden y del lote de produccion al que pertenece.
 
@@ -68,7 +88,12 @@ El momento del cierre llega cuando las unidades ya estan terminadas y listas par
 3. Seleccione la orden que desea cerrar.
 4. Presione el boton **"Cerrar"**.
 
+<figure>
+
 ![imagen5](/img/produccion/ordenes-de-produccion-en-ejecucion-5.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
+</figure>
 
 Le aparecera el formulario de cierre con los siguientes campos:
 
@@ -82,7 +107,12 @@ d. **Campo Extra**: Si esta habilitado en las configuraciones, podra ingresar el
 
 e. **Notas**: Puede agregar notas sobre el cierre de la orden.
 
+<figure>
+
 ![imagen6](/img/produccion/ordenes-de-produccion-en-ejecucion-6.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders/:id">{"https://app.zauru.com/production/running_production_orders/:id"}</a></figcaption>
+</figure>
 
 Al presionar **"Cerrar Orden"**, el sistema realizara las siguientes operaciones:
 
@@ -97,7 +127,12 @@ Al presionar **"Cerrar Orden"**, el sistema realizara las siguientes operaciones
 
 Le aparecera un mensaje de exito notificandole que la orden fue cerrada exitosamente. La orden pasara a la seccion de ordenes cerradas.
 
+<figure>
+
 ![imagen7](/img/produccion/ordenes-de-produccion-en-ejecucion-7.png)
+
+<figcaption><a href="https://app.zauru.com/production/running_production_orders">{"https://app.zauru.com/production/running_production_orders"}</a></figcaption>
+</figure>
 
 ## Devolver una orden a planificada
 

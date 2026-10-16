@@ -16,7 +16,12 @@ Como datos iniciales necesitamos el estado de cuenta del banco para poder genera
 
 Primero debe crear una nueva conciliacion bancaria desde "Contabilidad" > "Conciliaciones" > "Nueva Conciliacion".
 
+<figure>
+
 ![entrar a nueva conciliacion](/img/contabilidad/conciliacion-bancaria-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations">{"https://app.zauru.com/accounting/conciliations"}</a></figcaption>
+</figure>
 
 ### 2. Datos de la nueva conciliacion
 
@@ -30,13 +35,23 @@ Complete los datos de la conciliacion basandose en la informacion del estado de 
 
 Todavia no vamos a comparar la informacion de Zauru (ese es el paso 4).
 
+<figure>
+
 ![Datos de nueva conciliacion](/img/contabilidad/conciliacion-bancaria-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations/new">{"https://app.zauru.com/accounting/conciliations/new"}</a></figcaption>
+</figure>
 
 ### 3. Ingresar a conciliar
 
 Para conciliar hay que entrar al boton de "Conciliar" en la conciliacion recien creada.
 
+<figure>
+
 ![Ingresar a conciliar](/img/contabilidad/conciliacion-bancaria-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations">{"https://app.zauru.com/accounting/conciliations"}</a></figcaption>
+</figure>
 
 ### 4. Conciliar banco vs Zauru
 
@@ -49,7 +64,12 @@ Este es el paso donde realmente comparamos lo que dice Zauru vs. lo que dice el 
 
 Puede guardar la conciliacion este cuadrada o no, y volver a editarla despues.
 
+<figure>
+
 ![conciliando ando](/img/contabilidad/conciliacion-bancaria-5.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations/:id/conciliate">{"https://app.zauru.com/accounting/conciliations/:id/conciliate"}</a></figcaption>
+</figure>
 
 ### Posibles diferencias
 
@@ -73,13 +93,23 @@ Para cerrar una conciliacion, debe estar cuadrada, o sea que el monto de ingreso
 
 Una vez cerrada, la conciliacion ya no se puede editar ni borrar. Sin embargo, si necesita reabrirla, puede usar la opcion "Des-cerrar" (unclose).
 
+<figure>
+
 ![Cerrar conciliacion](/img/contabilidad/conciliacion-bancaria-6.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations">{"https://app.zauru.com/accounting/conciliations"}</a></figcaption>
+</figure>
 
 ### 6. Generar reporte de conciliacion
 
 Al cerrar una conciliacion ya no se puede editar ni borrar, ya solo se puede ver y generar el reporte de conciliacion:
 
+<figure>
+
 ![generar reporte de conciliacion](/img/contabilidad/conciliacion-bancaria-7.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations">{"https://app.zauru.com/accounting/conciliations"}</a></figcaption>
+</figure>
 
 El reporte de conciliacion muestra:
 
@@ -89,7 +119,12 @@ El reporte de conciliacion muestra:
 
 Este reporte ya se puede imprimir para presentarlo.
 
+<figure>
+
 ![reporte de conciliacion](/img/contabilidad/conciliacion-bancaria-8.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/conciliations/:id/report">{"https://app.zauru.com/accounting/conciliations/:id/report"}</a></figcaption>
+</figure>
 
 Con la conciliación cerrada, usted ya puede presentar el reporte a su contador o archivarlo como respaldo del mes: los saldos cuadran y las diferencias quedan explicadas partida por partida. El siguiente paso natural es verificar esas partidas contables para que el periodo quede protegido contra ediciones.
 

@@ -11,7 +11,12 @@ Cada caso entra por una vía distinta: un cliente llama, otro escribe por WhatsA
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Metodos de Contacto"** (o acceder a `/support/contact_methods`).
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-metodos-de-contacto-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/contact_methods">{"https://app.zauru.com/support/contact_methods"}</a></figcaption>
+</figure>
 
 Le aparecera el listado de metodos de contacto configurados en su entidad. Para cada metodo se muestra:
 
@@ -23,7 +28,12 @@ Le aparecera el listado de metodos de contacto configurados en su entidad. Para 
 
 1. En el listado de metodos de contacto, seleccione **"Nuevo Metodo de Contacto"**.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-metodos-de-contacto-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/contact_methods/new">{"https://app.zauru.com/support/contact_methods/new"}</a></figcaption>
+</figure>
 
 2. Complete los campos:
    - **Nombre**: Nombre descriptivo del metodo (Ej: "WhatsApp", "Chat en Vivo", "Visita Tecnica").

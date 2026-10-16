@@ -10,7 +10,12 @@ Si vende productos con fecha de vencimiento, como alimentos o medicinas, necesit
 
 El primer paso para crear un lote es hacer un Ítem del producto que sea "Perecedero" como se muestra en la siguiente imagen. Para mas detalles sobre como crear ítems refiérase al tutorial de "Crear Ítems".
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-lotes-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items/new">{"https://app.zauru.com/settings/items/new"}</a></figcaption>
+</figure>
 
 ## Crear un nuevo lote
 
@@ -20,7 +25,12 @@ Los pasos para crear un nuevo lote son los siguientes:
 2. Seleccionar "Lotes".
 3. Seleccionar "Nuevo Lote".
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-lotes-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/lots">{"https://app.zauru.com/inventories/lots"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo lote, los pasos para crearlo son los siguientes:
 
@@ -29,7 +39,12 @@ Le aparecerán las opciones para crear un nuevo lote, los pasos para crearlo son
 3. Coloque la fecha en la que expira el lote.
 4. Seleccione "Crear lote".
 
+<figure>
+
 ![imagen3](/img/inventarios/inventarios-lotes-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/lots/new">{"https://app.zauru.com/inventories/lots/new"}</a></figcaption>
+</figure>
 
 Para ingresar producto a un lote desde el proveedor, ver [Reservación de lotes](/inventarios/envios/reservaciones/reservacion-de-lotes).
 
@@ -57,7 +72,12 @@ Para ver todos los lotes en todas las bodegas:
 
 Esta vista muestra una cuadrícula con los lotes y sus cantidades disponibles en cada bodega.
 
+<figure>
+
 ![imagen7](/img/inventarios/inventarios-lotes-all-warehouses.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/lots/all_warehouses">{"https://app.zauru.com/inventories/lots/all_warehouses"}</a></figcaption>
+</figure>
 
 ## Ver detalle de un lote
 

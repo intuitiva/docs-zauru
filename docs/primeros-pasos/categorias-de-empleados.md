@@ -13,7 +13,12 @@ Los pasos para crear una nueva categoría de empleado son:
 3. Seleccionar la pestaña "Categorías de empleado".
 4. Click en "Nueva categoría de empleado".
 
+<figure>
+
 ![Listado de categorías de empleado](/img/primeros-pasos/empleados-5.png)
+
+<figcaption><a href="https://app.zauru.com/settings/employees/employee_categories">{"https://app.zauru.com/settings/employees/employee_categories"}</a></figcaption>
+</figure>
 
 Los campos son los siguientes:
 
@@ -22,7 +27,12 @@ Los campos son los siguientes:
 
 Para guardar los cambios presione "Crear Categoría de empleado".
 
+<figure>
+
 ![Nueva categoría de empleado](/img/primeros-pasos/empleados-6.png)
+
+<figcaption><a href="https://app.zauru.com/settings/employees/employee_categories/new">{"https://app.zauru.com/settings/employees/employee_categories/new"}</a></figcaption>
+</figure>
 
 Asigne la categoría a un empleado desde el campo **Categoría de Empleado** de su formulario (ver [Empleados](empleados.md)).
 

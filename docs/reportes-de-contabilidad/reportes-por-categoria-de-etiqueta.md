@@ -14,11 +14,21 @@ Para ingresar a estos reportes:
 
 **Reportes disponibles por categoria de etiqueta**:
 
+<figure>
+
 ![Reporte 'Gastos mensuales por categoria de etiqueta'.](/img/reportes-de-contabilidad/reportes-por-categoria-de-etiqueta-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_monthly_expenses">{"https://app.zauru.com/accounting/reports/tagged_monthly_expenses"}</a></figcaption>
+</figure>
 
 - Gastos mensuales por categoria de etiqueta.
 
+<figure>
+
 ![Reporte 'Balance por categoria de etiqueta'.](/img/reportes-de-contabilidad/reportes-por-categoria-de-etiqueta-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_balance">{"https://app.zauru.com/accounting/reports/tagged_balance"}</a></figcaption>
+</figure>
 
 - Gastos acumulados por categoria de etiqueta.
 - Detalle por cuenta y categoria de etiqueta (con rango de fechas).

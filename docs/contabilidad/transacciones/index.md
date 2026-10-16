@@ -22,7 +22,12 @@ Cada vez que entra o sale dinero sin pasar por una venta o una compra —un ajus
 
 El listado de transacciones permite:
 
+<figure>
+
 ![Listado de transacciones contables con filtros y nube de etiquetas](/img/contabilidad/transacciones-partidas-contables-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 - Filtrar por tipo: **Ingresos**, **Egresos**, **Transferencias** o **Todos**.
 - Filtrar por etiqueta (tag) usando la nube de etiquetas.
@@ -33,7 +38,12 @@ El listado de transacciones permite:
 
 Al escribir en el cuadro de busqueda del listado de transacciones, el sistema bloquea el campo de busqueda mientras se esta ejecutando la busqueda. Esto evita que se lancen busquedas superpuestas o fragmentadas cuando se escribe rapido, y le da resultados de filtrado mas confiables.
 
+<figure>
+
 ![Cuadro de búsqueda del listado de transacciones bloqueado mientras se ejecuta la búsqueda](/img/contabilidad/transacciones-partidas-contables-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 El campo se habilita automaticamente en cuanto termina la busqueda, por lo que puede seguir filtrando sin interrupciones.
 
@@ -41,7 +51,12 @@ El campo se habilita automaticamente en cuanto termina la busqueda, por lo que p
 
 Puede crear una transacción desde "Transacciones" o "Cuentas" y acreditar o debitar de una cuenta.
 
+<figure>
+
 ![Formulario de creación de nueva transacción con campos y splits](/img/contabilidad/transacciones-partidas-contables-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ### Campos de la transaccion
 
@@ -86,7 +101,12 @@ Antes de crear la transaccion, puede hacer clic en "Previsualizar" para verifica
 
 Al editar una transaccion se genera una bitacora del historial de la misma en el detalle de la transaccion. Esto con el fin de no perder trazabilidad de los cambios que se han hecho en la transaccion. En el detalle de la transaccion, en la seccion "Historial" puede ver:
 
+<figure>
+
 ![Detalle de una transacción con sección de historial y botones de acción](/img/contabilidad/transacciones-partidas-contables-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/1">{"https://app.zauru.com/accounting/entries/1"}</a></figcaption>
+</figure>
 
 - El numero de revision.
 - El tipo de operacion (creacion, edicion, verificacion, auditoria).

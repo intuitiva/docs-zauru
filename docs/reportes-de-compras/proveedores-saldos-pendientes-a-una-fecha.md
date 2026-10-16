@@ -8,7 +8,12 @@ Si necesita reconstruir cuánto le debía a cada proveedor en una fecha del pasa
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Formulario de filtros del reporte Proveedores - Saldos Pendientes a una Fecha](/img/reportes-de-compras/proveedores-saldos-pendientes-a-una-fecha-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/vendors_unpaid_payments_in_date">{"https://app.zauru.com/purchases/reports/vendors_unpaid_payments_in_date"}</a></figcaption>
+</figure>
 
 1. Ir a "Compras".
 2. Seleccionar "Reportes".

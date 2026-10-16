@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con esta vista puede decidir a qué categoría de clientes conviene cobrarle primero y revisar los pagos provisionales antes de darlos por confirmados.
 
+<figure>
+
 ![Reporte Pagos Pendientes por Categoría de Cliente mostrando tabla de categorías y montos pendientes](/img/reportes-de-ventas/pagos-pendientes-por-categoria-de-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/client_category_pending_payments">{"https://app.zauru.com/sales/reports/client_category_pending_payments"}</a></figcaption>
+</figure>

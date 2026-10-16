@@ -14,7 +14,12 @@ Lo podemos localizar en:
 
 Acá podemos visualizar el balance inicial, entrada, salida que nos da el balance final por línea.
 
+<figure>
+
 ![balance de bodega mensual por proveedor](/img/reportes-de-inventarios/balance-de-bodega-mensual-por-proveedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/monthly_warehouse_balance_by_vendor">{"https://app.zauru.com/inventories/reports/monthly_warehouse_balance_by_vendor"}</a></figcaption>
+</figure>
 
 **Filtros**:
 

@@ -13,7 +13,12 @@ Para generar este reporte:
 3. Seleccione el rango de fechas.
 4. Presione **"Generar Reporte"**.
 
+<figure>
+
 ![imagen5](/img/produccion/eficiencia-de-ordenes-de-produccion-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/reports/production_orders_efficiency">{"https://app.zauru.com/production/reports/production_orders_efficiency"}</a></figcaption>
+</figure>
 
 El reporte muestra:
 

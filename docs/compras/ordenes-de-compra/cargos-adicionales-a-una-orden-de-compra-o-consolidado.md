@@ -21,7 +21,12 @@ Los pasos para agregar un cargo a una orden de compra individual son:
 2. Seleccionar "Ordenes de Compra".
 3. Seleccionar "Agregar Cargo".
 
+<figure>
+
 ![imagen1](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -41,11 +46,21 @@ g. Seleccione el tipo de cargo y coloque el monto; en el ejemplo, "Flete terrest
 
 h. Presione "Crear cargo".
 
+<figure>
+
 ![imagen2](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges/new">{"https://app.zauru.com/purchases/charges/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito.
 
+<figure>
+
 ![imagen3](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges/:id">{"https://app.zauru.com/purchases/charges/:id"}</a></figcaption>
+</figure>
 
 ## Agregar un cargo a un consolidado de órdenes de compra
 
@@ -55,7 +70,12 @@ Los pasos para agregar un cargo a un consolidado de órdenes de compra son:
 2. Seleccionar "Consolidados".
 3. Click sobre "Agregar cargo" en el consolidado de órdenes de compra.
 
+<figure>
+
 ![imagen4](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates">{"https://app.zauru.com/purchases/consolidates"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -77,17 +97,32 @@ h. Seleccione el tipo de cargo y coloque el monto; en el ejemplo, "Flete terrest
 
 i. Presione "Crear cargo".
 
+<figure>
+
 ![imagen5](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges/new">{"https://app.zauru.com/purchases/charges/new"}</a></figcaption>
+</figure>
 
 El cargo aparecerá en las órdenes de compra que pertenecen al consolidado.
 
 Seleccione "Detalles" (el ojo) para ver la orden de compra.
 
+<figure>
+
 ![imagen6](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 En la parte inferior de los detalles encontrará los cargos creados; se distribuyen de forma ponderada en el costo de cada producto.
 
+<figure>
+
 ![imagen7](/img/compras/cargos-adicionales-a-una-orden-de-compra-o-consolidado-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Con los cargos registrados, el costo de cada producto incluye todo lo que pagó para traerlo a su bodega. El siguiente paso es pagar esos cargos al proveedor; una vez pagados, Zauru los traslada a Cargos Pagados, donde puede consultarlos cuando lo necesite.
 

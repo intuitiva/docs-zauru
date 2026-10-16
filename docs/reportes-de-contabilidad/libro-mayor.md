@@ -13,8 +13,18 @@ Los pasos para ver el libro mayor son:
 3. Seleccione la cuenta que desea ver.
 4. Click sobre la pestaña “Balance”.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/libro-mayor-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
+<figure>
+
 ![imagen3](/img/reportes-de-contabilidad/libro-mayor-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id/balance">{"https://app.zauru.com/accounting/accounts/:id/balance"}</a></figcaption>
+</figure>
 
 El reporte muestra el movimiento de cada cuenta contable durante el mes, con su saldo inicial, movimientos del mes y saldo final, y permite verificar la integridad de los saldos de cada cuenta.
 

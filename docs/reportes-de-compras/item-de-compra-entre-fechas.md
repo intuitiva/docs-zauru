@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Con este detalle tendrá a la mano el historial de precios del producto para comparar proveedores o revisar incrementos de costo.
 
+<figure>
+
 ![Pantalla del reporte 'Item de Compra entre Fechas' con filtros de producto y rango de fechas y tabla de resultados.](/img/reportes-de-compras/item-de-compra-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/item_purchases_between_dates">{"https://app.zauru.com/purchases/reports/item_purchases_between_dates"}</a></figcaption>
+</figure>

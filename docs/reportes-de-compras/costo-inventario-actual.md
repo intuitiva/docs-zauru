@@ -12,12 +12,22 @@ Para ingresar es necesario realizar lo siguiente:
 2. Seleccionar Reportes
 3. Hacer click en Costo del Inventario Actual
 
+<figure>
+
 ![imagen1](/img/reportes-de-compras/costo-inventario-actual-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports">{"https://app.zauru.com/purchases/reports"}</a></figcaption>
+</figure>
 
 
 Aparecerán todos los productos que están en el inventario de la empresa. A un lado se enlista el número de existencias, el costo unitario y el costo total.
 
+<figure>
+
 ![imagen2](/img/reportes-de-compras/costo-inventario-actual-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/current_inventory_cost">{"https://app.zauru.com/purchases/reports/current_inventory_cost"}</a></figcaption>
+</figure>
 
 El reporte muestra el costo actual del inventario disponible en todas las agencias. Incluye el costo promedio ponderado de cada producto, el stock disponible, el stock fisico y el valor total del inventario. Puede exportarse en formato CSV (compatible con SAT) o XLS.
 

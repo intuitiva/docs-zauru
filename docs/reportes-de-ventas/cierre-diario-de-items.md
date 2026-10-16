@@ -13,6 +13,11 @@ Para ingresar al reporte:
 3. Seleccionar "Cierre Diario de Ítems".
 4. Seleccionar el día a consultar.
 
+<figure>
+
 ![Vista del reporte Cierre Diario de Ítems mostrando la tabla de ítems y filtros de fecha](/img/reportes-de-ventas/cierre-diario-de-items-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/daily_item_close">{"https://app.zauru.com/sales/reports/daily_item_close"}</a></figcaption>
+</figure>
 
 Es el cierre del día con todo el detalle, listo para confirmar que cada ítem vendido quedó bien registrado.

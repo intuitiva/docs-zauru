@@ -12,7 +12,12 @@ Los pasos para crear un proyecto son los siguientes:
 2. Seleccionar “Proyectos”.
 3. Seleccionar “Nuevo Proyecto”.
 
+<figure>
+
 ![imagen1](/img/contabilizacion-de-proyectos/proyectos-crear-proyecto-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/tags">{"https://app.zauru.com/settings/tags"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo proyecto, los campos que debe llenar son:
@@ -23,12 +28,22 @@ b. Coloque una breve descripción sobre el proyecto.
 
 c. Presione “Crear Proyecto”.
 
+<figure>
+
 ![imagen2](/img/contabilizacion-de-proyectos/proyectos-crear-proyecto-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/tags/new">{"https://app.zauru.com/settings/tags/new"}</a></figcaption>
+</figure>
 
 
 Le aparecerá un mensaje de éxito en la pantalla. Ahora que creo el proyecto podrá comenzar a adjuntar sus transacciones asociadas al mismo.
 
+<figure>
+
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-crear-proyecto-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/tags">{"https://app.zauru.com/settings/tags"}</a></figcaption>
+</figure>
 
 Con esto su proyecto ya está creado y listo para recibir transacciones. El siguiente paso natural es comenzar a adjuntarle los gastos y las facturas de la obra; y si el trabajo es muy complejo, puede organizarlo en subproyectos para llevar un control aún más fino.
 

@@ -13,7 +13,12 @@ sidebar_position: 8
 3. Hacer click sobre **"Verificar"** (ojo) en el caso deseado.
 4. En la pagina de detalles, seleccione la opcion **"Rentabilidad"** (o acceda directamente a la URL `/support/cases/1/profit`).
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-rentabilidad-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id/profit">{"https://app.zauru.com/support/cases/:id/profit"}</a></figcaption>
+</figure>
 
 ## Componentes del Analisis
 

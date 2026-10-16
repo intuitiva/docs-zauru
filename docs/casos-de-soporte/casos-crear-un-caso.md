@@ -12,7 +12,12 @@ Los pasos para crear un nuevo caso son los siguientes:
 2. Seleccionar **"Casos Abiertos"**.
 3. Seleccionar **"Nuevo Caso"**.
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-crear-un-caso-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 
 Le apareceran las opciones para crear un nuevo caso, los campos que debe llenar son los siguientes:
@@ -65,7 +70,12 @@ t. **Horas de Agentes de Soporte**: Puede registrar las horas estimadas de traba
 
 u. Seleccione **"Crear Caso"**.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-crear-un-caso-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/new">{"https://app.zauru.com/support/cases/new"}</a></figcaption>
+</figure>
 
 
 
@@ -73,7 +83,12 @@ Le aparecera un mensaje de exito en la pantalla. Aun puede actualizar el caso an
 
 Presione **"Editar"** (Lapiz) para colocar mas informacion sobre el caso atendido.
 
+<figure>
+
 ![imagen3](/img/casos-de-soporte/casos-crear-un-caso-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 
 
@@ -95,13 +110,23 @@ g. Puede agregar una **imagen** relacionada al caso.
 
 Por ultimo presione **"Actualizar Caso"**.
 
+<figure>
+
 ![imagen4](/img/casos-de-soporte/casos-crear-un-caso-4.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id/edit">{"https://app.zauru.com/support/cases/:id/edit"}</a></figcaption>
+</figure>
 
 
 
 Le aparecera un mensaje de exito en la pantalla notificandole que el caso fue actualizado exitosamente.
 
+<figure>
+
 ![imagen5](/img/casos-de-soporte/casos-crear-un-caso-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/support/cases">{"https://app.zauru.com/support/cases"}</a></figcaption>
+</figure>
 
 Con el caso creado y actualizado, ya quedó el registro completo de la atención: qué se hizo, qué repuestos se usaron y quién trabajó en ello. El siguiente paso natural es documentar cada avance en la bitácora mientras avanza la reparación y, cuando todo esté resuelto, cerrar el caso para que el cliente quede atendido de principio a fin.
 

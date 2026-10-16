@@ -21,7 +21,12 @@ Los pasos para crear un paquete en Zauru son los siguientes:
 2. Seleccionar "Paquetes".
 3. Seleccionar "Crear nuevo paquete".
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-paquetes-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bundles">{"https://app.zauru.com/inventories/bundles"}</a></figcaption>
+</figure>
 
 Le aparecerán los opciones para crear un nuevo paquete, los campos que debe llenar son los siguientes:
 
@@ -33,11 +38,21 @@ c. Coloque el nombre del paquete.
 
 d. Seleccione el primer producto que llevara el paquete y coloque la cantidad. Para agregar mas productos presione "+".
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-paquetes-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/bundles/new">{"https://app.zauru.com/inventories/bundles/new"}</a></figcaption>
+</figure>
 
 Cuando termine de agregar todos los productos que desea que lleve el paquete, presione "Crear paquete".
 
+<figure>
+
 ![imagen3](/img/inventarios/inventarios-paquetes-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bundles/new">{"https://app.zauru.com/inventories/bundles/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito en la pantalla notificándole que se creo el paquete exitosamente. Ahora podrá seleccionar este paquete al momento de hacer una reservación en el inventario. Para poder vender el paquete hay que ponerle un precio sugerido, este tutorial lo podrá en encontrar en "Ventas".
 

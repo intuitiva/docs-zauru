@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Así resuelve las dudas de los clientes sobre sus saldos sin ir a buscar los pagos uno por uno.
 
+<figure>
+
 ![Vista del reporte Detalle de Ventas con Pagos mostrando tabla de facturas y sus pagos](/img/reportes-de-ventas/detalle-de-ventas-con-pagos-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/sales_details_with_payments">{"https://app.zauru.com/sales/reports/sales_details_with_payments"}</a></figcaption>
+</figure>

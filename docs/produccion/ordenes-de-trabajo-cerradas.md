@@ -13,7 +13,12 @@ Los pasos para ver las ordenes de trabajo cerradas son los siguientes:
 1. Ir a **"Produccion"**.
 2. Seleccionar **"Ordenes de Trabajo Cerradas"**.
 
+<figure>
+
 ![imagen1](/img/produccion/ordenes-de-trabajo-cerradas-1.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_work_orders">{"https://app.zauru.com/production/closed_work_orders"}</a></figcaption>
+</figure>
 
 En esta pantalla vera un listado de todas las ordenes de trabajo que han sido cerradas. Puede filtrar por etiqueta utilizando el selector de tags en la parte superior de la lista. Para cada orden se muestra informacion como: referencia, agencia, responsable, factura asociada, etiqueta, lote/serial de destino y fecha de cierre.
 
@@ -25,7 +30,12 @@ Para ver la informacion completa de una orden de trabajo cerrada:
 2. Seleccionar **"Ordenes de Trabajo Cerradas"**.
 3. Seleccione la orden que desea consultar.
 
+<figure>
+
 ![imagen2](/img/produccion/ordenes-de-trabajo-cerradas-2.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_work_orders/:id">{"https://app.zauru.com/production/closed_work_orders/:id"}</a></figcaption>
+</figure>
 
 En la vista de detalle podra ver:
 - Datos generales de la orden (referencia, fecha, responsable, agencia de origen y destino).
@@ -45,7 +55,12 @@ Si necesita revertir el cierre de una orden de trabajo:
 3. Seleccione la orden que desea reabrir.
 4. Presione el boton **"Reabrir"**.
 
+<figure>
+
 ![imagen3](/img/produccion/ordenes-de-trabajo-cerradas-3.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_work_orders/:id">{"https://app.zauru.com/production/closed_work_orders/:id"}</a></figcaption>
+</figure>
 
 El sistema realizara las siguientes operaciones:
 - Revertira los movimientos de inventario de salida.
@@ -64,7 +79,12 @@ Para imprimir una orden de trabajo:
 3. Seleccione la orden que desea imprimir.
 4. Presione el boton **"Imprimir"**.
 
+<figure>
+
 ![imagen4](/img/produccion/ordenes-de-trabajo-cerradas-4.png)
+
+<figcaption><a href="https://app.zauru.com/production/closed_work_orders/:id/print">{"https://app.zauru.com/production/closed_work_orders/:id/print"}</a></figcaption>
+</figure>
 
 Seleccione la plantilla de impresion que desea utilizar y presione **"Imprimir"**. Tambien puede descargar la orden en formato PDF utilizando el boton **"Descargar PDF"**.
 

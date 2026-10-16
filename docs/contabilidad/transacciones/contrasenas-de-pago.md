@@ -15,7 +15,12 @@ Los pasos para crear una contraseña de pago son los siguientes:
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-contrasenas-de-pago-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 
@@ -43,13 +48,23 @@ i. Coloque la cuenta de gasto para especificar la factura o coloque Proveedores 
 
 Presione “Crear nueva transacción”.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-contrasenas-de-pago-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerá un mensaje notificándole que la transacción se creo exitosamente, para imprimir la contraseña de pago seleccione “Imprimir como Contraseña de Pago” en la parte inferior de la pagina.
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-contrasenas-de-pago-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/:id">{"https://app.zauru.com/accounting/entries/:id"}</a></figcaption>
+</figure>
 
 Con la contraseña de pago creada e impresa, la factura del proveedor queda registrada en sus cuentas por pagar con la fecha de pago prometida. Cuando llegue ese día, registre el pago del cheque y salde la cuenta por pagar.
 

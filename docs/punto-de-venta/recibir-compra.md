@@ -33,7 +33,12 @@ Los pasos para recibir productos son:
 1. En el listado de recepciones, haga click sobre la orden de compra que desea recibir.
 2. Se mostraran los productos de la orden de compra con las cantidades compradas.
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/recibir-compra-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/receptions">{"https://app.zauru.com/pos/receptions"}</a></figcaption>
+</figure>
 
 Para cada producto, usted podra:
 

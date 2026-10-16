@@ -9,7 +9,12 @@ Antes de contratar al primer empleado, conviene tener los puestos listos —Oper
 1. Ir a **"Nominas"**.
 2. En **"Settings"**, seleccionar **"Puestos de trabajo"**.
 
+<figure>
+
 ![Listado de puestos de trabajo](/img/nominas/configuraciones-de-nomina-2.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/job_positions">{"https://app.zauru.com/payroll/settings/job_positions"}</a></figcaption>
+</figure>
 
 ## Listado de puestos
 
@@ -20,7 +25,12 @@ El listado muestra todos los puestos de trabajo con su nombre, tipo de pago, fre
 1. Hacer clic en **"Nuevo Puesto"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo puesto de trabajo](/img/nominas/configuraciones-de-nomina-3.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/job_positions/new">{"https://app.zauru.com/payroll/settings/job_positions/new"}</a></figcaption>
+</figure>
 
 - **Activo**: marcar para que el puesto este disponible.
 - **Nombre**: nombre del puesto (ej. "Administrador", "Operario de produccion").

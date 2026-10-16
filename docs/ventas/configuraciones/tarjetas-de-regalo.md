@@ -20,7 +20,12 @@ Para consultar la lista de tipos de tarjeta de regalo:
 2. Seleccionar **"Configuraciones"**.
 3. Seleccionar la pestaña de **"Tipos de Tarjeta de Regalo"**.
 
+<figure>
+
 ![imagen1](/img/ventas/tarjetas-de-regalo-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/gift_card_types">{"https://app.zauru.com/sales/settings/gift_card_types"}</a></figcaption>
+</figure>
 
 En esta vista podrá ver:
 - El nombre del tipo de tarjeta.
@@ -37,7 +42,12 @@ Los pasos para crear un nuevo tipo de tarjeta de regalo son los siguientes:
 1. Ir a **"Ventas"** > **"Configuraciones"** > **"Tipos de Tarjeta de Regalo"**.
 2. Presionar **"Nuevo Tipo de Tarjeta de Regalo"**.
 
+<figure>
+
 ![imagen2](/img/ventas/tarjetas-de-regalo-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/gift_card_types/new">{"https://app.zauru.com/sales/settings/gift_card_types/new"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo tipo de tarjeta de regalo. Los campos que debe llenar son los siguientes:
 
@@ -55,7 +65,12 @@ f. **Valor fijo**: Si la tarjeta de regalo tiene un valor predefinido (ej. Q100,
 
 Para guardar presione **"Crear Tipo de Tarjeta de Regalo"**.
 
+<figure>
+
 ![imagen3](/img/ventas/tarjetas-de-regalo-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/gift_card_types/new">{"https://app.zauru.com/sales/settings/gift_card_types/new"}</a></figcaption>
+</figure>
 
 ### Editar y Eliminar Tipos de Tarjeta de Regalo
 
@@ -74,7 +89,12 @@ Para consultar la lista de tarjetas de regalo emitidas:
 1. Ir a **"Ventas"**.
 2. Seleccionar **"Tarjetas de Regalo"**.
 
+<figure>
+
 ![imagen4](/img/ventas/tarjetas-de-regalo-4.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gift_cards">{"https://app.zauru.com/sales/gift_cards"}</a></figcaption>
+</figure>
 
 Las tarjetas de regalo pueden filtrarse por estado:
 - **Activas**: Tarjetas con saldo disponible y listas para usar.
@@ -103,7 +123,12 @@ En la página de detalles podrá ver:
 - La factura u orden de venta que originó la tarjeta.
 - El historial de redenciones.
 
+<figure>
+
 ![imagen5](/img/ventas/tarjetas-de-regalo-5.png)
+
+<figcaption><a href="https://app.zauru.com/sales/gift_cards/:id">{"https://app.zauru.com/sales/gift_cards/:id"}</a></figcaption>
+</figure>
 
 ### Consultar Saldo de una Tarjeta de Regalo (Lookup)
 

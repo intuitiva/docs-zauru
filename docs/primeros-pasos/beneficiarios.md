@@ -14,7 +14,12 @@ No puede emitir una factura ni registrar una compra sin tener registrado antes a
 2. Seleccionar "Beneficiarios".
 3. Click en "Nuevo Beneficiario".
 
+<figure>
+
 ![Listado de beneficiarios con el botón Nuevo Beneficiario](/img/primeros-pasos/beneficiarios-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees">{"https://app.zauru.com/settings/payees"}</a></figcaption>
+</figure>
 
 ## Tipos de beneficiario
 
@@ -26,7 +31,12 @@ Un beneficiario puede ser proveedor, cliente o ambos:
 
 Las casillas "Proveedor" y "Cliente" se marcan al crear el beneficiario.
 
+<figure>
+
 ![Casillas Proveedor y Cliente del formulario](/img/primeros-pasos/beneficiarios-2.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/new">{"https://app.zauru.com/settings/payees/new"}</a></figcaption>
+</figure>
 
 ## Campos del formulario
 
@@ -56,7 +66,12 @@ Estos son los campos del nuevo beneficiario, en el orden del formulario:
 22. **Vendedor Exclusivo**: vendedor asignado, se selecciona de la lista de empleados.
 23. Click en "Crear beneficiario" para guardar.
 
+<figure>
+
 ![Formulario de nuevo beneficiario con los campos numerados](/img/primeros-pasos/beneficiarios-3.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/new">{"https://app.zauru.com/settings/payees/new"}</a></figcaption>
+</figure>
 
 ## Campos adicionales
 
@@ -85,7 +100,12 @@ Si tiene demasiados clientes o proveedores para ingresarlos uno por uno, use las
 5. Seleccionar el archivo de Excel.
 6. Click en "Importar beneficiarios". Si aparece algún error, revise que la plantilla cumpla las reglas de abajo.
 
+<figure>
+
 ![Botón Importar en el listado de beneficiarios](/img/primeros-pasos/beneficiarios-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees">{"https://app.zauru.com/settings/payees"}</a></figcaption>
+</figure>
 
 Cada campo de la plantilla acepta:
 
@@ -95,7 +115,12 @@ Cada campo de la plantilla acepta:
 - **Texto**: cualquier carácter.
 - **Cadena de texto**: cualquier carácter, máximo 256.
 
+<figure>
+
 ![Página de importación con las reglas y el botón Importar beneficiarios](/img/primeros-pasos/beneficiarios-5.png)
+
+<figcaption><a href="https://app.zauru.com/settings/payees/payee_imports/new">{"https://app.zauru.com/settings/payees/payee_imports/new"}</a></figcaption>
+</figure>
 
 ## Filtrar beneficiarios
 

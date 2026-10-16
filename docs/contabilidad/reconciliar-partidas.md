@@ -12,14 +12,24 @@ Los pasos para crear una reconciliacion son los siguientes:
 2. Seleccione "Cuentas".
 3. Click sobre "Cuentas por Pagar Credito" (o la cuenta reconciliable que desee).
 
+<figure>
+
 ![imagen1](/img/contabilidad/reconciliar-partidas-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 Le apareceran los detalles de la cuenta, siga los siguientes pasos para reconciliar las transacciones asociadas con esta cuenta:
 
 4. Verifique que la cuenta por pagar sea Reconciliable. Por default, todas las cuentas por pagar y por cobrar son reconciliables (atributo `reconciliable`).
 5. Dirijase a la transaccion que quiere reconciliar y haga Click en "Reconciliar".
 
+<figure>
+
 ![imagen2](/img/contabilidad/reconciliar-partidas-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id">{"https://app.zauru.com/accounting/accounts/:id"}</a></figcaption>
+</figure>
 
 Le apareceran todas las transacciones que estan asociadas con la cuenta. En este ejemplo, salen las transacciones que pasaron por cuentas por pagar. Se puede ver una transaccion que genero una deuda o un "Pago" y una transaccion que disminuyo la cuenta por pagar o un "Deposito". En el ejemplo se muestra el ingreso de la factura por servicio y luego una transaccion del pago de la factura.
 
@@ -31,15 +41,30 @@ A continuacion vamos a reconciliar las transacciones que estan asociadas. Los pa
 2. Verifique los totales de Debito y Credito. Para que la reconciliacion sea valida, los montos deben coincidir.
 3. Click sobre "Crear reconciliacion".
 
+<figure>
+
 ![imagen3](/img/contabilidad/reconciliar-partidas-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/reconciliations/new">{"https://app.zauru.com/accounting/accounts/reconciliations/new"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje en la pantalla notificandole que la reconciliacion fue creada exitosamente. Si se dirige a la parte inferior de la hoja, podra ver que en el lugar donde antes aparecia "Reconciliar" se coloco un numero, este numero es el numero de reconciliacion. Si usted hace click sobre el numero, podra ver las transacciones que van asociadas a la reconciliacion.
 
+<figure>
+
 ![imagen4](/img/contabilidad/reconciliar-partidas-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/:id">{"https://app.zauru.com/accounting/accounts/:id"}</a></figcaption>
+</figure>
 
 Le apareceran los detalles de la reconciliacion contable, en donde podra ver las transacciones que se asociaron. Reconciliar sus cuentas le va permitir tener un mejor control sobre su contabilidad, podra asociar las facturas con sus cheques, y sera mas facil identificar sus movimientos.
 
+<figure>
+
 ![imagen5](/img/contabilidad/reconciliar-partidas-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/reconciliations/:id">{"https://app.zauru.com/accounting/accounts/reconciliations/:id"}</a></figcaption>
+</figure>
 
 ## Deshacer una reconciliacion
 

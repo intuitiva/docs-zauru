@@ -12,11 +12,21 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 2. Ingresar a Reportes
 3. Seleccionar Categoria de Gastos por Proyecto
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/reportes-contabilidad-categoria-de-gastos-por-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 Después se selecciona el proyecto y la categoría del gasto para que aparezca la información de la categoría en el proyecto.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-categoria-de-gastos-por-proyecto-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_expense_group">{"https://app.zauru.com/accounting/reports/tagged_expense_group"}</a></figcaption>
+</figure>
 
 Con esta lista podrá comparar el gasto real de la categoría contra su presupuesto y detectar a tiempo cualquier desviación.

@@ -58,7 +58,12 @@ Por ejemplo:
 
 Se requiere entrar a cada cuenta. Ya dentro de la cuenta se puede revisar si esta correcta la tipificacion de la cuenta.
 
+<figure>
+
 ![Listado de cuentas contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 En el detalle de una cuenta de tipo "Gastos" se muestra si la cuenta está marcada como costo. Si esta incorrecto, editar la cuenta y cambiarla.
 
@@ -66,7 +71,12 @@ En el detalle de una cuenta de tipo "Gastos" se muestra si la cuenta está marca
 
 Al crear un presupuesto de egresos puede elegir cualquier cuenta de tipo "Gastos" (tipo 3), sea costo o gasto operativo: el presupuesto no distingue entre costo y gasto. El atributo `cost` solo cambia la sección del estado de resultados y la exportación de la nomenclatura.
 
+<figure>
+
 ![Listado de presupuestos contables en Zauru](/img/contabilidad/tipificar-las-cuentas-de-egresos-gastos-o-costos-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/budgets">{"https://app.zauru.com/accounting/budgets"}</a></figcaption>
+</figure>
 
 ## Exportacion de nomenclatura
 

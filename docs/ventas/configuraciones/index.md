@@ -6,7 +6,12 @@ sidebar_position: 0
 
 Antes de emitir la primera factura, este módulo define cómo se vende y cómo se cobra: los plazos de crédito, los descuentos, los métodos de pago y los precios que usarán las facturas. Todo se configura una sola vez en "Ventas" > "Configuraciones", y después cada venta se contabiliza y se cobra según lo definido aquí.
 
+<figure>
+
 ![imagen1](/img/ventas/configuraciones-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms">{"https://app.zauru.com/sales/settings/payment_terms"}</a></figcaption>
+</figure>
 
 Las pestañas de configuración son las siguientes:
 

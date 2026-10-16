@@ -12,7 +12,12 @@ Los pasos para agregar aranceles a una orden de compra son los siguientes:
 2. Seleccionar “Ordenes de Compra”.
 3. Seleccionar “Nuevo Cargo de Arancel” como se muestra en la imagen.
 
+<figure>
+
 ![imagen1](/img/compras/cargos-de-aranceles-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo cargo de arancel, recomendamos tener la póliza a mano para colocar los cargos arancelarios, los campos que debe llenar son los siguientes:
@@ -35,13 +40,23 @@ h. Coloque el total de arancel cobrado por producto.
 
 i. Presione “Crear cargo” para crear el cargo de arancel a su orden de compra.
 
+<figure>
+
 ![imagen2](/img/compras/cargos-de-aranceles-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges/tariffs_charges/new">{"https://app.zauru.com/purchases/charges/tariffs_charges/new"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerá un mensaje de éxito notificándole que el cargo de arancel fue creado exitosamente.
 
+<figure>
+
 ![imagen3](/img/compras/cargos-de-aranceles-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges">{"https://app.zauru.com/purchases/charges"}</a></figcaption>
+</figure>
 
 Con los aranceles registrados, cada producto de su importación ya refleja el costo que realmente pagó al internar la mercadería. Si su póliza incluye además fletes, seguros o gastos de agencia aduanal, puede registrarlos como cargos adicionales a la misma orden de compra; cuando ya tenga el costo completo, el siguiente paso natural es recibir la mercadería en su bodega.
 

@@ -8,7 +8,12 @@ sidebar_position: 35
 
 Para ingresar a este reporte:
 
+<figure>
+
 ![Reporte Ingresos Etiquetados de Cliente mostrando filtros y tabla de resultados](/img/reportes-de-contabilidad/ingresos-etiquetados-de-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_incomes_from_client">{"https://app.zauru.com/accounting/reports/tagged_incomes_from_client"}</a></figcaption>
+</figure>
 
 1. Ir a "Contabilidad".
 2. Seleccionar "Reportes".

@@ -15,13 +15,23 @@ Los pasos para crear una categoría de ítems son los siguientes:
 3. Seleccionar "Categoría de Ítems" en las pestañas.
 4. Click en el botón "+ Nueva Categoría de Ítems".
 
+<figure>
+
 ![Categoría de Ítems](/img/primeros-pasos/items-6.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/item_categories">{"https://app.zauru.com/settings/items/item_categories"}</a></figcaption>
+</figure>
 
 5. Colocar el nombre de la categoría de ítems.
 6. Colocar una nota sobre la categoría de ítems. (opcional)
 7. Presionar "Crear Categoría de Ítems".
 
+<figure>
+
 ![Nueva Categoría de Ítems](/img/primeros-pasos/items-7.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/item_categories/new">{"https://app.zauru.com/settings/items/item_categories/new"}</a></figcaption>
+</figure>
 
 Luego de crear la categoría de ítems deberá asignarla al ítem o ítems que desea categorizar. La forma de hacerlo es la siguiente:
 
@@ -29,7 +39,12 @@ Luego de crear la categoría de ítems deberá asignarla al ítem o ítems que d
 2. Seleccionar "Ítems".
 3. Seleccionar "Editar" en el ítem que se desea categorizar.
 
+<figure>
+
 ![Editar ítem](/img/primeros-pasos/items-8.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items">{"https://app.zauru.com/settings/items"}</a></figcaption>
+</figure>
 
 ## Súper Categorías de Ítems
 
@@ -40,14 +55,24 @@ Las súper categorías agrupan categorías de ítems para ubicar los productos m
 3. Seleccionar "Súper Categoría de Ítems" en las pestañas.
 4. Click en el botón "+ Nueva Súper Categoría de Ítems".
 
+<figure>
+
 ![Súper Categorías](/img/primeros-pasos/items-9.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/item_super_categories">{"https://app.zauru.com/settings/items/item_super_categories"}</a></figcaption>
+</figure>
 
 5. Colocar el nombre de la súper categoría de ítems.
 6. Colocar una descripción sobre la súper categoría de ítems. (opcional)
 7. Puede elegir un color (funcional en el módulo de P.D.V).
 8. Presionar "Crear Súper Categoría de Ítems".
 
+<figure>
+
 ![Nueva Súper Categoría](/img/primeros-pasos/items-10.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/item_super_categories/new">{"https://app.zauru.com/settings/items/item_super_categories/new"}</a></figcaption>
+</figure>
 
 ## Marcas de Ítems
 
@@ -58,14 +83,24 @@ También puede agrupar sus ítems por marcas, además de categorías y súper ca
 3. Seleccionar "Marcas" en las pestañas.
 4. Click en el botón "+ Nueva Marca".
 
+<figure>
+
 ![Marca de Ítems](/img/primeros-pasos/items-11.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/brands">{"https://app.zauru.com/settings/items/brands"}</a></figcaption>
+</figure>
 
 5. Colocar el nombre de la marca de ítems.
 6. Colocar una descripción sobre la marca de ítems. (opcional)
 7. Puede elegir un color (funcional en el módulo de P.D.V).
 8. Presionar "Crear Marca".
 
+<figure>
+
 ![Nueva Marca de Ítems](/img/primeros-pasos/items-12.png)
+
+<figcaption><a href="https://app.zauru.com/settings/items/brands/new">{"https://app.zauru.com/settings/items/brands/new"}</a></figcaption>
+</figure>
 
 Con sus categorías, súper categorías y marcas creadas podrá ubicar sus ítems más fácilmente en los listados y en el punto de venta (P.D.V.), donde además se aprovechan los colores definidos.
 

@@ -10,7 +10,12 @@ Cada vez que compra papel, clips, folders o cualquier insumo para la oficina, co
 2. Seleccionar “Transacciones”.
 3. Seleccionar “Nueva Transacción”.
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-gastos-de-insumos-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva transacciones, los campos que deberá llenar para crear una nueva transacción de gastos de insumos de oficina son los siguientes:
@@ -33,7 +38,12 @@ h. Aquí deberá seleccionar la cuenta del gasto, en el ejemplo seleccionamos la
 
 Para crear el gasto seleccione “Crear Transacción” en la parte de abajo.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-gastos-de-insumos-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Con el gasto registrado, sus insumos de oficina quedan contabilizados en la cuenta correcta y disponibles para los reportes del mes. Si quiere llevar un control más fino, puede crear cuentas específicas como "Lapiceros" o "Papel Higiénico" y repetir este mismo flujo.
 

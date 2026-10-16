@@ -13,7 +13,12 @@ La forma de ver los registros de acceso de los usuarios es la siguiente:
 3. Seleccionar el usuario que desea ver sus registros de acceso.
 4. Presione “Cambiar Usuario”.
 
+<figure>
+
 ![imagen13](/img/permisos-de-acceso/registros-de-acceso-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/access_logs">{"https://app.zauru.com/access_control/access_logs"}</a></figcaption>
+</figure>
 
 5. Seleccione desde que fecha quiere realizar la busqueda de registros.
 6. Seleccione hasta que fecha quiere realizar la busqueda de registros.
@@ -21,7 +26,12 @@ La forma de ver los registros de acceso de los usuarios es la siguiente:
 
 Se desplegaran todos los movimientos y transacciones que ha realizado este usuario en la fecha que se especifico.
 
+<figure>
+
 ![imagen14](/img/permisos-de-acceso/registros-de-acceso-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/access_logs">{"https://app.zauru.com/access_control/access_logs"}</a></figcaption>
+</figure>
 
 Con esto puede comprobar, movimiento por movimiento, lo que un usuario hizo en el sistema. Como los registros solo se conservan 48 horas, conviene revisarlos pronto cuando necesite aclarar algo, y ajustar los permisos del usuario si encuentra algo fuera de lugar.
 

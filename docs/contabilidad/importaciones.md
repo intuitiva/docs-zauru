@@ -15,11 +15,21 @@ Permite cargar masivamente cuentas contables desde un archivo CSV. Util para cua
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas".
 
+<figure>
+
 ![Listado de cuentas contables en el módulo de Contabilidad](/img/contabilidad/importaciones-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 3. Hacer clic en "Importar Cuentas".
 
+<figure>
+
 ![Formulario de importación de cuentas contables](/img/contabilidad/importaciones-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/account_imports/new">{"https://app.zauru.com/accounting/accounts/account_imports/new"}</a></figcaption>
+</figure>
 
 4. Seleccionar el archivo CSV con el formato requerido.
 5. Hacer clic en "Importar".
@@ -35,11 +45,21 @@ Permite cargar masivamente transacciones contables desde un archivo CSV. Util pa
 1. Ir a "Contabilidad".
 2. Seleccionar "Transacciones".
 
+<figure>
+
 ![Listado de transacciones contables en el módulo de Contabilidad](/img/contabilidad/importaciones-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 3. Hacer clic en "Importar Transacciones".
 
+<figure>
+
 ![Formulario de importación de transacciones contables](/img/contabilidad/importaciones-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/entries_import/new">{"https://app.zauru.com/accounting/entries/entries_import/new"}</a></figcaption>
+</figure>
 
 4. Seleccionar el archivo CSV con el formato requerido.
 5. Hacer clic en "Importar".
@@ -55,11 +75,21 @@ Permite cargar masivamente grupos de cuentas desde un archivo CSV, Excel (.xls) 
 1. Ir a "Contabilidad".
 2. Seleccionar "Cuentas", luego la pestana "Grupo de Cuentas".
 
+<figure>
+
 ![Pestaña de grupos de cuentas en el listado de cuentas](/img/contabilidad/importaciones-5.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 3. Hacer clic en "Importar".
 
+<figure>
+
 ![Formulario de importación de grupos de cuentas](/img/contabilidad/importaciones-6.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/account_group_imports/new">{"https://app.zauru.com/accounting/accounts/account_group_imports/new"}</a></figcaption>
+</figure>
 
 4. Seleccionar el archivo.
 5. Hacer clic en "Importar".

@@ -8,7 +8,12 @@ Si quiere saber qué tan vieja es la deuda de cada cliente, este reporte se lo d
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Reporte de Pagos Pendientes de Clientes (Aging) mostrando los rangos de antigüedad](/img/reportes-de-ventas/pagos-pendientes-de-clientes-aging-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/clients_unpaid_payments">{"https://app.zauru.com/sales/reports/clients_unpaid_payments"}</a></figcaption>
+</figure>
 
 1. Hacer click en "Ventas".
 2. Seleccionar "Reportes".

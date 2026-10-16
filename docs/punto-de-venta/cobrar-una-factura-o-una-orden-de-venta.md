@@ -10,7 +10,12 @@ Un cliente que compró al crédito en su tienda le deja una factura pendiente, y
 2. Seleccionar “Facturas” u "Ordenes".
 3. Seleccionar el icono de “Cobrar”.
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/cobrar-una-factura-o-una-orden-de-venta-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/invoices">{"https://app.zauru.com/pos/invoices"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear un nuevo pago, junto con los detalles de la factura no pagada. Los campos que debe colocar son:
@@ -25,11 +30,21 @@ c. Coloque la cantidad que se esta cobrando en el método de pago que especific�
 
 Presione “Crear pago”.
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/cobrar-una-factura-o-una-orden-de-venta-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/charges/new">{"https://app.zauru.com/pos/charges/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito notificándole que se creo el cobro, ahora el cobro quedara en el listado de cobros sin confirmar, hasta que se confirme el pago, la factura seguirá siendo una factura no pagada.
 
+<figure>
+
 ![imagen3](/img/punto-de-venta/cobrar-una-factura-o-una-orden-de-venta-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/charges">{"https://app.zauru.com/pos/charges"}</a></figcaption>
+</figure>
 
 ## Listado de cobros sin confirmar
 

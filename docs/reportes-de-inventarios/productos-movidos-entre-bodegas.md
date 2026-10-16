@@ -12,7 +12,12 @@ Para generar el reporte:
 2. Seleccionar "Productos movidos entre bodegas".
 3. Seleccionar las bodegas y el tipo de fecha.
 
+<figure>
+
 ![Formulario del reporte 'Productos movidos entre bodegas' con filtros de bodega origen, destino y tipo de fecha](/img/reportes-de-inventarios/productos-movidos-entre-bodegas-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/items_moved_between_warehouses">{"https://app.zauru.com/inventories/reports/items_moved_between_warehouses"}</a></figcaption>
+</figure>
 
 4. Presionar "Generar reporte".
 

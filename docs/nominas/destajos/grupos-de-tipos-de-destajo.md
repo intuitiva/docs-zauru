@@ -16,7 +16,12 @@ Para gestionar grupos:
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo grupo de tipos de destajo](/img/nominas/configuraciones-de-nomina-10.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/piecework_type_groups/new">{"https://app.zauru.com/payroll/settings/piecework_type_groups/new"}</a></figcaption>
+</figure>
 
 - **Nombre**: nombre del grupo (ej. "Cosecha", "Siembra", "Mantenimiento").
 - **Numero de identificacion**: codigo opcional para el grupo.

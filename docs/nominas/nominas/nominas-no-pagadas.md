@@ -15,7 +15,12 @@ Para acceder:
 
 El listado muestra todas las nóminas pendientes en formato de tabla con las siguientes columnas:
 
+<figure>
+
 ![Listado de nóminas no pagadas](/img/nominas/nominas-no-pagadas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/unpaid_payroll_runs">{"https://app.zauru.com/payroll/unpaid_payroll_runs"}</a></figcaption>
+</figure>
 
 - ID (zid): identificador único de la nómina.
 - Nombre: nombre descriptivo de la nómina.
@@ -78,7 +83,12 @@ Para cada nómina fuera de ciclo se muestra un botón con el nombre del benefici
 
 3. Hacer clic en **"Crear Nómina"**.
 
+<figure>
+
 ![Formulario de nueva nómina](/img/nominas/nominas-no-pagadas-2.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/unpaid_payroll_runs/new">{"https://app.zauru.com/payroll/unpaid_payroll_runs/new"}</a></figcaption>
+</figure>
 
 ## Ver detalle de una nómina
 
@@ -90,7 +100,12 @@ En el listado, hacer clic en el nombre o ID de la nómina. El detalle muestra:
 - **Partidas contables asociadas**: enlace a las transacciones contables generadas por la nómina.
 - **Formularios asociados**: plantillas de impresión vinculadas.
 
+<figure>
+
 ![Detalle de una nómina no pagada](/img/nominas/nominas-no-pagadas-3.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/unpaid_payroll_runs/1">{"https://app.zauru.com/payroll/unpaid_payroll_runs/1"}</a></figcaption>
+</figure>
 
 ## Aprobar una nómina
 
@@ -126,7 +141,12 @@ Para beneficios y deducciones configurados como flexibles (con el campo **"Monto
 2. Aparece una tabla con todos los empleados de la nómina y las columnas de cada beneficio o deducción flexible.
 3. Ingresar los montos correspondientes para cada empleado.
 
+<figure>
+
 ![Tabla de llenado de beneficios y deducciones flexibles](/img/nominas/nominas-no-pagadas-4.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions">{"https://app.zauru.com/payroll/unpaid_payroll_runs/1/fill_flexible_benefits_and_deductions"}</a></figcaption>
+</figure>
 
 4. Hacer clic en **"Actualizar Nómina"**.
 

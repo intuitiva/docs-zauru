@@ -13,7 +13,12 @@ Para acceder a las configuraciones de su entidad:
 1. Ir a "Configuraciones".
 2. Seleccionar "Configuraciones de Entidad".
 
+<figure>
+
 ![imagen1](/img/primeros-pasos/configuraciones-entidad-1.png)
+
+<figcaption><a href="https://app.zauru.com/company/edit">{"https://app.zauru.com/company/edit"}</a></figcaption>
+</figure>
 
 ## Variables de Entidad Disponibles
 
@@ -66,6 +71,11 @@ Cuando se activa esta opción, al editar las variaciones de un ítem se mostrar�
 
 Después de realizar los cambios deseados, presione "Actualizar Variable" para guardar la configuración. Le aparecerá un mensaje de éxito confirmando que las variables se actualizaron correctamente.
 
+<figure>
+
 ![imagen2](/img/primeros-pasos/configuraciones-entidad-2.png)
+
+<figcaption><a href="https://app.zauru.com/company/edit">{"https://app.zauru.com/company/edit"}</a></figcaption>
+</figure>
 
 Ha dejado las configuraciones de su entidad a la medida de su operación. Puede volver a esta pantalla en cualquier momento para ajustarlas cuando sus necesidades cambien.

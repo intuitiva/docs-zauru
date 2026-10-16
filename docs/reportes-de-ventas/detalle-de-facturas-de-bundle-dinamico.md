@@ -12,11 +12,21 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Detalle de Facturas de Bundle Dinámico".
 
+<figure>
+
 ![Filtros del reporte de detalle de facturas de bundle dinámico](/img/reportes-de-ventas/detalle-de-facturas-de-bundle-dinamico-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/category_bundle_invoice_details">{"https://app.zauru.com/sales/reports/category_bundle_invoice_details"}</a></figcaption>
+</figure>
 
 Solo necesita indicar el **rango de fechas** (fecha inicial y fecha final) del período que desea consultar.
 
+<figure>
+
 ![Resultado del reporte de detalle de facturas de bundle dinámico](/img/reportes-de-ventas/detalle-de-facturas-de-bundle-dinamico-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/category_bundle_invoice_details">{"https://app.zauru.com/sales/reports/category_bundle_invoice_details"}</a></figcaption>
+</figure>
 
 El reporte presenta una tabla de detalle con las siguientes columnas:
 

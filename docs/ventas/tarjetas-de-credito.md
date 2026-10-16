@@ -24,7 +24,12 @@ Los pasos para agregar una tarjeta de crédito a un cliente son los siguientes:
 3. Seleccionar el cliente al que desea agregar la tarjeta de crédito haciendo click sobre **"Verificar"** (El ojo).
 4. En la página de detalles del cliente, busque la sección de **"Tarjetas de Crédito"** y presione **"Nueva Tarjeta de Crédito"**.
 
+<figure>
+
 ![imagen1](/img/ventas/tarjetas-de-credito-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/clients/:id">{"https://app.zauru.com/sales/clients/:id"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para agregar una nueva tarjeta de crédito. Los campos que debe llenar son los siguientes:
 
@@ -46,7 +51,12 @@ h. **Predeterminada**: Marque esta opción si desea que esta tarjeta sea la pred
 
 Para guardar presione **"Crear Tarjeta de Crédito"**.
 
+<figure>
+
 ![imagen2](/img/ventas/tarjetas-de-credito-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/clients/:client_id/credit_cards/new">{"https://app.zauru.com/sales/clients/:client_id/credit_cards/new"}</a></figcaption>
+</figure>
 
 Al crear la tarjeta, Zauru enviará los datos al gateway configurado para **tokenizar** la tarjeta. Esto significa que los datos sensibles (número de tarjeta y CVV) no se almacenan en Zauru, sino que se obtiene un token del gateway que representa la tarjeta de forma segura.
 
@@ -69,7 +79,12 @@ En la página de detalles de la tarjeta podrá ver:
 - El gateway configurado.
 - El historial de **intenciones de operación** del gateway asociadas a esta tarjeta.
 
+<figure>
+
 ![imagen3](/img/ventas/tarjetas-de-credito-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/clients/:client_id/credit_cards/:id">{"https://app.zauru.com/sales/clients/:client_id/credit_cards/:id"}</a></figcaption>
+</figure>
 
 ## Desactivar una Tarjeta de Crédito
 
@@ -83,7 +98,12 @@ Si desea desactivar una tarjeta de crédito (no se elimina permanentemente, solo
 
 La tarjeta será desactivada (soft-delete) y ya no estará disponible para realizar pagos.
 
+<figure>
+
 ![imagen4](/img/ventas/tarjetas-de-credito-4.png)
+
+<figcaption><a href="https://app.zauru.com/sales/clients/:client_id/credit_cards/:id">{"https://app.zauru.com/sales/clients/:client_id/credit_cards/:id"}</a></figcaption>
+</figure>
 
 ## Cobrar con Tarjeta de Crédito
 

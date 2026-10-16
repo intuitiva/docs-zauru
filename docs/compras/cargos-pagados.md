@@ -14,7 +14,12 @@ Los pasos para ver los cargos pagados son los siguientes:
 2. Seleccionar "Cargos".
 3. Seleccionar la pestana "Cargos Pagados".
 
+<figure>
+
 ![imagen1](/img/compras/cargos-pagados-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/paid_charges">{"https://app.zauru.com/purchases/paid_charges"}</a></figcaption>
+</figure>
 
 Le aparecera un listado con todos los cargos que han sido pagados. En este listado puede:
 
@@ -31,7 +36,12 @@ Los pasos para ver los detalles de un cargo pagado son:
 3. Seleccionar "Cargos Pagados".
 4. Seleccionar "Detalles" (El Ojo) en el cargo que desea consultar.
 
+<figure>
+
 ![imagen2](/img/compras/cargos-pagados-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/paid_charges/:id">{"https://app.zauru.com/purchases/paid_charges/:id"}</a></figcaption>
+</figure>
 
 En la vista de detalles de un cargo pagado podra encontrar:
 
@@ -53,7 +63,12 @@ h. Partidas contables generadas.
 
 i. Documentos electronicos asociados.
 
+<figure>
+
 ![imagen3](/img/compras/cargos-pagados-3.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/paid_charges/:id">{"https://app.zauru.com/purchases/paid_charges/:id"}</a></figcaption>
+</figure>
 
 ## Editar informacion de un cargo pagado
 
@@ -67,7 +82,12 @@ Los pasos para editar un cargo pagado son:
 4. Seleccionar "Detalles" en el cargo que desea editar.
 5. Seleccionar "Editar".
 
+<figure>
+
 ![imagen4](/img/compras/cargos-pagados-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/paid_charges/:id/shallow_edit">{"https://app.zauru.com/purchases/paid_charges/:id/shallow_edit"}</a></figcaption>
+</figure>
 
 Los campos que puede editar en un cargo pagado son:
 
@@ -83,7 +103,12 @@ e. Memo o notas.
 
 f. Etiquetas (tags).
 
+<figure>
+
 ![imagen5](/img/compras/cargos-pagados-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/paid_charges/:id">{"https://app.zauru.com/purchases/paid_charges/:id"}</a></figcaption>
+</figure>
 
 Al terminar de editar, presione "Actualizar" para guardar los cambios.
 

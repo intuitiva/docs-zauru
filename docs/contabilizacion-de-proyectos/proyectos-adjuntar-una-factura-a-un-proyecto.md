@@ -12,18 +12,33 @@ Los pasos para adjuntar una factura a un proyecto son los siguientes:
 2. Seleccionar “Facturas no Pagadas”.
 3. Seleccionar “Nueva Factura”.
 
+<figure>
+
 ![imagen1](/img/contabilizacion-de-proyectos/proyectos-adjuntar-una-factura-a-un-proyecto-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 Le aparecerán las opciones para crear una nueva factura. Luego de llenar los campos de la factura, en la parte inferior de la página , en la información adicional, deberá colocar el proyecto que desea adjuntar, tal como se muestra en la imagen.
 
+<figure>
+
 ![imagen2](/img/contabilizacion-de-proyectos/proyectos-adjuntar-una-factura-a-un-proyecto-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/new">{"https://app.zauru.com/sales/unpaid_invoices/new"}</a></figcaption>
+</figure>
 
 
 
 Luego de crear la factura, le parecerá un mensaje de éxito en la pantalla y se mostraran los detalles de la factura. Podrá encontrar los proyectos asociados a la factura, esta transacción de venta se vera reflejada en el balance del proyecto.
 
+<figure>
+
 ![imagen3](/img/contabilizacion-de-proyectos/proyectos-adjuntar-una-factura-a-un-proyecto-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/:id">{"https://app.zauru.com/sales/unpaid_invoices/:id"}</a></figcaption>
+</figure>
 
 Ya tiene su factura asociada al proyecto. Ahora que los ingresos y los gastos de la obra quedan registrados por separado, puede revisar el balance del proyecto para ver cómo va el resultado de su trabajo hasta la fecha.
 

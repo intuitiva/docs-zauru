@@ -12,7 +12,12 @@ Para la persona que está emitiendo una factura, el proceso de contingencia es _
 
 Sabiendo que el proceso es el mismo, la diferencia está en la representación gráfica de la factura que sufre los siguientes cambios:
 
+<figure>
+
 ![Diferencia facturas FEL en contingencia](/img/ventas/facturas-electronicas-en-contingencia-en-guatemala-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/:id/print">{"https://app.zauru.com/sales/unpaid_invoices/:id/print"}</a></figcaption>
+</figure>
 
 Los cambios que se deben de mostrar en la representación gráfica son 3:
 1. Debe mostrarse el texto "DOCUMENTO EN CONTINGENCIA"
@@ -29,7 +34,12 @@ Si una factura es generada en contingencia, Zauru intentará enviar la factura a
 
 Se desarrolló un reporte nuevo que muestra todas las facturas en contingencia entre fechas, el reporte se encuentra en ventas -> reportes -> Documentos emitidos en contingencia:
 
+<figure>
+
 ![Reporte de documentos emitidos en contingencia](/img/ventas/facturas-electronicas-en-contingencia-en-guatemala-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/documents_issued_in_contingency">{"https://app.zauru.com/sales/reports/documents_issued_in_contingency"}</a></figcaption>
+</figure>
 
 Si todavía no tiene número de factura es porque todavía no se le han enviado al certificador para que nos otorgue el número de factura, en el caso de la imagen, ya se certificaron todas las facturas en contingencia.
 

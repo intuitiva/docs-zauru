@@ -13,7 +13,12 @@ Para generar el reporte:
 3. Seleccionar la bodega y el rango de fechas.
 4. Presionar "Generar reporte".
 
+<figure>
+
 ![Resultado del reporte mostrando los últimos movimientos por producto](/img/reportes-de-inventarios/ultimos-movimientos-por-bodega-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/last_movements_per_agency">{"https://app.zauru.com/inventories/reports/last_movements_per_agency"}</a></figcaption>
+</figure>
 
 **Filtros**:
 

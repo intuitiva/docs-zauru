@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Así, cuando necesite sustentar el IVA ante el fisco o compartir la documentación con su contador, la tiene ordenada y al alcance de un clic.
 
+<figure>
+
 ![Reporte de Almacenamiento de Facturas Electrónicas](/img/reportes-de-ventas/almacenamiento-de-facturas-electronicas-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/electronic_invoices_storage">{"https://app.zauru.com/sales/reports/electronic_invoices_storage"}</a></figcaption>
+</figure>

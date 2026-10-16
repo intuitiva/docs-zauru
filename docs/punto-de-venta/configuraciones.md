@@ -11,7 +11,12 @@ Los pasos para configurar el punto de venta son los siguientes:
 1. Ir a "P.D.V".
 2. Seleccionar el icono de "Configuraciones".
 
+<figure>
+
 ![imagen1](/img/punto-de-venta/configuraciones-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/pos/pos_settings/new">{"https://app.zauru.com/pos/pos_settings/new"}</a></figcaption>
+</figure>
 
 
 Le apareceran las opciones de configuraciones para el punto de venta, organizadas en secciones. Los campos que se pueden configurar son los siguientes:
@@ -134,7 +139,12 @@ az. **Carga de imagenes**: Active las opciones para permitir la carga de imagene
 
 Por ultimo, para guardar sus configuraciones presione "Actualizar Configuraciones".
 
+<figure>
+
 ![imagen2](/img/punto-de-venta/configuraciones-2.png)
+
+<figcaption><a href="https://app.zauru.com/pos/pos_settings/new">{"https://app.zauru.com/pos/pos_settings/new"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito en la pantalla notificandole que se actualizaron los datos.
 

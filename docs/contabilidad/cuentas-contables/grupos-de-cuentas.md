@@ -26,7 +26,12 @@ El tipo de cuenta y la moneda del grupo se aplican a todas sus cuentas: al asign
 3. Seleccionar la pestaña "Grupo de Cuentas".
 4. Click sobre "Nuevo Grupo de Cuentas".
 
+<figure>
+
 ![Formulario de nuevo grupo de cuentas](/img/contabilidad/cuentas-contables-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/account_groups/new">{"https://app.zauru.com/accounting/accounts/account_groups/new"}</a></figcaption>
+</figure>
 
 Los campos a llenar son:
 
@@ -39,7 +44,12 @@ Los campos a llenar son:
 
 Para guardar los cambios presione "Crear grupo de cuenta".
 
+<figure>
+
 ![Listado de grupos de cuentas](/img/contabilidad/cuentas-contables-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/account_groups">{"https://app.zauru.com/accounting/accounts/account_groups"}</a></figcaption>
+</figure>
 
 ## Asignar cuentas al grupo
 
@@ -47,7 +57,12 @@ Para guardar los cambios presione "Crear grupo de cuenta".
 2. Seleccionar "Cuentas".
 3. Crear una nueva cuenta y seleccionar el grupo en "Grupo de cuenta".
 
+<figure>
+
 ![Cuenta contable asignada a un grupo](/img/contabilidad/cuentas-contables-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/new">{"https://app.zauru.com/accounting/accounts/new"}</a></figcaption>
+</figure>
 
 La cuenta toma el tipo de cuenta y la moneda del grupo. El nombre de la cuenta debe ser único dentro del grupo, y una cuenta con movimientos no permite cambiar de tipo de cuenta ni de moneda.
 

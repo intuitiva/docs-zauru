@@ -24,7 +24,12 @@ Le aparecera el listado de todos los casos que ya fueron cerrados. El listado mu
 - **Responsable** asignado
 - **Cliente**
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-casos-cerrados-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/closed_cases">{"https://app.zauru.com/support/closed_cases"}</a></figcaption>
+</figure>
 
 ## Filtros Disponibles
 

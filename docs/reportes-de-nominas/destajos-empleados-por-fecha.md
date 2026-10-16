@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Destajos: Empleados por Fecha"**.
 
+<figure>
+
 ![Vista del reporte Destajos: Empleados por Fecha mostrando tabla con empleados y tipos de destajo](/img/reportes-de-nominas/destajos-empleados-por-fecha-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/pieceworks_employees_per_date">{"https://app.zauru.com/payroll/reports/pieceworks_employees_per_date"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

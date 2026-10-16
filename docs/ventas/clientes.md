@@ -72,7 +72,12 @@ Los pasos para crear un nuevo clientes son sencillos.
 2. Clientes
 3. Nuevo Cliente
 
+<figure>
+
 ![imagen 1](/img/ventas/clientes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/clients">{"https://app.zauru.com/sales/clients"}</a></figcaption>
+</figure>
 
 Aparecerán los distintos campos que se pueden llenar para editar al cliente.
 

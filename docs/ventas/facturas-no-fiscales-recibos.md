@@ -12,12 +12,22 @@ Los pasos para crear un recibo son los siguientes:
 2. Seleccionar “Facturas no Pagadas”.
 3. Seleccionar “Nueva Factura”.
 
+<figure>
+
 ![imagen1](/img/ventas/facturas-no-fiscales-recibos-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 Para que esta transacción no registre impuestos remueva el cheque de “Sujeto a Impuestos”.
 
+<figure>
+
 ![imagen3](/img/ventas/facturas-no-fiscales-recibos-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/new">{"https://app.zauru.com/sales/unpaid_invoices/new"}</a></figcaption>
+</figure>
 
 Luego de remover el cheque de “Sujeto a impuestos” deberá llenar los siguientes campos como comúnmente lo hace:
 
@@ -33,7 +43,12 @@ e. Coloque los productos o servicios que va vender, la cantidad y el precio unit
 
 Para generar la factura sin impuestos o recibo seleccione “Crear factura”.
 
+<figure>
+
 ![imagen2](/img/ventas/facturas-no-fiscales-recibos-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices/new">{"https://app.zauru.com/sales/unpaid_invoices/new"}</a></figcaption>
+</figure>
 
 El recibo quedó emitido y la venta no registró impuestos, justo lo que buscaba. Ahora puede cobrarlo como cualquier otra factura; la diferencia es que este comprobante mantiene su contabilidad limpia cuando la operación no debe generar IVA.
 

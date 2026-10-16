@@ -6,7 +6,12 @@ sidebar_position: 0
 
 La pantalla "Existencias" muestra cuánto producto hay en cada bodega: lo que está disponible, lo que está por ingresar y lo que está reservado para egresar. Tiene dos pestañas, "Existencias de ítems" y "Existencias de paquetes"; la segunda aparece solo si la entidad tiene al menos un paquete creado.
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-existencias-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/stocks">{"https://app.zauru.com/inventories/stocks"}</a></figcaption>
+</figure>
 
 ## Tutoriales
 

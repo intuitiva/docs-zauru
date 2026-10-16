@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con este consolidado puede verificar de un vistazo que las facturas electrónicas del período estén completas y tener respaldada su documentación tributaria sin buscar documento por documento.
 
+<figure>
+
 ![Vista del reporte Almacenamiento Consolidado de Facturas Electrónicas](/img/reportes-de-ventas/almacenamiento-consolidado-de-facturas-electronicas-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/electronic_invoices_consolidated_storage">{"https://app.zauru.com/sales/reports/electronic_invoices_consolidated_storage"}</a></figcaption>
+</figure>

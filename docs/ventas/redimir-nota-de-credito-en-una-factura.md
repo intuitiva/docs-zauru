@@ -10,17 +10,32 @@ sidebar_position: 14
 1. Ir a "Ventas".
 2. Seleccionar "Facturas no Pagadas".
 
+<figure>
+
 ![Listado de facturas no pagadas en el módulo de ventas](/img/ventas/redimir-nota-de-credito-en-una-factura-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 3. Click sobre "Cobrar" (La tarjeta).
 
+<figure>
+
 ![Vista con botón Cobrar de una factura no pagada](/img/ventas/redimir-nota-de-credito-en-una-factura-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/unpaid_invoices">{"https://app.zauru.com/sales/unpaid_invoices"}</a></figcaption>
+</figure>
 
 
 
 Le aparecerán las opciones para crear un nuevo pago, los campos que debe llenar son los siguientes:
 
+<figure>
+
 ![Formulario de nuevo pago con redención de nota de crédito](/img/ventas/redimir-nota-de-credito-en-una-factura-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/payments/new">{"https://app.zauru.com/sales/payments/new"}</a></figcaption>
+</figure>
 
 a. Coloque la fecha en que se esta haciendo el cobro.
 

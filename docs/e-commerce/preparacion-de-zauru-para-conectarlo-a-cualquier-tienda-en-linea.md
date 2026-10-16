@@ -39,7 +39,12 @@ Además de mostrar de donde se obtendrá el producto para la tienda en linea, al
 
 La configuración del módulo e-commerce permite automatizar el procesamiento de los pedidos entrantes. Para una explicación detallada de cada campo de configuración, consultar el manual de [configuración avanzada del módulo de e-commerce](/e-commerce/configuracion-avanzada-del-modulo-de-e-commerce).
 
+<figure>
+
 ![configuración e-commerce](/img/e-commerce/preparacion-de-zauru-para-conectarlo-a-cualquier-tienda-en-linea-1.png)
+
+<figcaption><a href="https://app.zauru.com/ecommerce/ecommerce_settings/new">{"https://app.zauru.com/ecommerce/ecommerce_settings/new"}</a></figcaption>
+</figure>
 
 Los campos principales que se configuran en esta sección son:
 

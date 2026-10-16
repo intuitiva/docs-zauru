@@ -17,7 +17,12 @@ Ambos se ejemplifican en este tutorial.
 2. Seleccionar "Ordenes de Compra".
 3. Seleccionar "Nueva Orden de Compra".
 
+<figure>
+
 ![imagen1](/img/compras/ordenes-de-compra-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -43,19 +48,39 @@ j. Seleccione la moneda de la compra.
 
 k. Coloque el producto y la cantidad ordenada; para agregar otro producto presione "+".
 
+<figure>
+
 ![imagen2](/img/compras/ordenes-de-compra-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 Al terminar de colocar los productos, las cantidades y los costos unitarios, presione "Crear orden de compra".
 
+<figure>
+
 ![imagen3](/img/compras/ordenes-de-compra-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito. Antes de recibir la orden, debe autorizarla como se muestra en la imagen.
 
+<figure>
+
 ![imagen4](/img/compras/ordenes-de-compra-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de confirmación; ahora recíbala en su bodega para poder venderla. Para más detalles, consulte [Crear recepciones para recibir órdenes de compra](/compras/ordenes-de-compra/recibir-los-productos-de-orden-de-compra).
 
+<figure>
+
 ![imagen5](/img/compras/ordenes-de-compra-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 ## Crear una orden de compra de importación
 
@@ -63,7 +88,12 @@ Aparecerá un mensaje de confirmación; ahora recíbala en su bodega para poder 
 2. Seleccionar "Ordenes de Compra".
 3. Seleccionar "Nueva Orden de Compra".
 
+<figure>
+
 ![imagen6](/img/compras/ordenes-de-compra-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -99,19 +129,39 @@ o. Coloque el forwarder o intermediario que maneja la mercadería.
 
 p. Seleccione los productos, la cantidad y el costo unitario original, sin incluir cargos ni aranceles.
 
+<figure>
+
 ![imagen7](/img/compras/ordenes-de-compra-7.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 Presione "+" para agregar otra fila. Al terminar, seleccione "Crear orden de compra".
 
+<figure>
+
 ![imagen8](/img/compras/ordenes-de-compra-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/new">{"https://app.zauru.com/purchases/purchase_orders/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito. Autorice la orden y luego agregue los cargos y aranceles, que se reparten de forma ponderada en el costo promedio de los productos.
 
+<figure>
+
 ![imagen9](/img/compras/ordenes-de-compra-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders/:id">{"https://app.zauru.com/purchases/purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de confirmación. Para más detalles, consulte [Cargos adicionales a una orden de compra o consolidado](/compras/ordenes-de-compra/cargos-adicionales-a-una-orden-de-compra-o-consolidado) o [Cargos de Aranceles](/compras/ordenes-de-compra/cargos-de-aranceles).
 
+<figure>
+
 ![imagen10](/img/compras/ordenes-de-compra-10.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

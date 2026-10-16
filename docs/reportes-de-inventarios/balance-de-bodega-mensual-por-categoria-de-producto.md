@@ -14,11 +14,21 @@ Para ingresar al balance de bodega mensual por categoría de producto es necesar
 - Seleccionar reportes
 - Balance de bodega mensual por categoría de producto
 
+<figure>
+
 ![Balance de Bodega Mensual por Categoría de Producto](/img/reportes-de-inventarios/balance-de-bodega-mensual-por-categoria-de-producto-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
 
 Identificado el reporte seleccionamos la categoría, la bodega y el mes que se desea consultar, cambiar y listo, podemos ver la información.
 
+<figure>
+
 ![Balance de Bodega Mensual por Categoría de Producto](/img/reportes-de-inventarios/balance-de-bodega-mensual-por-categoria-de-producto-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/monthly_warehouse_balance_by_category">{"https://app.zauru.com/inventories/reports/monthly_warehouse_balance_by_category"}</a></figcaption>
+</figure>
 
 **Filtros**:
 

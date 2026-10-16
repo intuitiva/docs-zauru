@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Con esta vista general podrá identificar rápidamente los productos con mayor movimiento y revisar los costos de cada orden del periodo.
 
+<figure>
+
 ![Reporte de Items de Compras entre Fechas con rango de fechas seleccionado y tabla de resultados](/img/reportes-de-compras/items-de-compras-entre-fechas-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/items_purchases_between_dates">{"https://app.zauru.com/purchases/reports/items_purchases_between_dates"}</a></figcaption>
+</figure>

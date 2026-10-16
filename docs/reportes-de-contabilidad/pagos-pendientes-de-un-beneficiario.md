@@ -12,7 +12,12 @@ Para ingresar a este reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Pagos Pendientes de un Beneficiario".
 
+<figure>
+
 ![Reporte de Pagos Pendientes de un Beneficiario con filtros de cuenta y beneficiario](/img/reportes-de-contabilidad/pagos-pendientes-de-un-beneficiario-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/unpaid_payments_of_payee">{"https://app.zauru.com/accounting/reports/unpaid_payments_of_payee"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

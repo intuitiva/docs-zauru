@@ -10,7 +10,12 @@ Si cobra una mensualidad por contrato y un cliente se atrasa en el pago, o si lo
 
 Estos tres parámetros conviene dejarlos listos antes de que un contrato empiece a generar cuotas, porque son los que deciden qué se le cobra a un cliente cuando cae en mora y cómo se identifican los documentos que el sistema genera por su cuenta.
 
+<figure>
+
 ![Página de configuración de contratos donde se definen el item de mora, término de pago y referencia extra](/img/contratos/configuracion-de-contratos-1.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/contracts_settings/new">{"https://app.zauru.com/contracts/contracts_settings/new"}</a></figcaption>
+</figure>
 
 ### Item de Mora
 

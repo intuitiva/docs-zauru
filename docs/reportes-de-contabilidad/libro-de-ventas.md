@@ -12,7 +12,12 @@ El libro de ventas lo ubicamos en:
   - Reportes
   - Libro de Ventas
 
+<figure>
+
 ![Libro de ventas](/img/reportes-de-contabilidad/libro-de-ventas-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/sales_ledger">{"https://app.zauru.com/accounting/reports/sales_ledger"}</a></figcaption>
+</figure>
 
 El libro de ventas es un reporte fiscal que lista todas las facturas de venta emitidas en un mes. Es esencial para la declaracion de impuestos.
 

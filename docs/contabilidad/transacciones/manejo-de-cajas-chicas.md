@@ -21,7 +21,12 @@ Primero vamos a registrar el traslado de fondos del banco hacia la caja chica de
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen1](/img/contabilidad/transacciones-manejo-de-cajas-chicas-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Le apareceran las opciones para crear una nueva transaccion. En este ejemplo vamos a hacer un cheque a nombre del empleado y lo vamos a trasladar a su caja chica. Los campos que debe llenar son:
 
@@ -41,7 +46,12 @@ g. Seleccione la caja chica del empleado.
 
 Para realizar el traslado de fondos seleccione "Crear Transaccion" en la parte de abajo. Aqui estamos registrando el proceso para darle los fondos al empleado para que gaste. El siguiente paso es registrar los gastos del empleado.
 
+<figure>
+
 ![imagen2](/img/contabilidad/transacciones-manejo-de-cajas-chicas-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 Para registrar los gastos que realice el empleado con el dinero de la empresa hay que crear una nueva transaccion contable que sea desde "caja chica del empleado" hacia los gastos. Los gastos se pueden ingresar por factura, o totales. En el siguiente ejemplo haremos una transaccion de gasto del empleado de una factura. Los pasos para registrar los gastos son los siguientes:
 
@@ -49,7 +59,12 @@ Para registrar los gastos que realice el empleado con el dinero de la empresa ha
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen3](/img/contabilidad/transacciones-manejo-de-cajas-chicas-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 En las opciones de nueva transaccion debera colocar lo siguiente:
 
@@ -71,7 +86,12 @@ h. Seleccione la cuenta del gasto para registrar la compra. En este ejemplo sele
 
 Para guardar los cambios presione "Crear transaccion".
 
+<figure>
+
 ![imagen4](/img/contabilidad/transacciones-manejo-de-cajas-chicas-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ## Gastos pagados vencidos
 
@@ -83,7 +103,12 @@ Primero vamos a registrar el gasto de la empresa que hizo el empleado.
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen5](/img/contabilidad/transacciones-manejo-de-cajas-chicas-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Los campos que debe llenar para registrar la transaccion de gastos del empleado son los siguientes:
 
@@ -105,7 +130,12 @@ h. Aqui debera colocar la cuenta de gasto, en este ejemplo colocamos "compras co
 
 Para guardar los cambios presione "Crear nueva transaccion".
 
+<figure>
+
 ![imagen6](/img/contabilidad/transacciones-manejo-de-cajas-chicas-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 El siguiente paso es crear la transaccion del pago al empleado por estos gastos. Los pasos para hacerlo son los siguientes:
 
@@ -113,7 +143,12 @@ El siguiente paso es crear la transaccion del pago al empleado por estos gastos.
 2. Seleccionar "Transacciones".
 3. Seleccionar "Nueva Transaccion".
 
+<figure>
+
 ![imagen7](/img/contabilidad/transacciones-manejo-de-cajas-chicas-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Las opciones a colocar para crear el pago al empleado por los gastos son las siguientes:
 
@@ -135,7 +170,12 @@ h. Aqui debe colocar la cuenta "Cuentas por pagar a empleados" para saldar sus c
 
 Para crear el pago presione "Crear nueva transaccion".
 
+<figure>
+
 ![imagen8](/img/contabilidad/transacciones-manejo-de-cajas-chicas-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries/new">{"https://app.zauru.com/accounting/entries/new"}</a></figcaption>
+</figure>
 
 ## Liquidaciones
 

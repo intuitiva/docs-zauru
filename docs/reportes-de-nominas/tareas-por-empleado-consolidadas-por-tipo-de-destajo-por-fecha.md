@@ -8,7 +8,12 @@ Si quiere ver cuánto ganó un empleado de destajo por cada tipo de tarea sin pe
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Pantalla del reporte 'Tareas por Empleado Consolidadas por Tipo de Destajo por Fecha' mostrando filtros de empleado y rango de fechas, y la tabla de resultados consolidados.](/img/reportes-de-nominas/tareas-por-empleado-consolidadas-por-tipo-de-destajo-por-fecha-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/employee_tasks_consolidated_by_piecework_per_date">{"https://app.zauru.com/payroll/reports/employee_tasks_consolidated_by_piecework_per_date"}</a></figcaption>
+</figure>
 
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.

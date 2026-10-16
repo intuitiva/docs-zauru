@@ -14,7 +14,12 @@ Para ingresar al reporte:
 
 Con este listado puede dar seguimiento a cada orden pendiente y asegurarse de que todo lo autorizado termine recibido y registrado.
 
+<figure>
+
 ![Reporte Órdenes de Compra Sin Recibir mostrando la tabla de órdenes pendientes](/img/reportes-de-compras/ordenes-de-compra-sin-recibir-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/unreceived_purchase_orders">{"https://app.zauru.com/purchases/reports/unreceived_purchase_orders"}</a></figcaption>
+</figure>
 
 ## API (llamadas desde sistemas externos)
 

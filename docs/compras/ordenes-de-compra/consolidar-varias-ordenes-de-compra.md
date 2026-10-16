@@ -12,7 +12,12 @@ Los pasos para consolidar órdenes de compra son:
 2. Seleccionar "Ordenes de Compra".
 3. Seleccionar "Nueva Orden de Compra".
 
+<figure>
+
 ![imagen1](/img/compras/consolidar-varias-ordenes-de-compra-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/new">{"https://app.zauru.com/purchases/consolidates/new"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -22,15 +27,30 @@ b. Seleccione las órdenes de compra a consolidar.
 
 c. Presione "Crear Consolidado".
 
+<figure>
+
 ![imagen2](/img/compras/consolidar-varias-ordenes-de-compra-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/new">{"https://app.zauru.com/purchases/consolidates/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito. Presione "Verificar" (el ojo) para ver los detalles de la consolidación.
 
+<figure>
+
 ![imagen3](/img/compras/consolidar-varias-ordenes-de-compra-3.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/index">{"https://app.zauru.com/purchases/consolidates/index"}</a></figcaption>
+</figure>
 
 En los detalles del consolidado encontrará las órdenes de compra que se consolidaron.
 
+<figure>
+
 ![imagen4](/img/compras/consolidar-varias-ordenes-de-compra-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/:id">{"https://app.zauru.com/purchases/consolidates/:id"}</a></figcaption>
+</figure>
 
 ## Consolidados para Facturas Especiales
 
@@ -44,7 +64,12 @@ Los pasos para crear un consolidado de factura especial son:
 2. Seleccionar "Consolidados".
 3. Seleccionar "Nuevo Consolidado para Factura Especial".
 
+<figure>
+
 ![imagen5](/img/compras/consolidar-varias-ordenes-de-compra-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/index">{"https://app.zauru.com/purchases/consolidates/index"}</a></figcaption>
+</figure>
 
 Complete los campos:
 
@@ -56,7 +81,12 @@ c. El sistema usa automáticamente el ítem configurado en las variables de comp
 
 d. Presione "Crear Consolidado".
 
+<figure>
+
 ![imagen6](/img/compras/consolidar-varias-ordenes-de-compra-6.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/consolidates/new_for_special_invoice">{"https://app.zauru.com/purchases/consolidates/new_for_special_invoice"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito. Desde este consolidado podrá emitir la factura especial correspondiente.
 

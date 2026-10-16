@@ -24,7 +24,12 @@ Los pasos para consolidar ordenes de venta son los siguientes:
 2. Seleccionar **"Consolidar Ordenes"**.
 3. Presionar **"Nueva Consolidacion"**.
 
+<figure>
+
 ![imagen1](/img/ventas/consolidad-ordenes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_consolidates/index">{"https://app.zauru.com/sales/sales_consolidates/index"}</a></figcaption>
+</figure>
 
 Le apareceran las opciones para crear una nueva consolidacion. Los campos que debe configurar son los siguientes:
 
@@ -39,7 +44,12 @@ c. **Etiquetas (Tags)**: Filtre las ordenes por etiquetas si es necesario.
 
 d. **Referencia**: Coloque una breve referencia para identificar la consolidacion.
 
+<figure>
+
 ![imagen2](/img/ventas/consolidad-ordenes-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_consolidates/new">{"https://app.zauru.com/sales/sales_consolidates/new"}</a></figcaption>
+</figure>
 
 A continuacion se mostrara un listado de las ordenes disponibles para consolidar. Seleccione las ordenes que desea incluir en la consolidacion marcando las casillas correspondientes.
 
@@ -47,7 +57,12 @@ e. **Items con precios flexibles**: Si alguna orden tiene items con precios flex
 
 Para crear la consolidacion presione **"Consolidar Ordenes"**.
 
+<figure>
+
 ![imagen3](/img/ventas/consolidad-ordenes-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_consolidates/new">{"https://app.zauru.com/sales/sales_consolidates/new"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito en pantalla y se generara la factura consolidada. La consolidacion puede ejecutarse en segundo plano (background job) si hay muchas ordenes, o en linea si son pocas.
 
@@ -59,7 +74,12 @@ Para ver los detalles de una consolidacion ya realizada:
 2. Seleccionar **"Consolidar Ordenes"**.
 3. En el listado de consolidaciones, hacer click sobre **"Verificar"** (El ojo) en la consolidacion que desea consultar.
 
+<figure>
+
 ![imagen4](/img/ventas/consolidad-ordenes-4.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_consolidates/:id">{"https://app.zauru.com/sales/sales_consolidates/:id"}</a></figcaption>
+</figure>
 
 En la pagina de detalles de la consolidacion podra ver:
 - Las ordenes que componen la consolidacion.
@@ -77,7 +97,12 @@ Si necesita deshacer una consolidacion:
 
 Al desconsolidar, las ordenes volveran a su estado original (abiertas) y la factura consolidada sera eliminada.
 
+<figure>
+
 ![imagen5](/img/ventas/consolidad-ordenes-5.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales_consolidates/:id">{"https://app.zauru.com/sales/sales_consolidates/:id"}</a></figcaption>
+</figure>
 
 ## Configuracion Adicional
 

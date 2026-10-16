@@ -14,7 +14,12 @@ Para crear nuevos contratos hay que ingresar al módulo de contratos y contratos
 
 Solo se pueden crear "contratos preliminares", los "contratos activos" son "contratos preliminares" activados.
 
+<figure>
+
 ![nuevo contrato](/img/contratos/contratos-preliminares-1.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/draft_contracts">{"https://app.zauru.com/contracts/draft_contracts"}</a></figcaption>
+</figure>
 
 El hecho de crear un contrato preliminar no lo activa para generar cuotas automáticamente. Hay que activarlo manualmente para que esto suceda (ver [activar contratos preliminares](https://docs.zauru.com/contratos/contratos-preliminares#activar-contratos-preliminares)
 
@@ -121,7 +126,12 @@ El destruir un contrato preliminar lo borra permanentemente de la base de datos.
 ## Activar Contratos Preliminares
 
 Para que los contratos empiecen a generar recurrencias (cuotas) hay que activarlos con este botón dentro de los detalles del Contrato Preliminar.
+<figure>
+
 ![activar contrato preliminar](/img/contratos/contratos-preliminares-2.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/draft_contracts/:id">{"https://app.zauru.com/contracts/draft_contracts/:id"}</a></figcaption>
+</figure>
 
 Al activar un contrato preliminar:
 - Se marca como `running = true`

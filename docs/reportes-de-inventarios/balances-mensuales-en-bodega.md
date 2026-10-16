@@ -12,11 +12,21 @@ Para ingresar al Balance Mensual en Bodega es necesario seguir los siguientes pa
 - Seleccionar Reportes
 - Hacer click en Balances en Bodega
 
+<figure>
+
 ![imagen1](/img/reportes-de-inventarios/balances-mensuales-en-bodega-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
 
 Una vez se haya ingresado, se tiene que seleccionar la que se quiere observar, el mes y el año. Después aparecerá enlistado los productos que ingresaron en ese mes. También se observará los productos que salieron de bodegas y por último el total de producto que se encuentra en la bodega.
 
+<figure>
+
 ![imagen2](/img/reportes-de-inventarios/balances-mensuales-en-bodega-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/monthly_warehouse_balance">{"https://app.zauru.com/inventories/reports/monthly_warehouse_balance"}</a></figcaption>
+</figure>
 
 El reporte muestra el balance de inventario mensual: saldo inicial, ingresos, egresos, egresos no entregados y saldo final para cada producto en una bodega o en todas las bodegas.
 

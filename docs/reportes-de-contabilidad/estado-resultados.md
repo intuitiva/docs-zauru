@@ -14,7 +14,12 @@ Los pasos para ingresar a ver el estado de resultados son los siguientes:
 
 Puede ver su estado de resultados global o puede seleccionar los detalles por mes.
 
+<figure>
+
 ![imagen4](/img/reportes-de-contabilidad/estado-resultados-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/profit_loss">{"https://app.zauru.com/accounting/reports/profit_loss"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

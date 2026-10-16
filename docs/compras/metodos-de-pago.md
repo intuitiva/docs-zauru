@@ -11,7 +11,12 @@ Para configurar los métodos de pago:
 1. Ir a “compras”.
 2. Seleccionar el icono de configuraciones.
 
+<figure>
+
 ![imagen1](/img/compras/configuracion-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/index">{"https://app.zauru.com/purchases/index"}</a></figcaption>
+</figure>
 
 ## Crear un método de pago
 
@@ -20,7 +25,12 @@ Los pasos para crear un nuevo método de pago son los siguientes:
 1. Seleccione la pestaña de “Métodos de pago” en las configuraciones de compras.
 2. Presione “Nuevo Método de Pago”.
 
+<figure>
+
 ![imagen8](/img/compras/configuracion-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/discharge_methods">{"https://app.zauru.com/purchases/settings/discharge_methods"}</a></figcaption>
+</figure>
 
 A continuación aparecerán las opciones de configuración del Nuevo Método de Pago. Las opciones son las siguientes:
 
@@ -32,7 +42,12 @@ Le deberá aparecer un mensaje de éxito en la pantalla notificándole que se cr
 
 Cada vez que haga una compra podrá seleccionar este nuevo método de pago.
 
+<figure>
+
 ![imagen9](/img/compras/configuracion-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/discharge_methods">{"https://app.zauru.com/purchases/settings/discharge_methods"}</a></figcaption>
+</figure>
 
 Con el método de pago creado, Zauru registrará la salida de dinero desde la cuenta que usted definió en el momento de pagar. Si su empresa paga con varios medios, repita el proceso para cada uno: al final tendrá su catálogo completo listo para usar en todos los pagos a proveedores.
 

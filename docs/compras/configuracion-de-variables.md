@@ -12,7 +12,12 @@ Para acceder a la configuracion de variables:
 2. Seleccionar el icono de configuraciones.
 3. Seleccionar la pestana "Variables" o "Configuracion de Compras".
 
+<figure>
+
 ![imagen1](/img/compras/configuracion-de-variables-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/purchases_settings/new">{"https://app.zauru.com/purchases/settings/purchases_settings/new"}</a></figcaption>
+</figure>
 
 ---
 
@@ -104,7 +109,12 @@ Para guardar los cambios en las variables de configuracion:
 1. Ajuste las variables segun sus necesidades.
 2. Al final del formulario, presione "Guardar Configuracion".
 
+<figure>
+
 ![imagen2](/img/compras/configuracion-de-variables-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/settings/purchases_settings/new">{"https://app.zauru.com/purchases/settings/purchases_settings/new"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito notificandole que la configuracion se guardo exitosamente.
 

@@ -10,12 +10,22 @@ Para generar el reporte:
 
 1. Ir a "Inventarios" > "Reportes".
 
+<figure>
+
 ![Pantalla del reporte 'Productos bajo punto de re orden' antes de aplicar filtros](/img/reportes-de-inventarios/productos-bajo-punto-de-re-orden-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point">{"https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point"}</a></figcaption>
+</figure>
 
 2. Seleccionar "Productos bajo punto de re orden".
 3. Seleccionar la bodega.
 
+<figure>
+
 ![Resultado del reporte después de presionar 'Generar reporte'](/img/reportes-de-inventarios/productos-bajo-punto-de-re-orden-3.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point">{"https://app.zauru.com/inventories/reports/stocks_less_than_reorder_point"}</a></figcaption>
+</figure>
 
 4. Presionar "Generar reporte".
 

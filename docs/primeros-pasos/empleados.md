@@ -12,7 +12,12 @@ Los pasos para crear un nuevo empleado son:
 2. Seleccionar “Empleados”.
 3. Seleccionar “Nuevo Empleado”.
 
+<figure>
+
 ![imagen8](/img/primeros-pasos/empleados-1.png)
+
+<figcaption><a href="https://app.zauru.com/settings/employees">{"https://app.zauru.com/settings/employees"}</a></figcaption>
+</figure>
 
 Los campos más importantes del formulario son los siguientes:
 
@@ -21,7 +26,12 @@ Los campos más importantes del formulario son los siguientes:
 - **Nombre**: nombre del empleado.
 - **Categoría de Empleado**: categoría a la que pertenece el empleado (ver [Categorías de Empleados](categorias-de-empleados.md)).
 
+<figure>
+
 ![imagen9](/img/primeros-pasos/empleados-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/employees/new">{"https://app.zauru.com/settings/employees/new"}</a></figcaption>
+</figure>
 
 - **Locación**: agencia asignada al empleado; define la agencia que tendrá en Soporte y Punto de Venta.
 - **Responsabilidades**: permiten seleccionar al empleado en las transacciones que esa responsabilidad conlleve:
@@ -33,11 +43,21 @@ Los campos más importantes del formulario son los siguientes:
 
 Para guardar los cambios presione “Crear empleado”.
 
+<figure>
+
 ![imagen10](/img/primeros-pasos/empleados-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/employees/new">{"https://app.zauru.com/settings/employees/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito. Ahora podrá verlo en el listado y seleccionarlo en las transacciones según sus responsabilidades.
 
+<figure>
+
 ![imagen11](/img/primeros-pasos/empleados-4.png)
+
+<figcaption><a href="https://app.zauru.com/settings/employees">{"https://app.zauru.com/settings/employees"}</a></figcaption>
+</figure>
 
 ## Filtrar Empleados por Agencia
 
@@ -53,7 +73,12 @@ Los pasos para importar empleados son:
 2. Seleccionar "Empleados".
 3. Click en "Importar".
 
+<figure>
+
 ![imagen12](/img/primeros-pasos/empleados-7.png)
+
+<figcaption><a href="https://app.zauru.com/settings/employees">{"https://app.zauru.com/settings/employees"}</a></figcaption>
+</figure>
 
 Seleccione el archivo de Excel con los datos de sus empleados y presione el botón de importación; el sistema creará los registros.
 

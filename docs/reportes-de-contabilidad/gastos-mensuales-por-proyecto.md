@@ -12,12 +12,22 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 2. Ingresar a Reportes
 3. Hacer click en Gastos Mensual por Proyectos
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/gastos-mensuales-por-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 Una vez se haya ingresado al reporte, aparecerá varias casillas para seleccionar el nombre del proyecto, de que fecha a que fecha aparecerá el reporte y si se quiere agrupar por categorías la información.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/gastos-mensuales-por-proyecto-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_monthly_expenses">{"https://app.zauru.com/accounting/reports/tagged_monthly_expenses"}</a></figcaption>
+</figure>
 
 
 

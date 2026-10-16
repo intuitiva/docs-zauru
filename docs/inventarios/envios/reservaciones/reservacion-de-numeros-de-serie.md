@@ -12,7 +12,12 @@ Los pasos para hacer una reservación de entrada de un producto con número de s
 2. Seleccionar "Reservaciones".
 3. Seleccionar "Nueva reservación de #s de Serie".
 
+<figure>
+
 ![imagen5](/img/inventarios/inventarios-numeros-de-serie-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 Le aparecerá el primer paso, los pasos a seguir son:
 
@@ -21,15 +26,30 @@ Le aparecerá el primer paso, los pasos a seguir son:
 
 Por último presionar "Generar Reservación".
 
+<figure>
+
 ![imagen6](/img/inventarios/inventarios-numeros-de-serie-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/new_serials">{"https://app.zauru.com/inventories/bookings/new_serials"}</a></figcaption>
+</figure>
 
 A continuación aparecerá el segundo paso, donde se colocan los detalles de la reservación: referencia, fecha de entrega estimada y si necesita transporte. Por último presionar "Crear envío".
 
+<figure>
+
 ![imagen7](/img/inventarios/inventarios-numeros-de-serie-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/new">{"https://app.zauru.com/inventories/bookings/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificando que la reservación fue creada exitosamente. En la parte inferior podrá ver los detalles o entregarla.
 
+<figure>
+
 ![imagen8](/img/inventarios/inventarios-numeros-de-serie-8.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/:id">{"https://app.zauru.com/inventories/bookings/:id"}</a></figcaption>
+</figure>
 
 Con la reservación entregada, cada número de serie queda disponible en la bodega y listo para moverse o venderse. La creación de números de serie se documenta en [Números de serie](/inventarios/inventarios-numeros-de-serie).
 

@@ -16,7 +16,12 @@ Los pasos para consultar la bitácora son los siguientes:
 2. Seleccionar **"Configuraciones"**.
 3. Seleccionar la pestaña de **"Operaciones de Gateway"**.
 
+<figure>
+
 ![imagen1](/img/ventas/operaciones-de-gateway-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales/gateway_operation_intents">{"https://app.zauru.com/sales/sales/gateway_operation_intents"}</a></figcaption>
+</figure>
 
 ### Filtros Disponibles
 
@@ -31,7 +36,12 @@ b. **Rango de fechas**:
    - **Desde**: Fecha de inicio del rango de búsqueda.
    - **Hasta**: Fecha de fin del rango de búsqueda.
 
+<figure>
+
 ![imagen2](/img/ventas/operaciones-de-gateway-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales/gateway_operation_intents">{"https://app.zauru.com/sales/sales/gateway_operation_intents"}</a></figcaption>
+</figure>
 
 ### Información Mostrada
 
@@ -54,7 +64,12 @@ Para ver los detalles completos de una operación de gateway:
    - La respuesta recibida del gateway.
    - Cualquier metadata adicional de la operación.
 
+<figure>
+
 ![imagen3](/img/ventas/operaciones-de-gateway-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/sales/gateway_operation_intents/:id">{"https://app.zauru.com/sales/sales/gateway_operation_intents/:id"}</a></figcaption>
+</figure>
 
 Esta información es especialmente útil cuando se necesita diagnosticar por qué un pago fue rechazado o por qué la tokenización de una tarjeta falló.
 

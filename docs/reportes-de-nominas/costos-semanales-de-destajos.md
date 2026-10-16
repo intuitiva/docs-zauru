@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Costos Semanales de Destajos"**.
 
+<figure>
+
 ![Vista del reporte Costos Semanales de Destajos mostrando el rango de fechas y la tabla de costos por tipo de destajo por semana](/img/reportes-de-nominas/costos-semanales-de-destajos-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/weekly_pieceworks_costs">{"https://app.zauru.com/payroll/reports/weekly_pieceworks_costs"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

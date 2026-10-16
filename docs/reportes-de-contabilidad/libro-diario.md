@@ -13,7 +13,12 @@ El libro diario lo puede encontrar en:
 
 Aquí podrá encontrar todas las operaciones de la empresa, incluyendo compras, ventas, pagos, gastos e ingresos. Los transacciones pueden ser ordenadas por ID de creación, Referencia, fecha, por nombre del beneficiario, por cuenta o por cantidad.
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/libro-diario-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/entries">{"https://app.zauru.com/accounting/entries"}</a></figcaption>
+</figure>
 
 Es el registro cronologico de todas las transacciones contables del mes y la base de la contabilidad, ya que permite verificar que todas las partidas esten cuadradas.
 

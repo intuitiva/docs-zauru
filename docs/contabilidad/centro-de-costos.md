@@ -10,7 +10,12 @@ Si quiere saber cuánto le está costando realmente cada proyecto, sucursal o de
 
 Las categorias de centro de costos agrupan centros de costo similares. Por ejemplo, puede tener categorias como "Proyectos", "Departamentos", "Sucursales", "Vehiculos", etc.
 
+<figure>
+
 ![Categorías de centro de costos](/img/contabilidad/centro-de-costos-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/cost_center_categories">{"https://app.zauru.com/accounting/cost_center_categories"}</a></figcaption>
+</figure>
 
 ### Crear una categoria de centro de costos
 
@@ -19,7 +24,12 @@ Las categorias de centro de costos agrupan centros de costo similares. Por ejemp
 3. Ir a la pestana "Categorias".
 4. Hacer clic en "Nueva Categoria".
 
+<figure>
+
 ![Formulario de nueva categoría de centro de costos](/img/contabilidad/centro-de-costos-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/cost_center_categories/new">{"https://app.zauru.com/accounting/cost_center_categories/new"}</a></figcaption>
+</figure>
 
 Los campos a completar son:
 
@@ -36,7 +46,12 @@ Desde el listado de categorias puede editar o eliminar cualquier categoria exist
 
 Piense en las categorías como el tipo de unidad y en los centros de costo como cada unidad concreta: por ejemplo, la categoría puede ser "Proyectos" y el centro de costo, el "Proyecto A". Cada transacción se asigna a uno de estos centros específicos.
 
+<figure>
+
 ![Listado de centros de costo](/img/contabilidad/centro-de-costos-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/cost_centers">{"https://app.zauru.com/accounting/cost_centers"}</a></figcaption>
+</figure>
 
 ### Crear un centro de costo
 
@@ -44,7 +59,12 @@ Piense en las categorías como el tipo de unidad y en los centros de costo como 
 2. Seleccionar "Centro de Costos".
 3. Hacer clic en "Nuevo Centro de Costo".
 
+<figure>
+
 ![Formulario de nuevo centro de costo](/img/contabilidad/centro-de-costos-4.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/cost_centers/new">{"https://app.zauru.com/accounting/cost_centers/new"}</a></figcaption>
+</figure>
 
 Los campos a completar son:
 

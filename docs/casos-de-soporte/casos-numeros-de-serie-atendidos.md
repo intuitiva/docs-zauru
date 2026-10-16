@@ -10,21 +10,41 @@ Cuando un cliente trae a soporte un producto que usted le vendió, conviene sabe
 
 Para registrar un numero de serie cuando usted crea un caso, primero debe colocar el nombre del cliente y la informacion del caso que se esta atendiendo y luego refrescar la pantalla, como se muestra en la siguiente imagen.
 
+<figure>
+
 ![imgen1](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/new">{"https://app.zauru.com/support/cases/new"}</a></figcaption>
+</figure>
 
 Luego de refrescar, podra seleccionar el numero de serie del producto que el cliente compro. Solo le apareceran los numeros de serie que ese cliente haya comprado.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/new">{"https://app.zauru.com/support/cases/new"}</a></figcaption>
+</figure>
 
 Despues de crear el caso automaticamente quedara un registro de los numeros de serie que se han atendido.
 
+<figure>
+
 ![imagen3](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-3.png)
+
+<figcaption><a href="https://app.zauru.com/support/cases/:id">{"https://app.zauru.com/support/cases/:id"}</a></figcaption>
+</figure>
 
 ## Ver Numeros de Serie Atendidos
 
 Para ver el registro de los numeros de serie atendidos debera seleccionar **"Numeros de Serie Atendidos"**.
 
+<figure>
+
 ![imagen4](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-4.png)
+
+<figcaption><a href="https://app.zauru.com/support/serials_attended">{"https://app.zauru.com/support/serials_attended"}</a></figcaption>
+</figure>
 
 En este listado podra ver:
 - **Numero de Serie** (ID interno)
@@ -42,7 +62,12 @@ Para ver el detalle de un numero de serie atendido:
 2. Seleccionar **"Numeros de Serie Atendidos"**.
 3. Hacer click sobre **"Verificar"** (ojo) en el numero de serie deseado.
 
+<figure>
+
 ![imagen5](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-5.png)
+
+<figcaption><a href="https://app.zauru.com/support/serials_attended/:id">{"https://app.zauru.com/support/serials_attended/:id"}</a></figcaption>
+</figure>
 
 En la pagina de detalle podra ver:
 
@@ -76,7 +101,12 @@ Puede crear un nuevo numero de serie directamente desde el modulo de soporte. Es
 2. Seleccionar **"Numeros de Serie Atendidos"**.
 3. Seleccionar **"Nuevo Numero de Serie"**.
 
+<figure>
+
 ![imagen6](/img/casos-de-soporte/casos-numeros-de-serie-atendidos-6.png)
+
+<figcaption><a href="https://app.zauru.com/support/serials_attended/new">{"https://app.zauru.com/support/serials_attended/new"}</a></figcaption>
+</figure>
 
 Complete los campos:
 - **Nombre** del numero de serie

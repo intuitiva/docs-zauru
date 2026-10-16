@@ -12,7 +12,12 @@ Los pasos para ingresar producto a un lote son los siguientes:
 2. Seleccionar "Reservaciones".
 3. Seleccionar "Nueva Reservación".
 
+<figure>
+
 ![imagen4](/img/inventarios/inventarios-lotes-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings">{"https://app.zauru.com/inventories/bookings"}</a></figcaption>
+</figure>
 
 Los campos que debe colocar son:
 
@@ -24,11 +29,21 @@ Los campos que debe colocar son:
 
 Por último presionar "Crear envío".
 
+<figure>
+
 ![imagen5](/img/inventarios/inventarios-lotes-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/new">{"https://app.zauru.com/inventories/bookings/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje notificando que la reservación fue creada exitosamente. En la parte inferior podrá ver los detalles y entregarla.
 
+<figure>
+
 ![imagen6](/img/inventarios/inventarios-lotes-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/bookings/:id">{"https://app.zauru.com/inventories/bookings/:id"}</a></figcaption>
+</figure>
 
 La creación de lotes se documenta en [Lotes](/inventarios/inventarios-lotes).
 

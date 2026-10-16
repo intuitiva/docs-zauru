@@ -11,7 +11,12 @@ sidebar_position: 4
 Para crear una WebApp table basta con dirigirnos en el menú a la opción:
 WebApps => Tablas => New WebApp Table
 
+<figure>
+
 ![WebAppTable listado 1](/img/webapps/tablas-dinamicas-webapp-tables-1.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_tables">{"https://app.zauru.com/apps/webapp_tables"}</a></figcaption>
+</figure>
 
 En el siguiente ejemplo, una empresa desea almacenar en Zauru los diferentes tipos de moneda que pueden recibir, por ejemplo (moneda local, moneda de plata, moneda de oro, etc...), en este caso hipotético, este listado no se maneja explicitamente en Zauru, por lo cual recurrimos a la ayuda de una webapp table en donde podemos definir una estructura para ese listado.
 
@@ -19,17 +24,32 @@ Nuestro listado se llamará "Tipos de monedas", el cuál necesitamos que almacen
 
 > No preocuparse por el id único para cada opción, ya que automáticamente zauru le creará un id único a cada registro de nuestra webapp table.
 
+<figure>
+
 ![New webapp table example](/img/webapps/tablas-dinamicas-webapp-tables-2.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_tables/new">{"https://app.zauru.com/apps/webapp_tables/new"}</a></figcaption>
+</figure>
 
 Con nuestra estructura lista, podemos ahora dar en la opción (Crear WebApp Table)
 
 Con eso nuestra webapp table se creará y ya la tendremos lista para ser utilizada.
 
+<figure>
+
 ![example newwebapp table created](/img/webapps/tablas-dinamicas-webapp-tables-3.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_tables">{"https://app.zauru.com/apps/webapp_tables"}</a></figcaption>
+</figure>
 
 Ahora podemos hacer uso de nuestra nueva webapp table para ingresar registros, o actualizar los ya existentes.
 
+<figure>
+
 ![EjemploListadoRegistrosWebAppTable](/img/webapps/tablas-dinamicas-webapp-tables-4.png)
+
+<figcaption><a href="https://app.zauru.com/apps/webapp_tables/:webapp_table_id/webapp_rows">{"https://app.zauru.com/apps/webapp_tables/:webapp_table_id/webapp_rows"}</a></figcaption>
+</figure>
 
 Con esto, su tabla dinámica queda creada y lista para recibir registros. Lo que sigue naturalmente es llenarla desde el sistema o conectarla con su webapp personalizada; más adelante, si sus aplicaciones la consultan con frecuencia, también podrá sincronizarla con una base de datos externa.
 

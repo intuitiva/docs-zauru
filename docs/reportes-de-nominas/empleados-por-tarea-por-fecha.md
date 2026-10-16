@@ -8,7 +8,12 @@ sidebar_position: 5
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Página del reporte Empleados por Tarea por Fecha mostrando los filtros de tipo de destajo y rango de fechas.](/img/reportes-de-nominas/empleados-por-tarea-por-fecha-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/employees_per_task_per_date">{"https://app.zauru.com/payroll/reports/employees_per_task_per_date"}</a></figcaption>
+</figure>
 
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Reportes"**.

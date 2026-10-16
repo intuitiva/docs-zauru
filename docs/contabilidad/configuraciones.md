@@ -22,7 +22,12 @@ Los pasos para establecer las configuraciones de contabilidad son los siguientes
 10. Configure las cuentas del libro de compras segun sus necesidades fiscales.
 11. Seleccione "Actualizar Configuraciones" para aplicar los cambios.
 
+<figure>
+
 ![imagen1](/img/contabilidad/configuraciones-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounting_settings/new">{"https://app.zauru.com/accounting/accounting_settings/new"}</a></figcaption>
+</figure>
 
 Con las configuraciones actualizadas, cada venta y cada compra generará sus transacciones de IVA e inventario en las cuentas correctas sin trabajo manual adicional. Si en el futuro cambia de cuentas o quiere proteger un periodo ya cerrado, este es el lugar para ajustarlo.
 

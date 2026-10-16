@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Libro de Salarios entre Fechas"**.
 
+<figure>
+
 ![Pantalla del reporte Libro de Salarios entre Fechas con filtros de empleado y rango de fechas](/img/reportes-de-nominas/libro-de-salarios-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/wage_ledger_between_dates">{"https://app.zauru.com/payroll/reports/wage_ledger_between_dates"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

@@ -11,7 +11,12 @@ Cuando su bodega se queda corta de mercadería o hay que pagar el alquiler del l
 1. Ir a "P.D.V."
 2. Seleccionar "Nueva Compra".
 
+<figure>
+
 ![listado de items por comprar](/img/punto-de-venta/crear-compra-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/purchases/new">{"https://app.zauru.com/pos/purchases/new"}</a></figcaption>
+</figure>
 
 Complete los campos de la orden de compra:
 

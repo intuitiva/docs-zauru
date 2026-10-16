@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Costos de Destajos en Corrida de Nomina"**.
 
+<figure>
+
 ![Página del reporte Costos de Destajos en Corrida de Nomina mostrando el selector de corrida de nomina y la tabla de resultados.](/img/reportes-de-nominas/costos-de-destajos-en-corrida-de-nomina-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/payroll_run_pieceworks_costs">{"https://app.zauru.com/payroll/reports/payroll_run_pieceworks_costs"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

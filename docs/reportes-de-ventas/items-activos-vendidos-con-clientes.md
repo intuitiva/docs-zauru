@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Ítems Activos Vendidos con Clientes".
 
+<figure>
+
 ![Vista del reporte Ítems Activos Vendidos con Clientes mostrando tabla de ítems y clientes](/img/reportes-de-ventas/items-activos-vendidos-con-clientes-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/sold_active_items_with_clients">{"https://app.zauru.com/sales/reports/sold_active_items_with_clients"}</a></figcaption>
+</figure>
 
 Con el reporte en pantalla sabrá qué productos vale la pena seguir impulsando y con qué clientes conviene hablar primero.
 

@@ -14,7 +14,12 @@ Zauru tiene un mecanismo sumamente sencillo para realizar ese proceso:
 2. Seleccionar la cuenta a donde van a caer los resultados (una cuenta de capital como resultados del periodo)
 3. Seleccionar el mes (con ano) que queremos cerrar
 
+<figure>
+
 ![cierre mensual e d r](/img/contabilidad/cierre-mensual-del-estado-de-resultados-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/automatic_monthly_close">{"https://app.zauru.com/accounting/accounts/automatic_monthly_close"}</a></figcaption>
+</figure>
 
 Este proceso generara una sola transaccion donde consolida los saldos mensuales de los ingresos (en positivo) y los egresos (en negativo) y el saldo incrementara (en caso de ganancias mensuales) o decrementara (en caso de perdidas mensuales) la cuenta de capital seleccionada, usualmente "utilidades del mes".
 

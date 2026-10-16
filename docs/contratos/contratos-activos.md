@@ -10,7 +10,12 @@ Al activar un contrato preliminar, Zauru empieza a trabajar por usted: revisa a 
 
 El listado muestra todos los contratos activos (en ejecución), con filtros por tipo de documento. Columnas: ID, Tipo de Documento, Número de Contrato, Referencia, Beneficiario, Items, Cuotas, Cuota Actual, Periodicidad, Fecha de Inicio, Fecha de Próxima Cuota, Monto y Acciones.
 
+<figure>
+
 ![listado de contratos activos](/img/contratos/contratos-activos-1.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts">{"https://app.zauru.com/contracts/active_contracts"}</a></figcaption>
+</figure>
 
 Desde este listado también se puede acceder a los **Contratos Anulados** (Voided Contracts) mediante el botón correspondiente.
 
@@ -30,11 +35,21 @@ Hay ocasiones donde necesitará generar un documento manualmente porque dio erro
 
 En el detalle del contrato, ingrese al botón "Generar Documentos" para acceder a la parametrización.
 
+<figure>
+
 ![boton generar documentos](/img/contratos/contratos-activos-2.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id">{"https://app.zauru.com/contracts/active_contracts/:id"}</a></figcaption>
+</figure>
 
 Luego se configura la parametrización:
 
+<figure>
+
 ![generar-contratos-manualmente](/img/contratos/contratos-activos-3.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id/generate_documents_form">{"https://app.zauru.com/contracts/active_contracts/:id/generate_documents_form"}</a></figcaption>
+</figure>
 
 Solo hay 2 cosas que seleccionar:
 
@@ -51,7 +66,12 @@ En el detalle del contrato, la sección "Documentos Consolidados" indica cuánta
 
 ## Detalles de los Documentos Generados por el contrato
 En el detalle del contrato podemos observar el listado de los documentos generados automáticamente o manualmente.
+<figure>
+
 ![documentos generados](/img/contratos/contratos-activos-4.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id">{"https://app.zauru.com/contracts/active_contracts/:id"}</a></figcaption>
+</figure>
 
 La tabla muestra: Recurrencia, Tipo de Generación (Automático/Manual), Fecha de Generación, Documento, Estado y Monto.
 
@@ -71,7 +91,12 @@ Debajo de la tabla de documentos generados se muestra un resumen con:
 - Cantidad de cuotas no generadas
 - Cantidad y monto de documentos en cada estado del flujo de trabajo (borrador, ordenado, autorizado, pagado, etc.)
 
+<figure>
+
 ![resumen de estado](/img/contratos/contratos-activos-6.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id">{"https://app.zauru.com/contracts/active_contracts/:id"}</a></figcaption>
+</figure>
 
 ## Editar Contratos Activos
 ¿El cliente cambió de plan o precio a mitad de camino? No hace falta cerrar y crear otro contrato. Los contratos activos se pueden editar para que las siguientes recurrencias respeten los nuevos parámetros, sin cambiar las cuotas anteriores.
@@ -93,7 +118,12 @@ En el detalle del contrato activo, el botón "Estado del Contrato" muestra una v
 - **Tabla de cuotas**: Una fila por cuota con la fecha esperada, el estado del documento generado (o "No Generado") y los montos por item o cuenta.
 - **Enviar por correo**: Permite enviar el estado del contrato al beneficiario o a uno mismo por correo.
 
+<figure>
+
 ![estado del contrato](/img/contratos/contratos-activos-7.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id/contract_status">{"https://app.zauru.com/contracts/active_contracts/:id/contract_status"}</a></figcaption>
+</figure>
 
 Esta vista es ideal para seguir el avance del contrato y compartir su estado con el cliente.
 
@@ -101,7 +131,12 @@ Esta vista es ideal para seguir el avance del contrato y compartir su estado con
 
 Disponible solo para contratos de tipo **Factura no Pagada**. Muestra el detalle de las partidas contables (debe y haber) generadas por cada cuota.
 
+<figure>
+
 ![detalle de partidas por cuota](/img/contratos/contratos-activos-8.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id/fees_entries_details">{"https://app.zauru.com/contracts/active_contracts/:id/fees_entries_details"}</a></figcaption>
+</figure>
 
 La tabla muestra por cuota:
 - Número de cuota y fecha
@@ -127,7 +162,12 @@ En el detalle, si el contrato tiene moras activas, el botón "Moras Actuales" mu
   - Monto de un período de mora
   - Total de mora acumulada
 
+<figure>
+
 ![moras actuales](/img/contratos/contratos-activos-9.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id/show_current_arrears">{"https://app.zauru.com/contracts/active_contracts/:id/show_current_arrears"}</a></figcaption>
+</figure>
 
 ### Generar Documento de Mora
 
@@ -175,7 +215,12 @@ Los documentos que se pueden asociar son:
 6. Casos
 
 Para asociar un documento, entre al detalle del contrato e ingrese al tipo de documento a asociar:
+<figure>
+
 ![asociar documentos](/img/contratos/contratos-activos-5.png)
+
+<figcaption><a href="https://app.zauru.com/contracts/active_contracts/:id">{"https://app.zauru.com/contracts/active_contracts/:id"}</a></figcaption>
+</figure>
 
 En el detalle se muestran los documentos asociados en secciones separadas:
 

@@ -29,7 +29,12 @@ Los pasos para crear un listado de precios son los siguientes:
 3. Seleccionar la pestaña de **"Listado de Precios"**.
 4. Seleccionar **"Nuevo Listado de Precio"**.
 
+<figure>
+
 ![imagen16](/img/ventas/configuraciones-16.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/price_lists">{"https://app.zauru.com/sales/settings/price_lists"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un nuevo listado de precios, las opciones son las siguientes:
 
@@ -40,7 +45,12 @@ Le aparecerán las opciones para crear un nuevo listado de precios, las opciones
 5. Marque **Comercio electrónico** (`ecommerce`) si este listado de precios estará disponible para ventas en línea.
 6. Para guardar los cambios presione **"Crear lista de precio"**.
 
+<figure>
+
 ![imagen17](/img/ventas/configuraciones-17.png)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/price_lists/new">{"https://app.zauru.com/sales/settings/price_lists/new"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla notificando que se creó el listado de precios.
 
@@ -50,7 +60,12 @@ Ahora deberá editar el listado de precios para seleccionar las categorías de c
 
 1. Presione el botón de **"Editar"** en el listado de precios que creó.
 
+<figure>
+
 ![imagen18](/img/ventas/configuraciones-18.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/price_lists">{"https://app.zauru.com/sales/settings/price_lists"}</a></figcaption>
+</figure>
 
 En la vista de edición podrá:
 
@@ -64,11 +79,21 @@ En la vista de edición podrá:
 
 3. Para aplicar los cambios presione **"Actualizar lista de precio"**.
 
+<figure>
+
 ![imagen19](/img/ventas/configuraciones-19.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/price_lists/:id/edit">{"https://app.zauru.com/sales/settings/price_lists/:id/edit"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla mostrándole la categoría y agencia agregadas al listado de precios. Cada vez que se seleccione a un cliente que pertenezca a la categoría asignada o se facture desde la agencia asignada, el precio será el que se coloque en el listado de precios.
 
+<figure>
+
 ![imagen20](/img/ventas/configuraciones-20.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/price_lists">{"https://app.zauru.com/sales/settings/price_lists"}</a></figcaption>
+</figure>
 
 Ahora deberá colocar el precio a sus ítems en este listado de precios, los pasos para hacerlo se especifican en el tutorial de [**"Precios Sugeridos"**](/ventas/precios-sugeridos).
 

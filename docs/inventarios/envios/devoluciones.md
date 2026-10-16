@@ -15,7 +15,12 @@ Los pasos para devolver una entrega son:
 3. Abrir la entrega que desea devolver.
 4. Seleccionar la opción de devolver.
 
+<figure>
+
 ![imagen5](/img/inventarios/envios-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/deliveries/:id">{"https://app.zauru.com/inventories/deliveries/:id"}</a></figcaption>
+</figure>
 
 Al devolver una entrega:
 

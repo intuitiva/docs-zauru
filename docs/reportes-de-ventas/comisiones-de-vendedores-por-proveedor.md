@@ -12,6 +12,11 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Comisiones de Vendedores por Proveedor".
 
+<figure>
+
 ![Reporte de Comisiones de Vendedores por Proveedor mostrando facturas desglosadas por proveedor.](/img/reportes-de-ventas/comisiones-de-vendedores-por-proveedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/seller_invoices_by_vendor">{"https://app.zauru.com/sales/reports/seller_invoices_by_vendor"}</a></figcaption>
+</figure>
 
 Con ese desglose puede calcular comisiones diferenciadas y explicarle a cada vendedor exactamente de dónde sale su cifra.

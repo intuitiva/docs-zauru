@@ -12,9 +12,19 @@ Para ingresar al reporte es necesario seguir los siguientes pasos:
 2. Hacer click en Reportes
 3. Seleccionar Existencias de Items de un Proveedor
 
+<figure>
+
 ![imagen1](/img/reportes-de-ventas/reportes-ventas-existencias-de-items-de-un-proveedor-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
 
 
 Luego de seleccionar al proveedor, se podrá observar las existencia de los productos que se le compra al proveedor seleccionado.
 
+<figure>
+
 ![imagen2](/img/reportes-de-ventas/reportes-ventas-existencias-de-items-de-un-proveedor-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/vendor_stocks">{"https://app.zauru.com/inventories/reports/vendor_stocks"}</a></figcaption>
+</figure>

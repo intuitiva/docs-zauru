@@ -11,7 +11,12 @@ Para acceder a los destajos pagados:
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Destajos pagados"**.
 
+<figure>
+
 ![2. Seleccionar **"Destajos pagados"**.](/img/nominas/destajos-4.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/paid_pieceworks">{"https://app.zauru.com/payroll/paid_pieceworks"}</a></figcaption>
+</figure>
 
 ## Listado de destajos pagados
 

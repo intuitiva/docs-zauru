@@ -12,9 +12,19 @@ Para ingresar es necesario realizar lo siguiente:
 2. Seleccionar Reportes
 3. Hacer click en Costo del Inventario Actual
 
+<figure>
+
 ![imagen1](/img/reportes-de-ventas/reporte-ventas-consumo-del-inventario-del-proveedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
 
 
 Luego de seleccionar al Proveedor, se enlistará los productos que se le compra a ese proveedor. También hará la relación entre las entradas y las salidas de ese producto. Con esto Zauru calculara el Consumo Promedio Mensual y los Meses de Disponibilidad del producto con la existencia actual.
 
+<figure>
+
 ![imagen2](/img/reportes-de-ventas/reporte-ventas-consumo-del-inventario-del-proveedor-2.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/vendor_inventory_consumption">{"https://app.zauru.com/inventories/reports/vendor_inventory_consumption"}</a></figcaption>
+</figure>

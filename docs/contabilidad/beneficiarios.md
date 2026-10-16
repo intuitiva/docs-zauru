@@ -17,7 +17,12 @@ El listado de beneficiarios permite consultar y filtrar las personas o empresas 
 
 También se pueden filtrar por etiquetas (tags) utilizando la nube de etiquetas.
 
+<figure>
+
 ![Listado de beneficiarios con filtros Todos, Clientes, Proveedores y Clientes y Proveedores](/img/contabilidad/beneficiarios-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/payees">{"https://app.zauru.com/accounting/payees"}</a></figcaption>
+</figure>
 
 En el listado se puede buscar por nombre, referencia, NIT, dirección, teléfono, correo electrónico y categoría de beneficiario. La búsqueda admite coincidencias parciales y similitud (trigram).
 
@@ -29,7 +34,12 @@ Los pasos para crear un nuevo beneficiario son:
 2. Seleccionar "Beneficiarios".
 3. Hacer clic en "Nuevo Beneficiario".
 
+<figure>
+
 ![Formulario de nuevo beneficiario](/img/contabilidad/beneficiarios-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/payees/new">{"https://app.zauru.com/accounting/payees/new"}</a></figcaption>
+</figure>
 
 ### Campos del beneficiario
 
@@ -84,7 +94,12 @@ Al ver el detalle de un beneficiario se muestra:
 - El listado de transacciones contables asociadas a este beneficiario.
 - Los formularios personalizados enviados para este beneficiario.
 
+<figure>
+
 ![Vista de detalle del beneficiario con transacciones asociadas](/img/contabilidad/beneficiarios-3.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/payees/1">{"https://app.zauru.com/accounting/payees/1"}</a></figcaption>
+</figure>
 
 ## Editar un beneficiario
 

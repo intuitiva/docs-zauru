@@ -15,4 +15,9 @@ Para ingresar al reporte:
 
 Así puede presentarle a su cliente una cuenta clara de lo vencido y acordar el pago sin sorpresas.
 
+<figure>
+
 ![Reporte Pagos Vencidos de un Cliente con el filtro de cliente](/img/reportes-de-ventas/pagos-vencidos-de-un-cliente-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/client_pending_overdue_payments">{"https://app.zauru.com/sales/reports/client_pending_overdue_payments"}</a></figcaption>
+</figure>

@@ -11,7 +11,12 @@ Para acceder a los destajos no pagados:
 1. Ir a **"Nominas"**.
 2. Seleccionar **"Destajos no pagados"**.
 
+<figure>
+
 ![2. Seleccionar **"Destajos no pagados"**.](/img/nominas/destajos-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/unpaid_pieceworks">{"https://app.zauru.com/payroll/unpaid_pieceworks"}</a></figcaption>
+</figure>
 
 ## Listado de destajos no pagados
 

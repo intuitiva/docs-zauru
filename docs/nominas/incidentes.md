@@ -50,7 +50,12 @@ El sistema automaticamente:
 
 En el listado, hacer clic en el incidente. El detalle muestra:
 
+<figure>
+
 ![Detalle de un incidente con datos y descuento calculado](/img/nominas/incidentes-3.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/incidents/:id">{"https://app.zauru.com/payroll/incidents/:id"}</a></figcaption>
+</figure>
 
 - ID del incidente.
 - Empleado.

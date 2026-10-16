@@ -11,7 +11,12 @@ Para acceder a las configuraciones:
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Configuraciones"** (o acceder a `/support/support_settings/new`).
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-configuraciones-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/settings/support_settings/new">{"https://app.zauru.com/support/settings/support_settings/new"}</a></figcaption>
+</figure>
 
 ## Configuracion de Webhooks
 

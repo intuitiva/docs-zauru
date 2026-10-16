@@ -12,7 +12,12 @@ Los pasos para crear un nuevo rol son los siguientes:
 2. Seleccionar “Roles”.
 3. Seleccionar el botón de “Nuevo Rol”.
 
+<figure>
+
 ![imagen4](/img/permisos-de-acceso/roles-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/roles">{"https://app.zauru.com/access_control/roles"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear el nuevo rol, en el ejemplo se crea un rol de contabilidad, para después asignarle permisos de contabilidad y suscribir a un empleado con este rol, las opciones son las siguientes:
 
@@ -20,11 +25,21 @@ Le aparecerán las opciones para crear el nuevo rol, en el ejemplo se crea un ro
 2. Coloque una breve descripción de para que sirve este rol.
 3. Seleccione “Crear rol” para aplicar los cambios.
 
+<figure>
+
 ![imagen5](/img/permisos-de-acceso/roles-2.png)
+
+<figcaption><a href="https://app.zauru.com/access_control/roles/new">{"https://app.zauru.com/access_control/roles/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito en la pantalla notificándole que el rol fue creado exitosamente.
 
+<figure>
+
 ![imagen6](/img/permisos-de-acceso/roles-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/access_control/roles">{"https://app.zauru.com/access_control/roles"}</a></figcaption>
+</figure>
 
 El siguiente paso es asignarle permisos a este rol creado para después suscribir a un usuario con este rol.
 

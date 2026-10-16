@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Partidas Faltantes en Destajos"**.
 
+<figure>
+
 ![Lista del reporte Partidas Faltantes en Destajos](/img/reportes-de-nominas/partidas-faltantes-en-destajos-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks">{"https://app.zauru.com/payroll/reports/missing_entry_in_pieceworks"}</a></figcaption>
+</figure>
 
 **Opcion de correccion**: el boton **"Corregir"** genera las partidas faltantes.
 

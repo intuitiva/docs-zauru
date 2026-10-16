@@ -12,13 +12,23 @@ Para ingresar a este reporte es necesario seguir las siguientes instrucciones:
 2. Ingresar a Reportes
 3. Seleccionar Gastos por Proyecto
 
+<figure>
+
 ![imagen1](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-por-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports">{"https://app.zauru.com/accounting/reports"}</a></figcaption>
+</figure>
 
 
 Después de ingresar, solamente se tiene que seleccionar el proyecto. Tambien aparece la opcion si quiere que sus gastos sean agrupados en categorias o no.
 
 A continuación se enlista que tipos de gastos se han utilizado en el proyecto. Al mismo tiempo toda la información de monto gastado con una suma de todos los totales hasta abajo.
 
+<figure>
+
 ![imagen2](/img/reportes-de-contabilidad/reportes-contabilidad-gastos-por-proyecto-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/tagged_expenses">{"https://app.zauru.com/accounting/reports/tagged_expenses"}</a></figcaption>
+</figure>
 
 Así tendrá una fotografía completa del gasto del proyecto, desde los conceptos más utilizados hasta el total general.

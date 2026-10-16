@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con estas cifras consolidadas puede responder en segundos cuánto se vendió y cuánto se ganó.
 
+<figure>
+
 ![Vista del reporte Ventas con Costos (Resumen) mostrando las cifras consolidadas de ventas y costos.](/img/reportes-de-ventas/ventas-con-costos-resumen-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/sales_with_costs">{"https://app.zauru.com/sales/reports/sales_with_costs"}</a></figcaption>
+</figure>

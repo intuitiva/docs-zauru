@@ -11,7 +11,12 @@ Cuando un cliente llama y dice que el producto que le compró está fallando, lo
 1. Ir a **"Soporte"**.
 2. Seleccionar **"Clientes con #s de Serie"** (o acceder a `/support/clients_with_serials`).
 
+<figure>
+
 ![imagen1](/img/casos-de-soporte/casos-clientes-con-series-1.png)
+
+<figcaption><a href="https://app.zauru.com/support/clients_with_serials">{"https://app.zauru.com/support/clients_with_serials"}</a></figcaption>
+</figure>
 
 Le aparecera un listado de clientes que tienen numeros de serie en su poder (es decir, productos con numero de serie que les fueron entregados). Para cada cliente se muestra:
 
@@ -23,7 +28,12 @@ Le aparecera un listado de clientes que tienen numeros de serie en su poder (es 
 
 1. Haga click sobre **"Verificar"** (ojo) en el cliente deseado.
 
+<figure>
+
 ![imagen2](/img/casos-de-soporte/casos-clientes-con-series-2.png)
+
+<figcaption><a href="https://app.zauru.com/support/clients_with_serials/:id">{"https://app.zauru.com/support/clients_with_serials/:id"}</a></figcaption>
+</figure>
 
 En la pagina de detalle encontrara:
 

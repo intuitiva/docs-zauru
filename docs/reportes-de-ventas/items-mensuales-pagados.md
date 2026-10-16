@@ -14,4 +14,9 @@ Para ingresar al reporte:
 
 Con este análisis podrá hablar de ventas cobradas, no solo facturadas, cuando prepare sus números del mes.
 
+<figure>
+
 ![Vista del reporte Ítems Mensuales Pagados mostrando tabla de ítems por mes](/img/reportes-de-ventas/items-mensuales-pagados-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/reports/monthly_items_paid">{"https://app.zauru.com/sales/reports/monthly_items_paid"}</a></figcaption>
+</figure>

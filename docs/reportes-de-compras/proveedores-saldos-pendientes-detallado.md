@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar "Reportes".
 3. Seleccionar "Proveedores - Saldos Pendientes Detallado".
 
+<figure>
+
 ![Reporte Proveedores - Saldos Pendientes Detallado](/img/reportes-de-compras/proveedores-saldos-pendientes-detallado-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/detailed_vendors_unpaid_payments">{"https://app.zauru.com/purchases/reports/detailed_vendors_unpaid_payments"}</a></figcaption>
+</figure>
 
 Permite filtrar por categoria de proveedor.
 

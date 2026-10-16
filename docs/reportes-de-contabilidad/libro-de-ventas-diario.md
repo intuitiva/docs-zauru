@@ -12,7 +12,12 @@ Se encuentra localizado en:
   - Reportes
   - Libro de Ventas Diario
 
+<figure>
+
 ![Libro de ventas diario](/img/reportes-de-contabilidad/libro-de-ventas-diario-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/daily_sales_ledger">{"https://app.zauru.com/accounting/reports/daily_sales_ledger"}</a></figcaption>
+</figure>
 
 **Parametros**:
 

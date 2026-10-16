@@ -19,4 +19,9 @@ Para ingresar a este reporte:
 
 Así podrá revisar cada movimiento de la cuenta del proyecto y confirmar que el balance coincida con lo que espera.
 
+<figure>
+
 ![Reporte Movimientos en Cuentas de Proyecto mostrando transacciones y balance corrido filtrados por cuenta y etiqueta.](/img/reportes-de-contabilidad/movimientos-en-cuentas-de-proyecto-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/movement_in_project_accounts">{"https://app.zauru.com/accounting/reports/movement_in_project_accounts"}</a></figcaption>
+</figure>

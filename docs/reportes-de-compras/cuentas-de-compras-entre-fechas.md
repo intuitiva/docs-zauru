@@ -8,7 +8,12 @@ Si su empresa compra servicios o registra gastos por cuentas contables, como fle
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Vista del reporte Cuentas de Compras entre Fechas con filtros de fechas y tabla de resultados](/img/reportes-de-compras/cuentas-de-compras-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/reports/accounts_purchases_between_dates">{"https://app.zauru.com/purchases/reports/accounts_purchases_between_dates"}</a></figcaption>
+</figure>
 
 1. Ir a "Compras".
 2. Seleccionar "Reportes".

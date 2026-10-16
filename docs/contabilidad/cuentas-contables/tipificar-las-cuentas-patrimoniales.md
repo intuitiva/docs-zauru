@@ -14,7 +14,12 @@ El balance general se arma con las cuentas patrimoniales: activos, pasivos y cap
 
 Las tres son cuentas patrimoniales: se reportan en el [Balance General](/reportes-de-contabilidad/balance-general) y no en el estado de resultados.
 
+<figure>
+
 ![Tipos de cuentas patrimoniales: Activos, Pasivos y Capital](/img/contabilidad/cuentas-contables-2.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts">{"https://app.zauru.com/accounting/accounts"}</a></figcaption>
+</figure>
 
 ## Cuenta líquida o no líquida
 
@@ -25,7 +30,12 @@ Al crear o editar una cuenta de activo, pasivo o capital, el campo **"Líquido"*
 
 El campo solo está disponible en cuentas patrimoniales; en las cuentas de gestión (ingresos y gastos) no aplica. En capital no cambia la presentación del balance general.
 
+<figure>
+
 ![Formulario de cuenta con el campo Líquido](/img/contabilidad/cuentas-contables-9.jpg)
+
+<figcaption><a href="https://app.zauru.com/accounting/accounts/new">{"https://app.zauru.com/accounting/accounts/new"}</a></figcaption>
+</figure>
 
 ## Cómo se refleja en el balance general
 
@@ -38,7 +48,12 @@ Los activos y los pasivos se separan por liquidez:
 
 El capital aparece completo en su sección. El resumen del reporte calcula la liquidez (activos líquidos - pasivos líquidos) y el patrimonio neto (activos totales - pasivos totales), por moneda.
 
+<figure>
+
 ![Balance general con la sección Activos corrientes](/img/reportes-de-contabilidad/balance-general-1.png)
+
+<figcaption><a href="https://app.zauru.com/accounting/reports/balance_sheet">{"https://app.zauru.com/accounting/reports/balance_sheet"}</a></figcaption>
+</figure>
 
 ## Revisar y corregir la tipificación
 

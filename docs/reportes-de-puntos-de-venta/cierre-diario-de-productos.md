@@ -8,7 +8,12 @@ Al final del día, saber cuánto vendió no siempre es suficiente: a veces quier
 
 Para ingresar al reporte:
 
+<figure>
+
 ![Pantalla del reporte Cierre Diario de Productos mostrando filtros de fecha y vendedor y la tabla de facturas con desglose por producto](/img/reportes-de-puntos-de-venta/cierre-diario-de-productos-1.png)
+
+<figcaption><a href="https://app.zauru.com/pos/reports/daily_item_close">{"https://app.zauru.com/pos/reports/daily_item_close"}</a></figcaption>
+</figure>
 
 1. Ir a "P.D.V.".
 2. Seleccionar "Reportes".

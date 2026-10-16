@@ -13,7 +13,12 @@ Los pasos para ver las ordenes de compra cerradas son los siguientes:
 1. Ir a "Compras".
 2. Seleccionar "Ordenes de Compra Cerradas".
 
+<figure>
+
 ![imagen1](/img/compras/ordenes-de-compra-cerradas-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders">{"https://app.zauru.com/purchases/closed_purchase_orders"}</a></figcaption>
+</figure>
 
 Le aparecera un listado con todas las ordenes de compra que han sido recibidas y pagadas. En este listado puede:
 
@@ -29,7 +34,12 @@ Los pasos para ver los detalles de una orden de compra cerrada son:
 2. Seleccionar "Ordenes de Compra Cerradas".
 3. Seleccionar "Detalles" (El Ojo) en la orden que desea consultar.
 
+<figure>
+
 ![imagen2](/img/compras/ordenes-de-compra-cerradas-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
+</figure>
 
 En la vista de detalles de una orden de compra cerrada podra encontrar:
 
@@ -51,7 +61,12 @@ h. Impresion de la orden de compra utilizando las plantillas disponibles.
 
 i. Documentos electronicos asociados (facturas electronicas FEL, DTE, etc.).
 
+<figure>
+
 ![imagen3](/img/compras/ordenes-de-compra-cerradas-3.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
+</figure>
 
 ## Editar informacion de una orden de compra cerrada
 
@@ -64,7 +79,12 @@ Los pasos para editar una orden de compra cerrada son:
 3. Seleccionar "Detalles" en la orden que desea editar.
 4. Seleccionar "Editar".
 
+<figure>
+
 ![imagen4](/img/compras/ordenes-de-compra-cerradas-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id/shallow_edit">{"https://app.zauru.com/purchases/closed_purchase_orders/:id/shallow_edit"}</a></figcaption>
+</figure>
 
 Los campos que puede editar en una orden de compra cerrada son:
 
@@ -90,7 +110,12 @@ j. Archivo PDF asociado a la orden.
 
 k. Etiquetas (tags).
 
+<figure>
+
 ![imagen5](/img/compras/ordenes-de-compra-cerradas-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Al terminar de editar, presione "Actualizar" para guardar los cambios.
 
@@ -105,7 +130,12 @@ Los pasos para reabrir una orden de compra cerrada son:
 3. Seleccionar "Detalles" en la orden que desea reabrir.
 4. Seleccionar "Reabrir Orden de Compra".
 
+<figure>
+
 ![imagen6](/img/compras/ordenes-de-compra-cerradas-6.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/closed_purchase_orders/:id">{"https://app.zauru.com/purchases/closed_purchase_orders/:id"}</a></figcaption>
+</figure>
 
 Le aparecera un mensaje de exito notificandole que la orden de compra fue reabierta exitosamente. La orden de compra volvera a aparecer en el listado de ordenes de compra activas.
 

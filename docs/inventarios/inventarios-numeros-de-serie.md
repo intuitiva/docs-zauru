@@ -16,7 +16,12 @@ Para usar números de serie, el ítem debe ser de tipo "Identificable" (product_
 
 El primer paso para poder llevar números de serie en Zauru es crear un ítem que sea "Identificable" como se muestra en la imagen. Para mas detalles sobre como crear ítems refiérase al tutorial "Crear Ítems".
 
+<figure>
+
 ![imagen1](/img/inventarios/inventarios-numeros-de-serie-1.jpg)
+
+<figcaption><a href="https://app.zauru.com/settings/items/new">{"https://app.zauru.com/settings/items/new"}</a></figcaption>
+</figure>
 
 ## Crear un número de serie individual
 
@@ -26,7 +31,12 @@ Los pasos para crear un numero de serie son los siguientes:
 2. Seleccione "Números de Serie".
 3. Seleccione "Nuevo Número de Serie".
 
+<figure>
+
 ![imagen2](/img/inventarios/inventarios-numeros-de-serie-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/serials">{"https://app.zauru.com/inventories/serials"}</a></figcaption>
+</figure>
 
 Le aparecerán las opciones para crear un numero de serie, los campos que debe llenar son los siguientes:
 
@@ -36,11 +46,21 @@ b. Seleccione el Ítem identificable que creo previamente.
 
 Presione "Crear número de serie".
 
+<figure>
+
 ![imagen3](/img/inventarios/inventarios-numeros-de-serie-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/serials/new">{"https://app.zauru.com/inventories/serials/new"}</a></figcaption>
+</figure>
 
 Le aparecerá un mensaje de éxito notificándole que se creo el numero de serie exitosamente, el siguiente paso es hacer una reservación para ingresar ese numero de serie a alguna de sus bodegas.
 
+<figure>
+
 ![imagen4](/img/inventarios/inventarios-numeros-de-serie-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/serials">{"https://app.zauru.com/inventories/serials"}</a></figcaption>
+</figure>
 
 ## Crear múltiples números de serie simultáneamente
 
@@ -79,7 +99,12 @@ Para ver todos los números de serie en todas las bodegas:
 
 Esta vista muestra todos los números de serie con su ubicación actual.
 
+<figure>
+
 ![imagen9](/img/inventarios/inventarios-numeros-de-serie-all-warehouses.jpg)
+
+<figcaption><a href="https://app.zauru.com/inventories/serials/all_warehouses">{"https://app.zauru.com/inventories/serials/all_warehouses"}</a></figcaption>
+</figure>
 
 ## Ver detalle de un número de serie
 

@@ -13,7 +13,12 @@ Para consultar la lista de facturas pagadas:
 1. Ir a **"Ventas"**.
 2. Seleccionar **"Facturas Pagadas"**.
 
+<figure>
+
 ![imagen1](/img/ventas/facturas-pagadas-1.png)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices">{"https://app.zauru.com/sales/paid_invoices"}</a></figcaption>
+</figure>
 
 Las facturas pagadas pueden filtrarse por:
 
@@ -35,7 +40,12 @@ Para ver los detalles de una factura pagada:
 1. Ir a **"Ventas"** > **"Facturas Pagadas"**.
 2. Hacer click sobre **"Verificar"** (El ojo) en la factura que desea consultar.
 
+<figure>
+
 ![imagen2](/img/ventas/facturas-pagadas-2.png)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices/:id">{"https://app.zauru.com/sales/paid_invoices/:id"}</a></figcaption>
+</figure>
 
 En la página de detalles podrá encontrar:
 - Información general de la factura (número, fecha, cliente, vendedor, punto de venta).
@@ -54,7 +64,12 @@ Para imprimir una factura pagada:
 2. Haga click sobre **"Imprimir"** para ver la vista previa de impresión.
 3. Presione **CTRL + P** para enviar a la impresora.
 
+<figure>
+
 ![imagen3](/img/ventas/facturas-pagadas-3.png)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices/:id/print">{"https://app.zauru.com/sales/paid_invoices/:id/print"}</a></figcaption>
+</figure>
 
 ### Descargar como PDF
 
@@ -81,7 +96,12 @@ Para realizar esta edición:
 3. Realizar los cambios necesarios.
 4. Presionar **"Actualizar Factura"**.
 
+<figure>
+
 ![imagen4](/img/ventas/facturas-pagadas-4.png)
+
+<figcaption><a href="https://app.zauru.com/sales/paid_invoices/:id/shallow_edit">{"https://app.zauru.com/sales/paid_invoices/:id/shallow_edit"}</a></figcaption>
+</figure>
 
 ## Anular una Factura Pagada
 

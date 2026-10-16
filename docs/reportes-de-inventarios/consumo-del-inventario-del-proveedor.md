@@ -13,7 +13,12 @@ Para ver el reporte de consumo del inventario del proveedor debemos de:
 - Sección de Existencias
 - Seleccionar Consumo del Inventario
 
+<figure>
+
 ![Consumo del Inventario del Proveedor](/img/reportes-de-inventarios/consumo-del-inventario-del-proveedor-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports/vendor_inventory_consumption">{"https://app.zauru.com/inventories/reports/vendor_inventory_consumption"}</a></figcaption>
+</figure>
 
 El reporte analiza el consumo mensual promedio de los productos de cada proveedor y calcula cuantos meses de inventario restan segun el stock actual.
 

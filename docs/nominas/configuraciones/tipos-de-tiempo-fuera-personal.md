@@ -16,7 +16,12 @@ Para gestionar tipos de tiempo fuera personal:
 1. Hacer clic en **"Nuevo"**.
 2. Completar los campos:
 
+<figure>
+
 ![Formulario de nuevo tipo de tiempo fuera personal](/img/nominas/configuraciones-de-nomina-8.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/settings/personal_time_off_types/new">{"https://app.zauru.com/payroll/settings/personal_time_off_types/new"}</a></figcaption>
+</figure>
 
 - **Nombre**: nombre del tipo (ej. "Vacaciones", "Enfermedad", "Permiso personal").
 - **Descripcion**: descripcion opcional.

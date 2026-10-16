@@ -32,7 +32,12 @@ Los pasos para crear un nuevo término de pago son los siguientes:
 1. Ir a términos de pago en las configuraciones de ventas.
 2. Seleccionar "Nuevo Término de Pago".
 
+<figure>
+
 ![imagen2](/img/ventas/configuraciones-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms">{"https://app.zauru.com/sales/settings/payment_terms"}</a></figcaption>
+</figure>
 
 Entrará a los detalles del nuevo término de pago; las opciones para crearlo son las siguientes:
 
@@ -44,7 +49,12 @@ Entrará a los detalles del nuevo término de pago; las opciones para crearlo so
 6. Coloque la cantidad de días de crédito que tiene el cliente para pagar.
 7. Para guardar los cambios presione "Crear término de pago".
 
+<figure>
+
 ![imagen3](/img/ventas/configuraciones-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms/new">{"https://app.zauru.com/sales/settings/payment_terms/new"}</a></figcaption>
+</figure>
 
 ## Opciones Avanzadas de Términos de Pago
 
@@ -76,7 +86,12 @@ Los pasos para especificar las categorías aplicables al término de pago son lo
 1. Deberá aparecer un mensaje de éxito en la pantalla después de crear el término de pago.
 2. Presione el botón de editar en el término de pago.
 
+<figure>
+
 ![imagen4](/img/ventas/configuraciones-4.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms">{"https://app.zauru.com/sales/settings/payment_terms"}</a></figcaption>
+</figure>
 
 Ahora le aparecerán las opciones de edición del término de pago, deberá seguir los siguientes pasos:
 
@@ -84,11 +99,21 @@ Ahora le aparecerán las opciones de edición del término de pago, deberá segu
 2. Seleccione la categoría de clientes que creó previamente para que este término de pago sea aplicable a esa categoría.
 3. Para guardar sus cambios presione "Actualizar término de pago".
 
+<figure>
+
 ![imagen5](/img/ventas/configuraciones-5.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms/:id/edit">{"https://app.zauru.com/sales/settings/payment_terms/:id/edit"}</a></figcaption>
+</figure>
 
 Le deberá aparecer un mensaje de éxito en la pantalla después de actualizar el término de pago. En el punto número dos puede ver cómo la Categoría 1 aparece ahora en el término de pago NET 45.
 
+<figure>
+
 ![imagen6](/img/ventas/configuraciones-6.jpg)
+
+<figcaption><a href="https://app.zauru.com/sales/settings/payment_terms">{"https://app.zauru.com/sales/settings/payment_terms"}</a></figcaption>
+</figure>
 
 ## Ver Detalles de un Término de Pago
 

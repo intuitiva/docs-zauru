@@ -16,7 +16,12 @@ Los pasos para pagar una orden de compra son:
 2. Seleccionar "Ordenes de Compra".
 3. Seleccionar "Pagar".
 
+<figure>
+
 ![imagen1](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/purchase_orders">{"https://app.zauru.com/purchases/purchase_orders"}</a></figcaption>
+</figure>
 
 Aparecerán las órdenes de compra del proveedor; en el ejemplo se paga una sola. Complete los campos:
 
@@ -34,17 +39,32 @@ f. Para pagar solo una orden, marque "Eliminar" en las demás órdenes de la lis
 
 g. Presione "Vista Previa" para refrescar la página.
 
+<figure>
+
 ![imagen2](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-2.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/discharges/new">{"https://app.zauru.com/purchases/discharges/new"}</a></figcaption>
+</figure>
 
 Las órdenes marcadas desaparecerán del listado.
 
 Por último, presione "Crear Pago" para realizar el pago.
 
+<figure>
+
 ![imagen3](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-3.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/discharges/new">{"https://app.zauru.com/purchases/discharges/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito y será dirigido automáticamente a la pestaña "Pagos", donde podrá ver todos los pagos realizados.
 
+<figure>
+
 ![imagen4](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-4.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/discharges">{"https://app.zauru.com/purchases/discharges"}</a></figcaption>
+</figure>
 
 ## Pagar Cargos
 
@@ -54,7 +74,12 @@ Los cargos y aranceles que se agregan a las órdenes de compra se pagan de la si
 2. Seleccionar "Cargos".
 3. Seleccionar "Pagar".
 
+<figure>
+
 ![imagen5](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-5.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/charges">{"https://app.zauru.com/purchases/charges"}</a></figcaption>
+</figure>
 
 Aparecerán los cargos asociados al proveedor. Complete los campos:
 
@@ -72,11 +97,21 @@ e. Coloque el monto a pagar, total o parcial.
 
 f. Presione "Crear Pago".
 
+<figure>
+
 ![imagen6](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-6.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/discharges/new">{"https://app.zauru.com/purchases/discharges/new"}</a></figcaption>
+</figure>
 
 Aparecerá un mensaje de éxito.
 
+<figure>
+
 ![imagen7](/img/compras/pagar-ordenes-de-compra-y-cargos-adicionales-7.jpg)
+
+<figcaption><a href="https://app.zauru.com/purchases/discharges">{"https://app.zauru.com/purchases/discharges"}</a></figcaption>
+</figure>
 
 Con el pago registrado, Zauru deja constancia de cuánto le queda debiendo a cada proveedor. Cuando una orden esté totalmente recibida y pagada, pasará automáticamente a Órdenes de Compra Cerradas; recuerde que sus cargos se pagan aparte y pueden seguir pendientes.
 

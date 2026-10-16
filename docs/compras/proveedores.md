@@ -49,11 +49,21 @@ Los pasos para crear un nuevo proveedor son los siguientes:
 2. Seleccionar "proveedores"
 3. Seleccionar "nuevo proveedor"
 
+<figure>
+
 ![Proveedores](/img/compras/proveedores-1.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/vendors">{"https://app.zauru.com/purchases/vendors"}</a></figcaption>
+</figure>
 
 Le deberán aparecer las siguientes opciones para crear un nuevo proveedor:
 
+<figure>
+
 ![Nuevo proveedor](/img/compras/proveedores-2.png)
+
+<figcaption><a href="https://app.zauru.com/purchases/vendors/new">{"https://app.zauru.com/purchases/vendors/new"}</a></figcaption>
+</figure>
 
 1. Proveedor de Bienes o Servicios (Seleccionar una de las dos opciones sobre el tipo de proveedor).
 2. Nombre (Comercial), Ejemplo: (Industria de Hamburguesas, S.A.)

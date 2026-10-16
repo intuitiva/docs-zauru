@@ -10,7 +10,12 @@ Para generar el reporte:
 
 1. Ir a "Inventarios" > "Reportes".
 
+<figure>
+
 ![Lista de reportes donde se selecciona 'Detalle de envios desde produccion'](/img/reportes-de-inventarios/detalle-de-envios-desde-produccion-1.png)
+
+<figcaption><a href="https://app.zauru.com/inventories/reports">{"https://app.zauru.com/inventories/reports"}</a></figcaption>
+</figure>
 
 2. Seleccionar "Detalle de envios desde produccion".
 3. Seleccionar el mes y año.

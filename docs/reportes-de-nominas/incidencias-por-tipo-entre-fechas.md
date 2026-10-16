@@ -12,7 +12,12 @@ Para ingresar al reporte:
 2. Seleccionar **"Reportes"**.
 3. Seleccionar **"Incidencias por Tipo entre Fechas"**.
 
+<figure>
+
 ![Reporte de Incidencias por Tipo entre Fechas mostrando resultados filtrados por rango de fechas](/img/reportes-de-nominas/incidencias-por-tipo-entre-fechas-1.png)
+
+<figcaption><a href="https://app.zauru.com/payroll/reports/incidents_by_type_between_dates">{"https://app.zauru.com/payroll/reports/incidents_by_type_between_dates"}</a></figcaption>
+</figure>
 
 **Parametros**:
 
