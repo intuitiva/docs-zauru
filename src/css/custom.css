@@ -837,6 +837,50 @@ a:hover {
   background: #fff;
 }
 
+/* Keep each screenshot and its source link in one frame. */
+.markdown figure {
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--zauru-line);
+  border-radius: var(--zauru-radius-md);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--zauru-shadow-card);
+}
+.markdown figure > p {
+  margin: 0;
+}
+.markdown figure img {
+  margin: 0 auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.markdown figure > figcaption {
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--zauru-line);
+  background: var(--zauru-paper-2);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.markdown figure > figcaption a {
+  display: block;
+  border-bottom: 0;
+  color: var(--ifm-font-color-base);
+  text-decoration: underline;
+  text-decoration-color: var(--zauru-line);
+  text-underline-offset: 3px;
+}
+.markdown figure > figcaption a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration-color: currentColor;
+}
+.markdown figure > figcaption a:focus-visible {
+  outline: 2px solid var(--zauru-gold-deep);
+  outline-offset: 3px;
+  border-radius: var(--zauru-radius-sm);
+}
+
 /* Inline code */
 .markdown code:not([class*="language-"]) {
   background: var(--ifm-code-background);
