@@ -1498,3 +1498,10 @@ body:has(.zauru-hero) .navbar__items--right [class*="colorModeToggle"] {
     pointer-events: auto;
   }
 }
+
+/* Las páginas de grupo de reportes se enlazan desde el índice y no se
+   repiten en el sidebar. El aviso de "sin clasificar" no aplica: son
+   índices de navegación accesibles por enlace directo. */
+.theme-unlisted-banner {
+  display: none;
+}

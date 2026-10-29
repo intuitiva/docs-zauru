@@ -17,3 +17,9 @@ Para acceder a los reportes:
 
 <figcaption><a href="https://app.zauru.com/production/reports">{"https://app.zauru.com/production/reports"}</a></figcaption>
 </figure>
+
+## Grupos de reportes
+
+- **[Materias primas](/reportes-de-produccion/grupo-materias-primas)**: Materias primas necesarias para las órdenes planificadas.
+- **[Órdenes de trabajo](/reportes-de-produccion/grupo-ordenes-de-trabajo)**: Detalles y consumos de las órdenes de trabajo cerradas, por etiqueta.
+- **[Órdenes de producción](/reportes-de-produccion/grupo-ordenes-de-produccion)**: Eficiencia, órdenes finalizadas y productos terminados por responsable.
